@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UDSF GECW</title>
+  <meta name="description" content="UDSF GECW: the KSU and MSF student alliance at Government Engineering College Wayanad, Mananthavady.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="UDSF GECW">
+  <meta property="og:description" content="The KSU and MSF student alliance at Government Engineering College Wayanad.">
+  <meta property="og:image" content="assets/logo-512.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo-512.png">
+  <link rel="preload" as="image" href="assets/hero.webp" imagesrcset="assets/hero-900.webp 900w, assets/hero.webp 1440w" imagesizes="100vw">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500&family=Manjari:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner wrap">
+      <a class="brand" href="#top" aria-label="UDSF GECW home">
+        <img class="brand__logo" src="assets/logo-512.png" alt="" width="40" height="40">
+        <span class="brand__name">UDSF GECW</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#work">What we do</a>
+        <a href="#alliance">Alliance</a>
+        <a href="#values">Values</a>
+        <a href="#updates">Updates</a>
+      </nav>
+      <div class="nav__right">
+        <a class="nav__ig" href="#" data-ig-profile target="_blank" rel="noopener" aria-label="UDSF GECW on Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+        <a class="btn btn--dark btn--sm" href="#join">Join UDSF</a>
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+          <i class="ph-bold ph-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO: full-bleed group photo, veil only over the sky behind the text so the crowd stays crisp -->
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__bg">
+        <source type="image/webp" srcset="assets/hero-900.webp 900w, assets/hero.webp 1440w" sizes="100vw">
+        <img src="assets/hero.jpg" alt="Over a hundred UDSF members at GEC Wayanad posing together on a hilltop with KSU and MSF flags" width="1440" height="1170" fetchpriority="high">
+      </picture>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__inner wrap">
+        <div class="hero__top">
+          <div class="hero__head">
+            <h1 id="hero-title" class="hero__title">
+              <span class="hero__ml" lang="ml">GEC വയനാടിന്റെ</span>
+              <span class="wordmark" aria-label="UDSF"><span class="wm-g">UD</span><span class="wm-b">SF</span></span>
+            </h1>
+          </div>
+
+          <div class="hero__aside">
+            <p class="hero__sub">Standing with every student at Government Engineering College Wayanad, on the issues that matter on campus.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--dark" href="#join">Join UDSF <i class="ph-bold ph-arrow-right"></i></a>
+              <a class="btn btn--link" href="#work">What we do</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT + FEATURES -->
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <h2 id="work-title" class="statement">Students who listen, organise and follow through, so every voice at GEC Wayanad is <span class="hl">heard where it counts.</span></h2>
+
+      <ul class="features">
+        <li class="feature">
+          <i class="ph-bold ph-house-line"></i>
+          <h3>Student welfare</h3>
+          <p>Hostel, canteen, transport and fees, taken to the administration.</p>
+        </li>
+        <li class="feature">
+          <i class="ph-bold ph-books"></i>
+          <h3>Academic concerns</h3>
+          <p>Exams, results, labs and KTU issues, followed until fixed.</p>
+        </li>
+        <li class="feature">
+          <i class="ph-bold ph-check-square-offset"></i>
+          <h3>College union</h3>
+          <p>Putting students who listen into the seats that decide.</p>
+        </li>
+        <li class="feature">
+          <i class="ph-bold ph-megaphone"></i>
+          <h3>Campaigns</h3>
+          <p>Conventions and events that bring the campus together.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ALLIANCE -->
+    <section class="alliance wrap" id="alliance" aria-labelledby="alliance-title">
+      <header class="section-head">
+        <p class="kicker">The alliance</p>
+        <h2 id="alliance-title" class="h2">Two organisations. One front.</h2>
+      </header>
+
+      <div class="alliance__grid">
+        <article class="org org--ksu">
+          <h3>KSU</h3>
+          <p class="org__full">Kerala Students Union</p>
+          <p>The student organisation of the Congress movement in Kerala, active on campuses across the state for generations.</p>
+        </article>
+        <span class="alliance__plus" aria-hidden="true">+</span>
+        <article class="org org--msf">
+          <h3>MSF</h3>
+          <p class="org__full">Muslim Students Federation</p>
+          <p>The student wing of the Indian Union Muslim League, with a strong presence in colleges throughout Kerala.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- VALUES (dark band, colours from the logo background) -->
+    <section class="values" id="values" aria-labelledby="values-title">
+      <div class="values__inner wrap">
+        <header class="values__head">
+          <p class="kicker">Our promise</p>
+          <h2 id="values-title" class="h2">What you can expect from us</h2>
+        </header>
+        <ol class="values__list">
+          <li><span class="values__num">01</span><h3 class="values__word">Together</h3><p>KSU and MSF work as one team, so you never have to pick a side to get help.</p></li>
+          <li><span class="values__num">02</span><h3 class="values__word">Your say</h3><p>Every student has a vote and a voice, from first year to final year.</p></li>
+          <li><span class="values__num">03</span><h3 class="values__word">Everyone in</h3><p>Whatever your background or beliefs, this campus is yours too.</p></li>
+          <li><span class="values__num">04</span><h3 class="values__word">Students first</h3><p>Hostel, exams, fees and buses. Your daily problems come before politics.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- UPDATES: filled by main.js from the Instagram feed (FEED.url) or the manual UPDATES list -->
+    <section class="updates wrap" id="updates" aria-labelledby="updates-title">
+      <header class="section-head section-head--center">
+        <p class="kicker">Updates</p>
+        <h2 id="updates-title" class="h2">From campus</h2>
+      </header>
+      <div class="updates__grid" id="updatesGrid" aria-live="polite"></div>
+      <div class="updates__more">
+        <a class="btn btn--ghost" href="#" data-ig-profile target="_blank" rel="noopener"><i class="ph-bold ph-instagram-logo"></i> Follow on Instagram</a>
+      </div>
+    </section>
+
+    <!-- JOIN -->
+    <section class="join wrap" id="join" aria-labelledby="join-title">
+      <div class="join__panel">
+        <img class="join__logo" src="assets/logo-512.png" alt="" width="88" height="88" loading="lazy">
+        <h2 id="join-title" class="h2">Be part of it.</h2>
+        <p>First years, seniors, anyone who wants a better campus. Find us at college, or send us a message.</p>
+        <a class="btn btn--dark" href="#" data-ig-profile target="_blank" rel="noopener"><i class="ph-bold ph-instagram-logo"></i> Message us on Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner wrap">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <img class="brand__logo" src="assets/logo-512.png" alt="" width="40" height="40" loading="lazy">
+        <span class="brand__name">UDSF GECW</span>
+      </a>
+      <p class="footer__addr">Government Engineering College Wayanad, Thalappuzha, Mananthavady, Kerala</p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> UDSF GECW</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
