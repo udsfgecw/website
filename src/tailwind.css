@@ -1,37 +1,42 @@
-/* Tailwind without its preflight reset, so the existing hand-written styles.css is unaffected. */
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/utilities.css" layer(utilities);
+/* UDSF GECW landing, white theme.
+   Colours are sampled from the logo: green (UD), blue (SF), and the deep green/navy of its background.
+   Shape rule: buttons and chips are full pill, cards are 16-28px depending on size. */
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --nav-h: 72px;
+  --radius: 1rem;
+
+  /* shadcn tokens, mapped to the brand palette */
+  --background: #ffffff;
+  --foreground: #0d1f1a;
+  --card: #ffffff;
+  --card-foreground: #0d1f1a;
+  --popover: #ffffff;
+  --popover-foreground: #0d1f1a;
+  --primary: #0b2b22;
+  --primary-foreground: #ffffff;
+  --secondary: #e6f6ef;
+  --secondary-foreground: #087a51;
+  --muted: #f4f7f6;
+  --muted-foreground: #56645f;
+  --accent: #f4f7f6;
+  --accent-foreground: #0d1f1a;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: #e3e9e6;
+  --input: #e3e9e6;
+  --ring: #05a26a;
 }
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -50,4 +55,77 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+}
+
+@theme {
+  --color-soft: #f4f7f6;
+  --color-ink: #0d1f1a;
+  --color-ink-2: #56645f;
+  --color-line: #e3e9e6;
+  --color-green: #05a26a;
+  --color-green-ink: #087a51;
+  --color-green-tint: #e6f6ef;
+  --color-blue: #1eacfe;
+  --color-blue-ink: #0b74b8;
+  --color-blue-tint: #e3f3ff;
+  --color-deep: #0b2b22;
+  --color-deep-hover: #123d31;
+  --color-navy: #10203f;
+
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+  --font-ml: "Manjari", "Noto Sans Malayalam", sans-serif;
+  --font-wordmark: "Bebas Neue", "Oswald", sans-serif;
+
+  --shadow-soft: 0 1px 2px rgba(13, 31, 26, 0.05), 0 8px 24px -12px rgba(13, 31, 26, 0.18);
+  --shadow-lift: 0 30px 70px -30px rgba(13, 31, 26, 0.35);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-h);
+    color-scheme: light;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    @apply overflow-x-hidden bg-background font-sans text-base leading-[1.6] text-foreground antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-green);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+}
+
+@utility wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  @media (min-width: 768px) {
+    padding-inline: 32px;
+  }
+}
+
+/* halftone dots on the dark values band, a nod to the logo artwork */
+@utility halftone {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1.4px);
+    background-size: 10px 10px;
+    mask-image: linear-gradient(180deg, #000, transparent 85%);
+  }
 }
