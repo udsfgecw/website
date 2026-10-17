@@ -9,8 +9,8 @@
       i.e. { "data": [ { id, caption, media_type, media_url, thumbnail_url, permalink, timestamp }, ... ] }
       Keep the access token on that server. Never put it in this file.
 
-   2. A manual list (now). Add entries to UPDATES, newest first. Images go in assets/updates/.
-        { title: "Freshers welcome", tag: "Event", date: "2026-10-12", image: "assets/updates/freshers.webp", link: "#" }
+   2. A manual list (now). Add entries to UPDATES, newest first. Images go in public/assets/updates/.
+        { title: "Freshers welcome", tag: "Event", date: "2026-10-12", image: "/assets/updates/freshers.webp", link: "#" }
 
    If neither has anything, the section shows an empty state.
 */
@@ -79,7 +79,7 @@ const skeletons = (n) =>
 
 const emptyState = (failed) => `
   <div class="updates__empty">
-    <img src="assets/logo-512.png" alt="" width="56" height="56">
+    <img src="/assets/logo-512.png" alt="" width="56" height="56">
     <strong>${failed ? "Couldn't load posts right now" : "Nothing posted yet"}</strong>
     <p>${failed ? "Our latest posts are always on Instagram." : "Event photos and news from GEC Wayanad will show up here."}</p>
   </div>`;
