@@ -2,6 +2,38 @@ import type { NotesModule } from "../types";
 
 export const TEXT_SIZES = [16, 18, 20, 22];
 
+export const LEADINGS = ["tight", "normal", "loose"] as const;
+export const WIDTHS = ["narrow", "normal", "wide"] as const;
+
+export interface Prefs {
+  leading: (typeof LEADINGS)[number];
+  font: "sans" | "serif";
+  width: (typeof WIDTHS)[number];
+}
+
+export const DEFAULT_PREFS: Prefs = { leading: "normal", font: "sans", width: "normal" };
+
+export function readPrefs(notes: NotesModule): Prefs {
+  try {
+    const v = JSON.parse(localStorage.getItem(`${notes.storageKey}:prefs`) || "null") ?? {};
+    return {
+      leading: LEADINGS.includes(v.leading) ? v.leading : DEFAULT_PREFS.leading,
+      font: v.font === "serif" ? "serif" : "sans",
+      width: WIDTHS.includes(v.width) ? v.width : DEFAULT_PREFS.width,
+    };
+  } catch {
+    return DEFAULT_PREFS;
+  }
+}
+
+export function savePrefs(notes: NotesModule, prefs: Prefs) {
+  try {
+    localStorage.setItem(`${notes.storageKey}:prefs`, JSON.stringify(prefs));
+  } catch {
+    /* preferences just won't persist */
+  }
+}
+
 export interface ReadingPlace {
   page: number;
   /** how far down that page, 0 to 1 */

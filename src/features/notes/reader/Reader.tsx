@@ -9,7 +9,12 @@ import { usePageMeta } from "@/lib/meta";
 import { cn } from "@/lib/utils";
 import { chapterFor, pageAnchor, type NotesModule } from "../types";
 import PageMarkdown from "./PageMarkdown";
-import { TEXT_SIZES, readPlace, savePlace, type ReadingPlace } from "./readingPlace";
+import ReaderTools from "./ReaderTools";
+import { DEFAULT_PREFS, TEXT_SIZES, readPlace, readPrefs, savePlace, savePrefs, type Prefs, type ReadingPlace } from "./readingPlace";
+
+const LEADING = { tight: 1.55, normal: 1.75, loose: 2 };
+const WIDTH = { narrow: "58ch", normal: "70ch", wide: "86ch" };
+const SERIF = 'Georgia, "Times New Roman", serif';
 
 // sections count as "current" once their top passes this far below the viewport top (below the nav)
 const READ_LINE = 120;
@@ -27,6 +32,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
   const total = notes.pages.length;
   const [page, setPage] = useState(1);
   const [size, setSize] = useState(18);
+  const [prefs, setPrefs] = useState<Prefs>(DEFAULT_PREFS);
   const [restored, setRestored] = useState<ReadingPlace | null>(null);
   const [saved, setSaved] = useState(true);
   const bar = useRef<HTMLDivElement>(null);
@@ -42,6 +48,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
 
   // Read the stored place after the first render, so the pre-rendered HTML matches.
   useEffect(() => {
+    setPrefs(readPrefs(notes));
     const stored = readPlace(notes);
     if (stored) {
       place.current = stored;
@@ -105,6 +112,14 @@ export default function Reader({ notes }: { notes: NotesModule }) {
     setSize(next);
     place.current = { ...place.current, size: next };
     if (ready.current) setSaved(savePlace(notes, place.current));
+  }
+
+  function changePrefs(next: Prefs) {
+    const anchor = { ...place.current };
+    setPrefs(next);
+    savePrefs(notes, next);
+    // layout changes shift the text; hold the reader's spot once it has re-flowed
+    requestAnimationFrame(() => scrollToPlace(anchor));
   }
 
   const contents = (
@@ -198,7 +213,10 @@ export default function Reader({ notes }: { notes: NotesModule }) {
             <div className="border-t border-line px-5 py-3">{textSize}</div>
           </details>
 
-          <article className="notes-prose min-w-0 max-w-[70ch]" style={{ fontSize: size }}>
+          <article
+            className="notes-prose min-w-0"
+            style={{ fontSize: size, lineHeight: LEADING[prefs.leading], maxWidth: WIDTH[prefs.width], fontFamily: prefs.font === "serif" ? SERIF : undefined }}
+          >
             {notes.pages.map((p) => (
               <section key={p.number} id={pageAnchor(p.number)} className="border-b border-line pb-12 not-first:pt-12 last:border-b-0">
                 <p className="label mb-6 text-ink-2">
@@ -216,6 +234,15 @@ export default function Reader({ notes }: { notes: NotesModule }) {
           </article>
         </div>
       </main>
+      <ReaderTools
+        notes={notes}
+        page={page}
+        size={size}
+        prefs={prefs}
+        onSize={changeSize}
+        onPrefs={changePrefs}
+        onGoto={(n) => scrollToPlace({ page: n, offset: 0 })}
+      />
     </SiteLayout>
   );
 }
