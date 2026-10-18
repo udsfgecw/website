@@ -11,6 +11,15 @@ import { physicsModule1 } from "./features/notes/physics-module-1";
 import { physicsModule2 } from "./features/notes/physics-module-2";
 import { physicsModule3 } from "./features/notes/physics-module-3";
 import { physicsModule4 } from "./features/notes/physics-module-4";
+import { chemistrymodule1 } from "./features/notes/chemistry-module-1";
+import { chemistrymodule2 } from "./features/notes/chemistry-module-2";
+import { chemistrymodule3 } from "./features/notes/chemistry-module-3";
+import { chemistrymodule4 } from "./features/notes/chemistry-module-4";
+import { electricalmodule1 } from "./features/notes/electrical-module-1";
+import { pythonmodule1 } from "./features/notes/python-module-1";
+import { pythonmodule2 } from "./features/notes/python-module-2";
+import { pythonmodule3 } from "./features/notes/python-module-3";
+import { pythonmodule4 } from "./features/notes/python-module-4";
 import { MetaCollector, type PageMeta } from "./lib/meta";
 
 /* Used at build time only (scripts/prerender.mjs). */
@@ -44,6 +53,15 @@ export const pages: StaticPage[] = [
   { url: physicsModule2.basePath, file: fileFor(physicsModule2.basePath), chunk: "src/pages/notes/PhysicsModule2Page.tsx" },
   { url: physicsModule3.basePath, file: fileFor(physicsModule3.basePath), chunk: "src/pages/notes/PhysicsModule3Page.tsx" },
   { url: physicsModule4.basePath, file: fileFor(physicsModule4.basePath), chunk: "src/pages/notes/PhysicsModule4Page.tsx" },
+  { url: chemistrymodule1.basePath, file: fileFor(chemistrymodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: chemistrymodule2.basePath, file: fileFor(chemistrymodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: chemistrymodule3.basePath, file: fileFor(chemistrymodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: chemistrymodule4.basePath, file: fileFor(chemistrymodule4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: electricalmodule1.basePath, file: fileFor(electricalmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: pythonmodule1.basePath, file: fileFor(pythonmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: pythonmodule2.basePath, file: fileFor(pythonmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: pythonmodule3.basePath, file: fileFor(pythonmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: pythonmodule4.basePath, file: fileFor(pythonmodule4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];

@@ -1,0 +1,19 @@
+import type { NotesModule } from "../types";
+import source from "./notes.md?raw";
+import { titledPages } from "../titledPages";
+import { PYTHON_MODULE_1_PATH } from "./path";
+const { pages, chapters } = titledPages(source);
+export const pythonmodule1: NotesModule = {
+  basePath: PYTHON_MODULE_1_PATH,
+  storageKey: "udsf:notes:cse:s1:python-1:v1",
+  title: "S1 CSE Algorithmic Thinking with Python · Module 1",
+  trail: [
+    { label: "NOTES", href: "/notes" },
+    { label: "CSE", href: "/notes/cse" },
+    { label: "S1", href: "/notes/cse/s1" },
+    { label: "ALGORITHMIC THINKING WITH PYTHON", href: "/notes/cse/s1/python" },
+    { label: "MODULE 1" },
+  ],
+  module: "Module 1", course: "Algorithmic Thinking with Python", code: "UCEST105", summary: "Module 1",
+  source: "KTU UCEST105 study notes, imported from the provided complete study pack.", pages, chapters,
+};

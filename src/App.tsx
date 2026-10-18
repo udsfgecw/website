@@ -14,6 +14,7 @@ import NotesPage from "@/pages/NotesPage";
 import BranchPage from "@/pages/notes/BranchPage";
 import SemesterPage from "@/pages/notes/SemesterPage";
 import SubjectPage from "@/pages/notes/SubjectPage";
+import ImportedModulePage from "@/pages/notes/ImportedModulePage";
 
 // The notes reader brings markdown and maths rendering, so it loads only on notes pages.
 const MathsNotesPage = lazy(() => import("@/pages/notes/MathsNotesPage"));
@@ -57,6 +58,7 @@ export default function App() {
           <Route path={`${PHYSICS_MODULE_2_PATH}/:page?`} element={<PhysicsModule2Page />} />
           <Route path={`${PHYSICS_MODULE_3_PATH}/:page?`} element={<PhysicsModule3Page />} />
           <Route path={`${PHYSICS_MODULE_4_PATH}/:page?`} element={<PhysicsModule4Page />} />
+          <Route path="/notes/cse/s1/:subject/module-:module/:page?" element={<ImportedModulePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

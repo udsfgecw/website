@@ -7,6 +7,16 @@ import { PHYSICS_MODULE_2_PATH } from "@/features/notes/physics-module-2/path";
 import { PHYSICS_MODULE_3_PATH } from "@/features/notes/physics-module-3/path";
 import { PHYSICS_MODULE_4_PATH } from "@/features/notes/physics-module-4/path";
 
+import { chemistrymodule1 } from "@/features/notes/chemistry-module-1";
+import { chemistrymodule2 } from "@/features/notes/chemistry-module-2";
+import { chemistrymodule3 } from "@/features/notes/chemistry-module-3";
+import { chemistrymodule4 } from "@/features/notes/chemistry-module-4";
+import { electricalmodule1 } from "@/features/notes/electrical-module-1";
+import { pythonmodule1 } from "@/features/notes/python-module-1";
+import { pythonmodule2 } from "@/features/notes/python-module-2";
+import { pythonmodule3 } from "@/features/notes/python-module-3";
+import { pythonmodule4 } from "@/features/notes/python-module-4";
+
 export interface ModuleNotes {
   /** e.g. "Module 1" */
   name: string;
@@ -65,6 +75,18 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
             { name: "Module 3", detail: "Three-variable chain rule to directional derivatives", href: MATHS_MODULE_3_PATH },
             { name: "Module 4", detail: "Lagrange multipliers to linear programming", href: MATHS_MODULE_4_PATH },
           ],
+        },
+        {
+          name: "Chemistry", course: "Engineering Chemistry", code: "GXCYT122", href: "/notes/cse/s1/chemistry",
+          modules: [1, 2, 3, 4].map((n) => ({ name: `Module ${n}`, detail: `Engineering Chemistry · Module ${n}`, href: [chemistrymodule1.basePath, chemistrymodule2.basePath, chemistrymodule3.basePath, chemistrymodule4.basePath][n - 1] })),
+        },
+        {
+          name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", href: "/notes/cse/s1/electrical",
+          modules: [{ name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: electricalmodule1.basePath }],
+        },
+        {
+          name: "Algorithmic Thinking with Python", course: "Algorithmic Thinking with Python", code: "UCEST105", href: "/notes/cse/s1/python",
+          modules: [pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4].map((m, i) => ({ name: `Module ${i + 1}`, detail: m.summary, href: m.basePath })),
         },
         {
           name: "Physics",
