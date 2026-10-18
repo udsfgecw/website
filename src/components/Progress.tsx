@@ -1,135 +1,118 @@
 import { Check } from "lucide-react";
-import { Section } from "@/components/Section";
+import { Label } from "@/components/Section";
 import { ACHIEVEMENTS, FOLLOW_UPS, type Achievement } from "@/data/progress";
 import { cn } from "@/lib/utils";
 
 const src = (image: string) => `${import.meta.env.BASE_URL}assets/progress/${image}`;
 
-function Img({ a, className }: { a: Achievement; className?: string }) {
+/* Photo, or for the web magazine (no photo yet) a typographic cover in the alliance gradient. */
+function Picture({ a, className }: { a: Achievement; className?: string }) {
+  if (!a.image)
+    return (
+      <div
+        className={cn("flex items-end rounded-2xl bg-[linear-gradient(135deg,var(--color-green),var(--color-blue))] p-6 text-white", className)}
+        aria-hidden="true"
+      >
+        <span className="text-[length:clamp(2.2rem,3.6vw,2.8rem)] leading-[0.92] font-extrabold tracking-[-0.055em]">
+          Web
+          <br />
+          magazine
+        </span>
+      </div>
+    );
   return (
     <img
-      src={src(a.image!)}
+      src={src(a.image)}
       alt={`${a.location}, ${a.photo ? "original event photograph" : "adapted from the UDSF campaign poster"}`}
       width={1200}
       height={800}
       loading="lazy"
       decoding="async"
-      className={cn("size-full object-cover", className)}
+      className={cn("w-full rounded-2xl bg-paper object-cover", className)}
     />
   );
 }
 
-const card =
-  "flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white";
-
-function Body({ a }: { a: Achievement }) {
+function Caption({ a, large }: { a: Achievement; large?: boolean }) {
   return (
-    <div className="flex flex-1 flex-col p-6">
+    <>
       <p className="label text-green-ink">{a.location}</p>
-      <h4 className="mt-2.5 max-w-[22ch] text-[1.3rem] leading-[1.15] font-medium tracking-[-0.035em] text-balance">{a.title}</h4>
-      <p className="mt-3 text-[0.85rem] leading-[1.65] text-ink-2">{a.description}</p>
-    </div>
-  );
-}
-
-/* Large photo card with the copy laid over a dark fade. */
-function Featured({ a }: { a: Achievement }) {
-  return (
-    <article className="relative isolate flex h-full min-h-[440px] flex-col justify-end overflow-hidden rounded-2xl bg-ink text-white">
-      <div className="absolute inset-0 -z-10">
-        <Img a={a} />
-      </div>
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,transparent_35%,rgba(10,12,14,0.6)_60%,rgba(10,12,14,0.9)_100%)]" />
-      <div className="p-[clamp(1.5rem,3vw,2.5rem)]">
-        <p className="label text-white/70">{a.location}</p>
-        <h4 className="mt-3 max-w-[14ch] text-[length:clamp(2rem,3.6vw,3rem)] leading-[1] font-semibold tracking-[-0.045em] text-balance">{a.title}</h4>
-        <p className="mt-4 max-w-[46ch] text-[0.92rem] leading-[1.6] text-white/80">{a.description}</p>
-      </div>
-    </article>
-  );
-}
-
-/* Wide card: photo on the left, copy on the right (stacks below lg). */
-function Wide({ a }: { a: Achievement }) {
-  return (
-    <article className={cn(card, "lg:grid lg:grid-cols-[1.35fr_1fr]")}>
-      <div className="aspect-[16/9] overflow-hidden lg:aspect-auto">
-        <Img a={a} className="object-[50%_40%]" />
-      </div>
-      <div className="flex flex-col justify-center">
-        <Body a={a} />
-      </div>
-    </article>
-  );
-}
-
-function Standard({ a }: { a: Achievement }) {
-  return (
-    <article className={card}>
-      <div className="aspect-[16/9] overflow-hidden">
-        {a.image ? (
-          <Img a={a} />
-        ) : (
-          // no photo yet: a typographic cover
-          <div className="flex size-full items-end bg-green p-6 text-white" aria-hidden="true">
-            <span className="text-[length:clamp(2.2rem,3.6vw,2.8rem)] leading-[0.92] font-extrabold tracking-[-0.055em]">
-              Web
-              <br />
-              magazine
-            </span>
-          </div>
+      <h3
+        className={cn(
+          "mt-2.5 font-semibold text-balance",
+          large ? "text-[length:clamp(1.8rem,3vw,2.6rem)] leading-[1.05] tracking-[-0.04em]" : "text-[1.2rem] leading-[1.2] tracking-[-0.025em]",
         )}
-      </div>
-      <Body a={a} />
-    </article>
+      >
+        {a.title}
+      </h3>
+      <p className={cn("mt-3 text-ink-2", large ? "max-w-[40ch] text-[1rem] leading-[1.6]" : "text-[0.92rem] leading-[1.6]")}>{a.description}</p>
+    </>
   );
 }
 
-/* Bento placement. lg (3 cols): the first card is 2×2 and the last spans 2, so 15 cells fill exactly.
-   md (2 cols): the first card spans the row and the rest pair up. */
-const placement = (i: number, last: boolean) => (i === 0 ? "md:col-span-2 lg:row-span-2" : last ? "lg:col-span-2" : "");
+/* Wide row: a large picture with the caption beside it; `flip` puts the caption on the left. */
+function Feature({ a, flip }: { a: Achievement; flip?: boolean }) {
+  return (
+    <article className="grid items-end gap-x-12 gap-y-6 lg:grid-cols-12">
+      <Picture a={a} className={cn("aspect-[16/10] lg:col-span-8", flip && "lg:order-2")} />
+      <div className={cn("lg:col-span-4", flip && "lg:order-1")}>
+        <Caption a={a} large />
+      </div>
+    </article>
+  );
+}
 
 const STAGE = ["Done", "Now", "Next"];
 
 export default function Progress() {
+  const first = ACHIEVEMENTS[0];
+  const last = ACHIEVEMENTS[ACHIEVEMENTS.length - 1];
+  const middle = ACHIEVEMENTS.slice(1, -1);
+
   return (
-    <div className="border-y border-line bg-[#fafbf9]">
-      <Section
-        id="progress"
-        label="In action"
-        title="Our Progress"
-        intro="What we’ve brought to campus. Better facilities, new opportunities and work that makes a difference to students."
-      >
-        <div className="mb-6 flex items-baseline justify-between gap-3">
-          <h3 className="text-[length:clamp(1.4rem,2.4vw,1.75rem)] font-semibold tracking-[-0.035em]">Delivered</h3>
-          <span className="text-[0.85rem] text-ink-2">{ACHIEVEMENTS.length} initiatives</span>
-        </div>
+    <section id="progress" aria-labelledby="progress-title" className="border-y border-line bg-[#fafbf9]">
+      <div className="wrap py-[clamp(5rem,11vw,9rem)]">
+        <Label>Our progress</Label>
+        <h2
+          id="progress-title"
+          className="mt-6 max-w-[26ch] text-[length:clamp(2rem,4.6vw,3.9rem)] leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-ink"
+        >
+          What we’ve brought to campus.{" "}
+          <span className="text-ink/30">Better facilities, new opportunities and work that makes a difference to students.</span>
+        </h2>
 
-        <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {ACHIEVEMENTS.map((a, i) => {
-            const last = i === ACHIEVEMENTS.length - 1;
-            const Card = i === 0 ? Featured : last ? Wide : Standard;
-            return (
-              <li key={a.title} className={placement(i, last)}>
-                <Card a={a} />
+        <div className="mt-[clamp(3.5rem,7vw,6rem)] flex flex-col gap-[clamp(3.5rem,6vw,5.5rem)]">
+          <Feature a={first} />
+
+          {/* nine items, three to a row on wider screens */}
+          <ul className="grid gap-x-8 gap-y-14 md:grid-cols-3">
+            {middle.map((a) => (
+              <li key={a.title}>
+                <article>
+                  <Picture a={a} className="aspect-[4/3]" />
+                  <div className="mt-5">
+                    <Caption a={a} />
+                  </div>
+                </article>
               </li>
-            );
-          })}
-        </ul>
+            ))}
+          </ul>
 
-        <div className="mt-20 mb-6 flex items-baseline justify-between gap-3">
-          <h3 className="text-[length:clamp(1.4rem,2.4vw,1.75rem)] font-semibold tracking-[-0.035em]">Work in progress</h3>
-          <span className="text-[0.85rem] text-ink-2">Following through to the finish</span>
+          <Feature a={last} flip />
         </div>
-        <ul className="grid gap-4 lg:grid-cols-2">
-          {FOLLOW_UPS.map((item) => (
-            <li key={item.title}>
-              <article className="h-full rounded-2xl border border-line bg-white p-6 lg:p-8">
-                <h4 className="text-[1.4rem] font-medium tracking-[-0.035em]">{item.title}</h4>
-                <p className="mt-2 max-w-[55ch] text-[0.88rem] leading-[1.65] text-ink-2">{item.description}</p>
+
+        <div className="mt-[clamp(5rem,9vw,8rem)]">
+          <h2 className="max-w-[26ch] text-[length:clamp(1.6rem,3vw,2.5rem)] leading-[1.1] font-semibold tracking-[-0.04em] text-balance">
+            Work in progress. <span className="text-ink/30">Following through to the finish.</span>
+          </h2>
+          <ul className="mt-10 grid gap-x-12 gap-y-12 lg:grid-cols-2">
+            {FOLLOW_UPS.map((item) => (
+              <li key={item.title}>
+                <h3 className="text-[1.2rem] font-semibold tracking-[-0.025em]">{item.title}</h3>
+                <p className="mt-2 max-w-[55ch] text-[0.92rem] leading-[1.6] text-ink-2">{item.description}</p>
 
                 {/* three-part bar: done, current, still to come */}
-                <ol aria-label={`${item.title} progress`} className="mt-8 grid grid-cols-3 gap-2">
+                <ol aria-label={`${item.title} progress`} className="mt-7 grid grid-cols-3 gap-2">
                   {item.steps.map((step, index) => (
                     <li key={step}>
                       <div className="h-1 overflow-hidden rounded-full bg-line">
@@ -138,7 +121,7 @@ export default function Progress() {
                       <p className={cn("label mt-3", index === 0 ? "text-green-ink" : index === 1 ? "text-blue-ink" : "text-ink-2/70")}>
                         {STAGE[index]}
                       </p>
-                      <p className={cn("mt-1 flex items-center gap-1.5 text-[0.82rem] leading-snug", index === 2 ? "text-ink-2" : "font-medium text-ink")}>
+                      <p className={cn("mt-1 flex items-center gap-1.5 text-[0.85rem] leading-snug", index === 2 ? "text-ink-2" : "font-medium text-ink")}>
                         <span className="sr-only">{index === 0 ? "Completed: " : index === 1 ? "Current stage: " : "Pending: "}</span>
                         {step}
                         {index === 0 && <Check size={14} strokeWidth={2.5} className="text-green" aria-hidden="true" />}
@@ -146,12 +129,15 @@ export default function Progress() {
                     </li>
                   ))}
                 </ol>
-              </article>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-8 text-[0.75rem] text-ink-2">Event photographs use original source images. Other visuals are adapted from our campaign posters; some scenes are illustrative.</p>
-      </Section>
-    </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <p className="mt-14 text-[0.75rem] text-ink-2">
+          Event photographs use original source images. Other visuals are adapted from our campaign posters; some scenes are illustrative.
+        </p>
+      </div>
+    </section>
   );
 }
