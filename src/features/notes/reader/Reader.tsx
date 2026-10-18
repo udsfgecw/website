@@ -228,7 +228,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
             <footer className="mt-4 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>
               <p className="font-medium text-ink">You’ve reached the end of {notes.title}.</p>
               <p className="mt-2">
-                Source: {notes.source} Transcribed notes; check the original material if a step looks unclear.
+                Source: {notes.source} Check the original material if a step looks unclear.
               </p>
             </footer>
           </article>

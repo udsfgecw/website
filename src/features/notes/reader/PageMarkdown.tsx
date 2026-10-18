@@ -11,8 +11,8 @@ const rehypePlugins: Parameters<typeof ReactMarkdown>[0]["rehypePlugins"] = [[re
 type HastNode = { type: string; value?: string; children?: HastNode[] };
 const textOf = (node?: HastNode): string =>
   !node ? "" : node.type === "text" ? node.value || "" : (node.children || []).map(textOf).join("");
-// Matches the notes' question lines: "Q.", "Q Find…", "Q_3." and "Q6." (KaTeX text).
-const isQuestion = (node?: HastNode) => /^Q(?=[\s._:\d]|$)/.test(textOf(node).trimStart());
+// Matches the lines that start a worked question: "Example.", "Q.", "Q Find…", "Q_3." and "Q6." (KaTeX text).
+const isQuestion = (node?: HastNode) => /^(Example\b|Q(?=[\s._:\d]|$))/.test(textOf(node).trimStart());
 
 const components: Components = {
   code({ className, children, ...props }) {
@@ -32,6 +32,13 @@ const components: Components = {
   },
   p({ node, children }) {
     return <p className={isQuestion(node as HastNode) ? "notes-question" : undefined}>{children}</p>;
+  },
+  // a quote opening with "Watch out" is a warning about a common mistake
+  blockquote({ node, children }) {
+    const first = node?.children.find((child) => child.type === "element" && child.tagName === "p");
+    const lead = first && first.type === "element" ? first.children[0] : undefined;
+    const warn = lead?.type === "element" && lead.tagName === "strong" && lead.children[0]?.type === "text" && lead.children[0].value.startsWith("Watch out");
+    return <blockquote className={warn ? "warn" : undefined}>{children}</blockquote>;
   },
   // page headings sit under the notes' own h1
   h1({ children }) {
