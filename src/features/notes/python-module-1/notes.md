@@ -1,12 +1,4 @@
-<!-- page 1 | Module 1 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 2 | Module 1 · source page 2 -->
+<!-- page 1 | Module 1 · source page 2 -->
 
 # UCEST 105: ALGORITHMIC THINKING WITH PYTHON
 
@@ -18,21 +10,19 @@
 
 ## INTRODUCTION
 
-A computer is a very powerful and versatile machine capable of performing various tasks, yet it has no intelligence or thinking power. A computer performs many tasks exactly in the same manner as it is told to do. This places responsibility on the user to instruct the computer in a correct and a precise manner, so that the machine is able to perform the required job in a proper manner.
+A computer performs tasks by following instructions. To get the result we want, we first need to understand the problem and then describe the required steps clearly. A problem is a situation whose solution is not immediately obvious.
 
-In order to instruct a computer correctly, the user must have a clear understanding of the problem to be solved. The term "problem" refers to a solution where the solution is not immediately apparent.
-
-A problem is defined by four conditions or parameters. They are:-
+A problem can be described using four elements:
 
 - Initial situation
 - Goal
 - Set of resources
 - Commitment.
 
-If one or more of these components are missing, the problem is not well defined.Problems can be categorized into two: -
+When these elements are clear, a problem is well-defined; when one or more are unclear, it may be ill-defined. Problems are commonly grouped into two types:
 
-1. **Well-defined Problems:** That have specific goals, clear solutions and known expected outcomes.
-2. **Ill-defined Problems:** That lack clear goals, solution paths and expected solutions.
+1. **Well-defined problems** have specific goals, clear constraints, and criteria for recognizing a solution.
+2. **Ill-defined problems** have unclear goals or constraints and may allow several reasonable solutions.
 
 ### Q1. Differentiate between Well-defined problems and Ill-defined problems.
 
@@ -42,13 +32,8 @@ If one or more of these components are missing, the problem is not well defined.
 | 2. | Specific, measurable outcomes | Multiple , conflicting outcomes |
 | 3. | Well defined constraints | Ambiguous or uncertain constraints |
 
----
 
----
-
-<!-- page 3 | Module 1 · source page 3 -->
-
-MODULE 1 | UCEST105: Algorithmic thinking with Python
+<!-- page 2 | Module 1 · source page 3 -->
 
 | | | |
 |---|---|---|
@@ -79,15 +64,10 @@ These problems are ambiguous, lack clear criteria for solutions, and often have 
 
 1. **Designing a Sustainable City:**
    - **Problem:** How can we design a sustainable city for the future?
-   - **Why it's Ill-Defined:** The problem is broad, with no single clear solution. Various factors like environmental impact, social equity, and [illegible]
+   - **Why it's Ill-Defined:** The problem is broad, with no single clear solution. Factors such as environmental impact, social equity, and economic viability must be balanced, and stakeholders may disagree about what counts as a sustainable city.
 
----
 
----
-
-<!-- page 4 | Module 1 · source page 4 -->
-
-economic viability come into play, and different stakeholders might have different views on what constitutes a "sustainable" city.
+<!-- page 3 | Module 1 · source page 4 -->
 
 2. **Writing a Novel:**
 
@@ -108,17 +88,14 @@ Understanding the nature of the problem helps in choosing the right approach to 
 
 **Problem-Solving strategies defined**
 
-A problem solving strategy is a plan used to find a solution or overcome a challenge. Each problem solving strategy includes multiple steps to provide you with helpful guidelines on how to resolve a problem. Effective problem solving requires you to identify the problem, select the right process to approach it and develop a plan to resolve the issue.
+A problem-solving strategy is a planned approach for finding a solution. It helps us define the problem, choose suitable steps, evaluate the result, and adjust the approach when needed.
 
 **Importance of Understanding Problem solving Strategies**
 
-Understanding multiple problem solving strategies is crucial because it equips individuals with a diverse toolkit to tackle a variety of challenges. Some problems might be best solved through a systematic trial and error method, while others might benefit from a more analytical approach like means-ends analysis. By knowing several strategies, one can quickly switch tactics when one method does not work, increasing the chances of finding a successful solution. Having a collection of problem-solving strategies enhances critical thinking and creativity thereby leading to more innovative and effective solutions. It boosts confidence and competence in facing various challenges.
+Knowing several problem-solving strategies helps us choose an approach that fits the task. Trial and error can work when there are few options; an algorithm is useful when the steps are known; heuristics can help when time or information is limited. Being able to compare and change strategies improves flexibility, reasoning, and the chance of finding a workable solution.
 
----
 
----
-
-<!-- page 5 | Module 1 · source page 5 -->
+<!-- page 4 | Module 1 · source page 5 -->
 
 Benefits include :-
 
@@ -155,19 +132,12 @@ Example
 
 Although trial and error is not typically one of the most time-efficient strategies, it is a commonly used one.
 
----
 
----
-
-<!-- page 6 | Module 1 · source page 6 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 5 | Module 1 · source page 6 -->
 
 ## 2. Algorithm
 
-An algorithm is a step-by-step, logical procedure that guarantees a solution to a problem. It is systematic and follows a defined sequence of operations, ensuring consistency and accuracy in finding the correct solution.
+An algorithm is a finite, ordered set of unambiguous steps for solving a problem. A correct algorithm produces the required result for inputs within its stated assumptions; not every algorithm guarantees a solution for every possible input.
 
 *Example: Algorithm for Baking a Cake*
 
@@ -184,7 +154,7 @@ When you run a search on the Internet, search engines like Google use algorithms
 
 ## 3. Heuristics
 
-A heuristic is another type of problem solving strategy that allow us to make decisions quickly without having all the relevant information. It can thought of as mental shortcuts that are used to solve problems. A "rule of thumb" is an example of a heuristic. Such a rule saves the person time and energy when making a decision. Different types of heuristics are used in different types of situations, but the impulse to use a heuristic occurs when one of five conditions is met:-
+A heuristic is a practical shortcut or rule of thumb that can help us make a decision quickly, especially when time or information is limited. Unlike a complete algorithm, a heuristic does not guarantee the best or a correct answer; it offers a useful way to make progress. Different types of heuristics are used in different types of situations, but the impulse to use a heuristic occurs when one of five conditions is met:-
 - When one is faced with too much information
 - When the time to make a decision is limited
 - When the decision to be made is unimportant
@@ -200,11 +170,8 @@ For example : For completing a large research project, they typically start by
 - research the chosen topic, organize their information into an outline,
 - write a rough draft
 
----
 
----
-
-<!-- page 7 | Module 1 · source page 7 -->
+<!-- page 6 | Module 1 · source page 7 -->
 
 MODULE 1 \hfill UCEST105: Algorithmic thinking with Python
 
@@ -242,19 +209,12 @@ Consider this example: Imagine you need to arrive at an important meeting by 3.0
 
 6 \hfill Prepared by, Shabana V Subair, Asst. Prof., KMEA Engg. College
 
----
 
----
-
-<!-- page 8 | Module 1 · source page 8 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 7 | Module 1 · source page 8 -->
 
 4. Means Ends Analysis (MEA)
 
-This strategy involves choosing and analyzing a problem at a series of smaller steps to move closer to the goal.
+Means-ends analysis compares the current state with the goal, identifies the differences, and chooses smaller actions (sub-goals) that reduce those differences.
 
 Example 1 : The Tower of Hanoi problem.
 
@@ -266,11 +226,7 @@ The **Tower of Hanoi** is a mathematical puzzle. There are three rods, source(A)
 2. Each move consists of taking the upper disk from one of the rods and placing it on the top of another rod i.e. a disk can only be moved if it is the uppermost disk of the rod.
 3. Never a larger disk is placed on a smaller disk during the transfer.
 
-
-
 ![Tower of Hanoi initial state with three disks on rod A](/notes/cse/s1/python/module-1/assets/page-008-image-1-code.svg)
-
-
 
 **Fig 1:- Initial State**
 
@@ -278,29 +234,16 @@ The solution to the puzzle calls for an application of recursive functions and r
 
 A recursive procedure for the solution of the problem for N number of disks is as follows:
 
-1. Move the top N-1 disks from rod A to rod B using C as an auxiliary rod
-2. Move the bottom disk from rod A to rod C
-3. Move N-1 disks from rod B to rod C using Peg A as an auxiliary rod
+1. Move the top $N-1$ disks from rod A to rod B, using rod C as the auxiliary rod.
+2. Move the largest disk from rod A to rod C.
+3. Move the $N-1$ disks from rod B to rod C, using rod A as the auxiliary rod.
 
 The minimum number of moves required to solve a Tower of Hanoi puzzle is given by $2^N - 1$, where N is the number of disks. i.e., if there are 14 disks, then minimum number of moves needed = $(2^{14}) - 1 = 16383$.
 
 The pictorial representation of the recursive procedure for N=4 disks is shown in Fig 2:-
 
-7
 
-Prepared by, Shabana V Subair, Asst. Prof., KMEA Engg. College
-
-Downloaded from Ktunotes.in
-
----
-
----
-
-<!-- page 9 | Module 1 · source page 9 -->
-
-MODULE 1
-
-
+<!-- page 8 | Module 1 · source page 9 -->
 
 ```mermaid
 flowchart LR
@@ -309,31 +252,18 @@ S2 --> S3["3 · Move largest disk from source to destination"]
 S3 --> S4["4 · Move N−1 disks recursively from auxiliary to destination"]
 ```
 
-
-
 Example of Tower of Hanoi for n=3.
-
-
 
 ![Example of Tower of Hanoi for n=3 showing 8 states from 0 to 7](/notes/cse/s1/python/module-1/assets/page-009-image-2-code.svg)
 
-
-
 Minimum number of moves with 3 disks= $2^n-1 = 2^3-1 = 7$.
 
----
 
----
-
-<!-- page 10 | Module 1 · source page 10 -->
+<!-- page 9 | Module 1 · source page 10 -->
 
 Example of Tower of Hanoi for n=4.
 
-
-
 ![Diagram showing the sequence of moves for the Tower of Hanoi problem with 4 disks.](/notes/cse/s1/python/module-1/assets/page-010-image-1-code.svg)
-
-
 
 Minimum number of moves with 4 disks=$ 2^n - 1 = 2^4 - 1 = 15$.
 
@@ -349,11 +279,8 @@ D. Set Sub-Goals (Means):
 E. Implement the Plan:
    a. Day 1: Drive from Trivandrum to Bangalore, Karnataka (approx. 720 km). Refuel in Madurai, Tamil Nadu. Overnight stay in Bangalore.
 
----
 
----
-
-<!-- page 11 | Module 1 · source page 11 -->
+<!-- page 10 | Module 1 · source page 11 -->
 
 b. Day 2: Drive from Bangalore to Hyderabad, Telangana (approx. 570 km). Refuel in Anantapur, Andhra Pradesh. Overnight stay in Hyderabad.
 c. Day 3: Drive from Hyderabad to Nagpur, Maharashtra (approx. 500 km). Refuel in Adilabad, Telangana. Overnight stay in Nagpur.
@@ -371,8 +298,6 @@ Backtracking is a problem solving technique that involves trying different optio
 
 Example given below:-
 
-
-
 ```mermaid
 flowchart TD
 X["X · Start node"] --> A["A"]
@@ -384,15 +309,12 @@ D --> F["F"]
 F --> G["G · Success node"]
 ```
 
----
 
----
-
-<!-- page 12 | Module 1 · source page 12 -->
+<!-- page 11 | Module 1 · source page 12 -->
 
 In the above problem, the Start node is X and destination node is G. We first move through the route X-A-B but it reaches a dead end, then we backtrack again and select another path X-A-C, it also encounters a dead end. Try different paths X-D-E, also reach a dead end. Next we move through X-D-F-G and reach the destination node.
 
-Whenever a dead end is encountered it goes back to the start node and continues searching for a different route until the solution is discovered or all options have been considered. Other examples :- Sudoku puzzle, Maze problem, forgetting the PIN to unlock your smartphone etc.
+When a path reaches a dead end, return to the most recent choice point and try an untested option. Continue until a solution is found or every option has been explored. Examples include solving a maze or a Sudoku puzzle. (Repeatedly guessing a phone PIN is not a good example: devices may lock after too many attempts.)
 
 SYLLABUS MODULE - 1 PART - 2
 
@@ -402,8 +324,6 @@ Basic Model of a Computer
 Computer science is all about solving problems with computers. The problems that we want to solve can come from any real-world problem or from the abstract world. We need to have a standard systematic approach to solving problems. Since we will be using computers to solve problems, it is important to first understand the computer's information processing model.
 
 Von Neumann Architecture
-
-
 
 ```mermaid
 flowchart LR
@@ -415,19 +335,10 @@ CPU --> ALU["ALU"]
 CPU --> OUT["OUT PUT DEVICE"]
 ```
 
-
-
 BLOCK DIAGRAM OF A DIGITAL COMPUTER
 
----
 
----
-
-<!-- page 13 | Module 1 · source page 13 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 12 | Module 1 · source page 13 -->
 
 The model shown in figure below assumes a single CPU (Central Processing Unit). Many computers today have multiple CPUs, so it can be imagined the model in the figure can be duplicated multiple times within the computer.
 
@@ -435,18 +346,16 @@ The model shown in figure below assumes a single CPU (Central Processing Unit). 
 
 CPU executes an instruction in a series of steps called *instruction execution cycle*. An instruction cycle (sometimes called a **fetch–decode–execute** cycle) is the process by which a computer retrieves a program instruction from its memory, determines what actions to perform, and carries out those actions to produce meaningful output.
 
-The cycle comprises the following steps:
+The cycle is commonly summarized as fetch, decode, and execute. Some descriptions include a separate write-back step for saving a result:
 
-1. ***Fetch* the instruction from memory**
-2. ***Decode* the instruction, and the operation to be performed is thus identified.**
-3. ***Execute* the instruction, performing the operation identified in the decode step by the CPU.**
-4. ***Store* the result in the main memory, or send it to an output device.**
+1. **Fetch** the next instruction from memory.
+2. **Decode** the instruction to determine the required operation.
+3. **Execute** the operation.
+4. **Store** the result in a register or memory, when needed.
 
 This cycle is then repeated for the next instruction.
 
 <center><b>Instruction Execution Cycle</b></center>
-
-
 
 ```mermaid
 flowchart TD
@@ -455,27 +364,14 @@ flowchart TD
     E --> F
 ```
 
-
-
 A typical computer architecture comprises of three main components:
 
 1. **Input/Output (I/O) Unit**
 2. **Central Processing Unit (CPU)**
 3. **Memory Unit**
 
-12
 
-Prepared by, Shabana V Subair, Asst. Prof., KMEA Engg. College
-
----
-
----
-
-<!-- page 14 | Module 1 · source page 14 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 13 | Module 1 · source page 14 -->
 
 The I/O unit consists of the input unit and output devices. The input devices accept data from the user, which the CPU processes. The output devices transfer the processed data (information) to the user. The memory unit is used to store the input data, the instructions required to process the input, and the output information.
 
@@ -503,15 +399,8 @@ Input devices allow users to input data into the computer for processing. The da
    
    c. **Optical input devices** -- They use optical technology (light source) to input the data into computers. Some common optical input devices are scanners and barcode readers.
 
----
 
----
-
-<!-- page 15 | Module 1 · source page 15 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 14 | Module 1 · source page 15 -->
 
 ## Output devices
 
@@ -541,11 +430,8 @@ This unit consists of two sub-units, namely arithmetic and logic units.
 
    a. **Arithmetic unit** – performs arithmetic operations like addition, subtraction, multiplication, and division, on the data.
 
----
 
----
-
-<!-- page 16 | Module 1 · source page 16 -->
+<!-- page 15 | Module 1 · source page 16 -->
 
 b. **Logic unit** -- performs logical operations like comparisons of data values.
 
@@ -572,22 +458,15 @@ This unit manages and coordinates the operations of all parts of the computer. T
 
 Memory is the storage space in a computer where data to be processed and instructions required for processing are stored. The various memories can be organized hierarchically called memory hierarchy as shown in figure below.
 
-
-
 ```mermaid
 flowchart TB
 R["CPU Register"] --> C["Cache Memory"] --> M["Main Memory"] --> D["Magnetic Disk"] --> O["Optical Disk"] --> T["Magnetic Tape"]
 ```
 
-
-
 Fig:- Memory Hierarchy
 
----
 
----
-
-<!-- page 17 | Module 1 · source page 17 -->
+<!-- page 16 | Module 1 · source page 17 -->
 
 Memory is primarily of two types:
 
@@ -612,11 +491,8 @@ External memory includes:
 
 2. **Magnetic disk** -- a thin plastic or metallic circular plate coated with magnetic oxide and encased in a protective cover. Hard disk is an example.
 
----
 
----
-
-<!-- page 18 | Module 1 · source page 18 -->
+<!-- page 17 | Module 1 · source page 18 -->
 
 3. **Optical disk** – a flat circular disk coated with reflective plastic material that can be altered by laser light. CDs and DVDs are examples.
 
@@ -654,11 +530,8 @@ In solving a problem, there are some well-defined steps to be followed. It is no
 
   We need to understand the input we require to solve the problem. For the given example, input requirement is two numbers whether it can be of any type, like real number, integer number or whole number.
 
----
 
----
-
-<!-- page 19 | Module 1 · source page 19 -->
+<!-- page 18 | Module 1 · source page 19 -->
 
 * OUTPUT REQUIREMENTS
   Next we need to understand the output to obtain corresponding to the input given. if we are giving real numbers as input the output obtained will be real, or if it is integer then output will be integer.
@@ -691,15 +564,8 @@ Developing an algorithm
     Step 4: Add the two numbers
     Step 5: Display the result
 
----
 
----
-
-<!-- page 20 | Module 1 · source page 20 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 19 | Module 1 · source page 20 -->
 
 * Step 6: End
 * Pseudo code
@@ -713,15 +579,11 @@ UCEST105: Algorithmic thinking with Python
 
 * Flow chart
 
-
-
 ```mermaid
 flowchart TD
 A([Start]) --> B[/Input Number1,
 Number2/] --> C[Sum=Number1+Number2] --> D[/Print Sum/] --> E([Stop])
 ```
-
-
 
 Writing the Program
 
@@ -733,19 +595,8 @@ Writing the Program
     * $\text{sum} = \text{n1} + \text{n2}$
     * $\text{print('Sum =', \text{sum})$
 
-19
 
-Prepared by, Shabana V Subair, Asst. Prof., KMEA Engg. College
-
----
-
----
-
-<!-- page 21 | Module 1 · source page 21 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 20 | Module 1 · source page 21 -->
 
 - After writing the code, test it with various inputs to ensure it works as expected. Debug and compile the program to find issues or errors that arise during testing.
 - **Debugging** is the method of **finding and fixing errors**.
@@ -780,11 +631,8 @@ INPUT REQUIREMENT: get all the grades ... possibly by typing them in via the key
   - Is anything missing from the data?
   - Do I have everything needed to solve the problem?
 
----
 
----
-
-<!-- page 22 | Module 1 · source page 22 -->
+<!-- page 21 | Module 1 · source page 22 -->
 
 MODULE 1				UCEST105: Algorithmic thinking with Python
 
@@ -808,7 +656,7 @@ Assuming that the input data is a bunch of integers or real numbers $x1, x2, \do
 
 $Average 1 = (x1 + x2 + x3 + \dots + xn) / n$ where the output will be a number from 0 to 100.
 
-The challenge facing in the above calculation is Letter grades (e.g., A, B-, C+) cannot be directly added or divided. Solution is Assign Values to letter grades
+Letter grades (such as A, B−, and C+) cannot be averaged directly. One possible model is to map each letter grade to a numeric value, then average those values. The mapping must match the grading system being used.
 * Convert letter grades to numerical equivalents
 $$
 \begin{matrix}
@@ -823,20 +671,10 @@ $Average 2 = (y1 + y2 + y3 + \dots + yn) / n$ where the result will be a number 
 
 If we want the output in percentage, you can convert it as:
 
-$$\mathbf{Average\ (in\ percentage) = (Average_2 / 13)}$$
+$$\text{Percentage} = \frac{\text{Average on the 0--12 scale}}{12} \times 100$$
 
-21				Prepared by, Shabana V Subair, Asst. Prof., KMEA Engg. College
-				Downloaded from Ktunotes.in
 
----
-
----
-
-<!-- page 23 | Module 1 · source page 23 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 22 | Module 1 · source page 23 -->
 
 The main point to understand this step in the problems solving process is that it is all about figuring out how to make use of the available data to compute an answer.
 
@@ -874,8 +712,6 @@ STEP 5: Stop
 
 **Average of n numbers**
 
-
-
 ```mermaid
 flowchart TD
 A([Start]) --> B[x1, x2, ..., xn, Average]
@@ -885,28 +721,21 @@ D --> E[/Print Average/]
 E --> F([Stop])
 ```
 
----
 
----
-
-<!-- page 24 | Module 1 · source page 24 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 23 | Module 1 · source page 24 -->
 
 **Writing the program:**
 
 ```python
 # Program in Python
 
-n = int("input(Enter number)")
-sum = 0
-# loop from 1 to n
-for num in range(1,n+1,1):
-    sum = sum+num
-average=sum/n
-print("Average of ",n,"numbers is: ",average)
+n = int(input("Enter the number of students: "))
+total = 0
+for student in range(n):
+    mark = float(input(f"Enter mark for student {student + 1}: "))
+    total += mark
+average = total / n
+print(f"Average mark: {average:.2f}")
 ```
 
 **Test the program:** You create a test suite with various types of numbers and check whether the output obtained is correct or not.
@@ -935,15 +764,8 @@ print("Average of ",n,"numbers is: ",average)
    c = int(input("Enter the value of third coefficient"))
    ```
 
----
 
----
-
-<!-- page 25 | Module 1 · source page 25 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 24 | Module 1 · source page 25 -->
 
 ```python
 #Find the discriminant
@@ -954,8 +776,6 @@ print(d)
 
 5. **Testing the program:** You create a test suite similar to the one shown in Table 1.2. Each row denotes a set of inputs (a,b, and c) and the expected output (d) with which the actual output is to be compared.
 
-
-
 | Sl No | a | b | c | d |
 |---:|---:|---:|---:|---:|
 | 1 | 10 | 2 | 5 | -196 |
@@ -964,7 +784,6 @@ print(d)
 | 4 | 1 | 1 | 1 | -3 |
 | 5 | 3 | 2 | 5 | -56 |
 | 6 | 2 | 8 | 2 | 48 |
-
 
 ## SYLLABUS MODULE - 1 PART - 3
 
@@ -976,17 +795,14 @@ print(d)
 
 #### PROGRAMMING LANGUAGES
 
-Programming languages are used to write programs that useare [uncertain: use are] precise representations of algorithms and control the behavior of a computer. Each language has a unique set of keywords (words that it understands) and syntax (set of rules) to organize the program instructions.
+Programming languages are used to write programs that provide precise representations of algorithms and control the behavior of a computer. Each language has a unique set of keywords (words that it understands) and syntax (rules) for organizing program instructions.
 
 Programming languages fall into three categories:
 
 1. **Machine language:**- is what the computer can understand, but it is difficult for the programmer to understand. Machine languages consist of binary numbers only. No translation of the program is needed and it can be executed very fast. It is machine-dependent ie. A machine-level program written for one type of computer may not work on another type.
 
----
 
----
-
-<!-- page 26 | Module 1 · source page 26 -->
+<!-- page 25 | Module 1 · source page 26 -->
 
 Example 3.1. Assume that the opcode and operands occupy 4 bits each and that the opcode for addition is 1010, then to add 3 and 6, the binary code would be
 $$\underbrace{1010}_{\text{add}} \underbrace{0011}_{3} \underbrace{0110}_{6}$$
@@ -1015,23 +831,16 @@ There are three types of translator software as discussed below:
 
 1. **Assembler :** is a software that converts a program written in assembly language into machine code.
 2. **Compiler :** is a software that translates programs written in high-level language to machine code.
-3. **Interpreter :** The interpreter also converts the high-level language program into machine code. However, the reads the source code line-by-line, converts it into machine code, executes the line, and then proceeds to the next line.
+3. **Interpreter :** An interpreter executes a program through a runtime system. The exact process depends on the language implementation; it may process statements incrementally or use an intermediate representation.
 
----
 
----
-
-<!-- page 27 | Module 1 · source page 27 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 26 | Module 1 · source page 27 -->
 
 *Q: Differentiate between Compiler and Interpreter.*
 
 | Compiler | Interpreter |
 | :--- | :--- |
-| Compiler Takes **Entire** program as input | Interpreter Takes **Single** instruction as input . |
+| A traditional compiler translates the program (often as a whole) | An interpreter executes program instructions through a runtime |
 | Intermediate Object Code is **Generated** | No Intermediate Object Code is **Generated** |
 | **Memory Requirement : More** (Since Obiect Code is Generated) | **Memory Requirement is Less** |
 | Program need not be **compiled** every time | Every time higher level program is converted into lower level program |
@@ -1044,8 +853,6 @@ Python is a **general purpose, high-level, interpreted** programming language de
 
 ## FEATURES OF PYTHON
 
-
-
 | No. | Python feature | No. | Python feature |
 |---:|---|---:|---|
 | 1 | Easy to Learn and Use | 8 | Easy to Maintain |
@@ -1056,15 +863,8 @@ Python is a **general purpose, high-level, interpreted** programming language de
 | 6 | Object-Oriented Language | 13 | GUI Support |
 | 7 | Interactive | 14 | Databases Support |
 
----
 
----
-
-<!-- page 28 | Module 1 · source page 28 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 27 | Module 1 · source page 28 -->
 
 ## APPLICATIONS OF PYTHON
 
@@ -1081,7 +881,7 @@ Python is a general purpose programming language. It is widely applied in variou
 
 There are two major Python versions, those are Python 2 and Python 3. Python 3 is more semantically correct and supports newer features. After successful installation of python software we can interpret or execute python script / program.
 
-Python provides us the two ways to run a python script:
+Python programs are commonly run in two ways:
 
 1. **Using Interactive interpreter prompt**
 2. **Using a script file**
@@ -1091,8 +891,6 @@ Python provides us the two ways to run a python script:
 Python provides us the feature to execute the python statement one by one at the interactive prompt. It is preferable in the case where we are concerned about the output of each line of our python program. To open the interactive mode, open the terminal (or command prompt) and type python3.
 
 #### Through Command Prompt or Python Shell
-
-
 
 ```text
 Microsoft Windows [Version 6.1.7601]
@@ -1108,17 +906,10 @@ Welcome to Python
 >>>
 ```
 
----
 
----
+<!-- page 28 | Module 1 · source page 29 -->
 
-<!-- page 29 | Module 1 · source page 29 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
-
-The Python shell is an interactive terminal-based environment wherein you can directly communicate with the Python interpreter. First, you open a terminal and type python3. Now the shell turns up with a welcome message as shown below.
+The Python shell is an interactive environment where you can enter statements and see their results immediately. Open a terminal and run `python3` (on some systems, use `python`) to start it.
 
 `user@Ubuntu2204LTS:~$ python3`
 `Python 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0] on linux`
@@ -1153,13 +944,8 @@ $$\mathbf{python3\ First.py}$$
 
 Now the script will be executed and you get the desired output.
 
----
 
----
-
-<!-- page 30 | Module 1 · source page 30 -->
-
-MODULE 1
+<!-- page 29 | Module 1 · source page 30 -->
 
 **Example** : Suppose you have written a script sample.py to display the message “My first Python program!”. This is how you run it (The second line below shows the output):
 
@@ -1180,7 +966,7 @@ In case user wants to specify a single line comment, then comment must start wit
 **Example:**
 ```python
 # This is single line comment
-print "Hello Python"
+print("Hello Python")
 ```
 **Output:**
 ```
@@ -1195,7 +981,7 @@ Multi lined comment can be given inside triple quotes.
 """This is
    Multiline
    Comment"""
-print "Hello Python"
+print("Hello Python")
 ```
 **Output:**
 ```
@@ -1212,21 +998,14 @@ A character set is a set of valid characters acceptable by a programming languag
 - Special Symbols: Python supports all kind of special symbols like, " ' ; : ! ~ @ # $ % ^ ` & * ( ) _ + - = { } [ ] \
 - White Spaces: White spaces like tab space, blank space, newline, and carriage return.
 
----
 
----
-
-<!-- page 31 | Module 1 · source page 31 -->
-
-MODULE 1
+<!-- page 30 | Module 1 · source page 31 -->
 
 ## Python tokens
 
 * A token is the smallest individual unit in a python program.
 * All statements and instructions in a program are built with tokens.
 * The various tokens in python are :
-
-
 
 ```mermaid
 flowchart TD
@@ -1236,8 +1015,6 @@ Tokens --> Operators
 Tokens --> Constants
 Tokens --> Special_Character
 ```
-
-
 
 1. **Keyword (Reserved words)**
    * Keywords are words that have some special meaning or significance in a programming language.
@@ -1260,11 +1037,8 @@ Tokens --> Special_Character
      * Python is **case-sensitive**. So case matters in naming identifiers. And hence **geeks** and **Geeks** are two different identifiers.
      * Identifiers start with a capital letter (A-Z) , a small letter (az) or an
 
----
 
----
-
-<!-- page 32 | Module 1 · source page 32 -->
+<!-- page 31 | Module 1 · source page 32 -->
 
 underscore(_).  
 - It can't start with any other character.
@@ -1289,8 +1063,6 @@ underscore(_).
 - Variable also known as **identifier** and used to hold value.
 - In Python, when we assign any value to the variable that variable is declared automatically. Also, we don't need to specify the type of variable in Python.
 
-
-
 ```mermaid
 flowchart LR
 R["Rules to declare a variable in Python"] --> A["Use letters, numbers, and underscore (_)"]
@@ -1299,17 +1071,10 @@ R --> C["Do not start with a number"]
 R --> D["Variable names are case-sensitive"]
 ```
 
-
-
 ## EXAMPLE
 
----
 
----
-
-<!-- page 33 | Module 1 · source page 33 -->
-
-MODULE 1
+<!-- page 32 | Module 1 · source page 33 -->
 
 **Example: Vardemo.py**
 ```python
@@ -1387,20 +1152,11 @@ $python3 Vardemo2.py
 - Variables can hold values of different data types.
 - Python is dynamically typed, hence we need not define the type of the variable while declaring it.
 
----
 
----
-
-<!-- page 34 | Module 1 · source page 34 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 33 | Module 1 · source page 34 -->
 
 - The interpreter implicitly binds the value with its type.
 - Python provides us the **type()** function which enables us to check the type of the variable.
-
-
 
 ```mermaid
 flowchart TB
@@ -1416,8 +1172,6 @@ Q --> ST["String (Jessa)"]
 Q --> L["List ([2, a, 5.7])"]
 Q --> T["Tuple (3, 4.5, b)"]
 ```
-
-
 
 ## A. Numeric datatype
 
@@ -1437,15 +1191,8 @@ Q --> T["Tuple (3, 4.5, b)"]
 33
 College
 
----
 
----
-
-<!-- page 35 | Module 1 · source page 35 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 34 | Module 1 · source page 35 -->
 
 EXAMPLE
 
@@ -1506,20 +1253,12 @@ print(type(z))
 <class 'complex'>
 ```
 
----
 
----
-
-<!-- page 36 | Module 1 · source page 36 -->
-
-MODULE 1
-UCEST105: Algorithmic thinking with Python
+<!-- page 35 | Module 1 · source page 36 -->
 
 ## Escape sequence
 
-The escape sequence is a sequence of characters treated as special when the Python interpreter encounters it in the string literal. The escape sequence is represented using the backslash ('\') followed by the character.
-
-
+The escape sequence is a sequence of characters treated as special when the Python interpreter encounters it in the string literal. An escape sequence begins with a backslash (\) and represents a special character inside a string.
 
 | Code | Result |
 |---|---|
@@ -1530,7 +1269,6 @@ The escape sequence is a sequence of characters treated as special when the Pyth
 | `\t` | Tab |
 | `\b` | Backspace |
 | `\f` | Form Feed |
-
 
 ## EXAMPLE
 
@@ -1554,17 +1292,12 @@ She said, "Hello!"
 
 ## B. Sequence Data Types in Python
 
-- The sequence Data Type in Python is the ordered collection of similar or different Python data types.
+- A sequence is an ordered collection of items. Depending on the type, its items may be characters or values of different data types.
 - Sequences allow storing of multiple values in an organized and efficient fashion.
 - There are several sequence data types of Python:
 
----
 
----
-
-<!-- page 37 | Module 1 · source page 37 -->
-
-MODULE 1
+<!-- page 36 | Module 1 · source page 37 -->
 
 - String
 - List
@@ -1634,15 +1367,8 @@ List of numbers:
 [10, 20, 14]
 ```
 
----
 
----
-
-<!-- page 38 | Module 1 · source page 38 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 37 | Module 1 · source page 38 -->
 
 c. Tuple
 
@@ -1663,7 +1389,7 @@ Output:
 
 ## C. Dictionary
 
-Dictionary is an ordered sequence of data of key-value pair form. Dictionaries are written within curly braces in the form **key:value**.
+A dictionary is a mapping of unique keys to values. In modern Python, dictionaries preserve insertion order. Dictionaries are written within curly braces in the form **key:value**.
 
 PROGRAM
 
@@ -1693,21 +1419,8 @@ OUTPUT
 {'apple', 'banana', 'cherry'}
 ```
 
-37
 
-Prepared by, Shabana V Subair, Asst. Prof., KMEA Engg. College
-
-Downloaded from Ktunotes.in
-
----
-
----
-
-<!-- page 39 | Module 1 · source page 39 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 38 | Module 1 · source page 39 -->
 
 ## E. Boolean
 
@@ -1758,15 +1471,8 @@ NUMERIC FUNCTIONS
    1.7320508075688772
    ```
 
----
 
----
-
-<!-- page 40 | Module 1 · source page 40 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 39 | Module 1 · source page 40 -->
 
 2. math.ceil()
 
@@ -1776,7 +1482,7 @@ UCEST105: Algorithmic thinking with Python
 
 3. math.floor()
 
-    The floor() function returns the largest integer less than or equal to the given number.
+    The `math.floor()` function returns the greatest integer less than or equal to the input.
     >>> math.floor(4.5687)
     4
 
@@ -1786,9 +1492,9 @@ UCEST105: Algorithmic thinking with Python
     >>> math.fabs(-5.5)
     5.5
 
-5. math.pi()
+5. math.pi
 
-    constant, returns the value of PI (3.14...)
+    A constant containing the value of PI (3.14...)
     >>> x = math.pi
     >>> print(x)
     3.14...
@@ -1797,8 +1503,8 @@ UCEST105: Algorithmic thinking with Python
 
     Used for finding factorial of a given in a single line
     >>> a=5
-    >>> print("The factorial of" a "is",math.factorial(a))
-    The factorial of a 5 is 120
+    >>> print("The factorial of", a, "is", math.factorial(a))
+    The factorial of 5 is 120
 
 7. math.gcd()
 
@@ -1809,11 +1515,8 @@ UCEST105: Algorithmic thinking with Python
     >>> print (math.gcd(b, a))
     The gcd of 5 and 15 is : 5
 
----
 
----
-
-<!-- page 41 | Module 1 · source page 41 -->
+<!-- page 40 | Module 1 · source page 41 -->
 
 LOGARITHMIC AND POWER FUNCTION
 
@@ -1861,13 +1564,8 @@ The value of sine of pi/6 is : 0.49999999999999994
 The value of cosine of pi/6 is : 0.8660254037844387
 The value of tangent of pi/6 is : 0.5773502691896257
 
----
 
----
-
-<!-- page 42 | Module 1 · source page 42 -->
-
-MODULE 1
+<!-- page 41 | Module 1 · source page 42 -->
 
 ## Using the Python Standard Library for handling basic I/O - input(), print()
 
@@ -1893,7 +1591,7 @@ where the prompt is an optional string that we wish to display for the user.
 **What is your name? - John**  
 **Hello, John**
 
-By default, the `input()` function accepts only string arguments. However, we can convert this to a number by using the `int()` or `float()` functions.
+The `input()` function always returns a string. Convert it with `int()` or `float()` when the program needs a number.
 
 ### EXAMPLE
 
@@ -1907,19 +1605,16 @@ By default, the `input()` function accepts only string arguments. However, we ca
 ```
 **'45'**  
 ```python
->>> int(45)
+>>> int(number)
 ```
 **45**  
 ```python
->>> float(45)
+>>> float(number)
 ```
 **45.0**
 
----
 
----
-
-<!-- page 43 | Module 1 · source page 43 -->
+<!-- page 42 | Module 1 · source page 43 -->
 
 Or
 
@@ -1960,14 +1655,8 @@ EXAMPLE
 >>>num = 65
 >>>print ('The value of the number is', num)
 
----
 
----
-
-<!-- page 44 | Module 1 · source page 44 -->
-
-MODULE 1
-UCEST105: Algorithmic thinking with Python
+<!-- page 43 | Module 1 · source page 44 -->
 
 The value of the number is 65
 
@@ -2005,23 +1694,14 @@ Python language supports various types of operators, which are:
 1. **Arithmetic Operators**
 2. **Comparison (Relational) Operators**
 
----
 
----
-
-<!-- page 45 | Module 1 · source page 45 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 44 | Module 1 · source page 45 -->
 
 3. Assignment Operators
 4. Logical Operators
 5. Bitwise Operators
 6. Membership Operators
 7. Identity Operators
-
-
 
 ```mermaid
 flowchart TD
@@ -2033,8 +1713,6 @@ Root --> E[Bitwise Operators]
 Root --> F[Membership Operators]
 Root --> G[Identity Operators]
 ```
-
-
 
 ## 1. Python Arithmetic Operators
 
@@ -2052,15 +1730,8 @@ Root --> G[Identity Operators]
 | ** | Exponent | $4**2 = 16$ |
 | // | Floor Division | $9 // 2 = 4$ |
 
----
 
----
-
-<!-- page 46 | Module 1 · source page 46 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 45 | Module 1 · source page 46 -->
 
 ### Example of Python Arithmetic Operators
 
@@ -2100,19 +1771,8 @@ a // b : 2
 * To compare two values, Python comparison operators are needed.
 * Based on the comparison, they produce a Boolean value (True or False).
 
----
 
----
-
-<!-- page 47 | Module 1 · source page 47 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 48 | Module 1 · source page 48 -->
+<!-- page 46 | Module 1 · source page 48 -->
 
 3. Python Assignment Operators
 
@@ -2148,15 +1808,8 @@ a /= 5
 print ("a /= 5 :",a)
 \# Remainder Assignment
 
----
 
----
-
-<!-- page 49 | Module 1 · source page 49 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 47 | Module 1 · source page 49 -->
 
 a %= 3
 print ("a %= 3 :", a)
@@ -2199,11 +1852,8 @@ a //= 3 : 0.0
 
 48
 
----
 
----
-
-<!-- page 50 | Module 1 · source page 50 -->
+<!-- page 48 | Module 1 · source page 50 -->
 
 | Operator | Name | Description |
 | :--- | :--- | :--- |
@@ -2265,15 +1915,8 @@ a ^ b : 49
 
 ~a : -61
 
----
 
----
-
-<!-- page 51 | Module 1 · source page 51 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 49 | Module 1 · source page 51 -->
 
 a >> 2 : 240
 
@@ -2311,15 +1954,8 @@ Both x and y are within the specified range
 - Python membership operators are used to determine whether or not a certain value occurs within a sequence.
 - They make it simple to determine the membership of elements in various Python data structures such as lists, tuples, sets, and strings.
 
----
 
----
-
-<!-- page 52 | Module 1 · source page 52 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 50 | Module 1 · source page 52 -->
 
 - Python has two primary membership operators: the in and not in operators.
 
@@ -2357,17 +1993,14 @@ True
 x = 10
 ```
 
----
 
----
-
-<!-- page 53 | Module 1 · source page 53 -->
+<!-- page 51 | Module 1 · source page 53 -->
 
 MODULE 1	UCEST105: Algorithmic thinking with Python
 
 y = 5
 print(x is y)
-The code sets the variables x and y to 10 and 5, respectively. Then check whether the both values are equal using is operator. If correct, True value will be displayed else false value.
+The expression `x is y` checks whether `x` and `y` refer to the same object. Use `==` to compare their values; for example, `x == y` is `False` here.
 
 **Output**
 
@@ -2376,8 +2009,6 @@ False
 ### OPERATOR PRECEDENCE
 
 When an expression or statement involves multiple operators then it will be resolve using the following operator precedence chart:
-
-
 
 | Precedence | Operator sign | Operator name |
 |---|---|---|
@@ -2394,27 +2025,16 @@ When an expression or statement involves multiple operators then it will be reso
 |  | `and` | Boolean AND |
 | Lowest | `or` | Boolean OR |
 
-
 Example 5.4. Consider the assignment statement
 
 $R = A + 3 < B * 1 \text{ or } C \text{ and } D$
 
 Let the values of the variables be $A = 1, B = 5, C = -1, \text{ and } D = \text{ True}$. Figure 5.1 shows the structure of the evaluation. The numbers shown in the circle denote the order in which the various operators are applied. The final result is 1, which is assigned to R.
 
-52	Prepared by, Shabana V Subair, Asst. Prof., KMEA Engg.
 College
 
----
 
----
-
-<!-- page 54 | Module 1 · source page 54 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
-
-
+<!-- page 52 | Module 1 · source page 54 -->
 
 ```mermaid
 flowchart TB
@@ -2440,20 +2060,10 @@ A --> A2["D"]
 | 5 | `A+3 < B*1 || C&&D` | 1 |
 | 6 | `R = A+3 < B*1 || C&&D` | 1 |
 
-
 Evaluation of an arithmetic expression
 
----
 
-<!-- page 55 | Module 1 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 56 | Module 1 · source page 2 -->
+<!-- page 53 | Module 1 · source page 2 -->
 
 MODULE 1						UCEST105: Algorithmic thinking with Python
 
@@ -2483,11 +2093,7 @@ select and use appropriate problem-solving strategies and tools to implement.
 
 - And then implementing a solution.
 
-
-
 ![Problem Solving Chart showing a 4-step process: Understand -> Plan -> Solve -> Check](/notes/cse/s1/python/module-1/assets/page-002-image-1.png)
-
-
 
 **Problem Solving Chart**
 
@@ -2505,11 +2111,8 @@ select and use appropriate problem-solving strategies and tools to implement.
 
 1
 
----
 
----
-
-<!-- page 57 | Module 1 · source page 3 -->
+<!-- page 54 | Module 1 · source page 3 -->
 
 MODULE 1	UCEST105: Algorithmic thinking with Python
 
@@ -2535,14 +2138,11 @@ MODULE 1	UCEST105: Algorithmic thinking with Python
 
 Problems can be classified into two categories 1. Well-defined problems 2. Ill-defined problems.
 
-1. **Well-defined Problems:** That have specific goals, clear solutions and known expected outcomes.
-2. **Ill-defined Problems:** That lack clear goals, solution paths and expected solutions.
+1. **Well-defined problems** have specific goals, clear constraints, and criteria for recognizing a solution.
+2. **Ill-defined problems** have unclear goals or constraints and may allow several reasonable solutions.
 
----
 
----
-
-<!-- page 58 | Module 1 · source page 4 -->
+<!-- page 55 | Module 1 · source page 4 -->
 
 Q1. Differentiate between Well-defined problems and Ill-defined problems.
 
@@ -2556,15 +2156,8 @@ Q1. Differentiate between Well-defined problems and Ill-defined problems.
 | 6. Logical, step by step approach | Requires creative, iterative approach |
 | 7e Ex:Chess game | Ex: Paint a beautiful picture |
 
----
 
----
-
-<!-- page 59 | Module 1 · source page 5 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 56 | Module 1 · source page 5 -->
 
 ## Well-Defined Problems
 These problems have clear goals, a defined path to a solution, and specific criteria for determining when the problem is solved. Let's explore three examples:
@@ -2586,17 +2179,12 @@ These problems are ambiguous, lack clear criteria for solutions, and often have 
 
 1. **Designing a Sustainable City:**
    - **Problem:** How can we design a sustainable city for the future?
-   - **Why it's Ill-Defined:** The problem is broad, with no single clear solution. Various factors like environmental impact, social equity, and economic viability come into play, and different stakeholders might have different views on what constitutes a "sustainable" city.
-
-2. **Writing a Novel:**
+   - **Why it's Ill-Defined:** The problem is broad, with no single clear solution. Various factors like environmental impact, social equity, and 2. **Writing a Novel:**
    - **Problem:** Write a compelling novel that appeals to a broad audience.
    - **Why it's Ill-Defined:** The goal is subjective (what is "compelling"?), the process can vary widely, and success is difficult to measure. Different readers may have different interpretations of what makes the novel appealing.
 
----
 
----
-
-<!-- page 60 | Module 1 · source page 6 -->
+<!-- page 57 | Module 1 · source page 6 -->
 
 3. **Resolving Workplace Conflict:**
 
@@ -2623,15 +2211,8 @@ Understanding the nature of the problem helps in choosing the right approach to 
 * **Prepares for Challenges** -- Equips individuals to handle unexpected obstacles logically.
 * **Supports Continuous Learning** -- Each solved problem strengthens analytical and reasoning skills.
 
----
 
----
-
-<!-- page 61 | Module 1 · source page 7 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 58 | Module 1 · source page 7 -->
 
 **Problem Solving Strategies**
 
@@ -2666,18 +2247,15 @@ Example 2:Recover password
 1. **Initial Attempts:** You start by trying passwords you commonly use. Eg: "password123," "Qwerty2024," etc
 2. **Learning from Mistakes:** None of these initial attempts work. You try variations incorporating your birthdate, pet's name, or favorite sports team.
 
----
 
----
-
-<!-- page 62 | Module 1 · source page 8 -->
+<!-- page 59 | Module 1 · source page 8 -->
 
 3. **Refinement:** After several failed attempts, you remember you recently started using a new format for your passwords, combining a favorite quote with special characters. You attempted various combinations, such as "ToBeOrNotToBe!" and other combinations.
 
 4. **Success:** Eventually, through persistent trial and error, you hit upon the correct password: "ToBeOrNotToBe!2024."
 
 2. **Algorithm**
-An algorithm is a step-by-step, logical procedure that guarantees a solution to a problem. It is systematic and follows a defined sequence of operations, ensuring consistency and accuracy in finding the correct solution.
+An algorithm is a finite, ordered set of unambiguous steps for solving a problem. A correct algorithm produces the required result for inputs within its stated assumptions; not every algorithm guarantees a solution for every possible input.
 *Example: Algorithm for Baking a Cake*
 
 1. Gather ingredients
@@ -2700,15 +2278,8 @@ A heuristic is another type of problem-solving strategy that allows us to make d
 * When there is access to very little information to use in making the decision
 * When an appropriate heuristic happens to come to mind in the same moment
 
----
 
----
-
-<!-- page 63 | Module 1 · source page 9 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 60 | Module 1 · source page 9 -->
 
 Different types of heuristics are :
 
@@ -2722,7 +2293,7 @@ For example : For completing a large research project, they typically start by
 
 * revise and edit the rough draft, develop a final draft, organize the references
 
-* [uncertain: list] proofread their work before turning in the project.
+* Proofread the final draft before submitting the project.
 
 The large task becomes less overwhelming when it is broken down into a series of small steps.
 
@@ -2747,11 +2318,8 @@ Solution :-
 * Now the answer is very close.
 * Again lower the guess to 17 and check, $15+17=32$, and the guess is now correct.
 
----
 
----
-
-<!-- page 64 | Module 1 · source page 10 -->
+<!-- page 61 | Module 1 · source page 10 -->
 
 MODULE 1	UCEST105: Algorithmic thinking with Python
 
@@ -2759,7 +2327,7 @@ c. **Working backwards** This is a useful heuristic in which you begin solving t
 
 4. **Means Ends Analysis (MEA)**
 
-This strategy involves choosing and analyzing a problem at a series of smaller steps to move closer to the goal.
+Means-ends analysis compares the current state with the goal, identifies the differences, and chooses smaller actions (sub-goals) that reduce those differences.
 
 Example 1 : The Tower of Hanoi problem.
 
@@ -2771,11 +2339,7 @@ The **Tower of Hanoi** is a mathematical puzzle. There are three rods, source(A)
 2. Each move consists of taking the upper disk from one of the rods and placing it on the top of another rod i.e. a disk can only be moved if it is the uppermost disk of the rod.
 3. Never a larger disk is placed on a smaller disk during the transfer.
 
-
-
 ![Tower of Hanoi initial state with three vertical rods on a base plate and three stacked disks on the leftmost rod.](/notes/cse/s1/python/module-1/assets/page-010-image-1.png)
-
-
 
 **Fig 1:- Initial State**
 
@@ -2783,66 +2347,40 @@ The **Tower of Hanoi** is a mathematical puzzle. There are three rods, source(A)
 
 Free notes, papers & syllabus at ktunotes.in	Page 9 / 65
 
----
 
----
-
-<!-- page 65 | Module 1 · source page 11 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 62 | Module 1 · source page 11 -->
 
 The solution to the puzzle calls for an application of recursive functions and recurrence relations.
 
 A recursive procedure for the solution of the problem for N number of disks is as follows:
 
-1. Move the top N-1 disks from rod A to rod B using C as an auxiliary rod
-2. Move the bottom disk from rod A to rod C
-3. Move N-1 disks from rod B to rod C using Peg A as an auxiliary rod
+1. Move the top $N-1$ disks from rod A to rod B, using rod C as the auxiliary rod.
+2. Move the largest disk from rod A to rod C.
+3. Move the $N-1$ disks from rod B to rod C, using rod A as the auxiliary rod.
 
 The minimum number of moves required to solve a Tower of Hanoi puzzle is given by $2^N - 1$, where $N$ is the number of disks, i.e., if there are 14 disks, then the minimum number of moves needed = $(2^{14}) - 1 = 16383$.
 
 The pictorial representation of the recursive procedure for $N=4$ disks is shown in Fig 2:-
 
-
-
 ![Pictorial representation of the recursive procedure for N=4 disks in Tower of Hanoi](/notes/cse/s1/python/module-1/assets/page-011-image-1-Imagen.png)
 
----
 
----
-
-<!-- page 66 | Module 1 · source page 12 -->
-
-MODULE 1
-UCEST105: Algorithmic thinking with Python
+<!-- page 63 | Module 1 · source page 12 -->
 
 Example of Tower of Hanoi for n=3.
 
-
-
 ![Tower of Hanoi solution steps for n=3](/notes/cse/s1/python/module-1/assets/page-012-image-1-Imagen.png)
-
-
 
 Minimum number of moves with 3 disks= $2^n-1= 2^3-1=7$.
 
 Example of Tower of Hanoi for n=4.
 
-
-
 ![Tower of Hanoi solution steps for n=4](/notes/cse/s1/python/module-1/assets/page-012-image-2-Imagen.png)
-
-
 
 Minimum number of moves with 4 disks= $2^n-1= 2^4-1=15$.
 
----
 
----
-
-<!-- page 67 | Module 1 · source page 13 -->
+<!-- page 64 | Module 1 · source page 13 -->
 
 Example 2: Imagine you want to plan a road trip from Trivandrum to Kashmir. Here is how you might use means-ends analysis:
 
@@ -2856,11 +2394,8 @@ D. Set Sub-Goals (Means):
 E. Implement the Plan:
    a. Day 1: Drive from Trivandrum to Bangalore, Karnataka (approx. 720 km). Refuel in Madurai, Tamil Nadu. Overnight stay in Bangalore.
 
----
 
----
-
-<!-- page 68 | Module 1 · source page 14 -->
+<!-- page 65 | Module 1 · source page 14 -->
 
 b. Day 2: Drive from Bangalore to Hyderabad, Telangana (approx. $570\text{ km}$). Refuel in Anantapur, Andhra Pradesh. Overnight stay in Hyderabad.
 c. Day 3: Drive from Hyderabad to Nagpur, Maharashtra (approx. $500\text{ km}$). Refuel in Adilabad, Telangana. Overnight stay in Nagpur.
@@ -2878,23 +2413,14 @@ Backtracking is a problem solving technique that involves trying different optio
 
 Example given below:-
 
-
-
 ![Backtracking search tree diagram showing start node X branching to A and D, A branching to B and C (both dead ends), D branching to E (dead end) and F, and F branching to G (Success node).](/notes/cse/s1/python/module-1/assets/page-014-image-1-Imagen.png)
 
----
 
----
-
-<!-- page 69 | Module 1 · source page 15 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 66 | Module 1 · source page 15 -->
 
 In the above problem, the Start node is X and destination node is G. We first move through the route X-A-B but it reaches a dead end, then we backtrack again and select another path X-A-C, it also encounters a dead end. Try different paths X-D-E, also reach a dead end. Next we move through X-D-F-G and reach the destination node.
 
-Whenever a dead end is encountered it goes back to the start node and continues searching for a different route until the solution is discovered or all options have been considered. Other examples :- Sudoku puzzle, Maze problem, forgetting the PIN to unlock your smartphone etc.
+When a path reaches a dead end, return to the most recent choice point and try an untested option. Continue until a solution is found or every option has been explored. Examples include solving a maze or a Sudoku puzzle. (Repeatedly guessing a phone PIN is not a good example: devices may lock after too many attempts.)
 
 **Importance of Understanding Multiple Problem-Solving Strategies**
 
@@ -2913,31 +2439,19 @@ Different problems often require different approaches, and being familiar with m
 
 Basic Model of a Computer Computer science is all about solving problems with computers. The problems that we want to solve can come from any real-world problem or from the abstract world. We need to have a standard systematic approach to solving problems. Since we will be using computers to solve problems, it is important to first understand the computer's information processing model.
 
----
 
----
-
-<!-- page 70 | Module 1 · source page 16 -->
+<!-- page 67 | Module 1 · source page 16 -->
 
 ## Von Neumann Architecture
 
-
-
 ![Block Diagram of a Digital Computer showing Von Neumann Architecture](/notes/cse/s1/python/module-1/assets/page-016-image-1.png)
-
-
 
 BLOCK DIAGRAM OF A DIGITAL COMPUTER
 
 The model shown in figure below assumes a single CPU (Central Processing Unit). Many computers today have multiple CPUs, so it can be imagined the model in the figure can be duplicated multiple times within the computer.
 
----
 
----
-
-<!-- page 71 | Module 1 · source page 17 -->
-
-MODULE 1
+<!-- page 68 | Module 1 · source page 17 -->
 
 **INSTRUCTION EXECUTION CYCLE** CPU executes an instruction in a series of steps called *instruction execution cycle*. An instruction cycle (sometimes called a *fetch–decode– execute cycle*) is the process by which a computer retrieves a program instruction from its memory, determines what actions to perform, and carries out those actions to produce meaningful output.
 
@@ -2949,8 +2463,6 @@ This cycle is then repeated for the next instruction.
 
 **Instruction Execution Cycle**
 
-
-
 ```mermaid
 flowchart TD
   Fetch["FETCH Instruction"]
@@ -2961,8 +2473,6 @@ flowchart TD
   Execute --> Fetch
 ```
 
-
-
 A typical computer architecture comprises of three main components:
 
 **1. Input/Output (I/O) Unit**
@@ -2971,15 +2481,8 @@ A typical computer architecture comprises of three main components:
 
 **3. Memory Unit**
 
----
 
----
-
-<!-- page 72 | Module 1 · source page 18 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 69 | Module 1 · source page 18 -->
 
 The I/O unit consists of the input unit and output devices. The input devices accept data from the user, which the CPU processes. The output devices transfer the processed data (information) to the user. The memory unit is used to store the input data, the instructions required to process the input, and the output information. **Input devices** Input devices allow users to input data into the computer for processing. The data input to a computer can be in the form of text, audio, video, etc. Input devices are classified into two categories:
 
@@ -3003,11 +2506,8 @@ b. **Video input devices** -- They accept input in the form of video or images. 
 
 c.**Optical input devices** -- They use optical technology (light source) to input the data into computers. Some common optical input devices are scanners and barcode readers.
 
----
 
----
-
-<!-- page 73 | Module 1 · source page 19 -->
+<!-- page 70 | Module 1 · source page 19 -->
 
 MODULE 1	UCEST105: Algorithmic thinking with Python
 
@@ -3032,11 +2532,8 @@ This unit consists of two sub-units, namely arithmetic and logic units.
 
     a. **Arithmetic unit** – performs arithmetic operations like addition, subtraction, multiplication, and division, on the data.
 
----
 
----
-
-<!-- page 74 | Module 1 · source page 20 -->
+<!-- page 71 | Module 1 · source page 20 -->
 
 b. **Logic unit** – performs logical operations like comparisons of data values.
 
@@ -3061,19 +2558,12 @@ This unit manages and coordinates the operations of all parts of the computer. T
 
 **Memory unit** Memory is the storage space in a computer where data to be processed and instructions required for processing are stored. The various memories can be organized hierarchically called memory hierarchy as shown in figure below.
 
-
-
 ![Memory Hierarchy pyramid](/notes/cse/s1/python/module-1/assets/page-020-image-1.png)
-
-
 
 Fig:- Memory Hierarchy
 
----
 
----
-
-<!-- page 75 | Module 1 · source page 21 -->
+<!-- page 72 | Module 1 · source page 21 -->
 
 Memory is primarily of two types:
 
@@ -3099,15 +2589,8 @@ External memory includes:
 
 3. **Optical disk** – a flat circular disk coated with reflective plastic material that can be altered by laser light. CDs and DVDs are examples.
 
----
 
----
-
-<!-- page 76 | Module 1 · source page 22 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 73 | Module 1 · source page 22 -->
 
 ### Computer as a model of computation
 
@@ -3132,15 +2615,8 @@ Regarding problemsolving, we will apply the above model for simple computations.
 
   We need to understand the input we require to solve the problem. For the given example, input requirement is two numbers whether it can be of any type, like real number, integer number or whole number.
 
----
 
----
-
-<!-- page 77 | Module 1 · source page 23 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 74 | Module 1 · source page 23 -->
 
 * OUTPUT REQUIREMENTS Next we need to understand the output to obtain corresponding to the input given. if we are giving real numbers as input the output obtained will be real, or if it is integer then output will be integer. PROCESSING CONSIDERATIONS
 * We also need to understand how to reach the solution from the input given i.e, to understand a path to reach the solution.
@@ -3183,14 +2659,8 @@ Two commonly used representations for an algorithm is by using
     
     Step 5: Display the result
 
----
 
----
-
-<!-- page 78 | Module 1 · source page 24 -->
-
-MODULE 1
-UCEST105: Algorithmic thinking with Python
+<!-- page 75 | Module 1 · source page 24 -->
 
 - Step 6: End
 - Pseudo code
@@ -3203,8 +2673,6 @@ UCEST105: Algorithmic thinking with Python
 
 - Flow chart
 
-
-
 ```mermaid
 flowchart TD
 A([Start]) --> B[/Input Number1,
@@ -3213,8 +2681,6 @@ B --> C[Sum=Number1+Number2]
 C --> D[/Print Sum/]
 D --> E([Stop])
 ```
-
-
 
 Writing the Program
 - Once the algorithm is defined, the next step is to convert it into a form that a computer can execute. This process is known as **writingtheprogram,coding,or implementing an algorithm.**
@@ -3227,15 +2693,8 @@ Writing the Program
         \text{print}('&\text{Sum} = \text{', sum)}
         \end{aligned}$$
 
----
 
----
-
-<!-- page 79 | Module 1 · source page 25 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 76 | Module 1 · source page 25 -->
 
 - After writing the code, test it with various inputs to ensure it works as expected. Debug and compile the program to find issues or errors that arise during testing.
 - Debugging is the method of finding and fixing errors.
@@ -3271,15 +2730,8 @@ INPUT REQUIREMENT get all the grades ... possibly by typing them in via the keyb
     - Is anything missing from the data?
     - Do I have everything needed to solve the problem?
 
----
 
----
-
-<!-- page 80 | Module 1 · source page 26 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 77 | Module 1 · source page 26 -->
 
 * Example: Grades as Input:
   * Grades could be numbers (0-100) or letter grades (A-F).
@@ -3302,7 +2754,7 @@ Assuming that the input data is a bunch of integers or real numbers $x_1, x_2, \
 
 $Average1 = (x_1 + x_2 + x_3 + \dots + x_n) / n$ where the output will be a number from 0 to 100.
 
-The challenge facing in the above calculation is Letter grades (e.g., A, B-, C+) cannot be directly added or divided. Solution is Assign Values to letter grades
+Letter grades (such as A, B−, and C+) cannot be averaged directly. One possible model is to map each letter grade to a numeric value, then average those values. The mapping must match the grading system being used.
 
 * Convert letter grades to numerical equivalents
 $$\begin{align*}
@@ -3319,15 +2771,8 @@ If we want the output in percentage, you can convert it as:
 
 $$\boldsymbol{Average\ (in\ percentage) = (Average_2 / 13)}$$
 
----
 
----
-
-<!-- page 81 | Module 1 · source page 27 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 78 | Module 1 · source page 27 -->
 
 The main point to understand this step in the problems solving process is that it is all about figuring out how to make use of the available data to compute an answer.
 
@@ -3365,8 +2810,6 @@ STEP 5: Stop
 
 Average of n numbers
 
-
-
 ```mermaid
 flowchart TD
 A([Start]) --> B[x1, x2, ..., xn, Average]
@@ -3376,27 +2819,20 @@ D --> E[/Print Average/]
 E --> F([Stop])
 ```
 
----
 
----
-
-<!-- page 82 | Module 1 · source page 28 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 79 | Module 1 · source page 28 -->
 
 **Writing the program:**
 
 ```python
 # Program in Python
 n = int(input("Enter number"))
-sum = 0
-# loop from 1 to n
-for num in range(1,n+1,1):
-    sum = sum+num
-average=sum/n
-print("Average of ",n,"numbers is: ",average)
+total = 0
+for student in range(n):
+    mark = float(input(f"Enter mark for student {student + 1}: "))
+    total += mark
+average = total / n
+print(f"Average mark: {average:.2f}")
 ```
 
 **Test the program:** You create a test suite with various types of numbers and check whether the output obtained is correct or not.
@@ -3426,11 +2862,8 @@ b = int(input("Enter the value of second coefficient"))
 c = int(input("Enter the value of third coefficient"))
 ```
 
----
 
----
-
-<!-- page 83 | Module 1 · source page 29 -->
+<!-- page 80 | Module 1 · source page 29 -->
 
 #Find the discriminant
 d = (b**2) - (4*a*c)
@@ -3439,11 +2872,7 @@ print(d)
 
 5. **Testing the program:** You create a test suite similar to the one shown in Table 1.2. Each row denotes a set of inputs (a,b, and c) and the expected output (d) with which the actual output is to be compared.
 
-
-
 ![Table 1.2 showing test cases with columns Sl No, a, b, c, and d](/notes/cse/s1/python/module-1/assets/page-029-image-1.png)
-
-
 
 **SYLLABUS MODULE - 1 PART - 3**
 
@@ -3455,33 +2884,25 @@ print(d)
 
 **PROGRAMMING LANGUAGES**
 
-*Programming languages* are used to write programs that useare precise representations of algorithms and control the behavior of a computer. Each language has a unique set of keywords (words that it understands) and syntax (set of rules) to organize the program instructions.
+*Programming languages* are used to write programs that provide precise representations of algorithms and control the behavior of a computer. Each language has a unique set of keywords (words that it understands) and syntax (set of rules) to organize the program instructions.
 
 Programming languages fall into three categories:
 
 1. **Machine language:**- is what the computer can understand, but it is difficult for the programmer to understand. Machine languages consist of binary numbers only. No translation of the program is needed and it can be executed very fast. It is machine-dependent ie. A machine-level program written for one type of computer may not work on another type.
 
----
 
----
-
-<!-- page 84 | Module 1 · source page 30 -->
+<!-- page 81 | Module 1 · source page 30 -->
 
 MODULE 1	UCEST105: Algorithmic thinking with Python
 
 Example 3.1. Assume that the opcode and operands occupy 4 bits each and that the opcode for addition is 1010, then to add 3 and 6, the binary code would be
 $$1010 \underbrace{0011}_{\text{add}} \underbrace{0110}_{3} \underbrace{\quad}_{6}$$
 
-
 ![Binary code breakdown for addition showing opcode and operands](/notes/cse/s1/python/module-1/assets/page-030-image-1.png)
-
-
 
 2. **Assembly language:-** falls in between machine language and high-level language. It is similar to machine language, but easier to write code because it allows the programmer to use symbolic names (like ADD, SUB) for operations called **mnemonic codes** that are much easier to remember. **Example :** If the mnemonic code for addition is ADD, then to add 3 and 6, the assembly level code will be ADD 3,6.
 
 *Machine languages and assembly languages are also called low level languages.*
-
----
 
 3. **High-level language:-** is easier to understand and use for the programmer but difficult for the computer. The programs written in high-level languages contain English-like statements as well as programming.
 
@@ -3504,13 +2925,8 @@ Here '+' is the operator for addition.
 
 29
 
----
 
----
-
-<!-- page 85 | Module 1 · source page 31 -->
-
-MODULE 1
+<!-- page 82 | Module 1 · source page 31 -->
 
 - No need to declare types explicitly - Easier and faster to write code
 
@@ -3528,23 +2944,16 @@ There are three types of translator software as discussed below:
 
 1. **Assembler:** is a software that converts a program written in assembly language into machine code.
 2. **Compiler:** is a software that translates programs written in high-level language to machine code.
-3. **Interpreter:** The interpreter also converts the high-level language program into machine code. However, the reads the source code line-by-line, converts it into machine code, executes the line, and then proceeds to the next line.
+3. **Interpreter:** An interpreter executes a program through a runtime system. The exact process depends on the language implementation; it may process statements incrementally or use an intermediate representation.
 
----
 
----
-
-<!-- page 86 | Module 1 · source page 32 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 83 | Module 1 · source page 32 -->
 
 *Q: Differentiate between Compiler and Interpreter.*
 
 | Compiler | Interpreter |
 | --- | --- |
-| Compiler Takes **Entire** program as input | Interpreter Takes **Single** instruction as input. |
+| A traditional compiler translates the program (often as a whole) | Interpreter Takes **Single** instruction as input. |
 | Intermediate Object Code is **Generated** | No Intermediate Object Code is **Generated** |
 | Memory Requirement : **More** (Since Object Code is Generated) | Memory Requirement is **Less** |
 | Program need not be **compiled** every time | Every time higher level program is converted into lower level program |
@@ -3553,24 +2962,14 @@ UCEST105: Algorithmic thinking with Python
 
 **INTRODUCTION TO PYTHON**
 
-Python is a [illegible] [uncertain: general purpose, high level, interpreted]
-**Guido van Rossum** in the late 1980s at the National Research Institute for Mathematics and Computer Science in the Netherlands. Python is one of the most popular and widely used programming languages used for a set of tasks including **Console based, GUI based, web programming and data analysis**. Python is named after the comedy television show Monty Python's Flying Circus.
+Python is a general-purpose, high-level, interpreted programming language created by **Guido van Rossum** in the late 1980s at the National Research Institute for Mathematics and Computer Science in the Netherlands. Python is one of the most popular and widely used programming languages used for a set of tasks including **Console based, GUI based, web programming and data analysis**. Python is named after the comedy television show Monty Python's Flying Circus.
 
 **FEATURES OF PYTHON**
 
-
-
 ![Features of Python list of 14 points arranged in two columns of rounded rectangular buttons](/notes/cse/s1/python/module-1/assets/page-032-image-1.png)
 
----
 
----
-
-<!-- page 87 | Module 1 · source page 33 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 84 | Module 1 · source page 33 -->
 
 ## APPLICATIONS OF PYTHON
 
@@ -3587,7 +2986,7 @@ Python is a general purpose programming language. It is widely applied in variou
 
 There are two major Python versions, those are Python 2 and Python 3. Python 3 is more semantically correct and supports newer features. After successful installation of python software we can interpret or execute python script / program.
 
-Python provides us the two ways to run a python script:
+Python programs are commonly run in two ways:
 
 1. Using Interactive interpreter prompt
 2. Using a script file
@@ -3598,19 +2997,10 @@ Python provides us the feature to execute the python statement one by one at the
 
 #### Through Command Prompt or Python Shell
 
-
-
 ![Command prompt window showing Python 3.8.3 interactive session executing print statements](/notes/cse/s1/python/module-1/assets/page-033-image-1.png)
 
----
 
----
-
-<!-- page 88 | Module 1 · source page 34 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 85 | Module 1 · source page 34 -->
 
 The **Python shell** is an interactive terminal-based environment wherein you can directly communicate with the Python interpreter. First, you open a terminal and type python3.
 Now the shell turns up with a welcome message as shown below.
@@ -3625,17 +3015,9 @@ The symbol `>>>` is called the **shell prompt**. This symbol prompts you for Pyt
 
 Interpreter prompt is good to run the individual statements of the code. However if we want to execute multiple python statements at a time instead of executing one by one, then we can use script files. We need to write our script into a file which can be executed later. For this purpose, open an editor like notepad, create a file named filename.py (python used .py extension) and write the python script in it.
 
-
-
 ![Example code block showing First.py content](/notes/cse/s1/python/module-1/assets/page-034-image-1.png)
 
-
-
-
-
 ![Output block showing execution of First.py](/notes/cse/s1/python/module-1/assets/page-034-image-2.png)
-
-
 
 ### Running as a script
 
@@ -3649,11 +3031,8 @@ $$\text{python3 First.py}$$
 
 Now the script will be executed and you get the desired output.
 
----
 
----
-
-<!-- page 89 | Module 1 · source page 35 -->
+<!-- page 86 | Module 1 · source page 35 -->
 
 _Example :_ Suppose you have written a script sample.py to display the message “My first Python program!”. This is how you run it (The second line below shows the output):
 
@@ -3675,7 +3054,7 @@ In case user wants to specify a single line comment, then comment must start wit
 **Example:**
 ```python
 # This is single line comment
-print "Hello Python"
+print("Hello Python")
 ```
 
 **Output:**
@@ -3690,7 +3069,7 @@ Multi lined comment can be given inside triple quotes.
 '''This is
    Multiline
    Comment'''
-print "Hello Python"
+print("Hello Python")
 ```
 
 **Output:**
@@ -3708,23 +3087,14 @@ A character set is a set of valid characters acceptable by a programming languag
 * Special Symbols: Python supports all kind of special symbols like, " ` 1 ; : ! ~ @ # $ % ^ ` & * ( ) _ + - = { } [ ] \
 * WhiteSpaces: Whitespaces like tabspace, blankspace, newline, and carriagereturn.
 
----
 
----
-
-<!-- page 90 | Module 1 · source page 36 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 87 | Module 1 · source page 36 -->
 
 ## Python tokens
 
 * A token is the smallest individual unit in a python program.
 * All statements and instructions in a program are built with tokens.
 * The various tokens in python are :
-
-
 
 ```mermaid
 flowchart LR
@@ -3735,18 +3105,12 @@ flowchart LR
     A --> F[Special Character]
 ```
 
-
-
 ## 1. Keyword(Reservedwords)
 
 * Keywords are words that have some special meaning or significance in a programming language.
 * They can't be used as variable names, function names, or for any other random purpose.
 
-
-
 ![Table of Python keywords](/notes/cse/s1/python/module-1/assets/page-036-image-2.png)
-
-
 
 ## 2. Identifiers
 
@@ -3759,11 +3123,8 @@ flowchart LR
 
 35
 
----
 
----
-
-<!-- page 91 | Module 1 · source page 37 -->
+<!-- page 88 | Module 1 · source page 37 -->
 
 underscore(_).
 - It can't start with any other character.
@@ -3771,11 +3132,7 @@ underscore(_).
 - Any other special characters or whitespaces are strictly prohibited in an identifier.
 - An identifier can't be a keyword.
 
-
-
 ![Table of Valid and Invalid Identifiers](/notes/cse/s1/python/module-1/assets/page-037-image-1.png)
-
-
 
 ## Creating and using variables in Python
 
@@ -3784,23 +3141,12 @@ underscore(_).
 - any value to the variable that variable is declared
 - automatically. Also, we don't need to specify the type of variable in Python.
 
-
-
 ![Diagram showing rules to declare a variable in python](/notes/cse/s1/python/module-1/assets/page-037-image-2.png)
-
-
 
 ## EXAMPLE
 
----
 
----
-
-<!-- page 92 | Module 1 · source page 38 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 89 | Module 1 · source page 38 -->
 
 **Example: Vardemo.py**
 ```python
@@ -3874,19 +3220,11 @@ Numeric and String data types in Python
 * Variables can hold values of different data types.
 * Python is dynamically typed, hence we need not define the type of the variable while declaring it.
 
----
 
----
-
-<!-- page 93 | Module 1 · source page 39 -->
-
-MODULE 1
-UCEST105: Algorithmic thinking with Python
+<!-- page 90 | Module 1 · source page 39 -->
 
 - The interpreter implicitly binds the value with its type.
 - Python provides us the type() function which enables us to check the type of the variable.
-
-
 
 ```mermaid
 flowchart LR
@@ -3903,8 +3241,6 @@ F --> F2[List\n[2, 'a', 5.7]]
 F --> F3[Tuple\n(3, 4.5, 'b')]
 ```
 
-
-
 A. Numeric datatype
 
 - The numeric data type in Python represents the data that has a numeric value.
@@ -3914,17 +3250,10 @@ A. Numeric datatype
   2. **float**
   3. **complex**
 
-
-
 ![Table explaining int, float, and complex numeric datatypes with examples](/notes/cse/s1/python/module-1/assets/page-039-image-2.png)
 
----
 
----
-
-<!-- page 94 | Module 1 · source page 40 -->
-
-MODULE 1
+<!-- page 91 | Module 1 · source page 40 -->
 
 EXAMPLE
 PROGRAM
@@ -3986,25 +3315,14 @@ print(type(z))
 # <class 'float'>
 ```
 
----
 
----
-
-<!-- page 95 | Module 1 · source page 41 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 92 | Module 1 · source page 41 -->
 
 ## Escape sequence
 
 The escape sequence is a sequence of characters treated as special when the Python interpreter encounters it in the string literal. The escape sequence is represented using the backslash (`\`) followed by the character. \r:Moves the cursor to the beginning of the current line without advancing to the next line. \b:Moves the cursor one position backward, effectively deleting the previous character. \f:Advances the cursor to the next page. In modern consoles, it often acts like a new line or is ignored.
 
-
-
 ![Table of escape sequence codes and their results](/notes/cse/s1/python/module-1/assets/page-041-image-1.png)
-
-
 
 ### EXAMPLE
 
@@ -4029,17 +3347,12 @@ She said, "Hello!"
 
 ## B. Sequence Data Types in Python
 
-- The sequence Data Type in Python is the ordered collection of similar or different Python data types.
+- A sequence is an ordered collection of items. Depending on the type, its items may be characters or values of different data types.
 - Sequences allow storing of multiple values in an organized and efficient fashion.
 - There are several sequence data types of Python:
 
----
 
----
-
-<!-- page 96 | Module 1 · source page 42 -->
-
-MODULE 1
+<!-- page 93 | Module 1 · source page 42 -->
 
 - String
 - List
@@ -4049,11 +3362,7 @@ a. String:- A string is a collection of one or more characters. Strings are repr
 
 EXAMPLE
 
-
-
 ![Python code and output showing the use of single, double, and triple quotes for strings](/notes/cse/s1/python/module-1/assets/page-042-image-1.png)
-
-
 
 b. List
 
@@ -4063,19 +3372,10 @@ List is mutable (means values in the list can be changed during execution time).
 
 EXAMPLE
 
-
-
 ![Python code and output demonstrating the creation of a blank list and a list of numbers](/notes/cse/s1/python/module-1/assets/page-042-image-2.png)
 
----
 
----
-
-<!-- page 97 | Module 1 · source page 43 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 94 | Module 1 · source page 43 -->
 
 c. Tuple
 
@@ -4093,7 +3393,7 @@ print(var)
 
 **C. Dictionary**
 
-Dictionary is an ordered sequence of data of key-value pair form. Dictionaries are written within curly braces in the form **key:value**.
+A dictionary is a mapping of unique keys to values. In modern Python, dictionaries preserve insertion order. Dictionaries are written within curly braces in the form **key:value**.
 
 **PROGRAM**
 
@@ -4121,13 +3421,8 @@ print(thisset)
 {'apple', 'banana', 'cherry'}
 ```
 
----
 
----
-
-<!-- page 98 | Module 1 · source page 44 -->
-
-MODULE 1
+<!-- page 95 | Module 1 · source page 44 -->
 
 ## E. Boolean
 
@@ -4179,11 +3474,8 @@ NUMERIC FUNCTIONS
     1.7320508075688772
     ```
 
----
 
----
-
-<!-- page 99 | Module 1 · source page 45 -->
+<!-- page 96 | Module 1 · source page 45 -->
 
 2. math.ceil()
 
@@ -4194,7 +3486,7 @@ The ceil() function approximates the given number to the smallest integer, great
 
 3. math.floor()
 
-The floor() function returns the largest integer less than or equal to the given number.
+The `math.floor()` function returns the greatest integer less than or equal to the input.
 
 >>> math.floor(4.5687)
 4
@@ -4206,9 +3498,9 @@ Returns the absolute value of x
 >>> math.fabs(-5.5)
 5.5
 
-5. math.pi()
+5. `math.pi`
 
-constant, returns the value of PI (3.14...)
+The `math.pi` constant gives an approximation of π (about 3.14159). It is a constant, so do not call it like a function.
 
 >>> x = math.pi
 >>> print(x)
@@ -4219,9 +3511,9 @@ constant, returns the value of PI (3.14...)
 Used for finding factorial of a given in a single line
 
 >>> a=5
->>> print("The factorial of" a "is",math.factorial(a))
+>>> print("The factorial of", a, "is", math.factorial(a))
 
-The factorial of a 5 is 120
+The factorial of 5 is 120
 
 7. math.gcd()
 
@@ -4234,15 +3526,8 @@ Used to find the greatest common divisor of two numbers
 
 The gcd of 5 and 15 is : 5
 
----
 
----
-
-<!-- page 100 | Module 1 · source page 46 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 97 | Module 1 · source page 46 -->
 
 LOGARITHMIC AND POWER FUNCTION
 
@@ -4290,15 +3575,8 @@ The value of sine of pi/6 is : 0.49999999999999994
 The value of cosine of pi/6 is : 0.8660254037844387
 The value of tangent of pi/6 is : 0.5773502691896257
 
----
 
----
-
-<!-- page 101 | Module 1 · source page 47 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 98 | Module 1 · source page 47 -->
 
 ## Using the Python Standard Library for handling basic I/O - input(), print()
 
@@ -4349,11 +3627,8 @@ What is your number? 45
 
 46
 
----
 
----
-
-<!-- page 102 | Module 1 · source page 48 -->
+<!-- page 99 | Module 1 · source page 48 -->
 
 Or
 
@@ -4400,11 +3675,8 @@ Using the above syntax, we can pass several objects ($<obj>$) in the `print()` f
 >>> print ('The value of the number is', num)
 ```
 
----
 
----
-
-<!-- page 103 | Module 1 · source page 49 -->
+<!-- page 100 | Module 1 · source page 49 -->
 
 The value of the number is 65
 
@@ -4446,21 +3718,14 @@ Python language supports various types of operators, which are:
 1. **Arithmetic Operators**
 2. **Comparison (Relational) Operators**
 
----
 
----
-
-<!-- page 104 | Module 1 · source page 50 -->
-
-MODULE 1
+<!-- page 101 | Module 1 · source page 50 -->
 
 3. Assignment Operators
 4. Logical Operators
 5. Membership Operators
 6. Identity Operators
 7. 
-
-
 
 ```mermaid
 flowchart TD
@@ -4473,8 +3738,6 @@ PO --> BO[Bitwise Operators]
 PO --> MO[Membership Operators]
 PO --> IO[Identity Operators]
 ```
-
-
 
 ## 1. Python Arithmetic Operators
 
@@ -4492,15 +3755,8 @@ PO --> IO[Identity Operators]
 | ** | Exponent | $4 ** 2 = 16$ |
 | // | Floor Division | $9 // 2 = 4$ |
 
----
 
----
-
-<!-- page 105 | Module 1 · source page 51 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 102 | Module 1 · source page 51 -->
 
 ### Example of Python Arithmetic Operators
 
@@ -4552,13 +3808,8 @@ a // b : 2
 
 50
 
----
 
----
-
-<!-- page 106 | Module 1 · source page 52 -->
-
-MODULE 1 | UCEST105: Algorithmic thinking with Python
+<!-- page 103 | Module 1 · source page 52 -->
 
 | Operator | Name | Example |
 | --- | --- | --- |
@@ -4589,15 +3840,8 @@ a >= b : False
 a <= b : True
 ```
 
----
 
----
-
-<!-- page 107 | Module 1 · source page 53 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 104 | Module 1 · source page 53 -->
 
 ## 3. Python Assignment Operators
 
@@ -4638,15 +3882,8 @@ print ("a /= 5 :",a)
 
 47
 
----
 
----
-
-<!-- page 108 | Module 1 · source page 54 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 105 | Module 1 · source page 54 -->
 
 a %= 3 print ("a %= 3 : ", a) # Exponent Assignment a **= 2 print ("a **= 2 : ", a) # Floor Division Assignment a //= 3 print ("a //= 3 : ", a)
 
@@ -4680,13 +3917,9 @@ a //= 3 : 0.0
 | \| | Binary OR | Sets each bit to 1 if one of the two bits is 1 |
 | ^ | Binary XOR | Sets each bit to 1 if only one of two bits is 1 |
 
----
 
----
+<!-- page 106 | Module 1 · source page 55 -->
 
-<!-- page 109 | Module 1 · source page 55 -->
-
-MODULE 1 | UCEST105: Algorithmic thinking with Python
 ---|---
 ~ | Binary Ones Complement | Inverts all the bits
 << | Binary Left Shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off
@@ -4726,11 +3959,8 @@ a ^ b : 49
 ~a : -61
 ```
 
----
 
----
-
-<!-- page 110 | Module 1 · source page 56 -->
+<!-- page 107 | Module 1 · source page 56 -->
 
 a >> 2 : 240
 a >> 2 : 15
@@ -4760,15 +3990,8 @@ Both x and y are within the specified range
 * Python membership operators are used to determine whether or not a certain value occurs within a sequence.
 * They make it simple to determine the membership of elements in various Python data structures such as lists, tuples, sets, and strings.
 
----
 
----
-
-<!-- page 111 | Module 1 · source page 57 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 108 | Module 1 · source page 57 -->
 
 * Python has two primary membership operators: the in and not in operators.
 
@@ -4801,17 +4024,10 @@ True
 **Example of Python Identity Operators**
 x = 10
 
----
 
----
+<!-- page 109 | Module 1 · source page 58 -->
 
-<!-- page 112 | Module 1 · source page 58 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
-
-y = 5 print(x is y) The code sets the variables x and y to 10 and 5, respectively. Then check whether the both values are equal using is operator. If correct, True value will be displayed else false value.
+y = 5 print(x is y) The expression `x is y` checks whether `x` and `y` refer to the same object. Use `==` to compare their values; for example, `x == y` is `False` here.
 
 **Output**
 
@@ -4821,11 +4037,7 @@ False
 
 When an expression or statement involves multiple operators then it will be resolve using the following operator precedence chart :
 
-
-
 ![Python Operator Precedence Table](/notes/cse/s1/python/module-1/assets/page-058-image-1.png)
-
-
 
 Example 5.4. Consider the assignment statement
 
@@ -4833,23 +4045,12 @@ $R = A + 3 < B * 1 \text{ or } C \text{ and } D$
 
 Let the values of the variables be $A = 1, B = 5, C = -1$, and $D = \text{True}$. Figure 5.1 shows the structure of the evaluation. The numbers shown in the circle denote the order in which the various operators are applied. The final result is 1, which is assigned to R.
 
----
 
----
-
-<!-- page 113 | Module 1 · source page 59 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 110 | Module 1 · source page 59 -->
 
 $$R = A + 3 < B * 1 \text{ or } C \text{ and } D$$
 
-
-
 ![Expression evaluation tree and corresponding table of operations](/notes/cse/s1/python/module-1/assets/page-059-image-1.png)
-
-
 
 | Order | Operation | Resultant |
 | :---: | :---: | :---: |
@@ -4864,14 +4065,8 @@ Evaluation of an arithmetic expression
 
 53
 
----
 
----
-
-<!-- page 114 | Module 1 · source page 60 -->
-
-MODULE 1
-UCEST105: Algorithmic thinking with Python
+<!-- page 111 | Module 1 · source page 60 -->
 
 # Previous Year Questions and Answers
 
@@ -4924,15 +4119,8 @@ i) (50 - 5 * 6) // 4
 
 54
 
----
 
----
-
-<!-- page 115 | Module 1 · source page 61 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 112 | Module 1 · source page 61 -->
 
 ii) not $(10 < 5)$ or $(5 == 5)$
 iii) True and 5
@@ -4953,10 +4141,12 @@ Answer is 5
 Check $(10 < 5) \rightarrow$ **False**
 not $(\text{False}) \rightarrow$ **True**
 Check $(5 == 5) \rightarrow$ **True**
-Now expression is: True or True $ightarrow$ **True**
+Now expression is: True or True $
+ightarrow$ **True**
 
 (iii) In and, if the first value is truthy, Python returns the second value.
-Here, True is truthy $ightarrow$ so it returns 5
+Here, True is truthy $
+ightarrow$ so it returns 5
 
 PART B(9 MARKS)
 
@@ -4964,14 +4154,8 @@ PART B(9 MARKS)
 
 A) Backtracking is a problem-solving strategy in which we build a solution step by step, and whenever we find that the current step cannot lead to a valid solution, we **go back (backtrack)** and try another option.
 
----
 
----
-
-<!-- page 116 | Module 1 · source page 62 -->
-
-MODULE 1
-UCEST105: Algorithmic thinking with Python
+<!-- page 113 | Module 1 · source page 62 -->
 
 Backtracking Approach:
 
@@ -5015,15 +4199,8 @@ Example: Check online reviews, see the restaurant's menu online, ask friends for
   - "Pick the closest restaurant to save travel time."
 - Why it matters: Heuristics simplify complex decisions, helping you make a reasonable choice without analyzing every tiny detail.
 
----
 
----
-
-<!-- page 117 | Module 1 · source page 63 -->
-
-MODULE 1
-
-UCEST105: Algorithmic thinking with Python
+<!-- page 114 | Module 1 · source page 63 -->
 
 **4. Make the Final Decision**
 
@@ -5064,11 +4241,8 @@ b) Given the area of a circle. Write a Python program to calculate the radius of
 
 a)
 
----
 
----
-
-<!-- page 118 | Module 1 · source page 64 -->
+<!-- page 115 | Module 1 · source page 64 -->
 
 MODULE 1 	 UCEST105: Algorithmic thinking with Python
 
@@ -5118,13 +4292,8 @@ Formula: $\text{Area} = \pi \times r^2$
 
 58
 
----
 
----
-
-<!-- page 119 | Module 1 · source page 65 -->
-
-MODULE 1
+<!-- page 116 | Module 1 · source page 65 -->
 
 Step: Divide the problem into smaller steps:
 
@@ -5190,11 +4359,8 @@ $$\begin{aligned}
 \text{greeting} &= '\text{Hello, World!}'
 \end{aligned}$$
 
----
 
----
-
-<!-- page 120 | Module 1 · source page 66 -->
+<!-- page 117 | Module 1 · source page 66 -->
 
 4. a) What is the difference between algorithms and heuristics in problem-solving? Provide an example where heuristics lead to a faster solution than an algorithm.
 
