@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
-import Ticker from "./components/Ticker";
+import Crowd from "./components/Crowd";
 import Work from "./components/Work";
 import Progress from "./components/Progress";
 import Alliance from "./components/Alliance";
@@ -17,7 +17,7 @@ export default function App() {
       <Nav />
       <main id="top">
         <Hero />
-        <Ticker />
+        <Crowd />
         <Work />
         <Progress />
         <Alliance />

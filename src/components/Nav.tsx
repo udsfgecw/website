@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
@@ -10,7 +10,6 @@ const LINKS = [
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const bar = useRef<HTMLDivElement>(null);
 
   // Hairline under the nav once the page has scrolled
   useEffect(() => {
@@ -21,40 +20,19 @@ export default function Nav() {
     return () => io.disconnect();
   }, []);
 
-  // Reading progress along the bottom edge of the nav
-  useEffect(() => {
-    let frame = 0;
-    const update = () => {
-      frame = 0;
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      bar.current?.style.setProperty("transform", `scaleX(${max > 0 ? window.scrollY / max : 0})`);
-    };
-    const onScroll = () => (frame ||= requestAnimationFrame(update));
-    update();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-      cancelAnimationFrame(frame);
-    };
-  }, []);
-
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
-  const solid = scrolled || open;
-  const tone = solid ? "text-ink" : "text-white";
-  const link = cn("label transition-[opacity,color] duration-300 hover:opacity-60", tone);
+  const link = "label text-ink transition-opacity hover:opacity-55";
 
   return (
     <header
       className={cn(
         "sticky top-0 z-50 h-(--nav-h) border-b border-transparent transition-colors duration-300",
-        solid && "border-line bg-white/90 backdrop-blur-md",
+        (scrolled || open) && "border-line bg-white/90 backdrop-blur-md",
       )}
     >
       <div className="grid h-full grid-cols-[1fr_auto_1fr] items-center gap-6 px-5 md:px-10">
@@ -67,7 +45,7 @@ export default function Nav() {
         </nav>
 
         <button
-          className={cn("label justify-self-start transition-colors duration-300 md:hidden", tone)}
+          className="label justify-self-start text-ink md:hidden"
           aria-expanded={open}
           aria-controls="navLinks"
           onClick={() => setOpen((o) => !o)}
@@ -83,12 +61,6 @@ export default function Nav() {
           Join UDSF
         </a>
       </div>
-
-      <div
-        ref={bar}
-        className="absolute inset-x-0 -bottom-px h-0.5 origin-left scale-x-0 bg-[linear-gradient(90deg,var(--color-green),var(--color-blue))]"
-        aria-hidden="true"
-      />
 
       {/* phone menu */}
       <nav

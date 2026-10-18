@@ -6,22 +6,7 @@ import { H2 } from "@/components/Section";
 export default function Join() {
   return (
     <section className="wrap pb-[clamp(4rem,8vw,7rem)]" id="join" aria-labelledby="join-title">
-      <div
-        data-reveal
-        className="relative isolate overflow-hidden rounded-[2rem] bg-ink px-[clamp(1.5rem,5vw,4.5rem)] py-[clamp(3.5rem,8vw,6.5rem)] text-white"
-      >
-        {/* alliance-coloured glows */}
-        <div className="absolute -top-48 -left-40 -z-10 size-[34rem] rounded-full bg-green/40 blur-[120px]" aria-hidden="true" />
-        <div className="absolute -right-40 -bottom-56 -z-10 size-[34rem] rounded-full bg-blue/35 blur-[120px]" aria-hidden="true" />
-        <img
-          className="absolute top-[clamp(1.5rem,4vw,3rem)] right-[clamp(1.5rem,4vw,3rem)] size-12 rounded-xl opacity-90"
-          src={`${import.meta.env.BASE_URL}assets/logo-96.webp`}
-          alt=""
-          width={48}
-          height={48}
-          loading="lazy"
-        />
-
+      <div data-reveal className="rounded-[2rem] bg-ink px-[clamp(1.5rem,5vw,4.5rem)] py-[clamp(3.5rem,8vw,6rem)] text-white">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr] md:items-end">
           <div>
             <p className="label text-white/60">Join</p>

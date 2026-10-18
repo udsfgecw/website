@@ -8,35 +8,31 @@ export interface Achievement {
   description: string;
   image: string | null;
   photo?: boolean;
-  /** first of its kind at GEC Wayanad */
-  first?: boolean;
-  tags?: readonly string[];
 }
 
 export const ACHIEVEMENTS: readonly Achievement[] = [
   {
     title: "Started six student clubs",
     location: "Campus culture",
-    description: "Initiated six new clubs, creating more ways for students to take part in campus life.",
+    description: "Initiated the Literary Club, Drawing Club, Dance Club, Music Club, Film Club and Karma, creating more ways for students to take part in campus life.",
     image: "clubs.webp",
-    tags: ["Literary", "Drawing", "Dance", "Music", "Film", "Karma"],
   },
   {
     title: "Brought a new bus to college",
     location: "College transport",
-    description: "Secured a new college bus, responding to students’ long-standing need for better transport.",
+    description: "Secured a new college bus, answering students’ call for better transport.",
     image: "bus.webp",
   },
   {
     title: "Secured generators for the hostels",
     location: "Hostel facilities",
-    description: "Brought generator facilities to the hostels, addressing students’ long-standing demand for backup power.",
+    description: "Brought generator facilities to the hostels, giving students backup power.",
     image: "generator.webp",
   },
   {
     title: "Secured student parking facilities",
     location: "Student parking",
-    description: "Secured parking space for students on campus, meeting a long-standing student need.",
+    description: "Secured dedicated parking space for students on campus.",
     image: "parking.webp",
   },
   {
@@ -50,14 +46,12 @@ export const ACHIEVEMENTS: readonly Achievement[] = [
     location: "Campus publications",
     description: "Launched the first web magazine at GEC Wayanad, a place for students’ writing and stories.",
     image: null,
-    first: true,
   },
   {
     title: "Created the first audiobook",
     location: "Campus publications",
     description: "Produced the first audiobook at GEC Wayanad, bringing the web magazine’s writing and stories to audio.",
     image: "audiobook.webp",
-    first: true,
   },
   {
     title: "Installed new lights on LH2 road",
