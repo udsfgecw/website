@@ -53,8 +53,9 @@ const components: Components = {
     const text = lead?.type === "element" && lead.tagName === "strong" && lead.children[0]?.type === "text" ? lead.children[0].value : "";
     const label = /^[^.:]{2,40}\.$/.test(text) ? text.slice(0, -1) : undefined;
     const warn = text.startsWith("Watch out");
+    const key = /^(Key idea|Important)/.test(text);
     return (
-      <blockquote className={warn ? "warn" : undefined} data-label={label}>
+      <blockquote className={warn ? "warn" : key ? "key" : undefined} data-label={label}>
         {children}
       </blockquote>
     );
