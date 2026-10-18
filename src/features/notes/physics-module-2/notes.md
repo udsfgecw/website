@@ -2,30 +2,30 @@
 
 # Module 2 at a glance
 
-Quantum mechanics is the branch of mechanics that gives the mathematical description of the motion and interaction of very small particles such as electrons, protons and atoms. Classical (Newtonian) mechanics works perfectly for cricket balls and planets, but it fails at the atomic scale: it cannot explain why atoms are stable, why their spectra consist of sharp lines, or why electrons are diffracted by crystals. Quantum mechanics replaces it there. It rests on three ideas that have no place in everyday physics:
+Quantum mechanics is the branch of mechanics that gives the mathematical description of the motion and interaction of very small particles such as electrons, protons and atoms. Classical (Newtonian) mechanics works perfectly for cricket balls and planets, but it fails at the atomic scale. It cannot explain why atoms are stable, why their spectra have sharp lines, or why electrons are diffracted by crystals. Quantum mechanics takes its place there. It is based on three ideas that have no place in everyday physics:
 
-1. **Quantisation of energy.** A confined particle cannot have any energy it likes; only certain discrete energies are allowed.
-2. **Wave–particle duality.** Every moving particle has a wave associated with it, the **matter wave**. The wave is described by a **wave function** $\Psi$, and $|\Psi|^2$ tells you where the particle is *likely* to be, not where it definitely *is*.
+1. **Quantisation of energy.** A confined particle cannot have any energy it likes. Only certain discrete energies are allowed.
+2. **Wave–particle duality.** Every moving particle has a wave associated with it, called the **matter wave**. The wave is described by a **wave function** $\Psi$, and $|\Psi|^2$ tells where the particle is *likely* to be, not where it definitely *is*.
 3. **The uncertainty principle.** Position and momentum (and also energy and time) cannot both be known exactly at the same time.
 
-From these ideas we build the **Schrödinger equation**, the equation that the wave function obeys, and we solve it for two standard problems: a particle trapped in a **box** (which explains why energy comes in discrete levels and why a confined particle can never be at rest) and a particle meeting a **barrier** that it does not have enough energy to climb (which explains **tunnelling**).
+From these ideas we build the **Schrödinger equation**, the equation that the wave function follows. We solve it for two standard problems: a particle trapped in a **box** (which explains why energy comes in discrete levels and why a confined particle can never be at rest) and a particle meeting a **barrier** that it does not have enough energy to climb (which explains **tunnelling**).
 
 ## What you will be able to do
 
 - Derive the de Broglie relation $\lambda=h/p$ and calculate the wavelength of any particle, and of an electron accelerated through a voltage.
-- Explain the physical meaning of the wave function (Born's interpretation), list the conditions for a well-behaved wave function, and normalise a wave function.
+- Explain the physical meaning of the wave function (Born's interpretation), write the conditions for a well-behaved wave function, and normalise a wave function.
 - Write the wave function of a free particle and show that $\omega=E/\hbar$ and $k=p/\hbar$.
 - Explain wave packets, phase and group velocity, and how a wave packet leads to the uncertainty principle.
 - State the uncertainty principle for the three conjugate pairs and use it to show that electrons cannot exist inside the nucleus and that spectral lines have a natural width.
-- Derive the time-dependent Schrödinger equation by two routes, and derive the time-independent equation from it.
+- Derive the time-dependent Schrödinger equation by two methods, and derive the time-independent equation from it.
 - Solve the Schrödinger equation for a particle in a one-dimensional box: find the energy eigenvalues and the normalised eigenfunctions, and interpret them.
 - Explain quantum mechanical tunnelling, write the wave function in each region, define the transmission coefficient and list its applications.
 
 ## How to use these notes
 
 - Each page follows **idea → explanation or derivation → worked example → common mistakes.**
-- Green boxes hold key ideas and definitions. Amber boxes marked **Watch out** hold mistakes that cost marks. Boxes marked **Note on the source** record where the lecture notes were corrected.
-- The derivations of the Schrödinger equation and the particle in a box are the most frequently asked essay questions. Read them, then close the notes and write them out yourself, step by step, until you can do it without looking.
+- Green boxes show key ideas and definitions. Amber boxes marked **Watch out** show mistakes that make you lose marks. Boxes marked **Note on the source** show where the lecture notes were corrected.
+- The derivations of the Schrödinger equation and the particle in a box are the most frequently asked essay questions. Read them, then close the notes and write them yourself, step by step, until you can do it without looking.
 - The last page has practice problems with full answers, the past KTU exam questions and a formula sheet.
 
 ## Where each topic sits
@@ -39,7 +39,7 @@ From these ideas we build the **Schrödinger equation**, the equation that the w
 | Applications | Particle in a box (solution, then energies and wave functions), tunnelling |
 | Revision | Practice questions, exam questions and formula sheet |
 
-> **Prerequisites.** Wavelength $\lambda$, frequency $\nu$, period $T=1/\nu$, angular frequency $\omega=2\pi\nu=2\pi/T$ and wave number $k=2\pi/\lambda$; the photon relations $E=h\nu$ and $p=h/\lambda$; complex numbers, with $e^{i\theta}=\cos\theta+i\sin\theta$, the conjugate $z^*$ and $|z|^2=z^*z$; partial derivatives and simple integration, including $\sin^2\theta=\tfrac12(1-\cos2\theta)$.
+> **Before you start.** You should know wavelength $\lambda$, frequency $\nu$, period $T=1/\nu$, angular frequency $\omega=2\pi\nu=2\pi/T$ and wave number $k=2\pi/\lambda$; the photon relations $E=h\nu$ and $p=h/\lambda$; complex numbers, with $e^{i\theta}=\cos\theta+i\sin\theta$, the conjugate $z^*$ and $|z|^2=z^*z$; partial derivatives and simple integration, including $\sin^2\theta=\tfrac12(1-\cos2\theta)$.
 
 ---
 
@@ -49,11 +49,11 @@ From these ideas we build the **Schrödinger equation**, the equation that the w
 
 ## The idea
 
-By the early twentieth century it was clear that **light has a dual nature**. Interference, diffraction and polarisation show that light is a wave. The photoelectric effect and the Compton effect show that light also behaves as a stream of particles, **photons**, each carrying energy $E=h\nu$ and momentum $p=h/\lambda$.
+By the early twentieth century it was clear that **light has a dual nature**. Interference, diffraction and polarisation show that light is a wave. The photoelectric effect and the Compton effect show that light also behaves as a stream of particles, called **photons**, each carrying energy $E=h\nu$ and momentum $p=h/\lambda$.
 
 In **1924** the French physicist **Louis de Broglie** argued by analogy and symmetry: if waves (light) can behave like particles, then particles should also be able to behave like waves. He proposed that **every moving object has a wave associated with it** under suitable conditions. These waves are called **matter waves** or **de Broglie waves**.
 
-> **Matter waves.** The waves associated with a particle in motion are called matter waves or de Broglie waves. Their wavelength is called the de Broglie wavelength.
+> **Matter waves.** The waves associated with a moving particle are called matter waves or de Broglie waves. Their wavelength is called the de Broglie wavelength.
 
 ## Deriving the de Broglie wavelength (route 1: from the photon's energy)
 
@@ -67,7 +67,7 @@ $$
 E=mc^2\qquad\text{(particle nature)}
 $$
 
-Since both describe the same photon, they must be equal. This expresses its **wave–particle dual nature**:
+Since both describe the same photon, they must be equal. This shows its **wave–particle dual nature**:
 
 $$
 mc^2=\frac{hc}{\lambda}
@@ -87,7 +87,7 @@ $$
 
 ## Deriving it (route 2: from the photon's momentum)
 
-The momentum of a photon is known directly from experiment and theory to be $p=h/\lambda$, which rearranges to $\lambda=h/p$. De Broglie's step was to assume that this equation is **completely general**: it applies not only to photons but to electrons, protons, atoms and every other particle.
+The momentum of a photon is known directly from experiment and theory to be $p=h/\lambda$, which can be written as $\lambda=h/p$. De Broglie's step was to assume that this equation is **completely general**. It applies not only to photons but to electrons, protons, atoms and every other particle.
 
 ## The de Broglie wavelength of a particle
 
@@ -117,7 +117,7 @@ $$
 \lambda=\frac{h}{mv}=\frac{h}{m}\sqrt{\frac{m}{2eV}}=\frac{h}{\sqrt{2meV}}
 $$
 
-This is the same as putting $KE=eV$ into $\lambda=h/\sqrt{2m\,KE}$. Now substitute $h=6.626\times10^{-34}\ \text{J s}$, $m=9.11\times10^{-31}\ \text{kg}$ and $e=1.6\times10^{-19}\ \text{C}$:
+This is the same as putting $KE=eV$ in $\lambda=h/\sqrt{2m\,KE}$. Now put $h=6.626\times10^{-34}\ \text{J s}$, $m=9.11\times10^{-31}\ \text{kg}$ and $e=1.6\times10^{-19}\ \text{C}$:
 
 $$
 \lambda=\frac{6.626\times10^{-34}}{\sqrt{2\times9.11\times10^{-31}\times1.6\times10^{-19}\times V}}=\frac{1.227\times10^{-9}}{\sqrt V}\ \text{m}
@@ -131,23 +131,23 @@ $$
 
 (because $12.27^2\approx150$). Both forms appear in textbooks; they are the same formula.
 
-> **Watch out.** These shortcut formulas are **only for electrons**, because the electron's mass and charge are built into the number $1.227\times10^{-9}$. For a proton, neutron, alpha particle or anything else, go back to $\lambda=h/\sqrt{2m\,KE}$ with the correct mass.
+> **Watch out.** These shortcut formulas are **only for electrons**, because the mass and charge of the electron are already inside the number $1.227\times10^{-9}$. For a proton, neutron, alpha particle or anything else, go back to $\lambda=h/\sqrt{2m\,KE}$ with the correct mass.
 
 ## Some properties of matter waves
 
 - The lighter the particle, the longer its wavelength for a given speed ($\lambda\propto1/m$). This is why wave effects are noticeable for electrons but not for everyday objects.
 - The faster the particle, the shorter its wavelength ($\lambda\propto1/v$).
-- A particle at rest ($v=0$) would have an infinite wavelength: matter waves are associated only with **moving** particles.
-- Matter waves are not electromagnetic waves. They are produced by any moving particle, charged or neutral (neutrons are diffracted too).
+- A particle at rest ($v=0$) would have an infinite wavelength. Matter waves are associated only with **moving** particles.
+- Matter waves are not electromagnetic waves. They are produced by any moving particle, charged or neutral (neutrons are also diffracted).
 - The wave is not a physical disturbance of a medium. As the wave function pages explain, it is a **probability wave**.
 
 ## Experimental evidence
 
-De Broglie had no experimental evidence when he proposed the idea. He was, however, able to show that it explained the **stationary orbits** and the quantised energy levels that Bohr had postulated for the hydrogen atom in 1913: an electron orbit is allowed only if a whole number of de Broglie wavelengths fits around it, $2\pi r=n\lambda$, which is exactly Bohr's condition on angular momentum.
+De Broglie had no experimental evidence when he proposed the idea. But he could show that it explained the **stationary orbits** and the quantised energy levels that Bohr had assumed for the hydrogen atom in 1913. An electron orbit is allowed only if a whole number of de Broglie wavelengths fits around it, $2\pi r=n\lambda$, which is exactly Bohr's condition on angular momentum.
 
-The direct proof came in **1927**. **Davisson and Germer** in the USA, and independently **G. P. Thomson** in Britain, showed that electrons are **diffracted** by crystals exactly as X-rays are, with the wavelength predicted by $\lambda=h/p$. Today electron diffraction and the electron microscope rely on this.
+The direct proof came in **1927**. **Davisson and Germer** in the USA, and independently **G. P. Thomson** in Britain, showed that electrons are **diffracted** by crystals exactly as X-rays are, with the wavelength given by $\lambda=h/p$. Today, electron diffraction and the electron microscope depend on this.
 
-> **Key idea.** Wave and particle are two aspects of the same object. Which aspect shows up depends on the experiment: diffraction reveals the wave, a collision with a detector reveals the particle.
+> **Key idea.** Wave and particle are two aspects of the same object. Which aspect we see depends on the experiment. Diffraction shows the wave, and a collision with a detector shows the particle.
 
 ---
 
@@ -165,7 +165,7 @@ $$
 \lambda=\frac{h}{mv}=\frac{6.626\times10^{-34}}{0.5\times13.9}=\mathbf{9.5\times10^{-35}\ \text{m}}
 $$
 
-This is roughly $10^{-34}\ \text{m}$, absurdly small compared with the size of the ball (and far smaller than even a nucleus). No experiment could ever detect a wave aspect in the behaviour of the ball, so for everyday objects classical mechanics is perfectly good.
+This is roughly $10^{-34}\ \text{m}$, which is extremely small compared with the size of the ball (and far smaller than even a nucleus). No experiment can ever detect a wave aspect in the behaviour of the ball, so for everyday objects classical mechanics is perfectly good.
 
 (b) Using the electron formula,
 
@@ -175,7 +175,7 @@ $$
 
 This is about the size of an atom, and it is much larger than the classical radius of the electron ($\approx10^{-15}\ \text{m}$). So the wave nature of the electron **cannot** be neglected. It is also comparable to the spacing between atoms in a crystal, which is why crystals diffract electrons.
 
-> **Note on the source.** One lecture set gave the electron's wavelength in part (b) as $0.123\times10^{-10}\ \text{m}$. The correct value is $1.23\times10^{-10}\ \text{m}$, ten times larger, as the formula $\lambda=1.227\times10^{-9}/\sqrt V$ shows for $V=100$.
+> **Note on the source.** One lecture set gave the wavelength of the electron in part (b) as $0.123\times10^{-10}\ \text{m}$. The correct value is $1.23\times10^{-10}\ \text{m}$, ten times larger, as the formula $\lambda=1.227\times10^{-9}/\sqrt V$ shows for $V=100$.
 
 **Example 2. The Davisson–Germer experiment.** In the original experiment the electrons were accelerated through $54\ \text{V}$. Find their wavelength.
 
@@ -183,17 +183,17 @@ $$
 \lambda=\frac{1.227\times10^{-9}}{\sqrt{54}}=\frac{1.227\times10^{-9}}{7.35}=\mathbf{1.67\times10^{-10}\ \text{m}}=1.67\ \text{Å}
 $$
 
-This matched the wavelength measured from the diffraction pattern of a nickel crystal, which is how the experiment confirmed de Broglie's hypothesis.
+This matched the wavelength measured from the diffraction pattern of a nickel crystal, and this is how the experiment confirmed de Broglie's hypothesis.
 
 **Example 3. A slow (thermal) neutron.** Find the de Broglie wavelength of a neutron with kinetic energy $0.025\ \text{eV}$.
 
-The electron formula cannot be used. Convert the energy to joules, $KE=0.025\times1.6\times10^{-19}=4.0\times10^{-21}\ \text{J}$, and use the general form:
+The electron formula cannot be used. Change the energy to joules, $KE=0.025\times1.6\times10^{-19}=4.0\times10^{-21}\ \text{J}$, and use the general form:
 
 $$
 \lambda=\frac{h}{\sqrt{2m_nKE}}=\frac{6.626\times10^{-34}}{\sqrt{2\times1.675\times10^{-27}\times4.0\times10^{-21}}}=\mathbf{1.81\times10^{-10}\ \text{m}}
 $$
 
-Again about $1.8\ \text{Å}$: slow neutrons are diffracted by crystals and are used to study crystal structures.
+Again about $1.8\ \text{Å}$. Slow neutrons are diffracted by crystals and are used to study crystal structures.
 
 **Example 4. A proton versus an electron.** A proton and an electron are each accelerated through $100\ \text{V}$. Compare their wavelengths.
 
@@ -223,7 +223,7 @@ From $\lambda=\sqrt{150/V}\ \text{Å}$: $1=\sqrt{150/V}$, so $V=\mathbf{150\ \te
 
 ## The idea
 
-In every wave something varies periodically with space and time:
+In every wave, something varies periodically with space and time:
 
 | Wave | What varies |
 | --- | --- |
@@ -238,7 +238,7 @@ $$
 \Psi=\Psi(x,y,z,t)
 $$
 
-The wave function is a mathematical function that represents the **state** of the particle. The mathematical theory of quantum mechanics describes how to use $\Psi(x,y,z,t)$ to determine the particle's position, velocity, momentum, energy, angular momentum and so on. Everything that can be known about the particle is contained in $\Psi$.
+The wave function is a mathematical function that represents the **state** of the particle. The mathematical theory of quantum mechanics tells how to use $\Psi(x,y,z,t)$ to find the position, velocity, momentum, energy, angular momentum and so on of the particle. Everything that can be known about the particle is contained in $\Psi$.
 
 ## Physical significance (Born's interpretation)
 
@@ -251,7 +251,7 @@ $$
 
 where $\Psi^*$ is the complex conjugate of $\Psi$, is always **real and positive**.
 
-3. **$|\Psi|^2$ is a probability density.** $|\Psi(x,y,z,t)|^2$ represents the **probability of finding the particle at the point $(x,y,z)$ at time $t$**, per unit volume. It is called the **probability density** or the **probability distribution function**. Where $|\Psi|^2$ is large the particle is likely to be found; where it is small, unlikely.
+3. **$|\Psi|^2$ is a probability density.** $|\Psi(x,y,z,t)|^2$ represents the **probability of finding the particle at the point $(x,y,z)$ at time $t$**, per unit volume. It is called the **probability density** or the **probability distribution function**. Where $|\Psi|^2$ is large, the particle is likely to be found. Where it is small, the particle is unlikely to be found.
 4. **Probability in a region.** The probability of finding the particle in a small volume $dV$ around $(x,y,z)$ at time $t$ is $|\Psi|^2\,dV$. For a finite region it is the integral
 
 $$
@@ -260,8 +260,8 @@ $$
 
 $P$ always lies between $0$ (never there) and $1$ (certainly there). For example, if $P=0.4$ for a region, there is a 40 % chance of finding the particle in that region.
 
-5. **Probability amplitude.** Because $\Psi$ itself is not a probability but its square is, $\Psi$ is also called the **probability amplitude**.
-6. **Statistical link between wave and particle.** The wave function relates the particle nature and the wave nature **statistically**. It does not tell us exactly where the particle is; it tells us where it is *likely* to be. If we repeat the same experiment many times, the particle is found most often where $|\Psi|^2$ is largest.
+5. **Probability amplitude.** $\Psi$ itself is not a probability, but its square is. So $\Psi$ is also called the **probability amplitude**.
+6. **Statistical link between wave and particle.** The wave function connects the particle nature and the wave nature **statistically**. It does not tell exactly where the particle is. It tells where the particle is *likely* to be. If we repeat the same experiment many times, the particle is found most often where $|\Psi|^2$ is largest.
 
 > **Key idea.** Quantum mechanics does not predict the exact location of a particle. It predicts the **probability** of finding it in each region of space. The matter wave is a **probability wave**.
 
@@ -273,7 +273,7 @@ $$
 P(a\le x\le b)=\int_a^b|\Psi|^2\,dx
 $$
 
-> **Watch out.** The probability density is $|\Psi|^2=\Psi^*\Psi$, **not** $\Psi^2$. For a complex $\Psi$, $\Psi^2$ is itself complex and cannot be a probability. Only when $\Psi$ happens to be real (as for the particle in a box) are the two the same.
+> **Watch out.** The probability density is $|\Psi|^2=\Psi^*\Psi$, **not** $\Psi^2$. For a complex $\Psi$, $\Psi^2$ is itself complex and cannot be a probability. Only when $\Psi$ is real (as for the particle in a box) are the two the same.
 
 ---
 
@@ -291,7 +291,7 @@ $$
 
 A wave function that satisfies this is said to be **normalised** (normalised to unity).
 
-Now suppose we have a wave function $\Psi$ that solves the Schrödinger equation but is not normalised. Multiplying a solution by a constant $A$ (independent of $x$, $y$, $z$) gives another solution, $\Psi_N=A\Psi$. We choose $A$ so that the new wave function is normalised. Adding up the probability at all points in the volume $V$,
+Now suppose we have a wave function $\Psi$ that solves the Schrödinger equation but is not normalised. If we multiply a solution by a constant $A$ (not depending on $x$, $y$, $z$), we get another solution, $\Psi_N=A\Psi$. We choose $A$ so that the new wave function is normalised. Adding the probability at all points in the volume $V$,
 
 $$
 \sum_{\text{all points in }V}|\Psi_N|^2=1\qquad\text{or}\qquad\int_V|\Psi_N|^2\,dV=1
@@ -301,7 +301,7 @@ $$
 \text{that is}\qquad |A|^2\int_V|\Psi|^2\,dV=1
 $$
 
-> **Normalisation.** The process of multiplying a wave function by a suitable constant so that the probability of finding the particle within the region becomes exactly 1 is called **normalisation**. The constant is the **normalisation constant**.
+> **Normalisation.** The process of multiplying a wave function by a suitable constant so that the probability of finding the particle within the region becomes exactly 1 is called **normalisation**. The constant is called the **normalisation constant**.
 
 ## Why a wave function must be normalisable
 
@@ -313,8 +313,8 @@ The physically acceptable ("well-behaved") wave functions satisfy these conditio
 
 1. **$\Psi$ is finite everywhere.** An infinite value would mean an infinite probability.
 2. **$\Psi$ is single-valued.** At any point and time there must be only one value of the probability.
-3. **$\Psi$ is continuous.** The probability cannot jump abruptly from place to place.
-4. **The first derivatives $\dfrac{\partial\Psi}{\partial x}$, $\dfrac{\partial\Psi}{\partial y}$, $\dfrac{\partial\Psi}{\partial z}$ are continuous and single-valued**, wherever the potential is finite. These derivatives determine the momentum of the particle, which must change smoothly.
+3. **$\Psi$ is continuous.** The probability cannot jump suddenly from place to place.
+4. **The first derivatives $\dfrac{\partial\Psi}{\partial x}$, $\dfrac{\partial\Psi}{\partial y}$, $\dfrac{\partial\Psi}{\partial z}$ are continuous and single-valued**, wherever the potential is finite. These derivatives decide the momentum of the particle, which must change smoothly.
 5. **$\Psi$ is normalisable**, so $\Psi\to0$ as $x,y,z\to\pm\infty$.
 
 ## Worked example
@@ -379,7 +379,7 @@ $$
 k=\frac{2\pi}{\lambda}=\frac{2\pi p}{h}=\frac{p}{\hbar}\qquad(3)
 $$
 
-**Substitute (2) and (3) into (1):**
+**Put (2) and (3) in (1):**
 
 $$
 \Psi=a\,e^{-i\left(\frac{E}{\hbar}t-\frac{p}{\hbar}x\right)}
@@ -393,7 +393,7 @@ This is the wave function of a free particle of energy $E$ and momentum $p$. It 
 
 ## A second way to reach the same form
 
-The same result can be reached through frequency and wavelength (this is the route used in the second lecture set). Write the wave as
+The same result can be reached through frequency and wavelength (this is the method used in the second lecture set). Write the wave as
 
 $$
 \Psi=A\,e^{-i\omega\left(t-\frac xv\right)}
@@ -425,9 +425,9 @@ $$
 |\Psi|^2=\Psi^*\Psi=A\,e^{+\frac{i}{\hbar}(Et-px)}\cdot A\,e^{-\frac{i}{\hbar}(Et-px)}=A^2e^{0}=A^2
 $$
 
-This is a **constant**: it does not depend on position or time. The particle is equally likely to be found at any point along the $x$ axis. That makes sense, because this wave has one exact wavelength and so describes a particle with an exactly known momentum but a completely unknown position. The next page shows how a particle that *is* located somewhere is described instead.
+This is a **constant**. It does not depend on position or time. The particle is equally likely to be found at any point along the $x$ axis. This makes sense, because this wave has one exact wavelength and so describes a particle with an exactly known momentum but a completely unknown position. The next page shows how a particle that *is* located somewhere is described.
 
-> **Watch out.** The sign convention matters only for consistency. These notes always use $e^{-\frac{i}{\hbar}(Et-px)}$, which represents a wave moving in the $+x$ direction. Use the same form all through a derivation.
+> **Watch out.** The sign convention matters only for consistency. These notes always use $e^{-\frac{i}{\hbar}(Et-px)}$, which represents a wave moving in the $+x$ direction. Use the same form in the whole derivation.
 
 ---
 
@@ -437,7 +437,7 @@ This is a **constant**: it does not depend on position or time. The particle is 
 
 ## A single wave cannot represent a localised particle
 
-The wave function of a moving body reflects the probability of finding it at a particular place at a particular time. Consider the free-particle wave function $\Psi=Ae^{-i(\omega t-kx)}$. Its real part, $A\cos(\omega t-kx)$, is a sine-shaped wave of constant amplitude that goes on for ever in both directions.
+The wave function of a moving body shows the probability of finding it at a particular place at a particular time. Consider the free-particle wave function $\Psi=Ae^{-i(\omega t-kx)}$. Its real part, $A\cos(\omega t-kx)$, is a sine-shaped wave of constant amplitude that goes on for ever in both directions.
 
 As the previous page showed, its probability density is
 
@@ -453,7 +453,7 @@ A real particle is more likely to be found in some places than in others at a gi
 
 ![Top: a single wavelength extends everywhere. Bottom: a wave packet confined to a region of width Δx](/notes/cse/s1/physics/module-2/wave-packet.webp)
 
-**How a wave packet is formed.** A wave packet is formed by the **superposition** (adding together) of a large number of waves of slightly different wavelengths and frequencies. In one small region the waves are in step and reinforce each other, producing a large amplitude; away from that region they drift out of step and cancel, so the amplitude dies away.
+**How a wave packet is formed.** A wave packet is formed by the **superposition** (adding together) of a large number of waves of slightly different wavelengths and frequencies. In one small region the waves are in step and reinforce each other, which gives a large amplitude. Away from that region they go out of step and cancel, so the amplitude dies away.
 
 - The **larger** the number of component waves (the wider the range of wavelengths), the **smaller** the length of the wave packet.
 - The **smaller** the number of component waves, the **longer** the packet.
@@ -467,17 +467,17 @@ Two different velocities describe a wave packet:
 - The **phase velocity** $v_p$ is the velocity of the individual component waves (the crests inside the packet).
 - The **group velocity** $v_g$ is the velocity with which the wave packet as a whole (its envelope) moves.
 
-The group velocity equals the velocity of the **particle**, so it is also called the **particle velocity**. It is the group, not the individual waves, that carries the particle along.
+The group velocity is equal to the velocity of the **particle**, so it is also called the **particle velocity**. It is the group, not the individual waves, that carries the particle along.
 
 ## From wave packets to uncertainty
 
-This picture leads straight to the uncertainty principle:
+This picture leads directly to the uncertainty principle:
 
 - If the wave function is a single sine wave of wavelength $\lambda$, the momentum $p=h/\lambda$ is known **exactly**. But $|\Psi|^2$ has the same value all over space, so the position at a given time cannot be determined. The particle is "spread out" in space: **exact momentum means a very large uncertainty in position**.
-- If the wave function is a narrow packet of width $\Delta x$, then $|\Psi|^2$ is zero everywhere except in that region, so the position is known to within $\Delta x$. But the packet is formed by the interference of a large number of waves of slightly different wavelengths. Since $\lambda$ can take any value in that range, the momentum $p=h/\lambda$ can also take a range of values: there is an **uncertainty in momentum $\Delta p$**.
+- If the wave function is a narrow packet of width $\Delta x$, then $|\Psi|^2$ is zero everywhere except in that region, so the position is known to within $\Delta x$. But the packet is formed by the interference of a large number of waves of slightly different wavelengths. Since $\lambda$ can take any value in that range, the momentum $p=h/\lambda$ can also take a range of values. So there is an **uncertainty in momentum $\Delta p$**.
 - For a **narrower** packet the number of component waves must be **larger**, so $\Delta p$ is **larger**.
 
-> **Key idea.** You cannot make $\Delta x$ and $\Delta p$ both small at the same time. This trade-off is not a fault of our instruments; it is built into the wave nature of matter. It is **Heisenberg's uncertainty principle** (next page).
+> **Key idea.** You cannot make $\Delta x$ and $\Delta p$ both small at the same time. This trade-off is not a fault of our instruments. It is part of the wave nature of matter. It is **Heisenberg's uncertainty principle** (next page).
 
 > **Watch out.** The individual waves inside a packet (phase velocity) and the packet itself (group velocity) move at different speeds. When an exam asks for the speed of the particle, it is the **group** velocity.
 
@@ -489,15 +489,15 @@ This picture leads straight to the uncertainty principle:
 
 ## Statement
 
-When we treat a moving particle as a wave group, there are fundamental limits to the accuracy with which we can measure particle properties such as position and momentum.
+When we treat a moving particle as a wave group, there are basic limits to the accuracy with which we can measure particle properties such as position and momentum.
 
-> **Heisenberg's uncertainty principle.** It is impossible to know simultaneously and exactly both the position and the momentum of a particle. If $\Delta x$ is the uncertainty in the position and $\Delta p$ the uncertainty in the corresponding component of momentum ($p_x$), then
+> **Heisenberg's uncertainty principle.** It is impossible to know both the position and the momentum of a particle exactly at the same time. If $\Delta x$ is the uncertainty in the position and $\Delta p$ the uncertainty in the corresponding component of momentum ($p_x$), then
 >
 > $$\Delta x\,\Delta p\ \ge\ \frac{\hbar}{2}$$
 
 where $\hbar=\dfrac{h}{2\pi}=1.055\times10^{-34}\ \text{J s}$, so that $\dfrac\hbar2=\dfrac{h}{4\pi}$.
 
-In words: the product of the uncertainty in position and the uncertainty in momentum can never be smaller than $\hbar/2$. The more precisely one is known, the less precisely the other can be known.
+In simple words: the product of the uncertainty in position and the uncertainty in momentum can never be smaller than $\hbar/2$. The more precisely one is known, the less precisely the other can be known.
 
 ## Other conjugate pairs
 
@@ -511,21 +511,21 @@ $$
 \Delta L\,\Delta\theta\ \ge\ \frac{\hbar}{2}
 $$
 
-Here $\Delta E$ and $\Delta t$ are the uncertainties in determining energy and time, and $\Delta L$ and $\Delta\theta$ are the uncertainties in the angular momentum and the angle.
+Here $\Delta E$ and $\Delta t$ are the uncertainties in finding the energy and time, and $\Delta L$ and $\Delta\theta$ are the uncertainties in the angular momentum and the angle.
 
 There is **no** uncertainty relation between $\Delta x$ and a component of momentum other than the $x$ component. For example, $x$ and $p_y$ can both be known exactly at the same time.
 
-> **Note on the source.** One lecture set wrote these relations with $\hbar$ on the right ($\Delta x\,\Delta p\ge\hbar$, $\Delta E\,\Delta t\ge\hbar$, $\Delta J\,\Delta\theta\ge\hbar$) and the other with $\hbar/2$. The precise lower limit is $\hbar/2$, used throughout these notes. Some textbooks write $\hbar$ or even $h$ because they are making an order-of-magnitude estimate; answers then change by a factor of 2 or $4\pi$. State which form you use.
+> **Note on the source.** One lecture set wrote these relations with $\hbar$ on the right ($\Delta x\,\Delta p\ge\hbar$, $\Delta E\,\Delta t\ge\hbar$, $\Delta J\,\Delta\theta\ge\hbar$) and the other with $\hbar/2$. The exact lower limit is $\hbar/2$, used in all these notes. Some textbooks write $\hbar$ or even $h$ because they make an estimate of the order of magnitude. Then the answers change by a factor of 2 or $4\pi$. Write which form you use.
 
 ## What the principle does and does not say
 
-- It is **not** about clumsy instruments or experimental error. Even with perfect instruments, $\Delta x\,\Delta p$ cannot be smaller than $\hbar/2$. It is a property of nature, coming from the wave nature of matter.
-- It applies to **simultaneous** knowledge. You can measure position very precisely, but then the momentum becomes very uncertain, and vice versa.
+- It is **not** about poor instruments or experimental error. Even with perfect instruments, $\Delta x\,\Delta p$ cannot be smaller than $\hbar/2$. It is a property of nature, coming from the wave nature of matter.
+- It applies to **simultaneous** knowledge. You can measure position very precisely, but then the momentum becomes very uncertain, and the other way round.
 - Because $\hbar$ is tiny, the limits matter only on the **atomic scale**. For everyday objects the uncertainties are far too small to notice.
 
 ## Why we never notice it in everyday life
 
-**Example 1.** A bullet of mass $25\ \text{g}$ moves with a speed of $400\ \text{m/s}$. The speed is measured to an accuracy of $0.02\,\%$. How precisely can the position of the bullet be located?
+**Example 1.** A bullet of mass $25\ \text{g}$ moves with a speed of $400\ \text{m/s}$. The speed is measured to an accuracy of $0.02\,\%$. How precisely can the position of the bullet be found?
 
 The uncertainty in speed is $0.02\,\%$ of $400\ \text{m/s}$:
 
@@ -547,7 +547,7 @@ $$
 
 This uncertainty is far smaller than even the size of an atom (about $10^{-10}\ \text{m}$), so for a bullet it is completely negligible.
 
-> **Note on the source.** The lecture notes gave $2.626\times10^{-32}\ \text{m}$; evaluating $h/(4\pi\,\Delta p)$ with $h=6.625\times10^{-34}$ gives $2.64\times10^{-32}\ \text{m}$.
+> **Note on the source.** The lecture notes gave $2.626\times10^{-32}\ \text{m}$. When we calculate $h/(4\pi\,\Delta p)$ with $h=6.625\times10^{-34}$, we get $2.64\times10^{-32}\ \text{m}$.
 
 **Example 2. An electron in an atom.** An electron is confined within an atom of size about $10^{-10}\ \text{m}$. Find the minimum uncertainty in its speed.
 
@@ -559,9 +559,9 @@ $$
 \Delta v=\frac{\Delta p}{m}=\frac{5.3\times10^{-25}}{9.11\times10^{-31}}=\mathbf{5.8\times10^{5}\ \text{m/s}}
 $$
 
-An uncertainty of more than half a million metres per second: for an electron in an atom the uncertainty principle is enormous, and the idea of a definite orbit with a definite speed breaks down.
+An uncertainty of more than half a million metres per second. For an electron in an atom, the uncertainty principle is very large, and the idea of a definite orbit with a definite speed breaks down.
 
-> **Watch out.** Convert a percentage accuracy into an actual $\Delta v$ before multiplying by the mass, and use the mass in kilograms. And remember that $\Delta x$ comes out as a **minimum** ($\ge$), not an exact value.
+> **Watch out.** Change a percentage accuracy into an actual $\Delta v$ before multiplying by the mass, and use the mass in kilograms. Also remember that $\Delta x$ comes out as a **minimum** ($\ge$), not an exact value.
 
 ---
 
@@ -569,11 +569,11 @@ An uncertainty of more than half a million metres per second: for an electron in
 
 # Applications of the uncertainty principle
 
-Planck's constant is so small that the limitations imposed by the uncertainty principle are significant only at the subatomic level. On that scale the principle is a powerful tool for understanding many phenomena.
+Planck's constant is so small that the limitations given by the uncertainty principle are important only at the subatomic level. On that scale, the principle is a powerful tool for understanding many phenomena.
 
 ## 1. Electrons cannot exist inside the nucleus
 
-In the early days it was thought that the electrons coming out of a nucleus as $\beta$ rays in radioactivity actually existed inside the nucleus before they were emitted. The uncertainty principle shows that this is impossible.
+In the early days, people thought that the electrons coming out of a nucleus as $\beta$ rays in radioactivity actually existed inside the nucleus before they were emitted. The uncertainty principle shows that this is impossible.
 
 **Step 1: the uncertainty in position.** The diameter of a nucleus is typically about $10^{-14}\ \text{m}$. If an electron existed inside it, the maximum uncertainty in its position would be the size of the nucleus:
 
@@ -599,13 +599,13 @@ $$
 KE\approx pc=5.3\times10^{-21}\times3\times10^{8}=1.6\times10^{-12}\ \text{J}=\frac{1.6\times10^{-12}}{1.6\times10^{-19}}\ \text{eV}\approx\mathbf{10\ \text{MeV}}
 $$
 
-**Step 5: compare with experiment.** An electron inside the nucleus would need a kinetic energy of at least about $10\ \text{MeV}$. But the electrons emitted in $\beta$ decay have energies of only a fraction of this, a few MeV at most. Hence **electrons do not exist inside the nucleus**. The electrons emitted in $\beta$ decay are created at the moment of decay, when a neutron turns into a proton.
+**Step 5: compare with experiment.** An electron inside the nucleus would need a kinetic energy of at least about $10\ \text{MeV}$. But the electrons emitted in $\beta$ decay have energies of only a fraction of this, a few MeV at most. Hence **electrons do not exist inside the nucleus**. The electrons emitted in $\beta$ decay are created at the moment of decay, when a neutron changes into a proton.
 
-> **Note on the source.** One lecture set used $\Delta x\,\Delta p\ge\hbar$ with $\Delta x=10^{-14}\ \text{m}$ taken as the nuclear radius, and obtained $\Delta p=1.1\times10^{-20}\ \text{kg m/s}$ and about $20\ \text{MeV}$. The other used $\hbar/2$ and obtained $10\ \text{MeV}$. Either way the conclusion is the same, because both values are far above the energies observed in $\beta$ decay.
+> **Note on the source.** One lecture set used $\Delta x\,\Delta p\ge\hbar$ with $\Delta x=10^{-14}\ \text{m}$ taken as the nuclear radius, and got $\Delta p=1.1\times10^{-20}\ \text{kg m/s}$ and about $20\ \text{MeV}$. The other used $\hbar/2$ and got $10\ \text{MeV}$. In both cases the conclusion is the same, because both values are far above the energies seen in $\beta$ decay.
 
 ## 2. Natural width of spectral lines (natural line broadening)
 
-When excited atoms return to the ground state they emit radiation. The emitted lines do not have a perfectly sharp frequency: each line has a small spread of frequencies, its **natural width**. The uncertainty principle explains this.
+When excited atoms return to the ground state, they emit radiation. The emitted lines do not have a perfectly sharp frequency. Each line has a small spread of frequencies, called its **natural width**. The uncertainty principle explains this.
 
 **Step 1: the uncertainty in time.** The average time between the excitation of an atom and the moment it radiates is called the **lifetime** of the excited state. It is typically about $10^{-8}\ \text{s}$. This is the uncertainty in the time of the de-excitation:
 
@@ -627,11 +627,11 @@ $$
 
 So the emitted frequency is not sharp: **the spectral line has a finite width** of a few megahertz. The shorter the lifetime of the excited state, the broader the line.
 
-> **Note on the source.** The lecture set that used $\Delta E\,\Delta t\ge\hbar$ obtained $\Delta\nu=1/(2\pi\Delta t)\approx16\ \text{MHz}$ for the same lifetime. It differs from $8\ \text{MHz}$ only by the factor of 2 in the convention.
+> **Note on the source.** The lecture set that used $\Delta E\,\Delta t\ge\hbar$ got $\Delta\nu=1/(2\pi\Delta t)\approx16\ \text{MHz}$ for the same lifetime. It differs from $8\ \text{MHz}$ only by the factor of 2 in the convention.
 
-> **Key idea.** Both applications use the same move: a quantity confined to a small range ($\Delta x$ or $\Delta t$) forces a large spread in its conjugate ($\Delta p$ or $\Delta E$).
+> **Key idea.** Both applications use the same idea: a quantity confined to a small range ($\Delta x$ or $\Delta t$) forces a large spread in its conjugate ($\Delta p$ or $\Delta E$).
 
-> **Watch out.** Use $\Delta\nu=\Delta E/h$ (with $h$), not $\Delta E/\hbar$. Combining it with $\Delta E=\hbar/(2\Delta t)$ gives the tidy result $\Delta\nu=1/(4\pi\Delta t)$, which is worth remembering.
+> **Watch out.** Use $\Delta\nu=\Delta E/h$ (with $h$), not $\Delta E/\hbar$. If you combine it with $\Delta E=\hbar/(2\Delta t)$, you get the neat result $\Delta\nu=1/(4\pi\Delta t)$, which is worth remembering.
 
 ---
 
@@ -641,9 +641,9 @@ So the emitted frequency is not sharp: **the spectral line has a finite width** 
 
 ## The idea
 
-How can we determine $\Psi$ for a particle? The answer is the **Schrödinger equation**. It is to quantum mechanics what Newton's second law is to classical mechanics: given the forces acting (described by the potential energy $V$), it determines how the wave function behaves in space and time.
+How can we find $\Psi$ for a particle? The answer is the **Schrödinger equation**. It is to quantum mechanics what Newton's second law is to classical mechanics: given the forces acting (described by the potential energy $V$), it tells how the wave function behaves in space and time.
 
-The Schrödinger equation cannot be *derived* from older physics. We obtain it by starting from the wave function of a free particle and using Planck's relation $E=h\nu$ and de Broglie's relation $p=h/\lambda$; the equation we arrive at is then taken as the general law, valid for any potential. Two equivalent routes are given below. Learn one thoroughly; the second is useful because it also gives the energy and momentum **operators**.
+The Schrödinger equation cannot be *derived* from older physics. We get it by starting from the wave function of a free particle and using Planck's relation $E=h\nu$ and de Broglie's relation $p=h/\lambda$. The equation we reach is then taken as the general law, valid for any potential. Two equivalent methods are given below. Learn one thoroughly. The second one is useful because it also gives the energy and momentum **operators**.
 
 ## Derivation, route 1 (differentiating twice)
 
@@ -693,13 +693,13 @@ $$
 E\Psi=\frac{p^2\Psi}{2m}+V\Psi\qquad(4)
 $$
 
-**Step 4: substitute (2) and (3) into (4).**
+**Step 4: put (2) and (3) in (4).**
 
 $$
 \boxed{\,i\hbar\,\frac{\partial\Psi}{\partial t}=-\frac{\hbar^2}{2m}\,\frac{\partial^2\Psi}{\partial x^2}+V\Psi\,}\qquad(5)
 $$
 
-This is the **time-dependent Schrödinger equation in one dimension**. It is the most general form of the Schrödinger equation: $V$ and $\Psi$ may depend on both position and time, which is why it is called *time-dependent*.
+This is the **time-dependent Schrödinger equation in one dimension**. It is the most general form of the Schrödinger equation. $V$ and $\Psi$ may depend on both position and time, which is why it is called *time-dependent*.
 
 ## Derivation, route 2 (energy and momentum operators)
 
@@ -759,9 +759,9 @@ where $\nabla^2=\dfrac{\partial^2}{\partial x^2}+\dfrac{\partial^2}{\partial y^2
 
 ## What $V$ does
 
-The potential energy function $V$ represents the influence of the surroundings on the particle. Any restriction on the particle's motion (walls, barriers, the attraction of a nucleus) appears in $V$. Once $V$ is known, the Schrödinger equation can be solved for the wave function $\Psi$ of the particle, and from $\Psi$ we obtain $|\Psi|^2$ and all the other physical quantities.
+The potential energy function $V$ represents the effect of the surroundings on the particle. Any restriction on the motion of the particle (walls, barriers, the attraction of a nucleus) appears in $V$. Once $V$ is known, the Schrödinger equation can be solved for the wave function $\Psi$ of the particle, and from $\Psi$ we get $|\Psi|^2$ and all the other physical quantities.
 
-> **Watch out.** Keep the signs straight: there is a **minus** sign in front of $\dfrac{\hbar^2}{2m}\dfrac{\partial^2\Psi}{\partial x^2}$, and $i\hbar$ (not $-i\hbar$) on the left. They come from $\left(\tfrac{ip}{\hbar}\right)^2=-\tfrac{p^2}{\hbar^2}$ and from multiplying $-\tfrac{iE}{\hbar}\Psi$ by $i\hbar$. In an exam, write each step; examiners award marks for the steps, not only the final equation.
+> **Watch out.** Be careful with the signs: there is a **minus** sign in front of $\dfrac{\hbar^2}{2m}\dfrac{\partial^2\Psi}{\partial x^2}$, and $i\hbar$ (not $-i\hbar$) on the left. They come from $\left(\tfrac{ip}{\hbar}\right)^2=-\tfrac{p^2}{\hbar^2}$ and from multiplying $-\tfrac{iE}{\hbar}\Psi$ by $i\hbar$. In an exam, write each step. Examiners give marks for the steps, not only for the final equation.
 
 ---
 
@@ -771,7 +771,7 @@ The potential energy function $V$ represents the influence of the surroundings o
 
 ## The idea
 
-In many situations the potential energy of the particle does **not depend on time**: the forces acting on the particle, and hence $V$, vary only with the position of the particle, $V=V(x)$. The particle is then in a **steady state**. When this condition holds, the Schrödinger equation can be simplified by separating the wave function into a part that depends only on position and a part that depends only on time. The result is the **steady-state** or **time-independent** form.
+In many situations, the potential energy of the particle does **not depend on time**. The forces acting on the particle, and hence $V$, change only with the position of the particle, $V=V(x)$. The particle is then in a **steady state**. When this is true, the Schrödinger equation can be simplified by separating the wave function into a part that depends only on position and a part that depends only on time. The result is the **steady-state** or **time-independent** form.
 
 ## Derivation
 
@@ -801,13 +801,13 @@ $$
 \frac{\partial^2\Psi}{\partial x^2}=\frac{d^2\psi}{dx^2}\,e^{-\frac{i}{\hbar}Et}\qquad(3)
 $$
 
-**Step 4: substitute into the time-dependent equation.** The time-dependent Schrödinger equation is
+**Step 4: put in the time-dependent equation.** The time-dependent Schrödinger equation is
 
 $$
 i\hbar\,\frac{\partial\Psi}{\partial t}=-\frac{\hbar^2}{2m}\,\frac{\partial^2\Psi}{\partial x^2}+V\Psi\qquad(4)
 $$
 
-Substituting (1), (2) and (3) into (4):
+Putting (1), (2) and (3) in (4):
 
 $$
 i\hbar\left(-\frac{iE}{\hbar}\right)\psi\,e^{-\frac{i}{\hbar}Et}=-\frac{\hbar^2}{2m}\,\frac{d^2\psi}{dx^2}\,e^{-\frac{i}{\hbar}Et}+V\psi\,e^{-\frac{i}{\hbar}Et}
@@ -825,7 +825,7 @@ $$
 E\psi=-\frac{\hbar^2}{2m}\,\frac{d^2\psi}{dx^2}+V\psi
 $$
 
-**Step 6: rearrange.** Bring everything to one side:
+**Step 6: rearrange.** Take everything to one side:
 
 $$
 \frac{\hbar^2}{2m}\,\frac{d^2\psi}{dx^2}+(E-V)\,\psi=0
@@ -837,7 +837,7 @@ $$
 \boxed{\,\frac{d^2\psi}{dx^2}+\frac{2m}{\hbar^2}\,(E-V)\,\psi=0\,}
 $$
 
-This is the **time-independent Schrödinger equation** in one dimension. Since $\psi$ depends only on $x$, there is no need for partial derivatives: ordinary derivatives $\dfrac{d^2\psi}{dx^2}$ are used.
+This is the **time-independent Schrödinger equation** in one dimension. Since $\psi$ depends only on $x$, there is no need for partial derivatives. Ordinary derivatives $\dfrac{d^2\psi}{dx^2}$ are used.
 
 ## Three dimensions
 
@@ -861,7 +861,7 @@ because $|e^{-iEt/\hbar}|=1$. So **the probability density does not change with 
 
 > **Key idea.** The time-independent equation can also be written as $-\dfrac{\hbar^2}{2m}\dfrac{d^2\psi}{dx^2}+V\psi=E\psi$: some operator acting on $\psi$ gives a number $E$ times $\psi$. Only certain values of $E$ (the **energy eigenvalues**) allow acceptable solutions $\psi$ (the **eigenfunctions**). The particle in a box shows this clearly.
 
-> **Watch out.** An equivalent and equally correct way to write the result is $\dfrac{\hbar^2}{2m}\dfrac{d^2\psi}{dx^2}+(E-V)\psi=0$ (multiply through by $\hbar^2/2m$). Do not mix the two forms halfway through a derivation.
+> **Watch out.** An equivalent and equally correct way to write the result is $\dfrac{\hbar^2}{2m}\dfrac{d^2\psi}{dx^2}+(E-V)\psi=0$ (multiply through by $\hbar^2/2m$). Do not mix the two forms in the middle of a derivation.
 
 ---
 
@@ -871,7 +871,7 @@ because $|e^{-iEt/\hbar}|=1$. So **the probability density does not change with 
 
 ## The set-up
 
-Consider a particle of mass $m$ moving inside a box along the $x$ direction, bouncing back and forth between two walls a distance $L$ apart. The walls at $x=0$ and $x=L$ are **infinitely high** (insurmountable potential barriers), so the particle can never get past them, however much energy it has. This is the **one-dimensional infinite square well potential**, also called a **particle in a one-dimensional box**. The variation of potential energy is:
+Consider a particle of mass $m$ moving inside a box along the $x$ direction, bouncing back and forth between two walls a distance $L$ apart. The walls at $x=0$ and $x=L$ are **infinitely high** (potential barriers that cannot be crossed), so the particle can never get past them, however much energy it has. This is the **one-dimensional infinite square well potential**, also called a **particle in a one-dimensional box**. The potential energy varies as:
 
 $$
 V=0\quad\text{for }0<x<L\qquad\text{(region II, inside the box)}
@@ -883,7 +883,7 @@ $$
 
 ![Infinite square well: V = 0 between x = 0 and x = L, and V infinite outside (regions I, II and III)](/notes/cse/s1/physics/module-2/infinite-well.webp)
 
-The particle's position at any instant lies in $0<x<L$. Since the particle cannot exist outside the box, the probability of finding it there is zero, so $\Psi^*\Psi=0$ and hence $\psi=0$ for $x\le0$ and $x\ge L$. Our task is to find $\psi$ **inside** the box. Since the potential does not depend on time, we use the time-independent Schrödinger equation.
+The position of the particle at any moment lies in $0<x<L$. Since the particle cannot exist outside the box, the probability of finding it there is zero, so $\Psi^*\Psi=0$ and hence $\psi=0$ for $x\le0$ and $x\ge L$. Our task is to find $\psi$ **inside** the box. Since the potential does not depend on time, we use the time-independent Schrödinger equation.
 
 ## The equation inside the box
 
@@ -979,15 +979,15 @@ $$
 \psi_n=C\sin\frac{n\pi x}{L},\qquad n=1,2,3,\dots
 $$
 
-The wave function has several expressions, one for each value of $n$; the $n$th wave function is $\psi_n$.
+The wave function has several expressions, one for each value of $n$. The $n$th wave function is $\psi_n$.
 
 ## Why $n=0$ is not allowed
 
-For $n=0$, $k=0$ and $\psi=C\sin0=0$ everywhere inside the box. A wave function that is zero everywhere means the particle is not present at all, so $n=0$ is not admissible. Negative values of $n$ give the same functions with a minus sign (the same physical state), so we take $n=1,2,3,\dots$
+For $n=0$, $k=0$ and $\psi=C\sin0=0$ everywhere inside the box. A wave function that is zero everywhere means the particle is not present at all, so $n=0$ is not allowed. Negative values of $n$ give the same functions with a minus sign (the same physical state), so we take $n=1,2,3,\dots$
 
-> **Watch out.** The general solution has **two** constants. The boundary condition at $x=0$ removes the cosine (or makes $B=-A$); the condition at $x=L$ quantises $k$. Do not drop a constant at the start.
+> **Watch out.** The general solution has **two** constants. The boundary condition at $x=0$ removes the cosine (or makes $B=-A$). The condition at $x=L$ quantises $k$. Do not drop a constant at the start.
 
-> **Note on the source.** One lecture set wrote the general solution as "$A\cos kx+\sin kx$", missing the second constant. It is corrected above.
+> **Note on the source.** One lecture set wrote the general solution as "$A\cos kx+\sin kx$", where the second constant is missing. It is corrected above.
 
 ---
 
@@ -1007,7 +1007,7 @@ $$
 \Longrightarrow\qquad\sqrt{\frac{2mE}{\hbar^2}}\;L=n\pi
 $$
 
-Since $n$ must be a whole number, the energy $E$ can only take certain values. Squaring both sides:
+Since $n$ must be a whole number, the energy $E$ can take only certain values. Squaring both sides:
 
 $$
 \frac{2mE}{\hbar^2}\,L^2=n^2\pi^2
@@ -1033,7 +1033,7 @@ $$
 \int_0^L\psi_n^*\psi_n\,dx=1\qquad\text{(for all values of }n)
 $$
 
-This is the **normalisation condition**. Substituting $\psi_n$:
+This is the **normalisation condition**. Putting $\psi_n$:
 
 $$
 CC^*\int_0^L\sin^2\left(\frac{n\pi x}{L}\right)dx=1
@@ -1071,13 +1071,13 @@ The figure shows the first three wave functions $\psi_n$ (left), the correspondi
 
 ## What the solution tells us
 
-1. **Energy is quantised.** Inside the potential well the particle can have only the discrete energies $E_n$, not any arbitrary value. This is the origin of energy levels in atoms.
-2. **Zero-point energy.** The lowest energy is $E_1=\dfrac{h^2}{8mL^2}=\dfrac{\pi^2\hbar^2}{2mL^2}$, not zero. This minimum is called the **zero-point energy**. A confined particle can never be completely at rest. (This agrees with the uncertainty principle: confining the particle to $\Delta x\approx L$ forces a spread in momentum and hence some kinetic energy.)
-3. **The levels are not equally spaced.** $E_n\propto n^2$, so the gaps grow: $E_2-E_1=3E_1$, $E_3-E_2=5E_1$, $E_4-E_3=7E_1$, …
+1. **Energy is quantised.** Inside the potential well, the particle can have only the discrete energies $E_n$, not any arbitrary value. This is the origin of energy levels in atoms.
+2. **Zero-point energy.** The lowest energy is $E_1=\dfrac{h^2}{8mL^2}=\dfrac{\pi^2\hbar^2}{2mL^2}$, not zero. This minimum is called the **zero-point energy**. A confined particle can never be completely at rest. (This agrees with the uncertainty principle: if the particle is confined to $\Delta x\approx L$, there is a spread in momentum and hence some kinetic energy.)
+3. **The levels are not equally spaced.** $E_n\propto n^2$, so the gaps increase: $E_2-E_1=3E_1$, $E_3-E_2=5E_1$, $E_4-E_3=7E_1$, …
 4. **Preferred positions.** In the ground state ($n=1$) the probability of finding the particle is greatest at the **centre** ($x=L/2$). For $n=2$ the maxima are at $L/4$ and $3L/4$, a quarter and three quarters of the way across, and the probability at the centre is zero (a **node**). For $n=3$ the maxima are at $L/6$, $L/2$ and $5L/6$. Classically every position would be equally likely.
-5. **Smaller box, larger energies.** $E_n\propto1/L^2$ and $E_n\propto1/m$. For a large box or a heavy particle the levels are so close together that the quantisation is unnoticeable, and the classical picture is recovered.
+5. **Smaller box, larger energies.** $E_n\propto1/L^2$ and $E_n\propto1/m$. For a large box or a heavy particle, the levels are so close together that the quantisation cannot be noticed, and the classical picture is recovered.
 
-> **Key idea.** Confinement of a particle in a potential well leads to (i) certain preferred positions of maximum probability, (ii) only certain discrete energy levels, and (iii) a minimum energy that the particle must have.
+> **Key idea.** When a particle is confined in a potential well, we get (i) certain preferred positions of maximum probability, (ii) only certain discrete energy levels, and (iii) a minimum energy that the particle must have.
 
 ## Worked examples
 
@@ -1093,7 +1093,7 @@ $$
 
 The next levels are $E_2=4E_1=150\ \text{eV}$ and $E_3=9E_1=338\ \text{eV}$.
 
-**Example 2.** In Example 1 the electron drops from $n=2$ to $n=1$, emitting a photon. Find the photon's wavelength.
+**Example 2.** In Example 1 the electron drops from $n=2$ to $n=1$ and emits a photon. Find the wavelength of the photon.
 
 $$
 \Delta E=E_2-E_1=3E_1=3\times37.6=112.8\ \text{eV}
@@ -1137,7 +1137,7 @@ $$
 
 Only about 9 %, much less than the 25 % a classical particle would have, because the ground-state wave function is small near the walls.
 
-> **Watch out.** The quantum number starts at $n=1$, so the "first excited state" is $n=2$, not $n=1$. And the energy depends on $n^2$: doubling $n$ multiplies the energy by four.
+> **Watch out.** The quantum number starts at $n=1$, so the "first excited state" is $n=2$, not $n=1$. Also, the energy depends on $n^2$: if $n$ is doubled, the energy becomes four times.
 
 ---
 
@@ -1147,7 +1147,7 @@ Only about 9 %, much less than the 25 % a classical particle would have, because
 
 ## The idea
 
-Consider a stream of particles, each of energy $E$, incident on a potential barrier of height $V_0$ and width $L$, with the energy less than the barrier height ($E<V_0$):
+Consider a stream of particles, each of energy $E$, falling on a potential barrier of height $V_0$ and width $L$, with the energy less than the barrier height ($E<V_0$):
 
 $$
 V=0\quad\text{for }x<0\qquad\text{(region I)}
@@ -1161,10 +1161,10 @@ $$
 V=0\quad\text{for }x>L\qquad\text{(region III)}
 $$
 
-- **Classically**, when a particle of lower kinetic energy approaches a larger potential barrier, it bounces off. It does not have enough energy to climb over, so it can never appear on the other side.
-- **Quantum mechanically**, the wave function representing the particle does not vanish at the barrier. Solving the time-independent Schrödinger equation in the three regions shows that the wave function is **non-zero in all three regions I, II and III**. So there is a finite probability that the particle penetrates the barrier and is found beyond it.
+- **Classically**, when a particle of lower kinetic energy approaches a higher potential barrier, it bounces back. It does not have enough energy to climb over, so it can never appear on the other side.
+- **Quantum mechanically**, the wave function representing the particle does not vanish at the barrier. If we solve the time-independent Schrödinger equation in the three regions, the wave function is **non-zero in all three regions I, II and III**. So there is a finite probability that the particle goes through the barrier and is found beyond it.
 
-> **Quantum mechanical tunnelling.** The phenomenon of penetration of particles through potential barriers higher than their own energy is known as quantum mechanical tunnelling. It is purely a quantum effect, signifying the wave property of quantum objects, and has no classical counterpart.
+> **Quantum mechanical tunnelling.** The phenomenon of particles passing through potential barriers higher than their own energy is known as quantum mechanical tunnelling. It is purely a quantum effect, showing the wave property of quantum objects, and has no classical counterpart.
 
 ![Tunnelling: the incident wave is partly reflected, decays inside the barrier and emerges as a smaller transmitted wave](/notes/cse/s1/physics/module-2/tunnelling-barrier.webp)
 
@@ -1198,7 +1198,7 @@ $$
 \psi_{\text{III}}=Fe^{ikx}
 $$
 
-**Interpretation.** A non-zero wave function in region III means there is a finite probability of finding particles there. Since the incident particles have less energy than the barrier height, they could not have climbed over it. And since the wave function is non-zero inside the barrier too, we conclude that the particles have reached region III by **penetrating, or "tunnelling" through, the barrier**.
+**Interpretation.** A non-zero wave function in region III means there is a finite probability of finding particles there. The incident particles have less energy than the barrier height, so they could not have climbed over it. Also, the wave function is non-zero inside the barrier. So we conclude that the particles have reached region III by **penetrating, or "tunnelling" through, the barrier**.
 
 ## Transmission coefficient
 
@@ -1218,7 +1218,7 @@ so it falls off **very rapidly**:
 
 - The **wider** the barrier ($L$ larger), the smaller $T$.
 - The **higher** the barrier compared with the energy ($V_0-E$ larger), the smaller $T$.
-- The **heavier** the particle ($m$ larger), the smaller $T$. Tunnelling is therefore important for light particles such as electrons.
+- The **heavier** the particle ($m$ larger), the smaller $T$. So tunnelling is important for light particles such as electrons.
 
 **Example 1.** An electron has energy $1\ \text{eV}$ less than the height of a barrier. Find the approximate transmission coefficient for a barrier of width (a) $0.5\ \text{nm}$, (b) $1\ \text{nm}$.
 
@@ -1230,17 +1230,17 @@ $$
 
 (b) $2\kappa L=10.2$, so $T\approx e^{-10.2}\approx\mathbf{3.5\times10^{-5}}$.
 
-Doubling the width cuts the tunnelling probability by a factor of about 170. This extreme sensitivity to width is what the scanning tunnelling microscope exploits.
+If the width is doubled, the tunnelling probability becomes about 170 times smaller. The scanning tunnelling microscope uses this extreme sensitivity to width.
 
 ## Applications
 
 - **Tunnel diode** (Module 4): electrons tunnel through a very thin depletion layer, giving a negative-resistance region used in high-frequency oscillators.
 - **Zener breakdown**: in heavily doped p-n junctions, electrons tunnel through the thin depletion region at a sharp reverse voltage.
-- **Alpha decay**: alpha particles inside a nucleus have less energy than the nuclear barrier, yet escape by tunnelling.
-- **Scanning tunnelling microscope (STM)**: the tunnelling current between a sharp tip and a surface depends so strongly on the gap that it maps individual atoms.
+- **Alpha decay**: alpha particles inside a nucleus have less energy than the nuclear barrier, yet they escape by tunnelling.
+- **Scanning tunnelling microscope (STM)**: the tunnelling current between a sharp tip and a surface depends so strongly on the gap that it can map individual atoms.
 - **Josephson effect and SQUIDs**: Cooper pairs tunnel through a thin insulating layer between two superconductors.
 
-> **Watch out.** Tunnelling does not mean the particle gains energy to go over the barrier. Its energy stays $E$ throughout; it appears on the far side with the **same energy**, just with a much smaller probability (amplitude). And $T\approx e^{-2\kappa L}$ is an approximation for a fairly wide barrier, not an exact result.
+> **Watch out.** Tunnelling does not mean the particle gains energy to go over the barrier. Its energy stays $E$ throughout. It appears on the far side with the **same energy**, only with a much smaller probability (amplitude). Also, $T\approx e^{-2\kappa L}$ is an approximation for a fairly wide barrier, not an exact result.
 
 ---
 
@@ -1304,7 +1304,7 @@ $\Delta p\ge\dfrac{\hbar}{2\Delta x}=5.3\times10^{-25}\ \text{kg m/s}$, so $\Del
 
 $\Delta E=3E_1=112.8\ \text{eV}$, so $\lambda=\dfrac{1240}{112.8}\ \text{nm}=\mathbf{11.0\ \text{nm}}$.
 
-> **Note on the source.** The lecture sheets used $\Delta E\,\Delta t\approx\hbar/2$ in one place and $\hbar$ in another. With $\hbar/2$, $\Delta\nu=1/(4\pi\Delta t)$ as above; with $\hbar$ every frequency width would be twice as large.
+> **Note on the source.** The lecture sheets used $\Delta E\,\Delta t\approx\hbar/2$ in one place and $\hbar$ in another. With $\hbar/2$, $\Delta\nu=1/(4\pi\Delta t)$ as above. With $\hbar$ every frequency width would be twice as large.
 
 ## Questions asked in KTU exams
 
