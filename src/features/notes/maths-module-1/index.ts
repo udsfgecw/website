@@ -1,12 +1,7 @@
 import type { NotesModule } from "../types";
 import source from "./notes.md?raw";
 import { MATHS_MODULE_1_PATH } from "./path";
-
-/* The transcription marks each source page with "<!-- Source: …; page N -->". Source page 1 is the
-   cover, so reader page 1 is source page 2. */
-const pages = [...source.matchAll(/<!-- Source:.*?; page (\d+) -->([\s\S]*?)(?=<!-- Source:|$)/g)]
-  .map((match) => ({ number: Number(match[1]) - 1, content: match[2].trim().replace(/\n---\s*$/, "") }))
-  .filter((page) => page.number >= 1);
+import { sourcePages } from "../sourcePages";
 
 export const mathsModule1: NotesModule = {
   basePath: MATHS_MODULE_1_PATH,
@@ -24,7 +19,7 @@ export const mathsModule1: NotesModule = {
   code: "GAMAT101",
   summary: "Limits to concavity",
   source: "ktunotes.in · GAMAT101, Module 1 · Original source pages 2–35.",
-  pages,
+  pages: sourcePages(source),
   chapters: [
     { page: 1, title: "Limits of function values" },
     { page: 2, title: "Limit laws" },

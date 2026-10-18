@@ -3,6 +3,7 @@ import { prerenderToNodeStream } from "react-dom/static";
 import { StaticRouter } from "react-router-dom";
 import App from "./App";
 import { mathsModule1 } from "./features/notes/maths-module-1";
+import { mathsModule2 } from "./features/notes/maths-module-2";
 import { MetaCollector, type PageMeta } from "./lib/meta";
 
 /* Used at build time only (scripts/prerender.mjs). */
@@ -22,6 +23,7 @@ export const pages: StaticPage[] = [
   { url: "/", file: "index.html" },
   { url: "/notes", file: "notes/index.html" },
   { url: mathsModule1.basePath, file: fileFor(mathsModule1.basePath), chunk: "src/pages/notes/MathsNotesPage.tsx" },
+  { url: mathsModule2.basePath, file: fileFor(mathsModule2.basePath), chunk: "src/pages/notes/MathsModule2Page.tsx" },
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];

@@ -106,17 +106,23 @@
 .notes-prose code {
   font-size: 0.9em;
 }
-.notes-prose .identity-graph {
+.notes-prose .identity-graph,
+.notes-prose .notes-figure {
   margin: 1.6em 0;
 }
-.notes-prose .identity-graph svg {
+.notes-prose .identity-graph svg,
+.notes-prose .notes-figure svg {
   width: 100%;
   max-width: 440px;
   height: auto;
   margin: 0 auto;
   display: block;
 }
-.notes-prose .identity-graph figcaption {
+.notes-prose .notes-figure-label {
+  fill: var(--color-ink-2);
+}
+.notes-prose .identity-graph figcaption,
+.notes-prose .notes-figure figcaption {
   margin-top: 0.6em;
   text-align: center;
   font-size: 0.85em;
