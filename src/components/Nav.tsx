@@ -46,13 +46,15 @@ export default function Nav() {
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
-  const link = "label text-ink transition-opacity hover:opacity-55";
+  const solid = scrolled || open;
+  const tone = solid ? "text-ink" : "text-white";
+  const link = cn("label transition-[opacity,color] duration-300 hover:opacity-60", tone);
 
   return (
     <header
       className={cn(
         "sticky top-0 z-50 h-(--nav-h) border-b border-transparent transition-colors duration-300",
-        (scrolled || open) && "border-line bg-white/90 backdrop-blur-md",
+        solid && "border-line bg-white/90 backdrop-blur-md",
       )}
     >
       <div className="grid h-full grid-cols-[1fr_auto_1fr] items-center gap-6 px-5 md:px-10">
@@ -65,7 +67,7 @@ export default function Nav() {
         </nav>
 
         <button
-          className="label justify-self-start text-ink md:hidden"
+          className={cn("label justify-self-start transition-colors duration-300 md:hidden", tone)}
           aria-expanded={open}
           aria-controls="navLinks"
           onClick={() => setOpen((o) => !o)}
