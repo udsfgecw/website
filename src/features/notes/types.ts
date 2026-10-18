@@ -20,6 +20,8 @@ export interface NotesModule {
   /** an earlier key whose page numbers were one higher (they counted the cover page) */
   legacyStorageKey?: string;
   title: string;
+  /** breadcrumb from the notes shelf down to this module; the last step has no link */
+  trail: { label: string; href?: string }[];
   heading: [string, string];
   eyebrow: string;
   course: string;

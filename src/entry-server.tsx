@@ -21,6 +21,7 @@ const fileFor = (url: string) => `${url.replace(/^\//, "")}/index.html`.replace(
 /* Every URL written out as its own static HTML file. */
 export const pages: StaticPage[] = [
   { url: "/", file: "index.html" },
+  { url: "/notes", file: "notes/index.html" },
   ...mathsModule1.pages.map((p) => {
     const url = pageHref(mathsModule1, p.number);
     return { url, file: fileFor(url), chunk: "src/pages/notes/MathsNotesPage.tsx" };

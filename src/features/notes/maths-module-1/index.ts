@@ -13,6 +13,12 @@ export const mathsModule1: NotesModule = {
   storageKey: "udsf:notes:cse:s1:maths:v2",
   legacyStorageKey: "udsf:notes:cse:s1:maths:v1",
   title: "S1 CSE Maths · Module 1",
+  trail: [
+    { label: "NOTES", href: "/notes" },
+    { label: "CSE", href: "/notes#cse" },
+    { label: "S1", href: "/notes#cse-s1" },
+    { label: "MATHS" },
+  ],
   heading: ["A little clarity.", "A lot of maths."],
   eyebrow: "SEMESTER 01 · MODULE 01",
   course: "Mathematics for Information Science 1",

@@ -10,7 +10,9 @@ export default function ReaderHeader() {
           UDSF <small>GEC WAYANAD</small>
         </span>
       </Link>
-      <span className="reader-header-label">THE NOTES SHELF</span>
+      <Link to="/notes" className="reader-header-label">
+        THE NOTES SHELF
+      </Link>
       <Link to="/" className="reader-back">
         <ArrowLeft size={15} /> Back to UDSF
       </Link>

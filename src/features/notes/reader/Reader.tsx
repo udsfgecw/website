@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { BookOpen, Check, ChevronDown } from "lucide-react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "katex/dist/katex.min.css";
 import "./reader.css";
 import { pageTitle } from "@/config";
@@ -113,9 +113,14 @@ export default function Reader({ notes, page }: { notes: NotesModule; page: numb
           <ReaderContents notes={notes} page={page} bookmarks={prefs.bookmarks} />
         </aside>
         <main className="reader-main">
-          <div className="reader-breadcrumb">
-            NOTES <span>/</span> CSE <span>/</span> S1 <span>/</span> MATHS
-          </div>
+          <nav className="reader-breadcrumb" aria-label="Breadcrumb">
+            {notes.trail.map((step, i) => (
+              <Fragment key={step.label}>
+                {i > 0 && <span>/</span>}
+                {step.href ? <Link to={step.href}>{step.label}</Link> : step.label}
+              </Fragment>
+            ))}
+          </nav>
           <section className="reader-intro">
             <div className="reader-tag">
               <span /> {notes.eyebrow}

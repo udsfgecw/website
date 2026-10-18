@@ -1,8 +1,8 @@
-import Footer from "@/components/layout/Footer";
-import Nav from "@/components/layout/Nav";
+import SiteLayout from "@/components/layout/SiteLayout";
 import Alliance from "@/components/sections/Alliance";
 import Hero from "@/components/sections/Hero";
 import Join from "@/components/sections/Join";
+import NotesTeaser from "@/components/sections/NotesTeaser";
 import Progress from "@/components/sections/progress/Progress";
 import WhatWeDo from "@/components/sections/WhatWeDo";
 import { SITE_DESCRIPTION, pageTitle } from "@/config";
@@ -12,18 +12,15 @@ export default function HomePage() {
   usePageMeta({ title: pageTitle(), description: SITE_DESCRIPTION });
 
   return (
-    <>
-      {/* the nav gains its background once this scrolls out of view */}
-      <div id="top-sentinel" className="absolute top-0 size-px" />
-      <Nav />
+    <SiteLayout>
       <main id="top">
         <Hero />
         <WhatWeDo />
         <Progress />
         <Alliance />
+        <NotesTeaser />
         <Join />
       </main>
-      <Footer />
-    </>
+    </SiteLayout>
   );
 }
