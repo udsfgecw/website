@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Label } from "@/components/ui/section";
 import { pageTitle } from "@/config";
-import { NOTES_CATALOGUE, type Semester } from "@/data/notes";
+import { type Branch, NOTES_CATALOGUE, type Semester, semesterPath } from "@/data/notes";
 import { usePageMeta } from "@/lib/meta";
 import { cn } from "@/lib/utils";
 
@@ -25,8 +25,8 @@ function SemesterNumber({ semester, live }: { semester: Semester; live: boolean 
   );
 }
 
-/* A semester with one subject is a single link to it; with several, each subject is its own link. */
-function SemesterCard({ semester }: { semester: Semester }) {
+/* A semester with notes links to the page listing its subjects. */
+function SemesterCard({ branch, semester }: { branch: Branch; semester: Semester }) {
   const { subjects } = semester;
 
   if (subjects.length === 0)
@@ -37,38 +37,17 @@ function SemesterCard({ semester }: { semester: Semester }) {
       </div>
     );
 
-  if (subjects.length === 1) {
-    const [subject] = subjects;
-    return (
-      <Link to={subject.href} className={cn(card, "group border-line bg-white transition-colors hover:border-ink")}>
-        <SemesterNumber semester={semester} live />
-        <span className="mt-auto pt-10 text-[1.1rem] font-semibold tracking-[-0.02em]">{subject.name}</span>
-        <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">
-          {subject.code} · {subject.detail}
-        </span>
-        <span className="mt-5 inline-flex items-center gap-1.5 text-[0.9rem] font-medium">
-          Open notes <ArrowRight size={16} aria-hidden="true" />
-        </span>
-      </Link>
-    );
-  }
-
   return (
-    <div className={cn(card, "border-line bg-white")}>
+    <Link to={semesterPath(branch, semester)} className={cn(card, "group border-line bg-white transition-colors hover:border-ink")}>
       <SemesterNumber semester={semester} live />
-      <ul className="mt-auto flex flex-col gap-3 pt-10">
-        {subjects.map((subject) => (
-          <li key={subject.href}>
-            <Link to={subject.href} className="inline-flex items-center gap-1.5 text-[1rem] font-semibold tracking-[-0.02em] hover:underline">
-              {subject.name} <ArrowRight size={15} aria-hidden="true" />
-            </Link>
-            <p className="text-[0.85rem] text-ink-2">
-              {subject.code} · {subject.detail}
-            </p>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <span className="mt-auto pt-10 text-[1.1rem] font-semibold tracking-[-0.02em]">
+        {subjects.length} {subjects.length === 1 ? "subject" : "subjects"}
+      </span>
+      <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{subjects.map((subject) => subject.name).join(", ")}</span>
+      <span className="mt-5 inline-flex items-center gap-1.5 text-[0.9rem] font-medium">
+        View subjects <ArrowRight size={16} aria-hidden="true" />
+      </span>
+    </Link>
   );
 }
 
@@ -100,7 +79,7 @@ export default function NotesPage() {
             <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
               {branch.semesters.map((semester) => (
                 <li key={semester.id} id={`${branch.id}-${semester.id}`} className={cn(semester.subjects.length > 0 && "max-sm:col-span-2")}>
-                  <SemesterCard semester={semester} />
+                  <SemesterCard branch={branch} semester={semester} />
                 </li>
               ))}
             </ul>

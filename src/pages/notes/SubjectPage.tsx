@@ -1,0 +1,72 @@
+import { ArrowRight } from "lucide-react";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
+import SiteLayout from "@/components/layout/SiteLayout";
+import { Label } from "@/components/ui/section";
+import { pageTitle } from "@/config";
+import { NOTES_CATALOGUE, semesterPath } from "@/data/notes";
+import { usePageMeta } from "@/lib/meta";
+import NotFoundPage from "@/pages/NotFoundPage";
+
+/* The modules of one subject, reached by clicking the subject on its semester page. */
+export default function SubjectPage() {
+  const { branch: branchId, semester: semesterId, subject: subjectId } = useParams();
+  const { hash } = useLocation();
+  const branch = NOTES_CATALOGUE.find((b) => b.id === branchId);
+  const semester = branch?.semesters.find((s) => s.id === semesterId);
+  const subject = semester?.subjects.find((s) => s.href === `/notes/${branchId}/${semesterId}/${subjectId}`);
+
+  usePageMeta(
+    subject
+      ? {
+          title: pageTitle(`${subject.name} notes · ${branch!.short} ${semester!.name}`),
+          description: `${subject.course} (${subject.code}): module-wise study notes shared by UDSF for students at Government Engineering College Wayanad.`,
+        }
+      : { title: pageTitle("Page not found"), description: "This page doesn’t exist on the UDSF GECW website." },
+  );
+
+  if (!branch || !semester || !subject) return <NotFoundPage />;
+
+  // The reader used to live at this URL; its #page-N links now belong to the first module.
+  if (hash.startsWith("#page-")) return <Navigate to={`${subject.modules[0].href}${hash}`} replace />;
+
+  return (
+    <SiteLayout>
+      <main className="wrap pb-[clamp(5rem,11vw,9rem)]">
+        <header className="pt-[clamp(3.5rem,8vw,6rem)] pb-[clamp(3rem,6vw,5rem)]">
+          <nav aria-label="Breadcrumb" className="label flex flex-wrap gap-x-2 text-ink-2">
+            <Link to="/notes" className="hover:text-ink">NOTES</Link>
+            <span aria-hidden="true">/</span>
+            <Link to={`/notes#${branch.id}`} className="hover:text-ink">{branch.short}</Link>
+            <span aria-hidden="true">/</span>
+            <Link to={semesterPath(branch, semester)} className="hover:text-ink">{semester.id.toUpperCase()}</Link>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">{subject.name.toUpperCase()}</span>
+          </nav>
+          <h1 className="mt-6 text-[length:clamp(2.2rem,5vw,4.2rem)] leading-[1.05] font-semibold tracking-[-0.045em] text-balance">
+            {subject.name}. <span className="text-ink/30">{subject.course}</span>
+          </h1>
+          <p className="label mt-4 text-ink-2">{subject.code}</p>
+        </header>
+
+        <section aria-labelledby="modules-title" className="border-t border-line pt-10">
+          <Label>
+            <span id="modules-title">Modules</span>
+          </Label>
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+            {subject.modules.map((module) => (
+              <li key={module.href}>
+                <Link to={module.href} className="group flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition-colors hover:border-ink">
+                  <span className="text-[1.25rem] font-semibold tracking-[-0.025em]">{module.name}</span>
+                  <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{module.detail}</span>
+                  <span className="mt-auto inline-flex items-center gap-1.5 pt-8 text-[0.9rem] font-medium">
+                    Open notes <ArrowRight size={16} aria-hidden="true" />
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </main>
+    </SiteLayout>
+  );
+}

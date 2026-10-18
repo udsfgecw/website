@@ -21,13 +21,8 @@
       "permanent": false
     },
     {
-      "source": "/notes/cse/s1",
-      "destination": "/notes#cse-s1",
-      "permanent": false
-    },
-    {
       "source": "/notes/cse/s1/maths/:page(\\d+)",
-      "destination": "/notes/cse/s1/maths#page-:page",
+      "destination": "/notes/cse/s1/maths/module-1#page-:page",
       "permanent": true
     }
   ]

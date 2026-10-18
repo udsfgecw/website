@@ -4,11 +4,13 @@ import { MATHS_MODULE_1_PATH } from "@/features/notes/maths-module-1/path";
 import HomePage from "@/pages/HomePage";
 import NotFoundPage from "@/pages/NotFoundPage";
 import NotesPage from "@/pages/NotesPage";
+import SemesterPage from "@/pages/notes/SemesterPage";
+import SubjectPage from "@/pages/notes/SubjectPage";
 
 // The notes reader brings markdown and maths rendering, so it loads only on notes pages.
 const MathsNotesPage = lazy(() => import("@/pages/notes/MathsNotesPage"));
 
-/* After each navigation: links with a section (/#work, /notes#cse-s1) scroll to it, other new
+/* After each navigation: links with a section (/#work, /notes#cse) scroll to it, other new
    pages start at the top, and back and forward keep the browser's own scroll position. */
 function ScrollOnNavigate() {
   const { key, hash } = useLocation();
@@ -29,6 +31,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/notes" element={<NotesPage />} />
+          <Route path="/notes/:branch/:semester" element={<SemesterPage />} />
+          <Route path="/notes/:branch/:semester/:subject" element={<SubjectPage />} />
           <Route path={`${MATHS_MODULE_1_PATH}/:page?`} element={<MathsNotesPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
