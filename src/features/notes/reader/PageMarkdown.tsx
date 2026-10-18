@@ -1,8 +1,15 @@
 import { isValidElement, memo } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
 import rehypeKatex from "rehype-katex";
+import bash from "highlight.js/lib/languages/bash";
+import c from "highlight.js/lib/languages/c";
+import javascript from "highlight.js/lib/languages/javascript";
+import json from "highlight.js/lib/languages/json";
+import python from "highlight.js/lib/languages/python";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
+import CodeBlock from "./CodeBlock";
 import IdentityGraph from "./IdentityGraph";
 import PlotFigure, { type PlotSpec } from "./PlotFigure";
 import TreeDiagram from "./TreeDiagram";
@@ -10,7 +17,11 @@ import { module3DiagramDimensions } from "../python-module-3/diagramDimensions";
 import { module4DiagramDimensions } from "../python-module-4/diagramDimensions";
 
 const remarkPlugins = [remarkGfm, remarkMath];
-const rehypePlugins: Parameters<typeof ReactMarkdown>[0]["rehypePlugins"] = [[rehypeKatex, { strict: false }]];
+const rehypePlugins: Parameters<typeof ReactMarkdown>[0]["rehypePlugins"] = [
+  [rehypeKatex, { strict: false }],
+  // Only the languages the notes use are bundled; diagram fences (mermaid, jsxgraph) are left alone.
+  [rehypeHighlight, { languages: { bash, c, javascript, json, python }, plainText: ["text"], ignoreMissing: true, detect: false }],
+];
 
 type HastNode = { type: string; value?: string; children?: HastNode[] };
 const textOf = (node?: HastNode): string =>
@@ -39,10 +50,15 @@ const components: Components = {
       </code>
     );
   },
-  pre({ children }) {
-    const language = isValidElement<{ className?: string }>(children) ? children.props.className : undefined;
-    if (language === "language-mermaid" || language === "language-jsxgraph") return <div>{children}</div>;
-    return <pre>{children}</pre>;
+  pre({ node, children }) {
+    const className = isValidElement<{ className?: string }>(children) ? children.props.className : undefined;
+    if (className?.includes("language-mermaid") || className?.includes("language-jsxgraph")) return <div>{children}</div>;
+    const language = /language-([\w+-]+)/.exec(className ?? "")?.[1];
+    return (
+      <CodeBlock language={language} text={textOf(node as HastNode).replace(/\n$/, "")}>
+        {children}
+      </CodeBlock>
+    );
   },
   img({ src, alt }) {
     const moduleDiagram = typeof src === "string" && /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src);
