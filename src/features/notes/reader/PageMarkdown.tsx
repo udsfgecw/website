@@ -24,6 +24,13 @@ const components: Components = {
   img({ src, alt }) {
     return <img src={src} alt={alt || "Mathematics diagram"} loading="lazy" decoding="async" />;
   },
+  // a quote opening with "Watch out" is a warning about a common mistake
+  blockquote({ node, children }) {
+    const first = node?.children.find((child) => child.type === "element" && child.tagName === "p");
+    const lead = first && first.type === "element" ? first.children[0] : undefined;
+    const warn = lead?.type === "element" && lead.tagName === "strong" && lead.children[0]?.type === "text" && lead.children[0].value.startsWith("Watch out");
+    return <blockquote className={warn ? "warn" : undefined}>{children}</blockquote>;
+  },
   // page headings sit under the notes' own h1
   h1({ children }) {
     return <h2>{children}</h2>;

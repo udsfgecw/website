@@ -55,6 +55,10 @@
   background: var(--color-green-tint);
   color: var(--color-green-ink);
 }
+.notes-prose blockquote.warn {
+  background: #fdf4e3;
+  color: #6b4a12;
+}
 .notes-prose blockquote p {
   margin: 0.3em 0;
 }
