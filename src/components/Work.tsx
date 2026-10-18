@@ -34,10 +34,17 @@ export default function Work() {
         <span className="text-ink/30">.</span>
       </h2>
 
+      {/* green-to-blue stroke shared by the pillar icons; user space so straight lines still get it */}
+      <svg width="0" height="0" className="absolute" aria-hidden="true">
+        <linearGradient id="pillar-icon" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="24" y2="24">
+          <stop offset="0" stopColor="var(--color-green)" />
+          <stop offset="1" stopColor="var(--color-blue)" />
+        </linearGradient>
+      </svg>
       <ul className="mt-[clamp(3.5rem,7vw,6rem)] grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {FEATURES.map(([Icon, title, text]) => (
           <li key={title}>
-            <Icon size={24} strokeWidth={1.75} className="text-green" aria-hidden="true" />
+            <Icon size={24} strokeWidth={1.75} color="url(#pillar-icon)" aria-hidden="true" />
             <h3 className="mt-5 text-[1.15rem] font-semibold tracking-[-0.02em]">{title}</h3>
             <p className="mt-2 max-w-[36ch] text-[0.95rem] leading-[1.6] text-ink-2">{text}</p>
           </li>
