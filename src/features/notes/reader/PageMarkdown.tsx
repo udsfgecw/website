@@ -6,6 +6,7 @@ import remarkMath from "remark-math";
 import IdentityGraph from "./IdentityGraph";
 import PlotFigure, { type PlotSpec } from "./PlotFigure";
 import TreeDiagram from "./TreeDiagram";
+import { module3DiagramDimensions } from "../python-module-3/diagramDimensions";
 
 const remarkPlugins = [remarkGfm, remarkMath];
 const rehypePlugins: Parameters<typeof ReactMarkdown>[0]["rehypePlugins"] = [[rehypeKatex, { strict: false }]];
@@ -43,8 +44,9 @@ const components: Components = {
     return <pre>{children}</pre>;
   },
   img({ src, alt }) {
-    const moduleDiagram = typeof src === "string" && src.startsWith("/notes/cse/s1/python/module-2/assets/") && src.endsWith(".svg");
-    return <img src={src} alt={alt || "Notes diagram"} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
+    const moduleDiagram = typeof src === "string" && /^\/notes\/cse\/s1\/python\/module-[23]\/assets\/.*\.svg$/.test(src);
+    const dimensions = typeof src === "string" ? module3DiagramDimensions[src] : undefined;
+    return <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
   },
   p({ node, children }) {
     return <p className={isQuestion(node as HastNode) ? "notes-question" : undefined}>{children}</p>;

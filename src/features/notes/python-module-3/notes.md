@@ -1,1862 +1,1006 @@
 <!-- page 1 | Module 3 · source page 1 -->
 
-[Non-content page]
+## Module 3 overview
 
----
+This module develops the Python skills needed to control a program, divide its work into functions, and organize data in collections.
 
----
+| Topic | What you should be able to do |
+|---|---|
+| Control flow | Choose branches, repeat actions, and trace loop execution |
+| Functions | Define parameters, pass arguments, return results, and separate tasks |
+| Strings and sequences | Index, slice, traverse, and transform ordered data |
+| Lists and tuples | Choose between mutable and immutable sequences |
+| NumPy arrays | Inspect shapes, select elements, reshape, and perform matrix operations |
+| Sets and dictionaries | Work with unique values and key–value associations |
+
+The examples use Python 3. Code blocks contain runnable programs; output comments show the expected result. NumPy examples require the separately installed `numpy` package.
+
+> **Key idea.** Choose a collection by how you need to use it: positions suggest a sequence, unique membership suggests a set, and lookup by a meaningful key suggests a dictionary.
 
 <!-- page 2 | Module 3 · source page 2 -->
 
-## Module 3
-### Control structures
+## Sequence and one-way selection
 
-- Control structures are essential tools in programming that allow developers to control the flow of their code.
-- They determine how and when certain sections of code are executed based on specified conditions.
-
-3 types of control structures:
-
-1. **Sequential control structures**
-2. **Selection/Decision making control structure**
-3. **Looping/ repetition control structure**
-
-### 1. Sequence control structure
-
-Sequence control structure refers to the line-by-line execution by which statements are executed sequentially, in the same order in which they appear in the program.
-
-Eg: Python program to show how a sequential control structure works
+**Sequence** means executing statements in order. **Selection** chooses which statements to execute. **Repetition** executes a block repeatedly. Python uses indentation to mark the blocks belonging to conditions, loops, and functions.
 
 ```python
-1.  # Execution flow will be the same as the code is written, and there is no hidden flow
-2. a = 20
-3. b = 10
-4. c = a - b
-5. d = a + b
-6. e = a * b
-7. print("The result of the subtraction is: ", c)
-8. print("The result of the addition is: ", d)
-9. print("The result of the multiplication is: ", e)
+a = 20
+b = 10
+print("Difference:", a - b)  # Difference: 10
+print("Sum:", a + b)         # Sum: 30
+print("Product:", a * b)     # Product: 200
 ```
 
-**Output:**
-
-```text
-The result of the subtraction is: 10
-The result of the addition is :30
-The result of the multiplication is: 200
-```
-
-### 2. Selection statements- Allow the computer to make choices.
-
-- Allow the computer to make choices.
-- Decision making- decides whether to execute or skip a bunch of programming statements.
-- This structure is used for making decisions by checking conditions and branching
-
-Forms of decision control structures:
-
-a. **If–statement(One-way selection statement)**
-
-b. **If–else: statement(Two-way selection statement)**
-
-c. **If – elif – else: statement (Also known as ladder if-else statement)( Multi-way selection statement)**
-
-a. **(One-way selection statement)**- An alternative syntax for testing whether a number x is a single-digit number or not.
+A one-way `if` runs its body only when its condition is true. Execution then continues after the block, whether or not the body ran.
 
 ```python
->>> x=int(input("Enter a number"))
-Enter a number8
->>> if 0<x<10:
-...     print(x,"is a positive single digit.")
-...
-8 is a positive single digit.
+number = 8
+if 0 < number < 10:
+    print("Positive single-digit number")
+print("Check complete")
 ```
 
-**The syntax of the If statements is:**
-
-If(condition):
-
-$$\quad\quad\text{statements}$$
-
-
-
-```mermaid
-flowchart TD
-A[Start] --> B{condition}
-B -- True --> C[statement]
-C --> D[End]
-B -- False --> D
-```
-
----
-
----
+The condition deliberately excludes 0 because it asks for a **positive** single-digit integer. Assume `number` is an integer. Use lowercase `if`, finish the header with a colon, and indent its body consistently.
 
 <!-- page 3 | Module 3 · source page 3 -->
 
-b. **Two-way selection statement**- if-else statement
+## Two-way and multi-way selection
 
-To check if a person is major or minor.
-> >>> age=12
-> 
-> >>> if age>=18:
-> ... 	print("Major")
-> ... else:
-> ... 	print("Minor")
-> Minor
+An `if/else` selects exactly one of two branches. This exercise classifies ages below 18 as minors; assume age is non-negative.
 
-
-
-![Flowchart of If-Else statement](/notes/cse/s1/python/module-3/assets/page-003-image-1.png)
-
-
-
-The syntax of "If-Else statements" is:
-
-If(condition):
-			Statements
+```python
+age = 12
+if age >= 18:
+    print("Adult")
 else:
-		statements
+    print("Minor")  # Minor
+```
 
-Eg: Assume we need to define more than 2 conditions, as obtained in the grading of an exam. In that case we can grade S, A, B, C, D or E (6 options)
+[![An age decision sends the true branch to Adult and the false branch to Minor.](/notes/cse/s1/python/module-3/assets/selection.svg)](/notes/cse/s1/python/module-3/assets/selection.svg)
 
-print("Enter the marks obtained by a student and you will get the equivalent grade")
-mark=int(input())
-if mark>=90 & mark<=100:
-	print("Congrats you have achieved S grade")
-elif mark>=80 & mark<=90:
-	print("Congrats you have achieved A grade")
-elif mark>=70 & mark<=80:
-	print("Congrats you have achieved B grade")
-elif mark>=60 & mark<=70:
-	print("Congrats you have achieved C grade")
-elif mark>=50 & mark<=60:
-	print("Congrats you have achieved D grade")
-elif mark>=40 & mark<=50:
-	print("Congrats you have achieved A grade")
-else:
-	print("Sorry you have failed the exam")
+[Open full-size SVG](/notes/cse/s1/python/module-3/assets/selection.svg)
 
-c. **Multi-way selection statement**
+An `if/elif/else` chain checks conditions from top to bottom and runs the first matching branch. The example below uses illustrative grade bands, not an institutional grading policy.
 
-Achieved through the if-elif-else statement.
+```python
+def grade_for(mark):
+    if not 0 <= mark <= 100:
+        return "Invalid mark"
+    if mark >= 90:
+        return "S"
+    elif mark >= 80:
+        return "A"
+    elif mark >= 70:
+        return "B"
+    elif mark >= 60:
+        return "C"
+    elif mark >= 50:
+        return "D"
+    elif mark >= 40:
+        return "E"
+    else:
+        return "F"
 
-Code compares two variables
+print(grade_for(98))  # S
+print(grade_for(45))  # E
+print(grade_for(39))  # F
+```
 
-> >>> x=10
-> >>> y=5
-> >>> if x < y:
-> ... 	print(x, "is less than", y)
-> ... elif x > y:
-> ... 	print(x, "is greater than", y)
-> ... else:
-> ... 	print(x, "and", y, "are equal")
-> 10 is greater than 5
+Use `and` to combine Boolean conditions, or write a chained comparison such as `80 <= mark < 90`. The `&` operator is bitwise AND and is not a substitute for `and` in these scalar comparisons. Here, descending thresholds make a second upper-bound check unnecessary.
 
-<u>**Output**</u>  
-*Enter the marks obtained by a student and you will get the equivalent grade*  
-98  
-*Congrats you have achieved S grade*
-
-**3. Repetition statements or loops-** allow you to execute a block of code multiple times. Python supports two types of loops -
-
-A. Those that repeat an action a fixed number of times (**definite iteration**)
-B. Those that act until a condition becomes false (**conditional iteration**).
-
-**A. Definite iteration: The for loop**
-
-* It is the control statement supporting definite iteration.
-
----
-
----
+**Check boundaries:** 100 and 90 give S, 89 gives A, 40 gives E, and 39 gives F. Values outside 0–100 are invalid.
 
 <!-- page 4 | Module 3 · source page 4 -->
 
-* Loops that count through a range of numbers are called count-controlled loops.
- * We use **for** in association with the **range()** function that dictates the number of iterations.
- * range(k) when used with for causes the loop to iterate $k$ times.
- * range(5)- counts from 0 to 4, not 5. (But it iterate 5 times, specifically 0,1,2,3,4)
- * end = " " - Python interpreter will append whitespace following the count value, instead of the default newline character ('\n')
+## For loops, range, and while loops
 
+A `for` loop visits each item in an iterable. Use `range()` for an integer counter sequence. Its stop value is excluded.
 
-![Python code snippet showing a for loop using range(5)](/notes/cse/s1/python/module-3/assets/page-004-image-1.png)
+```python
+for number in range(5):
+    print(number, end=" ")
+print()  # The preceding line prints: 0 1 2 3 4
 
-
-
-RANGE
-The range() function in Python generates a sequence of numbers, which is commonly used for iteration in loops.
-
-range(start, stop, step)
- * **start (optional):** The value of the first number in the sequence (inclusive). Defaults to 0 if not provided.
- * **stop:** The value at which to stop the sequence (exclusive). This parameter is required.
- * **step (optional):** The difference between each number in the sequence. Defaults to 1 if not provided.
-
-Eg: for i in range(5):
-
-    print(i)
-    * Output: 0 1 2 3 4
-    * This generates numbers from 0 up to, but not including, 5.
-
-Start and Stop:
-for i in range(2, 6):
-
-    print(i)
-    * Output: 2 3 4 5
-    * This generates numbers from 2 up to, but not including, 6.
-
-Start, Stop, and Step:
-for i in range(1, 10, 2):
-
-    print(i)
-    * Output: 1 3 5 7 9
-    * This generates numbers from 1 up to, but not including, 10, with a step of 2.
-
-Negative Step:
-for i in range(10, 0, -2):
-
-    print(i)
-    * Output: 10 8 6 4 2
-    * This generates numbers from 10 down to 1, decreasing by 2 each time.
-
-To print numbers from 0 to 4, you write:
-
-```
->>> for i in range(5):
-
-...     print(i)
-...
-0
-1
-2
-3
-4
+print(list(range(2, 6)))      # [2, 3, 4, 5]
+print(list(range(1, 10, 2)))  # [1, 3, 5, 7, 9]
+print(list(range(10, 0, -2))) # [10, 8, 6, 4, 2]
 ```
 
+| Form | Meaning |
+|---|---|
+| `range(stop)` | Start at 0, step by 1 |
+| `range(start, stop)` | Use the given start, step by 1 |
+| `range(start, stop, step)` | Use an explicit positive or negative step |
 
+A zero step raises `ValueError`. A range is empty when its step points away from the stop value; for example, `range(1, 5, -1)`.
 
-![Explanatory text boxes and code snippets detailing range() function usage and examples](/notes/cse/s1/python/module-3/assets/page-004-image-2.png)
+A `while` loop checks its condition before every iteration. It can run zero times and is useful when the repetition count is not known in advance.
 
+```python
+count = 3
+while count > 0:
+    print(count)
+    count -= 1
+print("Done")
+# Output, one value per line: 3, 2, 1, Done
+```
 
-
- * When the step size is negative, the loop variable
- * is decremented by that amount in each iteration.
-
-B.Conditional Iteration: The while loop
- * The while loop repeats a block of code as long as the condition is True. It's useful when you don't know exactly how many times you want the loop to run,
-
-
-
-![Python code snippet showing a while loop implementation](/notes/cse/s1/python/module-3/assets/page-004-image-3.png)
-
-
-
-3 | Page
-
----
-
----
+Always check how the loop makes progress. Removing `count -= 1` from this example would prevent termination.
 
 <!-- page 5 | Module 3 · source page 5 -->
 
-but you want it to continue until some condition is met.
-- While loop can modify to achieve the functionality of *exit-controlled loop* in Python.
+## Nested loops and loop-control statements
 
-**Nested loops-**
-A nested loop is a loop inside another loop. This allows you to perform more complex tasks, such as iterating over multi-dimensional data structures (like matrices or lists of lists), or running a loop for each iteration of another loop.
-
-a. for loop inside a while loop
-c. while loop inside a while
-b. for loop inside another for loop
-d. while loop inside a for loop
-
-The enclosing loop is called the **outer loop**, and the other loop is called the **inner loop**. The inner loop will be executed once for each iteration of the outer loop
+A nested loop runs an inner loop during each iteration of an outer loop. If both ranges have fixed lengths, the total number of inner-body executions is their product.
 
 ```python
->>> for i in range(1,5):  #This is the outer loop
-...     for j in range(1,5):  #This is the inner loop
-...         print(j, end=" ")
-...     print()
-...
+for row in range(3):
+    for column in range(1, 5):
+        print(column, end=" ")
+    print()
+# Three rows, each containing: 1 2 3 4
 ```
 
-Output:
-```
-1 2 3 4
-1 2 3 4
+| Statement | Effect |
+|---|---|
+| `break` | Exit the innermost enclosing loop immediately |
+| `continue` | Skip the remaining statements of the current iteration |
+| `pass` | Do nothing; it is a placeholder, not a loop jump |
 
-1 2 3 4
-1 2 3 4
-```
-
-**Loop control statements**
-- three loop control statements
-- that control the flow of execution in a loop
-- **break statement, continue statement, pass statement**
-
-| break statement | Continue statement | Pass statement |
-| :--- | :--- | :--- |
-| used to terminate loops | used to bypass the remainder of the current iteration through a loop. | The pass statement is equivalent to the statement "Do nothing". |
-| Any statements inside the loop following the break will be neglected and the control goes out of the loop. | The loop does not terminate when a continue statement is encountered. | used when a statement is required syntactically but the program requires no action. |
-| break stops the current iteration and skips the succeeding iterations (if any) and passes the control to the first statement following (outside) the loop. | Rather, the remaining loop statements are skipped and the control proceeds directly to the next pass through the loop. | Nothing happens when pass is executed. It results in a NOP (No OPeration). After the pass is executed, control proceeds as usual to the next statement in the loop. |
-| ```python
-for num in range(1,5):
-    if num%2==0:
-        print(num,"is even")
+```python
+for number in range(1, 6):
+    if number == 3:
         break
-    print("The number is",num)
-print("Outside the loop")
-``` | ```python
-for num in range(1,5):
-    if num%2==0:
-        print(num,"is even")
+    print(number, end=" ")
+print()  # Preceding line: 1 2
+
+for number in range(1, 6):
+    if number % 2 == 0:
         continue
-    print("The number is",num)
-print("Outside the loop")
-``` | ```python
-for num in range(1,5):
-    if num%2==0:
-        print(num,"is even")
+    print(number, end=" ")
+print()  # Preceding line: 1 3 5
+
+for number in range(1, 4):
+    if number == 2:
         pass
-    print("The number is",num)
-print("Outside the loop")
-``` |
-| The number is 1
-2 is even
-Outside the loop | The number is 1
-2 is even
-The number is 3
-4 is even
-Outside the loop | The number is 1
-2 is even
-The number is 2
-The number is 3
-4 is even
-The number is 4
-Outside the loop |
+    print(number, end=" ")
+print()  # Preceding line: 1 2 3
+```
 
-<u>Short-Circuit Evaluation in Python</u>
-- **Short-circuit evaluation** is a behavior in logical operations where the second operand of a logical operator is not evaluated if the result can be determined from the first operand alone. This happens in logical `and` and `or` operations.
-
----
-
----
+In nested loops, `break` exits the inner loop containing it, not every enclosing loop. In a `while` loop, ensure that `continue` does not skip the update needed for termination.
 
 <!-- page 6 | Module 3 · source page 6 -->
 
-- **Short-circuit evaluation** is often used to simplify conditions in if, while, and for loops. By placing the most likely condition to be True or False first, you can optimize performance and avoid unnecessary computation.
-- This approach allows Python to sometimes determine the value of a Boolean expression before it has fully evaluated all of its operands, improving efficiency and helping to avoid errors.
+## Short-circuit evaluation
 
-### **Advantages of Short-Circuit Evaluation:**
-
-#### **Performance Optimization:**
-
-- If the second operand is a complex expression or involves a function call, **short-circuit evaluation** can save computational resources by avoiding unnecessary evaluation of the second operand. This can improve the performance of the program, especially when dealing with large or computationally expensive operations.
-
-#### **Avoiding Errors:**
-
-- Short-circuit evaluation can help avoid errors when the second operand depends on the first operand. For instance, if the first condition checks for None or some invalid state, the second condition might raise an error if it tries to access an attribute of None. By short-circuiting the evaluation, you can prevent this error.
-
-Short circuit evaluation can be useful in avoiding errors. For example, consider the following code causing zero division error:
+Python evaluates logical operands from left to right. For `and`, it skips the right operand when the left is false. For `or`, it skips the right operand when the left is true.
 
 ```python
->>> a=10
->>> b=0
->>> print(a/b)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ZeroDivisionError: division by zero
+numerator = 10
+denominator = 0
+if denominator != 0 and numerator / denominator > 0:
+    print("Positive quotient")
+else:
+    print("Zero denominator or non-positive quotient")
 ```
 
-Now let us modify the code to exploit the short circuit evaluation to avoid the zero division error. The modified code follows:
+The division is skipped when `denominator` is zero. Testing `denominator > 0` would also avoid zero division, but would unnecessarily reject negative non-zero denominators. Put a required safety check before the operation it protects.
 
 ```python
->>> a=10
->>> b=0
->>> if b>0 and a/b>0:
-...     print(a/b)
-... 
->>>
+values = []
+if values and values[0] > 0:
+    print("First value is positive")
+
+name = ""
+display_name = name or "Guest"
+print(display_name)  # Guest
 ```
 
-Since $b > 0$ evaluates to false, short-circuit evaluation helps skip determining a/b in the latter part of the condition within the if statement. Had short-circuit evaluation not been in place, a/b>0 would have raised an error.
-
-### **Functions**
-
-A **function** is a reusable block of code that performs a specific task.
-
-**Decomposition-** Decomposition means breaking a big problem into smaller, manageable parts.
-
-**Modularity-** Modularity means organizing your decomposed pieces into separate, independent modules (files or components).
-
----
-
----
+`and` and `or` return one of their operands, which is not necessarily a Boolean. Use `bool(...)` when an explicit Boolean result is required. Short-circuiting can save work, but the order must first preserve the intended logic and required side effects.
 
 <!-- page 7 | Module 3 · source page 7 -->
 
-Each module has a specific purpose. A module is a named, self-contained block of statements that carries out some specific, well-defined task.
+## Functions and modular design
 
-### Motivations for modularization
+A **function** is a named, reusable block of code. **Decomposition** breaks a larger problem into smaller tasks. **Modular design** organizes those tasks behind clear interfaces so that each part can be understood and checked separately.
 
-1. **Promotes re-use:** If the system functionality is divided into modules, other systems can reuse them. Thus, a programmer can build on whatothers have already done, instead of starting from scratch. This also eliminates redundancy (duplication of code) to a great extent.
-2. **Hides complexity:** Since a module is self-contained, it does whatever it is intended to. If you want the functionality provided by a module, you access the module and get it done, without worrying about how the functionality is achieved. This mechanism is called *abstraction*.
-3. **Supports division of labour:** Ideally, each module achieves a single goal. A complex task could be divided into simpler sub-tasks, each of which can be performed by individual modules. This promotes parallel operation with different teams working on separate modules, speeding up the entire process with improved collaboration among the teams.
-4. **Improves debugging and testing:** Since modules have minimal interaction among themselves, you can isolate a module and investigate it separately to pinpoint errors, if any. Each of the modules can be individually tested for correctness and efficiency. This reduces the risk when the modules are integrated to build the big picture.
-5. **Contributes to scalability:** New modules can be added to an existing system to enhance its functionality. This makes the system scalable without having to redesign the entire thing.
-6. **Reduces development costs:** The reuse of existing modules contributes to cost savings in development. Also, the self-containment aspect of modules makes the system maintenance cost-effective and productive.
-
-In the world of Python, modules are known as **functions**. The portion of the function code that implements its functionality is known as *function definition*. For built-in functions, the definitions are provided by the interpreter itself. But, with user-defined functions, it is the duty of the programmer to define them. When we want to use the functionality provided by a function, we access it (technically known as a *function call*) by its name.
-
-### The anatomy of functions
-
-A function should be "defined" before its first use. To define a function, you specify its name and then write the logic for implementing its functionality.
-- Function definition begins with the keyword `def` followed by the function name. Then you have the parameter list – a comma-separated list of arguments enclosed in a pair of parentheses. This line of the function definition is called **header**.
-- The block of statements that constitute the function logic (statement-1 to return-statement) is called **function body**.
-- The final statement `return` exits a function.
-- The header has to end with a colon, and the body has to be indented.
-- The parameters and the return statement are optional, i.e., you could write a function without these.
+Functions reduce duplicated logic, hide implementation detail, and make individual tasks easier to reuse, debug, and test.
 
 ```python
-def function-name(parameter-list):
-    statement-1
-    statement-2
-    .
-    .
-    statement-n
-    return-statement
+def add_numbers(first, second):
+    """Return the sum of two numbers."""
+    total = first + second
+    return total
+
+answer = add_numbers(6, 8)
+print(answer)  # 14
 ```
 
-To use its functionality of functiona, you need to call it.
-```python
->>> def printName(): #This is how you define a function
-...
-    name=input("Enter your name")
-    print("Hi",name,"! Welcome to the world of functions!")
->>> printName() #This is how you call a function
-Enter your nameSam
-Hi Sam ! Welcome to the world of functions!
-```
+| Part | Example | Purpose |
+|---|---|---|
+| Definition keyword | `def` | Create a function definition |
+| Name | `add_numbers` | Identify the function |
+| Parameters | `first, second` | Names receiving the call's values |
+| Body | Indented statements | Perform the task |
+| Return | `return total` | Exit this call and give a result to its caller |
 
----
+A Python **module** is usually a `.py` file containing definitions and statements. It may contain several functions; module and function are not interchangeable terms.
 
----
+A definition must execute before the function is called. A function may contain multiple `return` statements, and a return need not be the last written line of the function.
 
 <!-- page 8 | Module 3 · source page 8 -->
 
-## Arguments and return value
+## Arguments, parameters, and return values
 
-Arguments are the way you supply data to a function for processing. The function performs the operations on the received data and produces the result which is given back through the return statement. The value that is given back is known as the **return value**. Technically, you say that a function "receives" one or more arguments and "returns" a result. The parameters in the function definitions are called **formal parameters**, and those in the function call are called **actual parameters**.
-The arguments and the return value are both optional.
-
-### Function with no arguments and no return value
+A **parameter** is a name in a function definition. An **argument** is a value supplied in a call. A function can receive arguments, return a result, do both, or do neither explicitly.
 
 ```python
->>> def sum():
-...     a=int(input("Enter an integer"))
-...     b=int(input("Enter another integer"))
-...     s=a+b
-...     print("The sum of the entered integers is",s)
+def greet():
+    print("Hello")
 
->>> sum()
-Enter an integer6
-Enter another integer8
-The sum of the entered integers is 14
+def show_sum(first, second):
+    print(first + second)
+
+def default_limit():
+    return 10
+
+def add_numbers(first, second):
+    return first + second
+
+greet()                     # Hello
+show_sum(3, 5)              # 8
+print(default_limit())     # 10
+print(add_numbers(10, 15))  # 25
 ```
 
-### Function with arguments but no return value
+| Function | Takes arguments? | Explicitly returns a useful value? |
+|---|---|---|
+| `greet()` | No | No |
+| `show_sum(first, second)` | Yes | No |
+| `default_limit()` | No | Yes |
+| `add_numbers(first, second)` | Yes | Yes |
+
+Every Python function returns a value. Without an explicit return value, it returns `None`. Printing displays something; it does not pass that displayed value back to the caller.
 
 ```python
->>> def sum(c,d):
-...     s=c+d
-...     print("The sum of the entered integers is",s)
+def display_total(first, second):
+    print(first + second)
 
->>> a=int(input("Enter an integer"))
-Enter an integer3
->>> b=int(input("Enter another integer"))
-Enter another integer5
->>> sum(a,b)
-The sum of the entered integers is 8
+result = display_total(2, 3)  # Prints 5
+print(result)                # None
 ```
 
-### Function with return value but no arguments
-
-```python
->>> def sum():
-...     a=int(input("Enter an integer"))
-...     b=int(input("Enter another integer"))
-...     s=a+b
-...     return s
-
->>> print("The sum of the entered integers is",sum())
-Enter an integer4
-Enter another integer7
-The sum of the entered integers is 11
-```
-
-### Function with arguments and return value
-
-```python
->>> def sum(c,d):
-...     s=c+d
-...     return s
-...
->>> a=int(input("Enter an integer"))
-Enter an integer10
->>> b=int(input("Enter another integer"))
-Enter another integer15
->>> print("The sum of the entered integers is",sum(a,b))
-The sum of the entered integers is 25
-```
-
----
-
----
+Prefer returning results when the caller may need them for further calculations. Avoid naming a function `sum`, which hides Python's built-in `sum()` within the same scope.
 
 <!-- page 9 | Module 3 · source page 9 -->
 
-## Algorithm and flowchart for modules
+## Function calls and worked examples
 
-An example that inputs two numbers, adds them, and prints the sum:
+A caller supplies arguments, the function computes its result, and control returns to the caller. Parameters and variables assigned inside a function are normally local to that function.
 
-$$egin{aligned}
-&	ext{ADDINTEGERS} \
-&1 	 	ext{READ}(a, b) \
-&2 	 	ext{SUM}(a, b)
+[![A caller sends two arguments to add_numbers, receives a total, then prints the result.](/notes/cse/s1/python/module-3/assets/function-call.svg)](/notes/cse/s1/python/module-3/assets/function-call.svg)
 
-denote
-
-$$egin{aligned}
-&	ext{SUM}(a, b) \
-&1 	 s = a + b \
-&2 	 	ext{PRINT}(s)
-
-
-
-```mermaid
-flowchart TD
-Start([Start]) --> Read["READ(a, b)"]
-Read --> Module["Sum(a, b)"]
-Module --> Stop([Stop])
-```
-
-
-
-
-
-```mermaid
-flowchart TD
-Start([Sum(a, b)]) --> Compute["S = a + b"]
-Compute --> Print["Print(S)"]
-Print --> Return([Return])
-```
-
-
-
-**To print the absolute value of an integer.**
-```python
-def absoluteValue(x):
-    if x < 0:
-        return -x
-    else:
-        return x
-
-num=int(input("Enter a number"))
-abs=absoluteValue(num)
-print("The absolute value of",num,"is",abs)
-```
-
-**To check whether a number is even or not.**
-```python
-def isEven(n):
-    if n%2==0:
-        return True
-    else:
-        return False
-
-num=int(input("Enter a number"))
-r=isEven(num)
-if r==True:
-    print(num,"is even")
-else:
-    print(num,"is odd")
-```
-
-**To print $n$ lines of the following pattern.**
-
-1
-1 3
-1 3 5
-1 3 5 7
+[Open full-size SVG](/notes/cse/s1/python/module-3/assets/function-call.svg)
 
 ```python
-def printPattern(n):
-    for i in range(1,n+1):
-        #each value of i corresponds to one line
-        for j in range(1,2*i,2): #for printing numbers on a particular row
-            print(j,end=" ")
-        print() #to go to next line after printing one row
+def absolute_value(number):
+    if number < 0:
+        return -number
+    return number
 
-n=int(input("Enter the number of lines"))
+def is_even(number):
+    return number % 2 == 0
+
+print(absolute_value(-7))  # 7
+print(absolute_value(0))   # 0
+print(is_even(8))          # True
+print(is_even(-3))         # False
 ```
 
-## Sequence Data Type
+A pattern-printing function needs to be called; defining it alone produces no pattern.
 
-In Python, **sequence data types** are types of data that store a collection of items in an ordered way. The order means that each item has a specific position, which allows us to access each item by its index (or position) in the sequence.
+```python
+def print_odd_pattern(rows):
+    for row in range(1, rows + 1):
+        for number in range(1, 2 * row, 2):
+            print(number, end=" ")
+        print()
 
----
+print_odd_pattern(4)
+# 1
+# 1 3
+# 1 3 5
+# 1 3 5 7
+```
 
----
+Assume `rows` is a non-negative integer. A value of 0 prints no rows. Avoid names such as `abs` for variables because they hide useful built-in functions.
 
 <!-- page 10 | Module 3 · source page 10 -->
 
-```mermaid
-flowchart TD
-    A["Python - Data Types"] --> B[Numeric]
-    A --> C[Dictionary]
-    A --> D[Boolean]
-    A --> E[Set]
-    A --> F["Sequence Type"]
-    B --> B1[Interger]
-    B --> B2["Complex Number"]
-    B --> B3[Float]
-    F --> F1[Strings]
-    F --> F2[List]
-    F --> F3[Tuple]
+## Sequences and Unicode strings
+
+A **sequence** is ordered: its items have positions and can be accessed by index. Strings, lists, and tuples are common sequence types; `range` is another sequence type.
+
+| Type | Holds | Can its items be reassigned? |
+|---|---|---|
+| `str` | Unicode text characters | No |
+| `list` | References to arbitrary Python objects | Yes |
+| `tuple` | References to arbitrary Python objects | No |
+
+A Python string is an immutable sequence of Unicode code points. Python code does not need a terminating null character to determine its length. A character is not necessarily one byte; encoded byte length depends on the encoding and the text.
+
+```python
+text = "Hello World"
+print(len(text))      # 11
+print(text[0])        # H
+print(text[-1])       # d
+print(len("café"))    # 4
 ```
 
+[![Hello World indexed from 0 to 10 and from -11 to -1; the space has its own position.](/notes/cse/s1/python/module-3/assets/string-indices.svg)](/notes/cse/s1/python/module-3/assets/string-indices.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-3/assets/string-indices.svg)
 
-Here are the main sequence data types in Python:
-1. Strings
-2. List
-3. Tuple
-
-Strings
-
-A string is a **sequence** of zero or more characters. Each character in the string occupies one byte of memory, and the last character is always '\0' which is called the **null character**. The terminating null character is important because it is the way by which, the Python interpreter knows where the string ends. Figure shows how a string "Hello World" is stored in memory. Notice the null character at the end. The figure also shows how the character positions are numbered starting with 0 from the left end or starting with -1 from the right end. Each character position is known as an **index**. The null character position is not numbered. It is not considered a part of the string; its sole purpose is to know the string boundary
-
-
-
-![Memory layout table of the string Hello World with forward and backward indices.](/notes/cse/s1/python/module-3/assets/page-010-image-2.png)
-
-
-
-To know the length of a string, you use the len() method
->>> str="Hello World"
->>> **print(len(str))**
-11
-
-### **The subscript operator**
-
-To print a single character out of the string, you should use the **subscript operator**. The subscript operator (also called bracket operator) is denoted by `[ ]`. You just want to mention the index whose character you want to print.
->>> str="Algorithmic thinking"
->>> **print(str[0])**
-A
->>> **print(str[5])**
-i
->>> **print(str[11])**
->>> **print(str[18])**
-n
->>> **print(str[20])**
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-IndexError: string index out of range
-(the string length is 20; this means that the last index is 19. Thus, if you try to print the character in the 20th position, you get an error.)
->>> **print(str[19])**
-g
-
-Python also allows negative subscript values. In this case, you need to count backward from -1 to access characters from the right end of the string.
-
----
-
----
+This is an index diagram, not a physical memory layout. `len()` counts code points, which can differ from the number of user-perceived characters when combining marks or multi-code-point emoji are used.
 
 <!-- page 11 | Module 3 · source page 11 -->
 
->>> str="Try out!"
->>> print(str[-1])
-!
->>> print(str[-3])
-u
->>> print(str[-9])
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-IndexError: string index out of range
-(The reason for the error is that strings are **immutable**, which means you can't change an existing string.)
+## String indexing, traversal, and immutability
 
-### Traversing a string
+For a string of length $n$, valid non-negative indices run from 0 to $n-1$. Negative indices count from the end, starting at -1.
 
-Accessing the string characters one at a time, starting from the beginning and moving towards the end, is called **traversal**. The for loop comes in handy for this:
->>> str="Hi there"
->>> for c in str:
-...     print(c)
-...
-H
-i
-t
-h
-e
-r
-e
+```python
+text = "Try out!"
+print(text[-1])  # !
+print(text[-3])  # u
+print(len(text)) # 8
+# text[-9] would raise IndexError: the index is out of range.
+```
 
-### Concatenation and repetition operators
+An out-of-range access is an indexing error; it is unrelated to whether a string is mutable. Immutability means that assigning to an existing character, such as `text[0] = "t"`, raises `TypeError`.
 
-The + operator performs **concatenation**, which means joining the strings by linking them end-to-end.
->>> str1="Python"
->>> str2="Program"
->>> print(str1+str2)
-PythonProgram
+Create a new string when a change is needed:
 
-Note that the concatenation operator does not insert any white space between the joined strings.
+```python
+text = "python"
+changed = "P" + text[1:]
+print(changed)  # Python
+print(text)     # python
 
-The \* operator performs repetition. It repeats a given string some fixed number of times. The left operand for \* is the string to be repeated, and the right operand is an integer denoting the number of times the string is to be repeated.
->>> str="Order!"
->>> print(str*3)
-Order!Order!Order!
+for character in "Hi there":
+    print(repr(character), end=" ")
+print()
+# 'H' 'i' ' ' 't' 'h' 'e' 'r' 'e'
+```
 
-### String slicing
+Traversal includes spaces and punctuation. `repr()` makes an otherwise hard-to-see space visible in the output.
 
-To extract a substring out of a given string, you should use subscript operator [:]. The operator [n:m] returns the part of the string starting at position n and ending at position m-1.
->>> languages="Python, Java and C++"
->>> print(languages[0:6])
-Python
->>> print(languages[8:12])
-Java
->>> print(languages[17:20])
-C++
-If n$\ge$m, the operator [n:m] results in an empty string.
->>> languages="Python, Java and C++"
->>> print(languages[4:4])
+```python
+print("Python" + " " + "Program")  # Python Program
+print("Order!" * 3)                 # Order!Order!Order!
+```
 
->>>
-The indices n and m in the operator [n:m] are optional. If you omit the first index n, the slice starts at the beginning of the string. If you omit the second index m, the slice goes to the end of the string.
-
----
-
----
+Concatenation does not add spaces automatically. Repetition requires an integer multiplier.
 
 <!-- page 12 | Module 3 · source page 12 -->
 
->>> languages="Python, Java and C++"
->>> print(languages[:6])
-Python
->>> print(languages[17:])
-C++
-When m is omitted, supplying a negative value to the index n prints the last few characters of the string.
-To be specific, str[-k:] prints the last k characters of str.
->>> languages="Python, Java and C++"
->>> print(languages[-3:])
-C++
-Omitting both indices n and m prints the full string.
->>> languages="Python, Java and C++"
->>> print(languages[:])
-Python, Java and C++
-In addition to mentioning start and end indices in the slicing operator, you can also specify the step that denotes the distance between the characters you want to include in the resultant string. Suppose you want to print every alternate character in a string str, you just use the operator [::2].
->>> languages="Python, Java and C++"
->>> print(languages[::2])
-Pto,Jv n +
+## String slicing, comparison, and membership
 
-Since the start and end indices are omitted, the slice starts from the beginning of the string and goes to its end. Since the step is mentioned as 2, every alternate character will be selected.
+The slice `text[start:stop:step]` selects characters from the inclusive start up to the exclusive stop. Start and stop can be omitted; step defaults to 1 and cannot be zero.
 
-Comparison operators on strings
-The comparison operators work on strings as well. To see if two strings are equal, we simply use the equality operator:
->>> str1="python"
->>> str2="pythen"
->>> print(str1==str2)
-False
->>> str2="python"
->>> print(str1==str2)
-True
+```python
+text = "Python, Java and C++"
+print(text[:6])    # Python
+print(text[8:12])  # Java
+print(text[-3:])   # C++
+print(text[::-1])  # ++C dna avaJ ,nohtyP
+print(repr(text[4:4]))  # ''
+print(text[100:])       # Empty string; slicing clips out-of-range bounds
+```
 
-Other comparison operations are useful for determining the lexicographic (alphabetical) order of strings. The comparison operator when used with strings compares the ASCII values of the corresponding characters in the strings. Since the ASCII values are assigned in increasing order, a character that has a lower ASCII value precedes (comes before alphabetically) another character with a higher ASCII value.
->>> str1="C"
->>> str2="Java"
->>> if str1 < str2:
-...     print(str1,"comes before",str2)
-... elif str2 < str1:
-...     print(str2,"comes before",str1)
-... else:
-...     print("The two strings are the same")
-...
-C comes before Java
+With a positive step, a slice whose start is not before its stop is empty. With a negative step, selection runs backwards. An invalid individual index raises `IndexError`, whereas an out-of-range slice boundary is clipped.
 
-The in operator
-in is a boolean operator that takes two strings and returns True if the first appears as a substring in the second and False otherwise.
->>> str1="C"
->>> str2="C++"
->>> str3="Python"
->>> print(str1 in str2)
+Strings compare lexicographically by Unicode code point, not by language-specific dictionary order. Comparison is case-sensitive.
 
----
+```python
+print("python" == "Python")  # False
+print("C" < "Java")          # True
+print("A" < "a")             # True
+print("Java" in "Python, Java and C++")  # True
+print("Java" in "Python")               # False
+```
 
----
+Use `casefold()` when a case-insensitive text comparison is appropriate. The string membership operator checks for a substring, not only a single character.
 
 <!-- page 13 | Module 3 · source page 13 -->
 
-True
->>> print(str1 in str3)
-False
->>> print(str2 in str1)
-False
-The in operator can be used to print the characters that are present in (common to) two given strings
->>> str1="algorithms"
->>> str2="problem solving"
->>> for c in str1:
-...     if c in str2:
-...         print(c,end=" ")
-...
-l g o r i m s
+## String methods
 
-## The string module
-The string module contains **string methods** that can be used to manipulate strings.
-To use them, you have to first import the module:
-`import string`
+String methods are called directly on a string. They do not require `import string`. Because strings are immutable, transformation methods return new strings.
 
-| String method | Purpose |
-| :--- | :--- |
-| `s.count(sub, start, end)` | Returns the number of non-overlapping occurrences of substring `sub` in the portion of `s` starting from `start` and ending at `end-1`. |
-| `s.find(sub, start, end)` | Returns the index of the first occurrence of the substring `sub` in the portion of `s` starting from `start` and ending at `end-1`. |
-| `s.replace(old, new, count)` | Returns a copy of `s` with all occurrences of substring `old` replaced by `new`. If the optional argument `count` is given, only the first `count` occurrences are replaced. |
-| `s.isalpha()` | Returns `True` if `s` contains only letters or `False` otherwise. |
-| `s.isdigit()` | Returns `True` if `s` contains only digits or `False` otherwise. |
-| `s.lower()` | Returns a copy of `s` converted to lower-case. |
-| `s.upper()` | Returns a copy of `s` converted to upper-case. |
+| Method | Result |
+|---|---|
+| `s.count(sub[, start[, end]])` | Count non-overlapping occurrences of a substring |
+| `s.find(sub[, start[, end]])` | First matching index, or -1 when no match exists |
+| `s.replace(old, new[, count])` | A copy with replacements; optionally limit their count |
+| `s.isalpha()` | True for a non-empty string containing only letters |
+| `s.isdigit()` | True for a non-empty string containing only digit characters |
+| `s.lower()`, `s.upper()` | A copy with case changed |
+| `s.strip()` | A copy with leading and trailing whitespace removed |
 
-The parameters `start` and `end` are optional in the methods `find()` and `count()`. If not present, the entire string is considered.
-`find()` returns -1 if the substring to be searched is not present in the given string.
+Square brackets in the signatures indicate optional arguments; do not type them in a call.
 
-Eg
 ```python
->>> import string
->>> s="malayalam"
->>> str1="string"
->>> str2="STR2"
->>> print(s.find("al"))
+text = "malayalam"
+print(text.find("al"))        # 1
+print(text.find("al", 2))     # 5
+print(text.find("al", 2, 5))  # -1
+print(text.count("al"))       # 2
+print(text.replace("la", "pq"))     # mapqyapqm
+print(text.replace("la", "pq", 1))  # mapqyalam
+print(text)                  # malayalam
+print("STR2".isalpha())       # False
+print("".isdigit())           # False
 ```
-1
 
----
-
----
+`isalpha()` and `isdigit()` recognize more than ASCII letters and digits. A true `isdigit()` result does not guarantee that every such Unicode character is accepted by `int()`; use conversion with error handling when validating numeric input.
 
 <!-- page 14 | Module 3 · source page 14 -->
 
->>> print(s.find("al",2))
-5
->>> print(s.find("al",2,5))
--1
->>> print(s.count("al"))
-2
->>> print(s.count("al",2))
-1
->>> print(s.count("al",2,5))
-0
->>> print(s.replace("la","pq"))
-mapqyapqm
->>> print(s.replace("la","pq",1))
-mapqyalam
->>> print(str1.isalpha())
-True
->>> print(str2.isalpha())
-False
->>> print(str1.upper())
-STRING
->>> print(str2.lower())
-str2
+## String constants and counting characters
 
-In addition to string methods, the string module also provides several string constants;
->>> import string
->>> print(string.ascii_lowercase)
-abcdefghijklmnopqrstuvwxyz
->>> print(string.ascii_uppercase)
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
->>> print(string.ascii_letters)
-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
->>> print(string.digits)
-0123456789
-
-You can use these constants to test whether a character is upper-case or lower case, or whether it is a digit.
->>> import string
->>> ch='p'
->>> print(ch in string.ascii_lowercase)
-True
-
-**To count the occurrences of a character in a string without using the count method.**
+The separate `string` module supplies constants such as ASCII letters and digits. These constants are useful when a problem specifically restricts its input to ASCII.
 
 ```python
-str=input("Enter a string")
-ch=input("Enter the character to search for")
-count=0
-for char in str:
-    if char==ch:
-        count+=1
-print(ch,"occurs",count,"times in",str)
+import string
+
+print(string.ascii_lowercase)  # abcdefghijklmnopqrstuvwxyz
+print(string.ascii_uppercase)  # ABCDEFGHIJKLMNOPQRSTUVWXYZ
+print(string.digits)           # 0123456789
+print("p" in string.ascii_lowercase)  # True
+print("é" in string.ascii_letters)    # False
+print("é".isalpha())                  # True
 ```
 
-## Lists
+To count a single character without calling `count()`, traverse the string and increment a counter for each match.
 
-A list is an ordered set of data values. The values that make up a list are called its **elements** or **items**. The logical structure of a list is similar to that of a string. Each item in the list has a unique index that specifies its position and the items are ordered by their positions. Unlike strings, where each element is a character, the items in a list can be of different data types.
+```python
+def count_character(text, target):
+    if len(target) != 1:
+        raise ValueError("target must contain exactly one character")
+    total = 0
+    for character in text:
+        if character == target:
+            total += 1
+    return total
 
----
+print(count_character("banana", "a"))  # 3
+print(count_character("banana", "z"))  # 0
+print(count_character("", "a"))        # 0
+```
 
----
+This function counts one character at a time. Counting a multi-character substring requires a different approach, such as `text.count(substring)`.
 
 <!-- page 15 | Module 3 · source page 15 -->
 
-## Creating lists
+## Creating, indexing, and traversing lists
 
-To create a new list; you simply enclose the elements in a pair of square brackets
-```python
->>> newlist=[10,"hi",3.14]
->>> print(newlist)
-[10, 'hi', 3.14]
->>> mynest=[2,4,[1,3]]
->>> print(mynest)
-[2, 4, [1, 3]]
-```
-As in `mynest` above, a list can have another list as its element. Such a list is called **nested list**. The list `[1,3]` which is an element of `mynest` is called a **member list**. A list that contains no elements is called an empty list, denoted as `[ ]`.
-Lists of integers can also be built using the `range()` and `list()` functions.
-```python
->>> digits=list(range(10))
->>> print(digits)
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
->>> naturals=list(range(1,11))
->>> print(naturals)
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
->>> mul5=list(range(10,50,5))
->>> print(mul5)
-[10, 15, 20, 25, 30, 35, 40, 45]
-```
-Once a list is created, you can determine its length (number of elements in the list) using the `len()` method.
-In the case of a nested list, the member list will be counted as a single element.
-```python
->>> languages=["C","Java","Python","C++"]
->>> print(len(languages))
-4
->>> breakfast=["dosa","chapathi",["bread","butter","jam"]]
->>> print(len(breakfast))
-3
-```
-## Accessing list elements and traversal
+A list is an ordered, mutable sequence. Items may have different types, and a list may contain other lists.
 
-List indices work the same way as string indices. Thus you can use the subscript operator to access the list elements.
 ```python
->>> newnest=[10, 20, [25, 30], 40]
->>> print(newnest[0])
-10
->>> print(newnest[2])
-[25, 30]
->>> print(newnest[-1])
-40
->>> print(newnest[4])
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-IndexError: list index out of range
->>> print(newnest[5-4])
-20
->>> print(newnest[1.0])
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: list indices must be integers or slices, not float
->>> print(newnest[-5])
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-IndexError: list index out of range
+items = [10, "hi", 3.14]
+nested = [10, 20, [25, 30], 40]
+print(len(items))    # 3
+print(len(nested))   # 4; the nested list counts as one item
+print(nested[2])     # [25, 30]
+print(nested[2][1])  # 30
+print(nested[-1])    # 40
+print(list(range(10, 30, 5)))  # [10, 15, 20, 25]
 ```
 
----
+List indices must be integers or slices. An expression such as `nested[5 - 4]` is valid because it evaluates to the integer 1. `nested[1.0]` raises `TypeError`, even though 1.0 is numerically equal to 1.
 
----
+```python
+primes = [2, 3, 5, 7, 11]
+for value in primes:
+    print(value, end=" ")
+print()  # Preceding line: 2 3 5 7 11
+
+for index, value in enumerate(primes):
+    print(index, value)
+```
+
+Use `enumerate()` when both positions and values are needed. An empty list is `[]`, and `len([])` is 0. Avoid changing a list's size while traversing it unless the algorithm deliberately accounts for that change.
 
 <!-- page 16 | Module 3 · source page 16 -->
 
-You could also use an expression as an index in the subscript operator, as in newnest[5-4]
-The interpreter will evaluate the expression to determine the index. Printing the list by specifying its name in the print method displays the list elements enclosed in a pair of brackets. To display the entire list without the brackets themselves, you should traverse the list printing the elements one by one.
->>> prime=[2,3,5,7,11]
->>> for p in prime:
-...     print(p,end=" ")
-...
-2 3 5 7 11
+## List comprehensions and operations
 
-### List Comprehension
-Creating a new list from an existing list is called **list comprehension**. Assume you have a list of numbers from which you want to create another list consisting only of odd numbers in the original list. This can be done by using a for loop to traverse the original list and copying the odd numbers to a second list. But with list comprehension.
+A list comprehension builds a new list by evaluating an expression for items in an iterable, optionally filtering with a condition. It need not start from an existing list.
 
 ```python
->>> numbers = [1, 28, 73, 4, 100, 358, 75, 208]
->>> odd = [num for num in numbers if num%2 != 0]
->>> print(odd)
-[1, 73, 75]
+numbers = [1, 28, 73, 4, 100, 358, 75, 208]
+odd = [number for number in numbers if number % 2 != 0]
+squares = [number ** 2 for number in range(1, 5)]
+print(odd)      # [1, 73, 75]
+print(squares)  # [1, 4, 9, 16]
+print(list(range(10, 20, 2)))  # [10, 12, 14, 16, 18]
 ```
 
-The statement `odd = [num for num in numbers if num%2 != 0]` essentially directs the interpreter to iterate through the list numbers and copy all odd numbers to another list odd.
+| Operation | Example | Meaning |
+|---|---|---|
+| Concatenation | `[2, 3] + [5, 7]` | New list combining both sequences |
+| Repetition | `[0, 1] * 2` | New list `[0, 1, 0, 1]` |
+| Equality | `[2, 4] == [2, 4]` | Same values in the same order |
+| Membership | `4 in [2, 4, 6]` | Whether a value occurs |
+| Ordering | `[2, 3, 7] < [2, 4, 6]` | Lexicographic comparison |
 
-Suppose, now you need to create a list of two-digit even numbers
-```python
->>> even2dig = [num for num in range(10,100) if num%2 == 0]
->>> print(even2dig)
-[10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38,
-40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68,
-70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98]
-```
+Lists compare element by element, stopping at the first unequal pair. If one is a prefix of the other, the shorter list comes first. Ordering elements of incompatible types, such as an integer and a string, can raise `TypeError`.
 
-### List operations
-
-The `+` operator concatenates lists:
-```python
->>> prime=[2,3,5,7]
->>> composite=[4,6,8,10]
->>> numbers=prime+composite
->>> print(numbers)
-[2, 3, 5, 7, 4, 6, 8, 10]
-```
-The `*` operator repeats a list a given number of times:
-```python
->>> binary=[0,1]
->>> bytesequence=binary*4
->>> print(bytesequence)
-[0, 1, 0, 1, 0, 1, 0, 1]
-```
-Equality operator works well on lists. It checks if two lists have the same elements.
-```python
->>> even=[2,4,6,8]
->>> mul2=[2,4,6,8]
->>> print(even==mul2)
-True
->>> composite=[4,6,8]
->>> print(even==composite)
-False
-```
-Other relational operators also work with lists. Consider:
-```python
->>> prime=[2,3,5]
->>> even=[2,4,6]
->>> print(prime>even)
-False
-```
-
----
-
----
+> **Watch out.** Repetition copies references, not nested objects. `[[]] * 3` contains three references to the same inner list. Use `[[] for _ in range(3)]` when independent inner lists are required.
 
 <!-- page 17 | Module 3 · source page 17 -->
 
-Python starts by comparing the first element from each list. If they are equal, it goes on to the next element, and so on, until it finds the first pair of elements that are different and determines the relation between them. In the above example, prime[0] == even[0]. Next, prime[1] and even[1] are compared. Thus the resulting relation is '<' and prime > even is thus False. Note that once the result is determined, the subsequent elements are skipped.
+## List slices, mutation, and copying
 
->>> prime=[2,3,7]
->>> even=[2,4,6]
->>> print(prime>even)
-False
+Lists use the same start-inclusive, stop-exclusive slicing rules as strings. A list slice creates a new list, but it is a **shallow copy**: references to nested objects are shared.
 
-Membership operators can be applied to a list as well.
+```python
+values = [10, 20, 30, 40]
+print(values[1:3])  # [20, 30]
+values[2] = 35
+print(values)       # [10, 20, 35, 40]
 
->>> even=[2,4,6,8]
->>> composite=[4,6,8]
->>> print(2 in even)
-True
->>> print(2 in composite)
-False
->>> print(3 not in composite)
-True
+alias = values
+copy = values[:]
+alias[0] = 99
+print(values)  # [99, 20, 35, 40]
+print(copy)    # [10, 20, 35, 40]
+```
 
-### List slices
+[![Assignment creates an alias to one list, whereas slicing creates a separate outer list.](/notes/cse/s1/python/module-3/assets/list-alias-copy.svg)](/notes/cse/s1/python/module-3/assets/list-alias-copy.svg)
 
-The slice operator on a list follows the same rules as applied to strings.
+[Open full-size SVG](/notes/cse/s1/python/module-3/assets/list-alias-copy.svg)
 
->>> sequence=["strings","lists","tuples","bytearrays",
-"bytesequences","range objects"]
->>> print(sequence[:])
-['strings', 'lists', 'tuples', 'bytearrays', 'bytesequences',
-'range objects']
->>> print(sequence[1:4])
-['lists', 'tuples', 'bytearrays']
->>> print(sequence[:3])
-['strings', 'lists', 'tuples']
->>> print(sequence[3:])
-['bytearrays', 'bytesequences', 'range objects']
+```python
+original = [[1], [2]]
+shallow = original[:]
+shallow[0].append(9)
+print(original)  # [[1, 9], [2]]
+```
 
-### List mutations
-
-Unlike strings, lists are **mutable**. In other words, a list is updatable – elements can be inserted, removed, or replaced. You use the subscript operator to replace an element at a given position:
-
->>> even=[2,4,5,8]
->>> even[2]=6
->>> print(even)
-[2, 4, 6, 8]
-
-You can also replace a single list item with a new list.
-
->>> even=[2,4,6,8]
->>> even[3]=[8,10]
->>> print(even)
-[2, 4, 6, [8, 10]]
-
-### Slice operator and mutations
-
-The slice operator is a nice tool to mutate lists in terms of replacing, inserting, or removing list elements.
-
-#### Replacing elements
-
-You can use the slice operator to replace a single element or multiple elements in a list.
-
->>> composite=[13,17,19,23,25,27,37,41]
->>> composite[4:6]=[29,31]
->>> print(composite)
-[13, 17, 19, 23, 29, 31, 37, 41]
->>> odd=[1,3,5,8]
-
----
-
----
+Reassigning an element in a shallow copy changes that copy's slot; mutating a shared nested object is visible through both lists. Use `copy.deepcopy()` when the task requires independently copied nested structures.
 
 <!-- page 18 | Module 3 · source page 18 -->
 
->>> odd[3:4]=[7]
->>> print(odd)
-[1, 3, 5, 7]
+## Replacing, inserting, and deleting list items
 
-### Inserting elements
+An indexed assignment replaces one item. A slice assignment replaces a range with values from an iterable and may change the list's length.
 
-The slice operator is useful for inserting new elements into a list at the desired location:
->>> prime=[2,3,5,7,13,17,19]
->>> prime[4:4]=[11]
->>> print(prime)
-[2, 3, 5, 7, 11, 13, 17, 19]
->>> composite=[2,10,12]
->>> composite[1:1]=[4,6,8]
->>> print(composite)
-[2, 4, 6, 8, 10, 12]
+```python
+values = [10, 20, 30, 40, 50]
+values[1:3] = [25, 35]
+print(values)  # [10, 25, 35, 40, 50]
 
-### Removing elements
+values[2:2] = [27, 29]
+print(values)  # [10, 25, 27, 29, 35, 40, 50]
 
-The slice operator can also be used to remove elements from a list by assigning the empty list to them
->>> composite[3:4]=[]
->>> print(composite)
-[3, 5, 7, 11]
->>> composite=[29,31,33,35,37]
->>> composite[2:4]=[]
->>> print(composite)
-[29, 31, 37]
+values[1:4] = []
+print(values)  # [10, 35, 40, 50]
 
-### Using del keyword for deletion
+del values[1]
+print(values)  # [10, 40, 50]
+del values[1:]
+print(values)  # [10]
+```
 
-Assigning a list element to an empty list for deletion is cumbersome. As an alternative, Python provides the del keyword exclusively for deletion.
+An empty slice such as `[2:2]` inserts before position 2. Assigning `[]` to a slice removes the selected range. In contrast, `values[0] = []` stores an empty list as an item; it does not remove that position.
 
->>> composite=[3,5,7,9,11]
->>> del composite[3]
->>> print(composite)
-[3, 5, 7, 11]
->>> composite=[29,31,33,35,37]
->>> del composite[2:4]
->>> print(composite)
-[29, 31, 37]
-
->>> del composite[6]
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-IndexError: list assignment index out of range
-As illustrated above, del causes a runtime error if the index is out of range.
-
-### List methods
-
-The list type includes several methods for inserting and removing elements.
-
----
-
----
+The right side of a slice assignment must be iterable. `values[0:1] = 7` raises `TypeError`; use `[7]` instead. Deleting one out-of-range index raises `IndexError`, while deleting an out-of-range slice safely clips its bounds.
 
 <!-- page 19 | Module 3 · source page 19 -->
 
-| List method | Purpose |
+## List methods
+
+Use this text reference in place of a screenshot so method names and arguments remain selectable.
+
+| Method | Effect or result |
 |---|---|
-| `L.index(element)` | Returns the position of element in the list L. It produces an error if there is no such element. |
-| `L.insert(position, element)` | Inserts element at position if position is less than the length of L. Otherwise, inserts element at the end of L. |
-| `L.append(element)` | Inserts element at the end of L. |
-| `L.extend(aList)` | Inserts the elements of the list aList to the end of L. |
-| `L.remove(element)` | Removes element from the list L. It throws an error if there is no such element. |
-| `L.pop()` | Removes and returns the element at the end of L. |
-| `L.pop(position)` | Removes and returns the element at position in the list L. |
-| `L.count(element)` | Returns the number of times element appears in the list L. |
-| `L.sort(element)` | Sorts (arrange in ascending order) the elements of the list L. |
-| `L.reverse()` | Reverses the elements of the list L. |
-
-
-
-![Table of Python List methods and their purposes](/notes/cse/s1/python/module-3/assets/page-019-image-1.png)
-
-
+| `items.index(value)` | First matching index; `ValueError` if absent |
+| `items.insert(index, value)` | Insert before an index; an index past the end appends |
+| `items.append(value)` | Add one object at the end |
+| `items.extend(iterable)` | Append each item from an iterable |
+| `items.remove(value)` | Remove the first match; `ValueError` if absent |
+| `items.pop()` / `items.pop(index)` | Remove and return an item; `IndexError` for an invalid index or empty list |
+| `items.count(value)` | Number of matching items |
+| `items.sort(key=..., reverse=...)` | Sort the list in place; return `None` |
+| `items.reverse()` | Reverse the current order in place; return `None` |
+| `items.clear()` | Remove every item |
+| `items.copy()` | Make a shallow copy |
 
 ```python
->>> a = [66.25, 333, 333, 7, 1, 1234.5]
->>> print("Index of 1 is", a.index(1))
-Index of 1 is 4
->>> print("Index of 333 is", a.index(333))
-Index of 333 is 1
->>> a.insert(2, 4587)
->>> a.insert(8, -55)
->>> print("After inserting 4587 and -55, the list is", a)
-After inserting 4587 and -55, the list is [66.25, 333, 4587, 333, 7, 1, 1234.5, -55]
->>> a.append(200)
->>> print("The list on appending 200 is", a)
-The list on appending 200 is [66.25, 333, 4587, 333, 7, 1, 1234.5, -55, 200]
->>> a.sort()
->>> print("The list after sorting is", a)
-The list after sorting is [-55, 1, 7, 66.25, 200, 333, 333, 1234.5, 4587]
->>> b = ['a', 25.47, 'c', 7, 18]
->>> a.extend(b)
->>> print("The list a after extending with elements of b is", a)
-The list a after extending with elements of b is [-55, 1, 7, 66.25, 200, 333, 333, 1234.5, 4587, 'a', 25.47, 'c', 7, 18]
->>> a.remove(1)
->>> print("The list a after removing 1 is", a)
-The list a after removing 1 is [-55, 7, 66.25, 200, 333, 333, 1234.5, 4587, 'a', 25.47, 'c', 7, 18]
->>> a.remove(333)
->>> print("The list a after removing 333 is", a)
-The list a after removing 333 is [-55, 7, 66.25, 200, 333, 1234.5, 4587, 'a', 25.47, 'c', 7, 18]
->>> x = a.pop()
->>> print("The element popped from the list a is", x)
-The element popped from the list a is 18
+values = [3, 1, 3]
+print(values.index(3))  # 0
+values.insert(1, 9)
+values.append(5)
+values.extend([7, 8])
+print(values)          # [3, 9, 1, 3, 5, 7, 8]
+print(values.pop())    # 8
+values.remove(3)
+print(values)          # [9, 1, 3, 5, 7]
+print(values.count(3)) # 1
+values.sort()
+print(values)          # [1, 3, 5, 7, 9]
+values.reverse()
+print(values)          # [9, 7, 5, 3, 1]
 ```
 
----
-
----
+`append([7, 8])` adds a nested list as one item; `extend([7, 8])` adds two items. Use `sorted(items)` to obtain a sorted copy. Do not write `items = items.sort()`, which replaces the variable with `None`.
 
 <!-- page 20 | Module 3 · source page 20 -->
 
->>> a.pop(6)
-4587
->>> print("The list a after popping element at position 6 is",a)
-The list a after popping element at position 6 is [-55, 7,
-66.25, 200, 333, 1234.5, 'a', 25.47, 'c', 7]
->>> print("The list a has",a.count(7),"occurrences of 7")
-The list a has 2 occurrences of 7
->>> a.reverse()
->>> print("The list a in reverse is ",a)
-The list a in reverse is
-[7, 'c', 25.47, 'a', 1234.5, 333,
-200, 66.25, 7, -55]
+## Lists with functions, split, and join
 
-### Lists and functions
+A function can return a list. Returning a container of values is different from printing those values. This function returns up to three largest values without changing its input:
 
-A function can be made to return multiple values using lists. This is done by defining the function to return a list of values instead of a single value as in the normal case.
->>> def printTop3(list):
-...     list.sort()
-...     list.reverse()
-...     top3=[list[i] for i in range(3)]
-...     return(top3)
-...
->>> mylist=[23,1,78,50,100,-5]
->>> printTop3(mylist)
-[100, 78, 50]
+```python
+def top_three(values):
+    return sorted(values, reverse=True)[:3]
 
-### Strings and lists
+numbers = [23, 1, 78, 50, 100, -5]
+print(top_three(numbers))  # [100, 78, 50]
+print(numbers)             # [23, 1, 78, 50, 100, -5]
+print(top_three([4]))      # [4]
+print(top_three([]))       # []
+```
 
-To construct a list out of the characters from a string, you can use list() method
->> str="two words"
->>> strlist=list(str)
->>> print(strlist)
-['t', 'w', 'o', ' ', 'w', 'o', 'r', 'd', 's']
-If you want to split a multi-word string into its constituent words and construct a list out of those words, you should use the split() method:
->>> str="two words"
->>> strwords=str.split()
->>> print(strwords)
-['two', 'words']
-In the above example, the white space where you split the string is known as the **delimiter**. If you want to specify a different delimiter, you can pass that character (or even a string) as an argument to the split() method.
->>> str="two words"
->>> wsplit=str.split('w')
->>> print(wsplit)
-['t', 'o', 'ords']
->>> wosplit=str.split('wo')
->>> print(wosplit)
-['t', '', 'rds']
-Notice that the delimiter doesn't appear in the list.
+A function receives references to the supplied objects. Mutating a list parameter can change the caller's list; merely rebinding that parameter to another list does not rebind the caller's variable.
 
-The join() method works in the opposite sense of split(). It concatenates a list of strings by inserting a "separator" between them. The following code uses a blank space as the separator.
->>> sep=" "
->>> wordlist=["three", "word", "string"]
+```python
+text = "two words"
+print(list(text))    # ['t', 'w', 'o', ' ', 'w', 'o', 'r', 'd', 's']
+print(text.split()) # ['two', 'words']
+print(text.split("w"))  # ['t', 'o ', 'ords']
+print(text.split("wo")) # ['t', ' ', 'rds']
 
----
+words = ["three", "word", "string"]
+print(" ".join(words))  # three word string
+print("-".join(words))  # three-word-string
+```
 
----
+`split()` without an argument groups consecutive whitespace and drops leading or trailing whitespace. An explicit separator follows different rules and can produce empty items: `"a,,b".split(",")` gives `['a', '', 'b']`. `join()` requires string items and inserts its separator between them.
 
 <!-- page 21 | Module 3 · source page 21 -->
 
->>> str=sep.join(wordlist)
->>> print(str)
-three word string
+## Tuples and unpacking
 
-The following code uses a hyphen as a separator.
->>> sep="-"
->>> wordlist=["three", "word", "string"]
->>> str=sep.join(wordlist)
->>> print(str)
-three-word-string
+A tuple is an immutable sequence. Commas create tuple structure; parentheses are often used for clarity.
 
-### **Tuples**
+```python
+record = ("Ram", 18, "S1")
+single = ("a",)
+not_a_tuple = ("a")
+print(type(single).__name__)       # tuple
+print(type(not_a_tuple).__name__)  # str
+print(tuple("python"))            # ('p', 'y', 't', 'h', 'o', 'n')
+print(tuple())                    # ()
+print(record[0])                  # Ram
+print(record[1:])                 # (18, 'S1')
 
-A tuple is a sequence of values that resembles a list, except that a tuple is **immutable**. You create a tuple by enclosing its elements in parentheses instead of square brackets. (Strictly speaking, the enclosing parentheses are optional, but are included to improve readability.) The elements are to be separated by commas. Following are some examples:
-t = ('a', 'b', 'c', 'd', 'e')
-s = ('g', 2, 7, 8.978)
-To create a tuple with a single element, we have to include a comma at the end, even though there is only one value. Without the comma, Python treats the element as a string in parentheses. The following code illustrates this:
->>> t1=('a',)
->>> t2=('a')
->>> print(type(t1))
-<class 'tuple'>
->>> print(type(t2))
-<class 'str'>
+name, age, semester = record
+print(name, age, semester)         # Ram 18 S1
+a, b = 5, 10
+a, b = b, a
+print(a, b)                       # 10 5
+```
 
-### **Tuple creation**
+The number of targets must match the number of values unless starred unpacking is used. A trailing comma makes a one-item tuple; `(4)` is simply the integer 4.
 
-A tuple can be created by enclosing its elements in parentheses. Another way to create a tuple is to use the tuple() function.
->>> t1=tuple("string")
->>> print(t1)
-('s', 't', 'r', 'i', 'n', 'g')
->>> t2=tuple([1,2,3])
->>> print(t2)
-(1, 2, 3)
->>> t3=tuple()
->>> print(t3)
-()
->>> t4=tuple([4])
->>> print(t4)
-(4,)
-In the above example, t3 is an empty tuple. Also, notice how t4 is printed with comma at the end.
+Tuples do not support item assignment. However, an object referenced by a tuple may itself be mutable:
 
-### **Tuple operations**
+```python
+record = ("marks", [10, 20])
+record[1].append(30)
+print(record)  # ('marks', [10, 20, 30])
+```
 
-Most of the operators and functions used with lists can be used similarly with tuples.
->>> lan=tuple("python")
->>> print(lan[0])
-p
->>> print(lan[1:4])
-('y', 't', 'h')
-But, unlike lists, tuples are immutable -- you are bound to get error when you try to modify the tuple contents.
->>> lan=tuple("python")
->>> lan[0]='P'
-Traceback (most recent call last):
-
----
-
----
+A tuple is hashable only if all its elements are hashable. A tuple containing a list cannot be a dictionary key or set element.
 
 <!-- page 22 | Module 3 · source page 22 -->
 
-File "<stdin>", line 1, in <module>
-TypeError: 'tuple' object does not support item assignment
-Python provides a quick way to swap two variables a and b without using any third temporary variable:
->>> a,b=5,10
->>> print(a,b)
-5 10
->>> a,b=b,a
->>> print(a,b)
-10 5
-This is known as tuple assignment.
+## NumPy arrays, dimensions, and shape
 
-## The numpy package and arrays
+NumPy provides the `ndarray` type for numerical data. It is a separate package and is conventionally imported as `np`. A standard numeric array has one data type; mixed inputs may be converted to a common type.
 
-NumPy stands for Numerical Python. It is an excellent package for advanced computing in Python like linear algebra, Fourier transforms, and random simulation. This package also provides extensive support for arrays. An array is a homogeneous collection of data items, unlike lists and tuples that are heterogeneous.
-As always, if you want to use the components in NumPy, you should first import the package. NumPy is usually imported with the np alias name:
+```python
 import numpy as np
-Now the NumPy package can be referred to as np instead of numpy.
 
-### Creating arrays
+values = np.array([1, 2, 3, 4, 5, 6])
+matrix = np.array([[1, 2, 3], [4, 5, 6]])
+print(values.ndim)   # 1
+print(values.shape)  # (6,)
+print(matrix.ndim)   # 2
+print(matrix.shape)  # (2, 3)
+print(matrix.size)   # 6
+```
 
-To create an array, you use the array() method of numpy package .
->>> import numpy as np
->>> arr = np.array([1, 2, 3, 4, 5, 6])
->>> print(arr)
-[1 2 3 4 5 6]
-You can also create matrices (two-dimensional arrays) with array() method:
->>> mat = np.array([[1, 2, 3], [4, 5, 6]])
->>> print(mat)
-[[1 2 3]
- [4 5 6]]
-To know the dimensions of an array, you use the ndim attribute in NumPy.
+| Attribute | Meaning |
+|---|---|
+| `ndim` | Number of axes |
+| `shape` | Tuple of lengths along those axes |
+| `size` | Total number of elements |
+| `dtype` | Element data type |
 
->>> arr = np.array([1, 2, 3, 4, 5])
->>> print(arr.ndim)
-1
->>> mat = np.array([[1, 2, 3], [4, 5, 6]])
->>> print(mat.ndim)
-2
-To know the size across each dimension, you use the shape attribute:
+[![A two-row, three-column array with its row and column indices.](/notes/cse/s1/python/module-3/assets/array-shape.svg)](/notes/cse/s1/python/module-3/assets/array-shape.svg)
 
->>> arr = np.array([1, 2, 3, 4, 5])
->>> mat = np.array([[1, 2, 3], [4, 5, 6]])
->>> print(mat.shape)
-(2, 3)
->>> print(arr.shape)
-(6,)
-The first output (2, 3) means that the array mat has 2 elements in the first dimension (2 rows) and 3 elements in the second dimension (3 columns). The second output (6,) means that the array arr has 6 elements in the first dimension and no elements in the second dimension.
+[Open full-size SVG](/notes/cse/s1/python/module-3/assets/array-shape.svg)
 
----
-
----
+`(6,)` is a one-element shape tuple. `(2, 3)` means two rows and three columns. Shape must match the actual data: an array containing five values has shape `(5,)`, not `(6,)`. Object-dtype arrays are an exception to the usual homogeneous numeric-value description.
 
 <!-- page 23 | Module 3 · source page 23 -->
 
-### Accessing array elements
+## Array indexing, traversal, and views
 
-Indexing and slicing work the same way with arrays as with other sequences like lists, and tuples.
-```python
->>> arr = np.array([1,2,3,4,5,6])
->>> mat = np.array([[1, 2, 3], [4, 5, 6]])
->>> print(arr[3])
-```
-4
-```python
->>> print(arr[2:5])
-```
-[3 4 5]
-```python
->>> print(mat[1])
-```
-[4 5 6]
-```python
->>> print(mat[0,2])
-```
-3
-```python
->>> print(mat[0][2])
-```
-3
-```python
->>> print(arr[-2])
-```
-5
-```python
->>> print(mat[-1,2])
-```
-6
-```python
->>> print(mat[-2,-3])
-```
-1
-```python
->>> print(arr[-2:])
-```
-[5 6]
-```python
->>> print(arr[1:5:2])
-```
-[2 4]
-```python
->>> print(arr[:5:2])
-```
-[1 3 5]
-```python
->>> print(mat[:2:2])
-```
-[[1 2 3]]
-
-#### for loop is used to traverse the array:
+NumPy supports one index per axis. Basic slicing usually shares data with the original array, unlike a list slice's new outer list.
 
 ```python
->>> arr = np.array([1,2,3,4,5,6])
->>> mat = np.array([[1, 2, 3], [4, 5, 6]])
->>> for elt in arr:
-...     print(elt,end=" ")
-...
-```
-1 2 3 4 5 6
-```python
->>> for row in mat:
-...     print(row)
-...
-```
-[1 2 3]
-[4 5 6]
-```python
->>> for row in mat:
-...     for elt in row:
-...         print(elt,end=" ")
-...
-```
-1 2 3 4 5 6
-```python
->>> for row in mat:
-...     for elt in row:
-...         print(elt,end=" ")
-...     print("")
-...
-```
-1 2 3
-4 5 6
+import numpy as np
 
----
+values = np.array([1, 2, 3, 4, 5, 6])
+matrix = np.array([[1, 2, 3], [4, 5, 6]])
+print(values[3])       # 4
+print(values[2:5])     # [3 4 5]
+print(values[1:5:2])   # [2 4]
+print(matrix[0, 2])    # 3
+print(matrix[-1, -1])  # 6
+print(matrix[:, 1])   # [2 5]
 
----
+for row in matrix:
+    for value in row:
+        print(value, end=" ")
+    print()
+# Rows: 1 2 3 and 4 5 6
+```
+
+```python
+import numpy as np
+
+values = np.array([10, 20, 30, 40])
+view = values[1:3]
+view[0] = 99
+print(values)  # [10 99 30 40]
+
+independent = values[1:3].copy()
+independent[0] = -1
+print(values)  # [10 99 30 40]
+```
+
+Use `.copy()` when the selected data must be independent. In `matrix[row, column]`, both indices refer to axes; a list of lists instead normally uses `nested[row][column]`.
 
 <!-- page 24 | Module 3 · source page 24 -->
 
-Changing array dimensions
+## Reshaping arrays and matrix operations
 
-Changing the array dimensions means to increase or decrease the number of dimensions. For this, you use the reshape() method.
->>> arr = np.array([1,2,3,4,5,6])
->>> mat = np.array([[1, 2, 3], [4, 5, 6]])
->>> mat.reshape(1,6)
-array([[1, 2, 3, 4, 5, 6]])
->>> arr.reshape(3,2)
-array([[1, 2],
-       [3, 4],
-       [5, 6]])
-When you convert a one-dimensional array into a two-dimensional array, there should be enough number of elements to fill all the rows.
-Otherwise, you will end up with an error.
->>> arr = np.array([1,2,3,4,5])
->>> arr.reshape(2,3)
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-ValueError: cannot reshape array of size 5 into shape (2,3)
-As the error itself mentions, you cannot convert a one-dimensional array with 5 elements to a two-dimensional array of 6 elements (2 rows and 3 columns).
+Reshaping reorganizes the axes while preserving the number of elements. It returns an array with the requested shape; assigning that return value does not modify the original object's shape.
 
-Matrix operations
+```python
+import numpy as np
 
+values = np.array([1, 2, 3, 4, 5, 6])
+matrix = values.reshape(2, 3)
+print(matrix.shape)  # (2, 3)
+print(values.shape)  # (6,)
+# np.array([1, 2, 3, 4, 5]).reshape(2, 3) would raise ValueError.
+```
 
+The product of the new dimensions must equal the element count. `reshape()` returns a view where possible and otherwise may copy; it does not guarantee independent data.
 
-![Table of matrix operations and their implementations](/notes/cse/s1/python/module-3/assets/page-024-image-1.png)
+| Operation | Expression | Meaning |
+|---|---|---|
+| Addition | `a + b` / `np.add(a, b)` | Elementwise sum |
+| Subtraction | `a - b` / `np.subtract(a, b)` | Elementwise difference |
+| Elementwise multiplication | `a * b` | Multiply corresponding elements |
+| Matrix multiplication | `a @ b` / `np.matmul(a, b)` | Row-by-column multiplication |
+| Transpose | `a.T` | Swap the axes of a 2-D array |
 
+```python
+import numpy as np
 
+a = np.array([[1, 2], [3, 4]])
+b = np.array([[5, 6], [7, 8]])
+print((a + b).tolist())  # [[6, 8], [10, 12]]
+print((a - b).tolist())  # [[-4, -4], [-4, -4]]
+print((a * b).tolist())  # [[5, 12], [21, 32]]
+print((a @ b).tolist())  # [[19, 22], [43, 50]]
+print(a.T.tolist())     # [[1, 3], [2, 4]]
+```
 
->>> mat1 = np.array([[1,2],[3,4]])
->>> mat2 = np.array([[5,6],[7,8]])
->>> print(np.add(mat1,mat2))
-[[6 8]
- [10 12]]
->>> print(np.subtract(mat1,mat2))
-[[-4 -4]
- [-4 -4]]
->>> print(np.matmul(mat1,mat2))
-[[19 22]
- [43 50]]
->>> print(mat1.T)
-[[1 3]
- [2 4]]
->>> print(mat2.T)
-[[5 7]
- [6 8]]
-
-Sets
-
-A set is a collection of items just as tuples or lists but unlike the other two, a set is unordered; the items in a set do not have a defined order.
-
-Creating a set and accessing its elements
-A set is created by enclosing the items in a pair of braces.
-
----
-
----
+For 2-D matrix multiplication, the left array's column count must equal the right array's row count. The examples use equally shaped arrays for elementwise operations; NumPy also supports broadcasting for compatible shapes.
 
 <!-- page 25 | Module 3 · source page 25 -->
 
->>> directions={'east','west','south','north'}
->>> print(directions)
-{'east', 'south', 'north', 'west'}
+## Creating, traversing, and changing sets
 
-Notice that since the items are unordered in a set, each time you print the set, the output may be different concerning the order of the elements. You can also use the `set` method to create a set from a list or a tuple
+A set is an unordered collection of distinct, hashable objects. It supports membership checks but not positional indexing. Unordered does not mean the order randomly changes on every print; it means you must not rely on an order being defined.
 
->>> numbers=set([1,2,3,4])
->>> print(numbers)
-{1, 2, 3, 4}
->>> vowels=set(('a','e','i','o','u'))
->>> print(vowels)
-{'o', 'u', 'a', 'e', 'i'}
+```python
+values = {0, 1, 1, 2, 3, 5}
+print(sorted(values))  # [0, 1, 2, 3, 5]
+print(3 in values)    # True
+print(set())          # set(); an empty set
+print(type({}).__name__)  # dict; braces alone create a dictionary
 
-The items in a set aren't associated with index or position. This means it is impossible to print an arbitrary element of the set.
+vowels = set("aeiou")
+for vowel in sorted(vowels):
+    print(vowel, end=" ")
+print()  # Preceding line: a e i o u
+```
 
->>> vowels=set(('a','e','i','o','u'))
->>> vowels[2]
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-TypeError: 'set' object is not subscriptable
+You can traverse a set, or obtain an arbitrary item with `next(iter(values))` when it is non-empty. `values[0]` raises `TypeError` because sets have no index.
 
-**To traverse the set, use a `for` loop:**
+```python
+primes = {3, 5, 7, 9, 11}
+primes.add(2)
+primes.update([13, 17])
+primes.remove(9)
+primes.discard(99)  # No error when 99 is absent
+print(sorted(primes))  # [2, 3, 5, 7, 11, 13, 17]
+```
 
->>> for char in vowels:
-...     print(char,end=" ")
-...
-o u a e i
-
-Sets do not allow duplicate elements. The duplicates are automatically removed even if you supply non-unique values.
-
->>> fibonacci={0,1,1,2,3,5}
->>> print(fibonacci)
-{0, 1, 2, 3, 5}
-
-### Adding and removing set elements
-
-To add a single element to a set, you use the `add()` method:
-
->>> even={2,4,8,10}
->>> even.add(6)
->>> print(even)
-{2, 4, 6, 8, 10}
-
-To add multiple items to a set, the `update()` method is to be used:
-
->>> odd={1,3,7,9,13,15}
->>> odd.update({5,11})
->>> print(odd)
-{1, 3, 5, 7, 9, 11, 13, 15}
-
-To remove an item from a set, you should use the `remove()` method:
-
->>> primes={3,5,7,9,11}
->>> primes.remove(9)
->>> print(primes)
-{3, 5, 7, 11}
-
-If the item to be removed is not present in the set, `remove()` will raise an error:
-
->>> primes={3,5,7,11}
->>> primes.remove(2)
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-KeyError: 2
-
----
-
----
+`add()` adds one hashable object; `update()` reads items from an iterable. `remove()` raises `KeyError` when an item is missing, whereas `discard()` does not. Lists and ordinary sets are unhashable and cannot themselves be set elements; `frozenset` is an immutable, hashable alternative.
 
 <!-- page 26 | Module 3 · source page 26 -->
 
-A second way to remove an item from a set is to use the `discard()` method which works the same way as remove. The difference between these two methods is that `discard()` will not raise an error if the item to be removed doesn't exist in the set unlike `remove()`.
-```python
->>> primes={3,5,7,9,11}
->>> primes.discard(9)
->>> print(primes)
-{3, 5, 7, 11}
->>> primes.discard(2)
->>> print(primes)
-{3, 5, 7, 11}
-```
-To remove all the set items at once, you can use the `clear()` method
-```python
->>> primes={3,5,7,9,11}
->>> primes.clear()
->>> print(primes)
-set()
-```
-The keyword `del` can be used to delete the set itself, that is, after the `del` operation, the set will not exist anymore. Any subsequent access to the set will throw an error
-```python
->>> primes={3,5,7,9,11}
->>> del primes
->>> print(primes)
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-NameError: name 'primes' is not defined
-```
+## Set relationships and removal methods
 
-### Sets and relational operators
+Set comparisons describe inclusion relationships rather than lexicographic order. Neither `a < b` nor `a > b` needs to be true when the sets overlap without containing one another.
 
-The relational operators can be used to check the relationship (subset, superset, etc) between two sets.
-
-
-
-![Table of set relational operators and their interpretations](/notes/cse/s1/python/module-3/assets/page-026-image-1.png)
-
-
+| Expression | Interpretation |
+|---|---|
+| `a == b` | Same elements |
+| `a != b` | Different elements |
+| `a <= b` | Every element of a is in b: subset |
+| `a < b` | a is a subset of b and is not equal to b: proper subset |
+| `a >= b` | a contains every element of b: superset |
+| `a > b` | a is a proper superset of b |
+| `a.isdisjoint(b)` | No common elements |
 
 ```python
->>> digits={0,1,2,3,4,5,6,7,8,9}
->>> natural={1,2,3,4,5,6,7,8,9,10}
->>> even={0,2,4,6,8}
->>> odd={1,3,5,7,9}
->>> prime={3,5,7}
->>> composite={4,6,8}
->>> print(even<natural)
-False
->>> print(odd<digits)
-True
->>> print(prime<=odd)
-True
->>> print(digits>=even)
-True
->>> print(composite==even)
-False
->>> print(prime!=odd)
-True
+digits = set(range(10))
+odd_digits = {1, 3, 5, 7, 9}
+print(odd_digits < digits)    # True
+print(digits >= odd_digits)   # True
+print({1, 2} <= {1, 2})       # True
+print({1, 2} < {1, 2})        # False
+print({1, 2}.isdisjoint({3})) # True
 ```
 
----
+| Method or statement | Effect |
+|---|---|
+| `s.remove(value)` | Remove value; raise `KeyError` if missing |
+| `s.discard(value)` | Remove value if present |
+| `s.pop()` | Remove and return an arbitrary item; `KeyError` if empty |
+| `s.clear()` | Remove all items, leaving an empty set |
+| `del s` | Delete this name; the object may still have other references |
 
----
+`del s` removes a binding rather than guaranteeing that an object is destroyed. Accessing an undefined name raises `NameError`.
 
 <!-- page 27 | Module 3 · source page 27 -->
 
-### Mathematical set operations on Python sets
+## Set algebra and in-place updates
 
-Python supports all the mathematical set operations (union, intersection, etc.)
+| New-set operation | Equivalent operator | Meaning |
+|---|---|---|
+| `a.union(b)` | `a \| b` | In either set |
+| `a.intersection(b)` | `a & b` | In both sets |
+| `a.difference(b)` | `a - b` | In a but not b |
+| `a.symmetric_difference(b)` | `a ^ b` | In exactly one set |
 
 ```python
->>> positive={1,2,3,4,5}
->>> negative={-5,-4,-3,-2,-1}
->>> numbers=positive.union(negative)
->>> print(numbers)
-{1, 2, 3, 4, 5, -2, -5, -4, -3, -1}
->>> even={2,4,6,8,10}
->>> mul3={3,6,9,12}
->>> even={2,4,6,8,10,12}
->>> mul6=even.intersection(mul3)
->>> print(mul6)
-{12, 6}
->>> mul15={0,15,30,45}
->>> mul5={0,5,10,15,20,25,30,25,40,45}
->>> mul5.intersection_update(mul15)
->>> print(mul5)
-{0, 45, 30, 15}
->>> mul4={4,8,12,16,-4,-12,-20}
->>> mul8={8,16,-40,-120}
->>> mul4only=mul4.difference(mul8)
->>> print(mul4only)
-{4, 12, -20, -12, -4}
->>> mul4.difference_update(mul8)
->>> print(mul4)
-{-4, 4, -12, -20, 12}
->>> numbers={-3,-2,-1,0,1,2,3}
->>> natural={1,2,3,4,5}
->>> integers=numbers.symmetric_difference(natural)
->>> print(integers)
-{0, 4, 5, -1, -3, -2}
->>> numbers.symmetric_difference(natural)
->>> print(numbers)
-{0, 4, 5, -1, -3, -2}
+a = {1, 2, 3}
+b = {3, 4}
+print(sorted(a | b))  # [1, 2, 3, 4]
+print(sorted(a & b))  # [3]
+print(sorted(a - b))  # [1, 2]
+print(sorted(a ^ b))  # [1, 2, 4]
+print(sorted(a))      # [1, 2, 3]; original unchanged
 ```
 
-| Set method | Meaning |
-| --- | --- |
-| A.union(B) | returns a new set $S = A 	ext{ } 	ext{\cup} 	ext{ } B$ |
-| A.intersection(B) | returns a new set $S = A 	ext{ } 	ext{\cap} 	ext{ } B$ |
-| A.intersection_update(B) | changes the set A to $A 	ext{ } 	ext{\cap} 	ext{ } B$ |
-| A.difference(B) | returns a new set $S = A - B$ |
-| A.difference_update(B) | changes the set A to $A - B$ |
-| A.symmetric_difference(B) | returns a new set $S = (A - B) 	ext{ } 	ext{\cup} 	ext{ } (B - A)$ |
-| A.symmetric_difference_update(B) | changes the set A to $(A - B) 	ext{ } 	ext{\cup} 	ext{ } (B - A)$ |
+The four algebra methods in the first table return a new set. Their corresponding update methods change the existing set and return `None`.
 
+| In-place method | Equivalent assignment |
+|---|---|
+| `a.update(b)` | `a |= b` |
+| `a.intersection_update(b)` | `a &= b` |
+| `a.difference_update(b)` | `a -= b` |
+| `a.symmetric_difference_update(b)` | `a ^= b` |
 
+```python
+numbers = {-3, -2, -1, 0, 1, 2, 3}
+natural = {1, 2, 3, 4, 5}
+result = numbers.symmetric_difference(natural)
+print(sorted(result))   # [-3, -2, -1, 0, 4, 5]
+print(sorted(numbers))  # [-3, -2, -1, 0, 1, 2, 3]
 
-![Table of Set methods and their meanings](/notes/cse/s1/python/module-3/assets/page-027-image-1.png)
+numbers.symmetric_difference_update(natural)
+print(sorted(numbers))  # [-3, -2, -1, 0, 4, 5]
+```
 
-
-
-### Dictionaries
-
-A dictionary associates a set of **keys** with **data values**. For example, the words in a standard English Dictionary comprise a set of keys, whereas their associated meanings are the data values. Thus a dictionary is a mapping between a set of keys and a set of values. Each key maps to a value. The association of a key and a value is called a **key-value pair**, sometimes called an **item** or an **entry**.
-
-A Python dictionary is written as a sequence of key/value pairs separated by commas and the entire sequence is enclosed in a pair of braces. Each key is separated from its value by a colon (:). Such a list of key-value pairs enclosed in a pair of braces is known as a **dictionary literal**.
-
----
-
----
+Use sorted output only when the elements are mutually orderable. Sets may contain different types, so `sorted()` is not a universal display solution.
 
 <!-- page 28 | Module 3 · source page 28 -->
 
->>> stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> print(stud)
-{'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
+## Dictionaries: keys, values, and insertion order
 
-Here Name, Age and Class are keys whereas Ram, 18 and S1 are the corresponding values. An empty dictionary without any items is written as {}.
+A dictionary maps unique, hashable **keys** to values. Values need not be unique or hashable. A pair such as `"name": "Ram"` is an item.
 
-Keys are unique within a dictionary although values need not be. Although the entries may appear to be ordered in a dictionary, this ordering is not the same, each time we print the entries. In general, the order of items in a dictionary is unpredictable.
+In Python 3.7 and later, dictionaries preserve insertion order. Updating an existing key keeps its position; inserting a new key adds it at the end. A dictionary is still accessed by keys rather than by positional indices.
 
-**Dictionary operations**
+```python
+student = {"name": "Ram", "age": 18, "semester": "S1"}
+print(student["name"])  # Ram
+student["age"] = 19
+student["college"] = "Engineering college"
+print(list(student))  # ['name', 'age', 'semester', 'college']
+print(len(student))   # 4
+print("age" in student) # True; membership tests keys
 
-**Accessing values**
+for key, value in student.items():
+    print(key, value)
 
-The subscript operator is used to obtain the value associated with a key
->>> stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> print("I am",stud['Name'],"aged",stud['Age'],"and I am studying in",stud['Class'])
-I am Ram aged 18 and I am studying in S1
+del student["semester"]
+print(list(student))  # ['name', 'age', 'college']
+```
 
-However, if the key is not present in the dictionary, Python raises an error:
->>> stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> print(stud['College'])
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-KeyError: 'College'
+Reading or deleting a missing key with brackets raises `KeyError`. Use `get()` for a default-valued lookup or `pop(key, default)` for removal when absence is expected.
 
-**Traversing a dictionary**
-
-A simple for loop can be used to traverse a dictionary:
->>> stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> for key in stud:
-...     print(key,"-",stud[key])
-...
-Name - Ram
-Age - 18
-Class - S1
-
-The key-value pairs need not be always printed in the order you gave.
-
-**Inserting keys and updating key values**
-
-You should use the subscript operator to add a new key/value pair to the dictionary
->>> stud['College']="Engineering college"
->>> print(stud)
-{'Name': 'Ram', 'Age': 18, 'Class': 'S1', 'College':
-'Engineering college'}
-
-The subscript is also used to replace the value of an existing key:
-stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> stud['Age']=19
->>> print(stud)
-{'Name': 'Ram', 'Age': 19, 'Class': 'S1'}
-
-**Removing keys**
-
-To remove a key from a dictionary, use the del operator. The corresponding key-value pair will be removed.
-
-**Miscellaneous operations**
-
-The len() function returns the number of key-value pairs in a dictionary:
->>> stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> print(len(stud))
-3
-
----
-
----
+If a dictionary literal repeats a key, the later value replaces the earlier value. Strings, numbers, and tuples of hashable items can be keys; lists cannot. Avoid adding or removing keys while directly iterating the dictionary's live views.
 
 <!-- page 29 | Module 3 · source page 29 -->
 
-3
+## Dictionary methods and revision checklist
 
-The `in` operator can be used to know if a key exists in the dictionary.
->>> stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> print('Age' in stud)
-True
->>> print('College' in stud)
-False
+| Method | Result or effect |
+|---|---|
+| `d.get(key, default)` | Value or default; default is `None` when omitted |
+| `d.pop(key, default)` | Remove and return a value, or return the supplied default |
+| `d.keys()` | Live view of keys |
+| `d.values()` | Live view of values |
+| `d.items()` | Live view of `(key, value)` pairs |
+| `d.update(other)` | Insert or replace entries from another mapping or iterable of pairs |
+| `d.clear()` | Remove all entries |
 
-### Dictionary methods- with `dict` denoting the dictionary
+`pop()` raises `KeyError` for a missing key if no default is supplied. Dictionary views are not lists; use `list(d.keys())` when a list is needed. A view reflects later changes to the dictionary.
 
-| Dictionary method | Purpose |
-| --- | --- |
-| `dict.get(key, default)` | Returns the value if the key exists or returns the default if the key does not exist. Displays "None" if the default is omitted and the key does not exist. |
-| `dict.pop(key, default)` | Removes the key and returns the value if the key exists or returns the text `default` if the key does not exist. Raises an error if the default is omitted and the key does not exist. |
-| `dict.keys()` | Returns a list of the keys. |
-| `dict.values()` | Returns a list of values. |
-| `dict.items()` | Returns a list of tuples containing the key and value pairs. |
-| `dict.clear()` | Removes all the items from the dictionary. |
+```python
+student = {"name": "Ram", "age": 18}
+keys = student.keys()
+print(student.get("college"))           # None
+print(student.get("college", "Unknown")) # Unknown
+print(student.pop("college", "Absent"))  # Absent
+print(student.pop("age"))               # 18
+student["semester"] = "S1"
+print(list(keys))      # ['name', 'semester']
+print(list(student.items()))  # [('name', 'Ram'), ('semester', 'S1')]
+student.clear()
+print(student)         # {}
+```
 
->>> stud = {'Name': 'Ram', 'Age': 18, 'Class': 'S1'}
->>> print(stud.get('Name'))
-Ram
->>> print(stud.get('College'))
-None
->>> print(stud.get('College','Oops!!No such key!'))
-Oops!!No such key!
->>> stud.pop('College')
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-KeyError: 'College'
->>> stud.pop('Age')
-18
->>> print(stud)
-{'Name': 'Ram', 'Class': 'S1'}
->>> print(stud.keys())
-dict_keys(['Name', 'Class'])
->>> print(stud.values())
-dict_values(['Ram', 'S1'])
->>> print(stud.items())
-dict_items([('Name', 'Ram'), ('Class', 'S1')])
->>> stud.clear()
->>> print(stud)
+### Check your understanding
+
+- Why does `return` differ from `print()`?
+- Why does a string slice tolerate an oversized stop while an individual index may fail?
+- When does a copied list still share nested objects?
+- Why are NumPy `*` and `@` different?
+- Which set methods mutate their receiver?
+- Why is a dictionary view different from a snapshot made with `list(...)`?
+
+### References
+
+- *Algorithmic Thinking with Python*, Ajeesh Ramanujan and Narasimhan T — source study material.
+- [Python tutorial: control flow and functions](https://docs.python.org/3/tutorial/controlflow.html).
+- [Python tutorial: data structures](https://docs.python.org/3/tutorial/datastructures.html).
+- [Python library: built-in types](https://docs.python.org/3/library/stdtypes.html).
+- [Python library: string constants](https://docs.python.org/3/library/string.html).
+- [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html).
+- [NumPy: copies and views](https://numpy.org/doc/stable/user/basics.copies.html).

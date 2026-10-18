@@ -14,6 +14,6 @@ export const pythonmodule3: NotesModule = {
     { label: "ALGORITHMIC THINKING WITH PYTHON", href: "/notes/cse/s1/python" },
     { label: "MODULE 3" },
   ],
-  module: "Module 3", course: "Algorithmic Thinking with Python", code: "UCEST105", summary: "Module 3",
-  source: "KTU UCEST105 study notes, imported from the provided complete study pack.", pages, chapters,
+  module: "Module 3", course: "Algorithmic Thinking with Python", code: "UCEST105", summary: "Control flow, functions, and Python collections",
+  source: "KTU UCEST105 study notes; explanations and worked examples edited for clarity.", pages, chapters,
 };
