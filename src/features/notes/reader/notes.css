@@ -3,6 +3,9 @@
 .notes-prose {
   line-height: 1.75;
   color: var(--color-ink);
+  text-wrap: pretty;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .notes-prose h2,
 .notes-prose h3,
@@ -26,6 +29,16 @@
 }
 .notes-prose p {
   margin: 0.9em 0;
+}
+/* "Q.", "Q_3." and the like: mark where each worked question starts */
+.notes-prose .notes-question {
+  margin: 2em 0 0.6em;
+  padding: 0.15em 0 0.15em 0.9em;
+  border-left: 3px solid var(--color-green);
+  font-weight: 500;
+}
+.notes-prose .notes-question strong:first-child {
+  color: var(--color-green-ink);
 }
 .notes-prose strong {
   font-weight: 600;

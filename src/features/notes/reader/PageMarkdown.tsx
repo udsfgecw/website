@@ -10,6 +10,12 @@ import TreeDiagram from "./TreeDiagram";
 const remarkPlugins = [remarkGfm, remarkMath];
 const rehypePlugins: Parameters<typeof ReactMarkdown>[0]["rehypePlugins"] = [[rehypeKatex, { strict: false }]];
 
+type HastNode = { type: string; value?: string; children?: HastNode[] };
+const textOf = (node?: HastNode): string =>
+  !node ? "" : node.type === "text" ? node.value || "" : (node.children || []).map(textOf).join("");
+// Matches the lines that start a worked question: "Example.", "Q.", "Q Find…", "Q_3." and "Q6." (KaTeX text).
+const isQuestion = (node?: HastNode) => /^(Example\b|Q(?=[\s._:\d]|$))/.test(textOf(node).trimStart());
+
 function Plot({ source }: { source: string }) {
   let spec: PlotSpec;
   try {
@@ -36,6 +42,9 @@ const components: Components = {
   },
   img({ src, alt }) {
     return <img src={src} alt={alt || "Mathematics diagram"} loading="lazy" decoding="async" />;
+  },
+  p({ node, children }) {
+    return <p className={isQuestion(node as HastNode) ? "notes-question" : undefined}>{children}</p>;
   },
   // a quote opening with "Watch out" is a warning about a common mistake
   blockquote({ node, children }) {
