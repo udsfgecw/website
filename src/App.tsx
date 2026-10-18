@@ -58,7 +58,15 @@ export default function App() {
           <Route path={`${PHYSICS_MODULE_2_PATH}/:page?`} element={<PhysicsModule2Page />} />
           <Route path={`${PHYSICS_MODULE_3_PATH}/:page?`} element={<PhysicsModule3Page />} />
           <Route path={`${PHYSICS_MODULE_4_PATH}/:page?`} element={<PhysicsModule4Page />} />
-          <Route path="/notes/cse/s1/:subject/module-:module/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/chemistry/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/chemistry/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/chemistry/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/chemistry/module-4/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/electrical/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/python/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/python/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/python/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/python/module-4/:page?" element={<ImportedModulePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
