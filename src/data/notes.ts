@@ -1,5 +1,6 @@
 import { MATHS_MODULE_1_PATH, MATHS_PATH } from "@/features/notes/maths-module-1/path";
 import { MATHS_MODULE_2_PATH } from "@/features/notes/maths-module-2/path";
+import { MATHS_MODULE_3_PATH } from "@/features/notes/maths-module-3/path";
 
 export interface ModuleNotes {
   /** e.g. "Module 1" */
@@ -56,6 +57,7 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           modules: [
             { name: "Module 1", detail: "Limits to concavity", href: MATHS_MODULE_1_PATH },
             { name: "Module 2", detail: "Partial derivatives to level curves", href: MATHS_MODULE_2_PATH },
+            { name: "Module 3", detail: "Three-variable chain rule to directional derivatives", href: MATHS_MODULE_3_PATH },
           ],
         },
       ]),

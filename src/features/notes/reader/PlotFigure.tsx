@@ -6,6 +6,8 @@ export interface PlotSpec {
   axis?: boolean;
   points?: { id: string; x: number; y: number; label?: string }[];
   segments?: { from: string; to: string }[];
+  /** filled regions, each a list of point ids in order around the edge */
+  polygons?: { points: string[] }[];
   circles?: { center: string; radius: number }[];
   /** y = vertex y + a (x - vertex x)², drawn across the box; the label sits just above its vertex */
   parabolas?: { vertex: [number, number]; a: number; label?: string }[];
@@ -15,7 +17,7 @@ export interface PlotSpec {
 
 const SIZE = 340;
 
-/* Draws a ```jsxgraph block's axes, points, segments, circles and parabolas as SVG. */
+/* Draws a ```jsxgraph block's axes, points, segments, shaded regions, circles and parabolas as SVG. */
 export default function PlotFigure({ spec }: { spec: PlotSpec }) {
   const marker = useId();
   const clip = useId();
@@ -54,6 +56,11 @@ export default function PlotFigure({ spec }: { spec: PlotSpec }) {
             </text>
           </g>
         )}
+        {spec.polygons?.map((region, i) => {
+          const corners = region.points.map((id) => points.get(id)).filter((p) => p !== undefined);
+          if (corners.length < 3) return null;
+          return <polygon key={i} points={corners.map((p) => `${sx(p.x)},${sy(p.y)}`).join(" ")} fill="var(--color-green-tint)" />;
+        })}
         {spec.circles?.map((c, i) => {
           const centre = points.get(c.center);
           if (!centre) return null;

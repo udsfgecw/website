@@ -5,6 +5,7 @@ import App from "./App";
 import { branchPath, NOTES_CATALOGUE, semesterPath } from "./data/notes";
 import { mathsModule1 } from "./features/notes/maths-module-1";
 import { mathsModule2 } from "./features/notes/maths-module-2";
+import { mathsModule3 } from "./features/notes/maths-module-3";
 import { MetaCollector, type PageMeta } from "./lib/meta";
 
 /* Used at build time only (scripts/prerender.mjs). */
@@ -32,6 +33,7 @@ export const pages: StaticPage[] = [
   ]).map((url): StaticPage => ({ url, file: fileFor(url) })),
   { url: mathsModule1.basePath, file: fileFor(mathsModule1.basePath), chunk: "src/pages/notes/MathsNotesPage.tsx" },
   { url: mathsModule2.basePath, file: fileFor(mathsModule2.basePath), chunk: "src/pages/notes/MathsModule2Page.tsx" },
+  { url: mathsModule3.basePath, file: fileFor(mathsModule3.basePath), chunk: "src/pages/notes/MathsModule3Page.tsx" },
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];
