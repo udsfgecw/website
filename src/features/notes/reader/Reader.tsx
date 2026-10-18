@@ -125,7 +125,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
   const contents = (
     <ol className="flex flex-col gap-0.5">
       {notes.chapters.map((c) => (
-        <li key={c.page}>
+        <li key={`${c.page}-${c.title}`}>
           <a
             href={`#${pageAnchor(c.page)}`}
             onClick={(e) => {
