@@ -2,29 +2,29 @@
 
 # Module 3 at a glance
 
-Module 2 taught you how to differentiate functions of two variables. Module 3 puts those derivatives to work, and extends them to **three** variables.
+In Module 2 you learnt how to differentiate functions of two variables. In Module 3 we use those derivatives, and also extend them to **three** variables.
 
-1. **The chain rule in three variables.** The same tree-diagram idea, now with three branches, and with unknown functions.
-2. **Maxima and minima.** Use partial derivatives to find the highest and lowest values of a function: first the *local* peaks and valleys, then the *absolute* highest and lowest values on a closed region.
-3. **The gradient.** One vector that collects all the partial derivatives and points uphill.
-4. **Directional derivatives.** The rate of change in **any** direction, not just along the axes, and the direction of steepest climb.
+1. **The chain rule in three variables.** The same tree-diagram idea, now with three branches, and also with unknown functions.
+2. **Maxima and minima.** Use partial derivatives to find the highest and lowest values of a function: first the *local* tops and bottoms, and then the *absolute* highest and lowest values on a closed region.
+3. **The gradient.** One vector that has all the partial derivatives and points uphill.
+4. **Directional derivatives.** The rate of change in **any** direction, not just along the axes, and the direction of steepest rise.
 
 ## What you will be able to do
 
 - Apply the chain rule to $w=f(x,y,z)$ when $x,y,z$ depend on one or several parameters.
 - Prove identities for $u=f(x-y,\,y-z,\,z-x)$ without knowing $f$.
 - Find critical points and classify them as local maxima, local minima or saddle points.
-- Solve optimisation problems: smallest surface area, lowest cost.
+- Solve optimisation problems, such as smallest surface area and lowest cost.
 - Find the absolute maximum and minimum of a function on a closed region.
-- Compute $\nabla f$ at a point for two or three variables.
-- Compute the rate of change of $f$ in any direction, and find the direction of fastest increase.
+- Find $\nabla f$ at a point for two or three variables.
+- Find the rate of change of $f$ in any direction, and find the direction of fastest increase.
 
 ## How to use these notes
 
 - Every topic has the same shape: **idea → rule → worked example → common mistakes.**
-- Try each worked example yourself before reading the solution. Cover the answer and compare.
-- Green boxes hold key ideas. Amber boxes marked **Watch out** hold the mistakes that cost marks.
-- The last page has practice questions with answers, then a one-page formula sheet for revision.
+- Try each worked example yourself first. Cover the answer, solve it, and then compare.
+- Green boxes hold key ideas. Amber boxes marked **Watch out** show the mistakes that make you lose marks.
+- The last page has practice questions with answers, and then a one-page formula sheet for revision.
 
 ## Where each topic sits
 
@@ -35,7 +35,7 @@ Module 2 taught you how to differentiate functions of two variables. Module 3 pu
 | Absolute extrema | Closed regions: interior points, edges and corners |
 | Direction | Gradient, directional derivative, steepest ascent and descent |
 
-> **Prerequisites.** Module 2: partial derivatives, second-order and mixed partials, and the two-variable chain rule. For the last three pages you also need to be happy adding vectors and taking dot products. The basics are recapped where they are first used.
+> **Before you start.** You should know Module 2: partial derivatives, second-order and mixed partials, and the two-variable chain rule. For the last three pages you should also be comfortable with adding vectors and finding dot products. The basics are revised where they are first used.
 
 ---
 
@@ -45,7 +45,7 @@ Module 2 taught you how to differentiate functions of two variables. Module 3 pu
 
 ## The idea
 
-In Module 2 a function $z=f(x,y)$ had two paths down to its parameter. With $w=f(x,y,z)$ there are **three** intermediate variables, so three paths. The rule is the tree rule you already know: multiply along each path, add the paths.
+In Module 2, a function $z=f(x,y)$ had two paths down to its parameter. With $w=f(x,y,z)$ there are **three** middle variables, so there are three paths. The rule is the same tree rule that you already know: multiply along each path, and add the paths.
 
 > **Chain rule (one parameter).** If $w=f(x,y,z)$ and $x=x(t)$, $y=y(t)$, $z=z(t)$, then
 >
@@ -61,14 +61,14 @@ graph TD
     z --> t
 ```
 
-Each path from $w$ down to $t$ contributes the product of the derivatives along it: $\dfrac{\partial w}{\partial x}\dfrac{dx}{dt}$, $\dfrac{\partial w}{\partial y}\dfrac{dy}{dt}$, $\dfrac{\partial w}{\partial z}\dfrac{dz}{dt}$. Add the three paths.
+For each path from $w$ down to $t$, take the product of the derivatives along it: $\dfrac{\partial w}{\partial x}\dfrac{dx}{dt}$, $\dfrac{\partial w}{\partial y}\dfrac{dy}{dt}$, $\dfrac{\partial w}{\partial z}\dfrac{dz}{dt}$. Add the three paths.
 
 ## Method
 
 1. Find the three partial derivatives $\dfrac{\partial w}{\partial x}$, $\dfrac{\partial w}{\partial y}$, $\dfrac{\partial w}{\partial z}$.
 2. Find the three ordinary derivatives $\dfrac{dx}{dt}$, $\dfrac{dy}{dt}$, $\dfrac{dz}{dt}$.
-3. Multiply in pairs and add.
-4. Substitute $x(t),y(t),z(t)$, or the given value of $t$, to finish.
+3. Multiply in pairs and then add.
+4. Finally, put $x(t),y(t),z(t)$, or the given value of $t$.
 
 ## Examples
 
@@ -84,7 +84,7 @@ $$
 \frac{dw}{dt}=2xy\cdot2t+(x^2+z^3)\,e^t+3yz^2\cos t
 $$
 
-Substitute $x=t^2$, $y=e^t$, $z=\sin t$:
+Put $x=t^2$, $y=e^t$, $z=\sin t$:
 
 $$
 \frac{dw}{dt}=\mathbf{4t^3e^t+\left(t^4+\sin^3t\right)e^t+3e^t\sin^2t\cos t}
@@ -92,7 +92,7 @@ $$
 
 **Example 2.** Let $w=\sqrt{x^2+y^2+z^2}$ with $x=\cos\theta$, $y=\sin\theta$, $z=\tan\theta$. Find $\dfrac{dw}{d\theta}$ at $\theta=\dfrac\pi4$.
 
-Write $\rho=\sqrt{x^2+y^2+z^2}$. Then $\dfrac{\partial w}{\partial x}=\dfrac x\rho$, and similarly for $y$ and $z$. The parameter derivatives are $-\sin\theta$, $\cos\theta$, $\sec^2\theta$.
+Let $\rho=\sqrt{x^2+y^2+z^2}$. Then $\dfrac{\partial w}{\partial x}=\dfrac x\rho$, and similarly for $y$ and $z$. The parameter derivatives are $-\sin\theta$, $\cos\theta$, $\sec^2\theta$.
 
 $$
 \frac{dw}{d\theta}=\frac{x(-\sin\theta)+y\cos\theta+z\sec^2\theta}{\rho}
@@ -125,7 +125,7 @@ $$
 
 *Verification.* Substituting first, $u=e^{2t}\cos^2t+e^{2t}\sin^2t+e^{2t}=2e^{2t}$, so $\dfrac{du}{dt}=4e^{2t}$. $\checkmark$
 
-> **Watch out.** The last step of every example is substituting back. Leaving $x$, $y$, $z$ in the answer when the question asks for a function of $t$ (or a value at $t=3$) loses marks. And a quick substitute-first check, as in Examples 2 and 3, catches slips.
+> **Watch out.** The last step of every example is to put the values back. If you leave $x$, $y$, $z$ in the answer when the question asks for a function of $t$ (or a value at $t=3$), you will lose marks. Also, a quick check by substituting first, as in Examples 2 and 3, helps you find mistakes.
 
 ---
 
@@ -143,14 +143,14 @@ If $w=f(x,y,z)$ and each of $x,y,z$ depends on several parameters, say $u$, $v$ 
 >
 > and the same with $v$, and with $m$, in place of $u$.
 
-For each parameter: follow the three paths from $w$ down to that parameter, multiply along each, add.
+For each parameter: take the three paths from $w$ down to that parameter, multiply along each path, and add.
 
 ## Method
 
 1. Compute the three outer partials $\dfrac{\partial w}{\partial x},\dfrac{\partial w}{\partial y},\dfrac{\partial w}{\partial z}$.
-2. Make a table of the intermediate derivatives: each of $x,y,z$ against each parameter. That is **nine** entries for three parameters.
-3. For each parameter, take the dot-product style sum down its column.
-4. Substitute $x,y,z$ in terms of the parameters at the end.
+2. Make a table of the middle derivatives: each of $x,y,z$ against each parameter. That gives **nine** entries for three parameters.
+3. For each parameter, multiply and add down its column, like a dot product.
+4. At the end, write $x,y,z$ in terms of the parameters.
 
 ## Example: spherical coordinates
 
@@ -162,7 +162,7 @@ $$
 
 Find $\dfrac{\partial w}{\partial\rho}$, $\dfrac{\partial w}{\partial\phi}$ and $\dfrac{\partial w}{\partial\theta}$.
 
-The outer partials are $\dfrac{\partial w}{\partial x}=8x$, $\dfrac{\partial w}{\partial y}=8y$, $\dfrac{\partial w}{\partial z}=2z$. The nine intermediate derivatives:
+The outer partials are $\dfrac{\partial w}{\partial x}=8x$, $\dfrac{\partial w}{\partial y}=8y$, $\dfrac{\partial w}{\partial z}=2z$. The nine middle derivatives:
 
 | | $\rho$ | $\phi$ | $\theta$ |
 | --- | --- | --- | --- |
@@ -201,9 +201,9 @@ $$
 
 *Check.* Substituting first, $4(x^2+y^2)+z^2=4\rho^2\sin^2\phi+\rho^2\cos^2\phi=\rho^2\left(1+3\sin^2\phi\right)$. This has no $\theta$ in it, so $\dfrac{\partial w}{\partial\theta}=0$. Differentiating gives $2\rho(1+3\sin^2\phi)$ for $\rho$ and $6\rho^2\sin\phi\cos\phi$ for $\phi$. $\checkmark$
 
-> **Note on the source.** The handwritten page used $\cos\theta$ instead of $\sin\phi\cos\theta$ for $\partial x/\partial\rho$ in the first line, which produced a wrong answer for $\partial w/\partial\rho$. The corrected value above is confirmed by the substitute-first check.
+> **Note on the source.** In the first line, the handwritten page used $\cos\theta$ instead of $\sin\phi\cos\theta$ for $\partial x/\partial\rho$, which gave a wrong answer for $\partial w/\partial\rho$. The corrected value above is confirmed by the substitute-first check.
 
-> **Watch out.** With nine intermediate derivatives it is easy to misplace one. A table like the one above keeps them in order. And look for **cancellations**: here every $\theta$ term cancels, which tells you straight away that $w$ does not depend on $\theta$.
+> **Watch out.** With nine middle derivatives, it is easy to put one in the wrong place. A table like the one above keeps them in order. Also, look for **cancellations**: here every $\theta$ term cancels, which tells you immediately that $w$ does not depend on $\theta$.
 
 ---
 
@@ -213,14 +213,14 @@ $$
 
 ## The idea
 
-Sometimes $u$ is given as $f$ of some expressions, with **no formula for $f$**: for example $u=f(x-y,\ y-z,\ z-x)$. You cannot differentiate $f$ itself, but you can still say how $u$ responds to $x$, $y$ and $z$. The chain rule does it, with $\dfrac{\partial u}{\partial r}$, $\dfrac{\partial u}{\partial s}$, $\dfrac{\partial u}{\partial t}$ left as unknown symbols.
+Sometimes $u$ is given as $f$ of some expressions, with **no formula for $f$**: for example $u=f(x-y,\ y-z,\ z-x)$. You cannot differentiate $f$ itself, but you can still find how $u$ changes with $x$, $y$ and $z$. The chain rule does this, and we keep $\dfrac{\partial u}{\partial r}$, $\dfrac{\partial u}{\partial s}$, $\dfrac{\partial u}{\partial t}$ as unknown symbols.
 
 ## Method
 
-1. **Name** the inside expressions: $r=\dots$, $s=\dots$, $t=\dots$. Now $u=f(r,s,t)$.
+1. **Give names** to the inside expressions: $r=\dots$, $s=\dots$, $t=\dots$. Now $u=f(r,s,t)$.
 2. Compute the **nine** partials of $r,s,t$ with respect to $x,y,z$.
 3. Write $\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial r}\dfrac{\partial r}{\partial x}+\dfrac{\partial u}{\partial s}\dfrac{\partial s}{\partial x}+\dfrac{\partial u}{\partial t}\dfrac{\partial t}{\partial x}$, and likewise for $y$ and $z$.
-4. Combine as the question asks. The unknown terms cancel in pairs.
+4. Combine them as the question asks. The unknown terms cancel in pairs.
 
 ## Examples
 
@@ -244,7 +244,7 @@ $$
 \frac{\partial u}{\partial z}=-u_s+u_t
 $$
 
-Add them: every term appears once with $+$ and once with $-$:
+Add them: every term comes once with $+$ and once with $-$:
 
 $$
 \frac{\partial u}{\partial x}+\frac{\partial u}{\partial y}+\frac{\partial u}{\partial z}=(u_r-u_t)+(-u_r+u_s)+(-u_s+u_t)=\mathbf{0}\ \checkmark
@@ -252,7 +252,7 @@ $$
 
 **Example 2.** If $u=f\!\left(\dfrac xy,\ \dfrac yz,\ \dfrac zx\right)$, show that $x\dfrac{\partial u}{\partial x}+y\dfrac{\partial u}{\partial y}+z\dfrac{\partial u}{\partial z}=0$.
 
-Put $r=\dfrac xy$, $s=\dfrac yz$, $t=\dfrac zx$. The non-zero partials are
+Put $r=\dfrac xy$, $s=\dfrac yz$, $t=\dfrac zx$. The partials that are not zero are
 
 $$
 \frac{\partial r}{\partial x}=\frac1y\quad\frac{\partial r}{\partial y}=-\frac{x}{y^2}\qquad
@@ -260,7 +260,7 @@ $$
 \frac{\partial t}{\partial z}=\frac1x\quad\frac{\partial t}{\partial x}=-\frac{z}{x^2}
 $$
 
-Apply the chain rule, then **multiply each by its variable** so the powers cancel:
+Use the chain rule, and then **multiply each by its variable** so that the powers cancel:
 
 $$
 x\frac{\partial u}{\partial x}=x\left(\frac1yu_r-\frac{z}{x^2}u_t\right)=\frac xy\,u_r-\frac zx\,u_t
@@ -280,9 +280,9 @@ $$
 x\,u_x+y\,u_y+z\,u_z=\left(\frac xy-\frac xy\right)u_r+\left(\frac yz-\frac yz\right)u_s+\left(\frac zx-\frac zx\right)u_t=\mathbf{0}\ \checkmark
 $$
 
-> **Why these come out zero.** In Example 1, $u$ depends only on the **differences** of $x,y,z$, so shifting all three by the same amount changes nothing, and the sum of the three rates of change is $0$. In Example 2, $u$ depends only on the **ratios**, so scaling all three by the same factor changes nothing, which gives the weighted sum $xu_x+yu_y+zu_z=0$.
+> **Why these are zero.** In Example 1, $u$ depends only on the **differences** of $x,y,z$. So if we increase all three by the same amount, nothing changes, and the sum of the three rates of change is $0$. In Example 2, $u$ depends only on the **ratios**. So if we multiply all three by the same factor, nothing changes, and we get the weighted sum $xu_x+yu_y+zu_z=0$.
 
-> **Watch out.** Keep the unknown derivatives $u_r,u_s,u_t$ as symbols. Do not try to "evaluate" them. And in Example 2 remember to multiply by $x$, $y$, $z$ **before** adding: the cancellation only works after that.
+> **Watch out.** Keep the unknown derivatives $u_r,u_s,u_t$ as symbols. Do not try to "find their values". Also, in Example 2 remember to multiply by $x$, $y$, $z$ **before** adding. The cancellation works only after that.
 
 ---
 
@@ -292,19 +292,19 @@ $$
 
 ## The idea
 
-A **local maximum** is a point where $f$ is at least as large as at every nearby point: the top of a hill. A **local minimum** is the bottom of a valley. Together they are called **local** (or **relative**) **extrema**.
+A **local maximum** is a point where $f$ is at least as large as at every nearby point, like the top of a hill. A **local minimum** is like the bottom of a valley. Together they are called **local** (or **relative**) **extrema**.
 
-At the top of a smooth hill the ground is level in every direction. In particular, the slope in the $x$-direction and the slope in the $y$-direction are both zero.
+At the top of a smooth hill the ground is flat in every direction. So the slope in the $x$-direction and the slope in the $y$-direction are both zero.
 
 > **Critical point.** A point $(a,b)$ is a **critical point** of $f(x,y)$ when
 >
 > $$f_x(a,b)=0\qquad\text{and}\qquad f_y(a,b)=0$$
 
-Every local extremum is at a critical point. But not every critical point is an extremum, so we need a test.
+Every local extremum is at a critical point. But every critical point is not an extremum, so we need a test.
 
 ## The second-derivative test
 
-Compute the second derivatives at the critical point and form
+Find the second derivatives at the critical point and form
 
 $$
 D=f_{xx}\,f_{yy}-\left(f_{xy}\right)^2
@@ -319,16 +319,16 @@ $$
 | $D<0$ | **saddle point** |
 | $D=0$ | the test **fails**: use another method |
 
-A **saddle point** is a critical point that is a maximum in one direction and a minimum in another, like the middle of a horse's saddle or a mountain pass. It is neither a peak nor a valley.
+A **saddle point** is a critical point that is a maximum in one direction and a minimum in another, like the middle of a horse's saddle or a mountain pass. It is neither a top nor a bottom.
 
-> **Why $D>0$ is enough to look at $f_{xx}$ alone.** If $D>0$ then $f_{xx}f_{yy}>f_{xy}^2\ge0$, so $f_{xx}$ and $f_{yy}$ have the **same sign**. Checking one tells you both.
+> **Why checking $f_{xx}$ alone is enough when $D>0$.** If $D>0$ then $f_{xx}f_{yy}>f_{xy}^2\ge0$, so $f_{xx}$ and $f_{yy}$ have the **same sign**. If you check one, you know both.
 
 ## Method
 
-1. Find $f_x$ and $f_y$. Set both equal to $0$ and **solve** the pair of equations: these are the critical points.
+1. Find $f_x$ and $f_y$. Put both equal to $0$ and **solve** the two equations. These give the critical points.
 2. Find $f_{xx}$, $f_{yy}$, $f_{xy}$.
-3. At each critical point compute $D$, and if $D>0$ the sign of $f_{xx}$.
-4. Classify. For the extreme **value**, substitute the point into $f$.
+3. At each critical point find $D$, and if $D>0$, find the sign of $f_{xx}$.
+4. Classify the point. For the extreme **value**, put the point in $f$.
 
 ## Examples
 
@@ -338,7 +338,7 @@ $$
 f_x=2x-2\quad f_y=2y-6
 $$
 
-Setting both to zero gives $x=1$, $y=3$, so the only critical point is $(1,3)$.
+Putting both equal to zero gives $x=1$, $y=3$, so the only critical point is $(1,3)$.
 
 $$
 f_{xx}=2\quad f_{yy}=2\quad f_{xy}=0\ \Rightarrow\ D=2\cdot2-0^2=4
@@ -356,7 +356,7 @@ $$
 f_x=y-2x-2\qquad f_y=x-2y-2
 $$
 
-Solve $y-2x-2=0$ and $x-2y-2=0$. From the first, $y=2x+2$. Substituting into the second: $x-4x-4-2=0$, so $x=-2$ and then $y=-2$. The critical point is $(-2,-2)$.
+Solve $y-2x-2=0$ and $x-2y-2=0$. From the first, $y=2x+2$. Putting it in the second: $x-4x-4-2=0$, so $x=-2$ and then $y=-2$. The critical point is $(-2,-2)$.
 
 $$
 f_{xx}=-2\quad f_{yy}=-2\quad f_{xy}=1\ \Rightarrow\ D=(-2)(-2)-1^2=3
@@ -368,7 +368,7 @@ $$
 f(-2,-2)=4-4-4+4+4+4=\mathbf8
 $$
 
-> **Watch out.** Four things go wrong here. (1) Forgetting the **square** in $D=f_{xx}f_{yy}-(f_{xy})^2$. (2) Reading $D>0$ as "minimum": you must also check the sign of $f_{xx}$. (3) Treating every critical point as an extremum: if $D<0$ it is a saddle. (4) Finding the extreme **value** by putting the point into $f_x$ or $D$ rather than into $f$ itself.
+> **Watch out.** Students make four mistakes here. (1) Forgetting the **square** in $D=f_{xx}f_{yy}-(f_{xy})^2$. (2) Thinking that $D>0$ means "minimum". You must also check the sign of $f_{xx}$. (3) Treating every critical point as an extremum. If $D<0$, it is a saddle point. (4) Finding the extreme **value** by putting the point in $f_x$ or $D$ instead of $f$ itself.
 
 ---
 
@@ -376,7 +376,7 @@ $$
 
 # Local extrema: worked examples
 
-Each example finds the critical points, then classifies them with $D$. When there are several critical points, a table keeps the work tidy.
+In each example, we find the critical points and then classify them using $D$. When there are many critical points, a table keeps the work neat.
 
 **Example 1.** Find the critical points of $f(x,y)=2xy-x^3-y^3$ and the extreme values.
 
@@ -384,7 +384,7 @@ $$
 f_x=2y-3x^2\qquad f_y=2x-3y^2
 $$
 
-From $f_x=0$, $y=\dfrac{3x^2}{2}$. Substitute into $f_y=0$:
+From $f_x=0$, $y=\dfrac{3x^2}{2}$. Put this in $f_y=0$:
 
 $$
 2x-3\left(\frac{3x^2}{2}\right)^2=2x-\frac{27x^4}{4}=x\left(2-\frac{27x^3}{4}\right)=0
@@ -468,7 +468,7 @@ $$
 
 Both maxima have value $f(1,1)=f(-1,-1)=4-1-1=\mathbf2$.
 
-> **Solving the equations $f_x=f_y=0$.** This is usually the hard part. Three moves cover almost every question: **(1)** solve one equation for one variable and substitute into the other (Examples 1 and 4); **(2)** add or subtract the equations to eliminate a variable (Example 2); **(3)** if one equation factors, split into cases (Example 3). Always check that you have found **every** case: missing a critical point is the commonest loss of marks.
+> **Solving the equations $f_x=f_y=0$.** This is usually the difficult part. Three methods cover almost every question: **(1)** solve one equation for one variable and put it in the other equation (Examples 1 and 4); **(2)** add or subtract the equations to remove a variable (Example 2); **(3)** if one equation can be factorised, make separate cases (Example 3). Always check that you have found **every** case. Missing a critical point is the most common reason for losing marks.
 
 ---
 
@@ -478,7 +478,7 @@ Both maxima have value $f(1,1)=f(-1,-1)=4-1-1=\mathbf2$.
 
 ## The idea
 
-When the function contains a constant such as $a$, the critical points and their type depend on $a$. Carry $a$ through the whole method, and let the **sign of $a$** decide between a maximum and a minimum at the end.
+When the function has a constant like $a$, the critical points and their type depend on $a$. Keep $a$ in the whole working, and at the end let the **sign of $a$** decide between a maximum and a minimum.
 
 ## Examples
 
@@ -553,9 +553,9 @@ $$
 f(a,a)=a^3+a^3-3a\cdot a\cdot a=-a^3
 $$
 
-> **Note on the source.** The handwritten page gave the value as $a^3$. It is $2a^3-3a^3=\mathbf{-a^3}$: for $a=1$, $f(1,1)=1+1-3=-1$.
+> **Note on the source.** The handwritten page gave the value as $a^3$. The correct value is $2a^3-3a^3=\mathbf{-a^3}$. For $a=1$, $f(1,1)=1+1-3=-1$.
 
-> **Watch out.** Do not assume $a>0$. State **both** cases (or say clearly "for $a>0$"), and remember that $D$ involves $a^2$, which is always positive, so it is the sign of $f_{xx}$ that carries the dependence on $a$.
+> **Watch out.** Do not assume $a>0$. Write **both** cases (or clearly say "for $a>0$"). Remember that $D$ has $a^2$, which is always positive, so it is the sign of $f_{xx}$ that depends on $a$.
 
 ---
 
@@ -565,14 +565,14 @@ $$
 
 ## The idea
 
-Many real questions ask for the **smallest cost**, the **least material**, the **largest volume**. The second-derivative test solves them once the quantity is written as a function of two variables.
+Many real questions ask for the **smallest cost**, the **least material** or the **largest volume**. The second-derivative test solves them once the quantity is written as a function of two variables.
 
 ## Method
 
-1. Name the quantity to optimise (the **objective**), and name the variables.
-2. Use any given condition (a fixed volume, a budget) to **eliminate** variables until the objective depends on two.
-3. Find the critical points, and classify them with $D$.
-4. Check that the answer makes sense: dimensions must be positive, quantities in range.
+1. Write the quantity to be optimised (the **objective**), and name the variables.
+2. Use the given condition (a fixed volume, a budget) to **remove** variables until the objective depends on two variables.
+3. Find the critical points and classify them using $D$.
+4. Check that the answer makes sense: dimensions must be positive, and quantities must be in the allowed range.
 
 ## Examples
 
@@ -616,7 +616,7 @@ $$
 C_x=2x+4y+10\qquad C_y=2y+4x+8
 $$
 
-Setting both to $0$: from $C_y=0$, $y=-2x-4$. Substituting into $C_x=0$: $2x-8x-16+10=0$, so $x=-1$ and $y=-2$. The critical point is $(-1,-2)$.
+Putting both equal to $0$: from $C_y=0$, $y=-2x-4$. Putting this in $C_x=0$: $2x-8x-16+10=0$, so $x=-1$ and $y=-2$. The critical point is $(-1,-2)$.
 
 $$
 C_{xx}=2\quad C_{yy}=2\quad C_{xy}=4\ \Rightarrow\ D=4-16=-12<0
@@ -624,9 +624,9 @@ $$
 
 $D<0$, so $(-1,-2)$ is a **saddle point**: the cost has **no local minimum** there.
 
-In practice $x,y\ge0$ and the critical point (with negative quantities) is not even in the allowed region. For $x,y\ge0$ every term of $C$ is non-negative, so the smallest cost is $C(0,0)=\mathbf{50}$, on the boundary. Boundary behaviour like this is the subject of the next page.
+In real life $x,y\ge0$, and the critical point (with negative quantities) is not even in the allowed region. For $x,y\ge0$ every term of $C$ is non-negative, so the smallest cost is $C(0,0)=\mathbf{50}$, on the boundary. We study boundary cases like this on the next page.
 
-> **Watch out.** Always check that the critical point is **valid for the problem**: lengths and quantities cannot be negative. And a saddle point means "no optimum here", not "answer $0$".
+> **Watch out.** Always check that the critical point is **valid for the problem**. Lengths and quantities cannot be negative. Also, a saddle point means "no optimum here". It does not mean "answer is $0$".
 
 ---
 
@@ -636,20 +636,20 @@ In practice $x,y\ge0$ and the critical point (with negative quantities) is not e
 
 ## The idea
 
-The **absolute maximum** (or minimum) of $f$ on a region is the largest (smallest) value it takes **anywhere** in that region. It is different from a local extremum: a local maximum is only the highest point *nearby*.
+The **absolute maximum** (or minimum) of $f$ on a region is the largest (smallest) value it takes **anywhere** in that region. It is different from a local extremum. A local maximum is only the highest point *nearby*.
 
-> **Key idea.** A continuous function on a **closed, bounded region** (one that includes its edges, such as a filled triangle or rectangle) always has an absolute maximum and minimum. They occur either at a **critical point inside the region**, or **on the boundary**.
+> **Key idea.** A continuous function on a **closed, bounded region** (one that includes its edges, such as a filled triangle or rectangle) always has an absolute maximum and an absolute minimum. They come either at a **critical point inside the region**, or **on the boundary**.
 
-So we must search both places.
+So we must check both places.
 
 ## Method
 
-1. **Interior.** Find the critical points ($f_x=f_y=0$) and keep only those **inside or on** the region.
-2. **Edges.** On each edge, substitute the edge's equation into $f$. This leaves a function of **one** variable. Find where its derivative is $0$.
-3. **Corners.** Include every corner of the region.
-4. **Compare.** Evaluate $f$ at all the candidate points. The largest value is the absolute maximum and the smallest is the absolute minimum.
+1. **Inside.** Find the critical points ($f_x=f_y=0$) and keep only those that are **inside or on** the region.
+2. **Edges.** On each edge, put the equation of the edge in $f$. This gives a function of **one** variable. Find where its derivative is $0$.
+3. **Corners.** Take every corner of the region.
+4. **Compare.** Find $f$ at all these points. The largest value is the absolute maximum and the smallest value is the absolute minimum.
 
-You do not need the second-derivative test here: you simply compare values.
+You do not need the second-derivative test here. You just compare the values.
 
 ## Examples
 
@@ -741,9 +741,9 @@ The **absolute maximum is $0$**, attained at $(0,0)$, $(0,4)$ and in fact along 
 
 The **absolute maximum is $9$** at $(3,0)$. The **absolute minimum is $0$**, at $(0,0)$ and $(2,2)$.
 
-> **Note on the source.** The handwritten table had $f(1,1)=-1$. The correct value is $1-2+2=1$. The conclusions are unchanged, because $1$ lies between the extremes.
+> **Note on the source.** The handwritten table had $f(1,1)=-1$. The correct value is $1-2+2=1$. The conclusions do not change, because $1$ lies between the extreme values.
 
-> **Watch out.** Do not forget the **corners**: they are where one-variable edge searches end, and they are often the answer (as with $(3,0)$ above). And discard any critical point that lies **outside** the region.
+> **Watch out.** Do not forget the **corners**. This is where the one-variable search on the edges ends, and the corners are often the answer (as with $(3,0)$ above). Also, reject any critical point that lies **outside** the region.
 
 ---
 
@@ -751,9 +751,9 @@ The **absolute maximum is $9$** at $(3,0)$. The **absolute minimum is $0$**, at 
 
 # Absolute extrema: more examples
 
-The method never changes: interior points, then each edge as a one-variable problem, then corners, then compare.
+The method is always the same: points inside, then each edge as a one-variable problem, then the corners, and then compare.
 
-> **Edges made easy.** On a horizontal edge $y=c$ or a vertical edge $x=c$, just put the constant in. On a slanted edge, use its equation (such as $y=2-2x$) to eliminate one variable.
+> **Edges made easy.** On a horizontal edge $y=c$ or a vertical edge $x=c$, just put the constant. On a slanting edge, use its equation (such as $y=2-2x$) to remove one variable.
 
 **Example 1.** Find the absolute extrema of $f(x,y)=x^2-3y^2-2x+6y$ on the square with vertices $(0,0)$, $(0,2)$, $(2,2)$, $(2,0)$.
 
@@ -837,7 +837,7 @@ $$
 
 The **absolute maximum is $4$** at $(0,2)$. The **absolute minimum is $0$** at $(0,0)$.
 
-> **Note on the source.** The handwritten conclusion listed the maximum $4$ at both $(0,2)$ **and** $\left(\tfrac45,\tfrac25\right)$. But $f\!\left(\tfrac45,\tfrac25\right)=\tfrac45$, not $4$, so the maximum is at $(0,2)$ alone. (The point $\left(\tfrac45,\tfrac25\right)$ is the closest point of that edge to the origin.)
+> **Note on the source.** The handwritten conclusion said the maximum $4$ is at both $(0,2)$ **and** $\left(\tfrac45,\tfrac25\right)$. But $f\!\left(\tfrac45,\tfrac25\right)=\tfrac45$, not $4$, so the maximum is at $(0,2)$ only. (The point $\left(\tfrac45,\tfrac25\right)$ is the point of that edge that is closest to the origin.)
 
 **Example 3.** Find the absolute extrema of $f(x,y)=x^2-xy+y^2+1$ on the closed triangular plate in the first quadrant bounded by $x=0$, $y=4$ and $y=x$.
 
@@ -924,7 +924,7 @@ Every critical point on the edges is a corner, so only the corners matter:
 
 The **absolute maximum is $1$** at $(0,0)$. The **absolute minimum is $-5$** at $(1,2)$.
 
-> **Watch out.** When a critical point lands **on a corner** (as in Examples 2 to 4), it is not a separate extra candidate: it is simply that corner. Evaluate $f$ at every corner whether or not a critical point was found there.
+> **Watch out.** When a critical point comes **on a corner** (as in Examples 2 to 4), it is not a separate extra point. It is just that corner. Find $f$ at every corner, whether or not a critical point was found there.
 
 ---
 
@@ -934,7 +934,7 @@ The **absolute maximum is $1$** at $(0,0)$. The **absolute minimum is $-5$** at 
 
 ## The idea
 
-For a function $f(x,y)$ there are two partial derivatives, $f_x$ and $f_y$. The **gradient** packs them into a single **vector**:
+For a function $f(x,y)$ there are two partial derivatives, $f_x$ and $f_y$. The **gradient** puts them together in a single **vector**:
 
 $$
 \nabla f=\frac{\partial f}{\partial x}\,\hat\imath+\frac{\partial f}{\partial y}\,\hat\jmath=\left(f_x,\ f_y\right)
@@ -948,13 +948,13 @@ $$
 
 Here $\hat\imath,\hat\jmath,\hat k$ are the unit vectors along the $x$, $y$, $z$ axes.
 
-> **Meaning.** At each point, $\nabla f$ is a vector that **points in the direction in which $f$ increases fastest**, and its length is how fast. It is also perpendicular to the level curve of $f$ through that point.
+> **Meaning.** At each point, $\nabla f$ is a vector that **points in the direction in which $f$ increases fastest**, and its length tells how fast. It is also perpendicular to the level curve of $f$ through that point.
 
 ## Method
 
 1. Differentiate $f$ with respect to each variable (partial derivatives, as in Module 2).
 2. Write the results as a vector.
-3. If a point is given, **then** substitute it into each component.
+3. If a point is given, **then** put it in each component.
 
 ## Examples
 
@@ -1015,7 +1015,7 @@ $$
 \nabla f(1,2,1)=\frac16(2,4,2)=\mathbf{\frac13\hat\imath+\frac23\hat\jmath+\frac13\hat k}
 $$
 
-> **Watch out.** The gradient is a **vector**: give it as $a\hat\imath+b\hat\jmath$ (or as $(a,b)$), not as a single number. Substitute the point **after** differentiating. And keep the chain-rule factors (the $2$ and $3$ inside the root in Example 3).
+> **Watch out.** The gradient is a **vector**. Write it as $a\hat\imath+b\hat\jmath$ (or as $(a,b)$), not as a single number. Put the point **after** differentiating. Also, do not forget the chain-rule factors (the $2$ and $3$ inside the root in Example 3).
 
 ---
 
@@ -1033,7 +1033,7 @@ $f_x$ and $f_y$ give the rate of change of $f$ when you move along the $x$-axis 
 >
 > For $\hat u=(u_1,u_2)$ this is $f_xu_1+f_yu_2$, and in three variables $f_xu_1+f_yu_2+f_zu_3$.
 
-The **sign** has the usual meaning: positive means $f$ is increasing in that direction, negative means decreasing.
+The **sign** has the usual meaning: positive means $f$ is increasing in that direction, and negative means it is decreasing.
 
 ## Vectors you need
 
@@ -1044,11 +1044,11 @@ The **sign** has the usual meaning: positive means $f$ is increasing in that dir
 
 ## Method
 
-1. Find $\nabla f$ and evaluate it at the point.
-2. If the direction is given as a vector $\vec v$ (or as "towards a point $Q$", so $\vec v=\overrightarrow{PQ}$), turn it into a **unit vector** $\hat u=\vec v/|\vec v|$.
+1. Find $\nabla f$ and find its value at the point.
+2. If the direction is given as a vector $\vec v$ (or as "towards a point $Q$", so $\vec v=\overrightarrow{PQ}$), change it into a **unit vector** $\hat u=\vec v/|\vec v|$.
 3. Take the dot product $\nabla f\cdot\hat u$.
 
-> **The most common mistake.** The direction vector **must be a unit vector**. If you are given $(1,1)$ or $(2,3)$, divide by its length first. The formula $\nabla f\cdot\hat u$ is only correct for a vector of length $1$.
+> **The most common mistake.** The direction vector **must be a unit vector**. If you are given $(1,1)$ or $(2,3)$, first divide by its length. The formula $\nabla f\cdot\hat u$ is correct only for a vector of length $1$.
 
 ## Examples
 
@@ -1076,7 +1076,7 @@ $$
 D_{\hat u}f=\frac{16+13}{\sqrt2}=\mathbf{\frac{29}{\sqrt2}}\approx20.5
 $$
 
-> **Note on the source.** The handwritten page took the dot product with $(1,1)$ directly and wrote $29$. That vector is not a unit vector, so $29$ is $\sqrt2$ times too big. The correct answer is $\dfrac{29}{\sqrt2}$.
+> **Note on the source.** The handwritten page took the dot product with $(1,1)$ directly and wrote $29$. That vector is not a unit vector, so $29$ is $\sqrt2$ times too large. The correct answer is $\dfrac{29}{\sqrt2}$.
 
 **Example 4.** $f(x,y)=e^x\sin y$ at $\left(0,\dfrac\pi2\right)$, in the direction of the unit vector $(0,1)$.
 
@@ -1086,7 +1086,7 @@ $$
 D_{\hat u}f=(1)(0)+(0)(1)=\mathbf0
 $$
 
-In the $y$-direction the function is momentarily level there.
+In the $y$-direction the function is flat at that point.
 
 **Example 5. A hill.** The height of a hill is $h(x,y)=100-0.01x^2-0.02y^2$. A hiker at $(50,40)$ looks towards the point $(60,50)$. How steep is the hill in that direction?
 
@@ -1100,9 +1100,9 @@ $$
 D_{\hat u}h=\frac{-1-1.6}{\sqrt2}=-\frac{2.6}{\sqrt2}\approx\mathbf{-1.84}
 $$
 
-The negative sign means the ground is **descending** in that direction, by about $1.84$ units of height per unit of horizontal distance.
+The negative sign means the ground is **going down** in that direction, by about $1.84$ units of height for each unit of horizontal distance.
 
-> **Watch out.** (1) **Normalise** the direction. (2) Evaluate $\nabla f$ **at the given point** before taking the dot product. (3) For "towards a point $Q$", the direction is $Q-P$, not $P-Q$.
+> **Watch out.** (1) **Make the direction a unit vector.** (2) Find $\nabla f$ **at the given point** before taking the dot product. (3) For "towards a point $Q$", the direction is $Q-P$, not $P-Q$.
 
 ---
 
@@ -1112,21 +1112,21 @@ The negative sign means the ground is **descending** in that direction, by about
 
 ## The idea
 
-At a point, the directional derivative depends on **which way** you go. Which direction gives the largest value, and what is that value? The dot product answers it. For the angle $\alpha$ between $\nabla f$ and $\hat u$:
+At a point, the directional derivative depends on **which way** you go. Which direction gives the largest value, and what is that value? The dot product gives the answer. For the angle $\alpha$ between $\nabla f$ and $\hat u$:
 
 $$
 D_{\hat u}f=\nabla f\cdot\hat u=|\nabla f|\,|\hat u|\cos\alpha=|\nabla f|\cos\alpha
 $$
 
-This is biggest when $\cos\alpha=1$ (the directions agree) and smallest when $\cos\alpha=-1$ (opposite directions).
+This is largest when $\cos\alpha=1$ (the directions are the same) and smallest when $\cos\alpha=-1$ (opposite directions).
 
 > **Properties of the gradient.** At a point where $\nabla f\neq\vec0$:
 >
 > - **Fastest increase** is in the direction of $\nabla f$, and the rate is $|\nabla f|$, the **maximum** value of the directional derivative.
 > - **Fastest decrease** is in the direction of $-\nabla f$, and the rate is $-|\nabla f|$.
-> - In a direction **perpendicular** to $\nabla f$ the rate of change is $0$ (you are walking along a level curve).
+> - In a direction **perpendicular** to $\nabla f$ the rate of change is $0$ (you are moving along a level curve).
 
-For a hill, $\nabla h$ points straight up the slope, and $-\nabla h$ points the way water would run down.
+For a hill, $\nabla h$ points straight up the slope, and $-\nabla h$ points in the direction in which water would flow down.
 
 ## Method
 
@@ -1155,7 +1155,7 @@ $$
 D_{\hat u}f=(5,-5)\cdot\frac{(1,-1)}{\sqrt2}=\frac{5+5}{\sqrt2}=\frac{10}{\sqrt2}=\mathbf{5\sqrt2}
 $$
 
-This equals $|\nabla f|$, as it must when you move in the direction of the gradient.
+This is equal to $|\nabla f|$, as it should be when we move in the direction of the gradient.
 
 **Example 2.** Find the directional derivative of $f(x,y)=x\,e^y+\cos(xy)$ at $(2,0)$ in the direction of $\vec v=3\hat\imath-4\hat\jmath$.
 
@@ -1171,9 +1171,9 @@ $$
 D_{\hat u}f=\frac{(1)(3)+(2)(-4)}{5}=\frac{-5}{5}=\mathbf{-1}
 $$
 
-So $f$ is decreasing at rate $1$ in that direction. This is less steep than $|\nabla f|=\sqrt5$, the largest possible rate at this point, as it should be.
+So $f$ is decreasing at rate $1$ in that direction. This is less than $|\nabla f|=\sqrt5$, the largest possible rate at this point, as it should be.
 
-> **Watch out.** "Direction of fastest increase" means the **unit vector** $\nabla f/|\nabla f|$ (or simply the direction of $\nabla f$). "Maximum rate" means the **number** $|\nabla f|$. They are different answers to different questions: give the one that is asked.
+> **Watch out.** "Direction of fastest increase" means the **unit vector** $\nabla f/|\nabla f|$ (or simply the direction of $\nabla f$). "Maximum rate" means the **number** $|\nabla f|$. These are different answers to different questions. Give the one that is asked.
 
 ---
 
@@ -1183,7 +1183,7 @@ So $f$ is decreasing at rate $1$ in that direction. This is less steep than $|\n
 
 ## Practice questions
 
-Try these without looking. Answers follow.
+Try these without looking at the answers. The answers are given below.
 
 **A. Chain rule**
 
@@ -1222,7 +1222,7 @@ Try these without looking. Answers follow.
 10. $\nabla g=(yz,\ xz,\ xy)=(2,2,1)$ at $(1,1,2)$. $|\vec v|=\sqrt{1+4+4}=3$. $D_{\hat u}g=\dfrac{2\cdot1+2\cdot2+1\cdot2}{3}=\dfrac83$.
 11. $\nabla f=(e^x\cos y,\ -e^x\sin y)=\left(\tfrac{\sqrt2}{2},\ -\tfrac{\sqrt2}{2}\right)$ at $\left(0,\tfrac\pi4\right)$. The greatest rate is $|\nabla f|=\sqrt{\tfrac12+\tfrac12}=\mathbf1$, in the direction $\dfrac{1}{\sqrt2}(1,-1)$.
 
-> **Study tip.** For absolute extrema (6 and 7), write the candidate points in a table as you go. It is easy to forget a corner when the working is spread over several edges.
+> **Study tip.** For absolute extrema (6 and 7), write the points in a table as you go. It is easy to forget a corner when the working is spread over many edges.
 
 ---
 
@@ -1252,9 +1252,9 @@ Try these without looking. Answers follow.
 ### Absolute extrema on a closed region
 
 1. Critical points **inside** the region.
-2. Each **edge**: substitute its equation, find where the one-variable derivative is $0$.
+2. Each **edge**: put its equation, and find where the one-variable derivative is $0$.
 3. All **corners**.
-4. **Compare** $f$ at every candidate: largest is the maximum, smallest the minimum.
+4. **Compare** $f$ at every point: the largest is the maximum and the smallest is the minimum.
 
 ### Gradient and directional derivative
 
