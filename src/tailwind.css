@@ -91,6 +91,15 @@
       transform: scale(1.1);
     }
   }
+  /* a light band sweeps across the hero letters once */
+  @keyframes shine {
+    from {
+      background-position: 100% 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
   @keyframes marquee {
     to {
       transform: translateX(-50%);
@@ -154,6 +163,18 @@
 .reveal-ready [data-reveal]:not(.is-in) {
   opacity: 0;
   transform: translateY(26px);
+}
+
+/* Hero letters: solid --c with a lighter band that crosses once after they rise in */
+.shine {
+  color: var(--c);
+  background: linear-gradient(110deg, var(--c) 42%, color-mix(in oklab, var(--c), white 60%) 50%, var(--c) 58%) 100% 0 / 260% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:
+    rise 1.1s var(--ease-out-expo) both,
+    shine 2.2s var(--ease-out-expo) 1.1s both;
 }
 
 /* follow-up progress tracks fill once their card is revealed */

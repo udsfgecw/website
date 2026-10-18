@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-line">
       <div className="wrap flex flex-col gap-4 py-6 md:flex-row md:items-center md:justify-between">
         <a className="inline-flex items-center gap-2.5" href="#top" aria-label="Back to top">
-          <img className="size-6 rounded-[5px]" src={`${import.meta.env.BASE_URL}assets/logo-512.png`} alt="" width={24} height={24} loading="lazy" />
+          <img className="size-6 rounded-[5px]" src={`${import.meta.env.BASE_URL}assets/logo-96.webp`} alt="" width={24} height={24} loading="lazy" />
           <span className="label text-ink">UDSF GECW</span>
         </a>
         <p className="label text-ink-2">Government Engineering College Wayanad, Mananthavady</p>

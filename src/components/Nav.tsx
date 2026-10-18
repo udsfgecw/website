@@ -74,7 +74,7 @@ export default function Nav() {
         </button>
 
         <a href="#top" aria-label="UDSF GECW home" className="justify-self-center">
-          <img className="size-7 rounded-[6px]" src={`${import.meta.env.BASE_URL}assets/logo-512.png`} alt="" width={28} height={28} />
+          <img className="size-7 rounded-[6px]" src={`${import.meta.env.BASE_URL}assets/logo-96.webp`} alt="" width={28} height={28} />
         </a>
 
         <a href="#join" className={cn(link, "justify-self-end")}>

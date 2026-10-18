@@ -15,7 +15,7 @@ export default function Join() {
         <div className="absolute -right-40 -bottom-56 -z-10 size-[34rem] rounded-full bg-blue/35 blur-[120px]" aria-hidden="true" />
         <img
           className="absolute top-[clamp(1.5rem,4vw,3rem)] right-[clamp(1.5rem,4vw,3rem)] size-12 rounded-xl opacity-90"
-          src={`${import.meta.env.BASE_URL}assets/logo-512.png`}
+          src={`${import.meta.env.BASE_URL}assets/logo-96.webp`}
           alt=""
           width={48}
           height={48}
