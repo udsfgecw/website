@@ -1,19 +1,19 @@
-import { lazy, StrictMode, Suspense } from "react";
+import { StrictMode } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./tailwind.css";
-
-const isMathsRoute = window.location.pathname.replace(/\/+$/, "") === "/notes/cse/s1/maths";
-const MathsReader = lazy(() => import("./notes/MathsReader"));
 
 const root = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    {isMathsRoute ? <Suspense fallback={<p role="status" style={{ padding: 32 }}>Opening your maths notebook…</p>}><MathsReader /></Suspense> : <App />}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );
 
-// The production build ships pre-rendered HTML (see scripts/prerender.mjs), so attach to it;
-// the dev server serves an empty root, so render from scratch there.
+// Production pages ship pre-rendered HTML for their own URL (see scripts/prerender.mjs), so attach
+// to it; the dev server serves an empty root, so render from scratch there.
 if (root.hasChildNodes()) hydrateRoot(root, app);
 else createRoot(root).render(app);

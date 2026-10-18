@@ -26,7 +26,8 @@
   font: inherit;
   cursor: pointer;
 }
-.maths-reader button:disabled {
+.maths-reader button:disabled,
+.maths-reader [aria-disabled="true"] {
   opacity: 0.35;
   cursor: default;
 }
@@ -34,7 +35,8 @@
   color: inherit;
   text-decoration: none;
 }
-.maths-reader button {
+.maths-reader button,
+.reader-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -110,8 +112,8 @@
   gap: 4px;
   margin-top: 20px;
 }
-.reader-sidebar nav button,
-.reader-mobile-contents nav button {
+.reader-sidebar nav a,
+.reader-mobile-contents nav a {
   border: 0;
   background: transparent;
   text-align: left;
@@ -122,14 +124,14 @@
   border-radius: 6px;
   line-height: 1.5;
 }
-.reader-sidebar nav button span,
-.reader-mobile-contents nav button span {
+.reader-sidebar nav a span,
+.reader-mobile-contents nav a span {
   font-size: 10px;
   opacity: 0.6;
   min-width: 18px;
 }
-.reader-sidebar nav button[aria-current],
-.reader-mobile-contents nav button[aria-current] {
+.reader-sidebar nav a[aria-current],
+.reader-mobile-contents nav a[aria-current] {
   color: var(--reader-accent);
   background: var(--reader-tint);
   font-weight: 650;
@@ -411,7 +413,7 @@
   gap: 12px;
   padding: 24px 0;
 }
-.reader-pagination button {
+.reader-pagination .reader-link {
   font-size: 12px;
   background: var(--reader-paper);
   color: var(--reader-ink);
@@ -469,7 +471,7 @@
   padding-top: 20px;
   border-top: 1px solid var(--reader-line);
 }
-.reader-bookmarks > button {
+.reader-bookmarks > a {
   justify-content: flex-start;
   flex-wrap: wrap;
   text-align: left;
@@ -479,7 +481,7 @@
   padding: 10px;
   color: var(--reader-accent);
 }
-.reader-bookmarks > button > span {
+.reader-bookmarks > a > span {
   width: 100%;
   font-size: 10px;
   color: var(--reader-muted);
@@ -601,11 +603,11 @@
   .reader-pagination {
     gap: 8px;
   }
-  .reader-pagination button {
+  .reader-pagination .reader-link {
     font-size: 0;
     padding: 12px;
   }
-  .reader-pagination button svg {
+  .reader-pagination .reader-link svg {
     width: 18px;
     height: 18px;
   }

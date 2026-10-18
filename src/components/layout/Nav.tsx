@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  ["#work", "What we do"],
-  ["#progress", "Our progress"],
-  ["#alliance", "Alliance"],
+  ["/#work", "What we do"],
+  ["/#progress", "Our progress"],
+  ["/#alliance", "Alliance"],
+  ["/notes", "Notes"],
 ] as const;
 
 export default function Nav() {
@@ -38,9 +40,9 @@ export default function Nav() {
       <div className="grid h-full grid-cols-[1fr_auto_1fr] items-center gap-6 px-5 md:px-10">
         <nav aria-label="Primary" className="flex items-center gap-6 max-md:hidden">
           {LINKS.map(([href, label]) => (
-            <a key={href} href={href} onClick={() => setOpen(false)} className={link}>
+            <Link key={href} to={href} onClick={() => setOpen(false)} className={link}>
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -53,13 +55,13 @@ export default function Nav() {
           {open ? "Close" : "Menu"}
         </button>
 
-        <a href="#top" aria-label="UDSF GECW home" className="justify-self-center">
+        <Link to="/" aria-label="UDSF GECW home" className="justify-self-center">
           <img className="size-7 rounded-[6px]" src={`${import.meta.env.BASE_URL}assets/logo-96.webp`} alt="" width={28} height={28} />
-        </a>
+        </Link>
 
-        <a href="#join" className={cn(link, "justify-self-end")}>
+        <Link to="/#join" className={cn(link, "justify-self-end")}>
           Join UDSF
-        </a>
+        </Link>
       </div>
 
       {/* phone menu */}
@@ -72,9 +74,9 @@ export default function Nav() {
         )}
       >
         {LINKS.map(([href, label]) => (
-          <a key={href} href={href} onClick={() => setOpen(false)} className="wrap block border-t border-line py-4 text-[0.95rem]">
+          <Link key={href} to={href} onClick={() => setOpen(false)} className="wrap block border-t border-line py-4 text-[0.95rem]">
             {label}
-          </a>
+          </Link>
         ))}
       </nav>
     </header>
