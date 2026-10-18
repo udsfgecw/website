@@ -1,5 +1,6 @@
 import type { NotesModule } from "../types";
 import source from "./notes.md?raw";
+import { MATHS_PATH } from "../maths-module-1/path";
 import { MATHS_MODULE_2_PATH } from "./path";
 import { sourcePages } from "../sourcePages";
 
@@ -9,9 +10,9 @@ export const mathsModule2: NotesModule = {
   title: "S1 CSE Maths · Module 2",
   trail: [
     { label: "NOTES", href: "/notes" },
-    { label: "CSE", href: "/notes#cse" },
-    { label: "S1", href: "/notes#cse-s1" },
-    { label: "MATHS", href: "/notes#cse-s1" },
+    { label: "CSE", href: "/notes/cse" },
+    { label: "S1", href: "/notes/cse/s1" },
+    { label: "MATHS", href: MATHS_PATH },
     { label: "MODULE 2" },
   ],
   module: "Module 2",

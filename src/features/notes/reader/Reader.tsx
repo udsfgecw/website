@@ -197,41 +197,43 @@ export default function Reader({ notes }: { notes: NotesModule }) {
           </p>
         </header>
 
-        <div className="wrap grid gap-8 border-t border-line pt-8 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-16 lg:pt-12">
-          {/* contents: a sticky column on wide screens, a collapsible list on phones */}
-          <aside className="max-lg:hidden lg:sticky lg:top-[calc(var(--nav-h)+1.5rem)] lg:max-h-[calc(100svh-var(--nav-h)-3rem)] lg:self-start lg:overflow-y-auto">
-            <p className="label mb-3 px-3 text-ink-2">Contents</p>
-            {contents}
-            <div className="mt-6 border-t border-line px-3 pt-5">{textSize}</div>
-          </aside>
-          <details className="group rounded-2xl border border-line lg:hidden">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-[0.95rem] font-medium">
-              <span className="min-w-0 truncate">Contents · {chapter.title}</span>
-              <ChevronDown size={18} className="shrink-0 group-open:rotate-180" aria-hidden="true" />
-            </summary>
-            <div className="border-t border-line p-2">{contents}</div>
-            <div className="border-t border-line px-5 py-3">{textSize}</div>
-          </details>
+        <div className="notes-watermark">
+          <div className="wrap grid gap-8 border-t border-line pt-8 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-16 lg:pt-12">
+            {/* contents: a sticky column on wide screens, a collapsible list on phones */}
+            <aside className="max-lg:hidden lg:sticky lg:top-[calc(var(--nav-h)+1.5rem)] lg:max-h-[calc(100svh-var(--nav-h)-3rem)] lg:self-start lg:overflow-y-auto">
+              <p className="label mb-3 px-3 text-ink-2">Contents</p>
+              {contents}
+              <div className="mt-6 border-t border-line px-3 pt-5">{textSize}</div>
+            </aside>
+            <details className="group rounded-2xl border border-line lg:hidden">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-[0.95rem] font-medium">
+                <span className="min-w-0 truncate">Contents · {chapter.title}</span>
+                <ChevronDown size={18} className="shrink-0 group-open:rotate-180" aria-hidden="true" />
+              </summary>
+              <div className="border-t border-line p-2">{contents}</div>
+              <div className="border-t border-line px-5 py-3">{textSize}</div>
+            </details>
 
-          <article
-            className="notes-prose min-w-0"
-            style={{ fontSize: size, lineHeight: LEADING[prefs.leading], maxWidth: WIDTH[prefs.width], fontFamily: prefs.font === "serif" ? SERIF : undefined }}
-          >
-            {notes.pages.map((p) => (
-              <section key={p.number} id={pageAnchor(p.number)} className="border-b border-line pb-12 not-first:pt-12 last:border-b-0">
-                <p className="label mb-6 text-ink-2">
-                  Page {p.number} of {total}
+            <article
+              className="notes-prose min-w-0"
+              style={{ fontSize: size, lineHeight: LEADING[prefs.leading], maxWidth: WIDTH[prefs.width], fontFamily: prefs.font === "serif" ? SERIF : undefined }}
+            >
+              {notes.pages.map((p) => (
+                <section key={p.number} id={pageAnchor(p.number)} className="border-b border-line pb-12 not-first:pt-12 last:border-b-0">
+                  <p className="label mb-6 text-ink-2">
+                    Page {p.number} of {total}
+                  </p>
+                  <PageMarkdown content={p.content} />
+                </section>
+              ))}
+              <footer className="mt-4 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>
+                <p className="font-medium text-ink">You’ve reached the end of {notes.title}.</p>
+                <p className="mt-2">
+                  Source: {notes.source} Check the original material if a step looks unclear.
                 </p>
-                <PageMarkdown content={p.content} />
-              </section>
-            ))}
-            <footer className="mt-4 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>
-              <p className="font-medium text-ink">You’ve reached the end of {notes.title}.</p>
-              <p className="mt-2">
-                Source: {notes.source} Check the original material if a step looks unclear.
-              </p>
-            </footer>
-          </article>
+              </footer>
+            </article>
+          </div>
         </div>
       </main>
       <ReaderTools
