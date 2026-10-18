@@ -4,6 +4,7 @@ import { StaticRouter } from "react-router-dom";
 import App from "./App";
 import { branchPath, NOTES_CATALOGUE, semesterPath } from "./data/notes";
 import { mathsModule1 } from "./features/notes/maths-module-1";
+import { mathsModule2 } from "./features/notes/maths-module-2";
 import { MetaCollector, type PageMeta } from "./lib/meta";
 
 /* Used at build time only (scripts/prerender.mjs). */
@@ -30,6 +31,7 @@ export const pages: StaticPage[] = [
       .flatMap((semester) => [semesterPath(branch, semester), ...semester.subjects.map((subject) => subject.href)]),
   ]).map((url): StaticPage => ({ url, file: fileFor(url) })),
   { url: mathsModule1.basePath, file: fileFor(mathsModule1.basePath), chunk: "src/pages/notes/MathsNotesPage.tsx" },
+  { url: mathsModule2.basePath, file: fileFor(mathsModule2.basePath), chunk: "src/pages/notes/MathsModule2Page.tsx" },
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];
