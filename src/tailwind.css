@@ -67,6 +67,9 @@
   --color-blue: #1eacfe;
   --color-blue-ink: #1f6c9f;
   --color-blue-tint: #e1f3fe;
+  /* deeper shades of the alliance colours that keep white text readable (4.7:1 and 5.1:1) */
+  --color-blue-deep: #0677c4;
+  --color-green-deep: #037f52;
 
   --font-sans: "Geist", system-ui, sans-serif;
   --font-ml: "Manjari", "Noto Sans Malayalam", sans-serif;
