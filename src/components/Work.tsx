@@ -1,5 +1,6 @@
+import { Fragment } from "react";
 import { Bird, Building2, GraduationCap, HeartHandshake, Scale, Vote } from "lucide-react";
-import { Section } from "@/components/Section";
+import { Label } from "@/components/Section";
 
 const FEATURES = [
   [HeartHandshake, "Student welfare", "Hostel, canteen, transport, fees and scholarships. We take everyday problems to the administration and stay on them until they are solved."],
@@ -10,28 +11,38 @@ const FEATURES = [
   [GraduationCap, "Academic rights", "Exams, results, attendance and KTU issues, raised with the college and the university and followed until fixed."],
 ] as const;
 
+/* "student welfare, college development, … and academic rights", with the joining words in grey */
+function Pillars() {
+  return FEATURES.map(([, title], i) => (
+    <Fragment key={title}>
+      {i > 0 && <span className="text-ink/30">{i === FEATURES.length - 1 ? " and " : ", "}</span>}
+      {title.toLowerCase()}
+    </Fragment>
+  ));
+}
+
 export default function Work() {
   return (
-    <Section
-      id="work"
-      label="What we do"
-      title="Politics that puts students first."
-      intro="UDSF stands for student welfare, a growing college and a peaceful campus, and takes every issue to the people who can fix it."
-    >
-      <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <section id="work" aria-labelledby="work-title" className="wrap py-[clamp(5rem,11vw,9rem)]">
+      <Label>What we do</Label>
+      <h2
+        id="work-title"
+        className="mt-6 max-w-[24ch] text-[length:clamp(2rem,4.6vw,3.9rem)] leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-ink"
+      >
+        <span className="text-ink/30">We stand for </span>
+        <Pillars />
+        <span className="text-ink/30">.</span>
+      </h2>
+
+      <ul className="mt-[clamp(3.5rem,7vw,6rem)] grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {FEATURES.map(([Icon, title, text]) => (
-          <li
-            key={title}
-            className="rounded-2xl border border-line p-6"
-          >
-            <span className="flex size-12 items-center justify-center rounded-[14px] bg-green-tint text-green-ink">
-              <Icon size={22} strokeWidth={1.75} aria-hidden="true" />
-            </span>
-            <h3 className="mt-10 text-[1.1rem] font-semibold tracking-[-0.02em]">{title}</h3>
-            <p className="mt-2 max-w-[38ch] text-[0.9rem] leading-[1.6] text-ink-2">{text}</p>
+          <li key={title}>
+            <Icon size={24} strokeWidth={1.75} className="text-green" aria-hidden="true" />
+            <h3 className="mt-5 text-[1.15rem] font-semibold tracking-[-0.02em]">{title}</h3>
+            <p className="mt-2 max-w-[36ch] text-[0.95rem] leading-[1.6] text-ink-2">{text}</p>
           </li>
         ))}
       </ul>
-    </Section>
+    </section>
   );
 }
