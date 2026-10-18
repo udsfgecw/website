@@ -26,7 +26,7 @@ export function titledPages(source: string): { pages: NotesPage[]; chapters: Cha
     });
     const isUseful = ({ title }: { title: string }) => {
       const normalized = title.replace(/^\d+[.)]?\s*/, "").trim().toLowerCase();
-      return normalized !== "module 1"
+      return !/^module\s+\d+$/i.test(normalized)
         && !/^uce(st)?\s*105\b/i.test(title)
         && !/^syllabus\b/i.test(title)
         && !/^(example|program|output|input|flow chart|pseudocode)$/i.test(normalized);
