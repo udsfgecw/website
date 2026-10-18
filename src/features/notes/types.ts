@@ -13,7 +13,7 @@ export interface Chapter {
 
 /* Everything the reader needs to show one module of notes. */
 export interface NotesModule {
-  /** URL of page 1; page n lives at `${basePath}/${n}` */
+  /** URL of the notes; page n is the #page-n section */
   basePath: string;
   /** localStorage key for the reader's place and preferences */
   storageKey: string;
@@ -22,8 +22,8 @@ export interface NotesModule {
   title: string;
   /** breadcrumb from the notes shelf down to this module; the last step has no link */
   trail: { label: string; href?: string }[];
-  heading: [string, string];
-  eyebrow: string;
+  /** e.g. "Module 1" */
+  module: string;
   course: string;
   code: string;
   summary: string;
@@ -32,7 +32,7 @@ export interface NotesModule {
   chapters: readonly Chapter[];
 }
 
-export const pageHref = (notes: NotesModule, page: number) => (page === 1 ? notes.basePath : `${notes.basePath}/${page}`);
+export const pageAnchor = (page: number) => `page-${page}`;
 
 export const chapterFor = (notes: NotesModule, page: number) =>
   [...notes.chapters].reverse().find((c) => c.page <= page) ?? notes.chapters[0];
