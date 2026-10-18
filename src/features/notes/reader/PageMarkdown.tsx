@@ -57,6 +57,15 @@ const components: Components = {
   h1({ children }) {
     return <h2>{children}</h2>;
   },
+  h2({ children }) {
+    return <h3>{children}</h3>;
+  },
+  h3({ children }) {
+    return <h4>{children}</h4>;
+  },
+  h4({ children }) {
+    return <h5>{children}</h5>;
+  },
 };
 
 /* One page of notes. Memoised, so scrolling (which updates the reader) doesn't re-render the maths. */

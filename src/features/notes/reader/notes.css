@@ -9,23 +9,29 @@
 }
 .notes-prose h2,
 .notes-prose h3,
-.notes-prose h4 {
+.notes-prose h4,
+.notes-prose h5 {
   line-height: 1.2;
   font-weight: 600;
   letter-spacing: -0.025em;
   text-wrap: balance;
 }
 .notes-prose h2 {
-  font-size: 1.65em;
-  margin: 0 0 0.8em;
+  font-size: 2.1em;
+  font-weight: 700;
+  margin: 0 0 0.7em;
 }
 .notes-prose h3 {
-  font-size: 1.25em;
-  margin: 1.8em 0 0.6em;
+  font-size: 1.4em;
+  margin: 1.9em 0 0.6em;
 }
 .notes-prose h4 {
-  font-size: 1.05em;
-  margin: 1.5em 0 0.5em;
+  font-size: 1.15em;
+  margin: 1.6em 0 0.5em;
+}
+.notes-prose h5 {
+  font-size: 1em;
+  margin: 1.4em 0 0.4em;
 }
 .notes-prose p {
   margin: 0.9em 0;
