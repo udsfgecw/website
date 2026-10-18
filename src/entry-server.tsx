@@ -3,7 +3,6 @@ import { prerenderToNodeStream } from "react-dom/static";
 import { StaticRouter } from "react-router-dom";
 import App from "./App";
 import { mathsModule1 } from "./features/notes/maths-module-1";
-import { pageHref } from "./features/notes/types";
 import { MetaCollector, type PageMeta } from "./lib/meta";
 
 /* Used at build time only (scripts/prerender.mjs). */
@@ -22,10 +21,7 @@ const fileFor = (url: string) => `${url.replace(/^\//, "")}/index.html`.replace(
 export const pages: StaticPage[] = [
   { url: "/", file: "index.html" },
   { url: "/notes", file: "notes/index.html" },
-  ...mathsModule1.pages.map((p) => {
-    const url = pageHref(mathsModule1, p.number);
-    return { url, file: fileFor(url), chunk: "src/pages/notes/MathsNotesPage.tsx" };
-  }),
+  { url: mathsModule1.basePath, file: fileFor(mathsModule1.basePath), chunk: "src/pages/notes/MathsNotesPage.tsx" },
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];

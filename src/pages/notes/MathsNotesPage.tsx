@@ -1,15 +1,14 @@
 import { Navigate, useParams } from "react-router-dom";
 import { mathsModule1 as notes } from "@/features/notes/maths-module-1";
 import Reader from "@/features/notes/reader/Reader";
+import { pageAnchor } from "@/features/notes/types";
 import NotFoundPage from "@/pages/NotFoundPage";
 
-/* /notes/cse/s1/maths is page 1; /notes/cse/s1/maths/2 to /34 are the rest. */
+/* All pages are on /notes/cse/s1/maths; the old per-page URLs (/notes/cse/s1/maths/12) jump to #page-12. */
 export default function MathsNotesPage() {
   const { page } = useParams();
-  if (page === undefined) return <Reader notes={notes} page={1} />;
-  if (page === "1") return <Navigate to={notes.basePath} replace />;
-
+  if (page === undefined) return <Reader notes={notes} />;
   const n = Number(page);
-  const valid = String(n) === page && Number.isInteger(n) && n >= 2 && n <= notes.pages.length;
-  return valid ? <Reader notes={notes} page={n} /> : <NotFoundPage />;
+  if (String(n) !== page || n < 1 || n > notes.pages.length) return <NotFoundPage />;
+  return <Navigate to={`${notes.basePath}#${pageAnchor(n)}`} replace />;
 }
