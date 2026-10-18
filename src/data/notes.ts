@@ -1,6 +1,10 @@
 import { MATHS_MODULE_1_PATH, MATHS_PATH } from "@/features/notes/maths-module-1/path";
 import { MATHS_MODULE_2_PATH } from "@/features/notes/maths-module-2/path";
 import { MATHS_MODULE_3_PATH } from "@/features/notes/maths-module-3/path";
+import { PHYSICS_MODULE_1_PATH, PHYSICS_PATH } from "@/features/notes/physics-module-1/path";
+import { PHYSICS_MODULE_2_PATH } from "@/features/notes/physics-module-2/path";
+import { PHYSICS_MODULE_3_PATH } from "@/features/notes/physics-module-3/path";
+import { PHYSICS_MODULE_4_PATH } from "@/features/notes/physics-module-4/path";
 
 export interface ModuleNotes {
   /** e.g. "Module 1" */
@@ -58,6 +62,18 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
             { name: "Module 1", detail: "Limits to concavity", href: MATHS_MODULE_1_PATH },
             { name: "Module 2", detail: "Partial derivatives to level curves", href: MATHS_MODULE_2_PATH },
             { name: "Module 3", detail: "Three-variable chain rule to directional derivatives", href: MATHS_MODULE_3_PATH },
+          ],
+        },
+        {
+          name: "Physics",
+          course: "Physics for Information Science",
+          code: "GAPHT121",
+          href: PHYSICS_PATH,
+          modules: [
+            { name: "Module 1", detail: "Electrical conductivity to superconductivity", href: PHYSICS_MODULE_1_PATH },
+            { name: "Module 2", detail: "Matter waves to quantum tunnelling", href: PHYSICS_MODULE_2_PATH },
+            { name: "Module 3", detail: "Intrinsic semiconductors to the p-n junction", href: PHYSICS_MODULE_3_PATH },
+            { name: "Module 4", detail: "Rectifiers to solar cells and lasers", href: PHYSICS_MODULE_4_PATH },
           ],
         },
       ]),

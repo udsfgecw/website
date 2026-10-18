@@ -6,6 +6,10 @@ import { branchPath, NOTES_CATALOGUE, semesterPath } from "./data/notes";
 import { mathsModule1 } from "./features/notes/maths-module-1";
 import { mathsModule2 } from "./features/notes/maths-module-2";
 import { mathsModule3 } from "./features/notes/maths-module-3";
+import { physicsModule1 } from "./features/notes/physics-module-1";
+import { physicsModule2 } from "./features/notes/physics-module-2";
+import { physicsModule3 } from "./features/notes/physics-module-3";
+import { physicsModule4 } from "./features/notes/physics-module-4";
 import { MetaCollector, type PageMeta } from "./lib/meta";
 
 /* Used at build time only (scripts/prerender.mjs). */
@@ -34,6 +38,10 @@ export const pages: StaticPage[] = [
   { url: mathsModule1.basePath, file: fileFor(mathsModule1.basePath), chunk: "src/pages/notes/MathsNotesPage.tsx" },
   { url: mathsModule2.basePath, file: fileFor(mathsModule2.basePath), chunk: "src/pages/notes/MathsModule2Page.tsx" },
   { url: mathsModule3.basePath, file: fileFor(mathsModule3.basePath), chunk: "src/pages/notes/MathsModule3Page.tsx" },
+  { url: physicsModule1.basePath, file: fileFor(physicsModule1.basePath), chunk: "src/pages/notes/PhysicsModule1Page.tsx" },
+  { url: physicsModule2.basePath, file: fileFor(physicsModule2.basePath), chunk: "src/pages/notes/PhysicsModule2Page.tsx" },
+  { url: physicsModule3.basePath, file: fileFor(physicsModule3.basePath), chunk: "src/pages/notes/PhysicsModule3Page.tsx" },
+  { url: physicsModule4.basePath, file: fileFor(physicsModule4.basePath), chunk: "src/pages/notes/PhysicsModule4Page.tsx" },
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];

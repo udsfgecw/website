@@ -3,6 +3,10 @@ import { Route, Routes, useLocation, useNavigationType } from "react-router-dom"
 import { MATHS_MODULE_1_PATH } from "@/features/notes/maths-module-1/path";
 import { MATHS_MODULE_2_PATH } from "@/features/notes/maths-module-2/path";
 import { MATHS_MODULE_3_PATH } from "@/features/notes/maths-module-3/path";
+import { PHYSICS_MODULE_1_PATH } from "@/features/notes/physics-module-1/path";
+import { PHYSICS_MODULE_2_PATH } from "@/features/notes/physics-module-2/path";
+import { PHYSICS_MODULE_3_PATH } from "@/features/notes/physics-module-3/path";
+import { PHYSICS_MODULE_4_PATH } from "@/features/notes/physics-module-4/path";
 import HomePage from "@/pages/HomePage";
 import NotFoundPage from "@/pages/NotFoundPage";
 import NotesPage from "@/pages/NotesPage";
@@ -14,6 +18,10 @@ import SubjectPage from "@/pages/notes/SubjectPage";
 const MathsNotesPage = lazy(() => import("@/pages/notes/MathsNotesPage"));
 const MathsModule2Page = lazy(() => import("@/pages/notes/MathsModule2Page"));
 const MathsModule3Page = lazy(() => import("@/pages/notes/MathsModule3Page"));
+const PhysicsModule1Page = lazy(() => import("@/pages/notes/PhysicsModule1Page"));
+const PhysicsModule2Page = lazy(() => import("@/pages/notes/PhysicsModule2Page"));
+const PhysicsModule3Page = lazy(() => import("@/pages/notes/PhysicsModule3Page"));
+const PhysicsModule4Page = lazy(() => import("@/pages/notes/PhysicsModule4Page"));
 
 /* After each navigation: links with a section (/#work) scroll to it, other new
    pages start at the top, and back and forward keep the browser's own scroll position. */
@@ -42,6 +50,10 @@ export default function App() {
           <Route path={`${MATHS_MODULE_1_PATH}/:page?`} element={<MathsNotesPage />} />
           <Route path={`${MATHS_MODULE_2_PATH}/:page?`} element={<MathsModule2Page />} />
           <Route path={`${MATHS_MODULE_3_PATH}/:page?`} element={<MathsModule3Page />} />
+          <Route path={`${PHYSICS_MODULE_1_PATH}/:page?`} element={<PhysicsModule1Page />} />
+          <Route path={`${PHYSICS_MODULE_2_PATH}/:page?`} element={<PhysicsModule2Page />} />
+          <Route path={`${PHYSICS_MODULE_3_PATH}/:page?`} element={<PhysicsModule3Page />} />
+          <Route path={`${PHYSICS_MODULE_4_PATH}/:page?`} element={<PhysicsModule4Page />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
