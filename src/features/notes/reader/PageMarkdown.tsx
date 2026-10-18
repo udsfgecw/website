@@ -46,12 +46,18 @@ const components: Components = {
   p({ node, children }) {
     return <p className={isQuestion(node as HastNode) ? "notes-question" : undefined}>{children}</p>;
   },
-  // a quote opening with "Watch out" is a warning about a common mistake
+  // a quote opening with a bold label ("Watch out.", "Key idea.") becomes a tagged note box
   blockquote({ node, children }) {
     const first = node?.children.find((child) => child.type === "element" && child.tagName === "p");
     const lead = first && first.type === "element" ? first.children[0] : undefined;
-    const warn = lead?.type === "element" && lead.tagName === "strong" && lead.children[0]?.type === "text" && lead.children[0].value.startsWith("Watch out");
-    return <blockquote className={warn ? "warn" : undefined}>{children}</blockquote>;
+    const text = lead?.type === "element" && lead.tagName === "strong" && lead.children[0]?.type === "text" ? lead.children[0].value : "";
+    const label = /^[^.:]{2,40}\.$/.test(text) ? text.slice(0, -1) : undefined;
+    const warn = text.startsWith("Watch out");
+    return (
+      <blockquote className={warn ? "warn" : undefined} data-label={label}>
+        {children}
+      </blockquote>
+    );
   },
   // page headings sit under the notes' own h1
   h1({ children }) {
