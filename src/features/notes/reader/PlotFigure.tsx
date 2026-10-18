@@ -7,15 +7,18 @@ export interface PlotSpec {
   points?: { id: string; x: number; y: number; label?: string }[];
   segments?: { from: string; to: string }[];
   circles?: { center: string; radius: number }[];
+  /** y = vertex y + a (x - vertex x)², drawn across the box; the label sits just above its vertex */
+  parabolas?: { vertex: [number, number]; a: number; label?: string }[];
   functions?: { expression: string; label?: string }[];
   title?: string;
 }
 
 const SIZE = 340;
 
-/* Draws a ```jsxgraph block's axes, points, segments and circles as SVG. */
+/* Draws a ```jsxgraph block's axes, points, segments, circles and parabolas as SVG. */
 export default function PlotFigure({ spec }: { spec: PlotSpec }) {
   const marker = useId();
+  const clip = useId();
   const [left, top, right, bottom] = spec.boundingBox;
   const scale = SIZE / Math.max(right - left, top - bottom);
   const width = (right - left) * scale;
@@ -31,6 +34,9 @@ export default function PlotFigure({ spec }: { spec: PlotSpec }) {
           <marker id={marker} markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
             <path d="M0,0 L8,4 L0,8" fill="none" stroke="currentColor" />
           </marker>
+          <clipPath id={clip}>
+            <rect width={width} height={height} />
+          </clipPath>
         </defs>
         {spec.axis && (
           <g stroke="currentColor" strokeWidth="1.2" markerEnd={`url(#${marker})`}>
@@ -52,6 +58,26 @@ export default function PlotFigure({ spec }: { spec: PlotSpec }) {
           const centre = points.get(c.center);
           if (!centre) return null;
           return <circle key={i} cx={sx(centre.x)} cy={sy(centre.y)} r={c.radius * scale} fill="none" stroke="var(--color-green)" strokeWidth="2.5" />;
+        })}
+        {spec.parabolas?.map((p, i) => {
+          const [vx, vy] = p.vertex;
+          const y = (x: number) => vy + p.a * (x - vx) ** 2;
+          const steps = 80;
+          const path = Array.from({ length: steps + 1 }, (_, k) => {
+            const x = left + ((right - left) * k) / steps;
+            return `${k ? "L" : "M"}${sx(x).toFixed(1)} ${sy(y(x)).toFixed(1)}`;
+          }).join("");
+          // the curve is flat at the vertex, so a label there stays clear of the neighbouring curves
+          return (
+            <g key={i}>
+              <path d={path} fill="none" stroke="var(--color-green)" strokeWidth="2.5" clipPath={`url(#${clip})`} />
+              {p.label && (
+                <text x={sx(vx) + 8} y={sy(vy) - 8} fontSize="14" className="notes-figure-label">
+                  {p.label}
+                </text>
+              )}
+            </g>
+          );
         })}
         {spec.segments?.map((s, i) => {
           const a = points.get(s.from);

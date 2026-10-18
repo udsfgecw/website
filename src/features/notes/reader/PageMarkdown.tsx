@@ -23,7 +23,7 @@ function Plot({ source }: { source: string }) {
   } catch {
     return null;
   }
-  // Module 1's only plotted function is f(x) = x, which has its own drawing.
+  // The only plotted function is f(x) = x (Module 1), which has its own drawing.
   return spec.functions?.length ? <IdentityGraph /> : <PlotFigure spec={spec} />;
 }
 
