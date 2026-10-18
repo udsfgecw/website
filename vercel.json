@@ -6,17 +6,19 @@
   "headers": [
     {
       "source": "/static/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ],
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/notes/cse/s1/maths",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/notes/cse/s1/maths/",
-      "destination": "/index.html"
+      "source": "/notes/cse/s1/maths/1",
+      "destination": "/notes/cse/s1/maths",
+      "permanent": true
     }
   ]
 }

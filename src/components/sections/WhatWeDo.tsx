@@ -1,27 +1,18 @@
 import { Fragment } from "react";
-import { Bird, Building2, GraduationCap, HeartHandshake, Scale, Vote } from "lucide-react";
-import { Label } from "@/components/Section";
-
-const FEATURES = [
-  [HeartHandshake, "Student welfare", "Hostel, canteen, transport, fees and scholarships. We take everyday problems to the administration and stay on them until they are solved."],
-  [Building2, "College development", "Better buildings, labs, roads and lighting for GEC Wayanad, pushed through the college, the MLA and the government."],
-  [Bird, "Campus peace", "A campus without violence or intimidation, where every student can study, speak and take part without fear."],
-  [Vote, "Campus democracy", "Free and fair union elections, and a real say for students in the decisions that shape their college."],
-  [Scale, "Social justice", "Secular, inclusive politics that stands with every student, whatever their religion, caste, gender or background."],
-  [GraduationCap, "Academic rights", "Exams, results, attendance and KTU issues, raised with the college and the university and followed until fixed."],
-] as const;
+import { Label } from "@/components/ui/section";
+import { PILLARS } from "@/data/pillars";
 
 /* "student welfare, college development, … and academic rights", with the joining words in grey */
-function Pillars() {
-  return FEATURES.map(([, title], i) => (
+function PillarList() {
+  return PILLARS.map(({ title }, i) => (
     <Fragment key={title}>
-      {i > 0 && <span className="text-ink/30">{i === FEATURES.length - 1 ? " and " : ", "}</span>}
+      {i > 0 && <span className="text-ink/30">{i === PILLARS.length - 1 ? " and " : ", "}</span>}
       {title.toLowerCase()}
     </Fragment>
   ));
 }
 
-export default function Work() {
+export default function WhatWeDo() {
   return (
     <section id="work" aria-labelledby="work-title" className="wrap py-[clamp(5rem,11vw,9rem)]">
       <Label>What we do</Label>
@@ -30,7 +21,7 @@ export default function Work() {
         className="mt-6 max-w-[24ch] text-[length:clamp(2rem,4.6vw,3.9rem)] leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-ink"
       >
         <span className="text-ink/30">We stand for </span>
-        <Pillars />
+        <PillarList />
         <span className="text-ink/30">.</span>
       </h2>
 
@@ -42,7 +33,7 @@ export default function Work() {
         </linearGradient>
       </svg>
       <ul className="mt-[clamp(3.5rem,7vw,6rem)] grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-        {FEATURES.map(([Icon, title, text]) => (
+        {PILLARS.map(({ icon: Icon, title, text }) => (
           <li key={title}>
             <Icon size={24} strokeWidth={1.75} color="url(#pillar-icon)" aria-hidden="true" />
             <h3 className="mt-5 text-[1.15rem] font-semibold tracking-[-0.02em]">{title}</h3>

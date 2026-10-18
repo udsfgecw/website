@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { INSTAGRAM } from "@/config";
 import { Button } from "@/components/ui/button";
-import { H2 } from "@/components/Section";
+import { H2 } from "@/components/ui/section";
 
 export default function Join() {
   return (
