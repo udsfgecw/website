@@ -166,8 +166,8 @@ export default function Reader({ notes }: { notes: NotesModule }) {
   return (
     <SiteLayout>
       {/* reading progress through the whole module */}
-      <div className="fixed inset-x-0 top-0 z-[60] h-[3px]" aria-hidden="true">
-        <div ref={bar} className="h-full origin-left scale-x-0 bg-[linear-gradient(90deg,var(--color-green),var(--color-blue))]" />
+      <div className="fixed inset-x-0 top-0 z-[60] h-1" aria-hidden="true">
+        <div ref={bar} style={{ transform: "scaleX(0)" }} className="h-full origin-left bg-[linear-gradient(90deg,var(--color-green),var(--color-blue))]" />
       </div>
 
       <main>
