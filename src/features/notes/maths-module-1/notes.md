@@ -1,3890 +1,1458 @@
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 1 -->
+<!-- page 1 | Start here -->
 
-[Non-content page]
+# Module 1 at a glance
+
+This module teaches one big idea in three steps: **limits → derivatives → using derivatives**.
+
+1. **Limits** tell us what a function is *heading towards* near a point, even if it never gets there.
+2. **Derivatives** are limits of a special kind. They measure how fast a function is changing, which is the same as the slope of its graph.
+3. **Applications** put derivatives to work: tangent and normal lines, straight-line approximations (linearization) and the bend of a curve (concavity).
+
+## What you will be able to do
+
+- Find limits by substitution, factoring, rationalising, the sandwich theorem, and "divide by the highest power".
+- Decide whether a function is continuous at a point, and where it is not.
+- Differentiate from first principles and with the standard rules, including the chain rule and implicit differentiation.
+- Write the equation of a tangent line and a normal line.
+- Approximate a function near a point with its linearization.
+- Use the second derivative to say where a curve bends up or down.
+
+## How to use these notes
+
+- Every topic has the same shape: **idea → rule → worked example → common mistakes.**
+- Try each worked example yourself before reading the solution. Cover the answer and compare.
+- Green boxes hold key ideas. Amber boxes marked **Watch out** hold the mistakes that cost marks.
+- The last page is a one-page formula sheet. Use it for revision.
+
+## Where each topic sits
+
+| Part | Topics |
+| --- | --- |
+| Limits | Limits, limit laws, techniques for $0/0$, sandwich theorem, limits at infinity |
+| Continuity | Continuity at a point, one-sided limits, where a function breaks |
+| Derivatives | First principle, rules, higher orders, rate of change, chain rule, implicit differentiation |
+| Applications | Tangent and normal lines, linearization, concavity |
+
+> **Prerequisites.** Factorising quadratics, the formula $(a-b)(a+b)=a^2-b^2$, laws of indices (e.g. $x^{-2}=1/x^2$, $\sqrt{x}=x^{1/2}$), and the values of $\sin$, $\cos$, $\tan$ at $0,\ \pi/6,\ \pi/4,\ \pi/2$.
 
 ---
 
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 2 -->
+<!-- page 2 | Limits: the idea -->
 
-# Module 1 : Limits Of Function Values
+# Limits of function values
 
-If $f(x)$ is arbitrarily close to the no. $L$, for all $x$'s sufficiently close to $c$ other the $c$ itself, then we say that $f$ approaches the limit $L$ as $x$ approaches to $c$.
+## The idea
 
+A limit answers the question: **"As $x$ gets very close to $c$, what value is $f(x)$ getting close to?"**
 
+If $f(x)$ gets arbitrarily close to a number $L$ whenever $x$ is close enough to $c$ (but $x \ne c$), we write
 
-```math
+$$
 \lim_{x \to c} f(x) = L
-```
+$$
 
+and say "$f$ approaches $L$ as $x$ approaches $c$".
 
+> **Key idea.** A limit cares about what happens *near* $c$, never *at* $c$. The function does not even need to be defined at $c$. That is why limits can rescue us when substitution gives the meaningless $0/0$.
 
-> The limit of a function is the value of the function as the input gets close or approaches the some point.
+## Example: a hole in the graph
 
-**Q.** Find the limit of the function $f(x) = \frac{x^2 - 1}{x - 1}$ at $x = 1$
+Find $\displaystyle\lim_{x\to 1}\frac{x^2-1}{x-1}$.
 
+Substituting $x=1$ gives $0/0$, so the function is not defined at $1$. Away from $x=1$ we can cancel the common factor:
 
+$$
+\frac{x^2-1}{x-1}=\frac{(x+1)(x-1)}{x-1}=x+1 \qquad (x\neq 1)
+$$
 
-```math
-\begin{aligned}
-\lim_{x \to 1} f(x) &= \lim_{x \to 1} \frac{x^2 - 1}{x - 1} \\
-&= \lim_{x \to 1} \frac{(x + 1)(x - 1)}{(x - 1)} \\
-&= 1 + 1 = \underline{\underline{2}}
-\end{aligned}
-```
+So near $x=1$ the function behaves exactly like $x+1$, and
 
+$$
+\lim_{x\to1}\frac{x^2-1}{x-1}=1+1=\mathbf{2}
+$$
 
+The graph is the line $y=x+1$ with a single hole at $(1,2)$. The limit is the height of that hole.
 
-**Q.** Find the limits of the identity function and constant function as $x$ approaches to $c$.
+## Two simple limits to remember
 
-### Identity Functions
+**Identity function** $f(x)=x$: as $x\to c$, the output is $x$ itself, so
 
-
-
-```math
-f(x) = x
-```
-
-
-
-
-```math
-\lim_{x \to c} f(x) = \lim_{x \to c} x = c
-```
-
-
-
-
+$$
+\lim_{x\to c} x = c
+$$
 
 ```jsxgraph
 {
-  "boundingBox": [
-    -1,
-    5,
-    5,
-    -1
-  ],
+  "boundingBox": [-1, 5, 5, -1],
   "axis": true,
   "points": [],
   "segments": [],
   "circles": [],
-  "functions": [
-    {
-      "expression": "x",
-      "label": "f(x): y = x"
-    }
-  ]
+  "functions": [{ "expression": "x", "label": "f(x): y = x" }]
 }
 ```
 
+**Constant function** $f(x)=k$: the output never changes, so
 
+$$
+\lim_{x\to c} k = k
+$$
 
-### Constant Function
+![Graph of the constant function y = k, a horizontal line at height k](/notes/cse/s1/maths/page-002-image-2-60fc0510-c168-41a0-ba3c-75207bd63713.webp)
 
+## When a limit does not exist
 
+Consider the **unit step function**
 
-![Graph of a constant function y = k](/notes/cse/s1/maths/page-002-image-2-60fc0510-c168-41a0-ba3c-75207bd63713.webp)
+$$
+u(x)=\begin{cases}0, & x<0\\[2pt] 1, & x\ge 0\end{cases}
+$$
 
+![Graph of the unit step function u(x): 0 to the left of the y-axis, jumping to 1 at x = 0](/notes/cse/s1/maths/page-002-image-3-b3043ba9-9d0f-4cc6-b8ae-99de8957fc12.webp)
 
+- Approaching $0$ from the **left** ($x<0$), $u(x)$ stays at $0$.
+- Approaching $0$ from the **right** ($x>0$), $u(x)$ stays at $1$.
 
+There is no single number that $u(x)$ approaches, so $\displaystyle\lim_{x\to0}u(x)$ **does not exist**. The graph jumps.
 
-
-```math
-y = f(x) = k
-```
-
-
-
-
-```math
-\lim_{x \to c} f(x) = \lim_{x \to c} k = k
-```
-
-
-
----
-
-**Discuss the behaviour of the following**
-
-
-
-```math
-u(x) = \begin{cases} 0, & x < 0 \\ 1, & x \ge 0 \end{cases} \quad (\text{unit - step function})
-```
-
-
-
-
-
-![Graph of the unit step function u(x)](/notes/cse/s1/maths/page-002-image-3-b3043ba9-9d0f-4cc6-b8ae-99de8957fc12.webp)
-
-
-
-The unit step fn. $u(x)$ has no limit as $x \to 0$. Because it jumps at $x = 0$. For -ve values of $x$, it is arbitrarily close to $0$. For +ve values of $x$, it is arbitrarily close to $1$. There is no single value $L$ as $x$ approaches to $0$.
+> **Rule of thumb.** A limit exists only when the function approaches the **same** value from both sides.
 
 ---
 
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 3 -->
+<!-- page 3 | Limit laws -->
 
-## Limit Laws / Limit Rules
+# Limit laws
 
-If: $L, M, c$ and $k$ are real numbers and limit extends to $c$
+Suppose $\lim_{x\to c}f(x)=L$ and $\lim_{x\to c}g(x)=M$, where $L$, $M$, $c$, $k$ are real numbers. Then:
 
+| Rule | Statement |
+| --- | --- |
+| Sum | $\lim\,[f(x)+g(x)] = L+M$ |
+| Difference | $\lim\,[f(x)-g(x)] = L-M$ |
+| Constant multiple | $\lim\,[k\,f(x)] = kL$ |
+| Product | $\lim\,[f(x)\,g(x)] = L\cdot M$ |
+| Quotient | $\lim\,\dfrac{f(x)}{g(x)} = \dfrac{L}{M}$, provided $M\neq0$ |
+| Power | $\lim\,[f(x)]^n = L^n$ |
+| Root | $\lim\,\sqrt[n]{f(x)} = \sqrt[n]{L}$ (for even $n$, need $L\ge0$) |
 
+In words: **a limit passes through $+,\ -,\ \times,\ \div$, powers and roots**, as long as each piece has its own limit (and you never divide by a limit of $0$).
 
-```math
-\lim_{x \to c} f(x) = L
-```
+> **Watch out.** The root and power rules apply to the *whole expression inside*. A root of a sum is **not** the sum of the roots:
+> $\sqrt{16+3}\neq\sqrt{16}+\sqrt{3}$. Work out the limit of what is inside first, then take the root.
 
+## Polynomials and rational functions: just substitute
 
+If $P(x)=a_nx^n+\dots+a_1x+a_0$ is a polynomial, then
 
+$$
+\lim_{x\to c}P(x)=P(c)
+$$
 
-```math
-\lim_{x \to c} g(x) = M
-```
+If $f(x)=\dfrac{P(x)}{Q(x)}$ is a rational function, then
 
+$$
+\lim_{x\to c}\frac{P(x)}{Q(x)}=\frac{P(c)}{Q(c)}\qquad\text{provided } Q(c)\neq0
+$$
 
+### Example 1. Substitution works
 
-1. **Sum Rule :** 
-   
+$$
+\lim_{x\to c}(x^3+4x^2-3)=c^3+4c^2-3
+$$
 
-```math
-\lim_{x \to c} (f(x) + g(x)) = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)
-```
+$$
+\lim_{x\to-1}\frac{x^3+4x^2-3}{x^2+5}=\frac{(-1)+4-3}{1+5}=\frac{0}{6}=\mathbf{0}
+$$
 
+### Example 2. Root of an expression
 
-   
+$$
+\lim_{x\to2}\sqrt{4x^2+3}=\sqrt{4(2)^2+3}=\sqrt{16+3}=\mathbf{\sqrt{19}}
+$$
 
-```math
-= L + M
-```
+### Example 3. Substitution fails (the $0/0$ case)
 
+$$
+\lim_{x\to1}\frac{x^2+x-2}{x^2-x}\ \longrightarrow\ \frac{1+1-2}{1-1}=\frac{0}{0}
+$$
 
+$\tfrac00$ is **not** the answer. It is a warning that the numerator and denominator share a hidden common factor. Factorise, cancel, then substitute:
 
-2. **Difference Rule :** 
-   
+$$
+\frac{x^2+x-2}{x^2-x}=\frac{(x+2)(x-1)}{x(x-1)}=\frac{x+2}{x}\ \Rightarrow\ \lim_{x\to1}\frac{x+2}{x}=\frac{3}{1}=\mathbf{3}
+$$
 
-```math
-\lim_{x \to c} (f(x) - g(x)) = \lim_{x \to c} f(x) - \lim_{x \to c} g(x) = L - M
-```
-
-
-
-3. **Constant Multiplication Rule :**
-   
-
-```math
-\lim_{x \to c} (k f(x)) = k \lim_{x \to c} f(x) = k L
-```
-
-
-
-4. **Product Rule :** 
-   
-
-```math
-\lim_{x \to c} (f(x) * g(x)) = \lim_{x \to c} f(x) \times \lim_{x \to c} g(x) = L \times M
-```
-
-
-
-5. **Quotient Rule :** 
-   
-
-```math
-\lim_{x \to c} (f(x) / g(x)) = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)} = L / M
-```
-
-
-
-6. **Power Rule :** 
-   
-
-```math
-\lim_{x \to c} (f(x))^n = \left(\lim_{x \to c} f(x)\right)^n = (L)^n
-```
-
-
-
-7. **Root Rule :** 
-   
-
-```math
-\lim_{x \to c} \sqrt[n]{f(x)} = \left(\lim_{x \to c} f(x)\right)^{1/n} = (L)^{1/n} \text{ or } \sqrt[n]{L}
-```
-
-
+The next page turns this into a method.
 
 ---
 
-### Q. Find the limit of the following
+<!-- page 4 | Limit techniques -->
 
-1) 
+# Evaluating limits: a method that always starts the same way
 
+## Step 0: try substituting
 
-```math
-\lim_{x \to c} (x^3 + 4x^2 - 3)
-```
+Put $x=c$ into the expression.
 
+- You get a **number** → that number is the limit. Done.
+- You get **$k/0$ with $k\neq 0$** (e.g. $5/0$) → the function blows up. The limit does **not** exist (as a finite number).
+- You get **$0/0$** → this is an *indeterminate form*. The limit may still exist. Use one of the two techniques below.
 
+## Technique A: factorise and cancel
 
+Use when the expression is a ratio of polynomials.
 
-```math
-= \lim_{x \to c} x^3 + \lim_{x \to c} 4x^2 - \lim_{x \to c} 3
-```
+> **Quick factorising check.** To factorise $x^2+bx+c$ find two numbers whose **product is $c$** and whose **sum is $b$**. For $x^2-6x+9$: product $9$, sum $-6$ → $(x-3)(x-3)$.
 
+**Example.** $\displaystyle\lim_{x\to-5}\frac{x^2+3x-10}{x+5}$
 
+Substitution gives $0/0$. Product $-10$, sum $3$ → the numbers are $5$ and $-2$:
 
+$$
+\frac{x^2+3x-10}{x+5}=\frac{(x+5)(x-2)}{x+5}=x-2\ \Rightarrow\ \lim_{x\to-5}(x-2)=\mathbf{-7}
+$$
 
-```math
-= c^3 + 4 \lim_{x \to c} x^2 - 3
-```
+## Technique B: multiply by the conjugate
 
+Use when a **square root** sits in the numerator or denominator. The conjugate of $\sqrt{A}-B$ is $\sqrt{A}+B$, and
 
+$$
+(\sqrt{A}-B)(\sqrt{A}+B)=A-B^2
+$$
 
+which removes the root. Multiply top and bottom by the conjugate so that the value of the fraction does not change.
 
-```math
-= \underline{c^3 + 4c^2 - 3}
-```
+**Example.** $\displaystyle\lim_{x\to0}\frac{\sqrt{x^2+100}-10}{x^2}$
 
-
-
-2) 
-
-
-```math
-\lim_{x \to c} \frac{x^4 + x^2 - 1}{x^2 + 5} = \frac{\lim_{x \to c} x^4 + x^2 - 1}{\lim_{x \to c} x^2 + 5} = \frac{\lim_{x \to c} x^4 + \lim_{x \to c} x^2 - \lim_{x \to c} 1}{\lim_{x \to c} x^2 + \lim_{x \to c} 5}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 4 -->
-
-
-
-```math
-= \frac{c^4 + c^2 - 1}{c^2 + 5}
-```
-
-
-
----
-
-3) $\lim_{x \to 2} \sqrt{4x^2 + 3}$
-
-
-
-```math
+$$
 \begin{aligned}
-= \left(\lim_{x \to 2} \{4x^2 + 3\}\right)^{1/2} &= \left(\lim_{x \to 2} 4x^2\right)^{1/2} + \left(\lim_{x \to 2} 3\right)^{1/2} \\
-&= \lim_{x \to 2} (4 \times 4)^{1/2} + (3)^{1/2} \\
-&= \sqrt{16} + \sqrt{3} = \cancel{\sqrt{19}} \quad \sqrt{16+3} = \underline{\underline{\sqrt{19}}}
+&=\lim_{x\to0}\frac{(\sqrt{x^2+100}-10)(\sqrt{x^2+100}+10)}{x^2\,(\sqrt{x^2+100}+10)}\\[4pt]
+&=\lim_{x\to0}\frac{(x^2+100)-100}{x^2\,(\sqrt{x^2+100}+10)}\\[4pt]
+&=\lim_{x\to0}\frac{x^2}{x^2\,(\sqrt{x^2+100}+10)}=\lim_{x\to0}\frac{1}{\sqrt{x^2+100}+10}\\[4pt]
+&=\frac{1}{10+10}=\mathbf{\tfrac1{20}}
 \end{aligned}
-```
+$$
 
+## Technique C: simplify a fraction inside a fraction
 
+**Example.** $\displaystyle\lim_{x\to1}\frac{x^{-1}-1}{x-1}$. Substitution gives $0/0$.
 
----
+$$
+\frac{\tfrac1x-1}{x-1}=\frac{\tfrac{1-x}{x}}{x-1}=\frac{-(x-1)}{x\,(x-1)}=-\frac1x
+\ \Rightarrow\ \lim_{x\to1}\left(-\frac1x\right)=\mathbf{-1}
+$$
 
-### Evaluating limits of Polynomials and Rational Functions.
-
-Let $P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_0$ be a polynomial of degree $n$.
-
-
-
-```math
-\lim_{x \to c} P(x) = P(c).
-```
-
-
-
-Let $f(x) = \frac{P(x)}{q(x)}$ is a quotient polynomial or rational polynomial.
-
-
-
-```math
-\lim_{x \to c} f(x) = \frac{\lim_{x \to c} P(x)}{\lim_{x \to c} q(x)} = \frac{P(c)}{q(c)}, \quad q(c) \neq 0.
-```
-
-
+> **Watch out.** Cancel only **factors**, never terms. In $\dfrac{x+3}{x}$ you may not cancel the $x$'s. And when you cancel $(x-c)$ you are allowed to, because $x\to c$ means $x\neq c$ (so $x-c\neq0$).
 
 ---
 
-**Q.** Find $\lim_{x \to -1} \frac{x^3 + 4x^2 - 3}{x^2 + 5}$
+<!-- page 5 | Solved limit problems -->
 
+# Solved limit problems
 
+Grouped by the technique they need. Try each one before reading the answer.
 
-```math
-= \frac{\lim_{x \to -1} x^3 + 4x^2 - 3}{\lim_{x \to -1} x^2 + 5} = \frac{-1 + 4 - 3}{1 + 5} = 0/6 = 0 //
-```
+## Group 1: direct substitution
 
+| # | Limit | Working | Answer |
+| --- | --- | --- | --- |
+| 1 | $\lim_{x\to-2}(x^3-15)$ | $(-2)^3-15=-8-15$ | $-23$ |
+| 2 | $\lim_{x\to2}(-x^2+5x-2)$ | $-4+10-2$ | $4$ |
+| 3 | $\lim_{x\to2}\dfrac{2x+5}{11-x^3}$ | $\dfrac{9}{11-8}=\dfrac93$ | $3$ |
+| 4 | $\lim_{x\to\frac23}(8-3x)(2x-1)$ | $(8-2)\left(\tfrac43-1\right)=6\cdot\tfrac13$ | $2$ |
+| 5 | $\lim_{x\to-\frac12}4x(3x+4)^2$ | $-2\cdot\left(\tfrac52\right)^2=-2\cdot\tfrac{25}{4}$ | $-\tfrac{25}{2}$ |
+| 6 | $\lim_{y\to-3}(5-y)^{4/3}$ | $8^{4/3}=(2^3)^{4/3}=2^4$ | $16$ |
+| 7 | $\lim_{h\to0}\dfrac{3}{\sqrt{3h+1}+1}$ | $\dfrac{3}{1+1}$ | $\tfrac32$ |
+| 8 | $\lim_{h\to1}\dfrac{\sqrt{6h+10}-5}{h^2}$ | $\dfrac{4-5}{1}$ | $-1$ |
+| 9 | $\lim_{x\to3}\dfrac{x+4}{x^2+7x+14}$ | $\dfrac{7}{9+21+14}$ | $\tfrac{7}{44}$ |
+| 10 | $\lim_{t\to2}\dfrac{t^2+4t+3}{t^2-9}$ | $\dfrac{4+8+3}{4-9}=\dfrac{15}{-5}$ | $-3$ |
+| 11 | $\lim_{x\to0}(2\sin x-1)$ | $2\sin0-1$ | $-1$ |
+| 12 | $\lim_{x\to0}\dfrac{1+x+\sin x}{2\cos x}$ | $\dfrac{1+0+0}{2\cdot1}$ | $\tfrac12$ |
+| 13 | $\lim_{x\to\pi}\sqrt{x+2}\,\sin\dfrac x2$ | $\sqrt{\pi+2}\cdot\sin\tfrac\pi2$ | $\sqrt{\pi+2}$ |
 
+## Group 2: $0/0$, so factorise
 
----
+**14.** $\displaystyle\lim_{x\to3}\frac{x^2-6x+9}{x-3}=\lim_{x\to3}\frac{(x-3)^2}{x-3}=\lim_{x\to3}(x-3)=\mathbf{0}$
 
-**Q.** Evaluate $\lim_{x \to 1} \frac{x^2 + x - 2}{x^2 - x}$
+**15.** $\displaystyle\lim_{x\to-4}\frac{2x+8}{x^2+x-12}=\lim_{x\to-4}\frac{2(x+4)}{(x+4)(x-3)}=\frac{2}{-4-3}=\mathbf{-\tfrac27}$
 
+**16.** $\displaystyle\lim_{x\to5}\frac{x-5}{x^2-25}=\lim_{x\to5}\frac{x-5}{(x+5)(x-5)}=\frac1{10}$
 
+**17.** $\displaystyle\lim_{x\to2}\frac{x^2-7x+10}{x-2}=\lim_{x\to2}\frac{(x-5)(x-2)}{x-2}=2-5=\mathbf{-3}$
 
-```math
-= \frac{\lim_{x \to 1} x^2 + x - 2}{\lim_{x \to 1} x^2 - x} = \frac{1 + 1 - 2}{1 - 1} = 0/0, \text{ not defined}
-```
+**18.** $\displaystyle\lim_{t\to-2}\frac{-2t-4}{t^3+2t^2}=\lim_{t\to-2}\frac{-2(t+2)}{t^2(t+2)}=\frac{-2}{(-2)^2}=\mathbf{-\tfrac12}$
 
+## Group 3: the denominator tends to $0$ but the numerator does not
 
+**19.** $\displaystyle\lim_{x\to5}\frac{x^2-3x-10}{x^2-10x+25}=\lim_{x\to5}\frac{(x-5)(x+2)}{(x-5)^2}=\lim_{x\to5}\frac{x+2}{x-5}$
 
----
+After cancelling one factor, the numerator tends to $7$ and the denominator tends to $0$. The expression grows without bound (towards $+\infty$ from the right of $5$, towards $-\infty$ from the left), so the limit **does not exist**.
 
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 5 -->
+> **Watch out.** Cancelling must remove the $0$ from the denominator before you conclude anything. Here a $0$ was left behind, so there is no limit. Compare this with question 14, where it *was* removed.
 
-$\cdot \lim_{x \to 1} \frac{(x+2)(x-1)}{x(x-1)} = \frac{1+2}{1} = 3/1 = \underline{\underline{3}}$
+## Group 4: roots, so use the conjugate
 
+**20.** $\displaystyle\lim_{x\to1}\frac{x-1}{\sqrt{x+3}-2}$ (gives $0/0$)
 
+$$
+=\lim_{x\to1}\frac{(x-1)(\sqrt{x+3}+2)}{(x+3)-4}=\lim_{x\to1}\frac{(x-1)(\sqrt{x+3}+2)}{x-1}=\lim_{x\to1}\left(\sqrt{x+3}+2\right)=\mathbf{4}
+$$
 
-```math
+**21.** $\displaystyle\lim_{x\to-3}\frac{2-\sqrt{x^2-5}}{x+3}$ (gives $0/0$)
+
+$$
 \begin{aligned}
-\text{Sum} &= -1 \\
-\text{product} &= 2
+&=\lim_{x\to-3}\frac{4-(x^2-5)}{(x+3)\,(2+\sqrt{x^2-5})}
+=\lim_{x\to-3}\frac{9-x^2}{(x+3)\,(2+\sqrt{x^2-5})}\\[4pt]
+&=\lim_{x\to-3}\frac{(3-x)(3+x)}{(x+3)\,(2+\sqrt{x^2-5})}
+=\frac{3-(-3)}{2+\sqrt{9-5}}=\frac{6}{4}=\mathbf{\tfrac32}
 \end{aligned}
-```
+$$
 
+## Group 5: fraction inside a fraction
 
-
-**Q.** Evaluate $\lim_{x \to 0} \frac{\sqrt{x^2+100}-10}{x^2}$
-
-*taking conjugative of radical*
-
-
-
-```math
-\lim_{x \to 0} \frac{(\sqrt{x^2+100}-10)(\sqrt{x^2+100}+10)}{x^2(\sqrt{x^2+100}+10)} = \lim_{x \to 0} \frac{(\sqrt{x^2+100})^2 - 10^2}{x^2(\sqrt{x^2+100}+10)}
-```
-
-
-
-
-
-```math
-= \lim_{x \to 0} \frac{x^2+100-100}{x^2(\sqrt{x^2+100}+10)} = \lim_{x \to 0} \frac{x^2}{x^2(\sqrt{x^2+100}+10)} = \frac{1}{\sqrt{0^2+100}+10}
-```
-
-
-
-
-
-```math
-= \frac{1}{10+10} = \underline{\underline{1/20}}
-```
-
-
+**22.** $\displaystyle\lim_{x\to1}\frac{x^{-1}-1}{x-1}=\lim_{x\to1}\frac{\frac{1-x}{x}}{x-1}=\lim_{x\to1}\frac{-1}{x}=\mathbf{-1}$
 
 ---
 
-## The Sandwitch theorem
+<!-- page 6 | Sandwich theorem -->
 
-Suppose that $g(x) \le f(x) \le h(x)$ for all $x$ in some open interval containing $C$ let
+# The sandwich (squeeze) theorem
 
+## The idea
 
+If a function is trapped between two others, and both of those are squeezed towards the same value, then the trapped function has no choice but to go there too.
 
-```math
-\lim_{x \to c} g(x) = L
-```
+> **Sandwich theorem.** Suppose $g(x)\le f(x)\le h(x)$ for all $x$ near $c$ (except possibly at $c$ itself). If $\displaystyle\lim_{x\to c}g(x)=\lim_{x\to c}h(x)=L$, then $\displaystyle\lim_{x\to c}f(x)=L$.
 
+Use it when $f$ is awkward (for example it contains $\sin\frac1x$, which wiggles wildly), but you can bound it by simple functions.
 
+## Example 1: bounds are given
 
+A function $u$ satisfies
+$$
+1-\frac{x^2}{4}\ \le\ u(x)\ \le\ 1+\frac{x^2}{2}\qquad(x\ne0).
+$$
+Find $\lim_{x\to0}u(x)$.
 
-```math
-\lim_{x \to c} h(x) = L
-```
+$$
+\lim_{x\to0}\left(1-\frac{x^2}{4}\right)=1,\qquad \lim_{x\to0}\left(1+\frac{x^2}{2}\right)=1
+$$
 
+Both bounds tend to $1$, so $\displaystyle\lim_{x\to0}u(x)=\mathbf{1}$.
 
+## Example 2: find the bounds yourself
 
+Find $\displaystyle\lim_{x\to0}x^2\sin\frac1{x^2}$.
 
-```math
-\lim_{x \to c} f(x) = L
-```
+We cannot substitute because $\sin\frac1{x^2}$ is undefined at $0$. But the sine of anything lies between $-1$ and $1$:
 
+$$
+-1\le\sin\frac1{x^2}\le1
+$$
 
+Multiply every part by $x^2$ (which is $\ge0$, so the inequalities keep their direction):
 
-> *Sandwitch theorem also known as squeeze theorem, is a calculus theorem that helps to determine the limit of an inequality function by comparing it to two other function with known limit.*
+$$
+-x^2\ \le\ x^2\sin\frac1{x^2}\ \le\ x^2
+$$
 
----
+Since $\lim_{x\to0}(-x^2)=0$ and $\lim_{x\to0}x^2=0$:
 
-**Q** Given a function $u$ satisfying the condition $1 - \frac{x^2}{4} \le u(x) \le 1 + \frac{x^2}{2}, x \ne 0$ for all $x$ not equal to $0$, find $\lim_{x \to 0} u(x)$.
+$$
+\lim_{x\to0}x^2\sin\frac1{x^2}=\mathbf{0}
+$$
 
-By using sandwitch theorem
+> **Recipe for "bound it yourself" questions.** (1) Start from a known bound such as $-1\le\sin(\cdot)\le1$ or $-1\le\cos(\cdot)\le1$. (2) Multiply by whatever is outside. (3) Take limits of both ends. (4) If they agree, you are done.
 
+## Example 3: a root between two roots
 
+If $\sqrt{9-5x^2}\le f(x)\le\sqrt{x^2+9}$ for $x\ne0$, find $\lim_{x\to0}f(x)$.
 
-```math
-\lim_{x \to 0} g(x) = \lim_{x \to 0} 1 - \frac{x^2}{4} = 1 - \frac{0}{4} = 1 - 0 = 1
-```
+$$
+\lim_{x\to0}\sqrt{9-5x^2}=\sqrt9=3,\qquad\lim_{x\to0}\sqrt{x^2+9}=\sqrt9=3
+\ \Rightarrow\ \lim_{x\to0}f(x)=\mathbf{3}
+$$
 
+## Example 4: one-sided bound
 
+If $1-\dfrac{x^2}{6}\le u(x)\le1$ for $x\ne0$, find $\displaystyle\lim_{x\to0}u(x)$.
 
+$$
+\lim_{x\to0}\left(1-\frac{x^2}{6}\right)=1,\qquad\lim_{x\to0}1=1\ \Rightarrow\ \lim_{x\to0}u(x)=\mathbf{1}
+$$
 
-
-```math
-\lim_{x \to 0} h(x) = \lim_{x \to 0} 1 + \frac{x^2}{2} = 1 + \frac{0}{2} = 1 + 0 = 1
-```
-
-
-
-
-
-```math
-\therefore \underline{\underline{\lim_{x \to 0} u(x) = 1}}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 6 -->
-
-How does the function $g(x) = x^2 \text{sin} \frac{1}{x^2}$ behaves near $x = 0$ :
-
-By using sandwitch theorem,
-
-Since the range of the $\sin$ function lies between -1 and 1 ,
-Similarly $\sin \frac{1}{x^2}$ is also lies blw -1 and 1
-
-i.e, $-1 \le \sin(\frac{1}{x^2}) \le 1$ [multiplying $x^2$ in both sides]
-
-$\Rightarrow -x^2 \le x^2 \sin(\frac{1}{x^2}) \le x^2$
-
-$f(x) \le g(x) \le h(x)$ By using Sandwitch theorem
-
-
-
-```math
-\lim_{x \to 0} f(x) = \lim_{x \to 0} -x^2 = 0
-```
-
-
-
-
-
-```math
-\lim_{x \to 0} h(x) = \lim_{x \to 0} x^2 = 0
-```
-
-
-
-
-
-```math
-\therefore \lim_{x \to 0} g(x) = \lim_{x \to 0} x^2 \cdot \sin(\frac{1}{x^2}) = 0
-```
-
-
+> **Note on the source.** The handwritten page applied this to $\dfrac{2\sin x}{2-2\cos x}$. That function does not satisfy these bounds (it blows up near $0$), so it was most likely a transcription slip. The sandwich argument above is correct for any $u(x)$ that really is trapped between the two bounds.
 
 ---
 
-Q Find the limit of the following.
+<!-- page 7 | Limits at infinity -->
 
-1. $\lim_{x \to 3} \frac{x^2-6x+9}{x-3}$
+# Limits at infinity
 
-   
+## The idea
 
-```math
+$\displaystyle\lim_{x\to\infty}f(x)$ asks: **what does $f(x)$ settle down to when $x$ becomes enormous?**
+
+The one fact you need:
+
+$$
+\lim_{x\to\infty}\frac1x=0,\qquad\lim_{x\to\infty}\frac1{x^2}=0,\qquad\text{and in general}\quad \lim_{x\to\infty}\frac{k}{x^n}=0\ (n>0)
+$$
+
+A constant divided by something huge is tiny.
+
+## Method for rational functions
+
+> **Divide the top and the bottom by the highest power of $x$ in the denominator.** Every leftover fraction like $\frac{2}{x}$ or $\frac1{x^2}$ then goes to $0$.
+
+### Example 1
+
+$$
+\lim_{x\to\infty}\frac{3x^2+2x+1}{2x^2+x+1}
+=\lim_{x\to\infty}\frac{3+\frac2x+\frac1{x^2}}{2+\frac1x+\frac1{x^2}}
+=\frac{3+0+0}{2+0+0}=\mathbf{\tfrac32}
+$$
+
+### Example 2
+
+$$
+\lim_{x\to\infty}\frac{4x^2-x+2}{2x^2+3x-1}
+=\lim_{x\to\infty}\frac{4-\frac1x+\frac2{x^2}}{2+\frac3x-\frac1{x^2}}
+=\frac{4}{2}=\mathbf{2}
+$$
+
+### Example 3 (factor out the top power instead)
+
+$$
+\lim_{x\to\infty}\frac{2x^2+3x+1}{x^2-x+4}
+=\lim_{x\to\infty}\frac{x^2\left(2+\frac3x+\frac1{x^2}\right)}{x^2\left(1-\frac1x+\frac4{x^2}\right)}
+=\frac{2}{1}=\mathbf{2}
+$$
+
+## Shortcut: compare the degrees
+
+For $\dfrac{P(x)}{Q(x)}$ with $\deg P=m$ and $\deg Q=n$, as $x\to\infty$:
+
+| Case | Limit |
+| --- | --- |
+| $m<n$ (bottom grows faster) | $0$ |
+| $m=n$ (same growth) | ratio of the **leading coefficients** |
+| $m>n$ (top grows faster) | no finite limit (it grows without bound) |
+
+Check Example 1: both degrees are $2$, leading coefficients $3$ and $2$ → $\tfrac32$ ✓.
+
+> **Watch out.** $\infty$ is not a number. Writing $\frac{2}{\infty}=0$ is a convenient shorthand, but the honest statement is $\frac2x\to0$ as $x\to\infty$.
+
+---
+
+<!-- page 8 | Continuity -->
+
+# Continuity
+
+## The idea
+
+A function is continuous at a point if you can draw its graph through that point **without lifting your pen**. No jump, no hole, no blow-up.
+
+## Definition
+
+$f$ is **continuous at $x=a$** if all three hold:
+
+1. $f(a)$ exists (the function is defined at $a$);
+2. $\displaystyle\lim_{x\to a}f(x)$ exists;
+3. $\displaystyle\lim_{x\to a}f(x)=f(a)$ (the limit equals the actual value).
+
+If any one fails, $f$ is **discontinuous** at $a$.
+
+### Example 1: $f(x)=x^2$ at $x=3$
+
+$f(3)=9$ and $\lim_{x\to3}x^2=9$, so the limit equals the value. **Continuous at $3$.**
+
+### Example 2: $f(x)=\dfrac1x$ at $x=1$ and at $x=0$
+
+- At $x=1$: $f(1)=1$ and $\lim_{x\to1}\frac1x=1$ → continuous.
+- At $x=0$: $f(0)=\frac10$ is undefined → condition 1 fails → **not continuous at $0$.**
+
+## A continuous function
+
+A function is **continuous** (with no "at a point") if it is continuous at every point of its domain.
+
+- $f(x)=x^2$ is continuous everywhere.
+- $f(x)=\dfrac1x$ is continuous at every point **where it is defined**. It has a discontinuity at $x=0$, which is not in its domain.
+
+## Where is a function continuous?
+
+Polynomials, $\sin$, $\cos$, $e^x$ and $|x|$ are continuous everywhere. Sums, products and compositions of continuous functions are continuous. Quotients are continuous **except where the denominator is $0$**. So the job is usually: *find where the denominator is $0$.*
+
+### Practice
+
+**1.** $y=\dfrac1{x-2}-3x$. Denominator $x-2=0$ at $x=2$. **Discontinuous only at $x=2$.**
+
+**2.** $y=\dfrac{x+1}{x^2-4x+3}$. Solve $x^2-4x+3=(x-1)(x-3)=0$ → $x=1,\,3$. **Continuous except at $x=1$ and $x=3$.**
+
+**3.** $y=|x+1|+\sin x$. Both parts are continuous everywhere. **Continuous at every point.**
+
+**4.** $y=\dfrac1{|x|+1}-\dfrac{x^2}{2}$. The denominator $|x|+1\ge1$ is never $0$. **Continuous at every point.**
+
+**5.** $y=\dfrac{\cos x}{x}$. Denominator is $0$ at $x=0$. **Continuous except at $x=0$.**
+
+**6.** $y=\tan\dfrac{\pi x}2$. Since $\tan\theta=\dfrac{\sin\theta}{\cos\theta}$, it breaks wherever $\cos\dfrac{\pi x}{2}=0$, i.e. when $\dfrac{\pi x}2$ is an odd multiple of $\dfrac\pi2$. That happens at $x=\pm1,\pm3,\pm5,\dots$ **Continuous at every point except the odd integers.**
+
+---
+
+<!-- page 9 | One-sided limits -->
+
+# One-sided limits and one-sided continuity
+
+## Notation
+
+- $\displaystyle\lim_{x\to a^-}f(x)$ is the **left-hand limit**: approach $a$ from values *below* $a$.
+- $\displaystyle\lim_{x\to a^+}f(x)$ is the **right-hand limit**: approach $a$ from values *above* $a$.
+
+> **Key idea.** $\displaystyle\lim_{x\to a}f(x)$ exists **if and only if** both one-sided limits exist and are equal.
+> (This is exactly why the step function from page 2 has no limit at $0$: its left limit is $0$ and its right limit is $1$.)
+
+## One-sided continuity
+
+| Type | Condition at $x=a$ |
+| --- | --- |
+| Continuous **from the left** | $\displaystyle\lim_{x\to a^-}f(x)=f(a)$ |
+| Continuous **from the right** | $\displaystyle\lim_{x\to a^+}f(x)=f(a)$ |
+
+$f$ is continuous at $a$ exactly when it is continuous from **both** sides.
+
+## How to check, in 3 steps
+
+1. Pick the formula that applies on the side you are approaching from, and take its limit.
+2. Find $f(a)$ using the formula that includes $a$ (watch the $\le$ and $\ge$ signs).
+3. Compare.
+
+### Example 1. Left-continuity at $x=2$
+
+$$
+f(x)=\begin{cases}x^2+3,&x<2\\5,&x\ge2\end{cases}
+$$
+
+- Left limit: use $x^2+3$ → $2^2+3=7$.
+- Value: $f(2)=5$ (since $x\ge2$ uses the second line).
+- $7\neq5$ → **not continuous from the left at $2$.**
+
+(From the right, the limit is $5=f(2)$, so it *is* continuous from the right.)
+
+### Example 2. Right-continuity at $x=-1$
+
+$$
+g(x)=\begin{cases}\sin x,&x\le-1\\x^2,&x>-1\end{cases}
+$$
+
+- Right limit: use $x^2$ → $(-1)^2=1$.
+- Value: $g(-1)=\sin(-1)=-\sin1\approx-0.84$.
+- $1\neq-\sin1$ → **not continuous from the right at $-1$.**
+
+### Example 3. Right-continuity at $x=3$
+
+$$
+f(x)=\begin{cases}3x-9,&x\le3\\x^2-6x+9,&x>3\end{cases}
+$$
+
+- Right limit: $3^2-6(3)+9=0$.
+- Value: $f(3)=3(3)-9=0$.
+- Equal → **continuous from the right at $3$.** (The left limit is also $0$, so $f$ is fully continuous at $3$.)
+
+### Example 4. Left-continuity at $x=1$
+
+$$
+f(x)=\begin{cases}2x+1,&x<1\\3,&x\ge1\end{cases}
+$$
+
+- Left limit: $2(1)+1=3$.
+- Value: $f(1)=3$.
+- Equal → **continuous from the left at $1$.**
+
+---
+
+<!-- page 10 | The derivative -->
+
+# The derivative
+
+## The idea
+
+Take two points on a curve and draw the straight line through them (a **secant**). Slide the second point closer and closer to the first. The secant turns into the **tangent line**, and its slope is the **derivative**.
+
+The slope of the secant between $x=a$ and $x=a+h$ is the *difference quotient*
+
+$$
+\frac{f(a+h)-f(a)}{h}
+$$
+
+Letting the gap $h$ shrink to $0$ gives the derivative:
+
+$$
+\boxed{\,f'(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}{h}\,}
+$$
+
+This is the **first principle** (or definition) of the derivative.
+
+> **Four ways to say the same thing.** $f'(a)$ is
+> (1) the slope of the graph of $y=f(x)$ at $x=a$,
+> (2) the slope of the tangent line to the curve at $x=a$,
+> (3) the instantaneous rate of change of $f$ at $a$,
+> (4) the derivative of $f$ at $a$.
+
+## Method for first-principle questions
+
+1. Write $f(a+h)$ and $f(a)$.
+2. Form $\dfrac{f(a+h)-f(a)}{h}$ and **simplify until $h$ cancels** from the top and the bottom.
+3. *Then* let $h\to0$.
+
+The $0/0$ you see before simplifying is expected. The cancelling is what removes it.
+
+## Examples
+
+### 1. $f(x)=x^2$ at $x=2$
+
+$$
+f'(2)=\lim_{h\to0}\frac{(2+h)^2-4}{h}=\lim_{h\to0}\frac{4+4h+h^2-4}{h}=\lim_{h\to0}\frac{h(4+h)}{h}=\lim_{h\to0}(4+h)=\mathbf{4}
+$$
+
+### 2. $f(x)=\sqrt x$ at $x=4$
+
+Square root on top, so use the conjugate:
+
+$$
+f'(4)=\lim_{h\to0}\frac{\sqrt{4+h}-2}{h}\cdot\frac{\sqrt{4+h}+2}{\sqrt{4+h}+2}
+=\lim_{h\to0}\frac{(4+h)-4}{h\,(\sqrt{4+h}+2)}
+=\lim_{h\to0}\frac{1}{\sqrt{4+h}+2}=\frac1{2+2}=\mathbf{\tfrac14}
+$$
+
+### 3. $f(x)=3x^2+2x$ at $x=1$
+
+$$
+f'(1)=\lim_{h\to0}\frac{3(1+h)^2+2(1+h)-5}{h}
+=\lim_{h\to0}\frac{3+6h+3h^2+2+2h-5}{h}
+=\lim_{h\to0}\frac{8h+3h^2}{h}=\lim_{h\to0}(8+3h)=\mathbf{8}
+$$
+
+### 4. $f(x)=\dfrac1x$ at $x=2$
+
+$$
+f'(2)=\lim_{h\to0}\frac{\frac1{2+h}-\frac12}{h}
+=\lim_{h\to0}\frac{\frac{2-(2+h)}{2(2+h)}}{h}
+=\lim_{h\to0}\frac{-h}{2(2+h)\,h}
+=\lim_{h\to0}\frac{-1}{2(2+h)}=\mathbf{-\tfrac14}
+$$
+
+### 5. $f(x)=\sin x$ at $x=0$
+
+$$
+f'(0)=\lim_{h\to0}\frac{\sin(0+h)-\sin0}{h}=\lim_{h\to0}\frac{\sin h}{h}=\mathbf{1}
+$$
+
+This uses the standard limit $\displaystyle\lim_{h\to0}\frac{\sin h}{h}=1$.
+
+> **Watch out.** Many students finish this one with L'Hôpital's rule (differentiating top and bottom). That is circular here, because you would be using $\frac{d}{dh}\sin h=\cos h$, which is the very derivative you are trying to prove. Quote the standard limit instead.
+
+### 6. $f(x)=\ln x$ at $x=1$
+
+$$
+f'(1)=\lim_{h\to0}\frac{\ln(1+h)-\ln1}{h}=\lim_{h\to0}\frac{\ln(1+h)}{h}=\mathbf{1}
+$$
+
+using the standard limit $\displaystyle\lim_{h\to0}\frac{\ln(1+h)}{h}=1$.
+
+---
+
+<!-- page 11 | Rules of differentiation -->
+
+# Rules of differentiation
+
+First principle is slow. These rules let you differentiate almost anything in one line.
+
+## Basic rules
+
+| Rule | Formula |
+| --- | --- |
+| Constant | $\dfrac{d}{dx}(c)=0$ |
+| Power | $\dfrac{d}{dx}(x^n)=n\,x^{\,n-1}$ |
+| Constant multiple | $\dfrac{d}{dx}\big(k f(x)\big)=k\,f'(x)$ |
+| Sum / difference | $\dfrac{d}{dx}\big(f\pm g\big)=f'\pm g'$ |
+| **Product** | $\dfrac{d}{dx}\big(f\,g\big)=f\,g'+g\,f'$ |
+| **Quotient** | $\dfrac{d}{dx}\left(\dfrac{f}{g}\right)=\dfrac{g\,f'-f\,g'}{g^{2}}$ |
+
+> **Memory aid for the quotient rule.** "Low d-high minus high d-low, over low squared". The order on top matters: $g f'-f g'$. Swapping them flips the sign.
+
+## Standard derivatives to learn by heart
+
+| $f(x)$ | $f'(x)$ |
+| --- | --- |
+| $x^n$ | $n x^{n-1}$ |
+| $\sqrt x$ | $\dfrac1{2\sqrt x}$ |
+| $\dfrac1x$ | $-\dfrac1{x^2}$ |
+| $e^x$ | $e^x$ |
+| $\ln x$ | $\dfrac1x$ |
+| $\sin x$ | $\cos x$ |
+| $\cos x$ | $-\sin x$ |
+| $\tan x$ | $\sec^2 x$ |
+
+## Worked examples
+
+**1. Power rule.** $f(x)=5x^4$
+
+$$
+f'(x)=5\cdot4x^3=\mathbf{20x^3}
+$$
+
+**2. Product rule.** $f(x)=2x^3\sin x$. Take $f=2x^3$, $g=\sin x$:
+
+$$
+f'(x)=2x^3\cos x+\sin x\cdot6x^2=\mathbf{2x^3\cos x+6x^2\sin x}
+$$
+
+**3. Product rule.** $f(x)=e^x\cos x$
+
+$$
+f'(x)=e^x(-\sin x)+\cos x\cdot e^x=\mathbf{e^x(\cos x-\sin x)}
+$$
+
+**4. Quotient rule.** $f(x)=\dfrac{e^x}{x^2}$
+
+$$
+f'(x)=\frac{x^2\cdot e^x-e^x\cdot2x}{(x^2)^2}=\frac{x\,e^x(x-2)}{x^4}=\mathbf{\frac{e^x(x-2)}{x^3}}
+$$
+
+**5. Quotient rule.** $f(x)=\dfrac{\ln x}{x^3}$
+
+$$
+f'(x)=\frac{x^3\cdot\frac1x-\ln x\cdot3x^2}{(x^3)^2}=\frac{x^2-3x^2\ln x}{x^6}=\mathbf{\frac{1-3\ln x}{x^4}}
+$$
+
+**6. Quotient rule.** $f(x)=\dfrac{x^2}{\sin x}$
+
+$$
+f'(x)=\frac{\sin x\cdot2x-x^2\cdot\cos x}{\sin^2x}=\mathbf{\frac{2x\sin x-x^2\cos x}{\sin^2x}}
+$$
+
+**7. Slope of a curve.** Find the slope of $y=x^2$ at $x=3$.
+
+$$
+\frac{dy}{dx}=2x\ \Rightarrow\ \left.\frac{dy}{dx}\right|_{x=3}=\mathbf{6}
+$$
+
+(First principle gives the same: $\lim_{h\to0}\frac{(3+h)^2-9}{h}=\lim_{h\to0}(6+h)=6$.)
+
+**8. Slope of a curve.** Find the slope of $y=\sin x$ at $x=\dfrac\pi4$.
+
+$$
+\frac{dy}{dx}=\cos x\ \Rightarrow\ \cos\frac\pi4=\mathbf{\frac1{\sqrt2}}
+$$
+
+---
+
+<!-- page 12 | Higher-order derivatives -->
+
+# Higher-order derivatives
+
+## The idea
+
+The derivative of a function is itself a function, so you can differentiate it again.
+
+| Order | Notation |
+| --- | --- |
+| 1st | $y'$ , $f'(x)$ , $\dfrac{dy}{dx}$ |
+| 2nd | $y''$ , $f''(x)$ , $\dfrac{d^2y}{dx^2}$ |
+| 3rd | $y'''$ , $f'''(x)$ , $\dfrac{d^3y}{dx^3}$ |
+| $n$th | $y^{(n)}$ , $f^{(n)}(x)$ , $\dfrac{d^ny}{dx^n}$ |
+
+Just differentiate step by step, **using the previous answer each time**.
+
+> **Meaning.** If $f(x)$ is position, then $f'$ is velocity and $f''$ is acceleration. The second derivative also tells you how a curve bends (page 18).
+
+## Examples
+
+**1. Polynomial, 4th derivative.** $y=3x^5$
+
+$$
+y'=15x^4,\quad y''=60x^3,\quad y'''=180x^2,\quad y^{(4)}=\mathbf{360x}
+$$
+
+**2. Reciprocal.** $f(x)=\dfrac1x=x^{-1}$
+
+$$
+f'(x)=-\frac1{x^2},\qquad f''(x)=\mathbf{\frac2{x^3}}
+$$
+
+**3. Third derivative.** $f(x)=x^5-4x^3+x$
+
+$$
+f'=5x^4-12x^2+1,\quad f''=20x^3-24x,\quad f'''=\mathbf{60x^2-24}
+$$
+
+**4. All derivatives.** $y=\dfrac{x^4}2-\dfrac{3x^2}2-x$
+
+$$
+y'=2x^3-3x-1,\quad y''=6x^2-3,\quad y'''=12x,\quad y^{(4)}=12,\quad y^{(5)}=\mathbf{0}
+$$
+
+A polynomial of degree $n$ becomes a constant after $n$ derivatives and $0$ after $n+1$.
+
+**5. Product each time.** $y=e^x\sin x$
+
+$$
 \begin{aligned}
-   &\Rightarrow x^2-6x+9 = 0 \\
-   &\Rightarrow (x-3)(x-3) = 0 \quad \begin{matrix} P = 9 \\ S = -6 \end{matrix}
-   \end{aligned}
-```
-
-
-
-   
-
-```math
-\Rightarrow \lim_{x \to 3} \frac{x^2-6x+9}{x-3} = \lim_{x \to 3} \frac{(x-3)^2}{(x-3)} = x-3 = 3-3 = 0
-```
-
-
-
-2. $\lim_{x \to -4} \frac{2x+8}{x^2+x-12}$
-
-   
-
-```math
-= \lim_{x \to -4} \frac{2(x+4)}{(x+4)(x-3)} = \frac{2}{-4-3} = \frac{2}{-7} = -2/7
-```
-
-
-
-3. $\lim_{x \to 5} \frac{x^2-3x-10}{x^2-10x+25} = \lim_{x \to 5} \frac{(x-5)(x+2)}{(x-5)(x-5)}$
-
-   
-
-```math
-\begin{aligned}
-   \Rightarrow & x^2-3x-10 = 0 \\
-   \begin{matrix} P = -10 \\ S = -3 \end{matrix} & (x-5)(x+2) = 0 \\
-   \Rightarrow & x^2-10x+25 = 0 \\
-   \begin{matrix} P = 25 \\ S = -10 \end{matrix} & (x-5)(x-5) = 0
-   \end{aligned}
-```
-
-
-
-   
-
-```math
-= \lim_{x \to 5} \frac{(x+2)}{(x-5)}
-```
-
-
-
-   it cannot be factorised further
-
-   
-
-```math
-\therefore \text{limit does not exists!}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 7 -->
-
-4. $\lim_{x \to -2} (x^3 - 15)$
-
-   $= ((-2)^3 - 15) = -8 - 15 = \underline{\underline{-23}}$
-
----
-
-5. $\lim_{x \to 2} (-x^2 + 5x - 2) = \lim_{x \to 2} (-x^2) + \lim_{x \to 2} (5x) - \lim_{x \to 2} (2)$
-
-   $\text{\sout{= -4 + 10 - 2 = 12}}$
-
-   $= -4 + 10 - 2 = \underline{\underline{4}}$
-
----
-
-6. $\lim_{x \to 2} \frac{2x + 5}{11 - x^3}$
-
-   $= \frac{\lim_{x \to 2} 2x + 5}{\lim_{x \to 2} 11 - x^3} = \frac{2 \times 2 + 5}{11 - 2^3} = \frac{9}{3} = \underline{\underline{3}}$
-
----
-
-7. $\lim_{x \to 2/3} (8 - 3x)(2x - 1)$
-
-   $= \lim_{x \to 2/3} (8 - 3x) \times \lim_{x \to 2/3} (2x - 1)$
-
-   $= 8 - 3 \times \frac{2}{3} \cdot 2 \times \frac{2}{3} - 1$
-
-   $= 6 \times \frac{1}{3} = \text{\sout{4/2}} \text{ } 6/3 = \underline{\underline{2}}$
-
----
-
-8. $\lim_{x \to -1/2} 4x(3x + 4)^2$
-
-   $= \lim_{x \to -1/2} (4x) \cdot \left(\lim_{x \to -1/2} (3x + 4)\right)^2$
-
-   $= \overset{2}{\cancel{4}}x \cdot -\frac{1}{2} \cdot \left(3x \cdot -\frac{1}{2} + 4\right)^2$
-
-   $= -2 \cdot \left(\frac{-3 + 8}{2}\right)^2 = -2 \cdot \left(\frac{5}{2}\right)^2 = \frac{-\cancel{2} \times 25}{\cancel{4}_2} = \underline{\underline{\frac{-25}{2}}}$
-
----
-
-9. $\lim_{y \to -3} (5 - y)^{4/3} \qquad\qquad \begin{matrix} (2^3)^{4/3} \\ = 2 \end{matrix}$
-
-   $= \left(\lim_{y \to -3} 5 - y\right)^{4/3} = (5 - (-3))^{4/3} = \text{\sout{5+}} (8)^{4/3} = (2^3)^{4/3} = (2)^4 = \underline{\underline{16}}$
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 8 -->
-
-10. $\lim_{h \to 0} \frac{3}{\sqrt{3h+1} + 1}$
-
-
-
-```math
-= \frac{\lim_{h \to 0} 3}{\lim_{h \to 0} \sqrt{3h+1} + 1} = \frac{3}{\sqrt{1} + 1} = \underline{3/2}
-```
-
-
-
----
-
-11. $\lim_{h \to 1} \frac{\sqrt{6h+10} - 5}{h^2}$
-
-
-
-```math
-= \frac{\lim_{h \to 1} \sqrt{6h+10} - 5}{\lim_{h \to 1} h^2} = \frac{\sqrt{6+10} - 5}{1} = \frac{4-5}{1} = \underline{-1}
-```
-
-
-
----
-
-12. $\lim_{x \to 1} \frac{x-1}{\sqrt{x+3} - 2}$
-
-
-
-```math
-= \frac{\lim_{x \to 1} x-1}{\lim_{x \to 1} \sqrt{x+3} - 2} = \frac{1-1}{\sqrt{1+3} - 2} = \frac{0}{0} \quad \text{Not defined}
-```
-
-
-
-
-
-```math
-\lim_{x \to 1} \frac{(x-1)(\sqrt{x+3} + 2)}{(\sqrt{x+3} - 2)(\sqrt{x+3} - 2)} = \lim_{x \to 1} \frac{(x-1)(\sqrt{x+3} + 2)}{(\sqrt{x+3})^2 - (2)^2}
-```
-
-
-
-
-
-```math
-= \lim_{x \to 1} \frac{(x-1)(\sqrt{x+3} + 2)}{x+3-4} = \lim_{x \to 1} \frac{(x-1)(\sqrt{x+3} - 2)}{(x-1)} = \lim_{x \to 1} \sqrt{1+3} + 2
-```
-
-
-
-
-
-```math
-= 2+2 = \underline{\underline{4}}
-```
-
-
-
----
-
-13. $\lim_{x \to 5} \frac{x-5}{x^2-25}$
-
-$\Rightarrow x^2-25 = (x+5)(x-5)$
-
-Subs $(x+5)(x-5)$
-
-
-
-```math
-\lim_{x \to 5} \frac{x-5}{(x+5)(x-5)} = \frac{1}{5+5} = \underline{\underline{\frac{1}{10}}}
-```
-
-
-
----
-
-14. $\lim_{x \to 3} \frac{x+4}{x^2+7x+14}$
-
-
-
-```math
-= \frac{\lim_{x \to 3} x+4}{\lim_{x \to 3} (x^2+7x+14)} = \frac{3+4}{9+21+14} = \underline{\underline{\frac{7}{44}}}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 9 -->
-
-15. 
-
-
-```math
-\lim_{x \to -5} \frac{x^2+3x-10}{x+5}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-\Rightarrow & x^2+3x-10 = 0 \\
-& (x+5)(x-2) = 0
+y'&=e^x\cos x+\sin x\cdot e^x=e^x(\sin x+\cos x)\\
+y''&=e^x(\cos x-\sin x)+(\sin x+\cos x)e^x=2e^x\cos x\\
+y'''&=2\left[e^x(-\sin x)+\cos x\cdot e^x\right]=2e^x(\cos x-\sin x)\\
+y^{(4)}&=2e^x(-\sin x-\cos x)+(\cos x-\sin x)\,2e^x=\mathbf{-4e^x\sin x}
 \end{aligned}
-```
+$$
 
+**6. Product with a logarithm.** Third derivative of $f(x)=x^3\ln x$
 
-
-
-
-```math
+$$
 \begin{aligned}
-&= \lim_{x \to -5} \frac{(x+5)(x-2)}{x+5} \\
-&= -5-2 = \underline{\underline{-7}}
+f'(x)&=x^3\cdot\frac1x+\ln x\cdot3x^2=x^2+3x^2\ln x\\
+f''(x)&=2x+3x^2\cdot\frac1x+6x\ln x=5x+6x\ln x\\
+f'''(x)&=5+6x\cdot\frac1x+6\ln x=\mathbf{11+6\ln x}
 \end{aligned}
-```
+$$
 
+**7. Quotient with a root.** First derivative of $f(x)=\dfrac{x^3}{\sqrt{x^2+1}}$
 
+$$
+f'(x)=\frac{\sqrt{x^2+1}\cdot3x^2-x^3\cdot\dfrac{x}{\sqrt{x^2+1}}}{x^2+1}
+=\frac{\dfrac{3x^2(x^2+1)-x^4}{\sqrt{x^2+1}}}{x^2+1}
+=\mathbf{\frac{2x^4+3x^2}{(x^2+1)^{3/2}}}
+$$
 
----
-
-16. 
-
-
-```math
-\lim_{x \to 2} \frac{x^2-7x+10}{x-2}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-\Rightarrow & x^2-7x+10 = 0 \\
-& (x-5)(x-2) = 0
-\end{aligned}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-&= \lim_{x \to 2} \frac{(x-5)(x-2)}{x-2} \\
-&= 2-5 = \underline{\underline{-3}}
-\end{aligned}
-```
-
-
+Here $\dfrac{d}{dx}\sqrt{x^2+1}=\dfrac{2x}{2\sqrt{x^2+1}}=\dfrac{x}{\sqrt{x^2+1}}$ comes from the chain rule (page 14).
 
 ---
 
-17. 
+<!-- page 13 | Rates of change -->
 
+# Instantaneous rate of change
 
-```math
-\lim_{t \to 2} \frac{t^2+4t+3}{t^2-9}
-```
+## The idea
 
+The **average** rate of change over an interval is "change in output ÷ change in input". The **instantaneous** rate of change at one moment is what you get when that interval shrinks to nothing. It is exactly the derivative.
 
+> **Recipe.** (1) Differentiate. (2) Substitute the given value. (3) Attach units: *units of the output per unit of the input*.
 
+## Examples
 
+**1.** Rate of change of $f(x)=x^2$ at $x=5$:
 
-```math
-= \frac{\lim_{t \to 2} t^2+4t+3}{\lim_{t \to 2} t^2-9} = \frac{4+8+3}{4-9} = \frac{-15}{5} = \underline{\underline{-3}}
-```
+$$
+f'(x)=2x\ \Rightarrow\ f'(5)=\mathbf{10}
+$$
 
+**2.** Rate of change of $f(x)=4x^3-x^2+2x-7$ at $x=1$:
 
+$$
+f'(x)=12x^2-2x+2\ \Rightarrow\ f'(1)=12-2+2=\mathbf{12}
+$$
 
----
+**3. Velocity.** A car's position is $s(t)=4t^2$ metres at time $t$ seconds. Its instantaneous velocity at $t=5$ s:
 
-18. 
+$$
+s'(t)=8t\ \Rightarrow\ s'(5)=\mathbf{40\ m/s}
+$$
 
+**4. Stress in a material.** $\sigma(t)=100t-5t^2$, with $t$ in seconds. Rate of change of stress at $t=8$ s:
 
-```math
-\lim_{t \to -2} \frac{-2t-4}{t^3+2t^2}
-```
+$$
+\sigma'(t)=100-10t\ \Rightarrow\ \sigma'(8)=100-80=\mathbf{20}
+$$
 
+in units of $\sigma$ per second (for example Pa/s if $\sigma$ is measured in pascals).
 
-
-
-
-```math
-= \lim_{t \to -2} \frac{-2(t+2)}{t^2(t+2)} = \frac{-2}{-2^2} = \frac{-2}{4} = \underline{\underline{-1/2}}
-```
-
-
-
----
-
-19. 
-
-
-```math
-\lim_{x \to 0} (2\sin x - 1)
-```
-
-
-
-
-
-```math
-\begin{aligned}
-&= \lim_{x \to 0} 2\sin x - \lim_{x \to 0} 1 \\
-&= 2 \times \sin 0 - 1 \\
-&= \underline{\underline{-1}}
-\end{aligned}
-```
-
-
+> **Sign tells the story.** A positive rate means the quantity is increasing at that moment; a negative rate means it is decreasing; zero means it is momentarily flat.
 
 ---
 
-20. 
+<!-- page 14 | Chain rule -->
 
+# The chain rule
 
-```math
-\lim_{x \to 0} \frac{1+x+\sin x}{2\cos x}
-```
+## The idea
 
+When one function sits **inside** another, like $\sin(4x^3)$ (a sine of a cube-ish thing), differentiate from the outside in:
 
-
-
-
-```math
-\begin{aligned}
-&= \frac{\lim_{x \to 0} 1+x+\sin x}{\lim_{x \to 0} 2\cos x} \\
-&= \frac{1+0+\sin 0}{2\cos 0} = \underline{\underline{\frac{1}{2}}}
-\end{aligned}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 10 -->
-
-21. $\lim_{x \to \pi} \sqrt{x+2} \{\sin(x/2)\}
-
-
-
-```math
-= \sqrt{\pi+2} \times 1 = \underline{\underline{\sqrt{\pi+2}}}
-```
-
-
-
----
-
-22. $\lim_{x \to -3} \frac{2 - \sqrt{x^2-5}}{x+3}$
-
-
-
-```math
-= \lim_{x \to -3} \frac{(2 - \sqrt{x^2-5})(2 + \sqrt{x^2-5})}{(x+3)(2 + \sqrt{x^2-5})}
-```
-
-
-
-
-
-```math
-= \lim_{x \to -3} \frac{(2^2 - (\sqrt{x^2-5})^2)}{(x+3)(2 + \sqrt{x^2-5})} = \lim_{x \to -3} \frac{4 - x^2 + 5}{(x+3)(2 + \sqrt{x^2-5})}
-```
-
-
-
-
-
-```math
-= \lim_{x \to -3} \frac{9 - x^2}{(x+3)(2 + \sqrt{x^2-5})} = \lim_{x \to -3} \frac{(3+x)(3-x)}{(x+3)(2 + \sqrt{x^2-5})}
-```
-
-
-
-
-
-```math
-= \frac{3+3}{2 + \sqrt{9-5}} = \frac{6}{2+2} = 6/4 = \underline{\underline{3/2}}
-```
-
-
-
----
-
-23. $\lim_{x \to 1} \frac{x^{-1} - 1}{x - 1}$
-
-
-
-```math
-= \lim_{x \to 1} \frac{\frac{1}{x} - 1}{x - 1} = \frac{\lim_{x \to 1} \frac{1-x}{x}}{\lim_{x \to 1} x - 1} \qquad ~~= \lim_{x \to 1} \frac{1-1}{1-1} = \frac{0}{1} \times 0 \to \frac{0}{1} = 0
-
-Crossed out in the source:
-```
-
-
-
-
-
-```math
-= \lim_{x \to 1} \frac{-(x-1)}{x} \times \frac{1}{x-1} = \lim \frac{-1}{1} = -1 //
-```
-
-
-
----
-
-24. Find $\lim_{x \to 0} f(x)$ if $\sqrt{9 - 5x^2} \le f(x) \le \sqrt{x^2 + 9}$
-
-By using sandwitch theorem,
-
-
-
-```math
-\lim_{g(x)} = \lim_{x \to 0} \sqrt{9 - 5x^2} = \sqrt{9 - 0} = \sqrt{9} = \underline{\underline{3}}
-```
-
-
-
-
-
-```math
-\lim_{h(x)} = \lim_{x \to 0} \sqrt{x^2 + 9} = \sqrt{0 + 9} = \sqrt{9} = \underline{\underline{3}}
-```
-
-
-
-
-
-```math
-\therefore \lim_{x \to 0} f(x) = \underline{\underline{3}}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 11 -->
-
-### Q. 25
-
-
-```math
-\lim_{x \to 0} \frac{2\sin x}{2 - 2\cos x} \quad \text{if } 1 - \frac{x^2}{6} \le \frac{2\sin x}{2 - 2\cos x} \le 1
-```
-
-
-
-
-
-```math
-g(x) \le f(x) \le h(x)
-```
-
-
-
-
-
-```math
-\lim_{x \to 0} g(x) = \lim_{x \to 0} 1 - \frac{x^2}{6} = 1 - \frac{0}{6} = 1
-```
-
-
-
-
-
-```math
-\lim_{x \to 0} h(x) = \lim_{x \to 0} 1 = 1
-```
-
-
-
-
-
-```math
-\therefore \lim_{x \to 0} \frac{2\sin x}{2 - 2\cos x} = 1
-```
-
-
-
----
-
-### Q. Evaluate
-
-
-```math
-\lim_{x \to \infty} \frac{3x^2 + 2x + 1}{2x^2 + x + 1}
-```
-
-
-
-> $(1/\infty = 0)$  
-> if infinity is in  
-> denominator $= 0$
-
-
-
-```math
-\lim_{x \to \infty} \frac{\frac{3x^2 + 2x + 1}{x^2}}{\frac{2x^2 + x + 1}{x^2}} = \lim_{x \to \infty} \frac{\frac{3x^2}{x^2} + \frac{2x}{x^2} + \frac{1}{x^2}}{\frac{2x^2}{x^2} + \frac{x}{x^2} + \frac{1}{x^2}}
-```
-
-
-
-
-
-```math
-= \frac{3 + \frac{2}{x} + \frac{1}{x^2}}{2 + \frac{1}{x} + \frac{1}{x^2}} = \frac{3 + \frac{2}{\infty} + \frac{1}{\infty}}{2 + \frac{1}{\infty} + \frac{1}{\infty}} = \frac{3 + 0 + 0}{2 + 0 + 0} = \frac{3}{2}
-```
-
-
-
----
-
-### 2.
-
-
-```math
-\lim_{x \to \infty} \frac{4x^2 - x + 2}{2x^2 + 3x - 1}
-```
-
-
-
-
-
-```math
-\lim_{x \to \infty} \frac{\frac{4x^2 - x + 2}{x^2}}{\frac{2x^2 + 3x - 1}{x^2}} = \frac{\frac{4x^2}{x^2} - \frac{x}{x^2} + 2/x^2}{\frac{2x^2}{x^2} + \frac{3x}{x^2} - 1/x^2} = \frac{4 - 1/x + 2/x^2}{2 + 3/x - 1/x^2}
-```
-
-
-
-
-
-```math
-= \frac{4 - \frac{1}{\infty} + 2/\infty}{2 + 3/\infty - 1/\infty} = \frac{4 - 0 + 0}{2 + 0 - 0} = \frac{4}{2} = 2
-```
-
-
-
-**OR**
-
-
-
-```math
-\lim_{x \to \infty} \frac{x^2(4 - 1/x + 2/x^2)}{[illegible]} = \frac{4 - 1/\infty + 2/\infty}{[illegible]} = \frac{4 - 0 + 0}{[illegible]} = \frac{4}{2} = 2
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 12 -->
-
-3. 
-
-```math
-\lim_{x \to \infty} \frac{2x^2+3x+1}{x^2-x+4}
-```
-
-
-
-
-
-```math
-= \lim_{x \to \infty} \frac{x^2 \left(2 + 3/x + 1/x^2\right)}{x^2 \left(1 - 1/x + 4/x^2\right)} = \frac{2 + \frac{3}{\infty} + \frac{1}{\infty}}{1 - \frac{1}{\infty} + \frac{4}{\infty}} = \frac{2+0+0}{1-0+0} = \underline{\underline{2}}
-```
-
-
-
----
-
-### $\underline{\text{Continuity At a Point}}$
-
-A function $f(x)$ continuation at $x = a$, if
-
-* $f(a)$ is exists.
-* $\lim_{x \to a} f(x)$ is defined
-* $\lim_{x \to a} f(x) = f(a)$.
-
-Consider the function $f(x) = x^2$ check whether this function is continuous at $x = 3$.
-
-
-
-```math
-f(3) = 3^2 = 9
-```
-
-
-
-
-```math
-\lim_{x \to 3} f(x) = x^2 = 3^2 = 9
-```
-
-
-
-
-```math
-\lim_{x \to 3} f(x) = f(3)
-```
-
-
-
-$\therefore$ the given function, $f(x) = x^2$ is continuous at $x = 3$.
-
-Consider the function $f(x) = 1/x$ Check the continuity of the function at $x = 1$
-
-
-
-```math
-f(1) = 1/x = 1/1 = 1
-```
-
-
-
-
-```math
-\lim_{x \to 1} f(x) = 1/x = 1/1 = 1
-```
-
-
-
-
-```math
-\lim_{x \to 1} f(x) = f(1)
-```
-
-
-
-$\therefore f(x) = 1/x$ is continuous at $x = 1$.
-
-Check whether $f(x) = 1/x$ is continuous at $x = 0$
-
-
-
-```math
-f(0) = 1/0 \quad \text{Not defined.}
-```
-
-
-
-$\therefore f(0)$ does not exist  
-$\therefore f(x) = 1/x$ is not continuous at $x = 0$.
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 13 -->
-
-# One-Sided Limit
-
-### Right-Handed Continuity
-A function $f(x)$ is continuous from the right at $x=a$ if
-
-
-```math
-\lim_{x \to a^+} f(x) = f(a)
-```
-
-
-
-### Left-Handed Continuity
-A function $f(x)$ is said to continuous from the left at $x=a$ if
-
-
-```math
-\lim_{x \to a^-} f(x) = f(a)
-```
-
-
-
-**Q.** Determine if the function $f(x)$ is continuous from the left at $x=2$.
-
-
-```math
-f(x) = \begin{cases} x^2+3 & ; \ x < 2 \\ 5 & ; \ x \ge 2 \end{cases}
-```
-
-
-
-
-
-```math
-\lim_{x \to 2^-} f(x) = \lim_{x \to 2^-} f(x^2+3) = 2^2+3 = 4+3 = \underline{\underline{7}}
-```
-
-
-
-
-
-```math
-f(2) = 5
-```
-
-
-
-
-
-```math
-\Rightarrow \lim_{x \to 2^-} f(x) \ne f(2)
-```
-
-
-
-
-
-```math
-\therefore \text{It is not left-continuous.}
-```
-
-
-
-**Q.** Determine if the function $f(x)$ is continuous from the right at $x=-1$.
-
-
-```math
-g(x) = \begin{cases} \sin x & ; \ x \le -1 \\ x^2 & ; \ x > -1 \end{cases}
-```
-
-
-
-
-
-```math
-\lim_{x \to -1^+} f(x) = \lim_{x \to -1^+} f(x^2) = (-1)^2 = \underline{\underline{1}} \quad \Rightarrow f(-1) = \sin x = -(\sin(1))
-```
-
-
-
-
-
-```math
-\lim_{x \to -1^+} f(x) \ne f(-1)
-```
-
-
-
-
-
-```math
-\therefore \text{the function } g(x) \text{ is not right continuous.}
-```
-
-
-
-**Q.** Determine if the function
-
-
-```math
-f(x) = \begin{cases} 3x-9 & ; \ x \le 3 \\ x^2-6x+9 & ; \ x > 3 \end{cases}
-```
-
-
-is continuous from the right at $x=3$.
-
-
-
-```math
-\lim_{x \to 3^+} f(x) = \lim_{x \to 3^+} f(x^2-6x+9) = 9-18+9 = 0
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 14 -->
-
-
-
-```math
-f(3) = 3 \times 3 - 9 = \underline{0}
-```
-
-
-
-
-
-```math
-\lim_{x \to 3^+} f(x) = f(3)
-```
-
-
-
-$\therefore$ function $f(x)$ is right continuous at $x = 3$.
-
----
-
-**Q** Determine if the function $f(x)$ is continuous from the left at $x = 1$
-
-
-
-```math
-f(x) = \begin{cases} 2x + 1 & ; \quad x < 1 \\ 3 & ; \quad x \ge 1 \end{cases}
-```
-
-
-
-
-
-```math
-\lim_{x \to 1^-} f(x) = \lim_{x \to 1^-} 2x + 1 = 2 + 1 = \underline{\underline{3}}
-```
-
-
-
-
-
-```math
-f(1) = 3
-```
-
-
-
-
-
-```math
-\lim_{x \to 1^-} f(x) = f(1)
-```
-
-
-
-$\therefore$ the given function is left continuous at $x = 1$.
-
----
-
-## Continuous function
-
-A function is called continuous if it is continuous at every point in domain. The domain of a function is a set of all input values for which the function is defined.
-
-Consider the function $f(x) = x^2$ is continuous at every point in its domain (its domain is the set of all real numbers). Therefore $f(x) = x^2$ is a continuous function.
-
-Consider $f(x) = 1/x$ is not a continuous function, because it is not continuous at $x = 0$. i.e, $f(x) = 1/x$ is continuous at everypoint except $x = 0$. $x = 0$ is called the point of discontinuity. or the function has a discontinuity at $x = 0$.
-
----
-
-**Q.** At what points are the following functions $y = f(x)$ continuous.
-
-1. $y = \frac{1}{x-2} - 3x$
-
-   
-
-```math
-x - 2 = 0
-```
-
-
-   
-   $\Rightarrow x = 2$ is the only point of discontinuity
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 15 -->
-
-2. $y = \frac{x+1}{x^2-4x+3}$
-
-
-
-```math
-x^2-4x+3 = 0
-```
-
-
-
-
-```math
-(x-3)(x-1) = 0
-```
-
-
-
-
-```math
-x = 3, 1.
-```
-
-
-
-$\therefore$ the function is continuous at every point except at $x=1$ and $x=3$.
-
----
-
-3. $y = |x+1| + \sin x$
-
-the function is continuous at every points.
-
----
-
-4. $y = \frac{1}{|x|+1} - \frac{x^2}{2}$
-
-Here, the denominator
-$|x|+1 \neq 0$, for all $x$ also the limit exists
-
-$\therefore$ the function is continuous at every point.
-
----
-
-5. $y = \frac{\cos x}{x}$
-
-Here the denominator vanishes at $x=0$
-
-$x=0$ is the only discontinuous point
-
-$\therefore$ the given function is continuous at every point except at $x=0$.
-
----
-
-6. $y = \tan \frac{\pi x}{2}$
-
-When $x=1$, $y = \tan \frac{\pi}{2}$, the limit does not exist
-
-$\therefore$ the function is not continuous
-
-When $x=3$, $y = \tan \frac{3\pi}{2}$, also discontinuous
-
-$\therefore$ the function is discontinuous at all point where $\frac{\pi x}{2}$ is an odd integer multiple of $\frac{\pi}{2}$.
-
-$\therefore$ the function is continuous at all points except the odd integers.
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 16 -->
-
-# Derivative
-
-$\rightarrow$ Slope of a curve
-
-The derivative gives the rate of change of a function $f(x)$ with respect to $x$ at $x = x_0$, denoted by $f'(x_0)$.
-
-The rate of a function or the derivative of a function $f(x)$ at $x = a$ is defined by
-
-
-
-```math
-\boxed{f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}}
-```
-
-
-
-All the following are the interpretations for the limits of the difference quotient. Or
-
-
-
-```math
-f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h} \rightarrow 1^{\text{st}} \text{ principle of differentiation}
-```
-
-
-
-1) The slope of the graph $y = f(x)$ at $x = a$
-2) The slope of the tangent line to the curve $y = f(x)$ at $x = a$
-3) The rate of change of $f(x)$ at $x = a$
-4) The derivative $f'(x)$ at $x = a$
-
----
-
-**$Q_1$.** Find the derivative of $f(x) = x^2$ at $x = 2$ using the $1^{\text{st}}$ principle of differentiation.
-
-
-
-```math
-f'(2) = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{(2+h)^2 - 4}{h} = \lim_{h \to 0} \frac{\cancel{4} + 4h + h^2 - \cancel{4}}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{4h + h^2}{h} = \lim_{h \to 0} \frac{\cancel{h}(4+h)}{\cancel{h}}
-```
-
-
-
-
-
-```math
-= \cancel{\lim} 4 + 0 = \underline{\underline{4}}
-```
-
-
-
----
-
-**$Q_2$.** Find the derivative of $f(x) = \sqrt{x}$ at $x = 4$ using $1^{\text{st}}$ principle.
-
-
-
-```math
-f'(4) = \lim_{h \to 0} \frac{f(4+h) - f(4)}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{\sqrt{4+h} - 2}{h} = \cancel{\lim_{h \to 0} \frac{\sqrt{4+0} - 2}{0}} = \lim_{h \to 0} \frac{(\sqrt{4+h}-2)(\sqrt{4+h}+2)}{h(\sqrt{4+h}+2)}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{(\sqrt{4+h})^2 - (2)^2}{h(\sqrt{4+h}+2)} = \lim_{h \to 0} \frac{\cancel{4}+\cancel{h}-\cancel{4}}{\cancel{h}(\sqrt{4+h}+2)} = \lim_{h \to 0} \frac{1}{\sqrt{4+h}+2}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 17 -->
-
-## $Q_5$ Find the derivative of $f(x) = 3x^2 + 2x$ at $x = 1$ using $1^{\text{st}}$ principle.
-
-
-
-```math
-f'(1) = \lim_{h \to 0} \frac{f(1+h) - f(1)}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{3(1+h)^2 + 2(1+h) - (3 \times 1^2 + 2 \times 1)}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{3(1+2h+h^2) + 2 + 2h - 5}{h} = \lim_{h \to 0} \frac{3+6h+3h^2+2+2h-5}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{\cancel{5} + 8h + 3h^2 - \cancel{5}}{h} = \lim_{h \to 0} \frac{\cancel{h}(8+3h)}{\cancel{h}}
-```
-
-
-
-
-
-```math
-= 8 + 3 \times 0 = \underline{\underline{8}}
-```
-
-
-
----
-
-## $Q$ Find the derivative of $f(x) = 1/x$ at $x = 2$ using $1^{\text{st}}$ first principle.
-
-
-
-```math
-f'(2) = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h} = \lim_{h \to 0} \frac{\frac{1}{2+h} - \frac{1}{2}}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{\frac{2 - (2+h)}{(2+h)2}}{h} = \lim_{h \to 0} \frac{-h}{4+2h} \div h
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{-\cancel{h}}{4+2h} \times \frac{1}{\cancel{h}} = \underline{\underline{-\frac{1}{4}}}
-```
-
-
-
----
-
-## $Q_6$ Find the derivative of $f(x) = \sin x$ at $x = 0$ using $1^{\text{st}}$ principle.
-
-
-
-```math
-f'(0) = \lim_{h \to 0} \frac{f(0+h) - f(0)}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{\sin(0+h) - \sin 0}{h} = \lim_{h \to 0} \frac{\sin(0+h) - 0}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{\sin h}{h}
-```
-
-
-
-
-
-```math
-= \lim_{h \to 0} \frac{\cos h}{1} \quad [\text{by using L-hospital Rule}]
-```
-
-
-
-
-
-```math
-= \frac{\cos 0}{1} = \underline{\underline{1}} \qquad \left( \lim_{h \to 0} \frac{\sin x}{x} = 1 \right)
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 18 -->
-
-$Q_6.$ find the derivative of $f(x) = \ln x$ at $x = 1$ using $1^{\text{st}}$ principle :
-
-
-
-```math
-\begin{aligned}
-f'(1) &= \lim_{h \to 0} \frac{f(1+h) - f(1)}{h} && [\text{using L-Hospitals Rule}] \\
-&= \lim_{h \to 0} \frac{\ln(1+h) - \ln 1}{h} = \lim_{h \to 0} \frac{\ln(1+h) - 0}{h} \\
-&= \lim_{h \to 0} \frac{1/(1+h)}{1} = \frac{\frac{1}{1+0}}{1} = \frac{1}{1} = 1
-\end{aligned}
-```
-
-
-
-> **standard result**
+> **Chain rule.** If $y=f(u)$ and $u=u(x)$, then $\displaystyle\frac{dy}{dx}=\frac{dy}{du}\cdot\frac{du}{dx}$.
 >
-> 
+> In words: *derivative of the outside (keeping the inside as it is) × derivative of the inside.*
 
-```math
-\lim_{x \to 0} \frac{\ln(1+x)}{x} = 1
-```
+## Method
 
+1. Identify the **inner** function $u$ and the **outer** function.
+2. Differentiate the outer one, leaving $u$ untouched.
+3. Multiply by $\dfrac{du}{dx}$.
 
+## Examples
 
----
+**1.** $y=(3x+2)^3$. Outer: $u^3$. Inner: $u=3x+2$.
 
-## Rules Of Differentiation
+$$
+\frac{dy}{dx}=3(3x+2)^2\cdot3=\mathbf{9(3x+2)^2}
+$$
 
-- **Sum Rule** : $\frac{d}{dx} (f(x) + g(x)) = \frac{d}{dx} f(x) + \frac{d}{dx} g(x) = f'(x) + g'(x)$
+**2.** $y=\sin(4x^3)$. Outer: $\sin u$. Inner: $u=4x^3$.
 
-- **Difference Rule** : $\frac{d}{dx} (f(x) - g(x)) = \frac{d}{dx} f(x) - \frac{d}{dx} g(x)$
+$$
+\frac{dy}{dx}=\cos(4x^3)\cdot12x^2=\mathbf{12x^2\cos(4x^3)}
+$$
 
-- **Constant Rule** : $\frac{d}{dx} (c) = 0$
+**3.** $y=e^{\sin x}$. Outer: $e^u$. Inner: $u=\sin x$.
 
-- **Constant xplication Rule** : $\frac{d}{dx} (k f(x)) = k \frac{d}{dx} f(x) = k f'(x)$
+$$
+\frac{dy}{dx}=e^{\sin x}\cdot\cos x=\mathbf{\cos x\,e^{\sin x}}
+$$
 
-- **Product Rule** : $\frac{d}{dx} f(x) \cdot g(x) = f(x) \frac{d}{dx} g(x) + g(x) \frac{d}{dx} f(x)$
+**4.** $y=\sqrt{5x^2+3x}$. Outer: $\sqrt u$. Inner: $u=5x^2+3x$.
 
-- **Quotient Rule** : $\frac{\frac{d}{dx} f(x)}{g(x)} = \frac{g(x) f'(x) - f(x) g'(x)}{(g(x))^2}$
+$$
+\frac{dy}{dx}=\frac{1}{2\sqrt{5x^2+3x}}\cdot(10x+3)=\mathbf{\frac{10x+3}{2\sqrt{5x^2+3x}}}
+$$
 
-- **Power Rule** : $\frac{d}{dx} (x^n) = n x^{n-1}$
+**5.** $y=\tan(2x+1)$.
 
-~~$\frac{d}{dx}(\sin x)$~~
+$$
+\frac{dy}{dx}=\sec^2(2x+1)\cdot2=\mathbf{2\sec^2(2x+1)}
+$$
 
-$Q_1.$ find the derivate of $f(x) = 5x^4$
+## Chain rule combined with other rules
 
+**6.** $y=x\sin^4x+x\cos^{-2}x$. Product rule on each term, chain rule inside.
 
-
-```math
-\cancel{f'} \frac{d}{dx} f(x) = 4 \times 5 \cancel{(x)} \quad \underline{\underline{20 x^3}}
-```
-
-
-
-$Q_2.$ Find $\frac{d}{dx}$ of $f(x) = (2x^3) \sin x$
-
-
-
-```math
-f'(x) = 2x^3 \cdot \cos x + \sin x \cdot 6x^2
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 19 -->
-
-
-
-```math
-Q_3.\text{ find } \frac{d}{dx} \text{ of } f(x)
-```
-
-
-
-1. $f(x) = e^x \cos x$
-   
-
-```math
+$$
 \begin{aligned}
-   f'(x) &= e^x(-\sin x) + \cos x \cdot e^x \\
-   &= e^x \cos x - e^x \sin x = \underline{\underline{e^x (\cos x - \sin x)}}
-   \end{aligned}
-```
-
-
-
-2. $f(x) = \frac{e^x}{x^2}$
-   
-
-```math
-\begin{aligned}
-   f'(x) &= \frac{x^2 \cdot e^x - e^x \cdot 2x}{(x^2)^2} = \frac{e^x x^2 - e^x \cdot 2x}{(x^2)^2 x^4} = \frac{e^x x^2 - e^x 2x}{x^4} \\
-   &= \frac{e^x(x^2 - 2x)}{(x^2)^2 x^4} \\
-   &= \frac{x(e^x x - 2e^x)}{x^4} \\
-   &= \underline{\underline{\frac{e^x x - 2e^x}{x^3}}}
-   \end{aligned}
-```
-
-
-
-3. $f(x) = \frac{\ln x}{x^3}$
-   
-
-```math
-\begin{aligned}
-   f'(x) &= \frac{x^3 \cdot \frac{1}{x} - \ln x \cdot 3x^2}{(x^3)^2} = \frac{x^2 - 3x^2 \ln x}{x^6} \\
-   &= \frac{x^2(1 - 3\ln x)}{x^6} = \underline{\underline{\frac{1 - 3\ln x}{x^4}}}
-   \end{aligned}
-```
-
-
-
-4. Find the slope of the curve $y = x^2$ at $x = 3$,
-   
-
-```math
-\begin{aligned}
-   f(a) &= \lim_{h \to 0} \frac{f(a+h) - f(a)}{h} \\
-   &= \lim_{h \to 0} \frac{f(3+h)^2 - (3)^2}{h} = \lim_{h \to 0} \frac{f[(9 + 6h + h^2)] - 9}{h} \\
-   &= \lim_{h \to 0} \frac{6h + h^2}{h} = \lim_{h \to 0} \frac{h(6+h)}{h} = 6 + 0 = \underline{\underline{6}}
-   \end{aligned}
-```
-
-
-
-5. Find the derivative of $f(x) = x^2 / \sin x$
-   
-
-```math
-f'(x) = \frac{2x \cdot \sin x \cdot 2x - x^2 \cdot \cos x}{\sin^2 x} = \underline{\underline{\frac{2x \sin x - x^2 \cos x}{\sin^2 x}}}
-```
-
-
-
-6. Find the slope of the curve $y = \sin x$ at $x = \pi/4$
-   
-
-```math
-\lim \frac{dy}{dx} = \cos x
-```
-
-
-   
-
-```math
-\text{at } x = \pi/4 \implies \frac{dy}{dx} = \cos \pi/4 = \underline{\underline{1/\sqrt{2}}}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 20 -->
-
-# Higher Order Derivates
-
-The first order derivative of the $y = f(x)$ is denoted by $\frac{dy}{dx}$ or $y'$ or $f'(x)$. Again differentiate this first order with respect to $x$ we get the second order derivatives $\frac{d^2y}{dx^2}$ or $y''$ or $f''(x)$, again differentiate the second orde w.r.t $x$, we get $\frac{d^3y}{dx^3}$ or $y'''$ or $f'''(x)$ and so on.
-
-**Q.** Find the fourth order derivative of the function.
-
-
-
-```math
-y = 3x^5
-```
-
-
-
-
-```math
-y' = 15x^4
-```
-
-
-
-
-```math
-y'' = 60x^3
-```
-
-
-
-
-```math
-y''' = 180x^2
-```
-
-
-
-
-```math
-y'''' = \underline{\underline{360x}}
-```
-
-
-
-**Q.** Find the $1^{\text{st}}$ order and $2^{\text{nd}}$ order derivative of $f(x) = 1/x$.
-
-
-
-```math
-f'(x) = -\frac{1}{x^2}
-```
-
-
-
-
-```math
-f''(x) = \frac{x^2 \cdot 0 - (-1) \cdot 2x}{(x^2)^2} = \frac{2x}{x^4} = \underline{\underline{\frac{2}{x^3}}}
-```
-
-
-
-**Q.** Find the third derivative of $f(x) = x^5 - 4x^3 + x$
-
-
-
-```math
-f'(x) = 5x^4 - 12x^2 + 1
-```
-
-
-
-
-```math
-f''(x) = 20x^3 - 24x
-```
-
-
-
-
-```math
-f'''(x) = \underline{60x^2 - 24}
-```
-
-
-
-**Q.** Find the derivatives of all orders of $y = \frac{x^4}{2} - \frac{3x^2}{2} - x$
-
-
-
-```math
-y' = \frac{4x^3}{2} - \frac{6x}{2} - 1 = 2x^3 - 3x - 1
-```
-
-
-
-
-```math
-y'' = 6x^2 - 3
-```
-
-
-
-
-```math
-y''' = 12x
-```
-
-
-
-
-```math
-y'''' = 12
-```
-
-
-
-
-```math
-y''''' = \underline{\underline{0}}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 21 -->
-
-**Q.** Find the 4th derivative of $y = e^x 	imes \sin x$.
-
-
-
-```math
-\frac{dy}{dx} = e^x \cdot \cos x + \sin x \cdot e^x = e^x (\cos x + \sin x)
-```
-
-
-
-
-
-```math
-\begin{aligned}
-\frac{d^2y}{dx^2} &= e^x (-\sin x + \cos x) + (\cos x + \sin x) e^x \\
-&= -e^x \sin x + e^x \cos x + e^x \cos x + e^x \sin x \\
-&= 2e^x \cos x
+\frac{dy}{dx}&=\Big[x\cdot4\sin^3x\cos x+\sin^4x\cdot1\Big]+\Big[x\cdot(-2)\cos^{-3}x\,(-\sin x)+\cos^{-2}x\cdot1\Big]\\[4pt]
+&=\mathbf{4x\sin^3x\cos x+\sin^4x+\frac{2x\sin x}{\cos^3x}+\frac1{\cos^2x}}
 \end{aligned}
-```
+$$
 
+> **Watch out.** Do not forget the $x$ in $\dfrac{2x\sin x}{\cos^3x}$. It comes from the first factor of the product $x\cos^{-2}x$.
 
+**7.** $f(\theta)=\left(\dfrac{\sin\theta}{1+\cos\theta}\right)^2$. Outer: square. Inner: the fraction.
 
+$$
+\frac{df}{d\theta}=2\left(\frac{\sin\theta}{1+\cos\theta}\right)\cdot\frac{(1+\cos\theta)\cos\theta-\sin\theta(-\sin\theta)}{(1+\cos\theta)^2}
+$$
 
+The numerator of the inner derivative simplifies using $\sin^2\theta+\cos^2\theta=1$:
 
-```math
+$$
+(1+\cos\theta)\cos\theta+\sin^2\theta=\cos\theta+\cos^2\theta+\sin^2\theta=1+\cos\theta
+$$
+
+so the inner derivative is $\dfrac{1+\cos\theta}{(1+\cos\theta)^2}=\dfrac1{1+\cos\theta}$ and
+
+$$
+\frac{df}{d\theta}=\mathbf{\frac{2\sin\theta}{(1+\cos\theta)^2}}
+$$
+
+**8.** $y=x\tan(2\sqrt x)+7$. Product rule, with the chain rule for $\tan(2\sqrt x)$.
+
+$$
+\frac{dy}{dx}=x\sec^2(2\sqrt x)\cdot\frac{d}{dx}(2\sqrt x)+\tan(2\sqrt x)\cdot1+0
+$$
+
+with $\dfrac{d}{dx}(2\sqrt x)=\dfrac1{\sqrt x}$, so
+
+$$
+\frac{dy}{dx}=\mathbf{\sqrt x\,\sec^2(2\sqrt x)+\tan(2\sqrt x)}
+$$
+
+---
+
+<!-- page 15 | Implicit differentiation -->
+
+# Implicit differentiation
+
+## The idea
+
+Sometimes $y$ is not given as "$y=\dots$". For example $x^2+y^2=r^2$ ties $x$ and $y$ together without solving for $y$. To get $\dfrac{dy}{dx}$ you do not need to solve. **Differentiate both sides with respect to $x$**, treating $y$ as a function of $x$.
+
+## The only new idea
+
+Whenever you differentiate something containing $y$, the chain rule adds a factor $\dfrac{dy}{dx}$:
+
+$$
+\frac{d}{dx}(y^2)=2y\,\frac{dy}{dx},\qquad\frac{d}{dx}(\sin y)=\cos y\,\frac{dy}{dx}
+$$
+
+and a product like $xy$ needs the product rule:
+
+$$
+\frac{d}{dx}(xy)=x\,\frac{dy}{dx}+y
+$$
+
+## Method
+
+1. Differentiate **both sides** with respect to $x$.
+2. Move every term containing $\dfrac{dy}{dx}$ to one side, everything else to the other.
+3. **Factor out** $\dfrac{dy}{dx}$.
+4. Divide.
+
+## Examples
+
+**1. Circle.** $x^2+y^2=r^2$
+
+$$
+2x+2y\frac{dy}{dx}=0\ \Rightarrow\ \frac{dy}{dx}=\mathbf{-\frac xy}
+$$
+
+**2. Ellipse.** $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$
+
+$$
+\frac{2x}{a^2}+\frac{2y}{b^2}\frac{dy}{dx}=0\ \Rightarrow\ \frac{dy}{dx}=\mathbf{-\frac{b^2x}{a^2y}}
+$$
+
+**3.** $x^2+xy+y^2=1$
+
+$$
+2x+\left(x\frac{dy}{dx}+y\right)+2y\frac{dy}{dx}=0
+\ \Rightarrow\ \frac{dy}{dx}(x+2y)=-2x-y
+\ \Rightarrow\ \frac{dy}{dx}=\mathbf{\frac{-2x-y}{x+2y}}
+$$
+
+**4.** $x^2y+y^3=7$
+
+$$
+\left(x^2\frac{dy}{dx}+2xy\right)+3y^2\frac{dy}{dx}=0
+\ \Rightarrow\ \frac{dy}{dx}(x^2+3y^2)=-2xy
+\ \Rightarrow\ \frac{dy}{dx}=\mathbf{\frac{-2xy}{x^2+3y^2}}
+$$
+
+**5.** $\sin(xy)=x+y$
+
+$$
+\cos(xy)\left(x\frac{dy}{dx}+y\right)=1+\frac{dy}{dx}
+$$
+
+$$
+x\cos(xy)\frac{dy}{dx}-\frac{dy}{dx}=1-y\cos(xy)
+\ \Rightarrow\ \frac{dy}{dx}=\mathbf{\frac{1-y\cos(xy)}{x\cos(xy)-1}}
+$$
+
+**6.** $2xy+y^2=x+y$
+
+$$
+2x\frac{dy}{dx}+2y+2y\frac{dy}{dx}=1+\frac{dy}{dx}
+\ \Rightarrow\ \frac{dy}{dx}(2x+2y-1)=1-2y
+\ \Rightarrow\ \frac{dy}{dx}=\mathbf{\frac{1-2y}{2x+2y-1}}
+$$
+
+**7.** $x^2(x-y)^2=x^2-y^2$. Product rule on the left, chain rule for $(x-y)^2$.
+
+$$
+2x(x-y)^2+2x^2(x-y)\left(1-\frac{dy}{dx}\right)=2x-2y\frac{dy}{dx}
+$$
+
+Collect the $\dfrac{dy}{dx}$ terms:
+
+$$
+\frac{dy}{dx}\Big[2y-2x^2(x-y)\Big]=2x-2x(x-y)^2-2x^2(x-y)
+$$
+
+Divide top and bottom by $2$:
+
+$$
+\frac{dy}{dx}=\mathbf{\frac{x\big[1-(x-y)^2-x(x-y)\big]}{y-x^2(x-y)}}
+$$
+
+> **Note on the source.** The handwritten page first tried $x^2(x-y^2)=x^2-y^2$, crossed it out, and carried on with the $(x-y)^2$ version. The kept working is what is solved here.
+
+**8.** $x^3=\dfrac{2x-y}{x+3y}$. Quotient rule on the right.
+
+$$
+3x^2=\frac{(x+3y)\left(2-\frac{dy}{dx}\right)-(2x-y)\left(1+3\frac{dy}{dx}\right)}{(x+3y)^2}
+$$
+
+Expand the numerator. The $2x$ and the $3y\frac{dy}{dx}$ terms cancel, leaving $7y-7x\frac{dy}{dx}$:
+
+$$
+3x^2(x+3y)^2=7y-7x\frac{dy}{dx}
+\ \Rightarrow\ \frac{dy}{dx}=\mathbf{\frac{7y-3x^2(x+3y)^2}{7x}}
+$$
+
+> **Watch out.** In the quotient rule, subtract the **whole** second product in brackets. Dropping a bracket flips signs and gives a wrong final answer. This is the easiest place to slip in problem 8.
+
+---
+
+<!-- page 16 | Tangent and normal lines -->
+
+# Tangent and normal lines
+
+## The idea
+
+- The **tangent line** to a curve at a point touches the curve there and has the same slope as the curve.
+- The **normal line** is perpendicular to the tangent at that point.
+
+Both pass through the point $(x_0,\,y_0)$ on the curve.
+
+## Formulas
+
+Let $m=f'(x_0)$ be the slope of the curve (the derivative at $x_0$).
+
+| Line | Slope | Equation |
+| --- | --- | --- |
+| Tangent | $m$ | $y-y_0=m\,(x-x_0)$ |
+| Normal | $-\dfrac1m$ | $y-y_0=-\dfrac1m\,(x-x_0)$ |
+
+Perpendicular lines have slopes whose product is $-1$, so the normal slope is the **negative reciprocal**.
+
+## Method
+
+1. Find the point: $y_0=f(x_0)$ (if only $x_0$ is given).
+2. Differentiate and find $m=f'(x_0)$.
+3. Plug into the tangent formula. Then use $-\frac1m$ for the normal.
+4. Tidy to $y=\dots$ form.
+
+> **Special cases.** If $m=0$ the tangent is horizontal ($y=y_0$) and the normal is **vertical** ($x=x_0$). The formula $-\frac1m$ would divide by zero, so write the vertical line directly.
+
+## Examples
+
+**1.** $y=x^2$ at $(1,1)$. $\;y'=2x\Rightarrow m=2$.
+
+- Tangent: $y-1=2(x-1)\ \Rightarrow\ \mathbf{y=2x-1}$
+- Normal: $y-1=-\tfrac12(x-1)\ \Rightarrow\ \mathbf{y=-\dfrac x2+\dfrac32}$
+
+**2.** $y=x^2+3x+2$ at $x=1$. Point: $y_0=1+3+2=6$, so $(1,6)$. $\;y'=2x+3\Rightarrow m=5$.
+
+- Tangent: $y-6=5(x-1)\ \Rightarrow\ \mathbf{y=5x+1}$
+- Normal: $y-6=-\tfrac15(x-1)\ \Rightarrow\ \mathbf{y=-\dfrac x5+\dfrac{31}5}$
+
+**3.** $y=e^x$ at $x=0$. Point $(0,1)$. $\;y'=e^x\Rightarrow m=1$.
+
+- Tangent: $y-1=1\,(x-0)\ \Rightarrow\ \mathbf{y=x+1}$
+- Normal: $y-1=-1\,(x-0)\ \Rightarrow\ \mathbf{y=-x+1}$
+
+**4. Projectile (horizontal tangent).** $h(t)=-5t^2+20t+25$ at $t=2$ s.
+
+Point: $h(2)=-20+40+25=45$, so $(2,45)$. Slope: $h'(t)=-10t+20\Rightarrow h'(2)=0$.
+
+- Tangent: slope $0$ → $\mathbf{h=45}$ (horizontal; this is the top of the flight).
+- Normal: perpendicular to a horizontal line is vertical → $\mathbf{t=2}$.
+
+**5.** $y=\sin x$ at $x=\dfrac\pi4$. Point $\left(\dfrac\pi4,\dfrac1{\sqrt2}\right)$. $\;y'=\cos x\Rightarrow m=\dfrac1{\sqrt2}$.
+
+- Tangent: $y-\dfrac1{\sqrt2}=\dfrac1{\sqrt2}\left(x-\dfrac\pi4\right)\ \Rightarrow\ \mathbf{y=\dfrac{x-\frac\pi4+1}{\sqrt2}}$
+- Normal: $y-\dfrac1{\sqrt2}=-\sqrt2\left(x-\dfrac\pi4\right)\ \Rightarrow\ \mathbf{y=-\sqrt2\,x+\dfrac{\sqrt2\,\pi}{4}+\dfrac1{\sqrt2}}$
+
+## When the curve is given implicitly
+
+**6.** Tangent and normal to $6x^2+3xy+2y^2+17y-6=0$ at $(-1,0)$.
+
+Check the point lies on the curve: $6+0+0+0-6=0$ ✓.
+
+Differentiate implicitly:
+
+$$
+12x+3\left(x\frac{dy}{dx}+y\right)+4y\frac{dy}{dx}+17\frac{dy}{dx}=0
+\ \Rightarrow\ \frac{dy}{dx}=-\frac{12x+3y}{3x+4y+17}
+$$
+
+At $(-1,0)$: $\;m=-\dfrac{-12+0}{-3+0+17}=\dfrac{12}{14}=\dfrac67$.
+
+- Tangent: $y-0=\tfrac67(x+1)\ \Rightarrow\ \mathbf{y=\dfrac{6x+6}{7}}$
+- Normal: $y-0=-\tfrac76(x+1)\ \Rightarrow\ \mathbf{y=-\dfrac{7x+7}{6}}$
+
+---
+
+<!-- page 17 | Linearization -->
+
+# Linearization
+
+## The idea
+
+Zoom in far enough on any smooth curve and it looks like a straight line, namely its tangent line. So near a point $x=a$ we can **replace a complicated function by its tangent line**, which is easy to compute.
+
+> **Linearization of $f$ at $x=a$:** $\ L(x)=f(a)+f'(a)\,(x-a)$.
+>
+> For $x$ close to $a$: $\ f(x)\approx L(x)$.
+
+This is the tangent-line equation from the last page, now used as a calculator. It is the best straight-line approximation of $f$ near $a$. The further $x$ is from $a$, the worse the approximation.
+
+## Method
+
+1. Compute $f(a)$.
+2. Differentiate and compute $f'(a)$.
+3. Write $L(x)=f(a)+f'(a)(x-a)$ and simplify.
+
+## Examples
+
+**1.** Linearize $f(x)=\sqrt x$ at $a=4$.
+
+$$
+f(4)=2,\quad f'(x)=\frac1{2\sqrt x}\Rightarrow f'(4)=\frac14
+$$
+
+$$
+L(x)=2+\tfrac14(x-4)=\mathbf{\frac x4+1}
+$$
+
+*Use:* $\sqrt{4.1}\approx L(4.1)=\frac{4.1}{4}+1=2.025$ (true value $2.0248\ldots$).
+
+**2.** Linearize $f(x)=e^x$ at $a=0$.
+
+$$
+f(0)=1,\quad f'(0)=e^0=1\ \Rightarrow\ L(x)=1+1\cdot(x-0)=\mathbf{1+x}
+$$
+
+**3.** Linearize $f(x)=\ln x$ at $a=1$.
+
+$$
+f(1)=0,\quad f'(1)=\frac11=1\ \Rightarrow\ L(x)=0+1\cdot(x-1)=\mathbf{x-1}
+$$
+
+**4.** Linearize $f(x)=\tan x$ at $a=\dfrac\pi4$.
+
+$$
+f\left(\tfrac\pi4\right)=1,\quad f'(x)=\sec^2x\Rightarrow f'\left(\tfrac\pi4\right)=\sec^2\tfrac\pi4=2
+$$
+
+$$
+L(x)=1+2\left(x-\tfrac\pi4\right)=\mathbf{2x+1-\frac\pi2}
+$$
+
+**5.** Linearize $f(x)=\sin x$ at $a=\dfrac\pi6$.
+
+$$
+f\left(\tfrac\pi6\right)=\tfrac12,\quad f'\left(\tfrac\pi6\right)=\cos\tfrac\pi6=\tfrac{\sqrt3}2
+$$
+
+$$
+L(x)=\mathbf{\frac12+\frac{\sqrt3}{2}\left(x-\frac\pi6\right)}
+$$
+
+## Applications
+
+**6. Resistance and temperature.** A resistor has $R(T)=e^{0.1T}$, with $T$ in $^\circ\mathrm C$. Linearize at $T=25$.
+
+$$
+R(25)=e^{2.5}\approx12.182,\qquad R'(T)=0.1\,e^{0.1T}\Rightarrow R'(25)=0.1\,e^{2.5}\approx1.218
+$$
+
+$$
+L(T)=12.182+1.218\,(T-25)\approx\mathbf{1.218\,T-18.274}
+$$
+
+So near $25^\circ\mathrm C$, resistance rises by about $1.22$ units for every extra degree.
+
+**7. City population.** $P(t)=100\,e^{0.02t}$ thousand people, with $t$ in years since $2020$. Linearize at $t=0$ and estimate the population in $2021$.
+
+$$
+P(0)=100,\qquad P'(t)=2\,e^{0.02t}\Rightarrow P'(0)=2
+$$
+
+$$
+L(t)=100+2t
+$$
+
+For $2021$, $t=1$: $L(1)=102$. **About $102$ thousand people** (the exact value is $100e^{0.02}\approx102.02$ thousand, so the approximation is very close).
+
+---
+
+<!-- page 18 | Concavity -->
+
+# Concavity
+
+## The idea
+
+Concavity describes **how a curve bends**.
+
+- **Concave up** (like a cup, $\cup$): the slope is *increasing* as you move right.
+- **Concave down** (like a frown, $\cap$): the slope is *decreasing* as you move right.
+
+The point where the bending switches direction is an **inflection point**.
+
+![A curve that is concave down on the left, concave up on the right, with the inflection point where the bending changes](/notes/cse/s1/maths/page-033-image-1-f26f2764-943e-42a6-aec9-4a45f4a2d801.webp)
+
+## The second derivative test for concavity
+
+Let $f$ be twice differentiable on an interval $I$.
+
+| Sign of $f''(x)$ on $I$ | Shape of the graph |
+| --- | --- |
+| $f''(x)>0$ | **concave up** |
+| $f''(x)<0$ | **concave down** |
+
+> **Why.** $f''$ is the rate of change of the slope $f'$. If $f''>0$, the slope is increasing, so the curve bends upward.
+
+> **Watch out.** $f''(x)=0$ (or undefined) only gives a **candidate** for an inflection point. It is a real inflection point only if $f''$ **changes sign** there. For $f(x)=x^4$, $f''(0)=0$ but $f''$ is positive on both sides, so $0$ is *not* an inflection point.
+
+## Method
+
+1. Find $f''(x)$.
+2. Solve $f''(x)=0$ (and note where $f''$ is undefined) to get the break points.
+3. Test the sign of $f''$ in each interval between break points (a number-line sign chart is perfect for this).
+4. Read off the concavity, and name inflection points where the sign changes.
+
+## Examples
+
+**1.** $f(x)=x^3-3x^2+4$
+
+$$
+f'(x)=3x^2-6x,\qquad f''(x)=6x-6=6(x-1)
+$$
+
+$f''<0$ for $x<1$ and $f''>0$ for $x>1$.
+
+- Concave **down** on $(-\infty,\,1)$.
+- Concave **up** on $(1,\,\infty)$.
+- Inflection point at $x=1$.
+
+**2.** $f(x)=x^3-6x^2+9x+1$
+
+$$
+f'(x)=3x^2-12x+9,\qquad f''(x)=6x-12=6(x-2)
+$$
+
+- Concave **down** on $(-\infty,\,2)$.
+- Concave **up** on $(2,\,\infty)$.
+- Inflection point at $x=2$.
+
+**3.** $f(x)=\ln x$, for $x>0$
+
+$$
+f'(x)=\frac1x,\qquad f''(x)=-\frac1{x^2}<0\ \text{ for all }x>0
+$$
+
+Concave **down** on $(0,\,\infty)$, with no inflection points.
+
+**4.** $f(x)=e^{-x^2}$
+
+$$
 \begin{aligned}
-\frac{d^3y}{dx^3} &= 2 \left[ e^x \cdot -\sin x + \cos x \cdot e^x \right] \\
-&= 2 [e^x \cos x - e^x \sin x] = 2e^x [\cos x - \sin x]
+f'(x)&=-2x\,e^{-x^2}\\
+f''(x)&=-2e^{-x^2}+(-2x)(-2x)\,e^{-x^2}=2e^{-x^2}\,(2x^2-1)
 \end{aligned}
-```
+$$
 
+Since $e^{-x^2}>0$ always, the sign of $f''$ is the sign of $2x^2-1$. It is $0$ when $x^2=\tfrac12$, i.e. $x=\pm\tfrac1{\sqrt2}$.
 
+![Number line with the points minus root half and root half marked, splitting the line into three intervals](/notes/cse/s1/maths/page-034-image-1-8198fcaf-a51b-4f3f-a4d7-302bf93d5749.webp)
 
+| Interval | $2x^2-1$ | $f''$ | Shape |
+| --- | --- | --- | --- |
+| $\left(-\infty,\,-\tfrac1{\sqrt2}\right)$ | $+$ | $+$ | concave up |
+| $\left(-\tfrac1{\sqrt2},\,\tfrac1{\sqrt2}\right)$ | $-$ | $-$ | concave down |
+| $\left(\tfrac1{\sqrt2},\,\infty\right)$ | $+$ | $+$ | concave up |
 
+Inflection points at $x=\pm\dfrac1{\sqrt2}$. (This is the bell curve: it bends down at the peak and up in the tails.)
 
-```math
-\begin{aligned}
-\frac{d^4y}{dx^4} &= 2e^x [-\sin x - \cos x] + [\cos x - \sin x] \cdot 2e^x \\
-&= -2e^x \sin x - 2e^x \cos x + 2e^x \cos x - 2e^x \sin x \\
-&= -4e^x \sin x
-\end{aligned}
-```
+**5.** $f(x)=e^x-x^2$
 
+$$
+f'(x)=e^x-2x,\qquad f''(x)=e^x-2
+$$
 
+Solve $f''=0$: $\;e^x=2\Rightarrow x=\ln2$ (since $e^{\ln2}=2$).
 
----
-
-**Q.** Find the third derivative of $f(x) = x^3 \ln x$
-
-
-
-```math
-\begin{aligned}
-f'(x) &= x^3 \frac{1}{x} + \ln x \cdot 3x^2 \\
-&= x^2 + 3x^2 \ln x
-\end{aligned}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-f''(x) &= 2x + 3x^2 \cdot \frac{1}{x} + \ln x \cdot 6x \\
-&= 2x + 3x + 6x \ln x
-\end{aligned}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-f'''(x) &= 2 + 3 + 6x \times \frac{1}{x} + \ln x \cdot 6 \\
-&= 5 + 6 + 6 \ln x = 11 + 6 \ln x
-\end{aligned}
-```
-
-
+- For $x<\ln2$: $e^x<2$, so $f''<0$ → concave **down** on $(-\infty,\,\ln2)$.
+- For $x>\ln2$: $e^x>2$, so $f''>0$ → concave **up** on $(\ln2,\,\infty)$.
+- Inflection point at $x=\ln2$.
 
 ---
 
-**Q.** Find the $1^{\text{st}}$ order derivative $f(x) = \frac{x^3}{\sqrt{x^2+1}}$
+<!-- page 19 | Practice and formula sheet -->
 
+# Practice questions and formula sheet
 
+## Practice questions
 
-```math
-\begin{aligned}
-f'(x) &= \frac{\sqrt{x^2+1} \cdot 3x^2 - x^3 \cdot \frac{1}{2\sqrt{x^2+1}} \cdot 2x}{\left(\sqrt{x^2+1}\right)^2} \\
-&= \frac{3x^2 \sqrt{x^2+1} - \frac{2x^4}{2\sqrt{x^2+1}}}{\left(\sqrt{x^2+1}\right)^2} = \frac{3x^2(x^2+1) - x^4}{\sqrt{x^2+1} \left(\sqrt{x^2+1}\right)^2} \\
-&= \frac{3x^4 + 3x^2 - x^4}{\left(\sqrt{x^2+1}\right)^3} = \frac{2x^4 + 3x^2}{\left(\sqrt{x^2+1}\right)^3}
-\end{aligned}
-```
+Try these without looking. Answers follow.
 
+**A. Limits**
 
+1. $\displaystyle\lim_{x\to2}\frac{x^2-4}{x-2}$
+2. $\displaystyle\lim_{x\to0}\frac{\sqrt{x+9}-3}{x}$
+3. $\displaystyle\lim_{x\to\infty}\frac{5x^3-x}{2x^3+7}$
+4. $\displaystyle\lim_{x\to0}x\cos\frac1x$
 
----
+**B. Differentiation.** Use implicit differentiation to find $\dfrac{dy}{dx}$:
 
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 22 -->
+5. $x^3y+xy^3=6$
+6. $y^2=\dfrac{x-1}{x+1}$
 
-# Instantaneous Rate of Change
+**C. First and second derivatives**
 
-**Q.** Find the 'instantaneous rate of change of $f(x) = x^2$ at $x = 5$
+7. $r=\dfrac1{3s^2}-\dfrac5{2s}$
+8. $y=4-2x-x^{-3}$
+9. $y=\left(\dfrac{1+3z}{3z}\right)(3-z)$
+10. $y=\dfrac{(\theta-1)(\theta^2+\theta+1)}{\theta^3}$
 
+**D. First derivatives**
 
+11. $y=(5-2x^2)(2x^3-3x+4)$
+12. $y=(1+x^2)\left(x^{3/4}-x^{-3}\right)$
+13. $y=\dfrac{\sqrt{4s}-9}{\sqrt{4s}+9}$
 
-```math
-f'(x) = 2x
-```
+## Answers
 
+1. $4$. Factorise: $\frac{(x-2)(x+2)}{x-2}=x+2\to4$.
+2. $\tfrac16$. Conjugate: $\frac{x}{x(\sqrt{x+9}+3)}=\frac1{\sqrt{x+9}+3}\to\frac16$.
+3. $\tfrac52$. Same degree: ratio of leading coefficients.
+4. $0$. Sandwich: $-|x|\le x\cos\frac1x\le|x|$.
+5. $\dfrac{dy}{dx}=-\dfrac{3x^2y+y^3}{x^3+3xy^2}$
+6. $\dfrac{dy}{dx}=\dfrac{1}{y\,(x+1)^2}$
+7. $r'=-\dfrac{2}{3s^3}+\dfrac{5}{2s^2}$, $\quad r''=\dfrac{2}{s^4}-\dfrac{5}{s^3}$
+8. $y'=-2+3x^{-4}$, $\quad y''=-12x^{-5}$
+9. Expand first: $y=\dfrac1z+\dfrac83-z$. So $y'=-\dfrac1{z^2}-1$, $\quad y''=\dfrac2{z^3}$
+10. Expand first: $y=1-\theta^{-3}$. So $y'=3\theta^{-4}$, $\quad y''=-12\theta^{-5}$
+11. $y'=-20x^4+48x^2-16x-15$
+12. $y'=\tfrac{11}{4}x^{7/4}+\tfrac34x^{-1/4}+x^{-2}+3x^{-4}$
+13. $y'=\dfrac{18}{\sqrt s\,\left(2\sqrt s+9\right)^2}$
 
-
-
-
-```math
-\left. f'(x) \right|_{x=5} = f'(5) \text{ ; } 2 \times 5 = \underline{\underline{10}}
-```
-
-
-
----
-
-**Q.** Find the rate of change of the function $f(x) = 4x^3 - x^2 + 2x - 7$ at $x = 1$
-
-
-
-```math
-f'(x) = 12x^2 - 2x + 2
-```
-
-
-
-
-
-```math
-\left. f'(x) \right|_{x=1} = 12 \times 1^2 - 2 \times 1 + 2
-```
-
-
-
-
-
-```math
-= 12 - \cancel{2} + \cancel{2} = \underline{\underline{12}}
-```
-
-
+> **Study tip.** In 9 and 10, expanding or simplifying *before* differentiating turns a product or quotient rule into the much easier power rule.
 
 ---
 
-**Q.** A car's position $s(t)$ in metres at time '$t$' in seconds is given by $s(t) = 4t^2$
-Find the car's instantaneous velocity at $t = 5\text{ seconds}$.
-
-
-
-```math
-s'(t) = 8t
-```
-
-
-
-
-
-```math
-\left. s'(t) \right|_{t=5} = 8 \times 5 = \underline{\underline{40\text{ m/s}}}
-```
-
-
-
----
-
-**Q.** The stress $\sigma(t)$ in a material is given by $\sigma(t) = 100t - 5t^2$, where '$t$' is in seconds. Find the rate of change of stress at $t = \underline{8\text{ s}}$.
-
-
-
-```math
-\sigma'(t) = 100 - 10t
-```
-
-
-
-
-
-```math
-\left. \sigma'(t) \right|_{t=8} = 100 - 10 \times 8
-```
-
-
-
-
-
-```math
-= 100 - 80
-```
-
-
-
-
-
-```math
-= \underline{\underline{20\text{ Pa/s } \{ \text{or } \text{Nm}^2}}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 23 -->
-
-# Chain-Rule
-
-$Q_1$. If $y = f(u(x))$, differentiate $y$ with respect to $x$ is given by $\frac{dy}{dx} = \frac{df}{du} \cdot \frac{du}{dx}$.  
-Find the derivative of $y = (3x+2)^3$.
-
-
-
-```math
-y = (3x+2)^3
-```
-
-
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= 3(3x+2)^2 \frac{d}{dx}(3x+2) \\
-&= 3(3x+2)^2 \cdot 3 \\
-&= 9(3x+2)^2
-\end{aligned}
-```
-
-
-
-
-
-```math
-y = (3x+2)^3
-```
-
-
-
-
-```math
-f(x) = u^3 \qquad u(x) = (3x+2)
-```
-
-
-
-
-```math
-\frac{df}{du} = 3u^2 \qquad \frac{du}{dx} = 3
-```
-
-
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= \frac{df}{du} \times \frac{du}{dx} \\
-&= 3u^2 \times 3 \\
-&= 9u^2 = 9(3x+2)^2
-\end{aligned}
-```
-
-
-
-$Q_2$. Find the derivative of $y = \sin(4x^3)$.
-
-
-
-```math
-y = (\sin(4x^3))
-```
-
-
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= \cos(4x^3) \cdot \frac{d}{dx}(4x^3) \\
-&= \cos(4x^3) \cdot 12x^2 \\
-&= 12x^2 \cos(4x^3)
-\end{aligned}
-```
-
-
-
-
-
-```math
-y = (\sin(4x^3))
-```
-
-
-
-
-```math
-f(x) = \sin u \qquad u(x) = 4x^3
-```
-
-
-
-
-```math
-\frac{df}{du} = \cos u \qquad \frac{du}{dx} = 12x^2
-```
-
-
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= \frac{df}{du} \times \frac{du}{dx} = \cos u \cdot 12x^2 \\
-&= \cos(4x^3) \cdot 12x^2
-\end{aligned}
-```
-
-
-
-$Q_3$. $y = e^{\sin x}$
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= e^{\sin x} \cdot \frac{d}{dx}(\sin x) \\
-&= \cos x \cdot e^{\sin x}
-\end{aligned}
-```
-
-
-
-$Q_4$. $y = \sqrt{5x^2 + 3x}$
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= \frac{1}{2\sqrt{5x^2 + 3x}} \cdot \frac{d}{dx}(5x^2 + 3x) \\
-&= \frac{1}{2\sqrt{5x^2 + 3x}} \cdot 10x + 3 = \frac{10x + 3}{}
-\end{aligned}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 24 -->
-
-### $Q_5$
-
-
-
-```math
-y = \tan(2x + 1)
-```
-
-
-
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= \sec^2(2x + 1) \cdot \frac{d}{dx}(2x + 1) \\
-&= \sec^2(2x + 1) \cdot 2 = 2 \sec^2(2x + 1)
-\end{aligned}
-```
-
-
-
----
-
-### $Q_6$
-
-
-
-```math
-y = x \sin^4 x + x \cos^{-2} x
-```
-
-
-
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= \cancel{(x \cos^4 x + \sin^4 x \cdot 1) + (x \cdot \sin^{-2} x + \cos^{-2} x \cdot 1)} \\
-&= \cancel{x \cos^4 x + \sin^4 x - x \sin^{-2} x + \cos^{-2} x} \\
-&= x \frac{d}{dx}(\sin^4 x) + \sin^4 x \cdot \frac{d}{dx}(x) + x \cdot \frac{d}{dx}(\cos^{-2} x) + \cos^{-2} x \cdot \frac{d}{dx}(x) \\
-&= x \cdot 4 \sin^3 x \cdot \frac{d}{dx}(\sin x) + \sin^4 x \cdot 1 + x \cdot -2 \cos^{-3} x \cdot \frac{d}{dx}(\cos x) + \cos^{-2} x \cdot 1 \\
-&= x \cdot 4 \sin^3 x \cdot \cos x + \sin^4 x + \cancel{x \cdot 2 \cos^{-3} x} \, x \cdot 2 \cos^{-3} x \sin x + \cos^{-2} x \\
-&= x \cdot 4 \sin^3 x \cos x + \sin^4 x + \frac{2\sin x}{\cos^3 x} + \frac{1}{\cos^2 x}
-\end{aligned}
-```
-
-
-
----
-
-### $Q_7$
-
-
-
-```math
-f(\theta) = \left( \frac{\sin \theta}{1 + \cos \theta} \right)^2
-```
-
-
-
-
-
-```math
-\cancel{\frac{dy}{d\theta} = \frac{df}{d\theta}}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-\frac{df}{d\theta} &= 2 \left( \frac{\sin \theta}{1 + \cos \theta} \right) \cdot \frac{d}{dx} \left( \frac{\sin \theta}{1 + \cos \theta} \right) \\
-&= 2 \left( \frac{\sin \theta}{1 + \cos \theta} \right) \cdot \frac{(1 + \cos \theta) \cos \theta - \sin \theta(0 - \sin \theta)}{(1 + \cos \theta)^2} \\
-&= 2 \left( \frac{\sin \theta}{1 + \cos \theta} \right) \frac{(1 + \cos \theta)\cos \theta + \sin^2 \theta}{(1 + \cos \theta)^2} = \frac{2(\sin \theta)}{(1 + \cos \theta)} \frac{\cos \theta + \cos^2 \theta + \sin^2 \theta}{(1 + \cos \theta)^2} \\
-&= \frac{2(\sin \theta)}{(1 + \cos \theta)} \cdot \frac{1 + \cos \theta}{(1 + \cos \theta)^2} = \frac{2(\sin \theta)}{(1 + \cos \theta)^2}
-\end{aligned}
-```
-
-
-
----
-
-### $Q_8$
-
-
-
-```math
-y = x \tan 2\sqrt{x} + 7
-```
-
-
-
-
-
-```math
-\begin{aligned}
-\frac{dy}{dx} &= x \cdot \sec^2 2\sqrt{x} \cdot \frac{d}{dx} 2\sqrt{x} + \tan 2\sqrt{x} \cdot \frac{d}{dx}(x) + \frac{d}{dx}(7) \\
-&= x \sec^2 2\sqrt{x} \cdot 2 \cdot \frac{1}{2\sqrt{x}} + 0 \\
-&= x \sec^2 2\sqrt{x} \cdot \frac{1}{\sqrt{x}} = \frac{x \sec^2 2\sqrt{x}}{\sqrt{x}} + \tan 2\sqrt{x}
-\end{aligned}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 25 -->
-
-# Implicit Differentiation
-
-It is used when a function is given in an "implicit form"
-meaning, it is not solved for 1 variable in terms of the other.
-
-**Q.** Find the derivate of :
-
-1) $x^2 + y^2 = r^2$ implicitly to find $dy/dx$.
-
-diff. both sides with respect to $x$.
-
-
-
-```math
-\Rightarrow \frac{d}{dx} (x^2 + y^2) = \frac{d}{dx} (r^2)
-```
-
-
-
-
-
-```math
-\frac{d}{dx} (x^2) + \frac{d}{dx} (y^2) = \frac{d}{dx} (r^2)
-```
-
-
-
-
-
-```math
-2x + 2y \frac{dy}{dx} = 0
-```
-
-
-
-
-
-```math
-2y \frac{dy}{dx} = -2x
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{-2x}{2y}
-```
-
-
-
-
-
-```math
-\underline{\underline{\frac{dy}{dx} = -x/y}}
-```
-
-
-
-
-
-```math
-\begin{matrix} x^2 + y^2 = r^2 \\ \downarrow \\ \text{eqn of circle.} \end{matrix}
-```
-
-
-
-2) diff the eqn of the ~~elip~~ ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ implicitly to find $dy/dx$
-
-diff both sides with respect to $x$
-
-
-
-```math
-\frac{d}{dx} \left( \frac{x^2}{a^2} + \frac{y^2}{b^2} \right) = \frac{d}{dx} (1)
-```
-
-
-
-
-
-```math
-\frac{d}{dx} \frac{x^2}{a^2} + \frac{d}{dx} \frac{y^2}{b^2} = 0
-```
-
-
-
-
-
-```math
-\frac{1}{a^2} \frac{d}{dx} (x^2) + \frac{1}{b^2} \frac{d}{dx} (y^2) = 0
-```
-
-
-
-
-
-```math
-\frac{1}{a^2} 2x + \frac{1}{b^2} \cdot 2y \cdot \frac{dy}{dx} = 0
-```
-
-
-
-
-
-```math
-\frac{2y}{b^2} \frac{dy}{dx} = -\frac{2x}{a^2}
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{-\frac{2x}{a^2}}{\frac{2y}{b^2}}
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = -\frac{2x}{a^2} \times \frac{b^2}{2y} = -\frac{b^2 x}{a^2 y}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 26 -->
-
-3) diff. ~~$x^2 + y$~~ $x^2 + xy + y^2 = 1$ implicitly to find $dy/dx$
-
-diff both sides with respect to $x$
-
-
-
-```math
-\frac{d}{dx}(x^2 + xy + y^2) = \frac{d}{dx}(1)
-```
-
-
-
-
-
-```math
-\frac{d}{dx}(x^2) + \frac{d}{dx}(xy) + \frac{d}{dx}(y^2) = 0
-```
-
-
-
-
-
-```math
-2x + x \cdot \frac{dy}{dx} + y \cdot 1 + 2y \cdot \frac{dy}{dx} = 0
-```
-
-
-
-
-
-```math
-2x + x \frac{dy}{dx} + y + 2y \frac{dy}{dx} = 0
-```
-
-
-
-
-
-```math
-2x + y + \frac{dy}{dx}(x + 2y) = 0
-```
-
-
-
-
-
-```math
-\frac{dy}{dx}(x + 2y) = -2x - y
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{-2x - y}{x + 2y}
-```
-
-
-
----
-
-4) $x^2 y + y^3 = 7$
-
-
-
-```math
-\frac{d}{dx}(x^2 y) + \frac{d}{dx}(y^3) = \frac{d}{dx}(7)
-```
-
-
-
-
-
-```math
-x^2 \frac{dy}{dx} + y \cdot 2x + 3y^2 \frac{dy}{dx} = 0
-```
-
-
-
-
-
-```math
-x^2 \frac{dy}{dx} + 3y^2 \frac{dy}{dx} = -2xy
-```
-
-
-
-
-
-```math
-\frac{dy}{dx}(x^2 + 3y^2) = -2xy
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{-2xy}{x^2 + 3y^2}
-```
-
-
-
----
-
-5) $\text{Sin}(xy) = x + y$
-
-
-
-```math
-\cos(xy) \cdot \frac{d}{dx}(xy) = 1 + \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-\cos(xy) \left[ x \frac{dy}{dx} + y \right] = 1 + \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-\cos x \cdot \overset{\cos(xy)}{\frac{dy}{dx}} - \frac{dy}{dx} = 1 - ~\cos(xy)~ - y \implies
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} [x^{\cos(xy)} - 1] = 1 - ~\cos(xy)~ - y
-```
-
-
-
-~~
-
-```math
-\implies \frac{dy}{dx} = \frac{1 - \cos(xy) - y}{x - 1}
-```
-
-
-
-
-
-
-
-```math
-\frac{dy}{dx} = 1 -
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 27 -->
-
-
-
-```math
-\sin(xy) = x + y
-```
-
-
-
-
-
-```math
-\cos(xy)\left[x\frac{dy}{dx} + y\right] = 1 + \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-x\cos(xy)\frac{dy}{dx} + y\cos(xy) = 1 + \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-x\cos(xy)\frac{dy}{dx} - \frac{dy}{dx} = 1 - y\cos(xy)
-```
-
-
-
-
-
-```math
-\frac{dy}{dx}[x\cos(xy) - 1] = 1 - y\cos(xy)
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{1 - y\cos(xy)}{x\cos(xy) - 1}
-```
-
-
-
----
-
-6) 
-
-```math
-x^2(x-y^2) = x^2 - y^2
-```
-
-
-
-
-
-Crossed out in the source:
-
-
-
-```math
-\frac{dy}{dx}\left(x^2(x-y^2)\right) = \frac{d}{dx}(x^2 - y^2)
-```
-
-
-
-
-
-```math
-x^2\left(1 - 2y\frac{dy}{dx}\right) + (x-y^2)\cdot 2x = 2x - 2y\frac{dy}{dx}
-```
-
-
-
-
-
-```math
-x^2 - 2x^2 y\frac{dy}{dx} + 2x^2 - 2xy^2 = 2x - 2y\frac{dy}{dx}
-```
-
-
-
-
-
-```math
-2y\frac{dy}{dx} - 2x^2 y\frac{dy}{dx} = 2x - x^2 - 2x^2 + 2xy^2
-```
-
-
-
-
-
-```math
-\frac{dy}{dx}(2y - 2x^2 y) = 2x - x^2 - 2x^2 + 2xy^2 = x(2 - x - 2x + 2y^2)
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{2x - x^2 - 2x^2 + 2xy^2}{2y - 2(x^2 y)}
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{2(x - x^2 + y^2) - x^2}{y - 2x^2 y}
-```
-
-
-
-
-
-
-
-```math
-x^2 \cdot 2(x-y)\frac{d}{dx}(x-y) + (x-y)^2 \cdot 2x = 2x - 2y\frac{dy}{dx}
-```
-
-
-
-
-
-```math
-2x^2(x-y)[1 - dy/dx] + (x-y)^2 \cdot 2x = 2x - 2y\frac{dy}{dx}
-```
-
-
-
-
-
-```math
-2x^2(x-y) - 2x^2(x-y)\frac{dy}{dx} + 2y\frac{dy}{dx} = 2x - 2y\frac{dy}{dx}
-```
-
-
-
-
-
-```math
-2x^2(x-y) - 2x^2(x-y)\frac{dy}{dx} + 2y\frac{dy}{dx} = 2x - 2x(x-y)^2
-```
-
-
-
-
-
-```math
-\frac{dy}{dx}\left[2y - 2x^2(x-y)\right] = 2x - 2x(x-y)^2 - 2x^2(x-y)
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{2x - 2x(x-y)^2 - 2x^2(x-y)}{2y - 2x^2(x-y)}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 28 -->
-
-
-
-```math
-= \frac{2x [1 - (x+y)^2 - x[x-y]]}{2[y - x^2[x-y]]}
-```
-
-
-
-
-```math
-= \frac{x [1 - (x+y)^2 - x(x-y)]}{[y - x^2(x-y)]}
-```
-
-
-
----
-
-1. Use Implicit diff to find $\frac{dy}{dx}$
-   1. $2xy + y^2 = x + y$
-   2. $y^2 = \frac{x-1}{x+1}$
-   3. $x^3y + xy^3 = 6$
-
-2. Find $1^{\text{st}}$ & $2^{\text{nd}}$ order derivatives of the following
-   1. $r = \frac{1}{3s^2} - 5/2s$
-   2. $y = 4 - 2x - x^{-3}$
-   3. $y = \left(\frac{1+3z}{3z}\right)(3-z)$
-   4. $y = \frac{(\theta - 1)(\theta^2 + \theta + 1)}{\theta^3}$
-
-Find the derivative of the following functions
-1. $y = (5 - 2x^2)(2x^3 - 3x + 4)$
-2. $y = (1+x^2)(x^{3/4} - x^{-3})$
-3. $y = \frac{\sqrt{4s} - 9}{\sqrt{4s} + 9}$
-
----
-
-9) $2xy + y^2 = x + y$
-
-
-
-```math
-\frac{d}{dx}(2xy + y^2) = \frac{d}{dx}(x+y)
-```
-
-
-
-
-
-```math
-2\left(x \cdot \frac{dy}{dx} + y\right) + 2y \frac{dy}{dx} = 1 + \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-2x \frac{dy}{dx} + 2y + 2y \frac{dy}{dx} = 1 + \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-2x \frac{dy}{dx} + 2y \frac{dy}{dx} - \frac{dy}{dx} = 1 - 2y
-```
-
-
-
-
-
-```math
-\frac{dy}{dx}(2x + 2y - 1) = 1 - 2y
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{1 - 2y}{2x + 2y - 1}
-```
-
-
-
----
-
-8) $\frac{dy}{dx}$ where $x^3 = \frac{2x-y}{x+3y}$
-
-
-
-```math
-3x^2 = \frac{(x+3y)\left(2 - \frac{dy}{dx}\right) - (2x-y)\left(1 + 3\frac{dy}{dx}\right)}{(x+3y)^2}
-```
-
-
-
-
-
-```math
-3x^2 = \frac{2x + 6y - x\frac{dy}{dx} - 3y\frac{dy}{dx} - \left[2x - y + 6x\frac{dy}{dx} - 3y\frac{dy}{dx}\right]}{(x+3y)^2}
-```
-
-
-
-
-
-```math
-3x^2 = \frac{6y - x\frac{dy}{dx} + y - 6x\frac{dy}{dx}}{(x+3y)^2}
-```
-
-
-
-
-
-```math
-3x^2 = \frac{7y - \frac{dy}{dx}(x - 6x)}{(x+3y)^2}
-```
-
-
-
-
-
-```math
-3x^2(x+3y)^2 = 7y - \frac{dy}{dx}(-5x)
-```
-
-
-
-
-
-```math
-\Rightarrow \frac{3x^2(x+3y)^2 - 7y}{-5x} = \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-\Rightarrow \frac{dy}{dx} = \frac{3x^2(x+3y)^2 - 7y}{5x}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 29 -->
-
-# Tangent Line and Normal Line
-
-## Equation of Tangent Line
-
-The eqn of the tangent line to the curve $y = f(x)$ at the point $(x_0, y_0)$ is given by $(y - y_0) = f'(x_0)(x - x_0)$ where $f'(x)$ is the slope of the curve at $x_0$.
-
-## Equation of Normal Line
-
-A normal line to a curve at a given point is the line that is $\perp$ar to the tangent line at that point the slope of the normal line is the -ve reciprocal of the slope of the tangent line. and the eqn of the normal line is
-
-
-
-```math
-(y - y_0) = \frac{-1}{f'(x_0)} (x - x_0)
-```
-
-
-
----
-
-**Q.** Find the eqn of the tangent and normal lines to the curve $y = x^2$ at the point $(1, 1)$:
-
-
-
-```math
-\begin{aligned}
-f'(x) &= 2x \\
-f'(x_0) &= f'(1) = 2
-\end{aligned}
-```
-
-
-
-**Eqn of tangent line :**
-
-
-
-```math
-\begin{aligned}
-y - y_0 &= f'(x_0)(x - x_0) \\
-y - 1 &= 2(x - 1) \\
-y &= 2x - 2 + 1 \\
-\underline{y = 2x - 1}
-\end{aligned}
-```
-
-
-
-**Eqn of normal line :**
-
-
-
-```math
-\begin{aligned}
-y - y_0 &= \frac{-1}{f'(x_0)} (x - x_0) \\
-y - 1 &= -\frac{1}{2}(x - x_0) \\
-2y - 2 &= -x + 1 \\
-2y &= -x + 1 + 2 \\
-\underline{y = -\frac{x}{2} + \frac{3}{2}}
-\end{aligned}
-```
-
-
-
----
-
-**Q.** Find the eqn of tangent and the normal lines to the curve $y = x^2 + 3x + 2$ at $x = 1$.
-
-
-
-```math
-(1, 6) \implies y = 1^2 + 3 \times 1 + 2 = 6
-```
-
-
-
-
-
-```math
-\begin{aligned}
-f'(x) &= 2x + 3 \\
-f'(x_0) &= 2 + 3 = \underline{5}
-\end{aligned}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-y - y_0 &= f'(x_0)(x - x_0) \\
-y - 6 &= 5(x - 1) \\
-y &= 5x - 5 + 6
-\end{aligned}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 30 -->
-
-Eqn of normal line
-
-
-
-```math
-y - 6 = -\frac{1}{5}(x - 1)
-```
-
-
-
-
-```math
-5y - 30 = -x + 1
-```
-
-
-
-
-```math
-\underline{\underline{y = -\frac{x}{5} + \frac{31}{5}}}
-```
-
-
-
----
-
-$Q_3$. Find the eqn of tangent and normal lines to the curve $y = e^x$ at $x = 0$
-
-
-
-```math
-\begin{aligned}
-y' &= e^x & \text{at } x &= 0 \\
-f'(x_0) &= e^0 = 1 & y &= e^x \\
-& & &= e^0 = \underline{\underline{1}}
-\end{aligned}
-```
-
-
-
-**Eqn of tangent line**
-
-
-```math
-y - y_0 = f'(x_0)(x - x_0)
-```
-
-
-
-
-```math
-y - 1 = 1(x - 0)
-```
-
-
-
-
-```math
-\underline{\underline{y = x + 1}}
-```
-
-
-
-**Eqn of normal line**
-
-
-```math
-y - y_0 = -\frac{1}{f'(x_0)}(x - x_0)
-```
-
-
-
-
-```math
-y - 1 = -\frac{1}{1}(x - 0)
-```
-
-
-
-
-```math
-\underline{\underline{y = -x + 1}}
-```
-
-
-
----
-
-$Q_4$. A projectile is launched its height $h(t)$ in meters is given by the function:
-$h(t) = -5t^2 + 20t + 25$, where $t$ is the time in seconds. Find the eqn of the tangent line and the normal line to the curve at $t = 2\text{s}$.
-
-
-
-```math
-h(t) = -5 \times 4 + 20 \times 2 + 25 = -20 + 40 + 25 = 45 \qquad (2, 45)
-```
-
-
-
-
-```math
-h'(t) = -10t + 20
-```
-
-
-
-
-```math
-\Rightarrow -10 \times 2 + 20 = 0
-```
-
-
-
-
-
-```math
-y - 45 = 0(x - 20)
-```
-
-
-
-
-```math
-y = 45 \implies \text{Eqn of tangant line}
-```
-
-
-
-
-
-```math
-y - 45 = -\frac{1}{0}(x - 2)
-```
-
-
-
-
-```math
-\text{Not defined} \implies \text{Eqn of normal line}
-```
-
-
-
-The eqn of normal line is not defined (Since the tangant line is horizontal the normal line is vertical) therefore, the eqn of the normal line is $t = 2$.
-
----
-
-$Q_5$. Find eqn of tangent and normal line to the curve $y = \sin x$ at $x = \pi/4$
-
-
-
-```math
-y = \sin \frac{\pi}{4} = 1/\sqrt{2} \qquad (\pi/4, 1/\sqrt{2})
-```
-
-
-
-
-```math
-y'(x) = \cos x \implies y'(x_0) = \cos \frac{\pi}{4} = 1/\sqrt{2}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 31 -->
-
-### Eqn of tangent line
-
-
-```math
-y - y_0 = f'(x_0)(x - x_0)
-```
-
-
-
-
-```math
-y - \frac{1}{\sqrt{2}} = \frac{1}{\sqrt{2}} \left(x - \pi/4\right)
-```
-
-
-
-
-```math
-\sqrt{2}y - 1 = x - \pi/4
-```
-
-
-
-
-```math
-y = \frac{x - \pi/4 + 1}{\sqrt{2}}
-```
-
-
-
-### Eqn of normal line.
-
-
-```math
-y - y_0 = -\frac{1}{f'(x_0)} (x - x_0)
-```
-
-
-
-
-```math
-y - 1/\sqrt{2} = -\sqrt{2}(x - x_0)
-```
-
-
-
-
-```math
-y = -\sqrt{2}x + \sqrt{2}\frac{\pi}{4} + 1/\sqrt{2}
-```
-
-
-
----
-
-### Linearization
-
-Linearization is a method is used to appx the value of a function near a given point using its derivatives. For a function $f(x)$ that is differentiable at $x = a$, the linear approximation (linearization) of $f(x)$ near $x = a$ is given by
-
-
-```math
-L(x) = f(a) + f'(a)(x - a)
-```
-
-
-
-
-
-```math
-L(x) \simeq f(x) \text{ [uncertain: at } a+h\text{]}
-```
-
-
-
-**Q. linearise $f(x) = \sqrt{x}$ at $x = 4$.**
-
-
-
-```math
-f(4) = \sqrt{4} = 2
-```
-
-
-
-
-```math
-f'(x) = \frac{1}{2\sqrt{x}}
-```
-
-
-
-
-```math
-f'(4) = \frac{1}{2\sqrt{4}} = \frac{1}{4}
-```
-
-
-
-
-
-```math
-L(x) = f(a) + f'(a)(x - a)
-```
-
-
-
-
-```math
-= 2 + \frac{1}{4}(x - 4)
-```
-
-
-
-
-```math
-= 2 + \frac{x}{4} - \frac{4}{4}
-```
-
-
-
-
-```math
-= \frac{x}{4} + 1
-```
-
-
-
----
-
-**$Q_2$. linearise $f(x) = e^x$ at $x = 0$**
-
-
-
-```math
-f(0) = e^0 = 1
-```
-
-
-
-
-```math
-f'(x) = e^x.
-```
-
-
-
-
-```math
-f'(0) = e^0 = 1
-```
-
-
-
-
-```math
-L(x) = 1 + 1(x - 0)
-```
-
-
-
-
-```math
-= 1 + x
-```
-
-
-
----
-
-**$Q_3$. linearise $f(x) = \ln x$ at $x = 1$**
-
-
-
-```math
-f(1) = \ln 1 = 0
-```
-
-
-
-
-```math
-f'(x) = \frac{1}{x}
-```
-
-
-
-
-```math
-f'(1) = \frac{1}{1} = 1
-```
-
-
-
-
-```math
-L(x) = 0 + 1(x - 1)
-```
-
-
-
-
-```math
-= x - 1
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 32 -->
-
-**$Q_4$** Linearise $f(x) = 	an x$ at $x = \frac{\pi}{4}$
-
-
-
-```math
-\begin{aligned}
-f'(\pi/4) &= \tan \frac{\pi}{4} = 1 \\
-f'(x) &= \sec^2 \frac{\pi}{4} \\
-f'(\pi/4) &= 2 \\
-L(x) &= 1 + 2(x - \pi/4) \\
-&= 1 + 2x - \frac{2\pi}{4_2} \\
-&= \underline{\underline{1 + 2x - \pi/2}}
-\end{aligned}
-```
-
-
-
----
-
-**$Q_5$** The resistance $R$ of a resistor is given by $R(T) = e^{0.1 T}$ where $T$ is the temperature in $^\circ\text{C}$. Linearize the function at $T = 25$ to appx. the resis... for small temperature changes around the point.
-
-
-
-```math
-\begin{aligned}
-R'(T) &= e^{0.1 T} \cdot 0.1 = 0.1 e^{0.1 T} \\
-R'(25) &= 0.1 e^{0.1 \times 25} = 1.218 \\
-R(25) &= e^{0.1 \times 25} = 12.182
-\end{aligned}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-L(t) &= R(a) + R'(a)(T - a) \\
-&= 12.182 + 1.218 (T - 25) \\
-&= 12.182 + 1.218 T - 30.45 \\
-&= \underline{1.218 - 18.268}
-\end{aligned}
-```
-
-
-
----
-
-**$Q_6$** Suppose a citys population $P(t)$ in ~~100~~ thousands is given by the eqn $P(t) = 100 e^{0.02 t}$, where '$t$' is the number of years. Find the linear approx. of the population in at $t = 0$ in year 2020. Use this linear approx. ~~of the~~ to estimate the population in the year 2021.
-
-
-
-```math
-\begin{aligned}
-P(t) &= 100 e^{0.02 t} & P(0) &= 100 e^{0.02 \times 0} = 100 \\
-P'(t) &= 100 \cdot e^{0.02 t} \cdot 0.02 & P'(0) &= 100 \cdot e^{0.02 \times 0} \cdot 0.02 = \underline{2} \\
-&= 2 \cdot e^{0.02 t}
-\end{aligned}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-L(t) &= P(a) + P'(a)(t - a) \\
-&= 100 + 2(t - 0) \\
-&= \underline{100 + 2t}
-\end{aligned}
-```
-
-
-
-Estimated population in the year $2020 = 100 + 2t$.
-
-
-
-```math
-\begin{aligned}
-t &= 1 \\
-L(1) &= 100 + 2 \times 1 \\
-&= \underline{102}
-\end{aligned}
-```
-
-
-
-Estimated population in the year $2021 = \underline{\underline{102}}$
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 33 -->
-
-**Q:** Linearise $f(x) = \sin x$ at $x = \pi/6$:
-
-
-
-```math
-f'(x) = \cos x \implies f'(a) = \cos \frac{\pi}{6} = \frac{\sqrt{3}}{2}
-```
-
-
-
-
-```math
-f(a) = \sin \frac{\pi}{6} = 1/2
-```
-
-
-
-
-
-```math
-\begin{aligned}
-L(x) &= f(a) + f'(a)(x-a) \\
-&= 1/2 + \frac{\sqrt{3}}{2}\left(x - \pi/6\right) = 1/2 + \frac{\sqrt{3}}{2}x - \frac{\sqrt{3}\pi}{12}
-\end{aligned}
-```
-
-
-
-### Concavity
-
-Concavity describes the curvature nature of a graph of a function. A function may be concave up or concave down.
-
-
-
-![Hand-drawn diagram illustrating concavity and an inflection point](/notes/cse/s1/maths/page-033-image-1-f26f2764-943e-42a6-aec9-4a45f4a2d801.webp)
-
-
-
-### The second Derivative Test for Concavity
-
-Let $y = f(x)$ be a twice differentiable function on an interval $I$,
-
-(i) If $f''(x) > 0$ on $I$, the graph of '$f$' on $I$ is concave up.
-
-(ii) If $f''(x) < 0$ on $I$, the graph of '$f$' over $I$ is concave down.
-
-(iii) If $f''(x) = 0$ or $f''(x)$ is not defined, then this points are known as inflexion points.
-
-**Q.** Determine the concavity of $f(x) = x^3 - 3x^2 + 4$.
-
-
-
-```math
-f(x) = x^3 - 3x^2 + 4
-```
-
-
-
-
-```math
-f'(x) = 3x^2 - 6x
-```
-
-
-
-
-```math
-f''(x) = 6x - 6
-```
-
-
-
-For $x > 1$, $f''(x) > 0$, $f$ is concave up.  
-For $x < 1$, $f''(x) < 0$, $f$ is concave down.  
-$f$ is concave up on $(1, \infty)$  
-$f$ is concave down on $(-\infty, 1)$.
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 34 -->
-
-Q. Determine the concavity of $f(x) = x^3 - 6x^2 + 9x + 1$
-
-1)
-
-
-```math
-\begin{aligned}
-f'(x) &= 3x^2 - 12x + 9 \\
-f''(x) &= 6x - 12
-\end{aligned}
-```
-
-
-
-For $x > 2$, $f''(x) > 0$  
-For $x < 2$, $f''(x) < 0$  
-$f$ is concave up on $(2, \infty)$  
-$f$ is concave down on $(-\infty, 2)$
-
----
-
-2) $f(x) = \ln(x)$ for $x > 0$
-
-
-
-```math
-\begin{aligned}
-f'(x) &= \frac{1}{x} \\
-f''(x) &= -\frac{1}{x^2}
-\end{aligned}
-```
-
-
-
-For $(x > 0)$, $f''(x) < 0$  
-$f$ is concave down $(0, \infty)$
-
----
-
-3) $f(x) = e^{-x^2}$
-
-
-
-```math
-\begin{aligned}
-f'(x) &= e^{-x^2} \cdot (-2x) \\
-f''(x) &= e^{-x^2} \cdot (-2) + (-2x) \cdot e^{-x^2} \cdot (-2x) \\
-&= -2e^{-x^2} + 4x^2 e^{-x^2} \\
-&= \underline{\underline{2e^{-x^2}(2x^2 - 1)}}
-\end{aligned}
-```
-
-
-
-
-
-```math
-\boxed{e^{-x^2} \neq 0}
-```
-
-
-
-For $x^2 > \frac{1}{2}$, $f''(x) > 0$  
-For $x^2 < \frac{1}{2}$, $f''(x) < 0$
-
-
-
-![Sign chart number line for concavity of e^(-x^2)](/notes/cse/s1/maths/page-034-image-1-8198fcaf-a51b-4f3f-a4d7-302bf93d5749.webp)
-
-
-
-$f$ is concave up on $(-\infty, -\sqrt{1/2}) \cup (\sqrt{1/2}, \infty)$  
-$f$ is concave down on $(-\sqrt{1/2}, \sqrt{1/2})$
-
----
-
-4) $f(x) = e^x - x^2$
-
-
-
-```math
-\begin{aligned}
-f'(x) &= e^x - 2x \\
-f''(x) &= e^x - 2
-\end{aligned}
-```
-
-
-
-
-
-```math
-\begin{aligned}
-f''(x) &= 0 \\
-e^x - 2 &= 0 \\
-e^x &= 2 \\
-x &= \ln 2
-\end{aligned}
-```
-
-
-
-For $x > \ln 2$, $f''(x) > 0$  
-For $x < \ln 2$, $f''(x) < 0$
-
-$f$ is concave up on $(\ln 2, \infty)$  
-$f$ is convave up on $(-\infty, \ln 2)$
-
-
-
-```math
-\begin{array}{c}
-e^{\ln x} = x \\
-e^{\ln 2} = 2
-\end{array}
-```
-
-
-
----
-
-<!-- Source: GAMAT101_Mathematics-for-Information-Science-1_Module-1_ktunotes.in.pdf; page 35 -->
-
-Q. Find the eqn of the tangent line and normal line to the curve $6x^2 + 3xy + 2y^2 + 17y - 6 = 0$ at $(-1, 0)$
-
-
-
-```math
-f'(x) = 12x + 3\left(\frac{dy}{dx}x + y\right) + 4y \frac{dy}{dx} + 17 \frac{dy}{dx}
-```
-
-
-
-
-
-```math
-\Rightarrow 12x + 3\frac{dy}{dx} \cdot x + 3y + 4y \frac{dy}{dx} + 17 \frac{dy}{dx} = 0
-```
-
-
-
-
-
-```math
-3\frac{dy}{dx} \cdot x + 4y \cdot \frac{dy}{dx} + 17 \frac{dy}{dx} = -12x - 3y
-```
-
-
-
-
-
-```math
-\frac{dy}{dx}(3x + 4y + 17) = -12x - 3y
-```
-
-
-
-
-
-```math
-\frac{dy}{dx} = \frac{-(12x + 3y)}{(3x + 4y + 17)}
-```
-
-
-
-
-
-```math
-f'(x_0, y_0) = \frac{-(12 \times -1 + 3 \times 0)}{3 \times -1 + 4 \times 0 + 17} = \frac{12}{14} = \frac{6}{7}
-```
-
-
-
-
-
-```math
-y - y_0 = f'(x_0, y_0)(x - x_0)
-```
-
-
-
-
-
-```math
-y - 0 = \frac{6}{7}(x - (-1))
-```
-
-
-
-
-
-```math
-7y = 6(x + 1)
-```
-
-
-
-
-
-```math
-y = \frac{6x}{7} + \frac{6}{7}
-```
-
-
-
-**Eqn of normal line**
-
-
-
-```math
-y - y_0 = \frac{-1}{f'(x_0, y_0)}(x - x_0)
-```
-
-
-
-
-
-```math
-y - 0 = \frac{-1}{\frac{6}{7}}(x - (-1))
-```
-
-
-
-
-
-```math
-6y = -7x - 7
-```
-
-
-
-
-
-```math
-y = \frac{-(7x + 7)}{6}
-```
-
-
+## Formula sheet
+
+### Limits
+
+| | |
+| --- | --- |
+| Definition | $\lim_{x\to c}f(x)=L$ means $f(x)\to L$ as $x\to c$ ($x\neq c$) |
+| Exists only if | left limit $=$ right limit |
+| Polynomials | $\lim_{x\to c}P(x)=P(c)$ |
+| Rational | $\lim_{x\to c}\dfrac{P}{Q}=\dfrac{P(c)}{Q(c)}$ if $Q(c)\ne0$ |
+| $0/0$ | factorise and cancel, or multiply by the conjugate |
+| Sandwich | $g\le f\le h$ and $g,h\to L$ $\Rightarrow$ $f\to L$ |
+| At infinity | divide by the highest power; $\dfrac1{x^n}\to0$ |
+| Standard limits | $\dfrac{\sin h}{h}\to1$, $\ \dfrac{\ln(1+h)}{h}\to1$ as $h\to0$ |
+
+### Continuity
+
+$f$ is continuous at $a$ when $f(a)$ exists, $\lim_{x\to a}f(x)$ exists, and they are equal. Left- and right-continuity use $\lim_{x\to a^-}$ and $\lim_{x\to a^+}$.
+
+### Derivatives
+
+$$
+f'(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}{h}
+$$
+
+| Rule | Formula |
+| --- | --- |
+| Power | $(x^n)'=nx^{n-1}$ |
+| Product | $(fg)'=fg'+gf'$ |
+| Quotient | $\left(\dfrac fg\right)'=\dfrac{gf'-fg'}{g^2}$ |
+| Chain | $\dfrac{dy}{dx}=\dfrac{dy}{du}\cdot\dfrac{du}{dx}$ |
+| Implicit | differentiate both sides; every $y$-term gets a factor $\dfrac{dy}{dx}$ |
+
+| $f$ | $\sqrt x$ | $\dfrac1x$ | $e^x$ | $\ln x$ | $\sin x$ | $\cos x$ | $\tan x$ |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $f'$ | $\dfrac1{2\sqrt x}$ | $-\dfrac1{x^2}$ | $e^x$ | $\dfrac1x$ | $\cos x$ | $-\sin x$ | $\sec^2x$ |
+
+### Applications
+
+| | |
+| --- | --- |
+| Tangent at $(x_0,y_0)$ | $y-y_0=f'(x_0)(x-x_0)$ |
+| Normal at $(x_0,y_0)$ | $y-y_0=-\dfrac{1}{f'(x_0)}(x-x_0)$ |
+| Linearization at $a$ | $L(x)=f(a)+f'(a)(x-a)$ |
+| Concave up | $f''>0$ |
+| Concave down | $f''<0$ |
+| Inflection point | $f''$ changes sign |
