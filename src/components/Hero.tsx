@@ -12,7 +12,7 @@ export default function Hero() {
       <picture className="absolute inset-0 -z-20">
         <source type="image/webp" srcSet={`${import.meta.env.BASE_URL}assets/hero-900.webp 900w, ${import.meta.env.BASE_URL}assets/hero.webp 1440w`} sizes="100vw" />
         <img
-          className="size-full object-cover object-[50%_62%]"
+          className="size-full animate-settle object-cover object-[50%_62%]"
           src={`${import.meta.env.BASE_URL}assets/hero.jpg`}
           alt="Over a hundred UDSF members at GEC Wayanad posing together on a hilltop with KSU and MSF flags"
           width={1440}
@@ -27,26 +27,26 @@ export default function Hero() {
       />
 
       <div className="wrap flex min-h-[max(100svh,640px)] flex-col items-center pt-[calc(var(--nav-h)+clamp(3rem,14vh,10rem))] pb-12 text-center">
-        <p className="font-ml text-[1rem] text-ink/70" lang="ml">
+        <p className="animate-rise font-ml text-[1rem] text-ink/70" lang="ml">
           GEC വയനാടിന്റെ
         </p>
         <h1
           id="hero-title"
           className="mt-3 text-[length:clamp(4.5rem,15vw,12rem)] leading-[0.82] font-extrabold tracking-[-0.065em]"
         >
-          <span className="text-green">UD</span>
-          <span className="text-blue">SF</span>
+          <span className="inline-block animate-rise text-green [animation-delay:120ms]">UD</span>
+          <span className="inline-block animate-rise text-blue [animation-delay:240ms]">SF</span>
         </h1>
-        <p className="mt-7 max-w-[40ch] text-[1rem] leading-[1.55] text-ink/75">
+        <p className="mt-7 max-w-[40ch] animate-rise text-[1rem] leading-[1.55] text-ink/75 [animation-delay:420ms]">
           The KSU and MSF student alliance at Government Engineering College Wayanad, standing with every student on campus.
         </p>
 
-        <ul aria-label="Topics" className="mt-9 flex max-w-[560px] flex-wrap justify-center gap-1.5">
+        <ul aria-label="Topics" className="mt-9 flex max-w-[560px] animate-rise flex-wrap justify-center gap-1.5 [animation-delay:560ms]">
           {TOPICS.map(([href, label]) => (
             <li key={label}>
               <a
                 href={href}
-                className="label inline-flex h-7 items-center rounded-full border border-[#c9ccd2] bg-white/70 px-3 text-ink backdrop-blur-sm transition-colors hover:border-ink"
+                className="label inline-flex h-7 items-center rounded-full border border-[#c9ccd2] bg-white/70 px-3 text-ink backdrop-blur-sm transition-[border-color,background-color,transform] duration-300 hover:-translate-y-0.5 hover:border-ink hover:bg-white"
               >
                 {label}
               </a>
@@ -55,7 +55,7 @@ export default function Hero() {
           <li>
             <a
               href="#join"
-              className="label inline-flex h-7 items-center rounded-full bg-ink px-3.5 text-white transition-colors hover:bg-[#30343b]"
+              className="label inline-flex h-7 items-center rounded-full bg-ink px-3.5 text-white transition-[background-color,transform] duration-300 hover:-translate-y-0.5 hover:bg-[#30343b]"
             >
               Join us
             </a>
