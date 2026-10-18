@@ -15,6 +15,19 @@ import PlotFigure, { type PlotSpec } from "./PlotFigure";
 import TreeDiagram from "./TreeDiagram";
 import { module3DiagramDimensions } from "../python-module-3/diagramDimensions";
 import { module4DiagramDimensions } from "../python-module-4/diagramDimensions";
+import { chemistryModule1DiagramDimensions } from "../chemistry-module-1/diagramDimensions";
+import { chemistryModule2DiagramDimensions } from "../chemistry-module-2/diagramDimensions";
+import { chemistryModule3DiagramDimensions } from "../chemistry-module-3/diagramDimensions";
+import { chemistryModule4DiagramDimensions } from "../chemistry-module-4/diagramDimensions";
+
+const diagramDimensions: Record<string, { width: number; height: number }> = {
+  ...module3DiagramDimensions,
+  ...module4DiagramDimensions,
+  ...chemistryModule1DiagramDimensions,
+  ...chemistryModule2DiagramDimensions,
+  ...chemistryModule3DiagramDimensions,
+  ...chemistryModule4DiagramDimensions,
+};
 
 const remarkPlugins = [remarkGfm, remarkMath];
 const rehypePlugins: Parameters<typeof ReactMarkdown>[0]["rehypePlugins"] = [
@@ -61,8 +74,8 @@ const components: Components = {
     );
   },
   img({ src, alt }) {
-    const moduleDiagram = typeof src === "string" && /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src);
-    const dimensions = typeof src === "string" ? { ...module3DiagramDimensions, ...module4DiagramDimensions }[src] : undefined;
+    const moduleDiagram = typeof src === "string" && /^\/notes\/cse\/s1\/(python\/module-[234]|chemistry\/module-[1-4])\/assets\/.*\.svg$/.test(src);
+    const dimensions = typeof src === "string" ? diagramDimensions[src] : undefined;
     return <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
   },
   p({ node, children }) {
