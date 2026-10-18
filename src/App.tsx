@@ -1,9 +1,8 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
+import Progress from "./components/Progress";
 import Alliance from "./components/Alliance";
-import Values from "./components/Values";
-import Updates from "./components/Updates";
 import Join from "./components/Join";
 import Footer from "./components/Footer";
 
@@ -15,9 +14,8 @@ export default function App() {
       <main id="top">
         <Hero />
         <Work />
+        <Progress />
         <Alliance />
-        <Values />
-        <Updates />
         <Join />
       </main>
       <Footer />

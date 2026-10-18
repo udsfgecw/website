@@ -4,24 +4,24 @@ import { Slot } from "radix-ui"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full border border-transparent text-[0.98rem] leading-none font-medium whitespace-nowrap transition-[transform,background-color,border-color,box-shadow] duration-300 ease-out-expo outline-none focus-visible:ring-[3px] focus-visible:ring-ring/40 active:translate-y-px active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 [&_i]:text-[1.05em] [&_.ph-arrow-right]:transition-transform [&_.ph-arrow-right]:duration-300 hover:[&_.ph-arrow-right]:translate-x-[3px]",
+  "inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full border border-transparent text-[0.88rem] leading-none font-medium whitespace-nowrap transition-[transform,background-color,border-color] duration-200 ease-out outline-none focus-visible:ring-[3px] focus-visible:ring-ring/30 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 [&_i]:text-[1.05em] [&_.ph-arrow-right]:transition-transform [&_.ph-arrow-right]:duration-300 hover:[&_.ph-arrow-right]:translate-x-[3px]",
   {
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground hover:bg-deep-hover hover:shadow-[0_10px_24px_-12px_rgba(11,43,34,0.6)]",
+          "bg-primary text-primary-foreground hover:bg-[#30343b]",
         outline:
-          "border-border bg-background text-foreground hover:border-[#c9d3cf] hover:bg-soft",
+          "border-[#cfd2d7] bg-transparent text-foreground hover:border-ink",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "relative rounded-none px-[0.15rem] text-foreground after:absolute after:inset-x-[0.15rem] after:bottom-[11px] after:h-[1.5px] after:origin-left after:scale-x-[0.35] after:bg-current after:transition-transform after:duration-500 after:ease-out-expo hover:after:scale-x-100",
+        link: "rounded-none px-0 text-foreground underline decoration-border underline-offset-[6px] transition-[text-decoration-color] hover:decoration-current",
       },
       size: {
-        default: "h-12 px-[1.4rem]",
-        sm: "h-10 px-[1.1rem] text-[0.92rem]",
-        icon: "size-10 text-[1.15rem]",
+        default: "h-11 px-6",
+        sm: "h-8 px-3.5 text-[0.68rem] font-medium tracking-[0.08em] uppercase",
+        icon: "size-9 text-[1.05rem]",
       },
     },
-    compoundVariants: [{ variant: "link", className: "px-[0.15rem]" }],
+    compoundVariants: [{ variant: "link", className: "h-auto px-0" }],
     defaultVariants: {
       variant: "default",
       size: "default",

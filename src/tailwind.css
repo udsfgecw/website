@@ -1,41 +1,41 @@
-/* UDSF GECW landing, white theme.
-   Colours are sampled from the logo: green (UD), blue (SF), and the deep green/navy of its background.
-   Shape rule: buttons and chips are full pill, cards are 16-28px depending on size. */
+/* UDSF GECW landing.
+   Pure white, one sans family, tiny uppercase labels and outlined pills. Photography carries
+   the colour; the logo's green and blue appear only as small dots. Dividers are 1px hairlines. */
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --nav-h: 72px;
-  --radius: 1rem;
+  --nav-h: 56px;
+  --radius: 0.75rem;
 
-  /* shadcn tokens, mapped to the brand palette */
+  /* shadcn tokens */
   --background: #ffffff;
-  --foreground: #0d1f1a;
+  --foreground: #14161a;
   --card: #ffffff;
-  --card-foreground: #0d1f1a;
+  --card-foreground: #14161a;
   --popover: #ffffff;
-  --popover-foreground: #0d1f1a;
-  --primary: #0b2b22;
+  --popover-foreground: #14161a;
+  --primary: #14161a;
   --primary-foreground: #ffffff;
-  --secondary: #e6f6ef;
-  --secondary-foreground: #087a51;
-  --muted: #f4f7f6;
-  --muted-foreground: #56645f;
-  --accent: #f4f7f6;
-  --accent-foreground: #0d1f1a;
+  --secondary: #edf3ec;
+  --secondary-foreground: #2f6b4a;
+  --muted: #f4f5f6;
+  --muted-foreground: #5d6168;
+  --accent: #f4f5f6;
+  --accent-foreground: #14161a;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #e3e9e6;
-  --input: #e3e9e6;
-  --ring: #05a26a;
+  --border: #e6e7ea;
+  --input: #e6e7ea;
+  --ring: #14161a;
 }
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 8px);
-  --radius-md: calc(var(--radius) - 4px);
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 6px);
   --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-xl: var(--radius);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -58,27 +58,20 @@
 }
 
 @theme {
-  --color-soft: #f4f7f6;
-  --color-ink: #0d1f1a;
-  --color-ink-2: #56645f;
-  --color-line: #e3e9e6;
+  --color-ink: #14161a;
+  --color-ink-2: #5d6168;
+  --color-line: #e6e7ea;
+  --color-paper: #f7f8f9;
   --color-green: #05a26a;
-  --color-green-ink: #087a51;
-  --color-green-tint: #e6f6ef;
+  --color-green-ink: #2f6b4a;
+  --color-green-tint: #edf3ec;
   --color-blue: #1eacfe;
-  --color-blue-ink: #0b74b8;
-  --color-blue-tint: #e3f3ff;
-  --color-deep: #0b2b22;
-  --color-deep-hover: #123d31;
-  --color-navy: #10203f;
+  --color-blue-ink: #1f6c9f;
+  --color-blue-tint: #e1f3fe;
 
   --font-sans: "Geist", system-ui, sans-serif;
-  --font-mono: "Geist Mono", ui-monospace, monospace;
   --font-ml: "Manjari", "Noto Sans Malayalam", sans-serif;
-  --font-wordmark: "Bebas Neue", "Oswald", sans-serif;
 
-  --shadow-soft: 0 1px 2px rgba(13, 31, 26, 0.05), 0 8px 24px -12px rgba(13, 31, 26, 0.18);
-  --shadow-lift: 0 30px 70px -30px rgba(13, 31, 26, 0.35);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -99,33 +92,32 @@
   body {
     @apply overflow-x-hidden bg-background font-sans text-base leading-[1.6] text-foreground antialiased;
   }
+  ::selection {
+    background: var(--color-green-tint);
+    color: var(--color-green-ink);
+  }
   :focus-visible {
-    outline: 2px solid var(--color-green);
+    outline: 2px solid var(--color-ink);
     outline-offset: 3px;
-    border-radius: 8px;
+    border-radius: 4px;
   }
 }
 
 @utility wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   margin-inline: auto;
-  padding-inline: 16px;
+  padding-inline: 20px;
   @media (min-width: 768px) {
-    padding-inline: 32px;
+    padding-inline: 40px;
   }
 }
 
-/* halftone dots on the dark values band, a nod to the logo artwork */
-@utility halftone {
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1.4px);
-    background-size: 10px 10px;
-    mask-image: linear-gradient(180deg, #000, transparent 85%);
-  }
+/* tiny uppercase label used for nav, stats and meta text */
+@utility label {
+  font-size: 0.68rem;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

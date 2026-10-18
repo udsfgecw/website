@@ -1,62 +1,62 @@
-name: Build and deploy
+name: Build and deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 concurrency:
-  group: deploy-${{ github.ref }}
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
-
-env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run build
-
-  deploy:
-    needs: build
-    # Pull requests from forks can't read secrets, so only deploy for same-repo changes
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-latest
     permissions:
       contents: read
-      pull-requests: write
+      pages: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Check out source
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
-      - run: npm install --global vercel@latest
 
-      - name: Pull Vercel settings
-        run: vercel pull --yes --environment=${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }} --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Build
-        run: vercel build ${{ github.ref == 'refs/heads/main' && '--prod' || '' }} --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Configure GitHub Pages
+        id: pages
+        if: github.event_name != 'pull_request' && github.repository == 'udsfgecw/udsfgecw.github.io'
+        uses: actions/configure-pages@v6
 
-      - name: Deploy
-        id: deploy
-        run: |
-          url=$(vercel deploy --prebuilt ${{ github.ref == 'refs/heads/main' && '--prod' || '' }} --token=${{ secrets.VERCEL_TOKEN }})
-          echo "url=$url" >> "$GITHUB_OUTPUT"
-          echo "Deployed to $url" >> "$GITHUB_STEP_SUMMARY"
+      - name: Build website
+        run: npm run build
 
-      - name: Comment preview URL on PR
-        if: github.event_name == 'pull_request'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh pr comment ${{ github.event.pull_request.number }} --body "Preview: ${{ steps.deploy.outputs.url }}"
+      - name: Upload website
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'udsfgecw/udsfgecw.github.io'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'udsfgecw/udsfgecw.github.io'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

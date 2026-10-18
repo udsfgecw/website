@@ -1,41 +1,34 @@
-import { Card } from "@/components/ui/card";
-import { H2, Kicker } from "@/components/Section";
-import { cn } from "@/lib/utils";
+import { Section } from "@/components/Section";
 
-const org = "gap-0 rounded-3xl border-0 p-[clamp(1.75rem,4vw,3rem)] shadow-none";
-const orgName = "font-wordmark text-[length:clamp(3.5rem,7vw,5.5rem)] leading-[0.9] font-normal tracking-[0.01em]";
+const ORGS = [
+  ["KSU", "Kerala Students Union", "The student organisation of the Congress movement in Kerala, active on campuses across the state for generations.", "bg-blue"],
+  ["MSF", "Muslim Students Federation", "The student wing of the Indian Union Muslim League, with a strong presence in colleges throughout Kerala.", "bg-green"],
+] as const;
 
 export default function Alliance() {
   return (
-    <section className="wrap pb-[clamp(5rem,10vw,7.5rem)]" id="alliance" aria-labelledby="alliance-title">
-      <header className="mb-9">
-        <Kicker>The alliance</Kicker>
-        <H2 id="alliance-title">Two organisations. One front.</H2>
-      </header>
-
-      <div className="relative grid grid-cols-2 gap-4 max-[760px]:grid-cols-1">
-        <Card className={cn(org, "bg-blue-tint")}>
-          <h3 className={cn(orgName, "text-blue-ink")}>KSU</h3>
-          <p className="mt-3 mb-4 font-semibold">Kerala Students Union</p>
-          <p className="max-w-[40ch] text-ink-2">
-            The student organisation of the Congress movement in Kerala, active on campuses across the state for generations.
-          </p>
-        </Card>
-        {/* the "+" sits on the seam between the two panels */}
-        <span
-          className="absolute top-1/2 left-1/2 grid size-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-[1.4rem] leading-none font-medium shadow-[0_0_0_1px_var(--color-line)]"
-          aria-hidden="true"
-        >
-          +
-        </span>
-        <Card className={cn(org, "bg-green-tint")}>
-          <h3 className={cn(orgName, "text-green-ink")}>MSF</h3>
-          <p className="mt-3 mb-4 font-semibold">Muslim Students Federation</p>
-          <p className="max-w-[40ch] text-ink-2">
-            The student wing of the Indian Union Muslim League, with a strong presence in colleges throughout Kerala.
-          </p>
-        </Card>
+    <Section
+      id="alliance"
+      label="The alliance"
+      title="Two organisations. One front."
+      intro="UDSF brings KSU and MSF together at GEC Wayanad, so students get one team to turn to."
+      className="pt-0"
+    >
+      <div className="grid border-y border-line sm:grid-cols-2">
+        {ORGS.map(([short, name, text, dot]) => (
+          <article
+            key={short}
+            className="flex flex-col py-10 max-sm:border-b max-sm:last:border-b-0 sm:px-[clamp(1.5rem,4vw,3.5rem)] sm:first:border-r sm:first:pl-0 sm:last:pr-0"
+          >
+            <div className="flex items-center justify-between">
+              <h3 className="text-[length:clamp(3rem,6vw,4.5rem)] leading-none font-extrabold tracking-[-0.06em]">{short}</h3>
+              <span className={`size-2.5 rounded-full ${dot}`} aria-hidden="true" />
+            </div>
+            <p className="label mt-8 text-ink">{name}</p>
+            <p className="mt-3 max-w-[42ch] text-[0.95rem] leading-[1.6] text-ink-2">{text}</p>
+          </article>
+        ))}
       </div>
-    </section>
+    </Section>
   );
 }

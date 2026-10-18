@@ -1,23 +1,30 @@
-import { FEED } from "@/config";
+import { INSTAGRAM } from "@/config";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { H2 } from "@/components/Section";
+import { H2, Label } from "@/components/Section";
 
 export default function Join() {
   return (
-    <section className="wrap pb-[clamp(4rem,8vw,6rem)]" id="join" aria-labelledby="join-title">
-      <Card className="items-center gap-0 rounded-[28px] bg-[radial-gradient(60%_80%_at_15%_0%,rgba(5,162,106,0.12),transparent_70%),radial-gradient(60%_80%_at_85%_100%,rgba(30,172,254,0.12),transparent_70%),var(--color-soft)] px-6 py-[clamp(2.5rem,7vw,4.5rem)] text-center shadow-none">
-        <img className="mb-7 size-[88px] rounded-[22px] shadow-lift" src="/assets/logo-512.png" alt="" width={88} height={88} loading="lazy" />
-        <H2 id="join-title">Be part of it.</H2>
-        <p className="mt-[0.9rem] mb-7 max-w-[44ch] text-ink-2">
-          First years, seniors, anyone who wants a better campus. Find us at college, or send us a message.
-        </p>
-        <Button asChild>
-          <a href={FEED.profile} target="_blank" rel="noopener">
-            <i className="ph-bold ph-instagram-logo"></i> Message us on Instagram
-          </a>
-        </Button>
-      </Card>
+    <section className="wrap border-t border-line py-[clamp(5rem,11vw,9rem)]" id="join" aria-labelledby="join-title">
+      <div className="grid gap-10 md:grid-cols-2 md:items-end">
+        <div>
+          <Label>Join</Label>
+          <H2 id="join-title" className="mt-4 text-[length:clamp(2.5rem,6vw,4.5rem)]">
+            Let's build a better campus.
+          </H2>
+        </div>
+        <div className="md:justify-self-end">
+          <p className="max-w-[40ch] text-[0.95rem] leading-[1.6] text-ink-2">
+            First years, seniors, anyone who wants a better campus. Find us at college, or send us a message.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            <Button asChild>
+              <a href={INSTAGRAM} target="_blank" rel="noopener">
+                Message us on Instagram
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
