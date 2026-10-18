@@ -19,14 +19,12 @@ export default function Work() {
       intro="UDSF stands for student welfare, a growing college and a peaceful campus, and takes every issue to the people who can fix it."
     >
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {FEATURES.map(([Icon, title, text], i) => (
+        {FEATURES.map(([Icon, title, text]) => (
           <li
             key={title}
-            data-reveal
-            style={{ "--i": i % 3 } as React.CSSProperties}
-            className="group rounded-2xl border border-line p-6 transition-[border-color,box-shadow] duration-500 hover:border-[#d3d6db] hover:shadow-[0_24px_44px_-30px_rgba(20,22,26,0.35)]"
+            className="rounded-2xl border border-line p-6"
           >
-            <span className="flex size-12 items-center justify-center rounded-[14px] bg-green-tint text-green-ink transition-[background-color,color,transform] duration-500 ease-out-expo group-hover:-translate-y-0.5 group-hover:bg-green group-hover:text-white">
+            <span className="flex size-12 items-center justify-center rounded-[14px] bg-green-tint text-green-ink">
               <Icon size={22} strokeWidth={1.75} aria-hidden="true" />
             </span>
             <h3 className="mt-10 text-[1.1rem] font-semibold tracking-[-0.02em]">{title}</h3>

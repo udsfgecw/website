@@ -2,7 +2,6 @@
    Pure white, one sans family, tiny uppercase labels and outlined pills. Photography carries
    the colour; the logo's green and blue appear only as small dots. Dividers are 1px hairlines. */
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -72,26 +71,6 @@
   --font-sans: "Geist", system-ui, sans-serif;
   --font-ml: "Manjari", "Noto Sans Malayalam", sans-serif;
 
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-
-  --animate-rise: rise 1.1s var(--ease-out-expo) both;
-
-  @keyframes rise {
-    from {
-      opacity: 0;
-      transform: translateY(28px);
-      filter: blur(10px);
-    }
-  }
-  /* a light band sweeps across the hero letters once */
-  @keyframes shine {
-    from {
-      background-position: 100% 0;
-    }
-    to {
-      background-position: 0 0;
-    }
-  }
 }
 
 @layer base {
@@ -106,13 +85,6 @@
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
-    }
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
     }
   }
   body {
@@ -137,40 +109,6 @@
   @media (min-width: 768px) {
     padding-inline: 40px;
   }
-}
-
-/* Scroll reveal. useReveal() adds .reveal-ready to <html> once it is observing, so without JS
-   everything stays visible. --i staggers siblings. */
-.reveal-ready [data-reveal] {
-  transition:
-    opacity 0.9s var(--ease-out-expo),
-    transform 0.9s var(--ease-out-expo);
-  transition-delay: calc(var(--i, 0) * 80ms);
-}
-.reveal-ready [data-reveal]:not(.is-in) {
-  opacity: 0;
-  transform: translateY(26px);
-}
-
-/* Hero letters: solid --c with a lighter band that crosses once after they rise in */
-.shine {
-  color: var(--c);
-  background: linear-gradient(110deg, var(--c) 42%, color-mix(in oklab, var(--c), white 60%) 50%, var(--c) 58%) 100% 0 / 260% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation:
-    rise 1.1s var(--ease-out-expo) both,
-    shine 2.2s var(--ease-out-expo) 1.1s both;
-}
-
-/* follow-up progress tracks fill once their card is revealed */
-.track-fill {
-  width: var(--to);
-  transition: width 1.6s var(--ease-out-expo) 0.35s;
-}
-.reveal-ready [data-reveal]:not(.is-in) .track-fill {
-  width: 0;
 }
 
 /* tiny uppercase label used for nav, stats and meta text */

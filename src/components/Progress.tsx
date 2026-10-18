@@ -14,13 +14,13 @@ function Img({ a, className }: { a: Achievement; className?: string }) {
       height={800}
       loading="lazy"
       decoding="async"
-      className={cn("size-full object-cover transition-transform duration-[1400ms] ease-out-expo group-hover:scale-[1.05]", className)}
+      className={cn("size-full object-cover", className)}
     />
   );
 }
 
 const card =
-  "group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white transition-[transform,box-shadow] duration-500 ease-out-expo hover:-translate-y-1 hover:shadow-[0_28px_50px_-30px_rgba(20,22,26,0.35)]";
+  "flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white";
 
 function Body({ a }: { a: Achievement }) {
   return (
@@ -35,7 +35,7 @@ function Body({ a }: { a: Achievement }) {
 /* Large photo card with the copy laid over a dark fade. */
 function Featured({ a }: { a: Achievement }) {
   return (
-    <article className="group relative isolate flex h-full min-h-[440px] flex-col justify-end overflow-hidden rounded-2xl bg-ink text-white">
+    <article className="relative isolate flex h-full min-h-[440px] flex-col justify-end overflow-hidden rounded-2xl bg-ink text-white">
       <div className="absolute inset-0 -z-10">
         <Img a={a} />
       </div>
@@ -71,7 +71,7 @@ function Standard({ a }: { a: Achievement }) {
           <Img a={a} />
         ) : (
           // no photo yet: a typographic cover
-          <div className="flex size-full items-end bg-green p-6 text-white transition-transform duration-[1400ms] ease-out-expo group-hover:scale-[1.05]" aria-hidden="true">
+          <div className="flex size-full items-end bg-green p-6 text-white" aria-hidden="true">
             <span className="text-[length:clamp(2.2rem,3.6vw,2.8rem)] leading-[0.92] font-extrabold tracking-[-0.055em]">
               Web
               <br />
@@ -110,7 +110,7 @@ export default function Progress() {
             const last = i === ACHIEVEMENTS.length - 1;
             const Card = i === 0 ? Featured : last ? Wide : Standard;
             return (
-              <li key={a.title} data-reveal style={{ "--i": i % 3 } as React.CSSProperties} className={placement(i, last)}>
+              <li key={a.title} className={placement(i, last)}>
                 <Card a={a} />
               </li>
             );
@@ -122,8 +122,8 @@ export default function Progress() {
           <span className="text-[0.85rem] text-ink-2">Following through to the finish</span>
         </div>
         <ul className="grid gap-4 lg:grid-cols-2">
-          {FOLLOW_UPS.map((item, n) => (
-            <li key={item.title} data-reveal style={{ "--i": n } as React.CSSProperties}>
+          {FOLLOW_UPS.map((item) => (
+            <li key={item.title}>
               <article className="h-full rounded-2xl border border-line bg-white p-6 lg:p-8">
                 <h4 className="text-[1.4rem] font-medium tracking-[-0.035em]">{item.title}</h4>
                 <p className="mt-2 max-w-[55ch] text-[0.88rem] leading-[1.65] text-ink-2">{item.description}</p>
@@ -133,12 +133,7 @@ export default function Progress() {
                   {item.steps.map((step, index) => (
                     <li key={step}>
                       <div className="h-1 overflow-hidden rounded-full bg-line">
-                        {index < 2 && (
-                          <div
-                            className={cn("track-fill h-full rounded-full", index === 0 ? "bg-green" : "bg-blue")}
-                            style={{ "--to": "100%", transitionDelay: `${0.35 + index * 0.5}s` } as React.CSSProperties}
-                          />
-                        )}
+                        {index < 2 && <div className={cn("h-full rounded-full", index === 0 ? "bg-green" : "bg-blue")} />}
                       </div>
                       <p className={cn("label mt-3", index === 0 ? "text-green-ink" : index === 1 ? "text-blue-ink" : "text-ink-2/70")}>
                         {STAGE[index]}

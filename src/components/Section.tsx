@@ -32,7 +32,7 @@ export function Section({
 }) {
   return (
     <section id={id} aria-labelledby={`${id}-title`} className={cn("wrap py-[clamp(5rem,11vw,9rem)]", className)}>
-      <header data-reveal className="grid gap-x-12 gap-y-5 md:grid-cols-2 md:items-end">
+      <header className="grid gap-x-12 gap-y-5 md:grid-cols-2 md:items-end">
         <div>
           <Label>{label}</Label>
           <H2 id={`${id}-title`} className="mt-4 max-w-[16ch]">

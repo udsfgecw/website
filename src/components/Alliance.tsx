@@ -27,11 +27,9 @@ export default function Alliance() {
       intro="UDSF brings KSU and MSF together at GEC Wayanad, so students get one team to turn to."
     >
       <div className="grid gap-4 sm:grid-cols-2">
-        {ORGS.map((o, i) => (
+        {ORGS.map((o) => (
           <article
             key={o.short}
-            data-reveal
-            style={{ "--i": i } as React.CSSProperties}
             className={cn("flex flex-col rounded-2xl p-[clamp(1.75rem,4vw,3rem)]", o.tint)}
           >
             <h3 className={cn("text-[length:clamp(3rem,6vw,4.5rem)] leading-none font-extrabold tracking-[-0.06em]", o.ink)}>{o.short}</h3>
