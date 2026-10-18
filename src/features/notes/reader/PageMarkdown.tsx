@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { isValidElement, memo } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
@@ -38,10 +38,13 @@ const components: Components = {
     );
   },
   pre({ children }) {
-    return <div>{children}</div>;
+    const language = isValidElement<{ className?: string }>(children) ? children.props.className : undefined;
+    if (language === "language-mermaid" || language === "language-jsxgraph") return <div>{children}</div>;
+    return <pre>{children}</pre>;
   },
   img({ src, alt }) {
-    return <img src={src} alt={alt || "Mathematics diagram"} loading="lazy" decoding="async" />;
+    const moduleDiagram = typeof src === "string" && src.startsWith("/notes/cse/s1/python/module-2/assets/") && src.endsWith(".svg");
+    return <img src={src} alt={alt || "Notes diagram"} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
   },
   p({ node, children }) {
     return <p className={isQuestion(node as HastNode) ? "notes-question" : undefined}>{children}</p>;

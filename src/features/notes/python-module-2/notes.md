@@ -1,134 +1,125 @@
 <!-- page 1 | Module 2 · source page 4 -->
 
-# Module 2
+## Module 2 overview
 
-- ALGORITHM AND PSEUDOCODE REPRESENTATION:- Meaning and Definition of Pseudocode, Reasons for using pseudocode, The main constructs of pseudocode - Sequencing, selection (if-else structure, case structure) and repetition (for, while, repeat-until loops), Sample problems
+This module explains how to turn a problem into an algorithm, express its logic in pseudocode, and communicate the same steps with a flowchart.
 
-- FLOWCHARTS :- Symbols used in creating a Flowchart - start and end, arithmetic calculations, input/output operation, decision (selection), module name (call), for loop (Hexagon), flow-lines, on-page connector, off-page connector.
+By the end, you should be able to:
 
+- Identify the inputs, outputs, assumptions, and steps of an algorithm.
+- Write pseudocode using sequence, selection, and repetition.
+- Read and draw flowcharts using the appropriate symbols.
+- Trace worked examples and check boundary cases before writing code.
 
+**Notation used here:** `SET` assigns a value; `=` inside a condition compares values; `MOD` gives a remainder. Pseudocode `FOR i = 1 TO n` includes both endpoints. Python uses different syntax and excludes the stop value of `range()`.
 
-
-
+> **Key idea.** An algorithm describes the solution. Pseudocode and flowcharts are two ways of representing that solution.
 
 <!-- page 2 | Module 2 · source page 6 -->
 
-# Flowchart symbols: start, stop, and flow lines
+## Start, stop, and flow lines
 
-Flowcharts use standardized symbols to represent the steps and decisions in an algorithm. Arrows show the order in which the steps are followed.
+A **terminator** is an oval or rounded rectangle containing `START` or `STOP`. A simple algorithm has one entry point and a clearly marked end.
 
-* Terminator : A terminator symbol is used to represent the beginning and end of an algorithm
+[![Rounded START and STOP terminator symbols](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)
 
-![Terminator symbols showing START and STOP](/notes/cse/s1/python/module-2/assets/page-006-image-1.png)
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)
 
-* Connector Lines: Connector lines are used to connect symbols in the flowchart.
-  * The direction of the arrow indicates the next step.
+A **flow line** is a line with an arrowhead. Follow its direction to determine the next instruction. Draw the main flow from top to bottom or left to right; avoid crossing lines when possible.
 
-![Connector lines with arrows](/notes/cse/s1/python/module-2/assets/page-006-image-2-Imagen.png)
+[![An arrow connects Step 1 to Step 2](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)
 
 <!-- page 3 | Module 2 · source page 7 -->
 
-## Flowchart symbols
+## Processing and input/output symbols
 
-# Flowchart symbols: processing and input/output
+A **process** rectangle contains a calculation or an assignment, such as `total = price × quantity`. Write the operation inside the symbol.
 
-* **Process:** A process symbol : represents an activity. It represents a particular step of an algorithm.
-  * The symbol contains text which describes the step.
+[![A process rectangle containing total equals price times quantity](/notes/cse/s1/python/module-2/assets/symbol-process.svg)](/notes/cse/s1/python/module-2/assets/symbol-process.svg)
 
-![Process symbol and example](/notes/cse/s1/python/module-2/assets/page-007-image-1-Imagen.png)
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-process.svg)
 
-* **Data:** A data symbol represents data used in the algorithm. It is also used to represent the input and output
-  * The symbol contains text which describes the step.
-  * Multiple inputs can be read or multiple data can be initialised in the same symbol
+An **input/output** parallelogram represents reading data or displaying a result. State which values are read or printed. Initializing a variable is a process, rather than an input operation.
 
-![Data symbol and examples](/notes/cse/s1/python/module-2/assets/page-007-image-2-Imagen.png)
+[![An input/output parallelogram for READ age or PRINT fare](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)
 
 <!-- page 4 | Module 2 · source page 8 -->
 
-# Flowchart symbols: decisions and connectors
+## Decisions and continuation connectors
 
-▶ Decision: A symbol used to branch into different steps based on condition
+A **decision** diamond contains a condition. For a Boolean condition, draw two outgoing branches labelled `Yes/No` or `True/False`. Each branch must lead to the appropriate next step.
 
-  ▶ Based on whether the condition succeeds or fails, connector lines connect to different points in the flowchart.
+[![A decision diamond with separate Yes and No branches](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)
 
-![Decision symbols in a flowchart](/notes/cse/s1/python/module-2/assets/page-008-image-1-Imagen.png)
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)
 
-▶ On page and Off Page References: Symbols used when the entire flowchart cannot fit on the same page fully.
+An **on-page connector** is a labelled circle that continues the flow elsewhere on the same page. An **off-page connector** is commonly a pentagon pointing downwards and refers to another page. Use matching labels so the reader can find the continuation.
 
-![On page and Off page reference symbols](/notes/cse/s1/python/module-2/assets/page-008-image-2-Imagen.png)
+[![Labelled circle A for an on-page connector and pentagon B for an off-page connector](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)
 
 <!-- page 5 | Module 2 · source page 9 -->
 
-# Flowchart symbols: modules and loops
+## Module calls and counter-loop notation
 
-▶ Rectangle with vertical side-lines denotes a module. A module is a collection of statements written to achieve a task. It is known by the name function in the programming domain.
+A **predefined process** is a rectangle with two vertical lines near its sides. It calls a named function or module whose steps are defined elsewhere. Show the call here and explain the called procedure separately.
 
-![Rectangle with vertical side-lines representing a module](/notes/cse/s1/python/module-2/assets/page-009-image-1-Imagen.png)
+[![A predefined-process rectangle with double vertical edges](/notes/cse/s1/python/module-2/assets/symbol-module.svg)](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
 
-▶ Hexagon denotes a **for** loop. The symbol shown here is the representation of the loop: **for** count = $A$ **to** $B$ **by** $S$.
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
 
-![Hexagon representing a for loop with labels count, A, B, and S](/notes/cse/s1/python/module-2/assets/page-009-image-2-Imagen.png)
+The course uses a **hexagon** for counter-loop notation. Include the counter, starting value, ending value, and step. In other conventions, the same shape represents preparation or initialization, so state the convention you use.
 
+[![A hexagonal counter-loop symbol showing i equals 1 to n with step 1](/notes/cse/s1/python/module-2/assets/symbol-loop.svg)](/notes/cse/s1/python/module-2/assets/symbol-loop.svg)
+
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-loop.svg)
+
+A complete loop still needs a condition, a body, and an update. The worked flowcharts below show these explicitly with process and decision symbols.
 
 <!-- page 6 | Module 2 · source page 10 -->
 
-# Flowchart
+## Calculate simple interest
 
-## Problem 2.1 To find simple interest.
-
-$$\text{SIMPLEINTEREST}$$
-
-1. Start
-2. $\text{READ}(principal, rate, years)$
-3. $SI = (principal * rate * years) / 100$
-4. $\text{PRINT}(SI)$
-5. Stop.
-
-```mermaid
-flowchart TD
-    A([Start]) --> B[/READ(principal, rate, years)/]
-    B --> C[SI = (principal * rate * years)/100]
-    C --> D[/Print SI/]
-    D --> E([Stop])
+```text
+START
+READ principal, rate, years
+SET interest = principal * rate * years / 100
+PRINT interest
+STOP
 ```
 
+[![Simple-interest flowchart using input/output and process symbols](/notes/cse/s1/python/module-2/assets/flow-simple-interest.svg)](/notes/cse/s1/python/module-2/assets/flow-simple-interest.svg)
+
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-simple-interest.svg)
+
+**Inputs:** principal, annual rate as a percentage, and time in years. **Check:** principal 1000, rate 5, and time 2 gives interest 100. This is simple interest, not compound interest.
 
 <!-- page 7 | Module 2 · source page 11 -->
 
-# Flowchart
+## Find the larger of two numbers
 
-## Problem 2.2 To determine the larger of two numbers.
-
-$$\text{LargerTwo}$$
-
-1. Start
-2. $\text{READ}(a, b)$
-3. $\textbf{if } (a > b)$
-4. $\quad \text{large} = a$
-5. $\textbf{else}$
-6. $\quad \text{large} = b$
-7. $\textbf{endif}$
-8. $\text{PRINT}(\text{large})$
-9. Stop.
-
-```mermaid
-flowchart TD
-A([Start]) --> B[/READ(a, b)/]
-B --> C{a > b?}
-C -->|TRUE| D[large = a]
-C -->|FALSE| E[large = b]
-D --> F[/PRINT(large)/]
-E --> F
-F --> G([Stop])
+```text
+START
+READ a, b
+IF a >= b THEN
+    SET largest = a
+ELSE
+    SET largest = b
+END IF
+PRINT largest
+STOP
 ```
 
+[![Flowchart comparing two inputs, including equal values](/notes/cse/s1/python/module-2/assets/flow-larger-two.svg)](/notes/cse/s1/python/module-2/assets/flow-larger-two.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-larger-two.svg)
 
-
-
+If the inputs are equal, either value is the maximum. For `(4, 9)` the result is 9; for `(7, 7)` the result is 7.
 
 <!-- page 8 | Module 2 · source page 12 -->
 
@@ -149,27 +140,17 @@ SMALLEST
 7. STOP
 ```
 
-```mermaid
-flowchart TD
-    A([Start]) --> B[/Read a, b, c/]
-    B --> C[smallest = a]
-    C --> D{b < smallest?}
-    D -- Yes --> E[smallest = b]
-    D -- No --> F{c < smallest?}
-    E --> F
-    F -- Yes --> G[smallest = c]
-    F -- No --> H[/Print smallest/]
-    G --> H
-    H --> I([Stop])
-```
+[![Flowchart that compares b and c with a running minimum](/notes/cse/s1/python/module-2/assets/flow-smallest-three.svg)](/notes/cse/s1/python/module-2/assets/flow-smallest-three.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-smallest-three.svg)
 
+**Trace:** for `(8, 8, 3)`, the candidate minimum starts at 8, stays at 8 after comparing the second value, then becomes 3. Ties do not break this method.
 
 <!-- page 9 | Module 2 · source page 13 -->
 
-# Flowchart
+## Zoo-ticket selection
 
-\u25ba To determine the entry-ticket fare in a zoo based on age as follows:
+Use the following age bands for this separate exercise. They differ from the concert-ticket bands later in the module. Assume age is non-negative.
 
 | Age | Fare |
 | :--- | :---: |
@@ -177,45 +158,31 @@ flowchart TD
 | $\ge 10 \text{ and } < 60$ | $10$ |
 | $\ge 60$ | $5$ |
 
-$$\text{TICKETFARE}$$
-1. $\text{Start}$
-2. $\text{READ}(age)$
-3. $\mathbf{if} \ (age < 10)$
-4. $\quad fare = 7$
-5. $\mathbf{else} \ \mathbf{if} \ (age < 60)$
-6. $\quad fare = 10$
-7. $\mathbf{else}$
-8. $\quad fare = 5$
-9. $\mathbf{endif}$
-10. $\text{PRINT}(fare)$
-11. $\text{Stop}$
-
-```mermaid
-flowchart TD
-    Start([Start]) --> Read[/READ\(age\)/]
-    Read --> Cond1{age < 10?}
-    Cond1 -- TRUE --> Fare7[fare = 7]
-    Cond1 -- FALSE --> Cond2{age < 60?}
-    Cond2 -- TRUE --> Fare10[fare = 10]
-    Cond2 -- FALSE --> Fare5[fare = 5]
-    Fare7 --> Print[/PRINT\(fare\)/]
-    Fare10 --> Print
-    Fare5 --> Print
-    Print --> Stop([Stop])
+```text
+START
+READ age
+IF age < 10 THEN
+    SET fare = 7
+ELSE IF age < 60 THEN
+    SET fare = 10
+ELSE
+    SET fare = 5
+END IF
+PRINT fare
+STOP
 ```
 
+[![Zoo-ticket age selection flowchart](/notes/cse/s1/python/module-2/assets/flow-zoo-fare.svg)](/notes/cse/s1/python/module-2/assets/flow-zoo-fare.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-zoo-fare.svg)
 
-
-
+**Boundary check:** ages 9, 10, 59, and 60 should give fares 7, 10, 10, and 5 respectively.
 
 <!-- page 10 | Module 2 · source page 14 -->
 
-# Flowchart
+## Select a colour from its code
 
-## To print the colour based on a code value as follows:
-
-| Grade | Message |
+| Code | Message |
 | :--- | :--- |
 | $R$ | Red |
 | $G$ | Green |
@@ -242,25 +209,11 @@ PRINTCOLOUR
 16 Stop
 ```
 
-```mermaid
-flowchart TD
-    Start([Start]) --> Read[READ(code)]
-    Read --> Case{caseof
-code}
-    Case -->|'R'| PrintRed[PRINT("Red")]
-    Case -->|'G'| PrintGreen[PRINT("Green")]
-    Case -->|'B'| PrintBlue[PRINT("Blue")]
-    Case -->|default| PrintWrong[PRINT("Wrong code")]
-    PrintRed --> Stop([Stop])
-    PrintGreen --> Stop
-    PrintBlue --> Stop
-    PrintWrong --> Stop
-```
+[![Colour code selection with a default outcome](/notes/cse/s1/python/module-2/assets/flow-colour.svg)](/notes/cse/s1/python/module-2/assets/flow-colour.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-colour.svg)
 
-
-
-
+The `OTHERWISE` or default case handles an unrecognized code. Assume uppercase input; convert lowercase codes first if the program should accept them.
 
 <!-- page 11 | Module 2 · source page 15 -->
 
@@ -280,19 +233,11 @@ FACTORIAL
 6. STOP
 ```
 
-```mermaid
-flowchart TD
-    A([Start]) --> B[/Read n/]
-    B --> C[fact = 1, i = 1]
-    C --> D{i <= n?}
-    D -- Yes --> E[fact = fact * i]
-    E --> F[i = i + 1]
-    F --> D
-    D -- No --> G[/Print fact/]
-    G --> H([Stop])
-```
+[![Factorial flowchart with an increasing counter and loop-back arrow](/notes/cse/s1/python/module-2/assets/flow-factorial-up.svg)](/notes/cse/s1/python/module-2/assets/flow-factorial-up.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-factorial-up.svg)
 
+**Trace for n = 4:** the product becomes 1, 2, 6, then 24. Reject negative or non-integer inputs before this algorithm starts.
 
 <!-- page 12 | Module 2 · source page 16 -->
 
@@ -312,109 +257,86 @@ FACTORIAL
 6. STOP
 ```
 
-```mermaid
-flowchart TD
-    A([Start]) --> B[/Read n/]
-    B --> C[fact = 1, i = n]
-    C --> D{i >= 1?}
-    D -- Yes --> E[fact = fact * i]
-    E --> F[i = i - 1]
-    F --> D
-    D -- No --> G[/Print fact/]
-    G --> H([Stop])
-```
+[![Factorial flowchart with a decreasing counter and loop-back arrow](/notes/cse/s1/python/module-2/assets/flow-factorial-down.svg)](/notes/cse/s1/python/module-2/assets/flow-factorial-down.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-factorial-down.svg)
 
+The product is unchanged by reversing the order of multiplication. The descending counter must decrease on every iteration so that the condition eventually becomes false.
 
 <!-- page 13 | Module 2 · source page 17 -->
 
-# Flowchart example: average height by group
+## Average height by group
 
-This algorithm records each student's group and height, then calculates a separate average for each group. Assume both groups have at least one student; otherwise, the average for an empty group is undefined.
+Maintain a separate total and count for each group. This version accepts `B` or `G` as group codes and positive heights. It rejects invalid records instead of silently assigning them to a group.
 
 ```text
-AVERAGE HEIGHT
-1. START
-2. READ n
-3. SET boys_total = 0, boys_count = 0
-4. SET girls_total = 0, girls_count = 0
-5. FOR i = 1 TO n
-       READ group, height
-       IF group = "B" THEN
-           SET boys_total = boys_total + height
-           SET boys_count = boys_count + 1
-       ELSE
-           SET girls_total = girls_total + height
-           SET girls_count = girls_count + 1
-       END IF
-   END FOR
-6. SET boys_average = boys_total / boys_count
-7. SET girls_average = girls_total / girls_count
-8. PRINT boys_average, girls_average
-9. STOP
+START
+READ n
+SET boys_total = 0, boys_count = 0
+SET girls_total = 0, girls_count = 0
+FOR i = 1 TO n
+    READ group, height
+    IF height <= 0 THEN
+        PRINT "Invalid height; record skipped"
+    ELSE IF group = "B" THEN
+        SET boys_total = boys_total + height
+        SET boys_count = boys_count + 1
+    ELSE IF group = "G" THEN
+        SET girls_total = girls_total + height
+        SET girls_count = girls_count + 1
+    ELSE
+        PRINT "Unknown group; record skipped"
+    END IF
+END FOR
+IF boys_count > 0 THEN
+    PRINT boys_total / boys_count
+ELSE
+    PRINT "No data for boys"
+END IF
+IF girls_count > 0 THEN
+    PRINT girls_total / girls_count
+ELSE
+    PRINT "No data for girls"
+END IF
+STOP
 ```
 
-```mermaid
-flowchart TD
-    A([Start]) --> B[/Read n/]
-    B --> C[Initialize totals and counts to 0]
-    C --> D[Set i = 1]
-    D --> E{i <= n?}
-    E -- Yes --> F[/Read group and height/]
-    F --> G{group = B?}
-    G -- Yes --> H[Add height to boys total and increment boys count]
-    G -- No --> I[Add height to girls total and increment girls count]
-    H --> J[i = i + 1]
-    I --> J
-    J --> E
-    E -- No --> K[Calculate both averages]
-    K --> L[/Print both averages/]
-    L --> M([Stop])
-```
+**Trace:** `B, 160`; `G, 150`; `B, 170` gives a boys' average of 165 and a girls' average of 150. An empty group has no average; never divide by a zero count.
 
+The SVG shows the final count check and average calculation; apply it separately to each group.
 
+[![Flowchart checking a group count before calculating its average](/notes/cse/s1/python/module-2/assets/flow-group-average.svg)](/notes/cse/s1/python/module-2/assets/flow-group-average.svg)
+
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-group-average.svg)
 
 <!-- page 14 | Module 2 · source page 18 -->
 
-# References
+## References and further reading
 
-- https://www.scaler.com/topics/how-to-write-pseudo-code/
-- Algorithmic Thinking with Python - Ajeesh Ramanujan, Narasimhan T
+- *Algorithmic Thinking with Python*, Ajeesh Ramanujan and Narasimhan T — source study material.
+- [Microsoft: flowchart shapes and their common uses](https://support.microsoft.com/en-us/visio/create-a-basic-flowchart-in-visio).
+- [Python tutorial: conditions, loops, and range](https://docs.python.org/3/tutorial/controlflow.html).
+- [Python tutorial: lists and data structures](https://docs.python.org/3/tutorial/datastructures.html).
 
-
-
-
-
+The worked examples use the rules stated beside each problem. Ticket prices, grade bands, and commission bands are exercise data, rather than real pricing or institutional policies.
 
 <!-- page 15 | Module 2 · source page 2 -->
 
-# Module 2
+## What makes a good algorithm?
 
-## Algorithm, Pseudo code, Flowchart
+An **algorithm** is a finite sequence of precise, executable steps for solving a problem. It may accept zero or more inputs and must produce the specified result for valid inputs.
 
-### Algorithm
+| Property | What to check |
+|---|---|
+| Input and output | Are the required data and expected result clear? |
+| Definiteness | Does every instruction have one clear meaning? |
+| Effectiveness | Can each step actually be carried out? |
+| Finiteness | Will the algorithm terminate for valid inputs? |
+| Correctness | Do its steps meet the problem's requirements? |
 
-An algorithm is a finite, ordered sequence of clear instructions for solving a problem. It may take input, process it, and produce the required output.
+A common structure is: read input, initialize variables, process the data, display the result, and stop. This is a useful pattern rather than a requirement that every algorithm must read input first.
 
-### General Format
-
-1. Start
-2. Read input
-3. Store the input in variables
-4. Calculate and perform the process.
-5. Store the result in variable.
-6. Print result.
-7. Stop.
-
-### Rules for writing an algorithm
-
-1. It should begin with instruction to accept inputs
-2. Each and every instruction should be precise and unambiguous.
-
-
-
-
-
+Before writing the steps, state the assumptions: for example, a factorial needs a non-negative integer, and an average needs at least one value.
 
 <!-- page 16 | Module 2 · source page 3 -->
 
@@ -422,9 +344,9 @@ An algorithm is a finite, ordered sequence of clear instructions for solving a p
 
 ```text
 READ a, b, c
-IF a > b AND a > c THEN
+IF a >= b AND a >= c THEN
     PRINT a, "is greatest"
-ELSE IF b > c THEN
+ELSE IF b >= c THEN
     PRINT b, "is greatest"
 ELSE
     PRINT c, "is greatest"
@@ -442,6 +364,7 @@ SET perimeter = 4 * a
 PRINT area, perimeter
 ```
 
+**Boundary check:** for `a = 8`, `b = 8`, and `c = 3`, the greatest value is 8. Using `>=` prevents tied values from falling through to the wrong branch. For the square example, assume a non-negative side length; a side of 4 gives area 16 and perimeter 16.
 
 <!-- page 17 | Module 2 · source page 4 -->
 
@@ -457,33 +380,27 @@ SET b = temp
 PRINT a, b
 ```
 
+**Trace:** if `a = 4` and `b = 9`, then `temp = 4`, `a = 9`, and `b = 4`. A direct `a = b` followed by `b = a` would lose the original value of `a`.
 
 <!-- page 18 | Module 2 · source page 5 -->
 
-Pseudo code
+## Why use pseudocode?
 
 Pseudocode describes an algorithm in concise, structured language. It is designed for people to read, so it is not tied to the exact syntax of a programming language and cannot be executed directly.
 
-```mermaid
-flowchart LR
-    A[Algorithm] --> B[Pseudocode]
-    B --> C[Program]
-```
+[![Algorithm, pseudocode, and implementation stages](/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.svg)](/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.svg)
+
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.svg)
 
 Pseudocode bridges an algorithm and its implementation: it makes the planned steps clear before they are translated into program code.
 
-Reason for using pseudo code
+### Benefits
 
 - It is easy to read and understand
 - It helps plan code before implementation
-- It is a good middle point between flowchart and program code.
+- It lets you review the logic before choosing language-specific syntax.
 - It is helpful for documentation
 - It can reveal gaps in the logic before coding.
-
-
-
-
-
 
 <!-- page 19 | Module 2 · source page 6 -->
 
@@ -511,36 +428,17 @@ END IF
 PRINT greatest
 ```
 
-
 <!-- page 20 | Module 2 · source page 7 -->
 
-## Flowchart symbols
+## Flowchart symbol reference sheet
 
-A flowchart shows an algorithm's steps and their order. Arrows connect symbols and show the direction of flow.
+Use this SVG sheet when drawing or checking a flowchart. Each symbol has a distinct role; a process step, input/output step, and decision should remain visually different.
 
-- **Terminator (oval):** start or stop.
-- **Input/output (parallelogram):** read data or display a result.
-- **Process (rectangle):** calculate or assign a value.
-- **Decision (diamond):** test a condition and branch, often on Yes/No.
+[![Reference sheet showing all eight Module 2 flowchart symbol groups](/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.svg)](/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.svg)
 
-The diagrams below illustrate the common symbols.
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.svg)
 
-![Start/Stop symbol (oval)](/notes/cse/s1/python/module-2/assets/page-026-image-1-Imagen.png)
-
-**Start/Stop**
-
-![Input/Output symbol (parallelogram)](/notes/cse/s1/python/module-2/assets/page-026-image-2-Imagen.png)
-
-**Input/Output**
-
-![Process symbol (rectangle)](/notes/cse/s1/python/module-2/assets/page-026-image-3-Imagen.png)
-
-**Process**
-
-![Condition symbol (diamond)](/notes/cse/s1/python/module-2/assets/page-026-image-4-Imagen.png)
-
-**Decision**
-
+Check a finished chart by tracing at least one path through each decision. Every reachable branch must lead to another step or to a stop, and each loop must make progress toward its exit.
 
 <!-- page 21 | Module 2 · source page 8 -->
 
@@ -557,7 +455,6 @@ Selection chooses which instructions to run based on a condition. Common forms i
 ### Repetition
 
 Repetition runs a group of instructions multiple times. Common loop forms include `WHILE`, `FOR`, and `REPEAT/UNTIL`.
-
 
 <!-- page 22 | Module 2 · source page 9 -->
 
@@ -587,7 +484,6 @@ IF outer_condition THEN
 END IF
 ```
 
-
 <!-- page 23 | Module 2 · source page 10 -->
 
 ## Multiple choices with `ELSE IF`
@@ -607,7 +503,6 @@ END IF
 ```
 
 Only one matching branch is selected.
-
 
 <!-- page 24 | Module 2 · source page 11 -->
 
@@ -636,10 +531,9 @@ ELSE
 END IF
 ```
 
-
 <!-- page 25 | Module 2 · source page 12 -->
 
-## Example: calculate a factorial with a loop
+## Trace a factorial loop
 
 For a non-negative integer $n$, $n! = n \times (n-1) \times \cdots \times 2 \times 1$, and $0! = 1$.
 
@@ -654,6 +548,12 @@ PRINT factorial
 
 When $n=0$, the loop does not run and the initialized result remains 1.
 
+| Iteration for n = 4 | i | factorial after multiplication |
+|---|---|---|
+| 1 | 1 | 1 |
+| 2 | 2 | 2 |
+| 3 | 3 | 6 |
+| 4 | 4 | 24 |
 
 <!-- page 26 | Module 2 · source page 13 -->
 
@@ -667,7 +567,6 @@ When the reference picture is unavailable, trial and error can help narrow the c
 4. Try a piece in a likely location; if it does not fit, set it aside and test another.
 5. Join matching clusters and use the combined shape and image as new clues.
 6. Continue until the remaining gaps are filled, revisiting earlier choices when necessary.
-
 
 <!-- page 27 | Module 2 · source page 14 -->
 
@@ -683,237 +582,155 @@ A heuristic is a shortcut for narrowing a choice quickly; it does not prove that
 
 These rules reduce the options quickly. If the choice matters more, compare more information before deciding.
 
-
 <!-- page 28 | Module 2 · source page 15 -->
 
-Algorithm for finding factorial
+## Flowchart: test whether a number is odd or even
 
-Step 1: Start
+For an integer, a remainder of zero after division by 2 means **even**. A non-zero remainder means **odd**. This rule also works for zero and negative integers.
 
-Step 2: Read the 'n'
-
-Step 3: Initialize $i=1$ and $fact=1$
-
-Step 4: Calculate $fact = fact 	imes i$
-
-Step 5: Increment the value of $i$, $i = i + 1$
-
-Step 6: Check whether, $i <= n$, then goto Step 4
-
-else
-
-Print the value of 'Factorial'
-
-Step 7: Stop.
-
-Flowchart of odd number
-
-```mermaid
-flowchart TD
-START([START]) --> READ[/READ Num/]
-READ --> COND{IS Num % 2 == 0}
-COND -- Yes --> ODD[/PRINT Num is odd/]
-COND -- No --> EVEN[/PRINT Num is even/]
-ODD --> STOP([STOP])
-EVEN --> STOP
+```text
+START
+READ number
+IF number MOD 2 = 0 THEN
+    SET result = "Even"
+ELSE
+    SET result = "Odd"
+END IF
+PRINT result
+STOP
 ```
 
+[![Parity flowchart: a zero remainder selects Even; the other branch selects Odd](/notes/cse/s1/python/module-2/assets/flow-parity.svg)](/notes/cse/s1/python/module-2/assets/flow-parity.svg)
 
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-parity.svg)
 
-
-
+| Input | Remainder modulo 2 | Result |
+|---|---|---|
+| 0 | 0 | Even |
+| 6 | 0 | Even |
+| 7 | 1 | Odd |
+| -4 | 0 | Even |
 
 <!-- page 29 | Module 2 · source page 16 -->
 
-Illustrate a problem to find the amount of charge people of varying ages for a concert ticket. Person is under 16 the charge is $7. When the person is 65 or over the charge is $5. All others are charged $10.
+## Concert-ticket pricing rules
+
+For this exercise, a ticket costs 7 for a person under 16, 5 for a person aged 65 or over, and 10 for everyone else. Assume age is a non-negative number.
 
 | Age | Charge |
-| --- | --- |
-| $\text{Age} < 16$ | 7 |
-| $\text{Age} \ge 65$ | 5 |
-| $\text{Age} \ge 16$ and $\text{Age} < 65$ | 10 |
+|---|---|
+| Under 16 | 7 |
+| 16 to under 65 | 10 |
+| 65 or over | 5 |
 
-Algorithm
+1. Read age.
+2. If age is under 16, set charge to 7.
+3. Otherwise, if age is at least 65, set charge to 5.
+4. Otherwise, set charge to 10.
+5. Display charge and stop.
 
-Step 1 : Start
-
-Step 2 : Read age
-
-Step 3 : If $age < 16$, set `charge = 7`.
-
-Step 4 : Else if $age \ge 65$, set `charge = 5`.
-
-Step 5 : Otherwise, set `charge = 10`.
-
-Step 6 : Print `charge`.
-
-Step 6 : Stop.
-
-
-
-
-
+Use one selection chain so exactly one band determines the price.
 
 <!-- page 30 | Module 2 · source page 17 -->
 
-```mermaid
-flowchart TD
-    A([START]) --> B[/READ age/]
-    B --> C{age < 16}
-    C -- Yes --> D[Charge = 7]
-    C -- No --> E{age >= 65}
-    D --> E
-    E -- Yes --> F[Charge = 5]
-    E -- No --> G{age >= 16}
-    F --> G
-    G -- Yes --> H[Charge = 10]
-    G -- No --> I[/Print "Charge"/]
-    H --> I
-    I --> J([STOP])
-```
+## Concert-ticket flowchart
 
+A matching branch goes straight to the output. It must not continue into later price tests, which could overwrite the selected charge.
 
+[![Concert-ticket flowchart with exclusive age branches and a shared output](/notes/cse/s1/python/module-2/assets/flow-concert-fare.svg)](/notes/cse/s1/python/module-2/assets/flow-concert-fare.svg)
 
-
-
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-concert-fare.svg)
 
 <!-- page 31 | Module 2 · source page 18 -->
 
-Algorithm
+## Concert-ticket pseudocode
 
-Step 1: Start
+```text
+START
+READ age
+IF age < 16 THEN
+    SET charge = 7
+ELSE IF age >= 65 THEN
+    SET charge = 5
+ELSE
+    SET charge = 10
+END IF
+PRINT charge
+STOP
+```
 
-Step 2: Read age
-
-Step 3: If age < 16, set charge = 7.
-
-Step 4: Else if age >= 65, set charge = 5.
-
-Step 5: Else set charge = 10.
-
-Step 6: Print charge.
-
-Step 7: Stop.
-
-Pseudo code
-
-1. START
-
-2. READ age
-
-3. IF age < 16, THEN
-
-Set charge = 7
-
-4. ELSE IF age >= 65, THEN
-
-Set charge = 5
-
-5. ELSE
-
-Set charge = 10
-
-6. PRINT charge
-
-7. STOP
-
-
-
-
-
+Notice that `charge` is calculated, not read as an input. The `ELSE` branch covers ages from 16 up to, but not including, 65.
 
 <!-- page 32 | Module 2 · source page 19 -->
 
-```mermaid
-flowchart TD
-    A([START]) --> B[/READ age/]
-    B --> C{age < 16?}
-    C -- Yes --> D[charge = 7]
-    C -- No --> E{age >= 65?}
-    E -- Yes --> F[charge = 5]
-    E -- No --> G[charge = 10]
-    D --> H[/PRINT charge/]
-    F --> H
-    G --> H
-    H --> I([STOP])
-```
+## Check ticket-price boundaries
 
+Boundary values are where an incorrect comparison is easiest to spot. Test the value immediately before a boundary and the boundary itself.
 
+| Age | Expected concert charge | Why |
+|---|---|---|
+| 15 | 7 | Under 16 |
+| 16 | 10 | First age in the standard band |
+| 64 | 10 | Last whole-number age below 65 |
+| 65 | 5 | First age in the senior band |
 
-
-
+Also test a typical age in each band. If negative ages are possible in the input, reject them before applying the pricing rules.
 
 <!-- page 33 | Module 2 · source page 20 -->
 
-## Flowchart symbols: standard shapes
+## Commission-rate rules
 
-A flowchart shows the steps of an algorithm and the order in which they occur. Arrows connect the symbols and show the direction of flow.
+This exercise assigns one rate to the entire sales amount. It does not apply progressive rates to separate portions of the sale.
 
-- **Terminator (oval):** start or stop.
-- **Input/output (parallelogram):** read data or display a result.
-- **Process (rectangle):** calculate or assign a value.
-- **Decision (diamond):** test a condition and branch, often on Yes/No.
+| Sales amount | Rate | Decimal rate |
+|---|---|---|
+| 0 to 2000 inclusive | 2% | 0.02 |
+| Over 2000 to 4000 inclusive | 4% | 0.04 |
+| Over 4000 to 6000 inclusive | 7% | 0.07 |
+| Over 6000 | 6% | 0.06 |
 
-The diagrams below illustrate the common shapes.
+Assume sales is non-negative. The final band deliberately uses the 6% rate from the exercise. Selecting the **rate** and calculating the **commission amount** are different steps:
 
+$$\text{commission amount} = \text{sales} \times \text{rate}$$
 
+For sales of 3000, the rate is 0.04 and the commission amount is 120.
 
 <!-- page 34 | Module 2 · source page 21 -->
 
-Step 5: Else if Sales <= 6000, set commission to 0.07.
+## Commission pseudocode
 
-Step 6: Else set commission to 0.06.
+```text
+START
+READ sales
+IF sales < 0 THEN
+    PRINT "Invalid sales amount"
+ELSE
+    IF sales <= 2000 THEN
+        SET rate = 0.02
+    ELSE IF sales <= 4000 THEN
+        SET rate = 0.04
+    ELSE IF sales <= 6000 THEN
+        SET rate = 0.07
+    ELSE
+        SET rate = 0.06
+    END IF
+    SET commission = sales * rate
+    PRINT rate, commission
+END IF
+STOP
+```
 
-Step 7: Print commission.
-
-Step 8: Stop.
-
-Pseudocode
-
-1. START
-2. READ sales
-3. IF sales <= 2000 THEN
-       commission = 0.02
-   ELSE IF sales <= 4000 THEN
-       commission = 0.04
-   ELSE IF sales <= 6000 THEN
-       commission = 0.07
-   ELSE
-       commission = 0.06
-   END IF
-4. PRINT commission
-5. STOP
-
-
-
-
-
+**Boundary check:** sales of 2000, 4000, and 6000 use rates 0.02, 0.04, and 0.07 respectively. A value just above each boundary enters the next band.
 
 <!-- page 35 | Module 2 · source page 22 -->
 
-Flowchart:
+## Commission-rate flowchart
 
-```mermaid
-flowchart TD
-    A([START]) --> B[/READ sales/]
-    B --> C{sales <= 2000?}
-    C -- Yes --> D[commission = 0.02]
-    C -- No --> E{sales <= 4000?}
-    E -- Yes --> F[commission = 0.04]
-    E -- No --> G{sales <= 6000?}
-    G -- Yes --> H[commission = 0.07]
-    G -- No --> I[commission = 0.06]
-    D --> J[/PRINT commission/]
-    F --> J
-    H --> J
-    I --> J
-    J --> K([STOP])
-```
+After validating that sales is non-negative, select one rate using this chart. Calculate the amount as `sales × rate` when the question asks for the commission amount.
 
+[![Commission rate flowchart with inclusive upper bounds at 2000, 4000, and 6000](/notes/cse/s1/python/module-2/assets/flow-commission.svg)](/notes/cse/s1/python/module-2/assets/flow-commission.svg)
 
-
-
-
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-commission.svg)
 
 <!-- page 36 | Module 2 · source page 23 -->
 
@@ -937,99 +754,64 @@ REPEAT
 UNTIL i > 10
 ```
 
-
-
-
-
+Python has no dedicated `repeat-until` statement. Use `while True` with a `break` after the body when the stopping condition is satisfied.
 
 <!-- page 37 | Module 2 · source page 24 -->
 
-## Example: repeat-until loop and minimum of three numbers
+## Choose the right control structure
 
-A repeat-until loop checks its condition after executing the body, so its body runs at least once.
+| Construct | Best suited to | Can run zero times? |
+|---|---|---|
+| IF / ELSE | Choosing between alternative actions | Not a loop |
+| FOR | Visiting a known sequence or counter range | Yes, for an empty range |
+| WHILE | Repeating while a condition is true | Yes |
+| REPEAT / UNTIL | Doing something before checking whether to stop | No |
 
-```text
-SET i = 1
-REPEAT
-    PRINT i
-    SET i = i + 1
-UNTIL i > 10
-```
+A loop's condition must be interpreted carefully: `WHILE condition` continues when the condition is true; `UNTIL condition` stops when the condition is true.
 
-To find the smallest of three numbers, initialize the current minimum to the first value and compare the other two values with it:
-
-```text
-READ a, b, c
-SET smallest = a
-IF b < smallest THEN
-    SET smallest = b
-END IF
-IF c < smallest THEN
-    SET smallest = c
-END IF
-PRINT smallest
-```
-
-
+**Example:** to print 1 through 10, a while loop can continue while `i <= 10`, whereas a repeat-until loop can stop when `i > 10`. Both require an update such as `i = i + 1`.
 
 <!-- page 38 | Module 2 · source page 25 -->
 
-## Flowchart symbols: module calls and loops
+## Module calls and loop setup
 
-A **predefined process** symbol represents a call to a named procedure, function, or module. A **loop** symbol can represent a repeated operation, such as a counter running from a start value to an end value.
+A module call names an already defined procedure, such as `calculate_average(values)`. Its flowchart symbol shows that the work is delegated to that procedure; the procedure's own chart explains the internal steps.
 
-To calculate the sum of the first $n$ positive integers:
+[![Predefined-process symbol for calling calculate_average](/notes/cse/s1/python/module-2/assets/symbol-module.svg)](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
 
-```text
-SUM NATURAL NUMBERS
-1. START
-2. READ n
-3. SET i = 1, sum = 0
-4. WHILE i <= n
-       SET sum = sum + i
-       SET i = i + 1
-   END WHILE
-5. PRINT sum
-6. STOP
-```
+[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
 
+Before a counter loop starts, define:
 
+- Its start value.
+- Its limit and whether that limit is included.
+- Its step value.
+- Any running totals or products needed by its body.
 
+The course's hexagonal loop notation is a compact summary of these controls; it does not replace the loop body's instructions.
 
 <!-- page 39 | Module 2 · source page 26 -->
 
-Flowchart symbols
+## Sum the first n natural numbers
 
-The module name of call symbol is used to represent a call to a subroutine or functions or module within a flowchart. It is used to call separate redefined process or set of operations.
+For this example, sum the integers from 1 through $n$, where $n$ is a non-negative integer. Initialize the total to 0, because no values have been added yet.
 
-![Hexagon flowchart symbol](/notes/cse/s1/python/module-2/assets/page-045-image-1-Imagen.png)
+```text
+START
+READ n
+SET total = 0
+SET i = 1
+WHILE i <= n DO
+    SET total = total + i
+    SET i = i + 1
+END WHILE
+PRINT total
+STOP
+```
 
-Hexagon (for-loop symbol)
+**Trace for n = 3:** the running total becomes 1, then 3, then 6. For `n = 0`, the loop runs zero times and the result is 0.
 
-It represents an iterative process. It involves repeating a set of instructions for a specific number of times.
-
-Algorithm: sum the first $n$ natural numbers
-
-Step 1 : Start
-
-Step 2 : Initialize $i=1$ and $sum=0$.
-
-Step 3 : REPEAT
-
-$$Sum = Sum + i$$
-
-$$i = i + 1$$
-
-UNTIL $i > n$
-
-Step 4 : Print Sum
-
-Step 5 : Stop.
-
-
-
-
-
+Check the result against $n(n+1)/2$. Keep variable names consistent: `total`, `Total`, and `TOTAL` can denote different names in a programming language.
 
 <!-- page 40 | Module 2 · source page 27 -->
 
@@ -1052,8 +834,7 @@ AVERAGE AGE
 7. STOP
 ```
 
-
-
+**Check:** three ages of 18, 20, and 22 give a total of 60 and an average of 20. Reject `n <= 0` before entering this repeat-until loop.
 
 <!-- page 41 | Module 2 · source page 28 -->
 
@@ -1079,8 +860,7 @@ END WHILE
 
 A `for` loop is useful when the values or number of repetitions are known in advance. A countdown loop uses a decreasing step.
 
-
-
+> **Watch out.** If the body never changes a value used in the condition, the loop may never terminate. In this example, omitting `i = i + 1` leaves the condition true indefinitely when n is positive.
 
 <!-- page 42 | Module 2 · source page 29 -->
 
@@ -1093,17 +873,16 @@ FOR i = 1 TO n
     PRINT i
 END FOR
 
-FOR i = 10 DOWN TO 1 STEP -1
+FOR i = 10 TO 1 STEP -1
     PRINT i
 END FOR
 ```
 
-
-
+The step must be non-zero and point toward the stopping value. For the course’s `DOWN TO` notation, `FOR i = 10 DOWN TO 1` already implies a decreasing counter.
 
 <!-- page 43 | Module 2 · source page 30 -->
 
-## Selection and repetition: syntax patterns
+## Review: selection and repetition patterns
 
 Pseudocode makes control flow explicit. Indent the statements inside each block and close every block with its matching keyword.
 
@@ -1125,10 +904,6 @@ END FOR
 
 For example, `FOR i = 1 TO n` repeats a known number of times, while `WHILE condition` repeats until its condition becomes false.
 
-
-
-
-
 <!-- page 44 | Module 2 · source page 31 -->
 
 ## The Python `range()` function
@@ -1138,7 +913,7 @@ For example, `FOR i = 1 TO n` repeats a known number of times, while `WHILE cond
 ```python
 list(range(5))          # [0, 1, 2, 3, 4]
 list(range(1, 10, 2))   # [1, 3, 5, 7, 9]
-list(range(10, 0, -1))  # [10, 9, 8, ..., 1]
+list(range(10, 0, -1))  # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 ```
 
 A `for` loop can use the same ranges without building a list first:
@@ -1148,9 +923,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-
-
-
+`range(stop)` starts at 0 and uses step 1. A zero step raises `ValueError`; `range(1, 5, -1)` is empty because a negative step cannot move 1 toward the upper bound 5.
 
 <!-- page 45 | Module 2 · source page 32 -->
 
@@ -1172,9 +945,7 @@ for multiplier in range(1, 11):
     print(f"{multiplier} × 9 = {multiplier * 9}")
 ```
 
-
-
-
+Initialize an additive accumulator to 0; initialize a multiplicative accumulator to 1. The multiplication-table loop visits 1 through 10 because its Python stop value is 11.
 
 <!-- page 46 | Module 2 · source page 33 -->
 
@@ -1185,7 +956,9 @@ The conditions are checked from top to bottom. Once one condition matches, the r
 ```python
 mark = int(input("Enter the mark: "))
 
-if mark >= 90:
+if not 0 <= mark <= 100:
+    grade = "Invalid mark"
+elif mark >= 90:
     grade = "A"
 elif mark >= 80:
     grade = "B"
@@ -1211,9 +984,7 @@ else:
     print("Not a leap year")
 ```
 
-
-
-
+**Checks:** marks 90, 89, 60, and 59 give A, B, D, and F. Years 1900, 2000, and 2024 are respectively not a leap year, a leap year, and a leap year.
 
 <!-- page 47 | Module 2 · source page 34 -->
 
@@ -1244,13 +1015,11 @@ else:
 
 The complex roots for a negative discriminant can be found with `cmath.sqrt()`.
 
-
-
-
+**Checks:** `(a,b,c) = (1,-3,2)` gives roots 2 and 1; `(1,2,1)` gives -1; `(1,0,1)` has no real roots. The `a = 0` branch prevents division by zero. This introductory example uses an exact discriminant comparison; floating-point roundoff can require a tolerance in numerical applications.
 
 <!-- page 48 | Module 2 · source page 35 -->
 
-## List indexing and slicing
+## Additional Python practice: list indexing and slicing
 
 ```python
 fruits = ["apple", "mango", "grapes"]
@@ -1266,10 +1035,7 @@ fruits[1:2] = ["cherry", "pineapple"]
 print(fruits)        # ['apple', 'cherry', 'pineapple', 'grapes']
 ```
 
-
-
-
-
+An index selects one item; a slice selects a new list. Slice start is included and stop is excluded. Negative indices count from the end. Reading a slice does not change the original list; assigning to an index or slice does.
 
 <!-- page 49 | Module 2 · source page 36 -->
 
@@ -1302,10 +1068,7 @@ print(arr)        # [1 2 3 4]
 print(type(arr))  # <class 'numpy.ndarray'>
 ```
 
-
-
-
-
+`sort()` changes the list in place and returns `None`; `sorted(fruits)` returns a new sorted list. `reverse()` reverses the current order rather than sorting. NumPy is additional practice and is not needed for the core algorithm and flowchart exercises.
 
 <!-- page 50 | Module 2 · source page 37 -->
 
@@ -1323,5 +1086,9 @@ numbers[1:3] = [23, 27, 28]
 print(numbers)  # [10, 23, 27, 28, 40, 50]
 
 numbers[1:3] = [68]
-print(numbers)  # [10, 68, 40, 50]
+print(numbers)  # [10, 68, 28, 40, 50]
 ```
+
+The last slice replaces only 23 and 27, so 28 remains in the list.
+
+Assigning `numbers[1:3] = 68` raises `TypeError` because the right side is not iterable. Use `[68]` to replace a slice with one item, or `numbers[1] = 68` to replace a single indexed item.
