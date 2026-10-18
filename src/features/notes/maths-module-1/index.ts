@@ -17,7 +17,7 @@ export const mathsModule1: NotesModule = {
   title: "S1 CSE Maths · Module 1",
   trail: [
     { label: "NOTES", href: "/notes" },
-    { label: "CSE", href: "/notes#cse" },
+    { label: "CSE", href: "/notes/cse" },
     { label: "S1", href: "/notes/cse/s1" },
     { label: "MATHS", href: MATHS_PATH },
     { label: "MODULE 1" },

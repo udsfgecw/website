@@ -18,7 +18,7 @@ export interface SubjectNotes {
 }
 
 export interface Semester {
-  /** used in anchors such as /notes#cse-s1 */
+  /** used in the semester's URL, e.g. /notes/cse/s1 */
   id: string;
   name: string;
   subjects: SubjectNotes[];
@@ -33,8 +33,11 @@ export interface Branch {
 
 const semester = (n: number, subjects: SubjectNotes[] = []): Semester => ({ id: `s${n}`, name: `Semester ${n}`, subjects });
 
+/** URL of the page listing a department's semesters */
+export const branchPath = (branch: Branch) => `/notes/${branch.id}`;
+
 /** URL of the page listing a semester's subjects; each subject's own page is its `href` */
-export const semesterPath = (branch: Branch, semester: Semester) => `/notes/${branch.id}/${semester.id}`;
+export const semesterPath = (branch: Branch, semester: Semester) => `${branchPath(branch)}/${semester.id}`;
 
 /* What the notes shelf lists. Add a subject to a semester here once its notes are online. */
 export const NOTES_CATALOGUE: readonly Branch[] = [

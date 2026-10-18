@@ -16,11 +16,6 @@
   ],
   "redirects": [
     {
-      "source": "/notes/cse",
-      "destination": "/notes#cse",
-      "permanent": false
-    },
-    {
       "source": "/notes/cse/s1/maths/:page(\\d+)",
       "destination": "/notes/cse/s1/maths/module-1#page-:page",
       "permanent": true

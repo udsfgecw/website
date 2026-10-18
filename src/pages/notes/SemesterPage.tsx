@@ -3,9 +3,10 @@ import { Link, useParams } from "react-router-dom";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Label } from "@/components/ui/section";
 import { pageTitle } from "@/config";
-import { NOTES_CATALOGUE } from "@/data/notes";
+import { branchPath, NOTES_CATALOGUE } from "@/data/notes";
 import { usePageMeta } from "@/lib/meta";
 import NotFoundPage from "@/pages/NotFoundPage";
+import Breadcrumb from "./Breadcrumb";
 
 /* The subjects of one semester, reached by clicking the semester on the notes shelf. */
 export default function SemesterPage() {
@@ -29,13 +30,9 @@ export default function SemesterPage() {
     <SiteLayout>
       <main className="wrap pb-[clamp(5rem,11vw,9rem)]">
         <header className="pt-[clamp(3.5rem,8vw,6rem)] pb-[clamp(3rem,6vw,5rem)]">
-          <nav aria-label="Breadcrumb" className="label flex flex-wrap gap-x-2 text-ink-2">
-            <Link to="/notes" className="hover:text-ink">NOTES</Link>
-            <span aria-hidden="true">/</span>
-            <Link to={`/notes#${branch.id}`} className="hover:text-ink">{branch.short}</Link>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">{semester.id.toUpperCase()}</span>
-          </nav>
+          <Breadcrumb
+            trail={[{ label: "NOTES", href: "/notes" }, { label: branch.short, href: branchPath(branch) }, { label: semester.id.toUpperCase() }]}
+          />
           <h1 className="mt-6 text-[length:clamp(2.2rem,5vw,4.2rem)] leading-[1.05] font-semibold tracking-[-0.045em] text-balance">
             {semester.name}. <span className="text-ink/30">{branch.name}</span>
           </h1>

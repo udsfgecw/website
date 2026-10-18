@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { prerenderToNodeStream } from "react-dom/static";
 import { StaticRouter } from "react-router-dom";
 import App from "./App";
-import { NOTES_CATALOGUE, semesterPath } from "./data/notes";
+import { branchPath, NOTES_CATALOGUE, semesterPath } from "./data/notes";
 import { mathsModule1 } from "./features/notes/maths-module-1";
 import { MetaCollector, type PageMeta } from "./lib/meta";
 
@@ -22,14 +22,13 @@ const fileFor = (url: string) => `${url.replace(/^\//, "")}/index.html`.replace(
 export const pages: StaticPage[] = [
   { url: "/", file: "index.html" },
   { url: "/notes", file: "notes/index.html" },
-  // a page for each semester that has notes, and one for each of its subjects
-  ...NOTES_CATALOGUE.flatMap((branch) =>
-    branch.semesters
+  // a page for each department, each semester that has notes, and each of those subjects
+  ...NOTES_CATALOGUE.flatMap((branch) => [
+    branchPath(branch),
+    ...branch.semesters
       .filter((semester) => semester.subjects.length > 0)
-      .flatMap((semester) =>
-        [semesterPath(branch, semester), ...semester.subjects.map((subject) => subject.href)].map((url) => ({ url, file: fileFor(url) })),
-      ),
-  ),
+      .flatMap((semester) => [semesterPath(branch, semester), ...semester.subjects.map((subject) => subject.href)]),
+  ]).map((url): StaticPage => ({ url, file: fileFor(url) })),
   { url: mathsModule1.basePath, file: fileFor(mathsModule1.basePath), chunk: "src/pages/notes/MathsNotesPage.tsx" },
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
