@@ -82,6 +82,17 @@ function readSaved(): Saved {
     return defaults;
   }
 }
+type HastNode = { type: string; value?: string; children?: HastNode[] };
+function textOf(node?: HastNode): string {
+  if (!node) return "";
+  return node.type === "text"
+    ? node.value || ""
+    : (node.children || []).map(textOf).join("");
+}
+// Matches the notes' question lines: "Q.", "Q Find…", "Q_3." and "Q6." (KaTeX text).
+const isQuestion = (node?: HastNode) =>
+  /^Q(?=[\s._:\d]|$)/.test(textOf(node).trimStart());
+
 function IdentityGraph() {
   return (
     <figure className="identity-graph">
@@ -228,6 +239,19 @@ export default function MathsReader() {
     });
     return () => cancelAnimationFrame(frame);
   }, [page, resume]);
+  useEffect(() => {
+    const keydown = (e: KeyboardEvent) => {
+      if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      const target = e.target as HTMLElement;
+      if (target.closest("input, select, textarea, [contenteditable]")) return;
+      if (e.key === "ArrowLeft" && page > 2) go(page - 1);
+      else if (e.key === "ArrowRight" && page < 35) go(page + 1);
+      else return;
+      e.preventDefault();
+    };
+    window.addEventListener("keydown", keydown);
+    return () => window.removeEventListener("keydown", keydown);
+  });
   function go(next: number, offset = 0) {
     navigationRequested.current = true;
     pendingOffset.current = offset;
@@ -433,13 +457,30 @@ export default function MathsReader() {
                 h1({ children }) {
                   return <h2>{children}</h2>;
                 },
+                p({ node, children }) {
+                  return (
+                    <p
+                      className={
+                        isQuestion(node as HastNode)
+                          ? "reader-question"
+                          : undefined
+                      }
+                    >
+                      {children}
+                    </p>
+                  );
+                },
               }}
             >
               {current.content}
             </ReactMarkdown>
           </article>
           <div className="reader-pagination">
-            <button disabled={page === 2} onClick={() => go(page - 1)}>
+            <button
+              disabled={page === 2}
+              aria-keyshortcuts="ArrowLeft"
+              onClick={() => go(page - 1)}
+            >
               <ArrowLeft size={17} /> Previous page
             </button>
             <label>
@@ -452,7 +493,11 @@ export default function MathsReader() {
                 ))}
               </select>
             </label>
-            <button disabled={page === 35} onClick={() => go(page + 1)}>
+            <button
+              disabled={page === 35}
+              aria-keyshortcuts="ArrowRight"
+              onClick={() => go(page + 1)}
+            >
               Next page <ArrowRight size={17} />
             </button>
           </div>
