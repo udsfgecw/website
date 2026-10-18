@@ -92,18 +92,6 @@
       background-position: 0 0;
     }
   }
-  /* hero tiles: pop in, then bob gently */
-  @keyframes pop {
-    from {
-      opacity: 0;
-      transform: scale(0.6);
-    }
-  }
-  @keyframes bob {
-    50% {
-      transform: translateY(-7px);
-    }
-  }
 }
 
 @layer base {
@@ -176,21 +164,40 @@
     shine 2.2s var(--ease-out-expo) 1.1s both;
 }
 
-/* Hero tile grid: grey tiles fade out behind the headline and toward the top and bottom.
-   On phones the text fills the width, so the tiles only show above and below it. */
-.tile-mask {
-  mask-image:
-    radial-gradient(closest-side, transparent 46%, black 88%),
-    linear-gradient(180deg, transparent, black 20%, black 80%, transparent);
-  mask-composite: intersect;
+/* Hero: a heavy white wash over the group photo, with one soft clear circle (the lens) where the
+   photo shows through. Pointer devices move it from JS; touch screens let it drift along the crowd. */
+@property --mx {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
 }
-.tile-mask-phone {
-  mask-image: linear-gradient(180deg, transparent, black 8%, black 14%, transparent 22%, transparent 78%, black 86%, black 92%, transparent);
+@property --my {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 82%;
 }
-/* accent tiles follow the pointer; --depth sets how far (set on the tile, --px/--py on the hero) */
-.parallax {
-  transform: translate3d(calc(var(--px, 0) * var(--depth) * 16px), calc(var(--py, 0) * var(--depth) * 12px), 0);
-  transition: transform 0.8s var(--ease-out-expo);
+.lens {
+  --r: 170px;
+  background: rgb(255 255 255 / 0.88);
+  mask-image: radial-gradient(circle var(--r) at var(--mx) var(--my), rgb(0 0 0 / 0.15), rgb(0 0 0 / 0.4) 50%, black);
+}
+@media (min-width: 768px) {
+  .lens {
+    --r: 250px;
+  }
+}
+@media (hover: none) and (prefers-reduced-motion: no-preference) {
+  .lens {
+    animation: drift 14s ease-in-out infinite alternate;
+  }
+}
+@keyframes drift {
+  from {
+    --mx: 15%;
+  }
+  to {
+    --mx: 85%;
+  }
 }
 
 /* follow-up progress tracks fill once their card is revealed */
