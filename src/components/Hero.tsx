@@ -1,6 +1,3 @@
-import { ArrowDown, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
 export default function Hero() {
   return (
     // The hero slides up under the sticky nav so the photo starts at the very top.
@@ -29,21 +26,6 @@ export default function Hero() {
         <p className="mt-6 max-w-[38ch] text-[1.05rem] leading-[1.55] text-ink-2">
           The KSU and MSF student alliance at Government Engineering College Wayanad, standing with every student on campus.
         </p>
-
-        <div className="mt-8 flex flex-wrap justify-center gap-2.5">
-          <Button asChild className="h-12 px-6">
-            <a href="#join">
-              Join UDSF
-              <ArrowRight size={17} aria-hidden="true" />
-            </a>
-          </Button>
-          <Button asChild variant="outline" className="h-12 bg-white px-6">
-            <a href="#progress">
-              See our progress
-              <ArrowDown size={17} aria-hidden="true" />
-            </a>
-          </Button>
-        </div>
       </div>
     </section>
   );
