@@ -2,29 +2,24 @@
 
 ## Nanomaterials: scale, classification and size effects
 
-### Module learning route
-1. [Nanomaterials: scale, classification and size effects](#page-1)
-2. [Nanoparticle synthesis: reduction, hydrolysis and sol–gel](#page-2)
-3. [Graphene: structure, preparation, properties and uses](#page-3)
-4. [Fullerenes and the structure of C₆₀](#page-4)
-5. [Carbon nanotubes: structure, chirality and applications](#page-5)
-6. [Carbon quantum dots and applications of nanomaterials](#page-6)
-7. [Polymer fundamentals and flame retardancy](#page-7)
-8. [Conducting polymers: conjugation, doping and composites](#page-8)
-9. [Polyaniline and polypyrrole: preparation, states and uses](#page-9)
-10. [OLEDs: layers, charge injection and light emission](#page-10)
-11. [Dye-sensitized solar cells: components and charge cycle](#page-11)
-12. [Supercapacitors: interfaces, construction and energy storage](#page-12)
-13. [Materials for quantum computing](#page-13)
-14. [Spintronics and magnetoresistive devices](#page-14)
-15. [Revision sheet and practice problems](#page-15)
+**Nanomaterials**
 
-### The nanoscale and foundational fields
 Nanomaterials are materials with at least one external dimension or internal structural feature in the nanometric range, conventionally defined as approximately $1\text{ nm}$ to $100\text{ nm}$, where $1\text{ nm} = 10^{-9}\text{ m}$. While some structures such as monolayer graphene have a thickness below $1\text{ nm}$ ($\approx 0.34\text{ nm}$), they are still studied as nano-objects because their thickness is at the atomic limit. Nanomaterials can occur naturally (volcanic ash, forest fire soot), form as incidental combustion by-products (diesel exhaust, welding fumes), or be engineered for specific electronic, optical, or catalytic functions.
 
-**Nanoscience** investigates the fundamental physical, chemical, and biological phenomena of matter at the atomic and molecular scale. **Nanochemistry** focuses on synthesizing, functionalizing, and controlling chemical reactions of nanoscale building blocks with molecular precision. **Nanotechnology** applies these scientific and chemical principles across engineering, physics, and materials science to fabricate functional devices.
+**Nanoscience**
+
+Nanoscience investigates the fundamental physical, chemical, and biological phenomena of matter at the atomic and molecular scale.
+
+**Nanochemistry**
+
+Nanochemistry focuses on synthesizing, functionalizing, and controlling chemical reactions of nanoscale building blocks with molecular precision.
+
+**Nanotechnology**
+
+Nanotechnology applies these scientific and chemical principles across engineering, physics, and materials science to fabricate functional devices.
 
 ### Classification by dimensionality
+
 In nanomaterial classification, dimensionality ($0\text{D}$, $1\text{D}$, $2\text{D}$, $3\text{D}$) counts the number of **unconfined (extended) spatial axes** that lie outside the nanometric range ($> 100\text{ nm}$), rather than the number of nanoscale axes.
 
 | Class | Confined axes ($\le 100\text{ nm}$) | Unconfined axes ($> 100\text{ nm}$) | Typical morphology and examples |
@@ -37,6 +32,7 @@ In nanomaterial classification, dimensionality ($0\text{D}$, $1\text{D}$, $2\tex
 > **Watch out.** Do not assume any macroscopic solid with all three external dimensions above $100\text{ nm}$ is a $3\text{D}$ nanomaterial. Ordinary bulk materials (such as coarse-grained graphite) are not $3\text{D}$ nanomaterials unless they possess a nanostructured internal architecture, such as nanometre-scale crystal grains, pores, or bundled nano-building blocks.
 
 ### Classification by material composition
+
 Grouping nanomaterials by chemical composition is a material-type classification rather than a commercial grading, and several categories overlap in practice (for example, a polymer nanocomposite contains both polymer and inorganic phases).
 
 | Material category | Core composition and structural features | Representative examples |
@@ -49,14 +45,18 @@ Grouping nanomaterials by chemical composition is a material-type classification
 
 > **Watch out.** Not all nanopolymers are dendrimers—dendrimers are a specific hyperbranched class with tree-like symmetry, whereas polymeric nanoparticles can also be formed from linear chains. Furthermore, "biological" origin does not automatically guarantee biocompatibility or non-toxicity; every nanomaterial requires specific toxicological assessment.
 
-### Size effects: why properties change at the nanoscale
+### Size effects: governing mechanisms
+
 Entering the $1\text{–}100\text{ nm}$ range does not automatically improve every property, nor does a single universal percentage of surface atoms apply to all materials at a given diameter (surface atom fraction depends on crystal lattice parameters and particle shape). However, two fundamental physical mechanisms govern why nanomaterials differ from bulk solids:
 
 1. **Surface-area-to-volume ratio ($A/V$):** For a sphere of diameter $d$, surface area is $A = \pi d^2$ and volume is $V = \frac{\pi}{6}d^3$. For a cube of side length $a$, $A = 6a^2$ and $V = a^3$. Their surface-to-volume ratios are:
+
 $$
 \left(\frac{A}{V}\right)_{\text{sphere}} = \frac{6}{d}, \qquad \left(\frac{A}{V}\right)_{\text{cube}} = \frac{6}{a}
 $$
+
 where $d$ and $a$ are characteristic lengths ($\text{m}$ or $\text{nm}$). Because $A/V$ scales inversely with size ($1/d$), subdividing a fixed total mass of material into smaller, non-agglomerated particles of identical geometry and density increases the total exposed surface area proportionally to $1/d$. A much higher fraction of atoms sits at under-coordinated surface sites, which can change reactivity, catalytic activity, adsorption and melting behaviour. The result depends on material chemistry, surface state and environment.
+
 2. **Electronic and optical confinement:** When particle dimensions approach the de Broglie wavelength of charge carriers or the exciton Bohr radius, **quantum confinement** restricts electron motion. This occurs most prominently in **semiconductor quantum dots** (such as $\text{CdSe}$), where shrinking the crystal discretizes energy levels and widens the band gap, shifting optical absorption and fluorescence toward shorter (bluer) wavelengths. By contrast, in **metallic nanoparticles** (such as $\text{Au}$ and $\text{Ag}$), optical changes across the $10\text{–}100\text{ nm}$ range are typically dominated by **localized surface plasmon resonance (LSPR)**—the collective oscillation of conduction electrons driven by light—rather than semiconductor-type band-gap opening, unless metallic clusters shrink to sub-$2\text{ nm}$ molecular scales.
 
 #### Example 1: Illustrative calculation of surface scaling on subdividing spheres
@@ -80,11 +80,31 @@ A_{\text{total},2} = N \times A_2 = 1000 \times (0.01 A_1) = 10 A_1
 $$
 Subdividing the same volume of material from $100\text{ nm}$ to $10\text{ nm}$ spheres increases the total exposed surface area $10$-fold.
 
+
+
 ### Self-check questions
 1. **Question:** A carbon nanotube has a diameter of $2\text{ nm}$ and a length of $5\text{ }\mu\text{m}$. How is it classified by dimensionality, and why?
    **Answer:** It is a $1\text{D}$ nanomaterial because two of its dimensions (the cross-sectional axes, $2\text{ nm}$) are confined within the nanometric range, leaving exactly one unconfined dimension ($5\text{ }\mu\text{m} = 5000\text{ nm}$) extended outside the nanoscale.
 2. **Question:** Why does a $3\text{ nm}$ $\text{CdSe}$ nanocrystal emit a different colour of light than a $7\text{ nm}$ $\text{CdSe}$ nanocrystal of the exact same chemical formula?
    **Answer:** Due to quantum confinement, restricting excitons within the smaller $3\text{ nm}$ semiconductor crystal widens the electronic band gap compared to the $7\text{ nm}$ crystal, causing it to emit higher-energy (shorter-wavelength) photons upon electron–hole recombination.
+
+### Module study map
+
+1. [Nanomaterials: scale, classification and size effects](#page-1)
+2. [Nanoparticle synthesis: reduction, hydrolysis and sol–gel](#page-2)
+3. [Graphene: structure, preparation, properties and uses](#page-3)
+4. [Fullerenes and the structure of C₆₀](#page-4)
+5. [Carbon nanotubes: structure, chirality and applications](#page-5)
+6. [Carbon quantum dots and applications of nanomaterials](#page-6)
+7. [Polymer fundamentals and flame retardancy](#page-7)
+8. [Conducting polymers: conjugation, doping and composites](#page-8)
+9. [Polyaniline and polypyrrole: preparation, states and uses](#page-9)
+10. [OLEDs: layers, charge injection and light emission](#page-10)
+11. [Dye-sensitized solar cells: components and charge cycle](#page-11)
+12. [Supercapacitors: interfaces, construction and energy storage](#page-12)
+13. [Materials for quantum computing](#page-13)
+14. [Spintronics and magnetoresistive devices](#page-14)
+15. [Revision sheet and practice problems](#page-15)
 
 <!-- page 2 | Nanoparticle synthesis: reduction, hydrolysis and sol–gel -->
 
@@ -94,9 +114,13 @@ Nanomaterials are synthesized through two fundamentally opposite engineering str
 
 ### Top-down vs bottom-up synthesis
 
-In a **top-down approach**, a macroscopic bulk material is mechanically or chemically eroded into nanoscale fragments. Common techniques include high-energy ball milling (which fractures coarse powders into nanoparticles through repeated impact) and photolithography or electron-beam lithography (which etches circuit patterns onto semiconductor wafers). While top-down methods scale well for wafer patterning, mechanical attrition often introduces crystal defects, broad particle size distributions, and surface contamination.
+**Top-down approach**
 
-In a **bottom-up approach**, individual atoms, ions, or molecules self-assemble into clusters that nucleate and grow into nanoparticles. Wet-chemical routes such as chemical reduction, hydrolysis, and sol–gel processing, along with gas-phase methods like chemical vapour deposition (CVD), belong to this category. Bottom-up routes can offer control over composition and size when nucleation and growth are well managed, but narrow size distributions and high crystallinity are not automatic.
+In a top-down approach, a macroscopic bulk material is mechanically or chemically eroded into nanoscale fragments. Common techniques include high-energy ball milling (which fractures coarse powders into nanoparticles through repeated impact) and photolithography or electron-beam lithography (which etches circuit patterns onto semiconductor wafers). While top-down methods scale well for wafer patterning, mechanical attrition often introduces crystal defects, broad particle size distributions, and surface contamination.
+
+**Bottom-up approach**
+
+In a bottom-up approach, individual atoms, ions, or molecules self-assemble into clusters that nucleate and grow into nanoparticles. Wet-chemical routes such as chemical reduction, hydrolysis, and sol–gel processing, along with gas-phase methods like chemical vapour deposition (CVD), belong to this category. Bottom-up routes can offer control over composition and size when nucleation and growth are well managed, but narrow size distributions and high crystallinity are not automatic.
 
 | Feature | Top-down approach | Bottom-up approach |
 | :--- | :--- | :--- |
@@ -131,10 +155,15 @@ This is a formal reduction half-reaction, not a complete synthesis equation or a
 
 ### Hydrolysis and the sol–gel process
 
-Commercially important metal oxide nanoparticles—including silica ($\text{SiO}_2$), titania ($\text{TiO}_2$), and alumina ($\text{Al}_2\text{O}_3$)—are synthesized via controlled hydrolysis of metal alkoxides ($\text{M(OR)}_n$, where $\text{R}$ is an alkyl group such as ethyl or isopropyl) inside a **sol–gel process**.
+Commercially important metal oxide nanoparticles—including silica ($\text{SiO}_2$), titania ($\text{TiO}_2$), and alumina ($\text{Al}_2\text{O}_3$)—are synthesized via controlled hydrolysis of metal alkoxides ($\text{M(OR)}_n$, where $\text{R}$ is an alkyl group such as ethyl or isopropyl) inside a sol–gel process.
 
-* **Sol:** A stable colloidal suspension of solid nanoparticles ($1\text{--}100\text{ nm}$) dispersed throughout a continuous liquid medium.
-* **Gel:** A continuous, three-dimensional, interconnected solid network that spans the volume of the container and immobilizes (traps) the liquid phase within its pores.
+**Sol**
+
+A sol is a stable colloidal suspension of solid nanoparticles ($1\text{--}100\text{ nm}$) dispersed throughout a continuous liquid medium.
+
+**Gel**
+
+A gel is a continuous, three-dimensional, interconnected solid network that spans the volume of the container and immobilizes (traps) the liquid phase within its pores.
 
 > **Watch out.** A gel is not merely liquid droplets floating in a solid, nor is gelation performed simply to filter out impurities. In this oxide sol–gel example, condensation helps form a spanning network of $\text{M–O–M}$ linkages. Gelation alone does not guarantee a particular porosity, purity or final particle size.
 
@@ -183,6 +212,7 @@ $$
 3. **Ageing and washing:** The wet gel is kept in its pore liquid so unreacted $\text{-OH}$ groups continue condensing, strengthening the skeletal necking. Washing with fresh solvent removes soluble salt impurities and residual alcohol.
 
 4. **Drying:** The method used to remove pore liquid dictates the final nanostructure:
+
    * **Evaporative drying $\rightarrow$ Xerogel:** Conventional thermal evaporation creates strong liquid–vapour capillary forces across tiny pores, causing the gel network to shrink and partially collapse into a dense **xerogel**.
    * **Supercritical drying $\rightarrow$ Aerogel:** Removing the pore fluid above its critical temperature and pressure inside an autoclave eliminates the liquid–vapour meniscus and capillary stress. This preserves the intact, highly porous solid skeleton as an ultra-low-density **aerogel** (for example, ethanol-exchanged silica gels are supercritically dried near the critical point of ethanol, around $241\,^\circ\text{C}$ and $78\text{ bar}$, though exact parameters depend on the pore solvent used).
 
@@ -215,6 +245,8 @@ Reaction temperature, precursor concentration, and solution $\text{pH}$ govern t
    * **Mechanism:** Sol–gel synthesis involving alkoxide hydrolysis, polycondensation ($\text{Ti–O–Ti}$ network formation), drying, and thermal crystallization.
    * **Product family:** Metal oxide nanoparticles (crystalline nano-$\text{TiO}_2$).
 
+
+
 ### Self-check questions
 
 1. **Question:** Why does supercritical drying of a wet silica gel yield an aerogel with much higher porosity than conventional evaporative drying?
@@ -228,18 +260,25 @@ Reaction temperature, precursor concentration, and solution $\text{pH}$ govern t
 ## Graphene: structure, preparation, properties and uses
 
 ### Structure and Bonding
+
+**Graphene**
+
 Graphene is a two-dimensional crystalline allotrope of carbon consisting of a single layer of carbon atoms arranged in a planar hexagonal honeycomb lattice. It serves as the structural building block for other graphitic nanomaterials, including fullerenes, carbon nanotubes, and bulk three-dimensional graphite.
 
 ![Planar hexagonal honeycomb lattice of graphene showing carbon atoms connected by covalent bonds](/notes/cse/s1/chemistry/module-2/assets/page-054-image-1-code.svg)
+
 *Figure 1: Two-dimensional hexagonal honeycomb lattice of monolayer graphene.*
 
 Every carbon atom in the graphene lattice is $sp^2$ hybridized. Each atom forms three strong in-plane covalent $\sigma$ bonds with its three nearest neighbours at bond angles of $120^\circ$ and a carbon–carbon bond length of $0.142\text{ nm}$. This rigid $\sigma$-bond framework gives the sheet exceptional mechanical stability.
 
-The remaining fourth valence electron occupies an unhybridized $2p_z$ orbital oriented perpendicular to the planar sheet. Lateral overlap of these out-of-plane $p_z$ orbitals across the lattice creates a delocalized $\pi$ electronic system consisting of a bonding valence band ($\pi$) and an antibonding conduction band ($\pi^*$). In ideal, neutral monolayer graphene at $0\text{ K}$, the $\pi$ valence band is completely filled and the $\pi^*$ conduction band is completely empty. These two bands touch at six discrete points at the corners of the Brillouin zone, known as Dirac points. Because there is no energy gap between the valence and conduction bands at the Dirac points, graphene is classified as a zero-bandgap semiconductor or a semimetal. Charge transport can occur via either electrons or holes, with the dominant carrier type controlled by chemical doping or electrostatic gating.
+The remaining fourth valence electron occupies an unhybridized $2p_z$ orbital oriented perpendicular to the planar sheet. Lateral overlap of these out-of-plane $p_z$ orbitals across the lattice creates a delocalized $\pi$ electronic system consisting of a bonding valence band ($\pi$) and an antibonding conduction band ($\pi^*$).
+
+In ideal, neutral monolayer graphene at $0\text{ K}$, the $\pi$ valence band is completely filled and the $\pi^*$ conduction band is completely empty. These two bands touch at six discrete points at the corners of the Brillouin zone, known as Dirac points. Because there is no energy gap between the valence and conduction bands at the Dirac points, graphene is classified as a zero-bandgap semiconductor or a semimetal. Charge transport can occur via either electrons or holes, with the dominant carrier type controlled by chemical doping or electrostatic gating.
 
 > **Watch out.** Student notes often state that the $\pi$ and $\pi^*$ orbitals form "two half-filled bands." Actually, the two-band system is half occupied overall, rather than both bands individually being half-filled; in neutral undoped graphene at absolute zero, the lower $\pi$ valence band is fully occupied and the upper $\pi^*$ conduction band is completely empty.
 
 ### Preparation Methods
+
 Different synthesis routes yield graphene with varying flake sizes, defect densities, and scalability:
 
 1. **Mechanical exfoliation (Scotch-tape method):** Repeatedly peeling bulk graphite using adhesive tape overcomes the weak van der Waals forces between stacked layers, leaving behind isolated single-layer graphene flakes. This yields pristine, low-defect crystals ideal for fundamental research, though the original adhesive-tape method has low throughput.
@@ -255,6 +294,7 @@ Different synthesis routes yield graphene with varying flake sizes, defect densi
 | **Graphene oxide reduction** | Chemical or thermal reduction of exfoliated GO | High bulk scalability; defective rGO sheets |
 
 ### Key Properties
+
 The properties of graphene depend strongly on sample purity, layer count, defect density, and substrate interactions:
 
 - **Mechanical strength:** The short, rigid $0.142\text{ nm}$ in-plane $sp^2$ $\sigma$ bonds give defect-free monolayer graphene an extraordinarily high intrinsic tensile strength and Young's modulus, while allowing the sheet to flex out of plane without breaking.
@@ -263,6 +303,7 @@ The properties of graphene depend strongly on sample purity, layer count, defect
 - **Specific surface area:** Because graphene is a single atom thick, every carbon atom lies on the surface and is exposed on both sides of the sheet, resulting in a very high theoretical specific surface area ($\approx 2630\text{ m}^2\text{ g}^{-1}$).
 
 ### Applications
+
 - **Electronics and optoelectronics:** High optical transparency and low sheet resistance make graphene films attractive as flexible transparent conductive electrodes for touchscreens, liquid-crystal displays, and organic solar cells. While high carrier mobility enables ultra-high-frequency analog and radio-frequency transistors, the absence of an energy bandgap prevents pristine graphene transistors from switching off completely, limiting its direct use in standard digital logic gates.
 - **Energy storage:** Graphene and rGO are widely incorporated into electrodes for supercapacitors, lithium-ion batteries, and fuel cells. The high accessible surface area supports rapid ion adsorption in supercapacitors, while the conductive carbon network lowers internal resistance and improves charge/discharge rates in composite battery electrodes.
 
@@ -282,7 +323,13 @@ The properties of graphene depend strongly on sample purity, layer count, defect
 
 ## Fullerenes and the structure of C₆₀
 
-Fullerenes are discrete, zero-dimensional ($0\text{D}$) hollow closed-cage molecules composed entirely of carbon atoms. Unlike diamond or graphite, which form extended three-dimensional or layered networks, fullerenes exist as individual molecular cages ($\text{C}_{20}$, $\text{C}_{60}$, $\text{C}_{70}$, and higher homologues). The most abundant and thoroughly studied member of this family is buckminsterfullerene ($\text{C}_{60}$), often called a "buckyball" because its polyhedral cage resembles a standard soccer ball.
+**Fullerenes**
+
+Fullerenes are discrete, zero-dimensional ($0\text{D}$) hollow closed-cage molecules composed entirely of carbon atoms. Unlike diamond or graphite, which form extended three-dimensional or layered networks, fullerenes exist as individual molecular cages ($\text{C}_{20}$, $\text{C}_{60}$, $\text{C}_{70}$, and higher homologues).
+
+**Buckminsterfullerene**
+
+Buckminsterfullerene ($\text{C}_{60}$), often called a "buckyball" because its polyhedral cage resembles a standard soccer ball, is the most abundant and thoroughly studied member of the fullerene family.
 
 ### Geometric Structure and Bonding in $\text{C}_{60}$
 
@@ -291,12 +338,14 @@ The $\text{C}_{60}$ molecule adopts the geometry of a **truncated icosahedron** 
 Every carbon atom in $\text{C}_{60}$ is three-coordinate, bonded to three neighboring carbon atoms at the junction of one pentagon and two hexagons. In a flat graphene sheet, three-coordinate carbon is purely $sp^2$ hybridized with $120^\circ$ bond angles. In a closed spherical cage, however, the pentagonal rings introduce curvature ($108^\circ$ interior angles in a regular pentagon). This forces the carbon network to bend out of plane—a geometric distortion known as **pyramidalization**. Consequently, every carbon atom in $\text{C}_{60}$ exhibits a curved, $sp^2$-like hybridization with a slight $sp^3$ character due to curvature, rather than the molecule containing a mixture of separate $sp^2$ and $sp^3$ carbon atoms.
 
 Because of this cage topology, $\text{C}_{60}$ has two distinct types of covalent carbon–carbon bonds:
+
 * **$[6,6]$ bonds:** Located at the fusion of two hexagonal rings ($30$ such edges in $\text{C}_{60}$). These bonds are shorter (approx. $1.39\text{ \AA}$) and possess significant double-bond character.
 * **$[5,6]$ bonds:** Located at the fusion of a pentagonal ring and a hexagonal ring ($60$ such edges in $\text{C}_{60}$). These bonds are longer (approx. $1.45\text{ \AA}$) and possess mostly single-bond character.
 
 The two edge environments produce different bond orders and lengths within the cage’s electronic structure. Therefore, $\text{C}_{60}$ does not have equal bond lengths throughout and is not uniformly delocalized like benzene.
 
 ![Buckminsterfullerene C60 truncated icosahedron structure with pentagons and hexagons](/notes/cse/s1/chemistry/module-2/assets/fullerene-c60.svg)
+
 *Figure: Truncated icosahedral structure of buckminsterfullerene ($\text{C}_{60}$) showing 12 pentagonal rings, 20 hexagonal rings, short $[6,6]$ double bonds, and long $[5,6]$ single bonds.*
 
 > **Watch out.** Not all fullerenes contain 20 hexagons. By Euler's polyhedron theorem, any closed trivalent carbon cage built exclusively from pentagons and hexagons must contain **exactly 12 pentagons**, while the number of hexagons varies with molecular size (for example, $\text{C}_{70}$ has 12 pentagons and 25 hexagons, whereas $\text{C}_{20}$ has 12 pentagons and zero hexagons).
@@ -330,9 +379,12 @@ The two edge environments produce different bond orders and lengths within the c
    h = 32 - 12 = 20\text{ hexagons}
    $$
 
+
+
 ### Preparation of $\text{C}_{60}$
 
 Fullerenes are synthesized by high-temperature vaporization of graphite in an inert atmosphere:
+
 1. **Vaporization:** An electric arc is struck between high-purity graphite electrodes inside a chamber filled with low-pressure inert helium ($\text{He}$) gas.
 2. **Condensation:** The intense heat vaporizes carbon into reactive clusters that cool and condense in the helium buffer gas to form fullerene-rich soot (containing mostly $\text{C}_{60}$, smaller amounts of $\text{C}_{70}$, and higher fullerenes).
 3. **Extraction:** Fullerenes are separated from insoluble graphitic soot by solvent extraction using an organic solvent such as toluene or benzene.
@@ -367,21 +419,29 @@ Fullerenes are synthesized by high-temperature vaporization of graphite in an in
 
 ## Carbon nanotubes: structure, chirality and applications
 
+**Carbon nanotubes (CNTs)**
+
 Carbon nanotubes (CNTs) are one-dimensional cylindrical allotropes of $sp^2$-hybridized carbon. While their outer diameters lie in the nanoscale ($1\text{ nm}$ to $50\text{ nm}$), their lengths can reach several micrometres or millimetres, creating exceptionally high aspect ratios. Structurally, a carbon nanotube is conceptualized as a single-atom-thick graphene sheet rolled into a seamless hollow cylinder. This rolling is strictly a geometric model used to describe bond orientation; in practice, CNTs are not manufactured by mechanically rolling flat graphene sheets.
 
-### Structural Classification: SWCNTs and MWCNTs
+### Structural classification
 
 Carbon nanotubes are categorized by the number of concentric graphitic walls present in the cylinder.
 
-* **Single-Walled Carbon Nanotubes (SWCNTs):** Consist of a single seamless graphene cylinder with typical diameters of $0.8\text{ nm}$ to $2\text{ nm}$.
-* **Multi-Walled Carbon Nanotubes (MWCNTs):** Consist of multiple nested graphene cylinders with outer diameters ranging from $2\text{ nm}$ to $50\text{ nm}$ and an interlayer spacing of approximately $0.34\text{ nm}$ (close to that of graphite).
+**Single-walled carbon nanotubes (SWCNTs)**
+
+Single-walled carbon nanotubes consist of a single seamless graphene cylinder with typical diameters of $0.8\text{ nm}$ to $2\text{ nm}$.
+
+**Multi-walled carbon nanotubes (MWCNTs)**
+
+Multi-walled carbon nanotubes consist of multiple nested graphene cylinders with outer diameters ranging from $2\text{ nm}$ to $50\text{ nm}$ and an interlayer spacing of approximately $0.34\text{ nm}$ (close to that of graphite).
 
 In structural descriptions, standard MWCNTs follow the **Russian Doll model**, where discrete concentric cylinders of increasing diameter are nested inside one another. Introductory texts often mention a **Parchment (or scroll) model**, in which a single graphene sheet is spirally wound around itself like a rolled scroll of paper, and a **Mixed model** combining both features. Strictly speaking, a spirally wound sheet is a distinct nanostructure called a *carbon nanoscroll* (which has open edges rather than closed seamless walls), though it is informally grouped with MWCNTs in basic classifications.
 
 ![Structural classification of carbon nanotubes into SWCNTs and MWCNTs](/notes/cse/s1/chemistry/module-2/assets/cnt-classification.svg)
+
 *Figure: Classification tree of single-walled carbon nanotubes (SWCNTs: armchair, zigzag, chiral) and multi-walled carbon nanotubes (MWCNTs: Russian doll, parchment, mixed).*
 
-### Chirality and Electronic Behaviour
+### Chirality and electronic behaviour
 
 The electronic properties of an SWCNT depend on the direction in which the conceptual graphene sheet is rolled, defined by the **chiral vector** ($\mathbf{C}_h$):
 
@@ -415,7 +475,9 @@ Determine the geometric class and electronic character of $(6,6)$, $(8,0)$, and 
 2. **For $(8,0)$:** Since $m = 0$, this is a **zigzag** nanotube. Here, $n - m = 8 - 0 = 8$, which is not divisible by $3$. The $(8,0)$ tube is **semiconducting**.
 3. **For $(9,0)$:** Since $m = 0$, this is a **zigzag** nanotube. Here, $n - m = 9 - 0 = 9$, which is a multiple of $3$. It is **nominally metallic** by zone folding, though tube curvature opens a very small band gap (quasi-metallic).
 
-### Synthesis, Properties and Applications
+
+
+### Synthesis, properties and applications
 
 CNTs are synthesized using three primary routes:
 
@@ -423,7 +485,7 @@ CNTs are synthesized using three primary routes:
 2. **Arc Discharge:** Vaporizing graphite electrodes via a high-current electric arc in an inert helium atmosphere.
 3. **Laser Ablation:** Vaporizing a metal-doped graphite target inside a high-temperature furnace using pulsed laser irradiation.
 
-#### Anisotropic Properties
+#### Anisotropic properties
 
 Because strong covalent $sp^2$ $\text{C–C}$ bonds run along the tube axis while only weak van der Waals forces act between adjacent tubes, CNT properties are highly **anisotropic** (direction-dependent).
 
@@ -432,7 +494,7 @@ Because strong covalent $sp^2$ $\text{C–C}$ bonds run along the tube axis whil
 
 > **Watch out.** Avoid unconditional claims that CNTs are "100 times stronger than steel" or "better conductors than all metals" in bulk form. Such comparisons depend on the specimen, reference material and measurement; bulk bundles and composites are limited by defects and tube-to-tube contact resistance.
 
-#### Practical Applications
+#### Practical applications
 
 * **Structural Composites:** Dispersed in polymers for lightweight aerospace, automotive, and sporting components, as well as antistatic and electromagnetic-shielding coatings.
 * **Energy and Electronics:** Conductive additives in lithium-ion battery electrodes and supercapacitors, transparent conductive films, and field-effect transistor (FET) channels.
@@ -450,17 +512,27 @@ Because strong covalent $sp^2$ $\text{C–C}$ bonds run along the tube axis whil
 
 ## Carbon quantum dots and applications of nanomaterials
 
-### Carbon quantum dots (CQDs): structure and emission
+### Structure and optical emission
+
+**Carbon quantum dots (CQDs)**
 
 Carbon quantum dots (CQDs) are zero-dimensional, quasi-spherical carbon nanoparticles that are typically smaller than $10\text{ nm}$. Within the broader family of carbon dots, true CQDs usually possess a crystalline graphitic ($sp^2$) core, whereas related carbon nanodots may have an amorphous or mixed $sp^2/sp^3$ carbon core. Surfaces often carry oxygen- or nitrogen-containing functional groups (such as $-\text{OH}$, $-\text{COOH}$, and $-\text{NH}_2$), which impart water dispersibility and provide sites for chemical passivation.
 
 Unlike conventional inorganic semiconductor quantum dots, not all carbon dots share a single light-emission mechanism. Depending on the synthesis route and surface passivation, emission can arise from quantum confinement in conjugated $\pi$-domains, surface-defect trap states, or embedded molecular fluorophores.
 
-CQDs absorb strongly in the ultraviolet (UV) region due to $\pi \rightarrow \pi^*$ and $n \rightarrow \pi^*$ electronic transitions, and emit tunable visible light. When excited by external light, they exhibit **photoluminescence** (including fluorescence). Under specific chemical redox reactions, certain functionalized CQDs can also participate in **chemiluminescence**, where the energy for light emission comes from a chemical reaction rather than absorbed photons.
+CQDs absorb strongly in the ultraviolet (UV) region due to $\pi \rightarrow \pi^*$ and $n \rightarrow \pi^*$ electronic transitions, and emit tunable visible light.
+
+**Photoluminescence**
+
+Photoluminescence (including fluorescence) occurs when CQDs absorb external excitation light to produce emission.
+
+**Chemiluminescence**
+
+Chemiluminescence occurs under specific chemical redox reactions in certain functionalized CQDs, where the energy for light emission comes from a chemical reaction rather than absorbed photons.
 
 > **Watch out.** Do not assume that all carbon quantum dots emit purely by size-dependent quantum confinement or that they automatically glow without an excitation source. Photoluminescence requires light absorption, chemiluminescence requires a specific chemical reaction, and surface functional groups often dominate the emission wavelength.
 
-### Synthesis of CQDs
+### Synthesis routes
 
 CQDs are prepared by two general strategies:
 
@@ -505,7 +577,15 @@ In every application, performance depends on maintaining uniform nanoparticle di
 
 ## Polymer fundamentals and flame retardancy
 
-Polymers are macromolecules of high molecular mass built by covalently linking numerous small reactive molecules called **monomers**. The structural unit enclosed in brackets that repeats along the chain is the **repeat unit**, and the number of repeat units $n$ is the degree of polymerization. Depending on monomer identity and polymerization mechanism, polymers are classified into distinct structural and kinetic groups.
+**Polymers**
+
+Polymers are macromolecules of high molecular mass built by covalently linking numerous small reactive molecules called monomers.
+
+**Repeat unit**
+
+A repeat unit is the structural unit enclosed in brackets that repeats along the chain. The number of repeat units $n$ is the degree of polymerization.
+
+Depending on monomer identity and polymerization mechanism, polymers are classified into distinct structural and kinetic groups.
 
 | Classification Basis | Category | Definition | Common Examples |
 | :--- | :--- | :--- | :--- |
@@ -514,42 +594,56 @@ Polymers are macromolecules of high molecular mass built by covalently linking n
 | **Growth Mechanism** | **Addition (Chain-Growth)** | Monomers add sequentially to an active site without losing atoms; repeat mass equals monomer mass. | Polyethylene, PVC, Polystyrene ($-[\text{CH}_2-\text{CH}(\text{C}_6\text{H}_5)]_n-$) |
 | **Growth Mechanism** | **Condensation (Step-Growth)** | Multifunctional monomers react stepwise, typically eliminating a small molecule like $\text{H}_2\text{O}$ or $\text{HCl}$. | Nylon 6,6, Bakelite (note: some step-growth polymers like polyurethanes form without eliminating a small molecule) |
 
-### Flame-Retardant Polymer Systems
+### Flame-retardant polymer systems
 
-Most commodity hydrocarbon polymers—such as polyethylene, polypropylene ($-[\text{CH}_2-\text{CH}(\text{CH}_3)]_n-$), and polystyrene—pyrolyze easily into volatile fuels and burn rapidly. **Flame-retardant polymer systems** are engineered to resist ignition, slow flame spread, and reduce heat release rates in electronics, aerospace, and construction. No organic polymer is completely "fireproof" under extreme heat, and flame resistance does not automatically guarantee low or non-toxic smoke.
+Most commodity hydrocarbon polymers—such as polyethylene, polypropylene ($-[\text{CH}_2-\text{CH}(\text{CH}_3)]_n-$), and polystyrene—pyrolyze easily into volatile fuels and burn rapidly.
+
+Flame-retardant polymer systems are engineered to resist ignition, slow flame spread, and reduce heat release rates in electronics, aerospace, and construction. No organic polymer is completely "fireproof" under extreme heat, and flame resistance does not automatically guarantee low or non-toxic smoke.
 
 > **Watch out.** Do not confuse inherently flame-retardant polymers with flame-retardant additives. Inherently resistant polymers have thermally stable backbones or covalently bound halogens, whereas additives are separate inorganic fillers or small organic molecules blended into flammable host resins.
 
-### Physical and Condensed-Phase Retardancy Mechanisms
+### Physical and condensed-phase mechanisms
 
 Flame retardants interrupt the combustion cycle in the condensed (solid) phase or gas phase through three primary physical and chemical pathways:
 
-1. **Protective Char and Mass/Heat Barrier:** Aromatic and heterocyclic polymers crosslink during pyrolysis to form a rigid carbonaceous char layer. This insulating barrier blocks oxygen diffusion to the underlying fuel and slows the escape of flammable pyrolysis gases.
-2. **Endothermic Cooling and Dilution:** Inorganic hydroxide fillers, most notably **aluminium hydroxide** (alumina trihydrate, ATH), decompose endothermically when heated:
+1. **Protective char and mass/heat barrier:** Aromatic and heterocyclic polymers crosslink during pyrolysis to form a rigid carbonaceous char layer. This insulating barrier blocks oxygen diffusion to the underlying fuel and slows the escape of flammable pyrolysis gases.
+
+2. **Endothermic cooling and dilution:** Inorganic hydroxide fillers, most notably aluminium hydroxide (alumina trihydrate, ATH), decompose endothermically when heated:
 
 $$
 2\text{Al(OH)}_3(\text{s}) \xrightarrow{\Delta} \text{Al}_2\text{O}_3(\text{s}) + 3\text{H}_2\text{O}(\text{g})
 $$
 
    Here $\Delta$ denotes thermal energy absorbed from the polymer matrix. This endothermic reaction absorbs heat and can delay further heating and pyrolysis, leaves a protective $\text{Al}_2\text{O}_3$ ceramic ash, and releases water vapour that dilutes combustible gases and oxygen in the flame zone.
-3. **Intumescence:** Phosphorus–nitrogen additives (such as ammonium polyphosphate combined with nitrogen-rich char formers) decompose to generate phosphoric acid derivatives that catalyse charring while releasing non-flammable gases ($\text{NH}_3$, $\text{H}_2\text{O}$). The softening char swells into a thick, multicellular **intumescent foam** that insulates the underlying polymer.
 
-### Non-Halogenated Flame-Retardant Polymers
+3. **Intumescence:** Phosphorus–nitrogen additives (such as ammonium polyphosphate combined with nitrogen-rich char formers) decompose to generate phosphoric acid derivatives that catalyse charring while releasing non-flammable gases ($\text{NH}_3$, $\text{H}_2\text{O}$). The softening char swells into a thick, multicellular intumescent foam that insulates the underlying polymer.
+
+### Non-halogenated polymers
 
 Non-halogenated systems rely on high bond dissociation energies, rigid aromatic rings, or inorganic backbones rather than halogen radical chemistry. While individual formulations must still pass specific fire certifications, several polymer classes exhibit strong intrinsic thermal resistance:
 
-* **Phenolic Resins (Novolac and Bakelite):** Acid-catalysed condensation of phenol with formaldehyde yields **novolac**, a linear thermoplastic prepolymer. Heating novolac with a crosslinking agent (such as hexamethylenetetramine) cures it into **Bakelite**, an infusible, three-dimensional thermoset network whose dense aromatic structure yields high char upon heating.
-* **Aromatic Heterocyclic Polymers:** **Polyimides** and **polybenzoxazoles (PBO)** possess rigid, resonance-stabilized ring systems along their main chains. They resist thermal cleavage up to very high temperatures and can form protective carbonaceous char under suitable decomposition conditions.
-* **Silicones (Polysiloxanes):** Built on an inorganic $-[\text{Si(R)}_2-\text{O}]_n-$ backbone, silicones oxidize in a fire to form a non-combustible, thermally insulating **silica ($\text{SiO}_2$) ash** layer on the surface.
+**Phenolic resins**
+
+Acid-catalysed condensation of phenol with formaldehyde yields novolac, a linear thermoplastic prepolymer. Heating novolac with a crosslinking agent (such as hexamethylenetetramine) cures it into Bakelite, an infusible, three-dimensional thermoset network whose dense aromatic structure yields high char upon heating.
+
+**Aromatic heterocyclic polymers**
+
+Polyimides and polybenzoxazoles (PBO) possess rigid, resonance-stabilized ring systems along their main chains. They resist thermal cleavage up to very high temperatures and can form protective carbonaceous char under suitable decomposition conditions.
+
+**Silicones (polysiloxanes)**
+
+Built on an inorganic $-[\text{Si(R)}_2-\text{O}]_n-$ backbone, silicones oxidize in a fire to form a non-combustible, thermally insulating silica ($\text{SiO}_2$) ash layer on the surface.
 
 ![Representative structures of non-halogenated thermally resistant polymers](/notes/cse/s1/chemistry/module-2/assets/fire-retardant-polymers.svg)
+
 *Figure 1: Idealized schematic repeat units and structural motifs of representative non-halogenated polymers (curing networks and copolymer ratios are simplified).*
 
-### Halogenated Polymers and Gas-Phase Radical Scavenging
+### Halogenated polymers and gas-phase scavenging
 
-Halogenated systems incorporate chlorine or bromine either covalently along the polymer backbone—as in **polyvinyl chloride (PVC)**, **neoprene** (polychloroprene), and **poly(bromostyrene)**—or as blended small-molecule additives such as **polybrominated diphenyl ethers (PBDEs)** and **polychlorinated diphenyl ethers (PCDEs)**. Note that **brominated butyl rubber** contains only a small mole fraction of bromine introduced primarily to promote vulcanization (curing) rather than to make the bulk elastomer inherently self-extinguishing.
+Halogenated systems incorporate chlorine or bromine either covalently along the polymer backbone—as in polyvinyl chloride (PVC), neoprene (polychloroprene), and poly(bromostyrene)—or as blended small-molecule additives such as polybrominated diphenyl ethers (PBDEs) and polychlorinated diphenyl ethers (PCDEs). Note that brominated butyl rubber contains only a small mole fraction of bromine introduced primarily to promote vulcanization (curing) rather than to make the bulk elastomer inherently self-extinguishing.
 
 ![Representative chemical structures of halogenated polymers and additives](/notes/cse/s1/chemistry/module-2/assets/halogenated-polymers.svg)
+
 *Figure 2: Representative halogenated polymers (PVC, Neoprene, Polybromostyrene, BIIR) and flame-retardant ether additives (PBDE, PCDE).*
 
 ```chem
@@ -564,7 +658,7 @@ neoprene
 
 During combustion, thermal decomposition and dehydrohalogenation can release hydrogen halides ($\text{HX}$) into the flame zone:
 
-1. **Radical Scavenging:** Hydrogen halide reacts with the highly reactive chain-propagating radicals $\text{H}^\bullet$ and $\text{OH}^\bullet$, replacing them with much less reactive halogen radicals $\text{X}^\bullet$ (with bromine being markedly more effective than chlorine due to weaker $\text{C}-\text{Br}$ and $\text{H}-\text{Br}$ bonds):
+1. **Radical scavenging:** Hydrogen halide reacts with the highly reactive chain-propagating radicals $\text{H}^\bullet$ and $\text{OH}^\bullet$, replacing them with much less reactive halogen radicals $\text{X}^\bullet$ (with bromine being markedly more effective than chlorine due to weaker $\text{C}-\text{Br}$ and $\text{H}-\text{Br}$ bonds):
 
 $$
 \text{H}^\bullet + \text{HBr} \rightarrow \text{H}_2 + \text{Br}^\bullet
@@ -574,7 +668,7 @@ $$
 \text{OH}^\bullet + \text{HBr} \rightarrow \text{H}_2\text{O} + \text{Br}^\bullet
 $$
 
-2. **Halogen Halide Regeneration:** The low-energy $\text{Br}^\bullet$ radical abstracts a hydrogen atom from a gaseous fuel molecule ($\text{RH}$), regenerating $\text{HBr}$ to continue the inhibition cycle:
+2. **Hydrogen halide regeneration:** The low-energy $\text{Br}^\bullet$ radical abstracts a hydrogen atom from a gaseous fuel molecule ($\text{RH}$), regenerating $\text{HBr}$ to continue the inhibition cycle:
 
 $$
 \text{Br}^\bullet + \text{RH} \rightarrow \text{HBr} + \text{R}^\bullet
@@ -591,6 +685,8 @@ Although elementary radical recombination steps (not shown) are required to achi
 2. **Polypropylene with $\text{Al(OH)}_3$ (ATH):** Acts in both the **condensed and gas phases**. ATH decomposes endothermically ($2\text{Al(OH)}_3 \rightarrow \text{Al}_2\text{O}_3 + 3\text{H}_2\text{O}$), **cooling** the solid polymer, forming a ceramic $\text{Al}_2\text{O}_3$ barrier, and releasing water vapour to **dilute** flame gases.
 3. **Poly(bromostyrene):** Acts primarily in the **gas phase**. Pyrolysis releases $\text{HBr}$, which scavenges high-energy $\text{H}^\bullet$ and $\text{OH}^\bullet$ flame radicals and replaces them with less reactive $\text{Br}^\bullet$ radicals.
 
+
+
 ### Self-Check Questions
 
 1. **Question:** Why does neat polyethylene being non-halogenated not make it inherently flame retardant?
@@ -603,7 +699,12 @@ Although elementary radical recombination steps (not shown) are required to achi
 ## Conducting polymers: conjugation, doping and composites
 
 ### Conjugated Backbones and Electronic Structure
-Conventional organic polymers such as polyethylene contain only saturated $\sigma$ bonds with tightly localized electrons, making them electrical insulators. In contrast, **intrinsically conducting polymers** (such as polyacetylene, polypyrrole, and polyaniline) possess an extended conjugated backbone of alternating single and double bonds, such as $(-\text{CH}=\text{CH}-)_n$ in polyacetylene.
+
+Conventional organic polymers such as polyethylene contain only saturated $\sigma$ bonds with tightly localized electrons, making them electrical insulators.
+
+**Intrinsically conducting polymers**
+
+Intrinsically conducting polymers (such as polyacetylene, polypyrrole, and polyaniline) possess an extended conjugated backbone of alternating single and double bonds, such as $(-\text{CH}=\text{CH}-)_n$ in polyacetylene.
 
 Each $sp^2$-hybridized carbon atom along this backbone contributes an unhybridized $p_z$ orbital perpendicular to the chain axis. Continuous lateral overlap of these $p_z$ orbitals delocalizes $\pi$ electrons along the polymer segment, creating a filled **valence band** ($\pi$-bonding orbitals) and an empty **conduction band** ($\pi^*$-antibonding orbitals).
 
@@ -614,34 +715,54 @@ polyacetylene
 > **Watch out.** The **band gap** ($E_g$) separating the valence and conduction bands is an *energy difference* measured in electron-volts ($\text{eV}$), not a physical spatial distance. Furthermore, conjugation alone does not make a polymer metallic: because of bond-length alternation (Peierls distortion), undoped conjugated polymers typically have significant band gaps ($1.5\text{--}3.0\text{ eV}$) and behave as low-conductivity semiconductors or insulators at room temperature.
 
 ### Doping and Charge Transport
-To achieve high electrical conductivity, a conjugated polymer must undergo **doping**—the introduction of mobile charge carriers along the backbone, balanced by counter-ions to maintain overall electrical neutrality. Unlike conventional substitutional doping of inorganic semiconductors, polymer doping often involves a **redox process** or an **acid–base protonation**.
 
-1. **p-type (oxidative) doping:** An oxidizing agent removes $\pi$ electrons from the polymer valence band, generating positively charged carriers on the chain ($\text{P}^{n+}$) balanced by dopant counter-anions ($\text{A}^-$):
+**Doping in conducting polymers**
+
+Doping introduces mobile charge carriers along the conjugated polymer backbone, balanced by counter-ions to maintain overall electrical neutrality. Unlike conventional substitutional doping of inorganic semiconductors, polymer doping fundamentally proceeds through redox reactions or acid–base protonation.
+
+**p-Type (oxidative) doping**
+
+An oxidizing agent removes $\pi$ electrons from the polymer valence band, generating positively charged carriers on the chain ($\text{P}^{n+}$) balanced by dopant counter-anions ($\text{A}^-$):
 
 $$
 \text{P} \longrightarrow \text{P}^{n+} + n e^-
 $$
 
-   Common oxidative dopants include iodine ($\text{I}_2$) and iron(III) chloride ($\text{FeCl}_3$). Although $\text{FeCl}_3$ and $\text{AlCl}_3$ are Lewis acids, p-doping fundamentally requires electron *oxidation*; not every Lewis acid can oxidize a polymer backbone unless a suitable oxidizing pathway is present.
-2. **n-type (reductive) doping:** A strong reducing agent (electron donor) such as sodium naphthalenide ($\text{Na}^+[\text{C}_{10}\text{H}_8]^{\bullet -}$) injects electrons into the conduction band, creating negatively charged chains ($\text{P}^{n-}$) balanced by counter-cations ($\text{M}^+$):
+Common oxidative dopants include iodine ($\text{I}_2$) and iron(III) chloride ($\text{FeCl}_3$). Although $\text{FeCl}_3$ and $\text{AlCl}_3$ are Lewis acids, p-doping fundamentally requires electron *oxidation*; not every Lewis acid can oxidize a polymer backbone unless a suitable oxidizing pathway is present.
+
+**n-Type (reductive) doping**
+
+A strong reducing agent (electron donor) such as sodium naphthalenide ($\text{Na}^+[\text{C}_{10}\text{H}_8]^{\bullet -}$) injects electrons into the conduction band, creating negatively charged chains ($\text{P}^{n-}$) balanced by counter-cations ($\text{M}^+$):
 
 $$
 \text{P} + n\text{M}^+ + n\text{e}^- \longrightarrow (\text{M}^+)_n\text{P}^{n-}
 $$
 
-   Describing sodium naphthalenide merely as a Lewis base is imprecise; it functions here as a one-electron reducing agent.
-3. **Acid–base (protonic) doping:** In heteroaromatic polymers with basic nitrogen sites, such as polyaniline (PANI), treating the half-oxidized emeraldine base with a protic acid (e.g., $\text{HCl}$) protonates the imine nitrogens. This increases conductivity by orders of magnitude *without* changing the average oxidation state of the polymer chain.
+Describing sodium naphthalenide merely as a Lewis base is imprecise; it functions here as a one-electron reducing agent.
+
+**Acid–base (protonic) doping**
+
+In heteroaromatic polymers with basic nitrogen sites, such as polyaniline (PANI), treating the half-oxidized emeraldine base with a protic acid (e.g., $\text{HCl}$) protonates the imine nitrogens. This increases conductivity by orders of magnitude *without* changing the average oxidation state of the polymer chain.
 
 ![Mechanism of p-type and n-type doping of polyacetylene](/notes/cse/s1/chemistry/module-2/assets/polyacetylene-doping.svg)
+
 *Figure: Simplified schematic of p-type oxidative doping and n-type reductive doping on a polyacetylene segment. Note that required counter-anions (for p-doping) and counter-cations (for n-doping) are omitted from this backbone view.*
 
-When a charge is added to or removed from a polymer chain, the surrounding bond lengths locally relax around the charge. Depending on backbone symmetry, these charge-coupled lattice deformations form quasi-particles such as **polarons** (radical ions, carrying spin $\frac{1}{2}$ and charge $\pm e$), **bipolarons** (spinless dications or dianions of charge $\pm 2e$), or, in degenerate ground-state polymers like *trans*-polyacetylene, **solitons** (neutral radicals or spinless charged domain walls).
+**Charge carriers**
 
-Macroscopic current requires two transport steps:
-* **Intrachain transport:** Rapid movement of polarons, bipolarons, or solitons along an individual conjugated chain via $\pi$-bond rearrangement.
-* **Interchain hopping:** Slower thermally activated hopping or tunneling of carriers between adjacent chains. Because interchain hopping usually limits overall conductivity, chain alignment, crystallinity, and film morphology strongly govern bulk performance.
+When charge is added to or removed from a polymer chain, the surrounding bond lengths locally relax around the charge. Depending on backbone symmetry, these charge-coupled lattice deformations form quasi-particles:
+
+* **Polarons:** Radical ions carrying spin $\frac{1}{2}$ and charge $\pm e$.
+* **Bipolarons:** Spinless dications or dianions carrying charge $\pm 2e$.
+* **Solitons:** Neutral radicals or spinless charged domain walls found in degenerate ground-state polymers such as *trans*-polyacetylene.
+
+Macroscopic current requires two distinct transport steps:
+
+1. **Intrachain transport:** Rapid movement of polarons, bipolarons, or solitons along an individual conjugated chain via $\pi$-bond rearrangement.
+2. **Interchain hopping:** Slower thermally activated hopping or tunneling of carriers between adjacent chains. Because interchain hopping usually limits overall conductivity, chain alignment, crystallinity, and film morphology strongly govern bulk performance.
 
 ### Classification: Intrinsic vs Extrinsic Systems
+
 Conducting polymer materials are grouped by whether the polymer chain itself carries the current or hosts an external conductor.
 
 | Category | Subtype | Conduction Mechanism | Key Characteristics & Trade-offs |
@@ -652,6 +773,7 @@ Conducting polymer materials are grouped by whether the polymer chain itself car
 | **Extrinsically Conducting Polymers** | Blended conducting polymers | Conducting domains of an ICP (e.g., polypyrrole) dispersed within a conventional matrix polymer (e.g., PVC or polystyrene) | Combines electrical conductivity with the host polymer's processability; phase separation and mechanical trade-offs must be carefully tuned. |
 
 ### Applications
+
 * **Antistatic coatings and EMI shielding:** Doped ICP blends and carbon- or metal-filled composites dissipate static charge and attenuate electromagnetic interference (EMI) in electronic housings.
 * **Electrochromic devices and OLEDs:** Voltage-driven doping/dedoping switches the optical absorption of conducting polymers for smart windows, while undoped or doped layers serve as charge-transport or emissive layers in organic light-emitting diodes.
 * **Chemical and biosensors:** Reversible conductivity or color changes upon exposure to gases ($\text{NH}_3$, $\text{NO}_2$), $\text{pH}$ shifts, or enzyme redox reactions (e.g., glucose oxidase) enable selective analytical sensors.
@@ -672,6 +794,8 @@ $$
 2. **Counter-ion balance:** In $\text{FeCl}_3$ doping, $2\text{FeCl}_3 + \text{e}^- \rightarrow \text{FeCl}_2 + \text{FeCl}_4^-$. The resulting doped polymer formula per four-ring segment is $[(\text{C}_4\text{H}_3\text{N})_4]^{\bullet +}(\text{FeCl}_4^-)$.
 3. **Classification:** Because electrons are removed from the $\pi$ system, this is **p-type doping**; the polymer backbone carries a **positive** charge, balanced by the **negative** $\text{FeCl}_4^-$ counter-anion.
 
+
+
 ### Self-Check Questions
 1. **Question:** Why does blending an intrinsically conducting polymer like polypyrrole with a conventional plastic like PVC not automatically guarantee superior mechanical and electrical properties at all ratios?
    **Answer:** Electrical conduction requires a continuous, percolating pathway of the conducting phase, whereas mechanical toughness relies on the host matrix and interfacial adhesion; poor phase compatibility or low conducting-polymer fraction can disrupt conduction or embrittle the blend.
@@ -684,7 +808,7 @@ $$
 
 Polyaniline (PANI) and polypyrrole (PPy) are two of the most widely studied intrinsically conducting polymers because their monomers are inexpensive, polymerization proceeds under mild aqueous or organic conditions, and their oxidized forms show good environmental stability. Unlike simple polyenes such as polyacetylene, both PANI and PPy contain heteroatoms ($\text{N}$) in or along the conjugated backbone, allowing electronic properties to be tuned through oxidation state and counterion incorporation.
 
-### Polyaniline (PANI): preparation and oxidation states
+### Polyaniline: preparation and oxidation states
 
 Polyaniline is synthesized by the oxidative polymerization of aniline ($\text{C}_6\text{H}_5\text{NH}_2$) in an acidic medium, where aniline exists largely as the anilinium cation ($\text{C}_6\text{H}_5\text{NH}_3^+$).
 
@@ -693,6 +817,7 @@ $$
 $$
 
 ![Oxidative polymerization of aniline to polyaniline](/notes/cse/s1/chemistry/module-2/assets/polyaniline-prep.svg)
+
 *Figure: Preparation of polyaniline via oxidative polymerization of aniline monomers and conversion between emeraldine salt and base.*
 
 ```chem
@@ -703,19 +828,22 @@ aniline
 polyaniline
 ```
 
-#### 1. Chemical oxidative polymerization
+#### Chemical oxidative polymerization
+
 1. Dissolve aniline monomer in an aqueous acid such as dilute $\text{HCl}$ ($\approx 1\text{ M}$) and cool the solution in an ice bath ($0\text{--}5\,^\circ\text{C}$).
 2. Slowly add an aqueous solution of an oxidizing agent, typically ammonium persulfate ($(\text{NH}_4)_2\text{S}_2\text{O}_8$, APS), with continuous stirring. Low temperature is maintained because the oxidation is exothermic; cooling slows side reactions, limits chain branching or degradation, and yields a more regular head-to-tail (*para*-coupled) polymer.
 3. Under suitable reaction conditions, a dark green precipitate of protonated polyaniline (emeraldine salt) forms. It is collected by filtration and washed. Washing with dilute acid preserves the conductive salt, whereas washing with aqueous ammonium hydroxide ($\text{NH}_4\text{OH}$) deprotonates the product to the blue emeraldine base.
 
-#### 2. Electrochemical polymerization
+#### Electrochemical polymerization
+
 1. Immerse an inert working electrode (such as platinum foil or conductive glass) and a counter electrode into an acidified aqueous solution of aniline.
 2. Apply a suitable anodic potential (specified relative to a named reference electrode and selected for the electrolyte and film-growth conditions) to oxidize the monomer at the anode surface.
 3. Radical cations couple directly on the positive electrode, depositing a uniform, adherent thin film of conducting polyaniline.
 
 > **Watch out.** Do not write a simplified polymerization equation releasing $n\text{H}_2\text{O}$ or $\frac{n}{2}\text{H}_2\text{O}$ unless the specific oxidant is balanced, because oxygen does not come from aniline. Also, never write "$0.7\text{ V}$ current"; voltage ($\text{V}$) is electric potential, whereas current is measured in amperes ($\text{A}$), and the exact onset potential depends on the reference electrode and electrolyte.
 
-#### Oxidation and protonation states of PANI
+### Oxidation and protonation states of PANI
+
 Polyaniline has a general repeat unit consisting of reduced benzenoid diamine units and oxidized quinonoid diimine units. Depending on the ratio of these units, PANI exists in three distinct oxidation states:
 
 | Form of Polyaniline | Oxidation / Protonation State | Backbone Structure | Typical Colour | Electrical Behavior |
@@ -727,7 +855,7 @@ Polyaniline has a general repeat unit consisting of reduced benzenoid diamine un
 
 Crucially, the half-oxidized emeraldine form is **not** automatically conductive. Emeraldine base (EB) is an insulator or poor semiconductor until treated with a protonic acid (such as $\text{HCl}$), which protonates the imine nitrogens ($=\text{N}-$) without changing the number of electrons on the chain. This acid–base doping converts EB into the green **emeraldine salt (ES)**, delocalizing polarons along the backbone and increasing conductivity by many orders of magnitude.
 
-### Polypyrrole (PPy): preparation and properties
+### Polypyrrole: preparation and properties
 
 Polypyrrole is formed by the oxidative polymerization of pyrrole ($\text{C}_4\text{H}_4\text{NH}$), a five-membered heteroaromatic ring containing an $-\text{NH}-$ group. Monomer oxidation generates radical cations that couple predominantly at the $\alpha$-positions (carbon positions $2$ and $5$ adjacent to nitrogen), followed by deprotonation.
 
@@ -736,6 +864,7 @@ $$
 $$
 
 ![Oxidative polymerization of pyrrole to polypyrrole](/notes/cse/s1/chemistry/module-2/assets/polypyrrole-prep.svg)
+
 *Figure: Oxidative polymerization of pyrrole to polypyrrole through 2,5-radical cation coupling.*
 
 ```chem
@@ -773,6 +902,8 @@ Because the polymer has a lower oxidation potential than the monomer, the growin
 2. **Step (b) is a non-redox acid–base deprotonation:** $\text{NH}_4\text{OH}$ deprotonates nitrogen sites and releases associated chloride counterions without changing the oxidation state of the polymer, yielding insulating emeraldine base.
 3. **Step (c) is a non-redox acid–base protonation (protonic acid doping):** $\text{HCl}$ protonates the imine nitrogens of emeraldine base without electron transfer, regenerating the **emeraldine salt**, which is the electrically conducting form.
 
+
+
 ### Self-check questions
 
 1. **Why is chemical polymerization of aniline carried out at $0\text{--}5\,^\circ\text{C}$ rather than at boiling temperature?**
@@ -784,13 +915,24 @@ Because the polymer has a lower oxidation potential than the monomer, the growin
 
 ## OLEDs: layers, charge injection and light emission
 
-An **Organic Light-Emitting Diode (OLED)** is a solid-state optoelectronic device in which thin films of organic semiconductors emit light when an electric current passes through them. This process is known as **electroluminescence**. OLEDs are divided into two main families based on their active materials: **small-molecule OLEDs** and **polymer LEDs (PLEDs)** that use conjugated polymers. They do not require a separate light source or added mobile ions to operate.
+**Organic Light-Emitting Diode (OLED)**
+
+An Organic Light-Emitting Diode (OLED) is a solid-state optoelectronic device in which thin films of organic semiconductors emit light when an electric current passes through them. OLEDs do not require a separate light source or added mobile ions to operate.
+
+**Electroluminescence**
+
+Electroluminescence is the emission of light by a material in response to an electric current passing through it.
+
+OLEDs are divided into two main families based on their active materials:
+1. **Small-molecule OLEDs**
+2. **Polymer LEDs (PLEDs)** that use conjugated polymers.
 
 ### Device Construction and Layer Stack
 
 An OLED consists of ultra-thin organic layers sandwiched between two electrodes on a supporting base. At least one electrode must be transparent so generated photons can escape.
 
 ![Diagram of a simplified two-layer OLED structure showing cathode, emissive layer, conductive hole-transport layer, and transparent anode connected to a DC voltage source](/notes/cse/s1/chemistry/module-2/assets/oled-structure.svg)
+
 *Figure: Simplified OLED architecture showing charge injection from electrodes and radiative recombination at the organic interface.*
 
 | Component | Typical Material | Primary Function |
@@ -854,6 +996,8 @@ $$
 
 Each emitted green photon carries $3.82 \times 10^{-19}\text{ J}$ ($2.39\text{ eV}$) of energy.
 
+
+
 ### Display Characteristics, Limitations, and Applications
 
 Because every OLED pixel is **self-emissive**, no backlight or liquid-crystal shutter is needed. Turning a pixel's current off produces a true black state, yielding very high contrast ratios in dark environments, wide viewing angles (approaching $90^\circ$ off-axis), and microsecond response times. Depositing the thin stack onto plastic films rather than rigid glass enables lightweight, bendable, or foldable displays. Power consumption depends on image content: OLEDs use less power than backlit LCDs when showing dark interfaces, but can draw more power when displaying full-screen bright white content.
@@ -871,7 +1015,9 @@ However, conjugated organic molecules are chemically vulnerable. Water vapour an
 
 ## Dye-sensitized solar cells: components and charge cycle
 
-A **dye-sensitized solar cell (DSSC)** is a photoelectrochemical solar cell that converts visible light into electrical energy. Unlike conventional crystalline silicon photovoltaics—where the silicon semiconductor performs both light absorption and charge separation—a DSSC separates these two functions. An adsorbed molecular dye harvests visible photons, while a wide-band-gap semiconductor network transports the resulting electrons.
+**Dye-sensitized solar cell (DSSC)**
+
+A dye-sensitized solar cell (DSSC) is a photoelectrochemical solar cell that converts visible light into electrical energy. Unlike conventional crystalline silicon photovoltaics—where the silicon semiconductor performs both light absorption and charge separation—a DSSC separates these two functions. An adsorbed molecular dye harvests visible photons, while a wide-band-gap semiconductor network transports the resulting electrons.
 
 ### Device architecture and components
 
@@ -887,9 +1033,12 @@ A DSSC is assembled as a sandwich structure containing six functional components
 | **Counter Electrode (Cathode)** | TCO substrate coated with a catalytic layer of platinum ($\text{Pt}$) or carbon/graphite | Catalyzes the reduction of the oxidized redox mediator using electrons returning from the external load. |
 
 ![Diagram of Dye-sensitized solar cell (DSSC) structure](/notes/cse/s1/chemistry/module-2/assets/dssc-structure.svg)
+
 *Figure: Cross-sectional schematic of a dye-sensitized solar cell showing the photoanode, dye-coated nanoporous semiconductor, redox electrolyte, and catalytic counter electrode.*
 
-Together, the transparent substrate, TCO collector, nanoporous $\text{TiO}_2$ film, and adsorbed dye monolayer form the **photoanode** (negative terminal during illumination).
+**Photoanode**
+
+The photoanode acts as the negative terminal during illumination and is formed by the transparent substrate, TCO collector, nanoporous $\text{TiO}_2$ film, and adsorbed dye monolayer.
 
 > **Watch out.** Do not confuse the chemical composition of transparent conductive oxides or the optical role of $\text{TiO}_2$. **FTO** is fluorine-doped *tin* oxide ($\text{SnO}_2:\text{F}$), not fluorine-doped indium tin oxide. Furthermore, $\text{TiO}_2$ has a wide band gap ($\approx 3.2\text{ eV}$, absorbing only ultraviolet light); it does **not** harvest visible sunlight on its own. Visible light is absorbed by the sensitizer dye, while nanoporous $\text{TiO}_2$ acts as a high-surface-area scaffold and electron transport medium. Also avoid listing $\text{ZrO}_2$ as an electron-transport semiconductor: because its conduction band edge lies too high for electron injection from standard dyes, wide-band-gap $\text{ZrO}_2$ may serve as an insulating reference, scaffold in a different architecture or a thin barrier, rather than an interchangeable TiO2 electron-transport layer.
 
@@ -961,17 +1110,22 @@ where $\text{D}$, $\text{D}^*$, and $\text{D}^+$ denote the neutral ground-state
 4. **Net cycle:**
    Summing all steps cancels $2\text{D}^+$, $3\text{I}^-$, and $\text{I}_3^-$ on both sides. Two electrons are driven from the photoanode through the external load to the cathode per two absorbed photons, while both the dye and electrolyte are completely regenerated.
 
+
+
 ### Advantages, limitations, and applications
 
-**Advantages:**
+**Advantages**
+
 * **Diffuse and low-light operation:** Selected DSSCs perform well under diffuse or indoor light when the dye and cell design suit the source spectrum; comparison with silicon depends on the test conditions.
 * **Low-energy fabrication and architectural versatility:** Roll-to-roll printing on polymer substrates enables lightweight, mechanically flexible cells, while glass-based cells can be made semi-transparent in varied colours.
 
-**Limitations and engineering trade-offs:**
+**Limitations and trade-offs**
+
 * **Electrolyte sealing and thermal stability:** Liquid organic electrolytes can volatilize at elevated outdoor temperatures or leak if perimeter seals degrade, motivating research into solid-state hole conductors and polymer gels.
 * **Dye cost, toxicity, and photostability:** High-efficiency ruthenium complexes are expensive and rely on a scarce heavy metal, whereas natural plant pigments—whose toxicity, cost and stability depend on composition—suffer from rapid photodegradation and lower conversion efficiencies.
 
-**Applications:**
+**Applications**
+
 * Building-integrated photovoltaics (BIPV), such as semi-transparent power-generating windows, skylights, and architectural facades.
 * Portable solar chargers integrated into outdoor fabrics, backpacks, and low-power indoor electronic sensors or illuminated signage.
 
@@ -987,11 +1141,12 @@ where $\text{D}$, $\text{D}^*$, and $\text{D}^+$ denote the neutral ground-state
 
 ## Supercapacitors: interfaces, construction and energy storage
 
-### Fundamentals and classification
+**Supercapacitor**
 
-A **supercapacitor** (or **ultracapacitor**) is an electrochemical energy storage device that bridges the gap between conventional electrostatic capacitors and rechargeable batteries. It provides much higher capacitance than solid-state dielectric capacitors while charging and discharging far faster than batteries.
+A supercapacitor (or ultracapacitor) is an electrochemical energy storage device that bridges the gap between conventional electrostatic capacitors and rechargeable batteries. It provides much higher capacitance than solid-state dielectric capacitors while charging and discharging far faster than batteries.
 
-**Supercapacitor** is an umbrella term covering three device families, not a strict synonym for a double-layer capacitor:
+Supercapacitor serves as an umbrella term covering three primary device families:
+
 - **Electrical double-layer capacitors (EDLCs):** Store charge electrostatically at the interface between a porous carbon electrode and an electrolyte without the charge-storage Faradaic reactions characteristic of pseudocapacitance.
 - **Pseudocapacitors:** Store charge through fast, reversible Faradaic (redox) reactions at the surface of materials such as transition-metal oxides or conducting polymers.
 - **Hybrid supercapacitors:** Combine an electrostatic EDLC electrode with a Faradaic or battery-type electrode.
@@ -999,6 +1154,7 @@ A **supercapacitor** (or **ultracapacitor**) is an electrochemical energy storag
 ### Double-layer interfaces and charge storage
 
 In an EDLC, energy is stored by separating charge across two solid–liquid interfaces. When a voltage is applied:
+
 1. The external circuit drives electrons from the positive electrode to the negative electrode.
 2. At the **positive electrode**, the excess positive electronic charge attracts solvated **anions** from the electrolyte.
 3. At the **negative electrode**, the excess negative electronic charge attracts solvated **cations** from the electrolyte.
@@ -1007,6 +1163,7 @@ In an EDLC, energy is stored by separating charge across two solid–liquid inte
 Because purely electrostatic EDLC storage requires no bulk phase change or electron transfer across the electrode–electrolyte interface, charging and discharging are rapid and highly reversible over hundreds of thousands of cycles.
 
 ![Schematic of an electrical double-layer supercapacitor showing current collectors, porous electrodes, cations, anions, electrolyte and porous separator membrane](/notes/cse/s1/chemistry/module-2/assets/supercapacitor.svg)
+
 *Figure 12.1: Structure of an electrical double-layer capacitor (EDLC) showing ion migration toward oppositely charged porous electrodes across an ion-permeable separator.*
 
 ### Device construction and materials
@@ -1014,10 +1171,13 @@ Because purely electrostatic EDLC storage requires no bulk phase change or elect
 A practical supercapacitor cell consists of two porous electrodes, an electrolyte, a porous separator, current collectors, and polymer binders.
 
 #### Electrodes
+
 High-surface-area carbon nanomaterials—such as activated carbon, carbon nanotubes (CNTs), and graphene—form the backbone of EDLC electrodes, while metal-oxide nanoparticles or nanowires are added for pseudocapacitance. However, total geometric surface area alone does not determine capacitance: only **ion-accessible pores** that are properly wetted by the electrolyte and able to accommodate the electrolyte ions, sometimes with partial desolvation in narrow pores contribute to charge storage.
 
 #### Electrolyte
+
 The electrolyte supplies the mobile ions and sets the maximum operating voltage of the cell. Key electrolyte properties are high **ionic conductivity**, a wide **electrochemical voltage window**, and good **pore wetting**.
+
 - **Aqueous electrolytes** (e.g., $\text{H}_2\text{SO}_4$ or $\text{KOH}$ solutions) offer high ionic conductivity and low cost, but water electrolysis limits their operating voltage to about $1\text{ V}$.
 - **Organic liquid electrolytes**—typically conductive salts such as tetraalkylammonium or lithium salts dissolved in organic solvents like acetonitrile or propylene carbonate—allow higher cell voltages ($2.5\text{--}2.7\text{ V}$).
 - **Gel polymer electrolytes** immobilize a liquid electrolyte in a polymer network. **Solid electrolytes** conduct ions through a solid phase; some are solvent-free polymer–salt systems. These formulations differ in conductivity and leakage behaviour.
@@ -1025,9 +1185,11 @@ The electrolyte supplies the mobile ions and sets the maximum operating voltage 
 > **Watch out.** Do not confuse a salt dissolved in an organic solvent with a "solid electrolyte." A solvent mixed with tetraalkylammonium or lithium salts is a **liquid organic electrolyte**; true solid or gel electrolytes require a solid ceramic or polymer matrix. Furthermore, supercapacitor capacitance is governed primarily by accessible electrode surface area, ion size, and double-layer thickness—not simply the bulk dielectric constant of the electrolyte.
 
 #### Separator
+
 The separator (often a porous polymer or paper/cellulose membrane) sits between the two electrodes. It must be **electrically insulating** to prevent internal short circuits while remaining **ion-permeable** so cations and anions can migrate freely during charge and discharge. No electrons travel through the separator.
 
 #### Current collectors and binders
+
 Metallic foils or grids (such as $\text{Al}$, $\text{Cu}$, $\text{Pt}$, or carbon fibre) collect electrons from the electrodes and connect to the external terminals. Collector choice must match the electrolyte to avoid corrosion (for instance, aluminium is stable in organic electrolytes, whereas acidic aqueous solutions require corrosion-resistant carbon or noble metals). Polymer **binders** such as polyvinylidene fluoride (PVDF) or polyacrylonitrile (PAN) act as adhesives holding the active electrode particles together and onto the collector.
 
 ### Capacitance, energy and power equations
@@ -1101,6 +1263,8 @@ Internal resistance—called **equivalent series resistance (ESR)**—arises fro
 
    Because energy scales with $V^2$, discharging to half the maximum voltage leaves $(0.5)^2 = 25\%$ of the initial energy remaining below the chosen operating cutoff.
 
+
+
 ### Self-check questions
 
 1. **Question:** Why does a symmetric supercapacitor whose single electrodes each have a capacitance of $80\text{ F}$ exhibit an overall cell capacitance of only $40\text{ F}$?
@@ -1114,7 +1278,14 @@ Internal resistance—called **equivalent series resistance (ESR)**—arises fro
 ## Materials for quantum computing
 
 ### Classical bits versus qubits
-Classical digital processors store and manipulate information as binary bits, where each transistor switch occupies a definite voltage state corresponding to either $0$ or $1$. Quantum computing encodes information in two-level quantum systems called quantum bits, or qubits. While a classical bit is strictly in state $0$ or $1$ at any instant, a single pure qubit can exist in a coherent linear superposition of two orthogonal computational basis states, written in Dirac notation as $|0\rangle$ and $|1\rangle$:
+
+**Classical bits**
+
+Classical digital processors store and manipulate information as binary bits, where each transistor switch occupies a definite voltage state corresponding to either $0$ or $1$.
+
+**Qubits**
+
+Quantum computing encodes information in two-level quantum systems called quantum bits, or qubits. While a classical bit is strictly in state $0$ or $1$ at any instant, a single pure qubit can exist in a coherent linear superposition of two orthogonal computational basis states, written in Dirac notation as $|0\rangle$ and $|1\rangle$:
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -1131,11 +1302,12 @@ A register of $n$ qubits spans a composite state space (Hilbert space) described
 > **Watch out.** Superposition does not mean that a single qubit holds all numbers from $0$ to $255$, nor does it allow a quantum computer to read out all possible answers at once. Representing $256$ basis states requires an $8$-qubit register ($2^8 = 256$), and a single measurement of that register collapses the state to yield only one $8$-bit binary string. Quantum computers are not universally faster for every task; useful speedups depend on specialized algorithms that manipulate amplitudes before measurement.
 
 ### Core quantum phenomena in computation
+
 Quantum algorithms process information by combining three fundamental physical properties:
 
-1. **Superposition:** A quantum system evolves as a coherent linear combination of basis states with well-defined relative phases; measurement produces an outcome, while coupling to the environment can destroy observable coherence.
-2. **Entanglement:** Two or more qubits can enter a non-separable joint quantum state whose total state vector cannot be factored into individual single-qubit states. Measuring one entangled qubit establishes strong non-classical correlations with the measurement outcomes of its partner qubits, though it cannot transmit information faster than light.
-3. **Quantum interference:** Because $\alpha$ and $\beta$ are complex numbers with relative phases, quantum logic gates can steer probability amplitudes so that paths leading to wrong answers interfere destructively (cancel out) while paths leading to target answers interfere constructively (reinforce the measurement probability).
+- **Superposition:** A quantum system evolves as a coherent linear combination of basis states with well-defined relative phases; measurement produces an outcome, while coupling to the environment can destroy observable coherence.
+- **Entanglement:** Two or more qubits can enter a non-separable joint quantum state whose total state vector cannot be factored into individual single-qubit states. Measuring one entangled qubit establishes strong non-classical correlations with the measurement outcomes of its partner qubits, though it cannot transmit information faster than light.
+- **Quantum interference:** Because $\alpha$ and $\beta$ are complex numbers with relative phases, quantum logic gates can steer probability amplitudes so that paths leading to wrong answers interfere destructively (cancel out) while paths leading to target answers interfere constructively (reinforce the measurement probability).
 
 To execute these operations reliably, qubits must maintain phase relationships over a characteristic **coherence time**. Unwanted thermal, electromagnetic, or spin interactions with the surrounding lattice cause **decoherence**, which destroys superposition and introduces computational errors that require quantum error correction.
 
@@ -1154,7 +1326,10 @@ To execute these operations reliably, qubits must maintain phase relationships o
    $$
 3. **Experimental readout:** Because one measurement returns only one binary number, the circuit must be re-initialized, run, and measured repeatedly over many shots to build a statistical histogram of output probabilities.
 
+
+
 ### Physical platforms and material requirements
+
 Qubits are not limited to electron spins; different hardware architectures encode $|0\rangle$ and $|1\rangle$ in superconducting circuits, semiconductor spins, crystal defects, or photons. In every platform, materials chemistry governs coherence because interface oxides, lattice vacancies, and nuclear-spin impurities create charge and magnetic noise that dephase the qubit.
 
 | Qubit platform | Representative materials | Physical role and material engineering requirements |
@@ -1175,20 +1350,31 @@ Qubits are not limited to electron spins; different hardware architectures encod
 ## Spintronics and magnetoresistive devices
 
 ### Principles of spintronics
-Conventional electronics relies exclusively on the electrical charge of electrons to process and store data. **Spintronics** (spin-based electronics) exploits both the charge of an electron and its intrinsic **spin**—a quantum mechanical angular momentum that gives each electron a tiny magnetic moment. Spin is an intrinsic quantum property rather than a literal physical rotation of a sphere.
 
-In an external magnetic field or inside a ferromagnetic material, electron spins align predominantly in one of two states, referred to as "spin-up" and "spin-down". When an unequal number of spin-up and spin-down electrons carry current, the current is **spin-polarized**. Controlling spin polarization allows solid-state devices to store data in magnetic orientations. Because ferromagnetic magnetization remains stable without continuous electrical power, magnetic spin states enable **non-volatile** data storage. While an individual electron's spin polarization in a conduction channel actually relaxes quickly, collective magnetization in a ferromagnet can retain data without continuous power, subject to thermal stability, retention time and device design.
+Conventional electronics relies exclusively on the electrical charge of electrons to process and store data.
 
-### Giant and tunnel magnetoresistance
+**Spintronics**
+
+Spintronics (spin-based electronics) exploits both the charge of an electron and its intrinsic spin—a quantum mechanical angular momentum that gives each electron a tiny magnetic moment. Spin is an intrinsic quantum property rather than a literal physical rotation of a sphere.
+
+In an external magnetic field or inside a ferromagnetic material, electron spins align predominantly in one of two states, referred to as "spin-up" and "spin-down". When an unequal number of spin-up and spin-down electrons carry current, the current is spin-polarized. Controlling spin polarization allows solid-state devices to store data in magnetic orientations. Because ferromagnetic magnetization remains stable without continuous electrical power, magnetic spin states enable non-volatile data storage. While an individual electron's spin polarization in a conduction channel relaxes quickly, collective magnetization in a ferromagnet can retain data without continuous power, subject to thermal stability, retention time, and device design.
+
+### Magnetoresistive phenomena
+
 Spintronic sensors and memories read magnetic states by converting relative magnetization alignments into electrical resistance changes.
 
-**Giant magnetoresistance (GMR)** occurs in thin-film heterostructures composed of alternating ferromagnetic conducting layers separated by a nanometer-thin **non-magnetic metallic spacer** (such as Cu). Resistance changes because of **spin-dependent scattering** at the interfaces and within the layers:
-1. **Parallel alignment ($R_{\text{P}}$):** When the magnetizations of both ferromagnetic layers are parallel, electrons with spin aligned to the magnetization pass through both layers with minimal scattering, resulting in **low electrical resistance**.
-2. **Antiparallel alignment ($R_{\text{AP}}$):** When the magnetizations are antiparallel, both spin-up and spin-down electrons undergo strong scattering in at least one of the ferromagnetic layers, resulting in **high electrical resistance**.
+**Giant magnetoresistance (GMR)**
 
-Practical devices use a **spin valve** architecture: one ferromagnetic layer has its magnetization fixed (**pinned** layer) by an adjacent antiferromagnetic layer, while the other ferromagnetic layer (**free** layer) rotates freely in response to a small external magnetic field.
+Giant magnetoresistance (GMR) occurs in thin-film heterostructures composed of alternating ferromagnetic conducting layers separated by a nanometer-thin non-magnetic metallic spacer (such as Cu). Resistance changes because of spin-dependent scattering at the interfaces and within the layers:
 
-**Tunnel magnetoresistance (TMR)** occurs in a **magnetic tunnel junction (MTJ)**, where two ferromagnetic electrodes are separated by an ultrathin **insulating tunnel barrier** (typically $\text{MgO}$ or $\text{Al}_2\text{O}_3$, only $1\text{--}2\text{ nm}$ thick) rather than a conductive metal. Electrons cross the barrier by quantum mechanical tunneling. Because tunneling probability depends strongly on the matching of spin-polarized density of states between the two electrodes, well-designed MTJs can provide large resistance changes, with the result depending on the materials and operating conditions.
+1. **Parallel alignment ($R_{\text{P}}$):** When the magnetizations of both ferromagnetic layers are parallel, electrons with spin aligned to the magnetization pass through both layers with minimal scattering, resulting in low electrical resistance.
+2. **Antiparallel alignment ($R_{\text{AP}}$):** When the magnetizations are antiparallel, both spin-up and spin-down electrons undergo strong scattering in at least one of the ferromagnetic layers, resulting in high electrical resistance.
+
+Practical devices use a spin valve architecture: one ferromagnetic layer has its magnetization fixed (pinned layer) by an adjacent antiferromagnetic layer, while the other ferromagnetic layer (free layer) rotates freely in response to a small external magnetic field.
+
+**Tunnel magnetoresistance (TMR)**
+
+Tunnel magnetoresistance (TMR) occurs in a magnetic tunnel junction (MTJ), where two ferromagnetic electrodes are separated by an ultrathin insulating tunnel barrier (typically $\text{MgO}$ or $\text{Al}_2\text{O}_3$, only $1\text{--}2\text{ nm}$ thick) rather than a conductive metal. Electrons cross the barrier by quantum mechanical tunneling. Because tunneling probability depends strongly on the matching of spin-polarized density of states between the two electrodes, well-designed MTJs can provide large resistance changes, with the result depending on the materials and operating conditions.
 
 | Feature | Giant Magnetoresistance (GMR) | Tunnel Magnetoresistance (TMR) |
 | :--- | :--- | :--- |
@@ -1213,12 +1399,16 @@ $$
 $$
 The resistance increases by $20\%$ when switching from the parallel to the antiparallel state.
 
+
+
 ### Material classes in spintronics
+
 * **Metallic ferromagnets and insulators (metal/insulator stacks):** Ferromagnetic transition metals and alloys such as $\text{Co}$, $\text{Fe}$, $\text{NiFe}$, and amorphous $\text{CoFeB}$ provide high spin polarization at room temperature. They are paired with non-magnetic metals ($\text{Cu}$) in GMR devices or crystalline oxide insulators ($\text{MgO}$, $\text{Al}_2\text{O}_3$) in TMR devices.
-* **Semiconductor-based materials:** Conventional semiconductors ($\text{Si}$, $\text{GaAs}$, $\text{InAs}$) allow spin transport and manipulation via electric fields. **Diluted magnetic semiconductors (DMS)**, such as $\text{GaAs}$ or $\text{InAs}$ doped with manganese ($\text{(Ga,Mn)As}$, $\text{(In,Mn)As}$), combine semiconducting tunability with ferromagnetism, though most DMS materials only exhibit ferromagnetism well below room temperature.
+* **Semiconductor-based materials:** Conventional semiconductors ($\text{Si}$, $\text{GaAs}$, $\text{InAs}$) allow spin transport and manipulation via electric fields. Diluted magnetic semiconductors (DMS), such as $\text{GaAs}$ or $\text{InAs}$ doped with manganese ($\text{(Ga,Mn)As}$, $\text{(In,Mn)As}$), combine semiconducting tunability with ferromagnetism, though most DMS materials only exhibit ferromagnetism well below room temperature.
 * **Graphene-based materials:** Graphene serves as an exceptional non-magnetic spin-transport channel in part because carbon has low atomic number and intrinsic spin–orbit coupling is weak. This allows spin-polarized currents to travel micrometre-scale distances with minimal spin scattering.
 
 ### Applications
+
 * **Hard disk drive (HDD) read heads:** GMR spin-valve sensors revolutionized magnetic recording in the late 1990s by detecting tiny magnetic bits on spinning platters; modern high-density HDDs use higher-sensitivity TMR read heads.
 * **Magnetoresistive random-access memory (MRAM):** Stores binary bits ($0$ and $1$) as parallel or antiparallel magnetization states in arrays of MTJs (using TMR). MRAM is non-volatile, fast, and can reduce the energy required to retain the stored bits; peripheral circuitry still consumes power.
 * **Magnetic field sensors:** Used in automotive anti-lock braking rotors, industrial position encoders, and biosensors.
@@ -1233,7 +1423,7 @@ The resistance increases by $20\%$ when switching from the parallel to the antip
 
 ## Revision sheet and practice problems
 
-### Core Definitions and Formulas
+### Core definitions and relationships
 
 | Concept | Definition / Key Relationship | Governing Equation / Metric |
 | :--- | :--- | :--- |
@@ -1247,30 +1437,39 @@ The resistance increases by $20\%$ when switching from the parallel to the antip
 
 > **Watch out.** Do not confuse excitation with emission in organic electronics, or superposition with classical parallel output. In an OLED, radiative recombination is a **LUMO $\rightarrow$ HOMO** decay (not HOMO $\rightarrow$ LUMO). In quantum computing, an $n$-qubit superposition holds $2^n$ amplitudes simultaneously, but measuring the register yields only **one** bit-string per run.
 
-### Rapid-Fire Retrieval Q&A
+### Rapid-fire retrieval Q&A
 
-1. **Is molecular fullerene ($\text{C}_{60}$) harder than diamond?**
+1. **Is molecular fullerene ($\text{C}_{60}$) harder than diamond?**  
    No. Individual $\text{C}_{60}$ cages have strong covalent bonds, but solid fullerite crystals are held together by weak van der Waals forces, making ordinary bulk $\text{C}_{60}$ a comparatively soft molecular solid.
-2. **What is the exact geometry of $\text{C}_{60}$?**
+
+2. **What is the exact geometry of $\text{C}_{60}$?**  
    It is a **truncated icosahedron** ($32$ faces: $12$ isolated pentagons and $20$ hexagons, with $60$ $sp^2$-hybridized carbon vertices and two distinct C–C bond lengths), not a regular $20$-faced icosahedron.
-3. **Are all carbon nanotubes metallic conductors?**
+
+3. **Are all carbon nanotubes metallic conductors?**  
    No. Electronic behavior depends on the chiral vector $(n,m)$: armchair CNTs ($n=m$) are metallic, whereas zigzag ($m=0$) and chiral ($n \neq m$) CNTs are nominally metallic in the zone-folding model if $(n-m)$ is a multiple of $3$, and semiconducting otherwise. Curvature can open a small gap in non-armchair tubes.
-4. **How does doping polyaniline (PANI) differ from doping polyacetylene?**
+
+4. **How does doping polyaniline (PANI) differ from doping polyacetylene?**  
    Polyacetylene is doped via redox reactions ($\text{FeCl}_3$ oxidation or sodium naphthalide reduction), whereas emeraldine base PANI is converted to the conducting emeraldine salt via **acid protonation** ($\text{HCl}$) without changing the average oxidation state of the backbone.
-5. **Do flame-retardant polymers make materials completely fireproof?**
+
+5. **Do flame-retardant polymers make materials completely fireproof?**  
    No. They are **flame-retardant**, meaning they slow ignition, reduce heat release, and quench gas-phase free radicals ($\text{H}^\bullet$, $\text{OH}^\bullet$) or form protective char to provide escape time, but they can still degrade under sustained heat.
-6. **Which orbital transition produces light in an OLED?**
+
+6. **Which orbital transition produces light in an OLED?**  
    Electroluminescence occurs via radiative **LUMO $\rightarrow$ HOMO** relaxation (exciton recombination) in the emissive layer after electrons are injected from the cathode and holes from the anode.
-7. **In a DSSC, which component absorbs sunlight and which transports electrons?**
+
+7. **In a DSSC, which component absorbs sunlight and which transports electrons?**  
    The **photosensitizer dye** absorbs visible light and injects photoexcited electrons into the conduction band of the wide-band-gap **$\text{TiO}_2$ semiconductor**, while the **counter electrode** (Pt/graphite) reduces $\text{I}_3^-$ back to $\text{I}^-$ in the electrolyte.
-8. **What is the role of the separator in an electrical double-layer capacitor (EDLC)?**
+
+8. **What is the role of the separator in an electrical double-layer capacitor (EDLC)?**  
    It physically prevents electrical contact and electron flow between the electrodes while remaining porous to allow **electrolyte ions** to migrate freely during charging and discharging.
-9. **Does an $8$-qubit quantum register output $256$ numbers at once when read?**
+
+9. **Does an $8$-qubit quantum register output $256$ numbers at once when read?**  
    No. An $8$-qubit system spans $2^8 = 256$ basis states in superposition, interference changes their probabilities during gate operations, but a single readout collapses the register to **one** $8$-bit value.
-10. **How do GMR and TMR spin valves differ in construction?**
+
+10. **How do GMR and TMR spin valves differ in construction?**  
     **Giant Magnetoresistance (GMR)** uses a thin non-magnetic **metal** spacer (such as $\text{Cu}$) between ferromagnetic layers, whereas **Tunnel Magnetoresistance (TMR)** uses an ultrathin **insulating oxide** barrier (such as $\text{MgO}$ or $\text{Al}_2\text{O}_3$) through which spin-polarized electrons quantum-mechanically tunnel.
 
-### Numerical Practice Problems
+### Numerical practice problems
 
 1. *(Additional illustrative example)* Assume a bulk sample of spherical nanoparticles of diameter $d_1 = 50\text{ nm}$ is dispersed into smaller spherical nanoparticles of diameter $d_2 = 10\text{ nm}$ while conserving total material volume. Calculate the factor by which (a) the surface-to-volume ratio increases and (b) the total number of particles increases.
 
@@ -1329,7 +1528,7 @@ The resistance increases by $20\%$ when switching from the parallel to the antip
    $$
    The magnetoresistance of the sensor is **$25\%$**.
 
-### Long-Answer Review Prompts and Learning Checklist
+### Long-answer review prompts
 
 Use these structured prompts to verify mastery across all Module 2 topics:
 

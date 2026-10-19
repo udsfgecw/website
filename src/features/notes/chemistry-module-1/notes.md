@@ -2,32 +2,22 @@
 
 ## Electrochemical cells and the Daniell cell
 
-### Module learning route and prerequisites
+**Electrochemistry**
 
-This module explores how chemical reactions and electrical energy interact, starting from fundamental electrode potentials and the Nernst equation, and progressing to practical engineering applications: reference electrodes, batteries, fuel cells, electrolytic conductivity, corrosion control, and metal plating.
+Electrochemistry is the branch of chemistry that studies the interconversion of chemical energy and electrical energy. It covers both spontaneous chemical reactions that generate an electric current and non-spontaneous chemical reactions driven by an externally applied electric current.
 
-Use the contents list to move between topics. For a first reading, follow this route; for revision, start with a worked example and test what you can explain without looking at the answer.
+**Electrochemical device**
 
-| Study block | What you should be able to do |
-| --- | --- |
-| [Cells, potentials and the Nernst equation](#page-1) · sections 1–3 | Explain electron flow, assign electrode signs, and write the correct reaction quotient. |
-| [Worked calculations](#page-4) · section 4 | Solve electrode-potential, cell-EMF and equilibrium problems step by step. |
-| [Reference electrodes and pH](#page-5) · sections 5–7 | Connect electrode construction to potential measurement and calibration. |
-| [Batteries, fuel cells and conductivity](#page-8) · sections 8–10 | Trace charge and ion movement, and calculate conductivity from measurements. |
-| [Corrosion and protection](#page-11) · sections 11–14 | Identify anodic/cathodic reactions and choose a suitable protection method. |
-| [Metal coatings](#page-15) · sections 15–16 | Compare copper electroplating with electroless deposition. |
-| [Revision and practice](#page-17) · section 17 | Recall key relations, answer theory questions and check your numerical work. |
+An **electrochemical device** (or cell) consists of two electronic conductors (electrodes) immersed in one or more ionic conductors (electrolytes).
 
-Before studying electrochemical cells, review three foundational concepts:
-* **Oxidation:** The loss of electrons by a chemical species (leading to an increase in oxidation state).
-* **Reduction:** The gain of electrons by a chemical species (leading to a decrease in oxidation state).
-* **Ions and electrolytes:** Ions are electrically charged atoms or groups of atoms (cations are positively charged; anions are negatively charged). Electrolytes are substances that produce mobile ions when dissolved in a polar solvent or melted, enabling ionic conduction.
+In broad scientific usage, electrochemical cells are divided into two categories:
 
-### Definition of electrochemistry and cell types
+1. **Galvanic (or voltaic) cells**
+2. **Electrolytic cells**
 
-**Electrochemistry** is the branch of chemistry that studies the interconversion of chemical energy and electrical energy. It covers both spontaneous chemical reactions that generate an electric current and non-spontaneous chemical reactions driven by an externally applied electric current.
+(Note: In many engineering syllabi, the term *electrochemical cell* is used specifically as a synonym for a galvanic cell).
 
-An **electrochemical device** (or cell) consists of two electronic conductors (electrodes) immersed in one or more ionic conductors (electrolytes). In broad scientific usage, electrochemical cells are divided into two categories: **galvanic (or voltaic) cells** and **electrolytic cells**. (Note: In many engineering syllabi, the term *electrochemical cell* is used specifically as a synonym for a galvanic cell).
+### Galvanic cell vs electrolytic cell
 
 | Feature | Galvanic (Electrochemical) Cell | Electrolytic Cell |
 | :--- | :--- | :--- |
@@ -41,19 +31,37 @@ An **electrochemical device** (or cell) consists of two electronic conductors (e
 
 > **Watch out.** Never define the anode or cathode by its electrical sign ($+$ or $-$). Always define electrodes by the chemical reaction occurring at their surface: **oxidation always occurs at the anode**, and **reduction always occurs at the cathode**, regardless of whether the cell is galvanic or electrolytic. The electrical polarity flips between cell types because the anode is the *source* of electrons in a galvanic cell (making it negative), whereas an external power supply *pulls* electrons away from the anode in an electrolytic cell (making it positive).
 
-### The Daniell cell: construction and working
+### Oxidation, reduction and electrolytes
 
-The **Daniell cell** is a classic galvanic cell that converts the chemical energy of the spontaneous zinc–copper redox reaction into electrical energy.
+Before studying electrochemical cells, review three foundational concepts:
+
+**Oxidation**
+
+Oxidation is the loss of electrons by a chemical species (leading to an increase in oxidation state).
+
+**Reduction**
+
+Reduction is the gain of electrons by a chemical species (leading to a decrease in oxidation state).
+
+**Ions and electrolytes**
+
+Ions are electrically charged atoms or groups of atoms (cations are positively charged; anions are negatively charged). Electrolytes are substances that produce mobile ions when dissolved in a polar solvent or melted, enabling ionic conduction.
+
+### Daniell cell construction and operation
+
+The Daniell cell is a classic galvanic cell that converts the chemical energy of the spontaneous zinc–copper redox reaction into electrical energy.
 
 ![Daniell cell diagram showing a zinc anode in zinc sulfate solution, a copper cathode in copper sulfate solution, a salt bridge, and an external circuit with a voltmeter](/notes/cse/s1/chemistry/module-1/assets/page-003-image-1.png)
 
 #### Construction
+
 1. **Anode half-cell:** A solid zinc rod ($\text{Zn}$) is immersed in an aqueous solution of zinc sulfate ($\text{ZnSO}_4$).
 2. **Cathode half-cell:** A solid copper rod ($\text{Cu}$) is immersed in an aqueous solution of copper sulfate ($\text{CuSO}_4$).
 3. **Internal connection:** The two electrolyte solutions are connected by an inverted U-tube called a **salt bridge**.
 4. **External circuit:** The zinc and copper electrodes are connected externally through metallic wires to a voltmeter or electrical load.
 
 #### Electrode reactions and standard cell potential
+
 In the zinc half-cell, metallic zinc has a stronger tendency to lose electrons than copper. Zinc atoms undergo oxidation at the anode, releasing $\text{Zn}^{2+}$ ions into the solution and leaving electrons behind on the zinc rod (making it the negative terminal):
 
 $$
@@ -79,6 +87,7 @@ $$
 $$
 
 #### Conventional cell notation
+
 By IUPAC convention, a galvanic cell is represented in a single line by placing the anode half-cell on the left and the cathode half-cell on the right. A single vertical line ($\mid$) represents a phase boundary between an electrode and its electrolyte, and a double vertical line ($\parallel$) represents a salt bridge:
 
 $$
@@ -92,44 +101,53 @@ $$
 $$
 
 #### Direction of electron flow vs conventional current
+
 * **Electron flow:** Electrons flow through the external metallic wire from the **zinc anode ($-$) to the copper cathode ($+$)**.
 * **Conventional electric current:** By definition, conventional current flows in the direction opposite to electron movement—that is, from the **copper cathode ($+$) to the zinc anode ($-$)** in the external circuit.
 
 > **Watch out.** Electrons never swim through the aqueous electrolyte or the salt bridge. Current in the external wire is carried entirely by electrons, whereas current inside the half-cells and salt bridge is carried entirely by the migration of ions.
 
-### The salt bridge: composition and functions
+### Salt bridge composition and functions
 
 A **salt bridge** is an inverted U-shaped glass tube filled with a concentrated solution of an inert electrolyte—such as potassium chloride ($\text{KCl}$), potassium nitrate ($\text{KNO}_3$), or ammonium nitrate ($\text{NH}_4\text{NO}_3$)—gelled with agar-agar or gelatine to prevent mechanical mixing of the liquids.
 
 An electrolyte is chosen such that its cation and anion have nearly **equal ionic mobilities** (for example, $\text{K}^+$ and $\text{Cl}^-$ move at almost the same speed under an electric field) and do not react chemically with any species in the half-cells.
 
 #### How ion migration maintains neutrality
+
 As the Daniell cell operates, $\text{Zn}^{2+}$ ions accumulate in the anode compartment, creating a net positive charge. Simultaneously, $\text{Cu}^{2+}$ ions are consumed in the cathode compartment, leaving behind an excess of negatively charged sulfate ions ($\text{SO}_4^{2-}$). If unchecked, this charge build-up would immediately halt electron flow. To prevent this, anions (such as $\text{Cl}^-$) migrate from the salt bridge into the anode compartment, while cations (such as $\text{K}^+$) migrate into the cathode compartment.
 
 #### Four essential functions of a salt bridge
+
 1. **Completes the electrical circuit:** It provides an internal ionic pathway between the two half-cells so charge can circulate continuously.
 2. **Maintains electrical neutrality:** By supplying anions to the anode half-cell and cations to the cathode half-cell, it prevents charge accumulation in either solution.
 3. **Prevents mechanical mixing and interfering diffusion:** The gel limits bulk mixing and slows interdiffusion while still allowing ions to move; it is not a perfectly selective membrane.
 4. **Minimizes liquid junction potential:** When two different electrolyte solutions come into direct contact, unequal diffusion rates of cations and anions across the boundary create an unwanted potential difference called the *liquid junction potential*. Because the salt bridge ions ($\text{K}^+$ and $\text{Cl}^-$) have nearly identical transport velocities, the junction potential is reduced; in practice it need not be exactly zero.
 
-### Reversible and irreversible cells
+### Cell reversibility
 
-In thermodynamics, an electrochemical cell is classified as **reversible** if it operates at near-equilibrium conditions and satisfies three strict criteria when connected to an opposing external EMF ($E_{\text{ext}}$):
+**Reversible cell**
+
+A reversible cell operates at near-equilibrium conditions and satisfies three strict criteria when connected to an opposing external EMF ($E_{\text{ext}}$):
+
 1. **When $E_{\text{ext}} = E_{\text{cell}}$:** If the opposing external voltage exactly equals the cell EMF, no current flows and the net cell reaction is zero, although microscopic forward and reverse processes can continue.
 2. **When $E_{\text{ext}} < E_{\text{cell}}$:** If the opposing voltage is infinitesimally smaller than the cell EMF, an infinitesimal current flows from the cell, driving the spontaneous forward reaction ($\text{Zn} + \text{Cu}^{2+} \rightarrow \text{Zn}^{2+} + \text{Cu}$).
 3. **When $E_{\text{ext}} > E_{\text{cell}}$:** If the opposing voltage is infinitesimally greater than the cell EMF, current flows in the opposite direction and the exact reverse chemical reaction occurs ($\text{Zn}^{2+} + \text{Cu} \rightarrow \text{Zn} + \text{Cu}$).
 
 The **Daniell cell** is a standard example of a reversible cell when operated with very small currents.
 
-An **irreversible cell** does not satisfy these conditions; applying an external voltage slightly greater than its EMF does not restore the original reactants, often because side reactions (such as gas evolution) occur at the electrodes. A common example is a primary zinc–carbon dry cell (or placing zinc and copper strips in dilute $\text{H}_2\text{SO}_4$, where $\text{H}_2$ gas escapes irreversibly).
+**Irreversible cell**
 
-### Electrolytic cell example: electrolysis of molten aluminium oxide
+An irreversible cell does not satisfy these conditions; applying an external voltage slightly greater than its EMF does not restore the original reactants, often because side reactions (such as gas evolution) occur at the electrodes. A common example is a primary zinc–carbon dry cell (or placing zinc and copper strips in dilute $\text{H}_2\text{SO}_4$, where $\text{H}_2$ gas escapes irreversibly).
+
+### Electrolysis of molten aluminium oxide
 
 To contrast an electrolytic cell with a galvanic cell, consider the electrolysis of molten aluminium oxide ($\text{Al}_2\text{O}_3$). When $\text{Al}_2\text{O}_3$ is melted, it dissociates into mobile aluminium cations ($\text{Al}^{3+}$) and oxide anions ($\text{O}^{2-}$).
 
 ![Simplified electrolysis of molten aluminium oxide with inert electrodes, showing DC polarity, ion movement, oxygen at the anode, and aluminium at the cathode](/notes/cse/s1/chemistry/module-1/assets/aluminium-oxide-electrolysis-clean.webp)
 
 In the simplified textbook model shown above, two **inert electrodes** are dipped into a single bath of molten $\text{Al}_2\text{O}_3$ and connected to a direct-current (DC) power supply:
+
 * **At the negative cathode:** The DC source pumps electrons into the cathode, making it negatively charged. Positively charged $\text{Al}^{3+}$ cations migrate to this negative electrode, gain electrons, and undergo **reduction** to form molten aluminium metal:
 
 $$
@@ -142,7 +160,9 @@ $$
 \text{Anode (+, oxidation):} \quad 2\text{O}^{2-}\text{(l)} \longrightarrow \text{O}_2\text{(g)} + 4\text{e}^-
 $$
 
-**Distinction from industrial extraction (Hall–Héroult process):** The diagram above represents an idealized **inert-electrode model** useful for understanding electrode polarity and ion migration. In actual industrial aluminium smelting, pure $\text{Al}_2\text{O}_3$ (melting point $\approx 2072\ ^\circ\text{C}$) is dissolved in molten cryolite ($\text{Na}_3\text{AlF}_6$) to lower the operating temperature to about $950\ ^\circ\text{C}$, and **consumable carbon (graphite) anodes** are used instead of inert electrodes. At those high temperatures, the oxygen produced at the anode reacts with the carbon anode to form carbon monoxide and carbon dioxide ($\text{C} + \text{O}_2 \rightarrow \text{CO}_2$), requiring periodic replacement of the anode blocks.
+**Distinction from industrial extraction (Hall–Héroult process)**
+
+The diagram above represents an idealized **inert-electrode model** useful for understanding electrode polarity and ion migration. In actual industrial aluminium smelting, pure $\text{Al}_2\text{O}_3$ (melting point $\approx 2072\ ^\circ\text{C}$) is dissolved in molten cryolite ($\text{Na}_3\text{AlF}_6$) to lower the operating temperature to about $950\ ^\circ\text{C}$, and **consumable carbon (graphite) anodes** are used instead of inert electrodes. At those high temperatures, the oxygen produced at the anode reacts with the carbon anode to form carbon monoxide and carbon dioxide ($\text{C} + \text{O}_2 \rightarrow \text{CO}_2$), requiring periodic replacement of the anode blocks.
 
 ### Self-check questions
 
@@ -155,6 +175,18 @@ $$
 **3. What happens to the reaction in a Daniell cell (standard $E_{\text{cell}} = 1.10\text{ V}$) if an external opposing voltage of $1.15\text{ V}$ is applied across its terminals?**
 *Answer:* In the ideal reversible limit, $E_{\text{ext}} > E_{\text{cell}}$, so the cell functions as an electrolytic cell and the net reaction reverses: copper oxidizes at the copper electrode ($\text{Cu} \rightarrow \text{Cu}^{2+} + 2\text{e}^-$) and zinc ions reduce and plate onto the zinc electrode ($\text{Zn}^{2+} + 2\text{e}^- \rightarrow \text{Zn}$). Practical cells also require allowance for resistance, overpotential and competing reactions.
 
+### Module study map
+
+| Study block | What you should be able to do |
+| --- | --- |
+| [Cells, potentials and the Nernst equation](#page-1) · sections 1–3 | Explain electron flow, assign electrode signs, and write the correct reaction quotient. |
+| [Worked calculations](#page-4) · section 4 | Solve electrode-potential, cell-EMF and equilibrium problems step by step. |
+| [Reference electrodes and pH](#page-5) · sections 5–7 | Connect electrode construction to potential measurement and calibration. |
+| [Batteries, fuel cells and conductivity](#page-8) · sections 8–10 | Trace charge and ion movement, and calculate conductivity from measurements. |
+| [Corrosion and protection](#page-11) · sections 11–14 | Identify anodic/cathodic reactions and choose a suitable protection method. |
+| [Metal coatings](#page-15) · sections 15–16 | Compare copper electroplating with electroless deposition. |
+| [Revision and practice](#page-17) · section 17 | Recall key relations, answer theory questions and check your numerical work. |
+
 <!-- page 2 | Electrode potential and the electrochemical series -->
 
 ## Electrode potential and the electrochemical series
@@ -166,10 +198,13 @@ Every electrochemical cell relies on the charge separation that occurs where an 
 When a metal strip $\mathrm{M}$ is immersed in an aqueous solution containing its own ions $\mathrm{M}^{n+}$, two opposing processes compete at the solid–liquid interface:
 
 1. **Oxidation (dissolution tendency):** Metal atoms leave the crystal lattice as hydrated cations, leaving electrons behind on the metal surface:
+
    $$
    \mathrm{M(s) \longrightarrow M^{n+}(aq) + n\,e^-}
    $$
+
 2. **Reduction (deposition tendency):** Metal cations from the solution collide with the electrode, accept electrons, and deposit as neutral metal atoms:
+
    $$
    \mathrm{M^{n+}(aq) + n\,e^- \longrightarrow M(s)}
    $$
@@ -177,15 +212,21 @@ When a metal strip $\mathrm{M}$ is immersed in an aqueous solution containing it
 As charge is transferred, the interfacial electric field changes and opposes further net transfer. In an ideal reversible half-cell at open circuit, oxidation and reduction approach equal rates. A charged metal surface and nearby counter-ions form an electrical double layer. The simplified zinc/copper drawing below illustrates this idea; the actual surface charge depends on the electrode and solution conditions. A positive or negative potential quoted **relative to the SHE** does not, by itself, specify the absolute sign of the metal surface charge.
 
 ![Diagram showing single electrode potentials for Zinc and Copper half-cells with Helmholtz electrical double layer](/notes/cse/s1/chemistry/module-1/assets/page-004-image-1.png)
+
 *Figure: Charge separation and formation of the Helmholtz electrical double layer at zinc and copper electrode interfaces.*
 
-In both cases, the electrostatic attraction and thermal motion establish an interfacial structure known as the **Helmholtz electrical double layer**—a plane of charge on the metal surface facing a layer of oppositely charged ions in the solution. The resulting electric field opposes further net charge transfer, and interfacial equilibrium can be established in a reversible half-cell:
+**Helmholtz electrical double layer**
+
+The Helmholtz electrical double layer is an interfacial structure established by electrostatic attraction and thermal motion, consisting of a plane of charge on the metal surface facing a layer of oppositely charged ions in the solution. The resulting electric field opposes further net charge transfer, and interfacial equilibrium can be established in a reversible half-cell:
 
 $$
 \mathrm{M^{n+}(aq) + n\,e^- \rightleftharpoons M(s)}
 $$
 
-The potential difference established across this equilibrium double layer between the metal and the bulk electrolyte is the **single electrode potential** ($E$). Its magnitude depends on:
+**Single electrode potential**
+
+Single electrode potential ($E$) is the potential difference established across this equilibrium double layer between the metal and the bulk electrolyte. Its magnitude depends on:
+
 - The chemical nature of the metal and its ions.
 - The activity (effective concentration) of the ions in solution.
 - The temperature of the system.
@@ -195,7 +236,10 @@ The potential difference established across this equilibrium double layer betwee
 
 It is physically impossible to measure the absolute potential of an isolated half-cell because placing a second measuring probe into the electrolyte creates a second metal–solution interface with its own unknown potential. Voltmeters can only measure a potential *difference* between two electrodes. Therefore, every single electrode potential is reported as a relative value measured against a universally agreed reference: the **Standard Hydrogen Electrode (SHE)**, which is assigned a potential of exactly $0.00\text{ V}$ at all temperatures.
 
-The **standard electrode potential** ($E^\circ$) is the potential of a half-cell measured relative to the SHE when all participating species are in their standard states:
+**Standard electrode potential**
+
+Standard electrode potential ($E^\circ$) is the potential of a half-cell measured relative to the SHE when all participating species are in their standard states:
+
 - Solute species at unit activity ($a = 1$), which is routinely approximated in introductory calculations as a molar concentration of $1\text{ M}$.
 - Gases at a partial pressure of $1\text{ bar}$ ($10^5\text{ Pa}$, very close to $1\text{ atm}$).
 - Pure solids and pure liquids in their most stable physical forms.
@@ -217,9 +261,9 @@ Here, both $E^\circ_{\text{cathode}}$ and $E^\circ_{\text{anode}}$ must be subst
 
 > **Watch out.** Electrode potential ($E^\circ$) is an intensive property—it represents energy per unit charge ($1\text{ V} = 1\text{ J C}^{-1}$). Never multiply $E^\circ$ by stoichiometric coefficients when balancing an overall cell reaction. For example, in the reaction $\mathrm{Zn(s) + 2\,Ag^+(aq) \longrightarrow Zn^{2+}(aq) + 2\,Ag(s)}$, the silver half-reaction is doubled to balance electrons, but $E^\circ_{\mathrm{Ag^+/Ag}}$ remains $+0.80\text{ V}$, giving $E^\circ_{\text{cell}} = +0.80 - (-0.76) = +1.56\text{ V}$.
 
-### The electrochemical series
+**Electrochemical series**
 
-Arranging metallic and non-metallic redox couples in increasing order of their standard reduction potentials ($E^\circ$ at $298\text{ K}$) produces the **electrochemical series**.
+The electrochemical series is the arrangement of metallic and non-metallic redox couples in increasing order of their standard reduction potentials ($E^\circ$ at $298\text{ K}$).
 
 | Electrode couple | Reduction half-reaction | $E^\circ$ at $298\text{ K}$ ($\text{V}$) | Chemical behaviour |
 | :--- | :--- | :---: | :--- |
@@ -239,9 +283,11 @@ In this arrangement, species with large negative $E^\circ$ values resist reducti
 1. **Predicting anode, cathode, and standard cell EMF:** When two half-cells are coupled in a galvanic cell, the couple with the higher (more positive) $E^\circ$ undergoes reduction and acts as the **cathode**, while the couple with the lower (more negative) $E^\circ$ undergoes oxidation and acts as the **anode**. Using $E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$ ensures a positive EMF for the spontaneous pairing.
 2. **Predicting spontaneity of redox reactions:** A proposed redox reaction is thermodynamically spontaneous under standard conditions if and only if its calculated $E^\circ_{\text{cell}}$ is positive (which corresponds to a negative standard Gibbs free energy change, $\Delta G^\circ = -nFE^\circ_{\text{cell}} < 0$). If $E^\circ_{\text{cell}} < 0$, the forward reaction is non-spontaneous, and the reverse reaction is favoured.
 3. **Predicting metal and hydrogen displacement reactions:** A metal with a lower (more negative) $E^\circ$ can thermodynamically favour reduction of ions whose metal couple has a higher $E^\circ$. In aqueous solutions, competing reactions with water and passivation must also be considered. For instance, dipping zinc ($E^\circ = -0.76\text{ V}$) into $\mathrm{CuSO_4}$ ($E^\circ = +0.34\text{ V}$) spontaneously deposits copper:
+
    $$
    \mathrm{Zn(s) + Cu^{2+}(aq) \longrightarrow Zn^{2+}(aq) + Cu(s)} \qquad (E^\circ_{\text{cell}} = +1.10\text{ V})
    $$
+
    Similarly, metals with negative standard reduction potentials ($E^\circ < 0.00\text{ V}$, such as $\mathrm{Mg}$, $\mathrm{Zn}$, and $\mathrm{Fe}$) can reduce $\mathrm{H^+}$ ions from dilute non-oxidizing acids (like dilute $\mathrm{HCl}$ or $\mathrm{H_2SO_4}$) to liberate $\mathrm{H_2}$ gas, whereas metals with positive potentials ($E^\circ > 0.00\text{ V}$, such as $\mathrm{Cu}$ and $\mathrm{Ag}$) cannot.
 4. **Predicting preferential discharge during electrolysis:** When an aqueous solution containing multiple cations or anions is electrolysed, the species that requires the least electrical work is discharged first (ignoring overpotential effects). At the cathode, the cation with the **highest** (most positive) reduction potential is reduced first. At the anode, the species with the **lowest** reduction potential is oxidized first. For example, in an acidified aqueous mixture of $\mathrm{NaCl}$ and $\mathrm{KI}$:
    - **Competing reductions at the cathode:** $\mathrm{H^+}$ ($0.00\text{ V}$), $\mathrm{Na^+}$ ($-2.71\text{ V}$), and $\mathrm{K^+}$ ($-2.93\text{ V}$). Because $\mathrm{H^+}$ has the highest reduction potential, hydrogen gas is evolved: $\mathrm{2\,H^+(aq) + 2\,e^- \longrightarrow H_2(g)}$.
@@ -326,11 +372,12 @@ $$
 E = E^\circ - \frac{0.0591}{n} \log Q
 $$
 
-### Nernst equation for single electrodes (half-cells)
+### Single-electrode potentials
 
 By convention, all single-electrode potentials are written as reduction potentials.
 
-#### Metal/metal-ion half-cells
+**Metal/metal-ion half-cell**
+
 For the reduction of a metal cation to the pure solid metal, $\text{M}^{n+}_{(\text{aq})} + n\text{e}^- \rightleftharpoons \text{M}_{(\text{s})}$, the solid metal has unit activity ($a_{\text{M}} = 1$). Therefore, in the dilute-solution approximation, $Q = 1/[\text{M}^{n+}]$. Substituting this into the Nernst equation gives:
 
 $$
@@ -354,7 +401,8 @@ $$
 
 Notice that the reduction potential varies **logarithmically** (not linearly) with the molar concentration of $[\text{M}^{n+}]$. A tenfold increase in $[\text{M}^{n+}]$ shifts $E$ positively by $0.0591/n\text{ V}$. At high concentrations, ion–ion interactions become significant and this dilute-concentration formula hits a physical limit, requiring true activities ($a = \gamma [\text{M}^{n+}]/c^\circ$, with $c^\circ = 1\text{ mol L}^{-1}$) instead of raw molarities.
 
-#### Redox half-cells (soluble oxidized and reduced species)
+**Redox half-cell**
+
 When an inert electrode (such as platinum) is immersed in a solution containing two oxidation states of the same ion, both species are aqueous solutes and both appear in $Q$:
 
 * **Iron(III)/iron(II) couple:** $\text{Fe}^{3+}_{(\text{aq})} + \text{e}^- \rightleftharpoons \text{Fe}^{2+}_{(\text{aq})}$ ($n = 1$, $Q = [\text{Fe}^{2+}]/[\text{Fe}^{3+}]$)
@@ -369,7 +417,7 @@ $$
 E_{\text{Sn}^{4+}/\text{Sn}^{2+}} = E^\circ_{\text{Sn}^{4+}/\text{Sn}^{2+}} + \frac{0.0591}{2} \log \frac{[\text{Sn}^{4+}]}{[\text{Sn}^{2+}]}
 $$
 
-### Nernst equation for complete electrochemical cells
+### Complete electrochemical cells
 
 For a complete galvanic cell, $E_{\text{cell}} = E_{\text{cathode}} - E_{\text{anode}}$ and $E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$. We can write the cell Nernst equation either by subtracting the two half-cell Nernst equations or directly from the balanced overall cell reaction.
 
@@ -402,11 +450,12 @@ $$
 E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{0.0591}{6} \log \frac{[\text{Al}^{3+}]^2}{[\text{Fe}^{2+}]^3}
 $$
 
-### pH dependence of hydrogen and oxygen electrodes
+### pH dependence of gas electrodes
 
 Electrode reactions that consume or produce $\text{H}^+$ ions exhibit potentials that depend directly on solution $\text{pH}$ ($\text{pH} = -\log a_{\text{H}^+} \approx -\log [\text{H}^+]$).
 
-#### Hydrogen electrode
+**Hydrogen electrode**
+
 The reduction half-reaction is $2\text{H}^+_{(\text{aq})} + 2\text{e}^- \rightleftharpoons \text{H}_{2(\text{g})}$ ($n = 2$, $E^\circ_{\text{H}^+/\text{H}_2} = 0.000\text{ V}$). Writing $Q = (p_{\text{H}_2}/p^\circ) / [\text{H}^+]^2$, at standard hydrogen gas pressure ($p_{\text{H}_2} = p^\circ$) and $298\text{ K}$:
 
 $$
@@ -416,7 +465,8 @@ E_{\text{H}^+/\text{H}_2} &= 0 - \frac{0.0591}{2} \log \frac{1}{[\text{H}^+]^2} 
 \end{aligned}
 $$
 
-#### Oxygen electrode
+**Oxygen electrode**
+
 In acidic or neutral aqueous media, oxygen reduction proceeds via:
 
 $$
@@ -439,7 +489,7 @@ $$
 | Neutral pure water | $7$ | $-0.414$ | $+0.815$ |
 | Strongly alkaline ($1\text{ M } \text{OH}^-$) | $14$ | $-0.827$ | $+0.402$ |
 
-### Chemical equilibrium and key applications
+### Chemical equilibrium and applications
 
 As a galvanic cell discharges, reactant ions are consumed and product ions accumulate. Consequently, $Q$ increases and the cell voltage $E_{\text{cell}}$ steadily drops. Eventually, the forward and reverse reaction rates become equal and the system reaches chemical equilibrium. At equilibrium, no net current flows ($\Delta G = 0$), so $E_{\text{cell}} = 0$ and the reaction quotient equals the equilibrium constant ($Q = K$).
 
@@ -458,6 +508,7 @@ $$
 $$
 
 Beyond calculating equilibrium constants, the Nernst equation is routinely applied to:
+
 1. **Determine non-standard cell EMF:** Calculate reversible potentials at specified activities, temperature and pressure. Actual voltage under load also includes resistance and kinetic losses.
 2. **Find unknown ionic concentrations:** Measure $E_{\text{cell}}$ potentiometrically against a reference electrode to quantify trace metal ions (potentiometric titration and ion-selective analysis).
 3. **Measure solution $\text{pH}$:** Convert the voltage of a $\text{pH}$-sensitive electrode (such as a hydrogen or glass electrode) directly into $\text{pH}$.
@@ -483,6 +534,7 @@ Solving electrochemical numerical problems requires a consistent convention for 
 ### Problem-solving framework and conventions
 
 Before substituting numbers into the Nernst equation, define all physical quantities clearly:
+
 * $E$ and $E^\circ$: Non-standard and standard reduction potentials (in volts, $\text{V}$).
 * $E_{\text{cell}}$ and $E^\circ_{\text{cell}}$: Non-standard and standard cell potentials ($\text{V}$), where $E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$.
 * $R$: Universal gas constant, $8.314\text{ J mol}^{-1}\text{ K}^{-1}$.
@@ -504,6 +556,7 @@ E_{\text{M}^{n+}/\text{M}} = E^\circ_{\text{M}^{n+}/\text{M}} - \frac{0.0591}{n}
 $$
 
 Follow these four steps for every calculation:
+
 1. **Identify given data** and convert Celsius temperatures to kelvin.
 2. **Write the balanced reduction half-reaction or overall cell reaction** to determine $n$ unambiguously.
 3. **Construct the reaction quotient $Q$** (strictly $\frac{[\text{products}]^{\nu_p}}{[\text{reactants}]^{\nu_r}}$ for the reaction as written).
@@ -542,6 +595,8 @@ $$
 
 * **Meaning:** Raising the $\text{Zn}^{2+}$ concentration makes the reduction potential less negative (more favourable for reduction). Note that case (d) ($10.0\text{ M}$) is a formal ideal-concentration extrapolation; in a real $10\text{ M}$ electrolyte, strong interionic attractions cause the effective thermodynamic activity to deviate substantially from molarity, and solubility limits also apply.
 
+
+
 #### Example 2: Zinc electrode in $2.0\text{ M}$ solution at $300\text{ K}$
 **Problem:** The standard reduction potential of $\text{Zn}^{2+}/\text{Zn}$ is $-0.760\text{ V}$. Calculate the electrode potential of a zinc rod immersed in a $2.0\text{ M}$ $\text{Zn}^{2+}$ solution at $300\text{ K}$.
 
@@ -560,6 +615,8 @@ $$
 
 * **Meaning:** Because $[\text{Zn}^{2+}] > 1\text{ M}$, the potential shifts in the positive direction from $-0.760\text{ V}$ to $-0.751\text{ V}$.
 
+
+
 #### Example 3: Zinc electrode at elevated temperature ($50\,^\circ\text{C}$)
 **Problem:** Calculate the single-electrode potential of a zinc electrode when $[\text{Zn}^{2+}] = 0.10\text{ M}$ at $50\,^\circ\text{C}$ ($323\text{ K}$), taking $E^\circ_{\text{Zn}^{2+}/\text{Zn}} = -0.760\text{ V}$.
 
@@ -575,6 +632,8 @@ E_{\text{Zn}^{2+}/\text{Zn}} &= -0.760 - \frac{2.303 \times 8.314 \times 323}{2 
 $$
 
 * **Meaning:** Higher temperature magnifies the logarithmic concentration term (from $0.02955\text{ V}$ at $298\text{ K}$ to $0.03205\text{ V}$ at $323\text{ K}$), making the diluted electrode slightly more negative.
+
+
 
 #### Example 4: Aluminium electrode in $2.0\text{ M}$ $\text{Al}^{3+}$ at $298\text{ K}$
 **Problem:** Calculate the electrode potential of an aluminium electrode at $25\,^\circ\text{C}$ given $[\text{Al}^{3+}] = 2.0\text{ M}$ and $E^\circ_{\text{Al}^{3+}/\text{Al}} = -1.660\text{ V}$.
@@ -592,6 +651,8 @@ E_{\text{Al}^{3+}/\text{Al}} &= -1.660 + \frac{0.0591}{3} \log_{10}(2.0) \\
 $$
 
 * **Meaning:** Because three electrons are transferred per ion, the pre-logarithmic slope is smaller ($0.0197\text{ V}$ per decade), giving a modest $+5.9\text{ mV}$ shift.
+
+
 
 #### Example 5: Platinum redox electrode ($\text{Pt} \mid \text{Fe}^{3+}, \text{Fe}^{2+}$)
 **Problem:** Calculate the single-electrode potential of the redox half-cell $\text{Pt} \mid \text{Fe}^{3+}(0.10\text{ M}), \text{Fe}^{2+}(0.010\text{ M})$ at $25\,^\circ\text{C}$, given $E^\circ_{\text{Fe}^{3+}/\text{Fe}^{2+}} = +0.770\text{ V}$.
@@ -616,6 +677,8 @@ $$
 * **Meaning:** A tenfold excess of the oxidized form ($\text{Fe}^{3+}$) over the reduced form ($\text{Fe}^{2+}$) raises the reduction potential by $+0.0591\text{ V}$ above the standard value.
 
 ---
+
+
 
 ### Complete cell potentials ($E_{\text{cell}}$)
 
@@ -656,6 +719,8 @@ $$
 
 * **Meaning:** In all three cases $[\text{Cu}^{2+}] > [\text{Zn}^{2+}]$, so $Q < 1$ and the cell voltage exceeds $E^\circ_{\text{cell}} = 1.100\text{ V}$. Subtracting $0.0591\text{ V}$ in Case (a) to get $1.041\text{ V}$ is incorrect because it inverts $Q$ while keeping the minus sign.
 
+
+
 #### Example 7: Lead–cadmium cell ($\text{Cd}$–$\text{Pb}$)
 **Problem:** Find the cell potential at $25\,^\circ\text{C}$ for the galvanic cell operating on the reaction $\text{Pb}^{2+}(aq) + \text{Cd}(s) \rightarrow \text{Pb}(s) + \text{Cd}^{2+}(aq)$, given $E^\circ_{\text{Cd}^{2+}/\text{Cd}} = -0.403\text{ V}$, $E^\circ_{\text{Pb}^{2+}/\text{Pb}} = -0.126\text{ V}$, $[\text{Cd}^{2+}] = 0.020\text{ M}$, and $[\text{Pb}^{2+}] = 0.200\text{ M}$.
 
@@ -681,6 +746,8 @@ $$
 
 * **Meaning:** A tenfold higher reactant concentration ($\text{Pb}^{2+}$) over product concentration ($\text{Cd}^{2+}$) increases the cell voltage by $+29.6\text{ mV}$.
 
+
+
 #### Example 8: Standard zinc–silver cell ($\text{Zn}$–$\text{Ag}$)
 **Problem:** Calculate the standard EMF ($E^\circ_{\text{cell}}$) and write the Nernst equation at $25\,^\circ\text{C}$ for the cell $\text{Zn}(s) \mid \text{Zn}^{2+}(aq) \parallel \text{Ag}^+(aq) \mid \text{Ag}(s)$, given $E^\circ_{\text{Zn}^{2+}/\text{Zn}} = -0.762\text{ V}$ and $E^\circ_{\text{Ag}^+/\text{Ag}} = +0.800\text{ V}$.
 
@@ -703,6 +770,8 @@ $$
 
 > **Watch out.** In asymmetric cells such as $\text{Cu} \mid \text{Cu}^{2+} \parallel \text{Ag}^+ \mid \text{Ag}$ or $\text{Fe} \mid \text{Fe}^{2+} \parallel \text{Ag}^+ \mid \text{Ag}$, students frequently forget to square $[\text{Ag}^+]$ in the reaction quotient. When $[\text{Ag}^+] = 0.10\text{ M}$ and $[\text{M}^{2+}] = 0.010\text{ M}$, $\frac{[\text{M}^{2+}]}{[\text{Ag}^+]^2} = \frac{0.010}{(0.10)^2} = 1$, making the logarithmic correction zero.
 
+
+
 #### Example 9: Copper–silver cell ($\text{Cu}$–$\text{Ag}$) where $Q = 1$ at non-unit concentrations
 **Problem:** Write the cell representation and cell reaction for a $\text{Cu}$–$\text{Ag}$ cell at $25\,^\circ\text{C}$ and calculate its EMF when $[\text{Cu}^{2+}] = 0.010\text{ M}$ and $[\text{Ag}^+] = 0.10\text{ M}$. Given $E^\circ_{\text{Cu}^{2+}/\text{Cu}} = +0.340\text{ V}$ and $E^\circ_{\text{Ag}^+/\text{Ag}} = +0.800\text{ V}$.
 
@@ -722,6 +791,8 @@ $$
 
 * **Meaning:** Even though neither ion is at $1\text{ M}$ standard concentration, the ratio $\frac{[\text{Cu}^{2+}]}{[\text{Ag}^+]^2}$ equals unity, so $E_{\text{cell}}$ equals $E^\circ_{\text{cell}}$.
 
+
+
 #### Example 10: Iron–silver cell ($\text{Fe}$–$\text{Ag}$) at $298\text{ K}$
 **Problem:** Calculate $E_{\text{cell}}$ for $\text{Fe}(s) \mid \text{Fe}^{2+}(0.010\text{ M}) \parallel \text{Ag}^+(0.10\text{ M}) \mid \text{Ag}(s)$ at $298\text{ K}$, given $E^\circ_{\text{Fe}^{2+}/\text{Fe}} = -0.440\text{ V}$ and $E^\circ_{\text{Ag}^+/\text{Ag}} = +0.800\text{ V}$.
 
@@ -740,6 +811,8 @@ E_{\text{cell}} = 1.240 - \frac{0.0591}{2} \log_{10}(1.0) = 1.240\text{ V}
 $$
 
 * **Meaning:** Just as in Example 9, squaring $[\text{Ag}^+] = 0.10\text{ M}$ matches $[\text{Fe}^{2+}] = 0.010\text{ M}$, giving $Q = 1$ and $E_{\text{cell}} = 1.240\text{ V}$.
+
+
 
 #### Example 11: Six-electron aluminium–iron cell ($\text{Al}$–$\text{Fe}$)
 **Problem:** Calculate the EMF at $25\,^\circ\text{C}$ of the cell $\text{Al}(s) \mid \text{Al}^{3+}(0.10\text{ M}) \parallel \text{Fe}^{2+}(0.20\text{ M}) \mid \text{Fe}(s)$, given $E^\circ_{\text{Al}^{3+}/\text{Al}} = -1.660\text{ V}$ and $E^\circ_{\text{Fe}^{2+}/\text{Fe}} = -0.440\text{ V}$.
@@ -766,6 +839,8 @@ E_{\text{cell}} &= 1.220 - \frac{0.0591}{6} \log_{10}(1.25) \\
 $$
 
 * **Meaning:** Because $n = 6$ and $Q$ is close to unity ($1.25$), the concentration correction is less than $1\text{ mV}$.
+
+
 
 #### Example 12: Aluminium–tin redox cell ($\text{Al}$–$\text{Sn}^{4+}/\text{Sn}^{2+}$) with symbolic cathode potential
 **Problem:** Set up the balanced cell reaction, reaction quotient, and EMF expression at $25\,^\circ\text{C}$ for the cell $\text{Al}(s) \mid \text{Al}^{3+}(0.10\text{ M}) \parallel \text{Sn}^{4+}(0.10\text{ M}), \text{Sn}^{2+}(0.010\text{ M}) \mid \text{Pt}$, given $E^\circ_{\text{Al}^{3+}/\text{Al}} = -1.660\text{ V}$ and denoting the unspecified standard reduction potential of the tin redox couple as $E^\circ_{\text{Sn}^{4+}/\text{Sn}^{2+}}$.
@@ -795,6 +870,8 @@ $$
 
 ---
 
+
+
 ### Inverse problems and equilibrium constants
 
 #### Example 13: Finding an unknown ion concentration ($\text{Cu}$–$\text{Ag}$ cell)
@@ -817,6 +894,8 @@ $$
 (Note: Using the rounded constant $0.0592\text{ V}$ gives $\log_{10}[\text{Ag}^+] = -1.1419$ and $[\text{Ag}^+] = 0.0721\text{ M}$.)
 * **Meaning:** Because $E_{\text{cell}} < E^\circ_{\text{cell}}$, the reaction quotient $Q > 1$, requiring $[\text{Ag}^+]$ to be smaller than $\sqrt{0.10}\text{ M}$ ($0.316\text{ M}$).
 
+
+
 #### Example 14: Finding an unknown standard electrode potential ($\text{Ni}$–$\text{Cu}$ cell)
 **Problem:** The cell potential of $\text{Ni}(s) \mid \text{Ni}^{2+}(0.10\text{ M}) \parallel \text{Cu}^{2+}(0.010\text{ M}) \mid \text{Cu}(s)$ is $0.590\text{ V}$ at $25\,^\circ\text{C}$. Given $E^\circ_{\text{Cu}^{2+}/\text{Cu}} = +0.340\text{ V}$, find the standard reduction potential $E^\circ_{\text{Ni}^{2+}/\text{Ni}}$.
 
@@ -833,6 +912,8 @@ E^\circ_{\text{Ni}^{2+}/\text{Ni}} &= E^\circ_{\text{Cu}^{2+}/\text{Cu}} - E^\ci
 $$
 
 * **Meaning:** Nickel has a negative standard reduction potential ($-0.280\text{ V}$), confirming its role as the anode relative to copper.
+
+
 
 #### Example 15: Equilibrium constants ($K$) for $\text{Fe}$–$\text{Cu}$ and $\text{Zn}$–$\text{Cu}$ cells at $298\text{ K}$
 **Problem:** Calculate the equilibrium constant $K$ at $25\,^\circ\text{C}$ for:
@@ -855,7 +936,10 @@ $$
   * $K = 10^{37.225} = 1.68 \times 10^{37}$
 * **Meaning:** Notice that $K = 10^{\log_{10} K}$ (base-$10$ antilogarithm), never $e^{\log_{10} K}$. Both reactions proceed virtually to completion.
 
+
+
 #### Note on incomplete problem statements
+
 Occasionally, a problem sheet may state: *"Calculate $E^\circ_{\text{Cu}^{2+}/\text{Cu}}$ given $0.296\text{ V}$ and $[\text{Cu}^{2+}] = 0.015\text{ M}."* If the prompt both asks for $E^\circ$ and labels $0.296\text{ V}$ as $E^\circ$, or fails to specify temperature and whether $0.296\text{ V}$ is the measured non-standard potential $E$, the problem is underspecified. If $E_{\text{Cu}^{2+}/\text{Cu}} = +0.296\text{ V}$ is the measured potential at $298\text{ K}$ for $[\text{Cu}^{2+}] = 0.015\text{ M}$ ($n = 2$), then $E^\circ = E - \frac{0.0591}{2}\log_{10}(0.015) = 0.296 - 0.02955(-1.8239) = +0.350\text{ V}$; conversely, if $E^\circ = +0.340\text{ V}$ was intended, then $E = 0.340 + 0.02955\log_{10}(0.015) = +0.286\text{ V}$. Always verify which potential ($E$ or $E^\circ$) is given before substituting.
 
 <!-- page 5 | Reference electrodes and the standard hydrogen electrode -->
@@ -868,8 +952,13 @@ Because electrical potential is a relative quantity, it is impossible to measure
 
 Electrochemical potential measurements require two distinct types of half-cells:
 
-- **Reference electrode:** An electrode that maintains a stable, reproducible, and well-known electrode potential regardless of small changes in the test solution. It serves as the fixed baseline against which other potentials are measured.
-- **Indicator (working) electrode:** An electrode whose potential varies systematically with the activity (or concentration) of a specific ion in the test solution, such as a glass electrode responding to $\mathrm{H^+}$ ions.
+**Reference electrode**
+
+A reference electrode is an electrode that maintains a stable, reproducible, and well-known electrode potential regardless of small changes in the test solution. It serves as the fixed baseline against which other potentials are measured.
+
+**Indicator (working) electrode**
+
+An indicator (working) electrode is an electrode whose potential varies systematically with the activity (or concentration) of a specific ion in the test solution, such as a glass electrode responding to $\mathrm{H^+}$ ions.
 
 Reference electrodes are further divided into two categories:
 
@@ -878,14 +967,16 @@ Reference electrodes are further divided into two categories:
 
 > **Watch out.** Do not classify the glass electrode or quinhydrone electrode as secondary reference electrodes. Because their potentials change directly with the $\mathrm{pH}$ of the solution, they are **indicator electrodes**, not reference electrodes.
 
-### The Standard Hydrogen Electrode (SHE)
+**Standard Hydrogen Electrode (SHE)**
 
 The Standard Hydrogen Electrode is a redox gas–ion electrode that establishes a reversible equilibrium between gaseous hydrogen ($\mathrm{H_2}$) and aqueous hydrogen ions ($\mathrm{H^+}$).
 
 ![Schematic diagram of the Standard Hydrogen Electrode showing a platinized platinum foil immersed in acid solution with hydrogen gas inlet at the top.](/notes/cse/s1/chemistry/module-1/assets/page-011-image-1.png)
+
 *Figure: Construction of the Standard Hydrogen Electrode (SHE).*
 
 #### Construction
+
 1. **Inert conductor and catalyst:** A small rectangular platinum foil is coated electrochemically with finely divided platinum (**platinum black** or platinized $\mathrm{Pt}$) to provide a large catalytic surface area that adsorbs hydrogen gas and accelerates electron transfer.
 2. **Electrical contact:** The foil is welded to a platinum wire sealed inside an inner glass tube.
 3. **Gas jacket:** An outer glass jacket surrounds the tube, featuring a side inlet near the top for introducing pure, dry $\mathrm{H_2}$ gas and small perforations at the bottom to allow excess gas to bubble out.
@@ -898,6 +989,7 @@ E^\circ_{\mathrm{H^+/H_2}} = 0.00\text{ V}
 $$
 
 #### Half-Cell Notation and Working
+
 The SHE is a reversible electrode; it can function either as the anode or the cathode depending on the reduction potential of the half-cell connected to it.
 
 - **Acting as Anode (Oxidation):** When coupled with an electrode having a positive standard reduction potential ($E^\circ > 0\text{ V}$, such as $\mathrm{Cu^{2+}/Cu}$), hydrogen gas is oxidized:
@@ -917,6 +1009,7 @@ $$
   *Representation:* $\mathrm{H^+(aq, } a=1\mathrm{) \mid H_2(g, 1\text{ bar}) \mid Pt(s)}$
 
 #### Nernst Equation and pH Dependence
+
 For the reduction of two moles of $\mathrm{H^+}$ ($n = 2$), the general Nernst equation for a hydrogen electrode at temperature $T$ is:
 
 $$
@@ -933,7 +1026,8 @@ E_{\mathrm{H^+/H_2}} &= 0 - \frac{0.0591}{2} \log \left( \frac{1}{[\mathrm{H^+}]
 \end{aligned}
 $$
 
-#### Measuring an Unknown Potential (e.g., Zinc vs SHE)
+#### Measuring an Unknown Potential (Zinc vs SHE)
+
 To measure the standard reduction potential of a $\mathrm{Zn^{2+}(1\text{ M})/Zn}$ electrode, it is connected to the SHE via a salt bridge. Because zinc has a higher tendency to oxidize than hydrogen, $\mathrm{Zn}$ acts as the anode and the SHE acts as the cathode:
 
 $$
@@ -971,13 +1065,22 @@ $$
 
 ## The calomel electrode and potential measurement
 
-While the standard hydrogen electrode (SHE) defines the zero of the electrochemical scale, maintaining a continuous stream of pure hydrogen gas at the standard pressure of $1\text{ bar}$ over a fragile platinized surface is inconvenient for routine laboratory work. Practical electrochemistry therefore relies on **secondary reference electrodes**, which are sturdy, self-contained half-cells whose potentials have been accurately calibrated against the SHE. The **calomel electrode** is a classic metal–insoluble metal salt–common anion reference electrode widely used to measure unknown half-cell potentials.
+While the standard hydrogen electrode (SHE) defines the zero of the electrochemical scale, maintaining a continuous stream of pure hydrogen gas at the standard pressure of $1\text{ bar}$ over a fragile platinized surface is inconvenient for routine laboratory work. Practical electrochemistry therefore relies on secondary standards:
+
+**Secondary reference electrode**
+
+A secondary reference electrode is a sturdy, self-contained half-cell whose potential has been accurately calibrated against the standard hydrogen electrode (SHE).
+
+**Calomel electrode**
+
+A calomel electrode is a classic metal–insoluble metal salt–common anion reference electrode widely used to measure unknown half-cell potentials.
 
 ### Construction and cell notation
 
 The calomel electrode consists of a glass tube containing a pool of pure liquid mercury ($\mathrm{Hg}$) at the bottom, covered by a paste of mercury and solid mercurous chloride ($\mathrm{Hg_2Cl_2}$, traditionally known as *calomel*). The remainder of the tube is filled with an aqueous potassium chloride ($\mathrm{KCl}$) solution of fixed concentration.
 
 ![Cross-sectional diagram of a calomel reference electrode showing the mercury pool, mercurous chloride paste, KCl solution, and platinum wire contact](/notes/cse/s1/chemistry/module-1/assets/page-013-image-1.png)
+
 *Figure: Internal structure of a calomel reference electrode.*
 
 A platinum wire sealed into an inner glass tube dips directly into the liquid mercury layer to provide external electrical contact; it does not simply hang in the aqueous $\mathrm{KCl}$ solution. A side arm or a porous junction (such as a ceramic frit or glass-wool plug) at the base allows ionic contact with the external test solution or salt bridge while preventing bulk mixing.
@@ -992,10 +1095,13 @@ Depending on whether the calomel half-cell is placed on the left (oxidation/anod
 Because the calomel electrode is reversible, it can operate as either a cathode or an anode depending on the reduction potential of the half-cell coupled to it:
 
 * **Acting as a cathode** (coupled to a half-cell with a lower reduction potential, such as $\mathrm{Zn^{2+}/Zn}$):
+
 $$
 \mathrm{Hg_2Cl_2(s) + 2e^- \rightarrow 2Hg(l) + 2Cl^-(aq)}
 $$
+
 * **Acting as an anode** (coupled to a half-cell with a higher reduction potential, such as $\mathrm{Cu^{2+}/Cu}$):
+
 $$
 \mathrm{2Hg(l) + 2Cl^-(aq) \rightarrow Hg_2Cl_2(s) + 2e^-}
 $$
@@ -1025,7 +1131,9 @@ Because $E_{\text{cal}}$ depends only on temperature and chloride ion activity, 
 | Normal calomel electrode (NCE) | $1.0\text{ M}$ (or $1.0\text{ N}$) | $\approx +0.280\text{ V}$ to $+0.281\text{ V}$ |
 | Saturated calomel electrode (SCE) | Saturated ($\approx 4.2\text{ M}$) | $+0.2422\text{ V}$ (literature range: $+0.2415\text{ V}$ to $+0.244\text{ V}$) |
 
-In the **saturated calomel electrode (SCE)**, excess solid $\mathrm{KCl}$ crystals rest at the bottom so the chloride activity remains locked even if minor water evaporation occurs. We adopt $E_{\text{SCE}} = +0.2422\text{ V}$ at $298\text{ K}$ for consistency in numerical problems.
+**Saturated calomel electrode (SCE)**
+
+In the saturated calomel electrode (SCE), excess solid $\mathrm{KCl}$ crystals rest at the bottom so the chloride activity remains locked even if minor water evaporation occurs. We adopt $E_{\text{SCE}} = +0.2422\text{ V}$ at $298\text{ K}$ for consistency in numerical problems.
 
 ### Measuring unknown electrode potentials with an SCE
 
@@ -1035,7 +1143,7 @@ $$
 E_{\text{cell}} = E_{\text{right}} - E_{\text{left}}
 $$
 
-#### 1. Determination of the standard zinc electrode potential
+#### Standard zinc electrode potential
 
 A zinc rod dipped in $1\text{ M } \mathrm{ZnSO_4}$ has a lower reduction potential than the SCE, so zinc undergoes oxidation on the left (anode) and the SCE is placed on the right (cathode):
 
@@ -1056,7 +1164,7 @@ E^{\circ}_{\mathrm{Zn^{2+}/Zn}} &= 0.2422\text{ V} - 1.0022\text{ V} = -0.760\te
 \end{aligned}
 $$
 
-#### 2. Determination of the standard copper electrode potential
+#### Standard copper electrode potential
 
 A copper rod dipped in $1\text{ M } \mathrm{CuSO_4}$ has a higher reduction potential than the SCE, so the SCE acts as the anode (left) and copper acts as the cathode (right):
 
@@ -1082,6 +1190,7 @@ $$
 ### Practical merits and limitations
 
 The SCE is compact, easy to transport, and maintains a stable potential without gas cylinders. However, it has two important limitations:
+
 1. **Thermal limit:** It cannot be used above about $50\ ^\circ\text{C}$ (often misprinted as $500\ ^\circ\text{C}$ in older notes) because mercurous chloride ($\mathrm{Hg_2Cl_2}$) disproportionates into liquid mercury ($\mathrm{Hg}$) and mercuric chloride ($\mathrm{HgCl_2}$), causing unstable readings.
 2. **Toxicity and chemical incompatibility:** Mercury and its salts are hazardous environmental toxins, and $\mathrm{Cl^-}$ leakage from the porous plug can contaminate test solutions containing $\mathrm{Ag^+}$, $\mathrm{Pb^{2+}}$, or $\mathrm{Tl^+}$.
 
@@ -1096,7 +1205,9 @@ The SCE is compact, easy to transport, and maintains a stable potential without 
 
 ## The glass electrode and pH measurement
 
-While reference electrodes like the saturated calomel electrode (SCE) maintain a fixed potential, measuring the acidity or alkalinity of a solution requires an indicator electrode whose potential responds selectively to hydrogen ions ($\mathrm{H^+}$). The glass electrode is the primary ion-selective electrode used for potentiometric pH measurement in laboratories and industrial chemical processes.
+**Glass electrode**
+
+The glass electrode is the primary ion-selective indicator electrode used for potentiometric pH measurement in laboratories and industrial processes. While reference electrodes like the saturated calomel electrode (SCE) maintain a fixed potential, the potential of the glass electrode responds selectively to hydrogen ions ($\mathrm{H^+}$).
 
 ### Construction of the glass electrode
 
@@ -1104,7 +1215,11 @@ A glass electrode consists of a long, sturdy glass stem terminating in a thin-wa
 
 ![Glass electrode cross-section showing the Ag/AgCl electrode, internal HCl solution, and complete thin glass bulb](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-clean.webp)
 
-The bulb is filled with an internal solution of fixed hydrogen-ion and chloride-ion concentration, typically $0.1\ \mathrm{M\ HCl}$. Immersed inside this internal solution is an **internal reference electrode**—usually a silver wire coated with silver chloride ($\mathrm{Ag/AgCl}$)—which establishes a stable electrical contact with the inner solution.
+The bulb contains an internal solution of fixed hydrogen-ion and chloride-ion concentration, typically $0.1\ \mathrm{M\ HCl}$.
+
+**Internal reference electrode**
+
+An internal reference electrode—usually a silver wire coated with silver chloride ($\mathrm{Ag/AgCl}$)—is immersed inside this internal solution to establish a stable electrical contact with the inner solution.
 
 When immersed in an external test solution, the half-cell representation of the glass electrode is:
 
@@ -1133,11 +1248,13 @@ E_{\text{glass}} &= K_{\text{glass}} - 0.0591\,\mathrm{pH}
 \end{aligned}
 $$
 
-Here, $K_{\text{glass}}$ (often written $E^\circ_{\text{glass}}$) is an empirical constant that combines the internal $\mathrm{Ag/AgCl}$ reference potential, the constant inner boundary potential, and a small **asymmetry potential** caused by slight manufacturing and strain differences between the inner and outer glass surfaces.
+**Asymmetry potential**
+
+An asymmetry potential is a small potential difference caused by slight manufacturing and strain differences between the inner and outer glass surfaces. Here, $K_{\text{glass}}$ (often written $E^\circ_{\text{glass}}$) is an empirical constant combining the internal $\mathrm{Ag/AgCl}$ reference potential, the constant inner boundary potential, and this asymmetry potential.
 
 ### Potentiometric pH measurement
 
-A single electrode potential cannot be measured in isolation. To measure the pH of an unknown solution, the glass electrode must be paired with a separate **external reference electrode**, such as a saturated calomel electrode (SCE), dipped into the same test solution. (Modern combination pH probes house both the glass electrode and the external reference electrode in a single body, but they remain two distinct electrochemical half-cells.)
+A single electrode potential cannot be measured in isolation. To measure the pH of an unknown solution, the glass electrode must be paired with a separate external reference electrode, such as a saturated calomel electrode (SCE), dipped into the same test solution. Modern combination pH probes house both the glass electrode and the external reference electrode in a single body, but they remain two distinct electrochemical half-cells.
 
 ![pH measurement setup with a high-impedance meter, calomel reference electrode, and glass electrode immersed in the unknown solution](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-ph-clean.webp)
 
@@ -1147,7 +1264,7 @@ $$
 \mathrm{Hg(l)} \mid \mathrm{Hg_2Cl_2(s)} \mid \mathrm{KCl\ (sat.)} \parallel \text{test solution } (\mathrm{H^+}) \mid \text{glass} \mid \mathrm{HCl}\ (0.1\ \mathrm{M}) \mid \mathrm{AgCl(s)} \mid \mathrm{Ag(s)}
 $$
 
-Because the glass membrane has an extremely high electrical resistance (typically $10^7$ to $10^9\ \Omega$), an ordinary voltmeter would draw too much current and distort the potential. Therefore, the cell voltage must be measured using a **high-impedance electronic voltmeter** (a pH meter).
+Because the glass membrane has an extremely high electrical resistance (typically $10^7$ to $10^9\ \Omega$), an ordinary voltmeter would draw too much current and distort the potential. Therefore, the cell voltage must be measured using a high-impedance electronic voltmeter (a pH meter).
 
 Taking the measured cell voltage with the glass electrode at the positive meter terminal and the external reference electrode at the negative terminal gives:
 
@@ -1161,7 +1278,7 @@ $$
 
 where $K = K_{\text{glass}} - E_{\text{reference}}$ is a combined cell constant at $298\ \mathrm{K}$. If the voltmeter leads are reversed ($E_{\text{measured}} = E_{\text{reference}} - E_{\text{glass}}$), the sign of the slope simply changes from $-0.0591\ \mathrm{V/pH}$ to $+0.0591\ \mathrm{V/pH}$.
 
-### Practical calibration and measurement procedure
+### Calibration and measurement procedure
 
 > **Watch out.** Never assume a fixed textbook numerical value (such as $0.5\ \mathrm{V}$ or $0.6\ \mathrm{V}$) for $K_{\text{glass}}$ in real measurements. The asymmetry potential drifts with electrode age, surface condition, and temperature, and the empirical slope $m$ often deviates slightly from the ideal Nernstian value of $-59.1\ \mathrm{mV/pH}$.
 
@@ -1220,6 +1337,8 @@ $$
 \end{aligned}
 $$
 
+
+
 ### Advantages and limitations
 
 | Advantages | Limitations |
@@ -1243,25 +1362,45 @@ $$
 
 ## Batteries and lithium-ion cells
 
-Electrochemical devices that generate electricity from spontaneous chemical reactions are the backbone of portable electronics, electric vehicles, and backup power systems. A **cell** is one electrochemical unit; a **battery** packages one or more cells to provide a usable electrical supply. Understanding how commercial energy-storage devices are classified and how lithium-ion technology operates is essential for modern engineering applications.
+**Cell**
 
-### Classification of commercial electrochemical cells
+A cell is an individual electrochemical unit that generates electricity from spontaneous chemical reactions.
 
-Commercial cells are broadly divided into three categories based on whether their electrochemical reactions can be reversed and how their reactants are supplied:
+**Battery**
 
-1. **Primary cells:** These are non-rechargeable cells in which the electrode reactions cannot be practically reversed by applying an external electrical current. Once the active reactants sealed inside the cell are consumed, the cell is exhausted and must be discarded. Common examples include the zinc–carbon dry cell (Leclanché cell) and alkaline batteries. (Note: While a laboratory Daniell cell is electrochemically reversible when an opposing external potential exceeds its electromotive force, practical commercial primary cells are constructed for single-discharge use only.)
-2. **Secondary cells (storage or accumulator cells):** These are rechargeable cells in which the cell reactions can be reversed repeatedly by passing an external direct current in the opposite direction. During discharge, a secondary cell operates as a galvanic (voltaic) cell, converting chemical energy into electrical energy. During charging, it operates as an electrolytic cell, converting electrical energy back into stored chemical energy. Examples include the lithium-ion cell, lead–acid storage battery, and nickel–cadmium ($\text{Ni–Cd}$) battery.
-3. **Fuel cells:** A fuel cell is a galvanic device that converts the chemical energy of a continuously supplied fuel and oxidant directly into electrical energy. Unlike primary or secondary batteries, a fuel cell does not store its reactants internally; it generates power indefinitely as long as the external supply of fuel (such as hydrogen) and oxidant (such as oxygen) is maintained.
+A battery packages one or more electrochemical cells connected together to provide a usable electrical supply.
 
-### Lithium-ion cells
+Commercial electrochemical cells are broadly divided into three categories based on whether their electrode reactions can be reversed and how reactants are supplied:
 
-The lithium-ion ($\text{Li}$-ion) cell is a widely used rechargeable battery technology in modern portable electronics and electric mobility. Lithium possesses the lowest atomic mass ($6.94\text{ g mol}^{-1}$) of any metal and a highly negative standard reduction potential ($E^\circ_{\text{Li}^+/\text{Li}} = -3.04\text{ V}$). These properties support high energy density. A typical graphite/cobalt-oxide cell has a nominal voltage near $3.6\text{–}3.7\text{ V}$; the voltage depends on the electrode chemistry and state of charge.
+1. **Primary cells**
+2. **Secondary cells (storage or accumulator cells)**
+3. **Fuel cells**
 
-Unlike older lithium-metal batteries, a lithium-ion cell contains no bulk metallic lithium. Instead, lithium ions ($\text{Li}^+$) shuttle back and forth between two host electrodes whose crystal structures have layered spaces that can reversibly insert and release ions—a process called **intercalation** (insertion) and **de-intercalation** (extraction).
+**Primary cell**
 
-#### Construction of a typical lithium-ion cell
+A primary cell is a non-rechargeable cell in which the electrode reactions cannot be practically reversed by applying an external electrical current. Once the active reactants sealed inside the cell are consumed, the cell is exhausted and must be discarded. Common examples include the zinc–carbon dry cell (Leclanché cell) and alkaline batteries. (Note: While a laboratory Daniell cell is electrochemically reversible when an opposing external potential exceeds its electromotive force, practical commercial primary cells are constructed for single-discharge use only.)
 
-The graphite/lithium-cobalt-oxide example considered here consists of the following components:
+**Secondary cell (storage or accumulator cell)**
+
+A secondary cell is a rechargeable cell in which the cell reactions can be reversed repeatedly by passing an external direct current in the opposite direction. During discharge, a secondary cell operates as a galvanic (voltaic) cell, converting chemical energy into electrical energy. During charging, it operates as an electrolytic cell, converting electrical energy back into stored chemical energy. Examples include the lithium-ion cell, lead–acid storage battery, and nickel–cadmium ($\text{Ni–Cd}$) battery.
+
+**Fuel cell**
+
+A fuel cell is a galvanic device that converts the chemical energy of a continuously supplied fuel and oxidant directly into electrical energy. Unlike primary or secondary batteries, a fuel cell does not store its reactants internally; it generates power indefinitely as long as the external supply of fuel (such as hydrogen) and oxidant (such as oxygen) is maintained.
+
+**Lithium-ion cell**
+
+A lithium-ion ($\text{Li}$-ion) cell is a rechargeable battery technology in which lithium ions shuttle between two host interstitial electrodes. Lithium possesses the lowest atomic mass ($6.94\text{ g mol}^{-1}$) of any metal and a highly negative standard reduction potential ($E^\circ_{\text{Li}^+/\text{Li}} = -3.04\text{ V}$), which together enable high energy density. A typical graphite/cobalt-oxide cell provides a nominal voltage near $3.6\text{–}3.7\text{ V}$, depending on the electrode chemistry and state of charge.
+
+Unlike older lithium-metal batteries, a lithium-ion cell contains no bulk metallic lithium. Instead, lithium ions ($\text{Li}^+$) shuttle back and forth between two host electrodes whose crystal structures have layered spaces that reversibly insert and release ions.
+
+**Intercalation and de-intercalation**
+
+Intercalation is the reversible insertion of guest species into the layered lattice of a host material without significantly disrupting the host crystal structure. De-intercalation is the reverse extraction of guest ions from the host lattice.
+
+### Construction of a lithium-ion cell
+
+The graphite/lithium-cobalt-oxide cell consists of the following components:
 
 * **Negative electrode:** Graphitic carbon ($\text{C}_6$) coated onto a thin copper ($\text{Cu}$) foil current collector. When charged, lithium ions are intercalated between the hexagonal carbon layers to form lithiated graphite ($\text{Li}_x\text{C}_6$, where $x$ denotes the amount of lithium per $\text{C}_6$ formula unit, up to about $1$).
 * **Positive electrode:** A layered lithium cobalt oxide ($\text{LiCoO}_2$) host, coated onto an aluminium ($\text{Al}$) foil current collector.
@@ -1270,45 +1409,57 @@ The graphite/lithium-cobalt-oxide example considered here consists of the follow
 
 > **Watch out.** Do not confuse the physical **polymer separator** with the **solid electrolyte interphase (SEI)**. The separator is a manufactured plastic membrane placed between the two electrodes. The SEI is a microscopic passivating film that forms chemically on the graphite surface during the initial charge cycles; it conducts $\text{Li}^+$ ions while preventing continuous decomposition of the organic electrolyte.
 
-#### Working and electrode reactions
+### Working and electrode reactions
 
-In rechargeable battery engineering, the graphite electrode is the **negative electrode** in this system (lower potential) and the metal oxide electrode is the **positive electrode** (higher potential). However, the terms **anode** (site of oxidation) and **cathode** (site of reduction) swap depending on whether the cell is discharging or charging.
+In rechargeable battery engineering, the graphite electrode serves as the **negative electrode** (lower potential) and the metal oxide electrode serves as the **positive electrode** (higher potential). However, the terms **anode** (site of oxidation) and **cathode** (site of reduction) swap depending on whether the cell is discharging or charging.
 
 ![Lithium-ion cell during charging and discharging, showing electrode polarity and lithium-ion flow in each mode](/notes/cse/s1/chemistry/module-1/assets/lithium-ion-charge-discharge-clean.webp)
 
-#### 1. Discharging mode (galvanic cell operation)
+#### Discharging mode (galvanic cell operation)
 
 When the cell powers an external load, spontaneous redox reactions occur:
 
-* **At the anode (negative electrode, lithiated graphite):** Lithium atoms intercalated within the graphite layers undergo oxidation, releasing electrons to the external circuit and $\text{Li}^+$ ions into the electrolyte:
+1. **At the anode (negative electrode, lithiated graphite):** Lithium atoms intercalated within the graphite layers undergo oxidation, releasing electrons to the external circuit and $\text{Li}^+$ ions into the electrolyte:
+
 $$
 \mathrm{Li}_x\mathrm{C}_6 \longrightarrow \mathrm{C}_6 + x\mathrm{Li}^+ + x\mathrm{e}^-
 $$
-* **At the cathode (positive electrode, partially delithiated cobalt oxide):** Electrons arrive from the external circuit while $\text{Li}^+$ ions migrate through the electrolyte and separator to intercalate into the $\text{Li}_{1-x}\text{CoO}_2$ lattice, reducing $\text{Co}^{4+}$ centres back to $\text{Co}^{3+}$:
+
+2. **At the cathode (positive electrode, partially delithiated cobalt oxide):** Electrons arrive from the external circuit while $\text{Li}^+$ ions migrate through the electrolyte and separator to intercalate into the $\text{Li}_{1-x}\text{CoO}_2$ lattice, reducing $\text{Co}^{4+}$ centres back to $\text{Co}^{3+}$:
+
 $$
 \mathrm{Li}_{1-x}\mathrm{CoO}_2 + x\mathrm{Li}^+ + x\mathrm{e}^- \longrightarrow \mathrm{LiCoO}_2
 $$
-* **Overall discharge reaction:**
+
+**Overall discharge reaction:**
+
 $$
 \mathrm{Li}_x\mathrm{C}_6 + \mathrm{Li}_{1-x}\mathrm{CoO}_2 \longrightarrow \mathrm{C}_6 + \mathrm{LiCoO}_2
 $$
 
-#### 2. Charging mode (electrolytic cell operation)
+#### Charging mode (electrolytic cell operation)
 
 When an external DC power supply applies a voltage higher than the cell emf, electrons are forced in the reverse direction:
 
-* **At the anode (positive electrode, $\text{LiCoO}_2$):** Oxidation occurs as $\text{Co}^{3+}$ is oxidized to $\text{Co}^{4+}$, releasing $\text{Li}^+$ ions into the electrolyte and electrons to the external charger:
+1. **At the anode (positive electrode, $\text{LiCoO}_2$):** Oxidation occurs as $\text{Co}^{3+}$ is oxidized to $\text{Co}^{4+}$, releasing $\text{Li}^+$ ions into the electrolyte and electrons to the external charger:
+
 $$
 \mathrm{LiCoO}_2 \longrightarrow \mathrm{Li}_{1-x}\mathrm{CoO}_2 + x\mathrm{Li}^+ + x\mathrm{e}^-
 $$
-* **At the cathode (negative electrode, graphite):** Lithium ions travel from the positive electrode through the separator to the negative electrode, where they combine with incoming electrons and intercalate between the graphite layers:
+
+2. **At the cathode (negative electrode, graphite):** Lithium ions travel from the positive electrode through the separator to the negative electrode, where they combine with incoming electrons and intercalate between the graphite layers:
+
 $$
 \mathrm{C}_6 + x\mathrm{Li}^+ + x\mathrm{e}^- \longrightarrow \mathrm{Li}_x\mathrm{C}_6
 $$
-* **Overall charging reaction:**
+
+**Overall charging reaction:**
+
 $$
 \mathrm{LiCoO}_2 + \mathrm{C}_6 \longrightarrow \mathrm{Li}_{1-x}\mathrm{CoO}_2 + \mathrm{Li}_x\mathrm{C}_6
 $$
+
+### Discharging mode vs charging mode
 
 | Feature | Discharging Mode | Charging Mode |
 | :--- | :--- | :--- |
@@ -1321,13 +1472,13 @@ $$
 
 > **Watch out.** Never say that "lithium metal" moves between the electrodes. Only solvated/desolvated **lithium ions ($\text{Li}^+$)** travel through the internal electrolyte and separator, while **electrons ($\text{e}^-$)** travel through the external circuit.
 
-#### Overcharging protection and thermal stability
+### Overcharging protection and thermal stability
 
-A manufacturer-rated **100% state of charge** stays within the cell’s designed voltage and composition limits; it does not mean every lithium ion has been removed from the positive electrode. Forcing a cell beyond its upper charge limit can destabilize the oxide and electrolyte, leading to heat generation and thermal runaway. Excessive discharge can also damage the electrodes and current collectors. Battery-management and protection circuits therefore keep charging, discharging and temperature within the specified operating limits.
+A manufacturer-rated **100% state of charge** stays within the cell’s designed voltage and composition limits; it does not mean every lithium ion has been removed from the positive electrode. Forcing a cell beyond its upper charge limit can destabilize the oxide and electrolyte, leading to heat generation and thermal runaway. Excessive discharge can also damage the electrodes and current collectors. Battery-management and protection circuits therefore keep charging, discharging, and temperature within the specified operating limits.
 
-#### Advantages, limitations, and applications
+### Advantages, limitations, and applications
 
-* **Advantages:** High gravimetric and volumetric energy density; light weight; low self-discharge rate compared to $\text{Ni–Cd}$ cells; no memory effect (cells do not need to be fully discharged before recharging); long cycle life (hundreds to thousands of charge–discharge cycles); absence of lead, mercury and cadmium in the typical chemistry (other constituents still require responsible recycling); and adaptable form factors (cylindrical, prismatic, or flat pouch cells).
+* **Advantages:** High gravimetric and volumetric energy density; light weight; low self-discharge rate compared to $\text{Ni–Cd}$ cells; no memory effect (cells do not need to be fully discharged before recharging); long cycle life (hundreds to thousands of charge–discharge cycles); absence of lead, mercury, and cadmium in the typical chemistry (other constituents still require responsible recycling); and adaptable form factors (cylindrical, prismatic, or flat pouch cells).
 * **Limitations:** Higher manufacturing cost; gradual capacity fade over time due to SEI growth and active material degradation (accelerated by elevated temperatures); sensitivity to overcharging and deep discharging (requiring integrated protection circuitry); and flammability of the organic solvent electrolyte if mechanically punctured or overheated.
 * **Applications:** Smartphones, laptop computers, tablets, digital cameras, wearable electronics, medical implants, electric vehicles (EVs), aerospace and military communication gear, and grid-scale renewable energy storage.
 
@@ -1344,7 +1495,9 @@ A manufacturer-rated **100% state of charge** stays within the cell’s designed
 
 ## Hydrogen–oxygen fuel cells with acid electrolyte
 
-Unlike conventional batteries, which store a fixed quantity of active chemicals inside a sealed casing, a **fuel cell** is an open galvanic system that converts the chemical energy of a continuously supplied fuel and oxidant directly into electrical energy. A general fuel cell is represented as:
+**Fuel cell**
+
+A fuel cell is an open galvanic system that converts the chemical energy of a continuously supplied fuel and oxidant directly into electrical energy, unlike conventional batteries that store a fixed quantity of active chemicals inside a sealed casing. A general fuel cell is represented as:
 
 $$
 \text{Fuel} \mid \text{Anode } (-) \mid \text{Electrolyte} \mid \text{Cathode } (+) \mid \text{Oxidant}
@@ -1352,7 +1505,7 @@ $$
 
 As long as the external reactants are fed to the electrodes and reaction products are removed, a fuel cell delivers continuous direct current without requiring electrical recharging.
 
-### Comparison with Lithium-Ion Batteries
+### Comparison with lithium-ion batteries
 
 | Feature | Lithium-Ion Battery | $\mathrm{H_2}$–$\mathrm{O_2}$ Fuel Cell |
 | :--- | :--- | :--- |
@@ -1360,33 +1513,34 @@ As long as the external reactants are fed to the electrodes and reaction product
 | **Reactant supply** | Fixed internal active mass | Continuous external flow of $\mathrm{H_2}$ and $\mathrm{O_2}$ |
 | **When depleted** | Must be recharged electrically | Operates continuously while fuel is supplied |
 
-### Construction of the Acid $\mathrm{H_2}$–$\mathrm{O_2}$ Fuel Cell
+### Acid $\mathrm{H_2}$–$\mathrm{O_2}$ fuel cell construction
 
 The phosphoric acid hydrogen–oxygen fuel cell uses pure hydrogen gas ($\mathrm{H_2}$) as the fuel and oxygen gas ($\mathrm{O_2}$) as the oxidant.
 
 ![Acid hydrogen-oxygen fuel cell showing gas inlets, electron and proton flow, water outlet, and electrode reactions](/notes/cse/s1/chemistry/module-1/assets/hydrogen-oxygen-fuel-cell-clean.webp)
+
 *Figure: Schematic of an acid-electrolyte hydrogen–oxygen fuel cell showing reactant flow, proton migration, and external electron current.*
 
-1. **Electrodes:** The anode (negative electrode) and cathode (positive electrode) are made of **porous graphite** impregnated with finely divided **platinum ($\mathrm{Pt}$)** or a platinum-alloy electrocatalyst. The porous structure allows gases, liquid electrolyte, and solid catalyst to meet efficiently.
-2. **Electrolyte:** Concentrated **phosphoric acid ($\mathrm{H_3PO_4}$)** held between the electrodes serves as the proton-conducting medium.
-3. **Operating Conditions:** Pressurized $\mathrm{H_2}$ and $\mathrm{O_2}$ gases are fed continuously into the anodic and cathodic compartments. The cell operates at **$150\text{–}200\ ^\circ\mathrm{C}$** because concentrated phosphoric acid has poor ionic conductivity at room temperature. Cooling plates remove excess reaction heat to maintain steady operating temperatures.
+1. **Electrodes:** The anode (negative electrode) and cathode (positive electrode) are made of porous graphite impregnated with finely divided platinum ($\mathrm{Pt}$) or a platinum-alloy electrocatalyst. The porous structure allows gases, liquid electrolyte, and solid catalyst to meet efficiently.
+2. **Electrolyte:** Concentrated phosphoric acid ($\mathrm{H_3PO_4}$) held between the electrodes serves as the proton-conducting medium.
+3. **Operating conditions:** Pressurized $\mathrm{H_2}$ and $\mathrm{O_2}$ gases are fed continuously into the anodic and cathodic compartments. The cell operates at $150\text{–}200\ ^\circ\mathrm{C}$ because concentrated phosphoric acid has poor ionic conductivity at room temperature. Cooling plates remove excess reaction heat to maintain steady operating temperatures.
 
-### Working and Electrode Reactions
+### Working mechanism and reactions
 
-1. **Anode (Oxidation):** Pressurized hydrogen gas diffuses through the porous graphite anode and is catalytically oxidized on the platinum surface to form protons ($\mathrm{H^+}$) and electrons:
+1. **Anode oxidation:** Pressurized hydrogen gas diffuses through the porous graphite anode and is catalytically oxidized on the platinum surface to form protons ($\mathrm{H^+}$) and electrons:
 
 $$
 2\mathrm{H_2(g)} \longrightarrow 4\mathrm{H^+(aq)} + 4\mathrm{e^-}
 $$
 
-2. **External and Internal Charge Flow:** The liberated electrons travel from the **anode ($-$) to the cathode ($+$)** through the external circuit, performing useful electrical work. Simultaneously, the $\mathrm{H^+}$ ions migrate internally through the phosphoric acid electrolyte from the anode toward the cathode.
-3. **Cathode (Reduction):** Oxygen gas diffuses through the porous cathode and combines with the arriving protons and electrons to form water:
+2. **Charge transport:** The liberated electrons travel from the anode ($-$) to the cathode ($+$) through the external circuit, performing useful electrical work. Simultaneously, the $\mathrm{H^+}$ ions migrate internally through the phosphoric acid electrolyte from the anode toward the cathode.
+3. **Cathode reduction:** Oxygen gas diffuses through the porous cathode and combines with the arriving protons and electrons to form water:
 
 $$
 \mathrm{O_2(g)} + 4\mathrm{H^+(aq)} + 4\mathrm{e^-} \longrightarrow 2\mathrm{H_2O(l)}
 $$
 
-4. **Overall Cell Reaction:** Combining the half-reactions gives:
+4. **Overall cell reaction:** Combining the half-reactions gives:
 
 $$
 2\mathrm{H_2(g)} + \mathrm{O_2(g)} \longrightarrow 2\mathrm{H_2O}
@@ -1394,9 +1548,9 @@ $$
 
 Water is removed from the cell to control electrolyte concentration and gas transport. The liquid-water half-reaction is the standard-state convention used for the $298\text{ K}$ potential; water may leave a hot operating cell as vapour.
 
-> **Watch out.** A common error when writing the working mechanism is stating that electrons flow from the anode back to the anode. Electrons always flow from the **anode ($-$) to the cathode ($+$)** through the external load, while $\mathrm{H^+}$ ions carry positive charge internally through the electrolyte in the same direction.
+> **Watch out.** A common error when writing the working mechanism is stating that electrons flow from the anode back to the anode. Electrons always flow from the anode ($-$) to the cathode ($+$) through the external load, while $\mathrm{H^+}$ ions carry positive charge internally through the electrolyte in the same direction.
 
-### Cell Potential
+### Cell potential
 
 Under standard thermodynamic conditions ($298\text{ K}$, $1\text{ bar}$, unit activities), the standard reduction potentials are $E^\circ_{\mathrm{H^+/H_2}} = 0.00\text{ V}$ and $E^\circ_{\mathrm{O_2/H_2O}} = +1.23\text{ V}$, giving a theoretical reversible cell potential of:
 
@@ -1406,23 +1560,26 @@ $$
 
 In a practical phosphoric acid fuel cell operating at $150\text{–}200\ ^\circ\mathrm{C}$ under load, the actual terminal voltage per cell is noticeably lower (typically $0.6\text{–}0.8\text{ V}$) because of non-standard operating conditions, electrode activation barriers, and internal ohmic resistance.
 
-### Advantages, Limitations, and Applications
+### Advantages, limitations, and applications
 
 **Advantages**
-* **High conversion efficiency:** Because chemical energy is converted directly into electricity without combustion, fuel cells can achieve good electrical efficiency; the actual value depends on the design, load and operating conditions.
+
+* **High conversion efficiency:** Because chemical energy is converted directly into electricity without combustion, fuel cells can achieve good electrical efficiency; the actual value depends on the design, load, and operating conditions.
 * **Clean point-of-use operation:** The only chemical exhaust at the cell is pure water, with minimal noise or mechanical vibration.
 * **Continuous power and stable electrolyte:** Electricity is generated continuously while gases are fed, and the $\mathrm{H_3PO_4}$ electrolyte is not consumed by the net reaction.
 
 > **Watch out.** Do not claim that fuel cells generate "no heat" or are unconditionally emission-free. The overall reaction is exothermic and requires cooling plates, and total environmental impact depends on whether the hydrogen fuel was produced using renewable energy or fossil fuels.
 
 **Limitations**
+
 * **High cost:** Platinum catalysts and specialized cell components are expensive.
 * **Catalyst degradation and fuel purity:** Reactant gases must be highly pure because impurities such as carbon monoxide ($\mathrm{CO}$) poison the platinum catalyst.
 * **Hydrogen storage and corrosive electrolyte:** Storing pressurized or cryogenic $\mathrm{H_2}$ safely is difficult, and hot concentrated $\mathrm{H_3PO_4}$ is highly corrosive.
 
 **Applications**
 
-Phosphoric-acid systems are mainly associated with stationary power and combined heat and power. Hydrogen–oxygen fuel cells more broadly also serve spacecraft, transport and specialist power systems; these may use different electrolyte technologies.
+Phosphoric-acid systems are mainly associated with stationary power and combined heat and power. Hydrogen–oxygen fuel cells more broadly also serve spacecraft, transport, and specialist power systems; these may use different electrolyte technologies.
+
 * **Spacecraft:** Hydrogen–oxygen fuel cells of suitable designs provide electrical power and usable product water; this is not a claim that spacecraft use the phosphoric-acid design described here.
 * **Stationary power generation:** Backup and distributed combined-heat-and-power systems.
 * **Military and transport:** Quiet power units for submarines, buses, and specialized vehicles.
@@ -1453,15 +1610,21 @@ Materials that permit the passage of electric current are called conductors, whe
 
 To avoid confusion with molar concentration ($c$ or $C$) or capacitance, IUPAC recommends the symbol $G$ for electrical conductance and the Greek letter $\kappa$ (kappa) for conductivity.
 
+**Resistance**
+
 The electrical resistance $R$ (in ohms, $\Omega$) of a uniform conductor is directly proportional to the distance $l$ between the electrodes and inversely proportional to the cross-sectional area $A$ of the conducting path:
 
 $$
 R = \rho \frac{l}{A}
 $$
 
-Here $\rho$ (rho) is the **resistivity** (or specific resistance), defined as the resistance of a conductor of unit length and unit cross-sectional area.
+**Resistivity**
 
-**Conductance** ($G$) measures how easily current flows through a sample and is the reciprocal of resistance:
+Resistivity $\rho$ (rho, or specific resistance) is defined as the resistance of a conductor of unit length and unit cross-sectional area.
+
+**Conductance**
+
+Conductance ($G$) measures how easily current flows through a sample and is the reciprocal of resistance:
 
 $$
 G = \frac{1}{R}
@@ -1469,13 +1632,17 @@ $$
 
 Its SI unit is the siemens ($\mathrm{S}$), which is identical to $\Omega^{-1}$ (historically called the mho).
 
-**Conductivity** ($\kappa$, also called specific conductance) is the reciprocal of resistivity ($\kappa = 1/\rho$). Physically, it represents the conductance of $1\text{ cm}^3$ of electrolyte solution held between two parallel electrodes placed $1\text{ cm}$ apart with an effective area of $1\text{ cm}^2$. Substituting $R = 1/G$ into the resistivity relationship gives:
+**Conductivity**
+
+Conductivity ($\kappa$, also called specific conductance) is the reciprocal of resistivity ($\kappa = 1/\rho$). Physically, it represents the conductance of $1\text{ cm}^3$ of electrolyte solution held between two parallel electrodes placed $1\text{ cm}$ apart with an effective area of $1\text{ cm}^2$. Substituting $R = 1/G$ into the resistivity relationship gives:
 
 $$
 \kappa = \frac{1}{\rho} = \frac{1}{R} \cdot \frac{l}{A} = G \cdot \frac{l}{A}
 $$
 
-The geometric ratio $l/A$ is fixed for a rigid probe and is called the **cell constant** ($K_{\text{cell}}$):
+**Cell constant**
+
+For a rigid probe, the fixed geometric ratio $l/A$ is the cell constant ($K_{\text{cell}}$):
 
 $$
 K_{\text{cell}} = \frac{l}{A}
@@ -1504,11 +1671,13 @@ The conductivity of an electrolyte solution increases with the concentration of 
 ### Construction and calibration of the conductivity cell
 
 ![Diagram of a conductivity cell showing a glass tube with two platinum electrode plates connected to platinum wires](/notes/cse/s1/chemistry/module-1/assets/page-022-image-1.png)
+
 *Figure: A laboratory conductivity cell containing two parallel platinum plates coated with platinum black and fixed at a constant separation inside a glass body.*
 
 A laboratory conductivity cell consists of two parallel platinum plates welded to platinum wires that are sealed through rigid glass tubes. The glass housing holds the plates at a fixed separation so that the cell constant $l/A$ remains unchanged during handling.
 
 Two practical design features prevent measurement errors:
+
 - **Platinum black coating:** The platinum plates are electrochemically coated with finely divided platinum (platinum black). This porous layer greatly increases the effective surface area and catalyses rapid charge transfer, minimizing polarization effects.
 - **Alternating current (AC) source:** If direct current (DC) were passed through the solution, electrolysis would occur at the electrodes, changing the local ion concentration and creating a back-EMF (concentration polarization). Digital conductivity meters apply a high-frequency AC voltage (typically $1\text{ kHz}$) so that net electrolysis is prevented.
 
@@ -1554,6 +1723,8 @@ $$
 \end{aligned}
 $$
 
+
+
 #### Example 2: Cell constant from resistance and conductivity
 **Problem:** The conductivity of a $0.3\text{ N KCl}$ solution at $27\text{ }^\circ\text{C}$ is $0.028\text{ S cm}^{-1}$. The resistance of the conductivity cell containing this solution is $300\text{ }\Omega$. Determine the cell constant.
 
@@ -1563,6 +1734,8 @@ Given $\kappa = 0.028\text{ S cm}^{-1}$ and $R = 300\text{ }\Omega$, use the rel
 $$
 K_{\text{cell}} = \kappa \times R = 0.028\text{ S cm}^{-1} \times 300\text{ }\Omega = 8.4\text{ cm}^{-1}
 $$
+
+
 
 #### Example 3: Cell constant and conductivity from electrode geometry
 **Problem:** A conductivity cell has two parallel plates, each of area $1.5\text{ cm}^2$, kept $9.8\text{ cm}$ apart. When filled with an electrolyte solution, it exhibits a resistance of $1500\text{ }\Omega$. Find the cell constant and the conductivity of the solution.
@@ -1578,6 +1751,8 @@ $$
 \kappa = \frac{K_{\text{cell}}}{R} = \frac{6.533\text{ cm}^{-1}}{1500\text{ }\Omega} = 4.356 \times 10^{-3}\text{ S cm}^{-1}
 $$
 
+
+
 ### Self-check questions
 
 1. **Why is an alternating current (AC) source used instead of direct current (DC) when measuring the conductance of an electrolyte solution?**
@@ -1591,9 +1766,11 @@ $$
 
 ## Corrosion: fundamentals and hydrogen evolution
 
+**Corrosion**
+
 Corrosion is the gradual deterioration or destruction of a metal through chemical or electrochemical reactions with its surrounding environment. In nature, most metals occur as thermodynamically stable mineral compounds—such as oxides, sulfides, carbonates, and sulfates. Refining ores into pure engineering metals requires significant energy input, leaving the extracted metal in a higher-energy, metastable state. Consequently, refined metals spontaneously tend to revert to their stable combined states when exposed to air, moisture, or electrolytes. Common examples include the rusting of iron, the tarnishing of silver in sulfide-containing air, and the green patina formed on copper and bronze.
 
-### Classification: Dry and Wet Corrosion
+### Dry corrosion vs wet corrosion
 
 Depending on the surrounding environment, corrosion processes are classified into two broad categories:
 
@@ -1604,45 +1781,58 @@ Depending on the surrounding environment, corrosion processes are classified int
 | **Charge transport** | Direct electron transfer at the gas–metal interface | Electrons flow through metal; ions migrate through electrolyte |
 | **Typical attacking agents** | $\mathrm{O_2}$, halogens, $\mathrm{H_2S}$, $\mathrm{SO_2}$, or liquid metals (e.g., $\mathrm{Hg}$ on $\mathrm{Au}$) | Acids, alkalis, brines, and oxygenated water |
 
-### Electrochemical Theory of Wet Corrosion
+### Electrochemical theory of wet corrosion
 
 Wet corrosion is far more common in engineering service and can occur when a metal contacts a conducting liquid (electrolyte), or when two dissimilar metals are partially or fully immersed in an electrolyte. Local variations in composition, impurities, or mechanical strains (such as dents and scratches) create microscopic or macroscopic galvanic cells across the metal surface:
 
 1. **Anodic oxidation:** At the anodic areas, the metal undergoes oxidation, releasing metal cations into the solution and leaving electrons behind in the metal lattice:
+
 $$
 \mathrm{M(s) \longrightarrow M^{n+}(aq) + n\,e^-}
 $$
+
 Because metal atoms are converted into soluble ions or solid products here, **electrochemical metal dissolution occurs at the anode**.
+
 2. **Internal electronic path:** The released electrons travel internally through the metallic structure itself from the anodic region to the cathodic region.
+
 3. **Cathodic reduction:** At the cathodic areas, electrons are consumed by reducible species present in the adjacent environment (such as $\mathrm{H^+}$, $\mathrm{H_2O}$, or dissolved $\mathrm{O_2}$). The cathode metal itself does not dissolve.
+
 4. **External ionic path and product precipitation:** Metal cations ($\mathrm{M^{n+}}$) diffuse away from the anode while non-metallic anions (such as $\mathrm{OH^-}$) migrate through the electrolyte from the cathode. They meet and precipitate corrosion products between the anodic and cathodic sites.
 
 > **Watch out.** Do not confuse the electronic path with the ionic path. Free electrons travel *only* through the solid metal from anode to cathode; current through the liquid electrolyte is carried entirely by migrating ions.
 
-### Hydrogen Evolution Corrosion in Acidic Media
+### Hydrogen evolution corrosion in acidic media
 
 Hydrogen evolution corrosion typically occurs when an active metal is exposed to a deaerated (oxygen-deficient) acidic solution, such as industrial pickling baths or acid rain runoff.
 
 Consider metallic iron immersed in dilute hydrochloric acid ($\mathrm{HCl}$) under standard conditions ($a_{\mathrm{H^+}} = 1$, $\mathrm{pH} = 0$, $P_{\mathrm{H_2}} = 1\text{ bar}$ at $298\text{ K}$). Here $E^\circ$ denotes the standard reduction potential, $R = 8.314\text{ J mol}^{-1}\text{ K}^{-1}$, and $F = 96485\text{ C mol}^{-1}$.
 
 - **Anode (oxidation):**
+
 $$
 \mathrm{Fe(s) \longrightarrow Fe^{2+}(aq) + 2\,e^-} \quad (E^\circ_{\mathrm{Fe^{2+}/Fe}} = -0.44\text{ V})
 $$
+
 - **Cathode (reduction):**
+
 $$
 \mathrm{2\,H^+(aq) + 2\,e^- \longrightarrow H_2(g)} \quad (E^\circ_{\mathrm{H^+/H_2}} = 0.00\text{ V})
 $$
+
 - **Overall ionic reaction:**
+
 $$
 \mathrm{Fe(s) + 2\,H^+(aq) \longrightarrow Fe^{2+}(aq) + H_2(g)}
 $$
+
 In dilute $\mathrm{HCl}$, this molecularly corresponds to:
+
 $$
 \mathrm{Fe(s) + 2\,HCl(aq) \longrightarrow FeCl_2(aq) + H_2(g)}
 $$
 
 The standard cell potential driving this corrosion is:
+
 $$
 E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}} = 0.00 - (-0.44) = +0.44\text{ V}
 $$
@@ -1651,17 +1841,22 @@ $$
 
 In general, metals with negative standard reduction potentials—such as $\mathrm{Mg}$ ($-2.36\text{ V}$), $\mathrm{Al}$ ($-1.66\text{ V}$), $\mathrm{Zn}$ ($-0.76\text{ V}$), and $\mathrm{Fe}$ ($-0.44\text{ V}$)—can displace $\mathrm{H^+}$ from acidic solutions, whereas noble metals with positive reduction potentials like $\mathrm{Cu}$ ($+0.34\text{ V}$) and $\mathrm{Ag}$ ($+0.80\text{ V}$) cannot corrode via hydrogen evolution in non-oxidizing acids.
 
-### Hydrogen Evolution Corrosion in Deaerated Alkaline Media
+### Hydrogen evolution corrosion in deaerated alkaline media
 
 In neutral or alkaline environments, the concentration of $\mathrm{H^+}$ is extremely low, so water molecules directly undergo reduction at the cathode:
+
 $$
 \mathrm{2\,H_2O(l) + 2\,e^- \longrightarrow H_2(g) + 2\,OH^-(aq)}
 $$
+
 Using the Nernst equation at $298\text{ K}$ with $P_{\mathrm{H_2}} = 1\text{ bar}$, the conditional reduction potential of the hydrogen electrode depends on $\mathrm{pH}$:
+
 $$
 E_{\mathrm{H^+/H_2}} = E^\circ_{\mathrm{H^+/H_2}} - 0.0591\,\mathrm{pH} = -0.0591\,\mathrm{pH}\text{ V}
 $$
+
 At $\mathrm{pH} = 14$ ($a_{\mathrm{OH^-}} = 1$), this potential shifts to:
+
 $$
 E_{\mathrm{H_2O/H_2,\,OH^-}} = -0.0591 \times 14 = -0.8274\text{ V} \approx -0.828\text{ V}
 $$
@@ -1691,7 +1886,9 @@ Note that comparing $E^\circ_{\text{metal}}$ ($1\text{ M}$ metal ions) with a $\
 
 ## Oxygen absorption, rusting and localized corrosion
 
-When metals are exposed to aerated aqueous solutions—whether acidic, neutral, or alkaline—dissolved oxygen acts as a powerful electron acceptor. Oxygen absorption corrosion is the primary electrochemical mechanism responsible for the atmospheric rusting of iron and steel, as well as severe localized failures such as pitting.
+**Oxygen absorption corrosion**
+
+Oxygen absorption corrosion is the primary electrochemical mechanism responsible for the atmospheric rusting of iron and steel, as well as severe localized failures such as pitting, occurring when metals are exposed to aerated aqueous solutions where dissolved oxygen acts as a powerful electron acceptor.
 
 ### Electrode reactions in oxygen absorption corrosion
 
@@ -1737,15 +1934,28 @@ $$
 \mathrm{4Fe(OH)_2(s) + O_2(g) + 2H_2O(l) \rightarrow 4Fe(OH)_3(s)}
 $$
 
-Further oxidation and dehydration produce **rust**, a yellow-brown or reddish-brown mixture of hydrated iron oxides and oxyhydroxides, often represented approximately as $\mathrm{Fe_2O_3 \cdot xH_2O}$. If the supply of oxygen is severely restricted, partial oxidation yields black anhydrous magnetite ($\mathrm{Fe_3O_4}$).
+**Rust**
+
+Rust is a yellow-brown or reddish-brown mixture of hydrated iron oxides and oxyhydroxides, often represented approximately as $\mathrm{Fe_2O_3 \cdot xH_2O}$, produced by the further oxidation and dehydration of iron hydroxides. If the supply of oxygen is severely restricted, partial oxidation yields black anhydrous magnetite ($\mathrm{Fe_3O_4}$).
 
 Crucially, because $\mathrm{Fe^{2+}}$ and $\mathrm{OH^-}$ ions diffuse away from the metal surface before precipitating, rust forms as a porous, non-adherent deposit. It does not seal the underlying iron from electrolytes or oxygen, so corrosion continues unabated.
 
 ### Differential aeration and pitting corrosion
 
-Whereas **uniform corrosion** attacks an entire exposed metal surface at a roughly equal rate, **pitting corrosion** is a highly localized form of attack that creates deep cavities or holes while leaving the bulk surface largely intact. A classic mechanism driving localized attack is **differential aeration** (oxygen concentration cell corrosion), illustrated by a water drop resting on an iron surface.
+**Uniform corrosion**
+
+Uniform corrosion is the general degradation of an entire exposed metal surface at a roughly equal rate across its whole area.
+
+**Pitting corrosion**
+
+Pitting corrosion is a highly localized form of attack that creates deep cavities or holes while leaving the bulk surface largely intact.
+
+**Differential aeration**
+
+Differential aeration (oxygen concentration cell corrosion) is an electrochemical corrosion process driven by unequal access of oxygen to different regions of a metal surface, illustrated by a water drop resting on an iron surface.
 
 ![Diagram of differential aeration and pitting corrosion under a water drop on an iron surface](/notes/cse/s1/chemistry/module-1/assets/page-024-image-1-source.png)
+
 *Figure: Differential aeration under a water drop on iron. The oxygen-depleted center acts as a small anode where pit growth occurs, while the oxygen-rich outer rim acts as a large cathode.*
 
 1. **Oxygen gradient:** Oxygen from the air diffuses easily through the thin outer rim of the water drop, making the periphery oxygen-rich. The center of the drop, covered by a thicker layer of liquid and accumulated rust, becomes oxygen-poor.
@@ -1787,11 +1997,15 @@ Whereas **uniform corrosion** attacks an entire exposed metal surface at a rough
 
 ## The galvanic series and corrosion prediction
 
-While the standard electrochemical series ranks redox couples under defined standard-state conditions, it often fails to predict how real engineering materials—especially commercial alloys—behave in natural environments. To overcome this limitation, engineers use the **galvanic series**, an experimental ranking of metals and alloys based on their actual corrosion potentials in a specific, practical electrolyte.
+While the standard electrochemical series ranks redox couples under defined standard-state conditions, it often fails to predict how real engineering materials—especially commercial alloys—behave in natural environments.
+
+**Galvanic series**
+
+The galvanic series is an experimental ranking of metals and alloys based on their actual corrosion potentials in a specific, practical electrolyte.
 
 ### Construction and the role of passivity
 
-The galvanic series is constructed by immersing commercial metals and alloys in a chosen service environment—most commonly unpolluted seawater—and measuring their steady-state corrosion potentials ($E_{\text{corr}}$) against a practical reference electrode such as the saturated calomel electrode (SCE). Materials are arranged from the most **active** (anodic, having more negative potentials and high corrosion tendency) to the most **noble** (cathodic, having more positive potentials and high corrosion resistance).
+The galvanic series is constructed by immersing commercial metals and alloys in a chosen service environment—most commonly unpolluted seawater—and measuring their steady-state corrosion potentials ($E_{\text{corr}}$) against a practical reference electrode such as the saturated calomel electrode (SCE). Materials are arranged from the most active (anodic, having more negative potentials and high corrosion tendency) to the most noble (cathodic, having more positive potentials and high corrosion resistance).
 
 The following groups illustrate the broad trend in many seawater charts; they are **not an exact universal ranking**. For a design decision, use a measured series for the specified alloy, surface state and service environment.
 
@@ -1801,7 +2015,13 @@ The following groups illustrate the broad trend in many seawater charts; they ar
 | Intermediate | Carbon steel, cast iron, lead and tin alloys |
 | More noble / cathodic | Copper alloys, nickel alloys and passive stainless steels; passive titanium and noble metals often lie toward this end |
 
-Unlike the electrochemical series, the order in a galvanic series is not universal; it changes if the environment (such as temperature, aeration, or chloride concentration) changes. Furthermore, **passivity** shifts the position of certain metals dramatically. In the standard electrochemical series, aluminium ($E^\circ = -1.66\text{ V}$) is more active than zinc ($E^\circ = -0.76\text{ V}$), while some metals that oxidize readily in principle can develop highly protective passive films. However, in natural seawater, aluminium and titanium rapidly form dense, adherent, self-healing protective oxide films ($\mathrm{Al_2O_3}$ and $\mathrm{TiO_2}$). This surface passivation shifts their effective potentials to much more positive (noble) values, so their measured behaviour can differ greatly from a ranking based on standard aqueous reduction potentials. Similarly, stainless steel exhibits two distinct positions: a noble position when its chromium oxide passive film is intact, and a much more active position (closer to mild steel) if that film breaks down in stagnant or oxygen-starved crevices.
+Unlike the electrochemical series, the order in a galvanic series is not universal; it changes if the environment (such as temperature, aeration, or chloride concentration) changes.
+
+**Passivity**
+
+Passivity is the loss of chemical reactivity exhibited by certain metals and alloys under specific environmental conditions, dramatically shifting their effective potential.
+
+In the standard electrochemical series, aluminium ($E^\circ = -1.66\text{ V}$) is more active than zinc ($E^\circ = -0.76\text{ V}$), while some metals that oxidize readily in principle can develop highly protective passive films. However, in natural seawater, aluminium and titanium rapidly form dense, adherent, self-healing protective oxide films ($\mathrm{Al_2O_3}$ and $\mathrm{TiO_2}$). This surface passivation shifts their effective potentials to much more positive (noble) values, so their measured behaviour can differ greatly from a ranking based on standard aqueous reduction potentials. Similarly, stainless steel exhibits two distinct positions: a noble position when its chromium oxide passive film is intact, and a much more active position (closer to mild steel) if that film breaks down in stagnant or oxygen-starved crevices.
 
 > **Watch out.** Do not confuse the standard electrode potential ($E^\circ$) with the corrosion potential measured in a galvanic series. The electrochemical series measures reversible equilibrium potentials of redox couples at unit activity (often approximated with $1\text{ M}$ solutions) against the standard hydrogen electrode (SHE), whereas the galvanic series measures non-equilibrium corrosion potentials of real metals and alloys in a shared environment like seawater against a reference electrode such as the SCE.
 
@@ -1817,13 +2037,16 @@ Unlike the electrochemical series, the order in a galvanic series is not univers
 
 ### Predicting galvanic corrosion and design applications
 
-When two dissimilar metals are placed in electrical contact and bridged by an electrolyte, they form a galvanic couple. The metal higher in the galvanic series (more active) acts as the anode and undergoes accelerated oxidation, while the metal lower in the series (more noble) acts as the cathode and is protected.
+**Galvanic couple**
+
+A galvanic couple forms when two dissimilar metals are placed in electrical contact and bridged by an electrolyte. The metal higher in the galvanic series (more active) acts as the anode and undergoes accelerated oxidation, while the metal lower in the series (more noble) acts as the cathode and is protected.
 
 > **Watch out.** Students sometimes mistakenly write that low reduction potential metals undergo reduction faster. A more negative potential indicates a stronger thermodynamic tendency to act anodically in the specified comparison. It does **not** by itself determine the corrosion rate: kinetics, area ratio and surface films also matter.
 
 The severity of galvanic corrosion depends on two main factors: the potential difference between the coupled metals in that environment, and the **cathode-to-anode area ratio**. A small anode coupled to a large cathode (such as steel rivets fastening copper sheets) is extremely dangerous because the large cathodic current demand is concentrated onto a tiny anodic area, causing rapid penetration and failure.
 
 Engineers apply the galvanic series in four primary ways:
+
 1. **Material selection:** Choosing metals that are close together in the galvanic series (e.g., brass fittings on copper piping) minimizes the driving voltage for galvanic attack.
 2. **Galvanic isolation:** Inserting non-conducting insulating washers, sleeves, or gaskets (such as nylon or PTFE) between dissimilar metals breaks the electrical circuit and stops galvanic corrosion.
 3. **Protective coatings:** Understanding how coatings behave when scratched. In **zinc-coated iron (galvanized steel)**, zinc is more active than iron; if the coating is scratched, zinc acts as the anode and sacrificially protects the exposed steel cathode. Conversely, if a noble copper or tin coating on iron is scratched, the exposed iron forms a small anode against a large noble cathode, causing rapid localized pitting of the steel.
@@ -1847,9 +2070,13 @@ Engineers apply the galvanic series in four primary ways:
 Electrochemical dissolution of a buried or immersed metal structure occurs at its anodic regions, where metal atoms oxidize and dissolve as ions. Cathodic protection prevents this degradation by forcing the entire surface of the metal structure to act as a cathode. By supplying excess electrons to the metal from an external source, anodic dissolution ($\text{M} \rightarrow \text{M}^{n+} + ne^-$) is suppressed and cathodic reduction is promoted on the protected surface. Practical protection requires sufficient current distribution and potential control.
 
 ![Comparison of sacrificial magnesium anode protection and impressed current protection with a DC source and graphite anode](/notes/cse/s1/chemistry/module-1/assets/cathodic-protection-clean.webp)
+
 *Comparison of sacrificial anode cathodic protection using a magnesium block and impressed current cathodic protection using an external DC power source.*
 
-There are two primary methods for supplying the electrons required for cathodic protection: sacrificial anode protection and impressed current cathodic protection.
+There are two primary methods for supplying the electrons required for cathodic protection:
+
+1. **Sacrificial anode protection**
+2. **Impressed current cathodic protection (ICCP)**
 
 ### Sacrificial anode protection
 
@@ -1857,14 +2084,20 @@ In sacrificial anode (or galvanic) protection, the metallic structure to be prot
 
 Metals commonly used as sacrificial anodes include magnesium ($\text{Mg}$), zinc ($\text{Zn}$), aluminium ($\text{Al}$), and their alloys. Because these metals have much more negative reduction potentials than iron or steel, they act as the anode in the resulting galvanic cell.
 
+The galvanic protection process follows three stages:
+
 1. **Anodic reaction (at the sacrificial block):** The active metal oxidizes and dissolves into the surrounding soil or water. For a magnesium anode:
+
 $$
 \mathrm{Mg(s) \rightarrow Mg^{2+}(aq) + 2e^-}
 $$
+
 2. **Electron flow:** The released electrons travel through the connecting wire to the iron structure.
 3. **Cathodic protection (at the iron structure):** The incoming electrons shift the iron surface potential in the negative direction, suppressing iron oxidation ($\text{Fe} \rightarrow \text{Fe}^{2+} + 2e^-$). Instead, dissolved oxygen or hydrogen ions from the surrounding moisture are reduced at the iron surface.
 
-Because the active metal corrodes intentionally to save the main structure, it is called a sacrificial anode. Once the sacrificial blocks are consumed, they must be replaced periodically.
+**Sacrificial anode**
+
+A sacrificial anode is an active metal block that corrodes intentionally to protect the primary structure. Once consumed, the sacrificial blocks must be replaced periodically.
 
 * **Advantages:** Requires no external electric power source; simple and inexpensive to install; minimal ongoing supervision beyond scheduled anode replacement.
 * **Limitations:** Provides a limited driving voltage, making it less effective in high-resistivity environments (such as dry or sandy soils); anodes gradually dissolve and require periodic replacement.
@@ -1876,11 +2109,15 @@ In impressed current cathodic protection, electrons are supplied to the protecte
 
 The negative terminal of the DC source is connected to the metallic structure to be protected, and the positive terminal is connected to a low-consumption auxiliary anode buried in the same soil or immersed in the same water. Common auxiliary anode materials include graphite, high-silicon cast iron, platinum, or platinized titanium, often surrounded by conductive backfill in soil installations.
 
+The impressed current mechanism operates as follows:
+
 1. **Electron supply:** The DC power source pumps electrons into the protected metal structure, forcing it to become the cathode and shifting its potential to suppress anodic metal dissolution.
 2. **Auxiliary anode reaction:** The circuit is completed through ionic conduction in the shared electrolyte (soil moisture or water). At the inert auxiliary anode, oxidation of species from the surrounding environment occurs—for example, oxidation of water to oxygen gas:
+
 $$
 \mathrm{2H_2O(l) \rightarrow O_2(g) + 4H^+(aq) + 4e^-}
 $$
+
 (In chloride-rich waters, chloride oxidation may also occur depending on local conditions.)
 
 > **Watch out.** Never reverse the DC connections in an impressed current system. The **negative terminal** must be connected to the pipeline or structure being protected so that it receives electrons and acts as the cathode. Connecting the positive terminal to the pipeline forces it to act as an anode, causing rapid, catastrophic corrosion.
@@ -1916,9 +2153,19 @@ $$
 
 ## Copper electroplating
 
-Electroplating is an electrolytic surface-finishing process in which a thin, coherent layer of a coating metal is deposited onto a conductive workpiece (base metal) by passing a direct current (DC) through an aqueous solution containing a soluble salt of the coating metal. In engineering practice, electroplating is used to improve corrosion resistance, increase wear and chemical resistance, build up undersized dimensions, enhance electrical conductivity, and improve aesthetic appearance.
+**Electroplating**
 
-### Surface pretreatment before plating
+Electroplating is an electrolytic surface-finishing process in which a thin, coherent layer of a coating metal is deposited onto a conductive workpiece (base metal) by passing a direct current (DC) through an aqueous solution containing a soluble salt of the coating metal.
+
+In engineering practice, electroplating serves several key purposes:
+
+* Improving corrosion resistance
+* Increasing wear and chemical resistance
+* Building up undersized dimensions
+* Enhancing electrical conductivity
+* Improving aesthetic appearance
+
+### Surface pretreatment
 
 A durable, adherent copper deposit cannot form on a contaminated surface. Before the workpiece is placed in the plating bath, it must undergo a strict cleaning sequence:
 
@@ -1926,9 +2173,9 @@ A durable, adherent copper deposit cannot form on a contaminated surface. Before
 2. **Pickling (acid treatment):** The degreased object is immersed in dilute acid (such as dilute $\mathrm{HCl}$ or $\mathrm{H_2SO_4}$) to dissolve surface metal oxides, rust, and heat scales.
 3. **Rinsing:** The workpiece is thoroughly washed with deionised or distilled water between and after chemical steps to prevent carry-over contamination into the electroplating tank.
 
-### Construction and cell setup
+### Cell construction and setup
 
-Unlike a galvanic cell, which generates electrical energy spontaneously, an electroplating cell is an **electrolytic cell** driven by an external DC power supply.
+Unlike a galvanic cell, which generates electrical energy spontaneously, an electroplating cell is an electrolytic cell driven by an external DC power supply.
 
 * **Cathode (negative terminal):** The pre-cleaned workpiece or article to be plated is connected to the negative terminal of the DC power source.
 * **Anode (positive terminal):** A rod or plate of high-purity copper metal is connected to the positive terminal (a soluble active anode). Alternatively, an inert conductive material such as graphite may be used.
@@ -1962,7 +2209,7 @@ For every mole of $\mathrm{Cu}$ deposited on the cathode, one mole of $\mathrm{C
 
 > **Watch out.** Do not confuse the polarity of an electrolytic plating cell with that of a galvanic cell. In electroplating, the external DC power supply forces the cathode to be **negative** (connected to the negative terminal) and the anode to be **positive**. Furthermore, the power supply withdraws electrons from the copper anode and supplies electrons to the workpiece cathode through separate external leads; $\mathrm{Cu^{2+}}$ ions migrate through the liquid electrolyte, never through the wire.
 
-#### Soluble copper anode versus inert anode
+### Soluble copper anode vs inert anode
 
 If an inert electrode such as graphite is used as the anode instead of copper, the anode does not replenish copper ions. In the ideal inert-anode model, water can be oxidised at the anode surface:
 
@@ -1982,11 +2229,15 @@ To obtain a smooth, bright, and strongly adherent deposit rather than a powdery 
 
 ### Applications, advantages, and limitations
 
+**Applications**
+
 * **Undercoat for multi-layer corrosion protection:** Steel components in the automotive and hardware industries are commonly given successive coatings of copper, nickel, and chromium ($\mathrm{Cu}$–$\mathrm{Ni}$–$\mathrm{Cr}$). Copper provides a smooth, adherent, levelling base layer that improves the adhesion of subsequent nickel and chromium layers.
 * **Electronics and printed circuit boards (PCBs):** Because copper has high electrical and thermal conductivity, electroplated copper is used to build up conductive tracks and through-hole interconnections on PCBs (after an initial conductive seed layer is applied).
 * **Decorative and household items:** Copper plating imparts a warm metallic lustre to jewellery, kitchenware, and architectural fittings.
 
-**Advantages and limitations:** Copper electroplating produces high-purity, conductive coatings at relatively low cost with controllable thickness. However, the process requires an external DC power source, can only be applied directly to electrically conductive substrates (non-conductors require prior surface activation, such as electroless plating), and suffers from non-uniform current distribution on complex shapes with deep recesses.
+**Advantages and limitations**
+
+Copper electroplating produces high-purity, conductive coatings at relatively low cost with controllable thickness. However, the process requires an external DC power source, can only be applied directly to electrically conductive substrates (non-conductors require prior surface activation, such as electroless plating), and suffers from non-uniform current distribution on complex shapes with deep recesses.
 
 ### Self-check questions
 
@@ -2003,13 +2254,17 @@ To obtain a smooth, bright, and strongly adherent deposit rather than a powdery 
 
 ## Electroless copper plating
 
-While conventional electroplating relies on an external direct current (DC) power supply to drive metal ions onto a conductive cathode, many modern engineering components—such as polymer-based printed circuit boards (PCBs) and intricately shaped parts—cannot be wired into an electrical circuit or suffer from uneven current distribution. **Electroless plating** overcomes this limitation by depositing a uniform metallic coating through a controlled, autocatalytic chemical reduction of metal ions in an aqueous bath without using any external electric current.
+Conventional electroplating relies on an external direct current (DC) power supply to drive metal ions onto a conductive cathode. However, many modern engineering components—such as polymer-based printed circuit boards (PCBs) and intricately shaped parts—cannot be wired into an electrical circuit or suffer from uneven current distribution.
+
+**Electroless plating**
+
+Electroless plating is a deposition technique that overcomes these limitations by depositing a uniform metallic coating through a controlled, autocatalytic chemical reduction of metal ions in an aqueous bath without using any external electric current.
 
 ### Principle of autocatalytic deposition
 
 In electroless plating, the electrons required to reduce metal ions ($\text{M}^{n+}$) to the metallic state ($\text{M}$) are supplied locally by a chemical reducing agent dissolved in the plating solution rather than by an external power source. Because the bath contains both the metal ions and the reducing agent together, spontaneous reduction throughout the bulk liquid must be prevented; otherwise, the metal would simply precipitate as a useless powder at the bottom of the tank.
 
-To restrict metal deposition strictly to the object's surface, the process is designed to be **autocatalytic**. The substrate surface is first made catalytically active, allowing the oxidation of the reducing agent and the simultaneous reduction of metal ions to begin only at that interface. Once the first atomic layer of copper is deposited, the freshly formed copper surface itself acts as a catalyst for further reduction. Deposition therefore continues steadily layer by layer:
+To restrict metal deposition strictly to the object's surface, the process is designed to be autocatalytic. The substrate surface is first made catalytically active, allowing the oxidation of the reducing agent and the simultaneous reduction of metal ions to begin only at that interface. Once the first atomic layer of copper is deposited, the freshly formed copper surface itself acts as a catalyst for further reduction. Deposition therefore continues steadily layer by layer:
 
 $$
 \text{Metal ions (complexed)} + \text{Reducing agent} \xrightarrow{\text{Catalytic surface}} \text{Metal deposit} + \text{Oxidised products}
@@ -2017,7 +2272,7 @@ $$
 
 > **Watch out.** Do not picture an electroless plating bath as having separate wired anode and cathode plates. Although textbooks often label the oxidation and reduction half-reactions as "anodic" and "cathodic" to show electron transfer, both half-reactions occur simultaneously at microscopic sites on the *same* catalytic substrate surface without any external wires or DC power supply.
 
-### Composition of the electroless copper bath
+### Bath composition
 
 An educational formulation for an electroless copper bath consists of several functional chemical components working together at elevated pH (typically alkaline, around $\text{pH } 11\text{--}13$) and controlled temperature:
 
@@ -2033,8 +2288,11 @@ An educational formulation for an electroless copper bath consists of several fu
 
 ### Step-by-step plating procedure
 
-1. **Surface cleaning and conditioning (degreasing and etching):** Metallic substrates are first degreased using organic solvents or alkaline cleaners to remove oils, followed by mild acid etching to remove surface oxides and create microscopic roughness for mechanical adhesion.
-2. **Activation of non-conductors (sensitisation and seeding):** Insulating substrates such as plastics, ceramics, and epoxy-glass PCB laminates are not naturally catalytic and must be seeded before immersion in the copper bath:
+1. **Surface cleaning and conditioning (degreasing and etching)**  
+   Metallic substrates are first degreased using organic solvents or alkaline cleaners to remove oils, followed by mild acid etching to remove surface oxides and create microscopic roughness for mechanical adhesion.
+
+2. **Activation of non-conductors (sensitisation and seeding)**  
+   Insulating substrates such as plastics, ceramics, and epoxy-glass PCB laminates are not naturally catalytic and must be seeded before immersion in the copper bath:
    - **Sensitisation:** The cleaned non-conductor is dipped in an acidic stannous chloride ($\text{SnCl}_2$) solution so that $\text{Sn}^{2+}$ ions adsorb onto the surface.
    - **Activation:** After rinsing, the part is immersed in an acidic palladium chloride ($\text{PdCl}_2$) solution. The adsorbed $\text{Sn}^{2+}$ reduces $\text{Pd}^{2+}$ to form microscopic catalytic seeds of metallic palladium ($\text{Pd}^0$) anchored across the surface:
 
@@ -2042,10 +2300,13 @@ $$
 \text{Sn}^{2+} + \text{Pd}^{2+} \rightarrow \text{Sn}^{4+} + \text{Pd}\text{(s)}
 $$
 
-3. **Rinsing and immersion deposition:** The thoroughly rinsed, catalytically active article is immersed in the heated alkaline electroless copper bath. Copper nucleates initially on the palladium seeds (or cleaned metal surface) and then continues to grow autocatalytically on the newly deposited copper.
-4. **Post-treatment:** Once the required film thickness is reached, the plated component is removed, washed thoroughly with deionised water to remove residual alkali and salts, and dried.
+3. **Rinsing and immersion deposition**  
+   The thoroughly rinsed, catalytically active article is immersed in the heated alkaline electroless copper bath. Copper nucleates initially on the palladium seeds (or cleaned metal surface) and then continues to grow autocatalytically on the newly deposited copper.
 
-### Chemical reactions in electroless copper plating
+4. **Post-treatment**  
+   Once the required film thickness is reached, the plated component is removed, washed thoroughly with deionised water to remove residual alkali and salts, and dried.
+
+### Chemical reactions
 
 In a strongly alkaline bath containing $\text{NaOH}$, formaldehyde is oxidised at the catalytic surface (the anodic half-reaction), releasing electrons:
 
@@ -2067,7 +2328,7 @@ $$
 
 Notice that four hydroxide ions ($\text{OH}^-$) are consumed for every copper atom deposited, which is why continuous $\text{NaOH}$ replenishment and pH buffering are vital during operation, and why small bubbles of hydrogen gas ($\text{H}_2$) are visibly evolved from the part during active plating.
 
-### Comparison with conventional electroplating
+### Conventional electroplating vs electroless copper plating
 
 | Feature | Copper electroplating | Electroless copper plating |
 | :--- | :--- | :--- |
@@ -2078,12 +2339,14 @@ Notice that four hydroxide ions ($\text{OH}^-$) are consumed for every copper at
 
 ### Applications and limitations
 
-**Applications:**
+#### Applications
+
 - **Printed circuit boards (PCBs):** Essential for **plated through-holes (PTH)** in double-sided and multilayer PCBs, where drilled epoxy-fibreglass holes must be made electrically conductive from one board layer to another.
 - **Base coat on non-conductors:** Provides an initial thin conductive metallic layer on plastics, automotive trims, and decorative consumer goods prior to thicker conventional electroplating.
 - **Corrosion- and wear-resistant films:** Produces dense, low-porosity coatings on complex mechanical components.
 
-**Limitations:**
+#### Limitations
+
 - **Chemical cost and bath control:** Electroless chemicals are more expensive than simple electroplating salts, and the bath requires strict monitoring of temperature, $\text{pH}$, and stabiliser levels to avoid sudden runaway decomposition.
 - **Health and waste hazards:** Formaldehyde is volatile, irritating, and classified as a human health hazard, requiring fume extraction; furthermore, strong chelators like EDTA bind heavy metals tightly, making wastewater treatment more difficult.
 
@@ -2123,34 +2386,48 @@ All thermodynamic potential expressions below assume $T = 298\text{ K}$, univers
 
 1. **What is the origin of single electrode potential?**
    The charge separation across the Helmholtz electrical double layer formed by reversible ion transfer between a metal and its electrolyte.
+
 2. **Why is a salt bridge used in a Daniell cell?**
    To maintain electrical neutrality in both half-cells by ion migration and to minimize liquid junction potential without mixing electrolytes.
+
 3. **What is the potential of the Standard Hydrogen Electrode (SHE) at all temperatures?**
    Exactly $0.00\text{ V}$ by international convention at $a_{\mathrm{H}^+} = 1$ and $P_{\mathrm{H}_2} = 1\text{ bar}$.
+
 4. **Why is a calomel electrode preferred over SHE in routine laboratory work?**
    SHE requires continuous, hazardous hydrogen gas bubbling and a readily poisoned platinized platinum surface, whereas the calomel electrode is self-contained and stable.
+
 5. **How does the potential of a calomel electrode vary with $\mathrm{KCl}$ concentration?**
    It decreases as $[\mathrm{KCl}]$ increases: $0.3335\text{ V}$ ($0.1\text{ M}$), $0.2810\text{ V}$ ($1.0\text{ M}$), and $0.2422\text{ V}$ (saturated $\mathrm{KCl}$ at $298\text{ K}$).
+
 6. **Which species carries charge across the hydrated glass bulb membrane?**
    Monovalent cations ($\mathrm{H}^+$ and $\mathrm{Na}^+$) via ion-exchange equilibrium and lattice migration; the glass does not conduct electrons.
+
 7. **What serves as the anode and cathode in a commercial lithium-ion cell?**
    Lithiated graphite ($\mathrm{Li}_x\mathrm{C}_6$) is the negative electrode (anode during discharge), and a lithiated transition-metal oxide ($\mathrm{LiCoO}_2$) is the positive electrode (cathode during discharge).
+
 8. **What is the overall product of an acidic $\mathrm{H}_2\text{--}\mathrm{O}_2$ fuel cell?**
    Pure liquid water ($\mathrm{H}_2 + \frac{1}{2}\mathrm{O}_2 \rightarrow \mathrm{H}_2\mathrm{O}$) along with direct electrical energy and heat.
+
 9. **Why is alternating current (AC) used in conductivity measurements?**
    To prevent electrolysis and electrode polarization at the platinum plates.
+
 10. **Under what condition does wet corrosion occur by hydrogen evolution?**
     Commonly in acidic, oxygen-deficient environments where $\mathrm{H}^+$ reduction ($2\mathrm{H}^+ + 2\mathrm{e}^- \rightarrow \mathrm{H}_2$) serves as the cathodic reaction. Active metals can also reduce water to hydrogen in oxygen-free alkaline media, subject to thermodynamics and passivation.
+
 11. **In waterline corrosion, which region of the metal becomes the anode?**
     The poorly oxygenated region just below the waterline acts as the anode and corrodes; the well-aerated meniscus zone above acts as the cathode.
+
 12. **How does the galvanic series differ from the electrochemical series?**
     The electrochemical series tabulates redox couples under standard-state conditions; the galvanic series measures real engineering alloys in a practical corrosive medium such as seawater.
+
 13. **Why is zinc used to galvanize steel rather than tin for outdoor structural applications?**
     Zinc is anodic to iron and provides sacrificial protection even if the coating is scratched; tin is cathodic to iron and accelerates pinhole corrosion at defects.
+
 14. **What is the role of formaldehyde ($\mathrm{HCHO}$) and $\mathrm{NaOH}$ in electroless copper plating?**
     Formaldehyde acts as the chemical reducing agent, and $\mathrm{NaOH}$ maintains $\text{pH} \approx 11\text{--}12$, where formaldehyde has sufficient reducing power.
 
 > **Watch out.** Frequent conceptual and calculation pitfalls:
+>
 > * **Anode vs. Cathode:** Oxidation *always* occurs at the anode and reduction *always* occurs at the cathode, in both galvanic (discharging) and electrolytic (charging/plating) cells. Only the electrical polarity sign ($+$ or $-$) reverses.
 > * **Stoichiometric Powers in $Q$ and $n$:** For $\mathrm{Zn}(s) + 2\mathrm{Ag}^+(aq) \rightarrow \mathrm{Zn}^{2+}(aq) + 2\mathrm{Ag}(s)$, the electron count is $n = 2$ and $Q = \frac{[\mathrm{Zn}^{2+}]}{[\mathrm{Ag}^+]^2}$. Never omit the exponent $2$ on $[\mathrm{Ag}^+]$, and never substitute $E^\circ$ inside the logarithm.
 > * **Units in $\Delta G^\circ$:** The product $-nFE^\circ_{\text{cell}}$ gives Joules ($\text{J mol}^{-1}$), not kilojoules. Divide by $1000$ to report $\text{kJ mol}^{-1}$.
