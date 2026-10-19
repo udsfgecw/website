@@ -2,82 +2,103 @@ import { Label } from "@/components/ui/section";
 import { PROGRAMS } from "@/data/progress";
 import { cn } from "@/lib/utils";
 
-function ProgramCard({ p, featured }: { p: (typeof PROGRAMS)[number]; featured?: boolean }) {
-  return (
-    <article
-      className={cn(
-        "group relative flex flex-col overflow-hidden rounded-2xl border border-line bg-paper transition-shadow hover:shadow-md",
-        featured && "sm:col-span-2 sm:row-span-2",
-      )}
-    >
-      <div
-        className={cn(
-          "relative w-full overflow-hidden bg-[#f0f1f3]",
-          featured ? "aspect-[16/9] sm:aspect-auto sm:flex-1" : "aspect-[4/3]",
-        )}
-      >
-        <div className="flex h-full w-full items-center justify-center">
-          <span
-            className={cn(
-              "font-extrabold tracking-[-0.07em] text-line select-none leading-none",
-              featured ? "text-[5rem] sm:text-[8rem]" : "text-[3.5rem]",
-            )}
-          >
-            {String(p.number).padStart(2, "0")}
-          </span>
-        </div>
-        <span className="absolute bottom-3 right-3 label text-ink/25">Photo coming</span>
-      </div>
+const GRADIENTS = [
+  "from-[#05a26a]/20 via-[#1eacfe]/10 to-transparent",
+  "from-[#1eacfe]/25 via-[#05a26a]/10 to-transparent",
+  "from-[#05a26a]/30 to-[#05a26a]/5",
+  "from-[#1eacfe]/30 to-[#1eacfe]/5",
+  "from-[#037f52]/20 via-[#0677c4]/15 to-transparent",
+  "from-[#0677c4]/20 via-[#05a26a]/15 to-transparent",
+  "from-[#05a26a]/15 via-transparent to-[#1eacfe]/15",
+  "from-[#1eacfe]/15 via-transparent to-[#05a26a]/15",
+];
 
-      <div className="flex items-start justify-between gap-2 p-4">
-        <div className="flex items-start gap-2.5">
-          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-tint text-[0.6rem] font-semibold text-green-ink">
-            {p.number}
-          </span>
-          <h3
-            className={cn(
-              "font-semibold leading-[1.25] tracking-[-0.02em] text-ink",
-              featured ? "text-[1.1rem]" : "text-[0.95rem]",
-            )}
-          >
+const ASPECTS = [
+  "aspect-[3/4]",
+  "aspect-square",
+  "aspect-[4/5]",
+  "aspect-square",
+  "aspect-[3/4]",
+  "aspect-[4/5]",
+  "aspect-square",
+  "aspect-[3/4]",
+];
+
+type Program = (typeof PROGRAMS)[number];
+
+function GalleryCard({ p, index }: { p: Program; index: number }) {
+  const grad = GRADIENTS[index % GRADIENTS.length];
+  const aspect = ASPECTS[index % ASPECTS.length];
+
+  return (
+    <article className="group relative overflow-hidden rounded-2xl break-inside-avoid mb-3 cursor-pointer">
+      <div className={cn("relative w-full bg-paper", aspect)}>
+        <div
+          className={cn(
+            "absolute inset-0 bg-gradient-to-br",
+            grad,
+          )}
+        />
+
+        <span
+          className="absolute inset-0 flex items-center justify-center text-[5rem] font-extrabold tracking-[-0.08em] leading-none select-none text-ink/[0.06] group-hover:text-ink/[0.04] transition-colors duration-300"
+          aria-hidden="true"
+        >
+          {String(p.number).padStart(2, "0")}
+        </span>
+
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+        <div className="absolute inset-0 flex flex-col justify-end p-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+          <p className="label text-white/70 mb-1">{p.year}</p>
+          <h3 className="text-white font-semibold leading-[1.2] tracking-[-0.025em] text-[0.95rem]">
             {p.title}
           </h3>
         </div>
-        <span className="label shrink-0 text-ink/30 mt-0.5">{p.year}</span>
+
+        <span className="absolute top-3 left-3 flex h-6 w-6 items-center justify-center rounded-full bg-white/90 text-[0.62rem] font-bold text-ink backdrop-blur-sm shadow-sm">
+          {p.number}
+        </span>
+      </div>
+
+      <div className="group-hover:hidden px-1 pt-2.5 pb-1">
+        <h3 className="text-[0.9rem] font-semibold leading-[1.3] tracking-[-0.02em] text-ink line-clamp-1">
+          {p.title}
+        </h3>
+        <p className="label text-ink/35 mt-0.5">{p.year}</p>
       </div>
     </article>
   );
 }
 
 export default function Programs() {
-  const [featured, ...rest] = PROGRAMS;
-  const cols = rest;
-
   return (
     <section id="programs" aria-labelledby="programs-title" className="border-b border-line">
       <div className="wrap py-[clamp(5rem,11vw,9rem)]">
-        <Label>Programs · 2025–26</Label>
-        <h2
-          id="programs-title"
-          className="mt-6 max-w-[24ch] text-[length:clamp(2rem,4.6vw,3.9rem)] leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-ink"
-        >
-          Events & programs.{" "}
-          <span className="text-ink/30">Bringing the campus to life, one moment at a time.</span>
-        </h2>
-
-        <div className="mt-[clamp(3.5rem,7vw,6rem)]">
-          <div className="grid auto-rows-[minmax(0,1fr)] grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            <div className="col-span-2 row-span-2 sm:col-span-2 sm:row-span-2">
-              <ProgramCard p={featured} featured />
-            </div>
-            {cols.map((p) => (
-              <ProgramCard key={p.number} p={p} />
-            ))}
+        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+          <div>
+            <Label>Programs · 2025–26</Label>
+            <h2
+              id="programs-title"
+              className="mt-6 max-w-[24ch] text-[length:clamp(2rem,4.6vw,3.9rem)] leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-ink"
+            >
+              Events & programs.{" "}
+              <span className="text-ink/30">Bringing the campus to life, one moment at a time.</span>
+            </h2>
           </div>
+          <p className="max-w-[38ch] text-[0.9rem] leading-[1.6] text-ink-2 md:text-right shrink-0">
+            {PROGRAMS.length} events across cultural, academic, and sports — from intimate meets to full-campus celebrations.
+          </p>
         </div>
 
-        <p className="mt-12 text-[0.75rem] text-ink-2">
-          Photos will be added shortly. Placeholder tiles show item numbers for reference.
+        <div className="mt-[clamp(3.5rem,7vw,6rem)] columns-2 gap-3 sm:columns-3 lg:columns-4">
+          {PROGRAMS.map((p, i) => (
+            <GalleryCard key={p.number} p={p} index={i} />
+          ))}
+        </div>
+
+        <p className="mt-8 text-[0.75rem] text-ink/30">
+          Hover each card to see the event name. Photos will be added shortly.
         </p>
       </div>
     </section>
