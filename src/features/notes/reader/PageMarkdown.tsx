@@ -33,7 +33,13 @@ const allPlugins = [...mathPlugins, ...highlightPlugins];
 const noPlugins: typeof mathPlugins = [];
 const diagramDimensions = { ...module3DiagramDimensions, ...module4DiagramDimensions };
 
-type HastNode = { type: string; value?: string; children?: HastNode[] };
+type HastNode = {
+  type: string;
+  tagName?: string;
+  value?: string;
+  properties?: { className?: string[] };
+  children?: HastNode[];
+};
 const textOf = (node?: HastNode): string =>
   !node ? "" : node.type === "text" ? node.value || "" : (node.children || []).map(textOf).join("");
 // Matches the lines that start a worked question: "Example.", "Q.", "Q Find…", "Q_3." and "Q6." (KaTeX text).
@@ -62,11 +68,20 @@ const components: Components = {
     );
   },
   pre({ node, children }) {
-    const className = isValidElement<{ className?: string }>(children) ? children.props.className : undefined;
-    if (className?.includes("language-mermaid") || className?.includes("language-jsxgraph") || className?.includes("language-kekule") || className?.includes("language-chem")) return <div>{children}</div>;
-    const language = /language-([\w+-]+)/.exec(className ?? "")?.[1];
+    // Read the original fence from the Markdown AST. A custom `code` renderer
+    // can replace its React child with a diagram, removing the language class.
+    const codeNode = (node as HastNode | undefined)?.children?.find((child) => child.type === "element" && child.tagName === "code");
+    const classes = codeNode?.properties?.className ?? [];
+    const languageClass = classes.find((name) => name.startsWith("language-"));
+    const language = languageClass?.slice("language-".length)
+      ?? (isValidElement<{ className?: string }>(children) ? /language-([\w+-]+)/.exec(children.props.className ?? "")?.[1] : undefined);
+    const source = codeNode ? textOf(codeNode).replace(/\n$/, "") : textOf(node as HastNode).replace(/\n$/, "");
+
+    if (language === "jsxgraph") return <Plot source={source} />;
+    if (language === "mermaid") return <TreeDiagram source={source} />;
+    if (language === "kekule" || language === "chem") return <KekuleViewer source={source} />;
     return (
-      <CodeBlock language={language} text={textOf(node as HastNode).replace(/\n$/, "")}>
+      <CodeBlock language={language} text={source}>
         {children}
       </CodeBlock>
     );
