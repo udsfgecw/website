@@ -1368,15 +1368,17 @@ $\rightarrow$ Generally anode & cathode are in different container
 
 ![Diagram of a Daniell cell showing two half-cells connected by a salt bridge and a voltmeter](/notes/cse/s1/chemistry/module-1/assets/page-003-image-1.png)
 
+**Daniell cell reactions**
+
+Anode: $\text{Zn} \longrightarrow \text{Zn}^{2+} + 2e^{-}$
+
+Cathode: $\text{Cu}^{2+} + 2e^{-} \longrightarrow \text{Cu}$
+
 $\rightarrow$ Generally anode & cathode are in same or different container.
 
 * Draw electrolysis of $\text{Al}_2\text{O}_3$
 
-![Diagram of an electrolysis cell for $Al_2O_3$](/notes/cse/s1/chemistry/module-1/assets/page-035-image-2-source.png)
-
-$\Rightarrow \text{anode} =$ [illegible] $\text{Zn} \longrightarrow \text{Zn}^{2+} + 2e^{-}$
-
-$\Rightarrow \text{cathode} = \text{Cu}^{2+} + 2e^{-} \longrightarrow \text{Cu}$
+![Simplified electrolysis of molten aluminium oxide with inert electrodes, showing DC polarity, ion movement, oxygen at the anode, and aluminium at the cathode](/notes/cse/s1/chemistry/module-1/assets/aluminium-oxide-electrolysis-clean.webp)
 
 * what is salt bridge, write it's two uses.
 

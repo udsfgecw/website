@@ -1,6 +1,14 @@
 # Chemistry module 1 replacement diagrams
 
-Generated with the built-in image_gen tool. PNG originals were converted to WebP at quality 90 for delivery. All five diagrams were visually checked before integration.
+Generated with the built-in image_gen tool. PNG originals were converted to WebP at quality 90 for delivery. All diagrams were visually checked before integration.
+
+## aluminium-oxide-electrolysis-clean
+
+Asset: `public/notes/cse/s1/chemistry/module-1/assets/aluminium-oxide-electrolysis-clean.webp`
+
+Prompt:
+
+Use case: scientific-educational. Create a clean accurate textbook schematic titled 'Electrolysis of aluminium oxide'. Subtitle 'Simplified model with inert electrodes'. Landscape 3:2 white canvas, ample outer margins, no cropped elements, large readable dark navy sans-serif labels, crisp schematic outlines, restrained teal liquid and blue accents. Show an open heat-resistant vessel containing molten Al₂O₃, with two inert rod electrodes dipping into melt from above. LEFT electrode label 'Anode (+)', RIGHT electrode label 'Cathode (−)'. Above vessel a rectangular DC power supply has + terminal on LEFT connected by a wire to left anode, − terminal on RIGHT connected by a separate wire to right cathode. Label 'DC power supply'. Inside melt show arrow labeled 'O²⁻' pointing LEFT toward anode, arrow labeled 'Al³⁺' pointing RIGHT toward cathode. Oxygen gas bubbles rise at left anode labeled 'O₂ gas'. Molten aluminium droplets at right cathode labeled 'Aluminium'. Label melt 'Molten Al₂O₃'. Below diagram on separate spacious lines: 'Cathode: Al³⁺ + 3e⁻ → Al', 'Anode: 2O²⁻ → O₂ + 4e⁻'. Small bottom note 'Inert-electrode model; industrial cells use carbon anodes.' No water, no zinc or copper, no salt bridge, no watermark. Scientifically correct charge signs, complete wires and all text within frame.
 
 ## glass-electrode-clean
 
