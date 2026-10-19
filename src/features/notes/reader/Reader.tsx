@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import "katex/dist/katex.min.css";
 import "./notes.css";
@@ -11,6 +11,7 @@ import { chapterFor, pageAnchor, type NotesModule } from "../types";
 import PageMarkdown from "./PageMarkdown";
 import ReaderTools from "./ReaderTools";
 import TopicCombobox from "./TopicCombobox";
+import { findSubjectNav } from "./subjectNav";
 import { DEFAULT_PREFS, TEXT_SIZES, readPlace, readPrefs, savePlace, savePrefs, type Prefs, type ReadingPlace } from "./readingPlace";
 
 const LEADING = { tight: 1.55, normal: 1.75, loose: 2 };
@@ -41,6 +42,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
   const ready = useRef(false); // don't save until the stored place has been read
   const place = useRef<ReadingPlace>({ page: 1, offset: 0, size: 18 });
   const chapter = chapterFor(notes, page);
+  const nav = findSubjectNav(notes);
   const { hash } = useLocation();
 
   usePageMeta({
@@ -216,6 +218,48 @@ export default function Reader({ notes }: { notes: NotesModule }) {
           <p className="mt-6 text-[0.95rem] text-ink-2">
             {notes.code} · {total} {unit}s · {saved ? "Your place is saved in this browser" : "This browser can’t save your place"}
           </p>
+          {nav && (
+            <nav aria-label="Course navigation" className="mt-7 flex flex-wrap items-center gap-2 pt-4 border-t border-line/60">
+              {nav.subject.syllabusHref && (
+                <Link
+                  to={nav.subject.syllabusHref}
+                  className={cn(
+                    "inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[0.82rem] font-medium transition-colors",
+                    nav.isSyllabus
+                      ? "border-green-ink/30 bg-green-tint font-semibold text-green-ink shadow-2xs"
+                      : "border-line bg-white text-ink-2 hover:border-ink hover:text-ink"
+                  )}
+                >
+                  <BookOpen size={14} aria-hidden="true" />
+                  Syllabus
+                </Link>
+              )}
+              {nav.subject.modules.map((m) => {
+                const isCurrent = notes.basePath === m.href;
+                return (
+                  <Link
+                    key={m.href}
+                    to={m.href}
+                    aria-current={isCurrent ? "page" : undefined}
+                    className={cn(
+                      "inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[0.82rem] font-medium transition-colors",
+                      isCurrent
+                        ? "border-green-ink/30 bg-green-tint font-semibold text-green-ink shadow-2xs"
+                        : "border-line bg-white text-ink-2 hover:border-ink hover:text-ink"
+                    )}
+                  >
+                    {m.name}
+                  </Link>
+                );
+              })}
+              <Link
+                to={nav.subject.href}
+                className="inline-flex items-center gap-1 rounded-full border border-transparent px-3 py-1.5 text-[0.82rem] font-medium text-ink-2 hover:text-ink"
+              >
+                All {nav.subject.name} notes <ArrowRight size={13} aria-hidden="true" />
+              </Link>
+            </nav>
+          )}
         </header>
 
         <div className="notes-watermark">
@@ -260,11 +304,156 @@ export default function Reader({ notes }: { notes: NotesModule }) {
                   <PageMarkdown content={p.content} outlinedProblems={notes.outlinedProblems} />
                 </section>
               ))}
-              <footer className="mt-4 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>
+              <footer className="mt-8 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>
                 <p className="font-medium text-ink">You’ve reached the end of {notes.title}.</p>
                 <p className="mt-2">
                   Source: {notes.source} Check the original material if a step looks unclear.
                 </p>
+
+                {nav && (
+                  <div className="mt-8 flex flex-col gap-6 border-t border-line pt-6">
+                    {(nav.prevModule || nav.nextModule) && (
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        {nav.prevModule ? (
+                          <Link
+                            to={nav.prevModule.href}
+                            className="group flex flex-col rounded-2xl border border-line bg-white p-5 transition-colors hover:border-ink"
+                          >
+                            <span className="label flex items-center gap-1 text-ink-2 group-hover:text-ink">
+                              <ArrowLeft size={13} aria-hidden="true" /> Previous module
+                            </span>
+                            <span className="mt-2 text-[1rem] font-semibold text-ink group-hover:text-green-ink transition-colors">
+                              {nav.prevModule.name}
+                            </span>
+                            {nav.prevModule.detail && (
+                              <span className="mt-1 text-[0.82rem] text-ink-2 line-clamp-1">
+                                {nav.prevModule.detail}
+                              </span>
+                            )}
+                          </Link>
+                        ) : nav.subject.syllabusHref && !nav.isSyllabus ? (
+                          <Link
+                            to={nav.subject.syllabusHref}
+                            className="group flex flex-col rounded-2xl border border-line bg-white p-5 transition-colors hover:border-ink"
+                          >
+                            <span className="label flex items-center gap-1 text-ink-2 group-hover:text-ink">
+                              <BookOpen size={13} aria-hidden="true" /> Official syllabus
+                            </span>
+                            <span className="mt-2 text-[1rem] font-semibold text-ink group-hover:text-green-ink transition-colors">
+                              Course syllabus
+                            </span>
+                            <span className="mt-1 text-[0.82rem] text-ink-2">
+                              {nav.subject.code} topics and course outcomes
+                            </span>
+                          </Link>
+                        ) : (
+                          <div />
+                        )}
+
+                        {nav.nextModule ? (
+                          <Link
+                            to={nav.nextModule.href}
+                            className="group flex flex-col items-end text-right rounded-2xl border border-line bg-white p-5 transition-colors hover:border-ink"
+                          >
+                            <span className="label flex items-center gap-1 text-ink-2 group-hover:text-ink">
+                              Next module <ArrowRight size={13} aria-hidden="true" />
+                            </span>
+                            <span className="mt-2 text-[1rem] font-semibold text-ink group-hover:text-green-ink transition-colors">
+                              {nav.nextModule.name}
+                            </span>
+                            {nav.nextModule.detail && (
+                              <span className="mt-1 text-[0.82rem] text-ink-2 line-clamp-1">
+                                {nav.nextModule.detail}
+                              </span>
+                            )}
+                          </Link>
+                        ) : nav.subject.syllabusHref && !nav.isSyllabus ? (
+                          <Link
+                            to={nav.subject.syllabusHref}
+                            className="group flex flex-col items-end text-right rounded-2xl border border-line bg-white p-5 transition-colors hover:border-ink"
+                          >
+                            <span className="label flex items-center gap-1 text-ink-2 group-hover:text-ink">
+                              Review <ArrowRight size={13} aria-hidden="true" />
+                            </span>
+                            <span className="mt-2 text-[1rem] font-semibold text-ink group-hover:text-green-ink transition-colors">
+                              Course syllabus
+                            </span>
+                            <span className="mt-1 text-[0.82rem] text-ink-2">
+                              Verify all module topics and outcomes
+                            </span>
+                          </Link>
+                        ) : (
+                          <Link
+                            to={nav.subject.href}
+                            className="group flex flex-col items-end text-right rounded-2xl border border-line bg-white p-5 transition-colors hover:border-ink"
+                          >
+                            <span className="label flex items-center gap-1 text-ink-2 group-hover:text-ink">
+                              Course overview <ArrowRight size={13} aria-hidden="true" />
+                            </span>
+                            <span className="mt-2 text-[1rem] font-semibold text-ink group-hover:text-green-ink transition-colors">
+                              All {nav.subject.name} modules
+                            </span>
+                            <span className="mt-1 text-[0.82rem] text-ink-2">
+                              Return to {nav.subject.name} notes hub
+                            </span>
+                          </Link>
+                        )}
+                      </div>
+                    )}
+
+                    <div className="rounded-2xl border border-line bg-paper/60 p-5">
+                      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                          <p className="label text-ink-2">{nav.subject.name} navigation</p>
+                          <p className="text-[0.92rem] font-medium text-ink mt-1">
+                            Explore all modules and official syllabus
+                          </p>
+                        </div>
+                        <Link
+                          to={nav.subject.href}
+                          className="inline-flex items-center gap-1 text-[0.82rem] font-medium text-ink hover:text-green-ink transition-colors self-start sm:self-auto"
+                        >
+                          View {nav.subject.name} overview <ArrowRight size={13} aria-hidden="true" />
+                        </Link>
+                      </div>
+
+                      <div className="mt-4 flex flex-wrap gap-2 pt-2 border-t border-line/60">
+                        {nav.subject.syllabusHref && (
+                          <Link
+                            to={nav.subject.syllabusHref}
+                            className={cn(
+                              "inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[0.82rem] font-medium transition-colors",
+                              nav.isSyllabus
+                                ? "border-green-ink/30 bg-green-tint font-semibold text-green-ink shadow-2xs"
+                                : "border-line bg-white text-ink-2 hover:border-ink hover:text-ink"
+                            )}
+                          >
+                            <BookOpen size={14} aria-hidden="true" />
+                            Syllabus
+                          </Link>
+                        )}
+                        {nav.subject.modules.map((m) => {
+                          const isCurrent = notes.basePath === m.href;
+                          return (
+                            <Link
+                              key={m.href}
+                              to={m.href}
+                              aria-current={isCurrent ? "page" : undefined}
+                              className={cn(
+                                "inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[0.82rem] font-medium transition-colors",
+                                isCurrent
+                                  ? "border-green-ink/30 bg-green-tint font-semibold text-green-ink shadow-2xs"
+                                  : "border-line bg-white text-ink-2 hover:border-ink hover:text-ink"
+                              )}
+                            >
+                              {m.name}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </footer>
             </article>
           </div>

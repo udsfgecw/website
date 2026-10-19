@@ -5,7 +5,7 @@ import { CHEMISTRY_MODULE_4_PATH } from "./path";
 const { pages, chapters } = titledPages(source);
 export const chemistrymodule4: NotesModule = {
   basePath: CHEMISTRY_MODULE_4_PATH,
-  storageKey: "udsf:notes:cse:s1:chemistry-4:v1",
+  storageKey: "udsf:notes:cse:s1:chemistry-4:v2",
   title: "S1 CSE Chemistry · Module 4",
   trail: [
     { label: "NOTES", href: "/notes" },
@@ -15,7 +15,10 @@ export const chemistrymodule4: NotesModule = {
     { label: "MODULE 4" },
   ],
   module: "Module 4", course: "Engineering Chemistry", code: "GXCYT122", summary: "Water technology, pollution, and environmental chemistry",
-  source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
+  unitLabel: "section",
+  outlinedProblems: true,
+  displayDescription: "Structured GXCYT122 Module 4 notes covering water hardness, treatment, wastewater, e-waste, climate change, ozone and sustainable development, with worked examples and revision questions.",
+  source: "Reorganized from the provided KTU GXCYT122 Module 4 study pack, with corrected equations and worked calculations.", pages, chapters,
 };
 
 export function chemistryModule4(branch: string = "cse"): NotesModule {
@@ -24,7 +27,7 @@ export function chemistryModule4(branch: string = "cse"): NotesModule {
   return {
     ...chemistrymodule4,
     basePath: `/notes/${branch}/s1/chemistry/module-4`,
-    storageKey: `udsf:notes:${branch}:s1:chemistry-4:v1`,
+    storageKey: `udsf:notes:${branch}:s1:chemistry-4:v2`,
     title: `S1 ${branchUpper} Chemistry · Module 4`,
     trail: [
       { label: "NOTES", href: "/notes" },

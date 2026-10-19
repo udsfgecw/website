@@ -75,6 +75,7 @@ const components: Components = {
     const moduleDiagram = typeof src === "string" && (
       /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src)
       || /^\/notes\/cse\/s1\/chemistry\/module-1\/assets\/.*-clean\.webp$/.test(src)
+      || /^\/notes\/cse\/s1\/chemistry\/module-2\/assets\/.*\.svg$/.test(src)
       || /^\/notes\/cse\/s1\/chemistry\/module-3\/assets\/.*-clean\.svg$/.test(src)
     );
     const dimensions = typeof src === "string" ? diagramDimensions[src] : undefined;

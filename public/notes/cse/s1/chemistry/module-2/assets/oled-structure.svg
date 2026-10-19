@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 440" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  
+  <text x="420" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" fill="#0f172a">Organic Light Emitting Diode (OLED) Structure</text>
+
+  <rect x="180" y="70" width="380" height="40" fill="#94a3b8" stroke="#475569" stroke-width="2" rx="4"/>
+  <text x="370" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Metal Cathode (Al / Ca / Mg)</text>
+  <text x="610" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#334155">① Cathode (e⁻ injection)</text>
+
+  <rect x="180" y="115" width="380" height="75" fill="#bae6fd" stroke="#0284c7" stroke-width="2" rx="4"/>
+  <text x="370" y="145" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#0369a1">Emissive Layer / ETL (LUMO)</text>
+  <text x="610" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#334155">② Electron Transport Layer</text>
+
+  <circle cx="230" cy="155" r="11" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="230" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">−</text>
+  <circle cx="290" cy="140" r="11" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="290" y="145" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">−</text>
+  <circle cx="350" cy="160" r="11" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="350" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">−</text>
+  <circle cx="430" cy="145" r="11" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="430" y="150" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">−</text>
+  <circle cx="500" cy="160" r="11" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="500" y="165" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">−</text>
+
+  <line x1="180" y1="190" x2="560" y2="190" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <text x="610" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#b45309">③ Recombination Zone (Exciton)</text>
+
+  <path d="M 270 190 Q 250 170 230 190 T 190 190" fill="none" stroke="#eab308" stroke-width="2.5" marker-end="url(#arrow-yellow)"/>
+  <path d="M 370 190 L 340 215" fill="none" stroke="#eab308" stroke-width="2.5"/>
+  <polygon points="360,190 375,175 365,195 385,190 368,205 372,190" fill="#eab308"/>
+  <text x="210" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ca8a04">Light (hν)</text>
+
+  <rect x="180" y="195" width="380" height="75" fill="#fed7aa" stroke="#ea580c" stroke-width="2" rx="4"/>
+  <text x="370" y="245" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#c2410c">Conductive Layer / HTL (HOMO)</text>
+  <text x="610" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#334155">④ Hole Transport Layer</text>
+
+  <circle cx="230" cy="225" r="11" fill="#fb923c" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="230" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">+</text>
+  <circle cx="300" cy="210" r="11" fill="#fb923c" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="300" y="215" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">+</text>
+  <circle cx="410" cy="225" r="11" fill="#fb923c" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="410" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">+</text>
+  <circle cx="490" cy="215" r="11" fill="#fb923c" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="490" y="220" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">+</text>
+
+  <rect x="180" y="275" width="380" height="35" fill="#fef08a" stroke="#ca8a04" stroke-width="2" rx="4"/>
+  <text x="370" y="298" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#854d0e">ITO Transparent Anode</text>
+  <text x="610" y="298" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#334155">⑤ Anode (h⁺ injection)</text>
+
+  <rect x="180" y="315" width="380" height="25" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" rx="3"/>
+  <text x="370" y="332" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Glass Substrate</text>
+
+  <path d="M 180 90 L 100 90 L 100 185" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <path d="M 180 292 L 100 292 L 100 215" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+  <circle cx="100" cy="200" r="18" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  <line x1="88" y1="194" x2="112" y2="194" stroke="#0284c7" stroke-width="3"/>
+  <line x1="93" y1="206" x2="107" y2="206" stroke="#ea580c" stroke-width="3"/>
+  <text x="70" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">−</text>
+  <text x="70" y="218" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#ea580c">+</text>
+  <text x="100" y="235" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#1e293b">DC Supply</text>
+
+  <path d="M 370 345 L 370 395" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="4,3"/>
+  <path d="M 320 345 L 300 395" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="4,3"/>
+  <path d="M 420 345 L 440 395" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="4,3"/>
+  <text x="370" y="420" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#b45309">Visible Light Emission</text>
+</svg>

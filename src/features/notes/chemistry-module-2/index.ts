@@ -5,7 +5,7 @@ import { CHEMISTRY_MODULE_2_PATH } from "./path";
 const { pages, chapters } = titledPages(source);
 export const chemistrymodule2: NotesModule = {
   basePath: CHEMISTRY_MODULE_2_PATH,
-  storageKey: "udsf:notes:cse:s1:chemistry-2:v1",
+  storageKey: "udsf:notes:cse:s1:chemistry-2:v2",
   title: "S1 CSE Chemistry · Module 2",
   trail: [
     { label: "NOTES", href: "/notes" },
@@ -15,7 +15,10 @@ export const chemistrymodule2: NotesModule = {
     { label: "MODULE 2" },
   ],
   module: "Module 2", course: "Engineering Chemistry", code: "GXCYT122", summary: "Nanomaterials, conducting polymers, and electronic applications",
-  source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
+  unitLabel: "section",
+  outlinedProblems: true,
+  displayDescription: "Structured GXCYT122 Module 2 notes on nanomaterials, carbon materials, flame retardancy, conducting polymers, OLEDs, solar cells, supercapacitors, quantum computing and spintronics, with worked examples and revision problems.",
+  source: "Reorganized from the provided KTU GXCYT122 Module 2 study pack, with corrected concepts, equations and illustrative calculations.", pages, chapters,
 };
 
 export function chemistryModule2(branch: string = "cse"): NotesModule {
@@ -24,7 +27,7 @@ export function chemistryModule2(branch: string = "cse"): NotesModule {
   return {
     ...chemistrymodule2,
     basePath: `/notes/${branch}/s1/chemistry/module-2`,
-    storageKey: `udsf:notes:${branch}:s1:chemistry-2:v1`,
+    storageKey: `udsf:notes:${branch}:s1:chemistry-2:v2`,
     title: `S1 ${branchUpper} Chemistry · Module 2`,
     trail: [
       { label: "NOTES", href: "/notes" },

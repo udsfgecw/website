@@ -5,7 +5,7 @@ import { CHEMISTRY_MODULE_3_PATH } from "./path";
 const { pages, chapters } = titledPages(source);
 export const chemistrymodule3: NotesModule = {
   basePath: CHEMISTRY_MODULE_3_PATH,
-  storageKey: "udsf:notes:cse:s1:chemistry-3:v1",
+  storageKey: "udsf:notes:cse:s1:chemistry-3:v2",
   title: "S1 CSE Chemistry · Module 3",
   trail: [
     { label: "NOTES", href: "/notes" },
@@ -15,7 +15,10 @@ export const chemistrymodule3: NotesModule = {
     { label: "MODULE 3" },
   ],
   module: "Module 3", course: "Engineering Chemistry", code: "GXCYT122", summary: "Molecular spectroscopy and analytical techniques",
-  source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
+  unitLabel: "section",
+  outlinedProblems: true,
+  displayDescription: "Structured GXCYT122 Module 3 study notes covering spectroscopy, the Beer–Lambert law, UV–visible and infrared analysis, dielectric thermal analysis and scanning electron microscopy, with worked examples and revision problems.",
+  source: "Reorganized from the provided KTU GXCYT122 Module 3 study pack, with corrected concepts, units and worked calculations.", pages, chapters,
 };
 
 export function chemistryModule3(branch: string = "cse"): NotesModule {
@@ -24,7 +27,7 @@ export function chemistryModule3(branch: string = "cse"): NotesModule {
   return {
     ...chemistrymodule3,
     basePath: `/notes/${branch}/s1/chemistry/module-3`,
-    storageKey: `udsf:notes:${branch}:s1:chemistry-3:v1`,
+    storageKey: `udsf:notes:${branch}:s1:chemistry-3:v2`,
     title: `S1 ${branchUpper} Chemistry · Module 3`,
     trail: [
       { label: "NOTES", href: "/notes" },

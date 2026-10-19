@@ -142,7 +142,7 @@ SWNTs have a diameter close 1nm and tube length that can be many millions of tim
 
 It consists of several multiple concentric nanotube cylinders, It Shows both metallic and semiconducting properties. It is used for staring fuel such as hydrogen and methane.
 
-![Classification chart of Carbon Nanotubes showing Single walled CNTs (Armchair, Zigzag, Chiral with lattice illustrations) and Multi walled CNTs (Russian doll model, Parchment model, Mixed with concentric circle diagrams)](/notes/cse/s1/chemistry/module-2/assets/page-005-image-1-source.png)
+![Classification chart of Carbon Nanotubes showing Single walled CNTs and Multi walled CNTs](/notes/cse/s1/chemistry/module-2/assets/cnt-classification.svg)
 
 ---
 
@@ -286,11 +286,9 @@ b) n-type or reduction doping
 
 * It is done by oxidation process. In this process some electron from $\pi$ bond of the conjugated double bonds are removed by Lewis acids such as $\text{FeCl}_3$ and a positive charge (hole) created. The hole(+) can moved along the molecule and make the polymer conducting
 
-![p-doping reaction mechanism of poly acetylene showing removal of an electron](/notes/cse/s1/chemistry/module-2/assets/page-009-image-1-source.png)
-
 **n-doping:** In this type of doping some electrons are introduced into the polymer having conjugated double bonds by reduction with Lewis bases like sodium naphthalide etc. Negative charge is created on the polymer chain and makes it conductive.
 
-![n-doping reaction mechanism of poly acetylene showing addition of an electron](/notes/cse/s1/chemistry/module-2/assets/page-009-image-2-source.png)
+![Mechanism of p-type and n-type doping of polyacetylene](/notes/cse/s1/chemistry/module-2/assets/polyacetylene-doping.svg)
 
 ---
 
@@ -338,7 +336,7 @@ b) n-type or reduction doping
 
 <!-- page 10 | Module 2 · source page 11 -->
 
-![Chemical reaction showing the oxidative polymerization of aniline to polyaniline](/notes/cse/s1/chemistry/module-2/assets/page-011-image-1-source.png)
+![Chemical reaction showing the oxidative polymerization of aniline to polyaniline](/notes/cse/s1/chemistry/module-2/assets/polyaniline-prep.svg)
 
 **Structure:** Polyaniline is found in three oxidation states in which emeraldine is conductive.
 Emeraldine salt of polyaniline is highly electrically conducting.
@@ -361,7 +359,7 @@ Emeraldine salt of polyaniline is highly electrically conducting.
 
 **Electrochemical method:** By the electrolysis of pyrrole ($0.06\text{M}$) in aqueous acetonitrile solution using platinum electrodes and tetraethyl ammonium boron tetrafluoride as the supporting electrolyte ($0.01\text{M}$). The polymer will be precipitated as a blue-black film on the anode.
 
-![Chemical reaction showing the oxidative polymerization of pyrrole to polypyrrole](/notes/cse/s1/chemistry/module-2/assets/page-011-image-2-source.png)
+![Chemical reaction showing the oxidative polymerization of pyrrole to polypyrrole](/notes/cse/s1/chemistry/module-2/assets/polypyrrole-prep.svg)
 
 ---
 
@@ -416,7 +414,7 @@ The OLED consists of following parts
 
 <!-- page 12 | Module 2 · source page 13 -->
 
-![Diagram of an OLED structure showing layers 1 to 5 and recombination process](/notes/cse/s1/chemistry/module-2/assets/page-013-image-1-source.png)
+![Diagram of an OLED structure showing cathode, emissive layer ETL, conductive layer HTL, and anode connected to DC supply](/notes/cse/s1/chemistry/module-2/assets/oled-structure.svg)
 
 1. Cathode, 2. Emissive layer, 3. Emission of Radiation, 4. conductive layer, 5. Anode
 
@@ -460,7 +458,7 @@ Solar cells convert light energy directly into electricity by the principle of p
 
 **Counter electrode**: Platinum or graphite materials are used as counter electrode and it completes the circuit.
 
-![Diagram of Dye-sensitized solar cell (DSSC) structure](/notes/cse/s1/chemistry/module-2/assets/page-014-image-1-source.png)
+![Diagram of Dye-sensitized solar cell (DSSC) structure](/notes/cse/s1/chemistry/module-2/assets/dssc-structure.svg)
 
 ### Working of Dye-sensitized solar cells
 
@@ -493,7 +491,7 @@ Solar cells convert light energy directly into electricity by the principle of p
 - Super capacitors have a high power density and can release energy efficiently over a short time.
 - Super capacitors can charge and discharge rapidly.
 
-![Super capacitor diagram showing electrolyte, current collector, membrane, cation, anion, and porous electrode](/notes/cse/s1/chemistry/module-2/assets/page-015-image-1-source.png)
+![Super capacitor diagram showing electrolyte, current collector, membrane, cation, anion, and porous electrode](/notes/cse/s1/chemistry/module-2/assets/supercapacitor.svg)
 
 - Super capacitor generally consists of electrodes, electrolyte, separator and collector.
 - It store charges at the interface between an electrode and an electrolytic solution.
@@ -796,29 +794,13 @@ $$MoCl_3 + 3 NaB(Et)_3H \longrightarrow Mo + 3 NaCl + 3 B(Et)_3 + 3/2 H_2$$
 
 <!-- page 25 | Module 2 · source page 10 -->
 
-![Chemical reaction showing hydrolysis of a tetraalkoxysilane to silicic acid](/notes/cse/s1/chemistry/module-2/assets/page-027-image-1-source.png)
-
-condensation.
-
-=> The self condensation of silanol groups produces siloxal linkages filled with by products of water and alcohols.
-
-![Self-condensation reaction of silanol](/notes/cse/s1/chemistry/module-2/assets/page-027-image-2-source.png)
-
-Poly condensation
-
-=> The condensation process continues to form poly condensed silica gel with si-o-si linkages
-
-![Polycondensation reaction forming a silica gel network](/notes/cse/s1/chemistry/module-2/assets/page-027-image-3-source.png)
+![Sol-Gel Synthesis of Silica showing hydrolysis, condensation, and polycondensation](/notes/cse/s1/chemistry/module-2/assets/sol-gel-silica.svg)
 
 ---
 
 ---
 
 <!-- page 26 | Module 2 · source page 11 -->
-
-![Chemical structure network of silica showing Si and O atoms](/notes/cse/s1/chemistry/module-2/assets/page-028-image-1-source.png)
-
-$\xrightarrow{n\text{H}_2\text{O}}$
 
 
 
@@ -1052,11 +1034,11 @@ Draw the structure.
 
 <!-- page 35 | Module 2 · source page 20 -->
 
-![Chemical polymerization reaction of polypyrrole](/notes/cse/s1/chemistry/module-2/assets/page-037-image-1-source.png)
+![Chemical polymerization reaction of polypyrrole](/notes/cse/s1/chemistry/module-2/assets/polypyrrole-prep.svg)
 
 3)
 
-![Chemical polymerization reaction of polyaniline](/notes/cse/s1/chemistry/module-2/assets/page-037-image-2-source.png)
+![Chemical polymerization reaction of polyaniline](/notes/cse/s1/chemistry/module-2/assets/polyaniline-prep.svg)
 
 IMP
 
@@ -1090,11 +1072,9 @@ $\rightarrow$ The conductivity of conjugated polymers can be increased by doppin
 
 $\rightarrow$ p-type dopping.
 
-$\Rightarrow$ It can be done by using lewis acids. such as $\text{FeCl}_3$ or $\text{AlCl}_3$
+$\Rightarrow$ It can be done by using lewis acids such as $\text{FeCl}_3$ or $\text{AlCl}_3$, which abstract electrons to form polarons and bipolarons.
 
-![Chemical reaction scheme for p-type doping of a conjugated polymer chain showing oxidation steps leading to a bipolaron](/notes/cse/s1/chemistry/module-2/assets/page-038-image-1-source.png)
-
-(bipolaron).
+![Chemical reaction scheme for p-type and n-type doping of polyacetylene](/notes/cse/s1/chemistry/module-2/assets/polyacetylene-doping.svg)
 
 ---
 
@@ -1104,9 +1084,7 @@ $\Rightarrow$ It can be done by using lewis acids. such as $\text{FeCl}_3$ or $\
 
 N-type doping
 
-$\Rightarrow$ It can be done by using lewis bases such as, Na [uncertain: ...]
-
-![Chemical reaction scheme for N-type doping showing progressive reduction of a polymer chain via radical anions to a bipolaron structure.](/notes/cse/s1/chemistry/module-2/assets/page-039-image-1-source.png)
+$\Rightarrow$ It can be done by using lewis bases such as sodium naphthalide, which donate electrons to form polarons and bipolarons.
 
 Extrinsically conducting polymers.
 
