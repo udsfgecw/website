@@ -146,6 +146,10 @@ const courses: Record<string, Course> = {
   },
 };
 
+// The ECE and EEE variants use branch-specific course codes for the same topic outlines.
+courses.GYMAT101 = courses.GAMAT101;
+courses.GBPHT121 = courses.GAPHT121;
+
 const markdownList = (items: string[]) => items.map((item, index) => `${index + 1}. ${item}`).join("\n");
 
 function moduleMarkdown(module: Module, index: number) {
@@ -187,8 +191,9 @@ export function cseSyllabusModule(subject: SubjectNotes, branch: Branch, semeste
   return {
     basePath: subject.syllabusHref!,
     storageKey: `udsf:syllabus:${branch.id}:${semester.id}:${subject.code}:v2`,
-    title: `${subject.course} syllabus`,
+    title: `${branch.short} ${semester.id.toUpperCase()} ${subject.code} · ${subject.course} syllabus`,
     displayHeading: `Syllabus for ${subject.course}`,
+    displayDescription: `${branch.name}, ${semester.name}: KTU 2024 syllabus for ${subject.course} (${subject.code}), including module topics, course outcomes and assessment details.`,
     trail: [
       { label: "NOTES", href: "/notes" },
       { label: branch.short, href: `/notes/${branch.id}` },

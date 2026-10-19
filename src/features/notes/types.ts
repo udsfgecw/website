@@ -22,6 +22,8 @@ export interface NotesModule {
   title: string;
   /** Optional reader heading for a syllabus or other custom document. */
   displayHeading?: string;
+  /** Optional search and sharing description for a syllabus or other custom document. */
+  displayDescription?: string;
   /** breadcrumb from the notes shelf down to this module; the last step has no link */
   trail: { label: string; href?: string }[];
   /** e.g. "Module 1" */

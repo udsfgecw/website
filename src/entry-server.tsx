@@ -45,6 +45,9 @@ export const pages: StaticPage[] = [
       .filter((semester) => semester.subjects.length > 0)
       .flatMap((semester) => [semesterPath(branch, semester), ...semester.subjects.map((subject) => subject.href)]),
   ]).map((url): StaticPage => ({ url, file: fileFor(url) })),
+  ...NOTES_CATALOGUE.flatMap((branch) => branch.semesters.flatMap((semester) =>
+    semester.subjects.flatMap((subject) => subject.syllabusHref ? [subject.syllabusHref] : []),
+  )).map((url): StaticPage => ({ url, file: fileFor(url), chunk: "src/pages/notes/SyllabusPage.tsx" })),
   { url: mathsModule1.basePath, file: fileFor(mathsModule1.basePath), chunk: "src/pages/notes/MathsNotesPage.tsx" },
   { url: mathsModule2.basePath, file: fileFor(mathsModule2.basePath), chunk: "src/pages/notes/MathsModule2Page.tsx" },
   { url: mathsModule3.basePath, file: fileFor(mathsModule3.basePath), chunk: "src/pages/notes/MathsModule3Page.tsx" },

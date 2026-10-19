@@ -10,6 +10,6 @@ export default function SyllabusPage() {
   const semester = branch?.semesters.find((item) => item.id === semesterId);
   const subject = semester?.subjects.find((item) => item.href === `/notes/${branchId}/${semesterId}/${subjectId}`);
 
-  if (!branch || !semester || !subject?.syllabusHref || branch.id !== "cse") return <NotFoundPage />;
+  if (!branch || !semester || !subject?.syllabusHref) return <NotFoundPage />;
   return <Reader notes={cseSyllabusModule(subject, branch, semester)} />;
 }

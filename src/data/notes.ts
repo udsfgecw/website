@@ -52,6 +52,56 @@ export interface Branch {
 
 const semester = (n: number, subjects: SubjectNotes[] = []): Semester => ({ id: `s${n}`, name: `Semester ${n}`, subjects });
 
+const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
+  {
+    name: "Mathematics",
+    course: "Mathematics for Science-1",
+    code: "GYMAT101",
+    syllabusHref: `/notes/${branchId}/s1/maths/syllabus`,
+    href: `/notes/${branchId}/s1/maths`,
+    modules: [],
+  },
+  {
+    name: "Chemistry",
+    course: "Chemistry for Electrical Science",
+    code: "GXCYT122",
+    syllabusHref: `/notes/${branchId}/s1/chemistry/syllabus`,
+    href: `/notes/${branchId}/s1/chemistry`,
+    modules: [],
+  },
+  {
+    name: "Electrical and Electronics Engineering",
+    course: "Introduction to Electrical and Electronics Engineering",
+    code: "GXEST104",
+    syllabusHref: `/notes/${branchId}/s1/electrical/syllabus`,
+    href: `/notes/${branchId}/s1/electrical`,
+    modules: [],
+  },
+  {
+    name: "Algorithmic Thinking with Python",
+    course: "Algorithmic Thinking with Python",
+    code: "UCEST105",
+    syllabusHref: `/notes/${branchId}/s1/python/syllabus`,
+    href: `/notes/${branchId}/s1/python`,
+    modules: [],
+  },
+  {
+    name: "Physics",
+    course: "Physics for Electrical Science",
+    code: "GBPHT121",
+    syllabusHref: `/notes/${branchId}/s1/physics/syllabus`,
+    href: `/notes/${branchId}/s1/physics`,
+    modules: [],
+  },
+];
+
+const sharedBranch = (id: "ece" | "eee", name: string, short: "ECE" | "EEE"): Branch => ({
+  id,
+  name,
+  short,
+  semesters: [semester(1, sharedS1Subjects(id)), ...[2, 3, 4, 5, 6, 7, 8].map((n) => semester(n))],
+});
+
 /** URL of the page listing a department's semesters */
 export const branchPath = (branch: Branch) => `/notes/${branch.id}`;
 
@@ -108,4 +158,6 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
       ...[2, 3, 4, 5, 6, 7, 8].map((n) => semester(n)),
     ],
   },
+  sharedBranch("ece", "Electronics and Communication Engineering", "ECE"),
+  sharedBranch("eee", "Electrical and Electronics Engineering", "EEE"),
 ];

@@ -14,8 +14,8 @@ import NotesPage from "@/pages/NotesPage";
 import BranchPage from "@/pages/notes/BranchPage";
 import SemesterPage from "@/pages/notes/SemesterPage";
 import SubjectPage from "@/pages/notes/SubjectPage";
-import SyllabusPage from "@/pages/notes/SyllabusPage";
 const ImportedModulePage = lazy(() => import("@/pages/notes/ImportedModulePage"));
+const SyllabusPage = lazy(() => import("@/pages/notes/SyllabusPage"));
 
 // The notes reader brings markdown and maths rendering, so it loads only on notes pages.
 const MathsNotesPage = lazy(() => import("@/pages/notes/MathsNotesPage"));

@@ -43,7 +43,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
 
   usePageMeta({
     title: pageTitle(notes.title),
-    description: `${notes.course} (${notes.code}), ${notes.module}: ${notes.summary.toLowerCase()}. All ${total} pages of notes on one page.`,
+    description: notes.displayDescription ?? `${notes.course} (${notes.code}), ${notes.module}: ${notes.summary.toLowerCase()}. All ${total} pages of notes on one page.`,
   });
 
   // Read the stored place after the first render, so the pre-rendered HTML matches.

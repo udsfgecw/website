@@ -28,7 +28,7 @@ export default function SubjectPage() {
   if (!branch || !semester || !subject) return <NotFoundPage />;
 
   // The reader used to live at this URL; its #page-N links now belong to the first module.
-  if (hash.startsWith("#page-")) return <Navigate to={`${subject.modules[0].href}${hash}`} replace />;
+  if (hash.startsWith("#page-") && subject.modules.length > 0) return <Navigate to={`${subject.modules[0].href}${hash}`} replace />;
 
   return (
     <SiteLayout>
@@ -64,24 +64,26 @@ export default function SubjectPage() {
           </section>
         )}
 
-        <section aria-labelledby="modules-title" className="border-t border-line pt-10">
-          <Label>
-            <span id="modules-title">Modules</span>
-          </Label>
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
-            {subject.modules.map((module) => (
-              <li key={module.href}>
-                <Link to={module.href} className="group flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition-colors hover:border-ink">
-                  <span className="text-[1.25rem] font-semibold tracking-[-0.025em]">{module.name}</span>
-                  <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{module.detail}</span>
-                  <span className="mt-auto inline-flex items-center gap-1.5 pt-8 text-[0.9rem] font-medium">
-                    Open notes <ArrowRight size={16} aria-hidden="true" />
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {subject.modules.length > 0 && (
+          <section aria-labelledby="modules-title" className="border-t border-line pt-10">
+            <Label>
+              <span id="modules-title">Modules</span>
+            </Label>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+              {subject.modules.map((module) => (
+                <li key={module.href}>
+                  <Link to={module.href} className="group flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition-colors hover:border-ink">
+                    <span className="text-[1.25rem] font-semibold tracking-[-0.025em]">{module.name}</span>
+                    <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{module.detail}</span>
+                    <span className="mt-auto inline-flex items-center gap-1.5 pt-8 text-[0.9rem] font-medium">
+                      Open notes <ArrowRight size={16} aria-hidden="true" />
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </main>
     </SiteLayout>
   );

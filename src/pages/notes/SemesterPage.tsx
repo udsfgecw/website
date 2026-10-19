@@ -50,11 +50,13 @@ export default function SemesterPage() {
                     <span className="label text-ink-2">{subject.code}</span>
                     <span className="mt-6 text-[1.25rem] font-semibold tracking-[-0.025em]">{subject.name}</span>
                     <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{subject.course}</span>
-                    <span className="text-[0.85rem] leading-[1.5] text-ink-2">
-                      {subject.modules.length} {subject.modules.length === 1 ? "module" : "modules"}
-                    </span>
+                    {subject.modules.length > 0 && (
+                      <span className="text-[0.85rem] leading-[1.5] text-ink-2">
+                        {subject.modules.length} {subject.modules.length === 1 ? "module" : "modules"}
+                      </span>
+                    )}
                     <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-[0.9rem] font-medium">
-                      View subject <ArrowRight size={16} aria-hidden="true" />
+                      {subject.modules.length > 0 ? "View subject notes" : "Subject details"} <ArrowRight size={16} aria-hidden="true" />
                     </span>
                   </Link>
                   {subject.syllabusHref && (
