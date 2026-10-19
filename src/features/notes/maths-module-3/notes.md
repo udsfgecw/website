@@ -224,7 +224,9 @@ Sometimes $u$ is given as $f$ of some expressions, with **no formula for $f$**: 
 
 ## Examples
 
-**Example 1.** If $u=f(x-y,\ y-z,\ z-x)$, show that $\dfrac{\partial u}{\partial x}+\dfrac{\partial u}{\partial y}+\dfrac{\partial u}{\partial z}=0$.
+**Example 1**
+
+If $u=f(x-y,\ y-z,\ z-x)$, show that $\dfrac{\partial u}{\partial x}+\dfrac{\partial u}{\partial y}+\dfrac{\partial u}{\partial z}=0$.
 
 Put $r=x-y$, $s=y-z$, $t=z-x$. Then
 
@@ -250,7 +252,9 @@ $$
 \frac{\partial u}{\partial x}+\frac{\partial u}{\partial y}+\frac{\partial u}{\partial z}=(u_r-u_t)+(-u_r+u_s)+(-u_s+u_t)=\mathbf{0}\ \checkmark
 $$
 
-**Example 2.** If $u=f\!\left(\dfrac xy,\ \dfrac yz,\ \dfrac zx\right)$, show that $x\dfrac{\partial u}{\partial x}+y\dfrac{\partial u}{\partial y}+z\dfrac{\partial u}{\partial z}=0$.
+**Example 2**
+
+If $u=f\!\left(\dfrac xy,\ \dfrac yz,\ \dfrac zx\right)$, show that $x\dfrac{\partial u}{\partial x}+y\dfrac{\partial u}{\partial y}+z\dfrac{\partial u}{\partial z}=0$.
 
 Put $r=\dfrac xy$, $s=\dfrac yz$, $t=\dfrac zx$. The partials that are not zero are
 
@@ -292,7 +296,13 @@ $$
 
 ## The idea
 
-A **local maximum** is a point where $f$ is at least as large as at every nearby point, like the top of a hill. A **local minimum** is like the bottom of a valley. Together they are called **local** (or **relative**) **extrema**.
+**Local maximum**
+
+A local maximum is a point where $f$ is at least as large as at every nearby point, like the top of a hill.
+
+**Local minimum**
+
+A local minimum is like the bottom of a valley. Together they are called **local** (or **relative**) **extrema**.
 
 At the top of a smooth hill the ground is flat in every direction. So the slope in the $x$-direction and the slope in the $y$-direction are both zero.
 
@@ -319,7 +329,9 @@ $$
 | $D<0$ | **saddle point** |
 | $D=0$ | the test **fails**: use another method |
 
-A **saddle point** is a critical point that is a maximum in one direction and a minimum in another, like the middle of a horse's saddle or a mountain pass. It is neither a top nor a bottom.
+**Saddle point**
+
+A saddle point is a critical point that is a maximum in one direction and a minimum in another, like the middle of a horse's saddle or a mountain pass. It is neither a top nor a bottom.
 
 > **Why checking $f_{xx}$ alone is enough when $D>0$.** If $D>0$ then $f_{xx}f_{yy}>f_{xy}^2\ge0$, so $f_{xx}$ and $f_{yy}$ have the **same sign**. If you check one, you know both.
 
@@ -378,7 +390,9 @@ $$
 
 In each example, we find the critical points and then classify them using $D$. When there are many critical points, a table keeps the work neat.
 
-**Example 1.** Find the critical points of $f(x,y)=2xy-x^3-y^3$ and the extreme values.
+**Example 1**
+
+Find the critical points of $f(x,y)=2xy-x^3-y^3$ and the extreme values.
 
 $$
 f_x=2y-3x^2\qquad f_y=2x-3y^2
@@ -407,7 +421,9 @@ $$
 f\!\left(\tfrac23,\tfrac23\right)=\frac89-\frac8{27}-\frac8{27}=\frac{24-8-8}{27}=\mathbf{\frac8{27}}
 $$
 
-**Example 2.** Find the extreme values of $f(x,y)=3x^2-2xy+y^2-8y$.
+**Example 2**
+
+Find the extreme values of $f(x,y)=3x^2-2xy+y^2-8y$.
 
 $$
 f_x=6x-2y\qquad f_y=-2x+2y-8
@@ -425,7 +441,9 @@ $$
 f(2,6)=12-24+36-48=\mathbf{-24}
 $$
 
-**Example 3.** Find the extreme values of $f(x,y)=x^3+3xy^2-15x^2-15y^2+72x$.
+**Example 3**
+
+Find the extreme values of $f(x,y)=x^3+3xy^2-15x^2-15y^2+72x$.
 
 $$
 f_x=3x^2+3y^2-30x+72\qquad f_y=6xy-30y=6y(x-5)
@@ -433,9 +451,8 @@ $$
 
 $f_y=0$ gives **two cases**: $y=0$ or $x=5$.
 
-*Case $y=0$.* Then $f_x=3(x^2-10x+24)=3(x-4)(x-6)=0$, so $x=4$ or $x=6$. Points: $(4,0)$ and $(6,0)$.
-
-*Case $x=5$.* Then $f_x=75+3y^2-150+72=3y^2-3=0$, so $y=\pm1$. Points: $(5,1)$ and $(5,-1)$.
+- *Case $y=0$.* Then $f_x=3(x^2-10x+24)=3(x-4)(x-6)=0$, so $x=4$ or $x=6$. Points: $(4,0)$ and $(6,0)$.
+- *Case $x=5$.* Then $f_x=75+3y^2-150+72=3y^2-3=0$, so $y=\pm1$. Points: $(5,1)$ and $(5,-1)$.
 
 With $f_{xx}=6x-30$, $f_{yy}=6x-30$, $f_{xy}=6y$:
 
@@ -448,7 +465,9 @@ With $f_{xx}=6x-30$, $f_{yy}=6x-30$, $f_{xy}=6y$:
 
 Values: $f(6,0)=216-540+432=\mathbf{108}$ is the local minimum, and $f(4,0)=64-240+288=\mathbf{112}$ is the local maximum.
 
-**Example 4.** Find the extreme values of $f(x,y)=4xy-x^4-y^4$.
+**Example 4**
+
+Find the extreme values of $f(x,y)=4xy-x^4-y^4$.
 
 $$
 f_x=4y-4x^3\qquad f_y=4x-4y^3
@@ -482,7 +501,9 @@ When the function has a constant like $a$, the critical points and their type de
 
 ## Examples
 
-**Example 1.** Discuss the maxima and minima of $f(x,y)=xy(a-x-y)$, where $a\neq0$.
+**Example 1**
+
+Discuss the maxima and minima of $f(x,y)=xy(a-x-y)$, where $a\neq0$.
 
 Expand: $f=axy-x^2y-xy^2$.
 
@@ -497,7 +518,7 @@ $f_x=0$ gives $y=0$ or $a-2x-y=0$. $f_y=0$ gives $x=0$ or $a-x-2y=0$. Combining 
 - $x=0$ and $a-2x-y=0$: $y=a$, the point $(0,a)$.
 - $a-2x-y=0$ and $a-x-2y=0$: subtracting gives $x=y$, then $3x=a$, the point $\left(\dfrac a3,\dfrac a3\right)$.
 
-The second derivatives are
+The second derivatives are:
 
 $$
 f_{xx}=-2y\qquad f_{yy}=-2x\qquad f_{xy}=a-2x-2y
@@ -519,7 +540,9 @@ At $\left(\dfrac a3,\dfrac a3\right)$ we have $D=\dfrac{a^2}{3}>0$, and the sign
 
 The value there is $f\!\left(\tfrac a3,\tfrac a3\right)=\dfrac{a}{3}\cdot\dfrac a3\cdot\dfrac a3=\mathbf{\dfrac{a^3}{27}}$.
 
-**Example 2.** Find the maxima and minima of $f(x,y)=x^3+y^3-3axy$, where $a\neq0$.
+**Example 2**
+
+Find the maxima and minima of $f(x,y)=x^3+y^3-3axy$, where $a\neq0$.
 
 $$
 f_x=3x^2-3ay\qquad f_y=3y^2-3ax
@@ -547,7 +570,7 @@ At $(a,a)$, $D=36a^2-9a^2=27a^2>0$, and $f_{xx}=6a$:
 - If $a>0$: $f_{xx}>0$, a **local minimum**.
 - If $a<0$: $f_{xx}<0$, a **local maximum**.
 
-In both cases the value is
+In both cases the value is:
 
 $$
 f(a,a)=a^3+a^3-3a\cdot a\cdot a=-a^3
@@ -576,7 +599,9 @@ Many real questions ask for the **smallest cost**, the **least material** or the
 
 ## Examples
 
-**Example 1. Open box.** A rectangular box, open at the top, has volume $32\ \text{ft}^3$. Find its dimensions if the total surface area is least.
+**Example 1: Open box**
+
+A rectangular box, open at the top, has volume $32\ \text{ft}^3$. Find its dimensions if the total surface area is least.
 
 Let $x$ = length, $y$ = breadth, $z$ = height. The volume gives $xyz=32$, so $z=\dfrac{32}{xy}$. The surface area is a base plus four sides (no lid):
 
@@ -604,7 +629,9 @@ $$
 
 So the surface area is a **minimum** at $x=4$, $y=4$, $z=2$. The dimensions are $\mathbf{4\times4\times2}$ feet, and the least surface area is $16+16+16=48\ \text{ft}^2$.
 
-**Example 2. Cost of two products.** A manufacturer makes $x$ units of product $A$ and $y$ units of product $B$ at a cost
+**Example 2: Cost of two products**
+
+A manufacturer makes $x$ units of product $A$ and $y$ units of product $B$ at a cost
 
 $$
 C(x,y)=x^2+y^2+4xy+10x+8y+50
@@ -820,7 +847,9 @@ The vertices are $(0,0)$, $(1,0)$, $(0,2)$.
 
 *Interior.* $f_x=2x$, $f_y=2y$: the only critical point is $(0,0)$, a corner.
 
-*Edge $OA$* ($y=0$): $f=x^2$, increasing. *Edge $OB$* ($x=0$): $f=y^2$, increasing. No critical points.
+*Edge $OA$* ($y=0$): $f=x^2$, increasing.
+
+*Edge $OB$* ($x=0$): $f=y^2$, increasing. No critical points.
 
 *Edge $AB$* ($y=2-2x$):
 
@@ -1211,15 +1240,25 @@ Try these without looking at the answers. The answers are given below.
 ## Answers
 
 1. $\dfrac{dw}{dt}=3t^2+4t^3+5t^4$. (Check: $w=t^3+t^4+t^5$.)
+
 2. With $r=x^2-y^2$, $s=y^2-z^2$, $t=z^2-x^2$: $u_x=2x(u_r-u_t)$, $u_y=2y(-u_r+u_s)$, $u_z=2z(-u_s+u_t)$. Dividing by $x,y,z$ and adding gives $2[(u_r-u_t)+(-u_r+u_s)+(-u_s+u_t)]=0$.
+
 3. $f_x=2x+y-3$, $f_y=x+2y-6$ give the point $(0,3)$. $D=2\cdot2-1=3>0$, $f_{xx}=2>0$: **local minimum**, value $f(0,3)=9-18=-9$.
+
 4. $f_x=3x^2-3=0$ gives $x=\pm1$, and $f_y=2y=0$ gives $y=0$. $D=f_{xx}f_{yy}=6x\cdot2=12x$. At $(1,0)$: $D=12>0$, $f_{xx}=6>0$: **local minimum**, value $-2$. At $(-1,0)$: $D=-12<0$: **saddle point**.
+
 5. Maximise $xyz$ with $z=30-x-y$, that is $f=xy(30-x-y)$. This is Example 1 on the parameter page with $a=30$: the maximum is at $x=y=z=10$, with product $\dfrac{a^3}{27}=\mathbf{1000}$.
+
 6. Interior critical point $(1,2)$, $f=1+4-2-8=-5$. Edges: $y=0$ gives $x^2-2x$, point $(1,0)$, $f=-1$; $x=3$ gives $y^2-4y+3$, point $(3,2)$, $f=-1$; $y=3$ gives $x^2-2x-3$, point $(1,3)$, $f=-4$; $x=0$ gives $y^2-4y$, point $(0,2)$, $f=-4$. Corners: $f(0,0)=0$, $f(3,0)=3$, $f(3,3)=0$, $f(0,3)=-3$. **Absolute maximum $3$ at $(3,0)$; absolute minimum $-5$ at $(1,2)$.**
+
 7. $f_x=y$, $f_y=x$: critical point $(0,0)$ (a corner). On the axes $f=0$. On $x+y=2$: $f=x(2-x)$, maximum at $x=1$, point $(1,1)$, value $1$. **Absolute maximum $1$ at $(1,1)$; absolute minimum $0$** (at $(0,0)$ and all along both axes).
+
 8. $\nabla f=(2xy,\ x^2-3y^2)$, so $\nabla f(2,1)=(4,\ 1)=4\hat\imath+\hat\jmath$.
+
 9. $\nabla f=(2x-y,\ 2y-x)=(1,1)$ at $(1,1)$. The direction is $(4-1,5-1)=(3,4)$, length $5$, so $\hat u=\left(\tfrac35,\tfrac45\right)$. $D_{\hat u}f=\dfrac{3+4}{5}=\dfrac75$.
+
 10. $\nabla g=(yz,\ xz,\ xy)=(2,2,1)$ at $(1,1,2)$. $|\vec v|=\sqrt{1+4+4}=3$. $D_{\hat u}g=\dfrac{2\cdot1+2\cdot2+1\cdot2}{3}=\dfrac83$.
+
 11. $\nabla f=(e^x\cos y,\ -e^x\sin y)=\left(\tfrac{\sqrt2}{2},\ -\tfrac{\sqrt2}{2}\right)$ at $\left(0,\tfrac\pi4\right)$. The greatest rate is $|\nabla f|=\sqrt{\tfrac12+\tfrac12}=\mathbf1$, in the direction $\dfrac{1}{\sqrt2}(1,-1)$.
 
 > **Study tip.** For absolute extrema (6 and 7), write the points in a table as you go. It is easy to forget a corner when the working is spread over many edges.

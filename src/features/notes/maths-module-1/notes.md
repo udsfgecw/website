@@ -75,7 +75,9 @@ The graph is the line $y=x+1$ with one hole at $(1,2)$. The limit is the height 
 
 ## Two simple limits to remember
 
-**Identity function** $f(x)=x$: as $x\to c$, the output is $x$ itself, so
+**Identity function**
+
+The identity function $f(x)=x$: as $x\to c$, the output is $x$ itself, so
 
 $$
 \lim_{x\to c} x = c
@@ -92,7 +94,9 @@ $$
 }
 ```
 
-**Constant function** $f(x)=k$: the output never changes, so
+**Constant function**
+
+The constant function $f(x)=k$: the output never changes, so
 
 $$
 \lim_{x\to c} k = k
@@ -204,7 +208,9 @@ Use this when the expression is a ratio of polynomials.
 
 > **Quick factorising tip.** To factorise $x^2+bx+c$, find two numbers whose **product is $c$** and whose **sum is $b$**. For $x^2-6x+9$: product $9$, sum $-6$ → $(x-3)(x-3)$.
 
-**Example.** $\displaystyle\lim_{x\to-5}\frac{x^2+3x-10}{x+5}$
+**Example**
+
+$\displaystyle\lim_{x\to-5}\frac{x^2+3x-10}{x+5}$
 
 Substitution gives $0/0$. Product $-10$, sum $3$, so the numbers are $5$ and $-2$:
 
@@ -222,7 +228,9 @@ $$
 
 which removes the root. Multiply the top and the bottom by the conjugate, so the value of the fraction does not change.
 
-**Example.** $\displaystyle\lim_{x\to0}\frac{\sqrt{x^2+100}-10}{x^2}$
+**Example**
+
+$\displaystyle\lim_{x\to0}\frac{\sqrt{x^2+100}-10}{x^2}$
 
 $$
 \begin{aligned}
@@ -235,7 +243,9 @@ $$
 
 ## Technique C: simplify a fraction inside a fraction
 
-**Example.** $\displaystyle\lim_{x\to1}\frac{x^{-1}-1}{x-1}$. Substitution gives $0/0$.
+**Example**
+
+$\displaystyle\lim_{x\to1}\frac{x^{-1}-1}{x-1}$. Substitution gives $0/0$.
 
 $$
 \frac{\tfrac1x-1}{x-1}=\frac{\tfrac{1-x}{x}}{x-1}=\frac{-(x-1)}{x\,(x-1)}=-\frac1x
@@ -482,7 +492,11 @@ A function is **continuous** (with no "at a point") if it is continuous at every
 
 ## Where is a function continuous?
 
-Polynomials, $\sin$, $\cos$, $e^x$ and $|x|$ are continuous everywhere. Sums, products and compositions of continuous functions are continuous. Quotients are continuous **except where the denominator is $0$**. So the main work is: *find where the denominator is $0$.*
+- Polynomials, $\sin$, $\cos$, $e^x$ and $|x|$ are continuous everywhere.
+- Sums, products and compositions of continuous functions are continuous.
+- Quotients are continuous **except where the denominator is $0$**.
+
+So the main work is: *find where the denominator is $0$.*
 
 ### Practice
 
@@ -579,7 +593,7 @@ $$
 
 Take two points on a curve and draw a straight line through them (a **secant**). Now move the second point closer and closer to the first point. The secant becomes the **tangent line**, and its slope is the **derivative**.
 
-The slope of the secant between $x=a$ and $x=a+h$ is the *difference quotient*
+The slope of the secant between $x=a$ and $x=a+h$ is the *difference quotient*:
 
 $$
 \frac{f(a+h)-f(a)}{h}
@@ -834,7 +848,13 @@ Here $\dfrac{d}{dx}\sqrt{x^2+1}=\dfrac{2x}{2\sqrt{x^2+1}}=\dfrac{x}{\sqrt{x^2+1}
 
 ## The idea
 
-The **average** rate of change over an interval is "change in output ÷ change in input". The **instantaneous** rate of change at one moment is what we get when the interval becomes very, very small. This is exactly the derivative.
+**Average rate of change**
+
+The average rate of change over an interval is "change in output ÷ change in input".
+
+**Instantaneous rate of change**
+
+The instantaneous rate of change at one moment is what we get when the interval becomes very, very small. This is exactly the derivative.
 
 > **Steps.** (1) Differentiate. (2) Put the given value. (3) Write the units: *units of the output per unit of the input*.
 
@@ -1086,8 +1106,13 @@ $$
 
 ## The idea
 
-- The **tangent line** to a curve at a point touches the curve at that point and has the same slope as the curve.
-- The **normal line** is perpendicular to the tangent at that point.
+**Tangent line**
+
+The tangent line to a curve at a point touches the curve at that point and has the same slope as the curve.
+
+**Normal line**
+
+The normal line is perpendicular to the tangent at that point.
 
 Both pass through the point $(x_0,\,y_0)$ on the curve.
 

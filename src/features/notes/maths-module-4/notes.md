@@ -43,7 +43,9 @@ In Modules 2 and 3 we used derivatives to study functions. In Module 4 we use th
 
 ## The idea
 
-In Module 3 we found extreme values of $f(x,y)$ where $x$ and $y$ could take any values. Many times they are **not** free: a fence of fixed length, a point that must stay on a circle, a budget that must be spent fully. Such a condition is called a **constraint**, and it is written as
+In Module 3 we found extreme values of $f(x,y)$ where $x$ and $y$ could take any values. Many times they are **not** free: a fence of fixed length, a point that must stay on a circle, a budget that must be spent fully.
+
+Such a condition is called a **constraint**, and it is written as
 
 $$
 g(x,y)=0
@@ -56,7 +58,8 @@ We want the largest or smallest value of $f$ **among the points that satisfy the
 ## Method
 
 1. Write the function $f(x,y)$, and write the constraint in the form $g(x,y)=0$.
-2. Build the **Lagrange function**
+
+2. Build the **Lagrange function**:
 
 $$
 L(x,y,\lambda)=f(x,y)+\lambda\,g(x,y)
@@ -81,6 +84,7 @@ $$
 The third equation is just the constraint itself.
 
 4. Solve for $x$, $y$ (and $\lambda$). The solutions are the **critical points**.
+
 5. Find $f$ at every critical point. On a closed, bounded constraint curve (a circle, an ellipse) the largest value is the maximum and the smallest value is the minimum.
 
 > **Solving tip.** The usual trick: find $\lambda$ from the first two equations, put the two expressions equal (this removes $\lambda$), and put the resulting relation between $x$ and $y$ in the constraint.
@@ -209,7 +213,9 @@ $$
 
 The method works in the same way with three variables: $L=f(x,y,z)+\lambda g(x,y,z)$ and four equations $L_x=L_y=L_z=L_\lambda=0$.
 
-**Example 1. Closest point on a plane.** Find the point $P(x,y,z)$ on the plane $2x+y-z-5=0$ that is closest to the origin.
+**Example 1. Closest point on a plane**
+
+Find the point $P(x,y,z)$ on the plane $2x+y-z-5=0$ that is closest to the origin.
 
 The distance is $d=\sqrt{x^2+y^2+z^2}$. Minimising $d$ is the same as minimising $d^2$, which has no square root, so take
 
@@ -241,7 +247,9 @@ $$
 
 > **Note on the source.** The notes wrote "$x=-\lambda/2$" from $2x+2\lambda=0$, but it should be $x=-\lambda$. The next lines actually used $x=-\lambda$, so the final point $\left(\tfrac53,\tfrac56,-\tfrac56\right)$ is correct.
 
-**Example 2.** Find the minimum of $f(x,y,z)=x^2+y^2+z^2$ subject to $x+y+z=9$.
+**Example 2**
+
+Find the minimum of $f(x,y,z)=x^2+y^2+z^2$ subject to $x+y+z=9$.
 
 $$
 L=x^2+y^2+z^2+\lambda(x+y+z-9)
@@ -255,7 +263,9 @@ $$
 
 > **Note on the source.** The question of this example was missing in the copied notes. Only the working "$\lambda=-6$, $x=y=z=3$, $f=27$" was available. The constraint $x+y+z=9$ gives exactly that working.
 
-**Example 3. Largest rectangle.** A rectangle has perimeter $20\ \text{m}$. Find the dimensions that maximise its area.
+**Example 3. Largest rectangle**
+
+A rectangle has perimeter $20\ \text{m}$. Find the dimensions that maximise its area.
 
 Let the length be $x$ and the breadth be $y$. Maximise $f=xy$ subject to $2(x+y)=20$, that is $g=x+y-10=0$.
 
@@ -341,9 +351,9 @@ $$
 L_\lambda=x+y+z-3=0\ \ (4)\qquad L_\mu=x-y+z-1=0\ \ (5)
 $$
 
-- (4) $-$ (5): $2y-2=0$, so $y=1$.
-- (1) and (3) give $2x=-(\lambda+\mu)=2z$, so $x=z$.
-- (4) then gives $2x+1=3$, so $x=z=1$.
+1. (4) $-$ (5): $2y-2=0$, so $y=1$.
+2. (1) and (3) give $2x=-(\lambda+\mu)=2z$, so $x=z$.
+3. (4) then gives $2x+1=3$, so $x=z=1$.
 
 The critical point is $(1,1,1)$ with
 
@@ -367,10 +377,10 @@ $$
 L_\lambda=x+y+z-1=0\ \ (4)\qquad L_\mu=x-y=0\ \ (5)
 $$
 
-- (5): $x=y$.
-- (1) $-$ (2): $2(x-y)+2\mu=0$, so $\mu=0$.
-- Then (1) and (3) give $2x=-\lambda=2z$, so $x=z$.
-- (4): $3x=1$, so $x=y=z=\tfrac13$.
+1. (5): $x=y$.
+2. (1) $-$ (2): $2(x-y)+2\mu=0$, so $\mu=0$.
+3. Then (1) and (3) give $2x=-\lambda=2z$, so $x=z$.
+4. (4): $3x=1$, so $x=y=z=\tfrac13$.
 
 $$
 f\!\left(\tfrac13,\tfrac13,\tfrac13\right)=3\cdot\tfrac19=\mathbf{\tfrac13}\quad\text{(minimum)}
@@ -425,9 +435,17 @@ $$
 
 ## Kinds of solution
 
-- **Feasible solution:** any values of the variables that satisfy **all** the constraints, including non-negativity. The set of all feasible solutions is the **feasible region**.
-- **Basic feasible solution:** with $n$ variables and $m$ equality constraints, put $n-m$ of the variables equal to $0$ and solve for the rest. If the result is feasible, it is a basic feasible solution. In the graph, these are the **corner points** of the feasible region.
-- **Optimal solution:** a feasible solution that gives the largest value (for maximise) or the smallest value (for minimise) of the objective.
+**Feasible solution**
+
+A feasible solution is any values of the variables that satisfy **all** the constraints, including non-negativity. The set of all feasible solutions is the **feasible region**.
+
+**Basic feasible solution**
+
+For a basic feasible solution with $n$ variables and $m$ equality constraints, put $n-m$ of the variables equal to $0$ and solve for the rest. If the result is feasible, it is a basic feasible solution. In the graph, these are the **corner points** of the feasible region.
+
+**Optimal solution**
+
+An optimal solution is a feasible solution that gives the largest value (for maximise) or the smallest value (for minimise) of the objective.
 
 ## Each inequality is a half-plane
 
@@ -452,7 +470,9 @@ A single linear inequality in two variables is satisfied on one side of its boun
 
 ## Examples
 
-**Example 1. Manufacturing.** A factory makes products $P_1$ and $P_2$, with profit Rs 3 and Rs 5 per unit. $P_1$ needs 1 unit of resource 1 and 2 units of resource 2; $P_2$ needs 2 units of resource 1 and 1 unit of resource 2. Only 4 units of resource 1 and 6 units of resource 2 are available. Write the LPP to maximise the profit.
+**Example 1. Manufacturing.**
+
+A factory makes products $P_1$ and $P_2$, with profit Rs 3 and Rs 5 per unit. $P_1$ needs 1 unit of resource 1 and 2 units of resource 2; $P_2$ needs 2 units of resource 1 and 1 unit of resource 2. Only 4 units of resource 1 and 6 units of resource 2 are available. Write the LPP to maximise the profit.
 
 Let $x_1$, $x_2$ be the numbers of units of $P_1$ and $P_2$ produced.
 
@@ -472,7 +492,9 @@ $$
 
 (It is solved on the practice page: the best profit is $\tfrac{34}{3}$ at $x_1=\tfrac83$, $x_2=\tfrac23$.)
 
-**Example 2. Diet problem.** A hospital diet must provide at least 2000 calories, 50 g of protein and 300 g of carbohydrate per day, at minimum cost. Food 1 costs Rs 3 per unit and gives 500 cal, 20 g protein and 30 g carbohydrate. Food 2 costs Rs 4 per unit and gives 600 cal, 30 g protein and 40 g carbohydrate. Write the LPP.
+**Example 2. Diet problem.**
+
+A hospital diet must provide at least 2000 calories, 50 g of protein and 300 g of carbohydrate per day, at minimum cost. Food 1 costs Rs 3 per unit and gives 500 cal, 20 g protein and 30 g carbohydrate. Food 2 costs Rs 4 per unit and gives 600 cal, 30 g protein and 40 g carbohydrate. Write the LPP.
 
 Let $x_1$, $x_2$ be the units of food 1 and food 2 per day.
 
@@ -493,7 +515,9 @@ $$
 
 (It is solved graphically on the "word problems" page.)
 
-**Example 3. Staff scheduling.** A company needs at least 5 employees from 8 am to 12 noon, 3 from 12 noon to 4 pm, and 4 from 4 pm to 8 pm. Each employee works an 8-hour shift starting at 8 am, 12 noon or 4 pm. Minimise the number of employees.
+**Example 3. Staff scheduling.**
+
+A company needs at least 5 employees from 8 am to 12 noon, 3 from 12 noon to 4 pm, and 4 from 4 pm to 8 pm. Each employee works an 8-hour shift starting at 8 am, 12 noon or 4 pm. Minimise the number of employees.
 
 Let $x_1$, $x_2$, $x_3$ be the numbers starting at 8 am, 12 noon and 4 pm. A person starting at 8 am works from 8 am to 4 pm, so covers the first two periods. A person starting at noon covers the second and third periods. A person starting at 4 pm covers the third period.
 
@@ -541,7 +565,9 @@ With two decision variables, we can draw the feasible region. For a linear objec
 
 ## Examples
 
-**Example 1.** Maximise $z=3x_1+4x_2$ subject to $4x_1+2x_2\le80$, $2x_1+5x_2\le180$, $x_1,x_2\ge0$.
+**Example 1**
+
+Maximise $z=3x_1+4x_2$ subject to $4x_1+2x_2\le80$, $2x_1+5x_2\le180$, $x_1,x_2\ge0$.
 
 Intercepts: $4x_1+2x_2=80$ passes through $(20,0)$ and $(0,40)$; $2x_1+5x_2=180$ passes through $(90,0)$ and $(0,36)$.
 
@@ -579,9 +605,13 @@ The two lines meet where $4x_1+2x_2=80$ and $2x_1+5x_2=180$. Multiply the second
 
 **Maximum $z=147.5$** at $x_1=2.5$, $x_2=35$.
 
-**Example 2.** Maximise $z=3x+2y$ subject to $x+2y\le10$, $3x+y\le15$, $x,y\ge0$.
+**Example 2**
 
-Intercepts: $x+2y=10$ through $(10,0)$ and $(0,5)$; $3x+y=15$ through $(5,0)$ and $(0,15)$. They meet where $6x+2y=30$ and $x+2y=10$. Subtracting, $5x=20$, so $x=4$, $y=3$.
+Maximise $z=3x+2y$ subject to $x+2y\le10$, $3x+y\le15$, $x,y\ge0$.
+
+Intercepts: $x+2y=10$ through $(10,0)$ and $(0,5)$; $3x+y=15$ through $(5,0)$ and $(0,15)$.
+
+They meet where $6x+2y=30$ and $x+2y=10$. Subtracting, $5x=20$, so $x=4$, $y=3$.
 
 ![Feasible region for x + 2y ≤ 10 and 3x + y ≤ 15 with corners (0,0), (5,0), (4,3), (0,5)](/notes/cse/s1/maths/module-4/feasible-region.webp)
 
@@ -602,7 +632,9 @@ Intercepts: $x+2y=10$ through $(10,0)$ and $(0,5)$; $3x+y=15$ through $(5,0)$ an
 
 # Graphical method: more examples
 
-**Example 1.** Maximise $z=15x_1+10x_2$ subject to $4x_1+6x_2\le360$, $3x_1\le180$, $5x_2\le500$, $x_1,x_2\ge0$.
+**Example 1**
+
+Maximise $z=15x_1+10x_2$ subject to $4x_1+6x_2\le360$, $3x_1\le180$, $5x_2\le500$, $x_1,x_2\ge0$.
 
 The constraints say $4x_1+6x_2\le360$ (through $(90,0)$ and $(0,60)$), $x_1\le60$, and $x_2\le100$. The last one is never the deciding one, because $4x_1+6x_2\le360$ already forces $x_2\le60$.
 
@@ -642,7 +674,9 @@ The line $x_1=60$ meets $4x_1+6x_2=360$ at $240+6x_2=360$, so $x_2=20$.
 
 > **Note on the source.** The class notes listed the corners as $(0,0)$, $(90,0)$, $(60,20)$, $(40,30)$, $(0,40)$ and chose $1350$ at $(90,0)$. But $(90,0)$ does not satisfy $3x_1\le180$, the point $(40,30)$ is not where any two constraint lines meet, and $(0,40)$ is not on any boundary. The correct corners are those in the table, and the maximum is $1100$.
 
-**Example 2.** Maximise $z=2x+3y$ subject to $x+y\le30$, $3\le y\le12$, $x-y\ge0$, $0\le x\le20$.
+**Example 2**
+
+Maximise $z=2x+3y$ subject to $x+y\le30$, $3\le y\le12$, $x-y\ge0$, $0\le x\le20$.
 
 The region lies between the horizontal lines $y=3$ and $y=12$, to the right of the line $y=x$ (because $x\ge y$), to the left of $x=20$, and below $x+y=30$. Its corners are:
 
@@ -694,7 +728,9 @@ The region lies between the horizontal lines $y=3$ and $y=12$, to the right of t
 
 > **Note on the source.** The notes used $E(3,12)$ as a corner, with $z=42$. That point does not satisfy $x\ge y$. The correct corner is $E(12,12)$ with $z=60$. The maximum does not change.
 
-**Example 3.** Maximise $f=5x_1+25x_2$ subject to $x_1-3x_2\ge-6$, $x_1+x_2\le6$, $x_1,x_2\ge0$.
+**Example 3**
+
+Maximise $f=5x_1+25x_2$ subject to $x_1-3x_2\ge-6$, $x_1+x_2\le6$, $x_1,x_2\ge0$.
 
 The line $x_1-3x_2=-6$ passes through $(0,2)$ and $(-6,0)$, and the origin satisfies $0\ge-6$, so the feasible side is **below** this line that goes up. The line $x_1+x_2=6$ passes through $(6,0)$ and $(0,6)$. The two lines meet where $x_1=3x_2-6$ and $x_1+x_2=6$: $4x_2=12$, so $x_2=3$, $x_1=3$.
 
@@ -738,7 +774,9 @@ The line $x_1-3x_2=-6$ passes through $(0,2)$ and $(-6,0)$, and the origin satis
 
 # Word problems solved graphically
 
-**Example 1. Chairs and tables.** A manufacturer makes chairs and tables on machines $A$ and $B$. A chair needs 2 hours on $A$ and 6 hours on $B$; a table needs 5 hours on $A$ and 1 hour on $B$. Machine $A$ is available 16 hours a day and machine $B$ 30 hours. The profit is Rs 2 per chair and Rs 10 per table. Write the LPP and solve it.
+**Example 1: Chairs and tables**
+
+A manufacturer makes chairs and tables on machines $A$ and $B$. A chair needs 2 hours on $A$ and 6 hours on $B$; a table needs 5 hours on $A$ and 1 hour on $B$. Machine $A$ is available 16 hours a day and machine $B$ 30 hours. The profit is Rs 2 per chair and Rs 10 per table. Write the LPP and solve it.
 
 Let $x_1$ chairs and $x_2$ tables be made per day.
 
@@ -794,7 +832,9 @@ The two lines meet here: from the second, $x_2=30-6x_1$; then $2x_1+150-30x_1=16
 
 > **Note on the source.** The notes wrote the value at $D$ as "$2\times\frac{16}{5}=\frac{32}{5}=32$". The correct working is $z=2(0)+10\left(\tfrac{16}5\right)=32$. They also rounded $C$ to $(4.78,1.28)$ with $z=22.36$, but the exact value is $\tfrac{157}{7}\approx22.43$. The conclusion (maximum $32$) is correct.
 
-**Example 2. The diet problem, solved.** Minimise $z=3x_1+4x_2$ subject to $500x_1+600x_2\ge2000$, $20x_1+30x_2\ge50$, $30x_1+40x_2\ge300$, $x_1,x_2\ge0$ (from the formulation page).
+**Example 2: The diet problem, solved**
+
+Minimise $z=3x_1+4x_2$ subject to $500x_1+600x_2\ge2000$, $20x_1+30x_2\ge50$, $30x_1+40x_2\ge300$, $x_1,x_2\ge0$ (from the formulation page).
 
 The carbohydrate line $30x_1+40x_2=300$ passes through $(10,0)$ and $(0,7.5)$. Every point on or above it automatically satisfies the calorie line (through $(4,0)$ and $(0,3.\overline{3})$) and the protein line (through $(2.5,0)$ and $(0,1.\overline{6})$), which lie below it. So the feasible region is everything on or above the carbohydrate line. It is an **unbounded** region.
 
@@ -957,7 +997,9 @@ approaching the minimum at the origin.
 
 # Gradient descent: more examples
 
-**Example 1.** Minimise $f(x,y)=3x^2+4y^2$ from $(x_0,y_0)=(1,1)$ with fixed step $\alpha=0.01$, for five iterations.
+**Example 1**
+
+Minimise $f(x,y)=3x^2+4y^2$ from $(x_0,y_0)=(1,1)$ with fixed step $\alpha=0.01$, for five iterations.
 
 $\nabla f=(6x,\ 8y)$. So $x_{k+1}=x_k-0.06x_k=0.94\,x_k$ and $y_{k+1}=y_k-0.08y_k=0.92\,y_k$.
 
@@ -974,7 +1016,9 @@ With such a small step, the progress towards $(0,0)$ is slow.
 
 > **Note on the source.** At step 3 the notes used $4.672128$ for the $y$-component of the gradient, but it is $8\times0.778688=6.229504$. This mistake made $y_4$ and $y_5$ wrong ($0.73196672$ and $0.6733$ in the notes). The corrected values are in the table.
 
-**Example 2.** Minimise $f(x,y)=(x-2)^2+(y+3)^2$ from $(0,0)$ with learning rate $0.1$.
+**Example 2**
+
+Minimise $f(x,y)=(x-2)^2+(y+3)^2$ from $(0,0)$ with learning rate $0.1$.
 
 $\nabla f=\big(2(x-2),\ 2(y+3)\big)=(2x-4,\ 2y+6)$.
 
@@ -1038,7 +1082,7 @@ Try these without looking at the answers. The answers are given below.
 
 ### Lagrange multipliers
 
-| | |
+| Topic | Formula / Rule |
 | --- | --- |
 | One constraint | $L=f+\lambda g$; solve $L_x=L_y=L_\lambda=0$ |
 | Condition | $\nabla f=-\lambda\nabla g$ at the optimum |
@@ -1048,7 +1092,7 @@ Try these without looking at the answers. The answers are given below.
 
 ### Linear programming
 
-| | |
+| Concept | Description |
 | --- | --- |
 | General form | optimise $z=\sum c_jx_j$ subject to $\sum a_{ij}x_j\le b_i$ (or $\ge$, $=$), $x_j\ge0$ |
 | Feasible region | intersection of the half-planes of all constraints |
@@ -1062,7 +1106,7 @@ $$
 (x_{k+1},y_{k+1})=(x_k,y_k)-\alpha\,\nabla f(x_k,y_k),\qquad\nabla f=(f_x,\ f_y)
 $$
 
-| | |
+| Parameter / Concept | Detail |
 | --- | --- |
 | Direction of steepest descent | $-\nabla f$ |
 | Step size (learning rate) | $\alpha>0$: small is slow, too large overshoots |

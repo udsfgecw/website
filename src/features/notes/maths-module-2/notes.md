@@ -63,8 +63,13 @@ The graph of $z=f(x,y)$ is a **surface** in space: above each point $(x,y)$ of t
 
 ## Domain and range
 
-- The **domain** is the set of all $(x,y)$ for which $f(x,y)$ is defined. It is a region of the plane, not an interval.
-- The **range** is the set of all values $f(x,y)$ can take.
+**Domain**
+
+The domain is the set of all $(x,y)$ for which $f(x,y)$ is defined. It is a region of the plane, not an interval.
+
+**Range**
+
+The range is the set of all values $f(x,y)$ can take.
 
 The conditions are the same as in one variable:
 
@@ -287,7 +292,9 @@ The curly $\partial$ means "there are other variables also". The straight $d$ is
 > - For $f_x$: treat $y$ as a **constant** and differentiate with respect to $x$ using the usual rules.
 > - For $f_y$: treat $x$ as a **constant** and differentiate with respect to $y$.
 
-A constant multiplier stays as it is. A term with only the *other* variable is a constant, so it becomes zero. For example, for $x^2y$: differentiating in $x$ gives $2xy$ (the $y$ just stays as a multiplier), and differentiating in $y$ gives $x^2$.
+A constant multiplier stays as it is. A term with only the *other* variable is a constant, so it becomes zero. 
+
+For example, for $x^2y$: differentiating in $x$ gives $2xy$ (the $y$ just stays as a multiplier), and differentiating in $y$ gives $x^2$.
 
 ## Examples
 
@@ -976,7 +983,9 @@ and solving for $\dfrac{dy}{dx}$ gives the formula.
 
 ## Examples
 
-**Example 1.** Using partial derivatives, find $\dfrac{dy}{dx}$ if $x^3+y^3=3axy$. Then verify using ordinary implicit differentiation.
+**Example 1**
+
+Using partial derivatives, find $\dfrac{dy}{dx}$ if $x^3+y^3=3axy$. Then verify using ordinary implicit differentiation.
 
 Let $f(x,y)=x^3+y^3-3axy$. Then
 
@@ -1004,7 +1013,9 @@ Both methods agree. $\checkmark$
 
 > **Note on the source.** The handwritten page wrote the first answer as $\dfrac{-3x^2-3ay}{3y^2-3ax}$, where the minus sign was applied wrongly. It should be $-(3x^2-3ay)=-3x^2+3ay$. The second method on the page gave the correct result.
 
-**Example 2.** Find $\dfrac{dy}{dx}$ for the circle $x^2+y^2=a^2$.
+**Example 2**
+
+Find $\dfrac{dy}{dx}$ for the circle $x^2+y^2=a^2$.
 
 Let $f(x,y)=x^2+y^2-a^2$, so $f_x=2x$ and $f_y=2y$:
 
@@ -1024,6 +1035,8 @@ This is the slope of the circle at $(x,y)$. It agrees with geometry: the tangent
 
 ## The idea
 
+**Level curve**
+
 A level curve is the set of points where a function has one fixed value. Think of the contour lines on a map: each line joins the places that have the same height.
 
 > **Definition.** A **level curve** of $f(x,y)$ is the curve
@@ -1032,7 +1045,8 @@ A level curve is the set of points where a function has one fixed value. Think o
 >
 > for a constant $k$.
 
-Level curves **never cross** (a point cannot have two different values of $f$). Where the curves are close together, the surface is steep. Where they are far apart, the surface is gentle.
+- Level curves **never cross** (a point cannot have two different values of $f$).
+- Where the curves are close together, the surface is steep. Where they are far apart, the surface is gentle.
 
 ## Method
 
