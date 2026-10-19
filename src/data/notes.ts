@@ -29,6 +29,8 @@ export interface SubjectNotes {
   name: string;
   course: string;
   code: string;
+  /** Official KTU syllabus PDF for this subject, when available. */
+  syllabusHref?: string;
   /** page listing the subject's modules */
   href: string;
   modules: ModuleNotes[];
@@ -68,6 +70,7 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           name: "Mathematics",
           course: "Mathematics for Information Science 1",
           code: "GAMAT101",
+          syllabusHref: "/syllabi/ktu-s1/cse/GAMAT101.pdf",
           href: MATHS_PATH,
           modules: [
             { name: "Module 1", detail: "Limits to concavity", href: MATHS_MODULE_1_PATH },
@@ -77,21 +80,22 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           ],
         },
         {
-          name: "Chemistry", course: "Engineering Chemistry", code: "GXCYT122", href: "/notes/cse/s1/chemistry",
+          name: "Chemistry", course: "Engineering Chemistry", code: "GXCYT122", syllabusHref: "/syllabi/ktu-s1/cse/GXCYT122.pdf", href: "/notes/cse/s1/chemistry",
           modules: [1, 2, 3, 4].map((n) => ({ name: `Module ${n}`, detail: `Engineering Chemistry · Module ${n}`, href: [chemistrymodule1.basePath, chemistrymodule2.basePath, chemistrymodule3.basePath, chemistrymodule4.basePath][n - 1] })),
         },
         {
-          name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", href: "/notes/cse/s1/electrical",
+          name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/syllabi/ktu-s1/cse/GXEST104.pdf", href: "/notes/cse/s1/electrical",
           modules: [{ name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: electricalmodule1.basePath }],
         },
         {
-          name: "Algorithmic Thinking with Python", course: "Algorithmic Thinking with Python", code: "UCEST105", href: "/notes/cse/s1/python",
+          name: "Algorithmic Thinking with Python", course: "Algorithmic Thinking with Python", code: "UCEST105", syllabusHref: "/syllabi/ktu-s1/cse/UCEST105.pdf", href: "/notes/cse/s1/python",
           modules: [pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4].map((m, i) => ({ name: `Module ${i + 1}`, detail: m.summary, href: m.basePath })),
         },
         {
           name: "Physics",
           course: "Physics for Information Science",
           code: "GAPHT121",
+          syllabusHref: "/syllabi/ktu-s1/cse/GAPHT121.pdf",
           href: PHYSICS_PATH,
           modules: [
             { name: "Module 1", detail: "Electrical conductivity to superconductivity", href: PHYSICS_MODULE_1_PATH },

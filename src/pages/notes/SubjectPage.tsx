@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Label } from "@/components/ui/section";
@@ -47,6 +47,22 @@ export default function SubjectPage() {
           </h1>
           <p className="label mt-4 text-ink-2">{subject.code}</p>
         </header>
+
+        {subject.syllabusHref && (
+          <section aria-labelledby="syllabus-title" className="mb-10 rounded-2xl border border-line bg-white p-6 sm:p-8">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <Label><span id="syllabus-title">Official syllabus</span></Label>
+                <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-ink-2">
+                  The KTU syllabus for {subject.course}. Open the PDF to see the complete modules, course outcomes and assessment details.
+                </p>
+              </div>
+              <a href={subject.syllabusHref} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-line px-5 py-3 text-[0.9rem] font-medium transition-colors hover:border-ink">
+                <FileText size={17} aria-hidden="true" /> Open syllabus PDF <ArrowRight size={16} aria-hidden="true" />
+              </a>
+            </div>
+          </section>
+        )}
 
         <section aria-labelledby="modules-title" className="border-t border-line pt-10">
           <Label>

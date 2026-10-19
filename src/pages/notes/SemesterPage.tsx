@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Label } from "@/components/ui/section";
@@ -45,20 +45,24 @@ export default function SemesterPage() {
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
             {semester.subjects.map((subject) => (
               <li key={subject.href}>
-                <Link
-                  to={subject.href}
-                  className="group flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition-colors hover:border-ink"
-                >
-                  <span className="label text-ink-2">{subject.code}</span>
-                  <span className="mt-6 text-[1.25rem] font-semibold tracking-[-0.025em]">{subject.name}</span>
-                  <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{subject.course}</span>
-                  <span className="text-[0.85rem] leading-[1.5] text-ink-2">
-                    {subject.modules.length} {subject.modules.length === 1 ? "module" : "modules"}
-                  </span>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-[0.9rem] font-medium">
-                    View modules <ArrowRight size={16} aria-hidden="true" />
-                  </span>
-                </Link>
+                <div className="flex h-full flex-col rounded-2xl border border-line bg-white p-6 transition-colors hover:border-ink">
+                  <Link to={subject.href} className="group flex flex-1 flex-col">
+                    <span className="label text-ink-2">{subject.code}</span>
+                    <span className="mt-6 text-[1.25rem] font-semibold tracking-[-0.025em]">{subject.name}</span>
+                    <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{subject.course}</span>
+                    <span className="text-[0.85rem] leading-[1.5] text-ink-2">
+                      {subject.modules.length} {subject.modules.length === 1 ? "module" : "modules"}
+                    </span>
+                    <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-[0.9rem] font-medium">
+                      View subject <ArrowRight size={16} aria-hidden="true" />
+                    </span>
+                  </Link>
+                  {subject.syllabusHref && (
+                    <a href={subject.syllabusHref} target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-2 border-t border-line pt-4 text-[0.9rem] font-medium text-ink-2 hover:text-ink">
+                      <FileText size={16} aria-hidden="true" /> View syllabus PDF
+                    </a>
+                  )}
+                </div>
               </li>
             ))}
           </ul>
