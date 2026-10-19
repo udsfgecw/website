@@ -58,9 +58,9 @@ export default function SemesterPage() {
                     </span>
                   </Link>
                   {subject.syllabusHref && (
-                    <a href={subject.syllabusHref} target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-2 border-t border-line pt-4 text-[0.9rem] font-medium text-ink-2 hover:text-ink">
-                      <FileText size={16} aria-hidden="true" /> View syllabus PDF
-                    </a>
+                    <Link to={subject.syllabusHref} className="mt-3 inline-flex items-center gap-2 border-t border-line pt-4 text-[0.9rem] font-medium text-ink-2 hover:text-ink">
+                      <FileText size={16} aria-hidden="true" /> Read syllabus
+                    </Link>
                   )}
                 </div>
               </li>

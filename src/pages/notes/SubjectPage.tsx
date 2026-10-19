@@ -54,12 +54,12 @@ export default function SubjectPage() {
               <div>
                 <Label><span id="syllabus-title">Official syllabus</span></Label>
                 <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-ink-2">
-                  The KTU syllabus for {subject.course}. Open the PDF to see the complete modules, course outcomes and assessment details.
+                  Browse the KTU course topics, modules, outcomes and assessment details in the syllabus reader.
                 </p>
               </div>
-              <a href={subject.syllabusHref} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-line px-5 py-3 text-[0.9rem] font-medium transition-colors hover:border-ink">
-                <FileText size={17} aria-hidden="true" /> Open syllabus PDF <ArrowRight size={16} aria-hidden="true" />
-              </a>
+              <Link to={subject.syllabusHref} className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-line px-5 py-3 text-[0.9rem] font-medium transition-colors hover:border-ink">
+                <FileText size={17} aria-hidden="true" /> Read syllabus <ArrowRight size={16} aria-hidden="true" />
+              </Link>
             </div>
           </section>
         )}

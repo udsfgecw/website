@@ -14,6 +14,7 @@ import NotesPage from "@/pages/NotesPage";
 import BranchPage from "@/pages/notes/BranchPage";
 import SemesterPage from "@/pages/notes/SemesterPage";
 import SubjectPage from "@/pages/notes/SubjectPage";
+import SyllabusPage from "@/pages/notes/SyllabusPage";
 const ImportedModulePage = lazy(() => import("@/pages/notes/ImportedModulePage"));
 
 // The notes reader brings markdown and maths rendering, so it loads only on notes pages.
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="/notes/:branch" element={<BranchPage />} />
           <Route path="/notes/:branch/:semester" element={<SemesterPage />} />
           <Route path="/notes/:branch/:semester/:subject" element={<SubjectPage />} />
+          <Route path="/notes/:branch/:semester/:subject/syllabus" element={<SyllabusPage />} />
           <Route path={`${MATHS_MODULE_1_PATH}/:page?`} element={<MathsNotesPage />} />
           <Route path={`${MATHS_MODULE_2_PATH}/:page?`} element={<MathsModule2Page />} />
           <Route path={`${MATHS_MODULE_3_PATH}/:page?`} element={<MathsModule3Page />} />
