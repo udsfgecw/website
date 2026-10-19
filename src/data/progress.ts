@@ -29,7 +29,7 @@ export const ACHIEVEMENTS: readonly Achievement[] = [
     number: 3,
     title: "Installation of Light in LH Road",
     year: "2025–26",
-    image: null,
+    image: "lh-lighting.jpg",
   },
   {
     number: 4,

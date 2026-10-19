@@ -9,6 +9,7 @@ import { PHYSICS_MODULE_2_PATH } from "@/features/notes/physics-module-2/path";
 import { PHYSICS_MODULE_3_PATH } from "@/features/notes/physics-module-3/path";
 import { PHYSICS_MODULE_4_PATH } from "@/features/notes/physics-module-4/path";
 import HomePage from "@/pages/HomePage";
+import GateExamPage from "@/pages/GateExamPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 import NotesPage from "@/pages/NotesPage";
 import BranchPage from "@/pages/notes/BranchPage";
@@ -75,6 +76,7 @@ export default function App() {
           <Route path="/notes/cse/s1/electrical/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/python/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/maths/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/gate" element={<GateExamPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
