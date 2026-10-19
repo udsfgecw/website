@@ -1,0 +1,106 @@
+{
+  "objectives": [
+    "To learn the principles and techniques of dimensioning and preparing engineering drawings.",
+    "To develop the ability to accurately interpret and understand engineering drawings.",
+    "To learn the features of CAD software"
+  ],
+  "modules": [
+    {
+      "title": "Introduction & Projection of Points and Lines",
+      "hours": 9,
+      "topics": [
+        {
+          "title": "Introduction",
+          "subtopics": [
+            "Relevance of technical drawing in engineering field",
+            "Types of lines",
+            "Dimensioning",
+            "BIS code of practice for technical drawing. (No questions for the end semester examination)"
+          ]
+        },
+        {
+          "title": "Projection of points and lines",
+          "subtopics": [
+            "Projection of points in different quadrants",
+            "Projection of straight lines inclined to one plane and inclined to both planes",
+            "Trace of a line",
+            "Inclination of lines with reference planes",
+            "True length and true inclinations of line inclined to both the reference planes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projection of Solids",
+      "hours": 9,
+      "topics": [
+        {
+          "title": "Projection of Simple solids",
+          "subtopics": [
+            "Projection of Simple solids such as Triangular, Rectangle, Square, Pentagonal and Hexagonal Prisms, Pyramids, Cone and Cylinder only",
+            "Projection of solids in simple position including profile view",
+            "Projection of solids with axis inclined to one of the reference planes and with axis inclined to both reference planes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sections of Solids & Development of Surfaces",
+      "hours": 9,
+      "topics": [
+        {
+          "title": "Sections of Solids",
+          "subtopics": [
+            "Sections of Prisms, Pyramids, Cone and Cylinder only, with axis in vertical position and cut by different section planes",
+            "True shape of the sections. (Exclude true shape given problems)"
+          ]
+        },
+        {
+          "title": "Development of Surfaces",
+          "subtopics": [
+            "Development of surfaces of the solids and solids cut by different section planes. (Exclude problems with through holes)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Isometric Projection & Computer Aided Drawing (CAD)",
+      "hours": 9,
+      "topics": [
+        {
+          "title": "Isometric Projection",
+          "subtopics": [
+            "Isometric scale",
+            "Isometric View and Projections of Prisms, Pyramids, Cone, Cylinder, Sphere, Hemisphere and their combinations"
+          ]
+        },
+        {
+          "title": "Computer Aided Drawing (CAD)",
+          "subtopics": [
+            "Introduction",
+            "Role of CAD in design and development of new products",
+            "Advantages of CAD",
+            "Creating two-dimensional drawing with dimensions using suitable software. (CAD, only internal evaluation)"
+          ]
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    "Understand the projection of points and lines located in different quadrants",
+    "Prepare multiview orthographic projections of objects by visualizing them in different positions",
+    "Plot sectional views and develop surfaces of a given object",
+    "Prepare pictorial drawings using the principles of isometric projection",
+    "Sketch simple drawing using CAD tools."
+  ],
+  "cie": [
+    "Attendance — 5 marks",
+    "Assignment + Lab Exam — 15 marks (10+5)",
+    "Internal Examination-1 — 10 marks",
+    "Internal Examination-2 — 10 marks"
+  ],
+  "ese": [
+    "In Part A, all questions need to be answered and in Part B, each student can choose any one full question out of two questions",
+    "2 Questions from one module. Total 8 Questions, each question carries 15 marks (15x4 = 60marks)"
+  ]
+}

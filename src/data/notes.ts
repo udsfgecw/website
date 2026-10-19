@@ -140,8 +140,20 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           modules: [1, 2, 3, 4].map((n) => ({ name: `Module ${n}`, detail: `Engineering Chemistry · Module ${n}`, href: [CHEMISTRY_MODULE_1_PATH, CHEMISTRY_MODULE_2_PATH, CHEMISTRY_MODULE_3_PATH, CHEMISTRY_MODULE_4_PATH][n - 1] })),
         },
         {
-          name: "Engineering Graphics", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", href: "/notes/cse/s1/graphics",
+          name: "Engineering Graphics", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", syllabusHref: "/notes/cse/s1/graphics/syllabus", href: "/notes/cse/s1/graphics",
           modules: [{ name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH }],
+        },
+        {
+          name: "Health and Wellness", course: "Health and Wellness", code: "UCHWT127", syllabusHref: "/notes/cse/s1/wellness/syllabus", href: "/notes/cse/s1/wellness",
+          modules: [],
+        },
+        {
+          name: "Life Skills and Professional Communication", course: "Life Skills and Professional Communication", code: "UCHUT128", syllabusHref: "/notes/cse/s1/life-skills/syllabus", href: "/notes/cse/s1/life-skills",
+          modules: [],
+        },
+        {
+          name: "Digital 101", course: "Skill Enhancement Course: Digital 101 (NASSCOM)", code: "UCSEM129", syllabusHref: "/notes/cse/s1/digital-101/syllabus", href: "/notes/cse/s1/digital-101",
+          modules: [],
         },
         {
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",
