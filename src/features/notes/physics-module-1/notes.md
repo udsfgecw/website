@@ -51,7 +51,7 @@ Every derivation in this module uses the same small set of quantities. First lea
 
 ## 1. Electric field $E$
 
-The **electric field** is a vector field that tells the force a charge would feel at each point in space. It is defined as the **force per unit charge**:
+The electric field is a vector field that tells the force a charge would feel at each point in space. It is defined as the force per unit charge:
 
 $$
 E=\frac{F}{q}
@@ -63,7 +63,7 @@ When a conductor is connected to a battery, the electric field pushes the free e
 
 ## 2. Current density $J$
 
-The **current density** is the electric current flowing per unit area of the cross-section of the conductor:
+The current density is the electric current flowing per unit area of the cross-section of the conductor:
 
 $$
 J=\frac{I}{A}
@@ -75,19 +75,19 @@ Current density is more useful than current in theory, because it does not depen
 
 ## 3. Drift velocity $v_d$
 
-Even without any applied field, the free electrons in a metal move at high speed in random directions because of their thermal energy. When a field is applied, the electrons get a slow **average velocity** in the direction opposite to the field, in addition to this random motion. This average velocity is the **drift velocity** $v_d$.
+Even without any applied field, the free electrons in a metal move at high speed in random directions because of their thermal energy. When a field is applied, the electrons get a slow average velocity in the direction opposite to the field, in addition to this random motion. This average velocity is the drift velocity $v_d$.
 
 Drift velocity is proportional to the electric field, and it is what produces the current. It is very small: typically $10^{-4}$ to $10^{-2}\ \text{m/s}$, compared with random speeds of about $10^{6}\ \text{m/s}$.
 
 ## 4. Relaxation time $\tau$
 
-The **relaxation time** $\tau$ is the **average time between two successive collisions** of an electron in the conductor. After each collision the electron loses the extra velocity it got from the field, and it starts accelerating again from the beginning.
+The relaxation time $\tau$ is the average time between two successive collisions of an electron in the conductor. After each collision the electron loses the extra velocity it got from the field, and it starts accelerating again from the beginning.
 
 Relaxation time decides how freely the electrons can move. A longer relaxation time means the electrons are accelerated for a longer time between collisions, so they drift faster and the conductivity is higher. Typical values in metals are about $10^{-14}\ \text{s}$.
 
 ## 5. Mean free path $\lambda$
 
-The **mean free path** is the **average distance an electron travels between two successive collisions**. It is related to the relaxation time through the average speed $v$ of the electrons:
+The mean free path is the average distance an electron travels between two successive collisions. It is related to the relaxation time through the average speed $v$ of the electrons:
 
 $$
 \lambda=v\,\tau
@@ -97,7 +97,7 @@ The mean free path tells us how far an electron goes before it is scattered, so 
 
 ## 6. Mobility $\mu$
 
-The **mobility** of a charge carrier tells how easily it responds to an electric field. It is defined as the **drift velocity per unit electric field**:
+The mobility of a charge carrier tells how easily it responds to an electric field. It is defined as the drift velocity per unit electric field:
 
 $$
 \mu=\frac{v_d}{E}
@@ -107,7 +107,7 @@ Its unit is $\text{m}^2/(\text{V s})$. In the classical theory (derived on a lat
 
 ## 7. Conductivity $\sigma$
 
-**Electrical conductivity** $\sigma$ tells how easily a material conducts electric current. It depends on the number of free electrons, their charge and their mobility:
+Electrical conductivity $\sigma$ tells how easily a material conducts electric current. It depends on the number of free electrons, their charge and their mobility:
 
 $$
 \sigma=ne\mu
@@ -117,7 +117,7 @@ The higher the conductivity, the more easily the material allows current to flow
 
 ## 8. Resistivity $\rho$
 
-**Resistivity** is the reciprocal of conductivity. It tells how strongly a material opposes the flow of current:
+Resistivity is the reciprocal of conductivity. It tells how strongly a material opposes the flow of current:
 
 $$
 \rho=\frac1\sigma
@@ -148,13 +148,20 @@ Its unit is ohm metre ($\Omega\,\text{m}$). Resistivity depends on the material 
 
 ## Ohm's law
 
-Electrical conductivity is a measure of how easily an electric current can pass through a material. When a current $I$ flows through a conductor, the voltage drop across it is given by **Ohm's law**:
+**Electrical conductivity**
+
+Electrical conductivity is a measure of how easily an electric current can pass through a material.
+
+When a current $I$ flows through a conductor, the voltage drop across it is given by Ohm's law:
 
 $$
 V=IR
 $$
 
-where $I$ is the current in amperes, $R$ is the resistance in ohms and $V$ is the voltage drop in volts.
+where:
+- $I$ is the current in amperes,
+- $R$ is the resistance in ohms, and
+- $V$ is the voltage drop in volts.
 
 ## Resistance and resistivity
 
@@ -168,7 +175,7 @@ $$
 R\propto\frac{l}{A}\qquad\Longrightarrow\qquad R=\rho\,\frac{l}{A}\qquad\Longrightarrow\qquad\rho=\frac{RA}{l}
 $$
 
-The constant of proportionality $\rho$ is the **electrical resistivity** of the material, with SI unit $\Omega\,\text{m}$. The **conductivity** is its reciprocal:
+The constant of proportionality $\rho$ is the electrical resistivity of the material, with SI unit $\Omega\,\text{m}$. The conductivity is its reciprocal:
 
 $$
 \sigma=\frac1\rho\qquad\text{unit: siemens per metre (S/m)}
@@ -182,11 +189,13 @@ $$
 \sigma(x)=\frac{J(x)}{E(x)}\qquad\Longrightarrow\qquad\boxed{J=\sigma E}
 $$
 
-This is the **point form of Ohm's law**. It is true at each point of a material, whatever its shape.
+This is the point form of Ohm's law. It is true at each point of a material, whatever its shape.
 
 ## The point form from $V=IR$
 
-For a uniform conductor the point form follows directly from Ohm's law. Start from
+For a uniform conductor the point form follows directly from Ohm's law.
+
+Start from:
 
 $$
 I=\frac{V}{R}\qquad\text{and}\qquad R=\rho\frac{l}{A}
@@ -253,11 +262,17 @@ Its main idea is that the valence electrons in a metal behave like the molecules
 ## Assumptions
 
 1. **A metal is made of fixed ions and free electrons.** The metal has positive ion cores, fixed in a regular lattice, and valence electrons that are free to move through the whole metal. The free electrons are not bound to any particular atom.
+
 2. **Electrons are independent particles, like a gas.** The free electrons are treated as independent particles moving inside the metal, just as gas molecules move inside a container. The positive ions are treated as fixed.
+
 3. **Electrons follow Newtonian mechanics.** Their motion is described by classical ideas: velocity, momentum, force and Newton's laws.
+
 4. **Random thermal motion.** The free electrons move randomly in all directions with speeds of about $10^{6}\ \text{m/s}$, and their speeds follow the **Maxwell–Boltzmann distribution**, as in the kinetic theory of gases.
+
 5. **Collisions.** Electrons collide with the ions (and with each other). Between collisions they travel in straight lines. The average time between collisions is the **relaxation time** $\tau$, and the average distance is the **mean free path** $\lambda$. These collisions give the material its resistance.
+
 6. **Response to a field.** The velocity of an electron is decided by two things: the random thermal motion due to temperature, and the extra velocity due to the applied electric field.
+
 7. **Carriers of charge and heat.** The free electrons carry both charge and heat, so they are responsible for **electrical and thermal conduction** in metals.
 
 ## Motion in the absence of a field: thermal motion
@@ -276,7 +291,7 @@ The electrons still move randomly and still collide, but along with the random m
 
 ## Orders of magnitude
 
-| | Typical value |
+| Quantity | Typical value |
 | --- | --- |
 | Random (thermal) speed | about $10^{6}\ \text{m/s}$ |
 | Drift speed | $10^{-4}$ to $10^{-2}\ \text{m/s}$ |
@@ -323,9 +338,9 @@ In magnitude, $v_d=\dfrac{eE\tau}{m}$. The minus sign only shows that electrons 
 
 Let $n$ be the number of free electrons per unit volume, called the **free electron density** or **electron concentration**. Consider a piece of metal of length $L$ and cross-section $A$.
 
-- The total number of free electrons in it is $N=nAL$.
-- Their total charge is $Q=Ne=nALe$.
-- These electrons drift through the length $L$ in a time $t=L/v_d$, so the current is
+1. The total number of free electrons in it is $N=nAL$.
+2. Their total charge is $Q=Ne=nALe$.
+3. These electrons drift through the length $L$ in a time $t=L/v_d$, so the current is
 
 $$
 I=\frac{Q}{t}=\frac{nALe}{t}
@@ -415,20 +430,28 @@ That is about $0.15\ \text{mm/s}$. An electron would take nearly two hours to dr
 
 From $\sigma=\dfrac{ne^2\tau}{m}$, the conductivity depends on the number of free electrons $n$ and on the relaxation time $\tau$ (which is related to the mean free path).
 
-**Number of free electrons $n$.** Metals have a high density of free electrons, and conductivity increases with the number of electrons available to carry current. Silver and copper conduct very well partly because of their high free electron density.
+**Number of free electrons $n$**
 
-**Mean free path.** The longer an electron travels between collisions, the more it is accelerated and the higher the conductivity. At high temperatures electrons are scattered more often, by collisions with ions, with each other, and with the thermal vibrations of the lattice. So the mean free path becomes shorter and the conductivity falls.
+Metals have a high density of free electrons, and conductivity increases with the number of electrons available to carry current. Silver and copper conduct very well partly because of their high free electron density.
 
-**Relaxation time $\tau$.** The longer the average time between collisions, the greater the mobility and the higher the conductivity.
+**Mean free path**
 
-**Temperature.**
+The longer an electron travels between collisions, the more it is accelerated and the higher the conductivity. At high temperatures electrons are scattered more often, by collisions with ions, with each other, and with the thermal vibrations of the lattice. So the mean free path becomes shorter and the conductivity falls.
+
+**Relaxation time $\tau$**
+
+The longer the average time between collisions, the greater the mobility and the higher the conductivity.
+
+**Temperature**
 
 - *At low temperatures* the thermal vibrations of the lattice (called **phonons**) are weak, so electrons are scattered less. Conductivity **increases** as temperature decreases.
 - *At high temperatures* the lattice vibrates more strongly, electron–phonon scattering becomes more frequent, and conductivity **decreases**.
 
 So in a metal the resistivity increases with temperature. Metals have a **positive temperature coefficient of resistance**.
 
-**Impurities and defects.** Foreign atoms in the lattice and crystal defects (vacancies, dislocations, grain boundaries) scatter the free electrons. This reduces the relaxation time and therefore the conductivity. This is why alloys usually conduct less than the pure metals they are made from.
+**Impurities and defects**
+
+Foreign atoms in the lattice and crystal defects (vacancies, dislocations, grain boundaries) scatter the free electrons. This reduces the relaxation time and therefore the conductivity. This is why alloys usually conduct less than the pure metals they are made from.
 
 | Factor | Effect on $\sigma$ |
 | --- | --- |
@@ -578,7 +601,11 @@ The last drawback is the most important one. When we put back the periodic poten
 
 ## Statistical methods
 
-A solid contains an enormous number of electrons, about $10^{28}$ to $10^{29}$ per cubic metre in a metal. We cannot follow them one by one. **Statistical methods** describe how a large number of particles are distributed among the available energy states. There are three main kinds.
+A solid contains an enormous number of electrons, about $10^{28}$ to $10^{29}$ per cubic metre in a metal. We cannot follow them one by one.
+
+**Statistical methods**
+
+Statistical methods describe how a large number of particles are distributed among the available energy states. There are three main kinds:
 
 | Statistics | Applies to | Examples |
 | --- | --- | --- |
@@ -633,7 +660,9 @@ $$
 
 So the probability that a state $\Delta E$ **above** $E_F$ is **occupied** is equal to the probability that a state $\Delta E$ **below** $E_F$ is **empty**.
 
-**Example 1.** At room temperature ($kT=0.0259\ \text{eV}$), find $f(E)$ for a state $kT$ above and a state $kT$ below the Fermi level.
+**Example 1**
+
+At room temperature ($kT=0.0259\ \text{eV}$), find $f(E)$ for a state $kT$ above and a state $kT$ below the Fermi level.
 
 $$
 f(E_F+kT)=\frac{1}{1+e^{1}}=\frac{1}{3.718}=\mathbf{0.269}\qquad f(E_F-kT)=\frac{1}{1+e^{-1}}=\frac{1}{1.368}=\mathbf{0.731}
@@ -771,7 +800,9 @@ $$
 \frac12mv_F^2=E_F\qquad\Longrightarrow\qquad v_F=\sqrt{\frac{2E_F}{m}}
 $$
 
-**Example 1.** Copper has $n=8.5\times10^{28}\ \text{m}^{-3}$. Find its Fermi energy and Fermi speed.
+**Example 1**
+
+Copper has $n=8.5\times10^{28}\ \text{m}^{-3}$. Find its Fermi energy and Fermi speed.
 
 $$
 E_F=\frac{(1.0546\times10^{-34})^2}{2\times9.11\times10^{-31}}\left(3\pi^2\times8.5\times10^{28}\right)^{2/3}=1.13\times10^{-18}\ \text{J}=\mathbf{7.05\ \text{eV}}
@@ -785,15 +816,21 @@ With a relaxation time of $2.5\times10^{-14}\ \text{s}$, the mean free path at t
 
 ## Position of the Fermi level in different materials
 
-**Conductors (metals).** The Fermi level lies **inside the conduction band**, or in the region where the conduction and valence bands overlap. Even at absolute zero there are free electrons in the conduction band, so metals conduct easily.
+**Conductors (metals)**
 
-**Semiconductors.** The Fermi level lies **within the band gap**, between the valence and conduction bands. Its exact position depends on the type:
+The Fermi level lies **inside the conduction band**, or in the region where the conduction and valence bands overlap. Even at absolute zero there are free electrons in the conduction band, so metals conduct easily.
+
+**Semiconductors**
+
+The Fermi level lies **within the band gap**, between the valence and conduction bands. Its exact position depends on the type:
 
 - in an **intrinsic** (pure) semiconductor it is near the **middle** of the gap;
 - in an **n-type** semiconductor (doped with extra electrons) it moves **closer to the conduction band**;
 - in a **p-type** semiconductor (doped with holes, or electron acceptors) it moves **closer to the valence band**.
 
-**Insulators.** The Fermi level is also in the band gap, but the gap is much wider, so the Fermi level is far from both bands. It is extremely difficult for electrons to cross to the conduction band, so insulators have very few free electrons and do not conduct.
+**Insulators**
+
+The Fermi level is also in the band gap, but the gap is much wider, so the Fermi level is far from both bands. It is extremely difficult for electrons to cross to the conduction band, so insulators have very few free electrons and do not conduct.
 
 > **Watch out.** "Fermi energy" strictly means the highest filled level at $0\ \text{K}$. "Fermi level" is the $f=\tfrac12$ level at any temperature. Write which definition you are using. Also, $E_F\gg kT$ in metals. Because of this, only a thin slice of electrons near $E_F$ takes part in conduction and heat capacity.
 
@@ -805,7 +842,11 @@ With a relaxation time of $2.5\times10^{-14}\ \text{s}$, the mean free path at t
 
 ## Why a new theory
 
-The free electron theories ignore the ion lattice. **Band theory** keeps the quantum picture but includes the effect of the crystal.
+The free electron theories ignore the ion lattice.
+
+**Band theory**
+
+Band theory keeps the quantum picture but includes the effect of the crystal.
 
 ## Basic assumptions
 
@@ -857,11 +898,17 @@ An **energy band diagram** shows the energy levels of the top energy band and th
 
 ## The two important bands
 
-**Valence band.** The range of energies of the **valence electrons that take part in bonding** in the crystal. These electrons are bound to their atoms and are not free to move. The valence band is usually full or nearly full, so it cannot conduct well. Its top edge is $E_v$, the **highest energy an electron can have while still bound**.
+**Valence band**
 
-**Conduction band.** The range of higher energies of electrons that have **broken free from their bonds** and can move through the whole solid. Only free electrons take part in conduction, hence the name. Its bottom edge is $E_c$, the **smallest energy an electron must have to become free**. An electron that reaches $E_c$ is no longer bound to an atom and can move under the effect of an electric field.
+The valence band is the range of energies of the **valence electrons that take part in bonding** in the crystal. These electrons are bound to their atoms and are not free to move. The valence band is usually full or nearly full, so it cannot conduct well. Its top edge is $E_v$, the **highest energy an electron can have while still bound**.
 
-**Forbidden band (band gap).** The two bands are separated by a range of energies where no states exist. Its width is the **band gap**:
+**Conduction band**
+
+The conduction band is the range of higher energies of electrons that have **broken free from their bonds** and can move through the whole solid. Only free electrons take part in conduction, hence the name. Its bottom edge is $E_c$, the **smallest energy an electron must have to become free**. An electron that reaches $E_c$ is no longer bound to an atom and can move under the effect of an electric field.
+
+**Forbidden band (band gap)**
+
+The forbidden band is a range of energies where no states exist, separating the valence and conduction bands. Its width is the **band gap**:
 
 $$
 E_g=E_c-E_v
@@ -928,7 +975,7 @@ Insulators have a **large band gap**, roughly $4\ \text{eV}$ or more.
 
 ## Summary
 
-| | Conductor | Semiconductor | Insulator |
+| Property | Conductor | Semiconductor | Insulator |
 | --- | --- | --- | --- |
 | Band gap | overlap, or less than about $0.1\ \text{eV}$ | about $1\ \text{eV}$ | about $4\ \text{eV}$ or more |
 | At $0\ \text{K}$ | partly filled band, conducts | valence full, conduction empty: insulator | valence full, conduction empty |
@@ -1101,10 +1148,12 @@ So the Fermi function falls from $0.5$ to $0.01$ within about $0.12\ \text{eV}$ 
 
 ## What superconductivity is
 
-**Superconductivity** is a phenomenon in which some materials, when cooled below a certain temperature, show two special properties:
+**Superconductivity**
 
-1. **zero electrical resistance**, and
-2. **expulsion of magnetic fields** from their inside.
+Superconductivity is a phenomenon in which some materials, when cooled below a certain temperature, show two special properties:
+
+- **Zero electrical resistance**
+- **Expulsion of magnetic fields** from their inside
 
 The temperature below which this happens is called the **critical temperature** or **transition temperature**, $T_c$.
 
@@ -1167,7 +1216,7 @@ Below $T_c$ the electrical resistance is exactly zero, so there are no $I^2R$ lo
 
 ## 2. Persistent currents
 
-A **persistent current** is a steady current that flows **without diminishing** in strength.
+A persistent current is a steady current that flows without diminishing in strength.
 
 - Once such a current is set up in a closed superconducting loop, no external power supply is needed to keep it going, because there are no $I^2R$ losses.
 - As long as the loop is kept below $T_c$, the current keeps flowing without decay. Persistent currents have been seen to flow for years with no measurable decrease.
@@ -1176,7 +1225,7 @@ A **persistent current** is a steady current that flows **without diminishing** 
 
 ## 3. Flux quantisation
 
-Consider a current flowing round a **superconducting ring**.
+Consider a current flowing round a superconducting ring.
 
 - The magnetic flux density inside the superconducting material itself is zero, but magnetic flux can exist in the **hole** in the middle of the ring.
 - This flux cannot take any value. It can only be a whole-number multiple of a basic unit, the **flux quantum** or **fluxon**:
@@ -1242,11 +1291,25 @@ A strong enough magnetic field destroys superconductivity (the **critical field*
 
 The Meissner effect and the critical field use a few magnetic quantities. Here they are in one place.
 
-1. **Magnetic field.** The region of space around a magnet, a current-carrying conductor or a moving charge, in which a magnetic effect can be felt, is called a **magnetic field**.
-2. **Magnetic induction $B$.** If a field is strong, its field lines are closer together. The **magnetic induction** or **magnetic flux density** at a point is the flux (number of field lines) passing through unit area around that point. Its unit is the **tesla (T)**.
-3. **Magnetising field $H$.** The field due to currents in external circuits (for example a solenoid) is called the **magnetising field** $H$. Its SI unit is **ampere per metre (A/m)**.
-4. **Magnetisation $M$.** When a material is placed in a magnetic field, it becomes magnetised. The **magnetic moment per unit volume** of the material is its **intensity of magnetisation** $M$. It tells how much the specimen is magnetised. Its unit is also **A/m**.
-5. **Permeability $\mu$.** The magnetic permeability of a material is the ratio of the resultant field $B$ inside the material to the magnetising field $H$:
+**Magnetic field**
+
+The region of space around a magnet, a current-carrying conductor or a moving charge, in which a magnetic effect can be felt, is called a **magnetic field**.
+
+**Magnetic induction $B$**
+
+If a field is strong, its field lines are closer together. The **magnetic induction** or **magnetic flux density** at a point is the flux (number of field lines) passing through unit area around that point. Its unit is the **tesla (T)**.
+
+**Magnetising field $H$**
+
+The field due to currents in external circuits (for example a solenoid) is called the **magnetising field** $H$. Its SI unit is **ampere per metre (A/m)**.
+
+**Magnetisation $M$**
+
+When a material is placed in a magnetic field, it becomes magnetised. The **magnetic moment per unit volume** of the material is its **intensity of magnetisation** $M$. It tells how much the specimen is magnetised. Its unit is also **A/m**.
+
+**Permeability $\mu$**
+
+The magnetic permeability of a material is the ratio of the resultant field $B$ inside the material to the magnetising field $H$:
 
 $$
 \mu=\frac{B}{H}
@@ -1254,7 +1317,9 @@ $$
 
 Its unit is henry per metre (H/m). The permeability of free space is a constant, $\mu_0=4\pi\times10^{-7}\ \text{H/m}$.
 
-6. **Susceptibility $\chi$.** The ratio of magnetisation to magnetising field is the **magnetic susceptibility**:
+**Susceptibility $\chi$**
+
+The ratio of magnetisation to magnetising field is the **magnetic susceptibility**:
 
 $$
 \chi=\frac{M}{H}
@@ -1262,9 +1327,17 @@ $$
 
 It has **no unit**.
 
-7. **Permeability versus susceptibility.** Permeability tells how well a material supports the formation of a magnetic field inside itself. Susceptibility tells whether the material is **attracted to** a magnetic field or **repelled from** it.
-8. **Sign of $\chi$.** $\chi$ is **negative for diamagnetic** substances (weakly repelled) and **positive for paramagnetic** substances (weakly attracted).
-9. **The connecting relation.** Magnetisation $M$, magnetising field $H$ and magnetic induction $B$ are related by
+**Permeability versus susceptibility**
+
+Permeability tells how well a material supports the formation of a magnetic field inside itself. Susceptibility tells whether the material is **attracted to** a magnetic field or **repelled from** it.
+
+**Sign of $\chi$**
+
+$\chi$ is **negative for diamagnetic** substances (weakly repelled) and **positive for paramagnetic** substances (weakly attracted).
+
+**The connecting relation**
+
+Magnetisation $M$, magnetising field $H$ and magnetic induction $B$ are related by
 
 $$
 B=\mu_0\,(H+M)
@@ -1296,8 +1369,9 @@ A superconductor stays superconducting only if the magnetic field applied to it 
 
 ## Variation with temperature
 
-- The critical field depends on temperature. It is **largest at $0\ \text{K}$** and **decreases** as the temperature comes close to $T_c$, where it becomes **zero**.
-- The variation is well described by
+The critical field depends on temperature. It is **largest at $0\ \text{K}$** and **decreases** as the temperature comes close to $T_c$, where it becomes **zero**.
+
+The variation is well described by
 
 $$
 H_c(T)=H_c(0)\left[1-\left(\frac{T}{T_c}\right)^2\right]
@@ -1351,7 +1425,9 @@ The Meissner effect is one of the defining characteristics of superconductivity.
 
 ## Superconductor versus perfect conductor
 
-A hypothetical "perfect conductor" with zero resistance would simply **freeze in** whatever field was inside it when it lost its resistance: if it was cooled in a field, the field would stay trapped inside. A superconductor behaves differently. It **actively expels** the field, whether the field was applied before or after cooling. This is why superconductivity is a genuinely new state of matter, not just very good conduction.
+A hypothetical "perfect conductor" with zero resistance would simply **freeze in** whatever field was inside it when it lost its resistance: if it was cooled in a field, the field would stay trapped inside.
+
+A superconductor behaves differently. It **actively expels** the field, whether the field was applied before or after cooling. This is why superconductivity is a genuinely new state of matter, not just very good conduction.
 
 ## Proof that a superconductor is a perfect diamagnet
 
@@ -1457,45 +1533,49 @@ The magnetisation graph rises linearly (perfect diamagnetism, $-M=H$) up to $H_c
 
 ## Background
 
-The **BCS theory** is the microscopic theory of superconductivity, developed in **1957** by **John Bardeen, Leon Cooper and Robert Schrieffer** (hence BCS). It is based on **quantum mechanics**, and it won the three scientists the **1972 Nobel Prize in Physics** "for their jointly developed theory of superconductivity". It explains how superconductivity arises at low temperatures and gives a framework for understanding superconductors.
+**BCS theory**
+
+BCS theory is the microscopic theory of superconductivity, developed in 1957 by John Bardeen, Leon Cooper, and Robert Schrieffer (hence BCS). It is based on quantum mechanics, and it won the three scientists the 1972 Nobel Prize in Physics "for their jointly developed theory of superconductivity". It explains how superconductivity arises at low temperatures and gives a framework for understanding superconductors.
 
 ## The problem it solves
 
-In the normal state, a conduction electron is **repelled** by other electrons and **attracted** by the positive ion cores. These forces act in random directions, and they scatter the electron as it moves through the material. This scattering is the **cause of resistance**.
+In the normal state, a conduction electron is repelled by other electrons and attracted by the positive ion cores. These forces act in random directions, and they scatter the electron as it moves through the material. This scattering is the cause of resistance.
 
-According to BCS theory, below the critical temperature the conduction electrons form **pairs** that attract each other, and these pairs move without scattering. The pairing is due to an **electron–lattice–electron interaction**.
+According to BCS theory, below the critical temperature the conduction electrons form pairs that attract each other, and these pairs move without scattering. The pairing is due to an electron–lattice–electron interaction.
 
 ## Formation of Cooper pairs
 
 Normally two electrons, both being negatively charged, repel each other. At low temperatures they can attract each other through the lattice:
 
 1. Suppose two electrons, 1 and 2, pass each other in the crystal lattice.
-2. The negative charge of electron 1 **attracts the positive ions** of the lattice towards it, and slightly distorts the lattice.
-3. The extra positive charge collected around electron 1 **screens** its negative charge.
-4. Because of this screening, electron 2 is **attracted** towards the region around electron 1. The two electrons form a **bound state**.
-5. In terms of lattice vibrations: electron 1's interaction with the lattice **emits a phonon** (a quantum of lattice vibration), and electron 2 **absorbs** that phonon. The exchange of the phonon produces an attractive force between the two electrons.
+2. The negative charge of electron 1 attracts the positive ions of the lattice towards it, and slightly distorts the lattice.
+3. The extra positive charge collected around electron 1 screens its negative charge.
+4. Because of this screening, electron 2 is attracted towards the region around electron 1. The two electrons form a bound state.
+5. In terms of lattice vibrations: electron 1's interaction with the lattice emits a phonon (a quantum of lattice vibration), and electron 2 absorbs that phonon. The exchange of the phonon produces an attractive force between the two electrons.
 
-This pair of electrons attracting each other is called a **Cooper pair**. Phonons act like the "glue" that holds the electrons together.
+**Cooper pair**
+
+A Cooper pair is a pair of electrons attracting each other through lattice interaction. Phonons act like the "glue" that holds the electrons together.
 
 > **Key idea.** The attraction is strongest when the two electrons have **equal and opposite spins and opposite momenta**. So a Cooper pair has zero total spin and, when no current flows, zero total momentum.
 
 ## Why a Cooper pair has no resistance
 
-- **Energy gap.** When electrons form Cooper pairs, an **energy gap** opens in the energy spectrum of the material. A certain minimum energy is needed to break a pair.
+- **Energy gap.** When electrons form Cooper pairs, an energy gap opens in the energy spectrum of the material. A certain minimum energy is needed to break a pair.
 - **Only below $T_c$.** Pairs form only below the critical temperature, because only then are the thermal vibrations of the lattice too weak to break them. Below $T_c$ the thermal energy is not enough to cross the energy gap.
-- **Coherent motion.** All the Cooper pairs in a superconductor are in the **same quantum state**. They show **phase coherence** and move together as a single entity.
-- **No scattering.** Cooper pairs are **not scattered** by the lattice points. Any disturbance would have to give at least the gap energy to break a pair, and below $T_c$ that energy is not available. So no energy is transferred from the electron pairs to the lattice.
-- **Zero resistance.** If a field is applied, the pairs gain extra kinetic energy and give rise to a current, but they do not pass this energy to the lattice, so they are not slowed down. As a result, the material has **no electrical resistance**.
+- **Coherent motion.** All the Cooper pairs in a superconductor are in the same quantum state. They show phase coherence and move together as a single entity.
+- **No scattering.** Cooper pairs are not scattered by the lattice points. Any disturbance would have to give at least the gap energy to break a pair, and below $T_c$ that energy is not available. So no energy is transferred from the electron pairs to the lattice.
+- **Zero resistance.** If a field is applied, the pairs gain extra kinetic energy and give rise to a current, but they do not pass this energy to the lattice, so they are not slowed down. As a result, the material has no electrical resistance.
 
 ## Evidence for the theory
 
-- The **isotope effect** ($T_c\propto M^{-1/2}$) shows that lattice vibrations, and hence phonons, are involved.
-- **Flux quantisation** in units of $h/2e$ shows that the charge carriers have charge $2e$. So they are pairs.
-- The **energy gap** predicted by the theory is seen in experiments.
+- **Isotope effect.** The isotope effect ($T_c\propto M^{-1/2}$) shows that lattice vibrations, and hence phonons, are involved.
+- **Flux quantisation.** Flux quantisation in units of $h/2e$ shows that the charge carriers have charge $2e$. So they are pairs.
+- **Energy gap.** The energy gap predicted by the theory is seen in experiments.
 
 ## Limits of the theory
 
-BCS theory explains **conventional superconductors**, the low-temperature metals and alloys in which phonons provide the pairing. It does not explain the high-temperature ceramic (cuprate) superconductors, whose mechanism is still being researched.
+BCS theory explains conventional superconductors, the low-temperature metals and alloys in which phonons provide the pairing. It does not explain the high-temperature ceramic (cuprate) superconductors, whose mechanism is still being researched.
 
 > **Note on the source.** One lecture set said that BCS "explains only Type I superconductivity". The more correct statement is that BCS describes conventional (phonon-mediated, low-$T_c$) superconductors, whether Type I or Type II, but not the high-$T_c$ ceramics.
 

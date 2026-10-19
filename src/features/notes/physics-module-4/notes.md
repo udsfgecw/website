@@ -4,9 +4,17 @@
 
 Module 3 explained what happens inside a p-n junction: how it forms, how it behaves in forward and reverse bias, and the diode equation. This module uses junctions as **devices**. Almost every electronic gadget you use has several of them.
 
-1. **Rectifiers** change the AC from the mains into DC, using ordinary diodes as one-way valves.
-2. **Special diodes** use the junction in special ways: the **Zener diode** works deliberately in breakdown to keep a voltage steady, and the **tunnel diode** uses quantum tunnelling (Module 2) to give a negative resistance.
-3. **Photonic devices** connect electricity and light: the **LED** changes current into light, **photodiodes** and **solar cells** change light into current, and the **semiconductor laser** produces a coherent beam.
+**Rectifiers**
+
+Rectifiers change the AC from the mains into DC, using ordinary diodes as one-way valves.
+
+**Special diodes**
+
+Special diodes use the junction in special ways: the **Zener diode** works deliberately in breakdown to keep a voltage steady, and the **tunnel diode** uses quantum tunnelling (Module 2) to give a negative resistance.
+
+**Photonic devices**
+
+Photonic devices connect electricity and light: the **LED** changes current into light, **photodiodes** and **solar cells** change light into current, and the **semiconductor laser** produces a coherent beam.
 
 > **KTU syllabus.** Semiconductor devices: rectifiers, full wave and half wave. Zener diode, V-I characteristics. Tunnel diode, V-I characteristics. Semiconductor laser (construction and working), applications. Photonic devices (qualitative treatment only): photodetectors (junction and PIN photodiodes), solar cells (I-V characteristics, efficiency, stringing of solar cells to a solar panel), light emitting diode, applications.
 
@@ -78,19 +86,25 @@ A complete DC power supply has four stages:
 
 ## Quantities that describe a rectifier
 
-**Average (DC) value.** The output is not a steady DC, but it has an average value over one cycle. A DC meter reads this average. For a current,
+**Average (DC) value**
+
+The average (DC) value of the output is not a steady DC, but it has an average value over one cycle. A DC meter reads this average. For a current,
 
 $$
 I_{dc}=\frac{1}{T}\int_0^T i\,dt
 $$
 
-**RMS value.** The root mean square value is the square root of the mean of the squares of the instantaneous values. It shows the heating (power) effect of the whole waveform, both its DC and its AC parts:
+**RMS value**
+
+The RMS value (root mean square value) is the square root of the mean of the squares of the instantaneous values. It shows the heating (power) effect of the whole waveform, both its DC and its AC parts:
 
 $$
 I_{rms}=\sqrt{\frac1T\int_0^T i^2\,dt}
 $$
 
-**Rectifier efficiency.** How much of the AC power given to the rectifier comes out as useful DC power in the load:
+**Rectifier efficiency**
+
+Rectifier efficiency measures how much of the AC power given to the rectifier comes out as useful DC power in the load:
 
 $$
 \eta=\frac{\text{DC output power}}{\text{AC input power}}=\frac{P_{dc}}{P_{ac}}=\frac{I_{dc}^2R_L}{I_{rms}^2(r_f+R_L)}
@@ -98,7 +112,9 @@ $$
 
 The DC output power is that of the average current in the load, $P_{dc}=I_{dc}^2R_L$. The AC input power is everything delivered to the circuit, $P_{ac}=I_{rms}^2(r_f+R_L)$, including the power lost as heat in the diode.
 
-**Ripple factor.** The rectified output has the wanted DC plus unwanted AC components, called **ripple**. The ripple factor compares the two:
+**Ripple factor**
+
+The ripple factor compares the wanted DC and unwanted AC components (called **ripple**) in the rectified output:
 
 $$
 \gamma=\frac{\text{rms value of the AC components}}{\text{DC value}}=\frac{I_{ac}}{I_{dc}}
@@ -112,7 +128,9 @@ $$
 
 The smaller the ripple factor, the closer the output is to pure DC, and the better the rectifier.
 
-**Form factor and peak factor.** Two shape ratios that are often asked:
+**Form factor and peak factor**
+
+Form factor and peak factor are two shape ratios that are often asked:
 
 $$
 \text{form factor}=\frac{I_{rms}}{I_{dc}}\qquad\text{peak factor}=\frac{I_m}{I_{rms}}
@@ -120,7 +138,9 @@ $$
 
 Notice that $\gamma=\sqrt{(\text{form factor})^2-1}$.
 
-**Peak inverse voltage (PIV).** The maximum reverse voltage that appears across a diode during the half cycle in which it does not conduct. The diode must be chosen with a reverse voltage rating above the PIV, or it will break down.
+**Peak inverse voltage (PIV)**
+
+Peak inverse voltage (PIV) is the maximum reverse voltage that appears across a diode during the half cycle in which it does not conduct. The diode must be chosen with a reverse voltage rating above the PIV, or it will break down.
 
 > **Key idea.** Every rectifier result follows from just two integrals, $I_{dc}$ and $I_{rms}$. Learn to derive these two, and then efficiency, ripple factor and form factor follow in one line each.
 
@@ -481,7 +501,9 @@ $$
 2. Ripple factor is low (0.48 against 1.21).
 3. Output current is continuous but pulsating, instead of flowing only in alternate half cycles.
 
-**Disadvantages:** full-wave rectifiers need two or four diodes, so the cost is comparatively high.
+**Disadvantages**
+
+Full-wave rectifiers need two or four diodes, so the cost is comparatively high.
 
 ## Why ripple matters
 
@@ -592,22 +614,28 @@ A **regulated** power supply keeps its output voltage constant, irrespective of 
 
 ![Zener regulator: unregulated DC input, series resistor R_s, and the Zener diode in parallel with the load R_L](/notes/cse/s1/physics/module-4/zener-regulator.webp)
 
-**Circuit.** The unregulated DC input $V_i$ is applied through a **series resistor** $R_s$. The Zener diode is connected in **reverse bias**, in **parallel with the load** $R_L$, so the load voltage is the Zener voltage.
+**Circuit**
 
-**Currents.** The current through $R_s$ divides between the Zener and the load:
+The unregulated DC input $V_i$ is applied through a **series resistor** $R_s$. The Zener diode is connected in **reverse bias**, in **parallel with the load** $R_L$, so the load voltage is the Zener voltage.
+
+**Currents**
+
+The current through $R_s$ divides between the Zener and the load:
 
 $$
 I_s=\frac{V_i-V_Z}{R_s}\qquad I_L=\frac{V_Z}{R_L}\qquad I_Z=I_s-I_L
 $$
 
-**How it regulates.**
+**How it regulates**
 
 - **If the input voltage rises:** $I_s$ increases. The load voltage cannot rise, because the Zener holds it at $V_Z$. The **extra current goes through the Zener** and the extra voltage is dropped across $R_s$. If the input falls, the Zener current falls instead.
 - **If the load draws more current** ($R_L$ falls): $I_s$ stays the same (since $V_i$ and $V_Z$ have not changed), so the Zener current **falls by the same amount** and the load voltage does not change.
 
 In both cases the output stays at $V_Z$, as long as the Zener current stays between $I_{Z\min}$ and $I_{Z\max}$.
 
-**Role of $R_s$.** It limits the current, so that the Zener current never goes above $I_{Z\max}$, and it drops the difference between $V_i$ and $V_Z$. Without it, the Zener would be connected straight across the supply and would burn out.
+**Role of $R_s$**
+
+It limits the current, so that the Zener current never goes above $I_{Z\max}$, and it drops the difference between $V_i$ and $V_Z$. Without it, the Zener would be connected straight across the supply and would burn out.
 
 ## Worked examples
 
@@ -666,23 +694,25 @@ Electrons can then cross the junction by **quantum mechanical tunnelling** (Modu
 
 ![V-I characteristic of a tunnel diode: peak point A, negative resistance region, valley point B, then normal diode current](/notes/cse/s1/physics/module-4/tunnel-diode-vi.webp)
 
-**1. Zero bias.** The Fermi levels on the two sides are aligned. Filled states in the n-side conduction band face filled states in the p-side valence band. Tunnelling occurs equally in both directions, so the net current is zero.
+1. **Zero bias.** The Fermi levels on the two sides are aligned. Filled states in the n-side conduction band face filled states in the p-side valence band. Tunnelling occurs equally in both directions, so the net current is zero.
 
-**2. Small forward bias.** The n side is raised relative to the p side. Filled states in the n-side **conduction band** now face **empty** states (holes) in the p-side **valence band** at the same energy. Electrons tunnel from n to p and the current rises rapidly with voltage, much faster than in an ordinary diode.
+2. **Small forward bias.** The n side is raised relative to the p side. Filled states in the n-side **conduction band** now face **empty** states (holes) in the p-side **valence band** at the same energy. Electrons tunnel from n to p and the current rises rapidly with voltage, much faster than in an ordinary diode.
 
-**3. Peak point A ($V_p$, $I_p$).** The overlap between filled conduction-band states on the n side and empty valence-band states on the p side is **largest**. The tunnelling current is maximum: the **peak current** $I_p$ at the **peak voltage** $V_p$ (typically about $0.05$ to $0.1\ \text{V}$).
+3. **Peak point A ($V_p$, $I_p$).** The overlap between filled conduction-band states on the n side and empty valence-band states on the p side is **largest**. The tunnelling current is maximum: the **peak current** $I_p$ at the **peak voltage** $V_p$ (typically about $0.05$ to $0.1\ \text{V}$).
 
-**4. Negative resistance region (A to B).** As the forward bias increases further, the bands are pushed out of alignment. Fewer filled states on the n side face empty states on the p side, so **tunnelling decreases** and the current **falls** while the voltage **rises**. The slope $dI/dV$ is negative: this is the **negative resistance region**.
+4. **Negative resistance region (A to B).** As the forward bias increases further, the bands are pushed out of alignment. Fewer filled states on the n side face empty states on the p side, so **tunnelling decreases** and the current **falls** while the voltage **rises**. The slope $dI/dV$ is negative: this is the **negative resistance region**.
 
-**5. Valley point B ($V_v$, $I_v$).** The bottom of the n-side conduction band has risen above the top of the p-side valence band. There are no empty states opposite the filled ones, so tunnelling stops. The current is at its minimum, the **valley current** $I_v$, at the **valley voltage** $V_v$ (typically a few tenths of a volt).
+5. **Valley point B ($V_v$, $I_v$).** The bottom of the n-side conduction band has risen above the top of the p-side valence band. There are no empty states opposite the filled ones, so tunnelling stops. The current is at its minimum, the **valley current** $I_v$, at the **valley voltage** $V_v$ (typically a few tenths of a volt).
 
-**6. Beyond the valley.** The forward bias is now large enough for carriers to cross the reduced barrier by the ordinary diffusion mechanism. Normal diode conduction takes over and the current rises again exponentially.
+6. **Beyond the valley.** The forward bias is now large enough for carriers to cross the reduced barrier by the ordinary diffusion mechanism. Normal diode conduction takes over and the current rises again exponentially.
 
-**7. Reverse bias.** Filled states in the p-side valence band face empty states in the n-side conduction band, so electrons tunnel from p to n. The reverse current rises rapidly even for a tiny reverse voltage. A tunnel diode conducts well in reverse and is not used as a rectifier.
+7. **Reverse bias.** Filled states in the p-side valence band face empty states in the n-side conduction band, so electrons tunnel from p to n. The reverse current rises rapidly even for a tiny reverse voltage. A tunnel diode conducts well in reverse and is not used as a rectifier.
 
 > **Key idea.** The negative resistance region is what makes the tunnel diode useful. A device whose current falls as the voltage rises can **supply** AC power to a resonant circuit (taking it from the DC bias), so it can sustain oscillations and amplify.
 
-**Example.** A tunnel diode has $I_p=10\ \text{mA}$ at $V_p=0.1\ \text{V}$ and $I_v=1\ \text{mA}$ at $V_v=0.4\ \text{V}$. Estimate its average negative resistance.
+**Example**
+
+A tunnel diode has $I_p=10\ \text{mA}$ at $V_p=0.1\ \text{V}$ and $I_v=1\ \text{mA}$ at $V_v=0.4\ \text{V}$. Estimate its average negative resistance.
 
 $$
 r_n=\frac{\Delta V}{\Delta I}=\frac{0.4-0.1}{1-10\ \text{mA}}=\frac{0.3}{-0.009}\approx-33\ \Omega
@@ -690,7 +720,13 @@ $$
 
 ## Advantages and applications
 
-**Advantages:** very fast (tunnelling is almost instantaneous, so it works at very high frequencies), low noise, low power consumption, simple and cheap, and relatively insensitive to temperature and radiation.
+**Advantages**
+
+- Very fast (tunnelling is almost instantaneous, so it works at very high frequencies)
+- Low noise
+- Low power consumption
+- Simple and cheap
+- Relatively insensitive to temperature and radiation
 
 **Applications**
 
@@ -714,11 +750,11 @@ A **light-emitting diode** (LED) is a semiconductor p-n junction diode that give
 
 ## Working
 
-- Under forward bias the barrier is lowered. Free electrons cross from the n region into the p region, and holes cross in the opposite direction.
-- Near the junction, these **minority carriers recombine** with the majority carriers: electrons fall into holes.
-- Free electrons are in the conduction band, and holes are in the valence band, which is lower in energy. So each recombination **releases energy**, roughly equal to the band gap $E_g$.
-- This energy is released either as **heat** (lattice vibrations) or as **light** (a photon of energy $h\nu\approx E_g$).
-- If the semiconductor is translucent, the light comes out and the junction becomes a light source.
+1. Under forward bias the barrier is lowered. Free electrons cross from the n region into the p region, and holes cross in the opposite direction.
+2. Near the junction, these **minority carriers recombine** with the majority carriers: electrons fall into holes.
+3. Free electrons are in the conduction band, and holes are in the valence band, which is lower in energy. So each recombination **releases energy**, roughly equal to the band gap $E_g$.
+4. This energy is released either as **heat** (lattice vibrations) or as **light** (a photon of energy $h\nu\approx E_g$).
+5. If the semiconductor is translucent, the light comes out and the junction becomes a light source.
 
 ![LED: forward-biased p-n junction, with electrons and holes recombining at the junction and emitting light across the band gap](/notes/cse/s1/physics/module-4/led-working.webp)
 
@@ -760,11 +796,29 @@ White LEDs use a blue InGaN chip coated with a phosphor that changes part of the
 
 ## Advantages and applications
 
-**Advantages:** low operating voltage (about 1.5 to 3.5 V) and current; long life (tens of thousands of hours); high efficiency compared with filament lamps; very fast switching (nanoseconds); small, strong and available in many colours.
+**Advantages**
 
-**Disadvantages:** output falls with rising temperature; needs a current-limiting resistor; can be damaged by reverse voltage or excess current.
+- Low operating voltage (about 1.5 to 3.5 V) and current
+- Long life (tens of thousands of hours)
+- High efficiency compared with filament lamps
+- Very fast switching (nanoseconds)
+- Small, strong and available in many colours
 
-**Applications:** indicator lamps and seven-segment displays; general lighting and torches; remote controls (infrared LEDs); optical fibre communication over short distances; traffic signals and vehicle lights; backlights for LCD screens; optocouplers.
+**Disadvantages**
+
+- Output falls with rising temperature
+- Needs a current-limiting resistor
+- Can be damaged by reverse voltage or excess current
+
+**Applications**
+
+- Indicator lamps and seven-segment displays
+- General lighting and torches
+- Remote controls (infrared LEDs)
+- Optical fibre communication over short distances
+- Traffic signals and vehicle lights
+- Backlights for LCD screens
+- Optocouplers
 
 ## Worked examples
 
@@ -790,26 +844,34 @@ $$
 
 ## The idea
 
-**Photodetectors** are devices that change incident light power into an electrical signal (current). They are the receivers in optical fibre links, the sensors in cameras and light meters, and the "eyes" of automatic doors and smoke detectors.
+**Photodetector**
+
+Photodetectors are devices that change incident light power into an electrical signal (current). They are the receivers in optical fibre links, the sensors in cameras and light meters, and the "eyes" of automatic doors and smoke detectors.
 
 ## What a good photodetector needs
 
-1. **Wide bandwidth:** it should detect light over a wide range of frequencies (wavelengths).
-2. **Low response time:** it should respond quickly to changes in the light.
-3. **Sharp response:** to handle high bit rates in communication.
-4. **Long operating life.**
-5. **Low cost.**
-6. **Small size.**
-7. **High degree of temperature tolerance.**
-8. **High sensitivity:** a large output for a small light input.
+- **Wide bandwidth:** it should detect light over a wide range of frequencies (wavelengths).
+- **Low response time:** it should respond quickly to changes in the light.
+- **Sharp response:** to handle high bit rates in communication.
+- **Long operating life.**
+- **Low cost.**
+- **Small size.**
+- **High degree of temperature tolerance.**
+- **High sensitivity:** a large output for a small light input.
 
 ## The p-n junction photodiode
 
-**Structure.** A photodiode is essentially a p-n junction diode, built so that light can reach the junction (through a window or a lens) and operated in **reverse bias**.
+**Structure**
 
-**Without light.** During fabrication a depletion layer forms at the junction, made of immobile negative acceptor ions on the p side and positive donor ions on the n side. The field of these ions stops the majority carriers but **accelerates minority carriers** across the junction. A reverse bias widens the depletion region. The motion of the thermally generated minority carriers gives a small reverse leakage current even in complete darkness. This is the **dark current**.
+A photodiode is essentially a p-n junction diode, built so that light can reach the junction (through a window or a lens) and operated in **reverse bias**.
 
-**With light.**
+**Without light**
+
+During fabrication a depletion layer forms at the junction, made of immobile negative acceptor ions on the p side and positive donor ions on the n side. The field of these ions stops the majority carriers but **accelerates minority carriers** across the junction. A reverse bias widens the depletion region.
+
+The motion of the thermally generated minority carriers gives a small reverse leakage current even in complete darkness. This is the **dark current**.
+
+**With light**
 
 1. Light falls on the diode and photons are absorbed, mainly in the depletion region but also in the neutral regions.
 2. A photon of energy $h\nu\ge E_g$ lifts an electron from the valence band to the conduction band, leaving a hole. These electron-hole pairs are called **photocarriers**.
@@ -819,7 +881,9 @@ $$
 
 ![Photodiode biasing: light falls on the depletion region of a reverse-biased p-n junction, with ammeter measuring the reverse current I_s; photodiode symbols](/notes/cse/s1/physics/module-4/photodiode-circuit.webp)
 
-**Cut-off wavelength.** Only photons with $h\nu\ge E_g$ can create pairs, so there is a longest wavelength the diode can detect:
+**Cut-off wavelength**
+
+Only photons with $h\nu\ge E_g$ can create pairs, so there is a longest wavelength the diode can detect:
 
 $$
 \lambda_c=\frac{1.24}{E_g\ (\text{eV})}\ \mu\text{m}
@@ -840,31 +904,37 @@ Because the photocurrent is proportional to the incident light intensity, the re
 
 ## Drawbacks of the p-n photodiode
 
-1. The depletion region is only a small part of the volume of the diode. Only photons absorbed there produce current. Photons absorbed in the bulk of the diode are mostly wasted.
-2. The depletion region can be widened by increasing the reverse bias, but only up to a limit set by breakdown.
-3. Electron-hole pairs generated in the bulk recombine before they can contribute to the current, and the slow diffusion of those that survive makes the response slow.
+- The depletion region is only a small part of the volume of the diode. Only photons absorbed there produce current. Photons absorbed in the bulk of the diode are mostly wasted.
+- The depletion region can be widened by increasing the reverse bias, but only up to a limit set by breakdown.
+- Electron-hole pairs generated in the bulk recombine before they can contribute to the current, and the slow diffusion of those that survive makes the response slow.
 
 ## The PIN photodiode
 
-**Structure.** A **p-i-n** diode has a wide layer of **intrinsic** (pure or very lightly doped) semiconductor between the p and n regions. The intrinsic layer has very few free carriers, so under a modest reverse bias the depletion region spreads through the **whole intrinsic layer**. So the region that collects light is much wider.
+**Structure**
+
+A **p-i-n** diode has a wide layer of **intrinsic** (pure or very lightly doped) semiconductor between the p and n regions. The intrinsic layer has very few free carriers, so under a modest reverse bias the depletion region spreads through the **whole intrinsic layer**. So the region that collects light is much wider.
 
 ![PIN photodiode structure: p region of width W_p, intrinsic region of width w and n region of width W_n, in a reverse-bias circuit](/notes/cse/s1/physics/module-4/pin-structure.webp)
 
 ![PIN diode under forward bias (narrow depletion region) and reverse bias (depletion region filling the intrinsic layer)](/notes/cse/s1/physics/module-4/pin-bias.webp)
 
-**Working.** A photon with energy at least $E_g$ that reaches the wide depletion region lifts an electron from the valence band to the conduction band, creating a free electron-hole pair. The high electric field across the intrinsic layer separates the carriers quickly and they drift to the contacts, producing a current in the external circuit. Because the intrinsic layer is wide, most photons are absorbed there and a much larger photocurrent is produced. So a PIN photodiode is **more sensitive** than a p-n photodiode.
+**Working**
+
+A photon with energy at least $E_g$ that reaches the wide depletion region lifts an electron from the valence band to the conduction band, creating a free electron-hole pair. The high electric field across the intrinsic layer separates the carriers quickly and they drift to the contacts, producing a current in the external circuit.
+
+Because the intrinsic layer is wide, most photons are absorbed there and a much larger photocurrent is produced. So a PIN photodiode is **more sensitive** than a p-n photodiode.
 
 **Advantages of the PIN photodiode**
 
-1. The depletion region is wide and extends through the whole intrinsic region, so the reverse bias need not be increased to widen it.
-2. The reverse bias required is small, of the order of $5\ \text{V}$.
-3. As the depletion region is wide, most incident photons are absorbed in it, so the efficiency is high.
-4. The dark current is small.
-5. Carriers are collected by fast drift instead of slow diffusion, so the response is fast.
+- The depletion region is wide and extends through the whole intrinsic region, so the reverse bias need not be increased to widen it.
+- The reverse bias required is small, of the order of $5\ \text{V}$.
+- As the depletion region is wide, most incident photons are absorbed in it, so the efficiency is high.
+- The dark current is small.
+- Carriers are collected by fast drift instead of slow diffusion, so the response is fast.
 
 ## p-n versus PIN photodiode
 
-| | p-n photodiode | PIN photodiode |
+| Property | p-n photodiode | PIN photodiode |
 | --- | --- | --- |
 | Structure | p and n regions only | wide intrinsic layer between p and n |
 | Depletion region | narrow | wide: fills the intrinsic layer |
@@ -878,7 +948,9 @@ Because the photocurrent is proportional to the incident light intensity, the re
 
 The **responsivity** $R=\dfrac{I_p}{P_{in}}$ (amperes of photocurrent per watt of light) and the **quantum efficiency** (electrons collected per incident photon) are related by $\eta_q=R\times\dfrac{1.24}{\lambda(\mu\text{m})}$.
 
-**Example.** A photodiode gives $5\ \mu\text{A}$ for $10\ \mu\text{W}$ of light at $850\ \text{nm}$. Then $R=0.5\ \text{A/W}$ and $\eta_q=0.5\times1.24/0.85=0.73$: 73 % of the photons produce an electron.
+**Example**
+
+A photodiode gives $5\ \mu\text{A}$ for $10\ \mu\text{W}$ of light at $850\ \text{nm}$. Then $R=0.5\ \text{A/W}$ and $\eta_q=0.5\times1.24/0.85=0.73$: 73 % of the photons produce an electron.
 
 > **Watch out.** Photodiodes are operated in **reverse bias**, and the photocurrent is a **reverse** current. Solar cells (next page) are not biased at all: they produce their own voltage.
 
@@ -890,7 +962,11 @@ The **responsivity** $R=\dfrac{I_p}{P_{in}}$ (amperes of photocurrent per watt o
 
 ## The idea
 
-A **solar cell** (photovoltaic cell) is a semiconductor p-n junction device that converts the energy of light, usually sunlight, directly into electrical energy. Unlike a photodiode it needs no external bias: it generates its own voltage, which depends on the intensity of the incident light. Materials used include silicon (by far the most common), selenium, GaAs, InAs and CdS.
+**Solar cell**
+
+A solar cell (photovoltaic cell) is a semiconductor p-n junction device that converts the energy of light, usually sunlight, directly into electrical energy.
+
+Unlike a photodiode it needs no external bias: it generates its own voltage, which depends on the intensity of the incident light. Materials used include silicon (by far the most common), selenium, GaAs, InAs and CdS.
 
 ## Construction
 
@@ -935,9 +1011,13 @@ $$
 \text{FF}=\frac{\text{maximum output power}}{V_{\text{OC}}\times I_{\text{SC}}}=\frac{V_mI_m}{V_{\text{OC}}\,I_{\text{SC}}}
 $$
 
+**Fill factor**
+
 The fill factor tells what fraction the maximum power is of the product of open-circuit voltage and short-circuit current. On the graph, it is how much of the dotted rectangle ($V_{\text{OC}}\times I_{\text{SC}}$) is filled by the shaded maximum-power rectangle ($V_m\times I_m$). A squarer I-V curve gives a higher fill factor. Its value is usually between **0.65 and 0.8**. The higher the fill factor, the greater the output power for the same $V_{\text{OC}}$ and $I_{\text{SC}}$.
 
-**Example.** A silicon cell of area $100\ \text{cm}^2$ in sunlight of $1000\ \text{W/m}^2$ has $V_{\text{OC}}=0.6\ \text{V}$, $I_{\text{SC}}=3.0\ \text{A}$, and its maximum power point at $V_m=0.5\ \text{V}$, $I_m=2.8\ \text{A}$. Find the fill factor and the efficiency.
+**Example**
+
+A silicon cell of area $100\ \text{cm}^2$ in sunlight of $1000\ \text{W/m}^2$ has $V_{\text{OC}}=0.6\ \text{V}$, $I_{\text{SC}}=3.0\ \text{A}$, and its maximum power point at $V_m=0.5\ \text{V}$, $I_m=2.8\ \text{A}$. Find the fill factor and the efficiency.
 
 $$
 \text{FF}=\frac{0.5\times2.8}{0.6\times3.0}=\frac{1.4}{1.8}=0.78
@@ -963,7 +1043,9 @@ One silicon cell gives only about $0.5\ \text{V}$ and a few amperes, so cells ar
 | **Panel** | several modules mounted and wired together as one unit |
 | **Array** | many panels connected in series (for a higher voltage) and in parallel (for a higher current) to give the power required |
 
-**Example.** Each cell of a module has $V_m=0.5\ \text{V}$ and $I_m=3\ \text{A}$. (a) Find the output of a module of 36 cells in series. (b) How many such modules are needed for a $72\ \text{V}$, $2.16\ \text{kW}$ array, and how are they connected?
+**Example**
+
+Each cell of a module has $V_m=0.5\ \text{V}$ and $I_m=3\ \text{A}$. (a) Find the output of a module of 36 cells in series. (b) How many such modules are needed for a $72\ \text{V}$, $2.16\ \text{kW}$ array, and how are they connected?
 
 (a) Series cells add voltage: $36\times0.5=18\ \text{V}$ at $3\ \text{A}$, so the module gives $18\times3=54\ \text{W}$.
 
@@ -1059,11 +1141,11 @@ Above threshold the light output rises steeply and linearly with current.
 
 ## Salient features
 
-1. High efficiency: a large fraction of the electrical input becomes light.
-2. Simple, compact and small in size.
-3. Low input power and low operating voltage.
-4. Output power can be controlled simply by controlling the junction current, so the light can be modulated at very high speed (useful for communication).
-5. Can work as a continuous-wave laser (heterojunction devices do so at room temperature).
+- High efficiency: a large fraction of the electrical input becomes light.
+- Simple, compact and small in size.
+- Low input power and low operating voltage.
+- Output power can be controlled simply by controlling the junction current, so the light can be modulated at very high speed (useful for communication).
+- Can work as a continuous-wave laser (heterojunction devices do so at room temperature).
 
 Compared with gas and solid-state lasers, the beam is more divergent and the spectrum is somewhat wider.
 
@@ -1076,7 +1158,9 @@ Compared with gas and solid-state lasers, the beam is more divergent and the spe
 - Medical instruments and laser surgery.
 - Pumping other lasers.
 
-**Example.** A diode laser emits $5\ \text{mW}$ at $850\ \text{nm}$. How many photons does it emit per second?
+**Example**
+
+A diode laser emits $5\ \text{mW}$ at $850\ \text{nm}$. How many photons does it emit per second?
 
 $$
 E_{photon}=\frac{hc}{\lambda}=\frac{6.626\times10^{-34}\times3\times10^{8}}{850\times10^{-9}}=2.34\times10^{-19}\ \text{J}\qquad N=\frac{5\times10^{-3}}{2.34\times10^{-19}}=2.1\times10^{16}\ \text{per second}

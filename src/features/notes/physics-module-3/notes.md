@@ -122,8 +122,8 @@ This is correct only if $F$ is the **only** force acting. An electron in a cryst
 
 We have two choices:
 
-1. keep the true mass $m$ and add up all the internal forces (very complicated), or
-2. keep only the external force and **include the effect of the crystal in a modified mass**.
+1. Keep the true mass $m$ and add up all the internal forces (very complicated), or
+2. Keep only the external force and **include the effect of the crystal in a modified mass**.
 
 The second choice gives
 
@@ -141,14 +141,14 @@ $$
 \frac1{m^*}=\frac1{\hbar^2}\,\frac{d^2E}{dk^2}
 $$
 
-A sharply curved band gives a small effective mass (the carrier is easy to accelerate); a flat band gives a large one. You do not need this formula for the exam, but it explains the next two facts.
+A sharply curved band gives a small effective mass (the carrier is easy to accelerate); a flat band gives a large one. You do not need this formula for the exam, but it explains the next two facts:
 
 - In the **conduction band**, near its bottom $E_c$, the band curves upwards like $E=E_c+\dfrac{\hbar^2k^2}{2m_e^*}$. The curvature is positive, so the effective mass $m_e^*$ of the electron is **positive**. Depending on the material, it can be smaller or larger than the free-electron mass $m$. For example, it is about $0.26\,m$ in silicon (for conduction) and $0.067\,m$ in gallium arsenide.
-- Near the **top of the valence band** the band curves **downwards**. The curvature is negative, so an electron there has a **negative** effective mass: an external force would make it accelerate **opposite** to the force. Physically, the crystal forces are stronger than the applied force for these electrons.
+- Near the **top of the valence band**, the band curves **downwards**. The curvature is negative, so an electron there has a **negative** effective mass: an external force would make it accelerate **opposite** to the force. Physically, the crystal forces are stronger than the applied force for these electrons.
 
 ## Why we use holes in the valence band
 
-Negative-mass electrons are difficult to think about. But the valence band near its top is almost full, with only a few empty states. Describing the motion of the few **holes** is equivalent to describing the motion of all the valence electrons, and a hole near the top of the valence band behaves like a particle with
+Negative-mass electrons are difficult to think about. But the valence band near its top is almost full, with only a few empty states. Describing the motion of the few **holes** is equivalent to describing the motion of all the valence electrons, and a hole near the top of the valence band behaves like a particle with:
 
 - **positive charge** $+e$, and
 - **positive effective mass** $m_h^*$.
@@ -249,25 +249,33 @@ $$
 dn=Z(E)\,dE\cdot F(E)
 $$
 
-**Number of states.** Measuring energy from the band edge $E_c$ (the lowest energy a conduction electron can have):
+**Number of states**
+
+Measuring energy from the band edge $E_c$ (the lowest energy a conduction electron can have):
 
 $$
 Z(E)\,dE=\frac{4\pi}{h^3}\,(2m_e^*)^{3/2}\,(E-E_c)^{1/2}\,dE
 $$
 
-**Probability of occupation.** The Fermi-Dirac function is
+**Probability of occupation**
+
+The Fermi-Dirac function is
 
 $$
 F(E)=\frac{1}{1+e^{(E-E_F)/kT}}
 $$
 
-**Why we may simplify it.** In a semiconductor, the Fermi level lies in the gap, typically several tenths of an eV below $E_c$. For every energy in the conduction band, $E-E_F$ is therefore at least that large, which is many times $kT$ ($0.026\ \text{eV}$ at room temperature). For example, if $E_c-E_F=0.56\ \text{eV}$ (mid-gap silicon), then even at the band edge $\dfrac{E-E_F}{kT}\approx21.7$ and $e^{21.7}\approx2.6\times10^9$. Compared with that, the $1$ in the denominator is completely negligible:
+**Justification for simplification**
+
+In a semiconductor, the Fermi level lies in the gap, typically several tenths of an eV below $E_c$. For every energy in the conduction band, $E-E_F$ is therefore at least that large, which is many times $kT$ ($0.026\ \text{eV}$ at room temperature). For example, if $E_c-E_F=0.56\ \text{eV}$ (mid-gap silicon), then even at the band edge $\dfrac{E-E_F}{kT}\approx21.7$ and $e^{21.7}\approx2.6\times10^9$. Compared with that, the $1$ in the denominator is completely negligible:
 
 $$
 F(E)\approx e^{-(E-E_F)/kT}=e^{(E_F-E)/kT}
 $$
 
-This is the **Boltzmann approximation**: the electrons in the conduction band are so few, and so thinly spread over the available states, that the Pauli exclusion principle (which the $1$ in the Fermi-Dirac function represents) hardly matters, and they behave like a classical gas.
+**Boltzmann approximation**
+
+The Boltzmann approximation applies because the electrons in the conduction band are so few, and so thinly spread over the available states, that the Pauli exclusion principle (which the $1$ in the Fermi-Dirac function represents) hardly matters, and they behave like a classical gas.
 
 > **Note on the source.** The lecture notes said "$(E-E_F)\gg kT$ for all $T$". The approximation is really a condition. It is true when the Fermi level is several $kT$ below the conduction band (a **non-degenerate** semiconductor), which is the normal case. It fails for very heavily doped material, where the Fermi level can reach or enter the band.
 
@@ -316,13 +324,17 @@ $$
 
 ## Meaning of $N_c$
 
-The constant
+**Effective density of states**
+
+The effective density of states in the conduction band is given by the constant
 
 $$
 N_c=2\left(\frac{2\pi m_e^*kT}{h^2}\right)^{3/2}
 $$
 
-is called the **effective density of states in the conduction band**. The result reads as if all the conduction band states were squeezed into a single level at $E_c$ holding $N_c$ states per unit volume, each occupied with the Boltzmann probability $e^{-(E_c-E_F)/kT}$. For silicon at $300\ \text{K}$ it is about $3\times10^{25}\ \text{m}^{-3}$ ($3\times10^{19}\ \text{cm}^{-3}$). Note that $N_c$ itself depends on temperature, as $T^{3/2}$, because at higher temperature the electrons spread over a wider slice of the band.
+The result reads as if all the conduction band states were squeezed into a single level at $E_c$ holding $N_c$ states per unit volume, each occupied with the Boltzmann probability $e^{-(E_c-E_F)/kT}$. For silicon at $300\ \text{K}$ it is about $3\times10^{25}\ \text{m}^{-3}$ ($3\times10^{19}\ \text{cm}^{-3}$).
+
+Note that $N_c$ itself depends on temperature, as $T^{3/2}$, because at higher temperature the electrons spread over a wider slice of the band.
 
 > **Key idea.** The electron density depends **exponentially** on how far the Fermi level lies below the conduction band. If $E_F$ moves up by $kT$, $n$ increases by a factor $e\approx2.7$. If it moves up by $0.06\ \text{eV}$ (about $2.3\,kT$), $n$ increases tenfold.
 
@@ -346,19 +358,25 @@ $$
 dp=Z(E)\,dE\cdot F_h(E)
 $$
 
-**Number of states.** Hole energies lie below the top of the valence band $E_v$, so measure from $E_v$ downwards. $E_v$ plays the same role for holes that $E_c$ plays for electrons: it is the edge of the band where the carriers collect.
+**Number of states**
+
+Hole energies lie below the top of the valence band $E_v$, so measure from $E_v$ downwards. $E_v$ plays the same role for holes that $E_c$ plays for electrons: it is the edge of the band where the carriers collect.
 
 $$
 Z(E)\,dE=\frac{4\pi}{h^3}\,(2m_h^*)^{3/2}\,(E_v-E)^{1/2}\,dE
 $$
 
-**Probability that a state holds a hole.** A hole is the absence of an electron. A state is either occupied (probability $F$) or empty (probability $F_h$), and these must add up to one, so
+**Probability that a state holds a hole**
+
+A hole is the absence of an electron. A state is either occupied (probability $F$) or empty (probability $F_h$), and these must add up to one, so
 
 $$
 F_h(E)=1-F(E)=1-\frac{1}{1+e^{(E-E_F)/kT}}=\frac{1+e^{(E-E_F)/kT}-1}{1+e^{(E-E_F)/kT}}=\frac{e^{(E-E_F)/kT}}{1+e^{(E-E_F)/kT}}
 $$
 
-**Why we may simplify it.** In the valence band $E<E_F$ by several $kT$, so $E-E_F$ is large and **negative**, and $e^{(E-E_F)/kT}\ll1$. The term in the denominator is negligible compared with $1$:
+**Boltzmann approximation**
+
+In the valence band $E<E_F$ by several $kT$, so $E-E_F$ is large and **negative**, and $e^{(E-E_F)/kT}\ll1$. The term in the denominator is negligible compared with $1$:
 
 $$
 F_h(E)\approx e^{(E-E_F)/kT}
@@ -429,7 +447,9 @@ $$
 n=p=n_i
 $$
 
-where $n_i$ is the **intrinsic carrier concentration** (or intrinsic carrier density). It is the number of electrons (or holes) per unit volume in the pure material at a given temperature.
+**Intrinsic carrier concentration**
+
+Intrinsic carrier concentration (or intrinsic carrier density, $n_i$) is the number of electrons (or holes) per unit volume in the pure material at a given temperature.
 
 ## Derivation
 
@@ -510,7 +530,7 @@ Adding a controlled amount of impurity to an intrinsic semiconductor is called *
 
 The dopants come from **group V** (pentavalent, 5 valence electrons) or **group III** (trivalent, 3 valence electrons). Their atoms are about the same size as silicon and germanium atoms, so they take the place of host atoms in the crystal (substitutional impurities) without disturbing it much. Very small amounts are enough. A typical doping of $10^{16}$ dopant atoms per $\text{cm}^3$ is only one dopant for every five million silicon atoms, yet it increases the carrier density about a million times above the intrinsic value.
 
-Depending on the dopant, two types of extrinsic semiconductor are possible: **n-type** and **p-type**. Compared with intrinsic material, extrinsic semiconductors
+Depending on the dopant, two types of extrinsic semiconductor are possible: **n-type** and **p-type**. Compared with intrinsic material, extrinsic semiconductors:
 
 - conduct much better,
 - have a conductivity that can be **fixed** by choosing the doping concentration, and
@@ -592,13 +612,17 @@ Heavier doping or a wider band gap pushes the intrinsic region to a higher tempe
 
 Take an n-type sample with $N_D$ donors per unit volume, all ionised (the extrinsic region of the previous page).
 
-**1. Charge neutrality.** The sample as a whole is neutral. The positive charges are the holes and the donor ions. The negative charges are the electrons:
+**Charge neutrality**
+
+The sample as a whole is neutral. The positive charges are the holes and the donor ions. The negative charges are the electrons:
 
 $$
 n=N_D+p
 $$
 
-**2. Law of mass action.** At any temperature,
+**Law of mass action**
+
+At any temperature:
 
 $$
 np=n_i^2
@@ -622,7 +646,9 @@ $$
 - The **minority** carrier density is decided by $n_i^2$ and so rises steeply with temperature. This is why the reverse current of a diode, which is carried by minority carriers, is so sensitive to temperature (page 15).
 - Doping **increases** the majority carriers and **decreases** the minority carriers below the intrinsic value. Adding donors does not only add electrons. It also removes holes, because the extra electrons recombine with them.
 
-**Example.** Silicon with $n_i=1.5\times10^{10}\ \text{cm}^{-3}$ is doped with $N_D=10^{16}\ \text{cm}^{-3}$ donors. Then
+**Example**
+
+Silicon with $n_i=1.5\times10^{10}\ \text{cm}^{-3}$ is doped with $N_D=10^{16}\ \text{cm}^{-3}$ donors. Then
 
 $$
 n\approx10^{16}\ \text{cm}^{-3}\qquad p=\frac{(1.5\times10^{10})^2}{10^{16}}=\mathbf{2.25\times10^{4}\ \text{cm}^{-3}}
@@ -640,7 +666,9 @@ $$
 
 and similarly $E_F-E_v=kT\ln\left(\dfrac{N_v}{N_A}\right)$ for p-type.
 
-**Example.** For the silicon above at $300\ \text{K}$ with $N_c=2.8\times10^{19}\ \text{cm}^{-3}$:
+**Example**
+
+For the silicon above at $300\ \text{K}$ with $N_c=2.8\times10^{19}\ \text{cm}^{-3}$:
 
 $$
 E_c-E_F=0.02585\times\ln\left(\frac{2.8\times10^{19}}{10^{16}}\right)=0.02585\times7.94=\mathbf{0.205\ \text{eV}}
@@ -806,7 +834,9 @@ That is about **half a million times** the intrinsic value, from one dopant atom
 
 ## Why junctions matter
 
-On its own, a p-type or n-type crystal just conducts like a poor conductor, with the same resistance whichever way the current flows. It has no important use as such. Nearly all semiconductor devices combine the two types. The simplest is a single **p-n junction**, or **p-n junction diode**: one crystal that is p-type on one side and n-type on the other, made by special manufacturing processes (diffusing or growing dopants into a single crystal). Simply pressing two pieces together does not work, because the surfaces would not make a perfect crystal contact.
+On its own, a p-type or n-type crystal just conducts like a poor conductor, with the same resistance whichever way the current flows. It has no important use as such. Nearly all semiconductor devices combine the two types.
+
+The simplest is a single **p-n junction**, or **p-n junction diode**: one crystal that is p-type on one side and n-type on the other, made by special manufacturing processes (diffusing or growing dopants into a single crystal). Simply pressing two pieces together does not work, because the surfaces would not make a perfect crystal contact.
 
 ## Diffusion and the depletion region
 
@@ -867,7 +897,9 @@ Before contact, the Fermi level of the n-type material is near its conduction ba
 
 # Biasing a p-n junction
 
-Applying an external voltage across the junction is called **biasing**. The external battery adds its own electric field to the built-in field of the junction. Which way the battery is connected decides whether the two fields add or oppose, and that decides almost everything.
+**Biasing**
+
+Applying an external voltage across the junction is called biasing. The external battery adds its own electric field to the built-in field of the junction. Which way the battery is connected decides whether the two fields add or oppose, and that decides almost everything.
 
 ## Forward bias
 
@@ -877,18 +909,18 @@ Applying an external voltage across the junction is called **biasing**. The exte
 
 What happens, step by step:
 
-- The applied field points from p to n through the junction, **opposite** to the built-in field (which points from n to p). So the net field across the junction is **smaller** than the built-in field.
-- The positive terminal pushes the holes in the p-region towards the junction, and the negative terminal pushes the electrons in the n-region towards it. They neutralise some of the fixed ions at the edges of the depletion region, so the **depletion region becomes narrow** and less resistive.
-- The **barrier height falls** from $eV_0$ to $e(V_0-V)$. The number of majority carriers that can climb a barrier depends **exponentially** on its height, so even a small reduction lets many more carriers go over. The diffusion current increases enormously.
-- At about $0.3\ \text{V}$ for germanium and $0.7\ \text{V}$ for silicon, the barrier is effectively removed and the depletion region offers negligible resistance. Majority carriers then cross easily and the current rises steeply.
-- The drift current of minority carriers does not change (it never depended on the barrier height), so it is now very small compared with the much larger diffusion current.
+1. The applied field points from p to n through the junction, **opposite** to the built-in field (which points from n to p). So the net field across the junction is **smaller** than the built-in field.
+2. The positive terminal pushes the holes in the p-region towards the junction, and the negative terminal pushes the electrons in the n-region towards it. They neutralise some of the fixed ions at the edges of the depletion region, so the **depletion region becomes narrow** and less resistive.
+3. The **barrier height falls** from $eV_0$ to $e(V_0-V)$. The number of majority carriers that can climb a barrier depends **exponentially** on its height, so even a small reduction lets many more carriers go over. The diffusion current increases enormously.
+4. At about $0.3\ \text{V}$ for germanium and $0.7\ \text{V}$ for silicon, the barrier is effectively removed and the depletion region offers negligible resistance. Majority carriers then cross easily and the current rises steeply.
+5. The drift current of minority carriers does not change (it never depended on the barrier height), so it is now very small compared with the much larger diffusion current.
 
 What happens in the external circuit:
 
-- A free electron that crosses from n to p recombines with a hole in the p-region and becomes a valence electron. It continues through the p-region by hopping from hole to hole (as valence-band current) to the positive terminal.
-- To replace it, the **negative terminal** injects another electron into the n-region.
-- At the same time, the **positive terminal** pulls an electron out of a covalent bond in the p-region, creating a new hole there. The electron enters the external circuit. The hole stays in the p-region and moves towards the junction.
-- The result is a large, steady current: through the diode it is carried by majority carriers, and in the wires it is carried by electrons.
+1. A free electron that crosses from n to p recombines with a hole in the p-region and becomes a valence electron. It continues through the p-region by hopping from hole to hole (as valence-band current) to the positive terminal.
+2. To replace it, the **negative terminal** injects another electron into the n-region.
+3. At the same time, the **positive terminal** pulls an electron out of a covalent bond in the p-region, creating a new hole there. The electron enters the external circuit. The hole stays in the p-region and moves towards the junction.
+4. The result is a large, steady current: through the diode it is carried by majority carriers, and in the wires it is carried by electrons.
 
 ## Reverse bias
 
@@ -928,7 +960,7 @@ This one-way behaviour, conducting in one direction and blocking in the other, i
 
 ## The idea
 
-The **diode equation** gives the current $I$ through a p-n junction as a function of the applied voltage $V$. It changes the qualitative picture of the last page into a formula. The total current is the sum of an electron current and a hole current:
+The diode equation gives the current $I$ through a p-n junction as a function of the applied voltage $V$. It changes the qualitative picture of the last page into a formula. The total current is the sum of an electron current and a hole current:
 
 $$
 I=I_e+I_h
@@ -960,7 +992,9 @@ $$
 \frac{n_p}{n_n}=e^{-eV_0/kT}\qquad\Longrightarrow\qquad n_p=n_n\,e^{-eV_0/kT}
 $$
 
-**Meaning.** The minority electron density on the p-side is equal to the majority density on the n-side multiplied by the Boltzmann factor for climbing the barrier. Only those n-side electrons that have enough energy to climb $eV_0$ are found on the p-side. For silicon, with $V_0=0.7\ \text{V}$ at $300\ \text{K}$, the factor $e^{-eV_0/kT}$ is about $2\times10^{-12}$.
+**Physical interpretation**
+
+The minority electron density on the p-side is equal to the majority density on the n-side multiplied by the Boltzmann factor for climbing the barrier. Only those n-side electrons that have enough energy to climb $eV_0$ are found on the p-side. For silicon, with $V_0=0.7\ \text{V}$ at $300\ \text{K}$, the factor $e^{-eV_0/kT}$ is about $2\times10^{-12}$.
 
 At equilibrium, diffusion and drift balance and this density stays fixed.
 
@@ -1209,7 +1243,9 @@ $$
 
 These go a little beyond the standard problems, to practise the ideas on pages 3 to 15. Constants: $h=6.626\times10^{-34}\ \text{J s}$, $m=9.11\times10^{-31}\ \text{kg}$, $k=1.38\times10^{-23}\ \text{J/K}=8.617\times10^{-5}\ \text{eV/K}$, $e=1.6\times10^{-19}\ \text{C}$.
 
-**Example 1. Size of $N_c$.** Find the effective density of states in the conduction band at $300\ \text{K}$ for an electron effective mass equal to the free-electron mass.
+**Example 1. Size of $N_c$.**
+
+Find the effective density of states in the conduction band at $300\ \text{K}$ for an electron effective mass equal to the free-electron mass.
 
 $$
 N_c=2\left(\frac{2\pi m kT}{h^2}\right)^{3/2}=2\left(\frac{2\pi\times9.11\times10^{-31}\times1.38\times10^{-23}\times300}{(6.626\times10^{-34})^2}\right)^{3/2}
@@ -1217,7 +1253,9 @@ $$
 
 The bracket is $5.40\times10^{16}\ \text{m}^{-2}$, so $N_c=2\times(5.40\times10^{16})^{3/2}=\mathbf{2.5\times10^{25}\ \text{m}^{-3}}=2.5\times10^{19}\ \text{cm}^{-3}$. For a different effective mass, multiply by $(m^*/m)^{3/2}$. With $m^*=1.08\,m$ (silicon) this gives $2.8\times10^{19}\ \text{cm}^{-3}$, the value used in the problems.
 
-**Example 2. Is the Boltzmann approximation good?** In intrinsic silicon the Fermi level is about $0.56\ \text{eV}$ below $E_c$. Compare the exact Fermi-Dirac occupation at the band edge with the Boltzmann value at $300\ \text{K}$.
+**Example 2. Is the Boltzmann approximation good?**
+
+In intrinsic silicon the Fermi level is about $0.56\ \text{eV}$ below $E_c$. Compare the exact Fermi-Dirac occupation at the band edge with the Boltzmann value at $300\ \text{K}$.
 
 $\dfrac{E_c-E_F}{kT}=\dfrac{0.56}{0.02585}=21.66$.
 
@@ -1227,7 +1265,9 @@ $$
 
 They agree to better than one part in a billion. The approximation is essentially exact here.
 
-**Example 3. Heating silicon by $50\ \text{K}$.** By what factor does $n_i$ of silicon ($E_g=1.12\ \text{eV}$) increase from $300\ \text{K}$ to $350\ \text{K}$?
+**Example 3. Heating silicon by $50\ \text{K}$.**
+
+By what factor does $n_i$ of silicon ($E_g=1.12\ \text{eV}$) increase from $300\ \text{K}$ to $350\ \text{K}$?
 
 $$
 \frac{n_i(350)}{n_i(300)}=\left(\frac{350}{300}\right)^{3/2}\exp\left[\frac{1.12}{2\times8.617\times10^{-5}}\left(\frac1{300}-\frac1{350}\right)\right]=1.26\times e^{3.095}=\mathbf{27.8}
@@ -1235,7 +1275,9 @@ $$
 
 A modest rise in temperature multiplies the intrinsic carriers almost thirty times.
 
-**Example 4. Germanium against silicon.** Assuming equal $N_c$ and $N_v$, estimate how many times more intrinsic carriers germanium ($E_g=0.66\ \text{eV}$) has than silicon ($E_g=1.12\ \text{eV}$) at $300\ \text{K}$.
+**Example 4. Germanium against silicon.**
+
+Assuming equal $N_c$ and $N_v$, estimate how many times more intrinsic carriers germanium ($E_g=0.66\ \text{eV}$) has than silicon ($E_g=1.12\ \text{eV}$) at $300\ \text{K}$.
 
 $$
 \frac{n_i(\text{Ge})}{n_i(\text{Si})}=\exp\left(\frac{1.12-0.66}{2\times0.02585}\right)=e^{8.90}\approx\mathbf{7\times10^{3}}
@@ -1243,7 +1285,9 @@ $$
 
 The quoted values ($2.5\times10^{19}$ and $1.5\times10^{16}\ \text{m}^{-3}$) give a ratio of about $1.7\times10^3$. The difference comes from the different $N_c$, $N_v$ of the two materials. In both cases the difference in the gap is the deciding factor.
 
-**Example 5. Minority carriers in p-type silicon.** Silicon at $300\ \text{K}$ ($n_i=1.5\times10^{10}\ \text{cm}^{-3}$, $N_v=1.04\times10^{19}\ \text{cm}^{-3}$) is doped with $N_A=10^{17}\ \text{cm}^{-3}$ acceptors. Find $p$, $n$ and the position of the Fermi level.
+**Example 5. Minority carriers in p-type silicon.**
+
+Silicon at $300\ \text{K}$ ($n_i=1.5\times10^{10}\ \text{cm}^{-3}$, $N_v=1.04\times10^{19}\ \text{cm}^{-3}$) is doped with $N_A=10^{17}\ \text{cm}^{-3}$ acceptors. Find $p$, $n$ and the position of the Fermi level.
 
 $$
 p\approx N_A=10^{17}\ \text{cm}^{-3}\qquad n=\frac{n_i^2}{N_A}=\frac{2.25\times10^{20}}{10^{17}}=\mathbf{2.25\times10^{3}\ \text{cm}^{-3}}
@@ -1255,19 +1299,25 @@ $$
 
 The Fermi level is only $0.12\ \text{eV}$ above the valence band, far below mid-gap.
 
-**Example 6. Effect of doping on conductivity.** By what factor does doping silicon with $N_D=10^{22}\ \text{m}^{-3}$ increase its conductivity? Take $n_i=1.5\times10^{16}\ \text{m}^{-3}$, $\mu_e=0.135$, $\mu_h=0.048\ \text{m}^2/\text{V s}$.
+**Example 6. Effect of doping on conductivity.**
+
+By what factor does doping silicon with $N_D=10^{22}\ \text{m}^{-3}$ increase its conductivity? Take $n_i=1.5\times10^{16}\ \text{m}^{-3}$, $\mu_e=0.135$, $\mu_h=0.048\ \text{m}^2/\text{V s}$.
 
 $$
 \frac{\sigma}{\sigma_i}=\frac{N_D\mu_e}{n_i(\mu_e+\mu_h)}=\frac{10^{22}\times0.135}{1.5\times10^{16}\times0.183}\approx\mathbf{4.9\times10^{5}}
 $$
 
-**Example 7. Barrier and minority electrons.** In a silicon junction with $V_0=0.7\ \text{V}$ at $300\ \text{K}$, what fraction of the n-side electron density is found on the p-side at equilibrium?
+**Example 7. Barrier and minority electrons.**
+
+In a silicon junction with $V_0=0.7\ \text{V}$ at $300\ \text{K}$, what fraction of the n-side electron density is found on the p-side at equilibrium?
 
 $$
 \frac{n_p}{n_n}=e^{-eV_0/kT}=e^{-0.7/0.02585}=e^{-27.1}=\mathbf{1.7\times10^{-12}}
 $$
 
-**Example 8. Voltage for a tenfold current.** For an ideal diode ($\eta=1$) at $300\ \text{K}$ in forward bias, how much must the voltage increase to make the current ten times?
+**Example 8. Voltage for a tenfold current.**
+
+For an ideal diode ($\eta=1$) at $300\ \text{K}$ in forward bias, how much must the voltage increase to make the current ten times?
 
 With $I\approx I_se^{V/V_T}$, a tenfold increase needs $e^{\Delta V/V_T}=10$, so
 
@@ -1277,7 +1327,9 @@ $$
 
 This "60 mV per decade" rule is why the forward voltage of a silicon diode stays close to $0.6$ to $0.7\ \text{V}$ over a huge range of currents.
 
-**Example 9. Forward against reverse.** For a diode at $300\ \text{K}$, how many times larger is the forward current at $+0.1\ \text{V}$ than the magnitude of the reverse current?
+**Example 9. Forward against reverse.**
+
+For a diode at $300\ \text{K}$, how many times larger is the forward current at $+0.1\ \text{V}$ than the magnitude of the reverse current?
 
 $$
 \frac{I(+0.1)}{I_s}=e^{0.1/0.02585}-1=47.9-1=\mathbf{46.9}
@@ -1323,7 +1375,7 @@ Even at a tenth of a volt, the diode already conducts nearly fifty times better 
 
 ### Carrier densities
 
-| | |
+| Concept | Formula / Expression |
 | --- | --- |
 | Density of states | $Z(E)\,dE=\dfrac{4\pi}{h^3}(2m^*)^{3/2}E^{1/2}\,dE$ |
 | Standard integral | $\displaystyle\int_0^\infty x^{1/2}e^{-ax}\,dx=\frac{\sqrt\pi}{2a^{3/2}}$ |
@@ -1338,7 +1390,7 @@ Even at a tenth of a volt, the diode already conducts nearly fifty times better 
 
 ### Fermi level
 
-| | |
+| Concept | Formula / Expression |
 | --- | --- |
 | Intrinsic | $E_F=\dfrac{E_c+E_v}{2}+\dfrac{3kT}{4}\ln\left(\dfrac{m_h^*}{m_e^*}\right)$, mid-gap at $0\ \text{K}$ |
 | n-type at $0\ \text{K}$ | $E_{Fn}=\dfrac{E_c+E_D}{2}$, moves down towards mid-gap as $T$ rises |
@@ -1347,7 +1399,7 @@ Even at a tenth of a volt, the diode already conducts nearly fifty times better 
 
 ### The p-n junction
 
-| | |
+| Concept | Formula / Expression |
 | --- | --- |
 | Barrier potential | about $0.7\ \text{V}$ (Si), $0.3\ \text{V}$ (Ge); $V_0=\dfrac{kT}{e}\ln\dfrac{N_AN_D}{n_i^2}$ (beyond syllabus) |
 | Electron densities | $n_p=n_n\,e^{-eV_0/kT}$ |
