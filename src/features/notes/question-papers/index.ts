@@ -15,7 +15,7 @@ function paperNotes(basePath: string, course: string, code: string, content: str
     basePath, storageKey: `udsf:notes:cse:s1:${code.toLowerCase()}:question-papers:v1`,
     title: `S1 CSE ${course} · Question Papers`,
     trail: [{ label: "NOTES", href: "/notes" }, { label: "CSE", href: "/notes/cse" }, { label: "S1", href: "/notes/cse/s1" }, { label: subjectLabel, href: subjectPath }, { label: "QUESTION PAPERS" }],
-    module: "Question Papers", course, code, summary: "KTU 2024 Scheme regular end-semester papers, transcribed and refined with Notebook Agent.",
+    module: "Question Papers", course, code, summary: "KTU 2024 Scheme questions grouped by module and year, with worked solutions and links to the original papers.",
     source: `KTU Notes question-paper archive · ${code} · KTU 2024 Scheme. Transcribed and refined from the linked original PDFs using Notebook Agent.`, pages, chapters,
   };
 }

@@ -1,159 +1,311 @@
-# KTU 2024 Scheme · CSE S1 Question Papers
+# GAPHT121 · Physics for Information Science
 
-Regular end-semester examination papers transcribed and refined with Notebook Agent. Use the linked PDF for original diagrams and layout.
+KTU 2024 Scheme · CSE · Semester 1. Questions are grouped by module, year and question number. Worked answers follow each question; consult the originals for figures.
 
-<!-- page 1 | 2024 Regular Examination -->
+**Original papers:** [December 2024 PDF](/notes/cse/s1/question-papers/assets/GAPHT121_2024.pdf) · [May 2025 PDF](/notes/cse/s1/question-papers/assets/GAPHT121_2025.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-physics-for-information-science-gapht121-question-papers-2024-scheme/)
 
-## 2024 Regular Examination
+<!-- page 1 | Module 1 -->
 
-[Open original PDF](/notes/cse/s1/question-papers/assets/GAPHT121_2024.pdf) · [KTU Notes source page](https://ktunotes.in/ktu-physics-for-information-science-gapht121-question-papers-2024-scheme/)
+## Module 1 · Free-electron theory and superconductivity
 
-Reg No.: ____________________ Name: ____________________
+### 2024 · Q1
 
-**APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY**
+**Question.** State three postulates of the classical free-electron theory.
 
-First Semester B.Tech Degree Regular Examination December 2024 (2024 Scheme)
+**Solution.** A metal contains mobile conduction electrons and fixed positive ion cores; electrons move freely between collisions with ions, defects or boundaries; collisions randomize their velocities, while an applied electric field produces a small average drift. In the Drude model, the mean free time between collisions is represented by relaxation time $\tau$.
 
-**Course Code:** GAPHT 121
+### 2024 · Q2
 
-**Course Name:** PHYSICS FOR INFORMATION SCIENCE
+**Question.** Define critical field and describe its temperature dependence.
 
-Max. Marks: 60
+**Solution.** The critical field $H_c(T)$ is the largest applied magnetic field for which a material remains superconducting. For a type-I superconductor, $H_c(T)=H_c(0)[1-(T/T_c)^2]$ approximately; it falls to zero at the critical temperature $T_c$.
 
-Duration: 2 hours 30 minutes
+### 2024 · Q9(a)
 
-### PART A
+**Question.** Derive current density and conductivity in terms of free-electron concentration.
 
-*(Answer all questions. Each question carries 3 marks)*
+**Solution.** If electron concentration is $n$ and drift-velocity magnitude is $v_d$, then $J=ne v_d$. In a field $E$, the Drude drift magnitude is $v_d=eE\tau/m$. Therefore $J=(ne^2\tau/m)E$ and $\sigma=ne^2\tau/m$ (vector electron drift is opposite to $E$; conventional current is along $E$).
 
-1. Write any three important postulates of classical free electron theory. [CO1] (3)
-2. What is meant by critical field in superconductors? Explain the variation of critical field with temperature. [CO1] (3)
-3. Explain the natural broadening of spectral lines emitted from an excited atom by using Heisenberg's uncertainty principle. [CO2] (3)
-4. Explain the phenomena of Quantum mechanical tunnelling. [CO2] (3)
-5. What are extrinsic semiconductors? How are they formed? [CO3] (3)
-6. What is biasing? Explain the effects of forward biasing in a diode. [CO3] (3)
-7. Explain the process of Zener breakdown in diodes. [CO4] (3)
-8. How light is produced in an LED? Give any two advantages of LEDs over other conventional lamps. [CO4] (3)
+### 2024 · Q9(b)
 
-### PART B
+**Question.** Find the Fermi–Dirac occupation probability for a level $0.01$ eV above $E_F$ at 300 K.
 
-*(Answer any one full question from each module, each question carries 9 marks)*
+**Solution.** $f(E)=1/[1+\exp((E-E_F)/(k_BT))]$. Here $k_BT=(1.38\times10^{-23})(300)=4.14\times10^{-21}$ J and $0.01$ eV $=1.602\times10^{-21}$ J. Thus the exponent is $0.387$ and $f\approx1/(1+1.472)=0.404$ (about 40%).
 
-#### Module-1
+### 2024 · Q10(a)
 
-9. a) Obtain the expressions for current density and electrical conductivity of a metallic conductor in terms of the concentration of free electrons in it. [CO1] (6)
-   b) In a metal, consider the energy level lying $0.01\text{ eV}$ above the Fermi level. What is the probability of this level being occupied by an electron at $300\text{ K}$. Given Boltzmann constant $= 1.38 \times 10^{-23}\text{ J/K}$. [CO1] (3)
+**Question.** Compare type-I and type-II superconductors and give two examples of each.
 
-10. a) Compare Type I and Type II superconductors with proper figures. Write two examples for both. [CO1] (6)
-    b) Write six applications of superconductors in various fields. [CO1] (3)
+**Solution.** Type I has one critical field and a near-complete Meissner state below it; above the field superconductivity is lost. Examples: Hg, Pb. Type II has lower and upper critical fields $H_{c1},H_{c2}$; between them magnetic flux enters as vortices while superconductivity persists. Examples: NbTi, Nb$_3$Sn. A sketch should show one transition for type I and the Meissner, mixed and normal regions for type II.
 
-<!-- page 2 | 2024 Regular Examination · source page 2 -->
+### 2024 · Q10(b)
 
-## Module-2
+**Question.** List six applications of superconductors.
 
-11. a) What is a quantum mechanical wavefunction? Explain its important characteristics. CO2 (3)
+**Solution.** MRI/NMR magnets; particle accelerators; magnetic confinement fusion; SQUID magnetometers; superconducting power cables or fault-current limiters; and low-loss/high-field research magnets. High-temperature superconductors are also used in some demonstrations of magnetic levitation.
 
-    b) Starting from the equation of a plane wave, derive time dependent Schrodinger's wave equation. CO2 (6)
+### 2025 · Q1
 
-12. a) Derive the expression for the eigen function for a particle in one dimensional infinite square well potential. CO2 (6)
+**Question.** Sketch energy bands for conductors, semiconductors and insulators.
 
-    b) Find the two lowest energy levels of an electron in a one dimensional infinite square well potential of width $3\text{ \AA}$. CO2 (3)
+**Solution.** Conductor: a partially filled band or overlapping valence and conduction bands. Semiconductor: a filled valence band and empty conduction band separated by a small forbidden gap. Insulator: the same arrangement but with a substantially larger gap. Label $E_V$, $E_C$ and the gap $E_g$; the sketch is schematic, not to scale.
 
-## Module-3
+### 2025 · Q2
 
-13. a) Derive an expression for the density of electrons in the conduction band of an intrinsic semiconductor. CO3 (6)
+**Question.** Explain critical temperature and critical field and their relation.
 
-    b) Prove that the location of fermi level in an intrinsic semiconductor at $0\text{ K}$ lies at the middle of valence and conduction bands. CO3 (3)
+**Solution.** $T_c$ is the transition temperature below which the material can superconduct; $H_c(T)$ is the maximum field that preserves that state at temperature $T$. The approximate relation is $H_c(T)=H_c(0)[1-(T/T_c)^2]$; either raising temperature toward $T_c$ or field toward $H_c$ destroys superconductivity.
 
-14. a) Explain the formation of a p-n junction by drawing the energy band diagram of a p-n junction at equilibrium condition. Mark the fermi level and the directions of diffusion and drift motions of charge carriers across the junction. CO3 (6)
+### 2025 · Q9(a)
 
-    b) Calculate the diode current in a silicon diode at $25^\circ\text{C}$ when a forward bias voltage of $0.5\text{ V}$ is applied. The reverse saturation current at $25^\circ\text{C}$ is $0.1\text{ }\mu\text{A}$ (material constant, $\eta = 2$). CO3 (3)
+**Question.** State the Drude assumptions and derive drift velocity and conductivity.
 
-## Module-4
+**Solution.** Treat conduction electrons as a classical gas of independent particles; neglect electron–electron interaction; model scattering by fixed ions/defects as random collisions with mean relaxation time $\tau$. The field exerts force $-eE$, so the average electron drift is $\mathbf v_d=-e\tau\mathbf E/m$. Conventional current density is $\mathbf J=ne^2\tau\mathbf E/m$, giving $\sigma=ne^2\tau/m$.
 
-15. Explain the centre-tap and bridge type full wave rectifiers with proper diagrams and obtain its efficiency and ripple factor. CO4 (9)
+### 2025 · Q9(b)
 
-16. a) What is a photodiode? Explain the construction and working of a PIN photodiode. CO4 (5)
+**Question.** Find copper’s electron mobility for $n=9\times10^{28}\,\mathrm{m^{-3}}$ and $\sigma=6\times10^7\,\mathrm{S/m}$.
 
-    b) Write any four applications of photodiodes. CO4 (4)
+**Solution.** $\mu=\sigma/(ne)=6\times10^7/[(9\times10^{28})(1.6\times10^{-19})]=4.17\times10^{-3}\,\mathrm{m^2/(V\,s)}$.
 
-******
+### 2025 · Q10(a)
 
-<!-- page 3 | 2025 Regular Examination -->
+**Question.** Summarize BCS theory and list four applications.
 
-## 2025 Regular Examination
+**Solution.** Below $T_c$, electron–lattice interactions can bind electrons near the Fermi surface into Cooper pairs with opposite momenta and spin. The paired condensate is separated from excitations by an energy gap and carries current without ordinary resistive scattering. Applications include MRI/NMR, accelerator magnets, SQUIDs, and superconducting power devices or fusion magnets.
 
-[Open original PDF](/notes/cse/s1/question-papers/assets/GAPHT121_2025.pdf) · [KTU Notes source page](https://ktunotes.in/ktu-physics-for-information-science-gapht121-question-papers-2024-scheme/)
+### 2025 · Q10(b)
 
-Reg No.: ____________________ Name: ____________________
+**Question.** Pb has $T_c=7.26$ K and $H_c(0)=8\times10^5$ A/m. Find the maximum operating temperature in field $H=4\times10^4$ A/m.
 
-**APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY**  
-B.Tech Degree S2 (R) Exam May 2025 (2024 Scheme)
+**Solution.** Set $H/H_c(0)=1-(T/T_c)^2=0.05$. Thus $T=7.26\sqrt{0.95}=7.08$ K (approximately); to remain superconducting, operate below this limit.
 
-**Course Code: GAPHT 121**  
-**Course Name: PHYSICS FOR INFORMATION SCIENCE**
+<!-- page 2 | Module 2 -->
 
-Max. Marks: 60  
-Duration: 2 hours 30 minutes
+## Module 2 · Quantum mechanics
 
-### PART A
+### 2024 · Q3
 
-*(Answer all questions. Each question carries 3 marks)*
+**Question.** Explain natural spectral-line broadening using the uncertainty principle.
 
-| Qn | Question | CO | Marks |
-|:---:|---|:---:|:---:|
-| 1 | Draw labelled energy band diagram of conductors, semiconductors and insulators. | CO1 | (3) |
-| 2 | Explain critical temperature and critical field. How are they related? | CO1 | (3) |
-| 3 | Explain with a numerical example that wave nature of matter is not apparent in our daily observations of large particles. | CO2 | (3) |
-| 4 | Explain the barrier tunnelling of particles on the basis of quantum mechanics. Give practical examples. | CO2 | (3) |
-| 5 | Draw the V-I characteristics of a p-n junction diode and explain the features. | CO3 | (3) |
-| 6 | Explain the formation of p-type extrinsic semiconductor. | CO3 | (3) |
-| 7 | Explain the working of a tunnel diode. | CO4 | (3) |
-| 8 | Explain the working of LED. | CO4 | (3) |
+**Solution.** An excited state with finite lifetime $\Delta t$ has an energy uncertainty $\Delta E\,\Delta t\gtrsim\hbar/2$. Since photon frequency is $E/h$, this spread gives a nonzero line width even without collisions or instrumental effects. A shorter lifetime produces a broader natural line.
 
-### PART B
+### 2024 · Q4
 
-*(Answer any one full question from each module, each question carries 9 marks)*
+**Question.** Explain quantum-mechanical tunnelling.
 
-#### Module-1
+**Solution.** A particle is represented by a wavefunction. In a classically forbidden finite barrier, the wavefunction decays rather than becoming identically zero; if the barrier is sufficiently thin/low, a nonzero probability flux emerges on the far side. Examples include alpha decay, tunnel diodes and scanning tunnelling microscopy.
 
-| Qn | Sub | Question | CO | Marks |
-|:---:|:---:|---|:---:|:---:|
-| 9 | a) | What are the basic assumptions of classical free electron theory? Obtain the expressions for drift velocity and electrical conductivity based on this theory. | CO1 | (6) |
-| | b) | Find the mobility of electrons in copper, if there are $9 \times 10^{28}$ valence electrons per $\text{m}^3$ and conductivity of copper is $6 \times 10^7\text{ mho/m}$. Charge of the electron is $1.6 \times 10^{-19}\text{ C}$. | CO1 | (3) |
-| 10 | a) | Explain BCS theory of superconductivity. Give four applications of superconductors. | CO1 | (6) |
-| | b) | The transition temperature for Pb is $7.26\text{ K}$. The maximum critical field for Pb is $8 \times 10^5\text{ A/m}$. If it has to be used as a superconductor subjected to a magnetic field of $4 \times 10^4\text{ A/m}$, what should be the temperature of Pb. | CO1 | (3) |
+### 2024 · Q11(a)
 
-#### Module-2
+**Question.** Define a wavefunction and state its important characteristics.
 
-<!-- page 4 | 2025 Regular Examination · source page 2 -->
+**Solution.** $\psi(\mathbf r,t)$ is a probability amplitude; $|\psi|^2$ is the probability density. A physical wavefunction must be single-valued, finite, continuous, square-integrable/normalizable, and have a continuous first derivative where the potential is finite. Its total probability is normalized to one.
 
-11 a) State and explain uncertainty principle. Use this principle to show the non-existence of electrons inside the nucleus. CO2 (6)
+### 2024 · Q11(b)
 
-b) An electron is trapped in a one-dimensional box of length $0.1\text{nm}$. Calculate the energy required to excite the electron from its ground state to the second excited energy state. CO2 (3)
+**Question.** Derive the time-dependent Schrödinger equation from a plane wave.
 
-12 a) Obtain the time independent Schrodinger equation from time dependent Schrodinger equation. CO2 (6)
+**Solution.** For $\psi=Ae^{i(\mathbf k\cdot\mathbf r-\omega t)}$, derivatives give $\hat{\mathbf p}=-i\hbar\nabla$ and $\hat E=i\hbar\partial_t$. Substituting the classical energy $E=p^2/(2m)+V$ yields
 
-b) An electron is confined to a potential well of width $10\text{nm}$. Calculate the minimum uncertainty in its velocity. Mass of electron is $9.1 \times 10^{-31}\text{ kg}$. CO2 (3)
+$$i\hbar\frac{\partial\psi}{\partial t}=\left[-\frac{\hbar^2}{2m}\nabla^2+V(\mathbf r,t)\right]\psi.$$
 
-**Module -3**
+### 2024 · Q12(a)
 
-13 a) Derive the expression for density of holes in the valence band of an intrinsic semiconductor. CO3 (6)
+**Question.** Derive the eigenfunctions for a one-dimensional infinite square well.
 
-b) A germanium diode at room temperature has a forward current of $2\text{ mA}$ when the forward voltage across it is $0.3\text{V}$. Assuming the ideal diode equation and $kT = 0.026\text{eV}$, calculate the reverse saturation current of the diode. CO3 (3)
+**Solution.** For a well $0<x<L$, $V=0$ inside and infinity outside. The inside equation is $\psi''+k^2\psi=0$, with boundary conditions $\psi(0)=\psi(L)=0$. They require $k_n=n\pi/L$, so
 
-14 a) Explain Fermi level in intrinsic and extrinsic semiconductors. How does it vary with temperature? CO3 (6)
+$$\psi_n(x)=\sqrt{2/L}\sin(n\pi x/L),\quad E_n=\frac{n^2\pi^2\hbar^2}{2mL^2}=\frac{n^2h^2}{8mL^2},\quad n=1,2,\dots$$
 
-b) A silicon diode at room temperature with a reverse saturation current of $10\text{nA}$ is subjected to a forward voltage of $0.4\text{V}$. Calculate the forward current assuming an ideal diode and $kT = 0.026\text{eV}$. CO3 (3)
+### 2024 · Q12(b)
 
-**Module -4**
+**Question.** Find the two lowest energy levels for an electron in a $3$ Å box.
 
-15 a) Explain the construction, working and V-I characteristics of a solar cell. Write down an expression for the efficiency and fill factor of the solar cell. CO4 (6)
+**Solution.** $E_1=h^2/(8mL^2)=4.18$ eV for $L=3\times10^{-10}$ m. Since $E_n=n^2E_1$, $E_2=16.7$ eV. (If “two lowest” means the first two levels, these are $E_1,E_2$.)
 
-b) A silicon diode having internal resistance $30\,\Omega$ is used for half wave rectification. The input ac voltage is $V_i = 6\sin\omega t$ volts and load resistance is $500\,\Omega$. Find a) d.c. output voltage b) a.c. input power and c) efficiency of the rectifier. CO4 (3)
+### 2025 · Q3
 
-16 a) Explain the working of a half wave rectifier. Derive the expression for efficiency of a half wave rectifier. CO4 (6)
+**Question.** Give a numerical example showing why matter waves are not apparent for large objects.
 
-b) In a full wave rectifier using centre tapped transformer, internal resistance of the diode is $20\,\Omega$. The rms value of the secondary voltage from centre tap to each anode is $300\text{V}$. If the load resistance is $980\,\Omega$, evaluate the mean load current, rms load current and d.c. output power. CO4 (3)
+**Solution.** For a $0.1$ kg ball moving at $10$ m/s, $\lambda=h/(mv)=6.63\times10^{-34}/1=6.63\times10^{-34}$ m, immeasurably small compared with the object. For an electron at the same speed, the wavelength is about $7.27\times10^{-4}$ m, so wave effects can be observable in suitable experiments.
 
-***
+### 2025 · Q4
+
+**Question.** Explain barrier tunnelling and give examples.
+
+**Solution.** A finite potential barrier has an evanescent wavefunction inside it; matching the wavefunction at both boundaries leaves a finite transmission probability. Transmission decreases rapidly as the barrier becomes wider or higher. Examples are alpha decay, tunnel diodes and STM.
+
+### 2025 · Q11(a)
+
+**Question.** State the uncertainty principle and use it to explain why electrons cannot be confined inside a nucleus.
+
+**Solution.** $\Delta x\,\Delta p\ge\hbar/2$. Confining an electron to $\Delta x\sim10^{-15}$ m requires $\Delta p\gtrsim5.3\times10^{-20}$ kg m/s, or momentum energy $pc\sim16$ MeV. This is far too large for a stable, low-energy electron bound inside a nucleus; electrons observed in beta decay are produced in the decay rather than pre-existing there.
+
+### 2025 · Q11(b)
+
+**Question.** Find the energy to excite a particle in a $0.1$ nm box from ground state to the second excited state.
+
+**Solution.** The second excited state is $n=3$. $\Delta E=(9-1)h^2/(8mL^2)=8E_1$. For an electron and $L=10^{-10}$ m, $E_1\approx37.6$ eV, so $\Delta E\approx301$ eV.
+
+### 2025 · Q12(a)
+
+**Question.** Obtain the time-independent Schrödinger equation.
+
+**Solution.** For a time-independent potential, separate $\psi(\mathbf r,t)=\phi(\mathbf r)T(t)$. The time-dependent equation separates into $T=e^{-iEt/\hbar}$ and
+
+$$-\frac{\hbar^2}{2m}\nabla^2\phi+V\phi=E\phi.$$
+
+### 2025 · Q12(b)
+
+**Question.** Find the minimum velocity uncertainty for an electron confined to $10$ nm.
+
+**Solution.** With $\Delta x=10^{-8}$ m, $\Delta v\ge\hbar/(2m\Delta x)=1.055\times10^{-34}/[2(9.1\times10^{-31})(10^{-8})] \approx5.8\times10^3$ m/s.
+
+<!-- page 3 | Module 3 -->
+
+## Module 3 · Semiconductor physics
+
+### 2024 · Q5
+
+**Question.** What are extrinsic semiconductors and how are they formed?
+
+**Solution.** They are semiconductors whose carrier concentration is deliberately changed by doping. Pentavalent donors provide extra electrons and make n-type material; trivalent acceptors create holes and make p-type material.
+
+### 2024 · Q6
+
+**Question.** Define diode biasing and explain forward bias.
+
+**Solution.** Biasing applies an external voltage to set a diode’s operating condition. Forward bias connects p-side to positive and n-side to negative; the applied field reduces the depletion barrier and width, allowing majority carriers to cross and producing substantial current once the turn-on region is reached.
+
+### 2024 · Q13(a)
+
+**Question.** Derive the conduction-band electron density for an intrinsic semiconductor.
+
+**Solution.** For a nondegenerate semiconductor, $n=N_C\exp[-(E_C-E_F)/(k_BT)]$, where $N_C=2(2\pi m_n^*k_BT/h^2)^{3/2}$. In an intrinsic material, $n=p=n_i$ and $E_F=E_i$, giving $n_i=N_C\exp[-(E_C-E_i)/(k_BT)]$. Combining with the valence-band expression gives $n_i=\sqrt{N_CN_V}\exp[-E_g/(2k_BT)]$.
+
+### 2024 · Q13(b)
+
+**Question.** State where the intrinsic Fermi level lies at 0 K.
+
+**Solution.** In the ideal intrinsic, symmetric-band approximation, it lies at midgap: $E_i\approx(E_C+E_V)/2$. More precisely, density-of-states effective masses can shift it slightly from exact midgap; at exactly 0 K the carrier populations vanish.
+
+### 2024 · Q14(a)
+
+**Question.** Describe p–n junction formation and its equilibrium band diagram.
+
+**Solution.** Electrons diffuse from n to p and holes from p to n, recombine near the interface, and leave fixed ionized donors/acceptors. The resulting depletion field points from n-side positive donors toward p-side negative acceptors; drift of carriers opposes diffusion. At equilibrium, the Fermi level is flat across the junction and a built-in potential bends the bands. Draw the p and n regions, depletion zone, flat $E_F$, and opposing diffusion/drift arrows.
+
+### 2024 · Q14(b)
+
+**Question.** Find the forward current of a silicon diode at 25°C for $V=0.5$ V, $I_S=0.1\,\mu$A, $\eta=2$.
+
+**Solution.** Use $I=I_S[\exp(V/(\eta V_T))-1]$, with $V_T\approx kT/q=25.85$ mV. Then $V/(\eta V_T)=9.67$, so $I\approx10^{-7}(e^{9.67}-1)\approx1.6$ mA.
+
+### 2025 · Q5
+
+**Question.** Sketch and explain the p–n diode V–I characteristic.
+
+**Solution.** In forward bias, current rises steeply after the knee (about 0.7 V for silicon, about 0.3 V for germanium). In reverse bias, a small nearly constant saturation current flows until breakdown at $-V_{BR}$, where current increases sharply. Include both axes, forward knee and reverse breakdown.
+
+### 2025 · Q6
+
+**Question.** Explain p-type semiconductor formation.
+
+**Solution.** Add a small concentration of trivalent acceptor atoms (such as B in Si). Each creates an unfilled covalent bond; accepting a valence electron leaves a mobile hole. Holes are majority carriers and electrons are minority carriers; the acceptor level lies near the valence band.
+
+### 2025 · Q13(a)
+
+**Question.** Derive the hole density in the valence band.
+
+**Solution.** Integrating the valence-band density of states times the probability of an empty state gives, in the nondegenerate approximation, $p=N_V\exp[-(E_F-E_V)/(k_BT)]$, where $N_V=2(2\pi m_p^*k_BT/h^2)^{3/2}$. For an intrinsic semiconductor, set $p=n=n_i$.
+
+### 2025 · Q13(b)
+
+**Question.** A Ge diode has $I=2$ mA at $V=0.3$ V, with $kT=0.026$ eV. Find ideal $I_S$.
+
+**Solution.** $I_S=I/[e^{V/(kT)}-1]$. The exponent is $11.54$, giving $I_S\approx0.002/(1.02\times10^5)\approx1.96\times10^{-8}$ A, or $19.6$ nA.
+
+### 2025 · Q14(a)
+
+**Question.** Explain intrinsic/extrinsic Fermi levels and their temperature variation.
+
+**Solution.** Intrinsic $E_F$ lies near midgap. In n-type material, $E_F$ lies nearer $E_C$; in p-type, nearer $E_V$. At low temperature the dopants dominate and the level lies near the relevant dopant band; as temperature rises, intrinsic carriers dominate and $E_F$ moves toward the intrinsic level near midgap.
+
+### 2025 · Q14(b)
+
+**Question.** Find ideal forward current for a silicon diode with $I_S=10$ nA, $V=0.4$ V, $kT=0.026$ eV.
+
+**Solution.** $I=I_S(e^{V/(kT)}-1)=10^{-8}(e^{15.385}-1)\approx4.8\times10^{-2}$ A, about $48$ mA.
+
+<!-- page 4 | Module 4 -->
+
+## Module 4 · Diodes, optoelectronics and rectifiers
+
+### 2024 · Q7
+
+**Question.** Explain Zener breakdown.
+
+**Solution.** A heavily doped junction has a thin depletion region. A strong reverse field enables band-to-band tunnelling, causing a sharp rise in reverse current at an approximately fixed breakdown voltage. A series resistor must limit current to protect the diode.
+
+### 2024 · Q8
+
+**Question.** Explain LED emission and state two advantages.
+
+**Solution.** Under forward bias, injected electrons and holes recombine radiatively in the active region; photon energy is approximately the semiconductor band gap. LEDs offer high efficiency and long operating life; they also switch rapidly and are compact.
+
+### 2024 · Q15
+
+**Question.** Explain centre-tap and bridge full-wave rectifiers; derive efficiency and ripple factor.
+
+**Solution.** A centre-tap circuit uses two diodes and alternate half-secondary windings; a bridge uses four diodes, two conducting per half-cycle, and needs no centre tap. Both produce $i_L=I_m|\sin\omega t|$. For an ideal resistive load, $I_{dc}=2I_m/\pi$, $I_{rms}=I_m/\sqrt2$. Thus $\eta=P_{dc}/P_{ac}=8/\pi^2=0.812$ (81.2%). Ripple factor $r=\sqrt{(I_{rms}/I_{dc})^2-1}=0.482$. A sketch should mark the two conducting paths in each half-cycle.
+
+### 2024 · Q16(a)
+
+**Question.** Describe a PIN photodiode’s construction and working.
+
+**Solution.** A PIN photodiode has p and n regions separated by a wide, lightly doped or intrinsic layer. Under reverse bias, the depletion region spans the i-layer. Absorbed photons generate electron–hole pairs there; the electric field rapidly sweeps carriers to opposite contacts, producing photocurrent approximately proportional to incident optical power.
+
+### 2024 · Q16(b)
+
+**Question.** Give four photodiode applications.
+
+**Solution.** Fiber-optic receivers, light meters, smoke detectors, and optical encoders/remote-control receivers.
+
+### 2025 · Q7
+
+**Question.** Explain a tunnel diode.
+
+**Solution.** Very heavy p- and n-doping makes the depletion layer extremely thin, so carriers tunnel through the junction. As forward voltage rises, current reaches a peak, falls through a negative-resistance region to a valley, then rises by ordinary conduction. This supports high-frequency oscillators and fast switching.
+
+### 2025 · Q8
+
+**Question.** Explain LED operation.
+
+**Solution.** Forward bias injects electrons and holes into a direct-bandgap active region. Their radiative recombination emits photons with energy close to $E_g$; material composition sets the colour. The device is efficient, small and fast-switching.
+
+### 2025 · Q15(a)
+
+**Question.** Explain a solar cell and define efficiency and fill factor.
+
+**Solution.** A solar cell is a large-area illuminated p–n junction. Photons create electron–hole pairs; the junction field separates them, producing photocurrent and a voltage at the terminals. Draw the illuminated I–V curve with $I_{SC}$, $V_{OC}$ and maximum-power point. $\eta=P_{max}/P_{in}=V_{mp}I_{mp}/P_{in}$ and $FF=V_{mp}I_{mp}/(V_{OC}I_{SC})$.
+
+### 2025 · Q15(b)
+
+**Question.** A half-wave rectifier has $r_d=30\,\Omega$, $R_L=500\,\Omega$, and $v_i=6\sin\omega t$ V. Find DC output, AC input power and efficiency.
+
+**Solution.** $I_m=6/(530)=0.01132$ A. $I_{dc}=I_m/\pi=3.60$ mA, so $V_{dc}=I_{dc}R_L=1.80$ V. $I_{rms}=I_m/2=5.66$ mA; input power in $r_d+R_L$ is $I_{rms}^2(530)=17.0$ mW. DC load power is $I_{dc}^2R_L=6.48$ mW, hence $\eta=38.1$%.
+
+### 2025 · Q16(a)
+
+**Question.** Explain half-wave rectification and derive efficiency.
+
+**Solution.** One diode conducts on the positive half-cycle and blocks the negative half-cycle, giving a half-sine load current. For ideal diode/load, $I_{dc}=I_m/\pi$ and $I_{rms}=I_m/2$. Therefore $\eta=I_{dc}^2R_L/(I_{rms}^2R_L)=4/\pi^2=40.6$% maximum.
+
+### 2025 · Q16(b)
+
+**Question.** Centre-tap full-wave rectifier: each half-secondary is 300 V rms, $r_d=20\,\Omega$, $R_L=980\,\Omega$. Find mean and rms load currents and DC output power.
+
+**Solution.** $V_m=300\sqrt2=424.3$ V and $I_m=V_m/(R_L+r_d)=0.4243$ A. Thus $I_{dc}=2I_m/\pi=0.270$ A, $I_{rms}=I_m/\sqrt2=0.300$ A, and $P_{dc}=I_{dc}^2R_L\approx71.6$ W.
+
+> **Answer note:** Rectifier numerical answers assume the stated internal resistance is in series with the load and use ideal sinusoidal secondary voltage. Small rounding differences are expected.

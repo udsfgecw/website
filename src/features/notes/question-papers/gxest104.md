@@ -1,161 +1,239 @@
-# KTU 2024 Scheme · CSE S1 Question Papers
+# GXEST104 · Introduction to Electrical and Electronics Engineering
 
-Regular end-semester examination papers transcribed and refined with Notebook Agent. Use the linked PDF for original diagrams and layout.
+KTU 2024 Scheme · CSE · Semester 1. Questions are grouped by module, year and question number. Worked answers are placed directly after each item; use the PDFs for original circuit diagrams.
 
-<!-- page 1 | 2024 Regular Examination -->
+**Original papers:** [December 2024 PDF](/notes/cse/s1/question-papers/assets/GXEST104_2024.pdf) · [December 2025 PDF](/notes/cse/s1/question-papers/assets/GXEST104_2025.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-introduction-to-electrical-electronics-engineering-question-papers-2024-scheme/)
 
-## 2024 Regular Examination
+<!-- page 1 | Module 1 -->
 
-[Open original PDF](/notes/cse/s1/question-papers/assets/GXEST104_2024.pdf) · [KTU Notes source page](https://ktunotes.in/ktu-introduction-to-electrical-electronics-engineering-question-papers-2024-scheme/)
+## Module 1 · DC circuits and magnetic circuits
 
-[Non-content page]
+### 2024 · Q5 (circuit in Figure 2)
 
-<!-- page 2 | 2024 Regular Examination · source page 2 -->
+**Question.** Find the equivalent resistance between A and B in the Figure 2 network.
 
-03GXEST104122405
+**Solution.** The transcription preserves the resistor labels but not enough node connections to determine the bridge topology uniquely. Redraw the original figure, combine any unbridged series/parallel arms first, then use a Δ–Y conversion or nodal test-source method for the remaining bridge. With a 1 V test source across A–B, solve node voltages and compute $R_{eq}=1/I_{in}$. Do not treat a bridge as series/parallel unless its junctions actually match.
 
-> **Figure from the original paper:** Resistive network connected between terminals A and B, Figure (2)
->
-> An electrical network with terminals A and B on the left. Terminal A connects to a $2\,\Omega$ resistor, leading to a bridge/ladder network of resistors: $4\,\Omega$, $6\,\Omega$, a central $2\,\Omega$ horizontal resistor, $4/3\,\Omega$, $1\,\Omega$, and terminal B connected through a $2\,\Omega$ resistor.
+### 2024 · Q6(a)
 
+**Question.** Derive the coupling coefficient for coils with self-inductances $L_1,L_2$ and mutual inductance $M$.
 
-Figure (2)
+**Solution.** If fluxes linking coil 1 and coil 2 are $\Phi_1,\Phi_2$, the fractions linking the other coil define $k$. From $M=N_2\Phi_{12}/I_1$ and $L_1=N_1\Phi_1/I_1$ (similarly for coil 2), $M^2\le L_1L_2$. Thus $\displaystyle k=\frac{M}{\sqrt{L_1L_2}}$, with $0\le k\le1$ for the magnitude.
 
-6 a) Derive the expression for coupling coefficient of a coupled coil with self-inductances $L_1$ and $L_2$ and mutual inductance $M$. CO1 3
+### 2024 · Q6(b)
 
-b) For the circuit shown in figure(3), Determine the branch voltages $V_{AB}$, $V_{BC}$ and $V_{CA}$ using nodal analysis. Take D as reference node. CO1 6
+**Question.** Use nodal analysis to find $V_{AB},V_{BC},V_{CA}$ in Figure 3, taking D as reference.
 
-> **Figure from the original paper:** Nodal analysis circuit diagram with voltage sources and resistors, Figure (3)
->
-> A circuit diagram with reference node D at the center. Nodes A, B, C are connected via resistors and DC voltage sources. Top branch has node C connected to a $10\,\text{V}$ source with $0.5\,\Omega$ resistor on the left and a $5\,\text{V}$ source with $0.5\,\Omega$ resistor on the right. Between A and D is a $1\,\Omega$ resistor, between D and B is a $1\,\Omega$ resistor, between C and D is a $1\,\Omega$ resistor. Bottom branch has a $5\,\text{V}$ source in series with a $0.5\,\Omega$ resistor connected between A and B.
+**Solution.** The source polarities and exact resistor/source junctions are required for unique numerical node voltages; the text-only figure description is insufficient. Set $V_D=0$, write KCL at independent nodes A, B and C, and model each voltage source with its indicated polarity and series resistance. Solve for $V_A,V_B,V_C$, then calculate $V_{AB}=V_A-V_B$, $V_{BC}=V_B-V_C$, $V_{CA}=V_C-V_A$. Verify their sum is zero.
 
+### 2025 · Q6(b)
 
-Figure (3)
+**Question.** Define magnetic reluctance and list the factors affecting it.
 
-### Module 2
+**Solution.** Reluctance opposes magnetic flux, analogously to electrical resistance. For a uniform magnetic path, $\mathcal R=l/(\mu A)$, so it increases with path length $l$ and decreases with cross-sectional area $A$ and permeability $\mu$; air gaps strongly raise reluctance.
 
-7 a) Derive the expression for RMS value, average value, form factor and peak factor of a sinusoidal voltage $v(t) = V_m \sin\omega t$ volts. CO1 4
+### 2025 · Q6(a)
 
-b) A series RLC circuit with $R = 5\,\Omega$, $L = 0.1\,\text{H}$ and $C = 5\,\text{mF}$ is supplied from a $100\,\text{V}$, $10\,\text{Hz}$ supply. Find the impedance, power factor, current drawn from the supply, active power, reactive power and apparent power. CO1 5
+**Question.** Find the equivalent resistance between A and B in Figure 2.
 
-8 a) Prove that the average power consumed in an inductance is zero if the input voltage is $v(t) = V_m \sin\omega t$ volts. CO1 4
+**Solution.** Use the exact connectivity in the PDF. Start at the outer A–B nodes; reduce clear series/parallel branches and then use Δ–Y or a 1 V nodal test source for any bridge. The extracted figure description does not specify every junction unambiguously, so a numeric value here would be a guess.
 
-b) A 3-phase $100\,\text{V}$, $50\,\text{Hz}$ balanced supply is connected to a balanced 3-phase RL load with $R = 3\,\Omega$ and $X_L = 4\,\Omega$. Find the current drawn from the supply if the load is i) star connected and ii) delta connected. CO3 5
+<!-- page 2 | Module 2 -->
 
-<!-- page 3 | 2024 Regular Examination · source page 3 -->
+## Module 2 · AC circuits and three-phase systems
 
-## PART 2: ELECTRONICS ENGINEERING (30 Marks)
+### 2024 · Q7(a)
 
-### PART 2-A
-#### Module (3 & 4)
+**Question.** Derive RMS value, average value, form factor and peak factor for $v=V_m\sin\omega t$.
 
-*Answer all questions. Each question carries 3 marks*
+**Solution.** Over a cycle, $V_{rms}=\sqrt{(1/2\pi)\int_0^{2\pi}V_m^2\sin^2\theta\,d\theta}=V_m/\sqrt2$. The full-cycle average is zero; the rectified average is $V_{avg}=V_m/\pi$ (half-cycle average $2V_m/\pi$). Thus the sine-wave form factor using rectified average is $V_{rms}/V_{avg}=\pi/(2\sqrt2)=1.11$ and peak factor is $V_m/V_{rms}=\sqrt2$.
 
-| | | CO | Marks |
-| :--- | :--- | :---: | :---: |
-| 1 | Differentiate between active and passive electronic components with suitable examples | CO4 | 3 |
-| 2 | Draw the V-I characteristics of a PN junction diode and explain | CO4 | 3 |
-| 3 | With the help of a neat block diagram, explain the building blocks of a basic fiber optic communication system | CO5 | 3 |
-| 4 | Draw the block diagram of a function generator | CO6 | 3 |
+### 2024 · Q7(b)
 
-### PART 2-B
-#### Module (3 & 4)
+**Question.** A series RLC circuit has $R=5\,\Omega$, $L=0.1$ H, $C=5$ mF, $f=10$ Hz, and supply 100 V rms. Find impedance, power factor, current and powers.
 
-*Answer any one full question from each module. Each question carries 9 marks*
+**Solution.** $X_L=2\pi fL=6.283\,\Omega$, $X_C=1/(2\pi fC)=3.183\,\Omega$. So $Z=5+j3.100\,\Omega$, $|Z|=5.883\,\Omega$, and $I=100/5.883=17.00$ A. Power factor $=R/|Z|=0.850$ lagging. $P=I^2R\approx1.445$ kW; $Q=I^2(X_L-X_C)\approx0.896$ kvar inductive; $S=VI\approx1.700$ kVA.
 
-#### Module 3
+### 2024 · Q8(a)
 
-| | | | CO | Marks |
-| :--- | :--- | :--- | :---: | :---: |
-| 5 | a) | Explain the working of an RC coupled amplifier with a neat circuit diagram. | CO4 | 6 |
-| | b) | For an NPN transistor if the common base current gain is $0.99$ and collector current is $20\text{ mA}$, Find the value of base current and emitter current? | CO4 | 3 |
-| 6 | | What is a full wave rectifier? Explain the working of a full wave bridge rectifier using necessary diagrams. Write the equations for average value, rms value, ripple factor and efficiency for the same. | CO4 | 9 |
+**Question.** Show that an ideal inductor consumes zero average power for sinusoidal input voltage.
 
-#### Module 4
+**Solution.** In an ideal inductor, current lags voltage by $90°$. Average real power is $P=VI\cos\phi=VI\cos90°=0$; energy is stored in and returned from the magnetic field each cycle.
 
-| | | | CO | Marks |
-| :--- | :--- | :--- | :---: | :---: |
-| 7 | a) | What do you mean by Amplitude Modulation and Frequency Modulation? Explain using diagrams. | CO5 | 6 |
-| | b) | What are Lissajous patterns in CRO? Draw the Lissajous patterns when the waveforms in two inputs are sine waves having equal frequency and $90^{\circ}$ phase difference. | CO6 | 3 |
-| 8 | a) | Explain the principle of Global System for Mobile Communication (GSM) using block diagram | CO5 | 6 |
-| | b) | Draw the block diagram of a digital multimeter | CO6 | 3 |
+### 2024 · Q8(b)
 
-******
+**Question.** A balanced three-phase 100 V supply feeds a balanced load of $R=3\,\Omega$, $X_L=4\,\Omega$ per phase. Find supply current for star and delta connections.
 
-<!-- page 4 | 2025 Regular Examination -->
+**Solution.** $|Z_{ph}|=5\,\Omega$. Assuming 100 V is line-to-line: star has $V_{ph}=100/\sqrt3$, hence $I_L=I_{ph}=100/(5\sqrt3)=11.55$ A. Delta has $V_{ph}=100$ V, $I_{ph}=20$ A, and $I_L=\sqrt3 I_{ph}=34.64$ A. If the paper means 100 V phase voltage, the values change; confirm the convention in the original.
 
-## 2025 Regular Examination
+### 2025 · Q7(a)
 
-[Open original PDF](/notes/cse/s1/question-papers/assets/GXEST104_2025.pdf) · [KTU Notes source page](https://ktunotes.in/ktu-introduction-to-electrical-electronics-engineering-question-papers-2024-scheme/)
+**Question.** Define self-inductance and derive its expression.
 
-[Non-content page]
+**Solution.** Self-inductance is flux linkage per current: $L=N\Phi/I$. For a long uniform solenoid with $N$ turns, length $l$, area $A$, and permeability $\mu$, $B=\mu NI/l$, $\Phi=BA$, hence $L=N\Phi/I=\mu N^2A/l$.
 
-<!-- page 5 | 2025 Regular Examination · source page 2 -->
+### 2025 · Q7(b)
 
-> **Figure from the original paper:** Circuit diagram with three mesh currents, resistors, DC voltage sources, and batteries.
->
-> Circuit diagram labeled Fig 1 with 3 meshes having mesh currents I1, I2, I3. Leftmost branch has a DC source B1 of 20 V in parallel with a 5 Ω resistor on top branch. Middle branch has a 3 Ω resistor and a 5 V source B2. Another branch has a 4 Ω resistor and a 5 V source B4 with a resistor. Another branch has a 2 Ω resistor and 5 V source B3. Rightmost branch has a 30 V source B5 and an 8 Ω resistor on the top branch.
+**Question.** A series circuit has $R=12\,\Omega$, $X_L=25\,\Omega$, $X_C=41\,\Omega$, and 230 V rms. Find impedance, current and power.
 
+**Solution.** $Z=R+j(X_L-X_C)=12-j16\,\Omega$, $|Z|=20\,\Omega$. Current is $230/20=11.5$ A and leads the supply. $P=I^2R=1.587$ kW; power factor is $12/20=0.6$ leading.
 
-Fig 1
+### 2025 · Q8(a)
 
-$6$ | $a$ | Calculate the equivalent resistance between the points A and B of Fig 2. | $1$ | $6$
+**Question.** A 400 V, 50 Hz three-phase supply feeds a delta load with each phase $R=25\,\Omega$, $L=0.15$ H, $C=120\,\mu$F in series. Find impedance, PF and powers/currents.
 
-> **Figure from the original paper:** Resistor network circuit diagram for equivalent resistance calculation between terminals A and B.
->
-> Circuit diagram labeled Fig 2 showing terminals A and B. A top loop contains a 4 Ω resistor. Below it, a branch has a 4 Ω resistor on the left, an 8 Ω resistor on the right, connected to a vertical 2 Ω resistor in the middle branch and a 12 Ω resistor on the rightmost branch, all connected to a common bottom rail leading to terminal B.
+**Solution.** $X_L=2\pi(50)(0.15)=47.12\,\Omega$, $X_C=1/[2\pi(50)(120\times10^{-6})]=26.53\,\Omega$. Thus $Z_{ph}=25+j20.60\,\Omega$, $|Z|=32.39\,\Omega$, PF $=25/32.39=0.772$ lagging. For delta, $V_{ph}=V_L=400$ V, $I_{ph}=12.35$ A, $I_L=\sqrt3I_{ph}=21.39$ A. Total $S=\sqrt3V_LI_L\approx14.82$ kVA, $P=S\,PF\approx11.44$ kW, $Q\approx9.42$ kvar.
 
+### 2025 · Q8(b)
 
-Fig 2
+**Question.** Give three advantages of three-phase over single-phase systems.
 
-| $b$ | Define reluctance. List the factors on which the reluctance of a magnetic material depends. | $2$ | $3$
+**Solution.** For balanced loads, instantaneous power is nearly constant; three-phase motors are self-starting and generally provide smoother torque; and three-phase transmission delivers more power for a given conductor material. The exact comparison depends on voltage, load and conductor assumptions.
 
-## Module 2
+<!-- page 3 | Module 3 -->
 
-$7$ | $a$ | Define self-inductance of a coil. Derive an expression for the self-inductance. | $2$ | $3$
+## Module 3 · Electronic devices and amplifiers
 
-| $b$ | A coil of resistance $12\,\Omega$ and inductive reactance of $25\,\Omega$ is connected in series with a capacitive reactance of $41\,\Omega$. The combination is connected to a supply of $230\,\text{V}$, $50\text{Hz}$. Find (i) circuit impedance (ii) current and (iii) power consumed. | $1$ | $6$
+### 2024 · Q1
 
-$8$ | $a$ | A $3$-phase, $400\,\text{V}$, $50\,\text{Hz}$ ac supply is feeding a $3$-phase delta-connected load with each phase having a resistance of $25\,\Omega$, an inductance of $0.15\,\text{H}$ and a capacitor of $120\,\mu\text{F}$ in series. Find impedance, power factor, line current, apparent power, active power, and reactive power. | $3$ | $6$
+**Question.** Distinguish active and passive components with examples.
 
-| $b$ | List any three advantages of three-phase system over single-phase system | $3$ | $3$
+**Solution.** Active components can control current or provide power gain when correctly biased (transistors, op-amps). Passive components do not provide power gain (resistors, capacitors, inductors). A diode controls current direction but is not a power-gain element.
 
-<!-- page 6 | 2025 Regular Examination · source page 3 -->
+### 2024 · Q2
 
-# PART 2
-## ELECTRONICS ENGINEERING (30 Marks)
+**Question.** Sketch and explain a PN diode V–I characteristic.
 
-### PART 2-A
+**Solution.** Forward current is small below the knee and rises rapidly after it (roughly 0.7 V for silicon). Reverse current is small until breakdown, where it rises sharply. Label forward/reverse axes, knee and breakdown voltage.
 
-#### Answer all questions. Each question carries 3 marks
+### 2024 · Q5(a)
 
-| | | CO | Marks |
-|---|---|:---:|:---:|
-| 1 | Draw the block diagram of a DC power supply and explain | 4 | 3 |
-| 2 | Differentiate between Zener and Avalanche breakdown | 4 | 3 |
-| 3 | With the help of a neat block diagram, explain the components of a basic communication system | 5 | 3 |
-| 4 | Explain the need for modulation | 5 | 3 |
+**Question.** Explain an RC-coupled amplifier.
 
-### PART 2-B
+**Solution.** A common-emitter transistor stage amplifies the input; a coupling capacitor passes AC to the next stage while blocking DC, and an emitter-bypass capacitor increases AC gain while retaining DC bias stability. The collector resistor converts collector-current variation into output voltage. Interstage coupling capacitors isolate the bias of adjacent stages. The midband gain is approximately flat; low-frequency capacitive reactance and high-frequency transistor/parasitic capacitances reduce gain.
 
-#### Answer any one full question from each module. Each question carries 9 marks
+### 2024 · Q5(b)
 
-#### Module 3
+**Question.** For $\alpha=0.99$ and $I_C=20$ mA, find base and emitter currents.
 
-| | | CO | Marks |
-|---|---|:---:|:---:|
-| 5 | a) Explain the construction and working of an n-channel enhancement type MOSFET. Use figures wherever necessary | 4 | 7 |
-| | b) Write the relation between $\alpha$, the current gain CB configuration and $\beta$, the current gain in CE configuration. | 4 | 2 |
-| 6 | a) Draw the frequency response of an RC coupled amplifier. Explain why the gain is reduced at low and high frequencies | 4 | 5 |
-| | b) Explain the working of a PN junction diode when it is forward biased. | 4 | 4 |
+**Solution.** $\alpha=I_C/I_E$, so $I_E=20/0.99=20.202$ mA. $I_B=I_E-I_C=0.202$ mA.
 
-#### Module 4
+### 2024 · Q6
 
-| | | CO | Marks |
-|---|---|:---:|:---:|
-| 7 | a) Explain the working of an FM receiver based on superheterodyne principle. | 5 | 6 |
-| | b) What are the advantages of optical communication? | 5 | 3 |
-| 8 | a) What are the essential components of a CRO? | 6 | 3 |
-| | b) With the help of a neat block diagram, explain the components of an electronic instrumentation system | 6 | 6 |
+**Question.** Explain a bridge full-wave rectifier and give average, rms, ripple and efficiency equations.
 
-***************
+**Solution.** Four diodes form a bridge; two conduct on each half-cycle so current through the load has the same direction. For ideal sinusoidal output, $I_{dc}=2I_m/\pi$, $I_{rms}=I_m/\sqrt2$, ripple factor $r=\sqrt{(I_{rms}/I_{dc})^2-1}=0.482$, and maximum rectification efficiency $\eta=8/\pi^2=81.2$%. Two conducting diode drops reduce practical output.
+
+### 2025 · Q1 (Part 2)
+
+**Question.** Draw and explain a DC power-supply block diagram.
+
+**Solution.** `AC mains → transformer → rectifier → filter → voltage regulator → load`. The transformer sets/isolates voltage, rectifier converts AC to pulsating DC, filter reduces ripple, and regulator stabilizes the output.
+
+### 2025 · Q2 (Part 2)
+
+**Question.** Differentiate Zener and avalanche breakdown.
+
+**Solution.** Zener breakdown occurs in a heavily doped, thin depletion region at relatively low reverse voltage by strong-field tunnelling; its temperature coefficient is usually negative. Avalanche breakdown occurs in a wider, lightly doped region at higher voltage by impact ionization; its temperature coefficient is usually positive. Both can be nondestructive if current is limited.
+
+### 2025 · Q5(a) (Part 2)
+
+**Question.** Explain an n-channel enhancement MOSFET.
+
+**Solution.** It has n+ source/drain diffusions in a p-type body, insulated gate over a thin oxide, and body contact. At $V_{GS}=0$ there is no inversion channel. A positive gate voltage attracts electrons; above threshold $V_T$ an n-channel forms. With $V_{DS}$, electrons flow source-to-drain (conventional current drain-to-source); gate current is ideally negligible. Draw the cross-section and label gate oxide, channel, source, drain and body.
+
+### 2025 · Q5(b) (Part 2)
+
+**Question.** Relate common-base current gain $\alpha$ and common-emitter gain $\beta$.
+
+**Solution.** From $I_E=I_C+I_B$, $\alpha=I_C/I_E=\beta/(1+\beta)$. Therefore $\beta=\alpha/(1-\alpha)$.
+
+### 2025 · Q6(a) (Part 2)
+
+**Question.** Sketch the frequency response of an RC-coupled amplifier and explain low/high-frequency gain reduction.
+
+**Solution.** Plot gain versus log frequency: rising low-frequency region, flat midband and falling high-frequency region. At low frequency, coupling and bypass capacitor reactances are large, reducing signal transfer/emitter bypass. At high frequency, transistor junction capacitances, Miller effect and wiring capacitance shunt signal and reduce gain.
+
+### 2025 · Q6(b) (Part 2)
+
+**Question.** Explain a forward-biased PN diode.
+
+**Solution.** Connect p to positive and n to negative. The applied field lowers the built-in barrier and narrows the depletion zone; majority carriers cross and recombine, so current rises approximately exponentially with voltage.
+
+<!-- page 4 | Module 4 -->
+
+## Module 4 · Communication, instrumentation and display systems
+
+### 2024 · Q3 (Part 2)
+
+**Question.** Explain the blocks of a fiber-optic communication system.
+
+**Solution.** `Information source → encoder/driver → LED or laser → optical fiber/channel → photodetector → amplifier/decoder → destination`. The transmitter converts information to modulated light; the fiber guides it; the receiver converts received light back to an electrical signal.
+
+### 2024 · Q4 (Part 2)
+
+**Question.** Draw the function-generator block diagram.
+
+**Solution.** A typical diagram is `frequency-control/timing circuit → integrator → triangle output`, with the integrator also feeding a Schmitt trigger/comparator that creates a square wave; a sine shaper converts the triangle to a sine output. Include output buffers/attenuators and amplitude control. Architectures vary by instrument.
+
+### 2024 · Q7(a) (Part 2)
+
+**Question.** Explain amplitude and frequency modulation.
+
+**Solution.** AM varies carrier amplitude in proportion to the message while carrier frequency stays fixed: $s(t)=A_c[1+m\cos(\omega_mt)]\cos(\omega_ct)$. FM varies instantaneous carrier frequency with the message while amplitude stays constant. Sketch AM with changing envelope and FM with changing cycle spacing.
+
+### 2024 · Q7(b) (Part 2)
+
+**Question.** What are CRO Lissajous patterns? Sketch equal-frequency sine inputs with 90° phase difference.
+
+**Solution.** Lissajous figures appear when two signals drive the horizontal and vertical plates in X–Y mode. For equal frequencies and 90° phase difference, $x=A\sin\omega t$, $y=B\cos\omega t$, giving $x^2/A^2+y^2/B^2=1$: an ellipse, a circle when $A=B$.
+
+### 2024 · Q8(a) (Part 2)
+
+**Question.** Explain the principle of GSM.
+
+**Solution.** A mobile station communicates by radio with a base transceiver station. The BSC manages radio resources and handover; the MSC switches calls and connects to other networks. HLR/VLR store subscriber/location data; AuC authenticates users and EIR checks equipment. Voice/data are digitized, channel-coded, interleaved and modulated over assigned time/frequency slots.
+
+### 2024 · Q8(b) (Part 2)
+
+**Question.** Draw a digital multimeter block diagram.
+
+**Solution.** `input terminals → protection → function/range selector → signal conditioning (divider/shunt/AC converter) → A/D converter → digital display`. Add reference/clock/control circuitry. Different ranges route the input through appropriate conditioning.
+
+### 2025 · Q3 (Part 2)
+
+**Question.** Explain a basic communication-system block diagram.
+
+**Solution.** `information source → input transducer → transmitter/encoder/modulator → channel (+ noise) → receiver/demodulator/decoder → output transducer → destination`. The transmitter adapts the signal to the channel; the receiver recovers the message.
+
+### 2025 · Q4 (Part 2)
+
+**Question.** Why is modulation needed?
+
+**Solution.** Modulation shifts a baseband signal to a carrier frequency, enabling practical antenna size, longer-range radiation, frequency-division sharing, and improved channel/noise management. The modulation type and bandwidth determine tradeoffs.
+
+### 2025 · Q7(a) (Part 2)
+
+**Question.** Explain a superheterodyne FM receiver.
+
+**Solution.** `antenna → RF amplifier → mixer + local oscillator → fixed IF filter/amplifier → limiter → FM discriminator → de-emphasis/audio amplifier`. Mixing converts the tuned station to a constant intermediate frequency; the discriminator recovers the message from frequency deviation.
+
+### 2025 · Q7(b) (Part 2)
+
+**Question.** State advantages of optical communication.
+
+**Solution.** High bandwidth, low attenuation over long distances, immunity to electromagnetic interference, electrical isolation, small/light cable and difficult signal tapping. Installation cost, bends, connectors and specialized equipment remain practical considerations.
+
+### 2025 · Q8(a) (Part 2)
+
+**Question.** List essential CRO components.
+
+**Solution.** Cathode-ray tube (electron gun, deflection plates, fluorescent screen), vertical amplifier, time-base/sweep generator, trigger/synchronization circuit, horizontal amplifier, power supplies and input controls/probes.
+
+### 2025 · Q8(b) (Part 2)
+
+**Question.** Explain an electronic instrumentation system.
+
+**Solution.** `measurand → sensor/transducer → signal conditioning → transmission/conversion → display/recording or controller`. The sensor converts the physical quantity to an electrical signal; conditioning amplifies, filters, linearizes or isolates it; the output stage displays, records or acts on the measurement. Include reference/calibration and power where appropriate.
+
+> **Source note:** The first page of each paper was marked non-content during transcription, so some early electrical questions are unavailable in this text. Circuit questions whose node connectivity or polarity is only visible in the PDF are left as method answers rather than guessed numerical results.

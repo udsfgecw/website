@@ -1,103 +1,254 @@
-# KTU 2024 Scheme · CSE S1 Question Papers
+# UCEST105 · Algorithmic Thinking with Python
 
-Regular end-semester examination papers transcribed and refined with Notebook Agent. Use the linked PDF for original diagrams and layout.
+KTU 2024 Scheme · CSE · Semester 1. Questions are grouped by module and year, with a solution immediately after each question.
 
-<!-- page 1 | 2024 Regular Examination -->
+**Original paper:** [2024 PDF](/notes/cse/s1/question-papers/assets/UCEST105_2024.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-algorithmic-thinking-with-python-question-papers-2024-scheme/)
 
-## 2024 Regular Examination
+<!-- page 1 | Module 1 -->
 
-[Open original PDF](/notes/cse/s1/question-papers/assets/UCEST105_2024.pdf) · [KTU Notes source page](https://ktunotes.in/ktu-algorithmic-thinking-with-python-question-papers-2024-scheme/)
+## Module 1 · Problem solving and heuristics
 
-Reg No.: ______________________ Name: ______________________
+### 2024 · Q1
 
-03UCEST105122402
+**Question.** Describe how to solve a jigsaw puzzle without a reference picture using trial and error.
 
-### APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY
+**Solution.** Sort pieces by edge/colour/pattern, form the border and likely clusters, then test candidate fits. Keep a fit only if adjoining shapes and picture fragments agree; undo failed placements and use the new evidence to narrow later choices.
 
-**First Semester B.Tech Degree Regular Examination December 2024 (2024 Scheme)**
+### 2024 · Q2
 
-**Course Code: UCEST 105**  
-**Course Name: ALGORITHMIC THINKING WITH PYTHON**
+**Question.** Write Python to check whether the input string `" 12345 "` is numeric.
 
-Max. Marks: 60  
-Duration: 2 hours 30 minutes
+**Solution.** Strip surrounding whitespace, then use `str.isdigit()`:
 
-#### PART A
+```python
+s = input().strip()
+print(s.isdigit())
+```
 
-*(Answer all questions. Each question carries 3 marks)*
+For the given input the output is `True`.
 
-| | | CO | Marks |
-| :--- | :--- | :---: | :---: |
-| 1 | You are asked to solve a jigsaw puzzle without a reference picture. How will you solve it using trial and error method? | CO-1 | (3) |
-| 2 | Given the input " 12345 ", write a Python code snippet to check if it is numeric. | CO-1 | (3) |
-| 3 | Draw the flowchart to generate the first 'n' numbers in the Fibonacci sequence. | CO-2 | (3) |
-| 4 | Write an algorithm to check whether the input integer is Palindrome or not. | CO-2 | (3) |
-| 5 | Write the output produced by the following code.<br>(i) for count in range(-10,-20,-2) :<br>&nbsp;&nbsp;&nbsp;&nbsp;print(count, end=" ")<br>(ii) for i in range(10,-1,-2):<br>&nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>(iii) 2\*3\*\*2\*\*2 | CO-3 | (3) |
-| 6 | Write a Python program to find the sum of even numbers from N given numbers. | CO-3 | (3) |
-| 7 | What is the motivation for using a randomized approach in problem-solving? | CO-4 | (3) |
-| 8 | You are a software engineer working on a security application for a company that handles sensitive user data. The application has a 4-digit numeric password system for authentication. However, due to a system | CO-4 | (3) |
+### 2024 · Q9(a)
 
-<!-- page 2 | 2024 Regular Examination · source page 2 -->
+**Question.** Explain how backtracking solves Sudoku.
 
-error, a user has forgotten their password. Write an algorithm for recovering the 4-digit numeric password.
+**Solution.** Find an empty cell and try digits 1–9 that do not already occur in its row, column or 3×3 box. Recurse after each legal choice. If a later cell has no legal value, erase the last choice and try the next digit. Reaching a full valid grid is the base case.
 
-### PART B
-*(Answer any one full question from each module, each question carries 9 marks)*
+### 2024 · Q9(b)
 
-#### Module - 1
+**Question.** Explain how heuristics can help choose a restaurant in a new city.
 
-9. a) Explain how backtracking strategy can be applied to solve Sudoku problem? CO-1 (5)
+**Solution.** Use practical rules such as distance, budget, cuisine, ratings, opening hours and dietary needs to rank a manageable set. A heuristic quickly finds a good option; it does not guarantee the mathematically best restaurant.
 
-   b) Your college is located in a metropolitan city and you are new to that city. You would like to go out for dinner with your friends. Explain how heuristics approach can be used to find the best restaurant for dinner. CO-1 (4)
+### 2024 · Q10(a)
 
-10. a) You are asked to develop new campus management software for your college. How will you apply Means-Ends Analysis to develop the software? CO-1 (6)
+**Question.** Apply Means–Ends Analysis to develop campus-management software.
 
-    b) Given the area of a circle. Write a Python program to calculate the radius of the circle using the math module. CO-1 (3)
+**Solution.** Define the goal state (for example, reliable course registration and attendance reporting), compare it with the current process, identify the largest gaps, and select operators that reduce them. Decompose into modules such as identity, course data, enrollment, attendance and reporting. Implement and test each gap-reducing step, then repeat until requirements and validation criteria are met.
 
-#### Module - 2
+### 2024 · Q10(b)
 
-11. a) Write a pseudocode to implement a grading system based on the following conditions. CO-2 (6)
+**Question.** Given a circle’s area, write Python to calculate its radius using `math`.
 
-    * Marks $\ge$ 90: Grade A
-    * Marks 80–89: Grade B
-    * Marks 70–79: Grade C
-    * Marks 60-70: Grade D
-    * Marks 50-69: Grade E
-    * Marks < 50 : Grade F
-    * If the difference between the marks and the next multiple of 10 is less that 3, then convert it to next grade.
-    * If the marks are below 50, no need to convert even if the difference is less than 3.
+**Solution.** From $A=\pi r^2$, $r=\sqrt{A/\pi}$.
 
-<!-- page 3 | 2024 Regular Examination · source page 3 -->
+```python
+import math
+area = float(input("Area: "))
+radius = math.sqrt(area / math.pi)
+print(radius)
+```
 
-b) You are a software developer working on a data analysis tool for a logistics company. The company has a list of delivery times, where each entry represents the time taken (in minutes) for a particular delivery. The team needs to identify delivery times that are divisible by 6 (as they are considered optimal delivery durations) but not divisible by 4 (as they tend to involve more complexity in scheduling). Write **an algorithm** to print the delivery times that are divisible by 6 but not divisible by 4 from a given set of delivery times. (3)
+<!-- page 2 | Module 2 -->
 
-12 a) You are developing a feature for a business analytics tool that processes a list of sales figures for a company. As part of the analytics, the tool must identify the highest and lowest sales figures from the provided data. Write the **pseudocode** to determine the largest and smallest numbers in a given list of N numbers, ensuring the solution is efficient for real-world applications. CO-2 (6)
+## Module 2 · Algorithms, pseudocode and control flow
 
-b) Write the pseudocode to calculate the factorial of a given number using a for loop. CO-2 (3)
+### 2024 · Q3
 
-### Module - 3
+**Question.** Give a flowchart to generate the first $n$ Fibonacci numbers.
 
-13 a) You are working as a software engineer for a financial analysis company. The company uses Fibonacci sequences to model certain financial growth patterns, such as project milestones or revenue projections. You are tasked with developing a tool that generates the first 'n' numbers in the Fibonacci sequence to assist in creating projections for clients. You should use recursion to solve it. CO-3 (5)
+**Solution.** Initialize `a=0, b=1, i=0`; while `i<n`, output `a`, set `(a,b)=(b,a+b)`, and increment `i`. The loop’s false branch ends. This produces `0, 1, 1, 2, …`.
 
-b) Write a program that accepts the length of three sides of a triangle as input and determine whether or not the triangle is a right triangle. CO-3 (4)
+### 2024 · Q4
 
-14 a) You are given two positive integers, a and b. Write a Python program using **recursion** to find the Least Common Multiple (LCM) of these integers. You are not allowed to directly calculate the LCM formula, but must instead use the relationship between GCD and LCM. CO-3 (6)
+**Question.** Write an algorithm to test whether an integer is a palindrome.
 
-<!-- page 4 | 2024 Regular Examination · source page 4 -->
+**Solution.** Save the original value, reverse its digits using repeated remainder/division, then compare the reversed value with the original. For non-negative inputs:
 
-Note: For any two positive integers, the product of their LCM and GCD is equal to the product of the two numbers. In other words,
-$$lcm(a, b) \times gcd(a, b) = ab$$
+```text
+original ← n; reversed ← 0
+while n > 0:
+    reversed ← 10 × reversed + (n mod 10)
+    n ← floor(n / 10)
+return reversed = original
+```
 
-b) You are working on a text-processing application for a content moderation team. The team needs a feature to analyze user-generated sentences and reorganize their characters for better readability and analysis. Specifically, they want all capital letters to appear first, followed by small letters, then digits, and finally any special characters. Write a Python program to implement this feature, ensuring the reorganized output is displayed as a single word. CO-3 (3)
+### 2024 · Q11(a)
 
-## Module - 4
+**Question.** Write pseudocode for the specified grading system.
 
-15. a) You are working as a financial analyst for a bank. The bank has received a list of loan interest rates from multiple branches, and you need to identify the two lowest rates to recommend the most cost-effective options to customers. The rates are provided as an array of positive integers, and your task is to develop an efficient algorithm using the Divide and Conquer approach to find the sum of the two smallest rates. Explain with a suitable example. CO-4 (6)
+**Solution.** First assign the base grade: A≥90, B=80–89, C=71–79, D=60–70, E=50–59, otherwise F. The printed ranges in the paper overlap at 60–70 and 50–69; resolving them as contiguous non-overlapping bands is necessary. For marks ≥50, let `d = 10 - (marks mod 10)`; when `d<3`, advance one grade, capped at A. Do not promote marks below 50.
 
-b) Compare and contrast greedy approach and dynamic programming approach. CO-4 (3)
+```text
+if marks >= 90: grade = A
+elif marks >= 80: grade = B
+elif marks >= 71: grade = C
+elif marks >= 60: grade = D
+elif marks >= 50: grade = E
+else: grade = F
+if marks >= 50 and marks mod 10 >= 8 and grade != A:
+    grade = previous_letter(grade)
+```
 
-16. a) Explain memoization and tabulation techniques in dynamic programming for calculating the n-th Fibonacci number CO-4 (6)
+### 2024 · Q11(b)
 
-b) Solve the following: CO-4 (3)
+**Question.** Print delivery times divisible by 6 but not by 4.
 
-You are given an array of positive integers where each integer represents the time taken to complete a task. Develop a greedy algorithm to determine the maximum number of tasks you can complete in a given total time limit. Explain your reasoning behind each step of the solution.
+**Solution.** Test both divisibility conditions for each value:
+
+```text
+for t in times:
+    if t mod 6 = 0 and t mod 4 ≠ 0:
+        print(t)
+```
+
+### 2024 · Q12(a)
+
+**Question.** Give efficient pseudocode to find the largest and smallest numbers in a list.
+
+**Solution.** Initialize both extrema to the first element, then scan the rest once, updating each as needed. This takes $O(N)$ time and $O(1)$ extra space.
+
+```text
+smallest = largest = A[0]
+for x in A[1:]:
+    if x < smallest: smallest = x
+    if x > largest:  largest = x
+```
+
+### 2024 · Q12(b)
+
+**Question.** Give pseudocode for factorial using a `for` loop.
+
+**Solution.** For integer $n\ge0$, initialize `fact=1`; multiply by each integer from 2 through $n$. The result is $n!$; $0!=1$.
+
+<!-- page 3 | Module 3 -->
+
+## Module 3 · Python programming, recursion and number problems
+
+### 2024 · Q5
+
+**Question.** Find the outputs of two `range` loops and `2*3**2**2`.
+
+**Solution.** The first loop prints `-10 -12 -14 -16 -18 `. The second prints `10`, `8`, `6`, `4`, `2`, `0` on separate lines. Exponentiation associates right-to-left, so $2\cdot3^{(2^2)}=162$.
+
+### 2024 · Q6
+
+**Question.** Write a Python program to sum the even numbers among $N$ inputs.
+
+**Solution.**
+
+```python
+n = int(input())
+total = 0
+for _ in range(n):
+    value = int(input())
+    if value % 2 == 0:
+        total += value
+print(total)
+```
+
+### 2024 · Q13(a)
+
+**Question.** Generate the first $n$ Fibonacci numbers recursively.
+
+**Solution.** Define $F(0)=0$, $F(1)=1$, and $F(n)=F(n-1)+F(n-2)$. A direct recursive version is clear but exponential; memoization or the loop below avoids repeated work.
+
+```python
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n - 1) + fib(n - 2)
+
+print([fib(i) for i in range(n)])
+```
+
+### 2024 · Q13(b)
+
+**Question.** Test whether three side lengths form a right triangle.
+
+**Solution.** Sort sides $a\le b\le c$. A valid triangle must satisfy $a>0$ and $a+b>c$; it is right-angled exactly when $a^2+b^2=c^2$ (allow a numeric tolerance for floating-point input).
+
+```python
+a, b, c = sorted(map(float, input().split()))
+print(a > 0 and a + b > c and abs(a*a + b*b - c*c) < 1e-9)
+```
+
+### 2024 · Q14(a)
+
+**Question.** Use recursion and the GCD–LCM relation to find the LCM of positive integers $a,b$.
+
+**Solution.** Compute the GCD recursively with Euclid’s algorithm, then use $\operatorname{lcm}(a,b)=ab/\gcd(a,b)$.
+
+```python
+def gcd(a, b):
+    return a if b == 0 else gcd(b, a % b)
+
+def lcm(a, b):
+    return a * b // gcd(a, b)
+```
+
+### 2024 · Q14(b)
+
+**Question.** Reorder a string as uppercase letters, lowercase letters, digits, then special characters.
+
+**Solution.** Stable grouping keeps the original relative order within each class.
+
+```python
+s = input()
+result = (''.join(c for c in s if c.isupper()) +
+          ''.join(c for c in s if c.islower()) +
+          ''.join(c for c in s if c.isdigit()) +
+          ''.join(c for c in s if not c.isalnum()))
+print(result)
+```
+
+<!-- page 4 | Module 4 -->
+
+## Module 4 · Divide and conquer, greedy methods and dynamic programming
+
+### 2024 · Q7
+
+**Question.** Why use randomized approaches in problem solving?
+
+**Solution.** Random choices can avoid adversarial worst cases, explore a large search space, and produce a useful approximate answer when exhaustive search is expensive. Their quality or runtime is probabilistic and must be assessed over repeated trials or with a suitable guarantee.
+
+### 2024 · Q8
+
+**Question.** The paper asks for an algorithm to recover a forgotten four-digit numeric password, but the scan’s question text ends after “due to a system error”.
+
+**Solution.** The prompt is incomplete in the source transcript, and a password recovery procedure cannot be inferred safely from that fragment. Check the linked original PDF for the full requirements before solving this question.
+
+### 2024 · Q15(a)
+
+**Question.** Use divide and conquer to find the sum of the two smallest positive integers in an array.
+
+**Solution.** For each half, return its two smallest values; merge the two results and select the smallest two of the four candidates. The merge is constant work, giving $T(N)=2T(N/2)+O(1)=O(N)$. Example: `[8,3,6,1,5]` has two smallest values 1 and 3, so the sum is 4.
+
+### 2024 · Q15(b)
+
+**Question.** Compare greedy and dynamic programming.
+
+**Solution.** A greedy algorithm commits to the locally best available choice and is usually simpler and cheaper; it is correct only when the problem has the greedy-choice property. Dynamic programming stores overlapping subproblem results and combines them to guarantee an optimum when optimal substructure holds, usually using more time or memory.
+
+### 2024 · Q16(a)
+
+**Question.** Explain memoization and tabulation for Fibonacci numbers.
+
+**Solution.** Memoization is top-down recursion that caches each computed $F(k)$, so each value is calculated once. Tabulation is bottom-up: store $F(0),F(1)$ and iteratively form later values. Both take $O(n)$ time; tabulation can use $O(1)$ extra space by retaining only the last two values.
+
+### 2024 · Q16(b)
+
+**Question.** Greedily maximize the number of tasks completed before a time limit, given task durations.
+
+**Solution.** Assuming every task has equal value and tasks are independent, sort durations from shortest to longest. Add each duration while the cumulative total remains within the limit, stopping when the next one does not fit. This is optimal for maximizing the count because replacing any selected longer task with a shorter available one cannot reduce the count. If tasks have different values or precedence constraints, this greedy rule needs revision.
+
+> **Source note:** The 2024 paper’s Q8 statement is cut off in the scan transcription; its original PDF is linked above. No 2025 UCEST105 regular paper was listed in the KTU Notes archive when collected.
