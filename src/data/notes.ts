@@ -12,6 +12,8 @@ import { CHEMISTRY_MODULE_2_PATH } from "@/features/notes/chemistry-module-2/pat
 import { CHEMISTRY_MODULE_3_PATH } from "@/features/notes/chemistry-module-3/path";
 import { CHEMISTRY_MODULE_4_PATH } from "@/features/notes/chemistry-module-4/path";
 import { ELECTRICAL_MODULE_1_PATH } from "@/features/notes/electrical-module-1/path";
+import { ELECTRICAL_MODULE_2_PATH } from "@/features/notes/electrical-module-2/path";
+import { ELECTRICAL_MODULE_3_PATH } from "@/features/notes/electrical-module-3/path";
 import { PYTHON_MODULE_1_PATH, PYTHON_MODULE_1_SUMMARY } from "@/features/notes/python-module-1/path";
 import { PYTHON_MODULE_2_PATH, PYTHON_MODULE_2_SUMMARY } from "@/features/notes/python-module-2/path";
 import { PYTHON_MODULE_3_PATH, PYTHON_MODULE_3_SUMMARY } from "@/features/notes/python-module-3/path";
@@ -151,6 +153,8 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",
           modules: [
             { name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: ELECTRICAL_MODULE_1_PATH },
+            { name: "Module 2", detail: "Electromagnetic induction to three-phase AC systems", href: ELECTRICAL_MODULE_2_PATH },
+            { name: "Module 3", detail: "Electronic devices to modern electronics", href: ELECTRICAL_MODULE_3_PATH },
             { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GXEST104_QP_PATH },
           ],
         },
