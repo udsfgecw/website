@@ -103,16 +103,31 @@ const components: Components = {
   },
 };
 
+function normalizeMath(text: string): string {
+  return text
+    .replace(/(?<![\\a-zA-Z])rac\{/g, "\\frac{")
+    .replace(/^(\s*)\$\$(\\begin\{[a-zA-Z*]+\}[\s\S]*?\\end\{[a-zA-Z*]+\})\$\$(\s*)$/gm, (_, before, inner, after) => `${before}$$\n${inner}\n$$${after}`)
+    .replace(/^(\s*)\$\$(\\begin\{[a-zA-Z*]+\})/gm, (_, before, inner) => `${before}$$\n${inner}`)
+    .replace(/(\\end\{[a-zA-Z*]+\})\$\$(\s*)$/gm, (_, inner, after) => `${inner}\n$$${after}`)
+    .replace(/^(\s*)\$\$(.+?)\$\$(\s*)$/gm, (match, before, inner, after) => {
+      if (inner.includes("\\\\") || inner.includes("&") || inner.includes("\\tag")) {
+        return `${before}$$\n${inner.trim()}\n$$${after}`;
+      }
+      return match;
+    });
+}
+
 /* One page of notes. Memoised, so scrolling (which updates the reader) doesn't re-render the maths. */
 export default memo(function PageMarkdown({ content }: { content: string }) {
   // Most Python pages have no maths, and many maths pages have no code. Avoid
   // walking their entire syntax trees with plugins that have nothing to render.
   const maths = content.includes("$");
   const code = /(?:`{3,}|~{3,})/.test(content);
+  const normalized = maths ? normalizeMath(content) : content;
   const rehypePlugins = maths ? (code ? allPlugins : mathPlugins) : (code ? highlightPlugins : noPlugins);
   return (
     <ReactMarkdown remarkPlugins={maths ? mathRemarkPlugins : plainRemarkPlugins} rehypePlugins={rehypePlugins} components={components}>
-      {content}
+      {normalized}
     </ReactMarkdown>
   );
 });

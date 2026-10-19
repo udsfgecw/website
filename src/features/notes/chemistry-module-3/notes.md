@@ -82,17 +82,21 @@ TRANSMITTANCE (T):
 
 It is the ratio of intensity of transmitted light to the intensity of incident light. (No unit)
 
-$$T = \frac{I}{I_0} \quad \text{where} \quad \begin{aligned} I &\rightarrow \text{intensity of transmitted light} \\ I_0 &\rightarrow \text{intensity of incident light} \end{aligned}$$
+$$
+T = \frac{I}{I_0} \quad \text{where} \quad \begin{aligned} I &\rightarrow \text{intensity of transmitted light} \\ I_0 &\rightarrow \text{intensity of incident light} \end{aligned}
+$$
 
 ABSORBANCE (A):
 
 It is the logrithmic ratio of intensity of incident light to the intensity of transmitted light. (No unit)
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 A &= \log \frac{I_0}{I} \\
 &= \log \frac{1}{T} \\
 \therefore A &= -\log T
-\end{aligned}$$
+\end{aligned}
+$$
 
 BEER-LAMBERT'S LAW:
 
@@ -168,7 +172,10 @@ Thickness $x = 2\text{ cm} = 0.2\text{ dm}$
 
 <!-- page 6 | Module 3 · source page 7 -->
 
-$$I_0 = 100\ ,\ I = 20$$ (% $T = 20$, means when $100\%$ light is incident, $20\%$ is transmitted).
+$$
+I_0 = 100\ ,\ I = 20
+$$
+(% $T = 20$, means when $100\%$ light is incident, $20\%$ is transmitted).
 
 - $A = \log \frac{I_0}{I}$
   $= \log \left(\frac{100}{20}\right)$
@@ -272,10 +279,12 @@ $$= 28.46\text{ ppm}$$
 $\lambda_{\max}$ : The wavelength at which maximum absorbance occurs.
 
 Eg: $\text{CH}_2=\text{CH}_2$ ; $\text{CH}_2=\text{CH}-\text{CH}=\text{CH}_2$ ; $\text{CH}_2=\text{CH}-\text{CH}=\text{CH}-\text{CH}=\text{CH}_2$ ; ![Benzene ring chemical structure](/notes/cse/s1/chemistry/module-3/assets/page-010-image-1-structured.svg)
-$$\begin{array}{ccccccc}
+$$
+\begin{array}{ccccccc}
 \text{Ethene} & < & 1,3\text{-butadiene} & < & 1,3,5\text{-hexatriene} & < & \text{benzene} \\
 \lambda_{\max}=169\text{nm} & & \lambda_{\max}=217\text{nm} & & \lambda_{\max}=247\text{nm} & & \lambda_{\max}=255\text{nm}
-\end{array}$$
+\end{array}
+$$
 
 ROLE OF CONJUGATION IN ABSORPTION MAXIMUM:
 - As more and more double bonds come into conjugation, the absorption comes to the visible region.
@@ -591,10 +600,12 @@ $\mu = \text{reduced mass}$
 
 $$\text{i.e. }, \mu = \frac{m_1 m_2}{m_1+m_2} \text{ kg}$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \bar{\nu}^2 &= \left(\frac{1}{2\pi C} \sqrt{\frac{k}{\mu}}\right)^2 \\
 &= \frac{1}{4\pi^2 C^2} \frac{k}{\mu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 $$\therefore k = 4 \pi^2 C^2 \mu \bar{\nu}^2 \text{ Nm}^{-1}$$
 
@@ -606,7 +617,7 @@ Q. CO molecule absorbs infrared frequency of $2140 \text{ cm}^{-1}$. Calculate f
 
 <!-- page 17 | Module 3 · source page 18 -->
 
-$$\Rightarrow \quad \mu = \frac{12 	imes 16}{12 + 16} = \frac{12 	imes 16}{28}$$
+$$\Rightarrow \quad \mu = \frac{12 \times 16}{12 + 16} = \frac{12 \times 16}{28}$$
 $$= \frac{48}{7} = 6.857 \times 1.66 \times 10^{-27}\text{ kg}$$
 $$= 1.138 \times 10^{-26}\text{ kg}$$
 
@@ -1073,11 +1084,13 @@ $\lambda = 530\text{ nm}$
 
 $A_2 = 0.022$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 &A_1 = \varepsilon c_1 x \\
 &A_2 = \varepsilon c_2 x
 \end{aligned}
-\quad \because \frac{A_1}{A_2} = \frac{c_1}{c_2}$$
+\quad \because \frac{A_1}{A_2} = \frac{c_1}{c_2}
+$$
 
 $$\frac{0.045}{0.022} = \frac{0.04}{c_2}$$
 
@@ -1364,7 +1377,7 @@ $K =$ Force constant . (strength of a bond).
 
 $\mu =$ reduced mass.
 
-$m_1 \text{ & } m_2 -$ masses of atom connected.
+$m_1 \text{ \& } m_2 -$ masses of atom connected.
 
 ---
 
@@ -1595,29 +1608,35 @@ $\longrightarrow$ IR active.
 
 $$\bar{\nu} = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}$$
 
-$$\left.\begin{matrix}
+$$
+\left.\begin{matrix}
 \mu - \text{same}\\
 k - \text{diff}
-\end{matrix}\right\} \text{IR absorption will be different.}$$
+\end{matrix}\right\} \text{IR absorption will be different.}
+$$
 
 b) $c-c$, $c=c$
 
 $$\bar{\nu} = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}$$
 
-$$\left.\begin{matrix}
+$$
+\left.\begin{matrix}
 k - \text{same}\\
 \mu = \text{diff.}
-\end{matrix}\right\} \text{IR absorption will be different.}$$
+\end{matrix}\right\} \text{IR absorption will be different.}
+$$
 
 <u>Applications</u>
 
 * To study about molecules, materials by using IR absorption value $(\text{cm}^{-1})$
 * Identification of Functional grps.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 OH & \simeq 3400\text{ cm}^{-1} - 3600\text{ cm}^{-1} \\
 C=O & \simeq 1700\text{ cm}^{-1} - 1800\text{ cm}^{-1}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 

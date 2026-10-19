@@ -91,27 +91,34 @@ $\text{O} = $
 
 A water sample contains $408\text{ mg}$ of $\text{CaSO}_4$ per litre calculate the hardness in terms of $\text{CaCO}_3$ equivalence?
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Molecular wt} & \\
 \text{CaSO}_4 &= 40 + 32 + 16 \times 4 \\
 &= 72 + 64 \\
 &= 136
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Equivalent weight} & \\
 \text{Eq. wt} \Rightarrow &= \frac{136}{2} = 68
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Hardness} &= \frac{\text{Mass of hardness producing substance}}{\text{Eq. w.t of hardness producing substance}} \times \text{Eq. w.t of } \text{CaCO}_3 \\[10pt]
 &= \frac{408 \times 50}{68} = 300\text{ ppm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
 **Data / Side calculations:**
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Ca} &= 40 \\
 \text{H} &= 1 \\
 \text{C} &= 12 \\
@@ -120,7 +127,8 @@ $$\begin{aligned}
 \text{S} &= 32 \\
 \text{Cl} &= 35.5 \\
 \text{Na} &= 23
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
@@ -209,12 +217,14 @@ If sodium bicarbonate present in water temporary hardness increases but correspo
 
 ---
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{NaHCO}_3 &= 23 + 1 + 12 + (16 \times 3) \\
 &= 24 + 12 + 48 \\
 &= 36 + 48 \\
 &= 84
-\end{aligned}$$
+\end{aligned}
+$$
 
 $$\text{eq wt} = \frac{84}{1} = 84$$
 
@@ -959,55 +969,69 @@ $$\text{CaSO}_4 = \frac{13.6 \times 50}{68} = 10\text{ mg/L}$$
 
 $\text{mgCl}_2 = \frac{19 \times 50}{47.5} = 20\text{mg/l}$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Temporary Hardness} &= 5 + 10 \\
 &= 15\text{mg/l} \\
 \text{Permanent hardness} &= 10 + 20 \\
 &= 30\text{mg/l}
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Total Hardness} &= 15 + 30 \\
 &= 45\text{mg/l}
-\end{aligned}$$
+\end{aligned}
+$$
 
 (iii) $\text{Ca(HCO}_3)_2 = 4\text{ppm} \;;\; \text{Mg(HCO}_3)_2 = 6\text{ppm} \;;\; \text{CaSO}_4 = 8\text{ppm} \;;\; \text{MgSO}_4 = 10\text{ppm} \;;\; ~~\text{Na}_2\text{SO}_4~~ \text{NaHCO}_3 = 3\text{ppm}$.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Rightarrow \text{equivalent weight of } \text{NaHCO}_3 &= 23 + 1 + 12 + 16 \times 3 \\
 &= \underline{84}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Hardness :
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Ca(HCO}_3)_2 &= 2.46\text{ppm} \\
 \text{Mg(HCO}_3)_2 &= 4.10\text{ppm} \\
 \text{CaSO}_4 &= 5.88\text{ppm} \\
 \text{MgSO}_4 &= 8.33\text{ppm} \\
 \text{NaHCO}_3 &= ~~84~~ \frac{3 \times 50}{84} = 1.78\text{ppm}
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Temporary Hardness} &= 2.46 + 4.10 + 1.78 \\
 &= 8.34\text{ppm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ~~\text{Permanent Hardness} = 5.88 + 8.33 \text{ Total hardn}~~
 ~~= 14.21\text{ppm}~~
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Total Hardness} &= 2.46 + 4.10 + 5.88 + 8.33 \\
 &= 20.77\text{ppm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 When $\text{NaHCO}_3$ present in water temporary hardness increases but total hardness remains the same.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Permanent hardness} &= \text{Total hardness} - \text{Temporary hardness} \\
 &= 20.79 - 8.34 \\
 &= \underline{12.45\text{ppm}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
@@ -1044,21 +1068,27 @@ $$= 0.05 \times 2$$
 <!-- page 33 | Module 4 · source page 8 -->
 
 $$= 0.1\text{ N}$$
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Hardness} &= 0.1 \times 50 \times 1000 \\
 &= 5000\text{ mg/L}
-\end{aligned}$$
+\end{aligned}
+$$
 
 (iii) $0.02\text{ M } \text{Al}_2(\text{SO}_4)_3 \text{ solution}:$
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Normality} &= 0.02 \times (3 \times 2) \\
 &= \cancel{0.06\text{ N}} \quad 0.12\text{ N}
-\end{aligned}$$
-$$\begin{aligned}
+\end{aligned}
+$$
+$$
+\begin{aligned}
 \text{Hardness} &= \overset{0.12}{\cancel{0.06}} \times 50 \times 1000 \\
 &= \cancel{3000\text{ ppm}} \\
 &= \underline{6000\text{ ppm}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## ION EXCHANGE METHOD (WATER SOFTENING METHOD)
 
@@ -1775,27 +1805,33 @@ Permanent hardness = $900 - 800 = 100\text{ ppm} //$
 * 3 " $0.02\text{ M Al}_2(\text{SO}_4)_3 \quad \text{M} \rightarrow \text{N} = 0.02 \times 6$
 
 1)
-$$\begin{aligned}
+$$
+\begin{aligned}
 H &= \text{N} \times 50 \times 1000 \\
 &= 0.08 \times 50 \times 1000 \\
 &= 4000\text{ mg/l as CaCO}_3 //
-\end{aligned}$$
+\end{aligned}
+$$
 
 2)
 $$\text{CaCl}_2\text{ gives } 1\text{ Ca}^{2+}; \text{ valency} = 2.$$
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{N} &= \text{M} \times 2 = 0.05 \times 2 = 0.1. \\
 H &= 0.1 \times 50 \times 1000 \\
 &= 5000\text{ mg/l as CaCO}_3.
-\end{aligned}$$
+\end{aligned}
+$$
 
 3)
 $$\text{Give}, 2\text{ Al}^{3+}\text{ ions valency} = 3$$
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{N} &= \text{M} \times 3 = 0.02 \times 3 = 0.06 = 0.12. \\
 H &= 0.12 \times 50 \times 1000 \\
 &= 6000\text{ mg/l as CaCO}_3.
-\end{aligned}$$
+\end{aligned}
+$$
 
 * calculate the temperory, permanent and total hardness of water having following compositions.
 
@@ -1834,15 +1870,19 @@ $\text{MgSO}_4 = \frac{12 \times 50}{60} = \underline{\underline{10\text{ ppm}}}
 
 $\text{NaHCO}_3 = \frac{3 \times 50}{84} = \underline{\underline{1.78\text{ ppm}}}$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Total hardness} &= 6.17 + 10.27 + 5.88 + 10 \\
 &= \underline{\underline{32.32\text{ ppm}}}
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Temporary hardness} &= 6.17 + 10.27 + 1.78 \\
 &= \underline{\underline{18.22\text{ ppm}}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 $$\text{Permanent} = \text{Total} - \text{temporary} = \underline{\underline{14.1\text{ ppm}}} \quad (~~64.1~~)$$
 
@@ -1913,7 +1953,9 @@ Exchange process.
 
 $\to 2 R^{-} H^{+} + \text{CaCl}_2 \longrightarrow R_2 \text{Ca} + 2\text{HCl}.$
 
-$$\begin{matrix} \text{CER} & \text{Hard} & \text{CER} & \text{Hard water} \\ & \text{water} & \text{after exchange} & \text{after CER process.} \end{matrix}$$
+$$
+\begin{matrix} \text{CER} & \text{Hard} & \text{CER} & \text{Hard water} \\ & \text{water} & \text{after exchange} & \text{after CER process.} \end{matrix}
+$$
 
 $\to 2R^{-} H^{+} + \text{Mg}^{2+} \longrightarrow R_2 \text{Mg} + 2H^{+}$
 
@@ -1983,7 +2025,9 @@ Advantages & disadvantages
 A) If hard water present $\text{MgCl}_2$ has soluble salt, it can form insoluble $\text{Mg(OH)}_2$ precipitate. It will stops exchange process called clogging.
 
 $$2\text{ }R^+-\text{OH}^- + \text{MgCl}_2 \longrightarrow 2\text{ }R-\text{Cl} + \text{Mg(OH)}_2.$$
-$$\text{AER} \qquad \quad \begin{array}{c} \text{Hard} \\ \text{water} \end{array} \qquad \quad \begin{array}{c} \text{AER} \\ \text{after} \\ \text{process} \end{array} \qquad \begin{array}{c} \\ \text{A precipitate.} \end{array}$$
+$$
+\text{AER} \qquad \quad \begin{array}{c} \text{Hard} \\ \text{water} \end{array} \qquad \quad \begin{array}{c} \text{AER} \\ \text{after} \\ \text{process} \end{array} \qquad \begin{array}{c} \\ \text{A precipitate.} \end{array}
+$$
 
 Reverse osmosis.
 
@@ -2036,12 +2080,14 @@ Disinfection method.
 chlorine is added to the water either in gaseous form or in conc. solution form producing nascent oxygen.
 
 $$\text{Cl}_2 + \text{H}_2\text{O} \longrightarrow \text{HOCl} + \text{HCl}$$
-$$\begin{aligned}
+$$
+\begin{aligned}
 & \downarrow \\
 & \text{Hypochlorous acid.} \\
 \longrightarrow & \text{HCl} + [\text{O}] \\
 & \quad\ \text{nascent oxygen.}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
@@ -2051,11 +2097,13 @@ $$\begin{aligned}
 
 $\rightarrow$ Chlorination by using bleaching powder.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{CaOCl}_2 + \text{H}_2\text{O} & \\
 &\llcorner\; \text{Ca(OH)}_2 + \text{HOCl} \\
 &\phantom{\llcorner\; \text{Ca(OH)}_2 +{}} \llcorner\; \text{HCl} + [\text{O}]
-\end{aligned}$$
+\end{aligned}
+$$
 
 ### Advantages
 

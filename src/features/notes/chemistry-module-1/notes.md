@@ -977,11 +977,13 @@ In this type of corrosion one part of the metal becomes anode, flow of electroni
 
 **Reactions:**
 
-$$\begin{array}{rll}
+$$
+\begin{array}{rll}
 \textbf{Anode} & \text{Fe} \rightarrow \text{Fe}^{2+} + 2\text{e} & \text{E}^0\text{Fe}^{2+}/\text{Fe} = -0.44\text{V} \\[4pt]
 \textbf{Cathode:} & 2\text{H}^+ + 2\text{e} \rightarrow \text{H}_2 & \text{E}^0 = 0\text{V} \\[4pt]
 \textbf{Net Reaction:} & \text{Fe} + 2\text{H}^+ \rightarrow \text{Fe}^{2+} + \text{H}_2 & \text{E}^0\text{cell} = 0 - (-0.44) = 0.44\text{V}
-\end{array}$$
+\end{array}
+$$
 
 **This type of corrosion occurs when a metal displaces hydrogen ions (H+) from an acidic solution.**
 
@@ -1664,26 +1666,34 @@ A) $$E_{\text{Sn}^{4+}/\text{Sn}^{2+}} = E^\circ_{\text{Sn}^{4+}/\text{Sn}^{2+}}
 * Calculate the single electrode potential $pt / Fe^{3+} / Fe^{2+}$ electrode at $25^\circ\text{C}$ when the concentration of $Fe^{2+}$ is $0.01\text{ molar}$ and $Fe^{3+}$ is $0.1\text{ molar}$. Given that $E^0_{Fe^{3+}/Fe^{2+}} = +0.77\text{ V}$.
 
 A)
-$$Fe^{3+} + 1e \longrightarrow Fe^{2+}$$
+$$
+Fe^{3+} + 1e \longrightarrow Fe^{2+}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{Fe^{3+}/Fe^{2+}} &= E^0_{Fe^{3+}/Fe^{2+}} + \frac{0.0591}{1} \log \frac{[0.1]}{[0.01]}\\
 &= 0.77\text{ V} + \frac{0.0591}{1} \log 1\\
 &= \underline{0.82\text{ V}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 * Calculate the electrode potential of $Al$ electrode,
 Given the conc. $Al^{3+} = 2\text{ molar}$ and $E^0_{Al^{3+}/Al} = -1.66\text{ V}$
 
 A)
-$$Al^{3+} + 3e \longrightarrow Al.$$
+$$
+Al^{3+} + 3e \longrightarrow Al.
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{Al^{3+}/Al} &= E^0_{Al^{3+}/Al} + \frac{0.0591}{3} \log [Al^{3+}]\\
 &= -1.66 + \frac{0.0591}{3} \log 2\\
 &= -1.66 + \frac{0.0591}{3} \times 0.3\\
 &= \underline{-1.65\text{ V}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
@@ -1699,17 +1709,21 @@ $\implies$ zinc electrode as anode.
 
 $\implies$ cathode electrode as cathode.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{\text{cell}} &= E_{\text{cathode}} - E_{\text{anode}} \\
 &= E_{\text{Cu}^{2+}/\text{Cu}} - E_{\text{Zn}^{2+}/\text{Zn}} \\
 &= \left[ E^{\circ}_{\text{Cu}^{2+}/\text{Cu}} + \frac{2.303 RT}{nF} \log \left[ \frac{[\text{Cu}^{2+}]}{1} \right] \right] - \left[ E^{\circ}_{\text{Zn}^{2+}/\text{Zn}} + \frac{2.303 RT}{nF} \log [\text{Zn}^{2+}] \right] \\
 &= E^{\circ}_{\text{Cu}^{2+}/\text{Cu}} - E^{\circ}_{\text{Zn}^{2+}/\text{Zn}} + \frac{2.303 RT}{nF} \left[ \log [\text{Cu}^{2+}] - \log [\text{Zn}^{2+}] \right] \\
 E_{\text{cell}} &= E^{\circ}_{\text{cell}} + \frac{2.303 RT}{nF} \log \frac{[\text{Cu}^{2+}]}{[\text{Zn}^{2+}]}
-\end{aligned}$$
+\end{aligned}
+$$
 
 - at $25^{\circ}\text{C}$ :
 
-$$E_{\text{cell}} = E^{\circ}_{\text{cell}} + \frac{0.0591}{n} \log \frac{[\text{Cu}^{2+}]}{[\text{Zn}^{2+}]}$$
+$$
+E_{\text{cell}} = E^{\circ}_{\text{cell}} + \frac{0.0591}{n} \log \frac{[\text{Cu}^{2+}]}{[\text{Zn}^{2+}]}
+$$
 
 ---
 
@@ -1758,16 +1772,20 @@ Calculate the potential of Daniell cell $[Zn^{2+}] = 0.5\text{ M}$, $[Cu^{2+}] =
 
 A)
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 Zn &\longrightarrow Zn^{2+} + 2e^- \\
 Cu^{2+} + 2e^- &\longrightarrow Cu
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{cell} &= E_{cell}^\circ + \frac{0.0591}{2} \log \frac{[Cu^{2+}]}{[Zn^{2+}]} \\
 &= 1.1 + \frac{0.0591}{2} \log \frac{[2]}{[0.5]} \\
 &= 1.1 + \frac{0.0591}{2} \times 0.60 = 1.11\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 Calculate EMF of the following cell:
 
@@ -1777,11 +1795,13 @@ $$E^\circ_{Al^{3+}/Al} = -1.66\text{ V}; \quad E^\circ_{Fe^{2+}/Fe} = -0.44\text
 
 A)
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{cell} &= E_{cell}^\circ + \frac{0.0591}{n} \log \frac{(Fe^{2+})}{(Al^{3+})} \\
 &= E^\circ_{Fe^{2+}/Fe} - E^\circ_{Al^{3+}/Al} = 1.22 \\
 &\quad 1.22 + \frac{0.0591}{6} \log \frac{[Fe^{2+}]^3}{[Al^{3+}]^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
@@ -1801,24 +1821,30 @@ $$= \underline{1.22 \text{ V}}$$
 
 * Calculate the $E_{\text{cell}}$ of $\text{Fe} / \text{Fe}^{2+} \, (0.01) \parallel \text{Ag}^{+} / \text{Ag} \, (0.1)$ at $298 \text{ K}$.
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{anode} &= \text{Fe}/\text{Fe}^{2+} \quad \text{Fe}^{2+} + 2e^{-} \longrightarrow \text{Fe} \times 1 = \text{Fe}^{2+} + 2e^{-} \longrightarrow \text{Fe} \\
 \text{cathode} &= \text{Ag} \longrightarrow \text{Ag}^{+} + 1e^{-} \times 2 = 2\text{Ag} \longrightarrow 2\text{Ag}^{+} + 2e^{-}
-\end{aligned}$$
+\end{aligned}
+$$
 
 $$E_{\text{cell}} = E_{\text{cell}}^{\circ} + \frac{0.0591}{2} \log \frac{[\text{Ag}^{+}]^{2}}{\text{Fe}^{2+}}$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{\text{cell}}^{\circ} &= E_{\text{cathode}} - E_{\text{anode}} \\
 &= 0.80 - (-0.44) \\
 &= \underline{1.24 \text{ V}}
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{\text{cell}} &= 1.24 + \frac{0.0591}{2} \log \frac{(0.1)}{(0.01)} \\
 &= 1.24 + \frac{0.0591}{2} \times 0 \\
 &= \underline{1.24 \text{ V}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
@@ -2176,7 +2202,12 @@ A) $k = \frac{1}{\rho} = \frac{1}{R} \times \frac{l}{a}$
 
 <!-- page 61 | Electrochemistry, corrosion and materials · source page 32 -->
 
-$$\begin{aligned} &= \frac{1}{[illegible]} \times \frac{4}{10.7} \\ &= 5.94 \times 10^{-3} \text{ S cm}^{-1} \end{aligned}$$
+$$
+\begin{aligned}
+&= \frac{1}{\text{[illegible]}} \times \frac{4}{10.7} \\
+&= 5.94 \times 10^{-3} \text{ S cm}^{-1}
+\end{aligned}
+$$
 
 $\rightarrow$ Measurement of conductivity using digital conductivity meter.
 
@@ -2233,8 +2264,9 @@ $\Rightarrow$ metals having low reduction potential are anodic and undergoe redu
 $\Rightarrow$ Galvanic series is a series in which metals ~~are~~ and alloys are arranged in order of their corrosion tendencys.
 
 $\rightarrow$ series -
-\begin{tabular}{ll}
-$\left.\begin{array}{l}
+$$
+\begin{matrix}
+\left.\begin{array}{l}
 \text{mg} \\
 \text{zn}, \\
 \text{Al} \\
@@ -2242,13 +2274,16 @@ $\left.\begin{array}{l}
 \text{mild steel} \\
 \text{cast iron} \\
 \text{solder.}
-\end{array}\right\}\text{anodic}$ & $\left.\begin{array}{l}
+\end{array}\right\}\text{anodic}
+&
+\left.\begin{array}{l}
 \text{Pt} \\
 \text{Au} \\
 \text{Ti} \\
 \text{Ag}
 \end{array}\right\}\text{cathodic.}
-\end{tabular}
+\end{matrix}
+$$
 
 $\Rightarrow$ why zinc is more corrosive than aluminium & silver is more corrosive than titanium.
 
@@ -2494,21 +2529,25 @@ $$\text{Cu}^{2+} + 2\bar{\text{e}} \longrightarrow \text{Cu}.$$
 
 * Overall reaction products:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{Zn} &\longrightarrow \text{Zn}^{2+} + 2\bar{\text{e}} \\
 \text{Cu}^{2+} + 2\bar{\text{e}} &\longrightarrow \text{Cu} \\
 \hline
 \text{Zn} + \text{Cu}^{2+} &\longrightarrow \text{Zn}^{2+} + \text{Cu}
-\end{aligned}$$
+\end{aligned}
+$$
 
 * $\text{E}_{\text{cell}} = 1.1\text{ V}$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 &= \text{E}_{\text{cathode}} - \text{E}_{\text{anode}} \\
 &= \text{E}_{\text{Cu}^{2+}} - \text{E}_{\text{Zn}} \\
 &= 0.34 - (-0.76) \\
 &= 1.1\text{ V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 SALT BRIDGE:
 
@@ -2661,13 +2700,15 @@ $$\implies E_{cell} = E^0_{cell} - \frac{0.0591}{n} \log \frac{1}{[M^{n+}]}$$
 $$Zn \rightarrow Zn^{2+} + 2\bar{e}$$
 $$n = 2$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 E_{cell} &= -0.76 - \frac{0.0591}{2} \log \frac{1}{0.01} \\
 &= -0.76 - \frac{0.0591}{2} \log 10^2 \\
 &= -0.76 - \frac{0.0591}{\cancel{2}} \times \cancel{2} \log 10 \\
 &= -0.76 - 0.0591 \\
 &= -0.8191\text{V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ---
 
@@ -2726,12 +2767,13 @@ $$
 
 <!-- page 80 | Electrochemistry, corrosion and materials · source page 10 -->
 
-$$E_{cell} = E^0_{cell} -
-rac{0.0591}{n}
-rac{\log [\text{Cu}^{2+}]}{[\text{Ag}^+]^2}$$
+$$
+E_{cell} = E^0_{cell} - \frac{0.0591}{n} \log \frac{[\text{Cu}^{2+}]}{[\text{Ag}^+]^2}
+$$
 
-$$= 0.46 -
-rac{0.0591}{2} \log \left( \frac{0.01}{(0.1)^2} \right)$$
+$$
+= 0.46 - \frac{0.0591}{2} \log \left( \frac{0.01}{(0.1)^2} \right)
+$$
 
 $$= 0.46 - 0.02955 \times 0$$
 
@@ -2745,11 +2787,13 @@ Q. Calculate the equilibrium constant of daniel cell reaction given that $E^0_{c
 
 $$\Rightarrow E_{cell} = E^0_{cell} - \frac{\overset{0.02955}{\cancel{0.0591}}}{\cancel{2}} \log K$$
 
-\begin{align*}
+$$
+\begin{aligned}
 \text{At equilibrium} & \\
 \Delta G &= 0 \\
 \therefore E_{cell} &= 0
-\end{align*}
+\end{aligned}
+$$
 
 $$\log K = \frac{E_{cell} - E^0_{cell}}{-0.02955}$$
 
@@ -2775,11 +2819,16 @@ $$= -0.76 - \frac{2.303 \times 8.314 \times \overset{323}{\cancel{50}}}{2 \times
 
 <!-- page 81 | Electrochemistry, corrosion and materials · source page 11 -->
 
-$$= -0.76 - \frac{2.303 \times 8.314 \times \overset{323}{\cancel{\text{T}}}}{2 \times 9650} \log 10$$
-$$\begin{aligned}
+$$
+= -0.76 - \frac{2.303 \times 8.314 \times \overset{323}{\cancel{\text{T}}}}{2 \times 9650} \log 10
+$$
+
+$$
+\begin{aligned}
 &= -0.76 - 0.032 \times 1 \\
 &= -0.792\text{V}
-\end{aligned}$$
+\end{aligned}
+$$
 
 REFERENCE ELECTRODES:
 
@@ -2806,7 +2855,10 @@ WORKING:
   $$2\text{H}^+ + 2\bar{\text{e}} \longrightarrow \text{H}_2(g)$$
 
 - Representation of SHE:
-  $$\begin{array}{c} \text{H}^+ \\ (1\text{M}) \end{array} \mid \begin{array}{c} \text{H}_2(g) \\ (1\text{atm P}) \end{array} \mid \text{Pt}$$
+
+$$
+\begin{array}{c} \text{H}^+ \\ (1\text{M}) \end{array} \mid \begin{array}{c} \text{H}_2(g) \\ (1\text{atm P}) \end{array} \mid \text{Pt}
+$$
 
 ---
 
@@ -3182,16 +3234,20 @@ $$C = \frac{1}{R} \qquad \text{unit} = \Omega^{-1} \text{ or Siemen (S)}$$
 
 ## SPECIFIC CONDUCTANCE OR CONDUCTIVITY (K)
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 K &= \frac{1}{\rho} \\
 &= \frac{1}{\frac{RA}{l}} \\
 &= \frac{l}{RA} \qquad \text{unit} = S\text{cm}^{-1}
-\end{aligned}$$
+\end{aligned}
+$$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{conductivity} &= \text{conductance} \times \text{cell constant} \\
 &= C \times \text{cell constant}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## CONDUCTIVITY CELL:
 
