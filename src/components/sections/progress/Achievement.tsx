@@ -1,27 +1,31 @@
 import type { Achievement } from "@/data/progress";
 import { cn } from "@/lib/utils";
 
-const src = (image: string) => `${import.meta.env.BASE_URL}assets/progress/${image}`;
+function Placeholder({ number }: { number: number }) {
+  return (
+    <div
+      className="flex h-full w-full flex-col items-center justify-center gap-3 rounded-2xl bg-paper"
+      aria-hidden="true"
+    >
+      <span className="text-[2.5rem] font-extrabold tracking-[-0.06em] text-line leading-none select-none">
+        {String(number).padStart(2, "0")}
+      </span>
+      <span className="label text-ink/25">Photo coming</span>
+    </div>
+  );
+}
 
-/* Photo, or for the web magazine (no photo yet) a typographic cover in the alliance gradient. */
 function Picture({ a, className }: { a: Achievement; className?: string }) {
   if (!a.image)
     return (
-      <div
-        className={cn("flex items-end rounded-2xl bg-[linear-gradient(135deg,var(--color-green),var(--color-blue))] p-6 text-white", className)}
-        aria-hidden="true"
-      >
-        <span className="text-[length:clamp(2.2rem,3.6vw,2.8rem)] leading-[0.92] font-extrabold tracking-[-0.055em]">
-          Web
-          <br />
-          magazine
-        </span>
+      <div className={cn("overflow-hidden rounded-2xl", className)}>
+        <Placeholder number={a.number} />
       </div>
     );
   return (
     <img
-      src={src(a.image)}
-      alt={`${a.location}, ${a.photo ? "original event photograph" : "adapted from the UDSF campaign poster"}`}
+      src={`${import.meta.env.BASE_URL}assets/progress/${a.image}`}
+      alt={a.title}
       width={1200}
       height={800}
       loading="lazy"
@@ -31,41 +35,20 @@ function Picture({ a, className }: { a: Achievement; className?: string }) {
   );
 }
 
-function Caption({ a, large }: { a: Achievement; large?: boolean }) {
-  return (
-    <>
-      <p className="label text-green-ink">{a.location}</p>
-      <h3
-        className={cn(
-          "mt-2.5 font-semibold text-balance",
-          large ? "text-[length:clamp(1.8rem,3vw,2.6rem)] leading-[1.05] tracking-[-0.04em]" : "text-[1.2rem] leading-[1.2] tracking-[-0.025em]",
-        )}
-      >
-        {a.title}
-      </h3>
-      <p className={cn("mt-3 text-ink-2", large ? "max-w-[40ch] text-[1rem] leading-[1.6]" : "text-[0.92rem] leading-[1.6]")}>{a.description}</p>
-    </>
-  );
-}
-
-/* Wide row: a large picture with the caption beside it; `flip` puts the caption on the left. */
-export function AchievementFeature({ a, flip }: { a: Achievement; flip?: boolean }) {
-  return (
-    <article className="grid items-end gap-x-12 gap-y-6 lg:grid-cols-12">
-      <Picture a={a} className={cn("aspect-[16/10] lg:col-span-8", flip && "lg:order-2")} />
-      <div className={cn("lg:col-span-4", flip && "lg:order-1")}>
-        <Caption a={a} large />
-      </div>
-    </article>
-  );
-}
-
 export function AchievementCard({ a }: { a: Achievement }) {
   return (
-    <article>
-      <Picture a={a} className="aspect-[4/3]" />
-      <div className="mt-5">
-        <Caption a={a} />
+    <article className="group flex flex-col gap-0">
+      <div className="relative overflow-hidden rounded-2xl">
+        <Picture a={a} className="aspect-[4/3] w-full" />
+        <span className="absolute top-3 left-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-[0.68rem] font-semibold text-ink backdrop-blur-sm">
+          {a.number}
+        </span>
+      </div>
+      <div className="mt-4 flex items-start justify-between gap-3">
+        <h3 className="text-[1rem] font-semibold leading-[1.3] tracking-[-0.02em] text-ink">
+          {a.title}
+        </h3>
+        <span className="label shrink-0 text-ink/35 mt-0.5">{a.year}</span>
       </div>
     </article>
   );

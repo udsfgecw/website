@@ -1,94 +1,169 @@
-/* What UDSF has delivered on campus and what is still being followed up.
-   Images live in public/assets/progress/. `photo: true` marks an original event photograph;
-   the rest are adapted from campaign posters. */
-
 export interface Achievement {
+  number: number;
   title: string;
-  location: string;
-  description: string;
+  year: string;
   image: string | null;
-  photo?: boolean;
+}
+
+export interface Program {
+  number: number;
+  title: string;
+  year: string;
+  image: string | null;
 }
 
 export const ACHIEVEMENTS: readonly Achievement[] = [
   {
-    title: "Started six student clubs",
-    location: "Campus culture",
-    description: "Initiated the Literary Club, Drawing Club, Dance Club, Music Club, Film Club and Karma, creating more ways for students to take part in campus life.",
-    image: "clubs.webp",
-  },
-  {
-    title: "Brought a new bus to college",
-    location: "College transport",
-    description: "Secured a new college bus, answering students’ call for better transport.",
-    image: "bus.webp",
-  },
-  {
-    title: "Secured generators for the hostels",
-    location: "Hostel facilities",
-    description: "Brought generator facilities to the hostels, giving students backup power.",
-    image: "generator.webp",
-  },
-  {
-    title: "Secured student parking facilities",
-    location: "Student parking",
-    description: "Secured dedicated parking space for students on campus.",
-    image: "parking.webp",
-  },
-  {
-    title: "Installed a new college nameboard",
-    location: "Campus identity",
-    description: "Replaced the old, damaged college nameboard with a renewed sign for Government Engineering College Wayanad.",
-    image: "nameboard.webp",
-  },
-  {
-    title: "Created the first web magazine",
-    location: "Campus publications",
-    description: "Launched the first web magazine at GEC Wayanad, a place for students’ writing and stories.",
+    number: 1,
+    title: "Gate Exam Mock Test",
+    year: "2025–26",
     image: null,
   },
   {
-    title: "Created the first audiobook",
-    location: "Campus publications",
-    description: "Produced the first audiobook at GEC Wayanad, bringing the web magazine’s writing and stories to audio.",
-    image: "audiobook.webp",
+    number: 2,
+    title: "Gate Exam Question Bank",
+    year: "2025–26",
+    image: null,
   },
   {
-    title: "Installed new lights on LH2 road",
-    location: "LH2 road lighting",
-    description: "New lights installed on the LH2 road following UDSF’s intervention, addressing the lack of lighting on the route.",
-    image: "lighting.webp",
+    number: 3,
+    title: "Installation of Light in LH Road",
+    year: "2025–26",
+    image: null,
   },
   {
-    title: "Improved the road to MH",
-    location: "Hostel access",
-    description: "Gravel laid along the road to the men’s hostel, improving a difficult stretch of the everyday journey.",
-    image: "hostel-road.webp",
+    number: 4,
+    title: "First Girls Football Team",
+    year: "2025–26",
+    image: null,
   },
   {
-    title: "Added seating in department corners",
-    location: "Department corners",
-    description: "Seating introduced in department corners, making more room for students to meet, talk and spend time together.",
-    image: "seating.webp",
+    number: 5,
+    title: "First Web Magazine",
+    year: "2025–26",
+    image: null,
   },
   {
-    title: "Brought the German Consulate to campus",
-    location: "German Consulate × KASE",
-    description: "Brought the German Consulate team to campus for an interactive session with participation from KASE.",
-    image: "exchange.webp",
-    photo: true,
+    number: 6,
+    title: "First Magazine Audio Book",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 7,
+    title: "Initiative to Install High Mass Light",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 8,
+    title: "Initiative to Install Cricket Net",
+    year: "2025–26",
+    image: null,
   },
 ];
 
-export const FOLLOW_UPS = [
+export const PROGRAMS: readonly Program[] = [
   {
-    title: "Campus lighting",
-    description: "Took the campus lighting request to the MLA and PWD. Approval received for a low-mast light; follow-up continues towards installation.",
-    steps: ["Approval received", "Following up", "Installation"],
+    number: 1,
+    title: "Ifthar Meet",
+    year: "2025–26",
+    image: null,
   },
   {
-    title: "College cricket net",
-    description: "Working towards a practice facility with the Wayanad District Cricket Association. An MoU is ready; construction remains pending.",
-    steps: ["MoU ready", "Following up", "Construction"],
+    number: 2,
+    title: "German Consulate Visit",
+    year: "2025–26",
+    image: null,
   },
-] as const;
+  {
+    number: 3,
+    title: "Tech Talk: Career in Project Management",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 4,
+    title: "Gazal Night",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 5,
+    title: "FIFA Fans Show",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 6,
+    title: "E Football Tournament",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 7,
+    title: "Ashwin Memorial Football Tournament",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 8,
+    title: "Football Auction",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 9,
+    title: "Union Inauguration",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 10,
+    title: "Magazine Release",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 11,
+    title: "Freshers Day",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 12,
+    title: "Drug Free Campus Declaration",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 13,
+    title: "Lantern Light & Ethnic Day",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 14,
+    title: "Thauryathrikam Arts Fest",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 15,
+    title: "Arts Pro Show: Nawaf",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 16,
+    title: "Arts Pro Show: DJ Zanjay",
+    year: "2025–26",
+    image: null,
+  },
+  {
+    number: 17,
+    title: "Arts Pro Show: Beats on Music",
+    year: "2025–26",
+    image: null,
+  },
+];
