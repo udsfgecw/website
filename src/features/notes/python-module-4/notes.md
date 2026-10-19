@@ -130,7 +130,7 @@ Merge sort halves the list about $\log_2 n$ times and does $O(n)$ merging work a
 
 ## Dynamic programming approach
 
-**Dynamic programming (DP)** is worthwhile when a problem has **overlapping sub-problems**: the same sub-problem is needed again and again. Instead of recomputing it, DP stores each result in a table (or array) and **reuses** it. This is called **memoization** when done top-down; retrieving a stored value takes constant time, $\Theta(1)$.
+Dynamic programming (DP) is worthwhile when a problem has **overlapping sub-problems**: the same sub-problem is needed again and again. Instead of recomputing it, DP stores each result in a table (or array) and **reuses** it. This is called **memoization** when done top-down; retrieving a stored value takes constant time, $\Theta(1)$.
 
 DP is commonly applied to **optimization problems**, where many solutions are possible, each with a cost, and the goal is the solution of smallest cost (the optimal solution). For problems with overlapping sub-problems it avoids redundant work and still guarantees an optimal answer.
 
@@ -185,7 +185,9 @@ DP is mostly applied to recursive algorithms, but **not every recursive algorith
 
 ## Greedy approach
 
-A **greedy algorithm** builds a solution step by step, always choosing the option with the best immediate (local) value, and never reconsidering. It uses only a small part of the problem's information at each step.
+**Greedy algorithm**
+
+A greedy algorithm builds a solution step by step, always choosing the option with the best immediate (local) value, and never reconsidering. It uses only a small part of the problem's information at each step.
 
 - **Simple and fast.** Each local decision needs very little computation.
 - **Not always optimal.** A choice that looks best now can be costly later, so a greedy strategy does not guarantee the best overall solution for general problems.
@@ -241,7 +243,9 @@ With coins of value 1, 3 and 4, making 6 greedily takes 4 then 1 then 1: **three
 
 ## Randomized approach
 
-A **randomized algorithm** uses random numbers to make some of its decisions. It is effective when there are many alternatives and most of them are "good", so finding the single best one is not worth the effort.
+**Randomized algorithm**
+
+A randomized algorithm uses random numbers to make some of its decisions. It is effective when there are many alternatives and most of them are "good", so finding the single best one is not worth the effort.
 
 - Different runs on the **same input** can follow different paths and give different outcomes.
 - Because no particular input is consistently bad, it reduces the chance of repeated worst-case behavior.

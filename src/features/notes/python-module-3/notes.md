@@ -21,7 +21,19 @@ The examples use Python 3. Code blocks contain runnable programs; output comment
 
 ## Sequence and one-way selection
 
-**Sequence** means executing statements in order. **Selection** chooses which statements to execute. **Repetition** executes a block repeatedly. Python uses indentation to mark the blocks belonging to conditions, loops, and functions.
+**Sequence**
+
+Sequence means executing statements in order.
+
+**Selection**
+
+Selection chooses which statements to execute.
+
+**Repetition**
+
+Repetition executes a block repeatedly.
+
+Python uses indentation to mark the blocks belonging to conditions, loops, and functions.
 
 ```python
 a = 20
@@ -88,7 +100,9 @@ print(grade_for(39))  # F
 
 Use `and` to combine Boolean conditions, or write a chained comparison such as `80 <= mark < 90`. The `&` operator is bitwise AND and is not a substitute for `and` in these scalar comparisons. Here, descending thresholds make a second upper-bound check unnecessary.
 
-**Check boundaries:** 100 and 90 give S, 89 gives A, 40 gives E, and 39 gives F. Values outside 0–100 are invalid.
+**Boundary checks**
+
+Check boundaries: 100 and 90 give S, 89 gives A, 40 gives E, and 39 gives F. Values outside 0–100 are invalid.
 
 <!-- page 4 | Module 3 · source page 4 -->
 
@@ -167,7 +181,9 @@ for number in range(1, 4):
 print()  # Preceding line: 1 2 3
 ```
 
-In nested loops, `break` exits the inner loop containing it, not every enclosing loop. In a `while` loop, ensure that `continue` does not skip the update needed for termination.
+In nested loops, `break` exits the inner loop containing it, not every enclosing loop.
+
+In a `while` loop, ensure that `continue` does not skip the update needed for termination.
 
 <!-- page 6 | Module 3 · source page 6 -->
 
@@ -202,7 +218,17 @@ print(display_name)  # Guest
 
 ## Functions and modular design
 
-A **function** is a named, reusable block of code. **Decomposition** breaks a larger problem into smaller tasks. **Modular design** organizes those tasks behind clear interfaces so that each part can be understood and checked separately.
+**Function**
+
+A function is a named, reusable block of code.
+
+**Decomposition**
+
+Decomposition breaks a larger problem into smaller tasks.
+
+**Modular design**
+
+Modular design organizes those tasks behind clear interfaces so that each part can be understood and checked separately.
 
 Functions reduce duplicated logic, hide implementation detail, and make individual tasks easier to reuse, debug, and test.
 
@@ -224,7 +250,9 @@ print(answer)  # 14
 | Body | Indented statements | Perform the task |
 | Return | `return total` | Exit this call and give a result to its caller |
 
-A Python **module** is usually a `.py` file containing definitions and statements. It may contain several functions; module and function are not interchangeable terms.
+**Module**
+
+A Python module is usually a `.py` file containing definitions and statements. It may contain several functions; module and function are not interchangeable terms.
 
 A definition must execute before the function is called. A function may contain multiple `return` statements, and a return need not be the last written line of the function.
 
@@ -232,7 +260,15 @@ A definition must execute before the function is called. A function may contain 
 
 ## Arguments, parameters, and return values
 
-A **parameter** is a name in a function definition. An **argument** is a value supplied in a call. A function can receive arguments, return a result, do both, or do neither explicitly.
+**Parameter**
+
+A parameter is a name in a function definition.
+
+**Argument**
+
+An argument is a value supplied in a call.
+
+A function can receive arguments, return a result, do both, or do neither explicitly.
 
 ```python
 def greet():
@@ -319,13 +355,17 @@ Assume `rows` is a non-negative integer. A value of 0 prints no rows. Avoid name
 
 ## Sequences and Unicode strings
 
-A **sequence** is ordered: its items have positions and can be accessed by index. Strings, lists, and tuples are common sequence types; `range` is another sequence type.
+**Sequence**
+
+A sequence is ordered: its items have positions and can be accessed by index. Strings, lists, and tuples are common sequence types; `range` is another sequence type.
 
 | Type | Holds | Can its items be reassigned? |
 |---|---|---|
 | `str` | Unicode text characters | No |
 | `list` | References to arbitrary Python objects | Yes |
 | `tuple` | References to arbitrary Python objects | No |
+
+**Python string**
 
 A Python string is an immutable sequence of Unicode code points. Python code does not need a terminating null character to determine its length. A character is not necessarily one byte; encoded byte length depends on the encoding and the text.
 
@@ -485,6 +525,8 @@ This function counts one character at a time. Counting a multi-character substri
 
 ## Creating, indexing, and traversing lists
 
+**List**
+
 A list is an ordered, mutable sequence. Items may have different types, and a list may contain other lists.
 
 ```python
@@ -515,6 +557,8 @@ Use `enumerate()` when both positions and values are needed. An empty list is `[
 <!-- page 16 | Module 3 · source page 16 -->
 
 ## List comprehensions and operations
+
+**List comprehension**
 
 A list comprehension builds a new list by evaluating an expression for items in an iterable, optionally filtering with a condition. It need not start from an existing list.
 
@@ -668,7 +712,9 @@ print(" ".join(words))  # three word string
 print("-".join(words))  # three-word-string
 ```
 
-`split()` without an argument groups consecutive whitespace and drops leading or trailing whitespace. An explicit separator follows different rules and can produce empty items: `"a,,b".split(",")` gives `['a', '', 'b']`. `join()` requires string items and inserts its separator between them.
+* `split()` without an argument groups consecutive whitespace and drops leading or trailing whitespace.
+* An explicit separator follows different rules and can produce empty items: `"a,,b".split(",")` gives `['a', '', 'b']`.
+* `join()` requires string items and inserts its separator between them.
 
 <!-- page 21 | Module 3 · source page 21 -->
 
@@ -735,7 +781,9 @@ print(matrix.size)   # 6
 
 [Open full-size SVG](/notes/cse/s1/python/module-3/assets/array-shape.svg)
 
-`(6,)` is a one-element shape tuple. `(2, 3)` means two rows and three columns. Shape must match the actual data: an array containing five values has shape `(5,)`, not `(6,)`. Object-dtype arrays are an exception to the usual homogeneous numeric-value description.
+`(6,)` is a one-element shape tuple. `(2, 3)` means two rows and three columns.
+
+Shape must match the actual data: an array containing five values has shape `(5,)`, not `(6,)`. Object-dtype arrays are an exception to the usual homogeneous numeric-value description.
 
 <!-- page 23 | Module 3 · source page 23 -->
 
@@ -775,7 +823,9 @@ independent[0] = -1
 print(values)  # [10 99 30 40]
 ```
 
-Use `.copy()` when the selected data must be independent. In `matrix[row, column]`, both indices refer to axes; a list of lists instead normally uses `nested[row][column]`.
+Use `.copy()` when the selected data must be independent.
+
+In `matrix[row, column]`, both indices refer to axes; a list of lists instead normally uses `nested[row][column]`.
 
 <!-- page 24 | Module 3 · source page 24 -->
 
@@ -821,7 +871,11 @@ For 2-D matrix multiplication, the left array's column count must equal the righ
 
 ## Creating, traversing, and changing sets
 
-A set is an unordered collection of distinct, hashable objects. It supports membership checks but not positional indexing. Unordered does not mean the order randomly changes on every print; it means you must not rely on an order being defined.
+**Set**
+
+A set is an unordered collection of distinct, hashable objects. It supports membership checks but not positional indexing.
+
+Unordered does not mean the order randomly changes on every print; it means you must not rely on an order being defined.
 
 ```python
 values = {0, 1, 1, 2, 3, 5}
@@ -847,7 +901,9 @@ primes.discard(99)  # No error when 99 is absent
 print(sorted(primes))  # [2, 3, 5, 7, 11, 13, 17]
 ```
 
-`add()` adds one hashable object; `update()` reads items from an iterable. `remove()` raises `KeyError` when an item is missing, whereas `discard()` does not. Lists and ordinary sets are unhashable and cannot themselves be set elements; `frozenset` is an immutable, hashable alternative.
+* `add()` adds one hashable object; `update()` reads items from an iterable.
+* `remove()` raises `KeyError` when an item is missing, whereas `discard()` does not.
+* Lists and ordinary sets are unhashable and cannot themselves be set elements; `frozenset` is an immutable, hashable alternative.
 
 <!-- page 26 | Module 3 · source page 26 -->
 

@@ -11,7 +11,9 @@ By the end, you should be able to:
 - Read and draw flowcharts using the appropriate symbols.
 - Trace worked examples and check boundary cases before writing code.
 
-**Notation used here:** `SET` assigns a value; `=` inside a condition compares values; `MOD` gives a remainder. Pseudocode `FOR i = 1 TO n` includes both endpoints. Python uses different syntax and excludes the stop value of `range()`.
+**Notation used here**
+
+`SET` assigns a value; `=` inside a condition compares values; `MOD` gives a remainder. Pseudocode `FOR i = 1 TO n` includes both endpoints. Python uses different syntax and excludes the stop value of `range()`.
 
 > **Key idea.** An algorithm describes the solution. Pseudocode and flowcharts are two ways of representing that solution.
 
@@ -19,13 +21,17 @@ By the end, you should be able to:
 
 ## Start, stop, and flow lines
 
-A **terminator** is an oval or rounded rectangle containing `START` or `STOP`. A simple algorithm has one entry point and a clearly marked end.
+**Terminator**
+
+A terminator is an oval or rounded rectangle containing `START` or `STOP`. A simple algorithm has one entry point and a clearly marked end.
 
 [![Rounded START and STOP terminator symbols](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)
 
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)
 
-A **flow line** is a line with an arrowhead. Follow its direction to determine the next instruction. Draw the main flow from top to bottom or left to right; avoid crossing lines when possible.
+**Flow line**
+
+A flow line is a line with an arrowhead. Follow its direction to determine the next instruction. Draw the main flow from top to bottom or left to right; avoid crossing lines when possible.
 
 [![An arrow connects Step 1 to Step 2](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)
 
@@ -35,13 +41,17 @@ A **flow line** is a line with an arrowhead. Follow its direction to determine t
 
 ## Processing and input/output symbols
 
-A **process** rectangle contains a calculation or an assignment, such as `total = price × quantity`. Write the operation inside the symbol.
+**Process rectangle**
+
+A process rectangle contains a calculation or an assignment, such as `total = price × quantity`. Write the operation inside the symbol.
 
 [![A process rectangle containing total equals price times quantity](/notes/cse/s1/python/module-2/assets/symbol-process.svg)](/notes/cse/s1/python/module-2/assets/symbol-process.svg)
 
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-process.svg)
 
-An **input/output** parallelogram represents reading data or displaying a result. State which values are read or printed. Initializing a variable is a process, rather than an input operation.
+**Input/output parallelogram**
+
+An input/output parallelogram represents reading data or displaying a result. State which values are read or printed. Initializing a variable is a process, rather than an input operation.
 
 [![An input/output parallelogram for READ age or PRINT fare](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)
 
@@ -51,13 +61,21 @@ An **input/output** parallelogram represents reading data or displaying a result
 
 ## Decisions and continuation connectors
 
-A **decision** diamond contains a condition. For a Boolean condition, draw two outgoing branches labelled `Yes/No` or `True/False`. Each branch must lead to the appropriate next step.
+**Decision diamond**
+
+A decision diamond contains a condition. For a Boolean condition, draw two outgoing branches labelled `Yes/No` or `True/False`. Each branch must lead to the appropriate next step.
 
 [![A decision diamond with separate Yes and No branches](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)
 
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)
 
-An **on-page connector** is a labelled circle that continues the flow elsewhere on the same page. An **off-page connector** is commonly a pentagon pointing downwards and refers to another page. Use matching labels so the reader can find the continuation.
+**On-page connector**
+
+An on-page connector is a labelled circle that continues the flow elsewhere on the same page.
+
+**Off-page connector**
+
+An off-page connector is commonly a pentagon pointing downwards and refers to another page. Use matching labels so the reader can find the continuation.
 
 [![Labelled circle A for an on-page connector and pentagon B for an off-page connector](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)
 
@@ -67,7 +85,9 @@ An **on-page connector** is a labelled circle that continues the flow elsewhere 
 
 ## Module calls and counter-loop notation
 
-A **predefined process** is a rectangle with two vertical lines near its sides. It calls a named function or module whose steps are defined elsewhere. Show the call here and explain the called procedure separately.
+**Predefined process**
+
+A predefined process is a rectangle with two vertical lines near its sides. It calls a named function or module whose steps are defined elsewhere. Show the call here and explain the called procedure separately.
 
 [![A predefined-process rectangle with double vertical edges](/notes/cse/s1/python/module-2/assets/symbol-module.svg)](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
 
@@ -97,7 +117,9 @@ STOP
 
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-simple-interest.svg)
 
-**Inputs:** principal, annual rate as a percentage, and time in years. **Check:** principal 1000, rate 5, and time 2 gives interest 100. This is simple interest, not compound interest.
+**Inputs:** principal, annual rate as a percentage, and time in years.
+
+**Check:** principal 1000, rate 5, and time 2 gives interest 100. This is simple interest, not compound interest.
 
 <!-- page 7 | Module 2 · source page 11 -->
 
@@ -144,7 +166,9 @@ SMALLEST
 
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-smallest-three.svg)
 
-**Trace:** for `(8, 8, 3)`, the candidate minimum starts at 8, stays at 8 after comparing the second value, then becomes 3. Ties do not break this method.
+**Trace**
+
+For `(8, 8, 3)`, the candidate minimum starts at 8, stays at 8 after comparing the second value, then becomes 3. Ties do not break this method.
 
 <!-- page 9 | Module 2 · source page 13 -->
 
@@ -176,7 +200,9 @@ STOP
 
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-zoo-fare.svg)
 
-**Boundary check:** ages 9, 10, 59, and 60 should give fares 7, 10, 10, and 5 respectively.
+**Boundary check**
+
+Ages 9, 10, 59, and 60 should give fares 7, 10, 10, and 5 respectively.
 
 <!-- page 10 | Module 2 · source page 14 -->
 
@@ -237,7 +263,9 @@ FACTORIAL
 
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-factorial-up.svg)
 
-**Trace for n = 4:** the product becomes 1, 2, 6, then 24. Reject negative or non-integer inputs before this algorithm starts.
+**Trace for n = 4**
+
+The product becomes 1, 2, 6, then 24. Reject negative or non-integer inputs before this algorithm starts.
 
 <!-- page 12 | Module 2 · source page 16 -->
 
@@ -301,7 +329,9 @@ END IF
 STOP
 ```
 
-**Trace:** `B, 160`; `G, 150`; `B, 170` gives a boys' average of 165 and a girls' average of 150. An empty group has no average; never divide by a zero count.
+**Trace**
+
+`B, 160`; `G, 150`; `B, 170` gives a boys' average of 165 and a girls' average of 150. An empty group has no average; never divide by a zero count.
 
 The SVG shows the final count check and average calculation; apply it separately to each group.
 
@@ -324,7 +354,9 @@ The worked examples use the rules stated beside each problem. Ticket prices, gra
 
 ## What makes a good algorithm?
 
-An **algorithm** is a finite sequence of precise, executable steps for solving a problem. It may accept zero or more inputs and must produce the specified result for valid inputs.
+**Algorithm**
+
+An algorithm is a finite sequence of precise, executable steps for solving a problem. It may accept zero or more inputs and must produce the specified result for valid inputs.
 
 | Property | What to check |
 |---|---|
@@ -396,10 +428,10 @@ Pseudocode bridges an algorithm and its implementation: it makes the planned ste
 
 ### Benefits
 
-- It is easy to read and understand
-- It helps plan code before implementation
+- It is easy to read and understand.
+- It helps plan code before implementation.
 - It lets you review the logic before choosing language-specific syntax.
-- It is helpful for documentation
+- It is helpful for documentation.
 - It can reveal gaps in the logic before coding.
 
 <!-- page 19 | Module 2 · source page 6 -->
@@ -450,11 +482,22 @@ Instructions run in order, from top to bottom.
 
 ### Selection
 
-Selection chooses which instructions to run based on a condition. Common forms include a simple `IF`, an `IF/ELSE`, an `IF/ELSE IF` chain, and nested conditions.
+Selection chooses which instructions to run based on a condition.
+
+Common forms include:
+- A simple `IF`
+- An `IF/ELSE`
+- An `IF/ELSE IF` chain
+- Nested conditions
 
 ### Repetition
 
-Repetition runs a group of instructions multiple times. Common loop forms include `WHILE`, `FOR`, and `REPEAT/UNTIL`.
+Repetition runs a group of instructions multiple times.
+
+Common loop forms include:
+- `WHILE`
+- `FOR`
+- `REPEAT/UNTIL`
 
 <!-- page 22 | Module 2 · source page 9 -->
 
@@ -572,6 +615,8 @@ When the reference picture is unavailable, trial and error can help narrow the c
 
 ## Problem-solving example: choose a restaurant using heuristics
 
+**Heuristic**
+
 A heuristic is a shortcut for narrowing a choice quickly; it does not prove that the chosen restaurant is the best. For example:
 
 1. Filter for places that are nearby and open at the planned time.
@@ -605,7 +650,7 @@ STOP
 [Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-parity.svg)
 
 | Input | Remainder modulo 2 | Result |
-|---|---|---|
+| --- | --- | --- |
 | 0 | 0 | Even |
 | 6 | 0 | Even |
 | 7 | 1 | Odd |
@@ -720,7 +765,9 @@ END IF
 STOP
 ```
 
-**Boundary check:** sales of 2000, 4000, and 6000 use rates 0.02, 0.04, and 0.07 respectively. A value just above each boundary enters the next band.
+**Boundary check**
+
+Sales of 2000, 4000, and 6000 use rates 0.02, 0.04, and 0.07 respectively. A value just above each boundary enters the next band.
 
 <!-- page 35 | Module 2 · source page 22 -->
 
@@ -769,7 +816,9 @@ Python has no dedicated `repeat-until` statement. Use `while True` with a `break
 
 A loop's condition must be interpreted carefully: `WHILE condition` continues when the condition is true; `UNTIL condition` stops when the condition is true.
 
-**Example:** to print 1 through 10, a while loop can continue while `i <= 10`, whereas a repeat-until loop can stop when `i > 10`. Both require an update such as `i = i + 1`.
+**Example**
+
+To print 1 through 10, a while loop can continue while `i <= 10`, whereas a repeat-until loop can stop when `i > 10`. Both require an update such as `i = i + 1`.
 
 <!-- page 38 | Module 2 · source page 25 -->
 
@@ -811,7 +860,9 @@ STOP
 
 **Trace for n = 3:** the running total becomes 1, then 3, then 6. For `n = 0`, the loop runs zero times and the result is 0.
 
-Check the result against $n(n+1)/2$. Keep variable names consistent: `total`, `Total`, and `TOTAL` can denote different names in a programming language.
+Check the result against $n(n+1)/2$.
+
+Keep variable names consistent: `total`, `Total`, and `TOTAL` can denote different names in a programming language.
 
 <!-- page 40 | Module 2 · source page 27 -->
 
@@ -1035,7 +1086,10 @@ fruits[1:2] = ["cherry", "pineapple"]
 print(fruits)        # ['apple', 'cherry', 'pineapple', 'grapes']
 ```
 
-An index selects one item; a slice selects a new list. Slice start is included and stop is excluded. Negative indices count from the end. Reading a slice does not change the original list; assigning to an index or slice does.
+* An index selects one item; a slice selects a new list.
+* Slice start is included and stop is excluded.
+* Negative indices count from the end.
+* Reading a slice does not change the original list; assigning to an index or slice does.
 
 <!-- page 49 | Module 2 · source page 36 -->
 
@@ -1068,11 +1122,17 @@ print(arr)        # [1 2 3 4]
 print(type(arr))  # <class 'numpy.ndarray'>
 ```
 
-`sort()` changes the list in place and returns `None`; `sorted(fruits)` returns a new sorted list. `reverse()` reverses the current order rather than sorting. NumPy is additional practice and is not needed for the core algorithm and flowchart exercises.
+* `sort()` changes the list in place and returns `None`.
+* `sorted(fruits)` returns a new sorted list.
+* `reverse()` reverses the current order rather than sorting.
+
+NumPy is additional practice and is not needed for the core algorithm and flowchart exercises.
 
 <!-- page 50 | Module 2 · source page 37 -->
 
 ## Replacing part of a list with slice assignment
+
+**Slice assignment**
 
 A slice assignment replaces the selected range with items from an iterable. The replacement may contain a different number of items, changing the list length. Use a list even when replacing the slice with one item.
 
