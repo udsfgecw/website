@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 import { chapterFor, pageAnchor, type NotesModule } from "../types";
 import PageMarkdown from "./PageMarkdown";
 import ReaderTools from "./ReaderTools";
-import TopicCombobox from "./TopicCombobox";
 import { findSubjectNav } from "./subjectNav";
 import { DEFAULT_PREFS, TEXT_SIZES, readPlace, readPrefs, savePlace, savePrefs, type Prefs, type ReadingPlace } from "./readingPlace";
 
@@ -267,33 +266,17 @@ export default function Reader({ notes }: { notes: NotesModule }) {
             {/* contents: a sticky column on wide screens, a collapsible list on phones */}
             <aside className="max-lg:hidden lg:sticky lg:top-[calc(var(--nav-h)+1.5rem)] lg:max-h-[calc(100svh-var(--nav-h)-3rem)] lg:self-start lg:overflow-y-auto">
               <p className="label mb-3 px-3 text-ink-2">Contents</p>
-              <div className="mb-3 px-1">
-                <TopicCombobox
-                  chapters={notes.chapters}
-                  currentChapter={chapter}
-                  unitLabel={unit}
-                  onSelect={(p) => scrollToPlace({ page: p, offset: 0 })}
-                />
-              </div>
               {contents}
               <div className="mt-6 border-t border-line px-3 pt-5">{textSize}</div>
             </aside>
-            <div className="lg:hidden flex flex-col gap-3">
-              <TopicCombobox
-                chapters={notes.chapters}
-                currentChapter={chapter}
-                unitLabel={unit}
-                onSelect={(p) => scrollToPlace({ page: p, offset: 0 })}
-              />
-              <details className="group rounded-2xl border border-line">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-[0.95rem] font-medium">
-                  <span className="min-w-0 truncate">All topics · {notes.chapters.length}</span>
-                  <ChevronDown size={18} className="shrink-0 group-open:rotate-180" aria-hidden="true" />
-                </summary>
-                <div className="border-t border-line p-2">{contents}</div>
-                <div className="border-t border-line px-5 py-3">{textSize}</div>
-              </details>
-            </div>
+            <details className="group rounded-2xl border border-line lg:hidden">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 text-[0.95rem] font-medium">
+                <span className="min-w-0 truncate">Contents · {chapter.title}</span>
+                <ChevronDown size={18} className="shrink-0 group-open:rotate-180" aria-hidden="true" />
+              </summary>
+              <div className="border-t border-line p-2">{contents}</div>
+              <div className="border-t border-line px-5 py-3">{textSize}</div>
+            </details>
 
             <article
               className={cn("notes-prose min-w-0", notes.unitLabel === "section" && "notes-prose--sectioned")}
