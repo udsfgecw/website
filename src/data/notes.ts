@@ -16,6 +16,13 @@ import { PYTHON_MODULE_1_PATH, PYTHON_MODULE_1_SUMMARY } from "@/features/notes/
 import { PYTHON_MODULE_2_PATH, PYTHON_MODULE_2_SUMMARY } from "@/features/notes/python-module-2/path";
 import { PYTHON_MODULE_3_PATH, PYTHON_MODULE_3_SUMMARY } from "@/features/notes/python-module-3/path";
 import { PYTHON_MODULE_4_PATH, PYTHON_MODULE_4_SUMMARY } from "@/features/notes/python-module-4/path";
+import {
+  GAMAT101_QP_PATH,
+  GAPHT121_QP_PATH,
+  GMEST103_QP_PATH,
+  GXEST104_QP_PATH,
+  UCEST105_QP_PATH,
+} from "@/features/notes/question-papers/path";
 
 export interface ModuleNotes {
   /** e.g. "Module 1" */
@@ -125,6 +132,7 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
             { name: "Module 2", detail: "Partial derivatives to level curves", href: MATHS_MODULE_2_PATH },
             { name: "Module 3", detail: "Three-variable chain rule to directional derivatives", href: MATHS_MODULE_3_PATH },
             { name: "Module 4", detail: "Lagrange multipliers to linear programming", href: MATHS_MODULE_4_PATH },
+            { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GAMAT101_QP_PATH },
           ],
         },
         {
@@ -132,8 +140,15 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           modules: [1, 2, 3, 4].map((n) => ({ name: `Module ${n}`, detail: `Engineering Chemistry · Module ${n}`, href: [CHEMISTRY_MODULE_1_PATH, CHEMISTRY_MODULE_2_PATH, CHEMISTRY_MODULE_3_PATH, CHEMISTRY_MODULE_4_PATH][n - 1] })),
         },
         {
+          name: "Engineering Graphics", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", href: "/notes/cse/s1/graphics",
+          modules: [{ name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH }],
+        },
+        {
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",
-          modules: [{ name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: ELECTRICAL_MODULE_1_PATH }],
+          modules: [
+            { name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: ELECTRICAL_MODULE_1_PATH },
+            { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GXEST104_QP_PATH },
+          ],
         },
         {
           name: "Algorithmic Thinking with Python", course: "Algorithmic Thinking with Python", code: "UCEST105", syllabusHref: "/notes/cse/s1/python/syllabus", href: "/notes/cse/s1/python",
@@ -142,7 +157,9 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
             { href: PYTHON_MODULE_2_PATH, detail: PYTHON_MODULE_2_SUMMARY },
             { href: PYTHON_MODULE_3_PATH, detail: PYTHON_MODULE_3_SUMMARY },
             { href: PYTHON_MODULE_4_PATH, detail: PYTHON_MODULE_4_SUMMARY },
-          ].map((module, i) => ({ name: `Module ${i + 1}`, ...module })),
+          ].map((module, i) => ({ name: `Module ${i + 1}`, ...module })).concat([
+            { name: "Question Papers", detail: "2024 regular end-semester paper", href: UCEST105_QP_PATH },
+          ]),
         },
         {
           name: "Physics",
@@ -155,6 +172,7 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
             { name: "Module 2", detail: "Matter waves to quantum tunnelling", href: PHYSICS_MODULE_2_PATH },
             { name: "Module 3", detail: "Intrinsic semiconductors to the p-n junction", href: PHYSICS_MODULE_3_PATH },
             { name: "Module 4", detail: "Rectifiers to solar cells and lasers", href: PHYSICS_MODULE_4_PATH },
+            { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GAPHT121_QP_PATH },
           ],
         },
       ]),

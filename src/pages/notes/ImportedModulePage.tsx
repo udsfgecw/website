@@ -5,6 +5,26 @@ import NotFoundPage from "@/pages/NotFoundPage";
 
 // Each route loads only its own Markdown; the catalogue imports lightweight paths.
 const modules = {
+  "/notes/cse/s1/maths/question-papers": lazy(async () => {
+    const { gamat101QuestionPapers: notes } = await import("@/features/notes/question-papers");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/physics/question-papers": lazy(async () => {
+    const { gapht121QuestionPapers: notes } = await import("@/features/notes/question-papers");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/graphics/question-papers": lazy(async () => {
+    const { gmest103QuestionPapers: notes } = await import("@/features/notes/question-papers");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/electrical/question-papers": lazy(async () => {
+    const { gxest104QuestionPapers: notes } = await import("@/features/notes/question-papers");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/python/question-papers": lazy(async () => {
+    const { ucest105QuestionPapers: notes } = await import("@/features/notes/question-papers");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
   "/notes/cse/s1/chemistry/module-1": lazy(async () => {
     const { chemistrymodule1: notes } = await import("@/features/notes/chemistry-module-1");
     return { default: () => <ModuleNotesPage notes={notes} /> };
