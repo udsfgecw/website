@@ -1,5 +1,9 @@
 import type { Branch, Semester, SubjectNotes } from "@/data/notes";
 import type { Chapter, NotesModule, NotesPage } from "@/features/notes/types";
+import gmest103 from "@/features/syllabi/generated/GMEST103.json";
+import uchwt127 from "@/features/syllabi/generated/UCHWT127.json";
+import uchut128 from "@/features/syllabi/generated/UCHUT128.json";
+import ucsem129 from "@/features/syllabi/generated/UCSEM129.json";
 
 type Topic = { title: string; subtopics: string[] };
 type Module = { title: string; hours: number; topics: Topic[] };
@@ -8,6 +12,7 @@ type Course = {
   modules: Module[];
   outcomes: string[];
   cie: string[];
+  ese?: string[];
 };
 
 const courses: Record<string, Course> = {
@@ -176,6 +181,10 @@ const courses: Record<string, Course> = {
     outcomes: ["Use computing as a model for real-world problems.", "Describe a problem and form a clear model.", "Develop algorithms and implement them as programs.", "Apply problem-solving strategies and essential Python skills."],
     cie: ["Attendance — 5 marks", "Programming-task continuous assessment — 5 marks", "Two written internal examinations — 10 marks each", "Laboratory examination — 10 marks"],
   },
+  GMEST103: gmest103,
+  UCHWT127: uchwt127,
+  UCHUT128: uchut128,
+  UCSEM129: ucsem129,
 };
 
 const markdownList = (items: string[]) => items.map((item, index) => `${index + 1}. ${item}`).join("\n");
@@ -195,12 +204,18 @@ function closingMarkdown(course: Course) {
     "## Course outcomes",
     markdownList(course.outcomes),
     "## Assessment",
-    "**Continuous Internal Evaluation (CIE): 40 marks**",
+    "**Continuous Internal Evaluation (CIE)**",
     ...course.cie.map((item) => `- ${item}`),
-    "**End-Semester Examination (ESE): 60 marks**",
-    "- Part A: Eight questions, two from each module, carrying 3 marks each (24 marks). Answer all.",
-    "- Part B: Two questions from each module; answer one full question from each module. Each carries 9 marks (36 marks).",
-    "- Examination duration: 2 hours 30 minutes.",
+    ...(course.ese === undefined
+      ? [
+          "**End-Semester Examination (ESE): 60 marks**",
+          "- Part A: Eight questions, two from each module, carrying 3 marks each (24 marks). Answer all.",
+          "- Part B: Two questions from each module; answer one full question from each module. Each carries 9 marks (36 marks).",
+          "- Examination duration: 2 hours 30 minutes.",
+        ]
+      : course.ese.length
+        ? ["**End-Semester Examination (ESE)**", ...course.ese.map((item) => `- ${item}`)]
+        : []),
   ].join("\n\n");
 }
 

@@ -1,0 +1,111 @@
+{
+  "objectives": [
+    "Provide students with foundational knowledge and skills in digital technologies, preparing them for further studies and careers in the digital domain.",
+    "Ensure that all students gain valuable digital skills early in their academic journey, enhancing their readiness for advanced courses and future careers in technology."
+  ],
+  "modules": [
+    {
+      "title": "Artificial intelligence and Big Data Analytics (AI/BDA)",
+      "hours": 11,
+      "topics": [
+        {
+          "title": "Artificial intelligence and Big Data Analytics (AI/BDA)",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Internet of Things (IoT)",
+      "hours": 2.5,
+      "topics": [
+        {
+          "title": "Internet of Things (IoT)",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Cyber Security",
+      "hours": 2.5,
+      "topics": [
+        {
+          "title": "Cyber Security",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Block Chain",
+      "hours": 2.5,
+      "topics": [
+        {
+          "title": "Block Chain",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Robotic Process Automation",
+      "hours": 1.5,
+      "topics": [
+        {
+          "title": "Robotic Process Automation",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Augmented Reality and Virtual Reality (AR and VR)",
+      "hours": 2.5,
+      "topics": [
+        {
+          "title": "Augmented Reality and Virtual Reality (AR and VR)",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Cloud Computing",
+      "hours": 2.5,
+      "topics": [
+        {
+          "title": "Cloud Computing",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "3 D Printing and Modelling",
+      "hours": 2,
+      "topics": [
+        {
+          "title": "3 D Printing and Modelling",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Web, Mobile Dev and Marketing",
+      "hours": 2,
+      "topics": [
+        {
+          "title": "Web, Mobile Dev and Marketing",
+          "subtopics": []
+        }
+      ]
+    },
+    {
+      "title": "Responsible AI",
+      "hours": 1,
+      "topics": [
+        {
+          "title": "Responsible AI",
+          "subtopics": []
+        }
+      ]
+    }
+  ],
+  "outcomes": [],
+  "cie": [],
+  "ese": []
+}

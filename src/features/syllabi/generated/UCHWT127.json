@@ -1,0 +1,140 @@
+{
+  "objectives": [
+    "To provide essential knowledge on physical activity, health, and wellness.",
+    "To ensure students understand body systems, exercise principles, nutrition, mental health, and disease management.",
+    "To educate students on the benefits of yoga, the risks of substance abuse and basic first aid skills."
+  ],
+  "modules": [
+    {
+      "title": "Human Body Systems and Physical Activity",
+      "hours": 4,
+      "topics": [
+        {
+          "title": "Human Body Systems related to Physical Activity and Functions",
+          "subtopics": [
+            "Respiratory System",
+            "Cardiovascular System",
+            "Musculoskeletal System and the Major Muscle groups of the Human Body"
+          ]
+        },
+        {
+          "title": "Quantifying Physical Activity and Exercise Continuum",
+          "subtopics": [
+            "Energy Expenditure and Metabolic equivalent of task (MET)",
+            "Light-intensity physical activity",
+            "Moderate-intensity physical activity",
+            "Vigorous-intensity physical activity"
+          ]
+        },
+        {
+          "title": "Physical Activity and Physical Fitness",
+          "subtopics": [
+            "Defining Physical Activity",
+            "Aerobic Physical Activity",
+            "Anaerobic Physical Activity",
+            "Exercise and Health-Related Physical Fitness",
+            "FITT principle to design an Exercise programme"
+          ]
+        },
+        {
+          "title": "Components of Health-related Physical Fitness",
+          "subtopics": [
+            "Cardiorespiratory Fitness",
+            "Muscular strength",
+            "Muscular endurance",
+            "Flexibility",
+            "Body composition"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Health, Wellness, Sports and Nutrition",
+      "hours": 2,
+      "topics": [
+        {
+          "title": "Concept of Health and Wellness",
+          "subtopics": [
+            "Health and wellness differentiation",
+            "Factors affecting health and wellness",
+            "Mental health and Factors affecting mental health"
+          ]
+        },
+        {
+          "title": "Sports and Socialization",
+          "subtopics": [
+            "Sports and character building",
+            "Leadership through Physical Activity and Sports"
+          ]
+        },
+        {
+          "title": "Diet and Nutrition",
+          "subtopics": [
+            "Exploring Micro and Macronutrients",
+            "Concept of Balanced diet",
+            "Carbohydrate & the Glycemic Index",
+            "Animal & Plant-based Proteins and their Effects on Human Health",
+            "Dietary Fats & their Effects on Human Health",
+            "Essential Vitamins and Minerals"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lifestyle Management, Yoga and Substance Abuse",
+      "hours": 4,
+      "topics": [
+        {
+          "title": "Lifestyle Management Strategies",
+          "subtopics": [
+            "Strategies to prevent / manage common hypokinetic diseases and disorders",
+            "Obesity",
+            "Cardiovascular diseases (e.g., coronary artery disease, hypertension)",
+            "Diabetes",
+            "Osteoporosis",
+            "Musculoskeletal disorders (e.g., osteoarthritis, Low back pain, Kyphosis, lordosis, flat foot, Knock knee)"
+          ]
+        },
+        {
+          "title": "Yoga and Stress Management",
+          "subtopics": [
+            "Meaning, Aims and objectives of yoga",
+            "Classification and importance of Yogic Asanas (Sitting, Standing, lying)",
+            "Pranayama and Its Types",
+            "Active Lifestyle and Stress Management Through Yoga"
+          ]
+        },
+        {
+          "title": "Substance Abuse and Addiction",
+          "subtopics": [
+            "Psychoactive substances & its ill effects",
+            "Alcohol",
+            "Opioids",
+            "Cannabis",
+            "Sedative",
+            "Cocaine",
+            "Other stimulants, including caffeine",
+            "Hallucinogens",
+            "Tobacco",
+            "Volatile solvents"
+          ]
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    "Explain the different human body systems and describe various types of physical activities along with methods to measure and quantify these activities.",
+    "Explain how to maintain or improve health and wellness through psychological practices, dietary habits, and sports activities.",
+    "Discuss about common hypokinetic disorders and musculoskeletal disorders, and describe the importance of leading a healthy lifestyle through the practice of yoga and abstaining from addictive substances.",
+    "Explain the basics of first aid and describe common sports injuries."
+  ],
+  "cie": [
+    "Attendance — 10 marks",
+    "Assignment / Presentation — 20 marks",
+    "Activity Evaluation — 20 marks"
+  ],
+  "ese": [
+    "ESE Marks — 0",
+    "Exam Hours — Nil"
+  ]
+}
