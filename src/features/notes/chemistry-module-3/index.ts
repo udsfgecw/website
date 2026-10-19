@@ -14,6 +14,6 @@ export const chemistrymodule3: NotesModule = {
     { label: "CHEMISTRY", href: "/notes/cse/s1/chemistry" },
     { label: "MODULE 3" },
   ],
-  module: "Module 3", course: "Engineering Chemistry", code: "GXCYT122", summary: "Module 3",
+  module: "Module 3", course: "Engineering Chemistry", code: "GXCYT122", summary: "Molecular spectroscopy and analytical techniques",
   source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
 };

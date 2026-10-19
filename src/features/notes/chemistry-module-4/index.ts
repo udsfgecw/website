@@ -14,6 +14,6 @@ export const chemistrymodule4: NotesModule = {
     { label: "CHEMISTRY", href: "/notes/cse/s1/chemistry" },
     { label: "MODULE 4" },
   ],
-  module: "Module 4", course: "Engineering Chemistry", code: "GXCYT122", summary: "Module 4",
+  module: "Module 4", course: "Engineering Chemistry", code: "GXCYT122", summary: "Water technology, pollution, and environmental chemistry",
   source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
 };

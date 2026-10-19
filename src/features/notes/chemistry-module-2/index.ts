@@ -14,6 +14,6 @@ export const chemistrymodule2: NotesModule = {
     { label: "CHEMISTRY", href: "/notes/cse/s1/chemistry" },
     { label: "MODULE 2" },
   ],
-  module: "Module 2", course: "Engineering Chemistry", code: "GXCYT122", summary: "Module 2",
+  module: "Module 2", course: "Engineering Chemistry", code: "GXCYT122", summary: "Nanomaterials, conducting polymers, and electronic applications",
   source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
 };
