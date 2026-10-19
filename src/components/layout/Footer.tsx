@@ -3,7 +3,7 @@ import { INSTAGRAM } from "@/config";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line">
+    <footer className="border-t border-line print:hidden">
       <div className="wrap flex flex-col gap-4 py-6 md:flex-row md:items-center md:justify-between">
         <Link className="inline-flex items-center gap-2.5" to="/" aria-label="UDSF GECW home">
           <img className="size-6 rounded-[5px]" src={`${import.meta.env.BASE_URL}assets/logo-96.webp`} alt="" width={24} height={24} loading="lazy" />

@@ -10,20 +10,27 @@ This module explores environmental chemistry through four interconnected themes:
 
 ---
 
-### Water characteristics and hardness
+### Water characteristics
 
 Water is an effective solvent for many ionic and polar substances used across domestic households, agriculture, and industry. In industrial plants, large volumes of water serve as process solvents, reaction media, and heat-transfer fluids for cooling and steam generation. Because natural water dissolves minerals from soil and rock, its suitability depends directly on the dissolved ionic species present.
 
-**Hardness** is the characteristic of water that prevents rapid lathering with soap. It is primarily caused by dissolved multivalent metallic cations—principally calcium ($\text{Ca}^{2+}$) and magnesium ($\text{Mg}^{2+}$), along with smaller amounts of other divalent or heavy metal ions such as $\text{Fe}^{2+}$ and $\text{Mn}^{2+}$.
+**Hardness**
 
-* **Hard water:** Contains appreciable concentrations of dissolved $\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ salts ($\text{Ca(HCO}_3)_2$, $\text{Mg(HCO}_3)_2$, $\text{CaCl}_2$, $\text{MgCl}_2$, $\text{CaSO}_4$, and $\text{MgSO}_4$). It does not lather readily with soap, instead forming a sticky white precipitate.
-* **Soft water:** Contains negligible concentrations of $\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ ions and produces a rich, persistent lather immediately upon agitation with soap.
+Hardness is the characteristic of water that prevents rapid lathering with soap. It is primarily caused by dissolved multivalent metallic cations—principally calcium ($\text{Ca}^{2+}$) and magnesium ($\text{Mg}^{2+}$), along with smaller amounts of other divalent or heavy metal ions such as $\text{Fe}^{2+}$ and $\text{Mn}^{2+}$.
+
+**Hard water**
+
+Hard water contains appreciable concentrations of dissolved $\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ salts ($\text{Ca(HCO}_3)_2$, $\text{Mg(HCO}_3)_2$, $\text{CaCl}_2$, $\text{MgCl}_2$, $\text{CaSO}_4$, and $\text{MgSO}_4$). It does not lather readily with soap, instead forming a sticky white precipitate.
+
+**Soft water**
+
+Soft water contains negligible concentrations of $\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ ions and produces a rich, persistent lather immediately upon agitation with soap.
 
 ---
 
 ### Mechanism of soap scum formation
 
-Commercial soaps consist of sodium or potassium salts of long-chain fatty acids, such as sodium stearate ($\text{C}_{17}\text{H}_{35}\text{COONa}$). In soft water, sodium stearate dissolves freely to lower surface tension and assemble into cleansing micelles. 
+Commercial soaps consist of sodium or potassium salts of long-chain fatty acids, such as sodium stearate ($\text{C}_{17}\text{H}_{35}\text{COONa}$). In soft water, sodium stearate dissolves freely to lower surface tension and assemble into cleansing micelles.
 
 When soap is introduced to hard water, the dissolved $\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ ions displace $\text{Na}^+$ to form insoluble calcium stearate or magnesium stearate precipitates, collectively known as **soap scum**:
 
@@ -43,7 +50,9 @@ Both $(\text{C}_{17}\text{H}_{35}\text{COO})_2\text{Ca}$ and $(\text{C}_{17}\tex
 
 Total hardness is classified into two distinct forms based on the counter-anions present and their behaviour upon heating:
 
-1. **Temporary hardness (carbonate hardness):** Caused by dissolved bicarbonates of calcium and magnesium, namely $\text{Ca(HCO}_3)_2$ and $\text{Mg(HCO}_3)_2$. It is designated as carbonate hardness because it represents the fraction of hardness chemically equivalent to the bicarbonate and carbonate alkalinity in the water. Boiling expels dissolved carbon dioxide gas and shifts the equilibrium, precipitating insoluble calcium carbonate and, upon complete thermal decomposition, magnesium hydroxide (which possesses a much lower solubility product than magnesium carbonate):
+**Temporary hardness (carbonate hardness)**
+
+Temporary hardness is caused by dissolved bicarbonates of calcium and magnesium, namely $\text{Ca(HCO}_3)_2$ and $\text{Mg(HCO}_3)_2$. It is designated as carbonate hardness because it represents the fraction of hardness chemically equivalent to the bicarbonate and carbonate alkalinity in the water. Boiling expels dissolved carbon dioxide gas and shifts the equilibrium, precipitating insoluble calcium carbonate and, upon complete thermal decomposition, magnesium hydroxide (which possesses a much lower solubility product than magnesium carbonate):
 
 $$
 \text{Ca(HCO}_3)_2\text{ (aq)} \xrightarrow{\Delta} \text{CaCO}_3\downarrow\text{ (s)} + \text{H}_2\text{O (l)} + \text{CO}_2\uparrow\text{ (g)}
@@ -53,7 +62,11 @@ $$
 \text{Mg(HCO}_3)_2\text{ (aq)} \xrightarrow{\Delta} \text{Mg(OH)}_2\downarrow\text{ (s)} + 2\text{CO}_2\uparrow\text{ (g)}
 $$
 
-2. **Permanent hardness (non-carbonate hardness):** Caused by dissolved chlorides and sulfates of calcium and magnesium ($\text{CaCl}_2$, $\text{MgCl}_2$, $\text{CaSO}_4$, and $\text{MgSO}_4$). Because these neutral salts do not decompose into insoluble precipitates upon boiling, permanent hardness cannot be removed thermally and requires chemical softening (such as the lime-soda process), ion-exchange demineralization, or membrane separation.
+**Permanent hardness (non-carbonate hardness)**
+
+Permanent hardness is caused by dissolved chlorides and sulfates of calcium and magnesium ($\text{CaCl}_2$, $\text{MgCl}_2$, $\text{CaSO}_4$, and $\text{MgSO}_4$). Because these neutral salts do not decompose into insoluble precipitates upon boiling, permanent hardness cannot be removed thermally and requires chemical softening (such as the lime-soda process), ion-exchange demineralization, or membrane separation.
+
+### Comparison of hardness types
 
 | Feature | Temporary (Carbonate) Hardness | Permanent (Non-Carbonate) Hardness |
 | :--- | :--- | :--- |
@@ -93,6 +106,8 @@ The liberated hydrochloric acid ($\text{HCl}$) attacks boiler steel, causing sev
 
 ---
 
+---
+
 <!-- page 2 | Expressing hardness as calcium carbonate -->
 
 ## Expressing hardness as calcium carbonate
@@ -122,6 +137,8 @@ For a chemical species $X$ present at mass concentration $C_X$ (in $\text{mg/L}$
 $$
 H\text{ (mg/L as CaCO}_3\text{)} = C_X \times \frac{E_{\text{CaCO}_3}}{E_X} = C_X \times \frac{50}{E_X}
 $$
+
+**Equivalent Mass**
 
 The equivalent mass $E_X$ of an ion or salt is its molar mass $M$ divided by the total positive (or negative) charge magnitude $z$ exchanged per formula unit ($E_X = M/z$). For a salt or ion containing a single divalent cation ($z = 2$), $E_X = M/2$:
 
@@ -168,11 +185,13 @@ Hardness is reported across engineering disciplines in several interconvertible 
 When the concentration of a dissolved species is provided in chemical concentration units, use dimensional analysis:
 
 1. **Relation between Normality and Molarity:**
+
    $$
    \text{Normality } N\text{ (eq/L)} = \text{Molarity } M\text{ (mol/L)} \times z\text{ (eq/mol)}
    $$
 
 2. **Conversion of Normality to $\text{CaCO}_3$ Equivalent:**
+
    $$
    H\text{ (mg/L as CaCO}_3\text{)} = N\text{ (eq/L)} \times 50\text{ g/eq} \times 1000\text{ mg/g} = N \times 50{,}000
    $$
@@ -183,26 +202,38 @@ When the concentration of a dissolved species is provided in chemical concentrat
 
 ---
 
-### Total, Carbonate, and Non-Carbonate Hardness
+### Hardness Classifications and Components
 
-When comprehensive water analyses report individual ionic species rather than salt pairs, hardness components are resolved by comparing **Total Hardness ($\text{TH}$)** with **Total Alkalinity ($\text{TA}$)** (both expressed in $\text{mg/L as CaCO}_3$):
+When comprehensive water analyses report individual ionic species rather than salt pairs, hardness components are resolved by comparing **Total Hardness ($\text{TH}$)** with **Total Alkalinity ($\text{TA}$)** (both expressed in $\text{mg/L as CaCO}_3$).
 
-1. **Total Hardness ($\text{TH}$):** The stoichiometric sum of all divalent calcium and magnesium ions:
+**Total Hardness ($\text{TH}$)**
+
+Total Hardness is the stoichiometric sum of all divalent calcium and magnesium ions:
+
    $$
    \text{TH} = \left(C_{\text{Ca}^{2+}} \times \frac{50}{20}\right) + \left(C_{\text{Mg}^{2+}} \times \frac{50}{12}\right)
    $$
 
-2. **Total Alkalinity ($\text{TA}$):** In natural circumneutral waters, alkalinity is predominantly governed by the bicarbonate ion ($\text{HCO}_3^-$):
+**Total Alkalinity ($\text{TA}$)**
+
+Total Alkalinity in natural circumneutral waters is predominantly governed by the bicarbonate ion ($\text{HCO}_3^-$):
+
    $$
    \text{TA} = C_{\text{HCO}_3^-} \times \frac{50}{61}
    $$
 
-3. **Carbonate Hardness ($\text{CH}$):** Also known as temporary hardness, this is the portion of divalent cations chemically paired with carbonate or bicarbonate anions. Because carbonate hardness cannot exceed the total divalent cations available:
+**Carbonate Hardness ($\text{CH}$)**
+
+Carbonate Hardness, also known as temporary hardness, is the portion of divalent cations chemically paired with carbonate or bicarbonate anions. Because carbonate hardness cannot exceed the total divalent cations available:
+
    $$
    \text{CH} = \min(\text{TH}, \text{TA})
    $$
 
-4. **Non-Carbonate Hardness ($\text{NCH}$):** Also known as permanent hardness, this represents cations paired with non-alkaline anions such as $\text{SO}_4^{2-}$, $\text{Cl}^-$, or $\text{NO}_3^-$:
+**Non-Carbonate Hardness ($\text{NCH}$)**
+
+Non-Carbonate Hardness, also known as permanent hardness, represents cations paired with non-alkaline anions such as $\text{SO}_4^{2-}$, $\text{Cl}^-$, or $\text{NO}_3^-$:
+
    $$
    \text{NCH} = \text{TH} - \text{CH}
    $$
@@ -225,11 +256,13 @@ When comprehensive water analyses report individual ionic species rather than sa
 
 ---
 
+---
+
 <!-- page 3 | Worked problems on water hardness -->
 
 ## Worked problems on water hardness
 
-### Summary of formulas and reference data
+### Formulas and reference data
 
 To compare waters containing different dissolved minerals, every hardness-producing species—and every alkalinity-producing species used to partition carbonate (temporary) and non-carbonate (permanent) hardness—is converted into its chemical equivalent of calcium carbonate ($\text{CaCO}_3$). Because the molar mass of $\text{CaCO}_3$ is $100\text{ g/mol}$ and its ionic charge factor $z = 2$, the equivalent mass of $\text{CaCO}_3$ is $E_{\text{CaCO}_3} = 50\text{ g/eq}$.
 
@@ -259,12 +292,23 @@ $$
 | Magnesium ion | $\text{Mg}^{2+}$ | $24$ | $2$ | $12$ |
 | Bicarbonate ion | $\text{HCO}_3^-$ | $1 + 12 + 48 = 61$ | $1$ | $61$ |
 
-### Rules for partitioning hardness
+### Partitioning hardness
 
-1. **Total Hardness ($\text{TH}$):** Sum the $\text{CaCO}_3$ equivalents of all multivalent hardness cations ($\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ salts or ions). Alkali metal salts ($\text{Na}^+$, $\text{K}^+$) do **not** contribute to $\text{TH}$.
-2. **Alkalinity ($\text{Alk}$):** Sum the $\text{CaCO}_3$ equivalents of all bicarbonate and carbonate species present, **including** sodium bicarbonate ($\text{NaHCO}_3$).
-3. **Carbonate / Temporary Hardness ($\text{CH}$):** Defined by $\text{CH} = \min(\text{TH}, \text{Alk})$. If alkalinity is less than total hardness, $\text{CH} = \text{Alk}$. If alkalinity equals or exceeds total hardness, $\text{CH} = \text{TH}$.
-4. **Non-Carbonate / Permanent Hardness ($\text{NCH}$):** Defined by $\text{NCH} = \text{TH} - \text{CH}$. Because $\text{CH}$ can never exceed $\text{TH}$, permanent hardness is never negative.
+**Total hardness ($\text{TH}$)**
+
+Total hardness is the sum of the $\text{CaCO}_3$ equivalents of all multivalent hardness cations ($\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ salts or ions). Alkali metal salts ($\text{Na}^+$, $\text{K}^+$) do not contribute to $\text{TH}$.
+
+**Alkalinity ($\text{Alk}$)**
+
+Alkalinity is the sum of the $\text{CaCO}_3$ equivalents of all bicarbonate and carbonate species present, including sodium bicarbonate ($\text{NaHCO}_3$).
+
+**Carbonate hardness ($\text{CH}$)**
+
+Carbonate hardness (temporary hardness) is defined by $\text{CH} = \min(\text{TH}, \text{Alk})$. If alkalinity is less than total hardness, $\text{CH} = \text{Alk}$. If alkalinity equals or exceeds total hardness, $\text{CH} = \text{TH}$.
+
+**Non-carbonate hardness ($\text{NCH}$)**
+
+Non-carbonate hardness (permanent hardness) is defined by $\text{NCH} = \text{TH} - \text{CH}$. Because $\text{CH}$ can never exceed $\text{TH}$, permanent hardness is never negative.
 
 > **Watch out.** Do not round individual salt equivalents to two decimal places and then add them. Truncating intermediate values (for example, writing $2.46$ instead of $2.4691$ for $4\text{ ppm Ca(HCO}_3)_2$) introduces cumulative rounding errors in the final total. Keep at least four decimal places during intermediate steps.
 
@@ -288,6 +332,8 @@ Because $\text{CaSO}_4$ is a sulfate salt, this entire $300\text{ mg/L as CaCO}_
 
 ---
 
+
+
 #### Example 2: Single temporary hardness salt ($\text{Ca(HCO}_3)_2$)
 
 **Problem:**  
@@ -301,6 +347,8 @@ $$
 $$
 
 ---
+
+
 
 #### Example 3: Mixed bicarbonate and sulfate salts
 
@@ -335,6 +383,8 @@ $$
 
 ---
 
+
+
 #### Example 4: Mixed bicarbonate, sulfate, and chloride salts
 
 **Problem:**  
@@ -367,6 +417,8 @@ $$
 $$
 
 ---
+
+
 
 #### Example 5: Effect of sodium bicarbonate ($\text{NaHCO}_3$) on hardness partitioning
 
@@ -406,6 +458,8 @@ $$
 
 ---
 
+
+
 #### Example 6: Second mixture containing sodium bicarbonate ($\text{NaHCO}_3$)
 
 **Problem:**  
@@ -434,6 +488,8 @@ $$
 $$
 
 ---
+
+
 
 #### Example 7: Mixture containing neutral sodium chloride ($\text{NaCl}$)
 
@@ -468,6 +524,8 @@ $$
 
 ---
 
+
+
 #### Example 8: Ion-basis water analysis where $\text{TH} > \text{Alk}$
 
 **Problem:**  
@@ -500,6 +558,8 @@ When an analysis is given in terms of individual ions rather than combined salts
    $$
 
 ---
+
+
 
 #### Example 9: Ion-basis water analysis where alkalinity exceeds total hardness ($\text{Alk} > \text{TH}$)
 
@@ -535,6 +595,8 @@ A sample of water on analysis gave the following results: $\text{Ca}^{2+} = 30\t
 
 ---
 
+
+
 #### Example 10: Hardness from normality and molarity of $\text{MgSO}_4$ and $\text{CaCl}_2$ solutions
 
 **Problem:**  
@@ -564,6 +626,8 @@ Calculate the hardness (in $\text{mg/L as CaCO}_3$) of:
 
 ---
 
+
+
 #### Example 11: Formal $\text{CaCO}_3$ charge equivalence of $0.02\text{ M Al}_2(\text{SO}_4)_3$
 
 **Problem:**  
@@ -584,6 +648,8 @@ $$
 
 ---
 
+
+
 ### Self-check questions
 
 1. **Question:** A water sample has $\text{Total Hardness} = 180\text{ mg/L as CaCO}_3$ and $\text{Total Alkalinity} = 210\text{ mg/L as CaCO}_3$. What are its carbonate (temporary) hardness and non-carbonate (permanent) hardness?  
@@ -594,13 +660,20 @@ $$
 
 ---
 
+---
+
 <!-- page 4 | Ion-exchange softening and demineralization -->
 
 ## Ion-exchange softening and demineralization
 
-**Ion exchange** is a reversible heterogeneous process in which mobile ions from an aqueous solution are exchanged for stoichiometrically equivalent, similarly charged ions electrostatically bound to an insoluble solid matrix. In water treatment, these solid matrices are synthetic organic polymers known as **ion-exchange resins**. They possess a high-molecular-weight, porous, three-dimensional cross-linked structure—most commonly a styrene–divinylbenzene copolymer—that prevents the resin from dissolving in water while allowing dissolved ions to diffuse freely through its micropores.
+**Ion exchange**
 
-Each resin consists of two distinct components:
+Ion exchange is a reversible heterogeneous process in which mobile ions from an aqueous solution are exchanged for stoichiometrically equivalent, similarly charged ions electrostatically bound to an insoluble solid matrix. In water treatment, these solid matrices are synthetic organic polymers known as ion-exchange resins. They possess a high-molecular-weight, porous, three-dimensional cross-linked structure—most commonly a styrene–divinylbenzene copolymer—that prevents the resin from dissolving in water while allowing dissolved ions to diffuse freely through its micropores.
+
+**Ion-exchange resin**
+
+An ion-exchange resin consists of two distinct components:
+
 * **Fixed functional groups:** Covalently bonded to the immobile polymer backbone, carrying a net charge when ionized. Strong-acid sulfonate and strong-base quaternary ammonium resins remain ionized across broad operational pH ranges.
 * **Mobile counter-ions:** Oppositely charged ions loosely associated with the fixed groups that can reversibly exchange with ions of like charge in the surrounding aqueous medium.
 
@@ -610,84 +683,65 @@ Each resin consists of two distinct components:
 
 ### Softening versus demineralization
 
-It is critical to distinguish between simple **water softening** and complete **demineralization (deionization)**:
+It is critical to distinguish between simple water softening and complete demineralization (deionization):
 
-* **Sodium-cycle cation softening:** Employs a cation-exchange resin in the sodium form ($RNa$). As hard water passes through the bed, divalent hardness cations ($Ca^{2+}$ and $Mg^{2+}$) displace the monovalent $Na^+$ ions on the resin:
-  $$2RNa + Ca^{2+} \longrightarrow R_2Ca + 2Na^+$$
-  Although hardness is removed, the effluent retains all dissolved anions and an equivalent amount of dissolved sodium salts ($NaCl$, $Na_2SO_4$). Hence, the water is *softened*, not demineralized.
-
+* **Sodium-cycle cation softening:** Employs a cation-exchange resin in the sodium form ($RNa$). As hard water passes through the bed, divalent hardness cations ($Ca^{2+}$ and $Mg^{2+}$) displace the monovalent $Na^+$ ions on the resin: $$2RNa + Ca^{2+} \longrightarrow R_2Ca + 2Na^+$$. Although hardness is removed, the effluent retains all dissolved anions and an equivalent amount of dissolved sodium salts ($NaCl$, $Na_2SO_4$). Hence, the water is *softened*, not demineralized.
 * **Two-bed demineralization:** Employs a hydrogen-form cation-exchange resin ($RH$) placed in series before a hydroxide-form anion-exchange resin ($R'OH$). Cations are replaced by $H^+$ and anions are replaced by $OH^-$, which then combine to form pure water ($H_2O$), eliminating virtually all dissolved mineral electrolytes.
 
 ---
 
-### Classification of demineralization resins
+### Resin classification
 
 | Resin Type | Polymer Matrix & Functional Group | Fixed Group | Mobile Counter-Ion | Target Ions Removed |
 | :--- | :--- | :--- | :--- | :--- |
 | **Cation Exchange Resin (CER)** | Sulphonated or carboxylated styrene–divinylbenzene copolymer | Sulfonate ($-SO_3^-$) or carboxylate ($-COO^-$) | $H^+$ | $Ca^{2+}, Mg^{2+}, Na^+, Fe^{2+}$ |
 | **Anion Exchange Resin (AER)** | Quaternary ammonium styrene–divinylbenzene or amine–formaldehyde copolymer | Quaternary ammonium ($-NR_3^+$) | $OH^-$ | $Cl^-, SO_4^{2-}, HCO_3^-, NO_3^-$ |
 
-#### 1. Cation exchange resins ($RH$)
-Cation exchangers contain acidic functional groups, synthesized by sulphonating a cross-linked styrene–divinylbenzene copolymer so that sulfonate groups ($-SO_3^-H^+$) attach directly to the aromatic rings. In their hydrogen form, they release $H^+$ ions in stoichiometric exchange for metallic cations present in the raw water.
+**Cation exchange resins ($RH$)**
+
+Cation exchange resins contain acidic functional groups, synthesized by sulphonating a cross-linked styrene–divinylbenzene copolymer so that sulfonate groups ($-SO_3^-H^+$) attach directly to the aromatic rings. In their hydrogen form, they release $H^+$ ions in stoichiometric exchange for metallic cations present in the raw water.
 
 ![Chemical structure of sulphonated styrene-divinylbenzene copolymer showing cross-linked aromatic rings with SO3-H+ groups](/notes/cse/s1/chemistry/module-4/assets/imagen-sulphonated-resin.png)
+
 *Figure 4.1: Structure of a sulphonated styrene–divinylbenzene cation-exchange resin with fixed $-SO_3^-$ groups and mobile $H^+$ counter-ions.*
 
-#### 2. Anion exchange resins ($R'OH$)
-Anion exchangers contain basic functional groups, prepared by introducing quaternary ammonium groups ($-N^+R_3OH^-$) or tertiary amine groups onto the cross-linked copolymer matrix and treating the product with dilute $NaOH$. In their hydroxide form, they release $OH^-$ ions in exchange for anions present in the incoming water.
+**Anion exchange resins ($R'OH$)**
+
+Anion exchange resins contain basic functional groups, prepared by introducing quaternary ammonium groups ($-N^+R_3OH^-$) or tertiary amine groups onto the cross-linked copolymer matrix and treating the product with dilute $NaOH$. In their hydroxide form, they release $OH^-$ ions in exchange for anions present in the incoming water.
 
 ![Chemical structure of quaternary ammonium styrene-divinylbenzene copolymer with N+R3 OH- groups](/notes/cse/s1/chemistry/module-4/assets/imagen-quaternary-ammonium-resin.png)
+
 *Figure 4.2: Structure of a quaternary ammonium styrene–divinylbenzene anion-exchange resin with fixed $-N^+R_3$ groups and mobile $OH^-$ counter-ions.*
 
 ---
 
-### The two-column demineralization process
+### Two-column demineralization process
 
 Complete demineralization is achieved by routing raw feed water sequentially through two packed resin columns.
 
 ![Schematic diagram of a two-column ion-exchange demineralization unit showing hard water entering the cation exchange bed, then the anion exchange bed, with acid and alkaline regenerators](/notes/cse/s1/chemistry/module-4/assets/page-011-image-1.png)
+
 *Figure 4.3: Two-stage ion-exchange demineralization unit showing the cation-exchange bed followed by the anion-exchange bed and their respective acid and alkali regeneration lines.*
 
-1. **Passage through the cation-exchange column (CER):**
-   Raw water enters the column packed with $RH$ resin. All dissolved metallic cations ($Ca^{2+}, Mg^{2+}, Na^+$) are bound by the resin, displacing an equivalent quantity of $H^+$ ions into solution:
-   $$2RH + Ca^{2+} \longrightarrow R_2Ca + 2H^+$$
-   $$2RH + Mg^{2+} \longrightarrow R_2Mg + 2H^+$$
-   When expressed for dissolved salts such as $CaCl_2$, the exchange generates free hydrochloric acid:
-   $$2RH + CaCl_2 \longrightarrow R_2Ca + 2HCl$$
-   Similarly, dissolved sulphates form dilute sulphuric acid ($H_2SO_4$). The effluent leaving the cation column is free of metallic cations but is distinctly acidic ($\text{pH} < 7$).
+1. **Passage through the cation-exchange column (CER):** Raw water enters the column packed with $RH$ resin. All dissolved metallic cations ($Ca^{2+}, Mg^{2+}, Na^+$) are bound by the resin, displacing an equivalent quantity of $H^+$ ions into solution: $$2RH + Ca^{2+} \longrightarrow R_2Ca + 2H^+$$ and $$2RH + Mg^{2+} \longrightarrow R_2Mg + 2H^+$$. When expressed for dissolved salts such as $CaCl_2$, the exchange generates free hydrochloric acid: $$2RH + CaCl_2 \longrightarrow R_2Ca + 2HCl$$. Similarly, dissolved sulphates form dilute sulphuric acid ($H_2SO_4$). The effluent leaving the cation column is free of metallic cations but is distinctly acidic ($\text{pH} < 7$).
 
-2. **Passage through the anion-exchange column (AER):**
-   The acidic effluent is fed into the second column containing $R'OH$ resin. Dissolved anions ($Cl^-, SO_4^{2-}$) exchange with the hydroxyl counter-ions:
-   $$R'OH + Cl^- \longrightarrow R'Cl + OH^-$$
-   $$2R'OH + SO_4^{2-} \longrightarrow (R')_2SO_4 + 2OH^-$$
-   Because the water entering this bed contains free mineral acids formed in the first step, the overall exchange directly neutralizes the acid molecules:
-   $$R'OH + HCl \longrightarrow R'Cl + H_2O$$
-   $$2R'OH + H_2SO_4 \longrightarrow (R')_2SO_4 + 2H_2O$$
+2. **Passage through the anion-exchange column (AER):** The acidic effluent is fed into the second column containing $R'OH$ resin. Dissolved anions ($Cl^-, SO_4^{2-}$) exchange with the hydroxyl counter-ions: $$R'OH + Cl^- \longrightarrow R'Cl + OH^-$$ and $$2R'OH + SO_4^{2-} \longrightarrow (R')_2SO_4 + 2OH^-$$. Because the water entering this bed contains free mineral acids formed in the first step, the overall exchange directly neutralizes the acid molecules: $$R'OH + HCl \longrightarrow R'Cl + H_2O$$ and $$2R'OH + H_2SO_4 \longrightarrow (R')_2SO_4 + 2H_2O$$.
 
-3. **Neutralization and deionization:**
-   The $H^+$ ions released from the cation bed and the $OH^-$ ions released from the anion bed combine instantaneously:
-   $$H^+ + OH^- \longrightarrow H_2O$$
-   The effluent emerging from the second unit contains negligible dissolved ionic solutes when operated properly. This purified product is termed **demineralized** or **deionized water**.
+3. **Neutralization and deionization:** The $H^+$ ions released from the cation bed and the $OH^-$ ions released from the anion bed combine instantaneously: $$H^+ + OH^- \longrightarrow H_2O$$. The effluent emerging from the second unit contains negligible dissolved ionic solutes when operated properly. This purified product is termed demineralized or deionized water.
 
-#### Why does hard water pass through the cation column first?
-In standard two-bed systems, hard water must never be fed directly into the hydroxide-form anion exchanger ($R'OH$). If divalent cations ($Ca^{2+}, Mg^{2+}$) encounter high concentrations of $OH^-$ ions prior to cation removal, insoluble metal hydroxides precipitate directly within the bed:
-$$2R'OH + MgCl_2 \longrightarrow 2R'Cl + Mg(OH)_2\downarrow$$
-This precipitate coats the resin beads and clogs the interstitial voids of the column, causing severe pressure drop and halting ion exchange. Passing water through the acidic cation column first maintains all chemical species in soluble form throughout the process.
+#### Column sequencing
+
+In standard two-bed systems, hard water must never be fed directly into the hydroxide-form anion exchanger ($R'OH$). If divalent cations ($Ca^{2+}, Mg^{2+}$) encounter high concentrations of $OH^-$ ions prior to cation removal, insoluble metal hydroxides precipitate directly within the bed: $$2R'OH + MgCl_2 \longrightarrow 2R'Cl + Mg(OH)_2\downarrow$$. This precipitate coats the resin beads and clogs the interstitial voids of the column, causing severe pressure drop and halting ion exchange. Passing water through the acidic cation column first maintains all chemical species in soluble form throughout the process.
 
 ---
 
 ### Regeneration of exhausted beds
 
-With prolonged operation, the active counter-ions ($H^+$ and $OH^-$) become completely replaced by ions from the raw feed, rendering the beds **exhausted**. Because ion exchange is an equilibrium-driven process, passing concentrated acid or alkali solutions across the beds drives the equilibrium backward, restoring the active forms:
+With prolonged operation, the active counter-ions ($H^+$ and $OH^-$) become completely replaced by ions from the raw feed, rendering the beds exhausted. Because ion exchange is an equilibrium-driven process, passing concentrated acid or alkali solutions across the beds drives the equilibrium backward, restoring the active forms:
 
-1. **Regeneration of the cation exchanger:**
-   Flushing the exhausted bed with dilute hydrochloric acid ($HCl$) or dilute sulphuric acid ($H_2SO_4$) strips bound $Ca^{2+}$ and $Mg^{2+}$ ions from the polymer matrix:
-   $$R_2Ca + 2HCl \longrightarrow 2RH + CaCl_2\text{ (washings)}$$
+1. **Regeneration of the cation exchanger:** Flushing the exhausted bed with dilute hydrochloric acid ($HCl$) or dilute sulphuric acid ($H_2SO_4$) strips bound $Ca^{2+}$ and $Mg^{2+}$ ions from the polymer matrix: $$R_2Ca + 2HCl \longrightarrow 2RH + CaCl_2\text{ (washings)}$$.
 
-2. **Regeneration of the anion exchanger:**
-   Flushing the exhausted bed with dilute sodium hydroxide ($NaOH$) reloads the fixed sites with hydroxide counter-ions:
-   $$R'Cl + NaOH \longrightarrow R'OH + NaCl\text{ (washings)}$$
-   $$(R')_2SO_4 + 2NaOH \longrightarrow 2R'OH + Na_2SO_4\text{ (washings)}$$
+2. **Regeneration of the anion exchanger:** Flushing the exhausted bed with dilute sodium hydroxide ($NaOH$) reloads the fixed sites with hydroxide counter-ions: $$R'Cl + NaOH \longrightarrow R'OH + NaCl\text{ (washings)}$$ and $$(R')_2SO_4 + 2NaOH \longrightarrow 2R'OH + Na_2SO_4\text{ (washings)}$$.
 
 The soluble washings ($CaCl_2$, $NaCl$, $Na_2SO_4$) are drained off as waste, and the columns are rinsed thoroughly with demineralized water before returning to service.
 
@@ -702,7 +756,7 @@ The soluble washings ($CaCl_2$, $NaCl$, $Na_2SO_4$) are drained off as waste, an
 
 * **Limitations:**
   * High capital cost for specialized resin beds, column construction materials, and continuous consumption of regenerant chemicals ($HCl, NaOH$).
-  * **Pretreatment requirement:** Suspended solids, colloidal clay, oils, and multivalent transition metals ($Fe^{2+}, Mn^{2+}$) foul the resin pores, permanently blinding active exchange sites. Feed water must undergo prior coagulation and filtration to avoid resin degradation.
+  * Pretreatment requirement: Suspended solids, colloidal clay, oils, and multivalent transition metals ($Fe^{2+}, Mn^{2+}$) foul the resin pores, permanently blinding active exchange sites. Feed water must undergo prior coagulation and filtration to avoid resin degradation.
 
 ---
 
@@ -716,23 +770,32 @@ The soluble washings ($CaCl_2$, $NaCl$, $Na_2SO_4$) are drained off as waste, an
 
 ---
 
+---
+
 <!-- page 5 | Reverse osmosis and desalination -->
 
 ## Reverse osmosis and desalination
 
-**Desalination** is the process of removing excess dissolved salts and minerals from brackish water or seawater to produce fresh water suitable for domestic or industrial use. Unlike ion-exchange softening, which is uneconomical for high-salinity waters due to rapid resin exhaustion, membrane-based reverse osmosis (RO) is widely used to desalinate saline feedwater.
+**Desalination**
+
+Desalination is the process of removing excess dissolved salts and minerals from brackish water or seawater to produce fresh water suitable for domestic or industrial use. Unlike ion-exchange softening, which is uneconomical for high-salinity waters due to rapid resin exhaustion, membrane-based reverse osmosis (RO) is widely used to desalinate saline feedwater.
 
 ### Osmosis and osmotic pressure
 
-**Natural osmosis** is the spontaneous net movement of solvent from a dilute solution (higher water chemical potential) to a concentrated solution (lower water chemical potential) when two aqueous solutions of different solute concentrations are separated by a semipermeable membrane (which selectively allows water molecules to pass while rejecting most dissolved ions and larger molecules).
+**Natural osmosis**
 
-**Osmotic pressure** ($\pi$, typically measured in $\text{bar}$ or $\text{MPa}$) is the hydrostatic pressure difference that builds up across the membrane at equilibrium—or the minimum excess pressure that must be applied to the concentrated side just to halt this net solvent flow. For dilute ideal solutions, osmotic pressure increases with molar concentration $C$ of the solute before dissociation and absolute temperature $T$ according to the van 't Hoff relation:
+Natural osmosis is the spontaneous net movement of solvent from a dilute solution (higher water chemical potential) to a concentrated solution (lower water chemical potential) when two aqueous solutions of different solute concentrations are separated by a semipermeable membrane (which selectively allows water molecules to pass while rejecting most dissolved ions and larger molecules).
+
+**Osmotic pressure**
+
+Osmotic pressure ($\pi$, typically measured in $\text{bar}$ or $\text{MPa}$) is the hydrostatic pressure difference that builds up across the membrane at equilibrium—or the minimum excess pressure that must be applied to the concentrated side just to halt this net solvent flow. For dilute ideal solutions, osmotic pressure increases with molar concentration $C$ of the solute before dissociation and absolute temperature $T$ according to the van 't Hoff relation:
 
 $$
 \pi = iCRT
 $$
 
 where:
+
 * $i$ is the van 't Hoff factor
 * $C$ is the molar concentration of solute
 * $R$ is the universal gas constant
@@ -749,6 +812,7 @@ When external hydrostatic pressure is applied to the concentrated saline side, t
 > **Watch out.** Do not compare osmotic pressure $\pi$ simply to absolute atmospheric pressure $P$. Reverse osmosis requires the applied **transmembrane pressure difference** ($\Delta P$) to exceed the osmotic pressure difference ($\Delta \pi$) plus hydraulic friction and membrane resistance losses so that a practical permeate flux is achieved.
 
 ![Schematic of reverse osmosis showing external pressure applied via a piston to seawater, forcing water molecules through a semipermeable membrane into the fresh water compartment while rejecting salts.](/notes/cse/s1/chemistry/module-4/assets/page-015-image-2-Imagen.png)
+
 *Figure: Principle of reverse osmosis—applying a pressure greater than the osmotic pressure forces water from the concentrated salt solution through a semipermeable membrane.*
 
 ### Process steps and membrane materials
@@ -760,9 +824,10 @@ An industrial RO desalination unit operates as a continuous cross-flow filtratio
 3. **Membrane separation:** Pressurized feedwater enters the membrane module. Semipermeable membranes widely used in engineering practice include **cellulose acetate** and **thin-film composite aromatic polyamide** membranes. Water permeates through the dense active layer to form the low-salinity **permeate** (product stream), while rejected salts, organics, and colloids remain in the pressurized **concentrate** (reject or brine stream).
 4. **Post-treatment and brine management:** Permeate is stabilized (pH and remineralization) and disinfected for distribution, while the high-salinity concentrate is routed through energy-recovery devices and discharged or treated.
 
-### Advantages and limitations of reverse osmosis
+### Advantages and limitations
 
 #### Advantages
+
 * **Broad contaminant rejection:** Rejects a high fraction of dissolved ionic salts alongside non-ionic contaminants such as dissolved organic matter, bacteria, and **colloidal silica** (which freely passes through conventional ion-exchange resin beds).
 * **No thermal phase change:** Because water does not undergo vaporization, RO generally has a lower primary energy consumption than thermal desalination processes.
 * **Continuous operation:** Eliminates periodic acid/alkali chemical regeneration steps required by ion-exchange beds, requiring only periodic cleaning-in-place (CIP) protocols.
@@ -770,6 +835,7 @@ An industrial RO desalination unit operates as a continuous cross-flow filtratio
 > **Watch out.** Reverse osmosis does not universally remove a fixed $99\%$ or $100\%$ of all ions, nor does it always have low capital cost. Rejection depends on membrane type, ion charge/size, feed salinity, and operating conditions, and high-pressure pumps, pretreatment systems, and membranes represent significant capital and electrical operating costs.
 
 #### Limitations
+
 * **High electrical energy demand:** High-pressure pumps consume substantial electrical energy, particularly for high-salinity seawater feeds.
 * **Membrane fouling and scaling:** Suspended solids, biofouling, and precipitation of sparingly soluble salts ($\text{CaCO}_3$, $\text{CaSO}_4$, silica) deteriorate permeate flux and reduce membrane service life.
 * **Concentrate disposal:** Safe discharge of large volumes of hyper-saline reject brine poses ecological challenges in inland or marine environments.
@@ -790,6 +856,8 @@ An industrial RO desalination unit operates as a continuous cross-flow filtratio
 
 2. **Question:** What happens in an RO cell if the applied transmembrane pressure equals the osmotic pressure difference across the membrane?
    **Answer:** The system reaches thermodynamic equilibrium ($\Delta P = \Delta \pi$), resulting in zero net flux of solvent across the semipermeable membrane.
+
+---
 
 ---
 
@@ -836,7 +904,11 @@ $$
 \text{HOCl} \rightleftharpoons \text{H}^+ + \text{OCl}^-
 $$
 
-**Free available chlorine** is defined as the combined concentration of dissolved gaseous $\text{Cl}_2$, unionized hypochlorous acid ($\text{HOCl}$), and hypochlorite ion ($\text{OCl}^-$). The disinfection efficacy of chlorine is strongly pH-dependent:
+**Free Available Chlorine**
+
+Free available chlorine is the combined concentration of dissolved gaseous $\text{Cl}_2$, unionized hypochlorous acid ($\text{HOCl}$), and hypochlorite ion ($\text{OCl}^-$).
+
+The disinfection efficacy of chlorine is strongly pH-dependent:
 
 - **Below $\text{pH } 7.5$:** Unionized $\text{HOCl}$ dominates. Because it is neutral and structurally compact, $\text{HOCl}$ readily diffuses across the negatively charged cell walls and lipid membranes of bacteria. Inside the cell, it oxidizes vital enzymes and disrupts sulfhydryl ($\text{-SH}$) linkages.
 - **Above $\text{pH } 7.5$:** The equilibrium shifts toward the negatively charged hypochlorite ion ($\text{OCl}^-$). The negative bacterial membrane electrostatically repels $\text{OCl}^-$, making it roughly $80 - 100$ times slower as a germicide than $\text{HOCl}$.
@@ -847,7 +919,9 @@ $$
 
 To eliminate the safety and transport hazards of pressurized liquefied $\text{Cl}_2$ gas cylinders, smaller treatment works utilize sodium hypochlorite ($\text{NaOCl}$) solutions or solid calcium hypochlorite.
 
-**Bleaching powder** is a non-stoichiometric basic mixture of calcium hypochlorite $\text{Ca(OCl)}_2$, basic calcium chloride $\text{CaCl}_2\cdot\text{Ca(OH)}_2\cdot\text{H}_2\text{O}$, and slaked lime $\text{Ca(OH)}_2$, simplified empirically as $\text{Ca(OCl)Cl}$ or $\text{CaOCl}_2$.
+**Bleaching Powder**
+
+Bleaching powder is a non-stoichiometric basic mixture of calcium hypochlorite $\text{Ca(OCl)}_2$, basic calcium chloride $\text{CaCl}_2\cdot\text{Ca(OH)}_2\cdot\text{H}_2\text{O}$, and slaked lime $\text{Ca(OH)}_2$, simplified empirically as $\text{Ca(OCl)Cl}$ or $\text{CaOCl}_2$.
 
 Upon dissolution in water, calcium hypochlorite dissociates to liberate hypochlorite ions, which hydrolyze to establish the active $\text{HOCl}$ equilibrium:
 
@@ -862,6 +936,7 @@ $$
 > **Watch out.** Do not write $\text{CaOCl}_2 + \text{H}_2\text{O} \longrightarrow \text{Ca(OH)}_2 + \text{Cl}_2$. Adding bleaching powder to neutral water yields aqueous calcium, chloride, and hypochlorite/hypochlorous acid species—the active disinfectant is described by the hypochlorite–hypochlorous acid equilibria.
 
 Using bleaching powder carries notable operational drawbacks compared to gaseous $\text{Cl}_2$ or liquid $\text{NaOCl}$:
+
 - **Instability:** Atmospheric moisture and $\text{CO}_2$ drive auto-decomposition during storage, degrading available chlorine content.
 - **Water hardening:** The added $\text{Ca}^{2+}$ and $\text{OH}^-$ ions elevate total hardness and raise the water pH, shifting the equilibrium toward the less active $\text{OCl}^-$.
 - **Sludge generation:** Significant insoluble lime residues require frequent clarifier and dosing equipment cleanouts.
@@ -870,7 +945,9 @@ Using bleaching powder carries notable operational drawbacks compared to gaseous
 
 ### Chlorine demand and breakpoint chlorination
 
-**Chlorine demand** represents the amount of applied chlorine consumed by reactions with oxidizable impurities before any persistent residual is established:
+**Chlorine Demand**
+
+Chlorine demand is the amount of applied chlorine consumed by reactions with oxidizable impurities before any persistent residual is established:
 
 $$
 \text{Chlorine dose} = \text{Chlorine demand} + \text{Chlorine residual}
@@ -878,7 +955,9 @@ $$
 
 All terms are customarily expressed in $\text{mg/L}$ or $\text{ppm}$ as $\text{Cl}_2$.
 
-When water contains dissolved ammonia ($\text{NH}_3$) or organic amines, hypochlorous acid reacts in competitive, stepwise substitution reactions to form **chloramines**, known collectively as **combined available chlorine**:
+**Combined Available Chlorine**
+
+Combined available chlorine represents chloramines formed when hypochlorous acid reacts in competitive, stepwise substitution reactions with dissolved ammonia ($\text{NH}_3$) or organic amines:
 
 $$
 \text{NH}_3 + \text{HOCl} \longrightarrow \underset{\text{monochloramine}}{\text{NH}_2\text{Cl}} + \text{H}_2\text{O}
@@ -894,9 +973,10 @@ $$
 
 While monochloramine is a weaker disinfectant than free $\text{HOCl}$, it is substantially more stable, does not readily form trihalomethanes, and provides persistent secondary residual protection in expansive distribution mains.
 
-Progressive addition of chlorine to water containing ammonia and reducing agents yields the classical **breakpoint chlorination curve**.
+Progressive addition of chlorine to water containing ammonia and reducing agents yields the classical breakpoint chlorination curve.
 
 ![Breakpoint chlorination curve plotting residual chlorine against applied chlorine dose across four distinct reaction zones](/notes/cse/s1/chemistry/module-4/assets/imagen-breakpoint-chlorination.png)
+
 *Figure: Breakpoint chlorination curve showing how measured chlorine residual changes with applied chlorine dose across four reaction stages.*
 
 | Reaction stage | Dominant chemical process | Residual behaviour |
@@ -906,16 +986,25 @@ Progressive addition of chlorine to water containing ammonia and reducing agents
 | **Stage III** (chloramine destruction) | Excess $\text{HOCl}$ oxidizes chloramines to volatile nitrogen species ($\text{N}_2\uparrow$, minor $\text{N}_2\text{O}$) and inert chloride ($\text{Cl}^-$). | Measured residual drops steeply to a distinct minimum value. |
 | **Stage IV** (post-breakpoint) | Ammonia demand and readily oxidizable substances are completely consumed; additional chlorine remains unreacted as free $\text{HOCl}$ and $\text{OCl}^-$. | Residual rises linearly at a $1:1$ slope with further applied dose (free available chlorine). |
 
-**Breakpoint** is the exact dosage corresponding to the local minimum in residual chlorine at the end of Stage III. Dosing past the breakpoint achieves:
+**Breakpoint**
+
+Breakpoint is the exact dosage corresponding to the local minimum in residual chlorine at the end of Stage III.
+
+Dosing past the breakpoint achieves:
+
 - Destruction of chloramines responsible for foul "swimming pool" chlorinous odours and taste.
 - Complete oxidation of ammonia compounds.
-- Establishment of a reliable, fast-acting **free residual chlorine** baseline ($0.2\text{ to }0.5\text{ mg/L}$) to prevent recontamination in municipal mains.
+- Establishment of a reliable, fast-acting free residual chlorine baseline ($0.2\text{ to }0.5\text{ mg/L}$) to prevent recontamination in municipal mains.
 
 ---
 
 ### Dechlorination and operational controls
 
-**Dechlorination** is the intentional reduction of excessive residual chlorine following disinfection contact time to avoid medicinal chlorophenol tastes, pipeline corrosion, or biological damage in downstream receiving waters. Water is passed through granular activated carbon (GAC) filters or treated with chemical reducing agents such as sulphur dioxide ($\text{SO}_2$), sodium sulphite ($\text{Na}_2\text{SO}_3$), or sodium thiosulphate ($\text{Na}_2\text{S}_2\text{O}_3$):
+**Dechlorination**
+
+Dechlorination is the intentional reduction of excessive residual chlorine following disinfection contact time to avoid medicinal chlorophenol tastes, pipeline corrosion, or biological damage in downstream receiving waters.
+
+Water is passed through granular activated carbon (GAC) filters or treated with chemical reducing agents such as sulphur dioxide ($\text{SO}_2$), sodium sulphite ($\text{Na}_2\text{SO}_3$), or sodium thiosulphate ($\text{Na}_2\text{S}_2\text{O}_3$):
 
 $$
 \text{SO}_2 + \text{HOCl} + \text{H}_2\text{O} \longrightarrow \text{SO}_4^{2-} + \text{Cl}^- + 3\text{H}^+
@@ -948,28 +1037,40 @@ $$
 
 ---
 
+---
+
 <!-- page 7 | Ozone and ultraviolet disinfection -->
 
 ## Ozone and ultraviolet disinfection
 
-**Disinfection** is the selective inactivation or destruction of disease-causing microorganisms (pathogens) to safe levels, whereas **sterilization** refers to the complete destruction of all viable microbial life, including bacterial spores. Municipal water treatment targets disinfection rather than full sterilization. While conventional chlorination remains widespread, physical and alternative chemical disinfectants—such as ozone ($\text{O}_3$) and ultraviolet (UV) radiation—effectively avoid undesirable chlorinous tastes, odours, and organohalogen by-products.
+**Disinfection**
+
+Disinfection is the selective inactivation or destruction of disease-causing microorganisms (pathogens) to safe levels.
+
+**Sterilization**
+
+Sterilization refers to the complete destruction of all viable microbial life, including bacterial spores.
+
+Municipal water treatment targets disinfection rather than full sterilization. While conventional chlorination remains widespread, physical and alternative chemical disinfectants—such as ozone ($\text{O}_3$) and ultraviolet (UV) radiation—effectively avoid undesirable chlorinous tastes, odours, and organohalogen by-products.
 
 ---
 
 ### Ozone disinfection
 
-**Ozone ($\text{O}_3$)** is an allotrope of oxygen and a powerful chemical oxidizing agent. Because ozone is thermodynamically unstable and decomposes rapidly, it cannot be stored or shipped in bulk and must be generated on-site.
+Ozone ($\text{O}_3$) is an allotrope of oxygen and a powerful chemical oxidizing agent. Because ozone is thermodynamically unstable and decomposes rapidly, it cannot be stored or shipped in bulk and must be generated on-site.
 
 #### On-site generation and delivery
+
 Dry air or oxygen is passed through a silent electric discharge (corona discharge) across a high-voltage gap:
 
 $$
 3\text{O}_2(\text{g}) \xrightarrow{\text{electric discharge}} 2\text{O}_3(\text{g})
 $$
 
-The resulting ozonized gas stream is introduced into water within a counter-current contact chamber to maximize gas-to-liquid mass transfer. 
+The resulting ozonized gas stream is introduced into water within a counter-current contact chamber to maximize gas-to-liquid mass transfer.
 
 #### Disinfection mechanism
+
 Unlike simplified textbook representations ($\text{O}_3 \rightarrow \text{O}_2 + [\text{O}]$), aqueous disinfection proceeds through two concurrent pathways:
 
 1. **Direct oxidation:** Molecular ozone ($\text{O}_3(\text{aq})$) attacks specific functional groups, targeting proteins and bacterial cell walls.
@@ -980,6 +1081,7 @@ Ozone also breaks down oxidizable organic molecules that produce colour, taste, 
 > **Watch out.** Do not refer to $[\text{O}]$ as "nascent $\text{O}_2$"—$\text{O}_2$ is molecular dioxygen, and aqueous ozonation relies on dissolved $\text{O}_3$ and hydroxyl radicals ($\cdot\text{OH}$), not isolated atomic oxygen alone.
 
 #### Merits and limitations
+
 * **Merits:**
   * Exceptional germicidal efficiency against bacteria, viruses, and chlorine-resistant cysts (*Cryptosporidium*, *Giardia*).
   * Rapid reaction rate without imparting foreign chemical tastes or odours.
@@ -993,9 +1095,12 @@ Ozone also breaks down oxidizable organic molecules that produce colour, taste, 
 
 ### Ultraviolet (UV) disinfection
 
-**Ultraviolet disinfection** is a physical, chemical-free process that relies on germicidal light transmission through water. The germicidal window spans UV-C wavelengths ($200\text{–}280\text{ nm}$), with maximum biological effectiveness occurring near $254\text{ nm}$.
+**Ultraviolet disinfection**
+
+Ultraviolet disinfection is a physical, chemical-free process that relies on germicidal light transmission through water. The germicidal window spans UV-C wavelengths ($200\text{–}280\text{ nm}$), with maximum biological effectiveness occurring near $254\text{ nm}$.
 
 #### Operating principle
+
 Water flows in thin profiles through an irradiation chamber housing low-pressure mercury lamps. The lamps are encased in protective **quartz sleeves**, which allow high transmission of UV-C light (unlike ordinary borosilicate glass, which absorbs shortwave UV).
 
 The $254\text{ nm}$ photons penetrate microbial cell membranes and are absorbed by cellular DNA and RNA. This photochemical excitation forms covalent cross-links—predominantly **pyrimidine (thymine) dimers**—between adjacent base pairs:
@@ -1009,6 +1114,7 @@ Pathogens rendered unable to replicate cannot cause infection, successfully inac
 > **Watch out.** Conventional UV disinfection does not remove dissolved solids, hardness or heavy metals, and it only inactivates microbes when they receive a sufficient light dose.
 
 #### Operational requirements
+
 * **Water clarity and transmittance:** Suspended solids (turbidity) scatter and shield pathogens from light rays, while dissolved iron and humic substances absorb UV photons. Water must undergo coagulant-assisted filtration prior to UV treatment.
 * **Sleeve maintenance:** Precipitation of hardness salts ($\text{CaCO}_3$, $\text{CaSO}_4$) and biofilm accumulation on the quartz sleeve surfaces diminish radiation output; routine mechanical or chemical wiping is mandatory.
 * **Fluence control:** System hydraulic flow rates must be regulated to ensure all fluid elements receive the required UV dose ($\text{Fluence} = \text{Intensity} \times \text{Exposure time}$).
@@ -1038,13 +1144,19 @@ Pathogens rendered unable to replicate cannot cause infection, successfully inac
 
 ---
 
+---
+
 <!-- page 8 | Water pollution, dissolved oxygen, BOD and COD -->
 
 ## Water pollution, dissolved oxygen, BOD and COD
 
 ### Sources and Types of Water Pollution
 
-**Water pollution** occurs when undesirable foreign substances enter water bodies and degrade their physical, chemical, or biological quality, making them hazardous to aquatic ecosystems or human use. Major sources fall into four primary categories:
+**Water Pollution**
+
+Water pollution occurs when undesirable foreign substances enter water bodies and degrade their physical, chemical, or biological quality, making them hazardous to aquatic ecosystems or human use.
+
+Major sources fall into four primary categories:
 
 1. **Domestic sewage:** Municipal wastewater carries suspended solids, biodegradable organic waste, household detergents, and waterborne **pathogens** (enteric bacteria, viruses, and parasitic protozoa).
 2. **Industrial effluents:** Untreated or inadequately treated industrial discharges introduce synthetic **organics** (solvents, dyes, phenols), mineral acids, alkalis, and toxic heavy **metals** (such as $\text{Pb}^{2+}$, $\text{Hg}^{2+}$, $\text{Cd}^{2+}$, and $\text{Cr}^{6+}$). Properly treated effluents eliminate or neutralize these contaminants prior to discharge.
@@ -1079,11 +1191,12 @@ Using glucose ($\text{C}_6\text{H}_{12}\text{O}_6$) as a standard carbohydrate m
 
 ### Dissolved Oxygen (DO)
 
-**Dissolved oxygen (DO)** is the concentration of uncompounded molecular oxygen gas ($\text{O}_2$) physically dissolved in an aqueous solution, expressed in milligrams per litre ($\text{mg/L}$) or parts per million ($\text{ppm}$). 
+Dissolved oxygen (DO) is the concentration of uncompounded molecular oxygen gas ($\text{O}_2$) physically dissolved in an aqueous solution, expressed in milligrams per litre ($\text{mg/L}$) or parts per million ($\text{ppm}$).
 
 DO does not refer to the chemically bonded oxygen in the $\text{H}_2\text{O}$ molecule. It is crucial for maintaining higher aquatic life forms (such as fish and macroinvertebrates) and sustaining aerobic self-purification processes. DO is quantified analytically via **Winkler’s iodometric titration** or measured directly on-site using polarographic, galvanic, or optical luminescent DO probes.
 
 #### Factors Governing Dissolved Oxygen Levels
+
 * **Temperature:** Gas dissolution is an exothermic process. As water temperature rises, gas solubility declines; cold winter streams naturally retain substantially higher DO saturation levels than warm summer waters.
 * **Atmospheric pressure and re-aeration:** In accordance with Henry's law, gas solubility is directly proportional to partial pressure. High-altitude waters experience lower barometric pressure and retain less DO at saturation. Mechanical turbulence, rapids, and artificial aeration increase the interfacial mass-transfer rate of atmospheric $\text{O}_2$ into the water.
 * **Salinity:** Electrolytes decrease the solubility of non-polar gases through the "salting-out" effect; hence, seawater holds roughly $20\%$ less DO at saturation than freshwater under identical temperature and pressure conditions.
@@ -1093,7 +1206,7 @@ DO does not refer to the chemically bonded oxygen in the $\text{H}_2\text{O}$ mo
 
 ### Biochemical Oxygen Demand ($\text{BOD}_5$)
 
-**Biochemical Oxygen Demand (BOD)** is the mass of dissolved molecular oxygen required by aerobic microorganisms to biochemically oxidize the biodegradable organic matter (and oxidizable inorganic nitrogen, unless inhibited) present in one litre of wastewater under standardized laboratory incubation conditions: **$20^\circ\text{C}$ in complete darkness for $5\text{ days}$** ($\text{BOD}_5$).
+Biochemical Oxygen Demand (BOD) is the mass of dissolved molecular oxygen required by aerobic microorganisms to biochemically oxidize the biodegradable organic matter (and oxidizable inorganic nitrogen, unless inhibited) present in one litre of wastewater under standardized laboratory incubation conditions: **$20^\circ\text{C}$ in complete darkness for $5\text{ days}$** ($\text{BOD}_5$).
 
 * Darkness ensures photosynthetic organisms (e.g., green algae) cannot generate in-situ oxygen during the test period.
 * $\text{BOD}_5$ measures biodegradable organic load over an empirical $5\text{-day}$ window—it is neither a direct microbial population count nor a measure of total theoretical oxidation.
@@ -1117,9 +1230,11 @@ DO does not refer to the chemically bonded oxygen in the $\text{H}_2\text{O}$ mo
 
 ---
 
+
+
 ### Chemical Oxygen Demand (COD)
 
-**Chemical Oxygen Demand (COD)** is the mass of oxygen equivalent to the amount of a strong chemical oxidant consumed during the chemical oxidation of oxidizable organic and inorganic constituents in one litre of water under boiling, concentrated acidic reflux conditions (typically $2\text{–}3\text{ hours}$).
+Chemical Oxygen Demand (COD) is the mass of oxygen equivalent to the amount of a strong chemical oxidant consumed during the chemical oxidation of oxidizable organic and inorganic constituents in one litre of water under boiling, concentrated acidic reflux conditions (typically $2\text{–}3\text{ hours}$).
 
 * **Oxidant system:** Standardized potassium dichromate ($\text{K}_2\text{Cr}_2\text{O}_7$) in concentrated sulphuric acid ($\text{H}_2\text{SO}_4$), refluxed in the presence of a silver sulphate ($\text{Ag}_2\text{SO}_4$) catalyst.
 * **Mechanism & titration:** Orange dichromate ions ($\text{Cr}_2\text{O}_7^{2-}$) are reduced to green chromic ions ($\text{Cr}^{3+}$). The residual unreduced dichromate is back-titrated against ferrous ammonium sulphate (FAS), and the net oxidant consumed is converted stoichiometrically into equivalent $\text{mg O}_2\text{/L}$.
@@ -1154,11 +1269,19 @@ DO does not refer to the chemically bonded oxygen in the $\text{H}_2\text{O}$ mo
 
 ---
 
+---
+
 <!-- page 9 | Sewage treatment: stages and activated sludge -->
 
 ## Sewage treatment: stages and activated sludge
 
-**Sewage** refers to domestic and municipal wastewater generated by households, commercial establishments, and institutions. It carries human excreta, wash water, food waste, detergents, and pathogenic microorganisms. It contrasts with **industrial effluent**, which originates from industrial processing plants and frequently contains heavy metals, recalcitrant synthetic organics, extreme acid/alkali loads, and toxic compounds requiring specialized chemical pretreatment. 
+**Sewage**
+
+Sewage refers to domestic and municipal wastewater generated by households, commercial establishments, and institutions. It carries human excreta, wash water, food waste, detergents, and pathogenic microorganisms.
+
+**Industrial Effluent**
+
+Industrial effluent originates from industrial processing plants and frequently contains heavy metals, recalcitrant synthetic organics, extreme acid/alkali loads, and toxic compounds requiring specialized chemical pretreatment.
 
 The primary objective of municipal sewage treatment is to systematically reduce Biochemical Oxygen Demand (BOD), suspended solids, excess nutrients, and pathogens prior to environmental discharge or water reuse, thereby preventing eutrophication, dissolved oxygen depletion, and waterborne disease transmission.
 
@@ -1184,30 +1307,36 @@ $$\text{Raw Sewage} \longrightarrow \underset{\text{(Screening \& Grit Removal)}
 ### Preliminary and Primary Treatment
 
 #### Preliminary Treatment
+
 Preliminary treatment protects mechanical equipment, pumps, and transport conduits from mechanical blockage, abrasion, and clogging:
 
 1. **Screening:** Raw sewage passes through coarse, inclined bar screens followed by fine screens to intercept large floating and suspended debris (wood, rags, paper, plastic). Because these solids are predominantly inert or non-biodegradable trash, they are compacted and transferred directly to landfills or incinerators.
 2. **Grit removal:** Wastewater flows through velocity-regulated grit chambers ($v \approx 0.3\text{ m/s}$) to allow heavy inorganic particles (sand, gravel, eggshells, broken glass) to settle by gravity while organic matter remains suspended.
 
 #### Primary Treatment
-**Primary sedimentation** physically removes settleable organic and inorganic suspended particulate matter:
+
+**Primary Sedimentation**
+
+Primary sedimentation physically removes settleable organic and inorganic suspended particulate matter:
 
 * Screened sewage enters quiescent **primary sedimentation tanks** (clarifiers) with hydraulic retention times typically ranging from $1.5\text{ to }2.5\text{ hours}$.
 * Under gravity, suspended settleable particles consolidate at the tank bottom as **primary sludge**, while surface skimmers continuously remove floating scums, free oils, and grease.
 
 > **Watch out.** Do not conflate preliminary screening with primary sedimentation, and do not assume standard primary clarifiers always utilize chemical additives. Primary clarification functions primarily by plain gravity settling. Coagulants such as alum ($\text{Al}_2(\text{SO}_4)_3$) are added only in *chemically enhanced primary treatment* (CEPT) to destabilize fine colloidal suspensions:
->
+
 > $$
 > \text{Al}_2(\text{SO}_4)_3 + 6\text{H}_2\text{O} \longrightarrow 2\text{Al(OH)}_3\downarrow + 3\text{H}_2\text{SO}_4
 > $$
->
+
 > The insoluble gelatinous $\text{Al(OH)}_3$ precipitates sweep fine suspended colloids out of the water column.
 
 ---
 
-### Secondary (Biological) Treatment and the Activated Sludge Process
+### Secondary Biological Treatment
 
-Primary effluent contains extensive concentrations of dissolved and colloidal biodegradable organic pollutants. **Secondary treatment** utilizes living microorganisms within engineered bioreactors to consume and metabolize these organics. While aerobic suspended-growth systems dominate municipal wastewater engineering, anaerobic systems such as Upflow Anaerobic Sludge Blanket (UASB) reactors are effective secondary alternatives in warmer climates.
+**Secondary Treatment**
+
+Secondary treatment utilizes living microorganisms within engineered bioreactors to consume and metabolize dissolved and colloidal biodegradable organic pollutants from primary effluent. While aerobic suspended-growth systems dominate municipal wastewater engineering, anaerobic systems such as Upflow Anaerobic Sludge Blanket (UASB) reactors are effective secondary alternatives in warmer climates.
 
 In an aerobic environment, heterotrophic bacteria oxidize carbonaceous compounds into carbon dioxide and water. Nitrogenous organic compounds (e.g., urea, $\text{NH}_2\text{CONH}_2$) hydrolyze to yield ammonia ($\text{NH}_4^+$), which is subsequently oxidized by autotrophic nitrifiers in two consecutive biochemical steps:
 
@@ -1223,7 +1352,8 @@ $$
 2\text{NO}_2^- + \text{O}_2 \xrightarrow{\text{Nitrobacter}} 2\text{NO}_3^-
 $$
 
-#### The Activated Sludge Process
+#### Activated Sludge Process
+
 The activated sludge process is an aerobic suspended-growth biological treatment system configured with two interdependent units: an **aeration basin** and a **secondary clarifier**.
 
 1. **Aeration and bio-flocculation:** Primary effluent is mixed with an acclimated microbial culture in the aeration tank, forming the **mixed liquor suspended solids (MLSS)**. Mechanical aerators or submerged fine-bubble diffusers continuously introduce dissolved oxygen and promote hydraulic turbulence. Heterotrophic bacteria rapidly oxidize dissolved organics, synthesizing extracellular polymeric substances (EPS) that bind bacteria, protozoa, and rotifers into settleable biological aggregates called **flocs**.
@@ -1236,12 +1366,16 @@ The activated sludge process is an aerobic suspended-growth biological treatment
 
 ### Tertiary Treatment, Disinfection, and Sludge Management
 
-Secondary effluent frequently contains residual pathogens and dissolved inorganic nutrients ($\text{N}$ and $\text{P}$) that stimulate algal blooms and accelerate eutrophication. **Tertiary (advanced) treatment** refines water quality to meet rigorous standards:
+**Tertiary Treatment**
 
-* **Phosphorus precipitation:** Addition of hydrated lime ($\text{Ca(OH)}_2$) raises the solution pH above $10$, precipitating orthophosphate as insoluble hydroxyapatite or basic calcium phosphate:
+Tertiary (advanced) treatment refines water quality to meet rigorous standards, targeting residual pathogens and dissolved inorganic nutrients ($\text{N}$ and $\text{P}$) that stimulate algal blooms and accelerate eutrophication:
+
+* **Phosphorus precipitation:** Addition of hydrated lime ($\text{Ca(OH)}_2$) raises the solution pH above $10$, precipitating orthophosphate as insoluble hydroxyapatite or basic calcium phosphate.
+
   $$
   3\text{Ca}^{2+} + 2\text{PO}_4^{3-} \longrightarrow \text{Ca}_3(\text{PO}_4)_2\downarrow
   $$
+
   Alternatively, coagulants such as alum ($\text{Al}^{3+}$) or ferric chloride ($\text{Fe}^{3+}$) are dosed to precipitate insoluble metal phosphate complexes ($\text{AlPO}_4\downarrow$, $\text{FePO}_4\downarrow$).
 * **Biological and physical nitrogen removal:**
   * *Nitrification-Denitrification:* Aerobic conversion of ammonium to nitrate ($\text{NO}_3^-$), followed by anoxic heterotrophic reduction of nitrate to inert nitrogen gas ($\text{N}_2$).
@@ -1249,7 +1383,9 @@ Secondary effluent frequently contains residual pathogens and dissolved inorgani
 * **Disinfection:** Polished water is treated with chlorine ($\text{Cl}_2$, $\text{NaOCl}$), ozone ($\text{O}_3$), or ultraviolet (UV) radiation to destroy remaining pathogens. When chlorine is added, **dechlorination** (using sulfur dioxide, $\text{SO}_2$, or sodium bisulfite, $\text{NaHSO}_3$) is performed prior to environmental release to prevent chloramine toxicity in aquatic ecosystems.
 
 #### Sludge Handling and Stabilization
+
 Solids separated from primary and secondary sedimentation consist of $95\text{–}99\%$ water and highly putrescible organic matter:
+
 1. **Thickening:** Gravity or dissolved air flotation tanks concentrate solids and decant free water.
 2. **Anaerobic digestion:** In heated, sealed digesters, anaerobic consortia (acidogens and methanogenic archaea) break down organic solids, producing methane-rich biogas ($\text{CH}_4 + \text{CO}_2$) usable as on-site fuel.
 3. **Dewatering:** Mechanically conditioned sludge passes through plate-and-frame filter presses, belt filter presses, or centrifuges to generate a dry cake for landfilling, thermal incineration, or agricultural application.
@@ -1266,42 +1402,46 @@ Solids separated from primary and secondary sedimentation consist of $95\text{�
 
 ---
 
+---
+
 <!-- page 10 | Trickling filters and the UASB process -->
 
 ## Trickling filters and the UASB process
 
-Secondary biological sewage treatment relies on microorganisms to degrade dissolved and colloidal organic pollutants remaining after primary sedimentation. While the activated sludge process keeps microbes suspended in aerated liquid, alternative reactors immobilize biomass on solid surfaces or within dense, self-settling granules. Two widely used systems representing aerobic attached-growth and anaerobic granular-sludge technologies are the **trickling filter** and the **Upflow Anaerobic Sludge Blanket (UASB)** reactor.
+Secondary biological sewage treatment relies on microorganisms to degrade dissolved and colloidal organic pollutants remaining after primary sedimentation. While the activated sludge process keeps microbes suspended in aerated liquid, alternative reactors immobilize biomass on solid surfaces or within dense, self-settling granules. Two widely used systems representing aerobic attached-growth and anaerobic granular-sludge technologies are the trickling filter and the Upflow Anaerobic Sludge Blanket (UASB) reactor.
 
-### Trickling filters (aerobic attached-growth treatment)
+**Trickling filter**
 
-Despite its name, a trickling filter does not operate by physical straining or sieving. It is an **aerobic attached-growth biological reactor** in which microorganisms grow as a slimy biofilm (zoogleal film) on a fixed packing medium. Why use a packed bed with large voids? The wide spaces between the packing pieces allow air to circulate freely by natural draft or forced ventilation while wastewater trickles downward as a thin liquid film, ensuring simultaneous access to dissolved organic substrates and atmospheric oxygen.
+A trickling filter is an aerobic attached-growth biological reactor in which microorganisms grow as a slimy biofilm (zoogleal film) on a fixed packing medium. Despite its name, it does not operate by physical straining or sieving. The wide void spaces between packing pieces allow air to circulate freely by natural draft or forced ventilation while wastewater trickles downward as a thin liquid film, ensuring simultaneous access to dissolved organic substrates and atmospheric oxygen.
 
 ![Cross-sectional diagram of a trickling filter showing the rotating distributor arm, packing media bed, underdrain system, and effluent outlet.](/notes/cse/s1/chemistry/module-4/assets/page-026-image-1.png)
 
-A typical trickling filter is a circular or rectangular bed (with depth selected for its media and loading) packed with high-surface-area materials such as crushed rocks, broken bricks, slag, or engineered plastic modules. Treatment proceeds through the following steps:
+A typical trickling filter is a circular or rectangular bed packed with high-surface-area materials such as crushed rocks, broken bricks, slag, or engineered plastic modules. Treatment proceeds through the following steps:
 
-1. **Distribution of pre-treated sewage:** Primary clarified sewage (freed of coarse screenings and settleable grit/solids that would otherwise clog the bed) is sprayed evenly over the top of the packing media through a **rotating distributor arm**.
+1. **Distribution of pre-treated sewage:** Primary clarified sewage (freed of coarse screenings and settleable grit that would otherwise clog the bed) is sprayed evenly over the top of the packing media through a rotating distributor arm.
 2. **Biofilm contact and aerobic oxidation:** As the sewage trickles downward over the media surfaces, aerobic bacteria, fungi, and protozoa within the attached biofilm absorb and oxidize dissolved organic compounds into stable end products ($\text{CO}_2$, $\text{H}_2\text{O}$, and oxidized nitrogen species such as $\text{NO}_2^-$ and $\text{NO}_3^-$).
 
 $$
 \text{Organic matter} + \text{O}_2 \xrightarrow{\text{Aerobic biofilm}} \text{CO}_2 + \text{H}_2\text{O} + \text{New biomass}
 $$
 
-3. **Sloughing of excess biomass:** As the microbial layer thickens, oxygen cannot diffuse all the way to the inner face attached to the rock or plastic. The inner microbes enter an endogenous or anaerobic state and lose their grip, causing patches of old biofilm to detach—a natural renewal process called **sloughing**.
-4. **Underdrain collection and secondary clarification:** Treated liquid and sloughed biofilm fragments exit through a perforated **underdrain system** at the bottom of the tank, which also serves as an air inlet. The liquid then passes into a **secondary clarifier (humus tank)** to settle out the sloughed biomass. Part of the clarified effluent may be recirculated to the filter inlet to keep the biofilm moist and dilute high-strength inflows.
+3. **Sloughing of excess biomass:** As the microbial layer thickens, oxygen cannot diffuse to the inner face attached to the rock or plastic. The inner microbes enter an endogenous or anaerobic state and lose their adhesion, causing patches of old biofilm to detach—a natural renewal process called **sloughing**.
+4. **Underdrain collection and secondary clarification:** Treated liquid and sloughed biofilm fragments exit through a perforated underdrain system at the bottom of the tank, which also functions as an air inlet. The liquid then passes into a secondary clarifier (humus tank) to settle out the sloughed biomass. Part of the clarified effluent may be recirculated to the filter inlet to keep the biofilm moist and dilute high-strength inflows.
 
-### Upflow Anaerobic Sludge Blanket (UASB) process
+### Upflow Anaerobic Sludge Blanket process
 
 > **Watch out.** Student notes frequently expand UASB as "Upflow Anaerobic Sludge Bed" and claim that it treats the solid screenings removed during preliminary bar screening. Both are incorrect: UASB stands for **Upflow Anaerobic Sludge Blanket**, and it treats liquid wastewater (such as primary clarified sewage or high-strength industrial effluent) rather than coarse solid trash.
 
-The UASB reactor is a high-rate **anaerobic biological treatment** system that operates without any oxygen supply or mechanical aeration. Why feed the wastewater from the bottom? Introducing liquid upward at a controlled hydraulic velocity brings the wastewater into contact with a retained sludge blanket while washing out treated water at the top, achieving intense contact between organic pollutants and microbes without mechanical mixing.
+**UASB reactor**
+
+A UASB reactor is a high-rate anaerobic biological treatment system that operates without any oxygen supply or mechanical aeration. Introducing liquid upward from the bottom at a controlled hydraulic velocity brings wastewater into continuous contact with a retained sludge blanket while washing out treated water at the top, achieving intense contact between organic pollutants and microbes without mechanical mixing.
 
 ![Schematic diagram of a UASB reactor showing bottom influent feed, anaerobic granular sludge blanket, biogas collector dome, and top effluent outlet.](/notes/cse/s1/chemistry/module-4/assets/page-027-image-1.png)
 
 Operation of a UASB reactor involves four main features:
 
 1. **Bottom feed and upward flow:** Pre-treated liquid sewage enters through distribution nozzles at the bottom of the reactor and flows vertically upward. Designers select the upflow velocity according to reactor design and wastewater strength so that the sludge blanket stays suspended without being washed out.
-2. **Granular sludge blanket:** The lower zone contains a dense blanket of biologically formed **sludge granules** ($1\text{–}5\text{ mm}$ in diameter). These granules are compact, self-immobilized consortia of anaerobic microorganisms, including bacteria and methanogenic archaea with high settling velocities.
+2. **Granular sludge blanket:** The lower zone contains a dense blanket of biologically formed sludge granules ($1\text{–}5\text{ mm}$ in diameter). These granules are compact, self-immobilized consortia of anaerobic microorganisms, including bacteria and methanogenic archaea with high settling velocities.
 3. **Anaerobic conversion and biogas generation:** As wastewater passes through the blanket, anaerobic microorganisms degrade organic matter in sequential stages—hydrolysis and **acidogenesis** (acid-forming bacteria converting complex organics into volatile fatty acids, $\text{CO}_2$, and $\text{H}_2$) followed by **methanogenesis** (methane-forming archaea converting intermediate acids and hydrogen into methane).
 
 $$
@@ -1309,7 +1449,7 @@ $$
 $$
 
    The overall process is **anaerobic digestion**, involving fermentation and linked oxidation–reduction reactions without free molecular oxygen.
-4. **Three-phase separation (Gas–Liquid–Solids Separator, GLSS):** Rising **biogas** bubbles (primarily $\text{CH}_4$ and $\text{CO}_2$, which can be captured as a fuel) create natural hydraulic turbulence that mixes the blanket. At the top of the reactor, an inverted cone or **gas collector dome** separates the gas from the liquid and deflects rising sludge granules back down into the settling zone. Clarified liquid effluent overflows from the top Launder. Because anaerobic effluent still contains residual BOD, dissolved $\text{NH}_3$, and $\text{H}_2\text{S}$, it typically requires aerobic polishing and tertiary disinfection (such as chlorination) as required for its intended reuse or discharge.
+4. **Three-phase separation (Gas–Liquid–Solids Separator, GLSS):** Rising biogas bubbles (primarily $\text{CH}_4$ and $\text{CO}_2$, which can be captured as fuel) create natural hydraulic turbulence that mixes the blanket. At the top of the reactor, an inverted cone or gas collector dome separates the gas from liquid and deflects rising sludge granules back down into the settling zone. Clarified liquid effluent overflows from the top launder. Because anaerobic effluent still contains residual BOD, dissolved $\text{NH}_3$, and $\text{H}_2\text{S}$, it typically requires aerobic polishing and tertiary disinfection (such as chlorination) before reuse or discharge.
 
 ### Comparison of trickling filter and UASB processes
 
@@ -1333,15 +1473,21 @@ $$
 
 ---
 
+---
+
 <!-- page 11 | E-waste and resource recovery -->
 
 ## E-waste and resource recovery
 
 ### Nature and scope of e-waste
 
-**Electronic waste (e-waste)** refers to discarded, broken, or obsolete electrical and electronic equipment (EEE) that has reached the end of its useful life, and is discarded as waste rather than retained for continued use. Typical examples include discarded computers, mobile phones, office hardware, televisions, and household appliances such as refrigerators.
+**Electronic waste (e-waste)**
 
-**Functional second-hand products vs. e-waste:** It is essential to distinguish e-waste from functional second-hand goods. If a device still operates—or is retained for repair or consumable refilling (such as an inkjet cartridge)—and is donated or resold for its original intended purpose, it remains in active service as a reused product rather than entering the waste stream.
+Electronic waste (e-waste) refers to discarded, broken, or obsolete electrical and electronic equipment (EEE) that has reached the end of its useful life, and is discarded as waste rather than retained for continued use. Typical examples include discarded computers, mobile phones, office hardware, televisions, and household appliances such as refrigerators.
+
+**Functional second-hand products**
+
+Functional second-hand products are distinguished from e-waste by operational status and intended use. If a device still operates—or is retained for repair or consumable refilling (such as an inkjet cartridge)—and is donated or resold for its original intended purpose, it remains in active service as a reused product rather than entering the waste stream.
 
 ---
 
@@ -1377,7 +1523,7 @@ When e-waste is deposited in unlined landfills, openly incinerated, or processed
 
 ---
 
-### The 4R management hierarchy and resource recovery
+### 4R management hierarchy and resource recovery
 
 Sustainable handling of post-consumer electronics follows the **Reduce, Reuse, Recycle, and Recover** hierarchy, supported by integrated industrial infrastructure:
 
@@ -1409,16 +1555,27 @@ Sustainable handling of post-consumer electronics follows the **Reduce, Reuse, R
 
 ---
 
+---
+
 <!-- page 12 | Greenhouse gases and climate change -->
 
 ## Greenhouse gases and climate change
 
-Environmental chemistry distinguishes carefully between atmospheric timescales and radiative processes:
+**Weather**
 
-* **Weather:** Short-term atmospheric conditions (temperature, humidity, atmospheric pressure, wind, and precipitation) occurring over hours or days in a localized region.
-* **Climate:** The statistical average and variability of weather patterns over extended periods, typically decades or centuries (conventionally 30 years).
-* **Global warming:** The sustained, long-term increase in Earth's global mean surface temperature, primarily driven by anthropogenic emissions.
-* **Climate change:** The broader spectrum of long-term shifts in planetary climate systems, including shifts in temperature patterns, altered precipitation regimes, and increased frequency of extreme weather events, driven by natural cycles or human activities.
+Weather refers to short-term atmospheric conditions (temperature, humidity, atmospheric pressure, wind, and precipitation) occurring over hours or days in a localized region.
+
+**Climate**
+
+Climate is the statistical average and variability of weather patterns over extended periods, typically decades or centuries (conventionally 30 years).
+
+**Global warming**
+
+Global warming is the sustained, long-term increase in Earth's global mean surface temperature, primarily driven by anthropogenic emissions.
+
+**Climate change**
+
+Climate change encompasses the broader spectrum of long-term shifts in planetary climate systems, including shifts in temperature patterns, altered precipitation regimes, and increased frequency of extreme weather events, driven by natural cycles or human activities.
 
 ---
 
@@ -1445,27 +1602,38 @@ To absorb infrared radiation via the greenhouse mechanism, a molecule must posse
 
 ### Natural versus enhanced greenhouse effect
 
-* **Natural greenhouse effect:** A fundamental planetary process essential for sustaining life. Without baseline levels of naturally occurring water vapour and carbon dioxide, Earth's mean surface equilibrium temperature would be approximately $-18^\circ\text{C}$ (well below the freezing point of water) rather than the current hospitable average of $\approx +15^\circ\text{C}$.
-* **Enhanced (anthropogenic) greenhouse effect:** The additional radiative forcing caused by the rapid accumulation of long-lived greenhouse gases in the atmosphere since the onset of the Industrial Revolution, trapping excess thermal energy and destabilizing global climate equilibria.
+**Natural greenhouse effect**
 
-**Water vapour feedback:** Water vapour ($\text{H}_2\text{O}$) is quantitatively the most abundant greenhouse gas. However, its residence time in the atmosphere is extremely short (days to weeks), and its atmospheric concentration is governed strictly by the Clausius-Clapeyron thermodynamic relationship (evaporation vs. condensation as a function of temperature). Consequently, water vapour acts as an **amplifying feedback loop**—initial warming induced by non-condensable GHGs increases tropospheric moisture capacity, which traps more heat—rather than a direct anthropogenic forcing agent.
+The natural greenhouse effect is a fundamental planetary process essential for sustaining life. Without baseline levels of naturally occurring water vapour and carbon dioxide, Earth's mean surface equilibrium temperature would be approximately $-18^\circ\text{C}$ (well below the freezing point of water) rather than the current hospitable average of $\approx +15^\circ\text{C}$.
+
+**Enhanced greenhouse effect**
+
+The enhanced (anthropogenic) greenhouse effect is the additional radiative forcing caused by the rapid accumulation of long-lived greenhouse gases in the atmosphere since the onset of the Industrial Revolution, trapping excess thermal energy and destabilizing global climate equilibria.
+
+**Water vapour feedback**
+
+Water vapour ($\text{H}_2\text{O}$) is quantitatively the most abundant greenhouse gas. However, its residence time in the atmosphere is extremely short (days to weeks), and its atmospheric concentration is governed strictly by the Clausius-Clapeyron thermodynamic relationship (evaporation vs. condensation as a function of temperature). Consequently, water vapour acts as an **amplifying feedback loop**—initial warming induced by non-condensable GHGs increases tropospheric moisture capacity, which traps more heat—rather than a direct anthropogenic forcing agent.
 
 #### Anthropogenic vs. natural emission sources
 
 Human-driven greenhouse gas additions are categorized across four principal sectors:
 
 1. **Fossil fuel combustion:** The extraction and oxidation of coal, petroleum, and natural gas for electricity, heavy industry, heating, and transportation releases fossil carbon stored for millions of years:
+
    $$
    \text{CH}_4 + 2\text{O}_2 \rightarrow \text{CO}_2 + 2\text{H}_2\text{O}
    $$
+
 2. **Deforestation and land-use change:** Rapid land clearing and burning permanently eliminates terrestrial photosynthetic carbon sinks while converting stored biomass carbon into atmospheric $\text{CO}_2$.
 3. **Agriculture and livestock management:**
    * Enteric fermentation in ruminant livestock and anaerobic decomposition in flooded rice paddies generate biogenic methane ($\text{CH}_4$).
    * Excessive application of synthetic nitrogen fertilizers accelerates microbial nitrification and denitrification pathways, releasing potent nitrous oxide ($\text{N}_2\text{O}$).
 4. **Industrial chemical processes:** Thermal calcination of limestone during cement manufacturing directly liberates carbon dioxide:
+
    $$
    \text{CaCO}_3 \xrightarrow{\Delta} \text{CaO} + \text{CO}_2\uparrow
    $$
+
    Additionally, specialized manufacturing, refrigeration, semiconductor etching, and foam blowing emit synthetic fluorinated gases (CFCs, HFCs, $\text{SF}_6$).
 
 > **Watch out.** Volcanic eruptions are a *natural* geological source of $\text{CO}_2$ and aerosols, not an anthropogenic (human-caused) driver of climate change.
@@ -1485,7 +1653,7 @@ Human-driven greenhouse gas additions are categorized across four principal sect
 
 ---
 
-### Engineering strategies: Mitigation versus adaptation
+### Mitigation versus adaptation
 
 Engineering solutions to climate destabilization are organized into proactive source-reduction (**mitigation**) and defensive vulnerability-reduction (**adaptation**).
 
@@ -1507,11 +1675,16 @@ Engineering solutions to climate destabilization are organized into proactive so
 
 ---
 
+---
+
 <!-- page 13 | Stratospheric ozone and ozone depletion -->
 
 ## Stratospheric ozone and ozone depletion
 
-**Ozone** ($\text{O}_3$) plays two opposing environmental roles depending on its atmospheric altitude:
+**Ozone**
+
+Ozone ($\text{O}_3$) plays two opposing environmental roles depending on its atmospheric altitude:
+
 * **Tropospheric ozone:** In the lower atmosphere, ground-level ozone is a secondary air pollutant and respiratory irritant formed via photochemical smog reactions.
 * **Stratospheric ozone:** Located primarily in the ozone layer between $15\text{--}35\text{ km}$ above Earth's surface, it functions as a vital protective radiation shield by absorbing biologically harmful solar ultraviolet (UV-B and UV-C) radiation before it reaches the biosphere.
 
@@ -1519,24 +1692,30 @@ Engineering solutions to climate destabilization are organized into proactive so
 
 ### Natural formation and the Chapman cycle
 
-The **Chapman cycle** describes the continuous photostationary steady state through which stratospheric ozone is naturally generated and decomposed:
+**Chapman cycle**
+
+The Chapman cycle describes the continuous photostationary steady state through which stratospheric ozone is naturally generated and decomposed:
 
 1. **Photodissociation of molecular oxygen:** High-energy short-wave UV photons ($h\nu$) cleave molecular oxygen into reactive oxygen free radicals:
+
    $$
    \text{O}_2(g) + h\nu \longrightarrow 2\text{O}^\bullet(g)
    $$
 
 2. **Ozone formation:** An oxygen radical combines with molecular oxygen in the presence of an inert collision partner $\text{M}$ (typically $\text{N}_2$ or $\text{O}_2$). The third body $\text{M}$ dissipates excess vibrational energy so that the newly formed bond does not immediately rupture:
+
    $$
    \text{O}^\bullet(g) + \text{O}_2(g) + \text{M}(g) \longrightarrow \text{O}_3(g) + \text{M}(g)
    $$
 
 3. **Photodissociation of ozone:** Ozone absorbs solar UV-B radiation, preventing it from reaching the surface while regenerating $\text{O}_2$ and an oxygen radical (which can rapidly reform $\text{O}_3$ via Step 2, converting UV radiation into thermal energy):
+
    $$
    \text{O}_3(g) + h\nu \longrightarrow \text{O}_2(g) + \text{O}^\bullet(g)
    $$
 
 4. **Natural recombination:** An oxygen radical collides with an ozone molecule, permanently destroying both odd-oxygen species:
+
    $$
    \text{O}^\bullet(g) + \text{O}_3(g) \longrightarrow 2\text{O}_2(g)
    $$
@@ -1547,7 +1726,9 @@ The **Chapman cycle** describes the continuous photostationary steady state thro
 
 ### Catalytic ozone depletion
 
-**Ozone depletion** is the anthropogenic thinning of the stratospheric ozone layer caused by chemical catalysts accelerating recombination reactions far beyond natural rates. 
+**Ozone depletion**
+
+Ozone depletion is the anthropogenic thinning of the stratospheric ozone layer caused by chemical catalysts accelerating recombination reactions far beyond natural rates.
 
 The primary historical agents are **chlorofluorocarbons** (CFCs, such as $\text{CF}_2\text{Cl}_2$ or Freon-12), previously used as refrigerants, aerosol propellants, and blowing agents. Because CFCs are chemically inert and water-insoluble in the troposphere, they migrate upward into the stratosphere. There, intense short-wavelength UV radiation cleaves the carbon-chlorine bond via photolysis to liberate reactive chlorine radicals:
 
@@ -1566,6 +1747,7 @@ $$
 $$
 
 **Net catalytic reaction:**
+
 $$
 \text{O}_3(g) + \text{O}^\bullet(g) \longrightarrow 2\text{O}_2(g)
 $$
@@ -1587,6 +1769,7 @@ $$
 $$
 
 **Net reaction:**
+
 $$
 \text{O}_3(g) + \text{O}^\bullet(g) \longrightarrow 2\text{O}_2(g)
 $$
@@ -1600,9 +1783,9 @@ Thinning of the stratospheric ozone layer allows elevated levels of biologically
 * **Human health:** Induces pyrimidine dimer formation in cellular DNA, causing elevated rates of non-melanoma and melanoma skin cancers, cataracts, and immune suppression.
 * **Terrestrial and marine ecosystems:** Inhibits photosynthesis and biomass production in terrestrial crops; damages phytoplankton populations at the foundation of marine food webs.
 
-#### Mitigation: The Montreal Protocol (1987)
+**Montreal Protocol**
 
-The **Montreal Protocol on Substances that Deplete the Ozone Layer** mandated the global phase-out of CFCs, halons, and carbon tetrachloride. These substances were initially replaced with transitional hydrochlorofluorocarbons (HCFCs) and subsequently with non-ozone-depleting hydrofluorocarbons (HFCs) and hydrofluoroolefins (HFOs), allowing gradual recovery of the stratospheric ozone shield.
+The Montreal Protocol on Substances that Deplete the Ozone Layer (1987) mandated the global phase-out of CFCs, halons, and carbon tetrachloride. These substances were initially replaced with transitional hydrochlorofluorocarbons (HCFCs) and subsequently with non-ozone-depleting hydrofluorocarbons (HFCs) and hydrofluoroolefins (HFOs), allowing gradual recovery of the stratospheric ozone shield.
 
 ---
 
@@ -1630,15 +1813,20 @@ Stratospheric ozone depletion and the enhanced greenhouse effect are fundamental
 
 ---
 
+---
+
 <!-- page 14 | Sustainable development and the 17 SDGs -->
 
 ## Sustainable development and the 17 SDGs
 
 ### Principles of Sustainable Development
 
-**Sustainable development**, as defined by the Brundtland Commission, is development that meets the needs of the present without compromising the ability of future generations to meet their own needs. It is built on the principle of **intergenerational fairness**: current resource consumption, industrial growth, and waste generation must not degrade the ecological systems that future populations will depend upon.
+**Sustainable development**
+
+Sustainable development, as defined by the Brundtland Commission, is development that meets the needs of the present without compromising the ability of future generations to meet their own needs. It is built on the principle of intergenerational fairness: current resource consumption, industrial growth, and waste generation must not degrade the ecological systems that future populations will depend upon.
 
 Achieving sustainability requires integrating environmental protection, social equity, and economic viability into long-term planning:
+
 * An industrial process that maximizes short-term profit by discharging untreated effluent shifts remediation, public health, and ecological restoration costs onto society and future generations.
 * Engineering projects must balance immediate utility with environmental resilience and lifecycle impact.
 
@@ -1651,6 +1839,7 @@ Achieving sustainability requires integrating environmental protection, social e
 Sustainable decision-making balances three interconnected pillars. A project is truly sustainable only where all three overlap.
 
 ![Venn diagram of the three pillars of sustainable development: Social, Environmental, and Economic, with their intersection labeled 'sustainable'.](/notes/cse/s1/chemistry/module-4/assets/page-051-image-1.png)
+
 *Figure: The three overlapping pillars of sustainable development—Environmental, Social, and Economic—intersecting to define sustainable practice.*
 
 | Pillar | Core Objective | Engineering Application (Water & Materials) |
@@ -1704,7 +1893,9 @@ No engineering technology offers an unlimited environmental benefit; every solut
 
 > **Watch out.** Do not treat pollution-control or water-treatment technologies as having zero environmental cost. For example, **reverse osmosis (RO)** produces low-salinity permeate from brackish or saline sources; drinking-water use also requires appropriate post-treatment (supporting SDG 6), but high-pressure pumps consume significant electrical energy (challenging SDG 7 and SDG 13) and generate concentrated **reject brine** that can harm marine life if discharged improperly (challenging SDG 14).
 
-Similarly, breakpoint chlorination provides reliable residual disinfection, yet reaction with natural organic matter can form carcinogenic trihalomethanes (THMs). Ozonation and UV avoid chlorinated by-products but require higher capital and electrical input and leave no protective residual in distribution pipes. Sustainable engineering therefore requires **lifecycle thinking**—quantifying energy demand, chemical consumption, by-product disposal, and social affordability before selecting a process.
+**Lifecycle thinking**
+
+Lifecycle thinking is the evaluation and quantification of energy demand, chemical consumption, by-product disposal, and social affordability before selecting an engineering process. For instance, breakpoint chlorination provides reliable residual disinfection, yet reaction with natural organic matter can form carcinogenic trihalomethanes (THMs). In contrast, ozonation and UV avoid chlorinated by-products but require higher capital and electrical input and leave no protective residual in distribution pipes.
 
 ---
 
@@ -1718,6 +1909,8 @@ Similarly, breakpoint chlorination provides reliable residual disinfection, yet 
 
 ---
 
+---
+
 <!-- page 15 | Revision sheet and practice problems -->
 
 ## Revision sheet and practice problems
@@ -1725,7 +1918,10 @@ Similarly, breakpoint chlorination provides reliable residual disinfection, yet 
 ### Core Formulas and Concept Sheet
 
 #### Water Hardness and $\text{CaCO}_3$ Equivalents
-**Calcium carbonate standard:** Calcium carbonate ($\text{CaCO}_3$, molar mass $= 100\text{ g/mol}$, equivalent mass $= 50\text{ g/eq}$) serves as the universal reference standard because it is a familiar sparingly soluble scale-forming compound and its molecular mass of $100$ greatly simplifies stoichiometric calculations.
+
+**Calcium Carbonate Standard**
+
+Calcium carbonate ($\text{CaCO}_3$, molar mass $= 100\text{ g/mol}$, equivalent mass $= 50\text{ g/eq}$) serves as the universal reference standard because it is a familiar sparingly soluble scale-forming compound and its molecular mass of $100$ greatly simplifies stoichiometric calculations.
 
 To convert any hardness-producing ion or dissolved salt into equivalent $\text{mg/L}$ (or $\text{ppm}$) as $\text{CaCO}_3$:
 
@@ -1747,15 +1943,23 @@ $$
 | $\text{CaCl}_2$ | $111$ | $55.5$ | $\text{MgSO}_4$ | $120$ | $60$ |
 | $\text{MgCl}_2$ | $95$ | $47.5$ | $\text{NaHCO}_3$ | $84$ | $84$ |
 
-#### Partitioning Hardness (Ion-Balance Rules)
-* **Total Hardness ($\text{TH}$):** The combined sum of $\text{CaCO}_3$ equivalents of all multivalent cations—principally calcium ($\text{Ca}^{2+}$) and magnesium ($\text{Mg}^{2+}$). Monovalent ions ($\text{Na}^+, \text{K}^+$) do not consume soap and are excluded.
-* **Carbonate / Temporary Hardness ($\text{CH}$):** Hardness associated with bicarbonate and carbonate anions. It is strictly bounded by both total hardness and total alkalinity ($\text{Alk}$):
+#### Hardness Partitioning and Ion-Balance Rules
+
+**Total Hardness ($\text{TH}$)**
+
+Total Hardness is the combined sum of $\text{CaCO}_3$ equivalents of all multivalent cations—principally calcium ($\text{Ca}^{2+}$) and magnesium ($\text{Mg}^{2+}$). Monovalent ions ($\text{Na}^+, \text{K}^+$) do not consume soap and are excluded.
+
+**Carbonate / Temporary Hardness ($\text{CH}$)**
+
+Carbonate Hardness is the hardness associated with bicarbonate and carbonate anions. It is strictly bounded by both total hardness and total alkalinity ($\text{Alk}$):
 
   $$
   \text{CH} = \min(\text{TH}, \text{Alk})
   $$
 
-* **Non-Carbonate / Permanent Hardness ($\text{NCH}$):** Hardness caused by sulfates, chlorides, or nitrates that cannot be removed by boiling:
+**Non-Carbonate / Permanent Hardness ($\text{NCH}$)**
+
+Non-Carbonate Hardness is the hardness caused by sulfates, chlorides, or nitrates that cannot be removed by boiling:
 
   $$
   \text{NCH} = \text{TH} - \text{CH} \ge 0
@@ -1764,6 +1968,7 @@ $$
 > **Watch out.** Adding $\text{NaCl}$ does not change total, temporary, or permanent hardness because $\text{Na}^+$ cannot precipitate soap. Adding $\text{NaHCO}_3$ increases alkalinity, which can convert permanent hardness into temporary hardness, but **Carbonate Hardness can never exceed Total Hardness** ($\text{NCH}$ is never negative).
 
 #### Unit Conversions and Oxygen Demand
+
 * **Hardness Units:**
   * $1\text{ mg/L as CaCO}_3 \approx 1\text{ ppm}$ (in dilute aqueous solution)
   * $1^\circ\text{French} = 10\text{ mg/L as CaCO}_3$

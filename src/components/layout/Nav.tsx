@@ -33,7 +33,7 @@ export default function Nav() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 h-(--nav-h) border-b border-transparent transition-colors duration-300",
+        "sticky top-0 z-50 h-(--nav-h) border-b border-transparent transition-colors duration-300 print:hidden",
         (scrolled || open) && "border-line bg-white/90 backdrop-blur-md",
       )}
     >

@@ -22,15 +22,20 @@ This module moves from fundamental light–matter interactions to spectroscopy a
 
 ### Interaction of radiation with matter
 
-**Spectroscopy** is the study of how electromagnetic radiation interacts with atoms, ions, and molecules. Many spectroscopic methods provide rapid quantitative and qualitative analysis using minute sample quantities. Whether the sample can be recovered intact depends on the required sample preparation, incident radiation energy, and specific technique employed.
+**Spectroscopy**
 
-**Electromagnetic radiation** consists of mutually perpendicular oscillating electric and magnetic fields propagating through space, characterised by wavelength ($\lambda$), frequency ($\nu$), or wavenumber ($\bar{\nu} = 1/\lambda$). The energy $E$ of a single photon is directly proportional to frequency and inversely proportional to wavelength:
+Spectroscopy is the study of how electromagnetic radiation interacts with atoms, ions, and molecules. Many spectroscopic methods provide rapid quantitative and qualitative analysis using minute sample quantities. Whether the sample can be recovered intact depends on the required sample preparation, incident radiation energy, and specific technique employed.
+
+**Electromagnetic radiation**
+
+Electromagnetic radiation consists of mutually perpendicular oscillating electric and magnetic fields propagating through space, characterised by wavelength ($\lambda$), frequency ($\nu$), or wavenumber ($\bar{\nu} = 1/\lambda$). The energy $E$ of a single photon is directly proportional to frequency and inversely proportional to wavelength:
 
 $$
 E = h\nu = \frac{hc}{\lambda} = hc\bar{\nu}
 $$
 
 where:
+
 * $h$ is Planck's constant ($6.626 \times 10^{-34}\text{ J s}$)
 * $c$ is the speed of light in vacuum ($3.00 \times 10^8\text{ m s}^{-1}$)
 * $\nu$ is frequency in hertz ($\text{Hz}$ or $\text{s}^{-1}$)
@@ -43,14 +48,16 @@ Across the electromagnetic spectrum—from radio waves through microwaves, infra
 
 When electromagnetic radiation encounters matter, three primary interactions can occur:
 
-* **Absorption:** An atom or molecule absorbs a resonant photon and transitions from a lower energy state ($E_1$) to an allowed higher energy state ($E_2$), where $\Delta E = E_2 - E_1 = h\nu$. Typical absorption methods include UV–visible, infrared, microwave, and nuclear magnetic resonance (NMR) spectroscopy.
-* **Emission:** An excited species relaxes from a higher energy state ($E_2$) to a lower energy state ($E_1$) by releasing a photon of matching energy $\Delta E = h\nu$. Key examples include atomic emission and fluorescence spectroscopy.
-* **Scattering:** Incident radiation is redirected into new directions upon colliding with matter without necessarily undergoing direct resonant absorption. In **Raman spectroscopy**, *inelastic light scattering* occurs, causing scattered photons to gain or lose discrete amounts of vibrational or rotational energy.
+1. **Absorption:** An atom or molecule absorbs a resonant photon and transitions from a lower energy state ($E_1$) to an allowed higher energy state ($E_2$), where $\Delta E = E_2 - E_1 = h\nu$. Typical absorption methods include UV–visible, infrared, microwave, and nuclear magnetic resonance (NMR) spectroscopy.
+2. **Emission:** An excited species relaxes from a higher energy state ($E_2$) to a lower energy state ($E_1$) by releasing a photon of matching energy $\Delta E = h\nu$. Key examples include atomic emission and fluorescence spectroscopy.
+3. **Scattering:** Incident radiation is redirected into new directions upon colliding with matter without necessarily undergoing direct resonant absorption. In **Raman spectroscopy**, *inelastic light scattering* occurs, causing scattered photons to gain or lose discrete amounts of vibrational or rotational energy.
 
 ![Qualitative energy level diagram for absorption showing an upward transition from a lower state to a higher state upon absorbing a photon](/notes/cse/s1/chemistry/module-3/assets/page-002-image-1-structured.svg)
+
 *Figure 1a: Qualitative schematic of photon absorption driving an upward transition from a lower to a higher energy state.*
 
 ![Qualitative energy level diagram for emission showing a downward transition from a higher state to a lower state releasing a photon](/notes/cse/s1/chemistry/module-3/assets/page-002-image-2-structured.svg)
+
 *Figure 1b: Qualitative schematic of photon emission during relaxation from a higher to a lower energy state.*
 
 > **Watch out.** Quantum mechanical transitions take place between any permitted *lower* and *higher* energy states that satisfy the specific selection rules—not exclusively between the absolute ground and highest excited levels. Furthermore, Raman spectroscopy is an inelastic scattering process, not an emission technique; and atomic force microscopy (AFM) is a mechanical scanning probe method, not optical spectroscopy.
@@ -61,8 +68,13 @@ When electromagnetic radiation encounters matter, three primary interactions can
 
 A molecule distributes its total energy among translational, rotational, vibrational, and electronic degrees of freedom:
 
-* **Translational energy** ($E_{\text{trans}}$) arises from the unconstrained displacement of the molecule's centre of mass through three-dimensional space. Because translational quantum states in macroscopic containers are spaced by infinitesimal energy increments, they form an effective continuum and are separated from quantised internal states.
-* **Born–Oppenheimer approximation:** Because heavy atomic nuclei move much more slowly than light electrons, electronic motion can be treated independently of nuclear motions. Under this approximation, the total internal molecular energy ($E_{\text{int}}$) separates into distinct electronic, vibrational, and rotational contributions:
+**Translational energy**
+
+Translational energy ($E_{\text{trans}}$) arises from the unconstrained displacement of the molecule's centre of mass through three-dimensional space. Because translational quantum states in macroscopic containers are spaced by infinitesimal energy increments, they form an effective continuum and are separated from quantised internal states.
+
+**Born–Oppenheimer approximation**
+
+The Born–Oppenheimer approximation states that because heavy atomic nuclei move much more slowly than light electrons, electronic motion can be treated independently of nuclear motions. Under this approximation, the total internal molecular energy ($E_{\text{int}}$) separates into distinct electronic, vibrational, and rotational contributions:
 
 $$
 E_{\text{int}} \approx E_{\text{ele}} + E_{\text{vib}} + E_{\text{rot}}
@@ -81,6 +93,7 @@ $$
 $$
 
 ![Qualitative diagram of nested electronic, vibrational, and rotational energy levels in a molecule](/notes/cse/s1/chemistry/module-3/assets/page-028-image-1-clean.svg)
+
 *Figure 2: Qualitative diagram of nested molecular energy levels. Each electronic state contains multiple vibrational levels ($v$), and each vibrational level contains closely spaced rotational levels ($J$). Spacing is schematic and not drawn to scale.*
 
 ---
@@ -89,8 +102,13 @@ $$
 
 The presence of chemical bonds fundamentally alters the nature of spectral transitions:
 
-* **Atomic spectra:** Isolated gaseous atoms possess only electronic degrees of freedom and lack chemical bonds, meaning they have no vibrational or rotational sublevels. Electronic transitions between discrete atomic orbitals therefore yield narrow, sharp **line spectra** (subject to Doppler and natural lifetime broadening).
-* **Molecular spectra:** Molecules possess vibrational and rotational sublevels nested within each electronic state. An electronic transition in a molecule is accompanied by simultaneous vibrational and rotational co-transitions (vibronic and rovibronic coupling). In condensed phases or solution, rapid intermolecular collisions and solvent-solute interactions further broaden these closely packed transitions into broad **band spectra**.
+**Atomic spectra**
+
+Atomic spectra arise from isolated gaseous atoms that possess only electronic degrees of freedom and lack chemical bonds, meaning they have no vibrational or rotational sublevels. Electronic transitions between discrete atomic orbitals therefore yield narrow, sharp **line spectra** (subject to Doppler and natural lifetime broadening).
+
+**Molecular spectra**
+
+Molecular spectra arise because molecules possess vibrational and rotational sublevels nested within each electronic state. An electronic transition in a molecule is accompanied by simultaneous vibrational and rotational co-transitions (vibronic and rovibronic coupling). In condensed phases or solution, rapid intermolecular collisions and solvent-solute interactions further broaden these closely packed transitions into broad **band spectra**.
 
 ---
 
@@ -108,6 +126,8 @@ The presence of chemical bonds fundamentally alters the nature of spectral trans
 
 ---
 
+---
+
 <!-- page 2 | Transmittance, absorbance and the Beer–Lambert law -->
 
 ## Transmittance, absorbance and the Beer–Lambert law
@@ -119,21 +139,28 @@ When a beam of electromagnetic radiation passes through a sample solution, molec
 Consider a parallel beam of monochromatic radiation with incident intensity $I_0$ passing through a sample cell (cuvette) of path length $l$ containing an absorbing solution of molar concentration $c$. The radiation emerges with transmitted intensity $I$.
 
 ![Incident radiation I0 passing through a cuvette of path length x and concentration c, emerging with transmitted intensity I](/notes/cse/s1/chemistry/module-3/assets/page-004-image-3-structured.svg)
+
 *Figure 1: Attenuation of an incident light beam ($I_0$) passing through an absorbing solution of concentration $c$ and path length $x$ (or $l$).*
 
-**Transmittance ($T$)** is the fraction of incident radiation that successfully passes through the sample:
+**Transmittance**
+
+Transmittance ($T$) is the fraction of incident radiation that successfully passes through the sample:
 
 $$
 T = \frac{I}{I_0}
 $$
 
-Because $T$ is a ratio of two intensities, it is dimensionless and ranges from $0$ (complete absorption) to $1$ (no absorption). Instrument readouts often express this value as **percentage transmittance ($\%T$)**:
+Because $T$ is a ratio of two intensities, it is dimensionless and ranges from $0$ (complete absorption) to $1$ (no absorption). Instrument readouts often express this value as percentage transmittance ($\%T$):
 
 $$
 \%T = 100 \times T = \frac{I}{I_0} \times 100
 $$
 
-Transmittance decreases exponentially as concentration or path length increases. To obtain a parameter that scales linearly with concentration, we define **absorbance ($A$)** (historically termed optical density) as the base-10 logarithm of the reciprocal of transmittance:
+Transmittance decreases exponentially as concentration or path length increases.
+
+**Absorbance**
+
+Absorbance ($A$), historically termed optical density, is defined as the base-10 logarithm of the reciprocal of transmittance:
 
 $$
 A = \log_{10}\left(\frac{I_0}{I}\right) = -\log_{10} T
@@ -149,46 +176,50 @@ Like transmittance, absorbance is a dimensionless quantity.
 
 ---
 
-### The Beer–Lambert Law and its Derivation
+### Beer–Lambert Law and Derivation
 
-**Beer–Lambert Law** states that when a parallel beam of monochromatic radiation passes through a homogeneous, non-scattering, dilute solution, the rate of decrease in radiation intensity ($-dI$) with respect to an infinitesimal thickness of the medium ($dl$) is directly proportional to both the local intensity $I$ and the molar concentration $c$ of the absorbing species. It unifies Lambert's observation (attenuation scales with path length) with Beer's observation (attenuation scales with concentration).
+**Beer–Lambert Law**
+
+Beer–Lambert law states that when a parallel beam of monochromatic radiation passes through a homogeneous, non-scattering, dilute solution, the rate of decrease in radiation intensity ($-dI$) with respect to an infinitesimal thickness of the medium ($dl$) is directly proportional to both the local intensity $I$ and the molar concentration $c$ of the absorbing species. It unifies Lambert's observation (attenuation scales with path length) with Beer's observation (attenuation scales with concentration).
 
 > **Watch out.** Many introductory notes state that the Beer–Lambert law applies only to "coloured" solutions. In reality, the law applies to any absorbing species—including colourless solutions that absorb strongly in the ultraviolet (UV) or infrared (IR) regions.
 
-#### Step-by-Step Derivation
+#### Derivation Steps
 
-1. **Set up the differential rate equation:**
-   Express the rate of intensity loss across an infinitesimal layer of thickness $dl$:
+1. **Set up the differential rate equation:** Express the rate of intensity loss across an infinitesimal layer of thickness $dl$:
+
    $$
    -\frac{dI}{dl} \propto I c \implies -\frac{dI}{dl} = k c I
    $$
-   where $k$ is a proportionality constant dependent on the wavelength and the absorbing species.
 
-2. **Separate variables:**
-   Rearrange the equation to isolate intensity terms on the left and path length terms on the right:
+where $k$ is a proportionality constant dependent on the wavelength and the absorbing species.
+
+2. **Separate variables:** Rearrange the equation to isolate intensity terms on the left and path length terms on the right:
+
    $$
    -\frac{dI}{I} = k c \, dl
    $$
 
-3. **Integrate across the cell boundaries:**
-   Integrate from the entrance boundary ($l = 0$, where intensity is $I_0$) to the exit boundary ($l = l$, where intensity is $I$):
+3. **Integrate across the cell boundaries:** Integrate from the entrance boundary ($l = 0$, where intensity is $I_0$) to the exit boundary ($l = l$, where intensity is $I$):
+
    $$
    \int_{I_0}^{I} -\frac{dI}{I} = \int_{0}^{l} k c \, dl
    $$
 
 4. **Evaluate the definite integrals:**
+
    $$
    -\left[\ln I\right]_{I_0}^{I} = k c [l]_0^l \implies \ln\left(\frac{I_0}{I}\right) = k c l
    $$
 
-5. **Convert to common logarithms:**
-   Convert from natural logarithms ($\ln$) to decadic logarithms ($\log_{10}$) using $\ln(x) = \ln(10) \log_{10}(x) \approx 2.303 \log_{10}(x)$:
+5. **Convert to common logarithms:** Convert from natural logarithms ($\ln$) to decadic logarithms ($\log_{10}$) using $\ln(x) = \ln(10) \log_{10}(x) \approx 2.303 \log_{10}(x)$:
+
    $$
    \log_{10}\left(\frac{I_0}{I}\right) = \left(\frac{k}{\ln 10}\right) c l = \left(\frac{k}{2.303}\right) c l
    $$
 
-6. **Define molar absorptivity:**
-   Define the **molar absorption coefficient** as $\varepsilon = k / \ln 10$. Substituting $A = \log_{10}(I_0 / I)$ yields the standard integrated law:
+6. **Define molar absorptivity:** Define the molar absorption coefficient as $\varepsilon = k / \ln 10$. Substituting $A = \log_{10}(I_0 / I)$ yields the standard integrated law:
+
    $$
    A = \varepsilon c l
    $$
@@ -199,7 +230,9 @@ Like transmittance, absorbance is a dimensionless quantity.
 
 ### Units of the Molar Absorption Coefficient ($\varepsilon$)
 
-**Molar absorption coefficient ($\varepsilon$)** (or molar absorptivity) is a fundamental optical property measuring how strongly a chemical species attenuates light at a specified wavelength, solvent, and temperature. Because absorbance $A$ is dimensionless, the dimensions of $\varepsilon$ must cancel those of concentration $c$ and path length $l$ ($\varepsilon = A / (c l)$).
+**Molar Absorptivity**
+
+Molar absorption coefficient ($\varepsilon$) (or molar absorptivity) is a fundamental optical property measuring how strongly a chemical species attenuates light at a specified wavelength, solvent, and temperature. Because absorbance $A$ is dimensionless, the dimensions of $\varepsilon$ must cancel those of concentration $c$ and path length $l$ ($\varepsilon = A / (c l)$).
 
 | Convention | Concentration ($c$) | Path Length ($l$ or $x$) | Unit of $\varepsilon$ | Numerical Relationship |
 | :--- | :--- | :--- | :--- | :--- |
@@ -210,11 +243,12 @@ Like transmittance, absorbance is a dimensionless quantity.
 
 ---
 
-### Calibration Plots, Blanks, and Unknown Concentrations
+### Calibration and Analysis
 
 For a fixed cuvette path length $l$, plotting absorbance $A$ against molar concentration $c$ across a series of known standard solutions yields a linear relationship described by $A = (\varepsilon l)c$.
 
 ![Calibration plot of absorbance A against concentration C showing a straight line through the origin with slope epsilon x](/notes/cse/s1/chemistry/module-3/assets/page-006-image-1-structured.svg)
+
 *Figure 2: Ideal Beer–Lambert calibration plot of absorbance ($A$) versus concentration ($C$), with slope equal to $\varepsilon x$ (or $\varepsilon l$).*
 
 Ideally, the calibration line passes through the origin $(0,0)$ with a slope of $\varepsilon l$. Once established, the concentration of an unknown sample can be interpolated directly from the graph or calculated from a reference standard using the proportional ratio:
@@ -223,7 +257,9 @@ $$
 \frac{A_1}{A_2} = \frac{c_1}{c_2} = \frac{-\log_{10} T_1}{-\log_{10} T_2}
 $$
 
-**Spectroscopic Blank** refers to an identical cuvette filled with pure solvent and all background reagents excluding the analyte. Because cuvette walls and solvent molecules reflect and absorb a small fraction of incident radiation, the spectrophotometer must be zeroed using a blank before sample measurement. This baseline correction minimizes solvent and cell contributions. If minor instrumental drift or reagent background persists, calibration data is fitted to a linear regression with an intercept ($A = \varepsilon l c + b$).
+**Spectroscopic Blank**
+
+Spectroscopic blank refers to an identical cuvette filled with pure solvent and all background reagents excluding the analyte. Because cuvette walls and solvent molecules reflect and absorb a small fraction of incident radiation, the spectrophotometer must be zeroed using a blank before sample measurement. This baseline correction minimizes solvent and cell contributions. If minor instrumental drift or reagent background persists, calibration data is fitted to a linear regression with an intercept ($A = \varepsilon l c + b$).
 
 ---
 
@@ -251,6 +287,8 @@ The linear relationship $A = \varepsilon c l$ holds strictly only when specific 
 
 ---
 
+---
+
 <!-- page 3 | Worked problems on absorbance and concentration -->
 
 ## Worked problems on absorbance and concentration
@@ -266,6 +304,7 @@ $$
 Here, $\varepsilon$ is the molar absorption coefficient and $x$ is the optical path length of the sample cell (cuvette). When solving numerical problems, keep three physical principles in mind:
 
 1. **Higher absorbance means higher concentration, but lower transmittance.** A more concentrated solution absorbs more photons, so less transmitted light ($I$) reaches the detector relative to the incident beam ($I_0$). Therefore, as concentration increases, absorbance ($A$) increases while fractional transmittance ($T = I/I_0$) decreases.
+
 2. **Never confuse transmitted intensity with transmittance.** Intensity ($I$) is radiative power per unit area, whereas fractional transmittance ($T = I/I_0$) is a dimensionless ratio between $0$ and $1$, often expressed as percentage transmittance ($\%T = 100 \times T$). Because absorbance is logarithmic:
 
 $$
@@ -330,6 +369,8 @@ The absorbance is $0.699$ (dimensionless), and the molar absorption coefficient 
 
 ---
 
+
+
 #### Example 2: Finding an Unknown Concentration by Direct Absorbance Ratio
 
 **Problem:**  
@@ -362,6 +403,8 @@ $$
 The concentration of the test dye solution is $0.0196\text{ M}$.
 
 ---
+
+
 
 #### Example 3: Colorimetric Determination of $\text{Fe}^{3+}$ from Fractional Transmittance
 
@@ -398,6 +441,8 @@ The concentration of the unknown $\text{Fe}^{3+}$ solution is $28.47\text{ ppm}$
 
 ---
 
+
+
 ### Self-Check Questions
 
 1. **Question:** Solution X has $\%T = 10\%$ and Solution Y of the same solute in the same cuvette has $\%T = 50\%$. Which solution is more concentrated, and by what factor?  
@@ -408,11 +453,15 @@ The concentration of the unknown $\text{Fe}^{3+}$ solution is $28.47\text{ ppm}$
 
 ---
 
+---
+
 <!-- page 4 | UV–visible spectroscopy and electronic transitions -->
 
 ## UV–visible spectroscopy and electronic transitions
 
-**UV–visible (UV–vis) spectroscopy** is an absorption spectroscopy technique that measures how molecules interact with electromagnetic radiation in the ultraviolet ($10\text{–}400\text{ nm}$) and visible ($400\text{–}800\text{ nm}$) regions. Because photons in these spectral bands carry sufficient energy to promote valence electrons from lower-energy ground-state molecular orbitals to higher-energy excited-state molecular orbitals, an absorption spectrum recorded in this region is known as an **electronic spectrum**. It is conventionally represented as a plot of absorbance ($A$) or molar absorptivity ($\varepsilon$) as a function of wavelength ($\lambda$, expressed in $\text{nm}$).
+**UV–visible (UV–vis) spectroscopy**
+
+UV–visible (UV–vis) spectroscopy is an absorption spectroscopy technique that measures how molecules interact with electromagnetic radiation in the ultraviolet ($10\text{–}400\text{ nm}$) and visible ($400\text{–}800\text{ nm}$) regions. Because photons in these spectral bands carry sufficient energy to promote valence electrons from lower-energy ground-state molecular orbitals to higher-energy excited-state molecular orbitals, an absorption spectrum recorded in this region is known as an **electronic spectrum**. It is conventionally represented as a plot of absorbance ($A$) or molar absorptivity ($\varepsilon$) as a function of wavelength ($\lambda$, expressed in $\text{nm}$).
 
 For practical chemical analysis, the ultraviolet–visible range is divided into three distinct operational domains:
 
@@ -473,13 +522,16 @@ $$
 
 ### Chromophores, auxochromes, and spectral shifts
 
-**Chromophore**  
+**Chromophore**
+
 An isolated functional group or structural unit within a molecule responsible for absorbing electromagnetic radiation in a defined spectral region. Although historically defined as an impartor of visible color, in modern spectroscopy a chromophore refers to any light-absorbing group, even if absorption occurs strictly in the ultraviolet region (e.g., $\text{C=C}$, $\text{C=O}$, $-\text{NO}_2$, $-\text{N=N}-$, benzene rings, and even $\sigma$-bond frameworks in the vacuum UV).
 
-**Auxochrome**  
+**Auxochrome**
+
 A saturated functional substituent bearing non-bonding electron pairs (such as $-\text{OH}$, $-\text{OR}$, $-\text{NH}_2$, $-\text{NR}_2$, or halogens) that does not absorb significantly above $200\text{ nm}$ on its own, but systematically alters both the wavelength and molar absorptivity when directly attached to a chromophore. Auxochromes delocalize their lone pairs into the adjacent $\pi$ system via resonance ($n\text{–}\pi$ conjugation) or inductive effects, generally shifting absorption toward longer wavelengths and increasing band intensity.
 
-**Wavelength of Maximum Absorbance ($\lambda_{\max}$)**  
+**Wavelength of maximum absorbance ($\lambda_{\max}$)**
+
 The specific wavelength corresponding to the absorption peak of an electronic transition band. It serves as a diagnostic physical parameter governed by molecular conjugation, auxochromic substitution, and solvent interactions.
 
 #### Spectral shifts and intensity modifications
@@ -503,13 +555,17 @@ Structural substitution or solvent changes produce four distinct spectral modifi
 
 ---
 
+---
+
 <!-- page 5 | Conjugation and predicting molecular transitions -->
 
 ## Conjugation and predicting molecular transitions
 
 ### Effect of conjugation on absorption wavelength
 
-**Conjugation** occurs when two or more multiple bonds alternate with single bonds (such as $-\text{CH}=\text{CH}-\text{CH}=\text{CH}-$), enabling their $\pi$ orbitals to overlap across the intervening single bonds. This delocalization spreads the $\pi$ electrons over an extended molecular framework, generating a manifold of closely spaced $\pi$ bonding and $\pi^*$ antibonding molecular orbitals.
+**Conjugation**
+
+Conjugation occurs when two or more multiple bonds alternate with single bonds (such as $-\text{CH}=\text{CH}-\text{CH}=\text{CH}-$), enabling their $\pi$ orbitals to overlap across the intervening single bonds. This delocalization spreads the $\pi$ electrons over an extended molecular framework, generating a manifold of closely spaced $\pi$ bonding and $\pi^*$ antibonding molecular orbitals.
 
 In a comparable series of conjugated polyenes, extended delocalization systematically narrows the separation between the highest occupied molecular orbital (HOMO) and lowest unoccupied molecular orbital (LUMO). As a result, the transition energy $\Delta E$ for the lowest-energy $\pi \rightarrow \pi^*$ excitation decreases. Because photon energy and wavelength are inversely proportional:
 
@@ -520,6 +576,7 @@ $$
 where $h$ is Planck's constant ($\text{J}\cdot\text{s}$), $c$ is the speed of light ($\text{m}\cdot\text{s}^{-1}$), and $\lambda$ is wavelength in metres, a diminished HOMO–LUMO energy gap shifts the absorption maximum ($\lambda_{\max}$) toward longer wavelengths (a bathochromic or red shift).
 
 Consider the progression across linear conjugated alkenes:
+
 * **Ethene** ($\text{CH}_2=\text{CH}_2$, 1 double bond, 2 $\pi$ molecular orbitals): $\lambda_{\max} \approx 169\text{ nm}$ (vacuum UV region).
 * **1,3-Butadiene** ($\text{CH}_2=\text{CH}-\text{CH}=\text{CH}_2$, 2 conjugated double bonds, 4 $\pi$ molecular orbitals): $\lambda_{\max} \approx 217\text{ nm}$ (near-UV region).
 * **1,3,5-Hexatriene** ($\text{CH}_2=\text{CH}-\text{CH}=\text{CH}-\text{CH}=\text{CH}_2$, 3 conjugated double bonds, 6 $\pi$ molecular orbitals): $\lambda_{\max} \approx 250\text{ nm}$ (typically $247\text{--}258\text{ nm}$ depending on stereochemistry and solvent).
@@ -544,7 +601,7 @@ To determine the allowable electronic transitions for a given molecular species,
 
 ---
 
-### Summary of orbitals and transitions in common organic compounds
+### Orbitals and transitions in common organic compounds
 
 | Compound | Formula / Structure | Key Functional Group | Occupied Valence Orbitals | Possible Electronic Transitions | Standard UV–Vis ($200\text{--}800\text{ nm}$) Activity |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -583,6 +640,8 @@ To determine the allowable electronic transitions for a given molecular species,
   * *Structure analysis:* Contains single bonds ($\sigma, \sigma^*$), an unsaturated carbonyl group ($\pi, \pi^*$), and non-bonding oxygen lone pairs ($n$).
   * *Transitions and energy ordering:* The symmetry-forbidden $n \rightarrow \pi^*$ band occurs at the lowest energy (near $280\text{ nm}$, weak); the symmetry-allowed $\pi \rightarrow \pi^*$ band requires higher energy (near $190\text{ nm}$, strong). Additional high-energy excitations involving $\sigma^*$ orbitals ($n \rightarrow \sigma^*$, $\sigma \rightarrow \sigma^*$) occur in the vacuum-UV region.
 
+
+
 #### Example 2: Ordering conjugated polyenes by absorption wavelength
 
 **Problem:** Arrange ethene, 1,3,5-hexatriene, and 1,3-butadiene in order of (a) decreasing excitation energy $\Delta E$ and (b) increasing absorption maximum $\lambda_{\max}$ for their lowest-energy $\pi \rightarrow \pi^*$ transition.
@@ -600,6 +659,8 @@ To determine the allowable electronic transitions for a given molecular species,
 
 ---
 
+
+
 ### Self-check questions
 
 1. **Question:** Why is ethanol suitable as a spectroscopic solvent for recording the UV spectrum of 1,3-butadiene above $210\text{ nm}$?  
@@ -610,13 +671,15 @@ To determine the allowable electronic transitions for a given molecular species,
 
 ---
 
+---
+
 <!-- page 6 | UV–visible spectrophotometer: instrument and applications -->
 
 ## UV–visible spectrophotometer: instrument and applications
 
-A **UV–visible spectrophotometer** is an analytical instrument designed to measure the attenuation of ultraviolet and visible radiation as it passes through a chemical sample. Modern analytical laboratories predominantly utilize double-beam spectrophotometers, which split incident radiation into two separate paths to continuously compare the sample against a reference blank. This configuration automatically compensates for source intensity fluctuations, solvent absorbance, and detector drift.
+**UV–visible spectrophotometer**
 
----
+A UV–visible spectrophotometer is an analytical instrument designed to measure the attenuation of ultraviolet and visible radiation as it passes through a chemical sample. Modern analytical laboratories predominantly utilize double-beam spectrophotometers, which split incident radiation into two separate paths to continuously compare the sample against a reference blank. This configuration automatically compensates for source intensity fluctuations, solvent absorbance, and detector drift.
 
 ### Optical path and working principle
 
@@ -625,7 +688,7 @@ In a standard double-beam dispersive spectrophotometer, light propagates through
 1. **Radiation generation:** A continuous dual-lamp source emits polychromatic radiation spanning the ultraviolet ($200\text{--}400\text{ nm}$) and visible ($400\text{--}800\text{ nm}$) spectra.
 2. **Wavelength selection:** The polychromatic beam enters a monochromator, where dispersing elements isolate an exceptionally narrow band of wavelengths ($\lambda$) transmitted via an exit slit.
 3. **Beam splitting:** A beam splitter or rotating mirrored sector (chopper) divides the monochromatic beam alternately or simultaneously into two optical paths: a reference beam and a sample beam.
-4. **Sample and reference transmission:** 
+4. **Sample and reference transmission:**
    - The reference beam traverses a reference cell containing pure solvent and reagents, yielding an emergent intensity $I_0$.
    - The sample beam traverses the sample cuvette containing the dissolved analyte, yielding an emergent intensity $I$.
 5. **Detection:** The emergent beams strike a photosensitive detector (either alternately using a single detector or simultaneously using matched paired detectors), converting radiant optical energy into a proportional electric current.
@@ -642,32 +705,33 @@ Where:
 - $I$ is the radiant intensity transmitted through the absorbing sample ($\text{W m}^{-2}$).
 
 ![Plot of absorbance on the vertical axis versus wavelength on the horizontal axis showing a smooth absorption peak.](/notes/cse/s1/chemistry/module-3/assets/page-013-image-1-clean.svg)
-*Figure: A representative UV–visible absorption spectrum plotting absorbance against wavelength, with peak absorption occurring at $\lambda_{\max}$.*
 
----
+*Figure: A representative UV–visible absorption spectrum plotting absorbance against wavelength, with peak absorption occurring at $\lambda_{\max}$.*
 
 ### Instrument components
 
 | Component | Materials & Types | Function & Operational Constraints |
 | :--- | :--- | :--- |
-| **Radiation source** | • Deuterium ($\text{D}_2$) or Hydrogen ($\text{H}_2$) discharge lamps (UV: $200\text{--}400\text{ nm}$)<br>• Tungsten–halogen filament lamp (Visible: $350\text{--}800\text{ nm}$)<br>• Xenon flash lamp (UV–vis continuum) | Delivers stable, continuous radiation across the target spectral range. Gas discharge lamps generate light via an electric arc through gas rather than thermal incandescence. |
-| **Monochromator** | • Entrance slit<br>• Collimating mirrors<br>• Reflection diffraction grating or quartz prism<br>• Exit slit | Spatially disperses polychromatic light into constituent wavelengths and isolates a narrow spectral bandwidth. |
-| **Beam splitter** | • Half-silvered beam splitting mirror<br>• Rotating mirrored chopper disc | Directs monochromatic light alternately or concurrently through the reference and sample paths. Strict $50:50$ splitting is electronically calibrated against the baseline. |
-| **Sample & reference cells (cuvettes)** | • Fused quartz or synthetic silica ($200\text{--}1000\text{ nm}$)<br>• Optical glass ($350\text{--}1000\text{ nm}$)<br>• Disposable optical plastic (visible range only) | Holds solutions in a precision optical path (standard path length $b = 1.0\text{ cm}$). Cuvette optical faces must remain pristine, parallel, and chemically inert. |
-| **Detector** | • Photomultiplier tube (PMT)<br>• Silicon photodiode<br>• Photodiode array (PDA) | Translates transmitted photons into an amplified electrical signal with high quantum efficiency, linear response, and rapid response times. |
+| **Radiation source** | Deuterium ($\text{D}_2$) or Hydrogen ($\text{H}_2$) discharge lamps (UV: $200\text{--}400\text{ nm}$); Tungsten–halogen filament lamp (Visible: $350\text{--}800\text{ nm}$); Xenon flash lamp (UV–vis continuum) | Delivers stable, continuous radiation across the target spectral range. Gas discharge lamps generate light via an electric arc through gas rather than thermal incandescence. |
+| **Monochromator** | Entrance slit; Collimating mirrors; Reflection diffraction grating or quartz prism; Exit slit | Spatially disperses polychromatic light into constituent wavelengths and isolates a narrow spectral bandwidth. |
+| **Beam splitter** | Half-silvered beam splitting mirror; Rotating mirrored chopper disc | Directs monochromatic light alternately or concurrently through the reference and sample paths. Strict $50:50$ splitting is electronically calibrated against the baseline. |
+| **Sample & reference cells (cuvettes)** | Fused quartz or synthetic silica ($200\text{--}1000\text{ nm}$); Optical glass ($350\text{--}1000\text{ nm}$); Disposable optical plastic (visible range only) | Holds solutions in a precision optical path (standard path length $b = 1.0\text{ cm}$). Cuvette optical faces must remain pristine, parallel, and chemically inert. |
+| **Detector** | Photomultiplier tube (PMT); Silicon photodiode; Photodiode array (PDA) | Translates transmitted photons into an amplified electrical signal with high quantum efficiency, linear response, and rapid response times. |
 
 > **Watch out.** Always verify the cuvette material's operational wavelength cutoff. Standard optical glass and common plastics absorb strongly throughout the ultraviolet region ($<350\text{ nm}$). Fused silica/quartz cuvettes are mandatory for UV measurements, although specialized UV-transparent disposable polymers can be used within strictly qualified solvent limits.
 
----
+### Reference blank and solvent selection
 
-### Role of the reference blank and solvent
+**Reference blank**
 
-**Reference blank:** A matched reference cell filled with pure solvent and any background reagents (excluding the analyte) placed in the reference path to set the baseline intensity $I_0$. Because cuvette windows reflect light and solvents scatter or slightly absorb radiation, the reference blank optically cancels these background contributions:
+A reference blank is a matched reference cell filled with pure solvent and any background reagents (excluding the analyte) placed in the reference path to set the baseline intensity $I_0$. Because cuvette windows reflect light and solvents scatter or slightly absorb radiation, the reference blank optically cancels these background contributions:
 
 - Refractive index mismatches and reflection losses at cell interfaces are equalized.
 - Non-analyte reagent and solvent absorbances are automatically subtracted.
 
-**UV cutoff wavelength:** The specific wavelength threshold below which a pure solvent itself begins absorbing strongly ($A > 1.0$). To prevent total radiation attenuation and distorted readings, analysts must choose a solvent transparent across the analyte’s absorption bands:
+**UV cutoff wavelength**
+
+The UV cutoff wavelength is the specific wavelength threshold below which a pure solvent itself begins absorbing strongly ($A > 1.0$). To prevent total radiation attenuation and distorted readings, analysts must choose a solvent transparent across the analyte’s absorption bands:
 
 - **Water:** Cutoff $\approx 190\text{ nm}$ (ideal for aqueous analysis)
 - **Acetonitrile:** Cutoff $\approx 190\text{ nm}$
@@ -677,8 +741,6 @@ Where:
 
 > **Watch out.** UV–visible spectroscopy alone cannot provide definitive structural identification of an unknown compound. Because electronic transition bands are broad, UV–vis spectra primarily identify conjugated $\pi$-electron systems and chromophores ($\pi \rightarrow \pi^*$ and $n \rightarrow \pi^*$). Complementary methods like FTIR, NMR, and Mass Spectrometry are indispensable for full structural elucidation.
 
----
-
 ### Applications of UV–visible spectroscopy
 
 - **Quantitative concentration analysis:** Unknown concentrations of active ingredients, metal chelates, and biochemical analytes are quantified at $\lambda_{\max}$ using standard calibration curves governed by the Beer–Lambert law.
@@ -687,8 +749,6 @@ Where:
 - **Purity checking and quality control:** Detection of trace UV-absorbing impurities in bulk solvents or pharmaceuticals (e.g., verifying the absence of toxic benzene impurities in absolute ethanol or cyclohexane).
 - **Conjugation and structural probes:** Evaluation of bathochromic (red) and hypsochromic (blue) shifts reveals the degree of $\pi$-conjugation, steric hindrance, and solvent polarity effects.
 - **Colorimetric clinical assays:** Analytes lacking native UV–vis absorption (such as glucose, urea, or cholesterol) are coupled with specific enzymatic or chromogenic reagents to generate intensely colored chromophores suitable for photometric quantification.
-
----
 
 ### Self-check questions
 
@@ -704,13 +764,17 @@ Where:
 
 ---
 
+---
+
 <!-- page 7 | Infrared absorption and types of vibration -->
 
 ## Infrared absorption and types of vibration
 
-### Principle of infrared (IR) spectroscopy
+### Working principle
 
-**Infrared (IR) spectroscopy**, also known as vibrational spectroscopy, studies the interaction of infrared radiation with matter. For ordinary molecular systems, mid-IR absorption probes quantized vibrational energy gaps rather than valence-electron excitations. When a molecule absorbs infrared radiation matching a resonant vibrational frequency, it transitions from a lower quantized vibrational level to a higher one (accompanied by rotational transitions in the gas phase).
+**Infrared spectroscopy**
+
+Infrared (IR) spectroscopy, also known as vibrational spectroscopy, studies the interaction of infrared radiation with matter. For ordinary molecular systems, mid-IR absorption probes quantized vibrational energy gaps rather than valence-electron excitations. When a molecule absorbs infrared radiation matching a resonant vibrational frequency, it transitions from a lower quantized vibrational level to a higher one (accompanied by rotational transitions in the gas phase).
 
 Under the harmonic oscillator approximation, fundamental vibrational transitions obey the selection rule:
 
@@ -724,7 +788,9 @@ Although the broad infrared spectrum spans roughly $12\,800\text{ cm}^{-1}$ to $
 
 ### Condition for IR activity
 
-Not every molecular vibration gives rise to an absorption band. For a vibrational mode to be **IR active**, the electric dipole moment of the molecule must change periodically during the vibration:
+**Infrared activity**
+
+Infrared activity requires that the electric dipole moment of the molecule changes periodically during the vibration for an absorption band to appear:
 
 $$
 \left(\frac{\partial \mu_d}{\partial Q}\right)_0 \neq 0
@@ -740,11 +806,12 @@ Infrared radiation is an oscillating electromagnetic wave with an oscillating el
 
 > **Watch out.** A molecule does **not** require a permanent dipole moment at equilibrium to show an IR spectrum, nor are all vibrational modes in a polyatomic molecule automatically active. For example, linear $\text{CO}_2$ is nonpolar at equilibrium ($\mu_d = 0$), but its asymmetric stretching and bending modes induce a temporary oscillating dipole, making them IR active. Conversely, its symmetric stretch preserves centrosymmetry ($\Delta \mu_d = 0$) and remains IR inactive.
 
-### Structure of an IR spectrum
+### IR spectrum structure
 
 An infrared spectrum is conventionally plotted with **percentage transmittance ($\%T$)** on the vertical axis against **wavenumber ($\bar{\nu}$, in $\text{cm}^{-1}$)** on the horizontal axis, running from high wavenumber ($4000\text{ cm}^{-1}$) on the left to low wavenumber ($400\text{ cm}^{-1}$) on the right.
 
 ![Schematic IR spectrum showing percentage transmittance on the vertical axis versus wavenumber on the horizontal axis with downward absorption dips](/notes/cse/s1/chemistry/module-3/assets/page-044-image-1-clean.svg)
+
 *Figure: Schematic representation of an IR spectrum plotting percentage transmittance ($\%T$) against wavenumber ($\text{cm}^{-1}$), where absorption bands appear as downward troughs.*
 
 At resonant frequencies where the molecule absorbs infrared radiation, less radiation reaches the detector, producing a **downward trough** in $\%T$. (When plotted as absorbance $A$, absorptions appear as upward peaks.)
@@ -756,9 +823,12 @@ The mid-IR spectrum is divided into two primary analytical zones:
 
 ### Types of molecular vibrations
 
-In a polyatomic molecule, vibrations manifest as **normal modes**—coordinated atomic displacements oscillating at a characteristic frequency where all atoms pass through equilibrium simultaneously without translating or rotating the molecule as a whole. Complex modes can be categorized into **stretching** and **bending** motions.
+**Normal modes**
+
+In a polyatomic molecule, vibrations manifest as normal modes—coordinated atomic displacements oscillating at a characteristic frequency where all atoms pass through equilibrium simultaneously without translating or rotating the molecule as a whole. Complex modes can be categorized into stretching and bending motions.
 
 ![Flowchart classifying molecular vibrations into symmetric and asymmetric stretching, and in-plane (scissoring, rocking) and out-of-plane (wagging, twisting) bending](/notes/cse/s1/chemistry/module-3/assets/page-045-image-1-clean.svg)
+
 *Figure: Classification of fundamental molecular vibrations into stretching and bending modes using a three-atom group.*
 
 | Mode | Subtype | Motion Plane | Atomic Displacement |
@@ -782,15 +852,19 @@ Because stretching a chemical bond along its axis requires more energy than bend
 
 ---
 
+---
+
 <!-- page 8 | Counting vibrations: carbon dioxide, water and HCN -->
 
 ## Counting vibrations: carbon dioxide, water and HCN
 
-### Degrees of Freedom and Vibrational Modes
+### Degrees of Freedom and Molecular Motion
 
-Every atom in a molecule can move along three mutually perpendicular Cartesian axes ($x$, $y$, and $z$). A molecule containing $N$ atoms therefore possesses a total of $3N$ degrees of freedom describing all possible atomic motions in three-dimensional space.
+**Degrees of freedom**
 
-These $3N$ degrees of freedom are partitioned into three distinct types of motion:
+Degrees of freedom represent the number of independent coordinates required to specify the complete physical position and motion of every atom in a molecule. Every atom in a molecule can move along three mutually perpendicular Cartesian axes ($x$, $y$, and $z$). A molecule containing $N$ atoms therefore possesses a total of $3N$ degrees of freedom describing all possible atomic motions in three-dimensional space.
+
+These $3N$ degrees of freedom partition into three distinct classes of motion:
 
 1. **Translational motion:** Shifting the entire molecule's centre of mass through three-dimensional space requires $3$ degrees of freedom (along the $x$, $y$, and $z$ axes) for all molecules.
 2. **Rotational motion:** Turning the entire molecule around its centre of mass depends strictly on molecular geometry:
@@ -810,13 +884,21 @@ Here $N$ is the total number of atoms in the molecule ($N \ge 2$). Monatomic spe
 
 ---
 
-### Vibrational Mode Counts vs. Observed IR Bands
+### Mode Counts and Observed IR Bands
 
-The theoretical calculation of $3N - 5$ or $3N - 6$ yields the number of independent normal vibrational coordinates, which does not necessarily match the number of absorption peaks observed in an experimental infrared (IR) spectrum:
+Calculating $3N - 5$ or $3N - 6$ yields the number of independent normal vibrational coordinates, which does not necessarily equal the number of absorption peaks observed in an experimental infrared (IR) spectrum.
 
-* **IR-inactive modes:** A vibrational mode absorbs an infrared photon only if the motion produces a periodic change in the molecule's net dipole moment ($\Delta\mu \ne 0$). Highly symmetrical vibrations that leave the net dipole moment unchanged ($\Delta\mu = 0$) are IR inactive and produce no absorption band.
-* **Degenerate modes:** Two or more structurally distinct vibrational coordinates that possess the exact same vibrational frequency and energy are termed **degenerate**. Because they absorb radiation at the exact same wavenumber, their absorption peaks coincide into a single observed fundamental band.
-* **Non-fundamental transitions:** Real experimental spectra may feature additional weak absorption bands resulting from overtones ($v = 0 \to 2, 3$), combination bands ($v_1 + v_2$), difference bands, and rotational fine structure in gas-phase measurements.
+**Infrared-inactive modes**
+
+Infrared-inactive modes are vibrational motions that produce no net change in dipole moment ($\Delta\mu \ne 0$). A vibrational mode absorbs an infrared photon only if the motion produces a periodic change in the molecule's net dipole moment. Highly symmetrical vibrations that leave the net dipole moment unchanged ($\Delta\mu = 0$) are IR inactive and produce no absorption band.
+
+**Degenerate modes**
+
+Degenerate modes are two or more structurally distinct vibrational coordinates that possess the exact same vibrational frequency and energy. Because they absorb radiation at the exact same wavenumber, their absorption peaks coincide into a single observed fundamental band.
+
+**Non-fundamental transitions**
+
+Non-fundamental transitions are secondary vibrational absorptions arising from real anharmonic effects. Experimental spectra may feature additional weak absorption bands resulting from overtones ($v = 0 \to 2, 3$), combination bands ($v_1 + v_2$), difference bands, and rotational fine structure in gas-phase measurements.
 
 > **Watch out.** Do not assume that every calculated vibrational mode produces a separate peak in the IR spectrum. Always check each mode for a dipole moment change (IR activity) and check whether any active modes are degenerate (sharing the same wavenumber).
 
@@ -844,6 +926,8 @@ Count the total atoms $N$ in each chemical formula, identify whether the molecul
 | Cyclohexane | $\text{C}_6\text{H}_{12}$ | $18$ | Non-linear (puckered ring) | $54$ | $3N - 6$ | $48$ | Yes (has modes that change the dipole moment) |
 
 ---
+
+
 
 #### Example 2: Vibrational modes and IR activity of carbon dioxide ($\text{CO}_2$)
 
@@ -884,6 +968,8 @@ The four normal vibrational modes are:
 **Summary for $\text{CO}_2$:** Out of $4$ vibrational modes, $3$ vibrational coordinates are IR active (asymmetric stretch + two bends). Because the in-plane and out-of-plane bends differ only by a $90^\circ$ rotation around the molecular axis, they are doubly degenerate and absorb at the exact same wavenumber ($\sim 667\text{ cm}^{-1}$). Thus, an ideal isolated harmonic $\text{CO}_2$ molecule shows only **$2$ fundamental absorption bands** ($\sim 2349\text{ cm}^{-1}$ and $\sim 667\text{ cm}^{-1}$).
 
 ---
+
+
 
 #### Example 3: Vibrational modes of water ($\text{H}_2\text{O}$) and comparison with $\text{HCN}$
 
@@ -928,6 +1014,8 @@ Therefore, all **$4$ vibrational coordinates are IR active** in $\text{HCN}$. Be
 
 ---
 
+
+
 ### Self-Check Questions
 
 1. **Question:** Acetylene ($\text{H}-\text{C}\equiv\text{C}-\text{H}$) is a linear molecule and ammonia ($\text{NH}_3$) is a pyramidal (non-linear) molecule. How many fundamental vibrational modes does each possess?  
@@ -938,17 +1026,23 @@ Therefore, all **$4$ vibrational coordinates are IR active** in $\text{HCN}$. Be
 
 ---
 
+---
+
 <!-- page 9 | Bond vibrations and force-constant calculations -->
 
 ## Bond vibrations and force-constant calculations
 
-### Harmonic oscillator model of a covalent bond
+### Harmonic oscillator model
 
-To determine the vibrational frequency of a chemical bond, two bonded atoms are modeled as masses ($m_1$ and $m_2$) connected by a weightless spring. When displaced from their equilibrium distance, Hooke's law governs the restoring force that pulls the atoms back toward equilibrium.
+To determine the vibrational frequency of a chemical bond, two bonded atoms are modeled as masses ($m_1$ and $m_2$) connected by a weightless spring. When displaced from their equilibrium distance, Hooke's law governs the restoring force pulling the atoms back toward equilibrium.
 
-**Force constant ($k$):** A measure of the stiffness of the chemical bond, representing the curvature of the potential energy curve near its equilibrium position. A larger force constant indicates a stiffer, more rigid bond.
+**Force constant ($k$)**
 
-**Reduced mass ($\mu$):** The effective inertial mass of a two-particle oscillating system vibrating along its internuclear axis, calculated as:
+Force constant is a measure of the stiffness of the chemical bond, representing the curvature of the potential energy curve near its equilibrium position. A larger force constant indicates a stiffer, more rigid bond.
+
+**Reduced mass ($\mu$)**
+
+Reduced mass represents the effective inertial mass of a two-particle oscillating system vibrating along its internuclear axis, calculated as:
 
 $$
 \mu = \frac{m_1 m_2}{m_1 + m_2}
@@ -962,7 +1056,9 @@ $$
 \nu = \frac{1}{2\pi} \sqrt{\frac{k}{\mu}}
 $$
 
-**Wavenumber ($\bar{\nu}$):** The number of waves per unit length, defined as $\bar{\nu} = \nu / c$. Dividing the frequency expression by the speed of light ($c$) yields the fundamental infrared wavenumber equation:
+**Wavenumber ($\bar{\nu}$)**
+
+Wavenumber is the number of waves per unit length, defined as $\bar{\nu} = \nu / c$. Dividing the frequency expression by the speed of light ($c$) yields the fundamental infrared wavenumber equation:
 
 $$
 \bar{\nu} = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}
@@ -991,11 +1087,13 @@ The relationship $\bar{\nu} = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}$ demonstrate
 | **Atom identity:** $\text{C}-\text{H}$ vs $\text{C}-\text{Cl}$ | $k$ differs; $\mu$ increases sharply from $\text{H}$ to $\text{Cl}$ | $\bar{\nu}$ drops markedly for the heavier $\text{C}-\text{Cl}$ bond |
 | **Isotopic substitution:** $^{1}\text{H}-\text{Cl}$ vs $^{2}\text{D}-\text{Cl}$ | $k$ is unchanged (same electronic structure); $\mu$ increases | $\bar{\nu}$ decreases for the heavier isotope ($\bar{\nu}_{\text{DCl}} < \bar{\nu}_{\text{HCl}}$) |
 
-**Localized group frequencies:** In a polyatomic molecule (e.g., $\text{CH}_3\text{OH}$ or $\text{CH}_2=\text{CH}_2$), vibrations are strictly coupled **normal modes**. However, when a functional group (such as $\text{O}-\text{H}$ or $\text{C}=\text{O}$) possesses a force constant or atomic mass substantially different from the rest of the molecular framework, the vibration remains largely localized. In these cases, the diatomic reduced-mass approximation provides reliable quantitative estimates.
+**Localized group frequencies**
+
+In a polyatomic molecule (e.g., $\text{CH}_3\text{OH}$ or $\text{CH}_2=\text{CH}_2$), vibrations are strictly coupled normal modes. However, when a functional group (such as $\text{O}-\text{H}$ or $\text{C}=\text{O}$) possesses a force constant or atomic mass substantially different from the rest of the molecular framework, the vibration remains largely localized. In these cases, the diatomic reduced-mass approximation provides reliable quantitative estimates.
 
 ---
 
-### Worked examples: Force-constant calculations
+### Worked examples
 
 #### Example 1: Force constant of carbon monoxide ($\text{CO}$)
 
@@ -1033,6 +1131,8 @@ The relationship $\bar{\nu} = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}$ demonstrate
    $$
 
 ---
+
+
 
 #### Example 2: Force constant of hydrogen chloride ($\text{HCl}$)
 
@@ -1072,6 +1172,8 @@ The relationship $\bar{\nu} = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}$ demonstrate
 
 ---
 
+
+
 ### Self-check questions
 
 1. **Question:** How does infrared spectroscopy distinguish between a $\text{C}-\text{C}$ single bond and a $\text{C}=\text{C}$ double bond when both systems have the same reduced mass ($\mu$)?  
@@ -1090,11 +1192,15 @@ The relationship $\bar{\nu} = \frac{1}{2\pi c} \sqrt{\frac{k}{\mu}}$ demonstrate
 
 ---
 
+---
+
 <!-- page 10 | Reading IR spectra and studying hydrogen bonding -->
 
 ## Reading IR spectra and studying hydrogen bonding
 
-**Infrared (IR) spectroscopy** is one of the fastest laboratory techniques for identifying organic functional groups and probing non-covalent interactions. While local diatomic approximations treat bonds via their reduced mass ($\mu$) and force constant ($k$), coupled polyatomic normal modes also give rise to characteristic absorption bands within predictable wavenumber ($\bar{\nu}$) ranges.
+**Infrared spectroscopy**
+
+Infrared (IR) spectroscopy is one of the fastest laboratory techniques for identifying organic functional groups and probing non-covalent interactions. While local diatomic approximations treat bonds via their reduced mass ($\mu$) and force constant ($k$), coupled polyatomic normal modes also give rise to characteristic absorption bands within predictable wavenumber ($\bar{\nu}$) ranges.
 
 ---
 
@@ -1116,6 +1222,7 @@ $$
 $$
 
 where:
+
 * $\bar{\nu}$ is the wavenumber ($\text{cm}^{-1}$)
 * $c$ is the speed of light ($\text{cm s}^{-1}$)
 * $k$ is the bond force constant ($\text{N m}^{-1}$)
@@ -1146,7 +1253,9 @@ Conversely, bonds involving light hydrogen atoms possess an exceptionally small 
 
 ### Studying hydrogen bonding by IR spectroscopy
 
-**Hydrogen bonding** occurs when a hydrogen atom covalently bonded to an electronegative donor ($\text{O}$ or $\text{N}$) interacts electrostatically with an unshared lone pair on an electronegative acceptor ($\text{O}$ or $\text{N}$). This non-covalent interaction withdraws electron density from the covalent donor $\text{O-H}$ bond, lengthening and weakening it. 
+**Hydrogen bonding**
+
+Hydrogen bonding occurs when a hydrogen atom covalently bonded to an electronegative donor ($\text{O}$ or $\text{N}$) interacts electrostatically with an unshared lone pair on an electronegative acceptor ($\text{O}$ or $\text{N}$). This non-covalent interaction withdraws electron density from the covalent donor $\text{O-H}$ bond, lengthening and weakening it.
 
 Because the covalent bond force constant $k$ decreases, the $\text{O-H}$ stretching absorption shifts to a **lower wavenumber**. Furthermore, because condensed phases exhibit a statistical distribution of hydrogen-bond distances and orientations, the resulting peak broadens significantly into a wide band ($3200\text{--}3600\text{ cm}^{-1}$).
 
@@ -1173,6 +1282,8 @@ IR dilution experiments conducted in a non-polar, non-hydrogen-bonding solvent (
 
 ---
 
+
+
 ### Other analytical applications of IR spectroscopy
 
 * **Checking sample purity:** Pure compounds yield clean, reproducible absorption spectra with characteristic peak shapes. Extraneous bands that do not belong to the authentic reference spectrum (such as an unexpected sharp $\text{C=O}$ peak near $1715\text{ cm}^{-1}$ in a purified secondary alcohol) clearly expose functional-group impurities. However, the absence of extraneous peaks indicates optical purity within detection thresholds, not absolute chemical purity.
@@ -1190,13 +1301,17 @@ IR dilution experiments conducted in a non-polar, non-hydrogen-bonding solvent (
 
 ---
 
+---
+
 <!-- page 11 | Dielectric thermal analysis: principle, instrument and uses -->
 
 ## Dielectric thermal analysis: principle, instrument and uses
 
-### Principle of dielectric thermal analysis
+### Operating principle
 
-**Dielectric thermal analysis (DETA)**, also known as **dielectric analysis (DEA)**, measures how the alternating-current (AC) dielectric response of a material changes with temperature, time, or frequency. It is widely used for polar and semi-polar materials such as polymers, thermosetting resins, adhesives, glasses, and ceramics.
+**Dielectric thermal analysis (DETA)**
+
+Dielectric thermal analysis (DETA), also designated as dielectric analysis (DEA), measures how the alternating-current (AC) dielectric response of a material changes with temperature, time, or frequency. It is widely used for polar and semi-polar materials such as polymers, thermosetting resins, adhesives, glasses, and ceramics.
 
 When a sinusoidal AC voltage is applied across a sample placed between two electrodes, the alternating electric field interacts with two distinct microscopic species inside the material:
 
@@ -1204,9 +1319,11 @@ When a sinusoidal AC voltage is applied across a sample placed between two elect
 2. **Mobile free ions** (often trace impurities or catalyst residues) undergo **ionic migration**, drifting translationally toward the oppositely charged electrode.
 
 ![Randomly oriented molecular dipoles between parallel plates without an external electric field](/notes/cse/s1/chemistry/module-3/assets/page-058-image-2-structured.svg)
+
 *Figure 11.1: In the absence of an external electric field, thermal motion keeps molecular dipoles randomly oriented.*
 
 ![Molecular dipoles reorienting between charged plates under an applied electric field](/notes/cse/s1/chemistry/module-3/assets/page-058-image-3-structured.svg)
+
 *Figure 11.2: Under an applied electric field, dipoles experience torque and partially align with the field direction.*
 
 > **Watch out.** Do not confuse ions with dipoles. Ions do not "align" in place, and bound dipoles do not migrate across the sample. Instead, dipoles rotate (orientation polarisation) while free ions drift toward opposite electrodes (ionic conduction). Furthermore, although static diagrams show neat alignment at a single instant, an AC field reverses continuously and thermal agitation opposes alignment, so dipoles never remain perfectly aligned.
@@ -1224,6 +1341,7 @@ $$
 $$
 
 Where:
+
 * $i = \sqrt{-1}$
 * $\omega = 2\pi f$ is the angular frequency (in $\text{rad s}^{-1}$)
 * $f$ is the AC frequency (in $\text{Hz}$)
@@ -1261,9 +1379,12 @@ The dissipation factor is $0.02$ (dimensionless).
 
 ---
 
+
+
 ### Instrumentation and working
 
 ![Schematic of a dielectric thermal analysis cell inside a temperature-controlled furnace](/notes/cse/s1/chemistry/module-3/assets/page-058-image-1-clean.svg)
+
 *Figure 11.3: Schematic of a DETA setup showing the sample between electrodes inside a programmable furnace connected to a dielectric analyser.*
 
 A standard DETA instrument comprises the following primary components:
@@ -1303,31 +1424,45 @@ A standard DETA instrument comprises the following primary components:
 
 ---
 
+---
+
 <!-- page 12 | Scanning electron microscopy: signals, instrument and uses -->
 
 ## Scanning electron microscopy: signals, instrument and uses
 
-**Scanning electron microscopy (SEM)** is a high-resolution imaging technique that visualizes solid specimen surfaces by sweeping a focused beam of high-energy electrons across a sample in a rectangular raster pattern. Unlike an optical microscope that focuses light using glass lenses, or a transmission electron microscope (TEM) that relies on electrons transmitted through an ultra-thin sample, an SEM detects signals emitted from the sample surface and maps their intensity coordinate-by-coordinate to display pixel brightness.
+**Scanning electron microscopy**
+
+Scanning electron microscopy (SEM) is a high-resolution imaging technique that visualizes solid specimen surfaces by sweeping a focused beam of high-energy electrons across a sample in a rectangular raster pattern. Unlike an optical microscope that focuses light using glass lenses, or a transmission electron microscope (TEM) that relies on electrons transmitted through an ultra-thin sample, an SEM detects signals emitted from the sample surface and maps their intensity coordinate-by-coordinate to display pixel brightness.
 
 ---
 
 ### Electron–sample interactions and signals
 
-When primary beam electrons penetrate a solid target, they undergo multiple elastic and inelastic scattering events within a pear-shaped **interaction volume**. The depth and geometry of this interaction volume depend on the incident beam energy and the average atomic number of the material, generating several distinct, detectable signals.
+When primary beam electrons penetrate a solid target, they undergo multiple elastic and inelastic scattering events within a pear-shaped interaction volume. The depth and geometry of this interaction volume depend on the incident beam energy and the average atomic number of the material, generating several distinct, detectable signals.
 
 ![Secondary electron generation diagram showing an incoming electron beam ejecting an outer-shell electron from a sample atom.](/notes/cse/s1/chemistry/module-3/assets/page-055-image-1-structured.svg)
+
 *Figure 12.1: Inelastic collision ejecting a low-energy secondary electron.*
 
-- **Secondary electrons (SE):** Primary beam electrons transfer a portion of their kinetic energy to atomic electrons via **inelastic** collisions, ejecting loosely bound outer-shell electrons. Because secondary electrons have very low kinetic energies (typically below $50\text{ eV}$), only those generated within a few nanometres of the surface can escape into the vacuum. The escape yield is strongly governed by local surface tilt, curvature, and edges, making secondary electron imaging the primary operational mode for revealing high-resolution surface topography, morphology, and texture.
+**Secondary electrons**
 
-- **Backscattered electrons (BSE):** These are incident primary electrons deflected backward out of the specimen at large angles through **predominantly elastic** collisions with atomic nuclei. They retain a significant fraction of their initial primary beam energy and escape from deeper within the interaction volume than secondary electrons. Because heavier atomic nuclei (higher atomic number, $Z$) possess a greater positive nuclear charge, they deflect electrons backward much more effectively. Regions of higher average $Z$ yield more backscattered electrons and appear brighter under identical detector conditions, providing compositional ($Z$-contrast) alongside macro-topography.
+Secondary electrons (SE) are ejected when primary beam electrons transfer a portion of their kinetic energy to atomic electrons via inelastic collisions, freeing loosely bound outer-shell electrons. Because secondary electrons have very low kinetic energies (typically below $50\text{ eV}$), only those generated within a few nanometres of the surface can escape into the vacuum. The escape yield is strongly governed by local surface tilt, curvature, and edges, making secondary electron imaging the primary operational mode for revealing high-resolution surface topography, morphology, and texture.
 
-- **Characteristic X-rays:** When an energetic beam electron ejects an inner-shell electron, an electron from a higher orbital drops into the vacancy, emitting an X-ray photon with an energy precisely equal to the quantum difference between the two shells. Because these energy levels are unique to each element, coupling an SEM with an **Energy-Dispersive X-ray Spectroscopy (EDS)** detector enables elemental identification and chemical mapping. Supplementary techniques, such as Electron Backscatter Diffraction (EBSD), can be paired with SEM to resolve crystallographic phase and orientation.
+**Backscattered electrons**
+
+Backscattered electrons (BSE) are incident primary electrons deflected backward out of the specimen at large angles through predominantly elastic collisions with atomic nuclei. They retain a significant fraction of their initial primary beam energy and escape from deeper within the interaction volume than secondary electrons. Because heavier atomic nuclei (higher atomic number, $Z$) possess a greater positive nuclear charge, they deflect electrons backward much more effectively. Regions of higher average $Z$ yield more backscattered electrons and appear brighter under identical detector conditions, providing compositional ($Z$-contrast) alongside macro-topography.
+
+**Characteristic X-rays**
+
+Characteristic X-rays are emitted when an energetic beam electron ejects an inner-shell electron, and an electron from a higher orbital drops into the vacancy, releasing an X-ray photon with an energy precisely equal to the quantum difference between the two shells. Because these energy levels are unique to each element, coupling an SEM with an Energy-Dispersive X-ray Spectroscopy (EDS) detector enables elemental identification and chemical mapping. Supplementary techniques, such as Electron Backscatter Diffraction (EBSD), can be paired with SEM to resolve crystallographic phase and orientation.
 
 ![Backscattered electron diagram showing an incident primary electron deflected at a large angle by an atomic nucleus.](/notes/cse/s1/chemistry/module-3/assets/page-055-image-2-structured.svg)
+
 *Figure 12.2: Elastic scattering of a primary electron by an atomic nucleus to produce a backscattered electron.*
 
 > **Watch out.** Backscattered electrons originate predominantly from *elastic* nuclear scattering, not inelastic collisions. Furthermore, all elements backscatter electrons to some degree; higher-$Z$ elements simply produce a higher backscatter yield rather than being the exclusive source of BSEs.
+
+### Comparison of emitted signals
 
 | Signal | Origin / Mechanism | Escape Depth | Primary Information Provided |
 | :--- | :--- | :--- | :--- |
@@ -1342,6 +1477,7 @@ When primary beam electrons penetrate a solid target, they undergo multiple elas
 An SEM column operates under high vacuum ($10^{-4}\text{ to }10^{-7}\text{ Pa}$) to prevent ambient gas molecules from scattering the electron beam, attenuating emitted signals, or degrading the electron gun filament.
 
 ![Schematic diagram of a Scanning Electron Microscope column showing the electron source, anode, condenser lens, scan coils, objective lens, sample, and secondary electron detector.](/notes/cse/s1/chemistry/module-3/assets/page-056-image-1-structured.svg)
+
 *Figure 12.3: Schematic layout of a scanning electron microscope.*
 
 The primary components and operating sequence of an SEM include:
@@ -1357,11 +1493,19 @@ The primary components and operating sequence of an SEM include:
 
 ---
 
-### Sample preparation and operating capabilities
+### Sample preparation and capabilities
 
-- **Conductive coating:** Under high vacuum, electrically insulating specimens accumulate negative surface charges from the incident beam, inducing bright glare streaks, beam deflection, and image distortion. Non-conducting samples are typically coated with an ultra-thin ($2\text{--}10\text{ nm}$) conductive film of gold, platinum, or carbon via sputter deposition or thermal evaporation.
-- **Low-vacuum / Environmental SEM:** Heavy-metal coatings can mask ultra-fine nanoscale features or produce overlapping X-ray emission peaks during EDS analysis. Operating in a variable-pressure or environmental SEM (ESEM) introduces a low-pressure gas environment into the chamber, which naturally dissipates surface charge and allows examination of uncoated or hydrated specimens.
-- **Specimen dehydration:** Conventional high-vacuum SEM requires biological and wet specimens to undergo careful chemical fixation, critical-point drying, or cryo-fixation to avoid rapid outgassing, structural collapse, and chamber contamination.
+**Conductive coating**
+
+Under high vacuum, electrically insulating specimens accumulate negative surface charges from the incident beam, inducing bright glare streaks, beam deflection, and image distortion. Non-conducting samples are typically coated with an ultra-thin ($2\text{--}10\text{ nm}$) conductive film of gold, platinum, or carbon via sputter deposition or thermal evaporation.
+
+**Environmental SEM**
+
+Environmental SEM (ESEM) and variable-pressure modes introduce a low-pressure gas environment into the chamber to naturally dissipate surface charge. This permits examination of uncoated or hydrated specimens when heavy-metal coatings could obscure fine nanoscale features or produce overlapping X-ray emission peaks during EDS analysis.
+
+**Specimen dehydration**
+
+Specimen dehydration is required under conventional high-vacuum SEM for biological and wet specimens. These samples undergo chemical fixation, critical-point drying, or cryo-fixation to prevent rapid outgassing, structural collapse, and chamber contamination.
 
 Modern field-emission SEMs achieve sub-nanometre spatial resolution, continuously variable magnifications from $10\times$ up to over $500{,}000\times$, and an exceptional depth of focus that keeps rough, non-planar surfaces in sharp focus across wide fields of view.
 
@@ -1381,6 +1525,8 @@ Modern field-emission SEMs achieve sub-nanometre spatial resolution, continuousl
 
 ---
 
+
+
 ### Applications
 
 - **Materials science and metallurgy:** Inspecting crystal grains, secondary precipitate phases, grain boundary segregation, corrosion pits, and differentiating between ductile dimple fracture and brittle cleavage surfaces.
@@ -1397,6 +1543,8 @@ Modern field-emission SEMs achieve sub-nanometre spatial resolution, continuousl
 
 2. **Question:** Why is an insulating ceramic specimen often coated with carbon instead of gold prior to qualitative and quantitative EDS analysis?
    **Answer:** Although both carbon and gold mitigate surface charging, gold produces strong characteristic $M$- and $L$-shell X-ray peaks that can overlap and mask characteristic peaks of common transition metals and light elements. Gold also exhibits higher X-ray absorption. Carbon introduces a single low-energy $K\alpha$ line ($0.277\text{ keV}$), leaving the rest of the analytical spectrum free from interference for heavier analytes.
+
+---
 
 ---
 
@@ -1422,7 +1570,7 @@ Modern field-emission SEMs achieve sub-nanometre spatial resolution, continuousl
 
 ---
 
-### Comparison of Analytical Techniques
+### Analytical Techniques Overview
 
 | Technique | Probe / Perturbation | Physical Property Measured | Primary Analytical Information |
 | :--- | :--- | :--- | :--- |
@@ -1433,7 +1581,7 @@ Modern field-emission SEMs achieve sub-nanometre spatial resolution, continuousl
 
 ---
 
-### Rapid-Retrieval Questions and Answers
+### Rapid-Retrieval Questions
 
 1. **Why is Raman spectroscopy not an emission spectrum?**  
    Raman spectroscopy measures the **inelastic scattering** of incident photons following an induced molecular polarization change, whereas emission spectroscopy measures radiation emitted when an electronically or vibrationally excited state spontaneously relaxes to a lower energy state.
@@ -1474,6 +1622,7 @@ Modern field-emission SEMs achieve sub-nanometre spatial resolution, continuousl
 ### Numerical Practice Problems
 
 #### Problem 1: Absorbance from Percent Transmittance
+
 A solution placed in a spectrophotometer shows a percentage transmittance of $25\%$. Calculate its absorbance.
 
 1. Convert percentage transmittance to fractional transmittance $T$:
@@ -1483,6 +1632,7 @@ A solution placed in a spectrophotometer shows a percentage transmittance of $25
    $$A = -\log_{10} T = -\log_{10}(0.25) = \log_{10}(4) \approx 0.6021$$
 
 #### Problem 2: Concentration Determination via Beer–Lambert Law
+
 A solution exhibits an absorbance of $0.60$ in a cuvette of path length $2.0\text{ cm}$ at a wavelength where the molar absorptivity is $150\text{ L mol}^{-1}\text{cm}^{-1}$. Calculate the molar concentration of the solution.
 
 1. Isolate concentration $c$ from the Beer–Lambert law ($A = \varepsilon c l$):
@@ -1492,6 +1642,7 @@ A solution exhibits an absorbance of $0.60$ in a cuvette of path length $2.0\tex
    $$c = \frac{0.60}{(150\text{ L mol}^{-1}\text{cm}^{-1})(2.0\text{ cm})} = \frac{0.60}{300}\text{ mol L}^{-1} = 2.0 \times 10^{-3}\text{ M}$$
 
 #### Problem 3: Two-Point Standard Ratio Analysis
+
 A standard solution of a coloured complex with concentration $20.0\text{ mg L}^{-1}$ gives an absorbance of $0.40$ at $\lambda_{\max}$. Under identical experimental conditions and path length, an unknown solution of the same complex gives an absorbance of $0.25$. Calculate the concentration of the unknown solution.
 
 1. Establish proportionality between absorbance and concentration under identical cell parameters:
@@ -1501,6 +1652,7 @@ A standard solution of a coloured complex with concentration $20.0\text{ mg L}^{
    $$c_2 = 20.0\text{ mg L}^{-1} \times \left(\frac{0.25}{0.40}\right) = 12.5\text{ mg L}^{-1}$$
 
 #### Problem 4: Vibrational Degrees of Freedom
+
 Calculate the total number of fundamental vibrational modes for:
 1. Linear carbon dioxide ($\text{CO}_2$, $N=3$)
 2. Bent water ($\text{H}_2\text{O}$, $N=3$)
@@ -1512,6 +1664,7 @@ Calculate the total number of fundamental vibrational modes for:
   $$\text{Modes} = 3N - 6 = 3(3) - 6 = 3\text{ modes}$$
 
 #### Problem 5: Dielectric Dissipation Factor
+
 During a DETA experiment at a fixed frequency and temperature, a polymer sample exhibits a relative permittivity $\varepsilon' = 5.0$ and a dielectric loss factor $\varepsilon'' = 0.15$. Calculate the dissipation factor ($\tan\delta$).
 
 1. Apply the dissipation factor relation:

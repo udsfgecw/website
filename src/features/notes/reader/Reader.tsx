@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, BookOpen, ChevronDown } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, Printer } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import "katex/dist/katex.min.css";
 import "./notes.css";
@@ -214,9 +214,19 @@ export default function Reader({ notes }: { notes: NotesModule }) {
           <h1 className="mt-6 max-w-[22ch] text-[length:clamp(2.2rem,5vw,4.2rem)] leading-[1.05] font-semibold tracking-[-0.045em] text-balance">
             {notes.displayHeading ?? <>{notes.course}.{" "}<span className="text-ink/30">{notes.module}, {notes.summary.toLowerCase()}.</span></>}
           </h1>
-          <p className="mt-6 text-[0.95rem] text-ink-2">
-            {notes.code} · {total} {unit}s · {saved ? "Your place is saved in this browser" : "This browser can’t save your place"}
-          </p>
+          <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+            <p className="text-[0.95rem] text-ink-2">
+              {notes.code} · {total} {unit}s · {saved ? "Your place is saved in this browser" : "This browser can’t save your place"}
+            </p>
+            <button
+              type="button"
+              onClick={() => window.print()}
+              className="print:hidden inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-[0.85rem] font-medium text-ink shadow-2xs transition-colors hover:border-ink hover:bg-paper"
+            >
+              <Printer size={15} aria-hidden="true" />
+              Print notes
+            </button>
+          </div>
           {nav && (
             <nav aria-label="Course navigation" className="mt-7 flex flex-wrap items-center gap-2 pt-4 border-t border-line/60">
               {nav.subject.syllabusHref && (

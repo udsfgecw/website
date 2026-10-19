@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { ArrowDownToLine, ArrowUpToLine, ChevronLeft, ChevronRight, Settings, X } from "lucide-react";
+import { ArrowDownToLine, ArrowUpToLine, ChevronLeft, ChevronRight, Printer, Settings, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { chapterFor, type NotesModule } from "../types";
 import { LEADINGS, TEXT_SIZES, WIDTHS, type Prefs } from "./readingPlace";
@@ -115,6 +115,9 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
               </button>
               <button type="button" className={pill} disabled={page >= total} onClick={() => go(page + 1)}>
                 Next {unit} <ChevronRight size={16} aria-hidden="true" />
+              </button>
+              <button type="button" className={cn(pill, "col-span-2")} onClick={() => window.print()}>
+                <Printer size={16} aria-hidden="true" /> Print notes
               </button>
             </div>
             <label className="mt-3 flex items-center justify-between gap-3 text-[0.85rem] text-ink-2">
