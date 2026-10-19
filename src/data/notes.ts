@@ -152,10 +152,6 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           modules: [],
         },
         {
-          name: "Digital 101", course: "Skill Enhancement Course: Digital 101 (NASSCOM)", code: "UCSEM129", syllabusHref: "/notes/cse/s1/digital-101/syllabus", href: "/notes/cse/s1/digital-101",
-          modules: [],
-        },
-        {
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",
           modules: [
             { name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: ELECTRICAL_MODULE_1_PATH },

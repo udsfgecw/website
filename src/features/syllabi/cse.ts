@@ -3,7 +3,6 @@ import type { Chapter, NotesModule, NotesPage } from "@/features/notes/types";
 import gmest103 from "@/features/syllabi/generated/GMEST103.json";
 import uchwt127 from "@/features/syllabi/generated/UCHWT127.json";
 import uchut128 from "@/features/syllabi/generated/UCHUT128.json";
-import ucsem129 from "@/features/syllabi/generated/UCSEM129.json";
 
 type Topic = { title: string; subtopics: string[] };
 type Module = { title: string; hours: number; topics: Topic[] };
@@ -184,7 +183,6 @@ const courses: Record<string, Course> = {
   GMEST103: gmest103,
   UCHWT127: uchwt127,
   UCHUT128: uchut128,
-  UCSEM129: ucsem129,
 };
 
 const markdownList = (items: string[]) => items.map((item, index) => `${index + 1}. ${item}`).join("\n");
