@@ -187,10 +187,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
             ))}
           </nav>
           <h1 className="mt-6 max-w-[22ch] text-[length:clamp(2.2rem,5vw,4.2rem)] leading-[1.05] font-semibold tracking-[-0.045em] text-balance">
-            {notes.course}.{" "}
-            <span className="text-ink/30">
-              {notes.module}, {notes.summary.toLowerCase()}.
-            </span>
+            {notes.displayHeading ?? <>{notes.course}.{" "}<span className="text-ink/30">{notes.module}, {notes.summary.toLowerCase()}.</span></>}
           </h1>
           <p className="mt-6 text-[0.95rem] text-ink-2">
             {notes.code} · {total} pages · {saved ? "Your place is saved in this browser" : "This browser can’t save your place"}
@@ -219,10 +216,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
               style={{ fontSize: size, lineHeight: LEADING[prefs.leading], maxWidth: WIDTH[prefs.width], fontFamily: prefs.font === "serif" ? SERIF : undefined }}
             >
               {notes.pages.map((p) => (
-                <section key={p.number} id={pageAnchor(p.number)} className="border-b border-line pb-12 not-first:pt-12 last:border-b-0">
-                  <p className="label mb-6 text-ink-2">
-                    Page {p.number} of {total}
-                  </p>
+                <section key={p.number} id={pageAnchor(p.number)}>
                   <PageMarkdown content={p.content} />
                 </section>
               ))}
