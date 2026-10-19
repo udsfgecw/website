@@ -45,6 +45,14 @@ const modules = {
     const { electricalmodule1: notes } = await import("@/features/notes/electrical-module-1");
     return { default: () => <ModuleNotesPage notes={notes} /> };
   }),
+  "/notes/cse/s1/electrical/module-2": lazy(async () => {
+    const { electricalmodule2: notes } = await import("@/features/notes/electrical-module-2");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/electrical/module-3": lazy(async () => {
+    const { electricalmodule3: notes } = await import("@/features/notes/electrical-module-3");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
   "/notes/cse/s1/python/module-1": lazy(async () => {
     const { pythonmodule1: notes } = await import("@/features/notes/python-module-1");
     return { default: () => <ModuleNotesPage notes={notes} /> };

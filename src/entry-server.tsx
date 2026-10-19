@@ -16,6 +16,8 @@ import { chemistrymodule2 } from "./features/notes/chemistry-module-2";
 import { chemistrymodule3 } from "./features/notes/chemistry-module-3";
 import { chemistrymodule4 } from "./features/notes/chemistry-module-4";
 import { electricalmodule1 } from "./features/notes/electrical-module-1";
+import { electricalmodule2 } from "./features/notes/electrical-module-2";
+import { electricalmodule3 } from "./features/notes/electrical-module-3";
 import { pythonmodule1 } from "./features/notes/python-module-1";
 import { pythonmodule2 } from "./features/notes/python-module-2";
 import { pythonmodule3 } from "./features/notes/python-module-3";
@@ -61,6 +63,8 @@ export const pages: StaticPage[] = [
   { url: chemistrymodule3.basePath, file: fileFor(chemistrymodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: chemistrymodule4.basePath, file: fileFor(chemistrymodule4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule1.basePath, file: fileFor(electricalmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: electricalmodule2.basePath, file: fileFor(electricalmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: electricalmodule3.basePath, file: fileFor(electricalmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule1.basePath, file: fileFor(pythonmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule2.basePath, file: fileFor(pythonmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule3.basePath, file: fileFor(pythonmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
