@@ -69,6 +69,7 @@ export default function App() {
           <Route path="/notes/cse/s1/python/module-2/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/python/module-3/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/python/module-4/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/maths/module-1/:page?" element={<ImportedModulePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

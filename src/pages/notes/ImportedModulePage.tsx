@@ -41,6 +41,14 @@ const modules = {
     const { pythonmodule4: notes } = await import("@/features/notes/python-module-4");
     return { default: () => <ModuleNotesPage notes={notes} /> };
   }),
+  "/notes/ece/s1/maths/module-1": lazy(async () => {
+    const { electricalMathsModule1 } = await import("@/features/notes/electrical-maths-module-1");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule1("ece")} /> };
+  }),
+  "/notes/eee/s1/maths/module-1": lazy(async () => {
+    const { electricalMathsModule1 } = await import("@/features/notes/electrical-maths-module-1");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule1("eee")} /> };
+  }),
 };
 
 export default function ImportedModulePage() {

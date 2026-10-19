@@ -54,6 +54,16 @@ const semester = (n: number, subjects: SubjectNotes[] = []): Semester => ({ id: 
 
 const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
   {
+    name: "Mathematics",
+    course: "Mathematics for Electrical Science and Physical Science 1",
+    code: "GYMAT101",
+    syllabusHref: `/notes/${branchId}/s1/maths/syllabus`,
+    href: `/notes/${branchId}/s1/maths`,
+    modules: [
+      { name: "Module 1", detail: "Linear systems, matrix rank, eigenvalues and diagonalization", href: `/notes/${branchId}/s1/maths/module-1` },
+    ],
+  },
+  {
     name: "Chemistry",
     course: "Chemistry for Electrical Science",
     code: "GXCYT122",

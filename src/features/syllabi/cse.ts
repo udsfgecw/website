@@ -11,6 +11,38 @@ type Course = {
 };
 
 const courses: Record<string, Course> = {
+  GYMAT101: {
+    objectives: [
+      "Use matrix methods to analyze and solve systems of linear equations.",
+      "Apply ordinary differential equations, Laplace transforms, and Fourier series to engineering problems.",
+    ],
+    modules: [
+      { title: "Matrices and linear systems", hours: 9, topics: [
+        { title: "Solving linear systems", subtopics: ["Gaussian elimination", "Row echelon form", "Linear independence", "Rank of a matrix", "Existence and uniqueness of solutions (without proof)"] },
+        { title: "Eigenvalues and diagonalization", subtopics: ["The matrix eigenvalue problem", "Finding eigenvalues and eigenvectors", "Diagonalization of matrices"] },
+      ] },
+      { title: "Second-order ordinary differential equations", hours: 9, topics: [
+        { title: "Homogeneous equations", subtopics: ["Second-order homogeneous linear ODEs", "Superposition principle and general solution", "Constant-coefficient equations", "Initial-value problems"] },
+        { title: "Non-homogeneous equations", subtopics: ["General and particular solutions", "Undetermined coefficients for exponential, polynomial, sine, cosine, and exponential-trigonometric forcing terms", "Initial-value problems", "Variation of parameters for second-order equations"] },
+      ] },
+      { title: "Laplace transforms", hours: 9, topics: [
+        { title: "Transform methods", subtopics: ["Laplace and inverse Laplace transforms", "Linearity and first shifting theorem", "Transforms of derivatives", "Solving second-order constant-coefficient IVPs with initial conditions at t = 0"] },
+        { title: "Step and impulse functions", subtopics: ["Unit step function and second shifting theorem", "Dirac delta function and its transform", "Initial-value problems involving step and delta functions are excluded"] },
+        { title: "Convolution", subtopics: ["Convolution theorem (without proof)", "Using convolution to find inverse transforms of products"] },
+      ] },
+      { title: "Taylor and Fourier series", hours: 9, topics: [
+        { title: "Taylor series", subtopics: ["Taylor series representation (without proof)", "Maclaurin series representation"] },
+        { title: "Fourier series", subtopics: ["Euler formulas", "Dirichlet conditions and convergence", "Fourier series for 2π-periodic and 2l-periodic functions", "Half-range sine series", "Half-range cosine series"] },
+      ] },
+    ],
+    outcomes: [
+      "Solve linear systems and analyze matrices using rank, eigenvalues, eigenvectors, and diagonalization.",
+      "Solve homogeneous and non-homogeneous second-order linear ODEs and their initial-value problems.",
+      "Apply Laplace transforms, shifting theorems, and convolution to transform problems and inverse transforms.",
+      "Represent functions using Taylor, Maclaurin, and Fourier series, including half-range expansions.",
+    ],
+    cie: ["Attendance — 5 marks", "Assignment or microproject — 15 marks", "Two written internal examinations — 10 marks each"],
+  },
   GAMAT101: {
     objectives: ["Use calculus to study functions of several variables, identify extrema, and solve optimization problems."],
     modules: [
