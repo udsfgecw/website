@@ -146,10 +146,6 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           modules: [{ name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH }],
         },
         {
-          name: "Life Skills and Professional Communication", course: "Life Skills and Professional Communication", code: "UCHUT128", syllabusHref: "/notes/cse/s1/life-skills/syllabus", href: "/notes/cse/s1/life-skills",
-          modules: [],
-        },
-        {
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",
           modules: [
             { name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: ELECTRICAL_MODULE_1_PATH },
