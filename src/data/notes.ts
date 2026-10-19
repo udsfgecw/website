@@ -144,10 +144,6 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           modules: [{ name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH }],
         },
         {
-          name: "Health and Wellness", course: "Health and Wellness", code: "UCHWT127", syllabusHref: "/notes/cse/s1/wellness/syllabus", href: "/notes/cse/s1/wellness",
-          modules: [],
-        },
-        {
           name: "Life Skills and Professional Communication", course: "Life Skills and Professional Communication", code: "UCHUT128", syllabusHref: "/notes/cse/s1/life-skills/syllabus", href: "/notes/cse/s1/life-skills",
           modules: [],
         },
