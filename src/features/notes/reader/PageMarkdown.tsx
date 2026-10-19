@@ -67,7 +67,10 @@ const components: Components = {
     );
   },
   img({ src, alt }) {
-    const moduleDiagram = typeof src === "string" && /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src);
+    const moduleDiagram = typeof src === "string" && (
+      /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src)
+      || /^\/notes\/cse\/s1\/chemistry\/module-1\/assets\/.*-clean\.webp$/.test(src)
+    );
     const dimensions = typeof src === "string" ? diagramDimensions[src] : undefined;
     return <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
   },

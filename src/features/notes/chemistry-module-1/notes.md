@@ -585,7 +585,7 @@ class
 
 5. It can be used in coloured, turbid and colloidal solutions
 
-![Diagram of a glass electrode showing internal silver wire, AgCl coating, internal solution, and glass bubble.](/notes/cse/s1/chemistry/module-1/assets/page-014-image-1-source.png)
+![Glass electrode cross-section showing the Ag/AgCl electrode, internal HCl solution, and complete thin glass bulb](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-clean.webp)
 
 **Determination of pH by using glass electrode**
 
@@ -619,7 +619,7 @@ This equation has the form Y= C+mX the equation of a straight line having Y inte
 
 The constants C and m can be determined by calibrating the pHmeter with two buffer solutions of known pH.The intercept $\text{C} = \text{E}^0_\text{G} - 0.2422$ and the slope is -0.0591 at $25^0\text{C}$. The pH of the test solution can be calculated by noting the Ecell with test solution and knowing the values of C and m.
 
-![Experimental setup for determination of pH using glass electrode connected to a voltmeter, with a Calomel electrode and a glass electrode immersed in a solution of unknown pH.](/notes/cse/s1/chemistry/module-1/assets/page-015-image-1-source.png)
+![pH measurement setup with a high-impedance meter, calomel reference electrode, and glass electrode immersed in the unknown solution](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-ph-clean.webp)
 
 **Determination of pH using glass electrode**
 
@@ -730,7 +730,7 @@ $$\text{Li}_x\text{C}_G + \text{Li}_{(1-x)}\text{MO}_2 \rightarrow \text{LiMO}_2
 
 **During discharging the Li cell is represented as,**
 
-![Diagram of a discharging lithium-ion cell](/notes/cse/s1/chemistry/module-1/assets/page-017-image-1-source.png)
+![Lithium-ion cell during charging and discharging, showing electrode polarity and lithium-ion flow in each mode](/notes/cse/s1/chemistry/module-1/assets/lithium-ion-charge-discharge-clean.webp)
 
 **Advantages**
 
@@ -796,7 +796,7 @@ $\text{2H}_2(\text{g}) \rightarrow 4\text{H}^+(\text{aq}) + 4\text{e}^-$ (oxidat
 $\text{O}_2(\text{g}) + 4\text{H}^+(\text{aq}) + 4\text{e}^- \rightarrow 2\text{H}_2\text{O}(\text{l})$ (reduction of oxygen)
 **Overall reaction: $2\text{H}_2(\text{g}) + \text{O}_2(\text{g}) \rightarrow 2\text{H}_2\text{O}(\text{l})$**
 
-![Diagram of a Hydrogen-Oxygen Fuel Cell](/notes/cse/s1/chemistry/module-1/assets/page-019-image-1-source.png)
+![Acid hydrogen-oxygen fuel cell showing gas inlets, electron and proton flow, water outlet, and electrode reactions](/notes/cse/s1/chemistry/module-1/assets/hydrogen-oxygen-fuel-cell-clean.webp)
 
 **Advantages**
 
@@ -1118,7 +1118,7 @@ This method requires large amount of current. As a result of corrosion an electr
 
 **An impressed current is applied in opposite direction to neutralize corrosion current and convert the corroding metal from anode to cathode.** Usually impressed current is derived from a battery or DC source with an insoluble anode like graphite or silica
 
-![Schematic diagram of impressed current cathodic protection system](/notes/cse/s1/chemistry/module-1/assets/page-027-image-1-source.png)
+![Comparison of sacrificial magnesium anode protection and impressed current protection with a DC source and graphite anode](/notes/cse/s1/chemistry/module-1/assets/cathodic-protection-clean.webp)
 
 **Applications**
 
@@ -1366,7 +1366,7 @@ $\rightarrow$ Generally anode & cathode are in different container
 
 * Draw Daniell cell
 
-![Diagram of a Daniell cell showing two half-cells connected by a salt bridge and a voltmeter](/notes/cse/s1/chemistry/module-1/assets/page-035-image-1-source.png)
+![Diagram of a Daniell cell showing two half-cells connected by a salt bridge and a voltmeter](/notes/cse/s1/chemistry/module-1/assets/page-003-image-1.png)
 
 $\rightarrow$ Generally anode & cathode are in same or different container.
 
@@ -1892,7 +1892,7 @@ ELECTRODES
 
 => Standard Hydrogen electrode.
 
-![Diagram of Standard Hydrogen Electrode (SHE)](/notes/cse/s1/chemistry/module-1/assets/page-052-image-1-source.png)
+![Diagram of Standard Hydrogen Electrode (SHE)](/notes/cse/s1/chemistry/module-1/assets/page-011-image-1.png)
 
 => It is an gas electrode.
 
@@ -1926,7 +1926,7 @@ $$H^+ / H_2 / Pt .$$
 
 Saturated calomel electrode.
 
-![Diagram of a saturated calomel electrode showing mercury, platinum wire, KCl solution, and outer glass jacket with side arms.](/notes/cse/s1/chemistry/module-1/assets/page-053-image-1-source.png)
+![Diagram of a saturated calomel electrode showing mercury, platinum wire, KCl solution, and outer glass jacket with side arms.](/notes/cse/s1/chemistry/module-1/assets/page-013-image-1.png)
 
 => It is metal salt ion electrode having common anion
 
@@ -1972,7 +1972,7 @@ $$\text{Glass} \mid 0.1 \text{ N HCl} \mid \text{Ag - AgCl}.$$
 
 $\Rightarrow$ A cell is developed in which glass electrode dipped in unknown solution. (PH to be determined). and is connected to a referrence electrode. (SCE)
 
-![Diagram of experimental setup for determination of pH using a glass electrode and a reference electrode](/notes/cse/s1/chemistry/module-1/assets/page-055-image-1-source.png)
+![pH measurement setup with a high-impedance meter, calomel reference electrode, and glass electrode immersed in the unknown solution](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-ph-clean.webp)
 
 * Cell representation.
 
@@ -2071,7 +2071,7 @@ eg: $H_2-O_2$ fuel cell.
 
 charging (electrolytic cell).
 
-![Diagram of an electrolytic cell for charging a lithium-ion battery](/notes/cse/s1/chemistry/module-1/assets/page-059-image-1-source.png)
+![Lithium-ion cell during charging and discharging, showing electrode polarity and lithium-ion flow in each mode](/notes/cse/s1/chemistry/module-1/assets/lithium-ion-charge-discharge-clean.webp)
 
 $\Rightarrow$ at anode $= \text{LiCoO}_2 \longrightarrow \text{Li}_{1-x}\text{CoO}_2 + x\text{Li}^+ + x\text{e}^-\ (\text{oxd}^n)$
 
@@ -2093,7 +2093,7 @@ $\Rightarrow$ By which $\text{Co}^{3+}$ is oxidise to $\text{Co}^{4+}$ ions.
 
 Discharging. (electrochemical cell)
 
-![Diagram of an electrochemical cell during discharging showing anode, cathode, separator, voltmeter, and lithium insertion in graphite and LiCoO2](/notes/cse/s1/chemistry/module-1/assets/page-060-image-1-source.png)
+![Lithium-ion cell during charging and discharging, showing electrode polarity and lithium-ion flow in each mode](/notes/cse/s1/chemistry/module-1/assets/lithium-ion-charge-discharge-clean.webp)
 
 => at anode ($\text{oxd}^\text{n}$) = $\text{Li}_x\text{C}_6 \rightarrow \text{C}_6 + x\text{Li}^+ + x\text{e}^-$
 
@@ -2407,7 +2407,7 @@ Here the metalic structure (eg: underground pipe line, cables, ship hulls) to be
 anodic metal sacrifices and undergoes corrosion.
 Metals like Mg, Zn and Al and their alloys are used as sacrificial anodes.
 
-![Diagram showing sacrificial anode connected to a metal structure](/notes/cse/s1/chemistry/module-1/assets/page-071-image-1-source.png)
+![Comparison of sacrificial magnesium anode protection and impressed current protection with a DC source and graphite anode](/notes/cse/s1/chemistry/module-1/assets/cathodic-protection-clean.webp)
 
 ### Impressed current cathodic protection:
 
@@ -2421,7 +2421,7 @@ A direct current from a DC source is applied to an anode which is buried inside 
 
 <!-- page 69 | Electrochemistry, corrosion and materials · source page 40 -->
 
-![Schematic diagram of an electrochemical setup showing a power source, graphite anode, insulated copper wire, and a workpiece immersed in a bath.](/notes/cse/s1/chemistry/module-1/assets/page-072-image-1-source.png)
+![Comparison of sacrificial magnesium anode protection and impressed current protection with a DC source and graphite anode](/notes/cse/s1/chemistry/module-1/assets/cathodic-protection-clean.webp)
 
 Electroless plating
 ===================
@@ -2466,7 +2466,7 @@ $$\text{Cu} \longrightarrow \text{Cu}^{2+} + 2e^{-}$$
 => Reaction at cathode.
 $$\text{Cu}^{2+} + 2e^{-} \longrightarrow \text{Cu}.$$
 
-![Electrolytic cell diagram for copper plating on an iron object](/notes/cse/s1/chemistry/module-1/assets/page-074-image-1-source.png)
+![Electrolytic cell diagram for copper plating on an iron object](/notes/cse/s1/chemistry/module-1/assets/imagen-electroplating-copper.png)
 
 => Advantages & disadvantages.
 
@@ -3018,7 +3018,7 @@ $$E_{\text{Cu}^{2+}/\text{Cu}} = E_{\text{cell}} + 0.2422$$
 * Corning glass is a combination of $\text{Na}_2\text{O}$ ($22\%$) , $\text{CaO}$ ($6\%$) and $\text{SiO}_2$ ($72\%$).
 * It is widely used as $\text{pH}$ meter.
 
-![Diagram of a glass electrode](/notes/cse/s1/chemistry/module-1/assets/page-016-image-1.png)
+![Glass electrode cross-section showing the Ag/AgCl electrode, internal HCl solution, and complete thin glass bulb](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-clean.webp)
 
 * Glass electrode consists of a long glass tube with thin glass bulb.
 * The glass bulb is filled with $0.1\text{M HCl}$.
@@ -3043,7 +3043,7 @@ APPLICATIONS:
 * Determination of pH of an unknown solution using glass electrode.
   In order to measure pH of an unknown solution, the glass electrode is directly dipped into that solution and connected to a SCE through digital voltmeter. Here, glass electrode act as cathode and SCE act as anode.
 
-![Experimental setup for determination of pH using a glass electrode and a saturated calomel electrode (SCE).](/notes/cse/s1/chemistry/module-1/assets/page-017-image-1.png)
+![pH measurement setup with a high-impedance meter, calomel reference electrode, and glass electrode immersed in the unknown solution](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-ph-clean.webp)
 
 * Representation:
   $$\text{Cl}^- / \text{Hg}_2\text{Cl}_2 / \text{Hg} \parallel \text{Ag} / \text{AgCl} / 0.1\text{MHCl} / \text{glass} / \text{unknown solution.}$$
@@ -3108,7 +3108,7 @@ $$\text{LiCoO}_2 \rightarrow \text{Li}_{(1-x)}\text{CoO}_2 + x\text{Li}^+ + x\ba
 ↳ cathode:
 $$x\text{Li}^+ + x\bar{e} + \text{C} \rightarrow \text{Li}_x\text{C}$$
 
-![Diagram of a Lithium-ion cell during charging](/notes/cse/s1/chemistry/module-1/assets/page-019-image-1.png)
+![Lithium-ion cell during charging and discharging, showing electrode polarity and lithium-ion flow in each mode](/notes/cse/s1/chemistry/module-1/assets/lithium-ion-charge-discharge-clean.webp)
 
 ↳ APPLICATIONS: used in mobiles, watches, digital cameras, etc.
 
@@ -3138,7 +3138,7 @@ $\text{H}_2$ act as fuel and $\text{O}_2$ gas act as oxidant. So, it is known as
 
 ↳ CONSTRUCTION:
 
-![Diagram of H2-O2 Fuel Cell showing porous graphite electrodes, electrolyte, water outlet, and gas inlets.](/notes/cse/s1/chemistry/module-1/assets/page-020-image-1.png)
+![Acid hydrogen-oxygen fuel cell showing gas inlets, electron and proton flow, water outlet, and electrode reactions](/notes/cse/s1/chemistry/module-1/assets/hydrogen-oxygen-fuel-cell-clean.webp)
 
 ↳ Fuel cell consist of two rods of porous graphite.
 
