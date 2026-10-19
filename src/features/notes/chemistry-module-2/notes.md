@@ -1,12 +1,4 @@
-<!-- page 1 | Module 2 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 2 | Module 2 · source page 2 -->
+<!-- page 1 | Module 2 · source page 2 -->
 
 # MODULE 2
 
@@ -51,7 +43,7 @@ d. **Three dimension (3-D):** All the dimensions are outside the nanometric rang
 
 ---
 
-<!-- page 3 | Module 2 · source page 3 -->
+<!-- page 2 | Module 2 · source page 3 -->
 
 **(d) Nanopolymers or Dendrimers**
 Dendrimers are nanosized polymers built from branched units. These are tree-like molecules with defined cavities and can hide molecules in their cavities. Important application is for drug delivery.
@@ -87,7 +79,7 @@ Nanoparticles of gold and silver can be prepared by the reduction method
 
 ---
 
-<!-- page 4 | Module 2 · source page 4 -->
+<!-- page 3 | Module 2 · source page 4 -->
 
 - About $60\text{ mL}$ $\text{AgNO}_3$ solution is taken in a beaker, covered with a watch glass and heated in hot plate, then stirred using a magnetic stirrer. Add $6\text{ mL}$ of trisodium citrate drop wise to the boiling solution.
 - The beaker is then closed and kept for some time till the colour of the solution changed to a light golden colour.
@@ -124,7 +116,7 @@ Nanoparticles of gold and silver can be prepared by the reduction method
 
 ---
 
-<!-- page 5 | Module 2 · source page 5 -->
+<!-- page 4 | Module 2 · source page 5 -->
 
 - Surface area It has high surface area due to its single-atom thickness and applications in energy storage devices
 
@@ -156,7 +148,7 @@ It consists of several multiple concentric nanotube cylinders, It Shows both met
 
 ---
 
-<!-- page 6 | Module 2 · source page 6 -->
+<!-- page 5 | Module 2 · source page 6 -->
 
 Properties
 
@@ -193,7 +185,7 @@ Structure
 
 ---
 
-<!-- page 7 | Module 2 · source page 7 -->
+<!-- page 6 | Module 2 · source page 7 -->
 
 * The valencies of each carbon atom are satisfied by two single and a double bond. $C_{60}$ is also known as bulky ball as it is a spherical cluster of carbon atoms arranged 5 and 6 member rings ball shape form a of soccer
 * Carbon atom in fullerene molecule is $SP^{2} \& SP^{3}$ hybridized
@@ -229,7 +221,7 @@ Structure
 
 ---
 
-<!-- page 8 | Module 2 · source page 8 -->
+<!-- page 7 | Module 2 · source page 8 -->
 
 ### Fire retardant polymers
 
@@ -272,7 +264,7 @@ E --> B["Blended conducting polymers"]
 
 ---
 
-<!-- page 9 | Module 2 · source page 9 -->
+<!-- page 8 | Module 2 · source page 9 -->
 
 ### Conductive polymers having conjugated $\pi$ electron
 
@@ -304,7 +296,7 @@ b) n-type or reduction doping
 
 ---
 
-<!-- page 10 | Module 2 · source page 10 -->
+<!-- page 9 | Module 2 · source page 10 -->
 
 ### Extrinsically conducting polymers
 
@@ -344,7 +336,7 @@ b) n-type or reduction doping
 
 ---
 
-<!-- page 11 | Module 2 · source page 11 -->
+<!-- page 10 | Module 2 · source page 11 -->
 
 ![Chemical reaction showing the oxidative polymerization of aniline to polyaniline](/notes/cse/s1/chemistry/module-2/assets/page-011-image-1-source.png)
 
@@ -375,7 +367,7 @@ Emeraldine salt of polyaniline is highly electrically conducting.
 
 ---
 
-<!-- page 12 | Module 2 · source page 12 -->
+<!-- page 11 | Module 2 · source page 12 -->
 
 ### Properties
 
@@ -422,7 +414,7 @@ The OLED consists of following parts
 
 ---
 
-<!-- page 13 | Module 2 · source page 13 -->
+<!-- page 12 | Module 2 · source page 13 -->
 
 ![Diagram of an OLED structure showing layers 1 to 5 and recombination process](/notes/cse/s1/chemistry/module-2/assets/page-013-image-1-source.png)
 
@@ -452,7 +444,7 @@ Solar cells convert light energy directly into electricity by the principle of p
 
 ---
 
-<!-- page 14 | Module 2 · source page 14 -->
+<!-- page 13 | Module 2 · source page 14 -->
 
 ### Construction
 
@@ -487,7 +479,7 @@ Solar cells convert light energy directly into electricity by the principle of p
 
 ---
 
-<!-- page 15 | Module 2 · source page 15 -->
+<!-- page 14 | Module 2 · source page 15 -->
 
 ### Applications
 
@@ -527,7 +519,7 @@ Solar cells convert light energy directly into electricity by the principle of p
 
 ---
 
-<!-- page 16 | Module 2 · source page 16 -->
+<!-- page 15 | Module 2 · source page 16 -->
 
 **Collector**
 
@@ -569,7 +561,7 @@ In conventional computers using semiconductors, electrons represent binary state
 
 ---
 
-<!-- page 17 | Module 2 · source page 17 -->
+<!-- page 16 | Module 2 · source page 17 -->
 
 - Giant Magnetoresistance (GMR) is a phenomenon where a material's electrical resistance changes dramatically when exposed to a magnetic field. This effect is widely used in magnetic storage (eg: Magnetic random-access memory) and sensing technologies.
 - GMR spin valve sensor has improved the capacity of hard disc drive by hundred fold times.
@@ -586,15 +578,7 @@ In conventional computers using semiconductors, electrons represent binary state
 
 ---
 
-<!-- page 18 | Module 2 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 19 | Module 2 · source page 2 -->
+<!-- page 17 | Module 2 · source page 2 -->
 
 # MODULE-2
 
@@ -620,7 +604,7 @@ A). Any material having the size of 1 to 100 nano meter. are called nano materia
 
 ---
 
-<!-- page 20 | Module 2 · source page 3 -->
+<!-- page 18 | Module 2 · source page 3 -->
 
 - Nanochemistry offers the method of building objects and devices atom, by we can envision the advantages of nano devices is scientific exploration, computing, electronic and a host to other fields.
 
@@ -644,7 +628,7 @@ A). Any material having the size of 1 to 100 nano meter. are called nano materia
 
 ---
 
-<!-- page 21 | Module 2 · source page 4 -->
+<!-- page 19 | Module 2 · source page 4 -->
 
 classification of nano material.
 
@@ -676,7 +660,7 @@ $\Rightarrow$ These materials are long, but with diameter of only a few nanomete
 
 ---
 
-<!-- page 22 | Module 2 · source page 5 -->
+<!-- page 20 | Module 2 · source page 5 -->
 
 eg: Nanotubes, wires, rods.
 
@@ -706,7 +690,7 @@ eg: Bulk NM, poly crystals.
 
 ---
 
-<!-- page 23 | Module 2 · source page 6 -->
+<!-- page 21 | Module 2 · source page 6 -->
 
 classification based on commercial purpose
 
@@ -736,7 +720,7 @@ $\Rightarrow$ polymer based tree-like that have size in the nano scale.
 
 ---
 
-<!-- page 24 | Module 2 · source page 7 -->
+<!-- page 22 | Module 2 · source page 7 -->
 
 It has interior cavities and surface have numerous chain ends to perform specific chemical functions.
 
@@ -761,7 +745,7 @@ $\Rightarrow$ These are two types:
 
 ---
 
-<!-- page 25 | Module 2 · source page 8 -->
+<!-- page 23 | Module 2 · source page 8 -->
 
 2) Top down method $\Rightarrow$ starting with bulk material and breaking away to [uncertain: small parts] [illegible]
 
@@ -788,7 +772,7 @@ $$MoCl_3 + 3 NaB(Et)_3H \longrightarrow Mo + 3 NaCl + 3 B(Et)_3 + 3/2 H_2$$
 
 ---
 
-<!-- page 26 | Module 2 · source page 9 -->
+<!-- page 24 | Module 2 · source page 9 -->
 
 ## sol-gel method
 
@@ -810,7 +794,7 @@ $$MoCl_3 + 3 NaB(Et)_3H \longrightarrow Mo + 3 NaCl + 3 B(Et)_3 + 3/2 H_2$$
 
 ---
 
-<!-- page 27 | Module 2 · source page 10 -->
+<!-- page 25 | Module 2 · source page 10 -->
 
 ![Chemical reaction showing hydrolysis of a tetraalkoxysilane to silicic acid](/notes/cse/s1/chemistry/module-2/assets/page-027-image-1-source.png)
 
@@ -830,7 +814,7 @@ Poly condensation
 
 ---
 
-<!-- page 28 | Module 2 · source page 11 -->
+<!-- page 26 | Module 2 · source page 11 -->
 
 ![Chemical structure network of silica showing Si and O atoms](/notes/cse/s1/chemistry/module-2/assets/page-028-image-1-source.png)
 
@@ -856,7 +840,7 @@ G -->|Rapid evaporation| X["Xerogel"]
 
 ---
 
-<!-- page 29 | Module 2 · source page 12 -->
+<!-- page 27 | Module 2 · source page 12 -->
 
 # Applications of nanomaterials
 
@@ -881,7 +865,7 @@ G -->|Rapid evaporation| X["Xerogel"]
 
 ---
 
-<!-- page 30 | Module 2 · source page 13 -->
+<!-- page 28 | Module 2 · source page 13 -->
 
 <u>optics</u>
 
@@ -905,7 +889,7 @@ G -->|Rapid evaporation| X["Xerogel"]
 
 ---
 
-<!-- page 31 | Module 2 · source page 14 -->
+<!-- page 29 | Module 2 · source page 14 -->
 
 1) Environmental remediation
 
@@ -934,7 +918,7 @@ Reducing the size of any materials to nano $(1-100\text{ nm})$.
 
 ---
 
-<!-- page 32 | Module 2 · source page 15 -->
+<!-- page 30 | Module 2 · source page 15 -->
 
 $\Rightarrow$ surface to volume ratio will be increase.
 
@@ -962,7 +946,7 @@ $\Rightarrow$ **carbon quantum dots.**
 
 ---
 
-<!-- page 33 | Module 2 · source page 16 -->
+<!-- page 31 | Module 2 · source page 16 -->
 
 ## Applications
 
@@ -989,7 +973,7 @@ Carbon dots
 
 ---
 
-<!-- page 34 | Module 2 · source page 17 -->
+<!-- page 32 | Module 2 · source page 17 -->
 
 $\rightarrow$ It is commonly used in semiconductors, batteries,
 electronics etc...
@@ -1016,7 +1000,7 @@ $\Rightarrow$ They have potential medicinal applications as they can bind specif
 
 ---
 
-<!-- page 35 | Module 2 · source page 18 -->
+<!-- page 33 | Module 2 · source page 18 -->
 
 Nanotubes.
 
@@ -1042,7 +1026,7 @@ This may be zigzag, armchair and chiral depending on the manner in which graphen
 
 ---
 
-<!-- page 36 | Module 2 · source page 19 -->
+<!-- page 34 | Module 2 · source page 19 -->
 
 MWNT - Multi wall nano tube.
 
@@ -1066,7 +1050,7 @@ Draw the structure.
 
 ---
 
-<!-- page 37 | Module 2 · source page 20 -->
+<!-- page 35 | Module 2 · source page 20 -->
 
 ![Chemical polymerization reaction of polypyrrole](/notes/cse/s1/chemistry/module-2/assets/page-037-image-1-source.png)
 
@@ -1094,7 +1078,7 @@ E --> B["Blended conducting polymers"]
 
 ---
 
-<!-- page 38 | Module 2 · source page 21 -->
+<!-- page 36 | Module 2 · source page 21 -->
 
 1) conducting polymers having conjugated pi electrons.
 
@@ -1116,7 +1100,7 @@ $\Rightarrow$ It can be done by using lewis acids. such as $\text{FeCl}_3$ or $\
 
 ---
 
-<!-- page 39 | Module 2 · source page 22 -->
+<!-- page 37 | Module 2 · source page 22 -->
 
 N-type doping
 
@@ -1134,7 +1118,7 @@ $\Rightarrow$ polymers which are filled with conducting elements such as carbon 
 
 ---
 
-<!-- page 40 | Module 2 · source page 23 -->
+<!-- page 38 | Module 2 · source page 23 -->
 
 metal powders etc..
 
@@ -1161,15 +1145,7 @@ It can be prepared by oxidative polymerisation. (chemical method) using ammonium
 
 ---
 
-<!-- page 41 | Module 2 · source page 24 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 42 | Module 2 · source page 25 -->
+<!-- page 39 | Module 2 · source page 25 -->
 
 v) It can be used as chemo sensor.
 
@@ -1192,7 +1168,7 @@ Properties
 
 ---
 
-<!-- page 43 | Module 2 · source page 26 -->
+<!-- page 40 | Module 2 · source page 26 -->
 
 Applications
 
@@ -1211,7 +1187,7 @@ $\rightarrow$ The effectiveness of these materials depends on their ability to a
 
 ---
 
-<!-- page 44 | Module 2 · source page 27 -->
+<!-- page 41 | Module 2 · source page 27 -->
 
 IMP !) 1) physical barrier $\longrightarrow$ formation of protective
 char layer to prevent oxygen
@@ -1244,7 +1220,7 @@ $\rightarrow$ <u>Two types</u>
 
 ---
 
-<!-- page 45 | Module 2 · source page 28 -->
+<!-- page 42 | Module 2 · source page 28 -->
 
 Combustion process.
 
@@ -1270,7 +1246,7 @@ $\Rightarrow$ They cannot release or generate toxic material.
 
 ---
 
-<!-- page 46 | Module 2 · source page 29 -->
+<!-- page 43 | Module 2 · source page 29 -->
 
 eg : $\text{poly ethylene} = -(\text{CH}_2 - \text{CH}_2-)_n$
 $\text{poly propylene} = -(\underset{\text{CH}_3}{\text{CH}} - \text{CH}_2-)_n$
@@ -1302,7 +1278,7 @@ $\rightarrow$ ITO anode
 
 ---
 
-<!-- page 47 | Module 2 · source page 30 -->
+<!-- page 44 | Module 2 · source page 30 -->
 
 Diagram
 
@@ -1324,7 +1300,7 @@ $\Rightarrow$ If a hole meets an electron two things cancel out and realease a e
 
 ---
 
-<!-- page 48 | Module 2 · source page 31 -->
+<!-- page 45 | Module 2 · source page 31 -->
 
 quantum of light or a photon. This process is called recombination.
 
@@ -1349,7 +1325,7 @@ $\Rightarrow$ susceptable to water.
 
 ---
 
-<!-- page 49 | Module 2 · source page 32 -->
+<!-- page 46 | Module 2 · source page 32 -->
 
 <u>Features</u>
 
@@ -1375,15 +1351,7 @@ $\Rightarrow$ The dye serves the task of light absorption and inject the electro
 
 ---
 
-<!-- page 50 | Module 2 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 51 | Module 2 · source page 2 -->
+<!-- page 47 | Module 2 · source page 2 -->
 
 # Module-2
 
@@ -1426,7 +1394,7 @@ $\hookrightarrow$ Two dimensions are outside the nanometric range, remaining one
 
 ---
 
-<!-- page 52 | Module 2 · source page 3 -->
+<!-- page 48 | Module 2 · source page 3 -->
 
 $
 aggedright$
@@ -1464,7 +1432,7 @@ $\hookrightarrow$ Eg: Polyamidoamine.
 
 ---
 
-<!-- page 53 | Module 2 · source page 4 -->
+<!-- page 49 | Module 2 · source page 4 -->
 
 5. Biological nanomaterials:
 - These are of biological origin.
@@ -1498,7 +1466,7 @@ $$\text{TiO}_2 \xrightarrow[350^\circ\text{C}-800^\circ\text{C}]{\Delta} \text{N
 
 ---
 
-<!-- page 54 | Module 2 · source page 5 -->
+<!-- page 50 | Module 2 · source page 5 -->
 
 EXAMPLE OF REDUCTION :
 
@@ -1533,7 +1501,7 @@ $\hookrightarrow$ These orbitals hybridize together to form two half filled band
 
 ---
 
-<!-- page 55 | Module 2 · source page 6 -->
+<!-- page 51 | Module 2 · source page 6 -->
 
 PREPARATION:
 
@@ -1561,7 +1529,7 @@ APPLICATIONS:
 
 ---
 
-<!-- page 56 | Module 2 · source page 7 -->
+<!-- page 52 | Module 2 · source page 7 -->
 
 $\rightarrow$ Biomedical: Used to carry chemotherapy drugs to cancer cells, Used in biosensors.\
 $\rightarrow$ composites and coatings: Used in paint, aircraft, sport equipments, etc.\
@@ -1588,7 +1556,7 @@ $\rightarrow$ Electrical insulator, but when crystallized with alkali metals, th
 
 ---
 
-<!-- page 57 | Module 2 · source page 8 -->
+<!-- page 53 | Module 2 · source page 8 -->
 
 - Fullerenes absorb strongly in UV and moderately in visible regions of spectrum.
 
@@ -1618,7 +1586,7 @@ CARBON NANOTUBES (CNT):
 
 ---
 
-<!-- page 58 | Module 2 · source page 9 -->
+<!-- page 54 | Module 2 · source page 9 -->
 
 ↳ MWCNT classified into three:
 
@@ -1655,7 +1623,7 @@ APPLICATIONS:
 
 ---
 
-<!-- page 59 | Module 2 · source page 10 -->
+<!-- page 55 | Module 2 · source page 10 -->
 
 automotive applications.
 ↳ Research is also carried out to assess the ability of CNT for the storage of hydrogen.
@@ -1687,7 +1655,7 @@ APPLICATIONS :
 
 ---
 
-<!-- page 60 | Module 2 · source page 11 -->
+<!-- page 56 | Module 2 · source page 11 -->
 
 FIRE RETARDANT POLYMERS:
 These resist ignition and slow the spread of flames.
@@ -1725,7 +1693,7 @@ STRUCTURE OF POLYIMIDE:
 
 ---
 
-<!-- page 61 | Module 2 · source page 12 -->
+<!-- page 57 | Module 2 · source page 12 -->
 
 STRUCTURE OF POLY BENZOXAZOLE:
 
@@ -1755,7 +1723,7 @@ Ans. Fire is Free radical chain reaction, which contains $\dot{\text{H}}$, $\dot
 
 ---
 
-<!-- page 62 | Module 2 · source page 13 -->
+<!-- page 58 | Module 2 · source page 13 -->
 
 CONDUCTING POLYMERS:
 
@@ -1801,7 +1769,7 @@ INTRINSICALLY CONDUCTING POLYMER:
 
 ---
 
-<!-- page 63 | Module 2 · source page 14 -->
+<!-- page 59 | Module 2 · source page 14 -->
 
 (B) DOPED CONDUCTING POLYMER
 
@@ -1831,7 +1799,7 @@ mechanism :
 
 ---
 
-<!-- page 64 | Module 2 · source page 15 -->
+<!-- page 60 | Module 2 · source page 15 -->
 
 EXTRINSICALLY CONDUCTING POLYMERS :
 
@@ -1873,7 +1841,7 @@ $\hookrightarrow$ Preparation methods :
 
 ---
 
-<!-- page 65 | Module 2 · source page 16 -->
+<!-- page 61 | Module 2 · source page 16 -->
 
 (ii) Electrochemical Oxidation Method -
 - well odered film form of polyaniline is prepared by this method.
@@ -1909,7 +1877,7 @@ $\hookrightarrow$ Preparation methods :
 
 ---
 
-<!-- page 66 | Module 2 · source page 17 -->
+<!-- page 62 | Module 2 · source page 17 -->
 
 (ii) Electrochemical oxidation method -
 - By the electrolysis of pyrrole in aqueous acetonitrile solution using platinum electrodes and tetraethylammonium-borontetrafluoride used as supporting electrolyte.
@@ -1945,7 +1913,7 @@ or Polyfluorene.
 
 ---
 
-<!-- page 67 | Module 2 · source page 18 -->
+<!-- page 63 | Module 2 · source page 18 -->
 
 ![Diagram of an OLED structure showing cathode, emissive layer (ETL/LUMO), conductive layer (HTL/HOMO), and anode connected to a power source emitting light.](/notes/cse/s1/chemistry/module-2/assets/page-067-image-1-source.png)
 
@@ -1973,7 +1941,7 @@ Based on HOMO to LUMO transition
 
 ---
 
-<!-- page 68 | Module 2 · source page 19 -->
+<!-- page 64 | Module 2 · source page 19 -->
 
 ↳ Disadvantages :
 - Limited life time of organic molecule.
@@ -2010,7 +1978,7 @@ $\rightarrow$ It act as anode.
 
 ---
 
-<!-- page 69 | Module 2 · source page 20 -->
+<!-- page 65 | Module 2 · source page 20 -->
 
 $\rightarrow$ The electrons in dye material gets excited by absorbing energy from sunlight and inject photoelectrons to the band of semiconductor.
 
@@ -2035,7 +2003,7 @@ $\rightarrow$ The oxidised electrolyte diffuses towards cathode and get reduced.
 
 ---
 
-<!-- page 70 | Module 2 · source page 21 -->
+<!-- page 66 | Module 2 · source page 21 -->
 
 $\hookrightarrow$ Advantages:
 - light weight

@@ -1,12 +1,4 @@
-<!-- page 1 | Module 3 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 2 | Module 3 · source page 2 -->
+<!-- page 1 | Module 3 · source page 2 -->
 
 # Module - 3
 
@@ -43,7 +35,7 @@ $\hookrightarrow$ Due to the interaction, the spectrum is formed. The spectrum a
 
 ---
 
-<!-- page 3 | Module 3 · source page 3 -->
+<!-- page 2 | Module 3 · source page 3 -->
 
 • Eg: Raman Spectroscopy ; Atomic force spectroscopy .
 
@@ -78,7 +70,7 @@ $E_{\text{ele}} > E_{\text{vib}} > E_{\text{rot}} >>> E_{\text{trans}}$
 
 ---
 
-<!-- page 4 | Module 3 · source page 4 -->
+<!-- page 3 | Module 3 · source page 4 -->
 
 ![Electronic, vibrational, and rotational energy levels in an excited state](/notes/cse/s1/chemistry/module-3/assets/page-004-image-1-structured.svg)
 
@@ -110,7 +102,7 @@ BEER-LAMBERT'S LAW:
 
 ---
 
-<!-- page 5 | Module 3 · source page 5 -->
+<!-- page 4 | Module 3 · source page 5 -->
 
 ↳ The law states that, when a parallel beam of monochromatic electromagnetic radiation is passed through a coloured, dilute and homogeneous solution of known concentration, then absorbance 'A' is directly proportional to concentration of solution and thickness of the medium.
 
@@ -138,7 +130,7 @@ Beer lambert's law states that when a parallel beam of monochromatic electromagn
 
 ---
 
-<!-- page 6 | Module 3 · source page 6 -->
+<!-- page 5 | Module 3 · source page 6 -->
 
 i.e., $-\frac{dI}{dx} \propto I C$
 
@@ -174,7 +166,7 @@ Thickness $x = 2\text{ cm} = 0.2\text{ dm}$
 
 ---
 
-<!-- page 7 | Module 3 · source page 7 -->
+<!-- page 6 | Module 3 · source page 7 -->
 
 $$I_0 = 100\ ,\ I = 20$$ (% $T = 20$, means when $100\%$ light is incident, $20\%$ is transmitted).
 
@@ -204,7 +196,7 @@ $$\therefore \frac{c_1}{c_2} = \frac{\log T_1}{\log T_2}$$
 
 ---
 
-<!-- page 8 | Module 3 · source page 8 -->
+<!-- page 7 | Module 3 · source page 8 -->
 
 Q. Dye solution of concentration $0.04\text{ M}$ shows absorbance of $0.045$ at $530\text{ nm}$ while test solution of same dye solution shows $0.022$ absorbance.
 
@@ -240,7 +232,7 @@ $$C_2 = \frac{C_1 \log T_2}{\log T_1}$$
 
 ---
 
-<!-- page 9 | Module 3 · source page 9 -->
+<!-- page 8 | Module 3 · source page 9 -->
 
 $$= 50 \times \frac{\log(0.4)}{\log(0.2)}$$
 $$= 50 \times 0.56932$$
@@ -275,7 +267,7 @@ $$= 28.46\text{ ppm}$$
 
 ---
 
-<!-- page 10 | Module 3 · source page 10 -->
+<!-- page 9 | Module 3 · source page 10 -->
 
 $\lambda_{\max}$ : The wavelength at which maximum absorbance occurs.
 
@@ -310,7 +302,7 @@ DIFFERENT TYPES OF ELECTRONIC TRANSITION:
 
 ---
 
-<!-- page 11 | Module 3 · source page 11 -->
+<!-- page 10 | Module 3 · source page 11 -->
 
 3. $n \to \pi^*$ transition :
 - observed in aldehydes and ketones.
@@ -350,7 +342,7 @@ ethane
 
 ---
 
-<!-- page 12 | Module 3 · source page 12 -->
+<!-- page 11 | Module 3 · source page 12 -->
 
 (vi) Benzaldehyde : $\text{C}_6\text{H}_5-\text{CHO}$
 
@@ -389,7 +381,7 @@ D --> O["Output: A = log(I₀/I)"]
 
 ---
 
-<!-- page 13 | Module 3 · source page 13 -->
+<!-- page 12 | Module 3 · source page 13 -->
 
 ↳ Photo multiplier tube used as detector. It converts light signal to electrical signal.
 ↳ Output is a plot of Absorbance versus wavelength (uv-visible spectrum).
@@ -410,7 +402,7 @@ WORKING:
 
 ---
 
-<!-- page 14 | Module 3 · source page 14 -->
+<!-- page 13 | Module 3 · source page 14 -->
 
 APPLICATIONS OF UV- VISIBLE SPECTROSCOPY:
 
@@ -458,7 +450,7 @@ $$=\underline{4}$$
 
 ---
 
-<!-- page 15 | Module 3 · source page 15 -->
+<!-- page 14 | Module 3 · source page 15 -->
 
 For a non-linear molecule, number of modes of vibration is $3n - 6$.
 
@@ -522,7 +514,7 @@ $\therefore$ IR active.
 
 ---
 
-<!-- page 16 | Module 3 · source page 16 -->
+<!-- page 15 | Module 3 · source page 16 -->
 
 3. In plane bending vibration :
 
@@ -578,7 +570,7 @@ $\therefore$ IR active.
 
 ---
 
-<!-- page 17 | Module 3 · source page 17 -->
+<!-- page 16 | Module 3 · source page 17 -->
 
 3. Inplane bending vibration :
 
@@ -612,7 +604,7 @@ Q. CO molecule absorbs infrared frequency of $2140 \text{ cm}^{-1}$. Calculate f
 
 ---
 
-<!-- page 18 | Module 3 · source page 18 -->
+<!-- page 17 | Module 3 · source page 18 -->
 
 $$\Rightarrow \quad \mu = \frac{12 	imes 16}{12 + 16} = \frac{12 	imes 16}{28}$$
 $$= \frac{48}{7} = 6.857 \times 1.66 \times 10^{-27}\text{ kg}$$
@@ -638,7 +630,7 @@ $$= 532.89\text{ Nm}^{-1}$$
 
 ---
 
-<!-- page 19 | Module 3 · source page 19 -->
+<!-- page 18 | Module 3 · source page 19 -->
 
 # APPLICATIONS OF IR SPECTROSCOPY:
 
@@ -680,7 +672,7 @@ $p$-hydroxy phenol
 
 ---
 
-<!-- page 20 | Module 3 · source page 20 -->
+<!-- page 19 | Module 3 · source page 20 -->
 
 DIELECTRIC THERMAL ANALYSIS (DETA)
 
@@ -708,7 +700,7 @@ Principle of DETA:
 
 ---
 
-<!-- page 21 | Module 3 · source page 21 -->
+<!-- page 20 | Module 3 · source page 21 -->
 
 $
 \hookrightarrow$ Material with lower value of $\tan \delta$ is preferred as thermal insulator and capacitor applications.
@@ -744,7 +736,7 @@ E --> DA["Dielectric analyser"] --> REC["Recorder"]
 
 ---
 
-<!-- page 22 | Module 3 · source page 22 -->
+<!-- page 21 | Module 3 · source page 22 -->
 
 - Thermo couple / Temperature sensor: Used to measure temperature changes of sample.
 - Dielectric Analyser: Key component of DETA instrumentation which acts as detector and detects permittivity and dielectric loss with change in temperature.
@@ -767,7 +759,7 @@ APPLICATIONS:
 
 ---
 
-<!-- page 23 | Module 3 · source page 23 -->
+<!-- page 22 | Module 3 · source page 23 -->
 
 $\hookrightarrow$ used to study curing profile of thermosets.
 $\hookrightarrow$ used to study epoxy curing process.
@@ -792,7 +784,7 @@ $\hookrightarrow$ Emitted from the sample
 
 ---
 
-<!-- page 24 | Module 3 · source page 24 -->
+<!-- page 23 | Module 3 · source page 24 -->
 
 # INSTRUMENTATION
 
@@ -810,7 +802,7 @@ $\hookrightarrow$ Emitted from the sample
 
 ---
 
-<!-- page 25 | Module 3 · source page 25 -->
+<!-- page 24 | Module 3 · source page 25 -->
 
 WORKING:
 
@@ -838,15 +830,7 @@ APPLICATIONS
 
 ---
 
-<!-- page 26 | Module 3 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 27 | Module 3 · source page 2 -->
+<!-- page 25 | Module 3 · source page 2 -->
 
 module - 3
 
@@ -880,7 +864,7 @@ I["Interacting radiation"] --> S["Atom / molecule (sample)"] --> T["Transmitted 
 
 ---
 
-<!-- page 28 | Module 3 · source page 3 -->
+<!-- page 26 | Module 3 · source page 3 -->
 
 Different energy levels in a molecule.
 
@@ -899,7 +883,7 @@ $\Rightarrow$ The spectrum associated with electronic energy level
 
 ---
 
-<!-- page 29 | Module 3 · source page 4 -->
+<!-- page 27 | Module 3 · source page 4 -->
 
 is called uv visible spectroscopy.
 
@@ -935,7 +919,7 @@ $E_{el} > E_{vb} > E_{RT} \ggg (E_{TE})$ can be neglected.
 
 ---
 
-<!-- page 30 | Module 3 · source page 5 -->
+<!-- page 28 | Module 3 · source page 5 -->
 
 $$E_{total} = E_{ele} + E_{vib} + E_{rot}$$
 
@@ -959,7 +943,7 @@ Types of spectrum
 
 ---
 
-<!-- page 31 | Module 3 · source page 6 -->
+<!-- page 29 | Module 3 · source page 6 -->
 
 $\Rightarrow$ which arise from the transition of electrons between the atomic energy levels.
 
@@ -999,7 +983,7 @@ $$\boxed{= \log \frac{1}{T}}$$
 
 ---
 
-<!-- page 32 | Module 3 · source page 7 -->
+<!-- page 30 | Module 3 · source page 7 -->
 
 => when a parallel beam of monochromatic electromagnetic radiation is pass through an absorbing medium of given conc. $c$, the rate of decrease is intensity, $[-dI]$ of radiation, with thickness of the solution $(dx)$ is proportional to the intensity of incident radiation at that point and also the concentration of the solution.
 
@@ -1031,7 +1015,7 @@ $T \rightarrow$ Transmittance.
 
 ---
 
-<!-- page 33 | Module 3 · source page 8 -->
+<!-- page 31 | Module 3 · source page 8 -->
 
 Q What is molar absorbtion coefficient ($\varepsilon_1$) write it's unit.
 
@@ -1059,7 +1043,7 @@ Find the absorbance and molar absorption constant.
 
 ---
 
-<!-- page 34 | Module 3 · source page 9 -->
+<!-- page 32 | Module 3 · source page 9 -->
 
 A)
 
@@ -1103,7 +1087,7 @@ $$c_2 = \frac{0.022 \times 0.04}{0.045} = 0.019\text{ M} = 0.02\text{ M}$$
 
 ---
 
-<!-- page 35 | Module 3 · source page 10 -->
+<!-- page 33 | Module 3 · source page 10 -->
 
 * A 50ppm standard solution of $\text{Fe}^{3+}$ after developing red colour with ammonium thiocyanate shows a transmittance of $0.2$ at $640\text{ nm}$. while an unknown solution of $\text{Fe}^{3+}$ after developing colour with same amount ammonium thiocyanate gives transmittance of $0.4$. Find the conc. of $\text{Fe}^{3+}$ solution?
 
@@ -1125,7 +1109,7 @@ $$c_2 = \frac{+\log 0.4 \times 50}{+\log 0.2} = \text{sout}{[illegible]} \;\; 28
 
 ---
 
-<!-- page 36 | Module 3 · source page 11 -->
+<!-- page 34 | Module 3 · source page 11 -->
 
 # UV-visible spectroscopy IMP
 
@@ -1149,7 +1133,7 @@ Principle
 
 ---
 
-<!-- page 37 | Module 3 · source page 12 -->
+<!-- page 35 | Module 3 · source page 12 -->
 
 => In a molecule there are three types of electrons
 
@@ -1184,7 +1168,7 @@ $\text{eg: carboxylic acid}, \text{aldehydes}, \text{ketone}, \text{amide}, \tex
 
 ---
 
-<!-- page 38 | Module 3 · source page 13 -->
+<!-- page 36 | Module 3 · source page 13 -->
 
 $\Rightarrow \underline{n-\sigma^*}$
 
@@ -1214,7 +1198,7 @@ $$\Delta E = \frac{hc}{\lambda}$$
 
 ---
 
-<!-- page 39 | Module 3 · source page 14 -->
+<!-- page 37 | Module 3 · source page 14 -->
 
 a) buta-1, 3-diene
 
@@ -1238,7 +1222,7 @@ a)
 
 ---
 
-<!-- page 40 | Module 3 · source page 15 -->
+<!-- page 38 | Module 3 · source page 15 -->
 
 2) List out the allowed transition observed in the following molecule ?
 
@@ -1270,7 +1254,7 @@ a)
 
 ---
 
-<!-- page 41 | Module 3 · source page 16 -->
+<!-- page 39 | Module 3 · source page 16 -->
 
 Instrumentation of uv-visible spectroscopy
 
@@ -1304,7 +1288,7 @@ Components in uv-visible spectroscopy
 
 ---
 
-<!-- page 42 | Module 3 · source page 17 -->
+<!-- page 40 | Module 3 · source page 17 -->
 
 - monochromator $\rightarrow$ prism or grating
 
@@ -1325,7 +1309,7 @@ Components in uv-visible spectroscopy
 
 ---
 
-<!-- page 43 | Module 3 · source page 18 -->
+<!-- page 41 | Module 3 · source page 18 -->
 
 Applications of uv-visible spectroscopy
 
@@ -1347,7 +1331,7 @@ IR-spectroscopy / vibrational spectroscopy
 
 ---
 
-<!-- page 44 | Module 3 · source page 19 -->
+<!-- page 42 | Module 3 · source page 19 -->
 
 $\rightarrow$ principle
 
@@ -1363,7 +1347,7 @@ $\rightarrow$ By absorbing IR radiation by a molecule, vibrations will occur (ei
 
 ---
 
-<!-- page 45 | Module 3 · source page 20 -->
+<!-- page 43 | Module 3 · source page 20 -->
 
 vibrations.
 
@@ -1386,7 +1370,7 @@ $m_1 \text{ & } m_2 -$ masses of atom connected.
 
 ---
 
-<!-- page 46 | Module 3 · source page 21 -->
+<!-- page 44 | Module 3 · source page 21 -->
 
 $\rightarrow$ no. of vibrational ~~bands~~ modes in IR spectroscopy
 
@@ -1423,7 +1407,7 @@ $\rightarrow$ No change in dipole moment. IR inactive.
 
 ---
 
-<!-- page 47 | Module 3 · source page 22 -->
+<!-- page 45 | Module 3 · source page 22 -->
 
 Homonucleus diatomic molecules are IR inactive.
 
@@ -1469,7 +1453,7 @@ $= 3 \parallel$.
 
 ---
 
-<!-- page 48 | Module 3 · source page 23 -->
+<!-- page 46 | Module 3 · source page 23 -->
 
 $\rightarrow$ No. of vibrational modes of $\text{CO}_2$ & $\text{H}_2\text{O}$ . IMP
 
@@ -1519,7 +1503,7 @@ $\rightarrow$ IR active.
 
 ---
 
-<!-- page 49 | Module 3 · source page 24 -->
+<!-- page 47 | Module 3 · source page 24 -->
 
 4)
 
@@ -1558,7 +1542,7 @@ $= 3 \times 3 - 6 = 3//$.
 
 ---
 
-<!-- page 50 | Module 3 · source page 25 -->
+<!-- page 48 | Module 3 · source page 25 -->
 
 (2).
 
@@ -1600,7 +1584,7 @@ $\rightarrow$ NO change in [illegible]
 
 ---
 
-<!-- page 51 | Module 3 · source page 26 -->
+<!-- page 49 | Module 3 · source page 26 -->
 
 [illegible] $\longrightarrow$ poly nuclear.
 $\longrightarrow$ IR active.
@@ -1639,7 +1623,7 @@ C=O & \simeq 1700\text{ cm}^{-1} - 1800\text{ cm}^{-1}
 
 ---
 
-<!-- page 52 | Module 3 · source page 27 -->
+<!-- page 50 | Module 3 · source page 27 -->
 
 $NH \simeq 3200\text{ cm}^{-1} - 3400\text{ cm}^{-1}$
 $C=C \simeq 1560\text{ cm}^{-1} - 1650\text{ cm}^{-1}$
@@ -1661,7 +1645,7 @@ on dilution no change in the strength of OH bond and hydrogen bonding. because I
 
 ---
 
-<!-- page 53 | Module 3 · source page 28 -->
+<!-- page 51 | Module 3 · source page 28 -->
 
 - Para hydroxy phenol
 - inter molecular hydrogen bonding.
@@ -1682,7 +1666,7 @@ $C-C < C=C < C\equiv C$
 
 ---
 
-<!-- page 54 | Module 3 · source page 29 -->
+<!-- page 52 | Module 3 · source page 29 -->
 
 SEM (scanning electron microscopy) IMP
 
@@ -1699,7 +1683,7 @@ Principle
 
 ---
 
-<!-- page 55 | Module 3 · source page 30 -->
+<!-- page 53 | Module 3 · source page 30 -->
 
 ## secondary electron
 
@@ -1743,7 +1727,7 @@ $\Rightarrow$ It gives the information of composition and topography of the samp
 
 ---
 
-<!-- page 56 | Module 3 · source page 31 -->
+<!-- page 54 | Module 3 · source page 31 -->
 
 ![Schematic diagram of a Scanning Electron Microscope (SEM)](/notes/cse/s1/chemistry/module-3/assets/page-056-image-1-structured.svg)
 
@@ -1772,7 +1756,7 @@ sample
 
 ---
 
-<!-- page 57 | Module 3 · source page 32 -->
+<!-- page 55 | Module 3 · source page 32 -->
 
 Dielectric thermal Analysis. (DETA) IMP.
 
@@ -1792,7 +1776,7 @@ Principle
 
 ---
 
-<!-- page 58 | Module 3 · source page 33 -->
+<!-- page 56 | Module 3 · source page 33 -->
 
 Instrumentation.
 

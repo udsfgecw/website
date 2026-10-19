@@ -1,12 +1,4 @@
-<!-- page 1 | Electrochemistry, corrosion and materials · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 2 | Electrochemistry, corrosion and materials · source page 2 -->
+<!-- page 1 | Electrochemistry, corrosion and materials · source page 2 -->
 
 # MODULE 1
 
@@ -51,7 +43,7 @@ $\text{Zn} \rightarrow \text{Zn}^{2+} + 2\text{e}^-$
 
 ---
 
-<!-- page 3 | Electrochemistry, corrosion and materials · source page 3 -->
+<!-- page 2 | Electrochemistry, corrosion and materials · source page 3 -->
 
 Ion $\text{Cu/CuSO}_4$ half-cell, reduction reaction occurs. (cathode)
 
@@ -85,7 +77,7 @@ It is measure of tendency of an electrode to lose or gain electron. Tendency of 
 
 ---
 
-<!-- page 4 | Electrochemistry, corrosion and materials · source page 4 -->
+<!-- page 3 | Electrochemistry, corrosion and materials · source page 4 -->
 
 oxidation (loose electrons) is oxidation potential and tendency for reduction (gain electrons) is reduction potential $E_{\text{red}}$. $E_{\text{red}} = - E_{\text{oxd}}$
 
@@ -139,7 +131,7 @@ $R = \text{gas constant } , Q \text{ is the reaction quotient} = \text{Conc of P
 
 ---
 
-<!-- page 5 | Electrochemistry, corrosion and materials · source page 5 -->
+<!-- page 4 | Electrochemistry, corrosion and materials · source page 5 -->
 
 In a reversible cell, electrical energy is produced at the expense of decrease in free energy, and free energy is related with EMF of the cell as follows
 
@@ -199,7 +191,7 @@ where F is called Faraday which is the charge of one mole of electrons. ($\text{
 
 ---
 
-<!-- page 6 | Electrochemistry, corrosion and materials · source page 6 -->
+<!-- page 5 | Electrochemistry, corrosion and materials · source page 6 -->
 
 For a Hydrogen Electrode at $25^\circ\text{C}$ $\text{H}^+ + 1\text{e} \longrightarrow \frac{1}{2}\text{H}_2$
 
@@ -255,7 +247,7 @@ So the Nernst equation is, $\text{E}_{\text{cell}} = \text{E}^0_{\text{cell}} - 
 
 ---
 
-<!-- page 7 | Electrochemistry, corrosion and materials · source page 7 -->
+<!-- page 6 | Electrochemistry, corrosion and materials · source page 7 -->
 
 The Nernst equation for the given conditions can be written as follows;
 
@@ -311,7 +303,7 @@ Or, $\log [\text{Ag}^+] = -1.141$
 
 ---
 
-<!-- page 8 | Electrochemistry, corrosion and materials · source page 8 -->
+<!-- page 7 | Electrochemistry, corrosion and materials · source page 8 -->
 
 $$[\text{Ag}^+] = \text{antilog } (-1.141) = \mathbf{0.0722 \text{ M}}$$
 
@@ -365,7 +357,7 @@ Electrodes having negative values of standard electrode potential with respect t
 
 ---
 
-<!-- page 9 | Electrochemistry, corrosion and materials · source page 9 -->
+<!-- page 8 | Electrochemistry, corrosion and materials · source page 9 -->
 
 have tendency to undergo oxidation and act as anode. whereas electrodes having positive values have tendency to undergo reduction and act as cathode in aqueous solution.
 
@@ -418,7 +410,7 @@ Cathode is positive and the ions goes to cathode are H$^+$,Na$^+$ & K$^+$ The el
 
 ---
 
-<!-- page 10 | Electrochemistry, corrosion and materials · source page 10 -->
+<!-- page 9 | Electrochemistry, corrosion and materials · source page 10 -->
 
 At Cathode (Reduction) $2\text{H}^+ + 2\text{e} \longrightarrow \text{H}_2$
 
@@ -463,7 +455,7 @@ If it act as cathode the electrode can be represented as, $\text{H}^+(1\text{M})
 
 ---
 
-<!-- page 11 | Electrochemistry, corrosion and materials · source page 11 -->
+<!-- page 10 | Electrochemistry, corrosion and materials · source page 11 -->
 
 solution Containing these ions.
 - It cannot be used in presence of strong oxidizing and reducing agents.
@@ -487,7 +479,7 @@ E.g.: Calomel electrode, glass electrode, quinhydrone electrode
 
 ---
 
-<!-- page 12 | Electrochemistry, corrosion and materials · source page 12 -->
+<!-- page 11 | Electrochemistry, corrosion and materials · source page 12 -->
 
 Saturated calomel electrode is a secondary reference electrode. This is an example of metal -metal insoluble metal salt electrode and solution of its common ion.
 
@@ -529,7 +521,7 @@ $$E_{\text{calomel}} = E^0_{\text{calomel}} - 2.303RT / 2F \log [\text{Cl}^-]^2$
 
 ---
 
-<!-- page 13 | Electrochemistry, corrosion and materials · source page 13 -->
+<!-- page 12 | Electrochemistry, corrosion and materials · source page 13 -->
 
 $$\mathbf{E_{calomel} = E^0_{calomel} - 2.303RT / F \log[Cl^-] }$$
 
@@ -577,7 +569,7 @@ $\mathbf{E_G = EG^0 - 0.0591[pH]}$ $\text{E}_\text{G}^0$ is a constant depending
 
 ---
 
-<!-- page 14 | Electrochemistry, corrosion and materials · source page 14 -->
+<!-- page 13 | Electrochemistry, corrosion and materials · source page 14 -->
 
 class
 
@@ -621,7 +613,7 @@ $$\text{Ecell} = (\text{E}^\circ_\text{G} - 0.2422) - 0.0591\text{pH}$$
 
 ---
 
-<!-- page 15 | Electrochemistry, corrosion and materials · source page 15 -->
+<!-- page 14 | Electrochemistry, corrosion and materials · source page 15 -->
 
 This equation has the form Y= C+mX the equation of a straight line having Y intercept C and slope m,when we plot a graph between emf on the Y-axis and pH on the X-axis.
 
@@ -652,7 +644,7 @@ equation (1)-(2) gives
 
 ---
 
-<!-- page 16 | Electrochemistry, corrosion and materials · source page 16 -->
+<!-- page 15 | Electrochemistry, corrosion and materials · source page 16 -->
 
 substituting in (1)
 
@@ -710,7 +702,7 @@ $$\text{LiMO}_2 \rightarrow \text{Li}_{(1-x)}\text{MO}_2 + x\text{Li}^+ + x\text
 
 ---
 
-<!-- page 17 | Electrochemistry, corrosion and materials · source page 17 -->
+<!-- page 16 | Electrochemistry, corrosion and materials · source page 17 -->
 
 $$\text{C}_G + x\text{Li}^+ + xe^- \rightarrow \text{Li}_x \text{C}_G$$
 
@@ -750,7 +742,7 @@ $$\text{Li}_x\text{C}_G + \text{Li}_{(1-x)}\text{MO}_2 \rightarrow \text{LiMO}_2
 
 ---
 
-<!-- page 18 | Electrochemistry, corrosion and materials · source page 18 -->
+<!-- page 17 | Electrochemistry, corrosion and materials · source page 18 -->
 
 * Available in different size and shape.
 * They have no memory effect-which means that if do not have completely discharge them before recharging.
@@ -794,7 +786,7 @@ It uses hydrogen as the fuel and oxygen as the oxidant.
 
 ---
 
-<!-- page 19 | Electrochemistry, corrosion and materials · source page 19 -->
+<!-- page 18 | Electrochemistry, corrosion and materials · source page 19 -->
 
 Heat is generated during the reaction of $\text{H}_2$ and $\text{O}_2$ so cooling plates are used to maintain the temperature.
 The Electrode Reactions are
@@ -827,7 +819,7 @@ $\text{O}_2(\text{g}) + 4\text{H}^+(\text{aq}) + 4\text{e}^- \rightarrow 2\text{
 
 ---
 
-<!-- page 20 | Electrochemistry, corrosion and materials · source page 20 -->
+<!-- page 19 | Electrochemistry, corrosion and materials · source page 20 -->
 
 # CONDUCTIVITY
 
@@ -869,7 +861,7 @@ It consists of two electrode plates coated with Pt black. It is connected to Pt 
 
 ---
 
-<!-- page 21 | Electrochemistry, corrosion and materials · source page 21 -->
+<!-- page 20 | Electrochemistry, corrosion and materials · source page 21 -->
 
 ![Diagram of a Conductivity Cell showing platinum electrodes and electrolytic solution](/notes/cse/s1/chemistry/module-1/assets/page-021-image-1-source.png)
 
@@ -900,7 +892,7 @@ $0.01288 / 12.34 \times 10^{-3} = 1.043\text{ cm}^{-1}$
 
 ---
 
-<!-- page 22 | Electrochemistry, corrosion and materials · source page 22 -->
+<!-- page 21 | Electrochemistry, corrosion and materials · source page 22 -->
 
 Conductivity of given solution = $\text{conductance} \times \text{cell constant} = 560 \times 10^{-6} \times 1.043 = 583 \times 10^{-6}\text{ cm}^{-1}$
 
@@ -953,7 +945,7 @@ Direct chemical action of environment/atmosphere gases such as $\text{O}_2$, hal
 
 ---
 
-<!-- page 23 | Electrochemistry, corrosion and materials · source page 23 -->
+<!-- page 22 | Electrochemistry, corrosion and materials · source page 23 -->
 
 or Corrosion by other gases.
 
@@ -1001,7 +993,7 @@ $$\begin{array}{rll}
 
 ---
 
-<!-- page 24 | Electrochemistry, corrosion and materials · source page 24 -->
+<!-- page 23 | Electrochemistry, corrosion and materials · source page 24 -->
 
 receive some galvanic protection.
 
@@ -1045,7 +1037,7 @@ This happens when metals come into contact with water containing dissolved oxyge
 
 ---
 
-<!-- page 25 | Electrochemistry, corrosion and materials · source page 25 -->
+<!-- page 24 | Electrochemistry, corrosion and materials · source page 25 -->
 
 **Anode** $\quad\quad\quad\quad \text{Fe} \rightarrow \text{Fe}^{2+} + 2\text{e} \quad\quad \text{E}^0\text{Fe}^{2+}/\text{Fe} = -0.44\text{V}$
 
@@ -1084,7 +1076,7 @@ Galvanic series which gives real and useful information regarding corrosion beha
 
 ---
 
-<!-- page 26 | Electrochemistry, corrosion and materials · source page 26 -->
+<!-- page 25 | Electrochemistry, corrosion and materials · source page 26 -->
 
 Cathodic protection is a method of preventing a metallic object from corrosion. It is an electrochemical process in which the metal which is to be protected is forced to act as cathode.
 
@@ -1108,7 +1100,7 @@ In this method, the metallic structure which is to be is protected is connected 
 
 ---
 
-<!-- page 27 | Electrochemistry, corrosion and materials · source page 27 -->
+<!-- page 26 | Electrochemistry, corrosion and materials · source page 27 -->
 
 1. No external power is required 2. Easy to install and inexpensive 3. Minmum maintenance required
 
@@ -1146,7 +1138,7 @@ Electroplating is a process by which the coating metal is deposited on the base 
 
 ---
 
-<!-- page 28 | Electrochemistry, corrosion and materials · source page 28 -->
+<!-- page 27 | Electrochemistry, corrosion and materials · source page 28 -->
 
 passing a direct current through an electrolytic solution containing the soluble salt of the
 
@@ -1180,7 +1172,7 @@ When DC current is passed through the electrolyte electrolysis occurs and the me
 
 ---
 
-<!-- page 29 | Electrochemistry, corrosion and materials · source page 29 -->
+<!-- page 28 | Electrochemistry, corrosion and materials · source page 29 -->
 
 f the anode is made of some inert material like graphite, then electrolytic salt is added continuously in order to maintain proper coating metal ion concentration in the electrolytic bath.
 
@@ -1222,7 +1214,7 @@ Process of Electroless plating involves the following steps
 
 ---
 
-<!-- page 30 | Electrochemistry, corrosion and materials · source page 30 -->
+<!-- page 29 | Electrochemistry, corrosion and materials · source page 30 -->
 
 ### 2. Preparation of Plating bath : The plating bath should include the following
 
@@ -1266,7 +1258,7 @@ $$2\text{HCHO} + 4\text{OH}^- \rightarrow 2\text{HCOO}^- + 2\text{H}_2\text{O} +
 
 ---
 
-<!-- page 31 | Electrochemistry, corrosion and materials · source page 31 -->
+<!-- page 30 | Electrochemistry, corrosion and materials · source page 31 -->
 
 Over all reaction is
 
@@ -1321,7 +1313,7 @@ $\text{E}^0\text{Fe}^{2+}/\text{Fe}= -0,44\text{ V}$, $\text{E}0\text{Fe}^{3+}/\
 
 ---
 
-<!-- page 32 | Electrochemistry, corrosion and materials · source page 32 -->
+<!-- page 31 | Electrochemistry, corrosion and materials · source page 32 -->
 
 When an iron nail is dipped in $\text{HCl}$ two cells are developed. ($\text{Fe}^{2+}$ and $\text{Fe}^{3+}$)
 
@@ -1345,15 +1337,7 @@ In the case of $\text{Mg}$, both in acid and alkaline condition $E^0$ of $\text{
 
 ---
 
-<!-- page 33 | Electrochemistry, corrosion and materials · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 34 | Electrochemistry, corrosion and materials · source page 2 -->
+<!-- page 32 | Electrochemistry, corrosion and materials · source page 2 -->
 
 MODULE - 1
 
@@ -1374,7 +1358,7 @@ $\Rightarrow$ It is the conversion of electrical energy to chemical energy and v
 
 ---
 
-<!-- page 35 | Electrochemistry, corrosion and materials · source page 3 -->
+<!-- page 33 | Electrochemistry, corrosion and materials · source page 3 -->
 
 $\rightarrow$ Generally anode & cathode are in different container
 
@@ -1406,7 +1390,7 @@ $\Rightarrow$ complete the circuit.
 
 ---
 
-<!-- page 36 | Electrochemistry, corrosion and materials · source page 4 -->
+<!-- page 34 | Electrochemistry, corrosion and materials · source page 4 -->
 
 # ELECTRODE POTENTIAL
 
@@ -1446,7 +1430,7 @@ $\rightarrow$ These charged layers are called <u>Helmholts electrical double lay
 
 ---
 
-<!-- page 37 | Electrochemistry, corrosion and materials · source page 5 -->
+<!-- page 35 | Electrochemistry, corrosion and materials · source page 5 -->
 
 $\Rightarrow$ The potential difference associated with these charged layers are called <u>electrode potential</u>.
 
@@ -1468,15 +1452,7 @@ unit = volt.
 
 ---
 
-<!-- page 38 | Electrochemistry, corrosion and materials · source page 6 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 39 | Electrochemistry, corrosion and materials · source page 7 -->
+<!-- page 36 | Electrochemistry, corrosion and materials · source page 7 -->
 
 $\Rightarrow$ electrode with high negative electrode potential
 it can be easily oxidise and very good reducing
@@ -1510,7 +1486,7 @@ $$E^0_{\text{Zn}^{2+}/\text{Zn}} = -0.76\text{ V}$$
 
 ---
 
-<!-- page 40 | Electrochemistry, corrosion and materials · source page 8 -->
+<!-- page 37 | Electrochemistry, corrosion and materials · source page 8 -->
 
 # ASSIGNMENT
 
@@ -1538,7 +1514,7 @@ To prevent corrosion, iron coated with a layer of zinc, which is more reactive a
 
 ---
 
-<!-- page 41 | Electrochemistry, corrosion and materials · source page 9 -->
+<!-- page 38 | Electrochemistry, corrosion and materials · source page 9 -->
 
 3) designing electrochemical cell.
 
@@ -1566,7 +1542,7 @@ $$M^{n+}_{(aq)} + ne^- \longrightarrow M_{(s)}$$
 
 ---
 
-<!-- page 42 | Electrochemistry, corrosion and materials · source page 10 -->
+<!-- page 39 | Electrochemistry, corrosion and materials · source page 10 -->
 
 The free energy change associated with this electrode reaction is
 
@@ -1604,7 +1580,7 @@ $$E_{\text{elec}} = E^\circ_{\text{elec}} - \frac{RT}{nF} \ln \left[\frac{1}{[M^
 
 ---
 
-<!-- page 43 | Electrochemistry, corrosion and materials · source page 11 -->
+<!-- page 40 | Electrochemistry, corrosion and materials · source page 11 -->
 
 $$\therefore \quad \boxed{E_{\text{ele}} = E^\circ_{\text{ele}} + \frac{RT}{nF} \ln [M^{n+}]}$$
 
@@ -1630,7 +1606,7 @@ $$E_{\text{Zn}^{2+}/\text{Zn}} = E^\circ_{\text{Zn}^{2+}/\text{Zn}} + \frac{2.30
 
 ---
 
-<!-- page 44 | Electrochemistry, corrosion and materials · source page 12 -->
+<!-- page 41 | Electrochemistry, corrosion and materials · source page 12 -->
 
 calculate the electrode potential of zinc electrode the following conc. of $\text{ZnSO}_4$ solution.
 
@@ -1658,7 +1634,7 @@ $$= -0.73\text{ V}$$
 
 ---
 
-<!-- page 45 | Electrochemistry, corrosion and materials · source page 13 -->
+<!-- page 42 | Electrochemistry, corrosion and materials · source page 13 -->
 
 => electrochemical series can provide electrode potential at standard condition. [1 molar conc., $25^{\circ}\text{C}$, $1\text{ atm}$]
 
@@ -1683,7 +1659,7 @@ A) $$E_{\text{Sn}^{4+}/\text{Sn}^{2+}} = E^\circ_{\text{Sn}^{4+}/\text{Sn}^{2+}}
 
 ---
 
-<!-- page 46 | Electrochemistry, corrosion and materials · source page 14 -->
+<!-- page 43 | Electrochemistry, corrosion and materials · source page 14 -->
 
 * Calculate the single electrode potential $pt / Fe^{3+} / Fe^{2+}$ electrode at $25^\circ\text{C}$ when the concentration of $Fe^{2+}$ is $0.01\text{ molar}$ and $Fe^{3+}$ is $0.1\text{ molar}$. Given that $E^0_{Fe^{3+}/Fe^{2+}} = +0.77\text{ V}$.
 
@@ -1713,7 +1689,7 @@ E_{Al^{3+}/Al} &= E^0_{Al^{3+}/Al} + \frac{0.0591}{3} \log [Al^{3+}]\\
 
 ---
 
-<!-- page 47 | Electrochemistry, corrosion and materials · source page 15 -->
+<!-- page 44 | Electrochemistry, corrosion and materials · source page 15 -->
 
 Nernst equation for cell
 
@@ -1739,7 +1715,7 @@ $$E_{\text{cell}} = E^{\circ}_{\text{cell}} + \frac{0.0591}{n} \log \frac{[\text
 
 ---
 
-<!-- page 48 | Electrochemistry, corrosion and materials · source page 16 -->
+<!-- page 45 | Electrochemistry, corrosion and materials · source page 16 -->
 
 Imp
 
@@ -1772,7 +1748,7 @@ $$\text{Fe}^{2+} + 2e^{-} \longrightarrow \text{Fe} \cdot \times 3 \qquad 3\text
 
 ---
 
-<!-- page 49 | Electrochemistry, corrosion and materials · source page 17 -->
+<!-- page 46 | Electrochemistry, corrosion and materials · source page 17 -->
 
 $$E_{cell} = E_{cell}^\circ + \frac{0.0591}{6} \log \frac{[Fe^{2+}]^3}{[Al^{3+}]^2}$$
 
@@ -1811,7 +1787,7 @@ E_{cell} &= E_{cell}^\circ + \frac{0.0591}{n} \log \frac{(Fe^{2+})}{(Al^{3+})} \
 
 ---
 
-<!-- page 50 | Electrochemistry, corrosion and materials · source page 18 -->
+<!-- page 47 | Electrochemistry, corrosion and materials · source page 18 -->
 
 $$\text{anode} = \text{Al}^{3+} + 3e^{-} \longrightarrow \text{Al} \quad \times 2$$
 
@@ -1848,7 +1824,7 @@ E_{\text{cell}} &= 1.24 + \frac{0.0591}{2} \log \frac{(0.1)}{(0.01)} \\
 
 ---
 
-<!-- page 51 | Electrochemistry, corrosion and materials · source page 19 -->
+<!-- page 48 | Electrochemistry, corrosion and materials · source page 19 -->
 
 \*
 imp
@@ -1876,7 +1852,7 @@ $$= \underline{\underline{1.85\text{ V}}}$$
 
 ---
 
-<!-- page 52 | Electrochemistry, corrosion and materials · source page 20 -->
+<!-- page 49 | Electrochemistry, corrosion and materials · source page 20 -->
 
 ELECTRODES
 
@@ -1908,7 +1884,7 @@ $$2H^+_{(aq)} + 2e^- \longrightarrow H_{2(g)}$$
 
 ---
 
-<!-- page 53 | Electrochemistry, corrosion and materials · source page 21 -->
+<!-- page 50 | Electrochemistry, corrosion and materials · source page 21 -->
 
 => electrode representation.
 
@@ -1934,7 +1910,7 @@ Saturated calomel electrode.
 
 ---
 
-<!-- page 54 | Electrochemistry, corrosion and materials · source page 22 -->
+<!-- page 51 | Electrochemistry, corrosion and materials · source page 22 -->
 
 solution.
 
@@ -1960,7 +1936,7 @@ $$\boxed{E_{\text{glass}} = E^\circ_{\text{glass}} - 0.0591 \text{ PH}}$$
 
 ---
 
-<!-- page 55 | Electrochemistry, corrosion and materials · source page 23 -->
+<!-- page 52 | Electrochemistry, corrosion and materials · source page 23 -->
 
 * Electrod representation.
 
@@ -1982,7 +1958,7 @@ $$\parallel \underset{(\text{sat})}{\text{KCl}} \mid \text{Hg}_2\text{Cl}_2 / \t
 
 ---
 
-<!-- page 56 | Electrochemistry, corrosion and materials · source page 24 -->
+<!-- page 53 | Electrochemistry, corrosion and materials · source page 24 -->
 
 * calculation.
 
@@ -2012,7 +1988,7 @@ $\implies$ Disadvantage
 
 ---
 
-<!-- page 57 | Electrochemistry, corrosion and materials · source page 25 -->
+<!-- page 54 | Electrochemistry, corrosion and materials · source page 25 -->
 
 <u>Battery</u>
 
@@ -2040,7 +2016,7 @@ eg: $H_2-O_2$ fuel cell.
 
 ---
 
-<!-- page 58 | Electrochemistry, corrosion and materials · source page 26 -->
+<!-- page 55 | Electrochemistry, corrosion and materials · source page 26 -->
 
 # Lithium Ion battery Imp
 
@@ -2065,7 +2041,7 @@ eg: $H_2-O_2$ fuel cell.
 
 ---
 
-<!-- page 59 | Electrochemistry, corrosion and materials · source page 27 -->
+<!-- page 56 | Electrochemistry, corrosion and materials · source page 27 -->
 
 charging (electrolytic cell).
 
@@ -2087,7 +2063,7 @@ $\Rightarrow$ By which $\text{Co}^{3+}$ is oxidise to $\text{Co}^{4+}$ ions.
 
 ---
 
-<!-- page 60 | Electrochemistry, corrosion and materials · source page 28 -->
+<!-- page 57 | Electrochemistry, corrosion and materials · source page 28 -->
 
 Discharging. (electrochemical cell)
 
@@ -2109,7 +2085,7 @@ Discharging. (electrochemical cell)
 
 ---
 
-<!-- page 61 | Electrochemistry, corrosion and materials · source page 29 -->
+<!-- page 58 | Electrochemistry, corrosion and materials · source page 29 -->
 
 Definition & working.
 
@@ -2145,7 +2121,7 @@ $\rightarrow$ storage and handling.
 
 ---
 
-<!-- page 62 | Electrochemistry, corrosion and materials · source page 30 -->
+<!-- page 59 | Electrochemistry, corrosion and materials · source page 30 -->
 
 Conductance, conductivity, & measurement of conductivity
 
@@ -2176,7 +2152,7 @@ $\Rightarrow K = \frac{1}{\rho} = \frac{1}{R} \cdot \frac{l}{A}$ (S/m)
 
 ---
 
-<!-- page 63 | Electrochemistry, corrosion and materials · source page 31 -->
+<!-- page 60 | Electrochemistry, corrosion and materials · source page 31 -->
 
 Note $\Rightarrow$
 
@@ -2198,7 +2174,7 @@ A) $k = \frac{1}{\rho} = \frac{1}{R} \times \frac{l}{a}$
 
 ---
 
-<!-- page 64 | Electrochemistry, corrosion and materials · source page 32 -->
+<!-- page 61 | Electrochemistry, corrosion and materials · source page 32 -->
 
 $$\begin{aligned} &= \frac{1}{[illegible]} \times \frac{4}{10.7} \\ &= 5.94 \times 10^{-3} \text{ S cm}^{-1} \end{aligned}$$
 
@@ -2224,7 +2200,7 @@ $\Rightarrow$ conductivity of $0.1\text{ molar KCl}$
 
 ---
 
-<!-- page 65 | Electrochemistry, corrosion and materials · source page 33 -->
+<!-- page 62 | Electrochemistry, corrosion and materials · source page 33 -->
 
 # Electrochemistry & corrosion.
 
@@ -2244,7 +2220,7 @@ $\Rightarrow$ some metals like gold, platinum will exist in elemental state in n
 
 ---
 
-<!-- page 66 | Electrochemistry, corrosion and materials · source page 34 -->
+<!-- page 63 | Electrochemistry, corrosion and materials · source page 34 -->
 
 Galvanic series.
 
@@ -2282,7 +2258,7 @@ A) It is expected that Ti is corrodes faster than Ag, but Ti is less reactive th
 
 ---
 
-<!-- page 67 | Electrochemistry, corrosion and materials · source page 35 -->
+<!-- page 64 | Electrochemistry, corrosion and materials · source page 35 -->
 
 protective oxides film on their surface and
 hence their effective $E^{\circ}$ is more positive.
@@ -2300,7 +2276,7 @@ hence their effective $E^{\circ}$ is more positive.
 
 ---
 
-<!-- page 68 | Electrochemistry, corrosion and materials · source page 36 -->
+<!-- page 65 | Electrochemistry, corrosion and materials · source page 36 -->
 
 $$E_{\text{Fe}^{2+}/\text{Fe}}^\circ = -0.04\text{ V}$$
 
@@ -2329,7 +2305,7 @@ cannot involve in reaction.
 
 ---
 
-<!-- page 69 | Electrochemistry, corrosion and materials · source page 37 -->
+<!-- page 66 | Electrochemistry, corrosion and materials · source page 37 -->
 
 2) Hydrogen evolution reaction in alkaline medium
 
@@ -2362,7 +2338,7 @@ $\to$ Rusting of Iron.
 
 ---
 
-<!-- page 70 | Electrochemistry, corrosion and materials · source page 38 -->
+<!-- page 67 | Electrochemistry, corrosion and materials · source page 38 -->
 
 * why iron rods inside a cement mixture not involve in corrosion.
 
@@ -2391,7 +2367,7 @@ Here the metalic structure (eg: underground pipe line, cables, ship hulls) to be
 
 ---
 
-<!-- page 71 | Electrochemistry, corrosion and materials · source page 39 -->
+<!-- page 68 | Electrochemistry, corrosion and materials · source page 39 -->
 
 anodic metal sacrifices and undergoes corrosion.
 Metals like Mg, Zn and Al and their alloys are used as sacrificial anodes.
@@ -2408,7 +2384,7 @@ A direct current from a DC source is applied to an anode which is buried inside 
 
 ---
 
-<!-- page 72 | Electrochemistry, corrosion and materials · source page 40 -->
+<!-- page 69 | Electrochemistry, corrosion and materials · source page 40 -->
 
 ![Schematic diagram of an electrochemical setup showing a power source, graphite anode, insulated copper wire, and a workpiece immersed in a bath.](/notes/cse/s1/chemistry/module-1/assets/page-072-image-1-source.png)
 
@@ -2427,7 +2403,7 @@ $\Rightarrow$ The stability of electroless plating depends on the substrate mate
 
 ---
 
-<!-- page 73 | Electrochemistry, corrosion and materials · source page 41 -->
+<!-- page 70 | Electrochemistry, corrosion and materials · source page 41 -->
 
 $\implies$ uses.
 
@@ -2447,7 +2423,7 @@ $\implies$ copper rod as anode.
 
 ---
 
-<!-- page 74 | Electrochemistry, corrosion and materials · source page 42 -->
+<!-- page 71 | Electrochemistry, corrosion and materials · source page 42 -->
 
 => Reaction at anode
 $$\text{Cu} \longrightarrow \text{Cu}^{2+} + 2e^{-}$$
@@ -2473,15 +2449,7 @@ $$\text{Cu}^{2+} + 2e^{-} \longrightarrow \text{Cu}.$$
 
 ---
 
-<!-- page 75 | Electrochemistry, corrosion and materials · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 76 | Electrochemistry, corrosion and materials · source page 2 -->
+<!-- page 72 | Electrochemistry, corrosion and materials · source page 2 -->
 
 # Module - 1
 ## Electrochemistry and Corrosion
@@ -2510,7 +2478,7 @@ COMPARISON BETWEEN ELECTROCHEMICAL AND ELECTROLYTIC CELL.
 
 ---
 
-<!-- page 77 | Electrochemistry, corrosion and materials · source page 3 -->
+<!-- page 73 | Electrochemistry, corrosion and materials · source page 3 -->
 
 ![Daniell cell diagram showing zinc rod in ZnSO4, copper rod in CuSO4, connected by a voltmeter and salt bridge.](/notes/cse/s1/chemistry/module-1/assets/page-003-image-1.png)
 
@@ -2550,7 +2518,7 @@ It is an inverted U-shaped tube filled with gelatine or agar-agar and concentrat
 
 ---
 
-<!-- page 78 | Electrochemistry, corrosion and materials · source page 4 -->
+<!-- page 74 | Electrochemistry, corrosion and materials · source page 4 -->
 
 FUNCTIONS:
 
@@ -2573,7 +2541,7 @@ Electrode potential is measured under standard conditions (298 K, 1M electrolyti
 
 ---
 
-<!-- page 79 | Electrochemistry, corrosion and materials · source page 5 -->
+<!-- page 75 | Electrochemistry, corrosion and materials · source page 5 -->
 
 $$E_{cell}^0 = E_{cathode}^0 - E_{anode}^0$$
 
@@ -2611,7 +2579,7 @@ Nernst derived an expression for single electrode potential is known as Nernst e
 
 ---
 
-<!-- page 80 | Electrochemistry, corrosion and materials · source page 6 -->
+<!-- page 76 | Electrochemistry, corrosion and materials · source page 6 -->
 
 DERIVATION OF NERNST EQUATION:
 consider a general reduction reaction.
@@ -2638,7 +2606,7 @@ $$\therefore E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{RT}{nF} \ln \frac{1
 
 ---
 
-<!-- page 81 | Electrochemistry, corrosion and materials · source page 7 -->
+<!-- page 77 | Electrochemistry, corrosion and materials · source page 7 -->
 
 $$E_{cell} = E^\circ_{cell} - \frac{2.303 RT}{nF} \log \frac{1}{[M^{n+}]} \quad \text{--- } ①$$
 
@@ -2675,7 +2643,7 @@ $$= E^\circ_{cell} - \frac{2.303 RT}{nF} \log \frac{\frac{1}{[\text{Cu}^{2+}]}}{
 
 ---
 
-<!-- page 82 | Electrochemistry, corrosion and materials · source page 8 -->
+<!-- page 78 | Electrochemistry, corrosion and materials · source page 8 -->
 
 $$E_{cell} = E^0_{cell} - \frac{2.303RT}{nF} \log \frac{[Zn^{2+}]}{[Cu^{2+}]}$$
 
@@ -2705,7 +2673,7 @@ E_{cell} &= -0.76 - \frac{0.0591}{2} \log \frac{1}{0.01} \\
 
 ---
 
-<!-- page 83 | Electrochemistry, corrosion and materials · source page 9 -->
+<!-- page 79 | Electrochemistry, corrosion and materials · source page 9 -->
 
 Q. Calculate the EMF of a daniel cell when the concentration of $\text{Zn}^{2+} = 0.01\text{M}$ and concentration of $\text{Cu}^{2+} = 0.1\text{M}$; given that $E^0_{\text{Zn}^{2+}/\text{Zn}} = -0.76\text{V}$ and $E^0_{\text{Cu}^{2+}/\text{Cu}} = 0.34\text{V}$.
 
@@ -2756,7 +2724,7 @@ $$
 
 ---
 
-<!-- page 84 | Electrochemistry, corrosion and materials · source page 10 -->
+<!-- page 80 | Electrochemistry, corrosion and materials · source page 10 -->
 
 $$E_{cell} = E^0_{cell} -
 rac{0.0591}{n}
@@ -2805,7 +2773,7 @@ $$= -0.76 - \frac{2.303 \times 8.314 \times \overset{323}{\cancel{50}}}{2 \times
 
 ---
 
-<!-- page 85 | Electrochemistry, corrosion and materials · source page 11 -->
+<!-- page 81 | Electrochemistry, corrosion and materials · source page 11 -->
 
 $$= -0.76 - \frac{2.303 \times 8.314 \times \overset{323}{\cancel{\text{T}}}}{2 \times 9650} \log 10$$
 $$\begin{aligned}
@@ -2844,7 +2812,7 @@ WORKING:
 
 ---
 
-<!-- page 86 | Electrochemistry, corrosion and materials · source page 12 -->
+<!-- page 82 | Electrochemistry, corrosion and materials · source page 12 -->
 
 NERNST EQUATION OF SHE :
 
@@ -2879,7 +2847,7 @@ CONSTRUCTION :
 
 ---
 
-<!-- page 87 | Electrochemistry, corrosion and materials · source page 13 -->
+<!-- page 83 | Electrochemistry, corrosion and materials · source page 13 -->
 
 ![Diagram of a Calomel Electrode showing its internal structure and labeling](/notes/cse/s1/chemistry/module-1/assets/page-013-image-1.png)
 
@@ -2910,7 +2878,7 @@ $$E_{\text{calomel}} = 0.2422 - 0.0591 \log [\text{Cl}^-]$$
 
 ---
 
-<!-- page 88 | Electrochemistry, corrosion and materials · source page 14 -->
+<!-- page 84 | Electrochemistry, corrosion and materials · source page 14 -->
 
 CLASSIFICATION :
 
@@ -2942,7 +2910,7 @@ Here, $\text{Zn}$ acts as anode and SCE acts as cathode.
 
 ---
 
-<!-- page 89 | Electrochemistry, corrosion and materials · source page 15 -->
+<!-- page 85 | Electrochemistry, corrosion and materials · source page 15 -->
 
 • Representation :
 $$\text{Zn} \mid \text{Zn}^{2+} \parallel \text{Cl}^- \mid \text{Hg}_2 \text{Cl}_2 \mid \text{Hg}$$
@@ -2974,7 +2942,7 @@ $$2\text{Hg} + 2\text{Cl}^- \longrightarrow \text{Hg}_2 \text{Cl}_2 + 2\bar{e}$$
 
 ---
 
-<!-- page 90 | Electrochemistry, corrosion and materials · source page 16 -->
+<!-- page 86 | Electrochemistry, corrosion and materials · source page 16 -->
 
 * Cathode :
 $$\text{Cu}^{2+} + 2e^- \rightarrow \text{Cu}$$
@@ -3008,7 +2976,7 @@ $$E_{\text{Cu}^{2+}/\text{Cu}} = E_{\text{cell}} + 0.2422$$
 
 ---
 
-<!-- page 91 | Electrochemistry, corrosion and materials · source page 17 -->
+<!-- page 87 | Electrochemistry, corrosion and materials · source page 17 -->
 
 * Representation:
   $$\text{Ag} / \text{AgCl} / 0.1\text{MHCl} / \text{glass}$$
@@ -3035,7 +3003,7 @@ APPLICATIONS:
 
 ---
 
-<!-- page 92 | Electrochemistry, corrosion and materials · source page 18 -->
+<!-- page 88 | Electrochemistry, corrosion and materials · source page 18 -->
 
 $$E_{\text{cell}} = (E_g^0 - 0.0591\text{ pH}) - 0.2422$$
 $$E_{\text{cell}} - E_g^0 + 0.2422 = -0.0591\text{ pH}$$
@@ -3079,7 +3047,7 @@ Battery is a combination of two or more cells.
 
 ---
 
-<!-- page 93 | Electrochemistry, corrosion and materials · source page 19 -->
+<!-- page 89 | Electrochemistry, corrosion and materials · source page 19 -->
 
 ↳ charging (Electrolytic cell):
 
@@ -3106,7 +3074,7 @@ ans. When lithium-ion cells are allowed to charge completely the anodic material
 
 ---
 
-<!-- page 94 | Electrochemistry, corrosion and materials · source page 20 -->
+<!-- page 90 | Electrochemistry, corrosion and materials · source page 20 -->
 
 # $\text{H}_2 - \text{O}_2$ FUEL CELL (ACID ELECTROLYTE):
 
@@ -3146,7 +3114,7 @@ $$\text{O}_2 + 4\bar{e} + 4\text{H}^+ \longrightarrow 2\text{H}_2\text{O} \quad 
 
 ---
 
-<!-- page 95 | Electrochemistry, corrosion and materials · source page 21 -->
+<!-- page 91 | Electrochemistry, corrosion and materials · source page 21 -->
 
 $\hookrightarrow$ Overall Reaction : $(E = 1.23\text{ V})$
 
@@ -3198,7 +3166,7 @@ Obstruction to the flow of current. Resistance of a conductor is directly propor
 
 ---
 
-<!-- page 96 | Electrochemistry, corrosion and materials · source page 22 -->
+<!-- page 92 | Electrochemistry, corrosion and materials · source page 22 -->
 
 $$R \propto \frac{l}{A}$$
 
@@ -3238,7 +3206,7 @@ $$\text{unit of cell constant} = \text{cm}^{-1}$$
 
 ---
 
-<!-- page 97 | Electrochemistry, corrosion and materials · source page 23 -->
+<!-- page 93 | Electrochemistry, corrosion and materials · source page 23 -->
 
 <u>Measurement of conductivity of solution using digital conductivity meter.</u>
 
@@ -3266,7 +3234,7 @@ $$= 584.505 \times 10^{-6}\text{ S cm}^{-1}$$
 
 ---
 
-<!-- page 98 | Electrochemistry, corrosion and materials · source page 24 -->
+<!-- page 94 | Electrochemistry, corrosion and materials · source page 24 -->
 
 CORROSION:
 
@@ -3315,7 +3283,7 @@ WET CORROSION UNDER VARIOUS ENVIRONMENT CONDITION:
 
 ---
 
-<!-- page 99 | Electrochemistry, corrosion and materials · source page 25 -->
+<!-- page 95 | Electrochemistry, corrosion and materials · source page 25 -->
 
 (ii) HYDROGEN EVOLUTION CORROSION : IN ALKALINE MEDIUM :
 - Anode:
@@ -3346,15 +3314,7 @@ $$2\text{H}_2\text{O} + \text{O}_2 + 2\overline{e} \longrightarrow 4\text{OH}^- 
 
 ---
 
-<!-- page 100 | Electrochemistry, corrosion and materials · source page 26 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 101 | Electrochemistry, corrosion and materials · source page 27 -->
+<!-- page 96 | Electrochemistry, corrosion and materials · source page 27 -->
 
 GALVANIC SERIES:
 
@@ -3408,7 +3368,7 @@ $\hookrightarrow$ Principle of cathodic protection is to force the metal to be p
 
 ---
 
-<!-- page 102 | Electrochemistry, corrosion and materials · source page 28 -->
+<!-- page 97 | Electrochemistry, corrosion and materials · source page 28 -->
 
 $\rightarrow$ CLASSIFIED INTO TWO:
 
@@ -3437,7 +3397,7 @@ $\rightarrow$ In this process, the metal is deposited on base metal by passing e
 
 ---
 
-<!-- page 103 | Electrochemistry, corrosion and materials · source page 29 -->
+<!-- page 98 | Electrochemistry, corrosion and materials · source page 29 -->
 
 which contains soluble salt of the coating metal.
 
@@ -3468,7 +3428,7 @@ $\hookrightarrow$ current from dc source is applied to electrolyte, electrolysis
 
 ---
 
-<!-- page 104 | Electrochemistry, corrosion and materials · source page 30 -->
+<!-- page 99 | Electrochemistry, corrosion and materials · source page 30 -->
 
 ## ELECTRO LESS PLATING:
 
@@ -3505,7 +3465,7 @@ $$2\text{HCHO} + 4\text{OH}^- \rightarrow 2\text{HCOO}^- + 2\text{H}_2\text{O} +
 
 ---
 
-<!-- page 105 | Electrochemistry, corrosion and materials · source page 31 -->
+<!-- page 100 | Electrochemistry, corrosion and materials · source page 31 -->
 
 Cathode:
 $$\text{Cu}^{2+} + 2\bar{\text{e}} \rightarrow \text{Cu}$$

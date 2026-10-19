@@ -1,12 +1,4 @@
-<!-- page 1 | Module 4 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 2 | Module 4 · source page 2 -->
+<!-- page 1 | Module 4 · source page 2 -->
 
 Module - 4
 Environmental chemistry
@@ -37,7 +29,7 @@ Hard water - water which does not produce lather with soap solution readily, but
 
 ---
 
-<!-- page 3 | Module 4 · source page 3 -->
+<!-- page 2 | Module 4 · source page 3 -->
 
 Soft water - water which lathers easily on shaking with soap solution.
 
@@ -68,7 +60,7 @@ $\Rightarrow \text{CaCO}_3$ - the standard used to express hardness
 
 ---
 
-<!-- page 4 | Module 4 · source page 4 -->
+<!-- page 3 | Module 4 · source page 4 -->
 
 $\text{Ca}(\text{HCO}_3)_2 \xrightarrow{\Delta} \text{CaCO}_3 \downarrow + \text{H}_2\text{O} + \text{CO}_2 \uparrow$
 1) Temporary hardness (carbonate)
@@ -95,7 +87,7 @@ $\text{O} = $
 
 ---
 
-<!-- page 5 | Module 4 · source page 5 -->
+<!-- page 4 | Module 4 · source page 5 -->
 
 A water sample contains $408\text{ mg}$ of $\text{CaSO}_4$ per litre calculate the hardness in terms of $\text{CaCO}_3$ equivalence?
 
@@ -146,7 +138,7 @@ $$\begin{aligned}
 
 ---
 
-<!-- page 6 | Module 4 · source page 6 -->
+<!-- page 5 | Module 4 · source page 6 -->
 
 ~~(i) $\text{Ca}(\text{HCO}_3)_2 = 40 + 1 \times 2 + 12 \times 3 + 16 \times$~~
 ~~$40 + (1 \times 2) + (12 + 16 \times 3) \times 2$~~
@@ -195,7 +187,7 @@ $$\text{Total hardness} = 6.56 + 14.21 = 20.77 \text{ ppm}$$
 
 ---
 
-<!-- page 7 | Module 4 · source page 7 -->
+<!-- page 6 | Module 4 · source page 7 -->
 
 Calculate the temporary permanent and total hardness of water having
 
@@ -238,7 +230,7 @@ $$\text{Total hardness} = 8.34 + 12.43 = 20.77\text{ ppm}$$
 
 ---
 
-<!-- page 8 | Module 4 · source page 8 -->
+<!-- page 7 | Module 4 · source page 8 -->
 
 Q. calculate the temporary and permanent hardness of water which contain $\text{Ca}^{2+} = 200\text{ ppm}$, $\text{Mg}^{2+} = 96\text{ ppm}$, $\text{HCO}_3^- = 976\text{ ppm}$, $\text{Cl}^- = 146\text{ ppm}$, $\text{SO}_4^{2-} = 6\text{ ppm}$, $\text{Na}^+ = 112\text{ ppm}$
 
@@ -269,7 +261,7 @@ $$\text{perm. hard} = 900 - 800 = 100\text{ ppm}$$
 
 ---
 
-<!-- page 9 | Module 4 · source page 9 -->
+<!-- page 8 | Module 4 · source page 9 -->
 
 A sample of water on analysis gave following results
 $\text{Ca}^{2+} = 30\text{ mg/L}\quad \text{Mg}^{2+} = 18\text{ mg/L}\quad \text{HCO}_3^- = 244\text{ mg/L}$
@@ -301,7 +293,7 @@ $$= -50$$
 
 ---
 
-<!-- page 10 | Module 4 · source page 10 -->
+<!-- page 9 | Module 4 · source page 10 -->
 
 Total hardness = $150\text{ ppm}$
 
@@ -352,7 +344,7 @@ $$
 
 ---
 
-<!-- page 11 | Module 4 · source page 11 -->
+<!-- page 10 | Module 4 · source page 11 -->
 
 (iii) $0.02\text{M } \text{Al}_2(\text{SO}_4)_3$
 
@@ -381,7 +373,7 @@ $$= 6000 \text{ mg}$$
 
 ---
 
-<!-- page 12 | Module 4 · source page 12 -->
+<!-- page 11 | Module 4 · source page 12 -->
 
 ### cation exchange resins
 
@@ -415,7 +407,7 @@ Demineralized water (Neutral pH)
 
 ---
 
-<!-- page 13 | Module 4 · source page 13 -->
+<!-- page 12 | Module 4 · source page 13 -->
 
 Then water is passed through anion exchange column where all the anions like $\text{SO}_4^{2-}$ and $\text{Cl}^-$ are removed from it and equivalent amount of $\text{OH}^-$ ions are released from column to water
 
@@ -445,7 +437,7 @@ During regeneration, the reaction will be reversed
 
 ---
 
-<!-- page 14 | Module 4 · source page 14 -->
+<!-- page 13 | Module 4 · source page 14 -->
 
 ### Disadvantages
 
@@ -470,7 +462,7 @@ when a pressure higher tham osmotic pressure is applied on the concentrated side
 
 ---
 
-<!-- page 15 | Module 4 · source page 15 -->
+<!-- page 14 | Module 4 · source page 15 -->
 
 Desalination of sea water
 
@@ -494,7 +486,7 @@ only the water to which external pressure is applied filters through.
 
 ---
 
-<!-- page 16 | Module 4 · source page 16 -->
+<!-- page 15 | Module 4 · source page 16 -->
 
 ## Advantages
 
@@ -526,7 +518,7 @@ water purification have two steps ;
 
 ---
 
-<!-- page 17 | Module 4 · source page 17 -->
+<!-- page 16 | Module 4 · source page 17 -->
 
 (ii) Sedimentation $
 ightarrow$ In sedimentation process water is taken in a big tank and kept undesterbed to 5 to 6 hrs during this time most of the dust particles settle down at the bottom. To speed up the sedimentation coagulant like alum is also added.
@@ -555,7 +547,7 @@ $$\text{Cl}_2 + \text{H}_2\text{O} \longrightarrow \text{HOCl} + \text{HCl}$$
 
 ---
 
-<!-- page 18 | Module 4 · source page 18 -->
+<!-- page 17 | Module 4 · source page 18 -->
 
 ### Disadvantages
 
@@ -583,7 +575,7 @@ $\bullet$ so in chlorination process chlorin is added to water upto a particular
 
 ---
 
-<!-- page 19 | Module 4 · source page 19 -->
+<!-- page 18 | Module 4 · source page 19 -->
 
 Break point...
 
@@ -609,7 +601,7 @@ $\rightarrow$ The addition of $\text{Cl}_2$ at the deep or break is called break
 
 ---
 
-<!-- page 20 | Module 4 · source page 20 -->
+<!-- page 19 | Module 4 · source page 20 -->
 
 ### Advantages of break point chlorination
 
@@ -635,7 +627,7 @@ But this methode is highly expensive . and it requires technical skill
 
 ---
 
-<!-- page 21 | Module 4 · source page 21 -->
+<!-- page 20 | Module 4 · source page 21 -->
 
 ... used in muncipal
 treatment.
@@ -661,7 +653,7 @@ seawage is the liquid waste it contains aerobic and unaerobic bacterias that bri
 
 ---
 
-<!-- page 22 | Module 4 · source page 22 -->
+<!-- page 21 | Module 4 · source page 22 -->
 
 | Aerobic | Un-aerobic |
 | :--- | :--- |
@@ -686,7 +678,7 @@ It is the important parameter to determine the water quality. For pure water the
 
 ---
 
-<!-- page 23 | Module 4 · source page 23 -->
+<!-- page 22 | Module 4 · source page 23 -->
 
 2. Temperature $
 ightarrow$ if temperature increases D.O decrease. cold water contain more water than warm $\text{H}_2\text{O}$.
@@ -713,7 +705,7 @@ For pure water BOD value $< 1\text{ ppm}$
 
 ---
 
-<!-- page 24 | Module 4 · source page 24 -->
+<!-- page 23 | Module 4 · source page 24 -->
 
 ## Chemical Oxygen Demand (COD)
 
@@ -753,7 +745,7 @@ The sewage water treatment have 3 steps :
 
 ---
 
-<!-- page 25 | Module 4 · source page 25 -->
+<!-- page 24 | Module 4 · source page 25 -->
 
 1. prilimmary treatment or $1^\circ$
 
@@ -792,7 +784,7 @@ bacteria.
 
 ---
 
-<!-- page 26 | Module 4 · source page 26 -->
+<!-- page 25 | Module 4 · source page 26 -->
 
 The sewage trickles over the filter with rotating distributer. then it's moves down at the filtering media then the aerobic bacteria organic matters present in the sewage. and the effluent is collected from the bottom of the tank.
 
@@ -806,7 +798,7 @@ In this process the sludge is activated by passing sufficient amount of air so t
 
 ---
 
-<!-- page 27 | Module 4 · source page 27 -->
+<!-- page 26 | Module 4 · source page 27 -->
 
 3. [illegible]
 
@@ -827,15 +819,7 @@ In this methode the residue obtained in $1^\circ$ ~~met~~ process is passed from
 
 ---
 
-<!-- page 28 | Module 4 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 29 | Module 4 · source page 2 -->
+<!-- page 27 | Module 4 · source page 2 -->
 
 # Module - 4
 ## Environmental Chemistry
@@ -864,7 +848,7 @@ $$\text{Mg(HCO}_3)_2 \xrightarrow{\Delta} \underset{\text{magnesium hydroxide}}{
 
 ---
 
-<!-- page 30 | Module 4 · source page 3 -->
+<!-- page 28 | Module 4 · source page 3 -->
 
 REACTION OF SOAP WITH HARD WATER:
 
@@ -896,7 +880,7 @@ Q. The given water sample contains $408\text{ mg}$ of $\text{CaSO}_4$ per litre.
 
 ---
 
-<!-- page 31 | Module 4 · source page 4 -->
+<!-- page 29 | Module 4 · source page 4 -->
 
 ans. Hardness equivalent to $CaCO_3$ = $\frac{\text{Mass of hardness producing salt} \times 50}{\substack{\text{equivalent weight of hardness} \\ \text{producing salt.}}}$
 
@@ -935,7 +919,7 @@ equivalent weight of $CaSO_4$ = $40 + 32 + 64 = \frac{136}{2} = 68$
 
 ---
 
-<!-- page 32 | Module 4 · source page 5 -->
+<!-- page 30 | Module 4 · source page 5 -->
 
 equivalent weight of $\text{MgSO}_4 = \frac{24+32+64}{2} = \frac{120}{2} = 60$
 
@@ -971,7 +955,7 @@ $$\text{CaSO}_4 = \frac{13.6 \times 50}{68} = 10\text{ mg/L}$$
 
 ---
 
-<!-- page 33 | Module 4 · source page 6 -->
+<!-- page 31 | Module 4 · source page 6 -->
 
 $\text{mgCl}_2 = \frac{19 \times 50}{47.5} = 20\text{mg/l}$
 
@@ -1029,7 +1013,7 @@ $$\begin{aligned}
 
 ---
 
-<!-- page 34 | Module 4 · source page 7 -->
+<!-- page 32 | Module 4 · source page 7 -->
 
 (iv) $\text{Ca}^{2+} = 200\text{ppm} \ ; \ \text{Mg}^{2+} = 96\text{ppm} \ ; \ \text{HCO}_3^- = 976\text{ppm} \ ; \ \text{Cl}^- = 146\text{ppm} \ ;$
 $\text{SO}_4^{2-} = 6\text{ppm} \ ; \ \text{Na}^{2+} = 112\text{ppm}.$
@@ -1057,7 +1041,7 @@ $$= 0.05 \times 2$$
 
 ---
 
-<!-- page 35 | Module 4 · source page 8 -->
+<!-- page 33 | Module 4 · source page 8 -->
 
 $$= 0.1\text{ N}$$
 $$\begin{aligned}
@@ -1100,7 +1084,7 @@ $\rightarrow$ Quatenery ammonium group attached styrene divinyl benzene copolyme
 
 ---
 
-<!-- page 36 | Module 4 · source page 9 -->
+<!-- page 34 | Module 4 · source page 9 -->
 
 ↳ PROCESS :
 
@@ -1134,7 +1118,7 @@ $$\text{RCl} + \text{NaOH} \longrightarrow \text{R}^+\text{OH}^- + \text{NaCl}$$
 
 ---
 
-<!-- page 37 | Module 4 · source page 10 -->
+<!-- page 35 | Module 4 · source page 10 -->
 
 $\rightarrow$ It can be used to soften even acidic or alkaline waters.
 $\rightarrow$ Treated water has residual hardness of $2\text{ ppm}$ only.
@@ -1163,7 +1147,7 @@ $\rightarrow$ used to remove salty impurity, colloidal silica, organic - inorgan
 
 ---
 
-<!-- page 38 | Module 4 · source page 11 -->
+<!-- page 36 | Module 4 · source page 11 -->
 
 $\rightarrow$ Energy requirement $30\%$ lower than distillation process.
 
@@ -1196,7 +1180,7 @@ $\rightarrow$ DISADVANTAGE:
 
 ---
 
-<!-- page 39 | Module 4 · source page 12 -->
+<!-- page 37 | Module 4 · source page 12 -->
 
 and irritation mucus membrane.
 
@@ -1233,7 +1217,7 @@ $$\text{ClNH}_2 + \text{H}_2\text{O} \longrightarrow \text{HOCl} + \text{NH}_3$$
 
 ---
 
-<!-- page 40 | Module 4 · source page 13 -->
+<!-- page 38 | Module 4 · source page 13 -->
 
 (iii) BLEACHING POWDER ADDITION:
 
@@ -1273,7 +1257,7 @@ $\rightarrow$ Ozone is highly unstable and decomposes to form nascent oxygen.
 
 ---
 
-<!-- page 41 | Module 4 · source page 14 -->
+<!-- page 39 | Module 4 · source page 14 -->
 
 $\rightarrow$ ADVANTAGES AND DISADVANTAGES:
 (same points mentioned in UV treatment).
@@ -1303,7 +1287,7 @@ $\rightarrow$ The level of dissolved oxygen in water is also affected by presenc
 
 ---
 
-<!-- page 42 | Module 4 · source page 15 -->
+<!-- page 40 | Module 4 · source page 15 -->
 
 parameters :
 
@@ -1330,7 +1314,7 @@ parameters :
 
 ---
 
-<!-- page 43 | Module 4 · source page 16 -->
+<!-- page 41 | Module 4 · source page 16 -->
 
 allowed to stand undisturbed in a big tank
 2-6 hours. Most of the impurities gets settled down easily by gravitational force. After that a chemical coagulant like alum is added to water. Then colloidal impurities react with chemical coagulant to form a gelatinous precipitate, which can entrap small sized impurities and makes settled down easily.
@@ -1355,7 +1339,7 @@ $$\text{HNO}_3 + \text{HNO}_2 \xrightarrow[\text{present in soil}]{\text{Base}} 
 
 ---
 
-<!-- page 44 | Module 4 · source page 17 -->
+<!-- page 42 | Module 4 · source page 17 -->
 
 $\hookrightarrow$ It is filled with materials like broken bricks, crushed rocks, etc. and fitted with a rotating distributer.
 $\hookrightarrow$ sewage trickles over the filter with the help of rotating distributer, then it moves down through the filtering medium and the aerobic microorganisms start consuming the organic matter in the sewage.
@@ -1374,7 +1358,7 @@ $\hookrightarrow$ The upflow velocities are maintained at about $0.6-0.9\text{ m
 
 ---
 
-<!-- page 45 | Module 4 · source page 18 -->
+<!-- page 43 | Module 4 · source page 18 -->
 
 III. TERTIARY PROCESS
 
@@ -1412,7 +1396,7 @@ flowchart TD
 
 ---
 
-<!-- page 46 | Module 4 · source page 19 -->
+<!-- page 44 | Module 4 · source page 19 -->
 
 # E-WASTE:
 
@@ -1441,7 +1425,7 @@ flowchart TD
 
 ---
 
-<!-- page 47 | Module 4 · source page 20 -->
+<!-- page 45 | Module 4 · source page 20 -->
 
 # E-WASTE : METHOD OF DISPOSAL:
 
@@ -1463,7 +1447,7 @@ $\rightarrow$ It involves removal of different parts of e-waste (dismantling) co
 
 ---
 
-<!-- page 48 | Module 4 · source page 21 -->
+<!-- page 46 | Module 4 · source page 21 -->
 
 4) RECOVERY:
 $\rightarrow$ It involves the extraction of valuable materials and components from discarded electronic devices.
@@ -1489,7 +1473,7 @@ $\hookrightarrow$ Carcinogenic, inhalation of fumes and dust causes chronic bery
 
 ---
 
-<!-- page 49 | Module 4 · source page 22 -->
+<!-- page 47 | Module 4 · source page 22 -->
 
 CLIMATE CHANGE:
 
@@ -1523,7 +1507,7 @@ OZONE DEPLETION:
 
 ---
 
-<!-- page 50 | Module 4 · source page 23 -->
+<!-- page 48 | Module 4 · source page 23 -->
 
 $\hookrightarrow$ Ozone is formed in the stratosphere when oxygen molecule combines with oxygen radicals produced by the photo decomposition of $\text{O}_2$.
 
@@ -1553,7 +1537,7 @@ $\hookrightarrow$ It is the system of organising socio, economic and environment
 
 ---
 
-<!-- page 51 | Module 4 · source page 24 -->
+<!-- page 49 | Module 4 · source page 24 -->
 
 (Pillars of sustainable development)
 
@@ -1579,7 +1563,7 @@ $\hookrightarrow$ Ensuring economic growth that is efficient, productive and pro
 
 ---
 
-<!-- page 52 | Module 4 · source page 25 -->
+<!-- page 50 | Module 4 · source page 25 -->
 
 SUSTAINABLE DEVELOPMENT GOALS:
 
@@ -1607,15 +1591,7 @@ SUSTAINABLE DEVELOPMENT GOALS:
 
 ---
 
-<!-- page 53 | Module 4 · source page 1 -->
-
-[Non-content page]
-
----
-
----
-
-<!-- page 54 | Module 4 · source page 2 -->
+<!-- page 51 | Module 4 · source page 2 -->
 
 # Module-4
 
@@ -1636,7 +1612,7 @@ SUSTAINABLE DEVELOPMENT GOALS:
 
 ---
 
-<!-- page 55 | Module 4 · source page 3 -->
+<!-- page 52 | Module 4 · source page 3 -->
 
 | | |
 | :--- | :--- |
@@ -1667,7 +1643,7 @@ $$1\text{ ppm} = \underline{1\text{ part}}$$
 
 ---
 
-<!-- page 56 | Module 4 · source page 4 -->
+<!-- page 53 | Module 4 · source page 4 -->
 
 $\frac{\text{mg}}{\text{l}} \Rightarrow$ It is the number of milligrams of calcium carbonate equivalent hardness present in 1 lit of water.
 
@@ -1695,7 +1671,7 @@ $$\Rightarrow \text{hardness} = \frac{\text{mass of hardness producing salt} \ti
 
 ---
 
-<!-- page 57 | Module 4 · source page 5 -->
+<!-- page 54 | Module 4 · source page 5 -->
 
 hardness = Normality of the solution $\times$ eq. mass of $\text{CaCO}_3$
 
@@ -1727,7 +1703,7 @@ hardness $= \frac{408 \times 50}{68} = \underline{\underline{300\text{ ppm}}}$
 
 ---
 
-<!-- page 58 | Module 4 · source page 6 -->
+<!-- page 55 | Module 4 · source page 6 -->
 
 | | | |
 | :--- | :--- | :--- |
@@ -1759,7 +1735,7 @@ A)
 
 ---
 
-<!-- page 59 | Module 4 · source page 7 -->
+<!-- page 56 | Module 4 · source page 7 -->
 
 Total hardness = $20.77\text{ ppm}$
 
@@ -1790,7 +1766,7 @@ Permanent hardness = $900 - 800 = 100\text{ ppm} //$
 
 ---
 
-<!-- page 60 | Module 4 · source page 8 -->
+<!-- page 57 | Module 4 · source page 8 -->
 
 * 1 calculate the hardness of $0.08\text{ N MgSO}_4\text{ sol}^n$.
 
@@ -1829,7 +1805,7 @@ H &= 0.12 \times 50 \times 1000 \\
 
 ---
 
-<!-- page 61 | Module 4 · source page 9 -->
+<!-- page 58 | Module 4 · source page 9 -->
 
 (ii) $\text{Mg(HCO}_3)_2 - 15\text{ ppm}$.
 
@@ -1884,7 +1860,7 @@ $\Rightarrow$ when $\text{NaCl}$ is present in water permanent hardness increase
 
 ---
 
-<!-- page 62 | Module 4 · source page 10 -->
+<!-- page 59 | Module 4 · source page 10 -->
 
 A) $\text{ca(HCO}_3) = 6.17\text{ ppm}$
 
@@ -1914,7 +1890,7 @@ $\implies$ It is a reversible chemical reaction where an ions from the solution 
 
 ---
 
-<!-- page 63 | Module 4 · source page 11 -->
+<!-- page 60 | Module 4 · source page 11 -->
 
 Iron exchange process.
 
@@ -1931,7 +1907,7 @@ $\rightarrow$ cation exchange resin (CER)
 
 ---
 
-<!-- page 64 | Module 4 · source page 12 -->
+<!-- page 61 | Module 4 · source page 12 -->
 
 Exchange process.
 
@@ -1957,7 +1933,7 @@ $\Rightarrow$ It is a quaternary salt of stylene divinyl benzene co-polymer.
 
 ---
 
-<!-- page 65 | Module 4 · source page 13 -->
+<!-- page 62 | Module 4 · source page 13 -->
 
 Exch...
 
@@ -1986,7 +1962,7 @@ $$\underset{\substack{\text{exhausted} \\ \text{CER}}}{R_2\text{Ca}} + 2\text{HC
 
 ---
 
-<!-- page 66 | Module 4 · source page 14 -->
+<!-- page 63 | Module 4 · source page 14 -->
 
 (2) Regeneration of AER.
 
@@ -2000,7 +1976,7 @@ Advantages & disadvantages
 
 ---
 
-<!-- page 67 | Module 4 · source page 15 -->
+<!-- page 64 | Module 4 · source page 15 -->
 
 * what happens when hard water is first pass through anion exchange resin and then CER?
 
@@ -2024,7 +2000,7 @@ piston (P) - external pressure.
 
 ---
 
-<!-- page 68 | Module 4 · source page 16 -->
+<!-- page 65 | Module 4 · source page 16 -->
 
 • $\pi = P$, neither osmosis, nor reverse osmosis.
 
@@ -2040,7 +2016,7 @@ $\rightarrow$ SPM [semi permeable membrane]
 
 ---
 
-<!-- page 69 | Module 4 · source page 17 -->
+<!-- page 66 | Module 4 · source page 17 -->
 
 Disinfection method.
 ---
@@ -2071,7 +2047,7 @@ $$\begin{aligned}
 
 ---
 
-<!-- page 70 | Module 4 · source page 18 -->
+<!-- page 67 | Module 4 · source page 18 -->
 
 $\rightarrow$ Chlorination by using bleaching powder.
 
@@ -2103,7 +2079,7 @@ $\rightarrow$ It can be produced by passing electric discharge through cold and 
 
 ---
 
-<!-- page 71 | Module 4 · source page 19 -->
+<!-- page 68 | Module 4 · source page 19 -->
 
 $$3\text{O}_2 \xrightarrow{\text{electric discharge}} 2\text{O}_3$$
 
@@ -2129,7 +2105,7 @@ $$\text{nascent oxygen}$$
 
 ---
 
-<!-- page 72 | Module 4 · source page 20 -->
+<!-- page 69 | Module 4 · source page 20 -->
 
 # Break point chlorination & dechlorination.
 
@@ -2149,7 +2125,7 @@ $$\text{nascent oxygen}$$
 
 ---
 
-<!-- page 73 | Module 4 · source page 21 -->
+<!-- page 70 | Module 4 · source page 21 -->
 
 Dechlorination :
 
@@ -2179,7 +2155,7 @@ $\Rightarrow$ Cold water hold more DO than warm water.
 
 ---
 
-<!-- page 74 | Module 4 · source page 22 -->
+<!-- page 71 | Module 4 · source page 22 -->
 
 Biological oxygen demand
 
@@ -2219,7 +2195,7 @@ $\Rightarrow$ oxidation by anaerobic org$^n$.
 
 ---
 
-<!-- page 75 | Module 4 · source page 23 -->
+<!-- page 72 | Module 4 · source page 23 -->
 
 $\rightarrow$ The products of $\text{oxd}^n$ are $\text{CO}_2$, nitrates, phosphates, sulphates
 
@@ -2265,7 +2241,7 @@ $\rightarrow$ upflow...
 
 ---
 
-<!-- page 76 | Module 4 · source page 24 -->
+<!-- page 73 | Module 4 · source page 24 -->
 
 * What are the process involved in sewage water treatment.
 
@@ -2293,7 +2269,7 @@ Primary treatment		Secondary treatment
 
 ---
 
-<!-- page 77 | Module 4 · source page 25 -->
+<!-- page 74 | Module 4 · source page 25 -->
 
 (1) primary treatment.
 
@@ -2329,7 +2305,7 @@ $\Rightarrow$ This is an aerobic oxidation process where bacteria decomposes dis
 
 ---
 
-<!-- page 78 | Module 4 · source page 26 -->
+<!-- page 75 | Module 4 · source page 26 -->
 
 (b) sewage is aerated in aeration tanks.
 
@@ -2361,7 +2337,7 @@ $\Rightarrow$ A selection of 17 global objectives established by UN in 2015 . IT
 
 ---
 
-<!-- page 79 | Module 4 · source page 27 -->
+<!-- page 76 | Module 4 · source page 27 -->
 
 => key goals, SDG 1, SDG 5, SDG 17, SDG 2, SDG 4 & SDG 6.
 
@@ -2387,7 +2363,7 @@ $\Rightarrow$ A selection of 17 global objectives established by UN in 2015 . IT
 
 ---
 
-<!-- page 80 | Module 4 · source page 28 -->
+<!-- page 77 | Module 4 · source page 28 -->
 
 Green house Effect.
 
@@ -2425,7 +2401,7 @@ climate change would affect agriculture adversally.
 
 ---
 
-<!-- page 81 | Module 4 · source page 29 -->
+<!-- page 78 | Module 4 · source page 29 -->
 
 $\Rightarrow$ some regions are become dry and other are wet.
 
@@ -2447,7 +2423,7 @@ $\Rightarrow$ Fish and other aquatic organisms may not be able to withstand high
 
 ---
 
-<!-- page 82 | Module 4 · source page 30 -->
+<!-- page 79 | Module 4 · source page 30 -->
 
 Forestation.
 
@@ -2475,7 +2451,7 @@ Ozone layer is also ozone umbrella or ozone sheet. It is present at upper part s
 
 ---
 
-<!-- page 83 | Module 4 · source page 31 -->
+<!-- page 80 | Module 4 · source page 31 -->
 
 Formation of ozone layer.
 
