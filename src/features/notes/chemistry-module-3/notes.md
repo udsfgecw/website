@@ -296,7 +296,7 @@ DIFFERENT TYPES OF ELECTRONIC TRANSITION:
 3. $n \rightarrow \pi^*$ transition
 4. $n \rightarrow \sigma^*$ transition.
 
-![Electronic energy levels and transitions diagram](/notes/cse/s1/chemistry/module-3/assets/page-010-image-2-source.png)
+![Electronic energy levels and transitions diagram](/notes/cse/s1/chemistry/module-3/assets/page-010-image-2-clean.svg)
 
 1. $\sigma \rightarrow \sigma^*$ transition :
 - Observed in all saturated hydrocarbons.
@@ -328,24 +328,24 @@ Q. Draw the possible electronic transition in (i) ethane.
 Ans. $\text{CH}_3-\text{CH}_3$
 ethane
 
-![Electronic energy levels and transition for ethane](/notes/cse/s1/chemistry/module-3/assets/page-011-image-1-source.png)
+![Electronic energy levels and transition for ethane](/notes/cse/s1/chemistry/module-3/assets/page-011-image-1-clean.svg)
 
 (ii) $\text{CH}_2=\text{CH}-\text{CH}=\text{CH}_2$
 1,3-butadiene
 
-![Electronic energy levels and transitions for 1,3-butadiene](/notes/cse/s1/chemistry/module-3/assets/page-011-image-2-source.png)
+![Electronic energy levels and transitions for 1,3-butadiene](/notes/cse/s1/chemistry/module-3/assets/page-011-image-2-clean.svg)
 
 (iv) Benzoic acid
 
-![Electronic energy levels and transitions for benzoic acid](/notes/cse/s1/chemistry/module-3/assets/page-011-image-4-source.png)
+![Electronic energy levels and transitions for benzoic acid](/notes/cse/s1/chemistry/module-3/assets/page-011-image-4-clean.svg)
 
 (iii) benzene
 
-![Electronic energy levels and transitions for benzene](/notes/cse/s1/chemistry/module-3/assets/page-011-image-3-source.png)
+![Electronic energy levels and transitions for benzene](/notes/cse/s1/chemistry/module-3/assets/page-011-image-3-clean.svg)
 
 (v) Salicylic acid
 
-![Electronic energy levels and transitions for salicylic acid](/notes/cse/s1/chemistry/module-3/assets/page-011-image-5-source.png)
+![Electronic energy levels and transitions for salicylic acid](/notes/cse/s1/chemistry/module-3/assets/page-011-image-5-clean.svg)
 
 ---
 
@@ -355,15 +355,15 @@ ethane
 
 (vi) Benzaldehyde : $\text{C}_6\text{H}_5-\text{CHO}$
 
-![Energy level transitions for benzaldehyde showing sigma, pi, n, pi star, and sigma star orbitals.](/notes/cse/s1/chemistry/module-3/assets/page-012-image-1-source.png)
+![Energy level transitions for benzaldehyde showing sigma, pi, n, pi star, and sigma star orbitals.](/notes/cse/s1/chemistry/module-3/assets/page-012-image-1-clean.svg)
 
 (vii) Ethanol : $\text{CH}_3-\text{CH}_2-\text{OH}$
 
-![Energy level transitions for ethanol showing sigma, pi, n, pi star, and sigma star orbitals alongside an absorption curve.](/notes/cse/s1/chemistry/module-3/assets/page-012-image-2-source.png)
+![Energy level transitions for ethanol showing sigma, pi, n, pi star, and sigma star orbitals alongside an absorption curve.](/notes/cse/s1/chemistry/module-3/assets/page-012-image-2-clean.svg)
 
 (viii) Propanol : $\text{CH}_3-\text{CO}-\text{CH}_3$
 
-![Energy level transitions for propanol showing sigma, pi, n, pi star, and sigma star orbitals.](/notes/cse/s1/chemistry/module-3/assets/page-012-image-3-source.png)
+![Energy level transitions for propanol showing sigma, pi, n, pi star, and sigma star orbitals.](/notes/cse/s1/chemistry/module-3/assets/page-012-image-3-clean.svg)
 
 ## UV - VISIBLE SPECTROPHOTOMETER:
 
@@ -395,7 +395,7 @@ D --> O["Output: A = log(I₀/I)"]
 ↳ Photo multiplier tube used as detector. It converts light signal to electrical signal.
 ↳ Output is a plot of Absorbance versus wavelength (uv-visible spectrum).
 
-![Plot of Absorbance versus Wavelength (UV-visible spectrum)](/notes/cse/s1/chemistry/module-3/assets/page-013-image-1-source.png)
+![Plot of Absorbance versus Wavelength (UV-visible spectrum)](/notes/cse/s1/chemistry/module-3/assets/page-013-image-1-clean.svg)
 
 WORKING:
 ↳ A dilute solution of sample prepared in suitable solvent and taken in a cuvette which is called sample. A pure solvent taken in another cuvette is called reference.
@@ -665,13 +665,13 @@ $$= 532.89\text{ Nm}^{-1}$$
 
 $o$-hydroxy phenol
 
-![Intermolecular hydrogen bonding between para-hydroxyphenol molecules (source figure)](/notes/cse/s1/chemistry/module-3/assets/page-019-image-1-source.png)
+![Intramolecular hydrogen bonding in ortho-hydroxyphenol](/notes/cse/s1/chemistry/module-3/assets/page-019-image-2-clean.svg)
 
 ## INTERMOLECULAR HYDROGEN BONDING
 
 $p$-hydroxy phenol
 
-![Intramolecular hydrogen bonding between adjacent hydroxyl groups (source figure)](/notes/cse/s1/chemistry/module-3/assets/page-019-image-2-source.png)
+![Intermolecular hydrogen bonding between para-hydroxyphenol molecules](/notes/cse/s1/chemistry/module-3/assets/page-019-image-1-clean.svg)
 
 * $-\text{OH}$ stretching frequency does not change on dilution in the case of intramolecular hydrogen bonding.
 
@@ -879,7 +879,7 @@ I["Interacting radiation"] --> S["Atom / molecule (sample)"] --> T["Transmitted 
 
 Different energy levels in a molecule.
 
-![Different energy levels in a molecule diagram showing electronic, vibrational, and rotational levels](/notes/cse/s1/chemistry/module-3/assets/page-028-image-1-source.png)
+![Different energy levels in a molecule diagram showing electronic, vibrational, and rotational levels](/notes/cse/s1/chemistry/module-3/assets/page-028-image-1-clean.svg)
 
 1) Electronic energy level ($E_{el}$)
 
@@ -948,7 +948,7 @@ Types of spectrum
 
 | Atomic spectra | molecular spectra |
 | --- | --- |
-| ![Atomic spectra diagram showing atomic energy levels](/notes/cse/s1/chemistry/module-3/assets/page-030-image-3-source.png) | ![Molecular spectra diagram](/notes/cse/s1/chemistry/module-3/assets/page-030-image-4-source.png) |
+| ![Atomic spectra diagram showing atomic energy levels](/notes/cse/s1/chemistry/module-3/assets/page-030-image-3-clean.svg) | ![Molecular spectra diagram](/notes/cse/s1/chemistry/module-3/assets/page-030-image-4-clean.svg) |
 
 ---
 
@@ -1136,11 +1136,11 @@ Principle
 * It is also called electronic spectrum — transition occurs between electronic energy level.
 * It is a plot of absorbance or intensity v/s $\lambda$ in nm.
 
-![Absorption spectrum and electronic energy level transition diagram](/notes/cse/s1/chemistry/module-3/assets/page-036-image-1-source.png)
+![Absorption spectrum and electronic energy level transition diagram](/notes/cse/s1/chemistry/module-3/assets/page-036-image-1-clean.svg)
 
 ### Different transition observed in uv-visible spectroscopy
 
-![Electronic transitions energy level diagram](/notes/cse/s1/chemistry/module-3/assets/page-036-image-2-source.png)
+![Electronic transitions energy level diagram](/notes/cse/s1/chemistry/module-3/assets/page-036-image-2-clean.svg)
 
 ---
 
@@ -1229,7 +1229,7 @@ c) benzene.
 
 a)
 
-![Structural formulas comparing conjugated systems in increasing order of UV-visible absorption](/notes/cse/s1/chemistry/module-3/assets/page-039-image-4-source.png)
+![Structural formulas comparing conjugated systems in increasing order of UV-visible absorption](/notes/cse/s1/chemistry/module-3/assets/page-039-image-4-clean.svg)
 
 ---
 
@@ -1251,7 +1251,7 @@ a)
 
 ![Chemical structure of methoxymethane](/notes/cse/s1/chemistry/module-3/assets/page-040-image-6-structured.svg)
 
-![Table of compounds, main functional groups and transitions](/notes/cse/s1/chemistry/module-3/assets/page-040-image-7-source.png)
+![Table of compounds, main functional groups and transitions](/notes/cse/s1/chemistry/module-3/assets/page-040-image-7-clean.svg)
 
 | compound | Main functional grp | transitions |
 |---|---|---|
@@ -1350,7 +1350,7 @@ $\rightarrow$ principle
 
 when a molecule interact with IR radiation vibrational transition will occur between vibrational energy level by absorbing IR-Radiation. It is also called vibration spectrum. since transition occur between vibrational energy level.
 
-![IR spectrum graph showing transmittance versus wave number](/notes/cse/s1/chemistry/module-3/assets/page-044-image-1-source.png)
+![IR spectrum graph showing transmittance versus wave number](/notes/cse/s1/chemistry/module-3/assets/page-044-image-1-clean.svg)
 
 $\rightarrow$ The photons of IR radiations are not energetic enough to cause electronic transition.
 
@@ -1364,7 +1364,7 @@ $\rightarrow$ By absorbing IR radiation by a molecule, vibrations will occur (ei
 
 vibrations.
 
-![Flowchart showing classification of vibrations into stretching and bending, with their further subdivisions and molecular illustrations.](/notes/cse/s1/chemistry/module-3/assets/page-045-image-1-source.png)
+![Flowchart showing classification of vibrations into stretching and bending, with their further subdivisions and molecular illustrations.](/notes/cse/s1/chemistry/module-3/assets/page-045-image-1-clean.svg)
 
 - Different types of bonds & different functional groups can be identified by this vibrational ~~methods~~ modes.
 
@@ -1658,7 +1658,7 @@ $\rightarrow$
 $\rightarrow$ Intra molecular hydrogen bonding
 on dilution no change in the strength of OH bond and hydrogen bonding. because IR absorption remain unchanged.
 
-![Chemical structure of ortho-hydroxy phenol showing intramolecular hydrogen bonding](/notes/cse/s1/chemistry/module-3/assets/page-052-image-1-source.png)
+![Chemical structure of ortho-hydroxy phenol showing intramolecular hydrogen bonding](/notes/cse/s1/chemistry/module-3/assets/page-052-image-1-clean.svg)
 
 ---
 
@@ -1670,8 +1670,8 @@ on dilution no change in the strength of OH bond and hydrogen bonding. because I
 - inter molecular hydrogen bonding.
 - on dilution changes in strength of OH bond and IR absorption.
 
-![Intermolecular hydrogen bonding in para-hydroxy phenol showing vertical alignment of two phenol rings](/notes/cse/s1/chemistry/module-3/assets/page-053-image-1-source.png)
-![Intramolecular hydrogen bonding in ortho-substituted phenol](/notes/cse/s1/chemistry/module-3/assets/page-053-image-2-source.png)
+![Intermolecular hydrogen bonding in para-hydroxy phenol showing vertical alignment of two phenol rings](/notes/cse/s1/chemistry/module-3/assets/page-053-image-1-clean.svg)
+![Intramolecular hydrogen bonding in ortho-substituted phenol](/notes/cse/s1/chemistry/module-3/assets/page-053-image-2-clean.svg)
 
 * Compare ortho nitrophenol & para nitrophenol with solution?
 
@@ -1807,7 +1807,7 @@ Components in DEA.
 - Frequency generator.
 - Data acquisition system.
 
-![Diagram of furnace and sample holder setup for dielectric analysis](/notes/cse/s1/chemistry/module-3/assets/page-058-image-1-source.png)
+![Diagram of furnace and sample holder setup for dielectric analysis](/notes/cse/s1/chemistry/module-3/assets/page-058-image-1-clean.svg)
 
 without external electrical field.
 

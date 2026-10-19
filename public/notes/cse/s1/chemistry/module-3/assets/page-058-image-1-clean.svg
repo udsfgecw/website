@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460" role="img" aria-label="Dielectric Analysis (DEA) Setup">
+<defs>
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 1 L7 4 L0 7 Z" fill="#243e57"/>
+  </marker>
+  <marker id="arr-teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 1 L7 4 L0 7 Z" fill="#1d7068"/>
+  </marker>
+  <marker id="arr-purple" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 1 L7 4 L0 7 Z" fill="#6b3ba6"/>
+  </marker>
+  <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 1 L7 4 L0 7 Z" fill="#1a5fb4"/>
+  </marker>
+  <marker id="arr-green" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 1 L7 4 L0 7 Z" fill="#28765a"/>
+  </marker>
+</defs>
+<rect width="100%" height="100%" rx="16" fill="#ffffff" stroke="#d0e0ed" stroke-width="1.5"/>
+<g font-family="DejaVu Sans, Arial, Helvetica, sans-serif">
+
+  <text x="400" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#172b42">Dielectric Analysis (DEA) Instrumentation</text>
+  <text x="400" y="62" text-anchor="middle" font-size="14" fill="#5e7185">Furnace chamber and parallel-plate electrode sample holder assembly</text>
+  
+  <g transform="translate(220, 90)">
+    <rect x="0" y="0" width="360" height="270" rx="16" fill="#f1f5f9" stroke="#243e57" stroke-width="3"/>
+    <text x="180" y="26" text-anchor="middle" font-size="13" font-weight="bold" fill="#243e57">Programmable Thermal Chamber (Furnace)</text>
+    
+    <g stroke="#b02a37" stroke-width="2.5" fill="none">
+      <path d="M 20 45 Q 28 55 20 65 T 20 85 T 20 105 T 20 125 T 20 145 T 20 165 T 20 185 T 20 205 T 20 225"/>
+      <path d="M 340 45 Q 348 55 340 65 T 340 85 T 340 105 T 340 125 T 340 145 T 340 165 T 340 185 T 340 205 T 340 225"/>
+    </g>
+    <text x="35" y="245" font-size="10" fill="#b02a37">Heating coils</text>
+    
+    <rect x="65" y="45" width="230" height="195" rx="8" fill="#ffffff" stroke="#9bb5c9" stroke-width="1.5"/>
+    
+    <rect x="110" y="90" width="140" height="18" rx="4" fill="#cbd5e1" stroke="#243e57" stroke-width="2"/>
+    <text x="180" y="104" text-anchor="middle" font-size="11" font-weight="bold" fill="#243e57">Upper Electrode</text>
+    
+    <rect x="120" y="118" width="120" height="24" rx="4" fill="#1d7068" stroke="#1d7068" stroke-width="1.5"/>
+    <text x="180" y="134" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">Sample Disk</text>
+    
+    <rect x="110" y="152" width="140" height="18" rx="4" fill="#cbd5e1" stroke="#243e57" stroke-width="2"/>
+    <text x="180" y="166" text-anchor="middle" font-size="11" font-weight="bold" fill="#243e57">Lower Electrode</text>
+    
+    <line x1="180" y1="90" x2="180" y2="45" stroke="#1a5fb4" stroke-width="2.5"/>
+    <circle cx="180" cy="45" r="4" fill="#1a5fb4"/>
+    
+    <line x1="180" y1="170" x2="180" y2="215" stroke="#1a5fb4" stroke-width="2.5"/>
+    <circle cx="180" cy="215" r="4" fill="#1a5fb4"/>
+    
+    <line x1="245" y1="130" x2="280" y2="130" stroke="#28765a" stroke-width="2"/>
+    <circle cx="245" cy="130" r="3" fill="#28765a"/>
+    <text x="285" y="134" font-size="10" font-weight="bold" fill="#28765a">Thermocouple</text>
+  </g>
+  
+  <g transform="translate(30, 110)">
+    <rect width="150" height="85" rx="8" fill="#edf5ff" stroke="#1a5fb4" stroke-width="1.5"/>
+    <text x="75" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a5fb4">AC Frequency</text>
+    <text x="75" y="46" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a5fb4">Generator</text>
+    <text x="75" y="68" text-anchor="middle" font-size="11" fill="#5e7185">(10⁻³ to 10⁶ Hz)</text>
+    
+    <path d="M 150 152 L 220 152 L 220 135 L 400 135" fill="none" stroke="#1a5fb4" stroke-width="2" marker-end="url(#arr-blue)"/>
+  </g>
+  
+  <g transform="translate(30, 240)">
+    <rect width="150" height="85" rx="8" fill="#edf5ff" stroke="#243e57" stroke-width="1.5"/>
+    <text x="75" y="32" text-anchor="middle" font-size="13" font-weight="bold" fill="#243e57">Dielectric</text>
+    <text x="75" y="50" text-anchor="middle" font-size="13" font-weight="bold" fill="#243e57">Analyzer (DEA)</text>
+    <text x="75" y="70" text-anchor="middle" font-size="10" fill="#5e7185">Measures ε' and ε''</text>
+  </g>
+  
+  <g transform="translate(615, 175)">
+    <rect width="155" height="85" rx="8" fill="#e8f5ed" stroke="#28765a" stroke-width="1.5"/>
+    <text x="77" y="32" text-anchor="middle" font-size="13" font-weight="bold" fill="#28765a">Temperature</text>
+    <text x="77" y="50" text-anchor="middle" font-size="13" font-weight="bold" fill="#28765a">Controller</text>
+    <text x="77" y="70" text-anchor="middle" font-size="10" fill="#5e7185">Programmable ramp</text>
+    
+    <path d="M 0 42 L -35 42" fill="none" stroke="#28765a" stroke-width="2" marker-end="url(#arr-green)"/>
+  </g>
+  
+  <rect x="50" y="390" width="700" height="52" rx="8" fill="#f8fafc" stroke="#d0e0ed" stroke-width="1"/>
+  <text x="400" y="412" text-anchor="middle" font-size="13" font-weight="bold" fill="#172b42">DEA measures dielectric permittivity (ε') and dielectric loss factor (ε'')</text>
+  <text x="400" y="430" text-anchor="middle" font-size="12" fill="#5e7185">Monitors molecular dipole mobility, glass transitions (Tg), and curing kinetics as a function of temperature and frequency.</text>
+
+</g>
+</svg>

@@ -14,6 +14,7 @@ import CodeBlock from "./CodeBlock";
 import IdentityGraph from "./IdentityGraph";
 import PlotFigure, { type PlotSpec } from "./PlotFigure";
 import TreeDiagram from "./TreeDiagram";
+import KekuleViewer from "./KekuleViewer";
 import { module3DiagramDimensions } from "../python-module-3/diagramDimensions";
 import { module4DiagramDimensions } from "../python-module-4/diagramDimensions";
 
@@ -53,6 +54,7 @@ const components: Components = {
   code({ className, children, ...props }) {
     if (className === "language-jsxgraph") return <Plot source={String(children)} />;
     if (className === "language-mermaid") return <TreeDiagram source={String(children)} />;
+    if (className === "language-kekule" || className === "language-chem") return <KekuleViewer source={String(children)} />;
     return (
       <code className={className} {...props}>
         {children}
@@ -61,7 +63,7 @@ const components: Components = {
   },
   pre({ node, children }) {
     const className = isValidElement<{ className?: string }>(children) ? children.props.className : undefined;
-    if (className?.includes("language-mermaid") || className?.includes("language-jsxgraph")) return <div>{children}</div>;
+    if (className?.includes("language-mermaid") || className?.includes("language-jsxgraph") || className?.includes("language-kekule") || className?.includes("language-chem")) return <div>{children}</div>;
     const language = /language-([\w+-]+)/.exec(className ?? "")?.[1];
     return (
       <CodeBlock language={language} text={textOf(node as HastNode).replace(/\n$/, "")}>
@@ -73,6 +75,7 @@ const components: Components = {
     const moduleDiagram = typeof src === "string" && (
       /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src)
       || /^\/notes\/cse\/s1\/chemistry\/module-1\/assets\/.*-clean\.webp$/.test(src)
+      || /^\/notes\/cse\/s1\/chemistry\/module-3\/assets\/.*-clean\.svg$/.test(src)
     );
     const dimensions = typeof src === "string" ? diagramDimensions[src] : undefined;
     return <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
