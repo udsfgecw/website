@@ -36,6 +36,18 @@
 .notes-prose p {
   margin: 0.9em 0;
 }
+/* A topic ends with breathing room and a rule before the next one begins. */
+.notes-prose--sectioned > section + section {
+  margin-top: 2.8em;
+  padding-top: 2.2em;
+  border-top: 1px solid var(--color-line);
+}
+.notes-prose--sectioned > section + section > :first-child {
+  margin-top: 0;
+}
+.notes-prose--sectioned > section > h4:not(:first-child) {
+  margin-top: 2em;
+}
 /* "Q.", "Q_3." and the like: mark where each worked question starts */
 .notes-prose .notes-question {
   margin: 2em 0 0.6em;
@@ -45,6 +57,43 @@
 }
 .notes-prose .notes-question strong:first-child {
   color: var(--color-green-ink);
+}
+.notes-prose .notes-problem-card,
+.notes-prose .notes-practice-problem {
+  min-width: 0;
+  max-width: 100%;
+  margin: 1.6em 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1.5px solid #b6cec3;
+  border-radius: 14px;
+  background: #fff;
+  break-inside: avoid;
+}
+.notes-prose .notes-problem-card > :first-child {
+  margin-top: 0;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-green-ink);
+}
+.notes-prose .notes-problem-card > :last-child,
+.notes-prose .notes-practice-problem > :last-child {
+  margin-bottom: 0;
+}
+.notes-prose ol.notes-practice-problems {
+  padding: 0;
+  list-style: none;
+  counter-reset: practice-problem;
+}
+.notes-prose .notes-practice-problem {
+  counter-increment: practice-problem;
+}
+.notes-prose .notes-practice-problem::before {
+  content: "Practice problem " counter(practice-problem);
+  display: block;
+  margin-bottom: 0.75em;
+  color: var(--color-green-ink);
+  font-size: 0.85em;
+  font-weight: 600;
 }
 .notes-prose strong {
   font-weight: 600;

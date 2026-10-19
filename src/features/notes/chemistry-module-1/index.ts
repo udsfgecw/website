@@ -5,7 +5,7 @@ import { CHEMISTRY_MODULE_1_PATH } from "./path";
 const { pages, chapters } = titledPages(source);
 export const chemistrymodule1: NotesModule = {
   basePath: CHEMISTRY_MODULE_1_PATH,
-  storageKey: "udsf:notes:cse:s1:chemistry-1:v1",
+  storageKey: "udsf:notes:cse:s1:chemistry-1:v2",
   title: "S1 CSE Chemistry · Module 1",
   trail: [
     { label: "NOTES", href: "/notes" },
@@ -14,8 +14,11 @@ export const chemistrymodule1: NotesModule = {
     { label: "CHEMISTRY", href: "/notes/cse/s1/chemistry" },
     { label: "MODULE 1" },
   ],
-  module: "Module 1", course: "Engineering Chemistry", code: "GXCYT122", summary: "Electrochemistry, corrosion and materials",
-  source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
+  module: "Module 1", course: "Engineering Chemistry", code: "GXCYT122", summary: "Electrochemistry and corrosion science",
+  unitLabel: "section",
+  outlinedProblems: true,
+  displayDescription: "Structured GXCYT122 Module 1 study notes covering electrochemical cells, the Nernst equation, electrodes, batteries, conductivity, corrosion and metal plating, with worked examples and revision questions.",
+  source: "Reorganized from the provided KTU GXCYT122 Module 1 study pack, with corrected equations and worked calculations.", pages, chapters,
 };
 
 export function chemistryModule1(branch: string = "cse"): NotesModule {
@@ -24,7 +27,7 @@ export function chemistryModule1(branch: string = "cse"): NotesModule {
   return {
     ...chemistrymodule1,
     basePath: `/notes/${branch}/s1/chemistry/module-1`,
-    storageKey: `udsf:notes:${branch}:s1:chemistry-1:v1`,
+    storageKey: `udsf:notes:${branch}:s1:chemistry-1:v2`,
     title: `S1 ${branchUpper} Chemistry · Module 1`,
     trail: [
       { label: "NOTES", href: "/notes" },

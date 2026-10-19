@@ -46,6 +46,7 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
   const [open, setOpen] = useState(false);
   const root = useRef<HTMLDivElement>(null);
   const total = notes.pages.length;
+  const unit = notes.unitLabel ?? "page";
   const chapter = chapterFor(notes, page);
 
   useEffect(() => {
@@ -101,14 +102,14 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
                 <ArrowDownToLine size={16} aria-hidden="true" /> Bottom
               </button>
               <button type="button" className={pill} disabled={page <= 1} onClick={() => go(page - 1)}>
-                <ChevronLeft size={16} aria-hidden="true" /> Prev page
+                <ChevronLeft size={16} aria-hidden="true" /> Prev {unit}
               </button>
               <button type="button" className={pill} disabled={page >= total} onClick={() => go(page + 1)}>
-                Next page <ChevronRight size={16} aria-hidden="true" />
+                Next {unit} <ChevronRight size={16} aria-hidden="true" />
               </button>
             </div>
             <label className="mt-3 flex items-center justify-between gap-3 text-[0.85rem] text-ink-2">
-              Page
+              {unit === "section" ? "Section" : "Page"}
               <span className="flex items-center gap-2">
                 <input
                   key={page}
@@ -116,7 +117,7 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
                   min={1}
                   max={total}
                   defaultValue={page}
-                  aria-label="Go to page number"
+                  aria-label={`Go to ${unit} number`}
                   className="w-16 rounded-lg border border-line px-2 py-1 text-center tabular-nums text-ink"
                   onKeyDown={(e) => {
                     if (e.key === "Enter") go(Number(e.currentTarget.value) || page);

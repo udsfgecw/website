@@ -30,6 +30,7 @@ function scrollToPlace({ page, offset }: Pick<ReadingPlace, "page" | "offset">) 
    (page and how far down it) and text size are kept in localStorage and restored on return. */
 export default function Reader({ notes }: { notes: NotesModule }) {
   const total = notes.pages.length;
+  const unit = notes.unitLabel ?? "page";
   const [page, setPage] = useState(1);
   const [size, setSize] = useState(18);
   const [prefs, setPrefs] = useState<Prefs>(DEFAULT_PREFS);
@@ -43,7 +44,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
 
   usePageMeta({
     title: pageTitle(notes.title),
-    description: notes.displayDescription ?? `${notes.course} (${notes.code}), ${notes.module}: ${notes.summary.toLowerCase()}. All ${total} pages of notes on one page.`,
+    description: notes.displayDescription ?? `${notes.course} (${notes.code}), ${notes.module}: ${notes.summary.toLowerCase()}. All ${total} ${unit}s of notes on one page.`,
   });
 
   // Read the stored place after the first render, so the pre-rendered HTML matches.
@@ -212,7 +213,7 @@ export default function Reader({ notes }: { notes: NotesModule }) {
             {notes.displayHeading ?? <>{notes.course}.{" "}<span className="text-ink/30">{notes.module}, {notes.summary.toLowerCase()}.</span></>}
           </h1>
           <p className="mt-6 text-[0.95rem] text-ink-2">
-            {notes.code} · {total} pages · {saved ? "Your place is saved in this browser" : "This browser can’t save your place"}
+            {notes.code} · {total} {unit}s · {saved ? "Your place is saved in this browser" : "This browser can’t save your place"}
           </p>
         </header>
 
@@ -234,12 +235,12 @@ export default function Reader({ notes }: { notes: NotesModule }) {
             </details>
 
             <article
-              className="notes-prose min-w-0"
+              className={cn("notes-prose min-w-0", notes.unitLabel === "section" && "notes-prose--sectioned")}
               style={{ fontSize: size, lineHeight: LEADING[prefs.leading], maxWidth: WIDTH[prefs.width], fontFamily: prefs.font === "serif" ? SERIF : undefined }}
             >
               {notes.pages.map((p) => (
                 <section key={p.number} id={pageAnchor(p.number)}>
-                  <PageMarkdown content={p.content} />
+                  <PageMarkdown content={p.content} outlinedProblems={notes.outlinedProblems} />
                 </section>
               ))}
               <footer className="mt-4 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>

@@ -9,6 +9,7 @@ import json from "highlight.js/lib/languages/json";
 import python from "highlight.js/lib/languages/python";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
+import remarkProblemCards from "./remarkProblemCards";
 import CodeBlock from "./CodeBlock";
 import IdentityGraph from "./IdentityGraph";
 import PlotFigure, { type PlotSpec } from "./PlotFigure";
@@ -18,6 +19,8 @@ import { module4DiagramDimensions } from "../python-module-4/diagramDimensions";
 
 const plainRemarkPlugins = [remarkGfm];
 const mathRemarkPlugins = [remarkGfm, remarkMath];
+const plainProblemPlugins = [remarkGfm, remarkProblemCards];
+const mathProblemPlugins = [remarkGfm, remarkMath, remarkProblemCards];
 const mathPlugins: NonNullable<Parameters<typeof ReactMarkdown>[0]["rehypePlugins"]> = [
   [rehypeKatex, { strict: false }],
 ];
@@ -121,15 +124,18 @@ function normalizeMath(text: string): string {
 }
 
 /* One page of notes. Memoised, so scrolling (which updates the reader) doesn't re-render the maths. */
-export default memo(function PageMarkdown({ content }: { content: string }) {
+export default memo(function PageMarkdown({ content, outlinedProblems = false }: { content: string; outlinedProblems?: boolean }) {
   // Most Python pages have no maths, and many maths pages have no code. Avoid
   // walking their entire syntax trees with plugins that have nothing to render.
   const maths = content.includes("$");
   const code = /(?:`{3,}|~{3,})/.test(content);
   const normalized = maths ? normalizeMath(content) : content;
   const rehypePlugins = maths ? (code ? allPlugins : mathPlugins) : (code ? highlightPlugins : noPlugins);
+  const remarkPlugins = outlinedProblems
+    ? (maths ? mathProblemPlugins : plainProblemPlugins)
+    : (maths ? mathRemarkPlugins : plainRemarkPlugins);
   return (
-    <ReactMarkdown remarkPlugins={maths ? mathRemarkPlugins : plainRemarkPlugins} rehypePlugins={rehypePlugins} components={components}>
+    <ReactMarkdown remarkPlugins={remarkPlugins} rehypePlugins={rehypePlugins} components={components}>
       {normalized}
     </ReactMarkdown>
   );
