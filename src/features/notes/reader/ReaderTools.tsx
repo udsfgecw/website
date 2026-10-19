@@ -3,6 +3,7 @@ import { ArrowDownToLine, ArrowUpToLine, ChevronLeft, ChevronRight, Settings, X 
 import { cn } from "@/lib/utils";
 import { chapterFor, type NotesModule } from "../types";
 import { LEADINGS, TEXT_SIZES, WIDTHS, type Prefs } from "./readingPlace";
+import TopicCombobox from "./TopicCombobox";
 
 interface Props {
   notes: NotesModule;
@@ -73,7 +74,15 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
-    const onDown = (e: PointerEvent) => root.current && !root.current.contains(e.target as Node) && setOpen(false);
+    const onDown = (e: PointerEvent) => {
+      const target = e.target as Element | null;
+      if (target?.closest?.('[data-slot="popover-content"]') || target?.closest?.('[data-slot="command"]')) {
+        return;
+      }
+      if (root.current && !root.current.contains(target as Node)) {
+        setOpen(false);
+      }
+    };
     window.addEventListener("keydown", onKey);
     window.addEventListener("pointerdown", onDown);
     return () => {
@@ -126,20 +135,15 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
                 of {total}
               </span>
             </label>
-            <label className="mt-3 block text-[0.85rem] text-ink-2">
-              <span className="label mb-2 block">Topic</span>
-              <select
-                value={chapter.page}
-                onChange={(e) => go(Number(e.target.value))}
-                className="w-full rounded-lg border border-line bg-white px-3 py-2 text-[0.88rem] text-ink"
-              >
-                {notes.chapters.map((c) => (
-                  <option key={c.page} value={c.page}>
-                    {c.title}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="mt-3">
+              <span className="label mb-2 block text-ink-2">Topic</span>
+              <TopicCombobox
+                chapters={notes.chapters}
+                currentChapter={chapter}
+                unitLabel={unit}
+                onSelect={go}
+              />
+            </div>
           </div>
 
           <Choice label="Text size" value={size} options={TEXT_SIZES.map((s, i) => ({ value: s, label: <span style={{ fontSize: 11 + i * 2 }}>A</span> }))} onChange={onSize} />
