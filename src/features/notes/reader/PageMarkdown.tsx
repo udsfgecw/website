@@ -16,12 +16,18 @@ import TreeDiagram from "./TreeDiagram";
 import { module3DiagramDimensions } from "../python-module-3/diagramDimensions";
 import { module4DiagramDimensions } from "../python-module-4/diagramDimensions";
 
-const remarkPlugins = [remarkGfm, remarkMath];
-const rehypePlugins: Parameters<typeof ReactMarkdown>[0]["rehypePlugins"] = [
+const plainRemarkPlugins = [remarkGfm];
+const mathRemarkPlugins = [remarkGfm, remarkMath];
+const mathPlugins: NonNullable<Parameters<typeof ReactMarkdown>[0]["rehypePlugins"]> = [
   [rehypeKatex, { strict: false }],
+];
+const highlightPlugins: NonNullable<Parameters<typeof ReactMarkdown>[0]["rehypePlugins"]> = [
   // Only the languages the notes use are bundled; diagram fences (mermaid, jsxgraph) are left alone.
   [rehypeHighlight, { languages: { bash, c, javascript, json, python }, plainText: ["text"], ignoreMissing: true, detect: false }],
 ];
+const allPlugins = [...mathPlugins, ...highlightPlugins];
+const noPlugins: typeof mathPlugins = [];
+const diagramDimensions = { ...module3DiagramDimensions, ...module4DiagramDimensions };
 
 type HastNode = { type: string; value?: string; children?: HastNode[] };
 const textOf = (node?: HastNode): string =>
@@ -62,7 +68,7 @@ const components: Components = {
   },
   img({ src, alt }) {
     const moduleDiagram = typeof src === "string" && /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src);
-    const dimensions = typeof src === "string" ? { ...module3DiagramDimensions, ...module4DiagramDimensions }[src] : undefined;
+    const dimensions = typeof src === "string" ? diagramDimensions[src] : undefined;
     return <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
   },
   p({ node, children }) {
@@ -99,8 +105,13 @@ const components: Components = {
 
 /* One page of notes. Memoised, so scrolling (which updates the reader) doesn't re-render the maths. */
 export default memo(function PageMarkdown({ content }: { content: string }) {
+  // Most Python pages have no maths, and many maths pages have no code. Avoid
+  // walking their entire syntax trees with plugins that have nothing to render.
+  const maths = content.includes("$");
+  const code = /(?:`{3,}|~{3,})/.test(content);
+  const rehypePlugins = maths ? (code ? allPlugins : mathPlugins) : (code ? highlightPlugins : noPlugins);
   return (
-    <ReactMarkdown remarkPlugins={remarkPlugins} rehypePlugins={rehypePlugins} components={components}>
+    <ReactMarkdown remarkPlugins={maths ? mathRemarkPlugins : plainRemarkPlugins} rehypePlugins={rehypePlugins} components={components}>
       {content}
     </ReactMarkdown>
   );

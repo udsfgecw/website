@@ -1,17 +1,51 @@
+import { lazy } from "react";
 import { useLocation } from "react-router-dom";
 import ModuleNotesPage from "./ModuleNotesPage";
-import { chemistrymodule1 } from "@/features/notes/chemistry-module-1";
-import { chemistrymodule2 } from "@/features/notes/chemistry-module-2";
-import { chemistrymodule3 } from "@/features/notes/chemistry-module-3";
-import { chemistrymodule4 } from "@/features/notes/chemistry-module-4";
-import { electricalmodule1 } from "@/features/notes/electrical-module-1";
-import { pythonmodule1 } from "@/features/notes/python-module-1";
-import { pythonmodule2 } from "@/features/notes/python-module-2";
-import { pythonmodule3 } from "@/features/notes/python-module-3";
-import { pythonmodule4 } from "@/features/notes/python-module-4";
-const modules = [chemistrymodule1, chemistrymodule2, chemistrymodule3, chemistrymodule4, electricalmodule1, pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4];
+import NotFoundPage from "@/pages/NotFoundPage";
+
+// Each route loads only its own Markdown; the catalogue imports lightweight paths.
+const modules = {
+  "/notes/cse/s1/chemistry/module-1": lazy(async () => {
+    const { chemistrymodule1: notes } = await import("@/features/notes/chemistry-module-1");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/chemistry/module-2": lazy(async () => {
+    const { chemistrymodule2: notes } = await import("@/features/notes/chemistry-module-2");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/chemistry/module-3": lazy(async () => {
+    const { chemistrymodule3: notes } = await import("@/features/notes/chemistry-module-3");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/chemistry/module-4": lazy(async () => {
+    const { chemistrymodule4: notes } = await import("@/features/notes/chemistry-module-4");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/electrical/module-1": lazy(async () => {
+    const { electricalmodule1: notes } = await import("@/features/notes/electrical-module-1");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/python/module-1": lazy(async () => {
+    const { pythonmodule1: notes } = await import("@/features/notes/python-module-1");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/python/module-2": lazy(async () => {
+    const { pythonmodule2: notes } = await import("@/features/notes/python-module-2");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/python/module-3": lazy(async () => {
+    const { pythonmodule3: notes } = await import("@/features/notes/python-module-3");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/python/module-4": lazy(async () => {
+    const { pythonmodule4: notes } = await import("@/features/notes/python-module-4");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+};
+
 export default function ImportedModulePage() {
-  const pathname = useLocation().pathname;
-  const notes = modules.find((module) => module.basePath === pathname || pathname.startsWith(`${module.basePath}/`));
-  return notes ? <ModuleNotesPage notes={notes} /> : null;
+  const pathname = useLocation().pathname.replace(/\/$/, "");
+  const basePath = pathname.replace(/\/[^/]+$/, "");
+  const Module = modules[pathname as keyof typeof modules] ?? modules[basePath as keyof typeof modules];
+  return Module ? <Module /> : <NotFoundPage />;
 }

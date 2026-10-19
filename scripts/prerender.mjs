@@ -22,7 +22,7 @@ function setMeta(html, { title, description }) {
 
 // Stylesheets and JS chunks a lazily loaded page needs, following its imports. The entry itself
 // is already in the template.
-function assetTags(source) {
+function assetTags(sources) {
   const css = new Set();
   const js = new Set();
   const visit = (key) => {
@@ -32,8 +32,10 @@ function assetTags(source) {
     chunk.css?.forEach((file) => css.add(file));
     chunk.imports?.forEach(visit);
   };
-  visit(source);
-  if (!js.size) throw new Error(`prerender: ${source} not found in the build manifest`);
+  for (const source of sources) {
+    if (!manifest[source]) throw new Error(`prerender: ${source} not found in the build manifest`);
+    visit(source);
+  }
   return [
     ...[...css].map((file) => `<link rel="stylesheet" crossorigin href="/${file}">`),
     ...[...js].map((file) => `<link rel="modulepreload" crossorigin href="/${file}">`),
@@ -42,9 +44,19 @@ function assetTags(source) {
 
 for (const page of pages) {
   const { html: app, meta } = await render(page.url);
-  let html = template.replace(marker, `<div id="root">${app}</div>`);
+  // Notes contain literal "$" sequences (maths and code). A replacement string
+  // interprets $$, $&, $` and $' and silently changes that content, making React
+  // discard the pre-rendered page and render the whole module again on opening.
+  let html = template.replace(marker, () => `<div id="root">${app}</div>`);
   if (meta) html = setMeta(html, meta);
-  if (page.chunk) html = html.replace("</head>", `  ${assetTags(page.chunk)}\n  </head>`);
+  if (page.chunk) {
+    const sources = [page.chunk];
+    // ImportedModulePage loads notes dynamically. Preload just this route's
+    // module as well, avoiding an extra request round trip on a direct visit.
+    const module = /^\/notes\/cse\/s1\/(chemistry|electrical|python)\/module-(\d+)$/.exec(page.url);
+    if (module) sources.push(`src/features/notes/${module[1]}-module-${module[2]}/index.ts`);
+    html = html.replace("</head>", `  ${assetTags(sources)}\n  </head>`);
+  }
   const file = new URL(page.file, dist);
   await mkdir(new URL(".", file), { recursive: true });
   await writeFile(file, html);

@@ -60,10 +60,26 @@ export default function Reader({ notes }: { notes: NotesModule }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- only the hash the page opened with matters
   }, [notes]);
 
-  // Scroll back once the stored text size has been applied, so the position lands correctly.
+  // The route is lazy: the router's scroll effect can run before its sections
+  // exist. Restore after mounting and once fonts settle, since a small change
+  // in line wrapping shifts deep links by many screens in a long module.
   useEffect(() => {
-    if (restored) scrollToPlace(restored);
-  }, [restored]);
+    const match = /^#page-(\d+)$/.exec(hash);
+    const target = match && Number(match[1]) >= 1 && Number(match[1]) <= total
+      ? { page: Number(match[1]), offset: 0 }
+      : restored;
+    if (!target) return;
+    let cancelled = false;
+    let frame = 0;
+    scrollToPlace(target);
+    void document.fonts.ready.then(() => {
+      if (!cancelled) frame = requestAnimationFrame(() => scrollToPlace(target));
+    });
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(frame);
+    };
+  }, [hash, notes, total, restored]);
 
   // Follow the scroll: current page, progress bar, and the place saved shortly after scrolling stops.
   useEffect(() => {
@@ -76,12 +92,18 @@ export default function Reader({ notes }: { notes: NotesModule }) {
       bar.current?.style.setProperty("transform", `scaleX(${max > 0 ? Math.min(1, window.scrollY / max) : 0})`);
       let current = 1;
       let section: HTMLElement | null = null;
-      for (let n = 1; n <= total; n++) {
-        const el = document.getElementById(pageAnchor(n));
+      // Pages are ordered. Probe only log2(total) section boundaries instead of
+      // forcing layout reads for every earlier page on each scroll frame.
+      let low = 1;
+      let high = total;
+      while (low <= high) {
+        const middle = Math.floor((low + high) / 2);
+        const el = document.getElementById(pageAnchor(middle));
         if (el && el.getBoundingClientRect().top <= READ_LINE) {
-          current = n;
+          current = middle;
           section = el;
-        } else break;
+          low = middle + 1;
+        } else high = middle - 1;
       }
       const offset = section ? Math.max(0, Math.min(1, (READ_LINE - section.getBoundingClientRect().top) / section.offsetHeight)) : 0;
       place.current = { ...place.current, page: current, offset };

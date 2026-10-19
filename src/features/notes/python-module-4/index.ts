@@ -1,7 +1,7 @@
 import type { NotesModule } from "../types";
 import source from "./notes.md?raw";
 import { titledPages } from "../titledPages";
-import { PYTHON_MODULE_4_PATH } from "./path";
+import { PYTHON_MODULE_4_PATH, PYTHON_MODULE_4_SUMMARY } from "./path";
 const { pages, chapters } = titledPages(source);
 export const pythonmodule4: NotesModule = {
   basePath: PYTHON_MODULE_4_PATH,
@@ -14,6 +14,6 @@ export const pythonmodule4: NotesModule = {
     { label: "ALGORITHMIC THINKING WITH PYTHON", href: "/notes/cse/s1/python" },
     { label: "MODULE 4" },
   ],
-  module: "Module 4", course: "Algorithmic Thinking with Python", code: "UCEST105", summary: "Algorithm design strategies: brute force, divide and conquer, dynamic programming, greedy, and randomized",
+  module: "Module 4", course: "Algorithmic Thinking with Python", code: "UCEST105", summary: PYTHON_MODULE_4_SUMMARY,
   source: "KTU UCEST105 study notes; explanations and worked examples edited for clarity.", pages, chapters,
 };

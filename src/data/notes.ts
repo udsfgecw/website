@@ -7,15 +7,15 @@ import { PHYSICS_MODULE_2_PATH } from "@/features/notes/physics-module-2/path";
 import { PHYSICS_MODULE_3_PATH } from "@/features/notes/physics-module-3/path";
 import { PHYSICS_MODULE_4_PATH } from "@/features/notes/physics-module-4/path";
 
-import { chemistrymodule1 } from "@/features/notes/chemistry-module-1";
-import { chemistrymodule2 } from "@/features/notes/chemistry-module-2";
-import { chemistrymodule3 } from "@/features/notes/chemistry-module-3";
-import { chemistrymodule4 } from "@/features/notes/chemistry-module-4";
-import { electricalmodule1 } from "@/features/notes/electrical-module-1";
-import { pythonmodule1 } from "@/features/notes/python-module-1";
-import { pythonmodule2 } from "@/features/notes/python-module-2";
-import { pythonmodule3 } from "@/features/notes/python-module-3";
-import { pythonmodule4 } from "@/features/notes/python-module-4";
+import { CHEMISTRY_MODULE_1_PATH } from "@/features/notes/chemistry-module-1/path";
+import { CHEMISTRY_MODULE_2_PATH } from "@/features/notes/chemistry-module-2/path";
+import { CHEMISTRY_MODULE_3_PATH } from "@/features/notes/chemistry-module-3/path";
+import { CHEMISTRY_MODULE_4_PATH } from "@/features/notes/chemistry-module-4/path";
+import { ELECTRICAL_MODULE_1_PATH } from "@/features/notes/electrical-module-1/path";
+import { PYTHON_MODULE_1_PATH, PYTHON_MODULE_1_SUMMARY } from "@/features/notes/python-module-1/path";
+import { PYTHON_MODULE_2_PATH, PYTHON_MODULE_2_SUMMARY } from "@/features/notes/python-module-2/path";
+import { PYTHON_MODULE_3_PATH, PYTHON_MODULE_3_SUMMARY } from "@/features/notes/python-module-3/path";
+import { PYTHON_MODULE_4_PATH, PYTHON_MODULE_4_SUMMARY } from "@/features/notes/python-module-4/path";
 
 export interface ModuleNotes {
   /** e.g. "Module 1" */
@@ -115,15 +115,20 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
         },
         {
           name: "Chemistry", course: "Engineering Chemistry", code: "GXCYT122", syllabusHref: "/notes/cse/s1/chemistry/syllabus", href: "/notes/cse/s1/chemistry",
-          modules: [1, 2, 3, 4].map((n) => ({ name: `Module ${n}`, detail: `Engineering Chemistry · Module ${n}`, href: [chemistrymodule1.basePath, chemistrymodule2.basePath, chemistrymodule3.basePath, chemistrymodule4.basePath][n - 1] })),
+          modules: [1, 2, 3, 4].map((n) => ({ name: `Module ${n}`, detail: `Engineering Chemistry · Module ${n}`, href: [CHEMISTRY_MODULE_1_PATH, CHEMISTRY_MODULE_2_PATH, CHEMISTRY_MODULE_3_PATH, CHEMISTRY_MODULE_4_PATH][n - 1] })),
         },
         {
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",
-          modules: [{ name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: electricalmodule1.basePath }],
+          modules: [{ name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: ELECTRICAL_MODULE_1_PATH }],
         },
         {
           name: "Algorithmic Thinking with Python", course: "Algorithmic Thinking with Python", code: "UCEST105", syllabusHref: "/notes/cse/s1/python/syllabus", href: "/notes/cse/s1/python",
-          modules: [pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4].map((m, i) => ({ name: `Module ${i + 1}`, detail: m.summary, href: m.basePath })),
+          modules: [
+            { href: PYTHON_MODULE_1_PATH, detail: PYTHON_MODULE_1_SUMMARY },
+            { href: PYTHON_MODULE_2_PATH, detail: PYTHON_MODULE_2_SUMMARY },
+            { href: PYTHON_MODULE_3_PATH, detail: PYTHON_MODULE_3_SUMMARY },
+            { href: PYTHON_MODULE_4_PATH, detail: PYTHON_MODULE_4_SUMMARY },
+          ].map((module, i) => ({ name: `Module ${i + 1}`, ...module })),
         },
         {
           name: "Physics",
