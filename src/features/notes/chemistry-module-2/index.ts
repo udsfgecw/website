@@ -17,3 +17,21 @@ export const chemistrymodule2: NotesModule = {
   module: "Module 2", course: "Engineering Chemistry", code: "GXCYT122", summary: "Nanomaterials, conducting polymers, and electronic applications",
   source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
 };
+
+export function chemistryModule2(branch: string = "cse"): NotesModule {
+  if (branch === "cse") return chemistrymodule2;
+  const branchUpper = branch.toUpperCase();
+  return {
+    ...chemistrymodule2,
+    basePath: `/notes/${branch}/s1/chemistry/module-2`,
+    storageKey: `udsf:notes:${branch}:s1:chemistry-2:v1`,
+    title: `S1 ${branchUpper} Chemistry · Module 2`,
+    trail: [
+      { label: "NOTES", href: "/notes" },
+      { label: branchUpper, href: `/notes/${branch}` },
+      { label: "S1", href: `/notes/${branch}/s1` },
+      { label: "CHEMISTRY", href: `/notes/${branch}/s1/chemistry` },
+      { label: "MODULE 2" },
+    ],
+  };
+}

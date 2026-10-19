@@ -53,7 +53,7 @@ for (const page of pages) {
     const sources = [page.chunk];
     // ImportedModulePage loads notes dynamically. Preload just this route's
     // module as well, avoiding an extra request round trip on a direct visit.
-    const module = /^\/notes\/cse\/s1\/(chemistry|electrical|python)\/module-(\d+)$/.exec(page.url);
+    const module = /^\/notes\/(?:cse|ece|eee)\/s1\/(chemistry|electrical|python)\/module-(\d+)$/.exec(page.url);
     if (module) sources.push(`src/features/notes/${module[1]}-module-${module[2]}/index.ts`);
     html = html.replace("</head>", `  ${assetTags(sources)}\n  </head>`);
   }

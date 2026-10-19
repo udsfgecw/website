@@ -70,6 +70,13 @@ export const pages: StaticPage[] = [
     file: fileFor(`/notes/${branch}/s1/maths/module-1`),
     chunk: "src/pages/notes/ImportedModulePage.tsx",
   })),
+  ...(["ece", "eee"] as const).flatMap((branch) =>
+    ([1, 2, 3, 4] as const).map((n): StaticPage => ({
+      url: `/notes/${branch}/s1/chemistry/module-${n}`,
+      file: fileFor(`/notes/${branch}/s1/chemistry/module-${n}`),
+      chunk: "src/pages/notes/ImportedModulePage.tsx",
+    })),
+  ),
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];

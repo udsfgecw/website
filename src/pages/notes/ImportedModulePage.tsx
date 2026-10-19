@@ -49,6 +49,38 @@ const modules = {
     const { electricalMathsModule1 } = await import("@/features/notes/electrical-maths-module-1");
     return { default: () => <ModuleNotesPage notes={electricalMathsModule1("eee")} /> };
   }),
+  "/notes/ece/s1/chemistry/module-1": lazy(async () => {
+    const { chemistryModule1 } = await import("@/features/notes/chemistry-module-1");
+    return { default: () => <ModuleNotesPage notes={chemistryModule1("ece")} /> };
+  }),
+  "/notes/ece/s1/chemistry/module-2": lazy(async () => {
+    const { chemistryModule2 } = await import("@/features/notes/chemistry-module-2");
+    return { default: () => <ModuleNotesPage notes={chemistryModule2("ece")} /> };
+  }),
+  "/notes/ece/s1/chemistry/module-3": lazy(async () => {
+    const { chemistryModule3 } = await import("@/features/notes/chemistry-module-3");
+    return { default: () => <ModuleNotesPage notes={chemistryModule3("ece")} /> };
+  }),
+  "/notes/ece/s1/chemistry/module-4": lazy(async () => {
+    const { chemistryModule4 } = await import("@/features/notes/chemistry-module-4");
+    return { default: () => <ModuleNotesPage notes={chemistryModule4("ece")} /> };
+  }),
+  "/notes/eee/s1/chemistry/module-1": lazy(async () => {
+    const { chemistryModule1 } = await import("@/features/notes/chemistry-module-1");
+    return { default: () => <ModuleNotesPage notes={chemistryModule1("eee")} /> };
+  }),
+  "/notes/eee/s1/chemistry/module-2": lazy(async () => {
+    const { chemistryModule2 } = await import("@/features/notes/chemistry-module-2");
+    return { default: () => <ModuleNotesPage notes={chemistryModule2("eee")} /> };
+  }),
+  "/notes/eee/s1/chemistry/module-3": lazy(async () => {
+    const { chemistryModule3 } = await import("@/features/notes/chemistry-module-3");
+    return { default: () => <ModuleNotesPage notes={chemistryModule3("eee")} /> };
+  }),
+  "/notes/eee/s1/chemistry/module-4": lazy(async () => {
+    const { chemistryModule4 } = await import("@/features/notes/chemistry-module-4");
+    return { default: () => <ModuleNotesPage notes={chemistryModule4("eee")} /> };
+  }),
 };
 
 export default function ImportedModulePage() {

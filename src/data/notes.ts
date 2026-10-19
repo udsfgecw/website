@@ -65,11 +65,15 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
   },
   {
     name: "Chemistry",
-    course: "Chemistry for Electrical Science",
+    course: "Engineering Chemistry",
     code: "GXCYT122",
     syllabusHref: `/notes/${branchId}/s1/chemistry/syllabus`,
     href: `/notes/${branchId}/s1/chemistry`,
-    modules: [],
+    modules: [1, 2, 3, 4].map((n) => ({
+      name: `Module ${n}`,
+      detail: `Engineering Chemistry · Module ${n}`,
+      href: `/notes/${branchId}/s1/chemistry/module-${n}`,
+    })),
   },
   {
     name: "Electrical and Electronics Engineering",

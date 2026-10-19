@@ -17,3 +17,21 @@ export const chemistrymodule1: NotesModule = {
   module: "Module 1", course: "Engineering Chemistry", code: "GXCYT122", summary: "Electrochemistry, corrosion and materials",
   source: "KTU GXCYT122 study notes, imported from the provided complete study pack.", pages, chapters,
 };
+
+export function chemistryModule1(branch: string = "cse"): NotesModule {
+  if (branch === "cse") return chemistrymodule1;
+  const branchUpper = branch.toUpperCase();
+  return {
+    ...chemistrymodule1,
+    basePath: `/notes/${branch}/s1/chemistry/module-1`,
+    storageKey: `udsf:notes:${branch}:s1:chemistry-1:v1`,
+    title: `S1 ${branchUpper} Chemistry · Module 1`,
+    trail: [
+      { label: "NOTES", href: "/notes" },
+      { label: branchUpper, href: `/notes/${branch}` },
+      { label: "S1", href: `/notes/${branch}/s1` },
+      { label: "CHEMISTRY", href: `/notes/${branch}/s1/chemistry` },
+      { label: "MODULE 1" },
+    ],
+  };
+}
