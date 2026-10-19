@@ -59,8 +59,8 @@ export default function Nav() {
           <img className="size-7 rounded-[6px]" src={`${import.meta.env.BASE_URL}assets/logo-96.webp`} alt="" width={28} height={28} />
         </Link>
 
-        <Link to="/#join" className={cn(link, "justify-self-end")}>
-          Join UDSF
+        <Link to="/notes" className={cn(link, "justify-self-end")}>
+          Notes
         </Link>
       </div>
 
