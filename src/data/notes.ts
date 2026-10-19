@@ -54,14 +54,6 @@ const semester = (n: number, subjects: SubjectNotes[] = []): Semester => ({ id: 
 
 const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
   {
-    name: "Mathematics",
-    course: "Mathematics for Science-1",
-    code: "GYMAT101",
-    syllabusHref: `/notes/${branchId}/s1/maths/syllabus`,
-    href: `/notes/${branchId}/s1/maths`,
-    modules: [],
-  },
-  {
     name: "Chemistry",
     course: "Chemistry for Electrical Science",
     code: "GXCYT122",
@@ -83,14 +75,6 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     code: "UCEST105",
     syllabusHref: `/notes/${branchId}/s1/python/syllabus`,
     href: `/notes/${branchId}/s1/python`,
-    modules: [],
-  },
-  {
-    name: "Physics",
-    course: "Physics for Electrical Science",
-    code: "GBPHT121",
-    syllabusHref: `/notes/${branchId}/s1/physics/syllabus`,
-    href: `/notes/${branchId}/s1/physics`,
     modules: [],
   },
 ];

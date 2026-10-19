@@ -146,10 +146,6 @@ const courses: Record<string, Course> = {
   },
 };
 
-// The ECE and EEE variants use branch-specific course codes for the same topic outlines.
-courses.GYMAT101 = courses.GAMAT101;
-courses.GBPHT121 = courses.GAPHT121;
-
 const markdownList = (items: string[]) => items.map((item, index) => `${index + 1}. ${item}`).join("\n");
 
 function moduleMarkdown(module: Module, index: number) {
