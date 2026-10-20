@@ -19,7 +19,11 @@ export interface LineProjectionSpec {
   bAbove?: boolean;
   bInFront?: boolean;
   /** answers printed in the source, to compare with the computed ones */
-  printed?: Partial<Record<"fvLength" | "tvLength" | "theta" | "phi", number>>;
+  printed?: Partial<Record<"length" | "fvLength" | "tvLength" | "theta" | "phi" | "htDistance" | "vtDistance", number>>;
+  /** metres for room, pole and ladder problems (the drawing is then at a scale such as 1:100) */
+  unit?: "mm" | "m";
+  /** the problem's given data as short sentences, shown above the drawing */
+  givens?: string[];
 }
 
 export interface Pt {
@@ -90,13 +94,17 @@ export function solveLine(spec: LineProjectionSpec): LineProjection {
   };
 }
 
-/** Computed answers next to the printed ones, with a flag where they disagree by more than `tol` (mm or degrees). */
-export function compareWithPrinted(spec: LineProjectionSpec, solved: LineProjection, tol = 1.5) {
-  const computed = { fvLength: solved.fvLength, tvLength: solved.tvLength, theta: solved.theta, phi: solved.phi };
-  return (Object.keys(spec.printed ?? {}) as (keyof typeof computed)[]).map((key) => ({
-    key,
-    printed: spec.printed![key]!,
-    computed: computed[key],
-    matches: Math.abs(spec.printed![key]! - computed[key]) <= tol,
-  }));
+/** Computed answers next to the printed ones, with a flag where they disagree by more than rounding on a drawing. */
+export function compareWithPrinted(spec: LineProjectionSpec, solved: LineProjection) {
+  const computed = {
+    length: solved.length, fvLength: solved.fvLength, tvLength: solved.tvLength, theta: solved.theta, phi: solved.phi,
+    htDistance: solved.HT ? Math.abs(solved.HT.y) : undefined, vtDistance: solved.VT ? Math.abs(solved.VT.z) : undefined,
+  };
+  const lengthTolerance = spec.unit === "m" ? 0.15 : 1.5;
+  return (Object.keys(spec.printed ?? {}) as (keyof typeof computed)[]).flatMap((key) => {
+    const printed = spec.printed![key];
+    const value = computed[key];
+    if (printed === undefined || value === undefined) return [];
+    return [{ key, printed, computed: value, matches: Math.abs(printed - value) <= (key === "theta" || key === "phi" ? 1.5 : lengthTolerance) }];
+  });
 }

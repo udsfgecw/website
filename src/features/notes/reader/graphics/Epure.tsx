@@ -8,12 +8,13 @@ const STEPS = [
   "Locate the traces",
 ] as const;
 
-const fmt = (n: number) => String(Math.round(n * 10) / 10);
 
 /* The 2D drawing: front view above the XY line, top view below it. Built up in steps so the
    construction can be followed in order. Drawing x is the space x; the front view is drawn at -z
    (up the page) and the top view at +y (down the page), as in first-angle projection. */
-export default function Epure({ solved }: { solved: LineProjection }) {
+/* `divisor` converts drawing units back to the problem's own (a 5 m room is drawn 25 times larger). */
+export default function Epure({ solved, divisor = 1 }: { solved: LineProjection; divisor?: number }) {
+  const fmt = (n: number, d = divisor) => String(Math.round((n / d) * 10) / 10);
   const [step, setStep] = useState<number>(STEPS.length);
   const marker = useId();
   const { A, B, HT, VT } = solved;
@@ -106,13 +107,13 @@ export default function Epure({ solved }: { solved: LineProjection }) {
             <line x1={b1T.x} y1={b1T.y} x2={b1F.x} y2={b1F.y} strokeWidth="0.4" strokeDasharray="2 1.6" />
             <line x1={aF.x} y1={aF.y} x2={b1F.x} y2={b1F.y} strokeWidth="1" />
             <text x={(aF.x + b1F.x) / 2} y={(aF.y + b1F.y) / 2 - 3} fontSize="6" stroke="none" textAnchor="middle">{`TL ${fmt(solved.length)}`}</text>
-            <text x={aF.x + 14} y={aF.y - 2} fontSize="6" stroke="none">{`θ = ${fmt(solved.theta)}°`}</text>
+            <text x={aF.x + 14} y={aF.y - 2} fontSize="6" stroke="none">{`θ = ${fmt(solved.theta, 1)}°`}</text>
 
             <path d={arc(aF, bF, b2F)} fill="none" strokeWidth="0.5" strokeDasharray="2 1.6" />
             <line x1={b2F.x} y1={b2F.y} x2={b2T.x} y2={b2T.y} strokeWidth="0.4" strokeDasharray="2 1.6" />
             <line x1={aT.x} y1={aT.y} x2={b2T.x} y2={b2T.y} strokeWidth="1" />
             <text x={(aT.x + b2T.x) / 2} y={(aT.y + b2T.y) / 2 + 8} fontSize="6" stroke="none" textAnchor="middle">{`TL ${fmt(solved.length)}`}</text>
-            <text x={aT.x + 14} y={aT.y + 8} fontSize="6" stroke="none">{`φ = ${fmt(solved.phi)}°`}</text>
+            <text x={aT.x + 14} y={aT.y + 8} fontSize="6" stroke="none">{`φ = ${fmt(solved.phi, 1)}°`}</text>
           </g>
         )}
 
