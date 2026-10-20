@@ -53,6 +53,10 @@ const modules = {
     const { electricalmodule3: notes } = await import("@/features/notes/electrical-module-3");
     return { default: () => <ModuleNotesPage notes={notes} /> };
   }),
+  "/notes/cse/s1/graphics/projection-of-lines": lazy(async () => {
+    const { graphicsprojectionoflines: notes } = await import("@/features/notes/graphics-projection-of-lines");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
   "/notes/cse/s1/python/module-1": lazy(async () => {
     const { pythonmodule1: notes } = await import("@/features/notes/python-module-1");
     return { default: () => <ModuleNotesPage notes={notes} /> };

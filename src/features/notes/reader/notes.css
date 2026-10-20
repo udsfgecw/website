@@ -356,3 +356,66 @@
   }
 }
 
+
+/* Line-projection figures: tabbed 2D drawing and 3D view */
+.notes-prose .notes-line-projection svg {
+  max-width: none;
+}
+.notes-epure-tabs,
+.notes-epure-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.8rem;
+}
+.notes-epure-steps {
+  margin: 0.8rem 0 0;
+  justify-content: center;
+}
+.notes-epure-tabs button,
+.notes-epure-steps button {
+  font: inherit;
+  font-size: 0.85em;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border, #e6e7ea);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.notes-epure-tabs button[aria-selected="true"],
+.notes-epure-steps button[aria-pressed="true"] {
+  background: var(--secondary, #edf3ec);
+  border-color: var(--secondary-foreground, #2f6b4a);
+  font-weight: 600;
+}
+.notes-epure-steps span {
+  font-weight: 700;
+}
+.notes-space3d-canvas {
+  width: 100%;
+  min-height: 240px;
+  border: 1px solid var(--border, #e6e7ea);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  touch-action: none;
+}
+.notes-space3d-fold {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0.7rem 0 0;
+  font-size: 0.85em;
+}
+.notes-space3d-fold input {
+  flex: 1;
+}
+.notes-epure-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.82em;
+  opacity: 0.75;
+}
+.notes-epure-answers {
+  margin: 1rem auto 0;
+  font-size: 0.85em;
+}

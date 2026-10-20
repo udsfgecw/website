@@ -11,6 +11,7 @@ import { CHEMISTRY_MODULE_1_PATH } from "@/features/notes/chemistry-module-1/pat
 import { CHEMISTRY_MODULE_2_PATH } from "@/features/notes/chemistry-module-2/path";
 import { CHEMISTRY_MODULE_3_PATH } from "@/features/notes/chemistry-module-3/path";
 import { CHEMISTRY_MODULE_4_PATH } from "@/features/notes/chemistry-module-4/path";
+import { GRAPHICS_PROJECTION_OF_LINES_PATH } from "@/features/notes/graphics-projection-of-lines/path";
 import { ELECTRICAL_MODULE_1_PATH } from "@/features/notes/electrical-module-1/path";
 import { ELECTRICAL_MODULE_2_PATH } from "@/features/notes/electrical-module-2/path";
 import { ELECTRICAL_MODULE_3_PATH } from "@/features/notes/electrical-module-3/path";
@@ -143,7 +144,10 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
         },
         {
           name: "Engineering Graphics", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", syllabusHref: "/notes/cse/s1/graphics/syllabus", href: "/notes/cse/s1/graphics",
-          modules: [{ name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH }],
+          modules: [
+            { name: "Projection of Lines", detail: "Solved problems with 2D drawings and 3D views", href: GRAPHICS_PROJECTION_OF_LINES_PATH },
+            { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH },
+          ],
         },
         {
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",
