@@ -1,16 +1,22 @@
 import SiteLayout from "@/components/layout/SiteLayout";
 import Alliance from "@/components/sections/Alliance";
+import Committee from "@/components/sections/Committee";
 import Hero from "@/components/sections/Hero";
 import Join from "@/components/sections/Join";
 import NotesTeaser from "@/components/sections/NotesTeaser";
 import Programs from "@/components/sections/Programs";
 import Progress from "@/components/sections/progress/Progress";
 import WhatWeDo from "@/components/sections/WhatWeDo";
-import { SITE_DESCRIPTION, pageTitle } from "@/config";
 import { usePageMeta } from "@/lib/meta";
+import { organizationLd, websiteLd } from "@/lib/seo";
 
 export default function HomePage() {
-  usePageMeta({ title: pageTitle(), description: SITE_DESCRIPTION });
+  usePageMeta({
+    title: "UDSF GECW | KSU and MSF student alliance at GEC Wayanad",
+    description:
+      "UDSF GECW is the KSU and MSF student alliance at Government Engineering College Wayanad, Mananthavady. See our work on campus, pro shows and free study notes.",
+    jsonLd: [websiteLd(), organizationLd()],
+  });
 
   return (
     <SiteLayout>
@@ -20,6 +26,7 @@ export default function HomePage() {
         <Progress />
         <Programs />
         <Alliance />
+        <Committee />
         <NotesTeaser />
         <Join />
       </main>

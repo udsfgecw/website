@@ -12,6 +12,7 @@ export default function Footer() {
         </Link>
         <p className="label text-ink-2">Government Engineering College Wayanad, Mananthavady</p>
         <div className="label flex items-center gap-6 text-ink-2">
+          <Link className="transition-colors hover:text-ink" to="/contact">Contact</Link>
           <a className="transition-colors hover:text-ink" href={INSTAGRAM} target="_blank" rel="noopener">
             Instagram
           </a>

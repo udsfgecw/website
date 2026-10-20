@@ -61,9 +61,10 @@ export default function Nav() {
           <img className="size-7 rounded-[6px]" src={`${MEDIA_BASE}/assets/logo-96.webp`} alt="" width={28} height={28} />
         </Link>
 
-        <Link to="/notes" className={cn(link, "justify-self-end")}>
-          Notes
-        </Link>
+        <div className="flex items-center justify-self-end gap-4 md:gap-6">
+          <Link to="/contact" className={link} onClick={() => setOpen(false)}>Contact</Link>
+          <Link to="/notes" className={link} onClick={() => setOpen(false)}>Notes</Link>
+        </div>
       </div>
 
       {/* phone menu */}

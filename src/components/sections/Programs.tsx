@@ -42,14 +42,11 @@ export default function Programs() {
                   setOpen(index);
                 }}
               />
-              <div className="mt-4 flex gap-3">
-                <span className="label pt-1 text-green tabular-nums">{String(index + 1).padStart(2, "0")}</span>
-                <div className="min-w-0">
-                  <h3 className="line-clamp-2 text-[length:clamp(1rem,1.7vw,1.3rem)] font-black uppercase leading-[1] tracking-[-0.03em] text-balance">
-                    {title}
-                  </h3>
-                  <p className="label mt-2 text-white/45">{detail}</p>
-                </div>
+              <div className="mt-4 min-w-0">
+                <h3 className="line-clamp-2 text-[length:clamp(1rem,1.7vw,1.3rem)] font-black uppercase leading-[1] tracking-[-0.03em] text-balance">
+                  {title}
+                </h3>
+                <p className="label mt-2 text-white/45">{detail}</p>
               </div>
             </li>
           ))}

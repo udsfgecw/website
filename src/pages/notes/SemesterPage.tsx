@@ -3,8 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Label } from "@/components/ui/section";
 import { pageTitle } from "@/config";
-import { branchPath, NOTES_CATALOGUE } from "@/data/notes";
-import { usePageMeta } from "@/lib/meta";
+import { branchPath, NOTES_CATALOGUE, semesterPath } from "@/data/notes";
+import { notFoundMeta, usePageMeta } from "@/lib/meta";
+import { breadcrumbLd, collectionPageLd } from "@/lib/seo";
 import NotFoundPage from "@/pages/NotFoundPage";
 import Breadcrumb from "./Breadcrumb";
 
@@ -20,8 +21,17 @@ export default function SemesterPage() {
       ? {
           title: pageTitle(`${branch.short} ${semester.name} notes`),
           description: `Study notes for ${semester.name} of ${branch.name} at Government Engineering College Wayanad, shared by UDSF.`,
+          jsonLd: [
+            collectionPageLd(`${branch.short} ${semester.name} notes`, `Study notes for ${semester.name} of ${branch.name} at Government Engineering College Wayanad.`, semesterPath(branch, semester)),
+            breadcrumbLd([
+              { name: "Home", path: "/" },
+              { name: "Notes", path: "/notes" },
+              { name: branch.short, path: branchPath(branch) },
+              { name: semester.name, path: semesterPath(branch, semester) },
+            ]),
+          ],
         }
-      : { title: pageTitle("Page not found"), description: "This page doesn’t exist on the UDSF GECW website." },
+      : notFoundMeta(),
   );
 
   if (!found) return <NotFoundPage />;

@@ -20,6 +20,7 @@ const ImportedModulePage = lazy(() => import("@/pages/notes/ImportedModulePage")
 const SyllabusPage = lazy(() => import("@/pages/notes/SyllabusPage"));
 const EventsPage = lazy(() => import("@/pages/EventsPage"));
 const ActivitiesPage = lazy(() => import("@/pages/ActivitiesPage"));
+const ContactPage = lazy(() => import("@/pages/ContactPage"));
 
 // The notes reader brings markdown and maths rendering, so it loads only on notes pages.
 const MathsNotesPage = lazy(() => import("@/pages/notes/MathsNotesPage"));
@@ -102,6 +103,7 @@ export default function App() {
           <Route path="/gate" element={<GateExamPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/activities" element={<ActivitiesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

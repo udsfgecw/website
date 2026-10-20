@@ -6,13 +6,22 @@ import { Label } from "@/components/ui/section";
 import { pageTitle } from "@/config";
 import { EVENT_CATALOGUE, eventDay } from "@/data/event-catalogue";
 import { usePageMeta } from "@/lib/meta";
+import { breadcrumbLd, collectionPageLd } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
+const DESCRIPTION = "Live artist, DJ and band performances at UDSF GECW pro shows and college events at Government Engineering College Wayanad.";
 const BATCH = 24;
 const YEARS = [...new Set(EVENT_CATALOGUE.map((event) => event.year))].sort().reverse();
 
 export default function EventsPage() {
-  usePageMeta({ title: pageTitle("Pro shows"), description: "Live artist, DJ and band performances at UDSF GECW pro shows and college events." });
+  usePageMeta({
+    title: pageTitle("Pro shows"),
+    description: DESCRIPTION,
+    jsonLd: [
+      collectionPageLd("Pro shows", DESCRIPTION, "/events"),
+      breadcrumbLd([{ name: "Home", path: "/" }, { name: "Pro shows", path: "/events" }]),
+    ],
+  });
   const [year, setYear] = useState<string | null>(null);
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");

@@ -6,6 +6,7 @@ import "./notes.css";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { pageTitle } from "@/config";
 import { usePageMeta } from "@/lib/meta";
+import { breadcrumbLd, notesCrumbs, studyNotesLd } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 import { chapterFor, pageAnchor, type NotesModule } from "../types";
 import PageMarkdown from "./PageMarkdown";
@@ -44,9 +45,20 @@ export default function Reader({ notes }: { notes: NotesModule }) {
   const nav = findSubjectNav(notes);
   const { hash } = useLocation();
 
+  // ECE and EEE share some modules with CSE; naming the department keeps each page's description its own.
+  const department = notes.trail.find((step) => /^\/notes\/[a-z]+$/.test(step.href ?? ""))?.label;
+  const summary = notes.displayDescription ?? `${notes.course} (${notes.code}), ${notes.module}: ${notes.summary.toLowerCase()}. All ${total} ${unit}s of notes on one page.`;
+  const description = department ? `${department}: ${summary}` : summary;
   usePageMeta({
     title: pageTitle(notes.title),
-    description: notes.displayDescription ?? `${notes.course} (${notes.code}), ${notes.module}: ${notes.summary.toLowerCase()}. All ${total} ${unit}s of notes on one page.`,
+    description,
+    // /module-1/12 and #page-12 are the same document as /module-1
+    path: notes.basePath,
+    type: "article",
+    jsonLd: [
+      studyNotesLd({ name: notes.title, description, path: notes.basePath, course: notes.course, code: notes.code }),
+      breadcrumbLd(notesCrumbs(notes.trail, notes.basePath)),
+    ],
   });
 
   // Read the stored place after the first render, so the pre-rendered HTML matches.

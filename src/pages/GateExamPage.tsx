@@ -1,8 +1,12 @@
 import { useEffect } from "react";
+import { pageTitle } from "@/config";
+import { usePageMeta } from "@/lib/meta";
 
 const GATE_URL = "https://gecwyd.github.io/gate-question-bank";
 
 export default function GateExamPage() {
+  // Only a redirect to the GATE question bank, so it has nothing of its own to list.
+  usePageMeta({ title: pageTitle("GATE question bank"), description: "Redirecting to the GATE question bank shared by UDSF GECW.", noindex: true });
   useEffect(() => {
     const t = setTimeout(() => {
       window.location.href = GATE_URL;

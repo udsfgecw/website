@@ -4,7 +4,8 @@ import SiteLayout from "@/components/layout/SiteLayout";
 import { Label } from "@/components/ui/section";
 import { pageTitle } from "@/config";
 import { branchPath, NOTES_CATALOGUE, semesterPath } from "@/data/notes";
-import { usePageMeta } from "@/lib/meta";
+import { notFoundMeta, usePageMeta } from "@/lib/meta";
+import { breadcrumbLd, collectionPageLd } from "@/lib/seo";
 import NotFoundPage from "@/pages/NotFoundPage";
 import Breadcrumb from "./Breadcrumb";
 
@@ -20,9 +21,19 @@ export default function SubjectPage() {
     subject
       ? {
           title: pageTitle(`${subject.name} notes · ${branch!.short} ${semester!.name}`),
-          description: `${subject.course} (${subject.code}): module-wise study notes shared by UDSF for students at Government Engineering College Wayanad.`,
+          description: `${subject.course} (${subject.code}): module-wise study notes for ${branch!.short} ${semester!.name}, shared by UDSF for students at Government Engineering College Wayanad.`,
+          jsonLd: [
+            collectionPageLd(`${subject.name} notes`, `${subject.course} (${subject.code}) study notes for ${branch!.short} ${semester!.name}.`, subject.href),
+            breadcrumbLd([
+              { name: "Home", path: "/" },
+              { name: "Notes", path: "/notes" },
+              { name: branch!.short, path: branchPath(branch!) },
+              { name: semester!.name, path: semesterPath(branch!, semester!) },
+              { name: subject.name, path: subject.href },
+            ]),
+          ],
         }
-      : { title: pageTitle("Page not found"), description: "This page doesn’t exist on the UDSF GECW website." },
+      : notFoundMeta(),
   );
 
   if (!branch || !semester || !subject) return <NotFoundPage />;

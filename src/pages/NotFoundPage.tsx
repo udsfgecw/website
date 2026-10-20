@@ -1,11 +1,10 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { pageTitle } from "@/config";
-import { usePageMeta } from "@/lib/meta";
+import { notFoundMeta, usePageMeta } from "@/lib/meta";
 
 export default function NotFoundPage() {
-  usePageMeta({ title: pageTitle("Page not found"), description: "This page doesn’t exist on the UDSF GECW website." });
+  usePageMeta(notFoundMeta());
 
   return (
     <main className="wrap flex min-h-svh flex-col items-start justify-center py-24">

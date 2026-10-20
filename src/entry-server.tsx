@@ -29,9 +29,34 @@ import { pythonmodule1 } from "./features/notes/python-module-1";
 import { pythonmodule2 } from "./features/notes/python-module-2";
 import { pythonmodule3 } from "./features/notes/python-module-3";
 import { pythonmodule4 } from "./features/notes/python-module-4";
-import { MetaCollector, type PageMeta } from "./lib/meta";
+import {
+  gamat101QuestionPapers,
+  gapht121QuestionPapers,
+  gmest103QuestionPapers,
+  gxest104QuestionPapers,
+  ucest105QuestionPapers,
+} from "./features/notes/question-papers";
+import type { NotesModule } from "./features/notes/types";
+import { MetaCollector } from "./lib/meta";
+import { applyHead, type PageMeta } from "./lib/seo";
+import { buildLlmsFullTxt, buildLlmsTxt, buildRobots, buildSitemap } from "./lib/site-files";
+
+export { SITE_URL } from "./config";
 
 /* Used at build time only (scripts/prerender.mjs). */
+
+/* Notes modules whose topics are listed in llms-full.txt. */
+const NOTES_MODULES: NotesModule[] = [
+  mathsModule1, mathsModule2, mathsModule3, mathsModule4,
+  physicsModule1, physicsModule2, physicsModule3, physicsModule4,
+  chemistrymodule1, chemistrymodule2, chemistrymodule3, chemistrymodule4,
+  graphicsm1, graphicsm2, graphicsm3, graphicsm4,
+  electricalmodule1, electricalmodule2, electricalmodule3,
+  pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4,
+  gamat101QuestionPapers, gapht121QuestionPapers, gmest103QuestionPapers, gxest104QuestionPapers, ucest105QuestionPapers,
+];
+
+const QUESTION_PAPERS = [gamat101QuestionPapers, gapht121QuestionPapers, gmest103QuestionPapers, gxest104QuestionPapers, ucest105QuestionPapers];
 
 export interface StaticPage {
   url: string;
@@ -47,6 +72,7 @@ const fileFor = (url: string) => `${url.replace(/^\//, "")}/index.html`.replace(
 export const pages: StaticPage[] = [
   { url: "/", file: "index.html" },
   { url: "/events", file: "events/index.html", chunk: "src/pages/EventsPage.tsx" },
+  { url: "/contact", file: "contact/index.html", chunk: "src/pages/ContactPage.tsx" },
   { url: "/activities", file: "activities/index.html", chunk: "src/pages/ActivitiesPage.tsx" },
   { url: "/notes", file: "notes/index.html" },
   // a page for each department, each semester that has notes, and each of those subjects
@@ -94,9 +120,23 @@ export const pages: StaticPage[] = [
       chunk: "src/pages/notes/ImportedModulePage.tsx",
     })),
   ),
+  ...QUESTION_PAPERS.map((notes): StaticPage => ({ url: notes.basePath, file: fileFor(notes.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" })),
   // served by the host for any URL that has no file
   { url: "/404", file: "404.html" },
 ];
+
+/* Pages search engines should list: everything written out except the 404 page. */
+export const indexablePages = () => pages.filter((page) => page.url !== "/404").map((page) => page.url);
+
+/* sitemap.xml, robots.txt, llms.txt and llms-full.txt, keyed by output file name. */
+export const siteFiles = () => ({
+  "sitemap.xml": buildSitemap(indexablePages()),
+  "robots.txt": buildRobots(),
+  "llms.txt": buildLlmsTxt(),
+  "llms-full.txt": buildLlmsFullTxt(NOTES_MODULES),
+});
+
+export { applyHead };
 
 /* Renders one URL to HTML, waiting for lazily loaded pages, and returns the page's title and description. */
 export async function render(url: string, programs?: readonly EventEntry[]) {
@@ -123,12 +163,6 @@ export async function renderLandingDocument(template: string) {
   const { html, meta } = await render("/", feed.programs);
   const data = JSON.stringify(feed).replace(/</g, "\\u003c");
   let document = template.replace('<div id="root"></div>', () => `<div id="root">${html}</div><script id="program-feed" type="application/json">${data}</script>`);
-  if (meta) {
-    const escape = (value: string) => value.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
-    document = document.replace(/<title>[^<]*<\/title>/, () => `<title>${escape(meta.title)}</title>`)
-      .replace(/(<meta name="description" content=")[^"]*/, (_, prefix) => prefix + escape(meta.description))
-      .replace(/(<meta property="og:title" content=")[^"]*/, (_, prefix) => prefix + escape(meta.title))
-      .replace(/(<meta property="og:description" content=")[^"]*/, (_, prefix) => prefix + escape(meta.description));
-  }
+  if (meta) document = applyHead(document, meta);
   return document;
 }

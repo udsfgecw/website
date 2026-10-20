@@ -15,7 +15,12 @@ export function compareActivityRank(a: Activity, b: Activity) {
     || a.id.localeCompare(b.id);
 }
 
-export const RANKED_ACTIVITIES = [...OUR_PROGRESS, ...OTHER_ACTIVITIES].sort(compareActivityRank);
+// Posts the user removed from the site: "College ATM Facility Realized" repeats the SBI ATM inauguration.
+const HIDDEN_IDS = new Set(["9b21b7406fef"]);
+
+export const RANKED_ACTIVITIES = [...OUR_PROGRESS, ...OTHER_ACTIVITIES]
+  .filter((post) => !HIDDEN_IDS.has(post.id))
+  .sort(compareActivityRank);
 
 // Keep the homepage preview in the same order as the combined archive.
 export const PROGRESS_HIGHLIGHTS = RANKED_ACTIVITIES.slice(0, 8)

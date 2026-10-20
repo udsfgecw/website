@@ -1,3 +1,4 @@
+import { EVENT_CATALOGUE } from "./event-catalogue";
 import { EVENT_REELS } from "./event-reels";
 import { EVENT_STORIES } from "./event-stories";
 
@@ -17,7 +18,7 @@ const SELECTION = [
   { id: "reel-ca94ec64d9e1", title: "ALOHA ’25 Christmas party", detail: "Christmas show recap · UDSF GECW" },
 ];
 
-export const HOMEPAGE_SHOWS = SELECTION.flatMap(({ id, title, detail }) => {
+const CURATED = SELECTION.flatMap(({ id, title, detail }) => {
   const original = [...EVENT_STORIES, ...EVENT_REELS].find((post) => post.id === id);
   if (!original?.video) return [];
   const post = id === "reel-38608865affb" ? {
@@ -30,3 +31,18 @@ export const HOMEPAGE_SHOWS = SELECTION.flatMap(({ id, title, detail }) => {
   } : original;
   return [{ post, title, detail }];
 });
+
+const LATEST_DAYS = 8;
+const dayLabel = (date: string) =>
+  new Date(`${date}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+
+// The newest show videos from the events page lead the showcase, one per day so a single night doesn't fill it.
+const days = new Set<string>();
+const LATEST = EVENT_CATALOGUE.flatMap(({ post, title }) => {
+  if (!post?.video || days.has(post.date) || days.size >= LATEST_DAYS) return [];
+  days.add(post.date);
+  const by = post.id.startsWith("sathva-") ? "Sathva College Union" : "UDSF GECW";
+  return [{ post, title, detail: `${by} · ${dayLabel(post.date)}` }];
+});
+
+export const HOMEPAGE_SHOWS = [...LATEST, ...CURATED];

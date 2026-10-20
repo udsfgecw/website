@@ -5,6 +5,10 @@ import { Label } from "@/components/ui/section";
 import { pageTitle } from "@/config";
 import { type Branch, branchPath, NOTES_CATALOGUE } from "@/data/notes";
 import { usePageMeta } from "@/lib/meta";
+import { breadcrumbLd, collectionPageLd } from "@/lib/seo";
+
+const NOTES_DESCRIPTION =
+  "Free study notes for students at Government Engineering College Wayanad, shared by UDSF, department by department and semester by semester.";
 
 /* A department links to the page listing its semesters. */
 function BranchCard({ branch }: { branch: Branch }) {
@@ -28,8 +32,12 @@ function BranchCard({ branch }: { branch: Branch }) {
 
 export default function NotesPage() {
   usePageMeta({
-    title: pageTitle("Notes"),
-    description: "Free study notes for students at Government Engineering College Wayanad, shared by UDSF, semester by semester.",
+    title: pageTitle("Free study notes for GEC Wayanad"),
+    description: NOTES_DESCRIPTION,
+    jsonLd: [
+      collectionPageLd("Study notes", NOTES_DESCRIPTION, "/notes"),
+      breadcrumbLd([{ name: "Home", path: "/" }, { name: "Notes", path: "/notes" }]),
+    ],
   });
 
   return (

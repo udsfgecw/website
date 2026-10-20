@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { MEDIA_BASE } from "@/lib/media";
 
@@ -53,6 +55,21 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0">
         <Stack layer="content" />
+      </div>
+      {/* announcement pill, kept outside the stacks so it never shifts the cut-out letters */}
+      <div className="absolute inset-x-0 bottom-[clamp(1.25rem,5svh,3rem)] flex justify-center px-5">
+        <Link
+          to="/notes"
+          className="group inline-flex items-center gap-3 rounded-full border border-ink/10 bg-white/85 p-1.5 shadow-[0_10px_40px_-12px_rgba(20,22,26,0.35)] backdrop-blur-md transition-colors duration-200 hover:bg-white"
+        >
+          <span className="label rounded-full bg-[linear-gradient(120deg,var(--color-green-deep),var(--color-blue-deep))] px-3 py-1.5 text-white">New</span>
+          <span className="text-[0.9rem] font-semibold tracking-[-0.01em] whitespace-nowrap text-ink">
+            Free study notes<span className="font-medium text-ink-2 max-[359px]:hidden"> · 2024 scheme</span>
+          </span>
+          <span className="grid size-8 shrink-0 place-items-center rounded-full bg-ink text-white transition-transform duration-300 group-hover:rotate-45">
+            <ArrowUpRight aria-hidden className="size-4" />
+          </span>
+        </Link>
       </div>
     </section>
   );

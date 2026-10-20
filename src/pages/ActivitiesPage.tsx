@@ -9,6 +9,7 @@ import type { Activity } from "@/data/activities";
 import { ACTIVITY_RANKING } from "@/data/activity-ranking";
 import { dayLabel, mediaUrl } from "@/lib/activity";
 import { usePageMeta } from "@/lib/meta";
+import { breadcrumbLd, collectionPageLd } from "@/lib/seo";
 import { stageOf, THEMES, THEME_KEYS, themeOf, type Theme } from "@/lib/progress";
 import { RANKED_ACTIVITIES } from "@/lib/ranked-activities";
 import { cn } from "@/lib/utils";
@@ -50,9 +51,14 @@ const STORIES = Object.values(
 type Viewer = { items: readonly Activity[]; index: number } | null;
 
 export default function ActivitiesPage() {
+  const description = `What UDSF GECW has raised, won and delivered since ${FIRST_YEAR}: ${DELIVERED} completed changes to campus, hostels, exams and student life at Government Engineering College Wayanad.`;
   usePageMeta({
     title: pageTitle("Our progress"),
-    description: `What UDSF GECW has raised, won and delivered since ${FIRST_YEAR}: ${DELIVERED} completed changes to campus, hostels, exams and student life at Government Engineering College Wayanad.`,
+    description,
+    jsonLd: [
+      collectionPageLd("Our progress", description, "/activities"),
+      breadcrumbLd([{ name: "Home", path: "/" }, { name: "Our progress", path: "/activities" }]),
+    ],
   });
   const [viewer, setViewer] = useState<Viewer>(null);
   const view = (items: readonly Activity[], item: Activity) => setViewer({ items, index: items.indexOf(item) });
