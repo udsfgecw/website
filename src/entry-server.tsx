@@ -2,6 +2,9 @@ import { StrictMode } from "react";
 import { prerenderToNodeStream } from "react-dom/static";
 import { StaticRouter } from "react-router-dom";
 import App from "./App";
+import { ProgramFeedProvider, createProgramFeed } from "./lib/program-feed";
+import type { EventEntry } from "./data/event-catalogue";
+export { createProgramFeed };
 import { branchPath, NOTES_CATALOGUE, semesterPath } from "./data/notes";
 import { mathsModule1 } from "./features/notes/maths-module-1";
 import { mathsModule2 } from "./features/notes/maths-module-2";
@@ -15,6 +18,10 @@ import { chemistrymodule1 } from "./features/notes/chemistry-module-1";
 import { chemistrymodule2 } from "./features/notes/chemistry-module-2";
 import { chemistrymodule3 } from "./features/notes/chemistry-module-3";
 import { chemistrymodule4 } from "./features/notes/chemistry-module-4";
+import { graphicsm1 } from "./features/notes/graphics-m1";
+import { graphicsm2 } from "./features/notes/graphics-m2";
+import { graphicsm3 } from "./features/notes/graphics-m3";
+import { graphicsm4 } from "./features/notes/graphics-m4";
 import { electricalmodule1 } from "./features/notes/electrical-module-1";
 import { electricalmodule2 } from "./features/notes/electrical-module-2";
 import { electricalmodule3 } from "./features/notes/electrical-module-3";
@@ -39,6 +46,8 @@ const fileFor = (url: string) => `${url.replace(/^\//, "")}/index.html`.replace(
 /* Every URL written out as its own static HTML file. */
 export const pages: StaticPage[] = [
   { url: "/", file: "index.html" },
+  { url: "/events", file: "events/index.html", chunk: "src/pages/EventsPage.tsx" },
+  { url: "/activities", file: "activities/index.html", chunk: "src/pages/ActivitiesPage.tsx" },
   { url: "/notes", file: "notes/index.html" },
   // a page for each department, each semester that has notes, and each of those subjects
   ...NOTES_CATALOGUE.flatMap((branch) => [
@@ -62,6 +71,10 @@ export const pages: StaticPage[] = [
   { url: chemistrymodule2.basePath, file: fileFor(chemistrymodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: chemistrymodule3.basePath, file: fileFor(chemistrymodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: chemistrymodule4.basePath, file: fileFor(chemistrymodule4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm1.basePath, file: fileFor(graphicsm1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm2.basePath, file: fileFor(graphicsm2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm3.basePath, file: fileFor(graphicsm3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm4.basePath, file: fileFor(graphicsm4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule1.basePath, file: fileFor(electricalmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule2.basePath, file: fileFor(electricalmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule3.basePath, file: fileFor(electricalmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
@@ -86,18 +99,36 @@ export const pages: StaticPage[] = [
 ];
 
 /* Renders one URL to HTML, waiting for lazily loaded pages, and returns the page's title and description. */
-export async function render(url: string) {
+export async function render(url: string, programs?: readonly EventEntry[]) {
   let meta: PageMeta | undefined;
   const { prelude } = await prerenderToNodeStream(
     <StrictMode>
       <MetaCollector value={(m) => (meta = m)}>
-        <StaticRouter location={url}>
-          <App />
-        </StaticRouter>
+        <ProgramFeedProvider programs={programs}>
+          <StaticRouter location={url}>
+            <App />
+          </StaticRouter>
+        </ProgramFeedProvider>
       </MetaCollector>
     </StrictMode>,
   );
   const chunks: Buffer[] = [];
   for await (const chunk of prelude) chunks.push(Buffer.from(chunk));
   return { html: Buffer.concat(chunks).toString("utf8"), meta };
+}
+
+/** Per-request landing page HTML with the exact program order used for hydration. */
+export async function renderLandingDocument(template: string) {
+  const feed = createProgramFeed();
+  const { html, meta } = await render("/", feed.programs);
+  const data = JSON.stringify(feed).replace(/</g, "\\u003c");
+  let document = template.replace('<div id="root"></div>', () => `<div id="root">${html}</div><script id="program-feed" type="application/json">${data}</script>`);
+  if (meta) {
+    const escape = (value: string) => value.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+    document = document.replace(/<title>[^<]*<\/title>/, () => `<title>${escape(meta.title)}</title>`)
+      .replace(/(<meta name="description" content=")[^"]*/, (_, prefix) => prefix + escape(meta.description))
+      .replace(/(<meta property="og:title" content=")[^"]*/, (_, prefix) => prefix + escape(meta.title))
+      .replace(/(<meta property="og:description" content=")[^"]*/, (_, prefix) => prefix + escape(meta.description));
+  }
+  return document;
 }

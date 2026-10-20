@@ -20,5 +20,16 @@
       "destination": "/notes/cse/s1/maths/module-1#page-:page",
       "permanent": true
     }
+  ],
+  "functions": {
+    "api/*.mjs": {
+      "includeFiles": "dist-ssr/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/landing"
+    }
   ]
 }

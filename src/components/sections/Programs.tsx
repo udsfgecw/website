@@ -1,89 +1,100 @@
-import { PROGRAMS } from "@/data/progress";
-import { cn } from "@/lib/utils";
+import { useState } from "react";
+import { CtaLink } from "@/components/ui/cta-link";
+import Lightbox from "@/components/activity/Lightbox";
+import ReelCard from "@/components/activity/ReelCard";
+import type { Activity } from "@/data/activities";
+import { EVENT_CATALOGUE, type EventEntry } from "@/data/event-catalogue";
+import { PRO_SHOW_REEL_IDS } from "@/data/event-priority";
+import { EVENT_REELS } from "@/data/event-reels";
+import { EVENT_STORIES } from "@/data/event-stories";
+import { dayLabel } from "@/lib/activity";
 
-const ASPECTS = [
-  "aspect-[3/4]",
-  "aspect-square",
-  "aspect-[4/5]",
-  "aspect-square",
-  "aspect-[3/4]",
-  "aspect-[4/5]",
-  "aspect-square",
-  "aspect-[3/4]",
-];
+const ROWS = 4;
+const PER_ROW = 4;
 
-type Program = (typeof PROGRAMS)[number];
+/* The pro shows that open the grid, in the order they headline. */
+const HEADLINERS = [
+  { reel: "story-18134623687636539", act: "Nawaf NSR", show: "Thouryathrikam ’26 · Oct 2" },
+  { reel: "story-17906639010564419", act: "DJ Jazeel", show: "Beatz on Music · Oct 1" },
+  { reel: "reel-4f82204fdcee", act: "DJ Pranadev & Pranav Drummer", show: "ALOHA ’25 · Foam party" },
+  { reel: "reel-1dd84c4f9c58", act: "Yasir GKZ", show: "Hypnomania · Freshers Week ’25" },
+].flatMap(({ reel, act, show }) => {
+  const post = [...EVENT_STORIES, ...EVENT_REELS].find((item) => item.id === reel);
+  return post ? [{ post, title: act, detail: show }] : [];
+});
 
-function GalleryCard({ p, index }: { p: Program; index: number }) {
-  const aspect = ASPECTS[index % ASPECTS.length];
+/* Reels and the season's programs carry curated English names; plain posts carry raw caption lines. */
+const named = (event: EventEntry) => (!event.post || !!event.post.video) && event.title.length <= 48;
 
-  return (
-    <article
-      className={cn("group relative w-full overflow-hidden break-inside-avoid mb-2", aspect)}
-    >
-      <div className="absolute inset-0 bg-[#1c1c1c]" />
+/* Words that tell two event names apart, so "College Union Inauguration" and
+   "Sathva College Union 2026 Inauguration" count as the same event. */
+const COMMON = new Set(["udsf", "gecw", "college", "by", "the", "at", "of", "and", "a", "event", "celebration"]);
+const keyWords = (title: string) => title.toLowerCase().match(/[a-z]+/g)?.filter((word) => !COMMON.has(word)) ?? [];
+const sameEvent = (a: string, b: string) => {
+  const [x, y] = [keyWords(a), keyWords(b)].sort((p, q) => p.length - q.length);
+  return x.length > 0 && x.every((word) => y.includes(word));
+};
 
-      <span
-        aria-hidden="true"
-        className="absolute inset-0 flex items-center justify-center select-none font-black leading-none tracking-[-0.08em] text-white/[0.04] text-[clamp(4rem,12vw,9rem)]"
-      >
-        {String(p.number).padStart(2, "0")}
-      </span>
+/* The newest events after the headliners, one of each, filling the remaining rows. */
+const RECENT = EVENT_CATALOGUE.filter((event) => event.post && named(event) && !PRO_SHOW_REEL_IDS.has(event.id))
+  .sort((a, b) => b.post!.date.localeCompare(a.post!.date))
+  .reduce<EventEntry[]>((kept, event) => (kept.some((other) => sameEvent(other.title, event.title)) ? kept : [...kept, event]), [])
+  .slice(0, ROWS * PER_ROW - HEADLINERS.length)
+  .map((event) => ({ post: event.post!, title: event.title, detail: dayLabel(event.post!.date) }));
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-
-      <div className="absolute bottom-0 left-0 right-0 p-3.5">
-        <div className="flex items-center gap-2 mb-1.5">
-          <span className="flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full border border-white/20 text-[0.55rem] font-bold text-white/60">
-            {p.number}
-          </span>
-          <span className="text-[0.6rem] font-medium tracking-[0.06em] uppercase text-white/30">
-            {p.year}
-          </span>
-        </div>
-        <h3 className="text-white text-[0.88rem] font-semibold leading-[1.25] tracking-[-0.01em]">
-          {p.title}
-        </h3>
-      </div>
-
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white/[0.04] ring-1 ring-inset ring-white/10" />
-    </article>
-  );
-}
+const ITEMS = [...HEADLINERS, ...RECENT];
+const MEDIA: readonly Activity[] = ITEMS.map(({ post }) => post);
 
 export default function Programs() {
-  return (
-    <section id="programs" aria-labelledby="programs-title" className="bg-[#0a0a0a]">
-      <div className="wrap py-[clamp(5rem,11vw,9rem)]">
+  const [open, setOpen] = useState<number | null>(null);
+  const [sound, setSound] = useState<string | null>(null);
 
-        <div className="flex items-start justify-between gap-6">
+  return (
+    <section id="programs" aria-labelledby="programs-title" className="bg-[#0a0a0a] text-white">
+      <div className="wrap py-[clamp(3.5rem,7vw,6rem)]">
+        <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <h2 id="programs-title" className="text-[length:clamp(3rem,8vw,7rem)] font-black leading-[0.92] tracking-[-0.04em] text-white uppercase">
-              Events
-              <br />
-              <span className="text-[--color-green]">&amp; Programs</span>
+            <p className="label flex items-center gap-2 text-white/45">
+              Pro shows &amp; recent events
+            </p>
+            <h2 id="programs-title" className="mt-3 text-[length:clamp(2rem,4vw,3rem)] font-semibold leading-[1] tracking-[-0.05em]">
+              Live on campus<span className="text-green">.</span>
             </h2>
           </div>
-          <div className="text-right shrink-0 mt-1 hidden sm:block">
-            <p className="text-[0.68rem] font-medium tracking-[0.1em] uppercase text-white/30">
-              2025–26 Season
-            </p>
-            <p className="text-[0.68rem] tracking-[0.06em] uppercase text-white/20 mt-1">
-              {PROGRAMS.length} programs
-            </p>
-          </div>
+          <CtaLink to="/events" variant="ghost">
+            All events &amp; programs
+          </CtaLink>
         </div>
 
-        <div className="mt-10 columns-2 gap-2 sm:columns-3 lg:columns-4">
-          {PROGRAMS.map((p, i) => (
-            <GalleryCard key={p.number} p={p} index={i} />
+        {/* every reel plays silently while it is on screen; tap one for sound and full screen */}
+        <ol className="mt-10 grid grid-cols-2 gap-x-3 gap-y-9 lg:grid-cols-4 lg:gap-x-4">
+          {ITEMS.map(({ post, title, detail }, index) => (
+            <li key={post.id}>
+              <ReelCard
+                post={post}
+                label={title}
+                muted={sound !== post.id}
+                onToggleSound={() => setSound((current) => (current === post.id ? null : post.id))}
+                onOpen={() => {
+                  setSound(null);
+                  setOpen(index);
+                }}
+              />
+              <div className="mt-4 flex gap-3">
+                <span className="label pt-1 text-green tabular-nums">{String(index + 1).padStart(2, "0")}</span>
+                <div className="min-w-0">
+                  <h3 className="line-clamp-2 text-[length:clamp(1rem,1.7vw,1.3rem)] font-black uppercase leading-[1] tracking-[-0.03em] text-balance">
+                    {title}
+                  </h3>
+                  <p className="label mt-2 text-white/45">{detail}</p>
+                </div>
+              </div>
+            </li>
           ))}
-        </div>
-
-        <p className="mt-8 text-[0.7rem] tracking-[0.04em] text-white/20 uppercase">
-          Photos will be added shortly — placeholders show event numbers
-        </p>
+        </ol>
       </div>
+
+      <Lightbox items={MEDIA} index={open} onIndex={setOpen} />
     </section>
   );
 }

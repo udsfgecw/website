@@ -11,6 +11,10 @@ import { CHEMISTRY_MODULE_1_PATH } from "@/features/notes/chemistry-module-1/pat
 import { CHEMISTRY_MODULE_2_PATH } from "@/features/notes/chemistry-module-2/path";
 import { CHEMISTRY_MODULE_3_PATH } from "@/features/notes/chemistry-module-3/path";
 import { CHEMISTRY_MODULE_4_PATH } from "@/features/notes/chemistry-module-4/path";
+import { GRAPHICS_M1_PATH } from "@/features/notes/graphics-m1/path";
+import { GRAPHICS_M2_PATH } from "@/features/notes/graphics-m2/path";
+import { GRAPHICS_M3_PATH } from "@/features/notes/graphics-m3/path";
+import { GRAPHICS_M4_PATH } from "@/features/notes/graphics-m4/path";
 import { ELECTRICAL_MODULE_1_PATH } from "@/features/notes/electrical-module-1/path";
 import { ELECTRICAL_MODULE_2_PATH } from "@/features/notes/electrical-module-2/path";
 import { ELECTRICAL_MODULE_3_PATH } from "@/features/notes/electrical-module-3/path";
@@ -143,7 +147,13 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
         },
         {
           name: "Engineering Graphics", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", syllabusHref: "/notes/cse/s1/graphics/syllabus", href: "/notes/cse/s1/graphics",
-          modules: [{ name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH }],
+          modules: [
+            { name: "Module 1", detail: "Introduction, projection of points and lines", href: GRAPHICS_M1_PATH },
+            { name: "Module 2", detail: "Projection of solids", href: GRAPHICS_M2_PATH },
+            { name: "Module 3", detail: "Sections of solids and development of surfaces", href: GRAPHICS_M3_PATH },
+            { name: "Module 4", detail: "Isometric projection", href: GRAPHICS_M4_PATH },
+            { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GMEST103_QP_PATH },
+          ],
         },
         {
           name: "Electrical and Electronics Engineering", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", syllabusHref: "/notes/cse/s1/electrical/syllabus", href: "/notes/cse/s1/electrical",

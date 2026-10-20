@@ -3,13 +3,18 @@ import { createRoot, hydrateRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./tailwind.css";
+import { ProgramFeedProvider } from "./lib/program-feed";
+import type { EventEntry } from "./data/event-catalogue";
 
 const root = document.getElementById("root")!;
+const initialData: { programs?: EventEntry[] } = JSON.parse(document.getElementById("program-feed")?.textContent || "{}");
 const app = (
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ProgramFeedProvider programs={initialData.programs}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ProgramFeedProvider>
   </StrictMode>
 );
 

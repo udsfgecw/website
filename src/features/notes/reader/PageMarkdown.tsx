@@ -15,6 +15,7 @@ import IdentityGraph from "./IdentityGraph";
 import PlotFigure, { type PlotSpec } from "./PlotFigure";
 import TreeDiagram from "./TreeDiagram";
 import KekuleViewer from "./KekuleViewer";
+import LineProjectionFigure from "./graphics/LineProjectionFigure";
 import { module3DiagramDimensions } from "../python-module-3/diagramDimensions";
 import { module4DiagramDimensions } from "../python-module-4/diagramDimensions";
 
@@ -61,6 +62,7 @@ const components: Components = {
     if (className === "language-jsxgraph") return <Plot source={String(children)} />;
     if (className === "language-mermaid") return <TreeDiagram source={String(children)} />;
     if (className === "language-kekule" || className === "language-chem") return <KekuleViewer source={String(children)} />;
+    if (className === "language-line-projection") return <LineProjectionFigure source={String(children)} />;
     return (
       <code className={className} {...props}>
         {children}
@@ -80,6 +82,7 @@ const components: Components = {
     if (language === "jsxgraph") return <Plot source={source} />;
     if (language === "mermaid") return <TreeDiagram source={source} />;
     if (language === "kekule" || language === "chem") return <KekuleViewer source={source} />;
+    if (language === "line-projection") return <LineProjectionFigure source={source} />;
     return (
       <CodeBlock language={language} text={source}>
         {children}

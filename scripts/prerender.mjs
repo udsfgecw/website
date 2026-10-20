@@ -1,6 +1,6 @@
 // Writes every page listed in src/entry-server.tsx as static HTML after the client and SSR builds,
 // so crawlers and link previews get each page's full content, title and description.
-import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const dist = new URL("../dist/", import.meta.url);
 const { pages, render } = await import("../dist-ssr/entry-server.js");
@@ -42,7 +42,9 @@ function assetTags(sources) {
   ].join("\n    ");
 }
 
-for (const page of pages) {
+// The landing page is rendered per request; keep its compiled template in the server bundle.
+await writeFile(new URL("../dist-ssr/template.html", import.meta.url), template);
+for (const page of pages.filter((page) => page.url !== "/")) {
   const { html: app, meta } = await render(page.url);
   // Notes contain literal "$" sequences (maths and code). A replacement string
   // interprets $$, $&, $` and $' and silently changes that content, making React
@@ -62,5 +64,6 @@ for (const page of pages) {
   await writeFile(file, html);
 }
 
-await rm(new URL("../dist-ssr", import.meta.url), { recursive: true, force: true });
-console.log(`prerender: wrote ${pages.length} pages`);
+// Avoid a static index taking precedence over the landing-page function.
+await import("node:fs/promises").then(({ rm }) => rm(new URL("index.html", dist)));
+console.log(`prerender: wrote ${pages.length - 1} static pages; landing page uses request-time SSR`);

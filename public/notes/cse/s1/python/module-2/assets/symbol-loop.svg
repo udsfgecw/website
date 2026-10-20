@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="250" viewBox="0 0 720 250" role="img" aria-labelledby="title desc">
-<title id="title">Counter-loop notation</title><desc id="desc">Course convention: show the counter, bounds, and step.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#28765a"/></marker></defs>
-<rect width="100%" height="100%" rx="16" fill="#fff"/>
-<g font-family="Arial, Helvetica, sans-serif"><text x="360" y="38" text-anchor="middle" fill="#173f35" font-size="22"><tspan x="360" dy="0">Counter-loop notation</tspan></text><polygon points="213.0,93.0 507.0,93.0 535.0,125 507.0,157.0 213.0,157.0 185.0,125" fill="#edf6f0" stroke="#28765a" stroke-width="2.5"/><text x="360" y="131" text-anchor="middle" fill="#173f35" font-size="19"><tspan x="360" dy="0">i = 1 TO n, STEP 1</tspan></text><text x="360" y="222" text-anchor="middle" fill="#173f35" font-size="16"><tspan x="360" dy="0">Course convention: show the counter, bounds, and step.</tspan></text></g></svg>

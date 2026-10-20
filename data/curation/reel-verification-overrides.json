@@ -1,0 +1,12 @@
+{
+  "reel-347677847364": {
+    "eligible": false,
+    "confidence": "medium",
+    "reason": "Source review: the caption identifies a general UDSF campus montage rather than a discrete named event or program. Keep this out of the events-only collection."
+  },
+  "reel-a54909307c7c": {
+    "eligible": false,
+    "confidence": "high",
+    "reason": "Source review: this is an organization-wide “Why UDSF?” promotional compilation rather than an identifiable event recap. Exclude from the events-only collection."
+  }
+}

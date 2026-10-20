@@ -1,0 +1,513 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "method": "Full-duration review video sampled at one frame per second, with original audio and caption",
+  "reels": {
+    "reel-952e25f97b40": {
+      "id": "reel-952e25f97b40",
+      "eligible": false,
+      "confidence": "high",
+      "title": "UDSF Election Campaign Video",
+      "summary": "This reel is an election campaigning video featuring student sports events to promote UDSF.",
+      "reason": "Election candidate videos, vote appeals, election victories, campaigning, and political party events are never eligible for the website."
+    },
+    "reel-c96aebf36747": {
+      "id": "reel-c96aebf36747",
+      "eligible": false,
+      "confidence": "high",
+      "title": "UDSF Election Campaign Reel",
+      "summary": "This reel features various college cultural events and student activities as part of a UDSF election campaign.",
+      "reason": "Election candidate videos, vote appeals, election victories, campaigning, and political party events are never eligible for the website."
+    },
+    "reel-98cf2bd224fc": {
+      "id": "reel-98cf2bd224fc",
+      "eligible": true,
+      "confidence": "high",
+      "title": "First Year Convention by UDSF GECW",
+      "summary": "UDSF GECW organized a first year convention welcoming new students into the campus community.",
+      "reason": "The reel clearly shows a student convention event organized by UDSF GECW on campus with first-year students attending."
+    },
+    "reel-347677847364": {
+      "id": "reel-347677847364",
+      "eligible": false,
+      "confidence": "medium",
+      "title": "Campus Program and Interaction by UDSF GECW",
+      "summary": "UDSF GECW conducted student interactions, welcoming new batches with mascots and student-led activities on campus.",
+      "reason": "Source review: the caption identifies a general UDSF campus montage rather than a discrete named event or program. Keep this out of the events-only collection.",
+      "sourceReviewed": true
+    },
+    "reel-821b10a11624": {
+      "id": "reel-821b10a11624",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Freshers Week Celebration",
+      "summary": "Students and the college union conduct Freshers Week featuring cultural activities, games, and welcoming events.",
+      "reason": "The reel clearly shows a college freshers week event conducted by the student union with strong student participation."
+    },
+    "reel-7d9385e85a12": {
+      "id": "reel-7d9385e85a12",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Aaravam 26 College Fest",
+      "summary": "Students celebrate Aaravam 26 festival with traditional performances, music, dance, and festive decorations on campus.",
+      "reason": "The reel showcases an identifiable college fest event (Aaravam 26) organized by the college union."
+    },
+    "reel-cad7188f1f44": {
+      "id": "reel-cad7188f1f44",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Freshers Welcome",
+      "summary": "UDSF GECW members welcome new students arriving at the college by greeting them and distributing sweets and cards.",
+      "reason": "The reel shows a clearly identifiable freshers' welcome program conducted by UDSF at GEC Wayanad, with banners, student interactions, and welcoming gestures."
+    },
+    "reel-38608865affb": {
+      "id": "reel-38608865affb",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Sathva College Union 2026 Inauguration",
+      "summary": "GEC Wayanad celebrates the Sathva College Union 2026 inauguration featuring ceremonial lamp lighting, cultural dance performances, and musical stage events.",
+      "reason": "The video documents the official college union inauguration and cultural fest celebrations at GEC Wayanad, fitting the eligible events criteria."
+    },
+    "reel-da6701307cad": {
+      "id": "reel-da6701307cad",
+      "eligible": true,
+      "confidence": "high",
+      "title": "College Union Inauguration",
+      "summary": "Government Engineering College Wayanad hosts its College Union Inauguration with special guests including minister T. Siddique.",
+      "reason": "The reel documents a clearly identifiable official college union inauguration event organized at GEC Wayanad, making it eligible."
+    },
+    "reel-d55a12002d9a": {
+      "id": "reel-d55a12002d9a",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Aswin Memorial Football League Auction Day",
+      "summary": "Students participate in the auction day event for the Aswin Memorial Football League conducted by the GECW college union.",
+      "reason": "The reel showcases a memorial sports tournament auction event organized by the college union at GEC Wayanad, which qualifies for the events page."
+    },
+    "reel-9b1053279f77": {
+      "id": "reel-9b1053279f77",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Aswin Memorial Football League",
+      "summary": "The college union organized the Aswin Memorial Football League featuring student matches, team celebrations, and trophy presentations.",
+      "reason": "This reel clearly shows a named sports tournament organized by the college union with student football teams and trophy ceremonies, making it eligible."
+    },
+    "reel-3b8efb0bbd9c": {
+      "id": "reel-3b8efb0bbd9c",
+      "eligible": true,
+      "confidence": "high",
+      "title": "FIFA World Cup Fan Show",
+      "summary": "Students at GEC Wayanad participated in a FIFA World Cup Fan Show event organized by the college union featuring football displays, team jerseys, and rallies.",
+      "reason": "The reel documents a campus fan show event organized by the college union with visible student participation, banners, and celebrations."
+    },
+    "reel-2e8cbb498a5b": {
+      "id": "reel-2e8cbb498a5b",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Farewell Celebration",
+      "summary": "Students and members of UDSF GECW gather to celebrate a farewell event with decorations, speeches, and group photos.",
+      "reason": "The reel clearly documents a student farewell event organized by UDSF GECW with specific visual and text evidence."
+    },
+    "reel-132c2936415d": {
+      "id": "reel-132c2936415d",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Ahlan 26 Iftar Party",
+      "summary": "GECW college union and UDSF community host the Ahlan'26 Iftar party featuring henna application, communal dining, and musical performances.",
+      "reason": "The reel captures an official college union and UDSF Iftar event with clear evidence of gathering, food preparation, and stage performances."
+    },
+    "reel-a54909307c7c": {
+      "id": "reel-a54909307c7c",
+      "eligible": false,
+      "confidence": "high",
+      "title": "UDSF GECW Fests and Cultural Programs",
+      "summary": "A compilation reel showcasing various vibrant cultural fests, music performances, contest announcements, and student celebrations organized by UDSF GECW.",
+      "reason": "Source review: this is an organization-wide “Why UDSF?” promotional compilation rather than an identifiable event recap. Exclude from the events-only collection.",
+      "sourceReviewed": true
+    },
+    "reel-6cc643c2cb6b": {
+      "id": "reel-6cc643c2cb6b",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Drinking Water Distribution at College Sports Meet",
+      "summary": "UDSF GECW members provide drinking water bottles to participants and organizers during the college sports meet.",
+      "reason": "The reel documents a student union service activity and program conducted during the college sports meet, meeting the eligibility criteria."
+    },
+    "reel-1e2d9eb5e251": {
+      "id": "reel-1e2d9eb5e251",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF 2025 College Events Recap",
+      "summary": "This reel highlights a montage of various student programs, marches, gatherings, and celebrations conducted by UDSF GECW throughout the year 2025.",
+      "reason": "The reel showcases official college student union events, marches, and campus celebrations organized by UDSF GECW."
+    },
+    "reel-ca94ec64d9e1": {
+      "id": "reel-ca94ec64d9e1",
+      "eligible": true,
+      "confidence": "high",
+      "title": "ALOHA 25 Christmas Party",
+      "summary": "Students celebrate the ALOHA 25 Christmas party event organized by UDSF GECW with music, stage performances, and a lively crowd.",
+      "reason": "This reel clearly captures the 'ALOHA '25' Christmas Party event conducted by UDSF GECW with stage displays and large student participation."
+    },
+    "reel-29888fa1585e": {
+      "id": "reel-29888fa1585e",
+      "eligible": true,
+      "confidence": "high",
+      "title": "ALOHA'25 Christmas Celebration",
+      "summary": "Students enjoying music, dancing, and festive cheer at the ALOHA'25 Christmas celebration organized by UDSF GECW.",
+      "reason": "The reel clearly shows a college Christmas celebration event organized by UDSF GECW with students participating in music and dance."
+    },
+    "reel-4f82204fdcee": {
+      "id": "reel-4f82204fdcee",
+      "eligible": true,
+      "confidence": "high",
+      "title": "ALOHA'25 Foam Party",
+      "summary": "UDSF GECW presents ALOHA'25 featuring a high-energy foam party with performances by DJ Pranadev and Pranav Drummer.",
+      "reason": "The reel documents a campus foam party event organized by UDSF GECW at GEC Wayanad, matching the eligibility criteria."
+    },
+    "reel-8ed9ac9859e8": {
+      "id": "reel-8ed9ac9859e8",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW First Year Convention",
+      "summary": "UDSF GECW conducted a convention for first-year students featuring speeches and group gatherings.",
+      "reason": "The reel documents the UDSF GECW First Year Convention with students gathered on campus and participating in union programs."
+    },
+    "reel-bfaec21cfb13": {
+      "id": "reel-bfaec21cfb13",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW First Year Welcome",
+      "summary": "UDSF GECW welcomed first-year students to the college with interactive sessions and token gifts.",
+      "reason": "The video explicitly captures UDSF GECW members welcoming new students inside classrooms with songs and welcome tokens."
+    },
+    "reel-b49655a6b037": {
+      "id": "reel-b49655a6b037",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Freshers Week '25 Ring Toss Game",
+      "summary": "Students enjoying the ring toss game called 'Erinj Edtholi' during the Freshers Week celebrations organized by UDSF GECW.",
+      "reason": "The reel clearly shows a college freshers week event organized by UDSF GECW with student participation in fun campus activities."
+    },
+    "reel-a182bd65e4e7": {
+      "id": "reel-a182bd65e4e7",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Freshers Week ’25 Ring Toss Activity",
+      "summary": "Highlights of students participating in the 'Erinj Edtholi' ring toss game during Freshers Week '25 presented by UDSF GECW.",
+      "reason": "The reel documents college fresher week games conducted by UDSF GECW with student engagement."
+    },
+    "reel-5c027cde836e": {
+      "id": "reel-5c027cde836e",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Freshers Week 2025 Day 2: Mutti Pattu",
+      "summary": "UDSF GECW presented Mutti Pattu on Day 2 of Freshers Week 2025, featuring group singing, energetic student participation, and celebratory moments.",
+      "reason": "This reel clearly documents an official college student union event (Freshers Week Day 2) organized by UDSF GECW, making it eligible for the events website."
+    },
+    "reel-1dd84c4f9c58": {
+      "id": "reel-1dd84c4f9c58",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Freshers Week 2025 Day 1: Hypnomania",
+      "summary": "UDSF GECW inaugurated Freshers Week 2025 with Day 1 event Hypnomania, featuring musical performances, hypnosis sessions, and enthusiastic student gatherings.",
+      "reason": "This reel records the Day 1 event of Freshers Week 2025 conducted by UDSF GECW, meeting all criteria for eligibility."
+    },
+    "reel-90e22126dcbc": {
+      "id": "reel-90e22126dcbc",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Hypnomania Freshers Week Event with Yasir GKZ",
+      "summary": "UDSF GECW presents Hypnomania featuring live music, mentalism, and hypnotism by Yasir GKZ during Freshers Week.",
+      "reason": "Clearly identifiable college student union freshers event featuring a live program with Yasir GKZ at GECW."
+    },
+    "reel-782f7bda0be3": {
+      "id": "reel-782f7bda0be3",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Freshers Week 2025 Announcement",
+      "summary": "UDSF GECW announces Freshers Week 2025 welcoming newcomers to GEC Wayanad with celebrations and student gatherings.",
+      "reason": "Official college student union announcement video for Freshers Week celebrations at GECW."
+    },
+    "reel-bf81b2d318bd": {
+      "id": "reel-bf81b2d318bd",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Farewell Event",
+      "summary": "UDSF GEC Wayanad organized a farewell celebration for graduating seniors, featuring music, speeches, and student gatherings.",
+      "reason": "The video explicitly shows a college farewell event hosted by UDSF GECW with clear banners and student participation."
+    },
+    "reel-df4f7a18eb5e": {
+      "id": "reel-df4f7a18eb5e",
+      "eligible": true,
+      "confidence": "high",
+      "title": "GECW Farewell and College Memories",
+      "summary": "A compilation reel capturing farewell moments, celebrations, and campus life memories of students at GEC Wayanad.",
+      "reason": "The reel highlights student farewell events, college memories, and activities associated with GECW student organizations."
+    },
+    "reel-c21d3db490c4": {
+      "id": "reel-c21d3db490c4",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Iftar Gathering 2025",
+      "summary": "This reel showcases the Iftar gathering and associated activities organized by UDSF GECW during Ramadan.",
+      "reason": "The reel clearly documents a college student union event (Iftar gathering) organized by UDSF GECW, making it eligible for the website."
+    },
+    "reel-3dbe9c7c3d95": {
+      "id": "reel-3dbe9c7c3d95",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Student Unity Iftar Feast",
+      "summary": "This video highlights the student unity Iftar feast and mehandi contest organized by UDSF GECW.",
+      "reason": "The reel clearly shows a college student union event (Iftar feast and celebrations) organized by UDSF GECW, making it eligible."
+    },
+    "reel-2a6f6a1511bb": {
+      "id": "reel-2a6f6a1511bb",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Iftar Gathering Announcement",
+      "summary": "An announcement reel inviting everyone to the Iftar gathering organized by UDSF GECW at Anugraha Auditorium.",
+      "reason": "The reel explicitly announces an Iftar event organized by UDSF GECW at a specific venue, meeting all criteria for eligibility."
+    },
+    "reel-4332cb9c2b35": {
+      "id": "reel-4332cb9c2b35",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Sanam Valentine's Day Party",
+      "summary": "A promotional video announcing Sanam, the Valentine's Day party organized by UDSF GECW.",
+      "reason": "The reel promotes Sanam, a clearly identifiable college Valentine's Day event conducted by UDSF GECW."
+    },
+    "reel-ca5751fc27b6": {
+      "id": "reel-ca5751fc27b6",
+      "eligible": false,
+      "confidence": "high",
+      "title": "Christmas Wish Reel",
+      "summary": "Generic Christmas greeting wishing college mates joy and happiness during the festive season.",
+      "reason": "This reel is a generic holiday greeting message rather than a specific college event or program."
+    },
+    "reel-193f3b24a78c": {
+      "id": "reel-193f3b24a78c",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Merry Mailbox Christmas Program",
+      "summary": "UDSF GECW presents the Merry Mailbox initiative where students place Christmas card ballot boxes across campus.",
+      "reason": "This is a clearly identifiable student organization event and program conducted on campus for the festive season."
+    },
+    "reel-8b0a0a22d870": {
+      "id": "reel-8b0a0a22d870",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Dastha'24 Freshers Party",
+      "summary": "Highlights from the Dastha'24 freshers party featuring performances by DJ Zaviyox and violinist Gokul Krishna.",
+      "reason": "The reel clearly shows a college freshers party event titled Dastha'24 organized by UDSF GECW."
+    },
+    "reel-e4f9a41473fa": {
+      "id": "reel-e4f9a41473fa",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Violin Performance by Gokul Krishna at Dastha'24",
+      "summary": "A magical violin performance by Gokul Krishna at the Dastha'24 freshers party hosted by UDSF GECW.",
+      "reason": "The reel captures a live musical performance during the Dastha'24 college event conducted by UDSF GECW."
+    },
+    "reel-76c9c5c99640": {
+      "id": "reel-76c9c5c99640",
+      "eligible": true,
+      "confidence": "high",
+      "title": "DJ Zavi yox Live at Dastha 24 GECW",
+      "summary": "DJ Zavi yox performs live on stage for the Dastha 24 college event hosted at GECW.",
+      "reason": "The reel clearly shows a DJ performance at the Dastha 24 event organized by UDSF GECW, making it eligible."
+    },
+    "reel-965343cda482": {
+      "id": "reel-965343cda482",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Gokul Violin Live at Dastha 24 GECW",
+      "summary": "Gokul Violin performs live on stage during the Dastha 24 college event at GECW.",
+      "reason": "The reel features a live musical performance by Gokul Violin at the Dastha 24 event hosted by UDSF GECW."
+    },
+    "reel-8b6ef24eb829": {
+      "id": "reel-8b6ef24eb829",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF Girls Wing Menstrual Awareness Program",
+      "summary": "UDSF Girls Wing GECW conducted a menstrual awareness program at the college, featuring informative sessions and distribution of supplies to students.",
+      "reason": "The reel clearly shows an organized awareness program conducted by the UDSF Girls Wing of GECW for students, matching eligible college program criteria."
+    },
+    "reel-6b03bca2e357": {
+      "id": "reel-6b03bca2e357",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF First-Year Students Welcome Event",
+      "summary": "UDSF members at GECW welcomed incoming first-year students with flags, celebrations, and interactions inside the classrooms.",
+      "reason": "The reel documents a college freshers welcome event organized by UDSF at GECW, making it eligible for the events page."
+    },
+    "reel-1fc1e3531b7f": {
+      "id": "reel-1fc1e3531b7f",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Campus Gathering and Art Event",
+      "summary": "Students at Government Engineering College Wayanad participate in a lively UDSF GECW campus event featuring music, drumming, and sketching outdoors.",
+      "reason": "Shows a student gathering with musical performances and sketching activities organized on the GEC Wayanad campus by UDSF GECW."
+    },
+    "reel-24d1a6a23c8b": {
+      "id": "reel-24d1a6a23c8b",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Second Day College Fest Celebration",
+      "summary": "Students at Government Engineering College Wayanad celebrate the second day of a campus program with games, prizes, and enthusiastic crowds.",
+      "reason": "Depicts a college program/fest celebration on the GEC Wayanad campus featuring student activities, prize distribution, and games."
+    },
+    "reel-a7b57b8816ec": {
+      "id": "reel-a7b57b8816ec",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Freshers Week Celebration",
+      "summary": "Students participating in freshers week activities and games organized by UDSF GECW.",
+      "reason": "The reel clearly shows students enjoying freshers week events and games on campus, matching eligible college student union events."
+    },
+    "reel-444140468e87": {
+      "id": "reel-444140468e87",
+      "eligible": false,
+      "confidence": "high",
+      "title": "Onam Greetings",
+      "summary": "Generic festival greeting wishes from UDSF GECW featuring students gathering flowers.",
+      "reason": "This reel is a generic holiday greeting wish rather than a specific event conducted or announced by the organization."
+    },
+    "reel-8fa22ef9c01f": {
+      "id": "reel-8fa22ef9c01f",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Payasam Distribution by UDSF GECW",
+      "summary": "UDSF GECW organized a payasam distribution program where students gathered to share sweets and celebrate friendship.",
+      "reason": "The video explicitly shows UDSF GECW branding, poster placement, preparation of payasam, and student gathering/distribution fitting an eligible campus student program."
+    },
+    "reel-bf02581b1b63": {
+      "id": "reel-bf02581b1b63",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Senior Farewell Event by UDSF GECW",
+      "summary": "UDSF GECW hosted a farewell celebration event for graduating seniors featuring performances, gatherings, and group photos.",
+      "reason": "The video captures a clearly identifiable college farewell event hosted by the student union with decorations, speeches, group celebrations, and corresponding captions."
+    },
+    "reel-3312eb23062e": {
+      "id": "reel-3312eb23062e",
+      "eligible": false,
+      "confidence": "high",
+      "title": "Palestine Solidarity Gathering",
+      "summary": "Students gather to hold a candlelight solidarity event supporting Palestine.",
+      "reason": "Political solidarity demonstrations and activist events do not qualify as college fests, tournaments, or official institutional programs for the UDSF GECW events page."
+    },
+    "reel-c623d78d6523": {
+      "id": "reel-c623d78d6523",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Iftar Meet and Mehandi Contest",
+      "summary": "Students organize an Iftar gathering, food preparation, and Mehandi contest on campus.",
+      "reason": "This is a clearly identifiable student community celebration and cultural event conducted by UDSF GECW."
+    },
+    "reel-db7e2be02221": {
+      "id": "reel-db7e2be02221",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Iftar Meet Announcement",
+      "summary": "Students discuss college attendance and invite everyone to the upcoming Iftar Meet organized by UDSF GECW.",
+      "reason": "The reel is a promotional skit and announcement for an official UDSF GECW Iftar gathering."
+    },
+    "reel-4439c4c8d9e6": {
+      "id": "reel-4439c4c8d9e6",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Nizari Band Performance at GECW",
+      "summary": "A musical concert performance by Nizari Band held during a GECW college event.",
+      "reason": "The reel captures a live musical show and concert organized at GECW, fitting the eligible event criteria."
+    },
+    "reel-1570aee3426e": {
+      "id": "reel-1570aee3426e",
+      "eligible": true,
+      "confidence": "high",
+      "title": "College Union GECW Music Night",
+      "summary": "A live band music night event conducted by the College Union GECW featuring performances and an enthusiastic student crowd.",
+      "reason": "The video shows an on-campus music concert event with visible text 'COLLEGE UNION GECW' and 'UDSF GECW', organized by the student union."
+    },
+    "reel-a9fc44cac72d": {
+      "id": "reel-a9fc44cac72d",
+      "eligible": false,
+      "confidence": "high",
+      "title": "Oommen Chandy Condolence Meeting",
+      "summary": "UDSF GECW members holding a condolence meeting and silent prayer tribute for former Chief Minister Oommen Chandy.",
+      "reason": "The reel captures a political condolence tribute event. Per guidelines, tributes and condolences must never qualify."
+    },
+    "reel-f1b075ec4f50": {
+      "id": "reel-f1b075ec4f50",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Thouryathrikam '22 Cultural Night",
+      "summary": "This reel showcases the musical performances and energetic crowd at the Thouryathrikam '22 college fest presented by UDSF GECW.",
+      "reason": "The reel clearly shows a college cultural festival organized by UDSF GECW, making it eligible for the events and programs page."
+    },
+    "reel-f29792084dd8": {
+      "id": "reel-f29792084dd8",
+      "eligible": true,
+      "confidence": "high",
+      "title": "UDSF GECW Iftar Meet 2022",
+      "summary": "Students gather together for an Iftar feast and community gathering organized by UDSF GECW during Ramadan.",
+      "reason": "The reel documents a community Iftar program conducted by UDSF GECW, fitting the eligible event criteria."
+    },
+    "reel-ee15e571d7df": {
+      "id": "reel-ee15e571d7df",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Likha Magazine Release Announcement",
+      "summary": "An announcement video by UDSF GECW for the release of their college magazine Likha.",
+      "reason": "The reel clearly announces the release of the UDSF GECW college magazine Likha, which qualifies as a college program/publication event."
+    },
+    "reel-25db5c6a2ff2": {
+      "id": "reel-25db5c6a2ff2",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Joy Mathew Wishes for Likha Magazine",
+      "summary": "Film actor Joy Mathew shares his wishes and thoughts for the release of UDSF GECW's magazine Likha.",
+      "reason": "The reel is an official promotional/wish video by a notable actor for the UDSF GECW college magazine launch event."
+    },
+    "reel-38dd019704c6": {
+      "id": "reel-38dd019704c6",
+      "eligible": true,
+      "confidence": "high",
+      "title": "LIKHA Magazine Release Announcement by Shiva Hariharan",
+      "summary": "Shiva Hariharan announces the upcoming release of LIKHA, the college magazine by UDSF GECW, scheduled for February 5.",
+      "reason": "This is a direct announcement video by an individual inviting viewers to the official UDSF GECW college magazine release event."
+    },
+    "reel-6a27c3a93b50": {
+      "id": "reel-6a27c3a93b50",
+      "eligible": true,
+      "confidence": "high",
+      "title": "LIKHA College Magazine Teaser",
+      "summary": "A promotional teaser video announcing the release of the UDSF GECW college magazine 'LIKHA' 2020-21 on February 5, 2022.",
+      "reason": "This reel clearly promotes and previews the official UDSF GECW college magazine launch event."
+    },
+    "reel-a14c37eb9930": {
+      "id": "reel-a14c37eb9930",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Aaravam '21 Online Onam",
+      "summary": "UDSF GECW presents Aaravam '21, an online Onam celebration featuring festive college memories, traditional dances, and cultural events.",
+      "reason": "The reel announces Aaravam '21, a college Onam festival organized by UDSF GECW, making it eligible for the events and programs page."
+    },
+    "reel-720d7b4bbdd3": {
+      "id": "reel-720d7b4bbdd3",
+      "eligible": true,
+      "confidence": "high",
+      "title": "Tech Talk with GECW Alumni",
+      "summary": "UDSF GECW College Magazine presents an engaging talk session with GECW alumni discussing their college journeys and achievements.",
+      "reason": "The reel features a college program/event conducted by UDSF GECW in connection with the college magazine release."
+    },
+    "reel-8b0d848a3514": {
+      "id": "reel-8b0d848a3514",
+      "eligible": true,
+      "confidence": "high",
+      "title": "GEC IPL Dhamaka '21 IPL Fantasy League",
+      "summary": "UDSF GECW announces the GEC IPL Dhamaka '21 IPL fantasy league and match day prediction competition for students.",
+      "reason": "This reel announces an official student event and program conducted by UDSF GECW, fitting the criteria for the events and programs website."
+    }
+  },
+  "updatedAt": "2026-10-20T11:05:31.261Z"
+}

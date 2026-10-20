@@ -4,7 +4,8 @@ import { cn } from "@/lib/utils";
 
 const LINKS = [
   ["/#work", "What we do"],
-  ["/#progress", "Our progress"],
+  ["/activities", "Our progress"],
+  ["/events", "Events"],
   ["/#alliance", "Alliance"],
   ["/notes", "Notes"],
 ] as const;

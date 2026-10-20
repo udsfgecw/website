@@ -5,11 +5,16 @@ export interface Achievement {
   image: string | null;
 }
 
+export type ProgramCategory = "culture" | "sports" | "career" | "campus";
+
 export interface Program {
   number: number;
   title: string;
+  category: ProgramCategory;
   year: string;
   image: string | null;
+  /** id of the activity archive post that shows this program */
+  post?: string;
 }
 
 export const ACHIEVEMENTS: readonly Achievement[] = [
@@ -67,102 +72,123 @@ export const PROGRAMS: readonly Program[] = [
   {
     number: 1,
     title: "Ifthar Meet",
+    category: "culture",
     year: "2025–26",
     image: null,
+    post: "037d0b2c2f93",
   },
   {
     number: 2,
     title: "German Consulate Visit",
+    category: "career",
     year: "2025–26",
     image: null,
   },
   {
     number: 3,
     title: "Tech Talk: Career in Project Management",
+    category: "career",
     year: "2025–26",
     image: null,
   },
   {
     number: 4,
     title: "Gazal Night",
+    category: "culture",
     year: "2025–26",
     image: null,
   },
   {
     number: 5,
     title: "FIFA Fans Show",
+    category: "sports",
     year: "2025–26",
     image: null,
   },
   {
     number: 6,
     title: "E Football Tournament",
+    category: "sports",
     year: "2025–26",
     image: null,
+    post: "55dd861cea91",
   },
   {
     number: 7,
     title: "Ashwin Memorial Football Tournament",
+    category: "sports",
     year: "2025–26",
     image: null,
   },
   {
     number: 8,
     title: "Football Auction",
+    category: "sports",
     year: "2025–26",
     image: null,
   },
   {
     number: 9,
     title: "Union Inauguration",
+    category: "campus",
     year: "2025–26",
     image: null,
   },
   {
     number: 10,
     title: "Magazine Release",
+    category: "campus",
     year: "2025–26",
     image: null,
   },
   {
     number: 11,
     title: "Freshers Day",
+    category: "campus",
     year: "2025–26",
     image: null,
+    post: "d84de44bb3cd",
   },
   {
     number: 12,
     title: "Drug Free Campus Declaration",
+    category: "campus",
     year: "2025–26",
     image: null,
+    post: "d66d44b08045",
   },
   {
     number: 13,
     title: "Lantern Light & Ethnic Day",
+    category: "culture",
     year: "2025–26",
     image: null,
   },
   {
     number: 14,
     title: "Thauryathrikam Arts Fest",
+    category: "culture",
     year: "2025–26",
     image: null,
   },
   {
     number: 15,
     title: "Arts Pro Show: Nawaf",
+    category: "culture",
     year: "2025–26",
     image: null,
   },
   {
     number: 16,
     title: "Arts Pro Show: DJ Zanjay",
+    category: "culture",
     year: "2025–26",
     image: null,
   },
   {
     number: 17,
     title: "Arts Pro Show: Beats on Music",
+    category: "culture",
     year: "2025–26",
     image: null,
   },

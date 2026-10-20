@@ -17,6 +17,8 @@ import SemesterPage from "@/pages/notes/SemesterPage";
 import SubjectPage from "@/pages/notes/SubjectPage";
 const ImportedModulePage = lazy(() => import("@/pages/notes/ImportedModulePage"));
 const SyllabusPage = lazy(() => import("@/pages/notes/SyllabusPage"));
+const EventsPage = lazy(() => import("@/pages/EventsPage"));
+const ActivitiesPage = lazy(() => import("@/pages/ActivitiesPage"));
 
 // The notes reader brings markdown and maths rendering, so it loads only on notes pages.
 const MathsNotesPage = lazy(() => import("@/pages/notes/MathsNotesPage"));
@@ -34,8 +36,21 @@ function ScrollOnNavigate() {
   const { key, hash } = useLocation();
   const navigationType = useNavigationType();
   useEffect(() => {
-    if (hash) document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView();
-    else if (navigationType !== "POP") window.scrollTo(0, 0);
+    if (!hash) {
+      if (navigationType !== "POP") window.scrollTo(0, 0);
+      return;
+    }
+    // A lazily loaded page renders its sections a moment later, so look again for a short while.
+    const id = decodeURIComponent(hash.slice(1));
+    let tries = 0;
+    let timer = 0;
+    const find = () => {
+      const target = document.getElementById(id);
+      if (target) target.scrollIntoView();
+      else if (tries++ < 60) timer = window.setTimeout(find, 50);
+    };
+    find();
+    return () => clearTimeout(timer);
   }, [key, hash, navigationType]);
   return null;
 }
@@ -74,11 +89,17 @@ export default function App() {
           <Route path="/notes/cse/s1/python/module-4/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/maths/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/physics/question-papers/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m4/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/graphics/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/electrical/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/python/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/maths/module-1/:page?" element={<ImportedModulePage />} />
           <Route path="/gate" element={<GateExamPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/activities" element={<ActivitiesPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

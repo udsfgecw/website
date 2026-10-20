@@ -74,6 +74,13 @@
   --font-sans: "Geist", system-ui, sans-serif;
   --font-ml: "Manjari", "Noto Sans Malayalam", sans-serif;
 
+  --animate-marquee: marquee 60s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
 }
 
 @layer base {
