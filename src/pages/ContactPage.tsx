@@ -41,7 +41,7 @@ function Channel({ href, icon: Icon, label, title, dark = false }: { href: strin
 export default function ContactPage() {
   usePageMeta({
     title: pageTitle("Contact"),
-    description: "Meet the UDSF GECW unit committee for 2026–27, including the KSU and MSF representatives. Get in touch with the union at Government Engineering College Wayanad.",
+    description: "Meet the UDSF GECW Execom (executive committee) for 2026–27, including the KSU and MSF representatives. Get in touch with the union at Government Engineering College Wayanad.",
     jsonLd: [
       { "@context": "https://schema.org", "@type": "ContactPage", name: "Contact UDSF GECW", url: absoluteUrl("/contact"), mainEntity: { "@id": `${absoluteUrl("/")}#organization` } },
       breadcrumbLd([{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }]),
@@ -80,11 +80,11 @@ export default function ContactPage() {
           <div className="wrap py-[clamp(3rem,6vw,5rem)]">
             <header className="grid gap-x-12 gap-y-4 md:grid-cols-2 md:items-end">
               <div>
-                <Label>Unit committee</Label>
+                <Label>UDSF Execom</Label>
                 <H2 id="committee-title" className="mt-4 max-w-[16ch]">The people you can turn to.</H2>
               </div>
               <p className="max-w-[40ch] text-[0.95rem] leading-[1.6] text-ink-2 md:justify-self-end">
-                The UDSF unit committee leads the KSU and MSF alliance at GEC Wayanad. Call or message them directly.
+                The UDSF executive committee leads the KSU and MSF alliance at GEC Wayanad. Call or message them directly.
               </p>
             </header>
 

@@ -12,7 +12,7 @@ const portrait = (name: string) => `/committee/2026-27/${name}.webp`;
 export const COMMITTEE = [
   {
     id: "udsf",
-    name: "Unit committee",
+    name: "Execom",
     detail: "United Democratic Students Front",
     members: [
       { name: "Anshid OP", role: "Chairman", portrait: portrait("anshid-op"), phone: "+918848431913" },

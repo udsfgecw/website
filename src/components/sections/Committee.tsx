@@ -6,14 +6,14 @@ import { COMMITTEE, type CommitteeMember } from "@/data/committee";
 const [UNIT, ...ORGANISATIONS] = COMMITTEE;
 const OFFICERS = ORGANISATIONS.flatMap((group): readonly CommitteeMember[] => group.members);
 
-/* The UDSF unit committee, with the KSU and MSF officers as a face pile linking to the contact page. */
+/* The UDSF Execom, with the other members as a face pile linking to the contact page. */
 export default function Committee() {
   return (
     <Section
       id="committee"
       className="pt-0"
-      label="The committee"
-      title="Your unit committee."
+      label="Executive committee"
+      title="UDSF Execom."
       intro="Three people leading the KSU and MSF alliance at GEC Wayanad. Call or message any of them directly."
     >
       <ul className="grid gap-3 md:grid-cols-3">
@@ -21,7 +21,7 @@ export default function Committee() {
       </ul>
       <div className="mt-3 flex flex-col gap-5 rounded-2xl bg-paper p-5 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-4">
-          <ul className="flex shrink-0 -space-x-2.5" aria-label="KSU and MSF unit officers">
+          <ul className="flex shrink-0 -space-x-2.5" aria-label="Committee members">
             {OFFICERS.map((member) => (
               <li key={member.name}>
                 <img
@@ -38,8 +38,7 @@ export default function Committee() {
             ))}
           </ul>
           <p className="text-[0.92rem] leading-[1.45] text-ink-2">
-            <span className="font-semibold text-ink">Plus {OFFICERS.length} KSU and MSF officers</span>
-            <span className="hidden md:inline"> who run each organisation's unit on campus.</span>
+            <span className="font-semibold text-ink">Plus {OFFICERS.length} more members</span>
           </p>
         </div>
         <CtaLink to="/contact" className="self-start sm:self-auto">
