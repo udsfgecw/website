@@ -2,3 +2,10 @@ node_modules
 dist
 .vercel
 dist-ssr
+
+# Media lives in Cloudflare R2 (bucket "media"), not in git
+/public/activity-media/
+/public/event-reels/
+/public/event-stories/
+/public/notes/
+/public/assets/

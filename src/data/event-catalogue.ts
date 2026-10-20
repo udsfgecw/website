@@ -3,6 +3,7 @@ import { PROGRAMS } from "./progress";
 import { EVENT_REELS } from "./event-reels";
 import { EVENT_STORIES } from "./event-stories";
 import { PRO_SHOW_REEL_IDS } from "./event-priority";
+import { MEDIA_BASE } from "@/lib/media";
 
 export interface EventEntry {
   id: string;
@@ -25,7 +26,7 @@ export const EVENT_CATALOGUE: readonly EventEntry[] = [
       title: program.title,
       year: post?.date.slice(0, 4) ?? program.year.slice(0, 4),
       yearLabel: post?.date ?? program.year,
-      image: post?.image ?? (program.image ? `/assets/progress/${program.image}` : null),
+      image: post?.image ?? (program.image ? `${MEDIA_BASE}/assets/progress/${program.image}` : null),
       post,
     };
   }),
