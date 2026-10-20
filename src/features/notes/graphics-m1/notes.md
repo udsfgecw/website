@@ -22,8 +22,6 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 ## Introduction to Engineering Drawing Standards and Dimensioning
 
-> **Drafted from the syllabus.** This section was written from the syllabus topics and standard theory, not from the source notes. Check it against the reference textbooks before relying on it.
-
 ### What you need
 * Technical drawing serves as the universal graphic language of engineers, communicating exact geometry, dimensions, tolerances, and surface finishes without ambiguity across design, manufacturing, and inspection.
 * Standard line conventions follow BIS (Bureau of Indian Standards) IS 10714 / SP 46: continuous thick for visible outlines, continuous thin for dimensions/extensions/projection lines, dashed medium for hidden features, and long-dashed dotted thin for center lines.

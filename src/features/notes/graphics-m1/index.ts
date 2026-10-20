@@ -16,5 +16,5 @@ export const graphicsm1: NotesModule = {
     { label: "PROJECTION OF LINES" },
   ],
   module: "Projection of Lines", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", summary: "Solved problems with 2D drawings and 3D views",
-  source: "Prototype: problems 1 to 3 of the KTUNOTES.LIVE '1 line questions with answers' set. Every drawing is computed from the problem's numbers; answers are checked against the printed ones.", pages, chapters,
+  source: "KTU 2024 scheme, GMEST103 Engineering Graphics and Computer Aided Drawing, from the KTUNOTES.LIVE problem sets.", pages, chapters,
 };

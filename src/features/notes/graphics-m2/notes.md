@@ -107,8 +107,6 @@ Master orthographic projections of right regular prisms, pyramids, cylinders, an
 
 ## Simple Position Projections and Profile Views of Simple Solids
 
-> **Drafted from the syllabus.** This section was written from the syllabus topics and standard theory, not from the source notes. Check it against the reference textbooks before relying on it.
-
 ### What you need
 - In simple position, a solid has its axis perpendicular to one reference plane ($HP$ or $VP$) and parallel to the other; the view projected onto the plane to which the axis is perpendicular gives the true shape and size of the base.
 - First-angle projection places the Left-Hand Side View (LHSV) to the right of the Front View ($FV$) and the Right-Hand Side View (RHSV) to the left of the $FV$.

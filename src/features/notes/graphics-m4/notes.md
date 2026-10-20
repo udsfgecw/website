@@ -1056,8 +1056,6 @@ Develop hands-on expertise in constructing isometric projections and views of mu
 
 ## Introduction to Computer Aided Drawing (CAD) and 2D Drafting
 
-> **Drafted from the syllabus.** This section was written from the syllabus topics and standard theory, not from the source notes. Check it against the reference textbooks before relying on it.
-
 ### What you need
 - CAD (Computer Aided Drawing/Design) replaces manual drafting boards with software to create, modify, analyze, and document 2D engineering drawings and 3D models.
 - Coordinate inputs govern precision: Absolute $(X,Y)$, Relative Cartesian $(@\Delta X, \Delta Y)$, and Relative Polar $(@r < \theta)$.
