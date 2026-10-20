@@ -23,7 +23,7 @@
   ],
   "functions": {
     "api/*.mjs": {
-      "includeFiles": "dist-ssr/**"
+      "includeFiles": "{dist-ssr/**,node_modules/react-router/**}"
     }
   },
   "rewrites": [
