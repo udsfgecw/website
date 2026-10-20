@@ -4,7 +4,7 @@ import EventCard from "@/components/activity/EventCard";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Label } from "@/components/ui/section";
 import { pageTitle } from "@/config";
-import { EVENT_CATALOGUE } from "@/data/event-catalogue";
+import { EVENT_CATALOGUE, eventDay } from "@/data/event-catalogue";
 import { usePageMeta } from "@/lib/meta";
 import { cn } from "@/lib/utils";
 
@@ -14,9 +14,14 @@ const YEARS = [...new Set(EVENT_CATALOGUE.map((event) => event.year))].sort().re
 export default function EventsPage() {
   usePageMeta({ title: pageTitle("Events & programs"), description: "Explore UDSF GECW events and programs, from festivals and tournaments to talks and student gatherings, in one collection." });
   const [year, setYear] = useState<string | null>(null);
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
   const [shown, setShown] = useState(BATCH);
   const [open, setOpen] = useState<number | null>(null);
-  const events = useMemo(() => EVENT_CATALOGUE.filter((event) => !year || event.year === year), [year]);
+  const events = useMemo(() => EVENT_CATALOGUE.filter((event) => {
+    const day = eventDay(event);
+    return (!year || event.year === year) && (!from || day >= from) && (!to || day <= to);
+  }), [year, from, to]);
   const media = useMemo(() => events.flatMap((event) => event.post ? [event.post] : []), [events]);
 
   return (
@@ -34,7 +39,13 @@ export default function EventsPage() {
                 {value ?? "All years"} <span className="ml-1.5 opacity-50">{value ? EVENT_CATALOGUE.filter((event) => event.year === value).length : EVENT_CATALOGUE.length}</span>
               </button>
             ))}
+            <div className="ml-auto flex flex-wrap items-center gap-2">
+              <label className="label flex items-center gap-2 text-ink">From <input type="date" value={from} max={to || undefined} onChange={(e) => { setFrom(e.target.value); setShown(BATCH); setOpen(null); }} className="rounded-full border border-line bg-white px-3 py-2 text-ink" /></label>
+              <label className="label flex items-center gap-2 text-ink">To <input type="date" value={to} min={from || undefined} onChange={(e) => { setTo(e.target.value); setShown(BATCH); setOpen(null); }} className="rounded-full border border-line bg-white px-3 py-2 text-ink" /></label>
+              {(from || to || year) && <button type="button" onClick={() => { setYear(null); setFrom(""); setTo(""); setShown(BATCH); setOpen(null); }} className="label rounded-full px-4 py-2.5 text-ink underline-offset-4 hover:underline">Clear filters</button>}
+            </div>
           </div>
+          <p className="mt-4 text-sm text-ink-2" aria-live="polite">{events.length} {events.length === 1 ? "entry" : "entries"}, newest first</p>
           <ul className="mt-8 columns-2 gap-4 sm:columns-3 lg:columns-4">
             {events.slice(0, shown).map((event, index) => (
               <li key={event.id} className="mb-7 break-inside-avoid"><EventCard event={event} index={index} onOpen={() => setOpen(media.findIndex((post) => post.id === event.post?.id))} /></li>

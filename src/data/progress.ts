@@ -83,6 +83,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "career",
     year: "2025–26",
     image: null,
+    post: "sathva-post-17952513312137585",
   },
   {
     number: 3,
@@ -90,6 +91,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "career",
     year: "2025–26",
     image: null,
+    post: "sathva-post-18093258104337651",
   },
   {
     number: 4,
@@ -104,6 +106,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "sports",
     year: "2025–26",
     image: null,
+    post: "sathva-post-18123560482663772",
   },
   {
     number: 6,
@@ -119,6 +122,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "sports",
     year: "2025–26",
     image: null,
+    post: "sathva-post-17938946226291989",
   },
   {
     number: 8,
@@ -126,6 +130,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "sports",
     year: "2025–26",
     image: null,
+    post: "sathva-post-17897520288474399",
   },
   {
     number: 9,
@@ -133,6 +138,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "campus",
     year: "2025–26",
     image: null,
+    post: "sathva-post-17938994022341579",
   },
   {
     number: 10,
@@ -163,6 +169,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "culture",
     year: "2025–26",
     image: null,
+    post: "sathva-post-17931449043410325",
   },
   {
     number: 14,
@@ -177,6 +184,7 @@ export const PROGRAMS: readonly Program[] = [
     category: "culture",
     year: "2025–26",
     image: null,
+    post: "story-18134623687636539",
   },
   {
     number: 16,
@@ -191,5 +199,6 @@ export const PROGRAMS: readonly Program[] = [
     category: "culture",
     year: "2025–26",
     image: null,
+    post: "story-17906639010564419",
   },
 ];

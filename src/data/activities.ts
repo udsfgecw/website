@@ -6,6 +6,8 @@ export interface ActivityItem {
   caption: string;
   date: string;
   image: string;
+  /** Additional images in a multi-image Instagram post; image is the cover. */
+  images?: string[];
   video?: string;
   subtitles?: string;
   category: ActivityCategory;

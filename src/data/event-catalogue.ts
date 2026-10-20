@@ -2,7 +2,7 @@ import { ACTIVITIES, EVENTS_AND_PROGRAMS, type Activity } from "./activities";
 import { PROGRAMS } from "./progress";
 import { EVENT_REELS } from "./event-reels";
 import { EVENT_STORIES } from "./event-stories";
-import { PRO_SHOW_REEL_IDS } from "./event-priority";
+import { SATHVA_MEDIA } from "./sathva-media";
 import { MEDIA_BASE } from "@/lib/media";
 
 export interface EventEntry {
@@ -14,7 +14,10 @@ export interface EventEntry {
   post: Activity | null;
 }
 
-const posts = new Map(ACTIVITIES.map((post) => [post.id, post]));
+/** Calendar day (YYYY-MM-DD) an entry is dated to; entries without a post use the start of their year. */
+export const eventDay = (event: EventEntry) => event.post?.date ?? `${event.year}-01-01`;
+
+const posts = new Map([...ACTIVITIES, ...EVENT_REELS, ...EVENT_STORIES, ...SATHVA_MEDIA].map((post) => [post.id, post]));
 const linked = new Set(PROGRAMS.flatMap((program) => program.post ? [program.post] : []));
 
 // One collection of programs, photos and reels, without repeating linked photo posts.
@@ -30,7 +33,7 @@ export const EVENT_CATALOGUE: readonly EventEntry[] = [
       post,
     };
   }),
-  ...[...EVENTS_AND_PROGRAMS, ...EVENT_REELS, ...EVENT_STORIES].filter((post) => !linked.has(post.id)).map((post): EventEntry => ({
+  ...[...EVENTS_AND_PROGRAMS, ...EVENT_REELS, ...EVENT_STORIES, ...SATHVA_MEDIA].filter((post) => !linked.has(post.id)).map((post): EventEntry => ({
     id: post.id,
     title: post.title,
     year: post.date.slice(0, 4),
@@ -38,5 +41,4 @@ export const EVENT_CATALOGUE: readonly EventEntry[] = [
     image: post.image,
     post,
   })),
-].sort((a, b) => Number(PRO_SHOW_REEL_IDS.has(b.id)) - Number(PRO_SHOW_REEL_IDS.has(a.id))
-  || (b.post?.date ?? `${b.year}-01-01`).localeCompare(a.post?.date ?? `${a.year}-01-01`) || a.id.localeCompare(b.id));
+].sort((a, b) => eventDay(b).localeCompare(eventDay(a)) || a.id.localeCompare(b.id));

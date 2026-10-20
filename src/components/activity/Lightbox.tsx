@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import type { Activity } from "@/data/activities";
@@ -20,6 +20,10 @@ export default function Lightbox({
   onTag?: (tag: string) => void;
 }) {
   const item = index === null ? undefined : items[index];
+  const [imageIndex, setImageIndex] = useState(0);
+  useEffect(() => setImageIndex(0), [item?.id]);
+  const images = item?.images?.length ? item.images : [item?.image ?? ""];
+  const image = images[imageIndex] ?? images[0];
   const many = items.length > 1;
   const step = useCallback(
     (by: number) => index !== null && onIndex((index + by + items.length) % items.length),
@@ -58,7 +62,14 @@ export default function Lightbox({
                   Your browser does not support video playback.
                 </video>
               ) : (
-                <img key={item.id} src={mediaUrl(item.image)} alt="" className="max-h-full max-w-full object-contain" />
+                <img key={`${item.id}-${imageIndex}`} src={mediaUrl(image)} alt="" className="max-h-full max-w-full object-contain" />
+              )}
+              {!item.video && images.length > 1 && (
+                <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-full bg-black/65 px-3 py-2 text-xs text-white">
+                  <button type="button" aria-label="Previous photo" onClick={() => setImageIndex((imageIndex + images.length - 1) % images.length)}><ArrowLeft className="size-4" /></button>
+                  <span>{imageIndex + 1} / {images.length}</span>
+                  <button type="button" aria-label="Next photo" onClick={() => setImageIndex((imageIndex + 1) % images.length)}><ArrowRight className="size-4" /></button>
+                </div>
               )}
               <DialogPrimitive.Close className="absolute right-3 top-3 grid size-11 place-items-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-white/25 md:hidden">
                 <X className="size-5" />

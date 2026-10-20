@@ -4,11 +4,11 @@ import { cn } from "@/lib/utils";
 import { MEDIA_BASE } from "@/lib/media";
 
 const LINKS = [
+  ["/", "Home"],
   ["/#work", "What we do"],
   ["/activities", "Our progress"],
   ["/events", "Events"],
   ["/#alliance", "Alliance"],
-  ["/notes", "Notes"],
 ] as const;
 
 export default function Nav() {

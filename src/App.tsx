@@ -8,6 +8,7 @@ import { PHYSICS_MODULE_1_PATH } from "@/features/notes/physics-module-1/path";
 import { PHYSICS_MODULE_2_PATH } from "@/features/notes/physics-module-2/path";
 import { PHYSICS_MODULE_3_PATH } from "@/features/notes/physics-module-3/path";
 import { PHYSICS_MODULE_4_PATH } from "@/features/notes/physics-module-4/path";
+import NavigationProgress from "@/components/layout/NavigationProgress";
 import HomePage from "@/pages/HomePage";
 import GateExamPage from "@/pages/GateExamPage";
 import NotFoundPage from "@/pages/NotFoundPage";
@@ -58,6 +59,7 @@ function ScrollOnNavigate() {
 export default function App() {
   return (
     <>
+      <NavigationProgress />
       <ScrollOnNavigate />
       {/* One boundary for every route, so pre-rendered pages hydrate with the same structure. */}
       <Suspense fallback={<p role="status" className="wrap py-24 text-ink-2">Loading…</p>}>
