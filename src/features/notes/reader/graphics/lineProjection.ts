@@ -73,7 +73,8 @@ export function solveLine(spec: LineProjectionSpec): LineProjection {
     throw new Error("Give either B or both theta and phi.");
   }
   const dx2 = L * L - dy * dy - dz * dz;
-  if (dx2 < -1e-9) throw new Error("These distances are longer than the line: no such line exists.");
+  // allow the rounding in printed coordinates; a line that is really too short is still refused
+  if (dx2 < -1e-4 * L * L) throw new Error("These distances are longer than the line: no such line exists.");
   const B: Pt = { x: Math.sqrt(Math.max(dx2, 0)), y: A.y + dy, z: A.z + dz };
 
   const fvLength = Math.hypot(B.x, dz);

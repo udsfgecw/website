@@ -13,9 +13,11 @@ const STEPS = [
    construction can be followed in order. Drawing x is the space x; the front view is drawn at -z
    (up the page) and the top view at +y (down the page), as in first-angle projection. */
 /* `divisor` converts drawing units back to the problem's own (a 5 m room is drawn 25 times larger). */
-export default function Epure({ solved, divisor = 1 }: { solved: LineProjection; divisor?: number }) {
+export default function Epure({ solved, divisor = 1, step: fixedStep }: { solved: LineProjection; divisor?: number; step?: number }) {
   const fmt = (n: number, d = divisor) => String(Math.round((n / d) * 10) / 10);
-  const [step, setStep] = useState<number>(STEPS.length);
+  const [picked, setStep] = useState<number>(STEPS.length);
+  // a fixed step is used when the drawing is exported as an image for the written steps
+  const step = fixedStep ?? picked;
   const marker = useId();
   const { A, B, HT, VT } = solved;
 
@@ -139,13 +141,13 @@ export default function Epure({ solved, divisor = 1 }: { solved: LineProjection;
           </g>
         )}
       </svg>
-      <div className="notes-epure-steps" role="group" aria-label="Construction steps">
+      {fixedStep === undefined && <div className="notes-epure-steps" role="group" aria-label="Construction steps">
         {STEPS.map((label, i) => (
           <button key={label} type="button" aria-pressed={step === i + 1} onClick={() => setStep(i + 1)}>
             <span>{i + 1}</span> {label}
           </button>
         ))}
-      </div>
+      </div>}
     </div>
   );
 }
