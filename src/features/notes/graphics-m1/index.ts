@@ -6,15 +6,15 @@ const { pages, chapters } = titledPages(source);
 export const graphicsm1: NotesModule = {
   basePath: GRAPHICS_M1_PATH,
   storageKey: "udsf:notes:cse:s1:graphics-m1:v1",
-  title: "S1 CSE Engineering Graphics · Projection of Lines",
+  title: "S1 CSE Engineering Graphics · Module 1",
   unitLabel: "section",
   trail: [
     { label: "NOTES", href: "/notes" },
     { label: "CSE", href: "/notes/cse" },
     { label: "S1", href: "/notes/cse/s1" },
     { label: "ENGINEERING GRAPHICS", href: "/notes/cse/s1/graphics" },
-    { label: "PROJECTION OF LINES" },
+    { label: "MODULE 1" },
   ],
-  module: "Projection of Lines", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", summary: "Solved problems with 2D drawings and 3D views",
+  module: "Module 1", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", summary: "Introduction, projection of points and lines",
   source: "KTU 2024 scheme, GMEST103 Engineering Graphics and Computer Aided Drawing, from the KTUNOTES.LIVE problem sets.", pages, chapters,
 };
