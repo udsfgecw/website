@@ -9,9 +9,9 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import Epure from '../src/features/notes/reader/graphics/Epure';
 import { solveLine, type LineProjectionSpec } from '../src/features/notes/reader/graphics/lineProjection';
 
-const NOTES = path.resolve('src/features/notes/graphics-projection-of-lines/notes.md');
-const OUT = path.resolve('public/notes/cse/s1/graphics/projection-of-lines/assets');
-const PUBLIC = '/notes/cse/s1/graphics/projection-of-lines/assets';
+const NOTES = path.resolve('src/features/notes/graphics-m1/notes.md');
+const OUT = path.resolve('public/notes/cse/s1/graphics/m1/assets');
+const PUBLIC = '/notes/cse/s1/graphics/m1/assets';
 
 const CAPTIONS = [
   'Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.',

@@ -15,7 +15,10 @@ import { chemistrymodule1 } from "./features/notes/chemistry-module-1";
 import { chemistrymodule2 } from "./features/notes/chemistry-module-2";
 import { chemistrymodule3 } from "./features/notes/chemistry-module-3";
 import { chemistrymodule4 } from "./features/notes/chemistry-module-4";
-import { graphicsprojectionoflines } from "./features/notes/graphics-projection-of-lines";
+import { graphicsm1 } from "./features/notes/graphics-m1";
+import { graphicsm2 } from "./features/notes/graphics-m2";
+import { graphicsm3 } from "./features/notes/graphics-m3";
+import { graphicsm4 } from "./features/notes/graphics-m4";
 import { electricalmodule1 } from "./features/notes/electrical-module-1";
 import { electricalmodule2 } from "./features/notes/electrical-module-2";
 import { electricalmodule3 } from "./features/notes/electrical-module-3";
@@ -63,7 +66,10 @@ export const pages: StaticPage[] = [
   { url: chemistrymodule2.basePath, file: fileFor(chemistrymodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: chemistrymodule3.basePath, file: fileFor(chemistrymodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: chemistrymodule4.basePath, file: fileFor(chemistrymodule4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
-  { url: graphicsprojectionoflines.basePath, file: fileFor(graphicsprojectionoflines.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm1.basePath, file: fileFor(graphicsm1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm2.basePath, file: fileFor(graphicsm2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm3.basePath, file: fileFor(graphicsm3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: graphicsm4.basePath, file: fileFor(graphicsm4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule1.basePath, file: fileFor(electricalmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule2.basePath, file: fileFor(electricalmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule3.basePath, file: fileFor(electricalmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },

@@ -74,7 +74,10 @@ export default function App() {
           <Route path="/notes/cse/s1/python/module-4/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/maths/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/physics/question-papers/:page?" element={<ImportedModulePage />} />
-          <Route path="/notes/cse/s1/graphics/projection-of-lines/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/cse/s1/graphics/m4/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/graphics/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/electrical/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/python/question-papers/:page?" element={<ImportedModulePage />} />

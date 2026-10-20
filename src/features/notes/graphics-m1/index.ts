@@ -1,11 +1,11 @@
 import type { NotesModule } from "../types";
 import source from "./notes.md?raw";
 import { titledPages } from "../titledPages";
-import { GRAPHICS_PROJECTION_OF_LINES_PATH } from "./path";
+import { GRAPHICS_M1_PATH } from "./path";
 const { pages, chapters } = titledPages(source);
-export const graphicsprojectionoflines: NotesModule = {
-  basePath: GRAPHICS_PROJECTION_OF_LINES_PATH,
-  storageKey: "udsf:notes:cse:s1:graphics-projection-of-lines:v1",
+export const graphicsm1: NotesModule = {
+  basePath: GRAPHICS_M1_PATH,
+  storageKey: "udsf:notes:cse:s1:graphics-m1:v1",
   title: "S1 CSE Engineering Graphics · Projection of Lines",
   unitLabel: "section",
   trail: [

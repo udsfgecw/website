@@ -18,7 +18,58 @@ This hands-on workbook guides learners through the orthographic projection of st
 8. Trace Problems II: Combining Views, Angles, and Traces
 9. Engineering Applications of Line Projections
 
-<!-- page 2 | Foundations of Line Projections and Traces -->
+<!-- page 2 | Introduction to Engineering Drawing Standards and Dimensioning -->
+
+## Introduction to Engineering Drawing Standards and Dimensioning
+
+> **Drafted from the syllabus.** This section was written from the syllabus topics and standard theory, not from the source notes. Check it against the reference textbooks before relying on it.
+
+### What you need
+* Technical drawing serves as the universal graphic language of engineers, communicating exact geometry, dimensions, tolerances, and surface finishes without ambiguity across design, manufacturing, and inspection.
+* Standard line conventions follow BIS (Bureau of Indian Standards) IS 10714 / SP 46: continuous thick for visible outlines, continuous thin for dimensions/extensions/projection lines, dashed medium for hidden features, and long-dashed dotted thin for center lines.
+* The line thickness ratio between thick and thin lines must be at least $2:1$ (typically $0.7\text{ mm}$ for visible outlines and $0.35\text{ mm}$ or $0.25\text{ mm}$ for construction/projection/dimension lines).
+* Dimensioning components comprise extension (projection) lines, dimension lines terminated with standard $3:1$ arrowheads, leaders, and numerical values.
+* Dimensioning systems: Aligned system (values placed parallel to and above dimension lines, readable from bottom or right) and Unidirectional system (values placed horizontally, interrupting the dimension line, readable only from bottom).
+* Key BIS standards: IS 9609 (Lettering), IS 10711 (Sheet sizes and layout: A0 to A4), IS 11669 (General principles of dimensioning), and SP 46 (Consolidated Code of Practice).
+
+### The method
+1. Select the drawing sheet size ($A3: 297 \times 420\text{ mm}$ or $A4: 210 \times 297\text{ mm}$) and lay out standard margins ($20\text{ mm}$ left border for filing/binding, $10\text{ mm}$ on remaining edges) and a standard title block ($185 \times 65\text{ mm}$) in the bottom-right corner.
+2. Choose standard line types for each feature: use type A (Continuous thick) for visible edges; type B (Continuous thin) for dimension, extension, and hatch lines; type E/F (Dashed medium) for hidden outlines; type G (Long-dashed dotted thin) for centerlines and pitch circles.
+3. Project extension lines perpendicular to the feature being measured, leaving a $1\text{ mm}$ gap from the object outline and extending $2\text{ to }3\text{ mm}$ past the dimension line.
+4. Draw the dimension line parallel to the measured edge, spaced at least $8\text{ mm}$ from object outlines and at least $6\text{ to }8\text{ mm}$ from adjacent parallel dimension lines.
+5. Terminate dimension lines with closed and filled arrowheads having a length-to-width ratio of $3:1$.
+6. Place numerical values using single-stroke standard lettering (IS 9609, height $3.5\text{ mm}$ or $5\text{ mm}$), adhering strictly to either the aligned or unidirectional system throughout the entire drawing without mixing them.
+7. Dimension smaller features closest to the object view and larger overall features farther out to eliminate intersecting extension and dimension lines.
+
+### Worked examples
+
+#### Example 1: Selecting line types and dimensioning a stepped shaft plate
+A rectangular steel base plate has a total length of $100\text{ mm}$, height of $50\text{ mm}$, a central through-hole of $\phi 20\text{ mm}$, and a stepped blind groove on the rear face that is not visible from the front view.
+
+1. Identify visible outlines: The rectangular boundary ($100 \times 50\text{ mm}$) and front circle of the through-hole are visible; draw them using Continuous thick lines (Type A, $0.7\text{ mm}$).
+2. Identify hidden features: The blind groove on the rear face cannot be seen; draw its boundaries using Dashed medium lines (Type E, $0.35\text{ mm}$) with uniform $3\text{ mm}$ dashes and $1\text{ mm}$ spaces.
+3. Add symmetry references: Draw central vertical and horizontal axes for the circular hole using Long-dashed dotted thin lines (Type G, $0.25\text{ mm}$), ensuring dashes cross at the center point and extend $3\text{ to }5\text{ mm}$ past the hole boundary.
+4. Apply dimensioning using the aligned system: Draw continuous thin extension lines projecting $10\text{ mm}$ below the bottom edge. Draw a dimension line $8\text{ mm}$ below the edge with $3:1$ arrowheads touching the extension lines. Place the numeral '$100$' centered above the dimension line.
+5. Dimension the hole: Draw a leader line from the center through the hole circumference at $45^\circ$ terminating in an arrowhead on the circle outline, with a horizontal shelf displaying '$\phi 20$'.
+*Result:* The plate front view correctly incorporates Type A (boundary), Type E (groove), Type G (centerlines), Type B (dimensions), and unambiguous aligned dimensions per IS 11669.
+
+#### Example 2: Correcting dimensioning errors in an aligned drawing
+A component with dimensions $30\text{ mm}$ and $60\text{ mm}$ has dimension lines crossing each other, dimension text intersecting a centerline, and dimension lines placed directly on object outlines.
+
+1. Separate dimension lines from outlines: Never use an outline or centerline as a dimension line. Offset the first dimension line $8\text{ mm}$ away from the visible outline.
+2. Prevent crossing of dimension lines: Place the smaller dimension ($30\text{ mm}$) closer to the object outline and the overall dimension ($60\text{ mm}$) outside it ($8\text{ mm}$ further out). Extension lines may cross each other, but dimension lines must never cross extension or other dimension lines.
+3. Clear text interference: Relocate centerlines or break them locally so they do not pass through the dimension numeral '$30$'.
+4. Orient text per aligned method: Position numerals above horizontal dimension lines readable from bottom, and to the left of vertical dimension lines readable from the right side of the sheet.
+*Result:* Clean, non-intersecting layout with nested dimensions spaced at $8\text{ mm}$ and correctly oriented aligned text conforming to SP 46.
+
+### Quick recall
+* Visible outlines: Continuous thick (Type A). Hidden outlines: Dashed thin/medium (Type E/F). Center lines: Long-dashed dotted thin (Type G).
+* Arrowheads: Closed and filled with a standard length-to-base ratio of $3:1$.
+* Never cross dimension lines; always place shorter inner dimensions closer to the view and overall dimensions outermost.
+* In aligned dimensioning, place text above horizontal lines and to the left of vertical lines; in unidirectional, break the line and place text horizontally.
+* Standard drawing sheet area of A0 is exactly $1\text{ m}^2$, with sides in ratio $1:\sqrt{2}$; subsequent sizes (A1, A2, A3, A4) are obtained by halving the longer dimension.
+
+<!-- page 3 | Foundations of Line Projections and Traces -->
 
 ## Foundations of Line Projections and Traces
 
@@ -105,7 +156,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 * **Foreshortening Rule:** Apparent lengths are always shorter than True Length ($a'b' < TL$, $ab < TL$), and apparent angles are always larger than true inclinations ($\alpha > \theta$, $\beta > \phi$).
 * **Trace Collinearity:** $(a', b', h', VT)$ always form a single straight line, and $(a, b, v, HT)$ always form a single straight line, with $h'$ and $v$ anchored on $XY$.
 
-<!-- page 3 | Line Rotation Method: Direct Data and Multi-Quadrant Lines -->
+<!-- page 4 | Line Rotation Method: Direct Data and Multi-Quadrant Lines -->
 
 ## Line Rotation Method: Direct Data and Multi-Quadrant Lines
 
@@ -177,19 +228,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-01-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-01-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-01-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-01-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-01-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-01-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-01-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-01-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -242,19 +293,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-02-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-02-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-02-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-02-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-02-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-02-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-02-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-02-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -300,19 +351,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-03-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-03-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-03-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-03-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-03-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-03-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-03-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-03-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -357,19 +408,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-04-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-04-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-04-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-04-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-04-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-04-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-04-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-04-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -413,19 +464,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-05-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-05-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-05-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-05-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-05-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-05-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-05-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-05-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -468,19 +519,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-06-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-06-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-06-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-06-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-06-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-06-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-06-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-06-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -492,7 +543,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 - When a line crosses from the first quadrant into the second quadrant, draw the true-length line $ab_2$ upward toward $XY$ so the locus of $b$ lies above $XY$.
 - For a line entirely in the third quadrant, plot the top view above $XY$ (expanding upward) and the front view below $XY$ (expanding downward).
 
-<!-- page 4 | Line Rotation Method: Working Backwards from View Lengths and Apparent Angles -->
+<!-- page 5 | Line Rotation Method: Working Backwards from View Lengths and Apparent Angles -->
 
 ## Line Rotation Method: Working Backwards from View Lengths and Apparent Angles
 
@@ -554,19 +605,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-07-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-07-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-07-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-07-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-07-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-07-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-07-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-07-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -613,19 +664,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-08-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-08-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-08-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-08-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-08-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-08-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-08-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-08-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -672,19 +723,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-09-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-09-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-09-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-09-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-09-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-09-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-09-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-09-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -725,19 +776,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-10-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-10-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-10-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-10-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-10-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-10-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-10-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-10-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -785,19 +836,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-11-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-11-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-11-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-11-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-11-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-11-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-11-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-11-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -838,19 +889,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-12-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-12-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-12-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-12-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-12-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-12-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-12-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-12-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -895,19 +946,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-13-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-13-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-13-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-13-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-13-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-13-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-13-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-13-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -948,19 +999,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-14-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-14-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-14-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-14-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-14-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-14-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-14-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-14-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1035,19 +1086,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-15-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-15-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-15-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-15-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-15-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-15-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-15-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-15-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1059,7 +1110,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 - **Missing point coordinates:** Place $a'$ and $a$ together on $XY$ ($0\text{ mm}$ from HP, $0\text{ mm}$ from VP) so all rotations pivot directly from the reference line.
 - **Second quadrant equidistant:** Both views of the endpoint lie above $XY$ at equal height, so $b$ and $b'$ coincide at the intersection of their shared horizontal locus and common vertical projector.
 
-<!-- page 5 | Line Rotation Method: Midpoint and Endpoint-on-Plane Constraints -->
+<!-- page 6 | Line Rotation Method: Midpoint and Endpoint-on-Plane Constraints -->
 
 ## Line Rotation Method: Midpoint and Endpoint-on-Plane Constraints
 
@@ -1115,19 +1166,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-16-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-16-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-16-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-16-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-16-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-16-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-16-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-16-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1171,19 +1222,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-17-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-17-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-17-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-17-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-17-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-17-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-17-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-17-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1227,19 +1278,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-18-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-18-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-18-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-18-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-18-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-18-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-18-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-18-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1288,19 +1339,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-19-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-19-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-19-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-19-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-19-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-19-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-19-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-19-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1312,7 +1363,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 - If $a'$ lies on $XY$, stepping off the top view length along $XY$ and intersecting the vertical with the true length immediately yields the locus of $b'$ and angle $\theta$.
 - Symmetrical rotation about $m'$ and $m$ follows the exact same horizontal-locus and vertical-projection rules as rotating about an endpoint.
 
-<!-- page 6 | Plane Rotation (Auxiliary/Trapezoidal) Method: End Projectors -->
+<!-- page 7 | Plane Rotation (Auxiliary/Trapezoidal) Method: End Projectors -->
 
 ## Plane Rotation (Auxiliary/Trapezoidal) Method: End Projectors
 
@@ -1375,19 +1426,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-20-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-20-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-20-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-20-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-20-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-20-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-20-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-20-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1429,19 +1480,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-21-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-21-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-21-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-21-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-21-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-21-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-21-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-21-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1491,19 +1542,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-22-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-22-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-22-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-22-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-22-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-22-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-22-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-22-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1547,19 +1598,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-23-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-23-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-23-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-23-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-23-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-23-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-23-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-23-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1600,19 +1651,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-24-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-24-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-24-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-24-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-24-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-24-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-24-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-24-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1629,7 +1680,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 - Perpendiculars on the **front view ($a'b'$)** always take lengths from the **top view** (distances from VP) and yield **$TL$ and $\phi$**.
 - If an endpoint lies directly on the HP or VP, its distance from that plane is zero, reducing the trapezoid to a single right triangle and making that endpoint the trace.
 
-<!-- page 7 | Lines in a Profile Plane (Complementary Inclinations) -->
+<!-- page 8 | Lines in a Profile Plane (Complementary Inclinations) -->
 
 ## Lines in a Profile Plane (Complementary Inclinations)
 
@@ -1687,19 +1738,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-25-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-25-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-25-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-25-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-25-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-25-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-25-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-25-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1743,19 +1794,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-26-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-26-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-26-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-26-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-26-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-26-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-26-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-26-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1767,7 +1818,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 - In the profile view, vertical change equals front view length ($a'b'$) and horizontal change equals top view length ($ab$), so $TL = \sqrt{(a'b')^2 + (ab)^2}$.
 - When ends lie in opposite quadrants (e.g., behind VP vs. in front of VP), step off their VP distances on opposite sides of the vertical profile axis.
 
-<!-- page 8 | Trace Problems I: Given Trace Positions and Projector Distances -->
+<!-- page 9 | Trace Problems I: Given Trace Positions and Projector Distances -->
 
 ## Trace Problems I: Given Trace Positions and Projector Distances
 
@@ -1836,19 +1887,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-27-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-27-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-27-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-27-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-27-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-27-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-27-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-27-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1889,19 +1940,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-28-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-28-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-28-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-28-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-28-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-28-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-28-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-28-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1944,19 +1995,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-29-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-29-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-29-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-29-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-29-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-29-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-29-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-29-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -1997,19 +2048,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-30-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-30-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-30-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-30-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-30-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-30-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-30-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-30-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2049,19 +2100,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-31-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-31-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-31-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-31-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-31-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-31-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-31-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-31-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2104,19 +2155,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-32-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-32-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-32-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-32-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-32-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-32-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-32-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-32-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2157,19 +2208,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-33-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-33-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-33-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-33-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-33-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-33-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-33-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-33-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2209,19 +2260,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-34-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-34-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-34-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-34-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-34-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-34-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-34-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-34-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2233,7 +2284,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 - In the trapezoidal method, the true-length line passes directly through $VT$ when built on the front view (since $v$ has zero distance from $xy$) and directly through $HT$ when built on the top view (since $h'$ has zero distance from $xy$).
 - When a line crosses $xy$ between its endpoints, erect the trapezoid perpendiculars on opposite sides of the view line so the algebraic sign of the coordinates is preserved.
 
-<!-- page 9 | Trace Problems II: Combining Views, Angles, and Traces -->
+<!-- page 10 | Trace Problems II: Combining Views, Angles, and Traces -->
 
 ## Trace Problems II: Combining Views, Angles, and Traces
 
@@ -2288,19 +2339,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-35-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-35-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-35-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-35-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-35-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-35-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-35-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-35-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2349,19 +2400,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-36-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-36-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-36-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-36-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-36-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-36-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-36-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-36-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2410,19 +2461,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-37-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-37-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-37-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-37-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-37-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-37-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-37-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-37-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2464,19 +2515,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-38-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-38-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-38-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-38-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-38-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-38-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-38-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-38-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2518,19 +2569,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-39-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-39-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-39-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-39-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-39-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-39-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-39-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-39-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2577,19 +2628,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-40-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-40-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-40-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-40-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-40-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-40-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-40-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-40-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2642,19 +2693,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-41-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-41-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-41-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-41-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-41-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-41-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-41-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-41-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2702,19 +2753,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-42-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-42-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-42-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-42-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-42-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-42-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-42-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-42-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2759,19 +2810,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-43-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-43-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-43-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-43-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-43-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-43-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-43-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-43-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2783,7 +2834,7 @@ This hands-on workbook guides learners through the orthographic projection of st
 - When $\alpha$ and $\beta$ are both given along with $\text{VT}$ (as in Q209), finding $v$ on the $xy$-line lets you draw the top view line immediately at angle $\beta$ from $v$.
 - If $\text{HT}$ and $\text{VT}$ coincide on the $xy$-line, the line intersects the $xy$-line directly, so $h'$, $v$, $\text{HT}$, and $\text{VT}$ are all the same point on $xy$.
 
-<!-- page 10 | Engineering Applications of Line Projections -->
+<!-- page 11 | Engineering Applications of Line Projections -->
 
 ## Engineering Applications of Line Projections
 
@@ -2856,19 +2907,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-44-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-44-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-44-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-44-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-44-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-44-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-44-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-44-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
@@ -2907,19 +2958,19 @@ This hands-on workbook guides learners through the orthographic projection of st
 
 **Step-by-step drawing**
 
-![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/projection-of-lines/assets/line-45-step-1.svg)
+![Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.](/notes/cse/s1/graphics/m1/assets/line-45-step-1.svg)
 
 *Step 1: fix end A on one projector. a′ is its height above XY (HP) and a its distance in front of the VP, below XY.*
 
-![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/projection-of-lines/assets/line-45-step-2.svg)
+![Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.](/notes/cse/s1/graphics/m1/assets/line-45-step-2.svg)
 
 *Step 2: plot end B. b′ and b sit on one projector; the front view a′b′ and top view ab are the lines joining them.*
 
-![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/projection-of-lines/assets/line-45-step-3.svg)
+![Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.](/notes/cse/s1/graphics/m1/assets/line-45-step-3.svg)
 
 *Step 3: rotate the line to its true length. TL is drawn at θ above XY in the front view and at φ below XY in the top view; the arcs give the view lengths.*
 
-![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/projection-of-lines/assets/line-45-step-4.svg)
+![Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.](/notes/cse/s1/graphics/m1/assets/line-45-step-4.svg)
 
 *Step 4: find the traces. Extend the views to XY at h′ and v; the perpendiculars give HT and VT.*
 
