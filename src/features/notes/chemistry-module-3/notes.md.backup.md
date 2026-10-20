@@ -38,10 +38,10 @@ When radiation meets matter, three main processes occur:
 * **Emission:** A species transitions from a higher energy state ($E_2$) to a lower energy state ($E_1$) by releasing a photon of energy $\Delta E = h\nu$. Examples include atomic emission and fluorescence spectroscopy.
 * **Scattering:** Radiation is redirected by a sample without necessarily undergoing direct resonant absorption. **Raman spectroscopy** is based on *inelastic light scattering*, where scattered photons gain or lose vibrational or rotational energy.
 
-![Qualitative energy level diagram for absorption showing an upward transition from a lower state to a higher state upon absorbing a photon](/notes/cse/s1/chemistry/module-3/assets/page-002-image-1-structured.svg)
+![Qualitative energy level diagram for absorption showing an upward transition from a lower state to a higher state upon absorbing a photon](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-002-image-1-structured.webp)
 *Figure 1a: Qualitative schematic of photon absorption driving an upward transition from a lower to a higher energy state.*
 
-![Qualitative energy level diagram for emission showing a downward transition from a higher state to a lower state releasing a photon](/notes/cse/s1/chemistry/module-3/assets/page-002-image-2-structured.svg)
+![Qualitative energy level diagram for emission showing a downward transition from a higher state to a lower state releasing a photon](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-002-image-2-structured.webp)
 *Figure 1b: Qualitative schematic of photon emission during relaxation from a higher to a lower energy state.*
 
 > **Watch out.** Transitions occur between any permitted *lower* and *higher* energy states that satisfy selection rules—not exclusively between the absolute lowest and highest levels of a molecule. Furthermore, Raman spectroscopy is an inelastic scattering technique rather than an emission process, and atomic force microscopy (AFM) is a mechanical scanning probe imaging method, not optical emission spectroscopy.
@@ -68,7 +68,7 @@ $$
 \Delta E_{\text{ele}} > \Delta E_{\text{vib}} > \Delta E_{\text{rot}} \gg \Delta E_{\text{trans}}
 $$
 
-![Qualitative diagram of nested electronic, vibrational, and rotational energy levels in a molecule](/notes/cse/s1/chemistry/module-3/assets/page-028-image-1-clean.svg)
+![Qualitative diagram of nested electronic, vibrational, and rotational energy levels in a molecule](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-028-image-1-clean.webp)
 *Figure 2: Qualitative diagram of nested molecular energy levels. Each electronic state contains multiple vibrational levels ($v$), and each vibrational level contains closely spaced rotational levels ($J$). Spacing is schematic and not drawn to scale.*
 
 ### Atomic versus molecular spectra
@@ -93,7 +93,7 @@ When a beam of electromagnetic radiation passes through a sample solution, molec
 
 Consider a parallel beam of monochromatic radiation with incident intensity $I_0$ passing through a sample cell (cuvette) of path length $l$ containing an absorbing solution of molar concentration $c$. The radiation emerges with transmitted intensity $I$.
 
-![Incident radiation I0 passing through a cuvette of path length x and concentration c, emerging with transmitted intensity I](/notes/cse/s1/chemistry/module-3/assets/page-004-image-3-structured.svg)
+![Incident radiation I0 passing through a cuvette of path length x and concentration c, emerging with transmitted intensity I](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-004-image-3-structured.webp)
 *Figure 1: Attenuation of an incident light beam ($I_0$) passing through an absorbing solution of concentration $c$ and path length $x$ (or $l$).*
 
 **Transmittance ($T$)** is the fraction of incident radiation that successfully passes through the sample:
@@ -178,7 +178,7 @@ The value of $\varepsilon$ depends on the absorbing species, wavelength, solvent
 
 For a fixed cell thickness $l$, plotting absorbance $A$ on the y-axis against molar concentration $c$ on the x-axis for a series of standard solutions yields a straight line described by $A = (\varepsilon l)c$.
 
-![Calibration plot of absorbance A against concentration C showing a straight line through the origin with slope epsilon x](/notes/cse/s1/chemistry/module-3/assets/page-006-image-1-structured.svg)
+![Calibration plot of absorbance A against concentration C showing a straight line through the origin with slope epsilon x](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-006-image-1-structured.webp)
 *Figure 2: Ideal Beer–Lambert calibration plot of absorbance ($A$) versus concentration ($C$), with slope equal to $\varepsilon x$ (or $\varepsilon l$).*
 
 Ideally, this line passes through the origin $(0,0)$ with a slope equal to $\varepsilon l$. Once the calibration line is established, you can measure the absorbance of an unknown solution under identical conditions and read its concentration directly from the graph, or compare it with a single standard using the ratio:
@@ -546,7 +546,7 @@ $$
 
 Here, $A$ is dimensionless absorbance, $I_0$ is the intensity transmitted through the reference cell ($\text{W m}^{-2}$), and $I$ is the intensity transmitted through the sample cell ($\text{W m}^{-2}$).
 
-![Plot of absorbance on the vertical axis versus wavelength on the horizontal axis showing a smooth absorption peak.](/notes/cse/s1/chemistry/module-3/assets/page-013-image-1-clean.svg)
+![Plot of absorbance on the vertical axis versus wavelength on the horizontal axis showing a smooth absorption peak.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-013-image-1-clean.webp)
 *Figure: A representative UV–visible absorption spectrum plotting absorbance against wavelength, with peak absorption occurring at $\lambda_{\max}$.*
 
 ### Instrument components
@@ -623,7 +623,7 @@ Why is a changing dipole moment required? Infrared radiation consists of an osci
 
 An infrared spectrum is typically plotted with **percentage transmittance ($\%T$)** on the vertical axis against **wavenumber ($\bar{\nu}$, in $\text{cm}^{-1}$)** on the horizontal axis, usually running from high wavenumber ($4000\text{ cm}^{-1}$) on the left to low wavenumber ($400\text{ cm}^{-1}$) on the right.
 
-![Schematic IR spectrum showing percentage transmittance on the vertical axis versus wavenumber on the horizontal axis with downward absorption dips](/notes/cse/s1/chemistry/module-3/assets/page-044-image-1-clean.svg)
+![Schematic IR spectrum showing percentage transmittance on the vertical axis versus wavenumber on the horizontal axis with downward absorption dips](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-044-image-1-clean.webp)
 *Figure: Schematic representation of an IR spectrum plotting percentage transmittance ($\%T$) against wavenumber ($\text{cm}^{-1}$), where absorption bands appear as downward troughs.*
 
 Where the sample absorbs IR energy at a resonant vibrational frequency, less light passes through to the detector, producing a **downward dip (trough)** in $\%T$. (If plotted using absorbance $A$ on the vertical axis, absorptions appear as upward peaks.)
@@ -637,7 +637,7 @@ The mid-IR spectrum is conventionally divided into two approximate diagnostic zo
 
 In a polyatomic molecule, vibrations occur as **normal modes**—coordinated motions in which a group of atoms or the entire molecule oscillates at a single characteristic frequency without shifting the centre of mass. While complex molecules experience coupled skeletal motions, many vibrations can be qualitatively described using localized group motions divided into **stretching** and **bending**.
 
-![Flowchart classifying molecular vibrations into symmetric and asymmetric stretching, and in-plane (scissoring, rocking) and out-of-plane (wagging, twisting) bending](/notes/cse/s1/chemistry/module-3/assets/page-045-image-1-clean.svg)
+![Flowchart classifying molecular vibrations into symmetric and asymmetric stretching, and in-plane (scissoring, rocking) and out-of-plane (wagging, twisting) bending](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-045-image-1-clean.webp)
 *Figure: Classification of fundamental molecular vibrations into stretching and bending modes using a three-atom group.*
 
 | Category | Subtype | Plane of motion | Description of atomic motion |
@@ -732,22 +732,22 @@ The four normal vibrational modes are:
 
 1. **Symmetric stretching ($\sim 1333\text{ cm}^{-1}$):** Both oxygen atoms move simultaneously away from and toward the stationary central carbon atom along the molecular axis. Because both $\text{C}=\text{O}$ bonds lengthen and shorten equally at the same instant, the two bond dipoles always cancel out ($\Delta\mu = 0$). Therefore, the symmetric stretch is **IR inactive**.
 
-![Symmetric stretching mode of carbon dioxide showing oxygen atoms moving in opposite directions away from the central carbon](/notes/cse/s1/chemistry/module-3/assets/page-048-image-1-structured.svg)
+![Symmetric stretching mode of carbon dioxide showing oxygen atoms moving in opposite directions away from the central carbon](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-048-image-1-structured.webp)
 *Figure 1: Symmetric stretching of $\text{CO}_2$ preserves centrosymmetry ($\Delta\mu = 0$) and is IR inactive.*
 
 2. **Asymmetric stretching ($\sim 2349\text{ cm}^{-1}$):** One $\text{C}=\text{O}$ bond compresses while the other $\text{C}=\text{O}$ bond stretches. This breaks the symmetry of the charge distribution and produces a periodic oscillation in the net dipole moment along the bond axis ($\Delta\mu \ne 0$). Therefore, the asymmetric stretch is **IR active**.
 
-![Asymmetric stretching mode of carbon dioxide showing one C=O bond lengthening while the other shortens](/notes/cse/s1/chemistry/module-3/assets/page-048-image-2-structured.svg)
+![Asymmetric stretching mode of carbon dioxide showing one C=O bond lengthening while the other shortens](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-048-image-2-structured.webp)
 *Figure 2: Asymmetric stretching of $\text{CO}_2$ creates a net oscillating dipole moment ($\Delta\mu \ne 0$) and is IR active.*
 
 3. **In-plane bending ($\sim 667\text{ cm}^{-1}$):** The two oxygen atoms move upward within the plane of the page while the carbon atom moves downward (and vice versa), deforming the $180^\circ$ bond angle. Because the bond dipoles no longer point in exactly opposite directions, a net dipole moment develops perpendicular to the molecular axis ($\Delta\mu \ne 0$). This mode is **IR active**.
 
-![In-plane bending mode of carbon dioxide showing vertical displacement of atoms within the molecular plane](/notes/cse/s1/chemistry/module-3/assets/page-048-image-3-structured.svg)
+![In-plane bending mode of carbon dioxide showing vertical displacement of atoms within the molecular plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-048-image-3-structured.webp)
 *Figure 3: In-plane bending of $\text{CO}_2$ induces a dipole moment perpendicular to the bond axis and is IR active.*
 
 4. **Out-of-plane bending ($\sim 667\text{ cm}^{-1}$):** The atoms bend in a plane perpendicular to the page (toward and away from the viewer). Exactly like the in-plane bend, this motion breaks linearity and creates an oscillating dipole moment ($\Delta\mu \ne 0$), making the mode **IR active**.
 
-![Out-of-plane bending mode of carbon dioxide showing displacement of atoms perpendicular to the viewing plane](/notes/cse/s1/chemistry/module-3/assets/page-049-image-1-structured.svg)
+![Out-of-plane bending mode of carbon dioxide showing displacement of atoms perpendicular to the viewing plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-049-image-1-structured.webp)
 *Figure 4: Out-of-plane bending of $\text{CO}_2$ is also IR active and is degenerate with the in-plane bend.*
 
 > **Watch out.** Do not label the out-of-plane bend of $\text{CO}_2$ as IR inactive. Both the in-plane and out-of-plane bending modes produce a dipole moment change and are IR active; only one bending band appears around $667\text{ cm}^{-1}$ because the two modes are degenerate, not because one is inactive.
@@ -770,17 +770,17 @@ $$
 
 1. **Symmetric stretching ($\sim 3657\text{ cm}^{-1}$ in isolated gas phase):** Both $\text{O}-\text{H}$ bonds stretch and compress simultaneously in phase. Because the molecule is bent, changing both bond lengths alters the magnitude of the resultant dipole vector ($\Delta\mu \ne 0$). Thus, it is **IR active**.
 
-![Symmetric stretching mode of bent water molecule showing both O-H bonds stretching simultaneously](/notes/cse/s1/chemistry/module-3/assets/page-049-image-2-structured.svg)
+![Symmetric stretching mode of bent water molecule showing both O-H bonds stretching simultaneously](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-049-image-2-structured.webp)
 *Figure 5: Symmetric stretching of bent $\text{H}_2\text{O}$ changes the magnitude of the net dipole moment and is IR active.*
 
 2. **Asymmetric stretching ($\sim 3756\text{ cm}^{-1}$ in isolated gas phase):** One $\text{O}-\text{H}$ bond lengthens while the other shortens, tilting the direction of the net dipole moment ($\Delta\mu \ne 0$). Thus, it is **IR active**.
 
-![Asymmetric stretching mode of bent water molecule showing one O-H bond lengthening while the other shortens](/notes/cse/s1/chemistry/module-3/assets/page-050-image-1-structured.svg)
+![Asymmetric stretching mode of bent water molecule showing one O-H bond lengthening while the other shortens](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-050-image-1-structured.webp)
 *Figure 6: Asymmetric stretching of $\text{H}_2\text{O}$ oscillates the dipole direction and is IR active.*
 
 3. **In-plane bending / scissoring ($\sim 1595\text{ cm}^{-1}$ in isolated gas phase):** The $\text{H}-\text{O}-\text{H}$ bond angle opens and closes within the molecular plane, changing the net dipole magnitude ($\Delta\mu \ne 0$). Thus, it is **IR active**.
 
-![In-plane scissoring bending mode of water molecule showing the H-O-H bond angle changing](/notes/cse/s1/chemistry/module-3/assets/page-050-image-2-structured.svg)
+![In-plane scissoring bending mode of water molecule showing the H-O-H bond angle changing](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-050-image-2-structured.webp)
 *Figure 7: In-plane bending (scissoring) of $\text{H}_2\text{O}$ alters the bond angle and dipole magnitude, making it IR active.*
 
 All $3$ modes of isolated gaseous $\text{H}_2\text{O}$ are non-degenerate and IR active, giving **$3$ distinct fundamental bands** (note that in liquid water, intermolecular hydrogen bonding broadens and shifts these bands significantly).
@@ -1014,10 +1014,10 @@ When a sinusoidal AC voltage is applied across a sample placed between two elect
 1. **Permanent molecular dipoles** undergo **dipolar relaxation**, rotating to reorient with the alternating electric field.
 2. **Mobile free ions** (often trace impurities or catalyst residues) undergo **ionic migration**, drifting translationally toward the oppositely charged electrode.
 
-![Randomly oriented molecular dipoles between parallel plates without an external electric field](/notes/cse/s1/chemistry/module-3/assets/page-058-image-2-structured.svg)
+![Randomly oriented molecular dipoles between parallel plates without an external electric field](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-058-image-2-structured.webp)
 *Figure 11.1: In the absence of an external electric field, thermal motion keeps molecular dipoles randomly oriented.*
 
-![Molecular dipoles reorienting between charged plates under an applied electric field](/notes/cse/s1/chemistry/module-3/assets/page-058-image-3-structured.svg)
+![Molecular dipoles reorienting between charged plates under an applied electric field](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-058-image-3-structured.webp)
 *Figure 11.2: Under an applied electric field, dipoles experience torque and partially align with the field direction.*
 
 > **Watch out.** Do not confuse ions with dipoles. Ions do not "align" in place, and bound dipoles do not migrate across the sample. Instead, dipoles rotate (orientation polarisation) while free ions drift toward opposite electrodes (ionic conduction). Furthermore, although static diagrams show neat alignment at a single instant, an AC field reverses continuously and thermal agitation opposes alignment, so dipoles never remain perfectly aligned.
@@ -1064,7 +1064,7 @@ The dissipation factor is $0.02$ (dimensionless).
 
 ### Instrumentation and working
 
-![Schematic of a dielectric thermal analysis cell inside a temperature-controlled furnace](/notes/cse/s1/chemistry/module-3/assets/page-058-image-1-clean.svg)
+![Schematic of a dielectric thermal analysis cell inside a temperature-controlled furnace](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-058-image-1-clean.webp)
 *Figure 11.3: Schematic of a DETA setup showing the sample between electrodes inside a programmable furnace connected to a dielectric analyser.*
 
 A standard DETA instrument consists of the following components:
@@ -1108,14 +1108,14 @@ Scanning electron microscopy (SEM) images solid surfaces by sweeping a focused b
 
 When primary beam electrons penetrate a solid, they undergo scattering within an interaction volume whose shape and size depend on beam energy and material near the surface, generating several distinct signals.
 
-![Secondary electron generation diagram showing an incoming electron beam ejecting an outer-shell electron from a sample atom.](/notes/cse/s1/chemistry/module-3/assets/page-055-image-1-structured.svg)
+![Secondary electron generation diagram showing an incoming electron beam ejecting an outer-shell electron from a sample atom.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-055-image-1-structured.webp)
 *Figure 12.1: Inelastic collision ejecting a low-energy secondary electron.*
 
 - **Secondary electrons (SE):** Primary electrons transfer part of their kinetic energy to sample atoms through **inelastic** collisions, ejecting loosely bound outer-shell electrons. Because secondary electrons have very low kinetic energy (typically below $50\text{ eV}$), only those generated within a few nanometres of the surface can escape. The escape yield depends strongly on surface tilt and edges, making SE imaging the primary mode for high-resolution surface topography (shape, size, and texture).
 - **Backscattered electrons (BSE):** These are incident beam electrons deflected backward out of the sample at large angles by **predominantly elastic** interactions with atomic nuclei. They retain a large fraction of the primary beam energy and escape from deeper within the specimen than secondary electrons. Because heavier nuclei (higher atomic number, $Z$) have a stronger positive charge, they deflect more electrons backward. Under identical operating conditions, regions with higher average $Z$ generally appear brighter in a BSE image, providing qualitative compositional ($Z$-contrast) alongside topographic and crystal-orientation effects.
 - **Characteristic X-rays:** When an incident electron knocks out an inner-shell electron from a sample atom, a higher-shell electron drops down to fill the vacancy, emitting an X-ray photon whose energy is characteristic of that element. Coupling an SEM with an energy-dispersive X-ray spectroscopy (EDS) detector identifies which elements are present; accurate quantitative composition requires proper standards and calibration. Similarly, crystallographic orientation mapping is not obtained from ordinary SE/BSE images alone, but requires an accessory technique such as electron backscatter diffraction (EBSD).
 
-![Backscattered electron diagram showing an incident primary electron deflected at a large angle by an atomic nucleus.](/notes/cse/s1/chemistry/module-3/assets/page-055-image-2-structured.svg)
+![Backscattered electron diagram showing an incident primary electron deflected at a large angle by an atomic nucleus.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-055-image-2-structured.webp)
 *Figure 12.2: Elastic scattering of a primary electron by an atomic nucleus to produce a backscattered electron.*
 
 > **Watch out.** Backscattered electrons are produced by predominantly *elastic* nuclear scattering, not inelastic collisions. Furthermore, all elements scatter electrons to some degree; higher-$Z$ elements simply yield a higher fraction of backscattered electrons rather than being the only elements that generate them.
@@ -1130,7 +1130,7 @@ When primary beam electrons penetrate a solid, they undergo scattering within an
 
 An SEM column operates under high vacuum so that gas molecules do not scatter the electron beam or contaminate the filament.
 
-![Schematic diagram of a Scanning Electron Microscope column showing the electron source, anode, condenser lens, scan coils, objective lens, sample, and secondary electron detector.](/notes/cse/s1/chemistry/module-3/assets/page-056-image-1-structured.svg)
+![Schematic diagram of a Scanning Electron Microscope column showing the electron source, anode, condenser lens, scan coils, objective lens, sample, and secondary electron detector.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-3/assets/page-056-image-1-structured.webp)
 *Figure 12.3: Schematic layout of a scanning electron microscope.*
 
 1. **Electron gun and anode:** A thermionic emitter (such as a heated tungsten filament or $\text{LaB}_6$ crystal) or a field-emission gun (FEG) generates free electrons. A positively charged anode accelerates them down the column (typically at $1\text{--}30\text{ kV}$).

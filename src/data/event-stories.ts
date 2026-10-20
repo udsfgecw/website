@@ -7,8 +7,8 @@ export const EVENT_STORIES: readonly Activity[] = [
     "title": "Nawaf NSR Live at Thouryathrikam ’26",
     "caption": "Arts pro show: Nawaf NSR performing live at *Thouryathrikam ’26*, the GECW arts fest.",
     "date": "2026-10-02",
-    "image": "/event-stories/story-18134623687636539.webp",
-    "video": "/event-stories/story-18134623687636539.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-stories/story-18134623687636539.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-stories/story-18134623687636539.webm",
     "category": "events_programs"
   },
   {
@@ -16,8 +16,8 @@ export const EVENT_STORIES: readonly Activity[] = [
     "title": "Beatz on Music with DJ Jazeel",
     "caption": "Arts pro show: *Beatz on Music* with DJ Jazeel at *Thouryathrikam ’26*, the GECW arts fest.",
     "date": "2026-10-01",
-    "image": "/event-stories/story-17906639010564419.webp",
-    "video": "/event-stories/story-17906639010564419.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-stories/story-17906639010564419.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-stories/story-17906639010564419.webm",
     "category": "events_programs"
   }
 ];

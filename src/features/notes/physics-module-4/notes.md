@@ -156,7 +156,7 @@ Peak inverse voltage (PIV) is the maximum reverse voltage that appears across a 
 
 The half-wave rectifier is the simplest rectifier: a transformer, **one diode**, and the load resistor $R_L$ in series.
 
-![Half-wave rectifier: transformer secondary AB, a diode from A to M, and load resistor R_L](/notes/cse/s1/physics/module-4/half-wave-circuit.webp)
+![Half-wave rectifier: transformer secondary AB, a diode from A to M, and load resistor R_L](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/half-wave-circuit.webp)
 
 ## Working
 
@@ -167,7 +167,7 @@ When the AC supply is switched on, the alternating voltage $V_{in}$ appears acro
 
 The current through $R_L$ always flows in the same direction, so it is DC. But its magnitude is not constant. It is a series of positive half-sine pulses with gaps between them, called **pulsating DC**.
 
-![Input sine wave and the half-wave rectified output: only the positive half cycles](/notes/cse/s1/physics/module-4/half-wave-waveforms.webp)
+![Input sine wave and the half-wave rectified output: only the positive half cycles](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/half-wave-waveforms.webp)
 
 ## Average (DC) current
 
@@ -282,7 +282,7 @@ A half-wave rectifier throws away every negative half cycle. A **full-wave recti
 
 The centre-tap version uses a transformer whose secondary has a connection in the middle, the **centre tap** C, and **two diodes**. Each diode is fed by one half of the secondary. The load is connected between the joined cathodes (M) and the centre tap.
 
-![Centre-tap full-wave rectifier: diodes D1 and D2 from ends A and B, load R_L between M and the centre tap](/notes/cse/s1/physics/module-4/centre-tap-circuit.webp)
+![Centre-tap full-wave rectifier: diodes D1 and D2 from ends A and B, load R_L between M and the centre tap](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/centre-tap-circuit.webp)
 
 ## Working
 
@@ -293,7 +293,7 @@ When the supply is switched on, the alternating voltage appears across the secon
 
 The current through $R_L$ has the same direction in both half cycles, so the output is DC with a hump in **every** half cycle, not every other one. The output is still pulsating, but the gaps are gone.
 
-![Input voltage, current through R_L with D1 and D2 conducting in alternate half cycles, and the output voltage](/notes/cse/s1/physics/module-4/full-wave-waveforms.webp)
+![Input voltage, current through R_L with D1 and D2 conducting in alternate half cycles, and the output voltage](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/full-wave-waveforms.webp)
 
 ## Average current
 
@@ -407,7 +407,7 @@ Check with the formula: $\dfrac{0.8106}{1+10/500}=0.795$. $\checkmark$ The PIV i
 
 The bridge rectifier gives full-wave output **without a centre tap**, using four diodes arranged in a bridge (a diamond). The whole secondary winding is used in both half cycles.
 
-![Bridge rectifier: diodes D1 to D4 in a bridge across the secondary AB, load R_L between M and L](/notes/cse/s1/physics/module-4/bridge-circuit.webp)
+![Bridge rectifier: diodes D1 to D4 in a bridge across the secondary AB, load R_L between M and L](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/bridge-circuit.webp)
 
 The AC input is applied across one diagonal of the bridge (A and B). The load is connected across the other diagonal (M and L).
 
@@ -418,7 +418,7 @@ The AC input is applied across one diagonal of the bridge (A and B). The load is
 
 The load current has the same direction (M to L) in both half cycles, so a full-wave DC output is obtained across the load.
 
-![Bridge rectifier waveforms: input, current through R_L from D1, D3 and D2, D4 in turn, and the output voltage](/notes/cse/s1/physics/module-4/bridge-waveforms.webp)
+![Bridge rectifier waveforms: input, current through R_L from D1, D3 and D2, D4 in turn, and the output voltage](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/bridge-waveforms.webp)
 
 ## Results
 
@@ -519,7 +519,7 @@ The simplest filter is a large capacitor $C$ connected directly across the load.
 
 The output becomes a nearly steady DC close to $V_m$, with only a small sawtooth ripple.
 
-![Full-wave rectified output without a filter, and the much smoother output with a capacitor across the load](/notes/cse/s1/physics/module-4/capacitor-filter.webp)
+![Full-wave rectified output without a filter, and the much smoother output with a capacitor across the load](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/capacitor-filter.webp)
 
 The larger $C$ and $R_L$ are (a long discharge time $CR_L$), the smaller the ripple. For a full-wave rectifier with a capacitor filter, the ripple factor is approximately
 
@@ -592,13 +592,13 @@ Commercial "Zener diodes" with breakdown voltages above about 6 V actually break
 
 A **Zener diode** is a heavily doped p-n junction diode **designed to operate in the reverse breakdown region**. Its breakdown voltage $V_Z$ is set during manufacture by controlling the doping level: heavier doping gives a thinner depletion region and a lower $V_Z$. Zener diodes are available with $V_Z$ from about 2 V to a few hundred volts.
 
-![Zener diode symbol, anode (+) to cathode (−), and its physical package with a cathode band](/notes/cse/s1/physics/module-4/zener-symbol.webp)
+![Zener diode symbol, anode (+) to cathode (−), and its physical package with a cathode band](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/zener-symbol.webp)
 
 The symbol is a diode with a bent bar (like a "Z") at the cathode. On the component, the band marks the cathode.
 
 ## V-I characteristic
 
-![V-I characteristic of a Zener diode: forward region, and a sharp breakdown at −V_Z between I_Zmin and I_Zmax](/notes/cse/s1/physics/module-4/zener-vi-characteristic.webp)
+![V-I characteristic of a Zener diode: forward region, and a sharp breakdown at −V_Z between I_Zmin and I_Zmax](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/zener-vi-characteristic.webp)
 
 - **Forward bias:** the characteristic is like that of a normal p-n junction diode, conducting above about 0.3 to 0.7 V.
 - **Reverse bias below $V_Z$:** only a very small reverse saturation current flows.
@@ -612,7 +612,7 @@ The symbol is a diode with a bent bar (like a "Z") at the cathode. On the compon
 
 A **regulated** power supply keeps its output voltage constant, irrespective of changes in the input supply voltage or in the load resistance.
 
-![Zener regulator: unregulated DC input, series resistor R_s, and the Zener diode in parallel with the load R_L](/notes/cse/s1/physics/module-4/zener-regulator.webp)
+![Zener regulator: unregulated DC input, series resistor R_s, and the Zener diode in parallel with the load R_L](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/zener-regulator.webp)
 
 **Circuit**
 
@@ -686,13 +686,13 @@ The heavy doping has two consequences:
 
 Electrons can then cross the junction by **quantum mechanical tunnelling** (Module 2) straight through the thin barrier, instead of climbing over it. Tunnelling happens only from a **filled** state on one side into an **empty** state at the **same energy** on the other side.
 
-![Tunnel diode circuit symbol](/notes/cse/s1/physics/module-4/tunnel-diode-symbol.webp)
+![Tunnel diode circuit symbol](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/tunnel-diode-symbol.webp)
 
-![Band diagrams of an ordinary p-n junction diode and a tunnel diode, where electrons tunnel through the thin barrier](/notes/cse/s1/physics/module-4/tunnel-diode-bands.webp)
+![Band diagrams of an ordinary p-n junction diode and a tunnel diode, where electrons tunnel through the thin barrier](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/tunnel-diode-bands.webp)
 
 ## Working, point by point on the V-I curve
 
-![V-I characteristic of a tunnel diode: peak point A, negative resistance region, valley point B, then normal diode current](/notes/cse/s1/physics/module-4/tunnel-diode-vi.webp)
+![V-I characteristic of a tunnel diode: peak point A, negative resistance region, valley point B, then normal diode current](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/tunnel-diode-vi.webp)
 
 1. **Zero bias.** The Fermi levels on the two sides are aligned. Filled states in the n-side conduction band face filled states in the p-side valence band. Tunnelling occurs equally in both directions, so the net current is zero.
 
@@ -756,7 +756,7 @@ A **light-emitting diode** (LED) is a semiconductor p-n junction diode that give
 4. This energy is released either as **heat** (lattice vibrations) or as **light** (a photon of energy $h\nu\approx E_g$).
 5. If the semiconductor is translucent, the light comes out and the junction becomes a light source.
 
-![LED: forward-biased p-n junction, with electrons and holes recombining at the junction and emitting light across the band gap](/notes/cse/s1/physics/module-4/led-working.webp)
+![LED: forward-biased p-n junction, with electrons and holes recombining at the junction and emitting light across the band gap](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/led-working.webp)
 
 ## Direct and indirect band gaps
 
@@ -879,7 +879,7 @@ The motion of the thermally generated minority carriers gives a small reverse le
 4. This movement produces a current in the external circuit in excess of the dark current, called the **photocurrent**.
 5. Pairs created in the neutral regions diffuse slowly. Many recombine before reaching the depletion region and give nothing.
 
-![Photodiode biasing: light falls on the depletion region of a reverse-biased p-n junction, with ammeter measuring the reverse current I_s; photodiode symbols](/notes/cse/s1/physics/module-4/photodiode-circuit.webp)
+![Photodiode biasing: light falls on the depletion region of a reverse-biased p-n junction, with ammeter measuring the reverse current I_s; photodiode symbols](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/photodiode-circuit.webp)
 
 **Cut-off wavelength**
 
@@ -893,7 +893,7 @@ For silicon ($E_g=1.1\ \text{eV}$), $\lambda_c\approx1.13\ \mu\text{m}$. For ger
 
 ## V-I characteristic
 
-![Photodiode characteristic: reverse current against reverse voltage for darkness and for 10,000 to 25,000 lux](/notes/cse/s1/physics/module-4/photodiode-vi.webp)
+![Photodiode characteristic: reverse current against reverse voltage for darkness and for 10,000 to 25,000 lux](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/photodiode-vi.webp)
 
 - The photocurrent always flows in the **reverse direction**, from n to p.
 - With no light only the small dark current flows.
@@ -914,9 +914,9 @@ Because the photocurrent is proportional to the incident light intensity, the re
 
 A **p-i-n** diode has a wide layer of **intrinsic** (pure or very lightly doped) semiconductor between the p and n regions. The intrinsic layer has very few free carriers, so under a modest reverse bias the depletion region spreads through the **whole intrinsic layer**. So the region that collects light is much wider.
 
-![PIN photodiode structure: p region of width W_p, intrinsic region of width w and n region of width W_n, in a reverse-bias circuit](/notes/cse/s1/physics/module-4/pin-structure.webp)
+![PIN photodiode structure: p region of width W_p, intrinsic region of width w and n region of width W_n, in a reverse-bias circuit](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/pin-structure.webp)
 
-![PIN diode under forward bias (narrow depletion region) and reverse bias (depletion region filling the intrinsic layer)](/notes/cse/s1/physics/module-4/pin-bias.webp)
+![PIN diode under forward bias (narrow depletion region) and reverse bias (depletion region filling the intrinsic layer)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/pin-bias.webp)
 
 **Working**
 
@@ -970,7 +970,7 @@ Unlike a photodiode it needs no external bias: it generates its own voltage, whi
 
 ## Construction
 
-![Structure of a solar cell: metal grid on top, anti-reflection coating, thin n layer, depletion region, thick p-type base and bottom contact](/notes/cse/s1/physics/module-4/solar-cell-structure.webp)
+![Structure of a solar cell: metal grid on top, anti-reflection coating, thin n layer, depletion region, thick p-type base and bottom contact](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/solar-cell-structure.webp)
 
 - A **p-type** silicon chip forms the thick base.
 - A **thin n-type layer** is grown or diffused on top, so that light can reach the junction just below the surface.
@@ -988,7 +988,7 @@ Unlike a photodiode it needs no external bias: it generates its own voltage, whi
 
 ## I-V characteristic
 
-![Solar cell I-V curve with short-circuit current, open-circuit voltage and the maximum power point; the dashed curve is the power](/notes/cse/s1/physics/module-4/solar-iv-curve.webp)
+![Solar cell I-V curve with short-circuit current, open-circuit voltage and the maximum power point; the dashed curve is the power](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/solar-iv-curve.webp)
 
 - **Short-circuit current $I_{\text{SC}}$:** the current when the terminals are shorted (voltage zero). It is proportional to the light intensity.
 - **Open-circuit voltage $V_{\text{OC}}$:** the voltage across the illuminated cell when no current is drawn (open circuit). For a silicon cell it is about $0.5$ to $0.6\ \text{V}$, and it increases only slowly (logarithmically) with intensity.
@@ -1034,7 +1034,7 @@ One silicon cell gives only about $0.5\ \text{V}$ and a few amperes, so cells ar
 - Connecting cells in **series** adds their **voltages** (the current is the same through all).
 - Connecting cells (or strings) in **parallel** adds their **currents** (the voltage is the same).
 
-![From a single cell to a module (36 cells in series), a panel of modules, and an array of panels](/notes/cse/s1/physics/module-4/cells-to-array.webp)
+![From a single cell to a module (36 cells in series), a panel of modules, and an array of panels](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/cells-to-array.webp)
 
 | Level | What it is |
 | --- | --- |
@@ -1093,7 +1093,7 @@ In practice, a shaded cell in a series string limits the current of the whole st
 
 **LASER** stands for **L**ight **A**mplification by **S**timulated **E**mission of **R**adiation. Light can interact with matter in three ways:
 
-![Laser principle: absorption, spontaneous emission and stimulated emission, and population inversion N2 > N1](/notes/cse/s1/physics/module-4/laser-principle.webp)
+![Laser principle: absorption, spontaneous emission and stimulated emission, and population inversion N2 > N1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/laser-principle.webp)
 
 1. **Absorption.** An atom (or electron) in a lower level absorbs a photon and jumps to a higher level.
 2. **Spontaneous emission.** An excited electron falls back on its own, at a random moment, emitting a photon in a random direction and with random phase. Light from lamps and LEDs is of this kind: incoherent.
@@ -1118,7 +1118,7 @@ Silicon and germanium, used for ordinary diodes, are **indirect** band gap mater
 
 ## Construction (GaAs homojunction laser)
 
-![Construction of a GaAs homojunction laser: n+ GaAs, Zn-diffused p+ region, the thin active region at the junction, metal contacts, and laser output from a polished end face](/notes/cse/s1/physics/module-4/laser-construction.webp)
+![Construction of a GaAs homojunction laser: n+ GaAs, Zn-diffused p+ region, the thin active region at the junction, metal contacts, and laser output from a polished end face](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-4/laser-construction.webp)
 
 - A **heavily doped n-type GaAs** crystal, on top of which a **heavily doped p region** is formed by diffusing **zinc** atoms into it. The junction between them is the active region.
 - The diode is tiny: typically $500\ \mu\text{m}\times100\ \mu\text{m}\times100\ \mu\text{m}$.

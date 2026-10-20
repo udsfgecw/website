@@ -68,9 +68,9 @@ else:
     print("Minor")  # Minor
 ```
 
-[![An age decision sends the true branch to Adult and the false branch to Minor.](/notes/cse/s1/python/module-3/assets/selection.svg)](/notes/cse/s1/python/module-3/assets/selection.svg)
+[![An age decision sends the true branch to Adult and the false branch to Minor.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/selection.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/selection.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-3/assets/selection.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/selection.webp)
 
 An `if/elif/else` chain checks conditions from top to bottom and runs the first matching branch. The example below uses illustrative grade bands, not an institutional grading policy.
 
@@ -314,9 +314,9 @@ Prefer returning results when the caller may need them for further calculations.
 
 A caller supplies arguments, the function computes its result, and control returns to the caller. Parameters and variables assigned inside a function are normally local to that function.
 
-[![A caller sends two arguments to add_numbers, receives a total, then prints the result.](/notes/cse/s1/python/module-3/assets/function-call.svg)](/notes/cse/s1/python/module-3/assets/function-call.svg)
+[![A caller sends two arguments to add_numbers, receives a total, then prints the result.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/function-call.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/function-call.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-3/assets/function-call.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/function-call.webp)
 
 ```python
 def absolute_value(number):
@@ -377,9 +377,9 @@ print(text[-1])       # d
 print(len("café"))    # 4
 ```
 
-[![Hello World indexed from 0 to 10 and from -11 to -1; the space has its own position.](/notes/cse/s1/python/module-3/assets/string-indices.svg)](/notes/cse/s1/python/module-3/assets/string-indices.svg)
+[![Hello World indexed from 0 to 10 and from -11 to -1; the space has its own position.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/string-indices.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/string-indices.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-3/assets/string-indices.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/string-indices.webp)
 
 This is an index diagram, not a physical memory layout. `len()` counts code points, which can differ from the number of user-perceived characters when combining marks or multi-code-point emoji are used.
 
@@ -602,9 +602,9 @@ print(values)  # [99, 20, 35, 40]
 print(copy)    # [10, 20, 35, 40]
 ```
 
-[![Assignment creates an alias to one list, whereas slicing creates a separate outer list.](/notes/cse/s1/python/module-3/assets/list-alias-copy.svg)](/notes/cse/s1/python/module-3/assets/list-alias-copy.svg)
+[![Assignment creates an alias to one list, whereas slicing creates a separate outer list.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/list-alias-copy.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/list-alias-copy.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-3/assets/list-alias-copy.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/list-alias-copy.webp)
 
 ```python
 original = [[1], [2]]
@@ -777,9 +777,9 @@ print(matrix.size)   # 6
 | `size` | Total number of elements |
 | `dtype` | Element data type |
 
-[![A two-row, three-column array with its row and column indices.](/notes/cse/s1/python/module-3/assets/array-shape.svg)](/notes/cse/s1/python/module-3/assets/array-shape.svg)
+[![A two-row, three-column array with its row and column indices.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/array-shape.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/array-shape.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-3/assets/array-shape.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/array-shape.webp)
 
 `(6,)` is a one-element shape tuple. `(2, 3)` means two rows and three columns.
 

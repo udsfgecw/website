@@ -1,0 +1,527 @@
+{
+  "backup": "/home/adhil/Downloads/udsf-media-originals-2026-10-20",
+  "files": {
+    "event-reels/reel-193f3b24a78c.mp4": {
+      "key": "event-reels/reel-193f3b24a78c.webm",
+      "sourceSha256": "af73e89ae014eeae2233845856a57a812cac4ae00f9b3b6c0d5e7e3d64cae92d",
+      "sourceBytes": 1489583,
+      "bytes": 1431370,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-132c2936415d.mp4": {
+      "key": "event-reels/reel-132c2936415d.webm",
+      "sourceSha256": "4c8467c16d529b658ba1e35aef69a611422c5c8129d83c6610a0fa780b948aab",
+      "sourceBytes": 4279803,
+      "bytes": 3881474,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-1dd84c4f9c58.mp4": {
+      "key": "event-reels/reel-1dd84c4f9c58.webm",
+      "sourceSha256": "18542c7846df4b226d9466dba6b3beb08d1139d2501d32fe7ac378c9f06e942f",
+      "sourceBytes": 2557738,
+      "bytes": 2312821,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-1fc1e3531b7f.mp4": {
+      "key": "event-reels/reel-1fc1e3531b7f.webm",
+      "sourceSha256": "5af41c1e59aa9b0a8e3a5cfaaf4595fff5d52896f6ce09f539cbd481c7b9f748",
+      "sourceBytes": 1650806,
+      "bytes": 1582483,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-24d1a6a23c8b.mp4": {
+      "key": "event-reels/reel-24d1a6a23c8b.webm",
+      "sourceSha256": "bfb9cd373a50ceb9a13dfa524d9d4fa12af60fda8774b7348e777d3eac4f493b",
+      "sourceBytes": 3947995,
+      "bytes": 3502098,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-1e2d9eb5e251.mp4": {
+      "key": "event-reels/reel-1e2d9eb5e251.webm",
+      "sourceSha256": "2cebfe508ef0825f89713c0267996fc91d51d29a5947a227a3da0ab6ea9220ee",
+      "sourceBytes": 6773786,
+      "bytes": 6936927,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-25db5c6a2ff2.mp4": {
+      "key": "event-reels/reel-25db5c6a2ff2.webm",
+      "sourceSha256": "ce0d4d68a608513a117ab16fc009ded0f87e84654e53c51297ec8b3c08f2d51f",
+      "sourceBytes": 1010268,
+      "bytes": 884676,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-2a6f6a1511bb.mp4": {
+      "key": "event-reels/reel-2a6f6a1511bb.webm",
+      "sourceSha256": "793246b635886733d010e80c5751565f57cf8f59f2c3fbc98aaeae5f1f565619",
+      "sourceBytes": 645441,
+      "bytes": 631402,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-29888fa1585e.mp4": {
+      "key": "event-reels/reel-29888fa1585e.webm",
+      "sourceSha256": "8ff96e8e8e0b4c459a7e17e1c22b27662972d0a1f9d05633a5508302bdaa4c35",
+      "sourceBytes": 6073356,
+      "bytes": 5488512,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-2e8cbb498a5b.mp4": {
+      "key": "event-reels/reel-2e8cbb498a5b.webm",
+      "sourceSha256": "d99bd81b50245eb1e11995e5b7849c24fa58e080a02bd63dc86af52b77e47075",
+      "sourceBytes": 1834406,
+      "bytes": 1832062,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-38dd019704c6.mp4": {
+      "key": "event-reels/reel-38dd019704c6.webm",
+      "sourceSha256": "412ecc051c3eeb28cdf06be3c53105ad767bff477f9d4e08fb23cbdc13017e80",
+      "sourceBytes": 1371684,
+      "bytes": 1366250,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-38608865affb.mp4": {
+      "key": "event-reels/reel-38608865affb.webm",
+      "sourceSha256": "728d4f677bfd535e3598235dce0a1e6ae75b87472b5f4ce97c82474425a6b7b9",
+      "sourceBytes": 3937427,
+      "bytes": 4105744,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-3b8efb0bbd9c.mp4": {
+      "key": "event-reels/reel-3b8efb0bbd9c.webm",
+      "sourceSha256": "9bbe2b763fa705c47e0241d4e7b9bbed7bdb3f156f35d9511ab77c90c88df29e",
+      "sourceBytes": 3183659,
+      "bytes": 3311076,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-3dbe9c7c3d95.mp4": {
+      "key": "event-reels/reel-3dbe9c7c3d95.webm",
+      "sourceSha256": "e14d3b67a044df7605644fcc23c7fc701faabbd7e6832edb6256bea9859be82d",
+      "sourceBytes": 4289629,
+      "bytes": 4363699,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-4332cb9c2b35.mp4": {
+      "key": "event-reels/reel-4332cb9c2b35.webm",
+      "sourceSha256": "09ff7bc6205cb575e9925095979bcc531c4bb321cad1c8aff569966642eacebd",
+      "sourceBytes": 3348959,
+      "bytes": 3913655,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-4439c4c8d9e6.mp4": {
+      "key": "event-reels/reel-4439c4c8d9e6.webm",
+      "sourceSha256": "d5b7f38fddf53daa3381310e9938fe8a78d595535102f08fddc2254197af6c9a",
+      "sourceBytes": 2907996,
+      "bytes": 2454108,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-4f82204fdcee.mp4": {
+      "key": "event-reels/reel-4f82204fdcee.webm",
+      "sourceSha256": "542dfd456583f935b02f68a08dac817b5d6972e13e3ccb6dfbd0aea8b5983ec9",
+      "sourceBytes": 3908011,
+      "bytes": 3211647,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-6a27c3a93b50.mp4": {
+      "key": "event-reels/reel-6a27c3a93b50.webm",
+      "sourceSha256": "315708b966af1b9ce7deff5b9a7b54409bde93c1d981f38949fe3aeb27a9bbf3",
+      "sourceBytes": 614164,
+      "bytes": 535937,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-5c027cde836e.mp4": {
+      "key": "event-reels/reel-5c027cde836e.webm",
+      "sourceSha256": "63c9736a0ca732ce935af500d6015982d62c17f280f5d7ff719ed2a2c81576a2",
+      "sourceBytes": 4734111,
+      "bytes": 5290307,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-6b03bca2e357.mp4": {
+      "key": "event-reels/reel-6b03bca2e357.webm",
+      "sourceSha256": "254c7255227b885b340dd3fd4c290085c0c50373fd464f1621549285b6513c2e",
+      "sourceBytes": 1931819,
+      "bytes": 1734473,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-720d7b4bbdd3.mp4": {
+      "key": "event-reels/reel-720d7b4bbdd3.webm",
+      "sourceSha256": "9f44c327aa602ab907fe676ba45c59519fb3f51bc2d88fc13468e605ce1c33e2",
+      "sourceBytes": 655524,
+      "bytes": 685620,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-6cc643c2cb6b.mp4": {
+      "key": "event-reels/reel-6cc643c2cb6b.webm",
+      "sourceSha256": "b0d3dedd63af915d5cfa315018b95b69b44e1b48bf080f27fcd28d01795a5160",
+      "sourceBytes": 2676947,
+      "bytes": 2711400,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-76c9c5c99640.mp4": {
+      "key": "event-reels/reel-76c9c5c99640.webm",
+      "sourceSha256": "f999aa68929faf7c819fcd20e797b33abefae6c661c2683fc8c071ad0ba3b7e7",
+      "sourceBytes": 2019351,
+      "bytes": 1634557,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-782f7bda0be3.mp4": {
+      "key": "event-reels/reel-782f7bda0be3.webm",
+      "sourceSha256": "7cd3b9f1edce43ba7464b4469cf5a5200acc6d134abbc974c04a16e1a7fdfedd",
+      "sourceBytes": 2429303,
+      "bytes": 2137739,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-821b10a11624.mp4": {
+      "key": "event-reels/reel-821b10a11624.webm",
+      "sourceSha256": "a938c047a69d3f2286f941ab3f4ae5644bfce9b58180ef49953c737eb2324972",
+      "sourceBytes": 1582547,
+      "bytes": 1551357,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-7d9385e85a12.mp4": {
+      "key": "event-reels/reel-7d9385e85a12.webm",
+      "sourceSha256": "c4cfb26e8c4d339922d11692b2bba0ea9807a2b60456d3dbc97b3ad752a73f9a",
+      "sourceBytes": 3575570,
+      "bytes": 4031704,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-8b0d848a3514.mp4": {
+      "key": "event-reels/reel-8b0d848a3514.webm",
+      "sourceSha256": "26daeb7aa78f9c34988dfeaadb7563b1a15707787cb5a8c7de4c1d8454a5c400",
+      "sourceBytes": 448378,
+      "bytes": 474873,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-8b6ef24eb829.mp4": {
+      "key": "event-reels/reel-8b6ef24eb829.webm",
+      "sourceSha256": "4417db02b018fd0300b69e59cbf12ad233385396193d38caf4124e0e8e5902c9",
+      "sourceBytes": 1141093,
+      "bytes": 1197235,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-8b0a0a22d870.mp4": {
+      "key": "event-reels/reel-8b0a0a22d870.webm",
+      "sourceSha256": "d1abdc4a1b86ec12250c91e1a2cfb33ac3d983bbc8d358700f993d6cb912f77c",
+      "sourceBytes": 4033586,
+      "bytes": 3777213,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-90e22126dcbc.mp4": {
+      "key": "event-reels/reel-90e22126dcbc.webm",
+      "sourceSha256": "80393b278a846f80f7b195c33ca1cd00066179fc6b2bad76f66b7488cf031f06",
+      "sourceBytes": 1189307,
+      "bytes": 992039,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-8ed9ac9859e8.mp4": {
+      "key": "event-reels/reel-8ed9ac9859e8.webm",
+      "sourceSha256": "2a5c7e51047ff41b5da44df0c96c72b0829e946d33bb2653d31870361d6cee9c",
+      "sourceBytes": 2617060,
+      "bytes": 2610708,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-8fa22ef9c01f.mp4": {
+      "key": "event-reels/reel-8fa22ef9c01f.webm",
+      "sourceSha256": "4e0483eafa5a89c5c365bac317fe8850733482b4b86f4a7717b8ed8a5864ff0a",
+      "sourceBytes": 2535281,
+      "bytes": 2368728,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-965343cda482.mp4": {
+      "key": "event-reels/reel-965343cda482.webm",
+      "sourceSha256": "9ce1776e7c00e0ac12e67fb418461cf30bb534fbd5eb5097d433d38a5b6eb32f",
+      "sourceBytes": 1671170,
+      "bytes": 1459414,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-9b1053279f77.mp4": {
+      "key": "event-reels/reel-9b1053279f77.webm",
+      "sourceSha256": "8e2397f6cfc25f2f9a59c50dbb11d634aa686ecb377ddfd74ce1b7575ddbf4b9",
+      "sourceBytes": 1864199,
+      "bytes": 1835280,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-98cf2bd224fc.mp4": {
+      "key": "event-reels/reel-98cf2bd224fc.webm",
+      "sourceSha256": "167f52c3cdda26140e512e2df6ef910f045abc62832e6a2b9ecc5ff9b3fcb0ef",
+      "sourceBytes": 1797974,
+      "bytes": 1820909,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-a14c37eb9930.mp4": {
+      "key": "event-reels/reel-a14c37eb9930.webm",
+      "sourceSha256": "b6bf16d353d19f2d11d92855ea5d8d2f9129a12ea2f518f0337c901ad8349343",
+      "sourceBytes": 2708011,
+      "bytes": 2634399,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-a7b57b8816ec.mp4": {
+      "key": "event-reels/reel-a7b57b8816ec.webm",
+      "sourceSha256": "a11e464d8c729473b04d03644e8c156b53b4dfc38505f6472144832b0298eb04",
+      "sourceBytes": 2853292,
+      "bytes": 2405554,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-a182bd65e4e7.mp4": {
+      "key": "event-reels/reel-a182bd65e4e7.webm",
+      "sourceSha256": "9185278ee005f5b556f53201a4cbb84008184878b31365347462d2a4a4036462",
+      "sourceBytes": 4844466,
+      "bytes": 4633964,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-b49655a6b037.mp4": {
+      "key": "event-reels/reel-b49655a6b037.webm",
+      "sourceSha256": "aff4a652535d16d986d282eb9cbe1a86c0c9fe12cb8082413faad4c044386d93",
+      "sourceBytes": 4613667,
+      "bytes": 4780464,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-bf02581b1b63.mp4": {
+      "key": "event-reels/reel-bf02581b1b63.webm",
+      "sourceSha256": "5beba33dd50294898aa873f9bb6026f6e91cedb352a665cad5e1ae202a570804",
+      "sourceBytes": 3193997,
+      "bytes": 3190210,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-bf81b2d318bd.mp4": {
+      "key": "event-reels/reel-bf81b2d318bd.webm",
+      "sourceSha256": "eca0f32d70a2c97c51d5feb6763373c7dbd9eb2147db65f9f1d4cacd8e586762",
+      "sourceBytes": 3216587,
+      "bytes": 3216945,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-1570aee3426e.mp4": {
+      "key": "event-reels/reel-1570aee3426e.webm",
+      "sourceSha256": "7adb7a772fc0e53eddfb39ee09ceeb97f5cba38b48983814eab36ca42954b6ed",
+      "sourceBytes": 57578037,
+      "bytes": 52116637,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-bfaec21cfb13.mp4": {
+      "key": "event-reels/reel-bfaec21cfb13.webm",
+      "sourceSha256": "b9ca7e9375eee836d84ac074d6694dc7e197207e5fa40343596f4e7ee32816e1",
+      "sourceBytes": 3263553,
+      "bytes": 3595218,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-c21d3db490c4.mp4": {
+      "key": "event-reels/reel-c21d3db490c4.webm",
+      "sourceSha256": "de13bf1c6717358285d772140031be6d0081966e8af88145c2c83ab440beee34",
+      "sourceBytes": 4669053,
+      "bytes": 3955476,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-c623d78d6523.mp4": {
+      "key": "event-reels/reel-c623d78d6523.webm",
+      "sourceSha256": "454a227bc8763bb170df75b660e9f438b52f3aa505e5ad6a010677207c32b382",
+      "sourceBytes": 4766534,
+      "bytes": 4194717,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-ca94ec64d9e1.mp4": {
+      "key": "event-reels/reel-ca94ec64d9e1.webm",
+      "sourceSha256": "2e28b54c96627e3abd7b8aa1d01af0453c355c2a0d77b7db965ef493a967cd79",
+      "sourceBytes": 5680861,
+      "bytes": 5589184,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-cad7188f1f44.mp4": {
+      "key": "event-reels/reel-cad7188f1f44.webm",
+      "sourceSha256": "8680a1e8f626f39671945122112a385034eb4e19aaa5b87d899689cd1449f8ed",
+      "sourceBytes": 3263808,
+      "bytes": 3697056,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-d55a12002d9a.mp4": {
+      "key": "event-reels/reel-d55a12002d9a.webm",
+      "sourceSha256": "4f7d0384ff2a534895be8d70147555e773baa9fa359d755b3ab158f54329ed97",
+      "sourceBytes": 1548419,
+      "bytes": 1445214,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-da6701307cad.mp4": {
+      "key": "event-reels/reel-da6701307cad.webm",
+      "sourceSha256": "6d36f907af003e93a4d8e95fd47de8824f0f24c428518cd0538c47d2c0e5de4c",
+      "sourceBytes": 1537814,
+      "bytes": 1579992,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-ee15e571d7df.mp4": {
+      "key": "event-reels/reel-ee15e571d7df.webm",
+      "sourceSha256": "041a5b95d201cfadf1d0e78136d8a932b46ae0f2028124522a204c37011ee466",
+      "sourceBytes": 808152,
+      "bytes": 607289,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-db7e2be02221.mp4": {
+      "key": "event-reels/reel-db7e2be02221.webm",
+      "sourceSha256": "bd96ce944596bc8eb0387343e0b5b876f8fbf8645b13971f845749b208be8661",
+      "sourceBytes": 1842604,
+      "bytes": 1639230,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-f1b075ec4f50.mp4": {
+      "key": "event-reels/reel-f1b075ec4f50.webm",
+      "sourceSha256": "809e56edf7f84565520a17d28140c647fc6464714258e1f567eecd255bac1938",
+      "sourceBytes": 2755025,
+      "bytes": 2462664,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-e4f9a41473fa.mp4": {
+      "key": "event-reels/reel-e4f9a41473fa.webm",
+      "sourceSha256": "dd5b7fb6f9bba0f6b2ca01e6c4f0592e2f39d1cac02c5f034cca99ce2d9985a6",
+      "sourceBytes": 6513444,
+      "bytes": 6129683,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-stories/story-17906639010564419.mp4": {
+      "key": "event-stories/story-17906639010564419.webm",
+      "sourceSha256": "5156e4d7dc77fffca0e2f5f3734c9123041f894cdcf7ea9e81fa6307cd6aff65",
+      "sourceBytes": 221655,
+      "bytes": 165429,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-stories/story-18134623687636539.mp4": {
+      "key": "event-stories/story-18134623687636539.webm",
+      "sourceSha256": "09381ed5cdc46c4c0e3b6375cfcabce1d13ae5d63a64fa120df85abc63747173",
+      "sourceBytes": 1182126,
+      "bytes": 1100656,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-stories/show-union-inauguration-2026.mp4": {
+      "key": "event-stories/show-union-inauguration-2026.webm",
+      "sourceSha256": "aee570c0c35a4a4707989f9ba35ea44ea77a6d7cdcfd508f13c5ac85d6eb2ef0",
+      "sourceBytes": 2221520,
+      "bytes": 1834931,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-f29792084dd8.mp4": {
+      "key": "event-reels/reel-f29792084dd8.webm",
+      "sourceSha256": "9fad0e318cca34d8981262bf69b3a12e8866823f03c2c187c64a7cb6992f5351",
+      "sourceBytes": 4036862,
+      "bytes": 3638662,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    },
+    "event-reels/reel-df4f7a18eb5e.mp4": {
+      "key": "event-reels/reel-df4f7a18eb5e.webm",
+      "sourceSha256": "076f4ac2f9bd2de48a97fa4051bd9cb337db315855ab4e5937cb3a6758ce353d",
+      "sourceBytes": 13192789,
+      "bytes": 10794126,
+      "videoCodec": "vp9",
+      "audioCodec": "opus",
+      "encodingProfile": "vp9-crf38-speed6-opus64"
+    }
+  }
+}

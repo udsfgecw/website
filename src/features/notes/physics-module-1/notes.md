@@ -167,7 +167,7 @@ where:
 
 Consider an ideal conductor with uniform cross-section and uniform composition, so that the electric field and current density are constant and parallel everywhere inside it.
 
-![A rectangular conductor of length l and cross-sectional area A](/notes/cse/s1/physics/module-1/conductor-block.webp)
+![A rectangular conductor of length l and cross-sectional area A](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/conductor-block.webp)
 
 Experiments show that the resistance is directly proportional to the length $l$ and inversely proportional to the area $A$:
 
@@ -711,9 +711,9 @@ $f(E)=0$ means every energy level above $E_F$ is **vacant** at $0\ \text{K}$.
 
 The electrons fill the levels from the bottom upwards, two in each level, up to $E_F$, and nothing is above it.
 
-![At T = 0 K the levels up to the Fermi energy are filled with electrons and the levels above are vacant](/notes/cse/s1/physics/module-1/filled-vacant-levels.webp)
+![At T = 0 K the levels up to the Fermi energy are filled with electrons and the levels above are vacant](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/filled-vacant-levels.webp)
 
-![At T = 0 K the occupied levels each hold two electrons of opposite spin, up to the Fermi level, and the levels above are empty](/notes/cse/s1/physics/module-1/fermi-occupancy-0k.webp)
+![At T = 0 K the occupied levels each hold two electrons of opposite spin, up to the Fermi level, and the levels above are empty](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/fermi-occupancy-0k.webp)
 
 > **Fermi energy.** The Fermi energy is the **highest filled energy level at $0\ \text{K}$**.
 
@@ -726,7 +726,7 @@ When the solid is heated, some electrons are excited to higher levels. In a meta
 
 As a result, the probability of finding electrons just below $E_F$ **decreases** below $1$, and the probability of finding electrons just above $E_F$ **increases** above $0$. The states above $E_F$ are partly occupied and the states just below are partly empty.
 
-![At T > 0 K a few electrons from just below the Fermi level have been excited into levels just above it](/notes/cse/s1/physics/module-1/thermal-excitation-levels.webp)
+![At T > 0 K a few electrons from just below the Fermi level have been excited into levels just above it](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/thermal-excitation-levels.webp)
 
 For an electron exactly at the Fermi level, $E=E_F$, so the exponent is $0$:
 
@@ -759,7 +759,7 @@ This is the classical **Maxwell–Boltzmann** form. So at very high temperatures
 
 ## Graphical representation
 
-![Fermi function f(E) at T = 0 K (a step) and at two higher temperatures T2 > T1 crossing at f = 0.5 at E_F](/notes/cse/s1/physics/module-1/fermi-function-0k-and-t.webp)
+![Fermi function f(E) at T = 0 K (a step) and at two higher temperatures T2 > T1 crossing at f = 0.5 at E_F](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/fermi-function-0k-and-t.webp)
 
 - **At $T=0\ \text{K}$:** a step. $f=1$ up to $E_F$, and then a sudden drop to $0$.
 - **At $T>0\ \text{K}$:** the step becomes a smooth curve that falls from $1$ to $0$ over a width of a few $kT$ around $E_F$.
@@ -767,7 +767,7 @@ This is the classical **Maxwell–Boltzmann** form. So at very high temperatures
 
 Every curve passes through $f=0.5$ at $E=E_F$.
 
-![Fermi function f(E) against E minus E_F at T = 0 K, 300 K and 2500 K](/notes/cse/s1/physics/module-1/fermi-function-temperature.webp)
+![Fermi function f(E) against E minus E_F at T = 0 K, 300 K and 2500 K](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/fermi-function-temperature.webp)
 
 > **Watch out.** At exactly $0\ \text{K}$, $f(E_F)$ is indeterminate. Only for $T>0$ is $f(E_F)=\tfrac12$. Examiners like this difference.
 
@@ -859,7 +859,7 @@ In a single, isolated atom, electrons occupy **discrete** energy levels, such as
 
 When a very large number $N$ of atoms come close together to form a solid, the electron wave functions of neighbouring atoms **overlap**. Because of this interaction, and because the Pauli principle does not allow two electrons in a system to share the same state, each discrete atomic level **splits into $N$ closely spaced levels**. Together, these closely spaced levels form a continuous **energy band**.
 
-![Energy levels of an isolated atom (1s, 2s, 2p, 3s, 3p) and the corresponding bands in a lattice](/notes/cse/s1/physics/module-1/band-formation.webp)
+![Energy levels of an isolated atom (1s, 2s, 2p, 3s, 3p) and the corresponding bands in a lattice](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/band-formation.webp)
 
 ## Narrow and wide bands
 
@@ -894,7 +894,7 @@ Between the allowed bands there are ranges of energy in which **no electron stat
 
 An **energy band diagram** shows the energy levels of the top energy band and the next lower band in a solid, with the gap between them. The vertical axis is electron energy. Bands are drawn as horizontal strips, with the inner bands at the bottom.
 
-![Energy band diagram: inner bands, valence band, forbidden energy gap and conduction band](/notes/cse/s1/physics/module-1/energy-band-diagram.webp)
+![Energy band diagram: inner bands, valence band, forbidden energy gap and conduction band](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/energy-band-diagram.webp)
 
 ## The two important bands
 
@@ -922,7 +922,7 @@ For an electron to take part in conduction, it must gain at least the energy $E_
 - If the gap is **moderate**, electrons can be lifted across it by heat or light. This is a **semiconductor**.
 - If the gap is **large**, electrons cannot cross it under normal conditions. This is an **insulator**.
 
-![Band structure of a metal (overlapping bands), a semiconductor (small gap) and an insulator (large gap), with the Fermi level](/notes/cse/s1/physics/module-1/band-gap-comparison.webp)
+![Band structure of a metal (overlapping bands), a semiconductor (small gap) and an insulator (large gap), with the Fermi level](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/band-gap-comparison.webp)
 
 ## Holes
 
@@ -946,7 +946,7 @@ Conductors are materials that allow current to flow easily.
 - The Fermi level lies inside the band.
 - Examples: copper, silver, gold, aluminium, iron.
 
-![Overlapping conduction and valence bands in a conductor](/notes/cse/s1/physics/module-1/conductor-bands.webp)
+![Overlapping conduction and valence bands in a conductor](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/conductor-bands.webp)
 
 ## Semiconductors
 
@@ -959,7 +959,7 @@ Semiconductors have a **small but important** band gap, roughly $1\ \text{eV}$.
 - **Doping**, which means adding small controlled amounts of impurity, can increase the conductivity enormously. Doping can increase the number of free electrons (**n-type**) or the number of holes (**p-type**). Because we can control this, semiconductors are very useful in electronic devices.
 - Examples: silicon ($E_g\approx1.1\ \text{eV}$), germanium ($E_g\approx0.66\ \text{eV}$), gallium arsenide ($E_g\approx1.43\ \text{eV}$).
 
-![Conduction and valence band separated by a forbidden gap of about 1 eV](/notes/cse/s1/physics/module-1/semiconductor-bands.webp)
+![Conduction and valence band separated by a forbidden gap of about 1 eV](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/semiconductor-bands.webp)
 
 ## Insulators
 
@@ -971,7 +971,7 @@ Insulators have a **large band gap**, roughly $4\ \text{eV}$ or more.
 - Because they have no free carriers, they are ideal for stopping the flow of current, for example to cover and enclose electrical wiring.
 - Examples: diamond ($E_g\approx5.5\ \text{eV}$), glass, rubber, wood, plastic.
 
-![Insulator: a wide forbidden gap between the valence and conduction bands](/notes/cse/s1/physics/module-1/insulator-bands.webp)
+![Insulator: a wide forbidden gap between the valence and conduction bands](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/insulator-bands.webp)
 
 ## Summary
 
@@ -1163,7 +1163,7 @@ The temperature below which this happens is called the **critical temperature** 
 - He found that at about **4.2 K** the resistance of mercury suddenly dropped to **zero**. This was the start of superconductivity.
 - A superconducting material conducts electric current **without any loss of energy**, which is very different from any ordinary conductor.
 
-![Resistance against temperature for an ordinary metal and a superconductor, which drops to zero at the critical temperature](/notes/cse/s1/physics/module-1/resistance-vs-temperature.webp)
+![Resistance against temperature for an ordinary metal and a superconductor, which drops to zero at the critical temperature](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/resistance-vs-temperature.webp)
 
 In an ordinary metal the resistance falls as it is cooled but becomes steady at a small finite value (because of impurities and defects). In a superconductor it falls suddenly to exactly zero at $T_c$.
 
@@ -1190,7 +1190,7 @@ In an ordinary metal the resistance falls as it is cooled but becomes steady at 
 
 ## History of the transition temperature
 
-![Highest known transition temperature against year of discovery, 1911 to 1993](/notes/cse/s1/physics/module-1/transition-temperature-history.webp)
+![Highest known transition temperature against year of discovery, 1911 to 1993](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/transition-temperature-history.webp)
 
 For 75 years after the discovery, the highest known $T_c$ increased slowly through niobium compounds to about $23\ \text{K}$. In 1986 the copper-oxide (cuprate) ceramics were discovered, and within a few years $T_c$ went above the boiling point of liquid nitrogen: about $92\ \text{K}$ for yttrium compounds, over $100\ \text{K}$ for bismuth and thallium compounds, and about $135\ \text{K}$ for mercury compounds.
 
@@ -1221,7 +1221,7 @@ A persistent current is a steady current that flows without diminishing in stren
 - Once such a current is set up in a closed superconducting loop, no external power supply is needed to keep it going, because there are no $I^2R$ losses.
 - As long as the loop is kept below $T_c$, the current keeps flowing without decay. Persistent currents have been seen to flow for years with no measurable decrease.
 
-![A superconducting ring carrying a persistent current I with magnetic flux through it](/notes/cse/s1/physics/module-1/persistent-current-loop.webp)
+![A superconducting ring carrying a persistent current I with magnetic flux through it](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/persistent-current-loop.webp)
 
 ## 3. Flux quantisation
 
@@ -1242,7 +1242,7 @@ $$
 
 This is **flux quantisation**. The charge $2e$ in the denominator is the charge of a **Cooper pair** of electrons (see BCS theory), so flux quantisation is direct evidence that the current in a superconductor is carried by pairs.
 
-![Magnetic flux through a superconducting ring, Φ = nΦ0, and the current I around the ring](/notes/cse/s1/physics/module-1/flux-quantisation.webp)
+![Magnetic flux through a superconducting ring, Φ = nΦ0, and the current I around the ring](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/flux-quantisation.webp)
 
 **Example 1.** A superconducting ring of area $1\ \text{cm}^2$ has a field of $10^{-4}\ \text{T}$ through it. How many flux quanta does it hold?
 
@@ -1379,7 +1379,7 @@ $$
 
 where $H_c(0)$ is the critical field at $0\ \text{K}$.
 
-![Critical field against temperature: the superconducting state lies below the curve, the normal state above](/notes/cse/s1/physics/module-1/critical-field-temperature.webp)
+![Critical field against temperature: the superconducting state lies below the curve, the normal state above](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/critical-field-temperature.webp)
 
 The curve divides the $H$–$T$ plane into two regions. Any combination of field and temperature **below** the curve is superconducting. Any combination **above** it is normal. To destroy superconductivity you can raise the temperature above $T_c$, or raise the field above $H_c(T)$, or do a bit of both.
 
@@ -1417,7 +1417,7 @@ More examples are on the practice page.
 
 The Meissner effect is one of the defining characteristics of superconductivity. It was discovered by Walther Meissner and Robert Ochsenfeld in 1933.
 
-![Meissner effect: field lines pass through a sphere above Tc but are expelled below Tc; a magnet with an ordinary conductor and a superconductor](/notes/cse/s1/physics/module-1/meissner-effect.webp)
+![Meissner effect: field lines pass through a sphere above Tc but are expelled below Tc; a magnet with an ordinary conductor and a superconductor](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/meissner-effect.webp)
 
 - **Above $T_c$:** the field lines pass straight through the material.
 - **Below $T_c$:** the field lines bend around the material and none enter it.
@@ -1489,7 +1489,7 @@ Superconductors are divided into two types according to how they respond to an i
 - Their critical field is usually **low**, so only a small field is needed to destroy superconductivity. So they are called **soft superconductors**, and they are limited to low-field applications.
 - Examples: lead ($T_c\approx7.2\ \text{K}$), mercury ($T_c\approx4.2\ \text{K}$), tin ($T_c\approx3.7\ \text{K}$).
 
-![Magnetisation (−M) against applied field H for a Type I superconductor: rises linearly to H_c then drops to zero](/notes/cse/s1/physics/module-1/magnetisation-type-1.webp)
+![Magnetisation (−M) against applied field H for a Type I superconductor: rises linearly to H_c then drops to zero](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/magnetisation-type-1.webp)
 
 The magnetisation graph rises linearly (perfect diamagnetism, $-M=H$) up to $H_c$ and then drops vertically to zero. The resistance shows the same sudden change: it is zero up to $H_c$, and then jumps to its normal value.
 
@@ -1508,7 +1508,7 @@ The magnetisation graph rises linearly (perfect diamagnetism, $-M=H$) up to $H_c
 - This makes them useful for applications such as superconducting magnets and quantum computing.
 - Examples: niobium ($T_c\approx9.2\ \text{K}$), yttrium barium copper oxide ($T_c\approx92\ \text{K}$), magnesium diboride ($T_c\approx39\ \text{K}$).
 
-![Magnetisation against H for a Type II superconductor, with lower critical field H_c1, vortex region and upper critical field H_c2](/notes/cse/s1/physics/module-1/magnetisation-type-2.webp)
+![Magnetisation against H for a Type II superconductor, with lower critical field H_c1, vortex region and upper critical field H_c2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-1/magnetisation-type-2.webp)
 
 ## Comparison
 

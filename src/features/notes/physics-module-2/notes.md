@@ -468,7 +468,7 @@ which is the same everywhere. So this wave says the particle is **equally likely
 
 A real particle is more likely to be found in some places than in others at a given time. Its wave function must therefore be large in a small region of space and nearly zero everywhere else. Graphically this is a short burst of waves, a **wave packet** (also called a **wave group**).
 
-![Top: a single wavelength extends everywhere. Bottom: a wave packet confined to a region of width Δx](/notes/cse/s1/physics/module-2/wave-packet.webp)
+![Top: a single wavelength extends everywhere. Bottom: a wave packet confined to a region of width Δx](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-2/wave-packet.webp)
 
 **How a wave packet is formed**
 
@@ -938,7 +938,7 @@ $$
 V=\infty\quad\text{for }x\le0\text{ and }x\ge L\qquad\text{(regions I and III, outside)}
 $$
 
-![Infinite square well: V = 0 between x = 0 and x = L, and V infinite outside (regions I, II and III)](/notes/cse/s1/physics/module-2/infinite-well.webp)
+![Infinite square well: V = 0 between x = 0 and x = L, and V infinite outside (regions I, II and III)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-2/infinite-well.webp)
 
 The position of the particle at any moment lies in $0<x<L$. Since the particle cannot exist outside the box, the probability of finding it there is zero, so $\Psi^*\Psi=0$ and hence $\psi=0$ for $x\le0$ and $x\ge L$. Our task is to find $\psi$ **inside** the box. Since the potential does not depend on time, we use the time-independent Schrödinger equation.
 
@@ -1126,7 +1126,7 @@ $$
 
 Each $\psi_n$ is an **energy eigenfunction**. For each value of $n$ there is an energy level $E_n$ and a corresponding wave function $\psi_n$.
 
-![Wave functions and probability densities for n = 1, 2, 3, and the energy levels E1, 4E1, 9E1, 16E1](/notes/cse/s1/physics/module-2/box-wavefunctions.webp)
+![Wave functions and probability densities for n = 1, 2, 3, and the energy levels E1, 4E1, 9E1, 16E1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-2/box-wavefunctions.webp)
 
 The figure shows the first three wave functions $\psi_n$ (left), the corresponding probability densities $|\psi_n|^2$ (middle) and the energy levels (right). As $x$ goes from $0$ to $L$, the angle $\dfrac{n\pi x}{L}$ goes from $0$ to $n\pi$, so $\psi_n$ contains exactly $n$ half-wavelengths: one half-wave for $n=1$, two for $n=2$, three for $n=3$.
 
@@ -1227,7 +1227,7 @@ $$
 
 > **Quantum mechanical tunnelling.** The phenomenon of particles passing through potential barriers higher than their own energy is known as quantum mechanical tunnelling. It is purely a quantum effect, showing the wave property of quantum objects, and has no classical counterpart.
 
-![Tunnelling: the incident wave is partly reflected, decays inside the barrier and emerges as a smaller transmitted wave](/notes/cse/s1/physics/module-2/tunnelling-barrier.webp)
+![Tunnelling: the incident wave is partly reflected, decays inside the barrier and emerges as a smaller transmitted wave](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-2/tunnelling-barrier.webp)
 
 ## The wave function in each region
 

@@ -25,17 +25,17 @@ By the end, you should be able to:
 
 A terminator is an oval or rounded rectangle containing `START` or `STOP`. A simple algorithm has one entry point and a clearly marked end.
 
-[![Rounded START and STOP terminator symbols](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)
+[![Rounded START and STOP terminator symbols](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-terminator.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp)
 
 **Flow line**
 
 A flow line is a line with an arrowhead. Follow its direction to determine the next instruction. Draw the main flow from top to bottom or left to right; avoid crossing lines when possible.
 
-[![An arrow connects Step 1 to Step 2](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)
+[![An arrow connects Step 1 to Step 2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-flow-lines.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp)
 
 <!-- page 3 | Module 2 · source page 7 -->
 
@@ -45,17 +45,17 @@ A flow line is a line with an arrowhead. Follow its direction to determine the n
 
 A process rectangle contains a calculation or an assignment, such as `total = price × quantity`. Write the operation inside the symbol.
 
-[![A process rectangle containing total equals price times quantity](/notes/cse/s1/python/module-2/assets/symbol-process.svg)](/notes/cse/s1/python/module-2/assets/symbol-process.svg)
+[![A process rectangle containing total equals price times quantity](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-process.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp)
 
 **Input/output parallelogram**
 
 An input/output parallelogram represents reading data or displaying a result. State which values are read or printed. Initializing a variable is a process, rather than an input operation.
 
-[![An input/output parallelogram for READ age or PRINT fare](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)
+[![An input/output parallelogram for READ age or PRINT fare](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-input-output.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp)
 
 <!-- page 4 | Module 2 · source page 8 -->
 
@@ -65,9 +65,9 @@ An input/output parallelogram represents reading data or displaying a result. St
 
 A decision diamond contains a condition. For a Boolean condition, draw two outgoing branches labelled `Yes/No` or `True/False`. Each branch must lead to the appropriate next step.
 
-[![A decision diamond with separate Yes and No branches](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)
+[![A decision diamond with separate Yes and No branches](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-decision.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp)
 
 **On-page connector**
 
@@ -77,9 +77,9 @@ An on-page connector is a labelled circle that continues the flow elsewhere on t
 
 An off-page connector is commonly a pentagon pointing downwards and refers to another page. Use matching labels so the reader can find the continuation.
 
-[![Labelled circle A for an on-page connector and pentagon B for an off-page connector](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)
+[![Labelled circle A for an on-page connector and pentagon B for an off-page connector](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-connectors.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-connectors.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-connectors.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-connectors.webp)
 
 <!-- page 5 | Module 2 · source page 9 -->
 
@@ -89,15 +89,15 @@ An off-page connector is commonly a pentagon pointing downwards and refers to an
 
 A predefined process is a rectangle with two vertical lines near its sides. It calls a named function or module whose steps are defined elsewhere. Show the call here and explain the called procedure separately.
 
-[![A predefined-process rectangle with double vertical edges](/notes/cse/s1/python/module-2/assets/symbol-module.svg)](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
+[![A predefined-process rectangle with double vertical edges](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp)
 
 The course uses a **hexagon** for counter-loop notation. Include the counter, starting value, ending value, and step. In other conventions, the same shape represents preparation or initialization, so state the convention you use.
 
-[![A hexagonal counter-loop symbol showing i equals 1 to n with step 1](/notes/cse/s1/python/module-2/assets/symbol-loop.svg)](/notes/cse/s1/python/module-2/assets/symbol-loop.svg)
+[![A hexagonal counter-loop symbol showing i equals 1 to n with step 1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-loop.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-loop.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-loop.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-loop.webp)
 
 A complete loop still needs a condition, a body, and an update. The worked flowcharts below show these explicitly with process and decision symbols.
 
@@ -113,9 +113,9 @@ PRINT interest
 STOP
 ```
 
-[![Simple-interest flowchart using input/output and process symbols](/notes/cse/s1/python/module-2/assets/flow-simple-interest.svg)](/notes/cse/s1/python/module-2/assets/flow-simple-interest.svg)
+[![Simple-interest flowchart using input/output and process symbols](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-simple-interest.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-simple-interest.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-simple-interest.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-simple-interest.webp)
 
 **Inputs:** principal, annual rate as a percentage, and time in years.
 
@@ -137,9 +137,9 @@ PRINT largest
 STOP
 ```
 
-[![Flowchart comparing two inputs, including equal values](/notes/cse/s1/python/module-2/assets/flow-larger-two.svg)](/notes/cse/s1/python/module-2/assets/flow-larger-two.svg)
+[![Flowchart comparing two inputs, including equal values](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-larger-two.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-larger-two.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-larger-two.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-larger-two.webp)
 
 If the inputs are equal, either value is the maximum. For `(4, 9)` the result is 9; for `(7, 7)` the result is 7.
 
@@ -162,9 +162,9 @@ SMALLEST
 7. STOP
 ```
 
-[![Flowchart that compares b and c with a running minimum](/notes/cse/s1/python/module-2/assets/flow-smallest-three.svg)](/notes/cse/s1/python/module-2/assets/flow-smallest-three.svg)
+[![Flowchart that compares b and c with a running minimum](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-smallest-three.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-smallest-three.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-smallest-three.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-smallest-three.webp)
 
 **Trace**
 
@@ -196,9 +196,9 @@ PRINT fare
 STOP
 ```
 
-[![Zoo-ticket age selection flowchart](/notes/cse/s1/python/module-2/assets/flow-zoo-fare.svg)](/notes/cse/s1/python/module-2/assets/flow-zoo-fare.svg)
+[![Zoo-ticket age selection flowchart](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-zoo-fare.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-zoo-fare.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-zoo-fare.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-zoo-fare.webp)
 
 **Boundary check**
 
@@ -235,9 +235,9 @@ PRINTCOLOUR
 16 Stop
 ```
 
-[![Colour code selection with a default outcome](/notes/cse/s1/python/module-2/assets/flow-colour.svg)](/notes/cse/s1/python/module-2/assets/flow-colour.svg)
+[![Colour code selection with a default outcome](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-colour.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-colour.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-colour.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-colour.webp)
 
 The `OTHERWISE` or default case handles an unrecognized code. Assume uppercase input; convert lowercase codes first if the program should accept them.
 
@@ -259,9 +259,9 @@ FACTORIAL
 6. STOP
 ```
 
-[![Factorial flowchart with an increasing counter and loop-back arrow](/notes/cse/s1/python/module-2/assets/flow-factorial-up.svg)](/notes/cse/s1/python/module-2/assets/flow-factorial-up.svg)
+[![Factorial flowchart with an increasing counter and loop-back arrow](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-up.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-up.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-factorial-up.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-up.webp)
 
 **Trace for n = 4**
 
@@ -285,9 +285,9 @@ FACTORIAL
 6. STOP
 ```
 
-[![Factorial flowchart with a decreasing counter and loop-back arrow](/notes/cse/s1/python/module-2/assets/flow-factorial-down.svg)](/notes/cse/s1/python/module-2/assets/flow-factorial-down.svg)
+[![Factorial flowchart with a decreasing counter and loop-back arrow](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-down.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-down.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-factorial-down.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-down.webp)
 
 The product is unchanged by reversing the order of multiplication. The descending counter must decrease on every iteration so that the condition eventually becomes false.
 
@@ -335,9 +335,9 @@ STOP
 
 The SVG shows the final count check and average calculation; apply it separately to each group.
 
-[![Flowchart checking a group count before calculating its average](/notes/cse/s1/python/module-2/assets/flow-group-average.svg)](/notes/cse/s1/python/module-2/assets/flow-group-average.svg)
+[![Flowchart checking a group count before calculating its average](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-group-average.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-group-average.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-group-average.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-group-average.webp)
 
 <!-- page 14 | Module 2 · source page 18 -->
 
@@ -420,9 +420,9 @@ PRINT a, b
 
 Pseudocode describes an algorithm in concise, structured language. It is designed for people to read, so it is not tied to the exact syntax of a programming language and cannot be executed directly.
 
-[![Algorithm, pseudocode, and implementation stages](/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.svg)](/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.svg)
+[![Algorithm, pseudocode, and implementation stages](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.webp)
 
 Pseudocode bridges an algorithm and its implementation: it makes the planned steps clear before they are translated into program code.
 
@@ -466,9 +466,9 @@ PRINT greatest
 
 Use this SVG sheet when drawing or checking a flowchart. Each symbol has a distinct role; a process step, input/output step, and decision should remain visually different.
 
-[![Reference sheet showing all eight Module 2 flowchart symbol groups](/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.svg)](/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.svg)
+[![Reference sheet showing all eight Module 2 flowchart symbol groups](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.webp)
 
 Check a finished chart by tracing at least one path through each decision. Every reachable branch must lead to another step or to a stop, and each loop must make progress toward its exit.
 
@@ -645,9 +645,9 @@ PRINT result
 STOP
 ```
 
-[![Parity flowchart: a zero remainder selects Even; the other branch selects Odd](/notes/cse/s1/python/module-2/assets/flow-parity.svg)](/notes/cse/s1/python/module-2/assets/flow-parity.svg)
+[![Parity flowchart: a zero remainder selects Even; the other branch selects Odd](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-parity.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-parity.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-parity.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-parity.webp)
 
 | Input | Remainder modulo 2 | Result |
 | --- | --- | --- |
@@ -682,9 +682,9 @@ Use one selection chain so exactly one band determines the price.
 
 A matching branch goes straight to the output. It must not continue into later price tests, which could overwrite the selected charge.
 
-[![Concert-ticket flowchart with exclusive age branches and a shared output](/notes/cse/s1/python/module-2/assets/flow-concert-fare.svg)](/notes/cse/s1/python/module-2/assets/flow-concert-fare.svg)
+[![Concert-ticket flowchart with exclusive age branches and a shared output](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-concert-fare.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-concert-fare.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-concert-fare.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-concert-fare.webp)
 
 <!-- page 31 | Module 2 · source page 18 -->
 
@@ -775,9 +775,9 @@ Sales of 2000, 4000, and 6000 use rates 0.02, 0.04, and 0.07 respectively. A val
 
 After validating that sales is non-negative, select one rate using this chart. Calculate the amount as `sales × rate` when the question asks for the commission amount.
 
-[![Commission rate flowchart with inclusive upper bounds at 2000, 4000, and 6000](/notes/cse/s1/python/module-2/assets/flow-commission.svg)](/notes/cse/s1/python/module-2/assets/flow-commission.svg)
+[![Commission rate flowchart with inclusive upper bounds at 2000, 4000, and 6000](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-commission.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-commission.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/flow-commission.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-commission.webp)
 
 <!-- page 36 | Module 2 · source page 23 -->
 
@@ -826,9 +826,9 @@ To print 1 through 10, a while loop can continue while `i <= 10`, whereas a repe
 
 A module call names an already defined procedure, such as `calculate_average(values)`. Its flowchart symbol shows that the work is delegated to that procedure; the procedure's own chart explains the internal steps.
 
-[![Predefined-process symbol for calling calculate_average](/notes/cse/s1/python/module-2/assets/symbol-module.svg)](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
+[![Predefined-process symbol for calling calculate_average](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-2/assets/symbol-module.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp)
 
 Before a counter loop starts, define:
 

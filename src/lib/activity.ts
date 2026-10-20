@@ -1,7 +1,8 @@
 /* Helpers for the activity archive: posts imported from the UDSF GECW feed. */
+import { MEDIA_BASE } from "@/lib/media";
 
-/** Public URL of an archived activity photo, respecting the site's base path. */
-export const mediaUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+/** Public URL of an archived activity photo or video: absolute R2 URLs pass through, bare paths resolve against the bucket. */
+export const mediaUrl = (path: string) => (/^https?:\/\//.test(path) ? path : `${MEDIA_BASE}/${path.replace(/^\//, "")}`);
 
 /** Caption text, still in WhatsApp formatting, without its trailing hashtag block, the lone "."
     spacer lines, or a first line that only repeats the post's title. */

@@ -1,5 +1,6 @@
 import type { Achievement } from "@/data/progress";
 import { cn } from "@/lib/utils";
+import { MEDIA_BASE } from "@/lib/media";
 
 function Placeholder({ number }: { number: number }) {
   return (
@@ -24,7 +25,7 @@ function Picture({ a, className }: { a: Achievement; className?: string }) {
     );
   return (
     <img
-      src={`${import.meta.env.BASE_URL}assets/progress/${a.image}`}
+      src={`${MEDIA_BASE}/assets/progress/${a.image}`}
       alt={a.title}
       width={1200}
       height={800}

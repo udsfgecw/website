@@ -51,7 +51,7 @@ Ions are electrically charged atoms or groups of atoms (cations are positively c
 
 The Daniell cell is a classic galvanic cell that converts the chemical energy of the spontaneous zinc–copper redox reaction into electrical energy.
 
-![Daniell cell diagram showing a zinc anode in zinc sulfate solution, a copper cathode in copper sulfate solution, a salt bridge, and an external circuit with a voltmeter](/notes/cse/s1/chemistry/module-1/assets/page-003-image-1.png)
+![Daniell cell diagram showing a zinc anode in zinc sulfate solution, a copper cathode in copper sulfate solution, a salt bridge, and an external circuit with a voltmeter](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/page-003-image-1.webp)
 
 #### Construction
 
@@ -144,7 +144,7 @@ An irreversible cell does not satisfy these conditions; applying an external vol
 
 To contrast an electrolytic cell with a galvanic cell, consider the electrolysis of molten aluminium oxide ($\text{Al}_2\text{O}_3$). When $\text{Al}_2\text{O}_3$ is melted, it dissociates into mobile aluminium cations ($\text{Al}^{3+}$) and oxide anions ($\text{O}^{2-}$).
 
-![Simplified electrolysis of molten aluminium oxide with inert electrodes, showing DC polarity, ion movement, oxygen at the anode, and aluminium at the cathode](/notes/cse/s1/chemistry/module-1/assets/aluminium-oxide-electrolysis-clean.webp)
+![Simplified electrolysis of molten aluminium oxide with inert electrodes, showing DC polarity, ion movement, oxygen at the anode, and aluminium at the cathode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/aluminium-oxide-electrolysis-clean.webp)
 
 In the simplified textbook model shown above, two **inert electrodes** are dipped into a single bath of molten $\text{Al}_2\text{O}_3$ and connected to a direct-current (DC) power supply:
 
@@ -211,7 +211,7 @@ When a metal strip $\mathrm{M}$ is immersed in an aqueous solution containing it
 
 As charge is transferred, the interfacial electric field changes and opposes further net transfer. In an ideal reversible half-cell at open circuit, oxidation and reduction approach equal rates. A charged metal surface and nearby counter-ions form an electrical double layer. The simplified zinc/copper drawing below illustrates this idea; the actual surface charge depends on the electrode and solution conditions. A positive or negative potential quoted **relative to the SHE** does not, by itself, specify the absolute sign of the metal surface charge.
 
-![Diagram showing single electrode potentials for Zinc and Copper half-cells with Helmholtz electrical double layer](/notes/cse/s1/chemistry/module-1/assets/page-004-image-1.png)
+![Diagram showing single electrode potentials for Zinc and Copper half-cells with Helmholtz electrical double layer](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/page-004-image-1.webp)
 
 *Figure: Charge separation and formation of the Helmholtz electrical double layer at zinc and copper electrode interfaces.*
 
@@ -971,7 +971,7 @@ Reference electrodes are further divided into two categories:
 
 The Standard Hydrogen Electrode is a redox gas–ion electrode that establishes a reversible equilibrium between gaseous hydrogen ($\mathrm{H_2}$) and aqueous hydrogen ions ($\mathrm{H^+}$).
 
-![Schematic diagram of the Standard Hydrogen Electrode showing a platinized platinum foil immersed in acid solution with hydrogen gas inlet at the top.](/notes/cse/s1/chemistry/module-1/assets/page-011-image-1.png)
+![Schematic diagram of the Standard Hydrogen Electrode showing a platinized platinum foil immersed in acid solution with hydrogen gas inlet at the top.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/page-011-image-1.webp)
 
 *Figure: Construction of the Standard Hydrogen Electrode (SHE).*
 
@@ -1079,7 +1079,7 @@ A calomel electrode is a classic metal–insoluble metal salt–common anion ref
 
 The calomel electrode consists of a glass tube containing a pool of pure liquid mercury ($\mathrm{Hg}$) at the bottom, covered by a paste of mercury and solid mercurous chloride ($\mathrm{Hg_2Cl_2}$, traditionally known as *calomel*). The remainder of the tube is filled with an aqueous potassium chloride ($\mathrm{KCl}$) solution of fixed concentration.
 
-![Cross-sectional diagram of a calomel reference electrode showing the mercury pool, mercurous chloride paste, KCl solution, and platinum wire contact](/notes/cse/s1/chemistry/module-1/assets/page-013-image-1.png)
+![Cross-sectional diagram of a calomel reference electrode showing the mercury pool, mercurous chloride paste, KCl solution, and platinum wire contact](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/page-013-image-1.webp)
 
 *Figure: Internal structure of a calomel reference electrode.*
 
@@ -1213,7 +1213,7 @@ The glass electrode is the primary ion-selective indicator electrode used for po
 
 A glass electrode consists of a long, sturdy glass stem terminating in a thin-walled, pH-sensitive glass bulb at the bottom. A typical pH-sensitive glass formulation (such as Corning 015 glass) consists of approximately $72\%\ \mathrm{SiO_2}$, $22\%\ \mathrm{Na_2O}$, and $6\%\ \mathrm{CaO}$. This specific composition provides a relatively low melting point and permits ion exchange at its hydrated surfaces.
 
-![Glass electrode cross-section showing the Ag/AgCl electrode, internal HCl solution, and complete thin glass bulb](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-clean.webp)
+![Glass electrode cross-section showing the Ag/AgCl electrode, internal HCl solution, and complete thin glass bulb](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/glass-electrode-clean.webp)
 
 The bulb contains an internal solution of fixed hydrogen-ion and chloride-ion concentration, typically $0.1\ \mathrm{M\ HCl}$.
 
@@ -1256,7 +1256,7 @@ An asymmetry potential is a small potential difference caused by slight manufact
 
 A single electrode potential cannot be measured in isolation. To measure the pH of an unknown solution, the glass electrode must be paired with a separate external reference electrode, such as a saturated calomel electrode (SCE), dipped into the same test solution. Modern combination pH probes house both the glass electrode and the external reference electrode in a single body, but they remain two distinct electrochemical half-cells.
 
-![pH measurement setup with a high-impedance meter, calomel reference electrode, and glass electrode immersed in the unknown solution](/notes/cse/s1/chemistry/module-1/assets/glass-electrode-ph-clean.webp)
+![pH measurement setup with a high-impedance meter, calomel reference electrode, and glass electrode immersed in the unknown solution](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/glass-electrode-ph-clean.webp)
 
 The complete electrochemical cell is represented as:
 
@@ -1413,7 +1413,7 @@ The graphite/lithium-cobalt-oxide cell consists of the following components:
 
 In rechargeable battery engineering, the graphite electrode serves as the **negative electrode** (lower potential) and the metal oxide electrode serves as the **positive electrode** (higher potential). However, the terms **anode** (site of oxidation) and **cathode** (site of reduction) swap depending on whether the cell is discharging or charging.
 
-![Lithium-ion cell during charging and discharging, showing electrode polarity and lithium-ion flow in each mode](/notes/cse/s1/chemistry/module-1/assets/lithium-ion-charge-discharge-clean.webp)
+![Lithium-ion cell during charging and discharging, showing electrode polarity and lithium-ion flow in each mode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/lithium-ion-charge-discharge-clean.webp)
 
 #### Discharging mode (galvanic cell operation)
 
@@ -1517,7 +1517,7 @@ As long as the external reactants are fed to the electrodes and reaction product
 
 The phosphoric acid hydrogen–oxygen fuel cell uses pure hydrogen gas ($\mathrm{H_2}$) as the fuel and oxygen gas ($\mathrm{O_2}$) as the oxidant.
 
-![Acid hydrogen-oxygen fuel cell showing gas inlets, electron and proton flow, water outlet, and electrode reactions](/notes/cse/s1/chemistry/module-1/assets/hydrogen-oxygen-fuel-cell-clean.webp)
+![Acid hydrogen-oxygen fuel cell showing gas inlets, electron and proton flow, water outlet, and electrode reactions](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/hydrogen-oxygen-fuel-cell-clean.webp)
 
 *Figure: Schematic of an acid-electrolyte hydrogen–oxygen fuel cell showing reactant flow, proton migration, and external electron current.*
 
@@ -1670,7 +1670,7 @@ The conductivity of an electrolyte solution increases with the concentration of 
 
 ### Construction and calibration of the conductivity cell
 
-![Diagram of a conductivity cell showing a glass tube with two platinum electrode plates connected to platinum wires](/notes/cse/s1/chemistry/module-1/assets/page-022-image-1.png)
+![Diagram of a conductivity cell showing a glass tube with two platinum electrode plates connected to platinum wires](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/page-022-image-1.webp)
 
 *Figure: A laboratory conductivity cell containing two parallel platinum plates coated with platinum black and fixed at a constant separation inside a glass body.*
 
@@ -1954,7 +1954,7 @@ Pitting corrosion is a highly localized form of attack that creates deep cavitie
 
 Differential aeration (oxygen concentration cell corrosion) is an electrochemical corrosion process driven by unequal access of oxygen to different regions of a metal surface, illustrated by a water drop resting on an iron surface.
 
-![Diagram of differential aeration and pitting corrosion under a water drop on an iron surface](/notes/cse/s1/chemistry/module-1/assets/page-024-image-1-source.png)
+![Diagram of differential aeration and pitting corrosion under a water drop on an iron surface](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/page-024-image-1-source.webp)
 
 *Figure: Differential aeration under a water drop on iron. The oxygen-depleted center acts as a small anode where pit growth occurs, while the oxygen-rich outer rim acts as a large cathode.*
 
@@ -2069,7 +2069,7 @@ Engineers apply the galvanic series in four primary ways:
 
 Electrochemical dissolution of a buried or immersed metal structure occurs at its anodic regions, where metal atoms oxidize and dissolve as ions. Cathodic protection prevents this degradation by forcing the entire surface of the metal structure to act as a cathode. By supplying excess electrons to the metal from an external source, anodic dissolution ($\text{M} \rightarrow \text{M}^{n+} + ne^-$) is suppressed and cathodic reduction is promoted on the protected surface. Practical protection requires sufficient current distribution and potential control.
 
-![Comparison of sacrificial magnesium anode protection and impressed current protection with a DC source and graphite anode](/notes/cse/s1/chemistry/module-1/assets/cathodic-protection-clean.webp)
+![Comparison of sacrificial magnesium anode protection and impressed current protection with a DC source and graphite anode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/cathodic-protection-clean.webp)
 
 *Comparison of sacrificial anode cathodic protection using a magnesium block and impressed current cathodic protection using an external DC power source.*
 
@@ -2181,7 +2181,7 @@ Unlike a galvanic cell, which generates electrical energy spontaneously, an elec
 * **Anode (positive terminal):** A rod or plate of high-purity copper metal is connected to the positive terminal (a soluble active anode). Alternatively, an inert conductive material such as graphite may be used.
 * **Electrolyte (plating bath):** Both electrodes are immersed in an aqueous solution of copper(II) sulfate ($\mathrm{CuSO_4}$), typically acidified with a small amount of dilute sulfuric acid ($\mathrm{H_2SO_4}$) to increase ionic conductivity and prevent the precipitation of basic copper salts.
 
-![Electrolytic cell setup for copper electroplating showing a pure copper anode, the object to be plated as the cathode, a DC power source, and an aqueous copper sulfate electrolyte](/notes/cse/s1/chemistry/module-1/assets/imagen-electroplating-copper.png)
+![Electrolytic cell setup for copper electroplating showing a pure copper anode, the object to be plated as the cathode, a DC power source, and an aqueous copper sulfate electrolyte](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-1/assets/imagen-electroplating-copper.webp)
 
 ### Working principle and electrode reactions
 

@@ -169,7 +169,7 @@ A gel is a continuous, three-dimensional, interconnected solid network that span
 
 #### Chemical stages of sol–gel synthesis
 
-![Sol-Gel Synthesis of Silica showing hydrolysis, condensation, and polycondensation](/notes/cse/s1/chemistry/module-2/assets/sol-gel-silica.svg)
+![Sol-Gel Synthesis of Silica showing hydrolysis, condensation, and polycondensation](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/sol-gel-silica.webp)
 
 1. **Hydrolysis:** Water attacks the metal or metalloid alkoxide precursor, replacing alkoxide groups ($\text{-OR}$) with hydroxyl groups ($\text{-OH}$) and liberating alcohol ($\text{ROH}$). For silicon tetraalkoxide:
 
@@ -265,7 +265,7 @@ Reaction temperature, precursor concentration, and solution $\text{pH}$ govern t
 
 Graphene is a two-dimensional crystalline allotrope of carbon consisting of a single layer of carbon atoms arranged in a planar hexagonal honeycomb lattice. It serves as the structural building block for other graphitic nanomaterials, including fullerenes, carbon nanotubes, and bulk three-dimensional graphite.
 
-![Planar hexagonal honeycomb lattice of graphene showing carbon atoms connected by covalent bonds](/notes/cse/s1/chemistry/module-2/assets/page-054-image-1-code.svg)
+![Planar hexagonal honeycomb lattice of graphene showing carbon atoms connected by covalent bonds](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/page-054-image-1-code.webp)
 
 *Figure 1: Two-dimensional hexagonal honeycomb lattice of monolayer graphene.*
 
@@ -344,7 +344,7 @@ Because of this cage topology, $\text{C}_{60}$ has two distinct types of covalen
 
 The two edge environments produce different bond orders and lengths within the cage’s electronic structure. Therefore, $\text{C}_{60}$ does not have equal bond lengths throughout and is not uniformly delocalized like benzene.
 
-![Buckminsterfullerene C60 truncated icosahedron structure with pentagons and hexagons](/notes/cse/s1/chemistry/module-2/assets/fullerene-c60.svg)
+![Buckminsterfullerene C60 truncated icosahedron structure with pentagons and hexagons](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/fullerene-c60.webp)
 
 *Figure: Truncated icosahedral structure of buckminsterfullerene ($\text{C}_{60}$) showing 12 pentagonal rings, 20 hexagonal rings, short $[6,6]$ double bonds, and long $[5,6]$ single bonds.*
 
@@ -437,7 +437,7 @@ Multi-walled carbon nanotubes consist of multiple nested graphene cylinders with
 
 In structural descriptions, standard MWCNTs follow the **Russian Doll model**, where discrete concentric cylinders of increasing diameter are nested inside one another. Introductory texts often mention a **Parchment (or scroll) model**, in which a single graphene sheet is spirally wound around itself like a rolled scroll of paper, and a **Mixed model** combining both features. Strictly speaking, a spirally wound sheet is a distinct nanostructure called a *carbon nanoscroll* (which has open edges rather than closed seamless walls), though it is informally grouped with MWCNTs in basic classifications.
 
-![Structural classification of carbon nanotubes into SWCNTs and MWCNTs](/notes/cse/s1/chemistry/module-2/assets/cnt-classification.svg)
+![Structural classification of carbon nanotubes into SWCNTs and MWCNTs](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/cnt-classification.webp)
 
 *Figure: Classification tree of single-walled carbon nanotubes (SWCNTs: armchair, zigzag, chiral) and multi-walled carbon nanotubes (MWCNTs: Russian doll, parchment, mixed).*
 
@@ -634,7 +634,7 @@ Polyimides and polybenzoxazoles (PBO) possess rigid, resonance-stabilized ring s
 
 Built on an inorganic $-[\text{Si(R)}_2-\text{O}]_n-$ backbone, silicones oxidize in a fire to form a non-combustible, thermally insulating silica ($\text{SiO}_2$) ash layer on the surface.
 
-![Representative structures of non-halogenated thermally resistant polymers](/notes/cse/s1/chemistry/module-2/assets/fire-retardant-polymers.svg)
+![Representative structures of non-halogenated thermally resistant polymers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/fire-retardant-polymers.webp)
 
 *Figure 1: Idealized schematic repeat units and structural motifs of representative non-halogenated polymers (curing networks and copolymer ratios are simplified).*
 
@@ -642,7 +642,7 @@ Built on an inorganic $-[\text{Si(R)}_2-\text{O}]_n-$ backbone, silicones oxidiz
 
 Halogenated systems incorporate chlorine or bromine either covalently along the polymer backbone—as in polyvinyl chloride (PVC), neoprene (polychloroprene), and poly(bromostyrene)—or as blended small-molecule additives such as polybrominated diphenyl ethers (PBDEs) and polychlorinated diphenyl ethers (PCDEs). Note that brominated butyl rubber contains only a small mole fraction of bromine introduced primarily to promote vulcanization (curing) rather than to make the bulk elastomer inherently self-extinguishing.
 
-![Representative chemical structures of halogenated polymers and additives](/notes/cse/s1/chemistry/module-2/assets/halogenated-polymers.svg)
+![Representative chemical structures of halogenated polymers and additives](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/halogenated-polymers.webp)
 
 *Figure 2: Representative halogenated polymers (PVC, Neoprene, Polybromostyrene, BIIR) and flame-retardant ether additives (PBDE, PCDE).*
 
@@ -744,7 +744,7 @@ Describing sodium naphthalenide merely as a Lewis base is imprecise; it function
 
 In heteroaromatic polymers with basic nitrogen sites, such as polyaniline (PANI), treating the half-oxidized emeraldine base with a protic acid (e.g., $\text{HCl}$) protonates the imine nitrogens. This increases conductivity by orders of magnitude *without* changing the average oxidation state of the polymer chain.
 
-![Mechanism of p-type and n-type doping of polyacetylene](/notes/cse/s1/chemistry/module-2/assets/polyacetylene-doping.svg)
+![Mechanism of p-type and n-type doping of polyacetylene](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/polyacetylene-doping.webp)
 
 *Figure: Simplified schematic of p-type oxidative doping and n-type reductive doping on a polyacetylene segment. Note that required counter-anions (for p-doping) and counter-cations (for n-doping) are omitted from this backbone view.*
 
@@ -816,7 +816,7 @@ $$
 \text{Aniline (in aqueous acid, e.g., HCl)} \xrightarrow[\text{Monomer oxidation, para-coupling, deprotonation}]{\text{Oxidant, e.g., } (\text{NH}_4)_2\text{S}_2\text{O}_8,\; 0\text{--}5\,^\circ\text{C}} \text{Polyaniline (emeraldine salt, } \text{Cl}^- \text{ counterions retained)}
 $$
 
-![Oxidative polymerization of aniline to polyaniline](/notes/cse/s1/chemistry/module-2/assets/polyaniline-prep.svg)
+![Oxidative polymerization of aniline to polyaniline](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/polyaniline-prep.webp)
 
 *Figure: Preparation of polyaniline via oxidative polymerization of aniline monomers and conversion between emeraldine salt and base.*
 
@@ -863,7 +863,7 @@ $$
 \text{Pyrrole (C}_4\text{H}_4\text{NH)} \xrightarrow[\text{Monomer oxidation, } \alpha\text{-}(2,5)\text{-coupling, deprotonation}]{\text{Oxidant (FeCl}_3 \text{ or APS) or Anodic Oxidation}} \text{Doped Polypyrrole (backbone}^+ + \text{counterions } \text{A}^-\text{)}
 $$
 
-![Oxidative polymerization of pyrrole to polypyrrole](/notes/cse/s1/chemistry/module-2/assets/polypyrrole-prep.svg)
+![Oxidative polymerization of pyrrole to polypyrrole](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/polypyrrole-prep.webp)
 
 *Figure: Oxidative polymerization of pyrrole to polypyrrole through 2,5-radical cation coupling.*
 
@@ -931,7 +931,7 @@ OLEDs are divided into two main families based on their active materials:
 
 An OLED consists of ultra-thin organic layers sandwiched between two electrodes on a supporting base. At least one electrode must be transparent so generated photons can escape.
 
-![Diagram of a simplified two-layer OLED structure showing cathode, emissive layer, conductive hole-transport layer, and transparent anode connected to a DC voltage source](/notes/cse/s1/chemistry/module-2/assets/oled-structure.svg)
+![Diagram of a simplified two-layer OLED structure showing cathode, emissive layer, conductive hole-transport layer, and transparent anode connected to a DC voltage source](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/oled-structure.webp)
 
 *Figure: Simplified OLED architecture showing charge injection from electrodes and radiative recombination at the organic interface.*
 
@@ -1032,7 +1032,7 @@ A DSSC is assembled as a sandwich structure containing six functional components
 | **Electrolyte** | Liquid or gel solvent containing an iodide/triiodide ($\text{I}^-/\text{I}_3^-$) redox couple | Regenerates oxidized dye molecules and closes the internal circuit through transport and reactions of the redox mediator. |
 | **Counter Electrode (Cathode)** | TCO substrate coated with a catalytic layer of platinum ($\text{Pt}$) or carbon/graphite | Catalyzes the reduction of the oxidized redox mediator using electrons returning from the external load. |
 
-![Diagram of Dye-sensitized solar cell (DSSC) structure](/notes/cse/s1/chemistry/module-2/assets/dssc-structure.svg)
+![Diagram of Dye-sensitized solar cell (DSSC) structure](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/dssc-structure.webp)
 
 *Figure: Cross-sectional schematic of a dye-sensitized solar cell showing the photoanode, dye-coated nanoporous semiconductor, redox electrolyte, and catalytic counter electrode.*
 
@@ -1162,7 +1162,7 @@ In an EDLC, energy is stored by separating charge across two solid–liquid inte
 
 Because purely electrostatic EDLC storage requires no bulk phase change or electron transfer across the electrode–electrolyte interface, charging and discharging are rapid and highly reversible over hundreds of thousands of cycles.
 
-![Schematic of an electrical double-layer supercapacitor showing current collectors, porous electrodes, cations, anions, electrolyte and porous separator membrane](/notes/cse/s1/chemistry/module-2/assets/supercapacitor.svg)
+![Schematic of an electrical double-layer supercapacitor showing current collectors, porous electrodes, cations, anions, electrolyte and porous separator membrane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-2/assets/supercapacitor.webp)
 
 *Figure 12.1: Structure of an electrical double-layer capacitor (EDLC) showing ion migration toward oppositely charged porous electrodes across an ion-permeable separator.*
 

@@ -451,7 +451,7 @@ An optimal solution is a feasible solution that gives the largest value (for max
 
 A single linear inequality in two variables is satisfied on one side of its boundary line. To find which side, test a point not on the line, usually the origin: if $(0,0)$ satisfies the inequality, shade the side containing the origin; otherwise shade the other side. The feasible region is where all the shaded sides overlap.
 
-![A linear inequality defines a half-plane; the feasible region is the overlap of the half-planes](/notes/cse/s1/maths/module-4/half-planes.webp)
+![A linear inequality defines a half-plane; the feasible region is the overlap of the half-planes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/module-4/half-planes.webp)
 
 > **Watch out.** "$\le$" does not always mean "shade below". For $x_1-3x_2\ge-6$, the origin gives $0\ge-6$, which is true, so the side of the origin is shaded even though the line slopes upward. Always test a point.
 
@@ -552,7 +552,7 @@ The minimum is $9$ employees, for example $x_1=5$, $x_2=0$, $x_3=4$: the first c
 
 With two decision variables, we can draw the feasible region. For a linear objective, the lines $z=\text{constant}$ are parallel. If we move them in the direction in which $z$ increases, the last point of the region that they touch is a **corner**.
 
-![The objective lines z = constant slide across the feasible region; the optimum is at a corner](/notes/cse/s1/maths/module-4/graphical-method.webp)
+![The objective lines z = constant slide across the feasible region; the optimum is at a corner](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/module-4/graphical-method.webp)
 
 > **Key idea (corner-point theorem).** If an LPP has an optimal solution, then one occurs at a **corner point** (vertex) of the feasible region. So we only need to find $z$ at the corners.
 
@@ -613,7 +613,7 @@ Intercepts: $x+2y=10$ through $(10,0)$ and $(0,5)$; $3x+y=15$ through $(5,0)$ an
 
 They meet where $6x+2y=30$ and $x+2y=10$. Subtracting, $5x=20$, so $x=4$, $y=3$.
 
-![Feasible region for x + 2y ≤ 10 and 3x + y ≤ 15 with corners (0,0), (5,0), (4,3), (0,5)](/notes/cse/s1/maths/module-4/feasible-region.webp)
+![Feasible region for x + 2y ≤ 10 and 3x + y ≤ 15 with corners (0,0), (5,0), (4,3), (0,5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/module-4/feasible-region.webp)
 
 | Corner | $z=3x+2y$ |
 | --- | --- |

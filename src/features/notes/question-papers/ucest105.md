@@ -2,7 +2,7 @@
 
 KTU 2024 Scheme · CSE · Semester 1. Questions are grouped by module and year, with a solution immediately after each question.
 
-**Original paper:** [2024 PDF](/notes/cse/s1/question-papers/assets/UCEST105_2024.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-algorithmic-thinking-with-python-question-papers-2024-scheme/)
+**Original paper:** [2024 PDF](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/question-papers/assets/UCEST105_2024.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-algorithmic-thinking-with-python-question-papers-2024-scheme/)
 
 **Paper total:** 60 marks. Marks beside each listed question or part are copied from the linked original paper.
 

@@ -7,8 +7,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "First Year Convention by UDSF GECW",
     "caption": "“പുതിയ മുഖങ്ങളല്ല,\nപുതിയ ചിന്തകളാണ്\nഒരു പ്രസ്ഥാനത്തിന്\nതുടക്കമാകുന്നത്.\nഒരുമയുടെ കരുത്തിൽ\nവിദ്യാർത്ഥിത്വത്തിന്റെ\nപുതിയ അധ്യായത്തിലേക്ക്…”\n\nFIRST YEAR CONVENTION 💚💙\n\n> UDSF GECW",
     "date": "2026-10-07",
-    "image": "/event-reels/reel-98cf2bd224fc.webp",
-    "video": "/event-reels/reel-98cf2bd224fc.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-98cf2bd224fc.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-98cf2bd224fc.webm",
     "category": "events_programs"
   },
   {
@@ -16,8 +16,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Freshers Week Celebration",
     "caption": "Fresher's week Conducted by @sathva_collegeunion",
     "date": "2026-09-20",
-    "image": "/event-reels/reel-821b10a11624.webp",
-    "video": "/event-reels/reel-821b10a11624.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-821b10a11624.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-821b10a11624.webm",
     "category": "events_programs"
   },
   {
@@ -25,8 +25,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Aaravam 26 College Fest",
     "caption": "ആരവം‘26 CONDUCTED BY @sathva_collegeunion",
     "date": "2026-08-26",
-    "image": "/event-reels/reel-7d9385e85a12.webp",
-    "video": "/event-reels/reel-7d9385e85a12.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-7d9385e85a12.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-7d9385e85a12.webm",
     "category": "events_programs"
   },
   {
@@ -34,18 +34,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Freshers Welcome",
     "caption": "മധുരം പകർന്ന്, സ്നേഹം പങ്കിട്ട്…❤️\n\nനവാഗതർക്ക് ഹൃദയം നിറഞ്ഞ വരവേൽപ്പ്.\nവിദ്യാർത്ഥികളുടെ അവകാശങ്ങൾക്കൊപ്പം, ക്യാമ്പസിന്റെ കരുത്തായി — UDSF. ✊\n\nഒരുമിച്ച് മുന്നോട്ട്.\n\nUDSF GECW\n\n#udsf #ksu #msf #freshers #udsfgecw",
     "date": "2026-08-17",
-    "image": "/event-reels/reel-cad7188f1f44.webp",
-    "video": "/event-reels/reel-cad7188f1f44.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-cad7188f1f44.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-cad7188f1f44.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-cad7188f1f44.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-cad7188f1f44.vtt"
   },
   {
     "id": "reel-38608865affb",
     "title": "Sathva College Union 2026 Inauguration",
     "caption": "SATHVA COLLEGE UNION 2026 ✨\n\nA new team.\nA new chapter.\nA shared responsibility.\n\nUnited by purpose.\nReady to serve.\n\nThank you to every student who believed in us and entrusted us with this responsibility.\n\nThe journey begins. The legacy continues. \n\nThank you @adv_t_siddique @ushaa_vijayann @mg_biju___ \n@meenakshi__raman_ \n\n#udsf #ksu #msf #udsfgecw #wayanad",
     "date": "2026-08-17",
-    "image": "/event-reels/reel-38608865affb.webp",
-    "video": "/event-reels/reel-38608865affb.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-38608865affb.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-38608865affb.webm",
     "category": "events_programs"
   },
   {
@@ -53,8 +53,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "College Union Inauguration",
     "caption": "വളരെ തിരക്കുപിടിച്ച ഔദ്യോഗിക സമയത്തിനിടയിലും UDSF പ്രവർത്തകരുടെയും കോളേജ് യൂണിയൻ ഭാരവാഹികളുടെയും സ്നേഹോഷ്മളമായ ക്ഷണം സ്വീകരിച്ച് കോളേജ് യൂണിയൻ ഉദ്ഘാടനം ചെയ്യാനായി എത്തിയ കൃഷി വകുപ്പ് മന്ത്രി ടി. സിദ്ദിഖ് സാറിന് ഹൃദയം നിറഞ്ഞ നന്ദി. ❤️\n\nUDSF GECW\n\n#ksu #msf #gecw #gecwayanad #udsf",
     "date": "2026-08-16",
-    "image": "/event-reels/reel-da6701307cad.webp",
-    "video": "/event-reels/reel-da6701307cad.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-da6701307cad.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-da6701307cad.webm",
     "category": "events_programs"
   },
   {
@@ -62,8 +62,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Aswin Memorial Football League Auction Day",
     "caption": "Aswin memorial football league auction day conducted by @collegeunion.gecw \n.\n.\n#gecw#udsf",
     "date": "2026-07-22",
-    "image": "/event-reels/reel-d55a12002d9a.webp",
-    "video": "/event-reels/reel-d55a12002d9a.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-d55a12002d9a.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-d55a12002d9a.webm",
     "category": "events_programs"
   },
   {
@@ -71,28 +71,28 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Aswin Memorial Football League",
     "caption": "Aswin memorial football league CONDUCTED BY @collegeunion.gecw \n\n#udsf#udsfcollegeunion#wayanad",
     "date": "2026-07-20",
-    "image": "/event-reels/reel-9b1053279f77.webp",
-    "video": "/event-reels/reel-9b1053279f77.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-9b1053279f77.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-9b1053279f77.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-9b1053279f77.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-9b1053279f77.vtt"
   },
   {
     "id": "reel-3b8efb0bbd9c",
     "title": "FIFA World Cup Fan Show",
     "caption": "FIFA world cup Fan show by @collegeunion.gecw ⚽️❤️‍🔥\n.\n.\n#fifaworldcup2026 #fifaworldcup #gecw #gecwayanad #wayanad",
     "date": "2026-07-08",
-    "image": "/event-reels/reel-3b8efb0bbd9c.webp",
-    "video": "/event-reels/reel-3b8efb0bbd9c.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-3b8efb0bbd9c.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-3b8efb0bbd9c.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-3b8efb0bbd9c.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-3b8efb0bbd9c.vtt"
   },
   {
     "id": "reel-2e8cbb498a5b",
     "title": "UDSF GECW Farewell Celebration",
     "caption": "_We don’t just say goodbye — we celebrate every memory, lesson, and moment you gave us. 💙💚_\n\nYour passion and spirit will always inspire us, and your legacy will forever remain a part of UDSF.\n\n_*Once a part of UDSF, forever a part of our hearts._*\n\nWishing you endless success and happiness ahead ✨\n\n> UDSF GECW\n\n#udsf #udsfgecw #gecw #gec #farewell",
     "date": "2026-05-13",
-    "image": "/event-reels/reel-2e8cbb498a5b.webp",
-    "video": "/event-reels/reel-2e8cbb498a5b.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-2e8cbb498a5b.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-2e8cbb498a5b.webm",
     "category": "events_programs"
   },
   {
@@ -100,8 +100,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Ahlan 26 Iftar Party",
     "caption": "Ahlan’26 Iftar party by @collegeunion.gecw ✨",
     "date": "2026-03-13",
-    "image": "/event-reels/reel-132c2936415d.webp",
-    "video": "/event-reels/reel-132c2936415d.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-132c2936415d.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-132c2936415d.webm",
     "category": "events_programs"
   },
   {
@@ -109,8 +109,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Drinking Water Distribution at College Sports Meet",
     "caption": "കോളേജ് സ്പോർട്സ് മീറ്റിനു UDSF GECW ന്റെ വക മത്സരാർത്ഥികൾക്കും സംഘാടകർക്കും വേണ്ടി കുടി വെള്ളം എത്തിച്ചു കൊടുത്തു🤍\n\n> UDSF GECW",
     "date": "2026-02-12",
-    "image": "/event-reels/reel-6cc643c2cb6b.webp",
-    "video": "/event-reels/reel-6cc643c2cb6b.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-6cc643c2cb6b.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-6cc643c2cb6b.webm",
     "category": "events_programs"
   },
   {
@@ -118,18 +118,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF 2025 College Events Recap",
     "caption": "UDSF 2025💚💙\n.\n.\n#udsfgecw \n#udsfgirlswinggecw \n#2025recap",
     "date": "2025-12-31",
-    "image": "/event-reels/reel-1e2d9eb5e251.webp",
-    "video": "/event-reels/reel-1e2d9eb5e251.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1e2d9eb5e251.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1e2d9eb5e251.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-1e2d9eb5e251.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1e2d9eb5e251.vtt"
   },
   {
     "id": "reel-ca94ec64d9e1",
     "title": "ALOHA 25 Christmas Party",
     "caption": "ALOHA’25❤️‍🔥",
     "date": "2025-12-21",
-    "image": "/event-reels/reel-ca94ec64d9e1.webp",
-    "video": "/event-reels/reel-ca94ec64d9e1.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-ca94ec64d9e1.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-ca94ec64d9e1.webm",
     "category": "events_programs"
   },
   {
@@ -137,18 +137,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "ALOHA'25 Christmas Celebration",
     "caption": "🎄✨ ALOHA’25 — where Christmas vibes met unforgettable memories!\nMusic, laughter, and festive cheer all in one night 🤍\n\nGrateful to all the amazing students and everyone who supported and made this celebration truly special.❤️\n\n#udsfgecw \n#gecwayanad \n#christmas",
     "date": "2025-12-20",
-    "image": "/event-reels/reel-29888fa1585e.webp",
-    "video": "/event-reels/reel-29888fa1585e.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-29888fa1585e.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-29888fa1585e.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-29888fa1585e.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-29888fa1585e.vtt"
   },
   {
     "id": "reel-4f82204fdcee",
     "title": "ALOHA'25 Foam Party",
     "caption": "🫧🔥 *ALOHA’25*– Foam Party by UDSF GECW 🔥🫧\n\nFrom The House of BLACDEON, featuring electrifying performances by DJ Pranadev 🎧 and Pranav Drummer 🥁.\nGet ready to lose yourself in beats, bubbles, and high-energy vibes as the campus turns into a foam-filled dance floor! 🎶💃🕺\n\n📍 Venue: College Open Stage\n📅 Date: December 18, 2025\n\n*ALOHA’25* – Dive into the foam. Feel the beat.\n\n#udsfgecw \n#foamparty \n#christmaseve",
     "date": "2025-12-18",
-    "image": "/event-reels/reel-4f82204fdcee.webp",
-    "video": "/event-reels/reel-4f82204fdcee.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-4f82204fdcee.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-4f82204fdcee.webm",
     "category": "events_programs"
   },
   {
@@ -156,18 +156,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW First Year Convention",
     "caption": "പറന്നുയരാം അറിവിന്റെ നീലാകാശത്തിലേക്ക്..പടർന്നു പന്തലിക്കാം അക്ഷരങ്ങളുടെ പച്ചപ്പിലേക്ക്💚💙\n\nജനാധിപത്യ കലാലയങ്ങൾക്കായി സൗഹൃദത്തിന്റെ രാഷ്ട്രീയം എന്നും യു.ഡി.എസ്.എഫ് ലൂടെ\n\nUDSF GECW FIRST YEAR CONVENTION\n\n#udsfgecw \n#udsfgirlswinggecw \n#gecw",
     "date": "2025-12-07",
-    "image": "/event-reels/reel-8ed9ac9859e8.webp",
-    "video": "/event-reels/reel-8ed9ac9859e8.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8ed9ac9859e8.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8ed9ac9859e8.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-8ed9ac9859e8.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8ed9ac9859e8.vtt"
   },
   {
     "id": "reel-bfaec21cfb13",
     "title": "UDSF GECW First Year Welcome",
     "caption": "A little late, but full of joy 💙💚\n\n*UDSF GECW* welcomed our first years with songs, laughter, and small tokens — because college is more than classrooms, it’s about the bonds we share and the memories we create 🤍\n\n#udsfgecw \n#udsfgirlswinggecw",
     "date": "2025-09-17",
-    "image": "/event-reels/reel-bfaec21cfb13.webp",
-    "video": "/event-reels/reel-bfaec21cfb13.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-bfaec21cfb13.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-bfaec21cfb13.webm",
     "category": "events_programs"
   },
   {
@@ -175,18 +175,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Freshers Week '25 Ring Toss Game",
     "caption": "Erinju edutholi moments 💫🤍\n#udsfgecw \n#udsfgirlswinggecw",
     "date": "2025-09-16",
-    "image": "/event-reels/reel-b49655a6b037.webp",
-    "video": "/event-reels/reel-b49655a6b037.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-b49655a6b037.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-b49655a6b037.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-b49655a6b037.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-b49655a6b037.vtt"
   },
   {
     "id": "reel-a182bd65e4e7",
     "title": "Freshers Week ’25 Ring Toss Activity",
     "caption": "Freshers Week ’25 presented by *UDSF GECW*\n\nAlong with the spirit of *Mutti Paatt*, we had a little extra fun with *Erinj Edtholi*🎯✨\n\nHere’s a glimpse back at the playful and engaging moments that added laughter and joy to the day!\n\n> UDSF GECW",
     "date": "2025-09-14",
-    "image": "/event-reels/reel-a182bd65e4e7.webp",
-    "video": "/event-reels/reel-a182bd65e4e7.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-a182bd65e4e7.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-a182bd65e4e7.webm",
     "category": "events_programs"
   },
   {
@@ -194,8 +194,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Freshers Week 2025 Day 2: Mutti Pattu",
     "caption": "*Freshers Week ’25* presented by *UDSF GECW*\n\n*Day 2 — MUTTI PATTU*🎤✨\n\nThe second day brought voices together, rhythms alive, and laughter that filled the air.\n\nA tradition that turned into pure joy — where energy met togetherness, and memories were made to last. 🌟\n\n*A perfect finale to a week that will be remembered.*🤍\n\n#udsfgecw \n#udsfgirlswinggecw \n#freshersweek",
     "date": "2025-09-14",
-    "image": "/event-reels/reel-5c027cde836e.webp",
-    "video": "/event-reels/reel-5c027cde836e.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-5c027cde836e.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-5c027cde836e.webm",
     "category": "events_programs"
   },
   {
@@ -203,8 +203,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Freshers Week 2025 Day 1: Hypnomania",
     "caption": "*Freshers Week ’25* presented by *UDSF GECW*\n\n*Day 1 — HYPNOMANIA*🌀\n\nThe first step into Freshers Week was nothing short of magical. \n\nMusic touched the soul, hypnosis played with the mind, and together they created an atmosphere we’ll cherish long after the lights went out.✨\n\nA perfect beginning to the journey ahead.🤍\n\n#udsfgecw \n#udsfgirlswinggecw \n#freshersweek",
     "date": "2025-09-12",
-    "image": "/event-reels/reel-1dd84c4f9c58.webp",
-    "video": "/event-reels/reel-1dd84c4f9c58.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1dd84c4f9c58.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1dd84c4f9c58.webm",
     "category": "events_programs"
   },
   {
@@ -212,18 +212,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Hypnomania Freshers Week Event with Yasir GKZ",
     "caption": "*GECW, get ready to witness the unseen!*🔥\n\nFor the *FIRST TIME EVER* in the history of GECW, *UDSF GECW* brings a stage where the impossible feels real… 🌀\n\n🎶✨ *HYPNOMANIA* ✨🎶\nwith *Yasir GKZ* live!\n\n*Music. Mentalism. Hypnotism.*\nAll colliding in one electrifying experience.\n\n🚨 *Step in, get mind-blown — Freshers Week just hit another level.*\n\n#udsfgecw \n#udsfgirlswinggecw \n#freshersweek",
     "date": "2025-09-11",
-    "image": "/event-reels/reel-90e22126dcbc.webp",
-    "video": "/event-reels/reel-90e22126dcbc.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-90e22126dcbc.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-90e22126dcbc.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-90e22126dcbc.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-90e22126dcbc.vtt"
   },
   {
     "id": "reel-782f7bda0be3",
     "title": "Freshers Week 2025 Announcement",
     "caption": "✨ജി ഇ സി വയനാടിന്റെ മണ്ണിലേക്ക് കടന്ന് വന്ന പ്രിയപ്പെട്ട നവാഗതർക്ക് പുത്തൻ ഓർമ്മകൾ സമ്മാനിക്കുവാൻ സന്തോഷവും സൗഹൃദവും കലരുന്ന ആഘോഷം.\n\n⚡ UDSF GECW Presents Freshers Week 2025 ⚡\n\n_*COMING SOON…*_\n\n#udsfgecw\n#udsfgecwgirlswing \n#gecw",
     "date": "2025-09-06",
-    "image": "/event-reels/reel-782f7bda0be3.webp",
-    "video": "/event-reels/reel-782f7bda0be3.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-782f7bda0be3.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-782f7bda0be3.webm",
     "category": "events_programs"
   },
   {
@@ -231,8 +231,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Farewell Event",
     "caption": "We don’t just say goodbye — we celebrate every memory, every lesson, and every moment you gave us.Your passion, your strength, and your unwavering spirit have shaped us in ways words can’t express.\nToday, we don’t say goodbye — we say thank you, and we promise to carry your legacy forward.\nOnce a part of UDSF, forever a part of our hearts. Wishing you endless success and happiness ahead💙💚\n\n#udsfgecw \n#udsfgirlswinggecw \n#farewell",
     "date": "2025-04-28",
-    "image": "/event-reels/reel-bf81b2d318bd.webp",
-    "video": "/event-reels/reel-bf81b2d318bd.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-bf81b2d318bd.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-bf81b2d318bd.webm",
     "category": "events_programs"
   },
   {
@@ -240,8 +240,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "GECW Farewell and College Memories",
     "caption": "It’s hard to imagine our days without your energy, your leadership, and your constant support. You’ve been more than just seniors — you’ve been mentors, friends, and family. Though you’re off to chase your dreams, your absence leaves a void that can’t be filled. \n*We miss you, and we always will💙💚*\n\n#udsfgecw \n#udsfgirlswinggecw \n#farewell #gecw",
     "date": "2025-04-25",
-    "image": "/event-reels/reel-df4f7a18eb5e.webp",
-    "video": "/event-reels/reel-df4f7a18eb5e.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-df4f7a18eb5e.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-df4f7a18eb5e.webm",
     "category": "events_programs"
   },
   {
@@ -249,8 +249,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Iftar Gathering 2025",
     "caption": "*”Ramadan brings togetherness, gratitude, and joy. Thank you for joining our Iftar gathering. Wishing you peace and blessings. Ramadan Mubarak”🌙*\n\n#udsfgecw \n#udsfgirlswinggecw \n#i̇ftar #ramadan",
     "date": "2025-03-30",
-    "image": "/event-reels/reel-c21d3db490c4.webp",
-    "video": "/event-reels/reel-c21d3db490c4.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-c21d3db490c4.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-c21d3db490c4.webm",
     "category": "events_programs"
   },
   {
@@ -258,8 +258,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Student Unity Iftar Feast",
     "caption": "*വിദ്യാർത്ഥി ഐക്യത്തിന്റെ ഇഫ്താർ വിരുന്ന്…..*\n“നന്മ നിറഞ്ഞ ഈ സംഗമത്തിൽ പങ്കുചേർന്ന എല്ലാവർക്കും ഹൃദയം നിറഞ്ഞ നന്ദി”🤍\n\nUDSF GECW\n\n#udsfgecw \n#udsfgirlswinggecw \n#iftar2025 #ramadan",
     "date": "2025-03-28",
-    "image": "/event-reels/reel-3dbe9c7c3d95.webp",
-    "video": "/event-reels/reel-3dbe9c7c3d95.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-3dbe9c7c3d95.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-3dbe9c7c3d95.webm",
     "category": "events_programs"
   },
   {
@@ -267,8 +267,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Iftar Gathering Announcement",
     "caption": "UDSF GECW ഒരുക്കുന്ന ഇഫ്താർ വിരുന്ന് 🤍\n\n*അപ്പൊ പിന്നെ എങ്ങനാ.. സെറ്റല്ലേ*\nഇന്ന് വൈകീട്ട് അനുഗ്രഹ ഓഡിറ്റോറിയത്തിൽ വെച്ച്\n\n*ഏവരെയും സ്വാഗതം ചെയ്യുന്നു*\n\n#udsfgecw\n#udsfgirlswingecw\n#iftargathering",
     "date": "2025-03-26",
-    "image": "/event-reels/reel-2a6f6a1511bb.webp",
-    "video": "/event-reels/reel-2a6f6a1511bb.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-2a6f6a1511bb.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-2a6f6a1511bb.webm",
     "category": "events_programs"
   },
   {
@@ -276,18 +276,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Sanam Valentine's Day Party",
     "caption": "*SANAM*💗 \n\nUDSF GECW is bringing back the most awaited Valentine’s Day Party, *Sanam.* Get ready for a night of love, music, and unforgettable memories. \n\n#udsfgecw\n#udsfgirlswinggecw\n#valentinesday \n#recreatingsanam",
     "date": "2025-02-10",
-    "image": "/event-reels/reel-4332cb9c2b35.webp",
-    "video": "/event-reels/reel-4332cb9c2b35.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-4332cb9c2b35.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-4332cb9c2b35.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-4332cb9c2b35.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-4332cb9c2b35.vtt"
   },
   {
     "id": "reel-193f3b24a78c",
     "title": "Merry Mailbox Christmas Program",
     "caption": "UDSF GECW PRESENTS \n*Merry Mailbox*🎁🎅\n\nSpread the festive magic this season! 🎄. *Drop your anonymous Christmas greetings in the ballot boxes across campus* for your friends, loved ones, or anyone special—and brighten their holidays.🌟🎉\nLet’s make this season full of surprises and joy.Don’t miss out start writing now!\n\n#udsfgecw\n#udsfgirlswinggecw\n#happychristmas",
     "date": "2024-12-16",
-    "image": "/event-reels/reel-193f3b24a78c.webp",
-    "video": "/event-reels/reel-193f3b24a78c.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-193f3b24a78c.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-193f3b24a78c.webm",
     "category": "events_programs"
   },
   {
@@ -295,28 +295,28 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Dastha'24 Freshers Party",
     "caption": "*Relive the Magic of Dastha’24!* ✨A night of epic vibes, electrifying beats by *DJ Zaviyox*, and soul-stirring tunes from *violinist Gokul Krishna*. Join us as we dive back into the unforgettable moments of the Freshers Party at GECW!🎻🕺🪩\n\n#Dastha’24 \n#FreshersMemories\n#udsfgecw\n#udsfgirlswinggecw\n#ksu #msf",
     "date": "2024-10-26",
-    "image": "/event-reels/reel-8b0a0a22d870.webp",
-    "video": "/event-reels/reel-8b0a0a22d870.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8b0a0a22d870.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8b0a0a22d870.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-8b0a0a22d870.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8b0a0a22d870.vtt"
   },
   {
     "id": "reel-e4f9a41473fa",
     "title": "Violin Performance by Gokul Krishna at Dastha'24",
     "caption": "Thank you, *Gokul Krishna*, for your magical violin performance at *Dastha’24*🎻🎼. *UDSF GECW* is deeply grateful for the unforgettable night you gave us! Your music brought so much joy and made the evening truly special ✨. We would love to see you perform at our college again!🫶🏼\n\n#udsfgecw \n#udsfgirlswinggecw \n#gecw#freashers \n#ksu\n#msf",
     "date": "2024-10-19",
-    "image": "/event-reels/reel-e4f9a41473fa.webp",
-    "video": "/event-reels/reel-e4f9a41473fa.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-e4f9a41473fa.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-e4f9a41473fa.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-e4f9a41473fa.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-e4f9a41473fa.vtt"
   },
   {
     "id": "reel-76c9c5c99640",
     "title": "DJ Zavi yox Live at Dastha 24 GECW",
     "caption": "*Welcome, everyone!🫶🏼*\nGet ready for an electrifying night with DJ ZAVIYOX. Let’s hit the dance floor and make tonight unforgettable!.\n\n#udsfgecw\n#udsfgirlswinggecw\n#dastha24\n#gecw",
     "date": "2024-10-16",
-    "image": "/event-reels/reel-76c9c5c99640.webp",
-    "video": "/event-reels/reel-76c9c5c99640.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-76c9c5c99640.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-76c9c5c99640.webm",
     "category": "events_programs"
   },
   {
@@ -324,8 +324,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Gokul Violin Live at Dastha 24 GECW",
     "caption": "*A Warm Welcome to Gokul Violin at DASTHA ‘24!*🎻\n\nWe’re excited to have Gokul Violin join us, bringing their passion and expertise to this year’s program! Prepare to be inspired by soulful performances and insightful sessions that celebrate the beauty and artistry of the violin. Let’s create, learn, and immerse ourselves in the magic of music together.\n\n*Welcome All*🤍\n\n#udsfgecw\n#udsfgirlswinggecw\n#dastha24\n#gecw",
     "date": "2024-10-14",
-    "image": "/event-reels/reel-965343cda482.webp",
-    "video": "/event-reels/reel-965343cda482.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-965343cda482.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-965343cda482.webm",
     "category": "events_programs"
   },
   {
@@ -333,8 +333,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF Girls Wing Menstrual Awareness Program",
     "caption": "We sincerely thank each of you for your support in making the UDSF GIRLS WING GECW menstrual awareness program a success. Your enthusiasm and cooperation helped to create a meaningful space for awareness and discussion.\n\n#udsfgecw\n#udsfgirlswinggecw\n#gecw",
     "date": "2024-10-07",
-    "image": "/event-reels/reel-8b6ef24eb829.webp",
-    "video": "/event-reels/reel-8b6ef24eb829.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8b6ef24eb829.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8b6ef24eb829.webm",
     "category": "events_programs"
   },
   {
@@ -342,18 +342,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF First-Year Students Welcome Event",
     "caption": "*UDSF പ്രവർത്തകർ ഒന്നാം വർഷ വിദ്യാർത്ഥികളെ സ്വാഗതം ചെയ്തു..*🤍\n\nഎന്നും കൂടെ UDSF...\n\n#udsfgecw\n#udsfgirlswinggecw\n#gecw",
     "date": "2024-10-02",
-    "image": "/event-reels/reel-6b03bca2e357.webp",
-    "video": "/event-reels/reel-6b03bca2e357.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-6b03bca2e357.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-6b03bca2e357.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-6b03bca2e357.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-6b03bca2e357.vtt"
   },
   {
     "id": "reel-1fc1e3531b7f",
     "title": "UDSF GECW Campus Gathering and Art Event",
     "caption": "*കൊട്ടിന്റെ താളം...പാട്ടിന്റെ ഈണം...വരയുടെ സൗന്ദര്യം...വൈകുന്നേരത്തെ ഒത്തുകൂടലിന്റെ ഭംഗി...*💝\n\n*Thank You All*\n\n#udsfgecw\n#ksugecw\n#msfgecw\n#udsfgirlswing\n#gecw",
     "date": "2024-09-26",
-    "image": "/event-reels/reel-1fc1e3531b7f.webp",
-    "video": "/event-reels/reel-1fc1e3531b7f.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1fc1e3531b7f.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1fc1e3531b7f.webm",
     "category": "events_programs"
   },
   {
@@ -361,18 +361,18 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "UDSF GECW Second Day College Fest Celebration",
     "caption": "എറിഞ്ഞും എടുത്തും വന്നും കണ്ടും കയ്യടിച്ചും,കൂടെ നിന്ന് രണ്ടാം ദിനം കളർ ആക്കിയ എല്ലാ വിദ്യാർത്ഥികൾക്കും ഹൃദയം നിറഞ്ഞ നന്ദി \n\n*UDSF GECW*\n\n#udsfgecw\n#ksugecw\n#msfgecw\n#udsfgirslwing\n#gecw",
     "date": "2024-09-24",
-    "image": "/event-reels/reel-24d1a6a23c8b.webp",
-    "video": "/event-reels/reel-24d1a6a23c8b.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-24d1a6a23c8b.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-24d1a6a23c8b.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-24d1a6a23c8b.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-24d1a6a23c8b.vtt"
   },
   {
     "id": "reel-a7b57b8816ec",
     "title": "Freshers Week Celebration",
     "caption": "*കൂടെനിന്ന്  വിജയിപ്പിച്ച എല്ലാ വിദ്യാർത്ഥിസുഹൃത്തുക്കൾക്കും നന്ദി.*\n💚💙\n\n#udsfgecw\n#udsfgirlswinggecw\n#freshersweek \n#gecw #ksu #msf",
     "date": "2024-09-23",
-    "image": "/event-reels/reel-a7b57b8816ec.webp",
-    "video": "/event-reels/reel-a7b57b8816ec.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-a7b57b8816ec.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-a7b57b8816ec.webm",
     "category": "events_programs"
   },
   {
@@ -380,8 +380,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Payasam Distribution by UDSF GECW",
     "caption": "നമ്മളൊന്നിച്ച് ഇനിയും ഇതുപോലെ സൗഹൃദങ്ങൾ വളരട്ടെ💗\n\n*UDSF GECW ന്റെ* പായസസൽക്കാരത്തിൽ പങ്കെടുക്കുകയും സഹകരിക്കുകയും ചെയ്ത എല്ലാ വിദ്യാർത്ഥിസുഹൃത്തുക്കൾക്കും ഹൃദയം നിറഞ്ഞ നന്ദി🤍\n\nUDSF GECW\n\n#udsfgecw \n#udsfgirlswinggecw \n#gecw",
     "date": "2024-09-12",
-    "image": "/event-reels/reel-8fa22ef9c01f.webp",
-    "video": "/event-reels/reel-8fa22ef9c01f.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8fa22ef9c01f.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8fa22ef9c01f.webm",
     "category": "events_programs"
   },
   {
@@ -389,8 +389,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Senior Farewell Event by UDSF GECW",
     "caption": "_It’s been a Lifetime memories here._\n\nA heartfelt farewell to our seniors.\n *We Will Miss You all*🥺\nWish you all the best in your future💚💙\n\n#udsfgecw",
     "date": "2024-06-06",
-    "image": "/event-reels/reel-bf02581b1b63.webp",
-    "video": "/event-reels/reel-bf02581b1b63.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-bf02581b1b63.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-bf02581b1b63.webm",
     "category": "events_programs"
   },
   {
@@ -398,28 +398,28 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Iftar Meet and Mehandi Contest",
     "caption": "Another blessed Ifthar Meet comes to an end, but the memories of laughter and togetherness at Iftar will stay with us forever. \n\nHere’s a glimpse of our beautiful gathering ✨✨\n\n#udsfgecw\n#ifthar\n#udsf\n#gecw\n#ksugecw \n#msfgecw",
     "date": "2024-03-26",
-    "image": "/event-reels/reel-c623d78d6523.webp",
-    "video": "/event-reels/reel-c623d78d6523.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-c623d78d6523.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-c623d78d6523.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-c623d78d6523.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-c623d78d6523.vtt"
   },
   {
     "id": "reel-db7e2be02221",
     "title": "UDSF GECW Iftar Meet Announcement",
     "caption": "“ വന്നോളീ,\n കൈ കയ്കിക്കോളീ,\n നോമ്പ് തൊറന്നോളീ “❤️\n\nUDSF GECW സ്നേഹപൂർവ്വം ഏവരെയും സ്വാഗതം ചെയ്യുന്നു.🤝🏼\n\n#udsfgecw \n#gecw \n#iftar",
     "date": "2024-03-24",
-    "image": "/event-reels/reel-db7e2be02221.webp",
-    "video": "/event-reels/reel-db7e2be02221.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-db7e2be02221.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-db7e2be02221.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-db7e2be02221.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-db7e2be02221.vtt"
   },
   {
     "id": "reel-4439c4c8d9e6",
     "title": "Nizari Band Performance at GECW",
     "caption": "Relive the Musical Magic 🎶✨\n\n@nizari_band_official 's Captivating Performance at Gecw!!\n\n#magazinerelease #collegemagazine \n#collegevibes #keralacolleges #Wayanad \n#msf #ksu #udsf #gecw #gecwayanad",
     "date": "2023-09-23",
-    "image": "/event-reels/reel-4439c4c8d9e6.webp",
-    "video": "/event-reels/reel-4439c4c8d9e6.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-4439c4c8d9e6.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-4439c4c8d9e6.webm",
     "category": "events_programs"
   },
   {
@@ -427,28 +427,28 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "College Union GECW Music Night",
     "caption": "Magazine🔥",
     "date": "2023-09-20",
-    "image": "/event-reels/reel-1570aee3426e.webp",
-    "video": "/event-reels/reel-1570aee3426e.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1570aee3426e.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1570aee3426e.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-1570aee3426e.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-1570aee3426e.vtt"
   },
   {
     "id": "reel-f1b075ec4f50",
     "title": "Thouryathrikam '22 Cultural Night",
     "caption": "Relive and rejoice the heartwarming rhythmic nights of \"THOURYATHRIKAM '22\" with @hanaaaneyy.\n\nUse headphones for better experiance🎵\n\nEdits: @kenon___c \nCamera: @me.aspi @adith.s.k @t.erri_n\n\n#thouryathrikam\n#colleguniongecw\n#udsfgecw",
     "date": "2022-12-09",
-    "image": "/event-reels/reel-f1b075ec4f50.webp",
-    "video": "/event-reels/reel-f1b075ec4f50.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-f1b075ec4f50.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-f1b075ec4f50.webm",
     "category": "events_programs",
-    "subtitles": "/event-reels/reel-f1b075ec4f50.vtt"
+    "subtitles": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-f1b075ec4f50.vtt"
   },
   {
     "id": "reel-f29792084dd8",
     "title": "UDSF GECW Iftar Meet 2022",
     "caption": "റമദാൻ കാലത്തെ സൗഹൃദ ഒത്തുചേരൽ മനോഹരമാക്കി ഇഫ്താർ വിരുന്ന്. \n\nഇശലിന്റെ താളത്തിൽ നിറപുഞ്ചിരികൾ തൂകിയ സായാഹ്നത്തിൽ UDSF ഒരുക്കിയ മുഹബ്ബത്തിന്റെ  ഇഫ്താർ വിരുന്നിൽ പങ്കാളികളായ എല്ലാവർക്കും നന്ദി.\n\n_#ifthar_meet_2k22_\n_#udsf_gecw_\n_#udsf_\n#ifthar \n#iftharspecial \n#iftharparty \n#iftharmeet",
     "date": "2022-04-30",
-    "image": "/event-reels/reel-f29792084dd8.webp",
-    "video": "/event-reels/reel-f29792084dd8.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-f29792084dd8.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-f29792084dd8.webm",
     "category": "events_programs"
   },
   {
@@ -456,8 +456,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Likha Magazine Release Announcement",
     "caption": "_ഓരോ മാഗസീനുകളും ഓരോ അവശേഷിപ്പുകളാണ്...._\n\n*LIKHA✨*\n\nReleasing today💗\n*At 7 PM*\n\n#udsf\n#udsf_gecw \n#college \n#anasaneef",
     "date": "2022-02-05",
-    "image": "/event-reels/reel-ee15e571d7df.webp",
-    "video": "/event-reels/reel-ee15e571d7df.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-ee15e571d7df.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-ee15e571d7df.webm",
     "category": "events_programs"
   },
   {
@@ -465,8 +465,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Joy Mathew Wishes for Likha Magazine",
     "caption": "_കാലം ഒപ്പിയെടുത്ത കഴിവുകൾ കാലാതീതമാണ്. ലീഖിതങ്ങൾ സമയത്തിനും കാലത്തിനും അധീതവും.._\n\n*LIKHA✨*\n.\nReleasing today💗\n.\nWishes by\n_Joy mathew (Film actor)_\n.\n#udsf\n#udsf_gecw\n#magazine #college #college_magazine #gecw #gec",
     "date": "2022-02-05",
-    "image": "/event-reels/reel-25db5c6a2ff2.webp",
-    "video": "/event-reels/reel-25db5c6a2ff2.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-25db5c6a2ff2.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-25db5c6a2ff2.webm",
     "category": "events_programs"
   },
   {
@@ -474,8 +474,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "LIKHA Magazine Release Announcement by Shiva Hariharan",
     "caption": "LIKHA✨\n.\nReleasing tomorrow\n.\n#udsf \n#udsfgecw\n#gecw \n#college_magazine\n#shivahariharan #hridayam",
     "date": "2022-02-04",
-    "image": "/event-reels/reel-38dd019704c6.webp",
-    "video": "/event-reels/reel-38dd019704c6.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-38dd019704c6.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-38dd019704c6.webm",
     "category": "events_programs"
   },
   {
@@ -483,8 +483,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "LIKHA College Magazine Teaser",
     "caption": "LIKHA\n\nകലയുടെ കൈയൊപ്പുകൾ കാലമെത്ര കഴിഞ്ഞാലും മായാതെ നിലനിൽക്കും. കോവിഡ് കാലത്തെ GEC യുടെ കൈയൊപ്പുകൾ പതിപ്പിച്ച LIKHA നിങ്ങളിലേക്ക് എത്തുമ്പോൾ ഓർമിപ്പിക്കുന്നതും ഇത് തന്നെയാവട്ടെ... നമുക്ക് ഒന്നിച്ച് LIKHA യെ വരവേൽക്കാം..\n\nLIKHA \nCreative something through skill \n\n#udsf\n#udsf_gecw\n#magazine #college #college_magazine #college_writings",
     "date": "2022-02-04",
-    "image": "/event-reels/reel-6a27c3a93b50.webp",
-    "video": "/event-reels/reel-6a27c3a93b50.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-6a27c3a93b50.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-6a27c3a93b50.webm",
     "category": "events_programs"
   },
   {
@@ -492,8 +492,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Aaravam '21 Online Onam",
     "caption": "ഓണം എന്നും ആഘോഷത്തിന്റെ💃 കാലമാണ്. പൂവും🥀 പൂക്കളവും ഒക്കെയായി വീടുകളിൽ ഒതുങ്ങേണ്ടി വന്നാലും കോളേജിലെ ഓണം ഒരു സംഭവം തന്നെയാണ് ല്ലേ ?? കൊട്ടും, കുരവയും, മത്സരങ്ങളും, സൊറപറച്ചിലുകളും, അങ്ങനെയങ്ങനെ മനസിലേക്ക് കോളേജിലെ ആരവം 2K19 കടന്ന് വരുന്നുണ്ടല്ലേ....🥲\n\nഎന്നാ പിന്നെ ആ ഓർമകളൊന്ന് നമുക്ക് പൊടിതട്ടിയെടുക്കുവല്ലേ?🤔UDSF GECW PRESENTS AARAVAM '21 . അപ്പൊ എങ്ങനെയാ ഒരിത്തിരി മത്സരങ്ങളും ഒത്തിരി ആഘോഷങ്ങളുമായി ഞങ്ങൾ റെഡിയാ. നിങ്ങളുണ്ടാവില്ലേ ?????✨\n\n#udsf_gecw\n#udsf",
     "date": "2021-08-16",
-    "image": "/event-reels/reel-a14c37eb9930.webp",
-    "video": "/event-reels/reel-a14c37eb9930.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-a14c37eb9930.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-a14c37eb9930.webm",
     "category": "events_programs"
   },
   {
@@ -501,8 +501,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "Tech Talk with GECW Alumni",
     "caption": "💫```The most beautiful things are not associated with money; they are memories and moments```💫\n\nUDSF GECW presents, A walk down through the memory lane with the GECW Alumni. An enticing talk with *Mr. Renjith S S, Mr. Clifford, Mr. Pradeep R and Mr. Nithin T M* and about their journey till now. The fun, the laughter, the fights, the whole journey in a talk, along with an exceptional achievement of them that made our college proud. Tune in for a snippet of the talk💞\n\nFor more fun parts of the talk, wait until the college magazine release😉\n#udsf #udsfgecw #collegemagazine",
     "date": "2021-06-24",
-    "image": "/event-reels/reel-720d7b4bbdd3.webp",
-    "video": "/event-reels/reel-720d7b4bbdd3.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-720d7b4bbdd3.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-720d7b4bbdd3.webm",
     "category": "events_programs"
   },
   {
@@ -510,8 +510,8 @@ export const EVENT_REELS: readonly Activity[] = [
     "title": "GEC IPL Dhamaka '21 IPL Fantasy League",
     "caption": "Hello Gecwinas\n\nHere we back again with another IPL season with a bang. As we all enjoyed a wonderful fantasy league in last IPL season, UDSF GECW once again introducing the fantasy league for all cricket lovers of GECW. Don't miss this opportunity join us and win exciting cash prize. So guys it's time register your name. GO ON!\n#ipl #ipl2021 #iplfantasy #iplt20 #dream11 #iplmemes #iplmemes #iplschedule #iplauction #csk #mi #kkr #rcb #srh #dd #rr #\n#gecw \n#udsfgecw",
     "date": "2021-04-06",
-    "image": "/event-reels/reel-8b0d848a3514.webp",
-    "video": "/event-reels/reel-8b0d848a3514.mp4",
+    "image": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8b0d848a3514.webp",
+    "video": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-reels/reel-8b0d848a3514.webm",
     "category": "events_programs"
   }
 ];

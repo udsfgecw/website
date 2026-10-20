@@ -701,7 +701,7 @@ It is critical to distinguish between simple water softening and complete demine
 
 Cation exchange resins contain acidic functional groups, synthesized by sulphonating a cross-linked styrene–divinylbenzene copolymer so that sulfonate groups ($-SO_3^-H^+$) attach directly to the aromatic rings. In their hydrogen form, they release $H^+$ ions in stoichiometric exchange for metallic cations present in the raw water.
 
-![Chemical structure of sulphonated styrene-divinylbenzene copolymer showing cross-linked aromatic rings with SO3-H+ groups](/notes/cse/s1/chemistry/module-4/assets/imagen-sulphonated-resin.png)
+![Chemical structure of sulphonated styrene-divinylbenzene copolymer showing cross-linked aromatic rings with SO3-H+ groups](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/imagen-sulphonated-resin.webp)
 
 *Figure 4.1: Structure of a sulphonated styrene–divinylbenzene cation-exchange resin with fixed $-SO_3^-$ groups and mobile $H^+$ counter-ions.*
 
@@ -709,7 +709,7 @@ Cation exchange resins contain acidic functional groups, synthesized by sulphona
 
 Anion exchange resins contain basic functional groups, prepared by introducing quaternary ammonium groups ($-N^+R_3OH^-$) or tertiary amine groups onto the cross-linked copolymer matrix and treating the product with dilute $NaOH$. In their hydroxide form, they release $OH^-$ ions in exchange for anions present in the incoming water.
 
-![Chemical structure of quaternary ammonium styrene-divinylbenzene copolymer with N+R3 OH- groups](/notes/cse/s1/chemistry/module-4/assets/imagen-quaternary-ammonium-resin.png)
+![Chemical structure of quaternary ammonium styrene-divinylbenzene copolymer with N+R3 OH- groups](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/imagen-quaternary-ammonium-resin.webp)
 
 *Figure 4.2: Structure of a quaternary ammonium styrene–divinylbenzene anion-exchange resin with fixed $-N^+R_3$ groups and mobile $OH^-$ counter-ions.*
 
@@ -719,7 +719,7 @@ Anion exchange resins contain basic functional groups, prepared by introducing q
 
 Complete demineralization is achieved by routing raw feed water sequentially through two packed resin columns.
 
-![Schematic diagram of a two-column ion-exchange demineralization unit showing hard water entering the cation exchange bed, then the anion exchange bed, with acid and alkaline regenerators](/notes/cse/s1/chemistry/module-4/assets/page-011-image-1.png)
+![Schematic diagram of a two-column ion-exchange demineralization unit showing hard water entering the cation exchange bed, then the anion exchange bed, with acid and alkaline regenerators](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-011-image-1.webp)
 
 *Figure 4.3: Two-stage ion-exchange demineralization unit showing the cation-exchange bed followed by the anion-exchange bed and their respective acid and alkali regeneration lines.*
 
@@ -811,7 +811,7 @@ When external hydrostatic pressure is applied to the concentrated saline side, t
 
 > **Watch out.** Do not compare osmotic pressure $\pi$ simply to absolute atmospheric pressure $P$. Reverse osmosis requires the applied **transmembrane pressure difference** ($\Delta P$) to exceed the osmotic pressure difference ($\Delta \pi$) plus hydraulic friction and membrane resistance losses so that a practical permeate flux is achieved.
 
-![Schematic of reverse osmosis showing external pressure applied via a piston to seawater, forcing water molecules through a semipermeable membrane into the fresh water compartment while rejecting salts.](/notes/cse/s1/chemistry/module-4/assets/page-015-image-2-Imagen.png)
+![Schematic of reverse osmosis showing external pressure applied via a piston to seawater, forcing water molecules through a semipermeable membrane into the fresh water compartment while rejecting salts.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-015-image-2-Imagen.webp)
 
 *Figure: Principle of reverse osmosis—applying a pressure greater than the osmotic pressure forces water from the concentrated salt solution through a semipermeable membrane.*
 
@@ -975,7 +975,7 @@ While monochloramine is a weaker disinfectant than free $\text{HOCl}$, it is sub
 
 Progressive addition of chlorine to water containing ammonia and reducing agents yields the classical breakpoint chlorination curve.
 
-![Breakpoint chlorination curve plotting residual chlorine against applied chlorine dose across four distinct reaction zones](/notes/cse/s1/chemistry/module-4/assets/imagen-breakpoint-chlorination.png)
+![Breakpoint chlorination curve plotting residual chlorine against applied chlorine dose across four distinct reaction zones](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/imagen-breakpoint-chlorination.webp)
 
 *Figure: Breakpoint chlorination curve showing how measured chlorine residual changes with applied chlorine dose across four reaction stages.*
 
@@ -1414,7 +1414,7 @@ Secondary biological sewage treatment relies on microorganisms to degrade dissol
 
 A trickling filter is an aerobic attached-growth biological reactor in which microorganisms grow as a slimy biofilm (zoogleal film) on a fixed packing medium. Despite its name, it does not operate by physical straining or sieving. The wide void spaces between packing pieces allow air to circulate freely by natural draft or forced ventilation while wastewater trickles downward as a thin liquid film, ensuring simultaneous access to dissolved organic substrates and atmospheric oxygen.
 
-![Cross-sectional diagram of a trickling filter showing the rotating distributor arm, packing media bed, underdrain system, and effluent outlet.](/notes/cse/s1/chemistry/module-4/assets/page-026-image-1.png)
+![Cross-sectional diagram of a trickling filter showing the rotating distributor arm, packing media bed, underdrain system, and effluent outlet.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-026-image-1.webp)
 
 A typical trickling filter is a circular or rectangular bed packed with high-surface-area materials such as crushed rocks, broken bricks, slag, or engineered plastic modules. Treatment proceeds through the following steps:
 
@@ -1436,7 +1436,7 @@ $$
 
 A UASB reactor is a high-rate anaerobic biological treatment system that operates without any oxygen supply or mechanical aeration. Introducing liquid upward from the bottom at a controlled hydraulic velocity brings wastewater into continuous contact with a retained sludge blanket while washing out treated water at the top, achieving intense contact between organic pollutants and microbes without mechanical mixing.
 
-![Schematic diagram of a UASB reactor showing bottom influent feed, anaerobic granular sludge blanket, biogas collector dome, and top effluent outlet.](/notes/cse/s1/chemistry/module-4/assets/page-027-image-1.png)
+![Schematic diagram of a UASB reactor showing bottom influent feed, anaerobic granular sludge blanket, biogas collector dome, and top effluent outlet.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-027-image-1.webp)
 
 Operation of a UASB reactor involves four main features:
 
@@ -1838,7 +1838,7 @@ Achieving sustainability requires integrating environmental protection, social e
 
 Sustainable decision-making balances three interconnected pillars. A project is truly sustainable only where all three overlap.
 
-![Venn diagram of the three pillars of sustainable development: Social, Environmental, and Economic, with their intersection labeled 'sustainable'.](/notes/cse/s1/chemistry/module-4/assets/page-051-image-1.png)
+![Venn diagram of the three pillars of sustainable development: Social, Environmental, and Economic, with their intersection labeled 'sustainable'.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-051-image-1.webp)
 
 *Figure: The three overlapping pillars of sustainable development—Environmental, Social, and Economic—intersecting to define sustainable practice.*
 

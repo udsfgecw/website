@@ -60,7 +60,7 @@ export default function ReelCard({
           tabIndex={-1}
           className="absolute inset-0 size-full object-cover transition duration-700 group-hover:scale-[1.04]"
         >
-          <source src={mediaUrl(post.video)} type="video/mp4" />
+          <source src={mediaUrl(post.video)} type="video/webm" />
         </video>
       ) : (
         <img

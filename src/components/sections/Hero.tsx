@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { MEDIA_BASE } from "@/lib/media";
 
 /* The group photo sits under a white wash, and the letters UDSF are cut out of that wash so the
    students show through them. Three stacked layers render the same centred stack (Malayalam line,
@@ -38,7 +39,7 @@ export default function Hero() {
     <section aria-labelledby="hero-title" className="relative isolate -mt-(--nav-h) h-[max(100svh,680px)] overflow-hidden">
       <img
         className="absolute top-1/2 left-1/2 h-[180%] w-auto max-w-none min-w-full -translate-x-1/2 -translate-y-[71%] object-cover object-[50%_71%]"
-        src={`${import.meta.env.BASE_URL}assets/hero.webp`}
+        src={`${MEDIA_BASE}/assets/hero.webp`}
         alt="Over a hundred UDSF members at GEC Wayanad posing together on a hilltop with KSU and MSF flags"
         width={1440}
         height={1170}

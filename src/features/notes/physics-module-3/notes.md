@@ -57,7 +57,7 @@ At $0\ \text{K}$ every valence electron is held in its bond. In terms of bands, 
 
 As the temperature rises, the lattice vibrates and some electrons get enough thermal energy to **break their covalent bond**. The energy needed is the band gap: about $1.1\ \text{eV}$ for silicon and $0.66\ \text{eV}$ for germanium. A freed electron moves almost freely through the spaces between the atoms. It has become a **conduction electron**. In terms of bands, the electron has jumped from the valence band to the conduction band.
 
-![Germanium lattice at T > 0 K with a broken covalent bond, a free electron and a vacancy, beside the band diagram with E_C, E_F and E_V](/notes/cse/s1/physics/module-3/germanium-lattice-bands.webp)
+![Germanium lattice at T > 0 K with a broken covalent bond, a free electron and a vacancy, beside the band diagram with E_C, E_F and E_V](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/germanium-lattice-bands.webp)
 
 Thermal energy is shared randomly, so at room temperature ($kT\approx0.026\ \text{eV}$) only a tiny fraction of bonds are broken at any moment. That is why the result depends so strongly on temperature, and why the number of carriers depends exponentially on $E_g/kT$.
 
@@ -239,7 +239,7 @@ $$
 
 Then add up (integrate) over the whole conduction band, from its bottom $E_c$ to $\infty$. The upper limit $\infty$ is not literally the top of the band. It is used because, as we will see, the occupation probability falls so fast with energy that states more than a few $kT$ above $E_c$ contribute nothing, and extending the integral to infinity makes it easy to calculate without changing the answer.
 
-![Band diagram of an intrinsic semiconductor: conduction band from E_C upwards, valence band below E_V, Fermi level between](/notes/cse/s1/physics/module-3/intrinsic-bands.webp)
+![Band diagram of an intrinsic semiconductor: conduction band from E_C upwards, valence band below E_V, Fermi level between](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/intrinsic-bands.webp)
 
 ## Step 1: the two ingredients
 
@@ -504,7 +504,7 @@ The law holds for intrinsic **and** extrinsic semiconductors, because the deriva
 
 At room temperature, $n_i\approx1.5\times10^{16}\ \text{m}^{-3}$ for silicon and $2.5\times10^{19}\ \text{m}^{-3}$ for germanium. The smaller gap of germanium gives it over a thousand times more intrinsic carriers. Compare these with the roughly $5\times10^{28}$ atoms per cubic metre in the crystal: in silicon at room temperature, with two bonds per atom, only about one bond in $10^{13}$ is broken.
 
-![Intrinsic carrier concentration of silicon and germanium against temperature on a log scale](/notes/cse/s1/physics/module-3/ni-vs-temperature.webp)
+![Intrinsic carrier concentration of silicon and germanium against temperature on a log scale](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/ni-vs-temperature.webp)
 
 ## A straight-line test
 
@@ -553,7 +553,7 @@ How an n-type semiconductor behaves with temperature:
 
 Electrons far outnumber holes, so **electrons are the majority carriers** and **holes are the minority carriers** (the few holes come from thermal generation). Hence the name **n-type** (negative carriers).
 
-![n-type semiconductor: donor energy level just below the conduction band, donor electrons excited into the conduction band](/notes/cse/s1/physics/module-3/n-type-bands.webp)
+![n-type semiconductor: donor energy level just below the conduction band, donor electrons excited into the conduction band](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/n-type-bands.webp)
 
 ## p-type semiconductors
 
@@ -572,13 +572,13 @@ How a p-type semiconductor behaves with temperature:
 
 Holes far outnumber electrons, so **holes are the majority carriers** and **electrons are the minority carriers**. Hence **p-type** (positive carriers).
 
-![p-type semiconductor: acceptor level just above the valence band, holes in the valence band](/notes/cse/s1/physics/module-3/p-type-bands.webp)
+![p-type semiconductor: acceptor level just above the valence band, holes in the valence band](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/p-type-bands.webp)
 
 ## Three temperature regimes
 
 The temperature behaviour described above has three clear stages, shown here for n-type silicon with $10^{15}$ donors per $\text{cm}^3$.
 
-![Electron density in n-type silicon against temperature: freeze-out below about 100 K, extrinsic plateau where n equals N_D, and the intrinsic region above about 600 K where n follows n_i](/notes/cse/s1/physics/module-3/extrinsic-temperature-regimes.webp)
+![Electron density in n-type silicon against temperature: freeze-out below about 100 K, extrinsic plateau where n equals N_D, and the intrinsic region above about 600 K where n follows n_i](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/extrinsic-temperature-regimes.webp)
 
 1. **Freeze-out (low temperature).** There is too little thermal energy even to ionise the donors. Most donor electrons are "frozen" in $E_D$, and $n$ increases rapidly as the temperature increases.
 2. **Extrinsic or saturation region (roughly $100$ to $500\ \text{K}$ for this doping).** All donors are ionised, so $n\approx N_D$, and $n_i$ is still far below $N_D$. The carrier density is **constant**, independent of temperature. Devices are designed to work in this flat region, and this is why doping gives stable conductivity.
@@ -752,7 +752,7 @@ $$
 - **Extrinsic region.** With $p\approx N_A$ fixed, $E_F-E_v=kT\ln(N_v/N_A)$ increases with $T$, so the Fermi level keeps **rising**, roughly linearly.
 - **High temperatures.** Above $T_i$ the material is intrinsic and $E_{Fp}=E_{Fi}$, at mid-gap.
 
-![Fermi level against temperature: falling from near E_C towards mid-gap in n-type, rising from near E_V in p-type](/notes/cse/s1/physics/module-3/fermi-level-vs-temperature.webp)
+![Fermi level against temperature: falling from near E_C towards mid-gap in n-type, rising from near E_V in p-type](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/fermi-level-vs-temperature.webp)
 
 ## Effect of doping level
 
@@ -847,7 +847,7 @@ The p-side has many holes and few electrons. The n-side has many electrons and f
 3. **A region without mobile carriers.** A thin region on both sides of the junction is left **without mobile carriers**. This is the **depletion region** (depleted of carriers). It is about $1\ \mu\text{m}$ wide, narrower for heavier doping, and because it has no free carriers, it behaves like an **insulator**.
 4. **Uncovered ions.** What is left in the depletion region are the **fixed ions**. On the p-side, each acceptor that has lost its hole is now an uncovered **negative** ion. On the n-side, each donor that has lost its electron is an uncovered **positive** ion. These ions cannot move, so the depletion region has a net charge on each side and is also called the **space charge region**. The total charge on the two sides is equal and opposite.
 
-![p-n junction: negative acceptor ions and holes on the p-side, positive donor ions and free electrons on the n-side, the depletion layer, and the barrier potential](/notes/cse/s1/physics/module-3/pn-junction-depletion.webp)
+![p-n junction: negative acceptor ions and holes on the p-side, positive donor ions and free electrons on the n-side, the depletion layer, and the barrier potential](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/pn-junction-depletion.webp)
 
 ## Barrier potential
 
@@ -876,7 +876,7 @@ Movement caused by an electric field is called **drift**, and this flow is the *
 
 Before contact, the n-side bands sit **lower** in energy than the p-side bands, because the Fermi level of n-type is near its conduction band and that of p-type is near its valence band. When high-energy electrons cross from n to p, the n-side loses negative charge and becomes positive, which lowers the electron energy there. So the n-side bands move **down** relative to the p-side. Equilibrium is reached when the **Fermi levels on the two sides are equal**.
 
-![Energy band diagram of a p-n junction at equilibrium: bands bend down from the p region to the n region across the depletion region](/notes/cse/s1/physics/module-3/pn-junction-bands.webp)
+![Energy band diagram of a p-n junction at equilibrium: bands bend down from the p region to the n region across the depletion region](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/pn-junction-bands.webp)
 
 - The bands now **bend** across the depletion region. An electron in the n-side conduction band has to climb an **energy hill** of height $eV_0$ to reach the p-side. A hole on the p-side faces the same hill, upside down, to reach the n-side (for holes, energy increases **downwards** on the diagram).
 - Both the conduction band and the valence band shift by the same amount, so the **band gap is unchanged** on each side: it still takes the same energy for a valence electron to become a free electron.
@@ -885,7 +885,7 @@ Before contact, the n-side bands sit **lower** in energy than the p-side bands, 
 
 Before contact, the Fermi level of the n-type material is near its conduction band and that of the p-type is near its valence band. The Fermi level behaves like a "level" of electron energy, in the same way that water finds a common level in connected tanks or heat flows until temperatures are equal. In a system in **thermal equilibrium** it must be the **same everywhere**. If it were higher on one side, electrons there would have more states occupied at a given energy than on the other side and would flow across until the difference disappears. So electrons flow from the side with the higher Fermi level (n) to the side with the lower one (p) until the two match, and the band edges in the two regions shift to make this alignment possible.
 
-![Common Fermi level across a p-n junction, with electron and hole diffusion and drift currents in the depletion region](/notes/cse/s1/physics/module-3/pn-junction-currents.webp)
+![Common Fermi level across a p-n junction, with electron and hole diffusion and drift currents in the depletion region](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/pn-junction-currents.webp)
 
 > **Note on the source.** The lecture notes described the electron flow as continuing "until the top of the conduction band of the n-region aligns with the bottom of the conduction band of the p-region". The correct condition is that the **Fermi levels** align. The conduction band edges then differ by $eV_0$, as the band diagram shows.
 
@@ -905,7 +905,7 @@ Applying an external voltage across the junction is called biasing. The external
 
 > **Forward bias.** The **p-side** is connected to the **positive** terminal and the **n-side** to the **negative** terminal.
 
-![Forward-biased p-n junction with a thin depletion layer, and the equivalent circuit of a conducting diode](/notes/cse/s1/physics/module-3/forward-bias.webp)
+![Forward-biased p-n junction with a thin depletion layer, and the equivalent circuit of a conducting diode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/forward-bias.webp)
 
 What happens, step by step:
 
@@ -926,7 +926,7 @@ What happens in the external circuit:
 
 > **Reverse bias.** The **p-side** is connected to the **negative** terminal and the **n-side** to the **positive** terminal.
 
-![Reverse-biased p-n junction with a wide depletion layer, and the equivalent circuit of a blocking diode](/notes/cse/s1/physics/module-3/reverse-bias.webp)
+![Reverse-biased p-n junction with a wide depletion layer, and the equivalent circuit of a blocking diode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/reverse-bias.webp)
 
 What happens:
 
@@ -1081,7 +1081,7 @@ $$
 I=I_s\left(e^{V/\eta V_T}-1\right)
 $$
 
-![Ideal diode equation: exponential forward current, and reverse current saturating at minus I_s](/notes/cse/s1/physics/module-3/ideal-diode-curve.webp)
+![Ideal diode equation: exponential forward current, and reverse current saturating at minus I_s](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/ideal-diode-curve.webp)
 
 ## Temperature and the saturation current
 
@@ -1097,7 +1097,7 @@ $I_s$ is carried by minority carriers, whose density is $n_i^2/N_A$ or $n_i^2/N_
 
 A **V-I characteristic** (volt-ampere characteristic) is a graph of the current through a device against the voltage across it. For a p-n junction diode it has three regions.
 
-![V-I characteristic of a p-n junction diode, with forward current in mA, reverse current in microamperes, the barrier voltage and the breakdown voltage](/notes/cse/s1/physics/module-3/diode-vi-characteristic.webp)
+![V-I characteristic of a p-n junction diode, with forward current in mA, reverse current in microamperes, the barrier voltage and the breakdown voltage](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/physics/module-3/diode-vi-characteristic.webp)
 
 ## How the graph is measured
 

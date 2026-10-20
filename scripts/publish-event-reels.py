@@ -28,14 +28,14 @@ for asset in output.glob('reel-*'):
 def publish(review):
     record = inventory[review['id']]
     ident = record['id']
-    video = output / f'{ident}.mp4'
+    video = output / f'{ident}.webm'
     poster = output / f'{ident}.webp'
     if not video.exists():
-        subprocess.run([ffmpeg, '-v', 'error', '-y', '-threads', '1', '-i', record['source'], '-map', '0:v:0', '-map', '0:a:0?', '-vf', 'scale=720:720:force_original_aspect_ratio=decrease:force_divisible_by=2', '-c:v', 'libx264', '-preset', 'fast', '-crf', '28', '-pix_fmt', 'yuv420p', '-threads', '2', '-c:a', 'aac', '-b:a', '80k', '-movflags', '+faststart', str(video)], check=True)
+        subprocess.run([ffmpeg, '-v', 'error', '-y', '-threads', '1', '-i', record['source'], '-map', '0:v:0', '-map', '0:a:0?', '-vf', 'scale=720:720:force_original_aspect_ratio=decrease:force_divisible_by=2', '-c:v', 'libvpx-vp9', '-crf', '38', '-b:v', '0', '-deadline', 'good', '-cpu-used', '6', '-row-mt', '1', '-pix_fmt', 'yuv420p', '-threads', '2', '-c:a', 'libopus', '-b:a', '64k', '-cues_to_front', '1', str(video)], check=True)
     frame = first[ident]['posterFrame']
     if not poster.exists():
         subprocess.run([ffmpeg, '-v', 'error', '-y', '-i', record['frames'][frame], '-frames:v', '1', '-c:v', 'libwebp', '-quality', '82', str(poster)], check=True)
-    post = dict(id=ident, title=review['title'], caption=record['caption'] or review['summary'], date=record['date'], image=f'/event-reels/{ident}.webp', video=f'/event-reels/{ident}.mp4', category='events_programs')
+    post = dict(id=ident, title=review['title'], caption=record['caption'] or review['summary'], date=record['date'], image=f'/event-reels/{ident}.webp', video=f'/event-reels/{ident}.webm', category='events_programs')
     if record.get('subtitles', '').strip():
         text = record['subtitles'].lstrip('\ufeff').replace('\r\n', '\n')
         text = re.sub(r'(\d{2}:\d{2}:\d{2}),(\d{3})', r'\1.\2', text)

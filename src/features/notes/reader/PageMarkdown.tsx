@@ -1,3 +1,5 @@
+import { mediaPath } from "@/lib/media";
+import { MEDIA_DIMENSIONS } from "@/data/media-dimensions";
 import { isValidElement, memo } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
@@ -32,7 +34,7 @@ const highlightPlugins: NonNullable<Parameters<typeof ReactMarkdown>[0]["rehypeP
 ];
 const allPlugins = [...mathPlugins, ...highlightPlugins];
 const noPlugins: typeof mathPlugins = [];
-const diagramDimensions = { ...module3DiagramDimensions, ...module4DiagramDimensions };
+const diagramDimensions = { ...MEDIA_DIMENSIONS, ...module3DiagramDimensions, ...module4DiagramDimensions };
 
 type HastNode = {
   type: string;
@@ -90,13 +92,14 @@ const components: Components = {
     );
   },
   img({ src, alt }) {
+    const localPath = typeof src === "string" ? mediaPath(src) : undefined;
     const moduleDiagram = typeof src === "string" && (
-      /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.svg$/.test(src)
-      || /^\/notes\/cse\/s1\/chemistry\/module-1\/assets\/.*-clean\.webp$/.test(src)
-      || /^\/notes\/cse\/s1\/chemistry\/module-2\/assets\/.*\.svg$/.test(src)
-      || /^\/notes\/cse\/s1\/chemistry\/module-3\/assets\/.*-clean\.svg$/.test(src)
+      /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.webp$/.test(localPath!)
+      || /^\/notes\/cse\/s1\/chemistry\/module-1\/assets\/.*-clean\.webp$/.test(localPath!)
+      || /^\/notes\/cse\/s1\/chemistry\/module-2\/assets\/.*\.webp$/.test(localPath!)
+      || /^\/notes\/cse\/s1\/chemistry\/module-3\/assets\/.*-clean\.webp$/.test(localPath!)
     );
-    const dimensions = typeof src === "string" ? diagramDimensions[src] : undefined;
+    const dimensions = typeof src === "string" ? diagramDimensions[localPath!] : undefined;
     return <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
   },
   p({ node, children }) {

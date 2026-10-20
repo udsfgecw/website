@@ -18,11 +18,14 @@ for (const reel of reels) {
   assert.ok((await stat(videoPath)).size > 0);
   assert.ok((await stat(path.join(root, 'public', reel.image))).size > 0);
   const video = await readFile(videoPath);
-  assert.ok(video.indexOf('moov') > 0 && video.indexOf('moov') < video.indexOf('mdat'), 'Playback metadata must precede media for fast startup');
+  assert.deepEqual([...video.subarray(0, 4)], [0x1a, 0x45, 0xdf, 0xa3], 'Expected WebM container');
+  const cues = video.indexOf(Buffer.from([0x1c, 0x53, 0xbb, 0x6b]));
+  const cluster = video.indexOf(Buffer.from([0x1f, 0x43, 0xb6, 0x75]));
+  assert.ok(cues > 0 && cues < cluster, 'Seek index should precede media');
   const range = await fetch(base + reel.video, { headers: { Range: 'bytes=0-511' } });
   assert.equal(range.status, 206, 'Video seeking requires range requests');
-  assert.match(range.headers.get('content-type'), /video\/mp4/);
+  assert.match(range.headers.get('content-type'), /video\/webm/);
   assert.equal((await range.arrayBuffer()).byteLength, 512);
   if (reel.subtitles) assert.ok((await readFile(path.join(root, 'public', reel.subtitles), 'utf8')).startsWith('WEBVTT\n'));
 }
-console.log(`Passed: ${reels.length} approved event reels, posters, fast-start metadata, video range requests and available subtitle tracks.`);
+console.log(`Passed: ${reels.length} approved event reels, posters, WebM seek indexes, video range requests and available subtitle tracks.`);

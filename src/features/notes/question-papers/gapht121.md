@@ -2,7 +2,7 @@
 
 KTU 2024 Scheme · CSE · Semester 1. Questions are grouped by module, year and question number. Worked answers follow each question; consult the originals for figures.
 
-**Original papers:** [December 2024 PDF](/notes/cse/s1/question-papers/assets/GAPHT121_2024.pdf) · [May 2025 PDF](/notes/cse/s1/question-papers/assets/GAPHT121_2025.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-physics-for-information-science-gapht121-question-papers-2024-scheme/)
+**Original papers:** [December 2024 PDF](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/question-papers/assets/GAPHT121_2024.pdf) · [May 2025 PDF](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/question-papers/assets/GAPHT121_2025.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-physics-for-information-science-gapht121-question-papers-2024-scheme/)
 
 **Paper total:** 60 marks. Marks beside each listed question or part are copied from the linked original paper.
 

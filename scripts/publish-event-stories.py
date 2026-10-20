@@ -46,18 +46,18 @@ posts = []
 for story in STORIES:
     source = find(story['source'])
     ident = f'story-{source.stem}'
-    video, poster = output / f'{ident}.mp4', output / f'{ident}.webp'
+    video, poster = output / f'{ident}.webm', output / f'{ident}.webp'
     if not video.exists():
         subprocess.run([ffmpeg, '-v', 'error', '-y', '-i', str(source), '-map', '0:v:0', '-map', '0:a:0?',
                         '-vf', 'scale=720:720:force_original_aspect_ratio=decrease:force_divisible_by=2',
-                        '-c:v', 'libx264', '-preset', 'fast', '-crf', '28', '-pix_fmt', 'yuv420p',
-                        '-c:a', 'aac', '-b:a', '80k', '-movflags', '+faststart', str(video)], check=True)
+                        '-c:v', 'libvpx-vp9', '-crf', '38', '-b:v', '0', '-deadline', 'good', '-cpu-used', '6', '-row-mt', '1', '-pix_fmt', 'yuv420p',
+                        '-c:a', 'libopus', '-b:a', '64k', '-cues_to_front', '1', str(video)], check=True)
     if not poster.exists():
         subprocess.run([ffmpeg, '-v', 'error', '-y', '-ss', str(story['poster']), '-i', str(source), '-frames:v', '1',
                         '-vf', 'scale=512:512:force_original_aspect_ratio=decrease',
                         '-c:v', 'libwebp', '-quality', '82', str(poster)], check=True)
     posts.append(dict(id=ident, title=story['title'], caption=story['caption'], date=story['date'],
-                      image=f'/event-stories/{ident}.webp', video=f'/event-stories/{ident}.mp4',
+                      image=f'/event-stories/{ident}.webp', video=f'/event-stories/{ident}.webm',
                       category='events_programs'))
     print(f'Published {ident}: {story["title"]}', flush=True)
 

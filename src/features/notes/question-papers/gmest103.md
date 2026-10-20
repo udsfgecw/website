@@ -2,7 +2,7 @@
 
 KTU 2024 Scheme · CSE · Semester 1. Questions are arranged by module and year. Worked answers give the drawing sequence and checks; use the original paper PDF for the exact layout and figure.
 
-**Original papers:** [December 2024 PDF](/notes/cse/s1/question-papers/assets/GMEST103_2024.pdf) · [December 2025 PDF](/notes/cse/s1/question-papers/assets/GMEST103_2025.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-engineering-graphics-cad-question-papers-2024-scheme)
+**Original papers:** [December 2024 PDF](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/question-papers/assets/GMEST103_2024.pdf) · [December 2025 PDF](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/question-papers/assets/GMEST103_2025.pdf) · [KTU Notes archive](https://ktunotes.in/ktu-engineering-graphics-cad-question-papers-2024-scheme)
 
 **Paper total:** 60 marks. Marks beside each listed question or part are copied from the linked original paper.
 

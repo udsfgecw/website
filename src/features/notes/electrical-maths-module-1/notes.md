@@ -618,7 +618,7 @@ At the end of the Gauss elimination (before the back substitution), the row eche
 
 
 
-![Row echelon form of an augmented matrix showing zero regions](/notes/shared/gymat101/module-1/row-echelon-form.png)
+![Row echelon form of an augmented matrix showing zero regions](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/shared/gymat101/module-1/row-echelon-form.webp)
 
 
 

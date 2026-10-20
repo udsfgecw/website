@@ -136,7 +136,7 @@ Core execution steps:
 3. Identify, prioritize, and select alternative solutions.
 4. Implement and verify the chosen solution.
 
-![Problem Solving Chart showing a 4-step process: Understand -> Plan -> Solve -> Check](/notes/cse/s1/python/module-1/assets/page-002-image-1.png)
+![Problem Solving Chart showing a 4-step process: Understand -> Plan -> Solve -> Check](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-002-image-1.webp)
 
 ### Polya's Four Phases of Problem Solving
 
@@ -307,7 +307,7 @@ Rules:
 2. Each move transfers only the uppermost disk from one rod to another.
 3. A larger disk may never be placed on top of a smaller disk.
 
-![Tower of Hanoi initial state with three disks on rod A](/notes/cse/s1/python/module-1/assets/page-008-image-1-code.svg)
+![Tower of Hanoi initial state with three disks on rod A](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-008-image-1-code.webp)
 
 **Fig 1: Initial State**
 
@@ -328,13 +328,13 @@ S3 --> S4["4 · Move N−1 disks recursively from auxiliary to destination"]
 
 *Tower of Hanoi for $n = 3$:*
 
-![Example of Tower of Hanoi for n=3 showing 8 states from 0 to 7](/notes/cse/s1/python/module-1/assets/page-009-image-2-code.svg)
+![Example of Tower of Hanoi for n=3 showing 8 states from 0 to 7](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-009-image-2-code.webp)
 
 Minimum number of moves with 3 disks = $2^n-1 = 2^3-1 = 7$.
 
 *Tower of Hanoi for $n = 4$:*
 
-![Diagram showing the sequence of moves for the Tower of Hanoi problem with 4 disks.](/notes/cse/s1/python/module-1/assets/page-010-image-1-code.svg)
+![Diagram showing the sequence of moves for the Tower of Hanoi problem with 4 disks.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-010-image-1-code.webp)
 
 Minimum number of moves with 4 disks = $ 2^n - 1 = 2^4 - 1 = 15$.
 
@@ -442,7 +442,7 @@ To find the number that produces 32 when added to 15:
 
 **Tower of Hanoi (Formal Recurrence)**
 
-![Tower of Hanoi initial state with three vertical rods on a base plate and three stacked disks on the leftmost rod.](/notes/cse/s1/python/module-1/assets/page-010-image-1.png)
+![Tower of Hanoi initial state with three vertical rods on a base plate and three stacked disks on the leftmost rod.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-010-image-1.webp)
 
 **Fig 1: Initial State**
 
@@ -456,15 +456,15 @@ The minimal move sequence is governed by $2^N - 1$, where $N$ represents disk co
 
 The step-by-step recursive breakdown for $N=4$ disks is illustrated below:
 
-![Pictorial representation of the recursive procedure for N=4 disks in Tower of Hanoi](/notes/cse/s1/python/module-1/assets/page-011-image-1-Imagen.png)
+![Pictorial representation of the recursive procedure for N=4 disks in Tower of Hanoi](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-011-image-1-Imagen.webp)
 
 Tower of Hanoi solutions for small disk sets:
 
-![Tower of Hanoi solution steps for n=3](/notes/cse/s1/python/module-1/assets/page-012-image-1-Imagen.png)
+![Tower of Hanoi solution steps for n=3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-012-image-1-Imagen.webp)
 
 Minimum moves for 3 disks = $2^n-1= 2^3-1=7$.
 
-![Tower of Hanoi solution steps for n=4](/notes/cse/s1/python/module-1/assets/page-012-image-2-Imagen.png)
+![Tower of Hanoi solution steps for n=4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-012-image-2-Imagen.webp)
 
 Minimum moves for 4 disks = $2^n-1= 2^4-1=15$.
 
@@ -480,7 +480,7 @@ Minimum moves for 4 disks = $2^n-1= 2^4-1=15$.
 
 **State-Space Search Backtracking**
 
-![Backtracking search tree diagram showing start node X branching to A and D, A branching to B and C (both dead ends), D branching to E (dead end) and F, and F branching to G (Success node).](/notes/cse/s1/python/module-1/assets/page-014-image-1-Imagen.png)
+![Backtracking search tree diagram showing start node X branching to A and D, A branching to B and C (both dead ends), D branching to E (dead end) and F, and F branching to G (Success node).](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-014-image-1-Imagen.webp)
 
 In systematic state-space exploration, whenever a path hits a dead end, execution rolls back to the most recent decision point to test alternative branches.
 
@@ -656,7 +656,7 @@ The initial phase focuses on determining input requirements, output goals, and p
 
 ### Von Neumann Architecture
 
-![Block Diagram of a Digital Computer showing Von Neumann Architecture](/notes/cse/s1/python/module-1/assets/page-016-image-1.png)
+![Block Diagram of a Digital Computer showing Von Neumann Architecture](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-016-image-1.webp)
 
 *Block Diagram of a Digital Computer*
 
@@ -731,7 +731,7 @@ The CPU processes instructions using two functional units and dedicated register
 
 **Memory System Hierarchy**
 
-![Memory Hierarchy pyramid](/notes/cse/s1/python/module-1/assets/page-020-image-1.png)
+![Memory Hierarchy pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-020-image-1.webp)
 
 *Memory Hierarchy*
 
@@ -1149,7 +1149,7 @@ print(d)
 
 Verification suite:
 
-![Table 1.2 showing test cases with columns Sl No, a, b, c, and d](/notes/cse/s1/python/module-1/assets/page-029-image-1.png)
+![Table 1.2 showing test cases with columns Sl No, a, b, c, and d](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-029-image-1.webp)
 
 ### Language Architecture and Type Checking
 
@@ -1159,7 +1159,7 @@ $$
 1010 \underbrace{0011}_{\text{add}} \underbrace{0110}_{3} \underbrace{\quad}_{6}
 $$
 
-![Binary code breakdown for addition showing opcode and operands](/notes/cse/s1/python/module-1/assets/page-030-image-1.png)
+![Binary code breakdown for addition showing opcode and operands](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-030-image-1.webp)
 
 In high-level languages, addition is written concisely as $3+6$.
 
@@ -1316,7 +1316,7 @@ Python is a general-purpose, high-level, interpreted programming language create
 
 ### Feature Overview
 
-![Features of Python list of 14 points arranged in two columns of rounded rectangular buttons](/notes/cse/s1/python/module-1/assets/page-032-image-1.png)
+![Features of Python list of 14 points arranged in two columns of rounded rectangular buttons](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-032-image-1.webp)
 
 ### Application Domains
 
@@ -1336,7 +1336,7 @@ Python programs are commonly executed via the interactive interpreter prompt or 
 
 #### Python Interactive Shell
 
-![Command prompt window showing Python 3.8.3 interactive session executing print statements](/notes/cse/s1/python/module-1/assets/page-033-image-1.png)
+![Command prompt window showing Python 3.8.3 interactive session executing print statements](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-033-image-1.webp)
 
 The Python shell provides direct, interactive evaluation of language statements. Starting `python3` displays initial environment details followed by the primary shell prompt:
 
@@ -1354,9 +1354,9 @@ The prompt symbol `>>>` awaits input commands:
 
 Script files allow saving multiple lines of Python instructions into `.py` files for batch execution.
 
-![Example code block showing First.py content](/notes/cse/s1/python/module-1/assets/page-034-image-1.png)
+![Example code block showing First.py content](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-034-image-1.webp)
 
-![Output block showing execution of First.py](/notes/cse/s1/python/module-1/assets/page-034-image-2.png)
+![Output block showing execution of First.py](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-034-image-2.webp)
 
 #### Script Execution Steps
 
@@ -1558,7 +1558,7 @@ flowchart LR
 
 Keywords carry reserved meaning within Python and cannot serve as identifiers or variable names.
 
-![Table of Python keywords](/notes/cse/s1/python/module-1/assets/page-036-image-2.png)
+![Table of Python keywords](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-036-image-2.webp)
 
 **Identifier Conventions**
 
@@ -1617,7 +1617,7 @@ Rules for forming identifiers:
 - Any other special characters or whitespaces are strictly prohibited.
 - An identifier cannot be a keyword.
 
-![Table of Valid and Invalid Identifiers](/notes/cse/s1/python/module-1/assets/page-037-image-1.png)
+![Table of Valid and Invalid Identifiers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-037-image-1.webp)
 
 ### Memory and Variable Concept
 
@@ -1625,7 +1625,7 @@ Rules for forming identifiers:
 
 A variable is a named memory location used to store program values. It serves as an identifier referring to a specific memory location. In Python, assigning any value automatically declares the variable without needing explicit type declarations.
 
-![Diagram showing rules to declare a variable in python](/notes/cse/s1/python/module-1/assets/page-037-image-2.png)
+![Diagram showing rules to declare a variable in python](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-037-image-2.webp)
 
 ### Variable Demonstration
 
@@ -1736,7 +1736,7 @@ Python provides three numeric data types:
 2. `float`
 3. `complex`
 
-![Table explaining int, float, and complex numeric datatypes with examples](/notes/cse/s1/python/module-1/assets/page-039-image-2.png)
+![Table explaining int, float, and complex numeric datatypes with examples](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-039-image-2.webp)
 
 **Example Program**
 
@@ -2189,7 +2189,7 @@ The `math.sqrt()` function calculates and returns the square root of a given num
 
 An escape sequence begins with a backslash (`\`) followed by a character to produce a non-standard interpretation. For example, `\r` moves the cursor to the beginning of the line without advancing downward; `\b` moves the cursor back one space to overwrite the preceding character; and `\f` advances to a form feed or page break in supporting consoles.
 
-![Table of escape sequence codes and their results](/notes/cse/s1/python/module-1/assets/page-041-image-1.png)
+![Table of escape sequence codes and their results](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-041-image-1.webp)
 
 **Example**
 
@@ -2224,13 +2224,13 @@ Sequences organize items into ordered indexed positions.
 
 A string consists of characters enclosed in quotes.
 
-![Python code and output showing the use of single, double, and triple quotes for strings](/notes/cse/s1/python/module-1/assets/page-042-image-1.png)
+![Python code and output showing the use of single, double, and triple quotes for strings](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-042-image-1.webp)
 
 **List Mutability**
 
 A list maintains mutable ordered items in square brackets.
 
-![Python code and output demonstrating the creation of a blank list and a list of numbers](/notes/cse/s1/python/module-1/assets/page-042-image-2.png)
+![Python code and output demonstrating the creation of a blank list and a list of numbers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-042-image-2.webp)
 
 **Tuple Immutability**
 
@@ -3481,7 +3481,7 @@ False
 
 When an expression or statement involves multiple operators then it will be resolve using the following operator precedence chart :
 
-![Python Operator Precedence Table](/notes/cse/s1/python/module-1/assets/page-058-image-1.png)
+![Python Operator Precedence Table](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-058-image-1.webp)
 
 Example 5.4. Consider the assignment statement
 
@@ -3527,7 +3527,7 @@ $$
 R = A + 3 < B * 1 \text{ or } C \text{ and } D
 $$
 
-![Expression evaluation tree and corresponding table of operations](/notes/cse/s1/python/module-1/assets/page-059-image-1.png)
+![Expression evaluation tree and corresponding table of operations](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-059-image-1.webp)
 
 | Order | Operation | Resultant |
 | :---: | :---: | :---: |

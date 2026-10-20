@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { MEDIA_BASE } from "@/lib/media";
 
 const LINKS = [
   ["/#work", "What we do"],
@@ -57,7 +58,7 @@ export default function Nav() {
         </button>
 
         <Link to="/" aria-label="UDSF GECW home" className="justify-self-center">
-          <img className="size-7 rounded-[6px]" src={`${import.meta.env.BASE_URL}assets/logo-96.webp`} alt="" width={28} height={28} />
+          <img className="size-7 rounded-[6px]" src={`${MEDIA_BASE}/assets/logo-96.webp`} alt="" width={28} height={28} />
         </Link>
 
         <Link to="/notes" className={cn(link, "justify-self-end")}>

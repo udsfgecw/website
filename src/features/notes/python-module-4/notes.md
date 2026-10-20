@@ -42,9 +42,9 @@ A **brute-force** (or **exhaustive search**) algorithm takes the most direct rou
 
 A padlock has a 4-digit code. Brute force tries 0000, 0001, 0002, and so on up to 9999. An $n$-digit lock has $10^n$ combinations, so the 4-digit lock has $10^4 = 10{,}000$.
 
-[![Combinations 0000 to 9999 tried in order; the worst case is the last try.](/notes/cse/s1/python/module-4/assets/brute-force-padlock.svg)](/notes/cse/s1/python/module-4/assets/brute-force-padlock.svg)
+[![Combinations 0000 to 9999 tried in order; the worst case is the last try.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/brute-force-padlock.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/brute-force-padlock.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-4/assets/brute-force-padlock.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/brute-force-padlock.webp)
 
 ```python
 def crack_lock(secret, digits=4):
@@ -69,9 +69,9 @@ Divide and conquer solves a problem in three steps.
 2. **Conquer.** Solve each sub-problem. This is normally done by **recursion**, which stops at a **base case**: a sub-problem so small that it is solved with basic operations and not divided further.
 3. **Combine.** Use the solutions of the sub-problems to build the solution of the original problem.
 
-[![A problem divides into two sub-problems, each is solved recursively, and the results are combined.](/notes/cse/s1/python/module-4/assets/divide-conquer.svg)](/notes/cse/s1/python/module-4/assets/divide-conquer.svg)
+[![A problem divides into two sub-problems, each is solved recursively, and the results are combined.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/divide-conquer.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/divide-conquer.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-4/assets/divide-conquer.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/divide-conquer.webp)
 
 ### Recursion in divide and conquer
 
@@ -85,9 +85,9 @@ Merge sort follows the pattern exactly. To sort $n$ elements:
 2. **Conquer** by sorting each subsequence recursively. A sequence of one element is already sorted (the base case).
 3. **Combine** by merging the two sorted subsequences into one sorted sequence.
 
-[![Merge sort on 7, 6, 1, 5, 4, 3: split down to single elements, then merge back up to 1, 3, 4, 5, 6, 7.](/notes/cse/s1/python/module-4/assets/merge-sort-tree.svg)](/notes/cse/s1/python/module-4/assets/merge-sort-tree.svg)
+[![Merge sort on 7, 6, 1, 5, 4, 3: split down to single elements, then merge back up to 1, 3, 4, 5, 6, 7.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/merge-sort-tree.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/merge-sort-tree.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-4/assets/merge-sort-tree.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/merge-sort-tree.webp)
 
 ```python
 def merge_sort(items):
@@ -148,9 +148,9 @@ $$
 
 Plain recursion recomputes values such as $F(2)$ many times. DP computes each value once and reads earlier results from the table.
 
-[![The recursion tree for F(4) repeats F(2); a table computes F(0) to F(4) once each.](/notes/cse/s1/python/module-4/assets/fibonacci-dp.svg)](/notes/cse/s1/python/module-4/assets/fibonacci-dp.svg)
+[![The recursion tree for F(4) repeats F(2); a table computes F(0) to F(4) once each.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/fibonacci-dp.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/fibonacci-dp.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-4/assets/fibonacci-dp.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/fibonacci-dp.webp)
 
 ```python
 def fib_table(n):
@@ -226,9 +226,9 @@ print(select_activities(activities))  # [(1, 4), (5, 7), (8, 9)]
 
 With coins of value 1, 3 and 4, making 6 greedily takes 4 then 1 then 1: **three** coins. The optimum is 3 + 3: **two** coins. The first choice looked best but ruined the rest.
 
-[![For 6 with coins 1, 3, 4, greedy uses 4+1+1 (three coins) but 3+3 (two coins) is optimal.](/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.svg)](/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.svg)
+[![For 6 with coins 1, 3, 4, greedy uses 4+1+1 (three coins) but 3+3 (two coins) is optimal.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.webp)
 
 ### Greedy versus dynamic programming
 
@@ -292,9 +292,9 @@ print(simulate_coupon_collector(10, 10000))  # about 29.3 (varies from run to ru
 
 The exact expected value is $n\left(1 + \tfrac12 + \dots + \tfrac1n\right)$, which is about 29.29 for $n = 10$. More trials bring the estimate closer to it.
 
-[![The running average of simulated trials settles near the expected value of 29.29.](/notes/cse/s1/python/module-4/assets/randomized-convergence.svg)](/notes/cse/s1/python/module-4/assets/randomized-convergence.svg)
+[![The running average of simulated trials settles near the expected value of 29.29.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/randomized-convergence.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/randomized-convergence.webp)
 
-[Open full-size SVG](/notes/cse/s1/python/module-4/assets/randomized-convergence.svg)
+[Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/randomized-convergence.webp)
 
 ### Example 2: hat check
 

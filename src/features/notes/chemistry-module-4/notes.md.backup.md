@@ -551,20 +551,20 @@ It is important to distinguish between simple **water softening** and complete *
 #### 1. Cation exchange resins ($RH$)
 Cation exchangers contain acidic functional groups, typically formed by sulphonating a cross-linked styrene–divinylbenzene copolymer so that sulfonate groups ($-SO_3^-H^+$) are attached to the aromatic rings. In the hydrogen form, they release $H^+$ ions in exchange for cations in hard water.
 
-![Chemical structure of sulphonated styrene-divinylbenzene copolymer showing cross-linked aromatic rings with SO3-H+ groups](/notes/cse/s1/chemistry/module-4/assets/imagen-sulphonated-resin.png)
+![Chemical structure of sulphonated styrene-divinylbenzene copolymer showing cross-linked aromatic rings with SO3-H+ groups](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/imagen-sulphonated-resin.webp)
 *Figure 4.1: Structure of a sulphonated styrene–divinylbenzene cation-exchange resin with fixed $-SO_3^-$ groups and mobile $H^+$ counter-ions.*
 
 #### 2. Anion exchange resins ($R'OH$)
 Anion exchangers are synthesized by introducing basic functional groups—such as quaternary ammonium groups ($-N^+R_3OH^-$) or tertiary amine groups—onto the styrene–divinylbenzene copolymer backbone and treating the polymer with dilute $NaOH$. In the hydroxide form, they release $OH^-$ ions in exchange for anions in the water.
 
-![Chemical structure of quaternary ammonium styrene-divinylbenzene copolymer with N+R3 OH- groups](/notes/cse/s1/chemistry/module-4/assets/imagen-quaternary-ammonium-resin.png)
+![Chemical structure of quaternary ammonium styrene-divinylbenzene copolymer with N+R3 OH- groups](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/imagen-quaternary-ammonium-resin.webp)
 *Figure 4.2: Structure of a quaternary ammonium styrene–divinylbenzene anion-exchange resin with fixed $-N^+R_3$ groups and mobile $OH^-$ counter-ions.*
 
 ### The two-column demineralization process
 
 Complete deionization is carried out by passing raw hard water sequentially through two packed resin columns.
 
-![Schematic diagram of a two-column ion-exchange demineralization unit showing hard water entering the cation exchange bed, then the anion exchange bed, with acid and alkaline regenerators](/notes/cse/s1/chemistry/module-4/assets/page-011-image-1.png)
+![Schematic diagram of a two-column ion-exchange demineralization unit showing hard water entering the cation exchange bed, then the anion exchange bed, with acid and alkaline regenerators](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-011-image-1.webp)
 *Figure 4.3: Two-stage ion-exchange demineralization unit showing the cation-exchange bed followed by the anion-exchange bed and their respective acid and alkali regeneration lines.*
 
 1. **Passage through the cation-exchange column (CER):**
@@ -675,7 +675,7 @@ If an external hydrostatic pressure is applied to the concentrated saline side, 
 
 > **Watch out.** Do not compare osmotic pressure $\pi$ simply to absolute atmospheric pressure $P$. Reverse osmosis requires the applied **transmembrane pressure difference** ($\Delta P$) to exceed the osmotic pressure difference ($\Delta \pi$) plus hydraulic friction and membrane resistance losses so that a practical permeate flux is achieved.
 
-![Schematic of reverse osmosis showing external pressure applied via a piston to seawater, forcing water molecules through a semipermeable membrane into the fresh water compartment while rejecting salts.](/notes/cse/s1/chemistry/module-4/assets/page-015-image-2-Imagen.png)
+![Schematic of reverse osmosis showing external pressure applied via a piston to seawater, forcing water molecules through a semipermeable membrane into the fresh water compartment while rejecting salts.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-015-image-2-Imagen.webp)
 *Figure: Principle of reverse osmosis—applying a pressure greater than the osmotic pressure forces water from the concentrated salt solution through a semipermeable membrane.*
 
 ### Process steps and membrane materials
@@ -808,7 +808,7 @@ Monochloramine is a slower disinfectant than free $\text{HOCl}$, fails to oxidiz
 
 If increasing doses of chlorine are added to water containing reducing agents and ammonia, the measured total residual chlorine follows a characteristic four-stage curve known as the **breakpoint chlorination curve**.
 
-![Breakpoint chlorination curve plotting residual chlorine against applied chlorine dose across four distinct reaction zones](/notes/cse/s1/chemistry/module-4/assets/imagen-breakpoint-chlorination.png)
+![Breakpoint chlorination curve plotting residual chlorine against applied chlorine dose across four distinct reaction zones](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/imagen-breakpoint-chlorination.webp)
 *Figure: Breakpoint chlorination curve showing how measured chlorine residual changes with applied chlorine dose across four reaction stages.*
 
 | Curve region | Dominant chemical process | Residual behaviour |
@@ -1092,7 +1092,7 @@ Secondary biological sewage treatment relies on microorganisms to degrade dissol
 
 Despite its name, a trickling filter does not operate by physical straining or sieving. It is an **aerobic attached-growth biological reactor** in which microorganisms grow as a slimy biofilm (zoogleal film) on a fixed packing medium. Why use a packed bed with large voids? The wide spaces between the packing pieces allow air to circulate freely by natural draft or forced ventilation while wastewater trickles downward as a thin liquid film, ensuring simultaneous access to dissolved organic substrates and atmospheric oxygen.
 
-![Cross-sectional diagram of a trickling filter showing the rotating distributor arm, packing media bed, underdrain system, and effluent outlet.](/notes/cse/s1/chemistry/module-4/assets/page-026-image-1.png)
+![Cross-sectional diagram of a trickling filter showing the rotating distributor arm, packing media bed, underdrain system, and effluent outlet.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-026-image-1.webp)
 
 A typical trickling filter is a circular or rectangular bed (with depth selected for its media and loading) packed with high-surface-area materials such as crushed rocks, broken bricks, slag, or engineered plastic modules. Treatment proceeds through the following steps:
 
@@ -1112,7 +1112,7 @@ $$
 
 The UASB reactor is a high-rate **anaerobic biological treatment** system that operates without any oxygen supply or mechanical aeration. Why feed the wastewater from the bottom? Introducing liquid upward at a controlled hydraulic velocity brings the wastewater into contact with a retained sludge blanket while washing out treated water at the top, achieving intense contact between organic pollutants and microbes without mechanical mixing.
 
-![Schematic diagram of a UASB reactor showing bottom influent feed, anaerobic granular sludge blanket, biogas collector dome, and top effluent outlet.](/notes/cse/s1/chemistry/module-4/assets/page-027-image-1.png)
+![Schematic diagram of a UASB reactor showing bottom influent feed, anaerobic granular sludge blanket, biogas collector dome, and top effluent outlet.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-027-image-1.webp)
 
 Operation of a UASB reactor involves four main features:
 
@@ -1378,7 +1378,7 @@ Achieving sustainability requires integrating environmental protection, social e
 
 Sustainable decision-making balances three interconnected pillars. A project is truly sustainable only where all three overlap.
 
-![Venn diagram of the three pillars of sustainable development: Social, Environmental, and Economic, with their intersection labeled 'sustainable'.](/notes/cse/s1/chemistry/module-4/assets/page-051-image-1.png)
+![Venn diagram of the three pillars of sustainable development: Social, Environmental, and Economic, with their intersection labeled 'sustainable'.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/chemistry/module-4/assets/page-051-image-1.webp)
 *Figure: The three overlapping pillars of sustainable development—Environmental, Social, and Economic—intersecting to define sustainable practice.*
 
 | Pillar | Core objective | Engineering application (e.g., water & materials) |

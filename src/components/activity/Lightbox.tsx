@@ -53,7 +53,7 @@ export default function Lightbox({
             <div className="relative flex h-[70svh] shrink-0 items-center justify-center md:h-auto md:flex-1">
               {item.video ? (
                 <video key={item.id} controls autoPlay playsInline preload="metadata" poster={mediaUrl(item.image)} aria-label={`${item.title} reel`} className="max-h-full max-w-full object-contain">
-                  <source src={mediaUrl(item.video)} type="video/mp4" />
+                  <source src={mediaUrl(item.video)} type="video/webm" />
                   {item.subtitles && <track kind="captions" src={mediaUrl(item.subtitles)} srcLang="und" label="Exported subtitles" />}
                   Your browser does not support video playback.
                 </video>

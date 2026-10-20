@@ -102,7 +102,7 @@ $$
 \lim_{x\to c} k = k
 $$
 
-![Graph of the constant function y = k, a horizontal line at height k](/notes/cse/s1/maths/page-002-image-2-60fc0510-c168-41a0-ba3c-75207bd63713.webp)
+![Graph of the constant function y = k, a horizontal line at height k](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/page-002-image-2-60fc0510-c168-41a0-ba3c-75207bd63713.webp)
 
 ## When a limit does not exist
 
@@ -112,7 +112,7 @@ $$
 u(x)=\begin{cases}0, & x<0\\[2pt] 1, & x\ge 0\end{cases}
 $$
 
-![Graph of the unit step function u(x): 0 to the left of the y-axis, jumping to 1 at x = 0](/notes/cse/s1/maths/page-002-image-3-b3043ba9-9d0f-4cc6-b8ae-99de8957fc12.webp)
+![Graph of the unit step function u(x): 0 to the left of the y-axis, jumping to 1 at x = 0](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/page-002-image-3-b3043ba9-9d0f-4cc6-b8ae-99de8957fc12.webp)
 
 - When $x$ comes to $0$ from the **left** ($x<0$), $u(x)$ stays at $0$.
 - When $x$ comes to $0$ from the **right** ($x>0$), $u(x)$ stays at $1$.
@@ -1292,7 +1292,7 @@ Concavity tells **how a curve bends**.
 
 The point where the bending changes direction is called an **inflection point**.
 
-![A curve that is concave down on the left, concave up on the right, with the inflection point where the bending changes](/notes/cse/s1/maths/page-033-image-1-f26f2764-943e-42a6-aec9-4a45f4a2d801.webp)
+![A curve that is concave down on the left, concave up on the right, with the inflection point where the bending changes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/page-033-image-1-f26f2764-943e-42a6-aec9-4a45f4a2d801.webp)
 
 ## The second derivative test for concavity
 
@@ -1357,7 +1357,7 @@ $$
 
 Since $e^{-x^2}>0$ always, the sign of $f''$ is the sign of $2x^2-1$. It is $0$ when $x^2=\tfrac12$, i.e. $x=\pm\tfrac1{\sqrt2}$.
 
-![Number line with the points minus root half and root half marked, splitting the line into three intervals](/notes/cse/s1/maths/page-034-image-1-8198fcaf-a51b-4f3f-a4d7-302bf93d5749.webp)
+![Number line with the points minus root half and root half marked, splitting the line into three intervals](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/page-034-image-1-8198fcaf-a51b-4f3f-a4d7-302bf93d5749.webp)
 
 | Interval | $2x^2-1$ | $f''$ | Shape |
 | --- | --- | --- | --- |
