@@ -12,7 +12,7 @@ const BATCH = 24;
 const YEARS = [...new Set(EVENT_CATALOGUE.map((event) => event.year))].sort().reverse();
 
 export default function EventsPage() {
-  usePageMeta({ title: pageTitle("Events & programs"), description: "Explore UDSF GECW events and programs, from festivals and tournaments to talks and student gatherings, in one collection." });
+  usePageMeta({ title: pageTitle("Pro shows"), description: "Live artist, DJ and band performances at UDSF GECW pro shows and college events." });
   const [year, setYear] = useState<string | null>(null);
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
@@ -29,10 +29,10 @@ export default function EventsPage() {
       <main id="top" className="min-h-screen bg-[#fafbf9]">
         <section className="wrap pb-10 pt-[clamp(3.5rem,8vw,6rem)]">
           <Label>UDSF GECW</Label>
-          <h1 className="mt-5 text-[length:clamp(3rem,8vw,6.5rem)] font-semibold leading-[0.95] tracking-[-0.06em] text-ink">Events &amp; programs.</h1>
-          <p className="mt-6 max-w-[58ch] text-[1rem] leading-relaxed text-ink-2">Fests, tournaments, talks and student gatherings. Browse every year in one collection and open a photo or play a reel to see the original post.</p>
+          <h1 className="mt-5 text-[length:clamp(3rem,8vw,6.5rem)] font-semibold leading-[0.95] tracking-[-0.06em] text-ink">Pro shows.</h1>
+          <p className="mt-6 max-w-[58ch] text-[1rem] leading-relaxed text-ink-2">A curated collection of live artist, DJ and band performances. Each card includes an AI-written description of the show media.</p>
         </section>
-        <section className="wrap pb-24" aria-label="All events and programs">
+        <section className="wrap pb-24" aria-label="Pro shows">
           <div className="flex flex-wrap items-center gap-2 border-y border-line py-4" role="group" aria-label="Filter by year">
             {[null, ...YEARS].map((value) => (
               <button key={value ?? "all"} type="button" aria-pressed={year === value} onClick={() => { setYear(value); setShown(BATCH); setOpen(null); }} className={cn("label rounded-full border px-4 py-2.5 transition", year === value ? "border-ink bg-ink text-white" : "border-line bg-white text-ink hover:border-ink/40")}>

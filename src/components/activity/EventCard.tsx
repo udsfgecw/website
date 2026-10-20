@@ -25,6 +25,7 @@ export default function EventCard({ event, index, dark = false, onOpen }: { even
         {event.yearLabel.length === 10 ? dayLabel(event.yearLabel) : event.yearLabel}
       </p>
       <h3 className={cn("mt-1.5 text-[0.95rem] font-semibold leading-snug tracking-[-0.025em]", dark ? "text-white" : "text-ink")}><WhatsAppInline text={event.title} /></h3>
+      <p className={cn("mt-1.5 text-sm leading-relaxed", dark ? "text-white/60" : "text-ink-2")}>{event.description}</p>
     </article>
   );
 }
