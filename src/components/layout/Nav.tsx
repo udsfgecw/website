@@ -2,6 +2,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { MEDIA_BASE } from "@/lib/media";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const LINKS = [
   ["/", "Home"],
@@ -9,6 +17,13 @@ const LINKS = [
   ["/activities", "Our progress"],
   ["/events", "Events"],
   ["/#alliance", "Alliance"],
+] as const;
+
+const EXPLORE = [
+  ["/#work", "What we do", "The pillars of work we take on for the college."],
+  ["/activities", "Our progress", "Headline wins and stories you can walk up to."],
+  ["/events", "Events", "What is coming up and what we have run."],
+  ["/#alliance", "Alliance", "The groups and partners we work alongside."],
 ] as const;
 
 export default function Nav() {
@@ -40,13 +55,34 @@ export default function Nav() {
       )}
     >
       <div className="grid h-full grid-cols-[1fr_auto_1fr] items-center gap-6 px-5 md:px-10">
-        <nav aria-label="Primary" className="flex items-center gap-6 max-md:hidden">
-          {LINKS.map(([href, label]) => (
-            <Link key={href} to={href} onClick={() => setOpen(false)} className={link}>
-              {label}
-            </Link>
-          ))}
-        </nav>
+        <NavigationMenu aria-label="Primary" viewport={false} className="justify-self-start max-md:hidden">
+          <NavigationMenuList className="justify-start gap-2">
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild className={link}>
+                <Link to="/">Home</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className={cn(link, "h-auto bg-transparent px-2 py-1 hover:bg-transparent")}>
+                Explore
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[320px] gap-1">
+                  {EXPLORE.map(([href, title, desc]) => (
+                    <li key={href}>
+                      <NavigationMenuLink asChild>
+                        <Link to={href}>
+                          <span className="leading-none font-medium">{title}</span>
+                          <span className="line-clamp-2 text-muted-foreground">{desc}</span>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
 
         <button
           className="label justify-self-start text-ink md:hidden"
