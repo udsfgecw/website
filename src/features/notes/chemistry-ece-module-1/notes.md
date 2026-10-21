@@ -355,7 +355,7 @@ Standard Hydrogen Electrode (SHE) is an example of a primary reference electrode
 
 A hydrogen electrode consists of a platinum foil connected to a platinum wire and sealed in a glass tube. Hydrogen gas is passed through the side arm of the glass tube. This electrode, when dipped in $1\text{ N HCl}$ and hydrogen gas at $1\text{ atmospheric pressure}$ is passed, forms a standard hydrogen electrode. The electrode potential of SHE is zero at all temperatures.
 
-![Standard hydrogen electrode diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p012-1.webp)
+![Generated schematic of the standard hydrogen electrode with hydrogen gas at 1 bar, platinized platinum, 1 M acid, and a salt bridge](/assets/notes/ece/s1/chemistry/module-1/p012-1-standard-hydrogen-electrode.webp)
 
 > **Figure: Standard hydrogen electrode diagram**
 >
@@ -393,7 +393,7 @@ $$2\text{H}^+ + 2\text{e}^- \rightarrow \text{H}_2\text{(g)}$$
 
 A calomel electrode consists of a glass tube containing mercury at the bottom over which mercurous chloride ($\text{Hg}_2\text{Cl}_2$, calomel) is placed. The remaining portion of the tube is filled with a saturated solution of $\text{KCl}$. The bottom of the tube is sealed with a platinum wire. The side tube is used for making electrical contact with a salt bridge. The electrode potential of the saturated calomel electrode is $+0.2422\text{ V}$.
 
-![Diagram of a Calomel Electrode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p013-1.webp)
+![Generated schematic of a saturated calomel electrode, showing the platinum wire, KCl solution, Hg2Cl2 paste, mercury pool, and porous junction](/assets/notes/ece/s1/chemistry/module-1/p013-1-calomel-electrode.webp)
 
 > **Figure: Diagram of a Calomel Electrode**
 >
@@ -403,20 +403,18 @@ It is represented as:
 $$\text{Hg}, \text{Hg}_2\text{Cl}_{2(s)}, \text{KCl (sat. solution)} ; \text{E}^\bullet = 0.2422\text{ V}$$
 
 If the electrode acts as an anode, the reaction is:
-$$\begin{aligned}
-2\text{Hg}_{(l)} &\rightarrow \text{Hg}^{2+} + 2\text{e}^-\
-\text{Hg}^{2+} + 2\text{Cl}^- &\rightarrow \text{Hg}_2\text{Cl}_{2(s)}\
-\\text{hline}\
-2\text{Hg}_{(l)} + 2\text{Cl}^- &\rightarrow \text{Hg}_2\text{Cl}_{2(s)} + 2\text{e}^-
-\\text{end}\\text{aligned}$$
+$$
+\begin{aligned}
+\text{Anode:}\quad 2\mathrm{Hg}_{(l)} + 2\mathrm{Cl}^- &\rightarrow \mathrm{Hg_2Cl_2}_{(s)} + 2\mathrm{e}^-
+\end{aligned}
+$$
 
 If the electrode acts as a cathode, the reaction is:
-$$\begin{aligned}
-\text{Hg}_2\text{Cl}_{2(s)} &\rightarrow \text{Hg}^{2+} + 2\text{Cl}^-\
-\text{Hg}^{2+} + 2\text{e}^- &\rightarrow 2\text{Hg}_{(l)}\
-\\text{hline}\
-\text{Hg}_2\text{Cl}_{2(s)} + 2\text{e}^- &\rightarrow 2\text{Hg}_{(l)} + 2\text{Cl}^-
-\\text{end}\\text{aligned}$$
+$$
+\begin{aligned}
+\text{Cathode:}\quad \mathrm{Hg_2Cl_2}_{(s)} + 2\mathrm{e}^- &\rightarrow 2\mathrm{Hg}_{(l)} + 2\mathrm{Cl}^-
+\end{aligned}
+$$
 
 The electrode potential depends on the activity of the chloride ions and it decreases as the activity of the chloride ions increases. The Nernst equation of this electrode at $25^\bullet\text{C}$ is given by:
 $$E_{\text{cal}} = E^\bullet_{\text{cal}} - \frac{0.0591}{2} \text{log}(\text{Cl}^-)^2$$
@@ -451,7 +449,7 @@ $$\text{Pt}, 0.1\text{ M HCl} / \text{Glass}$$
 
 The $\text{HCl}$ in the bulb furnishes a constant $\text{H}^+$ ion concentration.
 
-![Glass electrode diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p015-1.webp)
+![Generated cross-section of a glass pH electrode showing its Ag/AgCl wire, internal solution, thin glass membrane, and test solution](/assets/notes/ece/s1/chemistry/module-1/p015-1-glass-electrode.webp)
 
 > **Figure: Glass electrode diagram**
 >
@@ -503,7 +501,7 @@ The EMF of the cell is measured. From the EMF, the pH of the solution is calcula
 
 $$E_{\text{cell}} = E_{\text{right}} - E_{\text{left}}$$
 $$E_{\text{cell}} = E^\bullet_{\text{G}} - 0.0592 \text{ pH} - 0.2422$$
-$$E_{\text{cell}} = (E^\bullet_{\text{G}} - 0.2422) - 0.0592 \text{ pH} \tag{1}$$n
+$$E_{\text{cell}} = (E^\bullet_{\text{G}} - 0.2422) - 0.0592 \text{ pH} \tag{1}$$
 Rearranging equation (1) for pH yields:
 $$\text{pH} = \frac{E^\bullet_{\text{G}} - E_{\text{cell}} - 0.2422}{0.0591}$$
 
@@ -737,11 +735,14 @@ $$2\text{O}^{2-} + 2\text{H}_2\text{O} \rightarrow 4\text{OH}^-$$
 $$\text{O}_2 + 2\text{H}_2\text{O} + 4\text{e}^- \rightarrow 4\text{OH}^-$$
 
 **Overall Cell Reaction:**
-$$\begin{aligned}
-\text{At anode:} & \text{ } 2\text{H}_2 + 4\text{OH}^- \rightarrow 4\text{H}_2\text{O} + 4\text{e}^- \
-\text{At cathode:} & \text{ } \text{O}_2 + 2\text{H}_2\text{O} + 4\text{e}^- \rightarrow 4\text{OH}^- \
+$$
+\begin{aligned}
+\text{At anode:} &\quad 2\text{H}_2 + 4\text{OH}^- \rightarrow 4\text{H}_2\text{O} + 4\text{e}^- \\
+\text{At cathode:} &\quad \text{O}_2 + 2\text{H}_2\text{O} + 4\text{e}^- \rightarrow 4\text{OH}^- \\
 \hline
-& \text{ } 2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2\text{O}
+&\quad 2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2\text{O}
+\end{aligned}
+$$
 
 The emf of the cell = $0.8$ to $1.0\text{ V}$
 
@@ -899,7 +900,7 @@ As a result of corrosion an electronic flow occurs from the anodic part to catho
 >
 > Figure 1: Sacrificial anode method: ship hull and underground water pipeline. The diagram shows two setups. Left setup: a ship hull labelled 'Protected base metal- steel' with attached rectangular blocks labelled 'sacrificial anode-Zn' in water. Right setup: an underground pipeline where a copper wire connects a 'Sacrificial anode' surrounded by 'Electrolyte' in the soil to an 'Iron pipe' buried under 'Soil'.
 
-![Impressed current cathodic protection setup](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p028-2.webp)
+![Generated diagram of impressed-current cathodic protection for an underground steel pipeline, with a DC source and inert anode](/assets/notes/ece/s1/chemistry/module-1/p028-2-impressed-current-protection.webp)
 
 > **Figure: Impressed current cathodic protection setup**
 >
@@ -932,7 +933,7 @@ Electroplating of metals is done to protect them from corrosion and for decorati
 
 Copper electroplating is the process of electroplating a layer of copper onto the surface of a metal object. E.g. Electroplating iron object with copper metal.
 
-![Copper electroplating setup showing a DC power source, copper plate anode, iron object cathode, and CuSO4 solution.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p029-2.webp)
+![Generated copper electroplating setup showing a copper anode, iron cathode, CuSO4 electrolyte, and copper ion movement](/assets/notes/ece/s1/chemistry/module-1/p029-2-copper-electroplating.webp)
 
 > **Figure: Copper electroplating setup showing a DC power source, copper plate anode, iron object cathode, and CuSO4 solution.**
 >
