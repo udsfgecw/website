@@ -66,7 +66,7 @@ export interface Branch {
 const semester = (n: number, subjects: SubjectNotes[] = []): Semester => ({ id: `s${n}`, name: `Semester ${n}`, subjects });
 
 const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
-  {
+  ...(branchId === "ece" || branchId === "eee" ? [{
     name: "Mathematics",
     course: "Mathematics for Electrical Science and Physical Science 1",
     code: "GYMAT101",
@@ -78,7 +78,7 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
       { name: "Module 3", detail: "Laplace transforms, inverse transforms and solving initial value problems", href: `/notes/${branchId}/s1/maths/module-3` },
       { name: "Module 4", detail: "Taylor and Maclaurin series, Fourier series and half-range expansions", href: `/notes/${branchId}/s1/maths/module-4` },
     ],
-  },
+  }] : []),
   {
     name: "Chemistry",
     course: "Engineering Chemistry",
