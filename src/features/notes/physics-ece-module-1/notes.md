@@ -115,6 +115,30 @@ Similarly, the expression for the density of holes in the valence band of an int
 $$p = N_v e^{-(E_F - E_v)/kT}$$
 where $N_v$ is the effective density of states in the valence band and $E_v$ is the top edge energy of the valence band.
 
+### Derivation of hole concentration in the valence band
+
+A hole is an unoccupied electron state in the valence band. Its probability of occupation is $1-F(E)$, where $F(E)$ is the Fermi-Dirac probability that the state contains an electron. The valence-band density of states per unit volume is
+
+$$Z_v(E)dE=\frac{4\pi}{h^3}(2m_h^*)^{3/2}(E_v-E)^{1/2}dE, \qquad E\le E_v,$$
+
+where $m_h^*$ is the effective hole mass and $E_v$ is the top of the valence band. Under the non-degenerate (Boltzmann) approximation,
+
+$$1-F(E)\approx e^{(E-E_F)/kT}.$$
+
+Therefore the hole concentration is obtained by integrating unoccupied valence-band states:
+
+$$p=\int_{-\infty}^{E_v} Z_v(E)[1-F(E)]dE.$$
+
+Set $x=E_v-E$, so $x$ runs from $0$ to $\infty$. Substitution gives
+
+$$p=\frac{4\pi}{h^3}(2m_h^*)^{3/2}e^{(E_v-E_F)/kT}\int_0^\infty x^{1/2}e^{-x/kT}dx.$$
+
+Using $\int_0^\infty x^{1/2}e^{-x/kT}dx=\frac{(kT)^{3/2}\sqrt{\pi}}{2}$ and defining $N_v=2(2\pi m_h^*kT/h^2)^{3/2}$, we obtain
+
+$$p=N_v e^{-(E_F-E_v)/kT}.$$
+
+This parallels the conduction-band result $n=N_c e^{-(E_c-E_F)/kT}$; in an intrinsic semiconductor, charge neutrality gives $n=p=n_i$.
+
 <!-- page 4 | Intrinsic Carrier Concentration and Fermi Level -->
 
 ## Intrinsic Carrier Concentration and Fermi Level
@@ -159,15 +183,11 @@ Important properties inferred from the equation include:
 2. It has an exponential dependence on the band gap $E_g$.
 3. It exhibits a strong dependence on absolute temperature $T$.
 
-![PN junction diode formation and carrier diffusion](/assets/notes/ece/s1/physics/module-1/p024-1-clean.webp)
-
 ### Fermi Level and Fermi Energy
 
 The Fermi level ($E_F$) is defined as the topmost filled energy level in a conductor at $0\text{ K}$. For $T > 0\text{ K}$, the Fermi level represents the energy state at which the probability of occupation by an electron is exactly $0.5$ (or $50\%$).
 
 $$P(E) = P(E_F) = \frac{1}{2}$$
-
-The built-in barrier potential for silicon (Si) is $0.7\text{ V}$ and for germanium (Ge) is $0.3\text{ V}$ at equilibrium.
 
 ### Fermi Level in an Intrinsic Semiconductor
 
@@ -246,8 +266,6 @@ Examples:
 | 5) The Fermi level lies closer to the conduction band. | The Fermi level lies closer to the valence band. |
 | 6) The electron concentration exceeds the hole concentration. | The hole concentration exceeds the electron concentration. |
 | 7) Common dopants include phosphorus, arsenic, and antimony. | Common dopants include boron, gallium, and indium. |
-| 3) Electrons are the majority carriers. | Holes are the majority carriers. |
-| 4) Minority charge carriers are holes. | Minority charge carriers are electrons. |
 
 ### Difference between Intrinsic and Extrinsic Semiconductors
 
@@ -258,7 +276,7 @@ Examples:
 | 3) Number of free electrons is equal to the number of holes. ($n = p$) | Number of free electrons and number of holes are unequal. |
 | 4) Conductivity depends only on temperature. | Conductivity depends both on temperature and the impurity added. |
 | 5) Conductivity due to electrons and holes is nearly equal. | Conductivity is mainly due to majority charge carriers. |
-| 6) It does not conduct at zero Kelvin. | It conducts at zero Kelvin. |
+| 6) At $0\text{ K}$, the idealized semiconductor has no thermally excited free carriers; dopant freeze-out also prevents ordinary conduction. | At room temperature, dopants supply majority carriers; at $0\text{ K}$, dopant freeze-out prevents ordinary conduction. |
 | 7) Fermi level lies in between valence and conduction bands. | Fermi level lies near the valence band in p-type and near the conduction band in n-type. |
 | 8) Ratio of majority and minority carriers is unity. | Ratio of majority and minority carriers is not unity. |
 | 9) e.g., Silicon, Germanium. | e.g., Silicon doped with phosphorus, Silicon doped with boron. |
@@ -289,6 +307,11 @@ The new idea: Carrier diffusion creates a space-charge depletion region and a bu
 A p-n junction is formed by suitably joining a p-type semiconductor (majority holes) and an n-type semiconductor (majority electrons). Due to the large concentration gradient across the boundary, electrons from the n-side diffuse into the p-side, and holes from the p-side diffuse into the n-side. Near the interface, electrons and holes recombine, neutralizing each other.
 
 This recombination leaves behind uncompensated immobile positive donor ions ($N_D^+$) on the n-side and negative acceptor ions ($N_A^-$) on the p-side. This uncharged region of fixed ions is called the **depletion region**. The accumulation of these charges sets up an internal electric field and a potential difference known as the **built-in potential** ($V_0$).
+
+For a simple silicon junction, the built-in barrier is often approximated as about $0.7\text{ V}$; for germanium, about $0.3\text{ V}$. These are typical values, not universal constants: the actual built-in potential depends on the material, doping concentrations, and temperature.
+
+![PN junction diode formation and carrier diffusion](/assets/notes/ece/s1/physics/module-1/p024-1-clean.webp)
+
 
 The electric field creates a **drift current** of minority carriers that opposes the initial **diffusion current**. Equilibrium is reached when the diffusion current equals the drift current, resulting in a net current of zero.
 

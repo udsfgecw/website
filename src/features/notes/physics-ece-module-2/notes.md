@@ -1,6 +1,6 @@
 <!-- page 1 | Start here -->
 
-## Semester 1 Engineering Physics: Semiconductor and Photonic Devices
+## Engineering Physics (official term: S1/S2): Semiconductor and Photonic Devices
 
 Master the fundamentals, operation, efficiency, and characteristics of semiconductor rectifiers, Zener diodes, tunnel diodes, photodiodes, solar cells, and light-emitting diodes.
 
@@ -52,8 +52,8 @@ A half-wave rectifier is a type of rectifier that converts only half of the inpu
 Consequently, all negative half-cycles of the AC supply are suppressed, and current flows through the load $R_L$ in only one direction, creating a pulsating DC voltage. This pulsating output can be smoothened out using a filter circuit.
 
 #### Peak Inverse Voltage (PIV)
-Peak Inverse Voltage is the maximum voltage that a diode must withstand when it is reverse-biased. For a half-wave rectifier, the PIV is equal to the maximum voltage across the entire secondary winding:
-$$\text{PIV} = 2V_m$$
+Peak Inverse Voltage is the maximum voltage that a diode must withstand when it is reverse-biased. For a simple half-wave rectifier without a capacitor-input filter, the reverse-biased diode must withstand the peak of the transformer secondary voltage:
+$$\text{PIV} = V_m$$
 where $V_m$ is the maximum peak voltage across half of the secondary winding.
 
 #### Disadvantages of Half-Wave Rectifiers
@@ -382,6 +382,16 @@ This broad space charge region results in:
 1. **Higher Quantum Efficiency**: More electron-hole pairs generated per incident photon.
 2. **Faster Response Time**: High electric field across the intrinsic region sweeps carriers out rapidly, reducing transit time.
 3. **Lower Junction Capacitance**: Wide separation between p and n plates ($C = \frac{\varepsilon A}{W}$) cuts capacitance, enabling high-frequency microwave and gigabit optical fiber communications.
+
+### Applications of junction and PIN photodiodes
+
+- **Optical communication receivers:** convert modulated light from an optical fiber into current for a receiver circuit; PIN photodiodes are useful when fast response is needed.
+- **Light meters and camera exposure control:** measure incident illumination.
+- **Smoke detectors:** detect light scattered by smoke particles in an optical chamber.
+- **Barcode scanners and optical encoders:** sense reflected or interrupted light to recover patterns or position.
+- **Medical and industrial instruments:** detect light in optical measurement systems, including pulse-oximetry sensors and non-contact counters.
+
+The detector, optical geometry, amplifier, and signal-processing circuit are chosen together for the wavelength, light level, speed, and noise requirements.
 
 <!-- page 7 | Solar Cells and Panel Stringing -->
 

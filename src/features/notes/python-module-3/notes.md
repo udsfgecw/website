@@ -1063,7 +1063,53 @@ print(student)         # {}
 - [NumPy: copies and views](https://numpy.org/doc/stable/user/basics.copies.html).
 
 
-<!-- page 30 | Recursion and the call stack -->
+<!-- page 30 | Decomposition and multiple return values -->
+
+## Decomposition and Multiple Return Values
+
+**Problem decomposition** breaks a complex task into smaller tasks with clear inputs and outputs. Each part can be designed, implemented, and checked separately; the parts are then combined into a complete solution.
+
+### Example: return the three largest values
+
+For a list containing at least three integers, a simple decomposition is: validate the input, order the values from largest to smallest, and return the first three.
+
+```python
+def top_three(values):
+    if len(values) < 3:
+        raise ValueError("at least three values are required")
+    ordered = sorted(values, reverse=True)
+    return ordered[:3]
+
+print(top_three([8, 2, 15, 4, 11]))  # [15, 11, 8]
+```
+
+For larger inputs, the ordering step can be replaced by a more suitable selection algorithm. The important design step is separating validation, ordering, and result selection.
+
+### Example: decompose merge sort
+
+Merge sort divides a list into two smaller lists, sorts each half, then merges the sorted halves. The merge operation is a separate subproblem; keeping it distinct makes the algorithm easier to reason about and test. Module 4 studies the divide-and-conquer approach in more detail.
+
+### Functions with multiple return values
+
+A Python `return` statement can return a tuple. The caller can unpack the tuple into separate variables.
+
+```python
+def min_max(values):
+    if not values:
+        raise ValueError("values must not be empty")
+    return min(values), max(values)
+
+smallest, largest = min_max([8, 2, 15, 4])
+print(smallest, largest)  # 2 15
+```
+
+This is tuple packing on return and tuple unpacking at the call site. The function still returns one object: a tuple containing two results.
+
+### Why use recursion?
+
+Recursion is useful when a problem has a natural self-similar structure, such as a tree, a nested expression, or repeated division into smaller subproblems. A recursive definition can express that structure directly and can make the correctness argument clearer: solve the smallest case, then show that solving a smaller instance produces a solution to the current one. Recursion is not automatically faster or more memory-efficient; each call uses a stack frame, so iteration or dynamic programming may be preferable when repeated calls do unnecessary work.
+
+<!-- page 31 | Recursion and the call stack -->
 
 ## Recursion and the Call Stack
 

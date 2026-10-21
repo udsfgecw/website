@@ -203,7 +203,7 @@ Using Einstein coefficients, we can predict the possibility of stimulated emissi
 $$\frac{\text{Rate of spontaneous emission}}{\text{Rate of stimulated emission}} = \frac{A_{21} N_2}{B_{21} u(\nu) N_2}$$
 
 On simplification and rearranging, the ratio of spontaneous emission to stimulated emission becomes:
-$$R = \frac{h\nu}{e^{kT} - 1}$$
+$$R = e^{h\nu/(kT)} - 1$$
 
 In order to make stimulated emission dominant over spontaneous emission, we need:
 1. **Large radiation density $u_\nu$:** To make $u_\nu$ large, feedback is provided by placing mirrors to increase radiation density.
@@ -352,7 +352,7 @@ An optical fiber is a cylindrical dielectric waveguide consisting of three conce
 
 i) **Core**: The innermost cylindrical region of the optical fiber through which light propagates. It is typically made of high-purity glass or plastic with a refractive index of $n_1$.
 
-im) **Cladding**: The middle coaxial layer surrounding the core, made of glass or plastic with a lower refractive index $n_2$ (where $n_1 > n_2$). Total internal reflection takes place at the core-cladding interface, trapping light inside the core.
+ii) **Cladding**: The middle coaxial layer surrounding the core, made of glass or plastic with a lower refractive index $n_2$ (where $n_1 > n_2$). Total internal reflection takes place at the core-cladding interface, trapping light inside the core.
 
 iii) **Protective Coating (Buffer Coating)**: The outermost polymer or plastic layer that protects the glass fiber from mechanical stress, moisture, and physical damage.
 

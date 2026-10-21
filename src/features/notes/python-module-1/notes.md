@@ -1030,147 +1030,6 @@ Translator software converts source code written in assembly or high-level langu
 2. **Compiler**: Translates entire high-level programs into machine code prior to execution.
 3. **Interpreter**: Executes high-level programs statement by statement at runtime.
 
-### Problem-Solving and Algorithm Review
-
-**Output and Processing Review**
-
-Formulating an appropriate computational model maps the problem inputs to required outputs. For two input integers `Number1` and `Number2`:
-
-$$
-\text{Sum} = \text{Number1} + \text{Number2}
-$$
-
-#### Flowchart Review
-
-```mermaid
-flowchart TD
-A([Start]) --> B[/Input Number1,
-Number2/]
-B --> C[Sum=Number1+Number2]
-C --> D[/Print Sum/]
-D --> E([Stop])
-```
-
-#### Python Implementation Review
-
-$$
-\begin{aligned}
-        \text{n1} &= 21 \\
-        \text{n2} &= 7 \\
-        \text{sum} &= \text{n1} + \text{n2} \\
-        \text{print}('&\text{Sum} = \text{', sum)}
-        \end{aligned}
-$$
-
-Testing, debugging, and solution evaluation ensure that the resulting code executes reliably across boundary cases.
-
-### Class Average Case Study Review
-
-For numerical scores $x_1, x_2, \dots, x_n$, the average model is:
-
-$Average1 = (x_1 + x_2 + x_3 + \dots + x_n) / n$
-
-For letter grades converted to numerical equivalents:
-
-$$
-\begin{align*}
-A+ &= 12 & A &= 11 & A- &= 10 & B+ &= 9 \
-B &= 8 & B- &= 7 & C+ &= 6 & C &= 5 \
-C- &= 4 & D+ &= 3 & D &= 2 & D- &= 1 & F &= 0
-\end{align*}
-$$
-
-Using assigned values $y_1, y_2, \dots, y_n$:
-
-$Average2 = (y_1 + y_2 + \dots + y_n) / n$
-
-Converted to a percentage:
-
-$$
-\boldsymbol{Average\ (in\ percentage) = (Average_2 / 13)}
-$$
-
-Pseudocode sequence with inputs $x_1, x_2, x_3, ..., x_n$:
-
-1. Start
-2. Input `n`
-3. Input marks `x1, x2, ..., xn`
-4. `Average = (x1 + x2 + ... + xn) / n`
-5. Output `Average`
-6. End
-
-#### Average Calculation Flowchart
-
-```mermaid
-flowchart TD
-A([Start]) --> B[x1, x2, ..., xn, Average]
-B --> C[/Read x1, x2, ..., xn/]
-C --> D[Average = (x1 + x2 + .... + xn) / n]
-D --> E[/Print Average/]
-E --> F([Stop])
-```
-
-#### Average Calculation Program
-
-```python
-# Program in Python
-n = int(input("Enter number"))
-total = 0
-for student in range(n):
-    mark = float(input(f"Enter mark for student {student + 1}: "))
-    total += mark
-average = total / n
-print(f"Average mark: {average:.2f}")
-```
-
-### Discriminant Calculator Review
-
-Model formula:
-
-$$
-D = b^2 - 4ac
-$$
-
-Python implementation:
-
-```python
-#Input the coefficients
-a = int(input("Enter the value of first coefficient"))
-b = int(input("Enter the value of second coefficient"))
-c = int(input("Enter the value of third coefficient"))
-```
-
-```python
-# Find the discriminant
-d = (b**2) - (4*a*c)
-# Print the discriminant
-print(d)
-```
-
-Verification suite:
-
-![Table 1.2 showing test cases with columns Sl No, a, b, c, and d](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-029-image-1.webp)
-
-### Language Architecture and Type Checking
-
-Binary machine code format:
-
-$$
-1010 \underbrace{0011}_{\text{add}} \underbrace{0110}_{3} \underbrace{\quad}_{6}
-$$
-
-![Binary code breakdown for addition showing opcode and operands](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-030-image-1.webp)
-
-In high-level languages, addition is written concisely as $3+6$.
-
-**Static Programming Language**
-
-Static programming languages verify variable types at compile time (e.g., C, C++, Java). Explicit type declarations are required, enabling early error detection and optimized execution speeds.
-
-**Dynamic Programming Language**
-
-Dynamic programming languages resolve variable types at runtime (e.g., Python, JavaScript, PHP), eliminating the need for explicit type declarations before assignment.
-
 ---
 
 <!-- page 5 | Python introduction, execution models, and translator software -->
@@ -1487,89 +1346,6 @@ Rules to name an identifier:
 
 ---
 
-### Extended Examples and Review
-
-**Script Execution Review**
-
-Suppose you have written a script `sample.py` to display the message “My first Python program!”. Running it at the terminal displays the output:
-
-_user@Ubuntu2204LTS:~$ python3 First.py_
-
-_My first Python program!_
-
-**Comment Syntax Overview**
-
-Comments describe code logic or temporarily prevent code execution. Python comments do not affect execution and fall into two formats:
-1. Single Line Comment
-2. Multi Line Comment
-
-**Single-Line Example**
-
-Single-line comments start with `#`.
-
-```python
-# This is single line comment
-print("Hello Python")
-```
-
-**Output**
-
-Hello Python
-
-**Multi-Line Example**
-
-Multi-line comments are specified within triple quotes.
-
-```python
-'''This is
-   Multiline
-   Comment'''
-print("Hello Python")
-```
-
-**Output**
-
-Hello Python
-
-**Character Set Summary**
-
-A character set defines all valid characters permitted in Python source code:
-- **Alphabets**: Capital (`A`–`Z`) and lowercase (`a`–`z`) letters.
-- **Digits**: Numeric digits `0`–`9`.
-- **Special Symbols**: Python supports characters like `"` `` ` `` `1` `;` `:` `!` `~` `@` `#` `$` `%` `^` `&` `*` `(` `)` `_` `+` `-` `=` `{` `}` `[` `]` `\`
-- **WhiteSpaces**: Characters such as tab space, blank space, newline, and carriage return.
-
----
-
-**Token Classification**
-
-A token is the smallest individual unit in a Python program, forming the building block for all instructions.
-
-```mermaid
-flowchart LR
-    A[Tokens] --> B[Keywords]
-    A --> C[Variables]
-    A --> D[Operators]
-    A --> E[Constants]
-    A --> F[Special Character]
-```
-
-**Reserved Keywords**
-
-Keywords carry reserved meaning within Python and cannot serve as identifiers or variable names.
-
-![Table of Python keywords](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-036-image-2.webp)
-
-**Identifier Conventions**
-
-Identifiers uniquely label variables, functions, classes, and collections.
-
-Rules for valid identifiers:
-1. Python is case-sensitive; case variations like `geeks` and `Geeks` represent different identifiers.
-2. Identifiers must start with a capital letter (`A`–`Z`), a lowercase letter (`a`–`z`), or an underscore (`_`).
-
----
-
 <!-- page 7 | Variables, dynamic typing, and type conversion -->
 
 ## Variables, dynamic typing, and type conversion
@@ -1701,8 +1477,6 @@ Literals are constants that represent fixed values in Python programs and can ho
 Categories of literals in Python include:
 - String literals
 - Numeric literals (integer, float, complex)
-- Boolean literals
-- Literal collections (list, tuple, set, dictionary)
 
 ### Data Types and Dynamic Typing
 
@@ -1714,18 +1488,15 @@ The interpreter implicitly binds each value with its data type at runtime. Pytho
 
 ```mermaid
 flowchart LR
-A[Python Data Types] --> B[Numbers]
-A --> C[Bool\nTrue, False]
-A --> D[Set\n{2, 4, 6}]
-A --> E[Dict\n{1:'a', 2:'b'}]
-A --> F[Sequence]
+A[Data types emphasized in Module 1] --> B[Numeric]
+A --> C[String]
 B --> B1[Int\n20]
 B --> B2[Float\n35.75]
-B --> B3[complex\n1+3j]
-F --> F1[String\n'Jessa']
-F --> F2[List\n[2, 'a', 5.7]]
-F --> F3[Tuple\n(3, 4.5, 'b')]
+B --> B3[Complex\n1+3j]
+C --> C1[String\n'Jessa']
 ```
+
+Lists, tuples, sets, and dictionaries are introduced with sequence and collection processing in Module 3.
 
 **Numeric Data Types**
 
@@ -1780,19 +1551,12 @@ Explicit type conversion (type casting) occurs when the programmer manually conv
 ```python
 x = "15"
 y = int(x)
-print(y + 5)
-print(type(y))
+print(y + 5) # Output: 20
+print(type(y)) # <class 'int'>
 
 z = float(y)
-print(z)
-print(type(z))
-# str
-# Output: 15
-# <class 'int'>
-
-# explicitly convert int to float
-# Output: 10.0
-# <class 'float'>
+print(z) # Output: 15.0
+print(type(z)) # <class 'float'>
 ```
 
 ---
@@ -1869,14 +1633,9 @@ $python3 Vardemo2.py
 
 **Literals**
 
-Python literals are data representations that can hold any value type, such as strings, numbers, and collections. The way literals are used depends on their specific type.
+Python literals are representations of values. This module focuses on numeric and string literals; collection literals are studied in Module 3.
 
-Literal types used in Python programs include:
-
-- String literals
-- Numeric literals (integer, float, complex)
-- Boolean literals
-- Literal collections (list, tuple, set, dictionary)
+Literal forms used here include string literals and numeric literals (integer, floating-point, and complex). Comparisons produce the Boolean values `True` and `False`; collection literals are covered in Module 3.
 
 **Data Types**
 
@@ -1886,17 +1645,12 @@ The interpreter implicitly binds the value with its data type. Python provides t
 
 ```mermaid
 flowchart TB
-P["Python Data Types"] --> N["Numbers"]
-P --> B["Bool: True, False"]
-P --> S["Set: {2, 4, 6}"]
-P --> D["Dict: {1: a, 2: b}"]
-P --> Q["Sequence"]
-N --> I["Int (20)"]
-N --> F["Float (35.75)"]
-N --> C["complex (1+3j)"]
-Q --> ST["String (Jessa)"]
-Q --> L["List ([2, a, 5.7])"]
-Q --> T["Tuple (3, 4.5, b)"]
+P["Module 1 data types"] --> N["Numeric"]
+P --> S["String"]
+N --> I["int: 20"]
+N --> F["float: 35.75"]
+N --> C["complex: 1+3j"]
+S --> ST["String: Jessa"]
 ```
 
 ### Numeric Data Types
@@ -2010,21 +1764,11 @@ It's a beautiful day
 She said, "Hello!"
 ```
 
-### Sequence Data Types
+### String Data Type
 
-**Sequence Types**
-
-A sequence is an ordered collection of items. Depending on the sequence type, items may be individual characters or values of varying data types. Sequences store multiple values in an organized and efficient manner.
-
-Standard sequence data types include:
-
-- String
-- List
-- Tuple
+A string is an immutable sequence of characters represented using single, double, or triple quotes. Strings support indexing and slicing; list, tuple, set, and dictionary processing belongs to Module 3.
 
 **String**
-
-A string is a collection of one or more characters represented using single, double, or triple quotes.
 
 ```python
 # Creating a String
@@ -2057,81 +1801,6 @@ String with the use of Triple Quotes:
 I'm a Geek and I live in a world of "Geeks"
 
 === Code Execution Successful ===
-```
-
-**List**
-
-A list is an ordered sequence of data written using square brackets (`[]`) and commas (`,`). Lists are mutable, meaning their values can be modified during execution.
-
-```python
-# Creating a List
-List = []
-print("Blank List: ")
-print(List)
-
-# Creating a List of numbers
-List = [10, 20, 14]
-print("\nList of numbers: ")
-print(List)
-```
-
-**Output:**
-
-```
-Blank List:
-[]
-
-List of numbers:
-[10, 20, 14]
-```
-
-**Tuple**
-
-A tuple is an ordered sequence of data similar to a list, but it is immutable and write-protected. Tuple elements are enclosed in parentheses (`()`) separated by commas.
-
-```python
-var = ("Geeks", "for", "Geeks")
-print(var)
-```
-
-**Output:**
-
-```text
-('Geeks', 'for', 'Geeks')
-```
-
-### Mapping and Set Types
-
-**Dictionary**
-
-A dictionary is a mapping of unique keys to values. In modern Python, dictionaries preserve insertion order and are written within curly braces using `key:value` pairs.
-
-**Program**
-
-```python
-capitals = {"USA":"Washington D.C.","France":"Paris", "India" : "New Delhi"}
-print(type(capitals))
-```
-
-**Output**
-
-```text
-<class 'dict'>
-```
-
-**Set**
-
-A set is an unordered collection of unique items defined by comma-separated values inside curly braces (`{}`).
-
-```python
-thisset = {"apple", "banana", "cherry"}
-print(thisset)
-```
-
-**Output**
-
-```text
-{'apple', 'banana', 'cherry'}
 ```
 
 ### Boolean Type
@@ -2210,97 +1879,6 @@ Hello   World
 This is a backslash: \
 It's a beautiful day
 She said, "Hello!"
-```
-
-### Sequence Representation and Visualizations
-
-Sequences organize items into ordered indexed positions.
-
-- String
-- List
-- Tuple
-
-**String Representation**
-
-A string consists of characters enclosed in quotes.
-
-![Python code and output showing the use of single, double, and triple quotes for strings](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-042-image-1.webp)
-
-**List Mutability**
-
-A list maintains mutable ordered items in square brackets.
-
-![Python code and output demonstrating the creation of a blank list and a list of numbers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-042-image-2.webp)
-
-**Tuple Immutability**
-
-A tuple stores write-protected ordered values within parentheses.
-
-```python
-var = ("Geeks", "for", "Geeks")
-print(var)
-```
-
-**Output:**
-
-```
-('Geeks', 'for', 'Geeks')
-```
-
-### Dictionary, Set, and Boolean Operations
-
-**Dictionary Mapping**
-
-A dictionary maps distinct keys to values while maintaining insertion order.
-
-**Program**
-
-```python
-capitals = {"USA":"Washington D.C.","France":"Paris", "India" :"New Delhi"}
-print(type(capitals))
-```
-
-**Output**
-
-`<class 'dict'>`
-
-**Set Structure**
-
-A set contains unique, unordered elements within curly braces.
-
-```python
-thisset = {"apple", "banana", "cherry"}
-print(thisset)
-```
-
-**Output**
-
-```
-{'apple', 'banana', 'cherry'}
-```
-
-**Boolean Logic**
-
-A boolean evaluation yields either `True` or `False`.
-
-```
-Input: 1==1
-Output: True
-Input: 2<1
-Output: False
-```
-
-```python
-# Returns False as x is not equal to y
-x = 5
-y = 10
-print(bool(x==y))
-```
-
-**Output**
-
-```
-False
 ```
 
 ### Mathematical Calculations
@@ -2559,77 +2137,7 @@ Python language supports various types of operators:
 1. Arithmetic Operators
 2. Comparison (Relational) Operators
 
-### Additional Mathematical Operations Reference
-
-**math.ceil()**
-
-math.ceil() approximates the given number to the smallest integer, greater than or equal to the given floating point number.
-
->>> math.ceil(4.5867)
-5
-
-**math.floor()**
-
-math.floor() returns the greatest integer less than or equal to the input.
-
->>> math.floor(4.5687)
-4
-
-**math.fabs()**
-
-math.fabs() returns the absolute value of x.
-
->>> math.fabs(-5.5)
-5.5
-
-**math.pi**
-
-math.pi gives an approximation of π (about 3.14159). It is a constant, so do not call it like a function.
-
->>> x = math.pi
->>> print(x)
-3.14...
-
-**math.factorial()**
-
-math.factorial() finds the factorial of a given number in a single line.
-
->>> a = 5
->>> print("The factorial of", a, "is", math.factorial(a))
-The factorial of 5 is 120
-
-**math.gcd()**
-
-math.gcd() finds the greatest common divisor of two numbers.
-
->>> a = 15
->>> b = 5
->>> print ("The gcd of 5 and 15 is : ")
->>> print (math.gcd(b, a))
-The gcd of 5 and 15 is : 5
-
-**math.exp()**
-
-math.exp() calculates the power of e.
-
->>> test = 4
->>> print (math.exp(test))
-54.598150033144236
-
-**math.pow()**
-
-math.pow() receives two float arguments, raises the first to the second, and returns the result. In other words, pow(2,3) is equivalent to 2**3.
-
->>> math.pow(2,4)
-16.0
-
-**math.log()**
-
-math.log() calculates the logarithmic value of a with base b.
-
->>> print ("The value of log 2 with base 3 is : ")
->>> print (math.log(2,3))
-The value of log 2 with base 3 is : 0.6309297535714574
+### Worked trigonometric example
 
 **Trigonometric Evaluation**
 
@@ -2651,155 +2159,6 @@ OUTPUT
 The value of sine of pi/6 is : 0.49999999999999994
 The value of cosine of pi/6 is : 0.8660254037844387
 The value of tangent of pi/6 is : 0.5773502691896257
-
-### Advanced I/O Handling Details
-
-Python offers several built-in functions that make it easy to create a program quickly. Two of the most commonly used built-in functions are the input() and print() functions, used for frequent input and output operations, respectively.
-
-**input() Execution**
-
-input() pauses program execution to let the user type a line of information from the keyboard. When the user hits "Enter", the input is read and returned as a string.
-
-Syntax:
-
-$$
-\text{input}([<\text{prompt}>])
-$$
-
-where the prompt is an optional string displayed for the user.
-
-EXAMPLE
-
-```python
->>>name = input ('What is your name? - ')
->>>print ('Hello,', name)
-```
-
-What is your name? - John
-Hello, John
-
-By default, the input() function accepts only string arguments. However, we can convert this to a number by using the int() or float() functions.
-
-EXAMPLE
-
-```python
->>>number = input ('What is your number? ')
-```
-
-What is your number? 45
-
-```python
->>> number
-```
-
-'45'
-
-```python
->>> int(45)
-```
-
-45
-
-```python
->>> float(45)
-```
-
-45.0
-
-46
-
-Or
-
-```python
->>> price=float(input("Enter the price of each item"))
->>> print(price)
-Enter the price of each item 50
-50.0
-```
-
-For taking multiple inputs from the user in a single line we use the function split().
-
-EXAMPLE
-
-```python
->>> x,y=input("Enter two numbers: ").split()
->>> print("No. of boys: ", x)
->>> print("No. of girls: ", y)
-Enter two numbers: 23 22
-No. of boys: 23
-No. of girls: 22
-```
-
-**print() Formatting**
-
-print() displays output data to the screen once a program accepts input and processes the data.
-
-Syntax:
-
-$$
-\mathbf{print(<obj>, \dots, <obj>)}
-$$
-
-Using the above syntax, we can pass several objects ($<obj>$) in the print() function by separating them with a comma.
-
-EXAMPLE
-
-```python
->>> print(100)
-
-100
-
->>> num = 65
->>> print ('The value of the number is', num)
-```
-
-The value of the number is 65
-
-Another Syntax:
-
-```python
-print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
-```
-
-EXAMPLE
-
-# Python program to illustrate print()
-# Passing sep and end parameters
-
-```python
->>> num = 7
->>> print('James Bond ', num, sep = '--> 00', end = '\n\n\n')
->>> a = 2
->>> print('Value of a: ', a, sep = '000', end = '\n')
->>> print('Car', 'Bike', 'Train', 'Plane', sep = ' | ', end = '\n\n')
-```
-
-OUTPUT
-
-```text
-James Bond --> 007
-
-Value of a: 0002
-
-Car | Bike | Train | Plane
-```
-
-### Expression Evaluation and Operators
-
-**Operators and Operands**
-
-Operators are special symbols or keywords that carry out operations on values and Python variables. They serve as a basis for expressions, which are used to modify data and execute computations.
-
-Simple answer can be given using the expression $4 + 5$ is equal to 9. Here, $4$ and $5$ are called operands and $+$ is called operator.
-
-**Operator Classification**
-
-Python language supports various types of operators, which are:
-
-1. Arithmetic Operators
-2. Comparison (Relational) Operators
-
----
 
 <!-- page 10 | Python operators: arithmetic, relational, and assignment -->
 
@@ -2934,13 +2293,13 @@ The Python assignment operators are shown in this code in the Python Editor. It 
 
 **Output**
 
-a += 5 : 105
+a += 5 : 15
 
-a -= 5 : 100
+a -= 5 : 10
 
-a *= 5 : 500
+a *= 5 : 50
 
-a /= 5 : 100.0
+a /= 5 : 10.0
 
 a %= 3 : 1.0
 
@@ -2978,106 +2337,33 @@ PO --> MO[Membership Operators]
 PO --> IO[Identity Operators]
 ```
 
-### Arithmetic Operations Reference
-
-**Arithmetic Operators**
-
-Mathematical operations including addition, subtraction, multiplication, and division are commonly carried out using Python arithmetic operators.
-
-* They are compatible with integers, variables, and expressions.
-* In addition to the standard arithmetic operators, there are operators for modulus, exponentiation, and floor division.
-
-| Operator | Name | Example |
-| :--- | :--- | :--- |
-| + | Addition | $10 + 20 = 30$ |
-| - | Subtraction | $20 - 10 = 10$ |
-| * | Multiplication | $10 * 20 = 200$ |
-| / | Division | $20 / 10 = 2$ |
-| % | Modulus | $22 \% 10 = 2$ |
-| ** | Exponent | $4 ** 2 = 16$ |
-| // | Floor Division | $9 // 2 = 4$ |
-
-**Arithmetic Operations Script**
-
-a = 21
-b = 10
-
-# Addition
-print ("a + b : ", a + b)
-
-# Subtraction
-print ("a - b : ", a - b)
-
-# Multiplication
-print ("a * b : ", a * b)
-
-# Division
-print ("a / b : ", a / b)
-
-# Modulus
-print ("a % b : ", a % b)
-
-# Exponent
-print ("a ** b : ", a ** b)
-
-# Floor Division
-print ("a // b : ", a // b)
-
-This code defines the two variables "a" and "b." It then applies several arithmetic operations to them (including addition, subtraction, multiplication, division, modulus, exponentiation, and floor division) and outputs the results.
-
-**Output**
-
-a + b : 31
-
-a - b : 11
-
-a * b : 210
-
-a / b : 2.1
-
-a % b : 1
-
-a ** b : 16679880978201
-
-a // b : 2
-
 ### Comparison Operations Reference
 
 **Comparison Operators**
 
 To compare two values, Python comparison operators are needed. Based on the comparison, they produce a Boolean value (True or False).
 
-| Operator | Name | Example |
+| Operator | Meaning | Example |
 | :--- | :--- | :--- |
-| ==, !=, >, < | Equal | $4 == 5$ is not true. |
-| >=, <= | Not Equal | $4 != 5$ is true. |
-| | Greater Than | $4 > 5$ is not true. |
-| | Less Than | $4 < 5$ is true. |
-| | Greater than or Equal to | $4 >= 5$ is not true. |
-| | Less than or Equal to | $4 <= 5$ is true. |
+| `==` | Equal to | `4 == 4` gives `True` |
+| `!=` | Not equal to | `4 != 5` gives `True` |
+| `>` | Greater than | `7 > 5` gives `True` |
+| `<` | Less than | `4 < 5` gives `True` |
+| `>=` | Greater than or equal to | `5 >= 5` gives `True` |
+| `<=` | Less than or equal to | `4 <= 5` gives `True` |
 
 **Comparison Example Script**
 
+```python
 a = 4
 b = 5
-
-# Equal
-print ("a == b :", a == b)
-
-# Not Equal
-print ("a != b :", a != b)
-
-# Greater Than
-print ("a > b :", a > b)
-
-# Less Than
-print ("a < b :", a < b)
-
-# Greater Than or Equal to
-print ("a >= b :", a >= b)
-
-# Less Than or Equal to
-print ("a <= b :", a <= b)
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+```
 
 This code compares the values of python variables 'a' and 'b' and prints if they are equal, not equal, greater than, less than, more than or equal to, and less than or equal to each other.
 
@@ -3091,84 +2377,6 @@ a < b : True
 a >= b : False
 a <= b : True
 ```
-
-### Assignment Operations Reference
-
-**Assignment Operators**
-
-Python assignment operators are used to assign values to variables in Python. The single equal symbol ($=$) is the most fundamental assignment operator. It assigns the value on the operator's right side to the variable on the operator's left side.
-
-| Operator | Name | Example |
-| :--- | :--- | :--- |
-| $=$ | Assignment Operator | $a = 10$ |
-| $+=$ | Addition Assignment | $a += 5$ (Same as $a = a + 5$) |
-| $-=$ | Subtraction Assignment | $a -= 5$ (Same as $a = a - 5$) |
-| $*=$ | Multiplication Assignment | $a *= 5$ (Same as $a = a * 5$) |
-| $/=$ | Division Assignment | $a /= 5$ (Same as $a = a / 5$) |
-| $\%=$ | Remainder Assignment | $a \%= 5$ (Same as $a = a \% 5$) |
-| $**=$ | Exponent Assignment | $a **= 2$ (Same as $a = a ** 2$) |
-| $//=$ | Floor Division Assignment | $a //= 3$ (Same as $a = a // 3$) |
-
-### Assignment Operators Demonstration
-
-```python
-# AssignmentOperator
-a = 10
-# Addition Assignment
-a += 5
-print ("a += 5 :", a)
-# Subtraction Assignment
-a -= 5
-print ("a -= 5 :", a)
-# Multiplication Assignment
-a *= 5
-print ("a *= 5 :", a)
-# Division Assignment
-a /= 5
-print ("a /= 5 :",a)
-# Remainder Assignment
-```
-
-a %= 3
-print ("a %= 3 : ", a)
-
-# Exponent Assignment
-a **= 2
-print ("a **= 2 : ", a)
-
-# Floor Division Assignment
-a //= 3
-print ("a //= 3 : ", a)
-
-The Python assignment operators are shown in this code in the **Python Editor**. It begins with the value of 'a' equal to 10, and then goes through the steps of addition, subtraction, multiplication, division, remainder, exponentiation, and floor division, updating 'a' as necessary and outputting the results.
-
-**Output**
-
-a += 5 : 105
-
-a -= 5 : 100
-
-a *= 5 : 500
-
-a /= 5 : 100.0
-
-a %= 3 : 1.0
-
-a **= 2 : 1.0
-
-a //= 3 : 0.0
-
-### Bitwise Operations Reference
-
-**Bitwise Operators**
-
-Python bitwise operators execute operations on individual bits of binary integers. They work with integer binary representations, performing logical operations on each bit location. Python includes various bitwise operators, such as AND (&), OR (|), NOT (~), XOR (^), left shift (<<), and right shift (>>).
-
-| Operator | Name | Example |
-| :--- | :--- | :--- |
-| & | Binary AND | Sets each bit to 1 if both bits are 1 |
-| \| | Binary OR | Sets each bit to 1 if one of the two bits is 1 |
-| ^ | Binary XOR | Sets each bit to 1 if only one of two bits is 1 |
 
 ---
 
@@ -3238,7 +2446,7 @@ a ^ b : 49
 
 ~a : -61
 
-a >> 2 : 240
+a << 2 : 240
 
 a >> 2 : 15
 
@@ -3363,134 +2571,6 @@ $R = A + 3 < B * 1 \text{ or } C \text{ and } D$
 
 Let the values of the variables be $A = 1, B = 5, C = -1, \text{ and } D = \text{ True}$. Figure 5.1 shows the structure of the evaluation. The numbers shown in the circle denote the order in which the various operators are applied. The final result is 1, which is assigned to R.
 
-College
-
-### Bitwise Shift and Complement Reference
-
-| Operator | Name | Description |
-| :--- | :--- | :--- |
-| ~ | Binary Ones Complement | Inverts all the bits |
-| << | Binary Left Shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off |
-| >> | Binary Right Shift | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off |
-
-**Example of Python Bitwise Operators**
-
-```python
-a = 60 # 60 = 0011 1100
-b = 13 # 13 = 0000 1101
-# Binary AND
-c = a & b # 12 = 0000 1100
-print ("a & b : ", c)
-# Binary OR
-c = a | b # 61 = 0011 1101
-print ("a | b : ", c)
-# Binary XOR
-c = a ^ b # 49 = 0011 0001
-print ("a ^ b : ", c)
-# Binary Ones Complement
-c = ~a # -61 = 1100 0011
-print ("~a : ", c)
-# Binary Left Shift
-c = a << 2; # 240 = 1111 0000
-print ("a << 2 : ", c)
-# Binary Right Shift
-c = a >> 2; # 15 = 0000 1111
-print ("a >> 2 : ", c)
-```
-
-The binary representations of the numbers 'a and b' are subjected to bitwise operations in this code. It displays the results of binary AND, OR, XOR, Ones Complement, Left Shift, and Right Shift operations.
-
-**Output**
-
-```text
-a & b : 12
-a | b : 61
-a ^ b : 49
-~a : -61
-```
-
-a >> 2 : 240
-
-a >> 2 : 15
-
-### Logical Operations Reference
-
-* Python logical operators are used to compose Boolean expressions and evaluate their truth values.
-* They are required for the creation of conditional statements as well as for managing the flow of execution in programs.
-* Python has three basic logical operators: AND, OR, and NOT.
-
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| and Logical AND | If both of the operands are true then the condition becomes true. | (a and b) is true. |
-| or Logical OR | If any of the two operands is non-zero then the condition becomes true. | (a or b) is true. |
-| not Logical NOT | Used to reverse the logical state of its operand | Not(a and b) is false. |
-
-**Example of Logical Operators**
-
-x = 5 y = 10 if x > 3 and y < 15: print("Both x and y are within the specified range") The code assigns the values 5 and 10 to variables x and y. It determines whether x is larger than 3 and y is less than 15. If both conditions are met, it writes "Both x and y are within the specified range."
-
-**Output**
-
-Both x and y are within the specified range
-
-### Membership Operations Reference
-
-* Python membership operators are used to determine whether or not a certain value occurs within a sequence.
-* They make it simple to determine the membership of elements in various Python data structures such as lists, tuples, sets, and strings.
-* Python has two primary membership operators: the in and not in operators.
-
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| in | Evaluates to true if it finds a variable in the specified sequence and false otherwise. | x in y, here in results in a 1 if x is a member of sequence y. |
-| not in | Evaluates to true if it does not find a variable in the specified sequence and false otherwise. | x not in y, here not in results in a 1 if x is not a member of sequence y. |
-
-**Example of Membership Operators**
-
-fruits = ["apple", "banana", "cherry"]
-
-print("banana" in fruits)
-
-The code defines a list of fruits and tests to see if the word "banana" appears in the list. If it is present, "True" is printed on screen.
-
-**Output**
-
-True
-
-### Identity Operations Reference
-
-* Python identity operators are used to compare two objects' memory addresses rather than their values.
-* If the two objects refer to the same memory address, they evaluate to True; otherwise, they evaluate to False.
-* Python includes two identity operators: the is and is not operators.
-
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| is | Evaluates to true if the variables on either side of the operator point to the same object and false otherwise | x is y, here are results in 1 if id(x) equals id(y) |
-| is not | Evaluates to false if the variables on either side of the operator point to the same object and true otherwise | x is not y, there are no results in 1 if id(x) is not equal to id(y). |
-
-**Example of Identity Operators**
-
-x = 10
-
-y = 5 print(x is y) The expression `x is y` checks whether `x` and `y` refer to the same object. Use `==` to compare their values; for example, `x == y` is `False` here.
-
-**Output**
-
-False
-
-### Evaluation Order Reference
-
-When an expression or statement involves multiple operators then it will be resolve using the following operator precedence chart :
-
-![Python Operator Precedence Table](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-058-image-1.webp)
-
-Example 5.4. Consider the assignment statement
-
-$R = A + 3 < B * 1 \text{ or } C \text{ and } D$
-
-Let the values of the variables be $A = 1, B = 5, C = -1$, and $D = \text{True}$. Figure 5.1 shows the structure of the evaluation. The numbers shown in the circle denote the order in which the various operators are applied. The final result is 1, which is assigned to R.
-
----
-
 <!-- page 12 | Operator precedence, associativity, and expression evaluation trees -->
 
 ## Operator precedence, associativity, and expression evaluation trees
@@ -3516,10 +2596,10 @@ A --> A2["D"]
 |---:|---|---:|
 | 1 | `B*1` | 5 |
 | 2 | `A+3` | 4 |
-| 3 | `A+3 < B*1` | 1 |
-| 4 | `C&&D` | 1 |
-| 5 | `A+3 < B*1 || C&&D` | 1 |
-| 6 | `R = A+3 < B*1 || C&&D` | 1 |
+| 3 | `A + 3 < B * 1` | `True` |
+| 4 | `C and D` | `True` |
+| 5 | `A + 3 < B * 1 or C and D` | `True` |
+| 6 | `R = A + 3 < B * 1 or C and D` | `True` |
 
 ---
 
@@ -3533,10 +2613,10 @@ $$
 | :---: | :---: | :---: |
 | 1 | $B * 1$ | 5 |
 | 2 | $A + 3$ | 4 |
-| 3 | $A + 3 < B * 1$ | 1 |
-| 4 | $C \& \& D$ | 1 |
-| 5 | $A + 3 < B * 1 \, || \, C \& \& D$ | 1 |
-| 6 | $R = A + 3 < B * 1 \, || \, C \& \& D$ | 1 |
+| 3 | $A + 3 < B * 1$ | `True` |
+| 4 | $C \text{ and } D$ | `True` |
+| 5 | $A + 3 < B * 1 \text{ or } C \text{ and } D$ | `True` |
+| 6 | $R = A + 3 < B * 1 \text{ or } C \text{ and } D$ | `True` |
 
 Evaluation of an arithmetic expression
 
@@ -3606,7 +2686,7 @@ Evaluate the following expressions:
   2. Subtraction: $50-30=20$
   3. Floor division: $20//4=5$ (Result: `5`)
 
-- **Expression 2:** `not` $(10 < 5) \rightarrow$ evaluates to `False`, so `not False` evaluates to $(\text{False}) \rightarrow$. The second comparison $(5 == 5) \rightarrow$ evaluates to `True`. Thus, `True or True` $\rightarrow$ evaluates to `True`.
+- **Expression 2:** The comparison $(10 < 5)$ evaluates to `False`, so `not False` evaluates to `True`. The second comparison $(5 == 5)$ is also `True`; therefore `True or True` evaluates to `True`.
 
 - **Expression 3:** In a logical `and` operation, if the first operand is truthy, Python evaluates and returns the second operand. Since `True` is truthy $\rightarrow$, the expression evaluates to `5`.
 

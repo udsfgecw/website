@@ -410,9 +410,9 @@ When a second sphere rests coaxially on top of a lower sphere of radius $R_1$, t
 **Given:** A lower sphere 1 of diameter 50 mm and an upper sphere 2 of diameter 30 mm surmounted centrally on top.
 **Find:** The isometric projection of the two stacked spheres.
 
-1. Draw the orthographic front and top views showing sphere 1 (diameter 50 mm, center height 25 mm) and sphere 2 (diameter 30 mm, center height 65 mm).
+1. Draw the orthographic front and top views showing sphere 1 (diameter 50 mm, center height 25 mm) and sphere 2 (diameter 30 mm, center height $25+15=40$ mm).
 2. Mark the ground contact point on the isometric reference line and step vertically upward by the isometric radius of sphere 1 ($R_{1,\text{iso}}$ for $R_1 = 25$ mm) to locate center $O_1$.
-3. From the ground contact point, measure vertically upward by the total isometric center height (isometric length of 65 mm, which equals $R_{1,\text{iso}} + 2R_{1,\text{iso}}$... or step up from $O_1$ by $R_{1,\text{iso}} + R_{2,\text{iso}}$ for $R_2 = 15$ mm) to locate the upper center $O_2$.
+3. The upper center is 40 mm above the ground in the true solid. In the isometric drawing, locate it at $0.816(40)\approx32.6$ mm above the ground, or step up from $O_1$ by the isometric radius of the upper sphere, $R_{2,\text{iso}}=0.816(15)\approx12.2$ mm.
 4. With center $O_2$ and true radius 15 mm, draw the complete circle for the upper sphere 2.
 5. With center $O_1$ and true radius 25 mm, draw the circle for the lower sphere 1, stopping the arc where it passes behind the upper sphere.
 
@@ -666,5 +666,11 @@ A general workflow in suitable CAD software is:
 4. **Check the views:** verify projection relationships, hidden lines, centre lines, and consistency between views. Remove construction geometry that should not appear in the final drawing.
 5. **Add dimensions:** select a consistent dimension style, units, precision, arrowheads, text height, and extension-line settings. Place dimensions so that they are legible and do not repeat the same measurement unnecessarily.
 6. **Review and output:** inspect the drawing at its intended print scale, check units and dimension values, set the plot area and line weights, then save the editable file and export or print the required sheet.
+
+### Example command sequence and practice task
+
+In AutoCAD, LibreCAD, or compatible software, a typical command set is `LINE`, `CIRCLE`, `OFFSET`, `TRIM`, `EXTEND`, `MOVE`, `COPY`, `LAYER`, and the appropriate linear, aligned, diameter, or radius dimension tool. Use object snaps for exact endpoints and centers; use orthogonal mode only when the intended geometry is horizontal or vertical.
+
+**Practice:** draw a 100 mm by 60 mm rectangular plate with a centered 20 mm diameter circle. Put the outline, center line, and dimensions on appropriate layers; dimension the overall length, overall width, and circle diameter; then preview at the intended print scale and verify the units.
 
 The exact commands differ across CAD packages. The deliverable is a legible, accurately dimensioned 2D drawing prepared with suitable software.

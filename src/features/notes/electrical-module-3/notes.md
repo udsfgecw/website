@@ -372,22 +372,16 @@ Uses a **center-tapped step-down transformer** (with the center tap $CT$ taken a
 
 Overcomes the need for a heavy, expensive center-tapped transformer by using an ordinary two-terminal secondary winding and **four diodes ($D_1, D_2, D_3, D_4$)** arranged in a bridge configuration.
 
-```
-              A +---------------+
-                |               |
-               / \             / \
-           D4 /   \ D1        /   \
-             /     \         /     \
-            +-------+-------+-------+
-            |       |       |       |
-            |       +--R_L--+       |
-             \     /         \     /
-           D3 \   / D2        \   /
-               \ /             \ /
-                |               |
-              B +---------------+
-   (Bridge: D1 & D3 conduct in +ve half; D2 & D4 conduct in -ve half)
-```
+The bridge has two AC input terminals ($A$ and $B$) and two DC output terminals ($+$ and $-$). Its diode connections are:
+
+| Diode | Anode | Cathode |
+| --- | --- | --- |
+| $D_1$ | $A$ | $+$ |
+| $D_2$ | $B$ | $+$ |
+| $D_3$ | $-$ | $B$ |
+| $D_4$ | $-$ | $A$ |
+
+Connect $R_L$ between the $+$ and $-$ output terminals. This connection table fixes the diode polarity unambiguously; the conducting pair for each half-cycle is described below.
 
 - **Positive Half-Cycle:** Terminal $A$ is positive and $B$ is negative. Diodes **$D_1$ and $D_3$ are forward biased** (ON), while $D_2$ and $D_4$ are reverse biased (OFF). Current flows from $A \to D_1 \to R_L \to D_3 \to B$.
 - **Negative Half-Cycle:** Terminal $B$ is positive and $A$ is negative. Diodes **$D_2$ and $D_4$ are forward biased** (ON), while $D_1$ and $D_3$ are reverse biased (OFF). Current flows from $B \to D_2 \to R_L \to D_4 \to A$, passing through $R_L$ in the **same direction**.
@@ -708,6 +702,22 @@ The output characteristic family is divided into three distinct operating region
 2. **Saturation Region:** The steep region near the vertical axis where $V_{CE}$ is very small ($V_{CE(\text{sat})} \approx 0.2\text{ V}$ for $\text{Si}$). Both $J_{EB}$ and $J_{CB}$ are forward biased. Collector current no longer obeys $I_C = \beta I_B$ and is limited by the external collector circuit ($I_{C(\text{sat})} \approx V_{CC}/R_C$). Used as a **closed (ON) switch**.
 3. **Cut-off Region:** The region below the $I_B = 0$ curve. Both junctions are reverse biased, and only a negligible leakage current $I_{CEO}$ flows ($I_C \approx 0$, $V_{CE} = V_{CC}$). Used as an **open (OFF) switch**.
 
+### BJT as a low-side electronic switch
+
+```text
+             VCC
+              │
+            Load
+              │
+              C
+Control ─RB─ B   NPN
+              E
+              │
+            ground
+```
+
+A logic-high control signal supplies base current through $R_B$, driving the transistor into saturation. The collector-emitter voltage then becomes small and the load is ON. With the control low, base current is approximately zero; the transistor is in cut-off and the load is OFF. Choose $R_B$ to limit base current and provide enough drive for the required load current; do not leave the base floating.
+
 - **Dynamic Output Resistance ($r_o$):**
   $$
   r_o = \left.\frac{\Delta V_{CE}}{\Delta I_C}\right|_{I_B = \text{constant}} \qquad (\text{typically } 20\text{ k}\Omega \text{ to } 50\text{ k}\Omega)
@@ -763,19 +773,18 @@ The endpoints of the straight-line relationship on the $I_C$–$V_{CE}$ graph ar
 An RC-coupled amplifier uses a CE transistor stage. The input coupling capacitor $C_{in}$ passes the AC signal while blocking the source's DC; the output capacitor $C_{out}$ passes the amplified AC signal to the load while keeping the collector's DC bias out of the load. The emitter resistor $R_E$ stabilizes bias, and the bypass capacitor $C_E$ provides a low-impedance AC path around $R_E$ in the mid-band.
 
 ```text
-                         VCC
-                          │
-                         RC
-                          │──── Cout ──── RL ── ground
-                          C
-Vin ── Cin ── B       NPN transistor
-           bias ────── B
-                          E
-                          │
-                      RE ║ CE
-                          │
-                        ground
+VCC ── RC ──┬── C (Q1, NPN)
+            └── Cout ── RL ── GND
+
+Vin ── Cin ──┬── B (Q1)
+VCC ── R1 ────┤
+GND ── R2 ────┘
+
+E (Q1) ──┬── RE ── GND
+         └── CE ── GND
 ```
+
+In this sketch, $R_1$ and $R_2$ form the base voltage-divider bias network: $R_1$ connects from $V_{CC}$ to the base node and $R_2$ connects from the base node to ground. $R_E$ and $C_E$ are in parallel between the emitter and ground. The collector resistor $R_C$ connects the collector to $V_{CC}$; $C_{out}$ couples the collector's AC signal to the load.
 
 The output is amplified and approximately 180° out of phase with the input. Its frequency-response curve has three regions:
 
@@ -784,6 +793,15 @@ The output is amplified and approximately 180° out of phase with the input. Its
 - **High frequencies:** transistor junction and stray capacitances reduce gain.
 
 The lower and upper cut-off frequencies $f_L$ and $f_H$ are conventionally taken at the points where voltage gain falls to $1/\sqrt{2}$ of its mid-band value. The bandwidth is $BW=f_H-f_L$.
+
+| Region | Gain behavior | What sets it |
+|---|---|---|
+| Below $f_L$ | Gain rises as frequency increases toward the pass band | Input/output coupling capacitors and emitter-bypass capacitor |
+| At $f_L$ and $f_H$ | Gain is $0.707A_{v,mid}$, or 3 dB below the mid-band gain | The two cut-off points define the useful band |
+| Between $f_L$ and $f_H$ | Gain is approximately flat at $A_{v,mid}$ | Mid-band amplifier behavior |
+| Above $f_H$ | Gain falls as frequency increases | Transistor junction and stray capacitances |
+
+On a sketch of gain against logarithmic frequency, draw a low-frequency rise, a nearly flat mid-band, and a high-frequency roll-off. Mark $f_L$ and $f_H$ where the curve crosses $0.707A_{v,mid}$; do not treat them as frequencies at which gain becomes zero.
 
 <!-- page 8 | Basics of FET and MOSFET -->
 

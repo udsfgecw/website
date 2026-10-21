@@ -516,24 +516,6 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 
 **Answer:** The sectional side view directly reveals the true shape of the section.
 
-#### Problem 120: Cone cut by a profile plane for a given hyperbola base
-**Given:** A cone (base diameter 50 mm, axis 60 mm) on HP, cut by a plane perpendicular to both HP and VP so the true shape is a hyperbola of 40 mm base.
-**Find:** The front view, top view, and sectional side view showing the true shape.
-
-1. Draw the Top View circle (diameter 50 mm, 8 sectors), project the Front View (height 60 mm), and project the uncut Side View across vertical line $x'y'$.
-
-![Step 120.1: Initial projection showing front view, top view, and right side view setup of a cone resting on its base on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-036-panel-2.webp)
-
-2. In the Top View, locate the vertical cutting chord of length 40 mm (20 mm above and below horizontal centerline $ae$), and extend this vertical cutting plane line up into the Front View.
-
-![Orthographic projection step 120.2 showing construction lines for a sectioned cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-037-panel-1.webp)
-
-3. Project the cut points from the Top View and their heights from the Front View into the Side View, then join them with a smooth curve and hatch the resulting hyperbola.
-
-![Orthographic projection step 120.3 showing the completed views and hatched section of the cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-037-panel-2.webp)
-
-**Answer:** The vertical profile plane cuts a chord of 40 mm in the Top View and produces the required hyperbolic true shape in the Side View.
-
 <!-- page 10 | Development of Prisms and Cylinders (Parallel-Line Method) -->
 
 ## Development of Prisms and Cylinders (Parallel-Line Method)

@@ -306,11 +306,15 @@ A local minimum is like the bottom of a valley. Together they are called **local
 
 At the top of a smooth hill the ground is flat in every direction. So the slope in the $x$-direction and the slope in the $y$-direction are both zero.
 
-> **Critical point.** A point $(a,b)$ is a **critical point** of $f(x,y)$ when
+> **Critical point.** A point $(a,b)$ in the domain is a **critical point** of $f(x,y)$ if either both first partial derivatives are zero there, or at least one first partial derivative does not exist there. When both exist, the stationary-point condition is
 >
-> $$f_x(a,b)=0\qquad\text{and}\qquad f_y(a,b)=0$$
+> $$f_x(a,b)=0\qquad\text{and}\qquad f_y(a,b)=0.$$
 
-Every local extremum is at a critical point. But every critical point is not an extremum, so we need a test.
+### First-derivative theorem for local extrema
+
+If $f$ has a local maximum or minimum at an interior point $(a,b)$ and both first partial derivatives exist there, then $f_x(a,b)=f_y(a,b)=0$. This is the multivariable version of Fermat's theorem. If a partial derivative does not exist, the point can still be a critical point and must not be discarded. The theorem identifies candidates; it does not say every critical point is an extremum.
+
+Every differentiable interior local extremum is therefore a critical point. But every critical point is not an extremum, so we need a test.
 
 ## The second-derivative test
 

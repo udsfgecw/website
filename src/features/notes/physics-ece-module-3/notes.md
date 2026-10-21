@@ -9,8 +9,8 @@ Learn superconductivity and the fundamental principles of dielectric materials, 
 ### Your path through this module
 
 1. **Superconductivity**: Transition temperature, critical field, the Meissner effect, Type I and Type II superconductors, and applications.
-3. **Fundamentals of Dielectrics and Relative Permittivity**: Dielectrics store electrical energy through polarization rather than free conduction.
-2. **Polarization and Susceptibility**: Polarization quantifies the density of induced dipole moments per unit volume.
+2. **Fundamentals of Dielectrics and Relative Permittivity**: Dielectrics store electrical energy through polarization rather than free conduction.
+3. **Polarization and Susceptibility**: Polarization quantifies the density of induced dipole moments per unit volume.
 4. **Relation Between Polarization, Displacement, and Field**: Displacement current and bound surface charges link external fields directly to internal material polarization.
 5. **Types of Polarization**: Total polarization is the sum of distinct microscopic mechanisms operating at atomic, ionic, and molecular levels.
 6. **Internal Field in Solids and Liquids**: The local field experienced by a molecule differs from the macroscopic applied field due to surrounding polarization charges.
@@ -98,8 +98,8 @@ Building on the definition of dielectric constant, we study how an external elec
 When charges of opposite polarity are induced on the surface of a dielectric, the dielectric is said to be polarized, and this effect is known as **Polarization**.
 
 * **Polarization ($P$):** Defined as the net induced dipole moment per unit volume of a polarized dielectric material. The SI unit of polarization is $\text{C/m}^2$.
-* **Polarizability ($\boldsymbol{\rho}$ or $\boldsymbol{\frac{}{}\text{or }\text{\textbf{\textit{$\boldsymbol{\text{\textalpha}}$}}}}$):** A measure of how easily a molecule or atom is polarized by an electric field.
-* **Dielectric Susceptibility ($\boldsymbol{\text{\textbf{\textit{$\boldsymbol{\text{\textchi}}$}}}}$):** A dimensionless proportionality constant that characterizes the ease with which a dielectric material can be polarized by an external electric field.
+* **Polarizability ($\alpha$):** A measure of how easily a molecule or atom is polarized by an electric field.
+* **Dielectric Susceptibility ($\chi$):** A dimensionless proportionality constant that characterizes the ease with which a dielectric material can be polarized by an external electric field.
 
 ### Mathematical Derivations and Relations
 
@@ -129,7 +129,7 @@ To find the connection between susceptibility and the relative permittivity (die
 
 $$D = \varepsilon_0 E + P$$
 
-Using the definition $D = \varepsilon \varepsilon_0 E = \varepsilon_r \varepsilon_0 E$, we substitute $D$ and $P$ into the equation:
+Using the constitutive relation $D = \varepsilon E = \varepsilon_r \varepsilon_0 E$, we substitute $D$ and $P$ into the equation:
 
 $$\varepsilon_r \varepsilon_0 E = \varepsilon_0 E + \chi \varepsilon_0 E$$
 
@@ -213,7 +213,7 @@ where $N$ is the number of atoms per unit volume and $\alpha_e$ is the electroni
 
 $$\alpha_e = 4\pi\varepsilon_0 R^3$$
 
-$$\therefore P_e = 4\pi\varepsilon_0 N \alpha_e E R^3$$
+$$\therefore P_e = 4\pi\varepsilon_0 N R^3 E$$
 
 **Key Characteristics:**
 1. It increases with an increase in the volume of the atom.

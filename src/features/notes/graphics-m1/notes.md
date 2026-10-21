@@ -41,6 +41,8 @@ Try it on this line before you read on.
 
 > **Syllabus note.** The BIS code of practice for technical drawing is not asked in the end-semester examination. Use this page to draw neatly.
 
+The **Bureau of Indian Standards (BIS) code of practice** sets consistent conventions for engineering drawings, including line types and thicknesses, lettering, dimensioning, scales, and symbols. Apply the conventions specified in the KTU/department drawing template. The syllabus does not require memorizing a particular standard number for the end-semester examination.
+
 ### Types of lines
 
 | Line | Looks like | Used for |
@@ -133,6 +135,18 @@ A straight line AB is fixed by its two end points, so its views are the lines a�
 | inclined to both planes | shorter than AB | shorter than AB |
 
 **Rule.** A line parallel to a plane shows its **true length** in its view on that plane.
+
+### Worked example: line parallel to HP and inclined to VP
+
+A line $AB$ is 80 mm long, lies in HP, and makes a true angle $\phi=30^\circ$ with VP. Draw its **top view** at the true length of 80 mm, at $30^\circ$ to $XY$. Its **front view** lies along $XY$ and has length
+
+$$a'b'=80\cos30^\circ=40\sqrt3\approx69.3\text{ mm}.$$
+
+Both ends have the same height because the line lies in HP. Their distances from VP differ by
+
+$$80\sin30^\circ=40\text{ mm}.$$
+
+This is the one-plane special case: the view on the parallel plane shows true length, while the other view is foreshortened. If the line instead lies in VP, interchange front and top views and use $\theta$ for its inclination to HP.
 
 ### Angles and lengths
 
@@ -1473,7 +1487,7 @@ Whenever you know one endpoint and a trace—or the **projector spacing** betwee
 Finally, in the special case where a line intersects the $XY$ reference line itself, its **coinciding traces** ($HT$ and $VT$) meet at a single common point on $XY$. Both the front view and the top view must pass through this shared point.
 
 ### Worked example
-**Problem 32 (Q32):** A line $AB$ is in the third quadrant. The ends $A$ and $B$ are 20 mm and 60 mm behind the VP. The distance between the end projectors is 75 mm. The line is inclined at 30° to the HP and its horizontal trace is 10 mm above the $XY$ line. Draw the projections of the line $AB$, and determine its true length and vertical trace.
+**Problem 32 (Q32):** A line $AB$ is in the third quadrant. The ends $A$ and $B$ are 20 mm and 60 mm behind the VP. The distance between the end projectors is 75 mm. The line is inclined at 30° to the HP and the top view of its horizontal trace is 10 mm above the $XY$ line (that is, the trace is 10 mm in front of VP). Draw the projections of the line $AB$, and determine its true length and vertical trace.
 
 **Given:** Third quadrant; $A$ is 20 mm behind VP, $B$ is 60 mm behind VP; end projector distance = 75 mm; $\theta = 30°$; $HT$ is 10 mm above $XY$.
 **Find:** Projections $a'b'$ and $ab$, true length $TL$, true inclination $\phi$, and $VT$.
@@ -1502,7 +1516,7 @@ Finally, in the special case where a line intersects the $XY$ reference line its
     "B is 60 mm behind the VP",
     "Distance between the end projectors = 75 mm",
     "Inclination to the HP, θ = 30°",
-    "HT is 10 mm in front of the VP"
+    "The top view of HT is 10 mm above XY; HT is 10 mm in front of VP"
   ]
 }
 ```
@@ -1929,7 +1943,7 @@ Real structures are too large to draw at full size, so we first apply an **engin
 
 To model a rectangular room or **cuboid** of length $L$, breadth $B$, and height $H$, place its floor on the horizontal plane (HP) and its back wall on the vertical plane (VP). The $XY$ line represents the intersection of the floor and the back wall. Above $XY$, the front view is a rectangle of width $L$ and height $H$ showing all vertical heights. Below $XY$, the top view is a rectangle of width $L$ and depth $B$ showing all horizontal floor positions.
 
-Any straight path inside the room—such as a light ray, a ladder, a guy wire between vertical poles, or a **space diagonal** connecting opposite corners—becomes a standard line $AB$. Because you can plot the exact height of each endpoint in the front view ($a'$, $b'$) and its exact floor position in the top view ($a$, $b$), both apparent views $a'b'$ and $ab$ are immediately known. You then apply either the line rotation method or the plane rotation (trapezoidal) method to find the true length ($TL$) and true inclination ($	heta$) to the floor.
+Any straight path inside the room—such as a light ray, a ladder, a guy wire between vertical poles, or a **space diagonal** connecting opposite corners—becomes a standard line $AB$. Because you can plot the exact height of each endpoint in the front view ($a'$, $b'$) and its exact floor position in the top view ($a$, $b$), both apparent views $a'b'$ and $ab$ are immediately known. You then apply either the line rotation method or the plane rotation (trapezoidal) method to find the true length ($TL$) and true inclination ($\heta$) to the floor.
 
 ### Worked example
 
@@ -1985,7 +1999,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 }
 ```
 
-**Answer:** True length of the rod = 78.1 mm ($	heta = 22.6^	ext{o}$, $	ext{phi} = 30.8^	ext{o}$).
+**Answer:** True length of the rod = 78.1 mm ($\heta = 22.6^\ext{o}$, $\ext{phi} = 30.8^\ext{o}$).
 
 #### Problem 49: Distance between diagonally opposite room corners
 **Given:** A room of length 4.8 m, breadth 4.2 m, and height 3.6 m.
@@ -2018,18 +2032,18 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 }
 ```
 
-5. Rotate the top view $ab$ about the left corner until it is parallel to $XY$, project up to the horizontal locus of the top corner at height 3.6 m, and measure the true length and floor inclination $	heta$.
+5. Rotate the top view $ab$ about the left corner until it is parallel to $XY$, project up to the horizontal locus of the top corner at height 3.6 m, and measure the true length and floor inclination $\heta$.
 
 ![Worked orthographic projection solution step 194 for a room diagonal PQ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-089-panel-1.webp)
 
-**Answer:** True distance = 7.3 m ($a'b' = 6$ m, $ab = 6.4$ m, $	heta = 29.4^	ext{o}$, $	ext{phi} = 35^	ext{o}$).
+**Answer:** True distance = 7.3 m ($a'b' = 6$ m, $ab = 6.4$ m, $\heta = 29.4^\ext{o}$, $\ext{phi} = 35^\ext{o}$).
 
 #### Problem Q202 (46): Distance from hanging lamp to floor corner
-**Given:** A room of $5	ext{ m} 	imes 5	ext{ m}$ and height 6 m; a lamp hangs from the roof center at 4 m above the floor.
+**Given:** A room of $5\ext{ m} \imes 5\ext{ m}$ and height 6 m; a lamp hangs from the roof center at 4 m above the floor.
 **Find:** The true distance between the lamp and any floor corner.
 
 1. Choose a suitable scale (1:100, so 1 m = 10 mm) and draw the reference line $XY$.
-2. Above $XY$, draw the front-view rectangle of width 50 mm (5 m) and height 60 mm (6 m); below $XY$, draw the top-view square of $50	ext{ mm} 	imes 50	ext{ mm}$ ($5	ext{ m} 	imes 5	ext{ m}$).
+2. Above $XY$, draw the front-view rectangle of width 50 mm (5 m) and height 60 mm (6 m); below $XY$, draw the top-view square of $50\ext{ mm} \imes 50\ext{ mm}$ ($5\ext{ m} \imes 5\ext{ m}$).
 3. Locate the floor corner $A$ at the left on $XY$ ($a'$ at the bottom-left of the front view, $a$ at the top-left of the top view).
 4. Locate the lamp $B$ on the vertical center projector (2.5 m from the left wall): mark $b$ at the center of the top-view square (2.5 m below $XY$) and $b'$ in the front view at 4 m above $XY$.
 5. Join $a'b'$ and $ab$, then rotate the top view $ab$ about $a$ until it lies on $XY$.
@@ -2043,7 +2057,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 **Given:** A room 8 m long, 5 m wide, and 4 m high; a bulb hangs at the ceiling center 1 m below it; its spot image falls on a room corner 1 m above the floor. Use scale 1:100.
 **Find:** The true length of the line joining the bulb and the black spot image.
 
-1. Using scale 1:100 (1 m = 10 mm), draw $XY$, the front-view rectangle of $80	ext{ mm} 	imes 40	ext{ mm}$ ($8	ext{ m} 	imes 4	ext{ m}$) above $XY$, and the top-view rectangle of $80	ext{ mm} 	imes 50	ext{ mm}$ ($8	ext{ m} 	imes 5	ext{ m}$) below $XY$.
+1. Using scale 1:100 (1 m = 10 mm), draw $XY$, the front-view rectangle of $80\ext{ mm} \imes 40\ext{ mm}$ ($8\ext{ m} \imes 4\ext{ m}$) above $XY$, and the top-view rectangle of $80\ext{ mm} \imes 50\ext{ mm}$ ($8\ext{ m} \imes 5\ext{ m}$) below $XY$.
 2. Draw the central vertical projector 40 mm (4 m) from the side wall: mark the bulb $b'$ in the front view 10 mm (1 m) below the ceiling line, and $b$ in the top view at the center 25 mm (2.5 m) below $XY$.
 
 ![Step 41.1: Orthographic projection of room and point B](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-082-panel-1.webp)
@@ -2059,7 +2073,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 
 **Answer:** True length of the line joining the bulb and the black spot = 5.12 m.
 
-> **Watch out.** Both the bulb and the spot are elevated above the floor (3 m and 1 m high), so their vertical height difference is only $3	ext{ m} - 1	ext{ m} = 2	ext{ m}$, not the full 3 m height of the bulb.
+> **Watch out.** Both the bulb and the spot are elevated above the floor (3 m and 1 m high), so their vertical height difference is only $3\ext{ m} - 1\ext{ m} = 2\ext{ m}$, not the full 3 m height of the bulb.
 
 #### Problem Q42 (47): Three vertical poles in an equilateral triangle
 **Given:** Three vertical poles $AB = 2$ m, $CD = 4$ m, and $EF = 8$ m stand on floor corners $B, D, F$ forming an equilateral triangle of side 5 m with $BF$ parallel to VP. Use scale 1:100.
@@ -2079,4 +2093,4 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 
 ![Step 42.3: Projection drawing finding true lengths AE, AC, and CE of triangle poles](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-086-panel-1.webp)
 
-**Answer:** $AE = 7.81$ m ($	heta_{AE} = 50^	ext{o}$), $AC = 5.39$ m ($	heta_{AC} = 22^	ext{o}$), and $CE = 6.40$ m ($	heta_{CE} = 39^	ext{o}$).
+**Answer:** $AE = 7.81$ m ($\heta_{AE} = 50^\ext{o}$), $AC = 5.39$ m ($\heta_{AC} = 22^\ext{o}$), and $CE = 6.40$ m ($\heta_{CE} = 39^\ext{o}$).

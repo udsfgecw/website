@@ -7,6 +7,8 @@ root = Path(__file__).resolve().parents[2]
 processing = root / "data/syllabus/processing"
 inventory = json.loads((processing / "s1-subject-verification.json").read_text())
 audit = json.loads((processing / "topic-report.json").read_text())
+postfix_path = processing / "topic-report-postfix.json"
+postfix_audit = json.loads(postfix_path.read_text()) if postfix_path.exists() else None
 manifest_path = processing / "input/image-manifest.json"
 image_status = Counter(item["status"].split(":", 1)[0] for item in json.loads(manifest_path.read_text()))
 
@@ -47,10 +49,10 @@ lines += [
     "",
     "## Targeted refinements applied after the baseline audit",
     "",
-    "- **GBPHT121 (ECE/EEE), Module 3:** added superconductivity, transition temperature, temperature-dependent critical field, Meissner effect, Type I/II comparison, and applications. Added the missing four-module syllabus reader and its catalogue link.",
-    "- **GMEST103 Graphics:** added CAD introduction, design role, advantages, and a dimensioned 2D drawing workflow for internal evaluation. Removed the excluded reverse-section problem page and corrected the exam reader to state eight 15-mark questions, two per module, with one answered from each module (60 marks total; no Part A/Part B split).",
-    "- **UCEST105 Python:** moved selection, iteration, and collection topics in the syllabus reader from Module 2 to Module 3. Removed Python programming and collection pages from the Module 2 notes, added missing syllabus-aligned pseudocode exercises, and added a full Module 3 recursion section with call-stack tracing and the listed sample problems. Registered the shared question-paper page across the common Python branches.",
-    "- **GXEST104 Electrical and Electronics (CSE/ECE/EEE):** created a separate Module 4 note set and catalogue links; moved communication and instrumentation out of Module 3. Added fiber-optic and GSM block diagrams, AM/FM and wired/wireless concepts, a mobile-generation comparison, DMM/function-generator/CRO notes, and IoT case studies. Expanded Module 3 with CB/CE/CC comparison, load-line biasing, RC-coupled amplifier response, and P-channel MOSFET operation.",
+    "- **GBPHT121 (ECE/EEE):** added superconductivity, transition temperature, temperature-dependent critical field, Meissner effect, Type I/II comparison, and applications. Added the missing four-module syllabus reader and its catalogue link; also added the valence-band hole-density derivation and explicit photodetector applications.",
+    "- **GMEST103 Graphics:** added CAD introduction, design role, advantages, command examples, and a dimensioned 2D drawing workflow for internal evaluation. Removed the excluded reverse-section exercises and corrected the exam reader to state eight 15-mark questions, two per module, with one answered from each module (60 marks total; no Part A/Part B split).",
+    "- **UCEST105 Python:** moved selection, iteration, and collection topics in the syllabus reader from Module 2 to Module 3. Removed Python programming and collection pages plus duplicate Module 1 examples from the Module 2 notes; added syllabus-aligned pseudocode exercises, decomposition and multiple-return examples, and a full Module 3 recursion section with call-stack tracing and the listed sample problems. Added Module 4 password-guessing and greedy task-scheduling examples. Registered the shared question-paper page across the common Python branches.",
+    "- **GXEST104 Electrical and Electronics (CSE/ECE/EEE):** created a separate Module 4 note set and catalogue links; moved communication and instrumentation out of Module 3. Added fiber-optic and GSM block diagrams, AM/FM waveforms, wired/wireless comparison, mobile-generation details, DMM/function-generator/CRO notes, Lissajous measurement, and IoT case studies. Expanded Module 3 with CB/CE/CC comparison, load-line biasing, a BJT switch circuit, RC-coupled amplifier response, and P-channel MOSFET operation; added explicit capacitor and inductor V-I relations.",
     "- **Deferred:** the Civil/Mechanical GYMAT101 catalogue decision remains for the final review, as requested. The raw audit below preserves the official Group C syllabus entry and baseline absence.",
     "",
     "## Module-by-module coverage (baseline)",
@@ -61,6 +63,31 @@ status_totals = Counter()
 for result in audit.get("results", []):
     status_totals.update(item.get("status", "unknown") for item in result.get("coverage", []))
 lines += [f"Coverage status totals: {', '.join(f'{status} {count}' for status, count in sorted(status_totals.items())) or 'no topic results returned yet'}.", ""]
+
+if postfix_audit:
+    refreshed_keys = {"A:GMEST103", "B:GBPHT121", "A:GXEST104", "B:GXEST104", "A:UCEST105", "B:UCEST105", "C:UCEST105"}
+    refreshed = [item for item in postfix_audit.get("results", []) if f"{item['group']}:{item['code']}" in refreshed_keys]
+    lines += [
+        "## Gemini recheck after targeted refinements",
+        "",
+        f"The following entries were re-audited against the refreshed note corpus on {postfix_audit.get('generatedAt', 'an unknown date')}. This section is post-change; the full topic-by-topic section below remains the original 27-entry baseline.",
+        "",
+    ]
+    for result in sorted(refreshed, key=lambda item: (item["group"], item["code"])):
+        issues = [item for item in result.get("coverage", []) if item.get("status") in {"missing", "partial", "misfiled"}]
+        boundaries = result.get("module_boundary_issues", [])
+        lines += [
+            f"### Group {result['group']} · {result.get('course_name', result['code'])} (`{result['code']}`)",
+            "",
+            f"- Confidence: {result.get('confidence', 'not returned')}; coverage findings still marked missing/partial/misfiled: {len(issues)}; module-boundary findings: {len(boundaries)}.",
+        ]
+        for item in issues:
+            found = f" Found in: {item.get('found_in_module')}." if item.get("found_in_module") else ""
+            action = f" Action: {item.get('needed_fix')}" if item.get("needed_fix") else ""
+            lines.append(f"- **{item.get('status', 'unknown')}** — Module {item.get('official_module')}: {item.get('topic')}.{found}{action}")
+        for item in boundaries:
+            lines.append(f"- **Misfiled topic** — {item.get('topic')}: official Module {item.get('official_module')}, found in {item.get('found_in_module')}. {item.get('needed_fix', '')}")
+        lines.append("")
 
 for result in sorted(audit.get("results", []), key=lambda item: (item["group"], item["code"])):
     branches = ", ".join(result.get("departments", []))

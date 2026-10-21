@@ -598,36 +598,7 @@ When $n=0$, the loop does not run and the initialized result remains 1.
 | 3 | 3 | 6 |
 | 4 | 4 | 24 |
 
-<!-- page 26 | Module 2 · source page 13 -->
-
-## Problem-solving example: solve a jigsaw puzzle
-
-When the reference picture is unavailable, trial and error can help narrow the choices. Use clues from shape, colour, and neighbouring pieces to avoid random attempts.
-
-1. Separate edge and corner pieces from the rest.
-2. Build the border using pieces with straight edges.
-3. Group interior pieces by colour or pattern.
-4. Try a piece in a likely location; if it does not fit, set it aside and test another.
-5. Join matching clusters and use the combined shape and image as new clues.
-6. Continue until the remaining gaps are filled, revisiting earlier choices when necessary.
-
-<!-- page 27 | Module 2 · source page 14 -->
-
-## Problem-solving example: choose a restaurant using heuristics
-
-**Heuristic**
-
-A heuristic is a shortcut for narrowing a choice quickly; it does not prove that the chosen restaurant is the best. For example:
-
-1. Filter for places that are nearby and open at the planned time.
-2. Check recent reviews and the menu.
-3. Compare the price with your budget.
-4. Ask someone local for a recommendation if you are still unsure.
-5. Choose a suitable option and confirm its location and availability before leaving.
-
-These rules reduce the options quickly. If the choice matters more, compare more information before deciding.
-
-<!-- page 28 | Module 2 · source page 15 -->
+<!-- page 26 | Module 2 · source page 15 -->
 
 ## Flowchart: test whether a number is odd or even
 
@@ -656,7 +627,7 @@ STOP
 | 7 | 1 | Odd |
 | -4 | 0 | Even |
 
-<!-- page 29 | Module 2 · source page 16 -->
+<!-- page 27 | Module 2 · source page 16 -->
 
 ## Concert-ticket pricing rules
 
@@ -676,7 +647,7 @@ For this exercise, a ticket costs 7 for a person under 16, 5 for a person aged 6
 
 Use one selection chain so exactly one band determines the price.
 
-<!-- page 30 | Module 2 · source page 17 -->
+<!-- page 28 | Module 2 · source page 17 -->
 
 ## Concert-ticket flowchart
 
@@ -686,7 +657,7 @@ A matching branch goes straight to the output. It must not continue into later p
 
 [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-concert-fare.webp)
 
-<!-- page 31 | Module 2 · source page 18 -->
+<!-- page 29 | Module 2 · source page 18 -->
 
 ## Concert-ticket pseudocode
 
@@ -706,7 +677,7 @@ STOP
 
 Notice that `charge` is calculated, not read as an input. The `ELSE` branch covers ages from 16 up to, but not including, 65.
 
-<!-- page 32 | Module 2 · source page 19 -->
+<!-- page 30 | Module 2 · source page 19 -->
 
 ## Check ticket-price boundaries
 
@@ -721,7 +692,7 @@ Boundary values are where an incorrect comparison is easiest to spot. Test the v
 
 Also test a typical age in each band. If negative ages are possible in the input, reject them before applying the pricing rules.
 
-<!-- page 33 | Module 2 · source page 20 -->
+<!-- page 31 | Module 2 · source page 20 -->
 
 ## Commission-rate rules
 
@@ -740,7 +711,7 @@ $$\text{commission amount} = \text{sales} \times \text{rate}$$
 
 For sales of 3000, the rate is 0.04 and the commission amount is 120.
 
-<!-- page 34 | Module 2 · source page 21 -->
+<!-- page 32 | Module 2 · source page 21 -->
 
 ## Commission pseudocode
 
@@ -769,7 +740,7 @@ STOP
 
 Sales of 2000, 4000, and 6000 use rates 0.02, 0.04, and 0.07 respectively. A value just above each boundary enters the next band.
 
-<!-- page 35 | Module 2 · source page 22 -->
+<!-- page 33 | Module 2 · source page 22 -->
 
 ## Commission-rate flowchart
 
@@ -779,7 +750,7 @@ After validating that sales is non-negative, select one rate using this chart. C
 
 [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-commission.webp)
 
-<!-- page 36 | Module 2 · source page 23 -->
+<!-- page 34 | Module 2 · source page 23 -->
 
 ## Repeat-until loops
 
@@ -803,7 +774,7 @@ UNTIL i > 10
 
 Python has no dedicated `repeat-until` statement. Use `while True` with a `break` after the body when the stopping condition is satisfied.
 
-<!-- page 37 | Module 2 · source page 24 -->
+<!-- page 35 | Module 2 · source page 24 -->
 
 ## Choose the right control structure
 
@@ -820,7 +791,7 @@ A loop's condition must be interpreted carefully: `WHILE condition` continues wh
 
 To print 1 through 10, a while loop can continue while `i <= 10`, whereas a repeat-until loop can stop when `i > 10`. Both require an update such as `i = i + 1`.
 
-<!-- page 38 | Module 2 · source page 25 -->
+<!-- page 36 | Module 2 · source page 25 -->
 
 ## Module calls and loop setup
 
@@ -839,7 +810,7 @@ Before a counter loop starts, define:
 
 The course's hexagonal loop notation is a compact summary of these controls; it does not replace the loop body's instructions.
 
-<!-- page 39 | Module 2 · source page 26 -->
+<!-- page 37 | Module 2 · source page 26 -->
 
 ## Sum the first n natural numbers
 
@@ -864,7 +835,7 @@ Check the result against $n(n+1)/2$.
 
 Keep variable names consistent: `total`, `Total`, and `TOTAL` can denote different names in a programming language.
 
-<!-- page 40 | Module 2 · source page 27 -->
+<!-- page 38 | Module 2 · source page 27 -->
 
 ## Example: calculate the average age of students
 
@@ -887,7 +858,7 @@ AVERAGE AGE
 
 **Check:** three ages of 18, 20, and 22 give a total of 60 and an average of 20. Reject `n <= 0` before entering this repeat-until loop.
 
-<!-- page 41 | Module 2 · source page 28 -->
+<!-- page 39 | Module 2 · source page 28 -->
 
 ## While loops
 
@@ -913,7 +884,7 @@ A `for` loop is useful when the values or number of repetitions are known in adv
 
 > **Watch out.** If the body never changes a value used in the condition, the loop may never terminate. In this example, omitting `i = i + 1` leaves the condition true indefinitely when n is positive.
 
-<!-- page 42 | Module 2 · source page 29 -->
+<!-- page 40 | Module 2 · source page 29 -->
 
 ## For loops and step values
 
@@ -931,7 +902,7 @@ END FOR
 
 The step must be non-zero and point toward the stopping value. For the course’s `DOWN TO` notation, `FOR i = 10 DOWN TO 1` already implies a decreasing counter.
 
-<!-- page 43 | Module 2 · source page 30 -->
+<!-- page 41 | Module 2 · source page 30 -->
 
 ## Review: selection and repetition patterns
 
@@ -955,7 +926,7 @@ END FOR
 
 For example, `FOR i = 1 TO n` repeats a known number of times, while `WHILE condition` repeats until its condition becomes false.
 
-<!-- page 44 | Additional syllabus practice -->
+<!-- page 42 | Additional syllabus practice -->
 
 ## Additional Module 2 practice: pseudocode and flowcharts
 
@@ -1027,6 +998,47 @@ OUTPUT sum
 ```
 
 For `n = 0`, handle the empty input explicitly before entering the repeat-until loop.
+
+The sequence flow for evaluating `d = a + b * c` is **Start → input a, b, c → calculate d → output d → Stop**. Draw each step with the matching flowchart symbol; the decision and repetition exercises use decision diamonds and loop-back arrows.
+
+### Determine a KTU grade
+
+Use the grade bands supplied by the applicable KTU grading table; the syllabus does not print numerical cutoffs, so do not substitute guessed thresholds. The following are two alternative pseudocode forms using those supplied band limits.
+
+**If–else form:**
+
+```text
+INPUT mark
+IF mark ≥ A_PLUS_MIN THEN
+    grade ← "A+"
+ELSE IF mark ≥ A_MIN THEN
+    grade ← "A"
+ELSE IF mark ≥ B_PLUS_MIN THEN
+    grade ← "B+"
+ELSE IF mark ≥ B_MIN THEN
+    grade ← "B"
+ELSE
+    grade ← grade_from_remaining_official_bands(mark)
+END IF
+OUTPUT grade
+```
+
+**Case form:**
+
+```text
+INPUT mark
+band ← official_grade_band(mark)  // look up the same KTU grade table
+CASE band OF
+    "A+": grade ← "A+"
+    "A":  grade ← "A"
+    "B+": grade ← "B+"
+    "B":  grade ← "B"
+    OTHERWISE: grade ← band
+END CASE
+OUTPUT grade
+```
+
+Trace boundary values from the official table to verify that each mark belongs to exactly one band.
 
 ### Find the largest of n numbers
 

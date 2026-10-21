@@ -285,6 +285,20 @@ Each one is just the Module 1 definition of a derivative, applied to one variabl
 
 The curly $\partial$ means "there are other variables also". The straight $d$ is only for functions of one variable.
 
+## Partial derivatives and continuity
+
+Continuity asks whether the function values approach the value at the point. The existence of the two partial derivatives at a point does **not** by itself guarantee continuity there.
+
+Consider
+
+$$
+f(x,y)=\begin{cases}\dfrac{xy}{x^2+y^2},&(x,y)\ne(0,0),\\0,&(x,y)=(0,0).\end{cases}
+$$
+
+At the origin, both partial derivatives are $0$: along either coordinate axis the function is $0$. But along $y=x$, $f(x,x)=\tfrac12$, so the limit at the origin does not exist. Thus $f$ is not continuous there.
+
+A useful sufficient condition is: if the first partial derivatives exist in a neighborhood of a point and are continuous at that point, then $f$ is differentiable there. Differentiability implies continuity. These are sufficient conditions; do not reverse the implications without checking the hypotheses.
+
 ## Method
 
 > **Steps.**
@@ -381,6 +395,20 @@ $$
 
 Nothing changes. For $u=f(x,y,z)$, to find $u_x$ treat **both** $y$ and $z$ as constants, and similarly for the others.
 
+**Worked example.** Let
+
+$$u(x,y,z)=x^2y+yz^3+e^{xz}.$$
+
+Differentiate with respect to one variable at a time, holding the other two fixed:
+
+$$
+u_x=2xy+ze^{xz},\qquad
+u_y=x^2+z^3,\qquad
+u_z=3yz^2+xe^{xz}.
+$$
+
+At $(1,2,0)$, these are $u_x=4$, $u_y=1$, and $u_z=1$. For $u_z$, for example, $x$ and $y$ are constants, so the chain rule gives $\frac{\partial}{\partial z}e^{xz}=xe^{xz}$.
+
 > **Watch out.** Students often forget the chain-rule factors. In Example 5 the $3$ and the $4$ come from differentiating the inside part $3x+4y$. In Example 8 the $-1$ comes from differentiating $-y$. Also, never write $d$ where you should write $\partial$.
 
 ---
@@ -453,7 +481,13 @@ A partial derivative is also a function of $x$ and $y$, so we can differentiate 
 
 The last two are the **mixed** derivatives. The subscripts in $f_{xy}$ are read left to right, but the $\partial$ notation is read right to left. Some books swap the names. This is not a problem here because of the next fact.
 
-> **Mixed partials are equal.** If $f_{xy}$ and $f_{yx}$ are continuous, then $f_{xy}=f_{yx}$. Every function in this module satisfies this, so the order of differentiation does not matter. Use it to **check** your answer: find both mixed derivatives and see that they are equal.
+### The Mixed Derivative Theorem (Clairaut's Theorem)
+
+If the mixed second partial derivatives $f_{xy}$ and $f_{yx}$ are continuous in a neighborhood of $(a,b)$, then
+
+$$f_{xy}(a,b)=f_{yx}(a,b).$$
+
+Under these continuity hypotheses, the order of differentiation can be interchanged. Without the hypotheses, equality is not guaranteed. For the smooth functions used in the examples below, use the theorem to **check** your work by calculating both mixed derivatives.
 
 ## Examples
 

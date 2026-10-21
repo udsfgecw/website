@@ -136,7 +136,7 @@ const catalogChecks = {
   civilAndMechanicalGraphicsEntryIsBranchScopedAway: /\.\.\.\(branchId === "civil" \|\| branchId === "me" \? \[\] : \[\{\s*name: "Engineering Graphics"/.test(notesSource),
   civilAndMechanicalElectricalEntryIsBranchScopedAway: /\.\.\.\(branchId === "civil" \|\| branchId === "me" \? \[\] : \[\{\s*name: "Electrical and Electronics Engineering"/.test(notesSource),
   pythonModuleLinksAreSharedAcrossBranches: notesSource.includes('code: "UCEST105"') && /code: "UCEST105"[\s\S]{0,400}modules: \[\s*\{ name: "Module 1"/.test(notesSource),
-  civilAndMechanicalPythonRoutesResolve: routesSource.includes('["ece", "eee", "civil", "me"]') && routesSource.includes('["python", ["module-1", "module-2", "module-3", "module-4"]]'),
+  civilAndMechanicalPythonRoutesResolve: routesSource.includes('["ece", "eee", "civil", "me"]') && routesSource.includes('["python", ["module-1", "module-2", "module-3", "module-4", "question-papers"]]'),
 };
 if (Object.values(catalogChecks).some((passed) => !passed)) throw new Error(`A notes-catalogue verification check failed: ${JSON.stringify(catalogChecks)}`);
 const subjectMap = departments.map((department) => ({

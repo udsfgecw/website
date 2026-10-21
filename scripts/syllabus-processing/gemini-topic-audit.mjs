@@ -5,6 +5,9 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const inputDir = path.join(root, "data/syllabus/processing/input");
 const outputDir = path.join(root, "data/syllabus/processing");
+const reportFile = path.resolve(outputDir, process.env.AUDIT_REPORT_PATH || "topic-report.json");
+if (!reportFile.startsWith(`${outputDir}${path.sep}`)) throw new Error("AUDIT_REPORT_PATH must stay inside data/syllabus/processing/.");
+const refreshCodes = new Set((process.env.AUDIT_REFRESH_CODES || "").split(",").map((value) => value.trim()).filter(Boolean));
 const corpus = JSON.parse(await readFile(path.join(inputDir, "syllabus-corpus.json"), "utf8"));
 
 // Read the notebook-agent Vertex configuration without printing or copying credentials.
@@ -30,10 +33,11 @@ const courses = [...distinct.values()];
 const courseByKey = new Map(courses.map((course) => [`${course.group}:${course.code}`, course]));
 const existing = new Map();
 try {
-  const previous = JSON.parse(await readFile(path.join(outputDir, "topic-report.json"), "utf8"));
+  const previous = JSON.parse(await readFile(reportFile, "utf8"));
   for (const result of previous.results || []) {
     const key = `${result.group}:${result.code}`;
     const course = courseByKey.get(key);
+    if (refreshCodes.has(key)) continue;
     if (result.raw_syllabus_excerpt && course && hasFormalModules(course.syllabusExcerpt)) continue;
     existing.set(key, result);
   }
@@ -67,7 +71,7 @@ await mkdir(outputDir, { recursive: true });
 const completed = new Map(existing);
 for (const course of courses) {
   const key = `${course.group}:${course.code}`;
-  if (!course.notesModules.length && !hasFormalModules(course.syllabusExcerpt) && !completed.has(key)) {
+    if (!course.notesModules.length && !hasFormalModules(course.syllabusExcerpt) && !completed.has(key) && !refreshCodes.has(key)) {
     completed.set(key, {
       group: course.group,
       code: course.code,
@@ -94,7 +98,7 @@ await Promise.all(Array.from({ length: concurrency }, async () => {
   while (cursor < courses.length) {
     const course = courses[cursor++];
     const key = `${course.group}:${course.code}`;
-    if (completed.has(key)) continue;
+  if (completed.has(key) && !refreshCodes.has(key)) continue;
     const prompt = `Audit this syllabus course against its currently available notes.\n\nGROUP: ${course.group}\nCOURSE CODE: ${course.code}\nOFFICIAL SYLLABUS EXCERPT:\n${course.syllabusExcerpt}\n\nCURRENT NOTES MODULES (source paths and complete Markdown):\n${course.notesModules.length ? course.notesModules.map((module) => `\n--- ${module.moduleId} | ${module.source} ---\n${module.text}`).join("\n") : "[No notes module files mapped to this course.]"}\n\nReturn the complete JSON report requested in your instructions.`;
     let report;
     let lastError;
@@ -131,7 +135,7 @@ await Promise.all(Array.from({ length: concurrency }, async () => {
 async function persist(completedKey) {
   persistQueue = persistQueue.then(async () => {
     const results = [...completed.values()].sort((a, b) => `${a.group}:${a.code}`.localeCompare(`${b.group}:${b.code}`));
-    await writeFile(path.join(outputDir, "topic-report.json"), JSON.stringify({ model, generatedAt: new Date().toISOString(), completed: results.length, total: courses.length, results }, null, 2) + "\n");
+    await writeFile(reportFile, JSON.stringify({ model, generatedAt: new Date().toISOString(), completed: results.length, total: courses.length, results }, null, 2) + "\n");
     if (completedKey) {
       await appendFile(path.join(outputDir, "topic-report-progress.log"), `${new Date().toISOString()} completed ${completedKey}\n`);
       console.log(`audited ${completedKey} (${results.length}/${courses.length})`);

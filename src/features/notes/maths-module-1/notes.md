@@ -607,6 +607,22 @@ $$
 
 This is the **first principle** (or definition) of the derivative.
 
+## The derivative as a function
+
+The derivative at one point, $f'(a)$, is a number. If the same limit exists at each input $x$ in an interval, it defines a new function:
+
+$$
+f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}.
+$$
+
+For example, for $f(x)=x^2$,
+
+$$
+f'(x)=\lim_{h\to0}\frac{(x+h)^2-x^2}{h}=\lim_{h\to0}(2x+h)=2x.
+$$
+
+Here $f'(x)=2x$ is defined for every real $x$. A function may fail to have a derivative at some points (for example, $f(x)=|x|$ has a corner at $x=0$), so the domain of $f'$ can be smaller than the domain of $f$.
+
 > **Four ways to say the same thing.** $f'(a)$ is
 > (1) the slope of the graph of $y=f(x)$ at $x=a$,
 > (2) the slope of the tangent line to the curve at $x=a$,

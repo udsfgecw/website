@@ -1,6 +1,6 @@
 # KTU 2024 first-year S1 syllabus and notes audit
 
-Generated: 2026-10-21T22:20+05:30
+Generated: 2026-10-21T23:11+05:30
 Gemini model: `gemini-4-argon` via Google ADK and Vertex AI.
 Course audits complete: 27/27 group/course entries.
 
@@ -47,21 +47,84 @@ The Civil/Mechanical Mathematics catalogue decision is intentionally deferred, a
 
 ## Image input snapshot
 
-The corpus includes 817 unique image references: 0 downloaded, 0 copied from local public files, 438 already present from an earlier snapshot pass, and 379 links returning 404. The 404 references are recorded in `data/syllabus/processing/input/image-manifest.json` and were not passed off as available evidence.
+The corpus includes 814 unique image references: 0 downloaded, 0 copied from local public files, 438 already present from an earlier snapshot pass, and 376 links returning 404. The 404 references are recorded in `data/syllabus/processing/input/image-manifest.json` and were not passed off as available evidence.
 
 This is the Gemini baseline snapshot captured before the targeted refinements below were applied. The coverage findings describe what the agent saw in the original notes; the remediation summary records the changes made afterward.
 
 ## Targeted refinements applied after the baseline audit
 
-- **GBPHT121 (ECE/EEE), Module 3:** added superconductivity, transition temperature, temperature-dependent critical field, Meissner effect, Type I/II comparison, and applications. Added the missing four-module syllabus reader and its catalogue link.
-- **GMEST103 Graphics:** added CAD introduction, design role, advantages, and a dimensioned 2D drawing workflow for internal evaluation. Removed the excluded reverse-section problem page and corrected the exam reader to state eight 15-mark questions, two per module, with one answered from each module (60 marks total; no Part A/Part B split).
-- **UCEST105 Python:** moved selection, iteration, and collection topics in the syllabus reader from Module 2 to Module 3. Removed Python programming and collection pages from the Module 2 notes, added missing syllabus-aligned pseudocode exercises, and added a full Module 3 recursion section with call-stack tracing and the listed sample problems. Registered the shared question-paper page across the common Python branches.
-- **GXEST104 Electrical and Electronics (CSE/ECE/EEE):** created a separate Module 4 note set and catalogue links; moved communication and instrumentation out of Module 3. Added fiber-optic and GSM block diagrams, AM/FM and wired/wireless concepts, a mobile-generation comparison, DMM/function-generator/CRO notes, and IoT case studies. Expanded Module 3 with CB/CE/CC comparison, load-line biasing, RC-coupled amplifier response, and P-channel MOSFET operation.
+- **GBPHT121 (ECE/EEE):** added superconductivity, transition temperature, temperature-dependent critical field, Meissner effect, Type I/II comparison, and applications. Added the missing four-module syllabus reader and its catalogue link; also added the valence-band hole-density derivation and explicit photodetector applications.
+- **GMEST103 Graphics:** added CAD introduction, design role, advantages, command examples, and a dimensioned 2D drawing workflow for internal evaluation. Removed the excluded reverse-section exercises and corrected the exam reader to state eight 15-mark questions, two per module, with one answered from each module (60 marks total; no Part A/Part B split).
+- **UCEST105 Python:** moved selection, iteration, and collection topics in the syllabus reader from Module 2 to Module 3. Removed Python programming and collection pages plus duplicate Module 1 examples from the Module 2 notes; added syllabus-aligned pseudocode exercises, decomposition and multiple-return examples, and a full Module 3 recursion section with call-stack tracing and the listed sample problems. Added Module 4 password-guessing and greedy task-scheduling examples. Registered the shared question-paper page across the common Python branches.
+- **GXEST104 Electrical and Electronics (CSE/ECE/EEE):** created a separate Module 4 note set and catalogue links; moved communication and instrumentation out of Module 3. Added fiber-optic and GSM block diagrams, AM/FM waveforms, wired/wireless comparison, mobile-generation details, DMM/function-generator/CRO notes, Lissajous measurement, and IoT case studies. Expanded Module 3 with CB/CE/CC comparison, load-line biasing, a BJT switch circuit, RC-coupled amplifier response, and P-channel MOSFET operation; added explicit capacitor and inductor V-I relations.
 - **Deferred:** the Civil/Mechanical GYMAT101 catalogue decision remains for the final review, as requested. The raw audit below preserves the official Group C syllabus entry and baseline absence.
 
 ## Module-by-module coverage (baseline)
 
 Coverage status totals: covered 616, misfiled 17, missing 59, no_notes 308, partial 63.
+
+## Gemini recheck after targeted refinements
+
+The following entries were re-audited against the refreshed note corpus on 2026-10-21T17:31:36.250Z. This section is post-change; the full topic-by-topic section below remains the original 27-entry baseline.
+
+### Group A · ENGINEERING GRAPHICS AND COMPUTER AIDED DRAWING (`GMEST103`)
+
+- Confidence: high; coverage findings still marked missing/partial/misfiled: 5; module-boundary findings: 1.
+- **partial** — Module Module 1: Introduction: Relevance of technical drawing in engineering field (No questions for the end semester examination). Found in: graphics-m1. Action: Add a brief overview explaining the relevance and role of technical drawing in engineering communication and manufacturing.
+- **missing** — Module Module 1: BIS code of practice for technical drawing (No questions for the end semester examination). Found in: graphics-m1. Action: Add a concise summary of BIS code of practice conventions for technical drawing.
+- **partial** — Module Module 1: Projection of straight lines inclined to one plane. Found in: graphics-m1. Action: Add 1–2 basic worked examples of straight lines parallel to one reference plane and inclined to the other.
+- **partial** — Module Module 2: Projection of Simple solids (Triangular, Rectangle, Square, Pentagonal and Hexagonal Prisms, Pyramids, Cone and Cylinder only). Found in: graphics-m2. Action: Include explicit mention or an example involving a rectangular prism or rectangular pyramid in Module 2.
+- **partial** — Module Module 2: Projection of solids in simple position including profile view. Found in: graphics-m2. Action: Add a section and worked example in Module 2 showing how to draw the profile (left/right side) view of a simple solid in simple position.
+- **Misfiled topic** — Projection of solids in simple position including profile view: official Module Module 2, found in graphics-m3. Profile (side) view construction using a vertical reference line x'y' and 45-degree mitre line / compass arcs is only demonstrated in Module 3 Page 9 (Problem 93: Hexagonal pyramid cut by a profile plane), whereas the syllabus places 'Projection of solids in simple position including profile view' in Module 2. Add profile view construction for simple solids in simple position to Module 2.
+
+### Group A · INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING (`GXEST104`)
+
+- Confidence: high; coverage findings still marked missing/partial/misfiled: 1; module-boundary findings: 0.
+- **partial** — Module Module 4: Block diagram of AM and FM super-heterodyne receiver. Found in: electrical-module-4. Action: Explicitly show or detail the distinct blocks of an FM superheterodyne receiver (such as the amplitude limiter stage before the FM discriminator and de-emphasis network) alongside the AM superheterodyne receiver, and include standard IF values (455 kHz for AM, 10.7 MHz for FM).
+
+### Group A · ALGORITHMIC THINKING WITH PYTHON (`UCEST105`)
+
+- Confidence: high; coverage findings still marked missing/partial/misfiled: 2; module-boundary findings: 1.
+- **partial** — Module Module 2: Sample problem: determine the grade earned by a student based on KTU grade scale (using if-else and case structures). Found in: python-module-2. Action: Include the official KTU 2024 grade scale numerical ranges and complete both the if-else and case structure pseudocode and flowcharts with concrete grade thresholds.
+- **partial** — Module Module 2: Visualizing the control flow of Algorithms using tools like RAPTOR and flowcharts for sample problems. Found in: python-module-2. Action: Add a brief note introducing RAPTOR for visualizing flowchart execution and include flowcharts for the remaining sample problems on the final page.
+- **Misfiled topic** — Sequence data types in Python - list, tuple, set, dictionary: official Module Module 3, found in python-module-1. Module 1 (page 8) introduces List, Tuple, Dictionary, and Set alongside numeric and string types, even though page 7 notes they belong to Module 3. Keep Module 1 focused on Numeric and String data types (as specified in the Module 1 syllabus) and leave list, tuple, set, and dictionary to Module 3.
+
+### Group B · PHYSICS FOR ELECTRICAL SCIENCE (`GBPHT121`)
+
+- Confidence: high; coverage findings still marked missing/partial/misfiled: 0; module-boundary findings: 0.
+
+### Group B · INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING (`GXEST104`)
+
+- Confidence: high; coverage findings still marked missing/partial/misfiled: 7; module-boundary findings: 0.
+- **partial** — Module Module 3: Working of PN junction diode, V-I characteristics of PN Junction diode. Found in: electrical-module-3. Action: Add a clear diagram/plot of the PN junction diode V-I characteristics showing forward, reverse, and breakdown regions.
+- **partial** — Module Module 3: Concept of biasing and load line. Found in: electrical-module-3. Action: Expand the explanation of biasing (need for biasing, thermal stabilization, voltage-divider bias) and include a DC load line graph showing Q-point, cut-off, and saturation.
+- **partial** — Module Module 3: RC coupled amplifier - Circuit diagram and frequency response. Found in: electrical-module-3. Action: Provide a complete RC-coupled amplifier circuit diagram (showing R1, R2, R_C, R_E, C_in, C_out, C_E), a plotted frequency response curve (Gain vs log f showing f_L, f_H, -3 dB points, and bandwidth), and fuller working explanation.
+- **partial** — Module Module 3: Construction and working of N-channel and P-Channel MOSFETs. Found in: electrical-module-3. Action: Add cross-sectional construction diagrams, circuit symbols, and drain/transfer characteristic curves for N-channel and P-channel MOSFETs.
+- **partial** — Module Module 4: Concept of AM and FM (No derivation required). Found in: electrical-module-4. Action: Include actual waveform diagrams for message, carrier, AM wave, and FM wave, and explain basic terms (modulation index, need for modulation, AM vs FM comparison).
+- **partial** — Module Module 4: Block diagram of AM and FM super-heterodyne receiver. Found in: electrical-module-4. Action: Provide separate or clearly differentiated block diagrams and explanations for AM superheterodyne receiver (455 kHz IF) and FM superheterodyne receiver (10.7 MHz IF, amplitude limiter, frequency discriminator, de-emphasis network).
+- **partial** — Module Module 4: Comparison of 3G, 4G, 5G and 6G communication technologies. Found in: electrical-module-4. Action: Expand the 3G/4G/5G/6G comparison table to include data rates, latency, frequency bands, multiple-access techniques, switching type, and key applications.
+
+### Group B · ALGORITHMIC THINKING WITH PYTHON (`UCEST105`)
+
+- Confidence: high; coverage findings still marked missing/partial/misfiled: 3; module-boundary findings: 2.
+- **partial** — Module Module 2: Sample problem: determine the grade earned by a student based on KTU grade scale (using if-else and case structures). Found in: python-module-2. Action: Provide concrete KTU 2024 grade scale cutoffs in both the if-else and case structure pseudocode examples, and include corresponding flowcharts.
+- **partial** — Module Module 2: Flowcharts for the sample problems listed earlier. Found in: python-module-2. Action: Add explicit flowcharts for d=a+b*c, KTU grade scale (if-else and case), 1 to 50 descending, sum of n numbers (all 3 loop variants), and largest of n numbers; optionally mention RAPTOR for visualization.
+- **partial** — Module Module 3: Decomposition and Modularisation Example: Merge sort. Found in: python-module-3. Action: Include a concrete modular Python decomposition example of Merge Sort (showing `merge_sort` and `merge` functions) or cross-link the full code directly in Module 3.
+- **Misfiled topic** — Sequence data types in Python - list, tuple, set, dictionary: official Module Module 3, found in python-module-1. Module 1 page 8 introduces List, Tuple, Dictionary, and Set alongside String and Numeric types, though they are also fully covered in Module 3. Keep Module 1 focused on Numeric and String data types as per the official syllabus.
+- **Misfiled topic** — Decomposition and Modularisation Example: Merge sort: official Module Module 3, found in python-module-4. The syllabus footnote in Module 3 requires introducing and demonstrating Decomposition and Modularisation using Merge Sort. Module 3 page 30 only gives a brief 3-sentence summary and defers the full algorithmic and code demonstration to Module 4 page 4.
+
+### Group C · ALGORITHMIC THINKING WITH PYTHON (`UCEST105`)
+
+- Confidence: high; coverage findings still marked missing/partial/misfiled: 7; module-boundary findings: 2.
+- **partial** — Module Module 2: Sample problem: Evaluate an expression, d=a+b*c. Found in: python-module-2. Action: Add an explicit flowchart diagram for evaluating d = a + b * c if full visual flowchart coverage for all sample problems is desired.
+- **partial** — Module Module 2: Sample problem: determine the grade earned by a student based on KTU grade scale (using if-else and case structures). Found in: python-module-2. Action: Supply the concrete KTU numeric grade scale cutoffs in the pseudocode (both if-else and case structures) and include the corresponding flowchart.
+- **partial** — Module Module 2: Sample problem: print the numbers from 1 to 50 in descending order. Found in: python-module-2. Action: Add a flowchart for printing numbers from 50 down to 1.
+- **partial** — Module Module 2: Sample problem: find the sum of n numbers input by the user (using all the three loop variants). Found in: python-module-2. Action: Add flowcharts for summing n user-input numbers across the loop variants.
+- **partial** — Module Module 2: Sample problem: largest of n numbers. Found in: python-module-2. Action: Add a flowchart for finding the largest of n numbers.
+- **missing** — Module Module 2: Visualizing control flow using tools like RAPTOR and flowcharts for the sample problems. Action: Add a brief note introducing RAPTOR for visualizing algorithm control flow and provide flowcharts for the remaining sample problems.
+- **partial** — Module Module 3: Decomposition demonstrated using Merge sort. Found in: python-module-3. Action: Include a concrete decomposition demonstration (e.g., `merge_sort` calling `merge`) directly in Module 3.
+- **Misfiled topic** — Sequence data types in Python - list, tuple, set, dictionary: official Module Module 3, found in python-module-1. Module 1 (page 8) introduces List, Tuple, Dictionary, and Set alongside numeric and string types, even though page 7 notes they belong to Module 3. Keep Module 1 focused on numeric and string types (full coverage is already in Module 3).
+- **Misfiled topic** — Decomposition demonstrated using Merge sort: official Module Module 3, found in python-module-4. Module 3 (page 30) only mentions Merge Sort in 3 sentences and defers the implementation to Module 4. Include a self-contained decomposition example of Merge Sort in Module 3 as required by the Module 3 syllabus footnote.
 
 ### Group A · MATHEMATICS FOR INFORMATION SCIENCE – 1 (`GAMAT101`) — cse
 

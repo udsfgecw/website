@@ -59,6 +59,25 @@ print(crack_lock("9999"))  # 10000  (worst case)
 
 > **Watch out.** Adding one digit multiplies the work by 10. Brute force is fine for small search spaces but quickly becomes impractical.
 
+### Example: password-guessing search space
+
+For a toy exercise, suppose a code consists of three lowercase letters and the allowed alphabet has 26 symbols. Exhaustive enumeration has $26^3=17{,}576$ candidates. A loop can count candidates until a supplied test value is reached; a real password is not available to this offline exercise, and real accounts use authentication controls and rate limits.
+
+```python
+from itertools import product
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+tries = 0
+for candidate in product(alphabet, repeat=3):
+    tries += 1
+    guess = "".join(candidate)
+    if guess == "cat":       # toy local comparison only
+        print(guess, tries)
+        break
+```
+
+This illustrates exhaustive search and its rapidly growing candidate count; it does not attempt to access a system.
+
 <!-- page 4 | Module 4 · source page 4 -->
 
 ## Divide-and-conquer approach
@@ -221,6 +240,28 @@ def select_activities(activities):
 
 print(select_activities(activities))  # [(1, 4), (5, 7), (8, 9)]
 ```
+
+### Example: maximize tasks completed within a time limit
+
+Each positive integer gives the time required for one task. When tasks are independent, there are no deadlines or precedence constraints, and the goal is only to complete as many as possible before a total time limit, sort the durations from shortest to longest and take each task that still fits.
+
+```python
+def max_tasks(durations, time_limit):
+    elapsed = 0
+    chosen = []
+    for duration in sorted(durations):
+        if duration <= 0:
+            raise ValueError("task durations must be positive")
+        if elapsed + duration > time_limit:
+            break
+        chosen.append(duration)
+        elapsed += duration
+    return chosen
+
+print(max_tasks([4, 2, 5, 1], 7))  # [1, 2, 4]
+```
+
+This greedy rule is optimal for maximizing the **count** under these assumptions: any solution containing a longer task where a shorter remaining task could fit can replace it without increasing the total time. Extra constraints can change the problem and invalidate this rule.
 
 ### When greedy fails
 

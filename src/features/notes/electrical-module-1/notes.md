@@ -54,6 +54,12 @@ $$
 
 ### V-I Relation of a Capacitor
 
+For a capacitor with constant capacitance $C$ (passive sign convention), current is the rate of change of charge:
+
+$$i_C(t)=C\frac{dv_C(t)}{dt}, \qquad v_C(t)=v_C(t_0)+\frac{1}{C}\int_{t_0}^{t}i_C(\tau)d\tau.$$
+
+A constant voltage gives zero steady current in an ideal capacitor. Reversing the reference direction reverses the current sign.
+
 ![V-I relation of capacitor during charging and discharging](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-008-image-1-source.webp)
 
 ### Inductors
@@ -73,6 +79,10 @@ $$
 ### V-I Characteristics and Switching Behavior of an Inductor
 
 ![V-I characteristic and inductor response graph with circuit diagrams](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-010-image-1-source.webp)
+
+For an ideal inductor with constant inductance $L$ (passive sign convention),
+
+$$v_L(t)=L\frac{di_L(t)}{dt}, \qquad i_L(t)=i_L(t_0)+\frac{1}{L}\int_{t_0}^{t}v_L(\tau)d\tau.$$
 
 An inductor acts as a short circuit to DC current in steady state.
 
@@ -257,8 +267,8 @@ From Figure 1.7, $V_S = V_1 + V_2 + V_3$
 
 $$
 \begin{aligned}
-&= IR_1 + IR_2 + IR_3 \\
-&= I(R_1 + R_2 + R_3) \\
+&= IR_1 + IR_2 + IR_3 \
+&= I(R_1 + R_2 + R_3) \
 &= IR \quad \text{where } R \text{ is the equivalent resistance.}
 \end{aligned}
 $$
@@ -298,11 +308,11 @@ $$
 If resistances $R_1, R_2, \dots R_n$ are connected in parallel, then
 
 $$
-G \quad \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}
+\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}
 $$
 
 $$
-R = R_1R_2/R_1+R_2
+R = \frac{R_1R_2}{R_1+R_2} \qquad\text{(for two parallel resistors)}
 $$
 
 ---
@@ -547,7 +557,7 @@ Figure 1.13
 
 $$
 \begin{aligned}
-R_{XZ} &= \frac{2 \times 2}{2 + 2} = 1\text{ }\Omega\\
+R_{XZ} &= \frac{2 \times 2}{2 + 2} = 1\text{ }\Omega\
 \frac{1}{R_{ZY}} &= \frac{1}{4} + \frac{1}{4} + \frac{1}{4} + \frac{1}{4} = \frac{4}{4} = 1
 \end{aligned}
 $$
@@ -844,9 +854,9 @@ Applying KVL, we get:
 
 $$
 \begin{aligned}
-E_1 - IR_1 - IR_2 - E_2 - IR_3 &= 0 \\
-12 - 2 \times I - 3 \times I - 3 - 4 \times I &= 0 \\
-9 - 9I &= 0 \\
+E_1 - IR_1 - IR_2 - E_2 - IR_3 &= 0 \
+12 - 2 \times I - 3 \times I - 3 - 4 \times I &= 0 \
+9 - 9I &= 0 \
 \therefore \text{Current}, I &= 1\text{ A}
 
 \end{aligned}
@@ -870,11 +880,11 @@ Applying KVL, we get:
 
 $$
 \begin{aligned}
-E_1 - IR_1 - IR_2 - E_2 - IR_3 &= 0 \\
-12 - 2 \times I - 3 \times I - 3 - 4 \times I &= 0 \\
-15 - 9I &= 0 \\
-9I &= 15 \\
-I = \frac{15}{9} = \frac{5}{3} \text{ A} \approx 1.67 \text{ A}
+E_1 - IR_1 - IR_2 - E_2 - IR_3 &= 0 \
+12 - 2 \times I - 3 \times I - 3 - 4 \times I &= 0 \
+9 - 9I &= 0 \
+9I &= 9 \
+I = 1\text{ A}
 
 \end{aligned}
 $$
@@ -937,10 +947,10 @@ Substitute $I_2$ into **Equation 2**:
 
 $$
 \begin{aligned}
-5I_1 - 9(3I_1 - 3) &= 9 \\
-5I_1 - 27I_1 + 27 &= 9 \\
--22I_1 &= 9 - 27 \\
--22I_1 &= -18 \\
+5I_1 - 9(3I_1 - 3) &= 9 \
+5I_1 - 27I_1 + 27 &= 9 \
+-22I_1 &= 9 - 27 \
+-22I_1 &= -18 \
 I_1 = \frac{-18}{-22} &= \frac{9}{11}\text{ A} \approx 0.818\text{ A}
 \end{aligned}
 $$
@@ -949,7 +959,7 @@ Now, calculate $I_2$:
 
 $$
 \begin{aligned}
-I_2 &= 3\left(\frac{9}{11}\right) - 3 \\
+I_2 &= 3\left(\frac{9}{11}\right) - 3 \
 I_2 &= \frac{27}{11} - \frac{33}{11} = -\frac{6}{11}\text{ A} \approx -0.545\text{ A}
 \end{aligned}
 $$
@@ -1004,8 +1014,8 @@ Substitute $I_2$ and $I_3$ into (Eq. 2):
 
 $$
 \begin{aligned}
-I_1 - 5(6I_1 - 5) + 2(2.4I_1) &= 0 \\
-I_1 - 30I_1 + 25 + 4.8I_1 &= 0 \\
+I_1 - 5(6I_1 - 5) + 2(2.4I_1) &= 0 \
+I_1 - 30I_1 + 25 + 4.8I_1 &= 0 \
 -24.2I_1 &= -25
 \end{aligned}
 $$
@@ -1208,7 +1218,7 @@ $V_1 \text{ is } - \text{ to } + \text{ then } v_1$
 $V_2 \text{ is } + \text{ to } - \text{ then } -v_2$
 
 $$
-\begin{bmatrix} R_{11} & -R_{12} & -R_{13} \\ -R_{21} & R_{22} & -R_{23} \\ -R_{31} & -R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \\ V_2 \\ V_3 \end{bmatrix}
+\begin{bmatrix} R_{11} & -R_{12} & -R_{13} \ -R_{21} & R_{22} & -R_{23} \ -R_{31} & -R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \ V_2 \ V_3 \end{bmatrix}
 $$
 
 ### Matrix Formulation Rules
@@ -1230,15 +1240,15 @@ Applying KVL to each mesh yields the following equations:
 ![Circuit diagram with three meshes and mesh currents I1, I2, I3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-095-image-1-source.webp)
 
 $$
-\begin{bmatrix} R_{11} & R_{12} & R_{13} \\ R_{21} & R_{22} & R_{23} \\ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \\ V_2 \\ V_3 \end{bmatrix}
+\begin{bmatrix} R_{11} & R_{12} & R_{13} \ R_{21} & R_{22} & R_{23} \ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \ V_2 \ V_3 \end{bmatrix}
 $$
 
 Rearranging the equations gives:
 
 $$
 \begin{aligned}
-(R_1 + R_2)I_1 &- R_2 I_2 & &= V_1 \\
--R_2 I_1 &+ (R_2 + R_3 + R_4)I_2 &- R_4 I_3 &= 0 \\
+(R_1 + R_2)I_1 &- R_2 I_2 & &= V_1 \
+-R_2 I_1 &+ (R_2 + R_3 + R_4)I_2 &- R_4 I_3 &= 0 \
 &-R_4 I_2 &+ (R_4 + R_5)I_3 &= -V_2
 \end{aligned}
 $$
@@ -1247,19 +1257,19 @@ These equations are expressed in matrix form as:
 
 $$
 \begin{bmatrix}
-(R_1 + R_2) & -R_2 & 0 \\
--R_2 & R_2 + R_3 + R_4 & -R_4 \\
+(R_1 + R_2) & -R_2 & 0 \
+-R_2 & R_2 + R_3 + R_4 & -R_4 \
 0 & -R_4 & R_4 + R_5
 \end{bmatrix}
 \begin{bmatrix}
-I_1 \\
-I_2 \\
+I_1 \
+I_2 \
 I_3
 \end{bmatrix}
 =
 \begin{bmatrix}
-V_1 \\
-0 \\
+V_1 \
+0 \
 -V_2
 \end{bmatrix}
 $$
@@ -1277,23 +1287,23 @@ Figure 2.26
 The matrix equation for the network is:
 
 $$
-\begin{bmatrix}8&-3&0\\-3&9&2\\0&2&10\end{bmatrix}\begin{bmatrix}I_1\\I_2\\I_3\end{bmatrix}=\begin{bmatrix}5\\10\\35\end{bmatrix}\tag{2.19}
+\begin{bmatrix}8&-3&0\-3&9&2\0&2&10\end{bmatrix}\begin{bmatrix}I_1\I_2\I_3\end{bmatrix}=\begin{bmatrix}5\10\35\end{bmatrix}\tag{2.19}
 $$
 
 $$
-\Delta_R = \begin{vmatrix} 8 & -3 & 0 \\ -3 & 9 & 2 \\ 0 & 2 & 10 \end{vmatrix} = 8(90 - 4) - 3(+30) = 598
+\Delta_R = \begin{vmatrix} 8 & -3 & 0 \ -3 & 9 & 2 \ 0 & 2 & 10 \end{vmatrix} = 8(90 - 4) - 3(+30) = 598
 $$
 
 $$
-\Delta_1 = \begin{vmatrix} 5 & -3 & 0 \\ 10 & 9 & 2 \\ 35 & 2 & 10 \end{vmatrix} = 5(90 - 4) + 3(100 - 70) = 520
+\Delta_1 = \begin{vmatrix} 5 & -3 & 0 \ 10 & 9 & 2 \ 35 & 2 & 10 \end{vmatrix} = 5(90 - 4) + 3(100 - 70) = 520
 $$
 
 $$
-\Delta_2 = \begin{vmatrix} 8 & 5 & 0 \\ -3 & 10 & 2 \\ 0 & 35 & 10 \end{vmatrix} = 8(100 - 70) - 5(-30) = 390
+\Delta_2 = \begin{vmatrix} 8 & 5 & 0 \ -3 & 10 & 2 \ 0 & 35 & 10 \end{vmatrix} = 8(100 - 70) - 5(-30) = 390
 $$
 
 $$
-\Delta_3 = \begin{vmatrix} 8 & -3 & 5 \\ -3 & 9 & 10 \\ 0 & 2 & 35 \end{vmatrix} = 8(315 - 20) + 3(-105) + 5(-6) = 2015
+\Delta_3 = \begin{vmatrix} 8 & -3 & 5 \ -3 & 9 & 10 \ 0 & 2 & 35 \end{vmatrix} = 8(315 - 20) + 3(-105) + 5(-6) = 2015
 $$
 
 $$
@@ -1321,27 +1331,27 @@ Figure 2.27
 The matrix equation for the network is:
 
 $$
-\begin{bmatrix} R_{11} & R_{12} & R_{13} \\ R_{21} & R_{22} & R_{23} \\ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \\ V_2 \\ V_3 \end{bmatrix}
+\begin{bmatrix} R_{11} & R_{12} & R_{13} \ R_{21} & R_{22} & R_{23} \ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \ V_2 \ V_3 \end{bmatrix}
 $$
 
 $$
-\begin{bmatrix} 10 & -4 & -3 \\ -4 & 8 & -2 \\ -3 & -2 & 9 \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} 10 \\ 0 \\ 0 \end{bmatrix} \tag{2.20}
+\begin{bmatrix} 10 & -4 & -3 \ -4 & 8 & -2 \ -3 & -2 & 9 \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} 10 \ 0 \ 0 \end{bmatrix} \tag{2.20}
 $$
 
 $$
-\Delta_R = \begin{vmatrix} 10 & -4 & -3 \\ -4 & 8 & -2 \\ -3 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(-36 - 6) - 3(8 + 24) = 416
+\Delta_R = \begin{vmatrix} 10 & -4 & -3 \ -4 & 8 & -2 \ -3 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(-36 - 6) - 3(8 + 24) = 416
 $$
 
 $$
-\Delta_1 = \begin{vmatrix} 10 & -4 & -3 \\ 0 & 8 & -2 \\ 0 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(0 - 0) - 3(0 - 0) = 680
+\Delta_1 = \begin{vmatrix} 10 & -4 & -3 \ 0 & 8 & -2 \ 0 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(0 - 0) - 3(0 - 0) = 680
 $$
 
 $$
-\Delta_2 = \begin{vmatrix} 10 & 10 & -3 \\ -4 & 0 & -2 \\ -3 & 0 & 9 \end{vmatrix} = 10(0 - 0) - 10(-36 - 6) - 3(0 - 0) = 420
+\Delta_2 = \begin{vmatrix} 10 & 10 & -3 \ -4 & 0 & -2 \ -3 & 0 & 9 \end{vmatrix} = 10(0 - 0) - 10(-36 - 6) - 3(0 - 0) = 420
 $$
 
 $$
-\Delta_3 = \begin{vmatrix} 10 & -4 & 10 \\ -4 & 8 & 0 \\ -3 & -2 & 0 \end{vmatrix} = 10(0 - 0) + 4(0 - 0) + 10(8 + 24) = 320
+\Delta_3 = \begin{vmatrix} 10 & -4 & 10 \ -4 & 8 & 0 \ -3 & -2 & 0 \end{vmatrix} = 10(0 - 0) + 4(0 - 0) + 10(8 + 24) = 320
 $$
 
 $$
@@ -1635,7 +1645,7 @@ From figure, $V_b = V_s = 100$
 From figure, $V_b = 100$
 
 $$
-V_a \left(\frac{1}{10} - \frac{1}{20} + \frac{1}{30}\right) - V_c \left(\frac{1}{30}\right) = \frac{100}{20}
+V_a \left(\frac{1}{10} + \frac{1}{20} + \frac{1}{30}\right) - V_c \left(\frac{1}{30}\right) = \frac{100}{20}
 $$
 
 $$
@@ -1777,7 +1787,12 @@ $$
 where
 
 $$
-G = \begin{bmatrix} G_{11} & -G_{12} & \dots & -G_{1n} \\ -G_{21} & G_{22} & \dots & -G_{nn} \\ \dots & \dots & \dots & \dots \\ G_{n1} & -G_{n2} & \dots & G_{nn} \end{bmatrix}
+G = \begin{bmatrix}
+G_{11} & -G_{12} & \dots & -G_{1n} \\
+-G_{21} & G_{22} & \dots & -G_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+-G_{n1} & -G_{n2} & \dots & G_{nn}
+\end{bmatrix}
 $$
 
 Matrix $G$ is called the conductance matrix.
@@ -1787,11 +1802,11 @@ Matrix $G$ is called the conductance matrix.
 Conductance, $G = \frac{1}{R}$, is defined as the reciprocal of resistance:
 
 $$
-V = \begin{bmatrix} V_1 \\ V_2 \\ \dots \\ V_n \end{bmatrix}
+V = \begin{bmatrix} V_1 \ V_2 \ \dots \ V_n \end{bmatrix}
 $$
 
 $$
-I_S = \begin{bmatrix} I_{S1} \\ I_{S2} \\ \dots \\ I_{Sn} \end{bmatrix}
+I_S = \begin{bmatrix} I_{S1} \ I_{S2} \ \dots \ I_{Sn} \end{bmatrix}
 $$
 
 ### Comparison of Mesh Current and Node Voltage Matrix Methods
@@ -1812,7 +1827,7 @@ $$
 $$
 \begin{bmatrix}
 R_{11} & R_{12} & \dots & R_{1m} \
-R_{21} & R_{22} & \dots & R_{2m} \\\vdots & \vdots & \ddots & \vdots \
+R_{21} & R_{22} & \dots & R_{2m} \\vdots & \vdots & \ddots & \vdots \
 R_{m1} & R_{m2} & \dots & R_{mm}
 \end{bmatrix} \begin{bmatrix}
 I_1 \
@@ -1889,7 +1904,7 @@ Figure 2.41: Circuit for Example 2.7.5
 Node Voltage Matrix Equation:
 
 $$
-\begin{bmatrix} G_{11} & G_{12} & \dots & G_{1n} \\ G_{21} & G_{22} & \dots & G_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ G_{n1} & G_{n2} & \dots & G_{nn} \end{bmatrix} \begin{bmatrix} V_1 \\ V_2 \\ \vdots \\ V_n \end{bmatrix} = \begin{bmatrix} I_{s1} \\ I_{s2} \\ \vdots \\ I_{sn} \end{bmatrix}
+\begin{bmatrix} G_{11} & G_{12} & \dots & G_{1n} \ G_{21} & G_{22} & \dots & G_{2n} \ \vdots & \vdots & \ddots & \vdots \ G_{n1} & G_{n2} & \dots & G_{nn} \end{bmatrix} \begin{bmatrix} V_1 \ V_2 \ \vdots \ V_n \end{bmatrix} = \begin{bmatrix} I_{s1} \ I_{s2} \ \vdots \ I_{sn} \end{bmatrix}
 $$
 
 **Solution**
@@ -1901,7 +1916,7 @@ Therefore, the order of the conductance matrix is $n = 3 - 1 = 2$.
 Therefore, we can write the conductance matrix as described above:
 
 $$
-G = \begin{bmatrix} G_{11} & -G_{12} \\ -G_{21} & G_{22} \end{bmatrix}
+G = \begin{bmatrix} G_{11} & -G_{12} \ -G_{21} & G_{22} \end{bmatrix}
 $$
 
 * $G_{11}$ is the sum of conductance connected to node 1, i.e., $G_{11} = \left(\frac{1}{R_1} + \frac{1}{R_2}\right) = \left(1 + \frac{1}{4}\right) = \frac{5}{4}$.
@@ -1913,7 +1928,7 @@ Therefore, the conductance matrix is:
 ![Electrical circuit diagram with current sources and resistors](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-024-image-1-source.webp)
 
 $$
-G = \begin{bmatrix} G_{11} & -G_{12} \\ -G_{21} & G_{22} \end{bmatrix} = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \\ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}
+G = \begin{bmatrix} G_{11} & -G_{12} \ -G_{21} & G_{22} \end{bmatrix} = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}
 $$
 
 We can write node voltage equations in matrix form as:
@@ -1925,13 +1940,13 @@ $$
 Where
 
 $$
-G = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \\ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}, \quad V = \begin{bmatrix} V_1 \\ V_2 \end{bmatrix}, \quad \text{and } I_s = \begin{bmatrix} I_{S1} \\ I_{S2} \end{bmatrix} = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+G = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}, \quad V = \begin{bmatrix} V_1 \ V_2 \end{bmatrix}, \quad \text{and } I_s = \begin{bmatrix} I_{S1} \ I_{S2} \end{bmatrix} = \begin{bmatrix} 3 \ 2 \end{bmatrix}
 $$
 
 Therefore,
 
 $$
-\begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \\ -\frac{1}{4} & \frac{5}{12} \end{bmatrix} \begin{bmatrix} V_1 \\ V_2 \end{bmatrix} = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
+\begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \ -\frac{1}{4} & \frac{5}{12} \end{bmatrix} \begin{bmatrix} V_1 \ V_2 \end{bmatrix} = \begin{bmatrix} 3 \ 2 \end{bmatrix}
 $$
 
 We can solve for node voltages $V_1$ and $V_2$ using Cramer's rule as discussed in section 2.6.1.
@@ -1944,7 +1959,7 @@ We get, $V_1 = 3.82\text{ V}$ and $V_2 = 7.09\text{ V}$.
 
 1. Conductance Terms ($G_{ij}$):
 
-* $G_{11} = \text{Sum of conductances connected to Node } 1 = \frac{1}{R_1} + \frac{1}{R_2} = \frac{1}{4} + \frac{1}{4} = 1.25\text{ S}$
+* $G_{11} = \text{Sum of conductances connected to Node } 1 = \frac{1}{R_1} + \frac{1}{R_2} = \frac{1}{1} + \frac{1}{4} = 1.25\text{ S}$
 * $G_{22} = \text{Sum of conductances connected to Node } 2 = \frac{1}{R_2} + \frac{1}{R_3} = \frac{1}{4} + \frac{1}{6} = \frac{5}{12}\text{ S} \approx 0.4167\text{ S}$
 * $G_{12} = G_{21} = -\text{Conductance between Node } 1 \text{ and Node } 2 = -\frac{1}{R_2} = -\frac{1}{4} = -0.25\text{ S}$
 
@@ -1956,7 +1971,7 @@ We get, $V_1 = 3.82\text{ V}$ and $V_2 = 7.09\text{ V}$.
 The matrix equation:
 
 $$
-\begin{bmatrix} 1.25 & -0.25 \\ -0.25 & \frac{5}{12} \end{bmatrix} \begin{bmatrix} V_1 \\ V_2 \end{bmatrix} = \begin{bmatrix} 3 \\ -2 \end{bmatrix}
+\begin{bmatrix} 1.25 & -0.25 \ -0.25 & \frac{5}{12} \end{bmatrix} \begin{bmatrix} V_1 \ V_2 \end{bmatrix} = \begin{bmatrix} 3 \ -2 \end{bmatrix}
 $$
 
 Using Cramer's Rule or matrix inversion:
@@ -1968,7 +1983,7 @@ $$
 $\circ$ Solve $V_1$:
 
 $$
-\Delta_1 = \det \begin{bmatrix} 3 & -0.25 \\ -2 & \frac{5}{12} \end{bmatrix} = (3)\left(\frac{5}{12}\right) - (-2)(-0.25) = \frac{5}{4} - \frac{1}{2} = \frac{3}{4}
+\Delta_1 = \det \begin{bmatrix} 3 & -0.25 \ -2 & \frac{5}{12} \end{bmatrix} = (3)\left(\frac{5}{12}\right) - (-2)(-0.25) = \frac{5}{4} - \frac{1}{2} = \frac{3}{4}
 $$
 
 $$
@@ -1978,7 +1993,7 @@ $$
 Solve $V_2$:
 
 $$
-\Delta_2 = \det \begin{bmatrix} 1.25 & 3 \\ -0.25 & -2 \end{bmatrix} = (1.25)(-2) - (-0.25)(3) = -2.5 + 0.75 = -1.75
+\Delta_2 = \det \begin{bmatrix} 1.25 & 3 \ -0.25 & -2 \end{bmatrix} = (1.25)(-2) - (-0.25)(3) = -2.5 + 0.75 = -1.75
 $$
 
 $$
@@ -2056,7 +2071,7 @@ $$
 
 $$
 \begin{aligned}
--3 &= \frac{V_1}{2} + \frac{V_2}{1} + 2\\
+-3 &= \frac{V_1}{2} + \frac{V_2}{1} + 2\
 -3 + \frac{V_1}{2} + \frac{V_2}{1} + 2 &= 0
 \end{aligned}
 $$
@@ -2091,6 +2106,12 @@ Using the calculated node voltages:
 
 * $I_1$ (through $2\text{ }\Omega$ resistor):
 
+For the indicated direction from node $N_1$ to node $N_2$, Ohm's law gives
+
+$$I_1=\frac{V_1-V_2}{2\,\Omega}=\frac{2-0}{2}=1\text{ A}.$$
+
+If the reference arrow is drawn the other way, the signed current is $-1\text{ A}$.
+
 ![Circuit diagram with nodes N1 and N2, a 3A current source, a 2 ohm resistor, a 1 ohm resistor, and a 2A current source.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-033-image-1-source.webp)
 
 ### Example 2
@@ -2104,7 +2125,7 @@ Figure 1
 #### Step 1: Constraint Equation
 
 $$
-v_1 - v_2 = 1 \\[6pt] v_1 = v_2 + 1 \quad - (\text{Equation 1})
+v_1 - v_2 = 1 \[6pt] v_1 = v_2 + 1 \quad - (\text{Equation 1})
 $$
 
 #### Step 2: KCL Equation at the Supernode $(1 - 2)$
@@ -2301,8 +2322,8 @@ Using delta to star transformation:
 
 $$
 \begin{aligned}
-I_1 &= \frac{10}{3} + \frac{20}{3} = 10\text{ A} \\
-I_2 &= \frac{10}{3} - \frac{10}{3} = 0 \\
+I_1 &= \frac{10}{3} + \frac{20}{3} = 10\text{ A} \
+I_2 &= \frac{10}{3} - \frac{10}{3} = 0 \
 I_3 &= -\frac{10}{3} - \frac{20}{3} = -10\text{ A}
 \end{aligned}
 $$
@@ -2461,8 +2482,8 @@ Figure 2.49
 
 $$
 \begin{aligned}
-R_{CE} &= 2 + 3 + \frac{2 \times 3}{4} = 6.5 \; \Omega \\
-R_{EB} &= 3 + 4 + \frac{4 \times 3}{2} = 13 \; \Omega \\
+R_{CE} &= 2 + 3 + \frac{2 \times 3}{4} = 6.5 \; \Omega \
+R_{EB} &= 3 + 4 + \frac{4 \times 3}{2} = 13 \; \Omega \
 R_{BC} &= 2 + 4 + \frac{2 \times 4}{3} = 8.66 \; \Omega
 \end{aligned}
 $$
@@ -2475,8 +2496,8 @@ Figure 2.50
 
 $$
 \begin{aligned}
-R_1 &= \frac{4 \times 4}{4 + 2 + 6.5} = 0.64 \; \Omega \\
-R_2 &= \frac{6.5 \times 2}{4 + 2 + 6.5} = 1.04 \; \Omega \\
+R_1 &= \frac{4 \times 4}{4 + 2 + 6.5} = 0.64 \; \Omega \
+R_2 &= \frac{6.5 \times 2}{4 + 2 + 6.5} = 1.04 \; \Omega \
 R_3 &= \frac{4 \times 6.5}{4 + 2 + 6.5} = 2.08 \; \Omega
 \end{aligned}
 $$
@@ -2557,8 +2578,8 @@ The star in the Figure 2.54 is converted to delta and combined with the existing
 
 $$
 \begin{aligned}
-R_{AB} &= 6 + 4 + \frac{6 \times 4}{3} = 18\text{ }\Omega\\
-R_{AC} &= 6 + 3 + \frac{6 \times 3}{4} = 13.5\text{ }\Omega\\
+R_{AB} &= 6 + 4 + \frac{6 \times 4}{3} = 18\text{ }\Omega\
+R_{AC} &= 6 + 3 + \frac{6 \times 3}{4} = 13.5\text{ }\Omega\
 R_{BC} &= 4 + 3 + \frac{4 \times 3}{6} = 9\text{ }\Omega
 \end{aligned}
 $$
