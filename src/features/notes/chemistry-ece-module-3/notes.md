@@ -78,11 +78,7 @@ The total energy is given by:
 
 $$E_{total} = E_{el} + E_{vib} + E_{rot} + E_{trans}$$
 
-![Electronic, vibrational, and rotational energy levels](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p004-1.webp)
-
-> **Figure: Electronic, vibrational, and rotational energy levels**
->
-> Energy level diagram showing Electronic ground state and Electronic excited state. The ground state contains vibrational levels labeled v0, v1, v2, v3, v4, with rotational levels depicted inside them. The excited state also contains vibrational levels v0, v1, v2, v3, v4 with rotational levels. Vertical arrows labeled a, b, c, d indicate various transitions between the levels. The vertical axis is labeled 'Energy', and the horizontal labels include 'Rotational levels', 'Vibrational levels', 'Electronic ground state', and 'Electronic excited state'.
+![Electronic, vibrational, and rotational energy levels](/assets/notes/ece/s1/chemistry/module-3/p004-1-energy-levels-gemini.webp)
 
 Electronic transitions in a molecule are always accompanied by vibrational and rotational transitions. Consequently, UV spectra always appear as broad bands.
 
@@ -104,11 +100,6 @@ Where:
 
 This equation is the Beer-Lambert's law, demonstrating that absorbance ($A$) is directly proportional to molar concentration ($C$) and path length ($x$).
 
-![Beer-Lambert Law equations box](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p004-2.webp)
-
-> **Figure: Beer-Lambert Law equations box**
->
-> Boxed formula for Beer-Lambert's law containing two lines inside a rectangle: A = ̀Ε C x and log(I_0 / I) = A = absorbance (or) Optical density.
 
 <!-- page 3 | Beer-Lambert Law and Quantitative Analysis -->
 
@@ -251,12 +242,12 @@ Energy absorbed in the visible and UV region causes transitions of valence elect
 
 $$n \rightarrow \pi^* < \pi \rightarrow \pi^* < n \rightarrow \sigma^* < \sigma \rightarrow \sigma^*$$
 
-![Energy level diagram for electronic transitions showing sigma, n, pi, pi*, sigma* levels](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p007-1.webp)
-
-> **Figure: Energy level diagram for electronic transitions showing sigma, n, pi, pi*, sigma* levels**
->
-> Energy level diagram for electronic transitions showing sigma, n, pi, pi*, sigma* levels. An energy level diagram with vertical axis labelled energy and increasing energy upwards with arrow, and increasing delta E sideways. Horizontal lines representing energy levels from bottom to top: sigma (bonding) at the bottom, pi (bonding), n (non-bonding), pi* (antibonding), and sigma* (antibonding) at the top. Transitions shown with vertical arrows between levels: sigma to sigma* (sigma -> sigma*), n to sigma* (n -> sigma*), pi to pi* (pi -> pi*), and n to pi* (n -> pi*). Fig. 1.1 Types of transition.
-
+| Relative energy | Electronic transition |
+| --- | --- |
+| Lowest | $n \rightarrow \pi^*$ |
+|  | $\pi \rightarrow \pi^*$ |
+|  | $n \rightarrow \sigma^*$ |
+| Highest | $\sigma \rightarrow \sigma^*$ |
 Fig. 1.1 Types of electronic transitions showing relative energy levels.
 
 ### 1. $\sigma \rightarrow \sigma^*$ Transitions
@@ -291,58 +282,40 @@ These transitions occur in saturated compounds containing heteroatoms with non-b
 
 These transitions occur in unsaturated systems containing double or triple bonds where electrons move from a bonding $\pi$ orbital to an antibonding $\pi^*$ orbital. In molecules with conjugated double bonds, these transitions take place from the Highest Occupied Molecular Orbital (HOMO) to the Lowest Unoccupied Molecular Orbital (LUMO).
 
-![Ethylene molecule and energy level transition diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p008-1.webp)
-
-> **Figure: Ethylene molecule and energy level transition diagram**
->
-> Ethylene molecule structure and energy level diagram. Left: chemical structure showing H2C=CH2 with carbon-carbon double bond and four hydrogens. Right: energy level diagram with lower level pi (HOMO) containing two opposing spin electron arrows and upper level pi* (LUMO) empty. An energy gap arrow shows delta E = 173 kcal/mol. A curved arrow above indicates absorption of UV light at 165 nm.
+![Ethylene molecule and energy level transition diagram](/assets/notes/ece/s1/chemistry/module-3/p008-1-gemini.webp)
 
 - **Ethylene ($\text{C}_2\text{H}_4$):** Contains an isolated $\text{C}=\text{C}$ bond giving an absorption maximum at $169\text{ nm}$.
 - **1,3-Butadiene:** Contains four $\pi$ molecular orbitals ($\Psi_1, \Psi_2, \Psi_3, \Psi_4$). $\Psi_1$ and $\Psi_2$ are bonding, while $\Psi_3$ and $\Psi_4^*$ are antibonding. The transition from HOMO ($\Psi_2$) to LUMO ($\Psi_3$) yields an absorption maximum at $\lambda_{\text{max}} = 217\text{ nm}$.
 
-![1,3-butadiene structure and molecular orbital transition diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p008-2.webp)
+$$\mathrm{CH_2=CH-CH=CH_2}$$
 
-> **Figure: 1,3-butadiene structure and molecular orbital transition diagram**
->
-> 1,3-butadiene chemical structure and molecular orbital energy level transition diagram. Left: chemical structure of CH2=CH-CH=CH2. Middle: energy level diagram showing four pi molecular orbitals: psi_1 (bonding, occupied by two opposing-spin arrows), psi_2 (bonding, HOMO, occupied by two opposing-spin arrows), psi_3* (antibonding, LUMO, empty), and psi_4* (antibonding, empty). An energy gap arrow indicates delta E = 132 kcal/mol. A horizontal arrow points right, labeled 217 nm, leading to a final state diagram showing an electron excited from psi_2 to psi_3*.
+| π molecular orbital | Character | Occupancy in the ground state |
+| --- | --- | --- |
+| $\Psi_1$ | Bonding | Occupied |
+| $\Psi_2$ (HOMO) | Bonding | Occupied |
+| $\Psi_3$ (LUMO) | Antibonding | Unoccupied |
+| $\Psi_4$ | Antibonding | Unoccupied |
 
+The principal excitation is $\Psi_2 \rightarrow \Psi_3$; $\lambda_{\max}=217\text{ nm}$.
 - **1,3,5-Hexatriene:** Contains six $\pi$ molecular orbitals ($\Psi_1$ to $\Psi_6$). The transition takes place from HOMO ($\Psi_3$) to LUMO ($\Psi_4$) with an absorption maximum at $\lambda_{\text{max}} = 247\text{ nm}$.
 
-![Molecular energy level diagram of 1,3,5-hexatriene and benzene](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p009-1.webp)
-
-> **Figure: Molecular energy level diagram of 1,3,5-hexatriene and benzene**
->
-> Molecular energy level diagrams. Diagram (a) shows 1,3,5-hexatriene with six horizontal energy levels labeled Psi_1 to Psi_6 from bottom to top. Psi_1, Psi_2, and Psi_3 contain pairs of electrons represented by vertical arrows. An arrow points from the HOMO (Psi_3) to the LUMO (Psi_4), labeled lambda = 247nm. Diagram (b) shows benzene with six energy levels Psi_1 to Psi_6, with Psi_2 and Psi_3 as degenerate levels containing electrons, and Psi_4 and Psi_5 as degenerate antibonding levels. An arrow points from HOMO to LUMO labeled lambda = 255nm. Next to (b) is a hexagon chemical structure representing benzene.
+![Molecular energy level diagram of 1,3,5-hexatriene and benzene](/assets/notes/ece/s1/chemistry/module-3/p009-1-gemini.webp)
 
 - **Benzene:** Possesses six $\pi$ molecular orbitals where $\Psi_1, \Psi_2,$ and $\Psi_3$ are bonding and $\Psi_4, \Psi_5,$ and $\Psi_6$ are antibonding. $\Psi_2$ and $\Psi_3$ are degenerate, as are $\Psi_4$ and $\Psi_5$. The HOMO-to-LUMO transition occurs with an absorption maximum at $\lambda_{\text{max}} = 255\text{ nm}$.
 
 As the extent of conjugation increases, the energy gap between the HOMO and LUMO decreases, shifting absorption to longer wavelengths (bathochromic shift). For example, lycopene, a natural red dye in tomatoes with $11$ conjugated double bonds, absorbs strongly in the visible region with $\lambda_{\text{max}} = 505\text{ nm}$.
 
-![Chemical structure of lycopene](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p009-2.webp)
-
-> **Figure: Chemical structure of lycopene**
->
-> Chemical structure of lycopene showing a long carbon chain with 11 conjugated double bonds, with methyl groups (CH3) attached at various positions along the chain.
-
+![Chemical structure of lycopene](/assets/notes/ece/s1/chemistry/module-3/p009-2-gemini.webp)
 4. **$n \rightarrow \pi^*$ Transitions**
 
 These transitions are characteristic of unsaturated molecules containing heteroatoms with lone pairs (such as carbonyl groups, $\text{C}=\text{O}$, and nitrogen or sulfur heteroatoms). Non-bonding electrons are promoted to antibonding $\pi^*$ orbitals. These give weak absorption bands at longer wavelengths.
 
-![Chemical structure for aldehyde and ketone example](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p009-3.webp)
-
-> **Figure: Chemical structure for aldehyde and ketone example**
->
-> Chemical structures showing a carbon double-bonded to an oxygen atom with two lone pairs of electrons represented as dots, along with a hydrogen atom attached.
+$$\text{Aldehyde: } \mathrm{R-CHO} \qquad \text{Ketone: } \mathrm{R-C(=O)-R'}$$
 
 - **Aldehydes and Ketones (no $\text{C}=\text{C}$ or $\text{C}\equiv\text{C}$):** $n \rightarrow \pi^*$ transitions occur in the range of $270-300\text{ nm}$.
 - **$\alpha,\beta$-Unsaturated Aldehydes and Ketones:** $n \rightarrow \pi^*$ transitions occur in the range of $300-350\text{ nm}$.
 
-![Chemical structure with carbonyl group](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p009-4.webp)
-
-> **Figure: Chemical structure with carbonyl group**
->
-> Chemical structure showing a carbonyl group with an oxygen atom double-bonded to a carbon atom, featuring two lone pairs of electrons indicated by dots.
-
+In a carbonyl group, the transition is from an oxygen lone pair to the antibonding orbital: $n \rightarrow \pi^*$ of $\mathrm{C=O}$.
 ---
 
 ## Instrumentation of UV-Vis Spectrophotometer
@@ -377,11 +350,7 @@ graph LR
 
 The spectrum is a plot of Absorbance ($A$) versus Wavelength ($\lambda$). The wavelength of maximum absorption ($\lambda_{\text{max}}$) is a distinct physical property used for identification.
 
-![UV-Vis absorption spectrum graph showing absorbance vs wavelength (nm)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p011-1.webp)
-
-> **Figure: UV-Vis absorption spectrum graph showing absorbance vs wavelength (nm)**
->
-> Line graph showing absorbance on the y-axis ranging from 0 to 1.0 with ticks at 0, 0.2, 0.4, 0.6, 0.8, and 1.0, and wavelength in nm on the x-axis ranging from 200 to 300 with ticks at 200, 220, 240, 260, 280, and 300. A peak curve rises and falls, with an arrow pointing to the peak labeled Maximum absorption at this wavelength and lambda_max = 217 nm.
+![UV-Vis absorption spectrum graph showing absorbance vs wavelength (nm)](/assets/notes/ece/s1/chemistry/module-3/p011-1-gemini.webp)
 
 ---
 
@@ -445,12 +414,14 @@ Bending vibrations are characterized by bond angles increasing or decreasing whi
 - *(c) Twisting:* One atom moves up the plane while the other moves down the plane with respect to the central atom.
 - *(d) Wagging:* Two atoms move up and below the plane simultaneously with respect to the central atom.
 
-![Types of molecular vibrations including symmetric stretch, asymmetric stretch, scissoring, rocking, wagging, and twisting.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p012-1.webp)
-
-> **Figure: Types of molecular vibrations including symmetric stretch, asymmetric stretch, scissoring, rocking, wagging, and twisting.**
->
-> A table showing different types of molecular vibrations. Row 1 contains Symmetric Stretch (two green/red atoms moving symmetrically relative to a central blue atom with arrows) and Asymmetric Stretch (atoms moving in opposite directions). Row 2 contains In-plane Bending showing Scissoring and Rocking with directional arrows. Row 3 contains Out of Plane Bending showing Wagging and Twisting with 3D perspective arrows indicating out-of-plane motion.
-
+| Molecular vibration | Atomic motion |
+| --- | --- |
+| Symmetric stretch | Both outer atoms move together along their bonds, changing both bond lengths in phase. |
+| Asymmetric stretch | One outer atom moves inward while the other moves outward along its bond. |
+| Scissoring | Outer atoms move toward and away from each other in the molecular plane. |
+| Rocking | Outer atoms move in the same direction within the molecular plane. |
+| Wagging | Outer atoms move together above and below the plane. |
+| Twisting | One outer atom moves above the plane as the other moves below it. |
 ### Number of Fundamental Vibrational Modes
 
 The total number of fundamental (normal) vibrational modes of a molecule containing $n$ atoms depends on its geometry:
@@ -544,11 +515,7 @@ Concepts to teach: Electron source and acceleration; Secondary electrons (SE) an
 
 SEM produces images of a sample by scanning the surface with a focused beam of electrons. The interaction of the electron beam with the atoms near the surface of the sample results in the production of secondary electrons (SE), backscattered electrons (BSE), and X-rays. These signals are detected by appropriate detectors and used to obtain information about surface topography and composition.
 
-![Diagrams of Secondary Electrons, Backscattered Electrons, and Auger Electrons or X-Ray Fluorescence](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p015-1.webp)
-
-> **Figure: Diagrams of Secondary Electrons, Backscattered Electrons, and Auger Electrons or X-Ray Fluorescence**
->
-> Three diagrams showing electron interactions in an atom. Left diagram is labeled 'Secondary Electrons' showing concentric circular electron shells labeled M, L, K from outside to inside, a central nucleus, an incident electron coming in, and a secondary electron knocked out of the shell. Middle diagram is labeled 'Backscattered Electrons' showing concentric shells M, L, K, a nucleus, and an incidental electron that is reflected backwards. Right diagram is labeled 'Auger Electrons or X-Ray Fluorescence' showing concentric shells M, L, K, a nucleus, an emitted X-ray arrow, and an ejected Auger electron arrow labeled 'Auger'.
+![Diagrams of Secondary Electrons, Backscattered Electrons, and Auger Electrons or X-Ray Fluorescence](/assets/notes/ece/s1/chemistry/module-3/p015-1-gemini.webp)
 
 - **Secondary Electrons (SE):** Electrons directly knocked out from the atom by the primary/incident electron beam. They possess low energy ($< 50\text{ eV}$) and provide detailed information about surface topography.
 - **Backscattered Electrons (BSE):** Incident electrons that are reflected backwards. They have high energy ($> 50\text{ eV}$) compared to SE and provide information about both topography and composition. BSE originate from deeper regions of the sample, whereas SE originate strictly from the topmost surface layers.
@@ -613,12 +580,7 @@ The experimental setup for Dielectric Thermal Analysis consists of several key c
 7. **Dielectric Analyzer:** The core detection component (typically containing an impedance analyzer or LCR meter) that measures relative permittivity (\(\varepsilon'\)) and dielectric loss (\(\'\varepsilon''\)).
 8. **Recorder:** A computer system that logs data to generate DETA profiles (plots of temperature vs. relative permittivity or dielectric loss).
 
-![Block diagram of DETA experimental setup](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p018-1.webp)
-
-> **Figure: Block diagram of DETA experimental setup**
->
-> Block diagram of a Dielectric Thermal Analysis (DETA) experimental setup. A programmable furnace (enclosed by a dashed box) contains a sample placed between two electrodes. An AC source is connected across the sample and electrodes. External components connected via lines include: Environmental control equipment, Dielectric analyzer, Recorder/PC, Thermocouple/Temperature sensor, and Temperature control equipment.
-
+![Block diagram of DETA experimental setup](/assets/notes/ece/s1/chemistry/module-3/p018-1-gemini.webp)
 ### Working Principle
 
 The sample is positioned between the two parallel plate electrodes inside the programmable furnace. An alternating electric field (sinusoidal voltage) is applied to the first electrode, and the response signal is measured at the second electrode. While the temperature is ramped at a controlled rate, a dielectric analyzer records changes in relative permittivity (\(\varepsilon'\)) and dielectric loss (\(\varepsilon''\)) at constant frequency.

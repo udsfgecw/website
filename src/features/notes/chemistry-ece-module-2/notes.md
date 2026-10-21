@@ -36,11 +36,12 @@ Nanotechnology is the study of manipulating matter on an atomic and molecular sc
 #### Classification Based on Dimensions
 Nanomaterials are classified into four types based on the number of dimensions that are not confined to the nanoscale range ($\le 100\text{ nm}$):
 
-![Classification table of nanomaterials based on dimensions](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p002-1.webp)
-
-> **Figure: Classification table of nanomaterials based on dimensions**
->
-> Classification table of nanomaterials based on dimensions. A table with three columns labelled S.No, Co-ordinates, and Examples. Row 1: 1, 0-dimension, Nanoclusters, nanoparticles. Row 2: 2, 1-dimension, Nanotubes, nanowires. Row 3: 3, 2-dimension, Thin Films, surface coatings. Row 4: 4, 3-dimension, Precipitates, colloids.
+| S. No. | Dimensional class | Examples |
+| ---: | --- | --- |
+| 1 | 0-dimensional | Nanoclusters, nanoparticles |
+| 2 | 1-dimensional | Nanotubes, nanowires |
+| 3 | 2-dimensional | Thin films, surface coatings |
+| 4 | 3-dimensional | Precipitates, colloids |
 
 1. **Zero dimension (0-D):** All three dimensions are in the nanometric range. Examples include nanoclusters and nanoparticles.
 2. **One dimension (1-D):** One of the three dimensions is outside the nanometric range while the other two are within the range. Examples include nanotubes, nanowires, and fibers.
@@ -106,12 +107,10 @@ An SWCNT consists of only a single layer constructed by rolling up a one-atom-th
 
 ![Armchair, zigzag, and chiral carbon nanotube structures](/assets/notes/ece/s1/chemistry/module-2/cnt.webp)
 
-![SWCNT atomic model](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-1.webp)
-
-> **Figure: SWCNT atomic model**
->
-> SWCNT atomic model. A 3D molecular model of a single-walled carbon nanotube showing a cylindrical lattice of carbon atoms with green and blue coloring.
-
+| Nanotube type | Graphene wall structure |
+| --- | --- |
+| SWCNT | One graphene sheet rolled into a single cylindrical wall. |
+| MWCNT | Several concentric graphene cylinders form multiple walls. |
 SWCNTs can be visualized as rolled-up tubular shells of a graphene sheet. Based on variations arising from specific orientations and rolling angles of the graphene sheets, SWCNTs are classified into three distinct types:
 
 1. **Armchair Nanotubes:** Exhibit an arrangement where the rolling axis aligns with the hexagonal lattice of graphene, resulting in equal edge lengths.
@@ -124,11 +123,7 @@ SWCNTs can be visualized as rolled-up tubular shells of a graphene sheet. Based 
 
 An MWCNT consists of a stack of graphene sheets rolled up into concentric cylinders, resembling the growth rings of a tree trunk. They contain multiple concentric nanotube cylinders constructed one inside the other. The inner diameter of MWCNTs varies from $1.5\text{ nm}$ to $5\text{ nm}$ and the outer diameter varies from $2.5\text{ nm}$ to $30\text{ nm}$. Generally, SWCNTs are more stable and exhibit better-defined cylindrical shapes than MWCNTs.
 
-![MWCNT nested atomic model](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-2.webp)
-
-> **Figure: MWCNT nested atomic model**
->
-> MWCNT nested atomic model. A 3D molecular model of a multi-walled carbon nanotube showing multiple concentric cylindrical layers of carbon atoms in different colors (blue, red, orange).
+![MWCNT nested atomic model](/assets/notes/ece/s1/chemistry/module-2/p005-2-gemini.webp)
 
 Three different structural models are proposed for MWCNTs:
 
@@ -161,12 +156,10 @@ Three different structural models are proposed for MWCNTs:
 
 Fullerenes are zero-dimensional, hollow, closed-cage nanoparticles composed entirely of carbon atoms. They consist of fused hexagonal rings and alternating pentagonal rings of carbon closed in spherical or ellipsoidal geometries.
 
-![Fullerene / buckyball and C20 fullerene](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p006-1.webp)
-
-> **Figure: Fullerene / buckyball and C20 fullerene**
->
-> Two chemical structure diagrams side-by-side representing fullerenes. (a) Fullerene / buckyball: a spherical cage structure composed of interconnected pentagonal and hexagonal carbon rings, illustrating a buckyball. (b) C20 fullerene: a smaller cage structure composed entirely of pentagonal rings forming a dodecahedral shape. Labels underneath are (a) Fullerene / buckyball and (b) C20 fullerene.
-
+| Fullerene | Cage structure |
+| --- | --- |
+| C₆₀ buckminsterfullerene | Truncated icosahedral cage with 12 pentagons and 20 hexagons |
+| C₂₀ fullerene | Dodecahedral cage with 12 pentagons |
 Fullerene molecules are denoted by the number of carbon atoms in the spherical carbon cage. The smallest fullerene reported is $C_{20}$, followed by $C_{24}$, $C_{28}$, and higher analogues. Each fullerene generally contains $12$ pentagonal rings and $\left(\frac{n}{2} - 10\right)$ hexagonal rings, where $n \ge 20$ represents the total number of carbon atoms.
 
 $C_{60}$ fullerene, commonly known as Buckminsterfullerene (or buckyball), is the earliest discovered and most widely studied form of fullerene. In 1990, a scalable production technique was developed by heating graphite rods in a helium atmosphere. $C_{60}$ is composed of fused pentagonal and hexagonal carbon rings ($12$ five-membered rings and $20$ six-membered rings) and possesses a perfect icosahedral symmetry structurally identical to a soccer football.
@@ -241,11 +234,7 @@ Fullerenes are stable, but not totally unreactive. The $\text{sp}^2$ hybridized 
 
 Graphene is an allotrope of carbon consisting of a monolayer of carbon atoms arranged in a two-dimensional honeycomb lattice. It can be visualized as a single layer extracted from the layered structure of graphite. Graphite is three-dimensional whereas graphene is two-dimensional with a thickness of one atom.
 
-![Graphite and Graphene structure comparison](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p009-1.webp)
-
-> **Figure: Graphite and Graphene structure comparison**
->
-> Graphite and Graphene structure comparison. An illustration showing the multi-layered structure of Graphite on the left labelled 'Graphite' pointing with a horizontal arrow pointing right to a single-layer honeycomb lattice structure on the right labelled 'Graphene'.
+![Graphite and Graphene structure comparison](/assets/notes/ece/s1/chemistry/module-2/p009-1-gemini.webp)
 
 In graphene, the carbon atoms are $\text{sp}^2$ hybridized and arranged in a hexagonal fashion. Each hexagonal ring comprises three strong in-plane $\sigma$ bonds, with a bond length of $0.142\text{ nm}$, and a $p_z$ orbital perpendicular to the plane. These orbitals hybridize together to form two half-filled bands of free-moving electrons, $\pi$ and $\pi^*$, which are responsible for most of graphene's notable electronic properties.
 
@@ -307,21 +296,12 @@ A polymer may consist of monomers of identical or different chemical structures,
 
 Most of the polymers contain organic compounds as monomers and are flammable. **Fire-retardant polymers resist ignition and slow the spread of flames.** Phenolic polymers such as novolac and bakelite, as well as aromatic heterocyclic polyimides and polybenzoxazoles, are examples of intrinsically fire-resistant polymers.
 
-![Examples for non-halogenated fire-retardant polymers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p011-1.webp)
-
-> **Figure: Examples for non-halogenated fire-retardant polymers**
->
-> Figure 2.4: Examples for non-halogenated fire-retardant polymers. Shows a chemical reaction pathway where 'n' molecules of Methylol phenol link to form 'Novolac' via a condensation reaction releasing water molecules. Below Novolac, the complex 2D cross-linked chemical structure of 'Bakelite' is shown with alternating phenolic rings connected by CH2 bridges and pendant OH groups. At the bottom, the chemical structures for 'Polyimide' and 'Polybenzoxazole' are shown side by side, consisting of alternating aromatic and heterocyclic rings connected by chemical bonds.
-
+![Examples for non-halogenated fire-retardant polymers](/assets/notes/ece/s1/chemistry/module-2/p011-1-gemini.webp)
 Figure 2.4: Examples for non-halogenated fire-retardant polymers. Shows a chemical reaction pathway where 'n' molecules of Methylol phenol link to form 'Novolac' via a condensation reaction releasing water molecules. Below Novolac, the complex 2D cross-linked chemical structure of 'Bakelite' is shown with alternating phenolic rings connected by $CH_2$ bridges and pendant OH groups.
 
 Halogenated polymers are also fire-retardant polymers. Fire is a free radical chain reaction system which contains radicals such as $\text{H}^{\bullet}$, $\text{OH}^{\bullet}$, $\text{OOH}^{\bullet}$, and $\text{CH}^{\bullet}_3$. In the case of halogenated polymers like PVC and polybrominated styrene, halogen radicals ($\text{Cl}^{\bullet}$, $\text{Br}^{\bullet}$) are introduced into the fire, which combine with hydrogen and hydroxyl radicals to form stable molecules like $\text{HX}$ and $\text{HOX}$ (where $\text{X}$ can be $\text{Cl}$ or $\text{Br}$), resulting in quenching of the chain reaction.
 
-![Examples for halogenated fire-retardant polymers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p012-1.webp)
-
-> **Figure: Examples for halogenated fire-retardant polymers**
->
-> Figure 2.5: Examples for halogenated fire-retardant polymers. Shows four chemical reactions/structures: 1) n CH2=CHCl -> [CH2-CH(Cl)]n labelled Vinyl chloride -> PVC. 2) n CH2=C(Cl)-CH=CH2 -> [CH2-C(Cl)=CH-CH2]n labelled Chloroprene -> Neoprene. 3) A benzene ring with a Br attached (Bromostyrene) -> Poly bromostyrene. 4) [CH2-C(Br)=CH-CH2]n labelled Brominated butyl rubber.
+![Examples for halogenated fire-retardant polymers](/assets/notes/ece/s1/chemistry/module-2/p012-1-gemini.webp)
 
 Figure 2.5: Examples for halogenated fire-retardant polymers. Shows four chemical reactions/structures: 1) $n \text{CH}_2=\text{CHCl} \rightarrow [\text{CH}_2-\text{CH}(\text{Cl})]_n$ labelled Vinyl chloride $\rightarrow$ PVC. 2) $n \text{CH}_2=\text{C}(\text{Cl})-\text{CH}=\text{CH}_2 \rightarrow [\text{CH}_2-\text{C}(\text{Cl})=\text{CH}-\text{CH}_2]_n$ labelled Chloroprene $\rightarrow$ Neoprene. 3) A benzene ring with a $\text{Br}$ attached (Bromostyrene) $\rightarrow$ Poly bromostyrene. 4) $[\text{CH}_2-\text{C}(\text{Br})=\text{CH}-\text{CH}_2]_n$ labelled Brominated butyl rubber.
 
@@ -376,12 +356,7 @@ The new idea: Organic light-emitting diodes generate radiation through the recom
 
 Polyaniline is a conjugated polymer considered as an organic metal. Its conductivity and thermal dependence of conductivity are like those of semi-metals, but all other properties are like those of metals. It is prepared by the slow addition of an aqueous solution of ammonium persulphate to a solution of aniline in aqueous $\text{HCl}$ at a lower temperature ($0\text{-}5^\circ\text{C}$). The precipitate formed is separated by filtration, which is emeraldine hydrochloride.
 
-![Preparation reaction of Polyaniline from Aniline and Ammonium persulphate](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p014-1.webp)
-
-> **Figure: Preparation reaction of Polyaniline from Aniline and Ammonium persulphate**
->
-> Preparation reaction of Polyaniline from Aniline and Ammonium persulphate. Chemical reaction showing n molecules of Aniline (a benzene ring with NH2 group) plus n (NH4)2S2O8 (Ammonium persulphate) reacting via an arrow to form Polyaniline (bracketed repeat unit with a benzene ring attached to an N-H group and subscript n) plus H2SO4.
-
+![Preparation reaction of Polyaniline from Aniline and Ammonium persulphate](/assets/notes/ece/s1/chemistry/module-2/p014-1-gemini.webp)
 Polyaniline is a transparent and stable material. It shows a green colour in the conducting state. It turns red under reducing conditions and blue under oxidizing conditions.
 
 #### Properties
@@ -403,11 +378,7 @@ Polypyrrole is an organic polymer formed by the polymerization of pyrrole. Polym
 
 Polypyrrole is prepared by oxidation (p-doping) of pyrrole using ferric chloride in methanol.
 
-![Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p014-2.webp)
-
-> **Figure: Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride**
->
-> Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride. Chemical reaction showing n molecules of Pyrrole (a five-membered ring with NH at the bottom) plus n FeCl3 reacting via an arrow to form Polypyrrole (bracketed repeat unit showing two connected pyrrole rings with alternating double bonds and N-H groups, with subscript n).
+![Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride](/assets/notes/ece/s1/chemistry/module-2/p014-2-gemini.webp)
 
 The polymerization and p-doping can also be carried out electrochemically.
 
@@ -478,17 +449,8 @@ Semiconductor metal oxide nanoparticles are semiconducting metal oxides with hig
 
 Dye/photo sensitiser refers to molecules where the surface of the metal oxide particle is coated with dye molecules. These dye molecules are responsible for absorbing sunlight and inject the photoexcited electrons to the conduction band of the semiconductor. Dye-sensitized metal oxide semiconductor acts as the anode. Ruthenium-based complexes and organic dyes are commonly used. Natural dyes extracted from plants can also be used as photosensitiser.
 
-![Chemical structure of N3-dye](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p017-1.webp)
-
-> **Figure: Chemical structure of N3-dye**
->
-> Chemical structure of N3-dye showing a Ruthenium (Ru) central atom coordinated with SCN, NCS groups, and bipyridine ligands functionalized with COOH groups. The text 'N3-dye' is centered below the structure.
-
-![Chemical structure of N719 dye](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p017-2.webp)
-
-> **Figure: Chemical structure of N719 dye**
->
-> Chemical structure of N719 dye showing a Ruthenium (Ru) central atom coordinated with SCN, NCS groups, and bipyridine ligands with Bu4N+ and COO- groups. The text 'N719 dye' is centered below the structure.
+![Chemical structure of N3-dye](/assets/notes/ece/s1/chemistry/module-2/p017-1-gemini.webp)
+**N719 dye composition:** a ruthenium(II) centre coordinated by two dicarboxybipyridyl ligands and two thiocyanate ($\mathrm{NCS}$) ligands. The salt form is balanced by two tetrabutylammonium ($\mathrm{TBA^+}$) counterions.
 
 **Electrolyte**
 

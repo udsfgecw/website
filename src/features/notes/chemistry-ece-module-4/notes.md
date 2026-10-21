@@ -151,27 +151,28 @@ $$\text{weight equivalent to } \text{CaCO}_3 = \frac{43 \times 100}{136} \text{ 
 
 ### Molecular Weights of Some Hardness Producing Salts
 
-![Table of molecular weights of hardness producing salts](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p004-1.webp)
 
-> **Figure: Table of molecular weights of hardness producing salts**
->
-> Table of molecular weights of hardness producing salts containing four columns: Hardness producing salt, Molecular weight, Hardness producing salt, and Molecular weight. Row 1: Ca(HCO3)2, 162, MgSO4, 120. Row 2: Mg(HCO3)2, 146, CaSO4, 136. Row 3: CaCl2, 111, Ca2+, 40. Row 4: MgCl2, 95, Mg2+, 24. Row 5: CaCO3, 100, HCO3-, 61x2=122. Row 6: CaSO4, 136, empty, empty.
+| Hardness-producing salt | Molecular weight | Hardness-producing salt | Molecular weight |
+| --- | ---: | --- | ---: |
+| Ca(HCO₃)₂ | 162 | MgSO₄ | 120 |
+| Mg(HCO₃)₂ | 146 | CaSO₄ | 136 |
+| CaCl₂ | 111 | Ca²⁺ | 40 |
+| MgCl₂ | 95 | Mg²⁺ | 24 |
+| CaCO₃ | 100 | HCO₃⁻ | 122 |
+| CaSO₄ | 136 |  |  |
 
 ### Solved Numerical Problems
 
 **Problem 1:** Calculate the carbonate and non-carbonate hardness of a sample of water containing the dissolved salts as given below in mg/lit $\text{Mg(HCO}_3)_2 = 7.3$; $\text{Ca(HCO}_3)_2 = 40.5$; $\text{CaSO}_4 = 13.6$; $\text{MgCl}_2 = 21.75$ and $\text{NaCl} = 50$.
 
-![Table header for Problem 1 solution](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p004-2.webp)
 
-> **Figure: Table header for Problem 1 solution**
->
-> Table header for Problem 1 solution containing four columns: Name of the hardness, Amount in, Molecular, Amounts equivalent to.
-
-![Table of hardness calculations for various salts](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p005-1.webp)
-
-> **Figure: Table of hardness calculations for various salts**
->
-> Table showing hardness calculations for various salts with columns: producing salt, mgs/lit, weight, and CaCO3 equivalent. Row 1: Mg(HCO3)2, 7.3, 146, 7.3x100/146 = 5mgs/lit. Row 2: Ca(HCO3)2, 40.5, 162, 40.5x100/162 = 25mgs/lit. Row 3: CaSO4, 13.6, 136, 13.6x100/136 = 10mgs/lit. Row 4: MgCl2, 21.75, 95, 21.75x100/95 = 22.9mgs/lit. Row 5: NaCl, 50, NaCl does not contribute any hardness to water, hence it is ignored.
+| Hardness-producing salt | Amount (mg/L) | Molecular weight | CaCO₃ equivalent (mg/L) |
+| --- | ---: | ---: | ---: |
+| Mg(HCO₃)₂ | 7.3 | 146 | 5.0 |
+| Ca(HCO₃)₂ | 40.5 | 162 | 25.0 |
+| CaSO₄ | 13.6 | 136 | 10.0 |
+| MgCl₂ | 21.75 | 95 | 22.9 |
+| NaCl | 50 | — | Does not contribute to hardness |
 
 Carbonate hardness = $\text{Mg}(\text{HCO}_3)_2 + \text{Ca}(\text{HCO}_3)_2 = 5 + 25 = 30\text{ mgs/lit}$
 
@@ -183,11 +184,12 @@ $= 30 + 32.9 = 62.9\text{ mgs/lit}$
 
 **Problem 2:** Water sample on analysis give the following data $\text{Ca}^{2+} = 20\text{ ppm}$, $\text{Mg}^{2+} = 25\text{ ppm}$, $\text{CO}_2 = 30\text{ ppm}$, $\text{HCO}_3^- = 150\text{ ppm}$, $\text{K}^+ = 10\text{ ppm}$. Calculate temporary and permanent hardness.
 
-![Table of hardness calculations for Problem 2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p005-2.webp)
 
-> **Figure: Table of hardness calculations for Problem 2**
->
-> Table for Problem 2 showing hardness calculations with columns: Name of the hardness producing salt, Amounts in ppm, Molecular weight, Amounts equivalent to CaCO3. Row 1: Ca2+, 20, 40, 20x100/40 = 50ppm. Row 2: Mg2+, 25, 24, 25x100/24 = 104.17ppm. Row 3: HCO3, 150, 122, 150x100/122 = 122.95ppm.
+| Ion | Amount (ppm) | Molecular weight | CaCO₃ equivalent (ppm) |
+| --- | ---: | ---: | ---: |
+| Ca²⁺ | 20 | 40 | 50.00 |
+| Mg²⁺ | 25 | 24 | 104.17 |
+| HCO₃⁻ | 150 | 122 | 122.95 |
 
 (i) $\text{K}$ and $\text{CO}_2$ will not cause any hardness, so it is ignored.
 
