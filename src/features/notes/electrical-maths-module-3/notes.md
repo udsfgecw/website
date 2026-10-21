@@ -217,9 +217,13 @@ When a function contains algebraic powers, phase shifts, or products of sinusoid
 
 For trigonometric functions, apply standard identities to remove products and powers. Use the **angle-sum identity** $\sin(A+B) = \sin A \cos B + \cos A \sin B$ to separate constant phase shifts from the time variable $t$. Use the **product-to-sum identity** $2\sin A \cos B = \sin(A+B) + \sin(A-B)$ to split multiplied sinusoids into simple added waves, and use double-angle identities to reduce squared or cubed trig terms into first-power cosines.
 
-> **Figure: Side note containing exponential limits**
+> **Exponential limits**
 >
-> A handwritten side note in the top-right corner enclosed between a large left curly brace and a large right bracket/brace, containing three vertically stacked exponential identities: Top line: e^(-infinity) = 0 (with the infinity symbol written resembling an alpha); Middle line: e^(infinity) = 0 (written with the same alpha-like infinity symbol and '= 0'); Bottom line: e^0 = 1.
+> | Limit | Value |
+> | --- | ---: |
+> | $\lim_{x\to-\infty} e^x$ | $0$ |
+> | $\lim_{x\to\infty} e^x$ | $\infty$ |
+> | $e^0$ | $1$ |
 
 ### Worked example
 **Given:** $f(t) = e^{-7t}$
@@ -333,11 +337,14 @@ For trigonometric functions, apply standard identities to remove products and po
 1. Replace $\cos^2 t$ with the half-angle identity $\frac{1 + \cos 2t}{2}$ so the cosine is to the first power.
 2. Factor out $\frac{1}{2}$ and transform $1$ and $\cos 2t$ term by term.
 
-> **Figure: Trigonometric identities box**
+> **Half-angle identities**
 >
-> A handwritten rectangular box (with a left curly-brace-shaped edge) below question 13 containing two trigonometric formulas written on two lines: top line '2 cos^2 t = 1 - cos 2t' and bottom line '2 sin^2 t = 1 + cos 2t' (note: the signs in the handwritten notes are reversed from standard identities). To the right of questions 12 and 13, a large right curly brace spans both problems with the underlined word 'Assignment' written beside its tip.
+> | Function | Identity |
+> | --- | --- |
+> | Cosine squared | $2\cos^2 t = 1 + \cos 2t$ |
+> | Sine squared | $2\sin^2 t = 1 - \cos 2t$ |
 
-> **Watch out.** The boxed side note reverses the signs: the correct identities are $2\cos^2 t = 1 + \cos 2t$ and $2\sin^2 t = 1 - \cos 2t$.
+> **Source correction.** The scanned side note reverses these signs; the table above gives the standard correct identities.
 
 **Answer:** $\frac{1}{2}\left(\frac{1}{s} + \frac{s}{s^2 + 4}\right)$
 
@@ -431,9 +438,9 @@ For a cosine or hyperbolic cosine term, the numerator must also contain the exac
 1. Factor out $2\pi$ and identify the shift $a = -\pi$ and power $n = 1$ in $(s+\pi)^{1+1}$.
 2. Apply the shifted power rule $\mathcal{L}^{-1}\left[\frac{1}{(s-a)^{n+1}}\right] = \frac{e^{at}t^n}{n!}$ to get $2\pi e^{-\pi t}\frac{t}{1!}$.
 
-> **Figure: Final underlined answer for problem 2**
+> **Result**
 >
-> An underlined final expression: = 2\pi t e^{-\pi t}
+> $$\mathcal{L}^{-1}\left[\frac{2\pi}{(s+\pi)^2}\right] = 2\pi t e^{-\pi t}$$
 
 **Answer:** $2\pi t e^{-\pi t}$
 
@@ -512,13 +519,16 @@ To find the unknown constants, multiply both sides of the equation by the full o
 5. Rewrite the original fraction using the solved constants: $\frac{1}{(s-1)(s-2)} = \frac{-1}{s-1} + \frac{1}{s-2}$.
 6. Apply the inverse Laplace transform to each term separately using $\mathcal{L}^{-1}\left[\frac{1}{s-a}\right] = e^{at}$.
 
-> **Figure: Partial fraction expansion working**
+> **Partial fraction decomposition**
 >
-> Handwritten algebraic steps showing partial fraction decomposition of 1/((s-1)(s-2)) into A/(s-1) + B/(s-2), solving for A and B to get -1/(s-1) + 1/(s-2).
+> | Step | Result |
+> | --- | --- |
+> | Set up the decomposition | $\frac{1}{(s-1)(s-2)} = \frac{A}{s-1} + \frac{B}{s-2}$ |
+> | Substitute $s=1$ | $1=A(1-2)$, so $A=-1$ |
+> | Substitute $s=2$ | $1=B(2-1)$, so $B=1$ |
+> | Substitute the constants | $\frac{1}{(s-1)(s-2)} = -\frac{1}{s-1} + \frac{1}{s-2}$ |
 
-**Answer:** $-e^{t} + e^{2t}$ (printed as $e^{t} + e^{2t}$)
-
-> **Watch out.** Do not drop the negative sign on $A = -1$ when taking the inverse transform of $\frac{-1}{s-1}$; the first term is $-e^{t}$, not $+e^{t}$.
+**Answer:** $-e^{t} + e^{2t}$
 
 ### More problems
 

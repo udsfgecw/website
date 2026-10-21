@@ -392,9 +392,14 @@ When solving an initial value problem, the key rule in words is: initial conditi
 5. Combine $y_h$ and $y_p$ to form the complete general solution $y = C_1 \cos x + C_2 \sin x + 0.001x^2 - 0.002$ before touching the initial conditions.
 6. Differentiate the complete solution to get $y' = -C_1 \sin x + C_2 \cos x + 0.002x$, then apply $y(0) = 0 \implies C_1 - 0.002 = 0 \implies C_1 = 0.002$ and $y'(0) = 1.5 \implies C_2 = 1.5$.
 
-> **Figure: Table of choice rules for undetermined coefficients**
+> **Trial forms for common forcing terms**
 >
-> A two-column handwritten table specifying the choice rules for the method of undetermined coefficients. The left column header is 'Term in r(x)' and the right column header is 'Choice for y_p(x).'. Row 1: Left column has 'k e^{\alpha x}', right column has 'C e^{\alpha x}'. Row 2: Left column has 'k x^n (n = 0, 1, 2, ...)', right column has 'K_n x^n + K_{n-1} x^{n-1} + ... + K_1 x + K_0'. Row 3: Left column lists two terms stacked vertically, 'k \cos \omega x' and 'k \sin \omega x', which are grouped together by a right curly brace '}' pointing to the right column entry 'K \cos \omega x + M \sin \omega x .'. Row 4: Left column lists two terms stacked vertically, 'k e^{\alpha x} \cos \omega x' and 'k e^{\alpha x} \sin \omega x', which are grouped together by a right curly brace '}' pointing to the right column entry 'e^{\alpha x} (K \cos \omega x + M \sin \omega x)'.
+> | Forcing term $r(x)$ | Trial form for $y_p(x)$ |
+> | --- | --- |
+> | $k e^{\alpha x}$ | $K e^{\alpha x}$ |
+> | Polynomial of degree $n$: $k x^n$ | $K_nx^n + K_{n-1}x^{n-1} + \cdots + K_1x + K_0$ |
+> | $k\cos(\omega x)$ or $k\sin(\omega x)$ | $K\cos(\omega x) + M\sin(\omega x)$ |
+> | $ke^{\alpha x}\cos(\omega x)$ or $ke^{\alpha x}\sin(\omega x)$ | $e^{\alpha x}\left(K\cos(\omega x) + M\sin(\omega x)\right)$ |
 
 **Answer:** $y = 0.002 \cos x + 1.5 \sin x + 0.001x^2 - 0.002$
 

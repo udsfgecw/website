@@ -9,13 +9,32 @@ export default function remarkProblemCards(options: { numberedProblems?: boolean
     const result: RootContent[] = [];
     let practice = false;
 
+    const isProblemParagraph = (node: RootContent) =>
+      node.type === "paragraph" && /^Problem\b/i.test(textOf(node).trim());
+
     for (let i = 0; i < tree.children.length; i++) {
       const node = tree.children[i];
-      if (options.numberedProblems && node.type === "paragraph" && /^Problem\s+\d+\s*[:.)]/i.test(textOf(node).trim())) {
+      const problemHeading = node.type === "heading" && /^Problem\b/i.test(textOf(node).trim());
+      if (options.numberedProblems && problemHeading) {
         const children: RootContent[] = [node];
         while (i + 1 < tree.children.length) {
           const next = tree.children[i + 1];
-          if (next.type === "heading" || (next.type === "paragraph" && /^Problem\s+\d+\s*[:.)]/i.test(textOf(next).trim()))) break;
+          if ((next.type === "heading" && next.depth <= node.depth) || isProblemParagraph(next)) break;
+          children.push(next);
+          i++;
+        }
+        result.push({
+          type: "blockquote",
+          children: children as Blockquote["children"],
+          data: { hName: "div", hProperties: { className: ["notes-problem-card"] } },
+        });
+        continue;
+      }
+      if (options.numberedProblems && isProblemParagraph(node)) {
+        const children: RootContent[] = [node];
+        while (i + 1 < tree.children.length) {
+          const next = tree.children[i + 1];
+          if (next.type === "heading" || isProblemParagraph(next)) break;
           children.push(next);
           i++;
         }

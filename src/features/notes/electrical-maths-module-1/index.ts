@@ -23,6 +23,7 @@ export function electricalMathsModule1(branch: "ece" | "eee"): NotesModule {
     module: "Module 1",
     course: "Mathematics for Electrical Science and Physical Science 1",
     code: "GYMAT101",
+    outlinedProblems: "numbered",
     summary: "Linear systems, matrix rank, eigenvalues and diagonalization",
     source: "KTU GYMAT101 Module 1 study notes, refined and reorganized for readability.",
     pages,

@@ -23,6 +23,7 @@ export function electricalMathsModule2(branch: "ece" | "eee"): NotesModule {
     module: "Module 2",
     course: "Mathematics for Electrical Science and Physical Science 1",
     code: "GYMAT101",
+    outlinedProblems: "numbered",
     summary: "Second-order linear ODEs: homogeneous, undetermined coefficients, variation of parameters",
     source: "KTU GYMAT101 Module 2 study notes, refined and reorganized for readability.",
     pages,

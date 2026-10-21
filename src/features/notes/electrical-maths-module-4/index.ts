@@ -23,6 +23,7 @@ export function electricalMathsModule4(branch: "ece" | "eee"): NotesModule {
     module: "Module 4",
     course: "Mathematics for Electrical Science and Physical Science 1",
     code: "GYMAT101",
+    outlinedProblems: "numbered",
     summary: "Taylor and Maclaurin series, Fourier series and half-range expansions",
     source: "KTU GYMAT101 Module 4 study notes, refined and reorganized for readability.",
     pages,
