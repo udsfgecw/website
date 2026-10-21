@@ -27,11 +27,15 @@ You already know how to compute derivatives of all orders for elementary functio
 Imagine driving along a winding mountain road in heavy fog. Even if you only know your exact position, speed, and how fast you are turning the wheel right now, you can predict where the road goes for the next few meters. In mathematics, a **smooth function** is one you can differentiate infinitely many times without any sharp corners or breaks. An **infinite power series** is an endless polynomial built from powers of how far you step away from a starting point $x_0$.
 
 To make our polynomial match the function $f(x)$ near the **center point** $x_0$, we force both to have the exact same value, slope, curvature, and higher derivatives at $x_0$. This rule produces the **Taylor series**:
+
 $$f(x) = \sum_{k=0}^{\infty} \frac{f^{(k)}(x_0)}{k!}(x - x_0)^k$$
+
 In plain words, each term adjusts the polynomial's $k$-th derivative to match $f^{(k)}(x_0)$, while the factorial $k!$ cancels out the constants that drop down during repeated differentiation. To see this, draw a wavy curve $f(x)$ and mark a point $x_0$. Draw a straight tangent line at $x_0$ (using up to $k=1$); it hugs the curve right at $x_0$. Now draw a parabola that also matches the second derivative (up to $k=2$); it bends with the curve and stays close over a wider stretch.
 
 When we choose the origin $x_0 = 0$ as our center, the formula simplifies and is called a **Maclaurin series**:
+
 $$f(x) = \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!}x^k$$
+
 Rather than computing derivatives every time, engineers memorize four foundational Maclaurin expansions and their **region of convergence**, which is the set of $x$ values where the infinite sum actually equals the function. You can also substitute algebraic expressions directly for $x$ inside these series.
 
 | Function | Maclaurin Series | Region of Convergence |
@@ -65,9 +69,13 @@ Think of an electrocardiogram (ECG) trace or a blinking turn signal: the same pa
 Real engineering signals, like a switch flipping on and off, cannot be expanded in Taylor series because derivatives fail at jumps. Instead, we only require the signal to obey **Dirichlet's conditions** on one period: it must have a finite number of maxima and minima, and be **piecewise continuous**. Piecewise continuous means the graph is made of unbroken smooth pieces separated by a finite number of **jump discontinuities**—places where the graph steps instantaneously from a finite left-hand value to a finite right-hand value without shooting to infinity.
 
 Just as a musical chord can be separated into pure tuning-fork notes, any periodic function meeting Dirichlet's conditions can be written as a **Fourier trigonometric series** $S(x)$:
+
 $$S(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos\frac{n\pi x}{L} + b_n \sin\frac{n\pi x}{L} \right)$$
+
 In words, the function is built from a constant baseline $\frac{a_0}{2}$ plus waves of frequency $\frac{n\pi}{L}$, called **harmonics**. To find how much of each wave is inside $f(x)$, we use **Euler's formulas** over any one period $[c, c+2L]$:
+
 $$a_0 = \frac{1}{L}\int_{c}^{c+2L} f(x)\,dx, \quad a_n = \frac{1}{L}\int_{c}^{c+2L} f(x)\cos\frac{n\pi x}{L}\,dx, \quad b_n = \frac{1}{L}\int_{c}^{c+2L} f(x)\sin\frac{n\pi x}{L}\,dx$$
+
 Here, $\frac{a_0}{2}$ is simply the average height of the graph over one cycle. On a standard interval like $[-\pi, \pi]$ or $[0, 2\pi]$, the half-period is $L = \pi$, so $\frac{n\pi x}{L}$ simplifies nicely to $nx$.
 
 ### Worked example
@@ -75,12 +83,19 @@ Find the Fourier series for the square wave $f(x) = 0$ on $(-2, 0)$ and $f(x) = 
 
 1. **Identify the half-period and check Dirichlet's conditions:** The fundamental interval is $[-2, 2]$ of length $2L = 4$, so $L = 2$. The graph has two flat pieces and finite jumps at $x = 0$ and $x = 2$, so Dirichlet's conditions hold.
 2. **Compute $a_0$ to find the average height:** Set $c = -2$ and $L = 2$ in Euler's formula. Since $f(x) = 0$ on $(-2, 0)$, integrate only from $0$ to $2$:
-$$a_0 = \frac{1}{2}\int_{0}^{2} 4\,dx = \frac{1}{2}[4x]_0^2 = 4$$
+
+   $$a_0 = \frac{1}{2}\int_{0}^{2} 4\,dx = \frac{1}{2}[4x]_0^2 = 4$$
+
 3. **Compute $a_n$ for the cosine weights:**
-$$a_n = \frac{1}{2}\int_{0}^{2} 4\cos\frac{n\pi x}{2}\,dx = 2\left[\frac{2}{n\pi}\sin\frac{n\pi x}{2}\right]_0^2 = \frac{4}{n\pi}\sin(n\pi) = 0$$
+
+   $$a_n = \frac{1}{2}\int_{0}^{2} 4\cos\frac{n\pi x}{2}\,dx = 2\left[\frac{2}{n\pi}\sin\frac{n\pi x}{2}\right]_0^2 = \frac{4}{n\pi}\sin(n\pi) = 0$$
+
 4. **Compute $b_n$ for the sine weights:**
-$$b_n = \frac{1}{2}\int_{0}^{2} 4\sin\frac{n\pi x}{2}\,dx = 2\left[-\frac{2}{n\pi}\cos\frac{n\pi x}{2}\right]_0^2 = \frac{4}{n\pi}(1 - \cos(n\pi))$$
+
+   $$b_n = \frac{1}{2}\int_{0}^{2} 4\sin\frac{n\pi x}{2}\,dx = 2\left[-\frac{2}{n\pi}\cos\frac{n\pi x}{2}\right]_0^2 = \frac{4}{n\pi}(1 - \cos(n\pi))$$
+
 Assemble the series with $\frac{a_0}{2} = 2$:
+
 $$S(x) = 2 + \sum_{n=1}^{\infty} \frac{4}{n\pi}(1 - (-1)^n)\sin\frac{n\pi x}{2}$$
 
 ### Remember
@@ -95,7 +110,9 @@ $$S(x) = 2 + \sum_{n=1}^{\infty} \frac{4}{n\pi}(1 - (-1)^n)\sin\frac{n\pi x}{2}$
 Now that you can set up Euler's integrals for a Fourier series, you need fast shortcuts to evaluate them and a rule to know what the infinite sum actually equals at any point, enabling you to sum famous numerical series.
 
 When a periodic signal is a ramp or parabola, Euler's formulas require integrating a polynomial $u(x)$ times a wave $v(x)$. Doing integration by parts repeatedly is slow and error-prone. Instead, we use **Bernoulli's generalized integration by parts** (often called tabular integration), where you differentiate $u$ until it vanishes and repeatedly integrate $v$:
+
 $$\int u v \, dx = u v_1 - u' v_2 + u'' v_3 - u''' v_4 + \cdots$$
+
 Here $u', u''$ are successive derivatives of $u$, and $v_1, v_2, v_3$ are successive integrals of $v$. In words: multiply each derivative of the polynomial by the next integral of the wave, alternating plus and minus signs.
 
 Other signals decay like a plucked guitar string or beat like two tuning forks. To integrate a decaying wave $e^{ax}$ times $\cos(bx)$ or $\sin(bx)$, or the product of two waves, use these direct shortcuts:
@@ -109,19 +126,28 @@ Other signals decay like a plucked guitar string or beat like two tuning forks. 
 When you plug integration limits like $\pi$ or $-\pi$ into your results for an integer $n$, always simplify using $\sin(n\pi) = 0$ and $\cos(n\pi) = (-1)^n$. On a unit circle, stepping by $n$ half-turns always lands on the horizontal axis, alternating between $-1$ and $+1$.
 
 Once you build the series, does it equal $f(x)$? Imagine tracing a square wave: at a vertical cliff, the smooth waves cannot be in two places at once, so they split the difference. A **jump discontinuity** is a point $x_0$ where the **left-hand limit** $f(x_0^-)$ (value approached from the left) and **right-hand limit** $f(x_0^+)$ (value approached from the right) are finite but unequal. **Dirichlet's convergence theorem** states that for a periodic, piecewise-smooth function, the Fourier series at any $x_0$ converges to the midpoint of the left and right limits:
+
 $$S(x_0) = \frac{f(x_0^-) + f(x_0^+)}{2}$$
+
 If you draw a vertical jump from height $1$ to height $3$ at $x_0$, place a solid dot at height $2$; the series lands on that dot. Where $f$ is continuous, both limits equal $f(x_0)$, so the series equals $f(x_0)$. Substituting a clever $x_0$ turns the function series into an exact sum for a numerical series.
 
 ### Worked example
 Given that $f(x) = x^2$ on $(-\pi, \pi)$ with period $2\pi$ has $a_0 = \frac{2\pi^2}{3}$ and $b_n = 0$, find $a_n$ and evaluate $\sum_{n=1}^{\infty} \frac{1}{n^2}$.
 
 1. **Integrate using Bernoulli's formula:** To find $a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} x^2 \cos(nx)\,dx$, set $u = x^2$ and $v = \cos(nx)$ so we avoid integrating by parts twice.
+
    $$a_n = \frac{1}{\pi}\left[ (x^2)\left(\frac{\sin nx}{n}\right) - (2x)\left(-\frac{\cos nx}{n^2}\right) + (2)\left(-\frac{\sin nx}{n^3}\right) \right]_{-\pi}^{\pi}$$
+
 2. **Simplify at the limits:** Because $\sin(n\pi) = 0$ and $\cos(n\pi) = (-1)^n$, the sine terms vanish and the cosine term doubles:
+
    $$a_n = \frac{1}{\pi}\left[ \frac{2\pi(-1)^n}{n^2} - \frac{2(-\pi)(-1)^n}{n^2} \right] = \frac{4(-1)^n}{n^2}$$
+
 3. **Apply Dirichlet's theorem at $x = \pi$:** The periodic extension of $x^2$ is continuous at $x = \pi$, since $f(\pi^-) = \pi^2$ and by periodicity $f(\pi^+) = f(-\pi^+) = (-\pi)^2 = \pi^2$. Plugging $x = \pi$ into the Fourier series gives:
+
    $$\pi^2 = \frac{\pi^2}{3} + \sum_{n=1}^{\infty} \frac{4(-1)^n}{n^2} \cos(n\pi)$$
+
 4. **Solve for the numerical sum:** Replace $\cos(n\pi)$ with $(-1)^n$, note that $(-1)^n(-1)^n = 1$, and isolate the sum:
+
    $$\frac{2\pi^2}{3} = 4 \sum_{n=1}^{\infty} \frac{1}{n^2} \implies \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$
 
 ### Remember
@@ -275,11 +301,16 @@ Having mastered power series at a point, we now practice computing full trigonom
 ### The idea
 
 When a function $f(x)$ has period $2L = 2\pi$, the harmonic factor $\frac{n\pi x}{L}$ simplifies directly to $nx$. Whether the base interval is $[-\pi, \pi]$ (where $c = -\pi$) or $[0, 2\pi]$ (where $c = 0$), **Euler's formulas** take the streamlined form:
+
 $$a_0 = \frac{1}{2\pi} \int_{c}^{c+2\pi} f(x)\,dx, \quad a_n = \frac{1}{\pi} \int_{c}^{c+2\pi} f(x)\cos(nx)\,dx, \quad b_n = \frac{1}{\pi} \int_{c}^{c+2\pi} f(x)\sin(nx)\,dx$$
 
-Two integration techniques handle almost every problem on these intervals. First, if $f(x)$ is a piecewise-constant **square wave** with jump discontinuities, split each Euler integral into separate integrals over each subinterval where the formula for $f(x)$ is constant. Second, if $f(x)$ is a polynomial, use **Bernoulli's integration by parts** (tabular integration):$$
+Two integration techniques handle almost every problem on these intervals. First, if $f(x)$ is a piecewise-constant **square wave** with jump discontinuities, split each Euler integral into separate integrals over each subinterval where the formula for $f(x)$ is constant. Second, if $f(x)$ is a polynomial, use **Bernoulli's integration by parts** (tabular integration):
+
+$$
 \int u\,v\,dx = u v_1 - u' v_2 + u'' v_3 - \dots
-$$where $u$ is the polynomial differentiated until it vanishes, and $v_1, v_2, v_3, \dots$ are successive antiderivatives of $\cos(nx)$ or $\sin(nx)$.
+$$
+
+where $u$ is the polynomial differentiated until it vanishes, and $v_1, v_2, v_3, \dots$ are successive antiderivatives of $\cos(nx)$ or $\sin(nx)$.
 
 Once you assemble the **Fourier series** $S(x) = a_0 + \sum_{n=1}^{\infty} [a_n \cos(nx) + b_n \sin(nx)]$, you can sum numerical series by applying **Dirichlet's convergence theorem**: at any point $x$ where $f(x)$ is continuous, the series converges directly to the function value, $S(x) = f(x)$.
 
@@ -291,16 +322,26 @@ Once you assemble the **Fourier series** $S(x) = a_0 + \sum_{n=1}^{\infty} [a_n 
 
 1. Split the $a_0$ integral at the jump $x = 0$ because $f(x)$ changes formula there:
 $$a_0 = \frac{1}{2\pi}\left[\int_{-\pi}^{0} (-K)\,dx + \int_{0}^{\pi} K\,dx\right] = \frac{1}{2\pi}[-K\pi + K\pi] = 0$$
+
 2. Split the $a_n$ integral at $x = 0$ and integrate $\cos(nx)$, which vanishes because $\sin(n\pi) = \sin(0) = 0$:
-$$a_n = \frac{1}{\pi}\left[\left[\frac{-K\sin(nx)}{n}\right]_{-\pi}^{0} + \left[\frac{K\sin(nx)}{n}\right]_{0}^{\pi}\right] = 0$$
+
+   $$a_n = \frac{1}{\pi}\left[\left[\frac{-K\sin(nx)}{n}\right]_{-\pi}^{0} + \left[\frac{K\sin(nx)}{n}\right]_{0}^{\pi}\right] = 0$$
+
 3. Split the $b_n$ integral at $x = 0$ and integrate $\sin(nx)$ to get cosine terms:
-$$b_n = \frac{1}{\pi}\left[\left[\frac{K\cos(nx)}{n}\right]_{-\pi}^{0} + \left[\frac{-K\cos(nx)}{n}\right]_{0}^{\pi}\right]$$
+
+   $$b_n = \frac{1}{\pi}\left[\left[\frac{K\cos(nx)}{n}\right]_{-\pi}^{0} + \left[\frac{-K\cos(nx)}{n}\right]_{0}^{\pi}\right]$$
+
 4. Evaluate at the limits using $\cos(-n\pi) = \cos(n\pi) = (-1)^n$ to simplify $b_n$:
-$$b_n = \frac{K}{n\pi}[2 - 2\cos(n\pi)] = \frac{2K}{n\pi}(1 - (-1)^n)$$
+
+   $$b_n = \frac{K}{n\pi}[2 - 2\cos(n\pi)] = \frac{2K}{n\pi}(1 - (-1)^n)$$
+
 5. Substitute $a_0$, $a_n$, and $b_n$ into $S(x)$, noting that $1 - (-1)^n$ equals $2$ for odd $n$ and $0$ for even $n$:
-$$f(x) = \frac{4K}{\pi}\left[\sin x + \frac{1}{3}\sin(3x) + \frac{1}{5}\sin(5x) + \dots\right]$$
+
+   $$f(x) = \frac{4K}{\pi}\left[\sin x + \frac{1}{3}\sin(3x) + \frac{1}{5}\sin(5x) + \dots\right]$$
+
 6. Substitute $x = \frac{\pi}{2}$, where $f(x)$ is continuous with $f\left(\frac{\pi}{2}\right) = K$, to evaluate the alternating series:
-$$K = \frac{4K}{\pi}\left(1 - \frac{1}{3} + \frac{1}{5} - \dots\right) \implies 1 - \frac{1}{3} + \frac{1}{5} - \dots = \frac{\pi}{4}$$
+
+   $$K = \frac{4K}{\pi}\left(1 - \frac{1}{3} + \frac{1}{5} - \dots\right) \implies 1 - \frac{1}{3} + \frac{1}{5} - \dots = \frac{\pi}{4}$$
 
 **Answer:** $f(x) = \frac{4K}{\pi}\left[\sin x + \frac{1}{3}\sin(3x) + \frac{1}{5}\sin(5x) + \dots\right]$, and $1 - \frac{1}{3} + \frac{1}{5} - \dots = \frac{\pi}{4}$.
 
@@ -311,17 +352,28 @@ $$K = \frac{4K}{\pi}\left(1 - \frac{1}{3} + \frac{1}{5} - \dots\right) \implies 
 **Find:** The Fourier series of $f(x)$ and the sum of $1 - \frac{1}{3} + \frac{1}{5} - \dots$
 
 1. Split the $a_0$ integral across the three subintervals to find the average value:
-$$a_0 = \frac{K}{2\pi}\left[\left(\frac{\pi}{2} - 0\right) - \left(\frac{3\pi}{2} - \frac{\pi}{2}\right) + \left(2\pi - \frac{3\pi}{2}\right)\right] = 0$$
+
+   $$a_0 = \frac{K}{2\pi}\left[\left(\frac{\pi}{2} - 0\right) - \left(\frac{3\pi}{2} - \frac{\pi}{2}\right) + \left(2\pi - \frac{3\pi}{2}\right)\right] = 0$$
+
 2. Integrate $f(x)\cos(nx)$ across all three subintervals:
-$$a_n = \frac{K}{n\pi}\left[2\sin\left(\frac{n\pi}{2}\right) - 2\sin\left(\frac{3n\pi}{2}\right)\right]$$
+
+   $$a_n = \frac{K}{n\pi}\left[2\sin\left(\frac{n\pi}{2}\right) - 2\sin\left(\frac{3n\pi}{2}\right)\right]$$
+
 3. Apply the identity $\sin A - \sin B$ to simplify $a_n$:
-$$a_n = \frac{-4K}{n\pi}\cos(n\pi)\sin\left(\frac{n\pi}{2}\right) = \begin{cases} 0, & n \text{ even} \\ \frac{4K}{n\pi}\sin\left(\frac{n\pi}{2}\right), & n \text{ odd} \end{cases}$$
+
+   $$a_n = \frac{-4K}{n\pi}\cos(n\pi)\sin\left(\frac{n\pi}{2}\right) = \begin{cases} 0, & n \text{ even} \\ \frac{4K}{n\pi}\sin\left(\frac{n\pi}{2}\right), & n \text{ odd} \end{cases}$$
+
 4. Integrate $f(x)\sin(nx)$ across the three subintervals and apply $\cos A - \cos B$, which vanishes because $\sin(n\pi) = 0$:
-$$b_n = \frac{-K}{n\pi}\left[2\cos\left(\frac{n\pi}{2}\right) - 2\cos\left(\frac{3n\pi}{2}\right)\right] = \frac{-4K}{n\pi}\sin(n\pi)\sin\left(\frac{n\pi}{2}\right) = 0$$
+
+   $$b_n = \frac{-K}{n\pi}\left[2\cos\left(\frac{n\pi}{2}\right) - 2\cos\left(\frac{3n\pi}{2}\right)\right] = \frac{-4K}{n\pi}\sin(n\pi)\sin\left(\frac{n\pi}{2}\right) = 0$$
+
 5. Write the Fourier series using only the odd cosine harmonics:
-$$S(x) = \frac{4K}{\pi}\left[\frac{\cos x}{1} - \frac{\cos(3x)}{3} + \frac{\cos(5x)}{5} - \dots\right]$$
+
+   $$S(x) = \frac{4K}{\pi}\left[\frac{\cos x}{1} - \frac{\cos(3x)}{3} + \frac{\cos(5x)}{5} - \dots\right]$$
+
 6. Set $x = 0$, where $f(x)$ is continuous with $f(0) = K$, to find the numerical sum:
-$$K = \frac{4K}{\pi}\left[1 - \frac{1}{3} + \frac{1}{5} - \dots\right] \implies 1 - \frac{1}{3} + \frac{1}{5} - \dots = \frac{\pi}{4}$$
+
+   $$K = \frac{4K}{\pi}\left[1 - \frac{1}{3} + \frac{1}{5} - \dots\right] \implies 1 - \frac{1}{3} + \frac{1}{5} - \dots = \frac{\pi}{4}$$
 
 **Answer:** $S(x) = \frac{4K}{\pi}\left[\frac{\cos x}{1} - \frac{\cos(3x)}{3} + \frac{\cos(5x)}{5} - \dots\right]$, and $1 - \frac{1}{3} + \frac{1}{5} - \dots = \frac{\pi}{4}$.
 
@@ -330,19 +382,32 @@ $$K = \frac{4K}{\pi}\left[1 - \frac{1}{3} + \frac{1}{5} - \dots\right] \implies 
 **Find:** The Fourier series of $x - x^2$ and the sum of $\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \dots$
 
 1. Integrate $x - x^2$ from $-\pi$ to $\pi$ to find $a_0$:
-$$a_0 = \frac{1}{2\pi}\left[\frac{x^2}{2} - \frac{x^3}{3}\right]_{-\pi}^{\pi} = \frac{1}{2\pi}\left(\frac{-2\pi^3}{3}\right) = \frac{-\pi^2}{3}$$
+
+   $$a_0 = \frac{1}{2\pi}\left[\frac{x^2}{2} - \frac{x^3}{3}\right]_{-\pi}^{\pi} = \frac{1}{2\pi}\left(\frac{-2\pi^3}{3}\right) = \frac{-\pi^2}{3}$$
+
 2. Apply Bernoulli's integration by parts to find $a_n$:
-$$a_n = \frac{1}{\pi}\left[(x - x^2)\left(\frac{\sin(nx)}{n}\right) - (1 - 2x)\left(\frac{-\cos(nx)}{n^2}\right) + (-2)\left(\frac{-\sin(nx)}{n^3}\right)\right]_{-\pi}^{\pi}$$
+
+   $$a_n = \frac{1}{\pi}\left[(x - x^2)\left(\frac{\sin(nx)}{n}\right) - (1 - 2x)\left(\frac{-\cos(nx)}{n^2}\right) + (-2)\left(\frac{-\sin(nx)}{n^3}\right)\right]_{-\pi}^{\pi}$$
+
 3. Evaluate at $\pm\pi$ where $\sin(\pm n\pi) = 0$ and $\cos(\pm n\pi) = (-1)^n$:
-$$a_n = \frac{1}{\pi}\left[((1 - 2\pi) - (1 + 2\pi))\frac{\cos(n\pi)}{n^2}\right] = \frac{-4(-1)^n}{n^2}$$
+
+   $$a_n = \frac{1}{\pi}\left[((1 - 2\pi) - (1 + 2\pi))\frac{\cos(n\pi)}{n^2}\right] = \frac{-4(-1)^n}{n^2}$$
+
 4. Apply Bernoulli's integration by parts to find $b_n$:
-$$b_n = \frac{1}{\pi}\left[(x - x^2)\left(\frac{-\cos(nx)}{n}\right) - (1 - 2x)\left(\frac{-\sin(nx)}{n^2}\right) + (-2)\left(\frac{\cos(nx)}{n^3}\right)\right]_{-\pi}^{\pi}$$
+
+   $$b_n = \frac{1}{\pi}\left[(x - x^2)\left(\frac{-\cos(nx)}{n}\right) - (1 - 2x)\left(\frac{-\sin(nx)}{n^2}\right) + (-2)\left(\frac{\cos(nx)}{n^3}\right)\right]_{-\pi}^{\pi}$$
+
 5. Evaluate at $\pm\pi$, where the $n^3$ cosine terms cancel each other:
-$$b_n = \frac{1}{\pi}\left[(-(\pi - \pi^2) + (-\pi - \pi^2))\frac{\cos(n\pi)}{n}\right] = \frac{-2(-1)^n}{n}$$
+
+   $$b_n = \frac{1}{\pi}\left[(-(\pi - \pi^2) + (-\pi - \pi^2))\frac{\cos(n\pi)}{n}\right] = \frac{-2(-1)^n}{n}$$
+
 6. Assemble the full Fourier series expansion:
-$$S(x) = \frac{-\pi^2}{3} + 4\left[\frac{\cos x}{1^2} - \frac{\cos(2x)}{2^2} + \frac{\cos(3x)}{3^2} - \dots\right] + 2\left[\frac{\sin x}{1} - \frac{\sin(2x)}{2} + \dots\right]$$
+
+   $$S(x) = \frac{-\pi^2}{3} + 4\left[\frac{\cos x}{1^2} - \frac{\cos(2x)}{2^2} + \frac{\cos(3x)}{3^2} - \dots\right] + 2\left[\frac{\sin x}{1} - \frac{\sin(2x)}{2} + \dots\right]$$
+
 7. Substitute $x = 0$, where $f(0) = 0$ is continuous, to solve for the alternating series:
-$$0 = \frac{-\pi^2}{3} + 4\left[\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \dots\right] \implies \frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \dots = \frac{\pi^2}{12}$$
+
+   $$0 = \frac{-\pi^2}{3} + 4\left[\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \dots\right] \implies \frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \dots = \frac{\pi^2}{12}$$
 
 **Answer:** $S(x) = \frac{-\pi^2}{3} + 4\sum_{n=1}^{\infty}\frac{(-1)^{n+1}\cos(nx)}{n^2} + 2\sum_{n=1}^{\infty}\frac{(-1)^{n+1}\sin(nx)}{n}$, and $\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \dots = \frac{\pi^2}{12}$.
 
@@ -351,17 +416,28 @@ $$0 = \frac{-\pi^2}{3} + 4\left[\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - 
 **Find:** The Fourier series of $f(x)$ and the sum $\sum_{n=1}^{\infty} \frac{1}{n^2}$.
 
 1. Integrate $f(x)$ on $[0, 2\pi]$ to find $a_0$:
-$$a_0 = \frac{1}{8\pi}\left[\frac{(\pi - x)^3(-1)}{3}\right]_{0}^{2\pi} = -\frac{1}{24\pi}[(-\pi)^3 - \pi^3] = \frac{\pi^2}{12}$$
+
+   $$a_0 = \frac{1}{8\pi}\left[\frac{(\pi - x)^3(-1)}{3}\right]_{0}^{2\pi} = -\frac{1}{24\pi}[(-\pi)^3 - \pi^3] = \frac{\pi^2}{12}$$
+
 2. Apply Bernoulli's rule to integrate $f(x)\cos(nx)$, remembering the chain-rule factor $(-1)$ when differentiating $(\pi - x)$:
-$$a_n = \frac{1}{4\pi}\left[\frac{(\pi - x)^2\sin(nx)}{n} - \frac{2(\pi - x)\cos(nx)}{n^2} - \frac{2\sin(nx)}{n^3}\right]_{0}^{2\pi}$$
+
+   $$a_n = \frac{1}{4\pi}\left[\frac{(\pi - x)^2\sin(nx)}{n} - \frac{2(\pi - x)\cos(nx)}{n^2} - \frac{2\sin(nx)}{n^3}\right]_{0}^{2\pi}$$
+
 3. Evaluate at $0$ and $2\pi$ using $\cos(2n\pi) = \cos(0) = 1$ and $\sin(2n\pi) = \sin(0) = 0$:
-$$a_n = \frac{1}{4\pi}\left[\frac{2\pi}{n^2} + \frac{2\pi}{n^2}\right] = \frac{1}{n^2}$$
+
+   $$a_n = \frac{1}{4\pi}\left[\frac{2\pi}{n^2} + \frac{2\pi}{n^2}\right] = \frac{1}{n^2}$$
+
 4. Apply Bernoulli's rule to integrate $f(x)\sin(nx)$ on $[0, 2\pi]$:
-$$b_n = \frac{1}{4\pi}\left[-\frac{(\pi - x)^2\cos(nx)}{n} - \frac{2(\pi - x)\sin(nx)}{n^2} + \frac{2\cos(nx)}{n^3}\right]_{0}^{2\pi} = 0$$
+
+   $$b_n = \frac{1}{4\pi}\left[-\frac{(\pi - x)^2\cos(nx)}{n} - \frac{2(\pi - x)\sin(nx)}{n^2} + \frac{2\cos(nx)}{n^3}\right]_{0}^{2\pi} = 0$$
+
 5. Combine $a_0$, $a_n$, and $b_n$ into the Fourier series:
-$$S(x) = \frac{\pi^2}{12} + \sum_{n=1}^{\infty} \frac{1}{n^2}\cos(nx)$$
+
+   $$S(x) = \frac{\pi^2}{12} + \sum_{n=1}^{\infty} \frac{1}{n^2}\cos(nx)$$
+
 6. Substitute $x = 0$, where the periodic extension is continuous with $f(0) = \frac{\pi^2}{4}$, to evaluate the sum:
-$$\frac{\pi^2}{4} = \frac{\pi^2}{12} + \sum_{n=1}^{\infty}\frac{1}{n^2} \implies \sum_{n=1}^{\infty}\frac{1}{n^2} = \frac{\pi^2}{6}$$
+
+   $$\frac{\pi^2}{4} = \frac{\pi^2}{12} + \sum_{n=1}^{\infty}\frac{1}{n^2} \implies \sum_{n=1}^{\infty}\frac{1}{n^2} = \frac{\pi^2}{6}$$
 
 > **Figure: Graph of the periodic function (pi - x)^2 / 4**
 >
@@ -376,15 +452,24 @@ $$\frac{\pi^2}{4} = \frac{\pi^2}{12} + \sum_{n=1}^{\infty}\frac{1}{n^2} \implies
 **Find:** The Fourier series of $f(x)$ and the sum of $1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots$
 
 1. Split the integral at $x = 0$ where $|x|$ changes from $-x$ to $x$ to compute $a_0$:
-$$a_0 = \frac{1}{2\pi}\left[\int_{-\pi}^{0} (-x)\,dx + \int_{0}^{\pi} x\,dx\right] = \frac{1}{2\pi}\left[\frac{\pi^2}{2} + \frac{\pi^2}{2}\right] = \frac{\pi}{2}$$
+
+   $$a_0 = \frac{1}{2\pi}\left[\int_{-\pi}^{0} (-x)\,dx + \int_{0}^{\pi} x\,dx\right] = \frac{1}{2\pi}\left[\frac{\pi^2}{2} + \frac{\pi^2}{2}\right] = \frac{\pi}{2}$$
+
 2. Integrate $|x|\cos(nx)$ by parts across $[-\pi, 0]$ and $[0, \pi]$:
-$$a_n = \frac{2}{\pi}\left[x\frac{\sin(nx)}{n} + \frac{\cos(nx)}{n^2}\right]_{0}^{\pi} = \frac{2}{\pi n^2}[(-1)^n - 1]$$
+
+   $$a_n = \frac{2}{\pi}\left[x\frac{\sin(nx)}{n} + \frac{\cos(nx)}{n^2}\right]_{0}^{\pi} = \frac{2}{\pi n^2}[(-1)^n - 1]$$
+
 3. Integrate $|x|\sin(nx)$ across $[-\pi, 0]$ and $[0, \pi]$, where the two halves cancel by odd symmetry:
-$$b_n = \frac{1}{\pi}\left[\int_{-\pi}^{0} (-x)\sin(nx)\,dx + \int_{0}^{\pi} x\sin(nx)\,dx\right] = 0$$
+
+   $$b_n = \frac{1}{\pi}\left[\int_{-\pi}^{0} (-x)\sin(nx)\,dx + \int_{0}^{\pi} x\sin(nx)\,dx\right] = 0$$
+
 4. Write the Fourier series keeping only odd $n$ where $(-1)^n - 1 = -2$:
-$$S(x) = \frac{\pi}{2} - \frac{4}{\pi}\left[\frac{\cos x}{1^2} + \frac{\cos(3x)}{3^2} + \frac{\cos(5x)}{5^2} + \dots\right]$$
+
+   $$S(x) = \frac{\pi}{2} - \frac{4}{\pi}\left[\frac{\cos x}{1^2} + \frac{\cos(3x)}{3^2} + \frac{\cos(5x)}{5^2} + \dots\right]$$
+
 5. Substitute $x = 0$, where $f(x) = |x|$ is continuous with $f(0) = 0$, to evaluate the sum:
-$$0 = \frac{\pi}{2} - \frac{4}{\pi}\left[1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots\right] \implies 1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots = \frac{\pi^2}{8}$$
+
+   $$0 = \frac{\pi}{2} - \frac{4}{\pi}\left[1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots\right] \implies 1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots = \frac{\pi^2}{8}$$
 
 **Answer:** $S(x) = \frac{\pi}{2} - \frac{4}{\pi}\sum_{n=1,3,5,\dots}^{\infty}\frac{\cos(nx)}{n^2}$, and $1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots = \frac{\pi^2}{8}$.
 
@@ -393,18 +478,29 @@ $$0 = \frac{\pi}{2} - \frac{4}{\pi}\left[1 + \frac{1}{3^2} + \frac{1}{5^2} + \do
 **Find:** The Fourier series of $f(x)$ and the sums (i) $1 + \frac{2}{1\cdot 3} - \frac{2}{3\cdot 5} + \frac{2}{5\cdot 7} - \dots$ and (ii) $\frac{1}{1\cdot 3} - \frac{1}{2\cdot 4} + \frac{1}{3\cdot 5} - \dots$
 
 1. Integrate $x\sin x$ by parts on $(-\pi, \pi)$ to find $a_0$:
-$$a_0 = \frac{1}{2\pi}\Big[-x\cos x + \sin x\Big]_{-\pi}^{\pi} = \frac{1}{2\pi}[-2\pi\cos\pi] = 1$$
+
+   $$a_0 = \frac{1}{2\pi}\Big[-x\cos x + \sin x\Big]_{-\pi}^{\pi} = \frac{1}{2\pi}[-2\pi\cos\pi] = 1$$
+
 2. Compute $a_1$ separately because $\sin x \cos x = \frac{1}{2}\sin(2x)$ prevents division by $n^2 - 1$:
-$$a_1 = \frac{1}{\pi}\int_{-\pi}^{\pi} x\sin x\cos x\,dx = \frac{1}{2\pi}\Big[-x\frac{\cos(2x)}{2} + \frac{\sin(2x)}{4}\Big]_{-\pi}^{\pi} = -\frac{1}{2}$$
+
+   $$a_1 = \frac{1}{\pi}\int_{-\pi}^{\pi} x\sin x\cos x\,dx = \frac{1}{2\pi}\Big[-x\frac{\cos(2x)}{2} + \frac{\sin(2x)}{4}\Big]_{-\pi}^{\pi} = -\frac{1}{2}$$
+
 3. For $n \ge 2$, rewrite $\sin x\cos(nx) = \frac{1}{2}[\sin((n+1)x) - \sin((n-1)x)]$ and integrate by parts:
-$$a_n = \frac{1}{\pi}\left[\frac{-\pi\cos((n+1)\pi)}{n+1} + \frac{\pi\cos((n-1)\pi)}{n-1}\right] = \frac{2(-1)^{n+1}}{n^2 - 1}$$
+
+   $$a_n = \frac{1}{\pi}\left[\frac{-\pi\cos((n+1)\pi)}{n+1} + \frac{\pi\cos((n-1)\pi)}{n-1}\right] = \frac{2(-1)^{n+1}}{n^2 - 1}$$
+
 4. Note that $b_n = 0$ for all $n$ because $x\sin x\sin(nx)$ is odd on $(-\pi, \pi)$.
 5. Assemble the Fourier series with $n^2 - 1 = (n-1)(n+1)$:
-$$S(x) = 1 - \frac{1}{2}\cos x - 2\left[\frac{\cos(2x)}{1\cdot 3} - \frac{\cos(3x)}{2\cdot 4} + \frac{\cos(4x)}{3\cdot 5} - \dots\right]$$
+
+   $$S(x) = 1 - \frac{1}{2}\cos x - 2\left[\frac{\cos(2x)}{1\cdot 3} - \frac{\cos(3x)}{2\cdot 4} + \frac{\cos(4x)}{3\cdot 5} - \dots\right]$$
+
 6. Substitute $x = \frac{\pi}{2}$, where $f\left(\frac{\pi}{2}\right) = \frac{\pi}{2}$ and odd cosines vanish, to find sum (i):
-$$\frac{\pi}{2} = 1 + \frac{2}{1\cdot 3} - \frac{2}{3\cdot 5} + \frac{2}{5\cdot 7} - \dots$$
+
+   $$\frac{\pi}{2} = 1 + \frac{2}{1\cdot 3} - \frac{2}{3\cdot 5} + \frac{2}{5\cdot 7} - \dots$$
+
 7. Substitute $x = 0$, where $f(0) = 0$, to solve for sum (ii):
-$$0 = 1 - \frac{1}{2} - 2\left[\frac{1}{1\cdot 3} - \frac{1}{2\cdot 4} + \frac{1}{3\cdot 5} - \dots\right] \implies \frac{1}{1\cdot 3} - \frac{1}{2\cdot 4} + \frac{1}{3\cdot 5} - \dots = \frac{1}{4}$$
+
+   $$0 = 1 - \frac{1}{2} - 2\left[\frac{1}{1\cdot 3} - \frac{1}{2\cdot 4} + \frac{1}{3\cdot 5} - \dots\right] \implies \frac{1}{1\cdot 3} - \frac{1}{2\cdot 4} + \frac{1}{3\cdot 5} - \dots = \frac{1}{4}$$
 
 **Answer:** $S(x) = 1 - \frac{1}{2}\cos x + 2\sum_{n=2}^{\infty}\frac{(-1)^{n+1}\cos(nx)}{n^2 - 1}$; (i) $\frac{\pi}{2}$; (ii) $\frac{1}{4}$.
 
@@ -431,11 +527,17 @@ Once you have the series, you can evaluate multiple numerical sums from a single
 1. Find the half-period $L$ from the interval length $2L = 1 - (-1) = 2$, which gives $L = 1$ and harmonic arguments $\frac{n\pi x}{1} = n\pi x$.
 2. Check symmetry on $(-1, 1)$: since $f(-x) = (-x)|-x| = -x|x| = -f(x)$, the function is odd, so $a_0 = 0$ and $a_n = 0$ because the product of an odd function and an even cosine is odd.
 3. Set up the sine coefficient integral using even symmetry of $f(x)\sin(n\pi x)$, and replace $|x|$ with $x$ since $x > 0$ on $(0, 1)$:
-$$b_n = \frac{1}{1} \int_{-1}^{1} x|x| \sin(n\pi x)\,dx = 2 \int_{0}^{1} x^2 \sin(n\pi x)\,dx$$
+
+   $$b_n = \frac{1}{1} \int_{-1}^{1} x|x| \sin(n\pi x)\,dx = 2 \int_{0}^{1} x^2 \sin(n\pi x)\,dx$$
+
 4. Apply tabular integration by parts three times to integrate $x^2 \sin(n\pi x)$, dividing by $n\pi$ at each step:
-$$b_n = 2 \left[ x^2 \left(\frac{-\cos(n\pi x)}{n\pi}\right) - 2x \left(\frac{-\sin(n\pi x)}{n^2\pi^2}\right) + 2 \left(\frac{\cos(n\pi x)}{n^3\pi^3}\right) \right]_{0}^{1}$$
+
+   $$b_n = 2 \left[ x^2 \left(\frac{-\cos(n\pi x)}{n\pi}\right) - 2x \left(\frac{-\sin(n\pi x)}{n^2\pi^2}\right) + 2 \left(\frac{\cos(n\pi x)}{n^3\pi^3}\right) \right]_{0}^{1}$$
+
 5. Substitute the limits $x = 1$ and $x = 0$, using $\sin(n\pi) = 0$, $\cos(n\pi) = (-1)^n$, and $\cos(0) = 1$:
-$$b_n = 2 \left[ \frac{-(-1)^n}{n\pi} + 0 + \frac{2(-1)^n}{n^3\pi^3} - \left(0 + 0 + \frac{2}{n^3\pi^3}\right) \right] = 2 \left[ \frac{(-1)^{n+1}}{n\pi} + \frac{2}{n^3\pi^3}\left((-1)^n - 1\right) \right]$$
+
+   $$b_n = 2 \left[ \frac{-(-1)^n}{n\pi} + 0 + \frac{2(-1)^n}{n^3\pi^3} - \left(0 + 0 + \frac{2}{n^3\pi^3}\right) \right] = 2 \left[ \frac{(-1)^{n+1}}{n\pi} + \frac{2}{n^3\pi^3}\left((-1)^n - 1\right) \right]$$
+
 6. Substitute $a_0 = 0$, $a_n = 0$, and $b_n$ into the scaled Fourier series formula.
 
 **Answer:** $S(x) = \sum_{n=1}^{\infty} 2 \left[ \frac{(-1)^{n+1}}{n\pi} + \frac{2}{n^3\pi^3}\left((-1)^n - 1\right) \right] \sin(n\pi x)$.
@@ -448,11 +550,17 @@ $$b_n = 2 \left[ \frac{-(-1)^n}{n\pi} + 0 + \frac{2(-1)^n}{n^3\pi^3} - \left(0 +
 
 1. From $c = 0$ and $2L = 2$, set $L = 1$ so the harmonic arguments are $\frac{n\pi x}{1} = n\pi x$.
 2. Compute the average term $a_0$ across $(0, 2)$:
-$$a_0 = \frac{1}{2} \int_{0}^{2} e^{-x}\,dx = \frac{1}{2} \left[ -e^{-x} \right]_{0}^{2} = \frac{1 - e^{-2}}{2}$$
+
+   $$a_0 = \frac{1}{2} \int_{0}^{2} e^{-x}\,dx = \frac{1}{2} \left[ -e^{-x} \right]_{0}^{2} = \frac{1 - e^{-2}}{2}$$
+
 3. Set up the cosine integral $a_n = \int_{0}^{2} e^{-x} \cos(n\pi x)\,dx$ and apply the standard exponential-cosine antiderivative formula:
-$$a_n = \left[ \frac{e^{-x}}{(-1)^2 + (n\pi)^2} \left(-\cos(n\pi x) + n\pi \sin(n\pi x)\right) \right]_{0}^{1} = \frac{1 - e^{-1}(-1)^n}{1 + n^2\pi^2}$$
+
+   $$a_n = \left[ \frac{e^{-x}}{(-1)^2 + (n\pi)^2} \left(-\cos(n\pi x) + n\pi \sin(n\pi x)\right) \right]_{0}^{1} = \frac{1 - e^{-1}(-1)^n}{1 + n^2\pi^2}$$
+
 4. Set up the sine integral $b_n = \int_{0}^{2} e^{-x} \sin(n\pi x)\,dx$ and apply the standard exponential-sine antiderivative formula:
-$$b_n = \left[ \frac{e^{-x}}{(-1)^2 + (n\pi)^2} \left(-\sin(n\pi x) - n\pi \cos(n\pi x)\right) \right]_{0}^{1} = \frac{n\pi}{1 + n^2\pi^2} \left[1 - e^{-1}(-1)^n\right]$$
+
+   $$b_n = \left[ \frac{e^{-x}}{(-1)^2 + (n\pi)^2} \left(-\sin(n\pi x) - n\pi \cos(n\pi x)\right) \right]_{0}^{1} = \frac{n\pi}{1 + n^2\pi^2} \left[1 - e^{-1}(-1)^n\right]$$
+
 5. Substitute $a_0$, $a_n$, and $b_n$ into the Fourier series expansion.
 
 > **Figure: Graph of periodic function e^-x**
@@ -468,16 +576,25 @@ $$b_n = \left[ \frac{e^{-x}}{(-1)^2 + (n\pi)^2} \left(-\sin(n\pi x) - n\pi \cos(
 **Find:** The Fourier series $S(x)$ and the sum $1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots$
 
 1. Split the $a_0$ integral at $x = 0$ and integrate each piece:
-$$a_0 = \frac{1}{2l} \left[ \int_{-l}^{0} (-x)\,dx + \int_{0}^{l} (\pi + x)\,dx \right] = \frac{1}{2l}\left[\frac{l^2}{2} + \pi l + \frac{l^2}{2}\right] = \frac{1}{2}(\pi + l)$$
+
+   $$a_0 = \frac{1}{2l} \left[ \int_{-l}^{0} (-x)\,dx + \int_{0}^{l} (\pi + x)\,dx \right] = \frac{1}{2l}\left[\frac{l^2}{2} + \pi l + \frac{l^2}{2}\right] = \frac{1}{2}(\pi + l)$$
+
 2. Substitute $x \to -x$ on $[-l, 0]$ to fold the two cosine integrals into one integral over $[0, l]$:
-$$a_n = \frac{1}{l} \left[ \int_{-l}^{0} (-x)\cos\frac{n\pi x}{l}\,dx + \int_{0}^{l} (\pi + x)\cos\frac{n\pi x}{l}\,dx \right] = \frac{1}{l} \int_{0}^{l} (2x + \pi)\cos\frac{n\pi x}{l}\,dx$$
+
+   $$a_n = \frac{1}{l} \left[ \int_{-l}^{0} (-x)\cos\frac{n\pi x}{l}\,dx + \int_{0}^{l} (\pi + x)\cos\frac{n\pi x}{l}\,dx \right] = \frac{1}{l} \int_{0}^{l} (2x + \pi)\cos\frac{n\pi x}{l}\,dx$$
+
 3. Integrate $a_n$ by parts, bringing out $\frac{l}{n\pi}$ each time, and evaluate at $0$ and $l$:
-$$a_n = \frac{1}{l} \left[ (2x + \pi)\frac{l}{n\pi}\sin\frac{n\pi x}{l} + 2\left(\frac{l}{n\pi}\right)^2\cos\frac{n\pi x}{l} \right]_{0}^{l} = \frac{2l}{n^2\pi^2}\left[(-1)^n - 1\right]$$
+
+   $$a_n = \frac{1}{l} \left[ (2x + \pi)\frac{l}{n\pi}\sin\frac{n\pi x}{l} + 2\left(\frac{l}{n\pi}\right)^2\cos\frac{n\pi x}{l} \right]_{0}^{l} = \frac{2l}{n^2\pi^2}\left[(-1)^n - 1\right]$$
+
 4. Fold the sine integrals on $[-l, 0]$ and $[0, l]$; the $x\sin\left(\frac{n\pi x}{l}\right)$ terms cancel because $x\sin\left(\frac{n\pi x}{l}\right)$ is even:
-$$b_n = \frac{1}{l} \left[ -\int_{-l}^{0} x\sin\frac{n\pi x}{l}\,dx + \int_{0}^{l} (\pi + x)\sin\frac{n\pi x}{l}\,dx \right] = \frac{\pi}{l} \int_{0}^{l} \sin\frac{n\pi x}{l}\,dx = \frac{1}{n}\left[1 - (-1)^n\right]$$
+
+   $$b_n = \frac{1}{l} \left[ -\int_{-l}^{0} x\sin\frac{n\pi x}{l}\,dx + \int_{0}^{l} (\pi + x)\sin\frac{n\pi x}{l}\,dx \right] = \frac{\pi}{l} \int_{0}^{l} \sin\frac{n\pi x}{l}\,dx = \frac{1}{n}\left[1 - (-1)^n\right]$$
+
 5. Note that for even $n$, $a_n = 0$ and $b_n = 0$; for odd $n$, $a_n = \frac{-4l}{n^2\pi^2}$ and $b_n = \frac{2}{n}$.
 6. Evaluate the series at the jump $x = 0$, where $\frac{f(0^+) + f(0^-)}{2} = \frac{\pi + 0}{2} = \frac{\pi}{2}$ and $\sin(0) = 0$:
-$$\frac{\pi}{2} = \frac{1}{2}(\pi + l) - \frac{4l}{\pi^2}\left(1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots\right) \implies 1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$$
+
+   $$\frac{\pi}{2} = \frac{1}{2}(\pi + l) - \frac{4l}{\pi^2}\left(1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots\right) \implies 1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$$
 
 > **Watch out.** The printed final series writes $\frac{l}{2}(\pi + l)$ for $a_0$ and $\cos nx$ for the cosine term, instead of $\frac{1}{2}(\pi + l)$ and $\cos\left(\frac{n\pi x}{l}\right)$.
 
@@ -488,16 +605,25 @@ $$\frac{\pi}{2} = \frac{1}{2}(\pi + l) - \frac{4l}{\pi^2}\left(1 + \frac{1}{3^2}
 **Find:** The Fourier series $S(x)$, (i) $1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots$, and (ii) $1 - \frac{1}{3} + \frac{1}{5} - \cdots$
 
 1. Since $2L = 4$, set $L = 2$ and integrate the two pieces to find $a_0$:
-$$a_0 = \frac{1}{4}\left[\int_{-2}^{0} 2\,dx + \int_{0}^{2} x\,dx\right] = \frac{1}{4}\left[4 + 2\right] = \frac{3}{2}$$
+
+   $$a_0 = \frac{1}{4}\left[\int_{-2}^{0} 2\,dx + \int_{0}^{2} x\,dx\right] = \frac{1}{4}\left[4 + 2\right] = \frac{3}{2}$$
+
 2. Integrate $a_n$ across $[-2, 0]$ and $[0, 2]$ using integration by parts on the second piece:
-$$a_n = \frac{1}{2}\left[\left.\frac{4}{n\pi}\sin\left(\frac{n\pi x}{2}\right)\right|_{-2}^{0} + \left.\left(\frac{2x}{n\pi}\sin\left(\frac{n\pi x}{2}\right) + \frac{4}{n^2\pi^2}\cos\left(\frac{n\pi x}{2}\right)\right)\right|_{0}^{2}\right] = \frac{2}{n^2\pi^2}\left[(-1)^n - 1\right]$$
+
+   $$a_n = \frac{1}{2}\left[\left.\frac{4}{n\pi}\sin\left(\frac{n\pi x}{2}\right)\right|_{-2}^{0} + \left.\left(\frac{2x}{n\pi}\sin\left(\frac{n\pi x}{2}\right) + \frac{4}{n^2\pi^2}\cos\left(\frac{n\pi x}{2}\right)\right)\right|_{0}^{2}\right] = \frac{2}{n^2\pi^2}\left[(-1)^n - 1\right]$$
+
 3. Integrate $b_n$ across both pieces and evaluate at the limits:
-$$b_n = \frac{1}{2}\left[\left.-\frac{4}{n\pi}\cos\left(\frac{n\pi x}{2}\right)\right|_{-2}^{0} + \left.\left(-\frac{2x}{n\pi}\cos\left(\frac{n\pi x}{2}\right) + \frac{4}{n^2\pi^2}\sin\left(\frac{n\pi x}{2}\right)\right)\right|_{0}^{2}\right] = -\frac{2}{n\pi}$$
+
+   $$b_n = \frac{1}{2}\left[\left.-\frac{4}{n\pi}\cos\left(\frac{n\pi x}{2}\right)\right|_{-2}^{0} + \left.\left(-\frac{2x}{n\pi}\cos\left(\frac{n\pi x}{2}\right) + \frac{4}{n^2\pi^2}\sin\left(\frac{n\pi x}{2}\right)\right)\right|_{0}^{2}\right] = -\frac{2}{n\pi}$$
+
 4. Write out the full series using the odd-index values $a_n = -\frac{4}{n^2\pi^2}$ and all-index values $b_n = -\frac{2}{n\pi}$.
 5. At the jump $x = 0$, set $S(0) = \frac{f(0^+) + f(0^-)}{2} = \frac{0 + 2}{2} = 1$ to solve for series (i):
-$$1 = \frac{3}{2} - \frac{4}{\pi^2}\left(1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots\right) \implies 1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$$
+
+   $$1 = \frac{3}{2} - \frac{4}{\pi^2}\left(1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots\right) \implies 1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$$
+
 6. At the continuity point $x = 1$, set $S(1) = f(1) = 1$ (where $\cos\left(\frac{n\pi}{2}\right) = 0$ for odd $n$) to solve for series (ii):
-$$1 = \frac{3}{2} - \frac{2}{\pi}\left(1 - \frac{1}{3} + \frac{1}{5} - \cdots\right) \implies 1 - \frac{1}{3} + \frac{1}{5} - \cdots = \frac{\pi}{4}$$
+
+   $$1 = \frac{3}{2} - \frac{2}{\pi}\left(1 - \frac{1}{3} + \frac{1}{5} - \cdots\right) \implies 1 - \frac{1}{3} + \frac{1}{5} - \cdots = \frac{\pi}{4}$$
 
 ```jsxgraph
 {
@@ -615,17 +741,28 @@ $$1 = \frac{3}{2} - \frac{2}{\pi}\left(1 - \frac{1}{3} + \frac{1}{5} - \cdots\ri
 
 1. From $2L = 3$, set $L = \frac{3}{2}$ so the harmonic arguments are $\frac{n\pi x}{3/2} = \frac{2n\pi x}{3}$.
 2. Compute the average term $a_0$ over $(0, 3)$:
-$$a_0 = \frac{1}{3}\int_{0}^{3} (2x - x^2)\,dx = \frac{1}{3}\left[x^2 - \frac{x^3}{3}\right]_{0}^{3} = 0$$
+
+   $$a_0 = \frac{1}{3}\int_{0}^{3} (2x - x^2)\,dx = \frac{1}{3}\left[x^2 - \frac{x^3}{3}\right]_{0}^{3} = 0$$
+
 3. Apply three-step tabular integration by parts to find $a_n$, noting that $\sin(2n\pi) = \sin(0) = 0$ and $\cos(2n\pi) = 1$:
-$$a_n = \frac{2}{3}\left[(2x - x^2)\frac{3}{2n\pi}\sin\frac{2n\pi x}{3} + (2 - 2x)\left(\frac{3}{2n\pi}\right)^2\cos\frac{2n\pi x}{3} + 2\left(\frac{3}{2n\pi}\right)^3\sin\frac{2n\pi x}{3}\right]_{0}^{3} = -\frac{9}{n^2\pi^2}$$
+
+   $$a_n = \frac{2}{3}\left[(2x - x^2)\frac{3}{2n\pi}\sin\frac{2n\pi x}{3} + (2 - 2x)\left(\frac{3}{2n\pi}\right)^2\cos\frac{2n\pi x}{3} + 2\left(\frac{3}{2n\pi}\right)^3\sin\frac{2n\pi x}{3}\right]_{0}^{3} = -\frac{9}{n^2\pi^2}$$
+
 4. Apply three-step tabular integration by parts to find $b_n$, where the $\left(\frac{3}{2n\pi}\right)^3\cos\left(\frac{2n\pi x}{3}\right)$ terms cancel at $3$ and $0$:
-$$b_n = \frac{2}{3}\left[-(2x - x^2)\frac{3}{2n\pi}\cos\frac{2n\pi x}{3} + (2 - 2x)\left(\frac{3}{2n\pi}\right)^2\sin\frac{2n\pi x}{3} - 2\left(\frac{3}{2n\pi}\right)^3\cos\frac{2n\pi x}{3}\right]_{0}^{3} = \frac{3}{n\pi}$$
+
+   $$b_n = \frac{2}{3}\left[-(2x - x^2)\frac{3}{2n\pi}\cos\frac{2n\pi x}{3} + (2 - 2x)\left(\frac{3}{2n\pi}\right)^2\sin\frac{2n\pi x}{3} - 2\left(\frac{3}{2n\pi}\right)^3\cos\frac{2n\pi x}{3}\right]_{0}^{3} = \frac{3}{n\pi}$$
+
 5. For (i), evaluate at the continuous midpoint $x = \frac{3}{2}$, where $f\left(\frac{3}{2}\right) = \frac{3}{4}$, $\cos(n\pi) = (-1)^n$, and $\sin(n\pi) = 0$:
-$$\frac{3}{4} = -\frac{9}{\pi^2}\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2} = \frac{9}{\pi^2}\left(\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \cdots\right) \implies \frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \cdots = \frac{\pi^2}{12}$$
+
+   $$\frac{3}{4} = -\frac{9}{\pi^2}\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2} = \frac{9}{\pi^2}\left(\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \cdots\right) \implies \frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \cdots = \frac{\pi^2}{12}$$
+
 6. For (ii), evaluate at the endpoint jump $x = 0$, using $f(0^+) = 0$ and $f(0^-) = f(3) = -3$:
-$$\frac{0 + (-3)}{2} = -\frac{9}{\pi^2}\sum_{n=1}^{\infty}\frac{1}{n^2} \implies \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6}$$
+
+   $$\frac{0 + (-3)}{2} = -\frac{9}{\pi^2}\sum_{n=1}^{\infty}\frac{1}{n^2} \implies \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6}$$
+
 7. For (iii), average the series from (i) and (ii) so the even-indexed terms cancel out:
-$$\frac{1}{2}\left(\frac{\pi^2}{12} + \frac{\pi^2}{6}\right) = \frac{1}{1^2} + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$$
+
+   $$\frac{1}{2}\left(\frac{\pi^2}{12} + \frac{\pi^2}{6}\right) = \frac{1}{1^2} + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$$
 
 > **Figure: Graph of periodic function 2x - x^2**
 >
@@ -654,6 +791,7 @@ When a function $f(x)$ is given only on the half-interval $[0, L]$, we can mirro
 > Coordinate axes for Figure 4.17 ('Graph of even periodic extension of f(x)'). A horizontal axis (with a rightward arrowhead) intersects a vertical axis (with an upward arrowhead) at the origin, labelled '0'. Tick marks along the horizontal axis from left to right are labelled '-2L', '-L', '0' (at the vertical axis), 'L', and '2L'. Above the horizontal axis is a continuous, wave-like periodic curve with period 2L, symmetric about the vertical axis and labelled 'f(x)' in the first quadrant. The even extension pattern from [-L, L] repeats periodically across [-2L, -L] and [L, 2L], showing peaks at x = -L and x = L, and dipping segments with a slight central bump around x = -2L, x = 0, and x = 2L.
 
 Because $F(x)$ is symmetric across the vertical axis, its product with $\sin(n\pi x/L)$ is odd, forcing every sine coefficient $b_n$ to be zero. The products for $a_0$ and $a_n$ are even, so integrating from $-L$ to $L$ is just twice the integral from $0$ to $L$. This gives the **half-range cosine series** $S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos\left(\frac{n\pi x}{L}\right)$ on $0 < x < L$, with coefficients:
+
 $$a_0 = \frac{1}{L} \int_0^L f(x)\,dx, \qquad a_n = \frac{2}{L} \int_0^L f(x) \cos\left(\frac{n\pi x}{L}\right)\,dx$$
 
 When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a product-to-sum identity before integrating. If the resulting general formula for $a_n$ has $n - 1$ in the denominator, that formula is invalid for $n = 1$; you must plug $n = 1$ directly into the original integral to compute $a_1$ separately. Finally, because an even extension matches at $x = 0$ ($F(0^+) = F(0^-) = f(0)$) and at $x = L$ ($F(L^-) = F((-L)^+) = f(L)$), the periodic extension is continuous at both endpoints whenever $f(x)$ is continuous on $[0, L]$, allowing you to evaluate $S(x) = f(x)$ right at $x = 0$ or $x = L$ to sum numerical series.
@@ -665,16 +803,27 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 **Find:** The half-range cosine series $S(x)$ and the sum $\sum_{n=1}^{\infty} \frac{e(-1)^n - 1}{1 + n^2\pi^2}$.
 
 1. Write the half-range cosine series form for $L = 1$, where $\cos(n\pi x/L)$ simplifies to $\cos(n\pi x)$:
+
    $$S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos(n\pi x)$$
+
 2. Compute the average value $a_0$ by integrating $e^x$ over $[0, 1]$:
+
    $$a_0 = \frac{1}{1} \int_0^1 e^x\,dx = \left[e^x\right]_0^1 = e - 1$$
+
 3. Set up the integral for $a_n$ on $[0, 1]$ and apply the standard exponential-cosine antiderivative formula:
+
    $$a_n = 2 \int_0^1 e^x \cos(n\pi x)\,dx = 2 \left[ \frac{e^x}{1^2 + (n\pi)^2} \left(\cos(n\pi x) + n\pi \sin(n\pi x)\right) \right]_0^1$$
+
 4. Evaluate at the limits $x = 1$ and $x = 0$ using $\cos(n\pi) = (-1)^n$ and $\sin(n\pi) = 0$:
+
    $$a_n = 2 \left[ \frac{e}{1 + n^2\pi^2}\left((-1)^n + 0\right) - \frac{1}{1 + n^2\pi^2}(1 + 0) \right] = \frac{2\left[e(-1)^n - 1\right]}{1 + n^2\pi^2}$$
+
 5. Substitute $a_0$ and $a_n$ into $S(x)$ to write the half-range cosine series:
+
    $$S(x) = e - 1 + \sum_{n=1}^{\infty} \frac{2\left[e(-1)^n - 1\right]}{1 + n^2\pi^2} \cos(n\pi x)$$
+
 6. Because the even periodic extension is continuous at $x = 0$, set $S(0) = f(0) = e^0 = 1$ and solve for the sum:
+
    $$1 = e - 1 + 2 \sum_{n=1}^{\infty} \frac{e(-1)^n - 1}{1 + n^2\pi^2} \implies \sum_{n=1}^{\infty} \frac{e(-1)^n - 1}{1 + n^2\pi^2} = \frac{2 - e}{2}$$
 
 > **Figure: Graph of even periodic extension of e^x**
@@ -690,14 +839,23 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 **Find:** The half-range cosine series of $f(x)$ and the sum $1 - \frac{1}{2^2} + \frac{1}{3^2} - \cdots$.
 
 1. Compute $a_0$ by integrating $x^2$ over $[0, 5]$:
+
    $$a_0 = \frac{1}{5} \int_0^5 x^2\,dx = \frac{1}{5} \left[\frac{x^3}{3}\right]_0^5 = \frac{25}{3}$$
+
 2. Integrate $a_n = \frac{2}{5} \int_0^5 x^2 \cos\left(\frac{n\pi x}{5}\right)\,dx$ using tabular integration by parts:
+
    $$a_n = \frac{2}{5} \left[ x^2 \left(\frac{5}{n\pi}\right) \sin\left(\frac{n\pi x}{5}\right) - 2x \left(\frac{5}{n\pi}\right)^2 \left(-\cos\left(\frac{n\pi x}{5}\right)\right) + 2 \left(\frac{5}{n\pi}\right)^3 \left(-\sin\left(\frac{n\pi x}{5}\right)\right) \right]_0^5$$
+
 3. Evaluate at $x = 5$ and $x = 0$, where all sine terms vanish and $\cos(n\pi) = (-1)^n$:
+
    $$a_n = \frac{2}{5} \left[ 10 \left(\frac{25}{n^2\pi^2}\right) (-1)^n \right] = \frac{100(-1)^n}{n^2\pi^2}$$
+
 4. Substitute $a_0$ and $a_n$ into $S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos\left(\frac{n\pi x}{5}\right)$:
+
    $$S(x) = \frac{25}{3} + \frac{100}{\pi^2} \sum_{n=1}^{\infty} \frac{(-1)^n}{n^2} \cos\left(\frac{n\pi x}{5}\right)$$
+
 5. Set $S(0) = f(0) = 0$ at the point of continuity $x = 0$ and rearrange to isolate the alternating series:
+
    $$0 = \frac{25}{3} + \frac{100}{\pi^2} \sum_{n=1}^{\infty} \frac{(-1)^n}{n^2} \implies 1 - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \cdots = \frac{\pi^2}{12}$$
 
 > **Figure: Graph of even periodic extension of x^2**
@@ -711,16 +869,27 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 **Find:** The half-range cosine series of $\sin x$ and the sum $\frac{1}{1 \cdot 3} + \frac{1}{3 \cdot 5} + \frac{1}{5 \cdot 7} + \cdots$.
 
 1. With $L = \pi/2$, note that $\cos(n\pi x/L) = \cos(2nx)$ and compute $a_0$:
+
    $$a_0 = \frac{2}{\pi} \int_0^{\pi/2} \sin x\,dx = \frac{2}{\pi} \left[-\cos x\right]_0^{\pi/2} = \frac{2}{\pi}$$
+
 2. Set up $a_n$ and rewrite $\sin x \cos(2nx)$ using $2\sin A \cos B = \sin(A+B) + \sin(A-B)$:
+
    $$a_n = \frac{4}{\pi} \int_0^{\pi/2} \sin x \cos(2nx)\,dx = \frac{2}{\pi} \int_0^{\pi/2} \left[\sin((2n+1)x) - \sin((2n-1)x)\right]\,dx$$
+
 3. Integrate each sine term from $0$ to $\pi/2$:
+
    $$a_n = \frac{2}{\pi} \left[ \frac{-\cos((2n+1)x)}{2n+1} + \frac{\cos((2n-1)x)}{2n-1} \right]_0^{\pi/2}$$
+
 4. Since $2n+1$ and $2n-1$ are odd integers, $\cos((2n\pm 1)\pi/2) = 0$, leaving only the lower limit $x = 0$:
+
    $$a_n = \frac{2}{\pi} \left[ \frac{1}{2n+1} - \frac{1}{2n-1} \right] = \frac{-4}{\pi(4n^2 - 1)}$$
+
 5. Substitute $a_0$ and $a_n$ into $S(x)$:
+
    $$S(x) = \frac{2}{\pi} - \frac{4}{\pi} \sum_{n=1}^{\infty} \frac{1}{4n^2 - 1} \cos(2nx)$$
+
 6. Set $S(0) = \sin 0 = 0$ at $x = 0$ and factor $4n^2 - 1 = (2n-1)(2n+1)$ to find the sum:
+
    $$0 = \frac{2}{\pi} - \frac{4}{\pi} \sum_{n=1}^{\infty} \frac{1}{(2n-1)(2n+1)} \implies \frac{1}{1 \cdot 3} + \frac{1}{3 \cdot 5} + \frac{1}{5 \cdot 7} + \cdots = \frac{1}{2}$$
 
 > **Figure: Graph of even periodic extension of sin(x)**
@@ -734,14 +903,23 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 **Find:** The half-range cosine series of $f(x)$.
 
 1. Split the $a_0$ integral at $x = l/2$ and integrate both linear pieces:
+
    $$a_0 = \frac{1}{l} \left[ \int_0^{l/2} 5x\,dx + \int_{l/2}^l 5(l-x)\,dx \right] = \frac{5}{l} \left[ \left(\frac{x^2}{2}\right)_0^{l/2} + \left(lx - \frac{x^2}{2}\right)_{l/2}^l \right] = \frac{5l}{4}$$
+
 2. Split the $a_n$ integral at $x = l/2$:
+
    $$a_n = \frac{2}{l} \left[ \int_0^{l/2} 5x \cos\left(\frac{n\pi x}{l}\right)\,dx + \int_{l/2}^l 5(l-x) \cos\left(\frac{n\pi x}{l}\right)\,dx \right]$$
+
 3. Apply tabular integration by parts to each integral:
+
    $$a_n = \frac{10}{l} \left( \left[ \frac{lx}{n\pi} \sin\left(\frac{n\pi x}{l}\right) + \frac{l^2}{n^2\pi^2} \cos\left(\frac{n\pi x}{l}\right) \right]_0^{l/2} + \left[ \frac{l(l-x)}{n\pi} \sin\left(\frac{n\pi x}{l}\right) - \frac{l^2}{n^2\pi^2} \cos\left(\frac{n\pi x}{l}\right) \right]_{l/2}^l \right)$$
+
 4. Evaluate at the limits, noting that the $\sin(n\pi/2)$ terms cancel and $\cos(n\pi) = (-1)^n$:
+
    $$a_n = \frac{10l}{n^2\pi^2} \left[ 2\cos\left(\frac{n\pi}{2}\right) - 1 - (-1)^n \right]$$
+
 5. Substitute $a_0$ and $a_n$ into $S(x)$:
+
    $$S(x) = \frac{5l}{4} + \sum_{n=1}^{\infty} \frac{10l}{n^2\pi^2} \left[ 2\cos\left(\frac{n\pi}{2}\right) - 1 - (-1)^n \right] \cos\left(\frac{n\pi x}{l}\right)$$
 
 **Answer:** $S(x) = \frac{5l}{4} + \sum_{n=1}^{\infty} \frac{10l}{n^2\pi^2} \left[ 2\cos\left(\frac{n\pi}{2}\right) - 1 - (-1)^n \right] \cos\left(\frac{n\pi x}{l}\right)$.
@@ -751,18 +929,31 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 **Find:** The half-range cosine series of $x \sin x$ and the sum $\frac{1}{1 \cdot 3} - \frac{1}{3 \cdot 5} + \frac{1}{5 \cdot 7} - \cdots$.
 
 1. Compute $a_0$ on $(0, \pi)$ using integration by parts:
+
    $$a_0 = \frac{1}{\pi} \int_0^{\pi} x \sin x\,dx = \frac{1}{\pi} \left[-x\cos x + \sin x\right]_0^{\pi} = 1$$
+
 2. Set up $a_n$ and apply $2\sin x \cos(nx) = \sin((n+1)x) - \sin((n-1)x)$:
+
    $$a_n = \frac{2}{\pi} \int_0^{\pi} x \sin x \cos(nx)\,dx = \frac{1}{\pi} \int_0^{\pi} x \left[\sin((n+1)x) - \sin((n-1)x)\right]\,dx$$
+
 3. Integrate by parts for $n \neq 1$ (so $n - 1 \neq 0$):
+
    $$a_n = \frac{1}{\pi} \left[ x\left(\frac{-\cos((n+1)x)}{n+1} + \frac{\cos((n-1)x)}{n-1}\right) - \left(\frac{-\sin((n+1)x)}{(n+1)^2} + \frac{\sin((n-1)x)}{(n-1)^2}\right) \right]_0^{\pi}$$
+
 4. Evaluate at $0$ and $\pi$ using $\cos((n\pm 1)\pi) = (-1)^{n-1}$:
+
    $$a_n = \frac{(-1)^{n-1}}{n-1} - \frac{(-1)^{n-1}}{n+1} = \frac{2(-1)^{n-1}}{(n-1)(n+1)} \quad (n \neq 1)$$
+
 5. Compute $a_1$ separately by setting $n = 1$ in the original integral and using $2\sin x \cos x = \sin(2x)$:
+
    $$a_1 = \frac{1}{\pi} \int_0^{\pi} x \sin(2x)\,dx = \frac{1}{\pi} \left[ \frac{-x\cos(2x)}{2} + \frac{\sin(2x)}{4} \right]_0^{\pi} = -\frac{1}{2}$$
+
 6. Combine $a_0$, $a_1$, and $a_n$ ($n \ge 2$) into the series:
+
    $$S(x) = 1 - \frac{1}{2}\cos x + 2 \sum_{n=2}^{\infty} \frac{(-1)^{n-1}}{(n-1)(n+1)} \cos(nx)$$
+
 7. Evaluate at the continuity point $x = \pi/2$, where $\cos(\pi/2) = 0$ and even harmonics alternate signs:
+
    $$\frac{\pi}{2}\sin\left(\frac{\pi}{2}\right) = 1 + 2\left[\frac{1}{1 \cdot 3} - \frac{1}{3 \cdot 5} + \frac{1}{5 \cdot 7} - \cdots\right] \implies \frac{1}{1 \cdot 3} - \frac{1}{3 \cdot 5} + \frac{1}{5 \cdot 7} - \cdots = \frac{\pi - 2}{4}$$
 
 > **Watch out.** Because the general formula for $a_n$ divides by $n - 1$, you must start the summation at $n = 2$ and add the separately computed $a_1 \cos x$ term in front.
@@ -782,6 +973,7 @@ Having built pure cosine expansions via even extensions, we conclude by extendin
 ### The idea
 
 When a function $f(x)$ is given only on the half-interval $[0, L]$, we can represent it using sines alone by constructing its **odd extension** $F(x)$ on $[-L, L]$:
+
 $$F(x) = \begin{cases} -f(-x) & \text{if } -L < x \le 0 \\ f(x) & \text{if } 0 \le x < L \end{cases}$$
 
 > **Figure: Graph of f(x) defined on interval [0, L]**
@@ -793,6 +985,7 @@ $$F(x) = \begin{cases} -f(-x) & \text{if } -L < x \le 0 \\ f(x) & \text{if } 0 \
 > Figure 4.23 (F(x): Graph of odd extension of f(x)): A 2D coordinate system with a horizontal axis (arrow pointing right) and a vertical axis (arrow pointing up) intersecting at the origin labelled 0. Tick marks on the horizontal axis are labelled -L on the left and L on the right. On [0, L] in the first quadrant, the curve labelled f(x) is identical to Figure 4.22 (starting at a small positive height at x = 0, dipping slightly, then rising toward x = L). On [-L, 0] in the third quadrant, the curve is reflected through the origin to form the odd extension -f(-x), starting at a negative value at x = -L, rising to a local maximum, and ending at a small negative value on the vertical axis at x = 0.
 
 Repeating $F(x)$ every $2L$ units forms the **odd periodic extension**. Because $F(x)$ is odd, its product with $\cos(n\pi x/L)$ is odd (so $a_0 = 0$ and $a_n = 0$), while its product with $\sin(n\pi x/L)$ is even. Doubling the integral over the half-interval $[0, L]$ gives the **half-range sine series**:
+
 $$S(x) = \sum_{n=1}^{\infty} b_n \sin\left(\frac{n\pi x}{L}\right), \quad \text{where} \quad b_n = \frac{2}{L} \int_{0}^{L} f(x) \sin\left(\frac{n\pi x}{L}\right) dx$$
 
 > **Figure: Graph of odd periodic extension of f(x)**
@@ -809,10 +1002,15 @@ Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi 
 
 1. Identify the half-period $L = 5$ so the series takes the form $S(x) = \sum_{n=1}^{\infty} b_n \sin\left(\frac{n\pi x}{5}\right)$.
 2. Set up the sine coefficient integral on $[0, 5]$:
+
    $$b_n = \frac{2}{5} \int_{0}^{5} x^2 \sin\left(\frac{n\pi x}{5}\right) dx$$
+
 3. Apply tabular integration by parts (differentiating $x^2$ down to $0$ and integrating the sine factor three times):
+
    $$b_n = \frac{2}{5} \left[ x^2 \left(\frac{5}{n\pi}\right)\left(-\cos\frac{n\pi x}{5}\right) - 2x \left(\frac{5}{n\pi}\right)^2 \left(-\sin\frac{n\pi x}{5}\right) + 2\left(\frac{5}{n\pi}\right)^3 \left(\cos\frac{n\pi x}{5}\right) \right]_{0}^{5}$$
+
 4. Evaluate at $x = 5$ and $x = 0$, using $\sin(n\pi) = 0$, $\sin(0) = 0$, $\cos(0) = 1$, and $\cos(n\pi) = (-1)^n$:
+
    $$b_n = \frac{2}{5} \left[ \frac{-125(-1)^n}{n\pi} + \frac{250}{n^3\pi^3}\big((-1)^n - 1\big) \right] = \frac{50(-1)^{n+1}}{n\pi} + \frac{100}{n^3\pi^3}\big[(-1)^n - 1\big]$$
 
 > **Figure: Graph of odd periodic extension of x^2**
@@ -829,9 +1027,13 @@ Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi 
 
 1. Set $L = 1$ in the half-range formula to write $S(x) = \sum_{n=1}^{\infty} b_n \sin(n\pi x)$ with $b_n = 2 \int_{0}^{1} e^x \sin(n\pi x) \, dx$.
 2. Integrate using the standard exponential-sine reduction formula:
+
    $$b_n = 2 \left[ \frac{e^x}{1^2 + (n\pi)^2} \big(\sin(n\pi x) - n\pi \cos(n\pi x)\big) \right]_{0}^{1}$$
+
 3. Substitute the limits $x = 1$ and $x = 0$, noting $\sin(n\pi) = 0$ and $\cos(n\pi) = (-1)^n$:
+
    $$b_n = \frac{2}{1 + n^2\pi^2} \left[ e^1\big(0 - n\pi(-1)^n\big) - \big(0 - n\pi(1)\big) \right] = \frac{2n\pi}{1 + n^2\pi^2} \left[ e(-1)^{n+1} + 1 \right]$$
+
 4. Substitute $b_n$ into the sine series expansion; note that the odd periodic extension has jump discontinuities at all integers.
 
 > **Figure: Graph of odd periodic extension of e^x**
@@ -845,14 +1047,23 @@ Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi 
 **Find:** The half-range sine series of $f(x)$ and the sum $1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots$
 
 1. With $L = \pi$, split the $b_n$ integral at $x = \pi/2$ to match the two linear pieces:
+
    $$b_n = \frac{2}{\pi} \left[ \int_{0}^{\pi/2} x \sin(nx) \, dx + \int_{\pi/2}^{\pi} (\pi - x) \sin(nx) \, dx \right]$$
+
 2. Integrate both parts by parts (noting the derivative of $\pi - x$ is $-1$):
+
    $$b_n = \frac{2}{\pi} \left( \left[ -\frac{x \cos(nx)}{n} + \frac{\sin(nx)}{n^2} \right]_{0}^{\pi/2} + \left[ -\frac{(\pi - x) \cos(nx)}{n} - \frac{\sin(nx)}{n^2} \right]_{\pi/2}^{\pi} \right)$$
+
 3. Evaluate at the limits so the cosine terms cancel and the sine terms add:
+
    $$b_n = \frac{2}{\pi} \left[ \frac{2}{n^2} \sin\left(\frac{n\pi}{2}\right) \right] = \frac{4}{\pi n^2} \sin\left(\frac{n\pi}{2}\right)$$
+
 4. Write out the expansion by plugging $n = 1, 2, 3, \dots$ into $\sin(n\pi/2)$:
+
    $$S(x) = \frac{4}{\pi} \left( \sin x - \frac{1}{3^2}\sin 3x + \frac{1}{5^2}\sin 5x - \dots \right)$$
+
 5. Evaluate $S(x) = f(x)$ at the continuity point $x = \pi/2$, where $f(\pi/2) = \pi/2$, to solve for the numerical series:
+
    $$\frac{\pi}{2} = \frac{4}{\pi} \left( 1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots \right)$$
 
 > **Figure: Graph of Odd periodic extension of f(x)**
@@ -866,15 +1077,25 @@ Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi 
 **Find:** The half-range sine series of $f(x)$.
 
 1. With $L = \pi$, rewrite the integrand using $2\sin x \sin(nx) = \cos((n-1)x) - \cos((n+1)x)$:
+
    $$b_n = \frac{2}{\pi} \int_{0}^{\pi} x \sin x \sin(nx) \, dx = \frac{1}{\pi} \int_{0}^{\pi} x \big(\cos(n-1)x - \cos(n+1)x\big) \, dx$$
+
 2. Integrate by parts for $n \ne 1$:
+
    $$b_n = \frac{1}{\pi} \left[ x \left( \frac{\sin(n-1)x}{n-1} - \frac{\sin(n+1)x}{n+1} \right) - 1 \cdot \left( \frac{-\cos(n-1)x}{(n-1)^2} - \frac{-\cos(n+1)x}{(n+1)^2} \right) \right]_{0}^{\pi}$$
+
 3. Evaluate at $x = \pi$ and $x = 0$ for $n \ne 1$, using $\cos((n\mp 1)\pi) = (-1)^{n\mp 1}$:
+
    $$b_n = \frac{1}{\pi} \left[ \frac{(-1)^{n-1} - 1}{(n-1)^2} + \frac{1 - (-1)^{n+1}}{(n+1)^2} \right]$$
+
 4. Compute $b_1$ separately using $2\sin^2 x = 1 - \cos 2x$ because the general formula divides by $n - 1 = 0$:
+
    $$b_1 = \frac{2}{\pi} \int_{0}^{\pi} x \sin^2 x \, dx = \frac{1}{\pi} \int_{0}^{\pi} x(1 - \cos 2x) \, dx$$
+
 5. Integrate $b_1$ by parts and evaluate at $0$ and $\pi$:
+
    $$b_1 = \frac{1}{\pi} \left[ x\left(x - \frac{\sin 2x}{2}\right) - 1\left(\frac{x^2}{2} - \frac{\cos 2x}{4}\right) \right]_{0}^{\pi} = \frac{1}{\pi}\left(\pi^2 - \frac{\pi^2}{2}\right) = \frac{\pi}{2}$$
+
 6. Combine the $n = 1$ harmonic with the sum over $n \ge 2$.
 
 > **Watch out.** Never plug $n = 1$ into the general $b_n$ formula when a denominator contains $n - 1$; always evaluate $b_1$ from its original integral.

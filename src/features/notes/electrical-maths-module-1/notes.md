@@ -40,14 +40,20 @@ Geometrically, each equation in a two-variable system represents a straight line
 ### Worked example
 
 Consider the system:
+
 $$2x_1 + x_2 = 5$$
+
 $$x_1 - x_2 = 1$$
 
 1. **Identify the coefficients and constants.** The coefficients multiplying $x_1$ are $2$ and $1$; the coefficients multiplying $x_2$ are $1$ and $-1$. The constants on the right are $5$ and $1$.
 2. **Form the matrix equation $A\mathbf{x} = \mathbf{b}$.** Group the coefficients into $A$, unknowns into $\mathbf{x}$, and constants into $\mathbf{b}$:
-$$\begin{bmatrix} 2 & 1 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 5 \\ 1 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 2 & 1 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 5 \\ 1 \end{bmatrix}$$
+
 3. **Assemble the augmented matrix $[A \mid \mathbf{b}]$.** Place $A$ and $\mathbf{b}$ together:
-$$\left[\begin{array}{cc|c} 2 & 1 & 5 \\ 1 & -1 & 1 \end{array}\right]$$
+
+   $$\left[\begin{array}{cc|c} 2 & 1 & 5 \\ 1 & -1 & 1 \end{array}\right]$$
+
 4. **Classify geometrically.** Rewriting both equations in slope-intercept form gives $x_2 = -2x_1 + 5$ and $x_2 = x_1 - 1$. The slopes ($-2$ and $1$) are distinct, meaning the lines intersect at exactly one point, $(2, 1)$, giving a unique solution.
 
 ### Remember
@@ -74,6 +80,7 @@ By systematically using row replacement from left to right, we place zeros benea
 ### Worked example
 
 Solve the system using Gaussian elimination:
+
 $$
 \begin{aligned}
 x + 2y &= 5 \\
@@ -82,12 +89,16 @@ x + 2y &= 5 \\
 $$
 
 1. **Write the augmented matrix:**
+
    $$\left[\begin{array}{cc|c} 1 & 2 & 5 \\ 3 & 4 & 7 \end{array}\right]$$
+
    This organizes all coefficients and constants into rows and columns.
 
 2. **Eliminate the $x$-term from the second row:**
    Apply $R_2 \to R_2 - 3R_1$. We choose $-3$ because $3 - 3(1) = 0$, giving a zero beneath the leading entry:
+
    $$\left[\begin{array}{cc|c} 1 & 2 & 5 \\ 0 & -2 & -8 \end{array}\right]$$
+
    The system is now in upper triangular form.
 
 3. **Solve the bottom equation:**
@@ -95,7 +106,9 @@ $$
 
 4. **Back-substitute to find the remaining variable:**
    Substitute $y = 4$ into Row 1 ($x + 2y = 5$):
+
    $$x + 2(4) = 5 \implies x = -3$$
+
    The unique solution is $x = -3$ and $y = 4$.
 
 ### Remember
@@ -138,10 +151,13 @@ Determine the consistency and number of solutions for the system represented by 
 Until now, you used matrices to solve static systems $Ax = b$, finding an unknown vector $x$ that maps to a specific target $b$. Now, consider what happens when a square matrix $A$ acts as an operator that transforms space by rotating and stretching vectors.
 
 Imagine stretching a rubber sheet in two directions. Most arrows drawn on the sheet tilt and change direction, but along specific axes, arrows simply stretch or shrink while pointing along their original line. A non-zero vector $x$ that does not rotate when multiplied by $A$ is an **eigenvector**. The scaling factor $\lambda$ is its corresponding **eigenvalue**. We write this relationship as the eigenvalue problem:
+
 $$Ax = \lambda x$$
 
 Rearranging this into a homogeneous system gives $(A - \lambda I)x = 0$, where $I$ is the identity matrix. From your work on matrix rank, a non-trivial solution $x \neq 0$ exists if and only if the matrix $(A - \lambda I)$ is singular. Therefore, its determinant must equal zero:
+
 $$\det(A - \lambda I) = 0$$
+
 This is the **characteristic equation**. Expanding the determinant produces the characteristic polynomial in $\lambda$. For an $n \times n$ matrix, the coefficients are matrix invariants—quantities that remain constant regardless of coordinate choices. For a $2 \times 2$ matrix, the equation simplifies to $\lambda^2 - S_1\lambda + S_2 = 0$, where $S_1 = \text{tr}(A)$ is the **trace** (the sum of the main diagonal elements) and $S_2 = \det(A)$. For a $3 \times 3$ matrix, it expands to $\lambda^3 - S_1\lambda^2 + S_2\lambda - S_3 = 0$, where $S_2$ is the sum of the principal $2 \times 2$ minors and $S_3 = \det(A)$.
 
 The collection of all eigenvalues of $A$ is called the **spectrum** of $A$. The largest absolute value in the spectrum is the **spectral radius**, denoted $\rho(A) = \max_i |\lambda_i|$. It tells an engineer the maximum amplification factor that $A$ can apply to any invariant vector.
@@ -172,7 +188,9 @@ Imagine stretching a sheet of rubber diagonally. Along the stretch axes, points 
 When finding eigenvalues from $\det(A - \lambda I) = 0$, a root may repeat. The number of times an eigenvalue appears as a root is its **algebraic multiplicity** ($M_\lambda$). The number of linearly independent eigenvectors you can actually find for that eigenvalue—the dimension of its eigenspace—is its **geometric multiplicity** ($m_\lambda$). The geometric multiplicity never exceeds the algebraic multiplicity ($1 \le m_\lambda \le M_\lambda$). If $m_\lambda < M_\lambda$, the difference is called the **defect**, $\Delta_\lambda = M_\lambda - m_\lambda$.
 
 An $n \times n$ matrix is diagonalizable if and only if every eigenvalue has zero defect, providing $n$ total linearly independent eigenvectors. Packaging these vectors side by side as columns forms the **modal matrix** $X$. Because its columns are independent, $X$ is invertible, and changing coordinates untangles $A$ into a pure diagonal matrix:
+
 $$D = X^{-1} A X$$
+
 where the diagonal entries of $D$ are the eigenvalues. This representation simplifies repeated matrix multiplication, since $A^m = X D^m X^{-1}$, where $D^m$ is computed simply by raising each diagonal entry to the $m$-th power.
 
 ### Worked example
@@ -297,13 +315,21 @@ Conversely, if a row becomes entirely zero including the constant ($0 = 0$), tha
 **Find:** The solution set of the linear system.
 
 1. Subtract $\frac{2}{3}$ of Row 1 from Row 2 ($\text{Row } 2 \rightarrow -\frac{2}{3}\text{Row } 1 + \text{Row } 2$) and subtract $2$ times Row 1 from Row 3 ($\text{Row } 3 \rightarrow -2\text{Row } 1 + \text{Row } 3$) to eliminate $x_1$ below the first pivot:
-$$\begin{bmatrix} 3 & 2 & 1 & : & 3 \\ 0 & -\frac{1}{3} & \frac{1}{3} & : & -2 \\ 0 & -2 & 2 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 3 & 2 & 1 & : & 3 \\ 0 & -\frac{1}{3} & \frac{1}{3} & : & -2 \\ 0 & -2 & 2 & : & 0 \end{bmatrix}$$
+
 2. Subtract $6$ times Row 2 from Row 3 ($\text{Row } 3 \rightarrow -6\text{Row } 2 + \text{Row } 3$) to eliminate $x_2$ from the third row:
-$$\begin{bmatrix} 3 & 2 & 1 & : & 3 \\ 0 & -\frac{1}{3} & \frac{1}{3} & : & -2 \\ 0 & 0 & 0 & : & 12 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 3 & 2 & 1 & : & 3 \\ 0 & -\frac{1}{3} & \frac{1}{3} & : & -2 \\ 0 & 0 & 0 & : & 12 \end{bmatrix}$$
+
 3. Translate the reduced rows back into algebraic equations:
-$$3x_1 + 2x_2 + x_3 = 3$$
+
+   $$3x_1 + 2x_2 + x_3 = 3$$
+
 $$-\frac{1}{3}x_2 + \frac{1}{3}x_3 = -2$$
+
 $$0 = 12$$
+
 4. Interpret the bottom equation: because $0 = 12$ is a false statement, no values of $x_1, x_2, x_3$ can satisfy the system.
 
 **Answer:** The system is inconsistent and has no solutions.
@@ -315,13 +341,21 @@ $$0 = 12$$
 **Find:** The values of $x, y, z$ (denoted as $x_1, x_2, x_3$).
 
 1. Write the augmented matrix for the system:
-$$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 8 & 6 & : & -6 \\ -2 & 4 & -6 & : & 40 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 8 & 6 & : & -6 \\ -2 & 4 & -6 & : & 40 \end{bmatrix}$$
+
 2. Apply $\text{Row } 3 \rightarrow 2\text{Row } 1 + \text{Row } 3$ to eliminate the first variable from Row 3:
-$$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 8 & 6 & : & -6 \\ 0 & 6 & -8 & : & 58 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 8 & 6 & : & -6 \\ 0 & 6 & -8 & : & 58 \end{bmatrix}$$
+
 3. Divide Row 2 and Row 3 by $2$ to simplify the arithmetic:
-$$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 4 & 3 & : & -3 \\ 0 & 3 & -4 & : & 29 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 4 & 3 & : & -3 \\ 0 & 3 & -4 & : & 29 \end{bmatrix}$$
+
 4. Apply $\text{Row } 3 \rightarrow -\frac{3}{4}\text{Row } 2 + \text{Row } 3$ to reach upper triangular form:
-$$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 4 & 3 & : & -3 \\ 0 & 0 & -\frac{25}{4} & : & \frac{125}{4} \end{bmatrix}$$
+
+   $$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 4 & 3 & : & -3 \\ 0 & 0 & -\frac{25}{4} & : & \frac{125}{4} \end{bmatrix}$$
+
 5. Solve the third row $-\frac{25}{4}x_3 = \frac{125}{4}$ to get $x_3 = -5$.
 6. Substitute $x_3 = -5$ into the second row $4x_2 + 3(-5) = -3$ to get $4x_2 = 12$, so $x_2 = 3$.
 7. Substitute $x_2 = 3$ and $x_3 = -5$ into the first row $x_1 + 3 - (-5) = 9$ to find $x_1 = 1$.
@@ -335,11 +369,17 @@ $$\begin{bmatrix} 1 & 1 & -1 & : & 9 \\ 0 & 4 & 3 & : & -3 \\ 0 & 0 & -\frac{25}
 **Find:** The parameterized solution set for $x_1, x_2, x_3$.
 
 1. Apply $\text{Row } 2 \rightarrow \frac{1}{2}\text{Row } 1 + \text{Row } 2$ and $\text{Row } 3 \rightarrow -2\text{Row } 1 + \text{Row } 3$ to clear the first column:
-$$\begin{bmatrix} 2 & 4 & 1 & : & 0 \\ 0 & 3 & -\frac{3}{2} & : & 0 \\ 0 & -8 & 4 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 2 & 4 & 1 & : & 0 \\ 0 & 3 & -\frac{3}{2} & : & 0 \\ 0 & -8 & 4 & : & 0 \end{bmatrix}$$
+
 2. Scale Row 2 by $\frac{1}{3}$ and Row 3 by $\frac{1}{4}$ to simplify the rows:
-$$\begin{bmatrix} 2 & 4 & 1 & : & 0 \\ 0 & 1 & -\frac{1}{2} & : & 0 \\ 0 & -2 & 1 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 2 & 4 & 1 & : & 0 \\ 0 & 1 & -\frac{1}{2} & : & 0 \\ 0 & -2 & 1 & : & 0 \end{bmatrix}$$
+
 3. Apply $\text{Row } 3 \rightarrow 2\text{Row } 2 + \text{Row } 3$, reducing Row 3 to all zeros:
-$$\begin{bmatrix} 2 & 4 & 1 & : & 0 \\ 0 & 1 & -\frac{1}{2} & : & 0 \\ 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 2 & 4 & 1 & : & 0 \\ 0 & 1 & -\frac{1}{2} & : & 0 \\ 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+
 4. Write the remaining equations $2x_1 + 4x_2 + x_3 = 0$ and $x_2 - \frac{1}{2}x_3 = 0$, giving $x_2 = \frac{1}{2}x_3$.
 5. Substitute $x_2 = \frac{1}{2}x_3$ into the first equation: $2x_1 + 4(\frac{1}{2}x_3) + x_3 = 0$, so $x_1 = -\frac{3}{2}x_3$.
 6. Set the free parameter $x_2 = t$ to avoid fractions, which yields $x_3 = 2t$ and $x_1 = -\frac{3}{2}(2t) = -3t$.
@@ -351,9 +391,13 @@ $$\begin{bmatrix} 2 & 4 & 1 & : & 0 \\ 0 & 1 & -\frac{1}{2} & : & 0 \\ 0 & 0 & 0
 **Find:** The general solution in terms of free parameters.
 
 1. Apply $\text{Row } 2 \rightarrow -0.2\text{Row } 1 + \text{Row } 2$ and $\text{Row } 3 \rightarrow -0.4\text{Row } 1 + \text{Row } 3$ to eliminate $x_1$ below Row 1:
-$$\begin{bmatrix} 3 & 2 & 2 & -5 & : & 8 \\ 0 & 1.1 & 1.1 & -4.4 & : & 1.1 \\ 0 & -1.1 & -1.1 & 4.4 & : & -1.1 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 3 & 2 & 2 & -5 & : & 8 \\ 0 & 1.1 & 1.1 & -4.4 & : & 1.1 \\ 0 & -1.1 & -1.1 & 4.4 & : & -1.1 \end{bmatrix}$$
+
 2. Apply $\text{Row } 3 \rightarrow \text{Row } 2 + \text{Row } 3$, turning Row 3 into a complete row of zeros:
-$$\begin{bmatrix} 3 & 2 & 2 & -5 & : & 8 \\ 0 & 1.1 & 1.1 & -4.4 & : & 1.1 \\ 0 & 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 3 & 2 & 2 & -5 & : & 8 \\ 0 & 1.1 & 1.1 & -4.4 & : & 1.1 \\ 0 & 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+
 3. Write the two nonzero equations: $3x_1 + 2x_2 + 2x_3 - 5x_4 = 8$ and $1.1x_2 + 1.1x_3 - 4.4x_4 = 1.1$.
 4. Divide the second equation by $1.1$ to isolate $x_2 = 1 - x_3 + 4x_4$.
 5. Substitute $x_2$ into the first equation: $3x_1 = -2(1 - x_3 + 4x_4) - 2x_3 + 5x_4 + 8 = 6 - 3x_4$, giving $x_1 = 2 - x_4$.
@@ -368,13 +412,21 @@ $$\begin{bmatrix} 3 & 2 & 2 & -5 & : & 8 \\ 0 & 1.1 & 1.1 & -4.4 & : & 1.1 \\ 0 
 **Find:** The general solution of the system.
 
 1. Interchange Row 1 and Row 3 to place a nonzero pivot in the top-left corner:
-$$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 2 & -3 & -3 & 6 & : & 2 \\ 0 & 5 & 5 & -10 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 2 & -3 & -3 & 6 & : & 2 \\ 0 & 5 & 5 & -10 & : & 0 \end{bmatrix}$$
+
 2. Apply $\text{Row } 2 \rightarrow -\frac{2}{4}\text{Row } 1 + \text{Row } 2$ to eliminate the first entry in Row 2:
-$$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 0 & -\frac{7}{2} & -\frac{7}{2} & 7 & : & 0 \\ 0 & 5 & 5 & -10 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 0 & -\frac{7}{2} & -\frac{7}{2} & 7 & : & 0 \\ 0 & 5 & 5 & -10 & : & 0 \end{bmatrix}$$
+
 3. Multiply Row 2 by $-\frac{2}{7}$ to get a leading $1$ in the second row:
-$$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 0 & 1 & 1 & -2 & : & 0 \\ 0 & 5 & 5 & -10 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 0 & 1 & 1 & -2 & : & 0 \\ 0 & 5 & 5 & -10 & : & 0 \end{bmatrix}$$
+
 4. Apply $\text{Row } 3 \rightarrow -5\text{Row } 2 + \text{Row } 3$ to eliminate Row 3 completely:
-$$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 0 & 1 & 1 & -2 & : & 0 \\ 0 & 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+
+   $$\begin{bmatrix} 4 & 1 & 1 & -2 & : & 4 \\ 0 & 1 & 1 & -2 & : & 0 \\ 0 & 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+
 5. Solve the second row $x_2 + x_3 - 2x_4 = 0$ by back substitution to get $x_2 = 2x_4 - x_3$.
 6. Substitute $x_2$ into the first row $4x_1 + x_2 + x_3 - 2x_4 = 4$: $4x_1 = -2x_4 + x_3 - x_3 + 2x_4 + 4 = 4$, so $x_1 = 1$.
 7. Let the free variables be $x_3 = t_1$ and $x_4 = t_2$.

@@ -41,7 +41,9 @@ Find a second independent solution to $y'' - 4y' + 4y = 0$, given that $y_1(x) =
 1. **Identify the coefficient $p(x)$**: In standard form, the coefficient of $y'$ is $p(x) = -4$.
 2. **Compute the numerator exponential**: Calculate $e^{-\int p(x)\,dx} = e^{-\int (-4)\,dx} = e^{4x}$.
 3. **Set up and evaluate the integral**: Divide by $y_1^2 = (e^{2x})^2 = e^{4x}$:
+
    $$\int \frac{e^{4x}}{e^{4x}}\,dx = \int 1\,dx = x$$
+
 4. **Form the second solution**: Multiply this result by $y_1(x)$ to get $y_2(x) = x e^{2x}$.
 5. **Write the general solution**: Combine them to obtain $y(x) = c_1 e^{2x} + c_2 x e^{2x}$.
 
@@ -126,6 +128,7 @@ Imagine a radio receiver with two tuning knobs, $c_1$ and $c_2$, in the homogene
 To find these functions, we measure how independent the two fundamental solutions are using the **Wronskian**, denoted $W(y_1, y_2)$. The Wronskian is a $2 \times 2$ determinant formed by the solutions and their slopes: $W = y_1 y_2' - y_2 y_1'$. You can picture this as tracking the area spanned by the two solution states at each point; since $y_1$ and $y_2$ are independent, this area is never zero.
 
 For an equation in standard form $y'' + p(x)y' + q(x)y = g(x)$, substituting $y_p$ yields two straightforward formulas for the rates at which our knobs must turn:
+
 $$u_1'(x) = -\frac{y_2(x) g(x)}{W(x)}, \quad u_2'(x) = \frac{y_1(x) g(x)}{W(x)}$$
 
 Integrating both gives $u_1(x)$ and $u_2(x)$, directly assembling $y_p$.
@@ -136,12 +139,18 @@ Find the general solution to $y'' + y = \sec(x)$.
 
 1. **Find the homogeneous solutions:** The characteristic equation $r^2 + 1 = 0$ gives roots $r = \pm i$, so $y_1 = \cos(x)$ and $y_2 = \sin(x)$.
 2. **Compute the Wronskian:** Apply the determinant definition to ensure independence:
-$$W = (\cos(x))(\cos(x)) - (\sin(x))(-\sin(x)) = \cos^2(x) + \sin^2(x) = 1$$
+
+   $$W = (\cos(x))(\cos(x)) - (\sin(x))(-\sin(x)) = \cos^2(x) + \sin^2(x) = 1$$
+
 3. **Set up and evaluate $u_1$ and $u_2$:** Plug $g(x) = \sec(x)$ into the rate formulas:
-$$u_1'(x) = -\frac{\sin(x)\sec(x)}{1} = -\tan(x) \implies u_1(x) = \ln|\cos(x)|$$
+
+   $$u_1'(x) = -\frac{\sin(x)\sec(x)}{1} = -\tan(x) \implies u_1(x) = \ln|\cos(x)|$$
+
 $$u_2'(x) = \frac{\cos(x)\sec(x)}{1} = 1 \implies u_2(x) = x$$
+
 4. **Assemble the general solution:** Combine $y = y_h + y_p$:
-$$y(x) = c_1\cos(x) + c_2\sin(x) + \cos(x)\ln|\cos(x)| + x\sin(x)$$
+
+   $$y(x) = c_1\cos(x) + c_2\sin(x) + \cos(x)\ln|\cos(x)| + x\sin(x)$$
 
 ### Remember
 - Always divide the ODE by the coefficient of $y''$ first so that $g(x)$ is identified correctly.
@@ -159,7 +168,9 @@ A function $y = h(x)$ is a **solution** of a second-order ODE on an open interva
 An **initial value problem** (IVP) pairs the ODE with two **initial conditions**, $y(x_0) = k_0$ and $y'(x_0) = k_1$, at a single point $x_0$. Because the general solution contains two arbitrary constants $c_1$ and $c_2$, you need both the function value and the derivative value to lock in a unique curve. Substituting these conditions into $y$ and $y'$ gives two algebraic equations; solving for $c_1$ and $c_2$ yields the **particular solution**.
 
 Sometimes you only know one solution $y_1$ of a homogeneous equation in **standard form**, $y'' + p(x)y' + q(x)y = 0$, where the coefficient of $y''$ is 1. **Reduction of order** finds a second, independent solution $y_2$ without guessing. Seeking $y_2$ as a non-constant multiple of $y_1$ cancels the zero-order terms and reduces the problem to a direct integration:
+
 $$y_2 = y_1 \int \frac{1}{y_1^2} e^{-\int p(x)\,dx}\,dx$$
+
 The resulting $y_1$ and $y_2$ are guaranteed to form a basis.
 
 ### Worked example
@@ -616,6 +627,7 @@ With undetermined coefficients mastered for elementary forms, you can now apply 
 Undetermined coefficients fails when the forcing term $r(x)$ is a function like $\sec x$, $\tan x$, or $\ln x$, because differentiating these functions produces an endless chain of new algebraic forms. Variation of parameters bypasses guessing altogether. By replacing the constants in the homogeneous solution $y_h = c_1 y_1(x) + c_2 y_2(x)$ with unknown functions, we construct a direct integral formula that works for any continuous driving term.
 
 To execute the method, first find the **solution basis** $y_1, y_2$ of the corresponding homogeneous equation $y'' + p(x)y' + q(x)y = 0$. Next, compute the **Wronskian** $W$, which is the determinant $W = y_1 y_2' - y_2 y_1'$ that measures the linear independence of the basis. Because $y_1$ and $y_2$ are independent, $W$ is never zero, allowing us to divide by it inside the particular solution formula:
+
 $$y_p(x) = -y_1 \int \frac{y_2 r(x)}{W} \, dx + y_2 \int \frac{y_1 r(x)}{W} \, dx$$
 
 Notice that $y_1$ and $y_2$ sit outside the integrals while their partners sit inside. In practice, exponential factors in $y_1, y_2$, and $r(x)$ often cancel against the Wronskian, leaving clean integrals that you can evaluate using trigonometric identities or integration by parts.
@@ -626,11 +638,17 @@ Notice that $y_1$ and $y_2$ sit outside the integrals while their partners sit i
 
 1. Solve the homogeneous equation $y'' + y = 0$ via its characteristic equation $\lambda^2 + 1 = 0$ to get roots $\lambda = \pm i$, which gives the basis $y_1 = \cos x$, $y_2 = \sin x$ and $y_h = C_1 \cos x + C_2 \sin x$.
 2. Compute the Wronskian determinant to form the denominator of the integral formula:
-$$W = \begin{vmatrix} \cos x & \sin x \\ -\sin x & \cos x \end{vmatrix} = \cos^2 x + \sin^2 x = 1$$
+
+   $$W = \begin{vmatrix} \cos x & \sin x \\ -\sin x & \cos x \end{vmatrix} = \cos^2 x + \sin^2 x = 1$$
+
 3. Substitute $y_1 = \cos x$, $y_2 = \sin x$, $r(x) = \sec x$, and $W = 1$ into the variation of parameters formula:
-$$y_p = -\cos x \int (\sin x \sec x) \, dx + \sin x \int (\cos x \sec x) \, dx$$
+
+   $$y_p = -\cos x \int (\sin x \sec x) \, dx + \sin x \int (\cos x \sec x) \, dx$$
+
 4. Rewrite $\sec x$ as $1/\cos x$ so the integrands simplify to basic trigonometric ratios:
-$$y_p = -\cos x \int \frac{\sin x}{\cos x} \, dx + \sin x \int \frac{\cos x}{\cos x} \, dx = \cos x \ln|\cos x| + x\sin x$$
+
+   $$y_p = -\cos x \int \frac{\sin x}{\cos x} \, dx + \sin x \int \frac{\cos x}{\cos x} \, dx = \cos x \ln|\cos x| + x\sin x$$
+
 5. Add $y_h$ and $y_p$ to form the complete general solution.
 
 **Answer:** $y = C_1 \cos x + C_2 \sin x + \cos x \ln|\cos x| + x\sin x = (C_1 + \ln|\cos x|)\cos x + (C_2 + x)\sin x$.

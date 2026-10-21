@@ -124,12 +124,19 @@ To picture the complete solution pipeline, draw a square with four corners. Labe
 Solve the initial value problem $y'(t) + 2y(t) = 0$, given the initial condition $y(0) = 3$.
 
 1. **Transform the equation to turn calculus into algebra.** Take the Laplace transform of each term using the first derivative rule:
+
    $$[sY(s) - y(0)] + 2Y(s) = 0$$
+
 2. **Insert the initial condition to include the starting state.** Substitute $y(0) = 3$ into the brackets:
+
    $$sY(s) - 3 + 2Y(s) = 0$$
+
 3. **Isolate $Y(s)$ to solve the problem in the $s$-domain.** Factor out $Y(s)$ and divide by $(s + 2)$:
+
    $$Y(s)(s + 2) = 3 \implies Y(s) = \frac{3}{s + 2}$$
+
 4. **Invert to return to the time domain.** Recognize the elementary form $\frac{1}{s - a}$ with $a = -2$ and apply the inverse transform:
+
    $$y(t) = \mathcal{L}^{-1}\left\{\frac{3}{s + 2}\right\} = 3e^{-2t}$$
 
 ### Remember
@@ -161,8 +168,11 @@ Find the inverse Laplace transform of $H(s) = \frac{1}{s^2(s - 2)}$.
 1. **Split the transform into two known factors.** Write $H(s) = F(s)G(s)$ with $F(s) = \frac{1}{s - 2}$ and $G(s) = \frac{1}{s^2}$ because we know both elementary inverses from memory.
 2. **Invert each factor separately.** From our basic transform pairs, $f(t) = e^{2t}$ and $g(t) = t$.
 3. **Set up the convolution integral.** Put the shifted argument $t - \tau$ into $g(t)$ because a polynomial is easier to expand than an exponential:
+
    $$h(t) = \int_{0}^{t} e^{2\tau}(t - \tau)\,d\tau$$
+
 4. **Integrate with respect to $\tau$, holding $t$ constant.** Using integration by parts with $u = t - \tau$ and $dv = e^{2\tau}\,d\tau$:
+
    $$h(t) = \left[ (t - \tau)\frac{e^{2\tau}}{2} + \frac{e^{2\tau}}{4} \right]_{\tau=0}^{\tau=t} = \left(0 + \frac{e^{2t}}{4}\right) - \left(\frac{t}{2} + \frac{1}{4}\right) = \frac{1}{4}e^{2t} - \frac{1}{2}t - \frac{1}{4}$$
 
 ### Remember
@@ -574,7 +584,9 @@ You now know how to take forward Laplace transforms of derivatives and how to in
 Classical methods for solving a linear ordinary differential equation require finding a general solution first and substituting the initial conditions at the very end to find the unknown constants. The Laplace transform streamlines this by absorbing the **initial conditions**—the known starting values $y(0)$ and $y'(0)$—at the very first step.
 
 When we apply the linear Laplace operator $\mathcal{L}$ to both sides of a differential equation, the derivative transformation rules replace time derivatives with algebraic powers of $s$ multiplying the **frequency response** $\bar{y} = \mathcal{L}[y(t)]$:
+
 $$\mathcal{L}[y'] = s\bar{y} - y(0)$$
+
 $$\mathcal{L}[y''] = s^2\bar{y} - sy(0) - y'(0)$$
 
 Substituting the given numbers for $y(0)$ and $y'(0)$ turns the differential equation into a linear algebraic equation in $\bar{y}$. The key rule is simple: transform both sides, plug in the initial values, factor out $\bar{y}$ to isolate it as a rational function of $s$, and take the inverse transform $\mathcal{L}^{-1}[\bar{y}]$ to recover the explicit time-domain solution $y(t)$.
@@ -585,16 +597,27 @@ Substituting the given numbers for $y(0)$ and $y'(0)$ turns the differential equ
 **Find:** The time-domain solution $y(t)$ using the Laplace transform.
 
 1. Take the Laplace transform of both sides of the differential equation using linearity:
+
    $$\mathcal{L}[y''] + 2\mathcal{L}[y'] + 2\mathcal{L}[y] = \mathcal{L}[0]$$
+
 2. Expand the derivative transforms in terms of $\bar{y}$, $y(0)$, and $y'(0)$ so the initial state enters the equation:
+
    $$\left(s^2\bar{y} - sy(0) - y'(0)\right) + 2\left(s\bar{y} - y(0)\right) + 2\bar{y} = 0$$
+
 3. Substitute the given initial values $y(0) = 1$ and $y'(0) = 1$ into the algebraic equation:
+
    $$s^2\bar{y} - s(1) - 1 + 2(s\bar{y} - 1) + 2\bar{y} = 0$$
+
 4. Collect all $\bar{y}$ terms on the left and move the remaining terms to the right to isolate $\bar{y}$:
+
    $$(s^2 + 2s + 2)\bar{y} = s + 3 \implies \bar{y} = \frac{s + 3}{s^2 + 2s + 2}$$
+
 5. Complete the square in the denominator ($s^2 + 2s + 2 = (s + 1)^2 + 1^2$) and split the numerator in terms of $(s + 1)$ to match standard shifted forms:
+
    $$\bar{y} = \frac{(s + 1) + 2}{(s + 1)^2 + 1^2} = \frac{s + 1}{(s + 1)^2 + 1^2} + \frac{2}{(s + 1)^2 + 1^2}$$
+
 6. Take the inverse Laplace transform of each term using the first shifting theorem with shift $a = -1$:
+
    $$y(t) = \mathcal{L}^{-1}\left[\frac{s - (-1)}{(s - (-1))^2 + 1^2}\right] + 2\mathcal{L}^{-1}\left[\frac{1}{(s - (-1))^2 + 1^2}\right]$$
 
 **Answer:** $y(t) = e^{-t}\cos t + 2e^{-t}\sin t$
@@ -653,6 +676,7 @@ You can already invert rational functions by splitting them into partial fractio
 
 ### The idea
 When a frequency-domain expression can be factored as a product of two recognizable transforms, $\bar{f}(s) \cdot \bar{g}(s)$, you do not need to find partial fraction coefficients. Instead, you invert each factor separately to find their time-domain originals, $f(t) = L^{-1}[\bar{f}(s)]$ and $g(t) = L^{-1}[\bar{g}(s)]$. The Convolution Theorem states that the inverse transform of the product is the **convolution integral** of these two time functions:
+
 $$L^{-1}[\bar{f}(s)\bar{g}(s)] = \int_{0}^{t} f(u)g(t-u)\,du = \int_{0}^{t} g(u)f(t-u)\,du$$
 
 Here, the **dummy variable** $u$ is the variable of integration, while $t$ is treated as a constant until you plug in the integration limits $u = 0$ and $u = t$. Because convolution is commutative, you are free to choose which function receives the shifted argument $(t-u)$ and which keeps the simple argument $u$. Always place $(t-u)$ inside the function that is easier to integrate or expand—for example, choose $f(u) = u$ and put $(t-u)$ inside an exponential or sinusoid.
@@ -666,10 +690,15 @@ To evaluate the resulting definite integral, use standard calculus techniques wi
 1. Factor the expression into two basic transforms, $\bar{f}(s) = \frac{1}{s}$ and $\bar{g}(s) = \frac{1}{s-a}$, so each part matches an elementary inverse formula.
 2. Invert each factor individually to obtain the time-domain functions $f(t) = L^{-1}\left[\frac{1}{s}\right] = 1$ and $g(t) = L^{-1}\left[\frac{1}{s-a}\right] = e^{at}$.
 3. Set up the convolution integral $\int_{0}^{t} f(u)g(t-u)\,du$ by substituting $f(u) = 1$ and shifting the exponential to $g(t-u) = e^{a(t-u)}$:
+
    $$L^{-1}\left[\frac{1}{s(s-a)}\right] = \int_{0}^{t} 1 \cdot e^{a(t-u)}\,du$$
+
 4. Integrate $e^{a(t-u)}$ with respect to $u$, dividing by the inner derivative $-a$:
+
    $$= \left[\frac{e^{a(t-u)}}{-a}\right]_{0}^{t}$$
+
 5. Evaluate at the upper limit $u = t$ and lower limit $u = 0$, noting that $e^{a(t-t)} = e^0 = 1$:
+
    $$= \frac{-1}{a}\left[e^{a(t-t)} - e^{a(t-0)}\right] = \frac{-1}{a}\left[1 - e^{at}\right]$$
 
 **Answer:** $\frac{-1}{a}\left[1 - e^{at}\right]$
@@ -739,11 +768,15 @@ With smooth ODEs and integrals mastered, you can now tackle realistic discontinu
 ### The idea
 
 When a signal turns on at a delayed time $t = a$, we model it with the **Heaviside unit step function** $u(t-a)$, which is zero before $t = a$ and one after. The **second shifting theorem** states that a function both delayed and switched at $t = a$ transforms by multiplying its unshifted transform $\bar{f}(s) = \mathcal{L}[f(t)]$ by $e^{-as}$:
+
 $$\mathcal{L}[f(t-a)u(t-a)] = e^{-as}\bar{f}(s)$$
+
 Why must $f(t-a)$ match $u(t-a)$? Because the Laplace integral starts where the step turns on ($t = a$); substituting $\tau = t - a$ resets the lower limit to zero only if every $t$ inside the function is already written as $(t-a)$. If you are given $g(t)u(t-a)$ instead, use **algebraic shifting**: replace $t$ with $(t - a + a)$ so the expression is written in terms of $(t-a)$ before taking the transform.
 
 For an instantaneous spike at $t = a$, we use the **unit impulse function** (or **Dirac delta**) $\delta(t-a)$, which is zero everywhere except at $t = a$, where it is infinite with unit area. Because $\delta(t-a)$ acts only at the single instant $t = a$, multiplying any continuous function $f(t)$ by $\delta(t-a)$ inside the Laplace integral simply pulls out the value of the integrand at $t = a$. This **sifting property** gives the impulse transform rule:
+
 $$\mathcal{L}\{f(t)\delta(t-a)\} = e^{-as}f(a)$$
+
 Notice that here you do not transform $f(t)$ into $s$-space; you merely evaluate the number $f(a)$.
 
 ### Worked example

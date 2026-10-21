@@ -149,15 +149,10 @@ const components: Components = {
 function normalizeMath(text: string): string {
   return text
     .replace(/(?<![\\a-zA-Z])rac\{/g, "\\frac{")
-    .replace(/^(\s*)\$\$(\\begin\{[a-zA-Z*]+\}[\s\S]*?\\end\{[a-zA-Z*]+\})\$\$(\s*)$/gm, (_, before, inner, after) => `${before}$$\n${inner}\n$$${after}`)
-    .replace(/^(\s*)\$\$(\\begin\{[a-zA-Z*]+\})/gm, (_, before, inner) => `${before}$$\n${inner}`)
-    .replace(/(\\end\{[a-zA-Z*]+\})\$\$(\s*)$/gm, (_, inner, after) => `${inner}\n$$${after}`)
-    .replace(/^(\s*)\$\$(.+?)\$\$(\s*)$/gm, (match, before, inner, after) => {
-      if (inner.includes("\\\\") || inner.includes("&") || inner.includes("\\tag")) {
-        return `${before}$$\n${inner.trim()}\n$$${after}`;
-      }
-      return match;
-    });
+    .replace(/^([ \t]*)\$\$(.+?)\$\$([ \t]*)$/gm, (_, before, inner, after) => `${before}$$\n${before}${inner.trim()}\n${before}$$${after}`)
+    .replace(/^([ \t]*)\$\$(\\begin\{[a-zA-Z*]+\}[\s\S]*?\\end\{[a-zA-Z*]+\})\$\$([ \t]*)$/gm, (_, before, inner, after) => `${before}$$\n${before}${inner}\n${before}$$${after}`)
+    .replace(/^([ \t]*)\$\$(\\begin\{[a-zA-Z*]+\})/gm, (_, before, inner) => `${before}$$\n${inner}`)
+    .replace(/(\\end\{[a-zA-Z*]+\})\$\$([ \t]*)$/gm, (_, inner, after) => `${inner}\n$$${after}`);
 }
 
 /* One page of notes. Memoised, so scrolling (which updates the reader) doesn't re-render the maths. */
