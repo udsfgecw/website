@@ -29,6 +29,14 @@ import { pythonmodule1 } from "./features/notes/python-module-1";
 import { pythonmodule2 } from "./features/notes/python-module-2";
 import { pythonmodule3 } from "./features/notes/python-module-3";
 import { pythonmodule4 } from "./features/notes/python-module-4";
+import { physicseceModule1 } from "./features/notes/physics-ece-module-1";
+import { chemistrycivilmechModule1 } from "./features/notes/chemistry-civil-mech-module-1";
+import { physicseceModule2 } from "./features/notes/physics-ece-module-2";
+import { chemistrycivilmechModule2 } from "./features/notes/chemistry-civil-mech-module-2";
+import { physicseceModule3 } from "./features/notes/physics-ece-module-3";
+import { chemistrycivilmechModule3 } from "./features/notes/chemistry-civil-mech-module-3";
+import { physicseceModule4 } from "./features/notes/physics-ece-module-4";
+import { chemistrycivilmechModule4 } from "./features/notes/chemistry-civil-mech-module-4";
 import {
   gamat101QuestionPapers,
   gapht121QuestionPapers,
@@ -53,6 +61,12 @@ const NOTES_MODULES: NotesModule[] = [
   graphicsm1, graphicsm2, graphicsm3, graphicsm4,
   electricalmodule1, electricalmodule2, electricalmodule3,
   pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4,
+  ...(["ece", "eee"] as const).flatMap((branch) => [
+    physicseceModule1(branch), physicseceModule2(branch), physicseceModule3(branch), physicseceModule4(branch),
+  ]),
+  ...(["civil", "me"] as const).flatMap((branch) => [
+    chemistrycivilmechModule1(branch), chemistrycivilmechModule2(branch), chemistrycivilmechModule3(branch), chemistrycivilmechModule4(branch),
+  ]),
   gamat101QuestionPapers, gapht121QuestionPapers, gmest103QuestionPapers, gxest104QuestionPapers, ucest105QuestionPapers,
 ];
 
@@ -114,6 +128,20 @@ export const pages: StaticPage[] = [
     chunk: "src/pages/notes/ImportedModulePage.tsx",
   })),
   ...(["ece", "eee"] as const).flatMap((branch) =>
+    ([1, 2, 3, 4] as const).map((n): StaticPage => ({
+      url: `/notes/${branch}/s1/chemistry/module-${n}`,
+      file: fileFor(`/notes/${branch}/s1/chemistry/module-${n}`),
+      chunk: "src/pages/notes/ImportedModulePage.tsx",
+    })),
+  ),
+  ...(["ece", "eee"] as const).flatMap((branch) =>
+    ([1, 2, 3, 4] as const).map((n): StaticPage => ({
+      url: `/notes/${branch}/s1/physics/module-${n}`,
+      file: fileFor(`/notes/${branch}/s1/physics/module-${n}`),
+      chunk: "src/pages/notes/ImportedModulePage.tsx",
+    })),
+  ),
+  ...(["civil", "me"] as const).flatMap((branch) =>
     ([1, 2, 3, 4] as const).map((n): StaticPage => ({
       url: `/notes/${branch}/s1/chemistry/module-${n}`,
       file: fileFor(`/notes/${branch}/s1/chemistry/module-${n}`),

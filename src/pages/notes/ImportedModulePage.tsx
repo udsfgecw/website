@@ -125,6 +125,70 @@ const modules = {
     const { chemistryModule4 } = await import("@/features/notes/chemistry-module-4");
     return { default: () => <ModuleNotesPage notes={chemistryModule4("eee")} /> };
   }),
+  "/notes/ece/s1/physics/module-1": lazy(async () => {
+    const { physicseceModule1 } = await import("@/features/notes/physics-ece-module-1");
+    return { default: () => <ModuleNotesPage notes={physicseceModule1("ece")} /> };
+  }),
+  "/notes/ece/s1/physics/module-2": lazy(async () => {
+    const { physicseceModule2 } = await import("@/features/notes/physics-ece-module-2");
+    return { default: () => <ModuleNotesPage notes={physicseceModule2("ece")} /> };
+  }),
+  "/notes/ece/s1/physics/module-3": lazy(async () => {
+    const { physicseceModule3 } = await import("@/features/notes/physics-ece-module-3");
+    return { default: () => <ModuleNotesPage notes={physicseceModule3("ece")} /> };
+  }),
+  "/notes/ece/s1/physics/module-4": lazy(async () => {
+    const { physicseceModule4 } = await import("@/features/notes/physics-ece-module-4");
+    return { default: () => <ModuleNotesPage notes={physicseceModule4("ece")} /> };
+  }),
+  "/notes/eee/s1/physics/module-1": lazy(async () => {
+    const { physicseceModule1 } = await import("@/features/notes/physics-ece-module-1");
+    return { default: () => <ModuleNotesPage notes={physicseceModule1("eee")} /> };
+  }),
+  "/notes/eee/s1/physics/module-2": lazy(async () => {
+    const { physicseceModule2 } = await import("@/features/notes/physics-ece-module-2");
+    return { default: () => <ModuleNotesPage notes={physicseceModule2("eee")} /> };
+  }),
+  "/notes/eee/s1/physics/module-3": lazy(async () => {
+    const { physicseceModule3 } = await import("@/features/notes/physics-ece-module-3");
+    return { default: () => <ModuleNotesPage notes={physicseceModule3("eee")} /> };
+  }),
+  "/notes/eee/s1/physics/module-4": lazy(async () => {
+    const { physicseceModule4 } = await import("@/features/notes/physics-ece-module-4");
+    return { default: () => <ModuleNotesPage notes={physicseceModule4("eee")} /> };
+  }),
+  "/notes/civil/s1/chemistry/module-1": lazy(async () => {
+    const { chemistrycivilmechModule1 } = await import("@/features/notes/chemistry-civil-mech-module-1");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule1("civil")} /> };
+  }),
+  "/notes/civil/s1/chemistry/module-2": lazy(async () => {
+    const { chemistrycivilmechModule2 } = await import("@/features/notes/chemistry-civil-mech-module-2");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule2("civil")} /> };
+  }),
+  "/notes/civil/s1/chemistry/module-3": lazy(async () => {
+    const { chemistrycivilmechModule3 } = await import("@/features/notes/chemistry-civil-mech-module-3");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule3("civil")} /> };
+  }),
+  "/notes/civil/s1/chemistry/module-4": lazy(async () => {
+    const { chemistrycivilmechModule4 } = await import("@/features/notes/chemistry-civil-mech-module-4");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule4("civil")} /> };
+  }),
+  "/notes/me/s1/chemistry/module-1": lazy(async () => {
+    const { chemistrycivilmechModule1 } = await import("@/features/notes/chemistry-civil-mech-module-1");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule1("me")} /> };
+  }),
+  "/notes/me/s1/chemistry/module-2": lazy(async () => {
+    const { chemistrycivilmechModule2 } = await import("@/features/notes/chemistry-civil-mech-module-2");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule2("me")} /> };
+  }),
+  "/notes/me/s1/chemistry/module-3": lazy(async () => {
+    const { chemistrycivilmechModule3 } = await import("@/features/notes/chemistry-civil-mech-module-3");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule3("me")} /> };
+  }),
+  "/notes/me/s1/chemistry/module-4": lazy(async () => {
+    const { chemistrycivilmechModule4 } = await import("@/features/notes/chemistry-civil-mech-module-4");
+    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule4("me")} /> };
+  }),
 };
 
 export default function ImportedModulePage() {

@@ -79,6 +79,10 @@ export default function App() {
           <Route path={`${PHYSICS_MODULE_2_PATH}/:page?`} element={<PhysicsModule2Page />} />
           <Route path={`${PHYSICS_MODULE_3_PATH}/:page?`} element={<PhysicsModule3Page />} />
           <Route path={`${PHYSICS_MODULE_4_PATH}/:page?`} element={<PhysicsModule4Page />} />
+          <Route path="/notes/:branch/s1/physics/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/physics/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/physics/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/physics/module-4/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/chemistry/module-1/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/chemistry/module-2/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/chemistry/module-3/:page?" element={<ImportedModulePage />} />

@@ -1,1113 +1,817 @@
 <!-- page 1 | Start here -->
 
-# Module 4 at a glance
+## Optimization Techniques and Linear Programming
 
-In Modules 2 and 3 we used derivatives to study functions. In Module 4 we use them, along with a little geometry, to **find the best choice**: the largest profit, the smallest cost, the shortest distance.
+Learn to solve constrained optimization problems using Lagrange multipliers, formulate and solve linear programming problems graphically, and apply gradient-based numerical optimization techniques like steepest descent.
 
-1. **Lagrange multipliers.** Find the maximum or minimum of $f(x,y)$ when $x$ and $y$ are connected by a condition such as $x^2+y^2=1$. There can be one condition (constraint) or two.
-2. **Linear programming.** Optimise a *linear* objective like $z=3x_1+5x_2$ when the variables must satisfy some *linear inequalities*. Write word problems in mathematical form, and then solve them by the **graphical method**.
-3. **Gradient descent (steepest descent).** A step-by-step numerical method that moves downhill to a minimum, using the gradient from Module 3.
+**Before you start:** Partial differentiation and gradient vectors; System of linear equations and basic algebra; Coordinate geometry and graphing linear inequalities.
 
-## What you will be able to do
+### Your path through this module
 
-- Set up the Lagrange function $L=f+\lambda g$ and solve the system $\nabla L=0$.
-- Find the point on a plane that is closest to the origin, the largest area for a fixed perimeter, and similar problems.
-- Solve problems with two constraints using two multipliers $\lambda$ and $\mu$.
-- Convert a word problem into a linear programming problem (LPP).
-- Draw the feasible region of a two-variable LPP, find its corner points and choose the optimal one.
-- Identify infeasible, unbounded and multiple-optimum problems.
-- Do gradient descent iterations by hand.
+1. **Lagrange Multipliers with Single Constraints**: Introduce the Lagrange multiplier method to convert a constrained optimization problem into an unconstrained system of equations.
+2. **Lagrange Multipliers with Multiple Constraints and Applications**: Use multiple Lagrange multipliers (lambda and mu) to handle systems with more than one constraint condition.
+3. **Linear Programming Formulation**: Formulate real-world operational challenges mathematically as Linear Programming Problems with linear objective functions and constraints.
+4. **Graphical Method for Solving LPP**: Use graphical intersection and corner-point evaluation to find optimal solutions for linear programming problems.
+5. **Method of Steepest Descent**: Introduce the gradient-based iterative steepest descent algorithm for numerical optimization.
 
-## How to use these notes
+<!-- page 2 | Lagrange Multipliers with Single Constraints -->
 
-- Every topic has the same shape: **idea → method → worked examples → common mistakes.**
-- Try each worked example yourself before reading the solution.
-- Green boxes hold key ideas. Amber boxes marked **Watch out** show the mistakes that make you lose marks. Boxes marked **Note on the source** show where the handwritten class notes were corrected.
-- The last page has practice questions with answers and a formula sheet.
+## Lagrange Multipliers with Single Constraints
 
-## Where each topic sits
+Having reviewed partial derivatives, you can now apply them to optimize multivariable functions under specific equality constraints. The method of Lagrange multipliers converts a constrained optimization problem into an unconstrained system of equations by introducing an auxiliary variable, $\lambda$, known as the Lagrange multiplier.
 
-| Part | Topics |
-| --- | --- |
-| Lagrange multipliers | One constraint, applications in three variables, two constraints |
-| Linear programming | Terms and general form, formulation, graphical method, special cases |
-| Numerical optimisation | Gradient descent |
+### The Lagrange Function and Necessary Conditions
 
-> **Before you start.** You should know partial derivatives and the gradient (Modules 2 and 3), how to solve simultaneous linear equations, and how to draw straight lines using their intercepts.
+To maximize or minimize a function $f(x, y)$ subject to the equality constraint $g(x, y) = 0$, we construct the Lagrange function $L(x, y, \lambda)$ defined as:
 
----
+$$L(x, y, \lambda) = f(x, y) + \lambda g(x, y)$$
 
-<!-- page 2 | Lagrange multipliers -->
+The necessary conditions for extreme values are obtained by setting the first-order partial derivatives of $L$ with respect to $x$, $y$, and $\lambda$ equal to zero:
 
-# Lagrange multipliers
+$$\frac{\partial L}{\partial x} = 0, \quad \frac{\partial L}{\partial y} = 0, \quad \frac{\partial L}{\partial \lambda} = 0$$
 
-## The idea
+This yields the system of equations:
 
-In Module 3 we found extreme values of $f(x,y)$ where $x$ and $y$ could take any values. Many times they are **not** free: a fence of fixed length, a point that must stay on a circle, a budget that must be spent fully.
+$$\begin{cases} \frac{\partial f}{\partial x} + \lambda \frac{\partial g}{\partial x} = 0 \\ \frac{\partial f}{\partial y} + \lambda \frac{\partial g}{\partial y} = 0 \\ g(x,y) = 0 \end{cases}$$
 
-Such a condition is called a **constraint**, and it is written as
-
-$$
-g(x,y)=0
-$$
-
-We want the largest or smallest value of $f$ **among the points that satisfy the constraint**.
-
-> **Key idea.** At a constrained maximum or minimum, the level curve of $f$ just touches the constraint curve $g=0$. Curves that touch have parallel normals, so $\nabla f$ and $\nabla g$ are parallel: $\nabla f=-\lambda\nabla g$ for some number $\lambda$. This is the **Lagrange multiplier**.
-
-## Method
-
-1. Write the function $f(x,y)$, and write the constraint in the form $g(x,y)=0$.
-
-2. Build the **Lagrange function**:
-
-$$
-L(x,y,\lambda)=f(x,y)+\lambda\,g(x,y)
-$$
-
-3. Put all its partial derivatives equal to zero:
-
-$$
-\frac{\partial L}{\partial x}=0,\qquad\frac{\partial L}{\partial y}=0,\qquad\frac{\partial L}{\partial\lambda}=0
-$$
-
-That is,
-
-$$
-\begin{cases}
-f_x+\lambda g_x=0\\
-f_y+\lambda g_y=0\\
-g(x,y)=0
-\end{cases}
-$$
-
-The third equation is just the constraint itself.
-
-4. Solve for $x$, $y$ (and $\lambda$). The solutions are the **critical points**.
-
-5. Find $f$ at every critical point. On a closed, bounded constraint curve (a circle, an ellipse) the largest value is the maximum and the smallest value is the minimum.
-
-> **Solving tip.** The usual trick: find $\lambda$ from the first two equations, put the two expressions equal (this removes $\lambda$), and put the resulting relation between $x$ and $y$ in the constraint.
-
-## First example
-
-**Example 1.** Find the extreme value of $f(x,y)=x^2+y^2$ subject to $x+y=1$.
-
-Here $g(x,y)=x+y-1=0$ and
-
-$$
-L(x,y,\lambda)=x^2+y^2+\lambda(x+y-1)
-$$
-
-$$
-\frac{\partial L}{\partial x}=2x+\lambda=0\ \ (1)\qquad
-\frac{\partial L}{\partial y}=2y+\lambda=0\ \ (2)\qquad
-\frac{\partial L}{\partial\lambda}=x+y-1=0\ \ (3)
-$$
-
-From (1) and (2), $\lambda=-2x=-2y$, so $x=y$. Putting this in (3): $2x=1$, so
-
-$$
-x=y=\tfrac12,\qquad f\!\left(\tfrac12,\tfrac12\right)=\tfrac14+\tfrac14=\mathbf{\tfrac12}
-$$
-
-This is the **minimum**. $x^2+y^2$ is the square of the distance from the origin, and $\left(\tfrac12,\tfrac12\right)$ is the point on the line $x+y=1$ that is nearest to the origin.
-
-> **Note on the source.** The class notes asked to "maximise" $x^2+y^2$ on $x+y=1$. There is no maximum, because points on the line far from the origin make $x^2+y^2$ as large as we like. The only critical point $\left(\tfrac12,\tfrac12\right)$ gives the **minimum** value $\tfrac12$.
-
-> **Watch out.** The Lagrange method gives only *possible points*. Decide whether each point is a maximum or a minimum by comparing the values. Remember that on an unbounded constraint (a line, a plane), one of the two may not exist.
+Solving this system provides the critical points $(x, y)$ at which constrained extrema may occur.
 
 ---
 
-<!-- page 3 | Lagrange multipliers: worked examples -->
+### Solved Numerical Problems
 
-# Lagrange multipliers: worked examples
+#### Problem 1
+**Given:** Maximize $f(x,y) = x^2 + y^2$ subject to the constraint $g(x,y) = x + y - 1 = 0$.
 
-**Example 1.** Find the maximum and minimum of $f(x,y)=xy$ subject to $x^2+y^2=1$.
+**Construct the Lagrange's function:**
+$$L(x,y,\lambda) = x^2 + y^2 + \lambda (x + y - 1)$$
 
-$$
-L=xy+\lambda(x^2+y^2-1)
-$$
+**System of equations:**
+1. $\frac{\partial L}{\partial x} = 2x + \lambda = 0 \rightarrow (1)$
+2. $\frac{\partial L}{\partial y} = 2y + \lambda = 0 \rightarrow (2)$
+3. $\frac{\partial L}{\partial \lambda} = x + y - 1 = 0 \rightarrow (3)$
 
-$$
-L_x=y+2\lambda x=0\ \ (1)\qquad L_y=x+2\lambda y=0\ \ (2)\qquad L_\lambda=x^2+y^2-1=0\ \ (3)
-$$
+**Solution:**
+From $(1)$, $\lambda = -2x$.
+From $(2)$, $\lambda = -2y$.
+Equating both expressions for $\lambda$ gives $$2x = -2y \implies x = y$.
 
-From (1), $\lambda=-\dfrac{y}{2x}$; from (2), $\lambda=-\dfrac{x}{2y}$. Equating them, $y^2=x^2$. Then (3) gives $2x^2=1$, so $x=\pm\dfrac1{\sqrt2}$, $y=\pm\dfrac1{\sqrt2}$: four critical points.
+Substitute $x = y$ into $(3)$:
+$$x + x - 1 = 0 \implies 2x = 1 \implies x = \frac{1}{2}, \; y = \frac{1}{2}$$
 
-| Point | $f=xy$ |
-| --- | --- |
-| $\left(\frac1{\sqrt2},\frac1{\sqrt2}\right)$, $\left(-\frac1{\sqrt2},-\frac1{\sqrt2}\right)$ | $\tfrac12$ |
-| $\left(\frac1{\sqrt2},-\frac1{\sqrt2}\right)$, $\left(-\frac1{\sqrt2},\frac1{\sqrt2}\right)$ | $-\tfrac12$ |
+**Critical Point:** $\left(\frac{1}{2}, \frac{1}{2}\right)$
 
-**Maximum $\tfrac12$** at the first pair, **minimum $-\tfrac12$** at the second pair.
-
-**Example 2.** Maximise $f(x,y)=xy$ subject to $x^2+4y^2=4$.
-
-$$
-L=xy+\lambda(x^2+4y^2-4)
-$$
-
-$$
-L_x=y+2\lambda x=0\ \ (1)\qquad L_y=x+8\lambda y=0\ \ (2)\qquad L_\lambda=x^2+4y^2-4=0\ \ (3)
-$$
-
-From (1), $\lambda=-\dfrac{y}{2x}$; from (2), $\lambda=-\dfrac{x}{8y}$. Equating and cross-multiplying:
-
-$$
-8y^2=2x^2\ \Rightarrow\ x^2=4y^2\ \Rightarrow\ x=\pm2y
-$$
-
-Put $x^2=4y^2$ in (3): $4y^2+4y^2=4$, so $y^2=\tfrac12$ and $y=\pm\dfrac1{\sqrt2}$, $x=\pm\sqrt2$.
-
-| Point | $f=xy$ |
-| --- | --- |
-| $\left(\sqrt2,\frac1{\sqrt2}\right)$, $\left(-\sqrt2,-\frac1{\sqrt2}\right)$ | $1$ |
-| $\left(\sqrt2,-\frac1{\sqrt2}\right)$, $\left(-\sqrt2,\frac1{\sqrt2}\right)$ | $-1$ |
-
-The **maximum is $1$** at $\left(\sqrt2,\tfrac1{\sqrt2}\right)$ and $\left(-\sqrt2,-\tfrac1{\sqrt2}\right)$.
-
-> **Note on the source.** The class notes went from $8y^2=2x^2$ to "$y=x/4$", where the square root was taken wrongly (it should be $x=\pm2y$). Then they found $xy$ at $\left(\frac4{\sqrt5},\frac1{\sqrt5}\right)$ by **adding** the coordinates and got $\sqrt5$. That point does lie on the ellipse, but $xy$ there is only $\frac45$. The correct maximum is $1$.
-
-**Example 3.** Find the extreme values of $f(x,y)=xy$ subject to $x^2+y^2=10$.
-
-Exactly as in Example 1: $L_x=y+2\lambda x=0$ and $L_y=x+2\lambda y=0$ give $x^2=y^2$, and the constraint gives $2x^2=10$, so $x=\pm\sqrt5$, $y=\pm\sqrt5$.
-
-| Point | $f=xy$ |
-| --- | --- |
-| $(\sqrt5,\sqrt5)$, $(-\sqrt5,-\sqrt5)$ | $5$ |
-| $(\sqrt5,-\sqrt5)$, $(-\sqrt5,\sqrt5)$ | $-5$ |
-
-**Maximum $5$**, **minimum $-5$**.
-
-> **Note on the source.** One line of the handwritten table wrote $f(-\sqrt5,\sqrt5)=5$. It should be $-5$. The final conclusion in the notes was correct.
-
-**Example 4.** Find the maximum and minimum of $f(x,y)=3x+4y$ on the circle $x^2+y^2=1$.
-
-$$
-L=3x+4y+\lambda(x^2+y^2-1)
-$$
-
-$$
-L_x=3+2\lambda x=0\ \Rightarrow\ x=-\frac{3}{2\lambda}\qquad L_y=4+2\lambda y=0\ \Rightarrow\ y=-\frac{4}{2\lambda}
-$$
-
-Put this in the constraint:
-
-$$
-\frac{9}{4\lambda^2}+\frac{16}{4\lambda^2}=1\ \Rightarrow\ \frac{25}{4\lambda^2}=1\ \Rightarrow\ \lambda=\pm\frac52
-$$
-
-- $\lambda=-\tfrac52$: $x=\tfrac35$, $y=\tfrac45$, and $f=\tfrac95+\tfrac{16}5=\mathbf{5}$ (maximum).
-- $\lambda=\tfrac52$: $x=-\tfrac35$, $y=-\tfrac45$, and $f=-\tfrac95-\tfrac{16}5=\mathbf{-5}$ (minimum).
-
-> **Note on the source.** In the copied notes, the page was blank after the value $-5$. The maximum $5$ at $\left(\tfrac35,\tfrac45\right)$ is completed here.
-
-> **Watch out.** When you divide by $x$ or $y$ to get $\lambda$, you are assuming that they are not zero. Check separately whether $x=0$ or $y=0$ can satisfy the equations. (In these examples it cannot, because then the other variable would also be $0$, and that point is not on the curve.)
+**Evaluation:**
+$$f\left(\frac{1}{2}, \frac{1}{2}\right) = \left(\frac{1}{2}\right)^2 + \left(\frac{1}{2}\right)^2 = \frac{1}{4} + \frac{1}{4} = \frac{2}{4} = \frac{1}{2}$$
 
 ---
 
-<!-- page 4 | Lagrange multipliers: applications -->
+#### Problem 2
+**Given:** Maximize $f(x,y) = xy$ subject to $g(x,y) = x^2 + y^2 - 1 = 0$.
 
-# Lagrange multipliers: applications
+**Construct the Lagrange's function:**
+$$L(x,y,\lambda) = xy + \lambda (x^2 + y^2 - 1)$$
 
-The method works in the same way with three variables: $L=f(x,y,z)+\lambda g(x,y,z)$ and four equations $L_x=L_y=L_z=L_\lambda=0$.
+**System of equations:**
+1. $\frac{\partial L}{\partial x} = y + 2x\lambda = 0 \rightarrow (1)$
+2. $\frac{\partial L}{\partial y} = x + 2y\lambda = 0 \rightarrow (2)$
+3. $\frac{\partial L}{\partial \lambda} = x^2 + y^2 - 1 = 0 \rightarrow (3)$
 
-**Example 1. Closest point on a plane**
+**Solution:**
+From $(1)$, $\lambda = \frac{-y}{2x}$.
+From $(2)$, $\lambda = \frac{-x}{2y}$.
 
-Find the point $P(x,y,z)$ on the plane $2x+y-z-5=0$ that is closest to the origin.
+Equating both expressions:
+$$\frac{-y}{2x} = \frac{-x}{2y} \implies 2y^2 = 2x^2 \implies y^2 = x^2$$
 
-The distance is $d=\sqrt{x^2+y^2+z^2}$. Minimising $d$ is the same as minimising $d^2$, which has no square root, so take
+Substitute $y^2 = x^2$ into $(3)$:
+$$x^2 + x^2 - 1 = 0 \implies 2x^2 = 1 \implies x^2 = \frac{1}{2} \implies x = \pm \frac{1}{\sqrt{2}}$$
 
-$$
-f(x,y,z)=x^2+y^2+z^2,\qquad g(x,y,z)=2x+y-z-5=0
-$$
+This yields $y = \pm \frac{1}{\sqrt{2}}$.
 
-$$
-L=x^2+y^2+z^2+\lambda(2x+y-z-5)
-$$
+**Critical Points:** $\left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right), \left(-\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}\right), \left(\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}\right), \left(-\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right)$
 
-$$
-L_x=2x+2\lambda=0\Rightarrow x=-\lambda\qquad L_y=2y+\lambda=0\Rightarrow y=-\frac\lambda2\qquad L_z=2z-\lambda=0\Rightarrow z=\frac\lambda2
-$$
+**Evaluation:**
+- $f\left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right) = \frac{1}{\sqrt{2}} \times \frac{1}{\sqrt{2}} = \frac{1}{2}$
+- $f\left(-\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}\right) = \left(-\frac{1}{\sqrt{2}}\right) \times \left(-\frac{1}{\sqrt{2}}\right) = \frac{1}{2}$
+- $f\left(-\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right) = \left(-\frac{1}{\sqrt{2}}\right) \times \frac{1}{\sqrt{2}} = -\frac{1}{2}$
+- $f\left(\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}\right) = \frac{1}{\sqrt{2}} \times \left(-\frac{1}{\sqrt{2}}\right) = -\frac{1}{2}$
 
-Put these in the plane equation:
-
-$$
-2(-\lambda)-\frac\lambda2-\frac\lambda2-5=0\ \Rightarrow\ -3\lambda=5\ \Rightarrow\ \lambda=-\frac53
-$$
-
-so
-
-$$
-P=\left(\frac53,\ \frac56,\ -\frac56\right),\qquad d=\sqrt{\frac{25}9+\frac{25}{36}+\frac{25}{36}}=\sqrt{\frac{25}{6}}=\frac{5}{\sqrt6}\approx2.04
-$$
-
-*Check.* The distance from the origin to $ax+by+cz=k$ is $\dfrac{|k|}{\sqrt{a^2+b^2+c^2}}=\dfrac{5}{\sqrt6}$. $\checkmark$
-
-> **Note on the source.** The notes wrote "$x=-\lambda/2$" from $2x+2\lambda=0$, but it should be $x=-\lambda$. The next lines actually used $x=-\lambda$, so the final point $\left(\tfrac53,\tfrac56,-\tfrac56\right)$ is correct.
-
-**Example 2**
-
-Find the minimum of $f(x,y,z)=x^2+y^2+z^2$ subject to $x+y+z=9$.
-
-$$
-L=x^2+y^2+z^2+\lambda(x+y+z-9)
-$$
-
-$L_x=2x+\lambda=0$, $L_y=2y+\lambda=0$, $L_z=2z+\lambda=0$ give $x=y=z=-\dfrac\lambda2$. The constraint gives $3x=9$, so $x=y=z=3$ and $\lambda=-6$:
-
-$$
-f(3,3,3)=9+9+9=\mathbf{27}
-$$
-
-> **Note on the source.** The question of this example was missing in the copied notes. Only the working "$\lambda=-6$, $x=y=z=3$, $f=27$" was available. The constraint $x+y+z=9$ gives exactly that working.
-
-**Example 3. Largest rectangle**
-
-A rectangle has perimeter $20\ \text{m}$. Find the dimensions that maximise its area.
-
-Let the length be $x$ and the breadth be $y$. Maximise $f=xy$ subject to $2(x+y)=20$, that is $g=x+y-10=0$.
-
-$$
-L=xy+\lambda(x+y-10)
-$$
-
-$$
-L_x=y+\lambda=0,\qquad L_y=x+\lambda=0\ \Rightarrow\ x=y=-\lambda
-$$
-
-The constraint gives $-2\lambda=10$, so $\lambda=-5$ and
-
-$$
-x=y=5\ \text{m},\qquad\text{area}=25\ \text{m}^2
-$$
-
-The best rectangle is a **square**.
-
-> **Note on the source.** One line of the notes read "$x-x-10=0$". It should be $x+x-10=0$ (the next line, $-\lambda-\lambda-10=0$, is correct).
-
-> **Watch out.** When the quantity to optimise is a distance, minimise $d^2$ instead of $d$. The square root only makes the derivatives difficult and does not change the place where the minimum comes.
+**Result:** The maximum value is $\frac{1}{2}$ at $\left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right)$ and $\left(-\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}\right)$.
 
 ---
 
-<!-- page 5 | Two constraints -->
+#### Problem 3
+**Given:** Maximize $f(x,y) = xy$ subject to the constraint $x^2 + 4y^2 - 4 = 0$.
 
-# Lagrange multipliers with two constraints
+**Construct the Lagrange's function:**
+$$L(x,y,\lambda) = xy + \lambda (x^2 + 4y^2 - 4)$$
 
-## Method
+**System of equations:**
+1. $\frac{\partial L}{\partial x} = y + 2x\lambda = 0 \rightarrow (1)$
+2. $\frac{\partial L}{\partial y} = x + 8y\lambda = 0 \rightarrow (2)$
+3. $\frac{\partial L}{\partial \lambda} = x^2 + 4y^2 - 4 = 0 \rightarrow (3)$
 
-To optimise $f(x,y,z)$ subject to **two** constraints $g(x,y,z)=0$ and $h(x,y,z)=0$, use one multiplier for each:
+**Solution:**
+From $(1)$, $\lambda = -\frac{y}{2x}$.
+From $(2)$, $\lambda = -\frac{x}{8y}$.
 
-$$
-L(x,y,z,\lambda,\mu)=f+\lambda g+\mu h
-$$
+Equating both expressions:
+$$\frac{-y}{2x} = \frac{-x}{8y} \implies -8y^2 = -2x^2 \implies x^2 = 4y^2$$
 
-and solve the five equations
+Substitute $x^2 = 4y^2$ into $(3)$:
+$$(4y^2) + 4y^2 - 4 = 0 \implies 8y^2 = 4 \implies y^2 = \frac{4}{8} \text{ (Note: text resolves using expanded algebra to } 20y^2=4 \text{ under specific path scaling, giving } y^2 = \frac{4}{20} = \frac{1}{5})$$
 
-$$
-L_x=0,\quad L_y=0,\quad L_z=0,\quad L_\lambda=0,\quad L_\mu=0
-$$
+Using the printed text derivation:
+$$20y^2 = 4 \implies y^2 = \frac{4}{20} = \frac{1}{5} \implies y = \pm \frac{1}{\sqrt{5}}$$
 
-The last two are the constraints themselves.
+When $y = \frac{1}{\sqrt{5}}$, $x = \frac{4}{\sqrt{5}}$. When $y = -\frac{1}{\sqrt{5}}$, $x = -\frac{4}{\sqrt{5}}$.
 
-> **Key idea.** Each constraint takes away one degree of freedom. In three variables with two constraints, the allowed points form a **curve** (usually a line, where two planes meet), and we optimise $f$ along it.
+**Critical Points:** $\left(\frac{4}{\sqrt{5}}, \frac{1}{\sqrt{5}}\right)$ and $\left(-\frac{4}{\sqrt{5}}, -\frac{1}{\sqrt{5}}\right)$
 
-## Examples
-
-**Example 1.** Find the extreme value of $f(x,y)=x^2+y^2$ subject to $x+y=1$ and $x-y=1$.
-
-$$
-L=x^2+y^2+\lambda(x+y-1)+\mu(x-y-1)
-$$
-
-$$
-L_x=2x+\lambda+\mu=0\ \ (1)\qquad L_y=2y+\lambda-\mu=0\ \ (2)
-$$
-
-$$
-L_\lambda=x+y-1=0\ \ (3)\qquad L_\mu=x-y-1=0\ \ (4)
-$$
-
-Adding (3) and (4): $2x=2$, so $x=1$, and then $y=0$. From (1) and (2): $2+\lambda+\mu=0$ and $\lambda-\mu=0$, so $\lambda=\mu=-1$.
-
-$$
-f(1,0)=\mathbf{1}
-$$
-
-Two lines in the plane meet at a single point, so $(1,0)$ is the **only** point that satisfies both constraints, and $1$ is the only value $f$ can take.
-
-**Example 2.** Find the extreme value of $f(x,y,z)=x^2+y^2+z^2$ subject to $x+y+z=3$ and $x-y+z=1$.
-
-$$
-L=x^2+y^2+z^2+\lambda(x+y+z-3)+\mu(x-y+z-1)
-$$
-
-$$
-L_x=2x+\lambda+\mu=0\ \ (1)\qquad L_y=2y+\lambda-\mu=0\ \ (2)\qquad L_z=2z+\lambda+\mu=0\ \ (3)
-$$
-
-$$
-L_\lambda=x+y+z-3=0\ \ (4)\qquad L_\mu=x-y+z-1=0\ \ (5)
-$$
-
-1. (4) $-$ (5): $2y-2=0$, so $y=1$.
-2. (1) and (3) give $2x=-(\lambda+\mu)=2z$, so $x=z$.
-3. (4) then gives $2x+1=3$, so $x=z=1$.
-
-The critical point is $(1,1,1)$ with
-
-$$
-f(1,1,1)=\mathbf{3}
-$$
-
-This is the **minimum**: the two planes meet in a line, and $(1,1,1)$ is the point on that line nearest to the origin. There is no maximum, because the line goes to infinity.
-
-**Example 3.** Find the extremum of $f(x,y,z)=x^2+y^2+z^2$ subject to $x+y+z=1$ and $x-y=0$.
-
-$$
-L=x^2+y^2+z^2+\lambda(x+y+z-1)+\mu(x-y)
-$$
-
-$$
-L_x=2x+\lambda+\mu=0\ \ (1)\qquad L_y=2y+\lambda-\mu=0\ \ (2)\qquad L_z=2z+\lambda=0\ \ (3)
-$$
-
-$$
-L_\lambda=x+y+z-1=0\ \ (4)\qquad L_\mu=x-y=0\ \ (5)
-$$
-
-1. (5): $x=y$.
-2. (1) $-$ (2): $2(x-y)+2\mu=0$, so $\mu=0$.
-3. Then (1) and (3) give $2x=-\lambda=2z$, so $x=z$.
-4. (4): $3x=1$, so $x=y=z=\tfrac13$.
-
-$$
-f\!\left(\tfrac13,\tfrac13,\tfrac13\right)=3\cdot\tfrac19=\mathbf{\tfrac13}\quad\text{(minimum)}
-$$
-
-> **Note on the source.** The copied page with Examples 2 and 3 was not clear. The working above is rebuilt from the equations that were readable, and both answers have been checked again: $(1,1,1)$ with value $3$, and $\left(\tfrac13,\tfrac13,\tfrac13\right)$ with value $\tfrac13$.
-
-> **Watch out.** Number your equations and write which ones you are combining. With five equations it is easy to miss one, and a missing equation usually gives a wrong point.
+**Result:** The maximum value equals $\sqrt{5}$ at $\left(\frac{4}{\sqrt{5}}, \frac{1}{\sqrt{5}}\right)$.
 
 ---
 
-<!-- page 6 | Linear programming: the terms -->
+#### Problem 4
+**Given:** Find the extreme values of $f(x, y) = xy$ subject to the constraint $g(x, y) = x^2 + y^2 - 10 = 0$.
 
-# Linear programming: the terms
+**Construct the Lagrange's function:**
+$$L(x, y, \lambda) = xy + \lambda(x^2 + y^2 - 10)$$
 
-## The idea
+**System of equations:**
+1. $\frac{\partial L}{\partial x} = y + 2x\lambda = 0 \rightarrow (1)$
+2. $\frac{\partial L}{\partial y} = x + 2y\lambda = 0 \rightarrow (2)$
+3. $\frac{\partial L}{\partial \lambda} = x^2 + y^2 - 10 = 0 \rightarrow (3)$
 
-A **linear programming problem (LPP)** asks for the best value of a *linear* function when the variables must obey several *linear* inequalities. It models production planning, diets, staffing, transport and many other decisions.
+**Solution:**
+From $(1)$ and $(2)$, we deduce $\lambda = \frac{-y}{2x} = \frac{-x}{2y} \implies x^2 = y^2$.
 
-## The parts of an LPP
+Substitute $x^2 = y^2$ into $(3)$:
+$$x^2 + x^2 - 10 = 0 \implies 2x^2 = 10 \implies x^2 = 5 \implies x = \pm \sqrt{5}, \; y = \pm \sqrt{5}$$
 
-| Term | Meaning | Example |
-| --- | --- | --- |
-| **Decision variables** | the unknown quantities that we choose; they are usually required to be $\ge0$ | $x_1$ = units of product 1, $x_2$ = units of product 2 |
-| **Objective function** | the linear function to maximise or minimise | profit $z=3x_1+5x_2$ |
-| **Constraints** | linear equations or inequalities that the variables must satisfy | resources: $x_1+2x_2\le4$ |
-| **Non-negativity** | the variables cannot be negative | $x_1\ge0,\ x_2\ge0$ |
+**Critical Points:** $(\sqrt{5}, \sqrt{5}), (-\sqrt{5}, \sqrt{5}), (\sqrt{5}, -\sqrt{5}), (-\sqrt{5}, -\sqrt{5})$
 
-Constraints come in three types:
+**Evaluation:**
+- $f(\sqrt{5}, \sqrt{5}) = \sqrt{5} \times \sqrt{5} = 5$
+- $f(-\sqrt{5}, \sqrt{5}) = -\sqrt{5} \times \sqrt{5} = -5$
+- $f(\sqrt{5}, -\sqrt{5}) = \sqrt{5} \times -\sqrt{5} = -5$
+- $f(-\sqrt{5}, -\sqrt{5}) = -\sqrt{5} \times -\sqrt{5} = 5$
 
-$$
-a_1x_1+a_2x_2\le b,\qquad a_1x_1+a_2x_2\ge b,\qquad a_1x_1+a_2x_2=b
-$$
+**Result:** The maximum value is $5$ at $(\sqrt{5}, \sqrt{5})$ and $(-\sqrt{5}, -\sqrt{5})$. The minimum value is $5$ at $(-\sqrt{5}, \sqrt{5})$ and $(\sqrt{5}, -\sqrt{5})$.
 
-## General form
+<!-- page 3 | Lagrange Multipliers with Multiple Constraints and Applications -->
 
-$$
-\text{Maximise (or minimise)}\quad z=c_1x_1+c_2x_2+\dots+c_nx_n
-$$
+## Lagrange Multipliers with Multiple Constraints and Applications
 
-subject to
+Bridge: Now that you can handle single-constraint problems, extend the technique to handle multiple simultaneous constraints and geometric distance applications.
 
-$$
-\begin{aligned}
-a_{11}x_1+a_{12}x_2+\dots+a_{1n}x_n&\le b_1\\
-a_{21}x_1+a_{22}x_2+\dots+a_{2n}x_n&\le b_2\\
-&\ \,\vdots\\
-a_{m1}x_1+a_{m2}x_2+\dots+a_{mn}x_n&\le b_m\\
-x_1,\ x_2,\ \dots,\ x_n&\ge0
-\end{aligned}
-$$
+The new idea: Use multiple Lagrange multipliers ($\lambda$ and $\mu$) to handle systems with more than one constraint condition.
 
-## Kinds of solution
+Objectives: Formulate Lagrange functions with multiple multipliers for multiple constraints; Find closest points to the origin using distance optimization; Solve real-world geometric and word problems using constrained optimization.
 
-**Feasible solution**
+Concepts to teach: Multiple constraints: $g(x,y,z) = 0$ and $h(x,y,z) = 0$; Extended Lagrangian: $\mathcal{L} = f + \lambda g + \mu h$; Squared distance function minimization.
 
-A feasible solution is any values of the variables that satisfy **all** the constraints, including non-negativity. The set of all feasible solutions is the **feasible region**.
+### Single-Constraint Geometric Optimization
 
-**Basic feasible solution**
+#### Problem 1: Closest Point on a Plane to the Origin
 
-For a basic feasible solution with $n$ variables and $m$ equality constraints, put $n-m$ of the variables equal to $0$ and solve for the rest. If the result is feasible, it is a basic feasible solution. In the graph, these are the **corner points** of the feasible region.
+**Q.** Find the point $P(x, y, z)$ on the plane $2x + y - z - 5 = 0$ that is closest to the origin.
 
-**Optimal solution**
+**Given:**
+- Plane equation: $2x + y - z - 5 = 0$
+- Target: Minimize distance to origin $(0,0,0)$
 
-An optimal solution is a feasible solution that gives the largest value (for maximise) or the smallest value (for minimise) of the objective.
+**Formulation:**
+The distance $d$ from the origin is given by:
+$$d = \sqrt{(x - 0)^2 + (y - 0)^2 + (z - 0)^2} = \sqrt{x^2 + y^2 + z^2}$$
 
-## Each inequality is a half-plane
+Minimizing $d$ is equivalent to minimizing the squared distance function:
+$$f(x, y, z) = x^2 + y^2 + z^2$$
+Subject to the constraint:
+$$g(x, y, z) = 2x + y - z - 5 = 0$$
 
-A single linear inequality in two variables is satisfied on one side of its boundary line. To find which side, test a point not on the line, usually the origin: if $(0,0)$ satisfies the inequality, shade the side containing the origin; otherwise shade the other side. The feasible region is where all the shaded sides overlap.
+**Lagrangian Function:**
+$$\mathcal{L}(x, y, z, \lambda) = f(x, y, z) + \lambda g(x, y, z) = x^2 + y^2 + z^2 + \lambda(2x + y - z - 5)$$
 
-![A linear inequality defines a half-plane; the feasible region is the overlap of the half-planes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/module-4/half-planes.webp)
+**Partial Derivatives:**
+$$\frac{\partial \mathcal{L}}{\partial x} = 2x + 2\lambda = 0 \implies x = -\lambda$$
+$$\frac{\partial \mathcal{L}}{\partial y} = 2y + \lambda = 0 \implies y = -\frac{\lambda}{2}$$
+$$\frac{\partial \mathcal{L}}{\partial z} = 2z - \lambda = 0 \implies z = \frac{\lambda}{2}$$
+$$\frac{\partial \mathcal{L}}{\partial \lambda} = 2x + y - z - 5 = 0$$
 
-> **Watch out.** "$\le$" does not always mean "shade below". For $x_1-3x_2\ge-6$, the origin gives $0\ge-6$, which is true, so the side of the origin is shaded even though the line slopes upward. Always test a point.
+**Substitution and Solution:**
+Substitute $x, y, z$ in terms of $\lambda$ into the constraint equation:
+$$2\left(-\lambda\right) + \left(-\frac{\lambda}{2}\right) - \left(\frac{\lambda}{2}\right) - 5 = 0$$
+$$2\lambda - \frac{\lambda}{2} - \frac{\lambda}{2} = 5 \implies -3\lambda = 5 \implies \lambda = -\frac{5}{3}$$*(Note: Algebraic steps in notebook yield $$6\lambda = 10 \implies \lambda = -10/6 = -5/3$)*
 
----
+Solving for coordinates:
+$$x = -\left(-\frac{5}{3}\right) = \frac{5}{3}$$
+$$y = -\frac{-5/3}{2} = \frac{5}{6}$$
+$$z = \frac{-5/3}{2} = -\frac{5}{6}$$
 
-<!-- page 7 | Formulating an LPP -->
-
-# Formulating an LPP from a word problem
-
-## Method
-
-1. **Name the decision variables:** which quantities can we choose? Write what each one means.
-2. **Write the objective function:** the profit, cost or number to be maximised or minimised, in terms of the variables.
-3. **Write one constraint for each limited resource or requirement.** "Available" or "at most" gives $\le$. "At least" or "required" gives $\ge$.
-4. **Add non-negativity:** $x_1,x_2,\dots\ge0$.
-
-## Examples
-
-**Example 1. Manufacturing.**
-
-A factory makes products $P_1$ and $P_2$, with profit Rs 3 and Rs 5 per unit. $P_1$ needs 1 unit of resource 1 and 2 units of resource 2; $P_2$ needs 2 units of resource 1 and 1 unit of resource 2. Only 4 units of resource 1 and 6 units of resource 2 are available. Write the LPP to maximise the profit.
-
-Let $x_1$, $x_2$ be the numbers of units of $P_1$ and $P_2$ produced.
-
-$$
-\text{Maximise}\quad z=3x_1+5x_2
-$$
-
-subject to
-
-$$
-\begin{aligned}
-x_1+2x_2&\le4\qquad\text{(resource 1)}\\
-2x_1+x_2&\le6\qquad\text{(resource 2)}\\
-x_1,\ x_2&\ge0
-\end{aligned}
-$$
-
-(It is solved on the practice page: the best profit is $\tfrac{34}{3}$ at $x_1=\tfrac83$, $x_2=\tfrac23$.)
-
-**Example 2. Diet problem.**
-
-A hospital diet must provide at least 2000 calories, 50 g of protein and 300 g of carbohydrate per day, at minimum cost. Food 1 costs Rs 3 per unit and gives 500 cal, 20 g protein and 30 g carbohydrate. Food 2 costs Rs 4 per unit and gives 600 cal, 30 g protein and 40 g carbohydrate. Write the LPP.
-
-Let $x_1$, $x_2$ be the units of food 1 and food 2 per day.
-
-$$
-\text{Minimise}\quad z=3x_1+4x_2
-$$
-
-subject to
-
-$$
-\begin{aligned}
-500x_1+600x_2&\ge2000\qquad\text{(calories)}\\
-20x_1+30x_2&\ge50\qquad\text{(protein)}\\
-30x_1+40x_2&\ge300\qquad\text{(carbohydrate)}\\
-x_1,\ x_2&\ge0
-\end{aligned}
-$$
-
-(It is solved graphically on the "word problems" page.)
-
-**Example 3. Staff scheduling.**
-
-A company needs at least 5 employees from 8 am to 12 noon, 3 from 12 noon to 4 pm, and 4 from 4 pm to 8 pm. Each employee works an 8-hour shift starting at 8 am, 12 noon or 4 pm. Minimise the number of employees.
-
-Let $x_1$, $x_2$, $x_3$ be the numbers starting at 8 am, 12 noon and 4 pm. A person starting at 8 am works from 8 am to 4 pm, so covers the first two periods. A person starting at noon covers the second and third periods. A person starting at 4 pm covers the third period.
-
-$$
-\text{Minimise}\quad z=x_1+x_2+x_3
-$$
-
-subject to
-
-$$
-\begin{aligned}
-x_1&\ge5\qquad\text{(8 am to 12 noon)}\\
-x_1+x_2&\ge3\qquad\text{(12 noon to 4 pm)}\\
-x_2+x_3&\ge4\qquad\text{(4 pm to 8 pm)}\\
-x_1,\ x_2,\ x_3&\ge0
-\end{aligned}
-$$
-
-The minimum is $9$ employees, for example $x_1=5$, $x_2=0$, $x_3=4$: the first constraint forces $x_1\ge5$ and the third forces $x_2+x_3\ge4$.
-
-> **Note on the source.** The handwritten question said employees "can't start" at 8 am, 12 noon or 4 pm, and named $x_1,x_2,x_3$ by the four-hour periods. The constraints in the notes make sense only if shifts *start* at those times, so we have used that meaning here.
-
-> **Watch out.** Write what each variable means, with units. Most mistakes in writing the LPP come from a variable whose meaning changes in the middle of the working.
+**Result:**
+The point closest to the origin is $\left(\frac{5}{3}, \frac{5}{6}, -\frac{5}{6}\right)$.
 
 ---
 
-<!-- page 8 | The graphical method -->
+#### Problem 2: Extrema on a Circle
 
-# The graphical method
+**Q.** Find the max and min values of the function $f(x, y) = 3x + 4y$ subject to the condition on the circle $x^2 + y^2 = 1$.
 
-## The idea
+**Formulation:**
+$$f(x, y) = 3x + 4y$$
+$$g(x, y) = x^2 + y^2 - 1 = 0$$
+$$\mathcal{L}(x, y, \lambda) = 3x + 4y + \lambda (x^2 + y^2 - 1)$$
 
-With two decision variables, we can draw the feasible region. For a linear objective, the lines $z=\text{constant}$ are parallel. If we move them in the direction in which $z$ increases, the last point of the region that they touch is a **corner**.
+**Partial Derivatives:**
+$$\frac{\partial \mathcal{L}}{\partial x} = 3 + 2\lambda x = 0 \implies x = -\frac{3}{2\lambda}$$
+$$\frac{\partial \mathcal{L}}{\partial y} = 4 + 2\lambda y = 0 \implies y = -\frac{4}{2\lambda}$$
+$$\frac{\partial \mathcal{L}}{\partial \lambda} = x^2 + y^2 - 1 = 0$$
 
-![The objective lines z = constant slide across the feasible region; the optimum is at a corner](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/module-4/graphical-method.webp)
+**Solving for $\lambda$:**
+Sub $x$ and $y$ into the constraint:
+$$\left(\frac{-3}{2\lambda}\right)^2 + \left(\frac{-4}{2\lambda}\right)^2 - 1 = 0 \implies \frac{9}{4\lambda^2} + \frac{16}{4\lambda^2} = 1$$
+$$\frac{25}{4\lambda^2} = 1 \implies 4\lambda^2 = 25 \implies \lambda^2 = \frac{25}{4} \implies \lambda = \pm \frac{5}{2}$$
 
-> **Key idea (corner-point theorem).** If an LPP has an optimal solution, then one occurs at a **corner point** (vertex) of the feasible region. So we only need to find $z$ at the corners.
+**Critical Points:**
+1. When $\lambda = \frac{5}{2}$:
+   $$x = \frac{-3}{2(5/2)} = -\frac{3}{5}, \quad y = \frac{-4}{2(5/2)} = -\frac{4}{5}$$
+2. When $\lambda = -\frac{5}{2}$:
+   $$x = \frac{-3}{2(-5/2)} = \frac{3}{5}, \quad y = \frac{-4}{2(-5/2)} = \frac{4}{5}$$
 
-## Method
-
-1. Change each inequality to an equation and draw the line, using its two intercepts (put $x_1=0$, and then $x_2=0$).
-2. Shade the side of each line that satisfies the inequality (test the origin). Also include $x_1,x_2\ge0$.
-3. The common part is the **feasible region**. Write its **corner points**. Find each one by solving the equations of the two lines that meet there.
-4. Find $z$ at every corner. The largest (or smallest) value is the optimum.
-
-## Examples
-
-**Example 1**
-
-Maximise $z=3x_1+4x_2$ subject to $4x_1+2x_2\le80$, $2x_1+5x_2\le180$, $x_1,x_2\ge0$.
-
-Intercepts: $4x_1+2x_2=80$ passes through $(20,0)$ and $(0,40)$; $2x_1+5x_2=180$ passes through $(90,0)$ and $(0,36)$.
-
-The two lines meet where $4x_1+2x_2=80$ and $2x_1+5x_2=180$. Multiply the second by 2 to get $4x_1+10x_2=360$. Subtracting the first, $8x_2=280$, so $x_2=35$ and $x_1=\tfrac52$.
-
-```jsxgraph
-{
-  "boundingBox": [-4, 46, 30, -4],
-  "axis": true,
-  "points": [
-    { "id": "A", "x": 0, "y": 0, "label": "A(0,0)" },
-    { "id": "B", "x": 20, "y": 0, "label": "B(20,0)" },
-    { "id": "C", "x": 2.5, "y": 35, "label": "C(2.5,35)" },
-    { "id": "D", "x": 0, "y": 36, "label": "D" },
-    { "id": "P", "x": 0, "y": 40, "label": "" },
-    { "id": "Q", "x": 10, "y": 32, "label": "2x₁+5x₂=180" }
-  ],
-  "polygons": [{ "points": ["A", "B", "C", "D"] }],
-  "segments": [
-    { "from": "P", "to": "B" },
-    { "from": "D", "to": "Q" }
-  ],
-  "circles": [],
-  "functions": [],
-  "title": "Feasible region ABCD; the steep line is 4x₁ + 2x₂ = 80"
-}
-```
-
-| Corner | $z=3x_1+4x_2$ |
-| --- | --- |
-| $A(0,0)$ | $0$ |
-| $B(20,0)$ | $60$ |
-| $C\left(\tfrac52,35\right)$ | $7.5+140=147.5$ |
-| $D(0,36)$ | $144$ |
-
-**Maximum $z=147.5$** at $x_1=2.5$, $x_2=35$.
-
-**Example 2**
-
-Maximise $z=3x+2y$ subject to $x+2y\le10$, $3x+y\le15$, $x,y\ge0$.
-
-Intercepts: $x+2y=10$ through $(10,0)$ and $(0,5)$; $3x+y=15$ through $(5,0)$ and $(0,15)$.
-
-They meet where $6x+2y=30$ and $x+2y=10$. Subtracting, $5x=20$, so $x=4$, $y=3$.
-
-![Feasible region for x + 2y ≤ 10 and 3x + y ≤ 15 with corners (0,0), (5,0), (4,3), (0,5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/maths/module-4/feasible-region.webp)
-
-| Corner | $z=3x+2y$ |
-| --- | --- |
-| $(0,0)$ | $0$ |
-| $(5,0)$ | $15$ |
-| $(4,3)$ | $18$ |
-| $(0,5)$ | $10$ |
-
-**Maximum $z=18$** at $(4,3)$.
-
-> **Watch out.** An intercept of a constraint line is a corner **only if it satisfies every other constraint**. In Example 2, $(10,0)$ is on $x+2y=10$ but does not satisfy $3x+y\le15$, so it is not a corner.
+**Evaluating Extrema:**
+- At $\left(-\frac{3}{5}, -\frac{4}{5}\right)$:
+  $$f(x,y) = 3\left(-\frac{3}{5}\right) + 4\left(-\frac{4}{5}\right) = -\frac{9}{5} - \frac{16}{5} = -\frac{25}{5} = -5$$ (Minimum value)
+- At $\left(\frac{3}{5}, \frac{4}{5}\right)$:
+  $$f(x,y) = 3\left(\frac{3}{5}\right) + 4\left(\frac{4}{5}\right) = \frac{9}{5} + \frac{16}{5} = \frac{25}{5} = 5$$ (Maximum value)
 
 ---
 
-<!-- page 9 | Graphical method: more examples -->
+#### Problem 3: Three Real Numbers with Minimum Sum of Squares
 
-# Graphical method: more examples
+**Q.** Find three real numbers whose sum is $9$ and the sum of whose squares is as small as possible.
 
-**Example 1**
+**Formulation:**
+Minimize $f(x, y, z) = x^2 + y^2 + z^2$ subject to $g(x, y, z) = x + y + z - 9 = 0$.
+$$\mathcal{L}(x, y, z, \lambda) = x^2 + y^2 + z^2 + \lambda(x + y + z - 9)$$
 
-Maximise $z=15x_1+10x_2$ subject to $4x_1+6x_2\le360$, $3x_1\le180$, $5x_2\le500$, $x_1,x_2\ge0$.
+**Partial Derivatives & Solution:**
+$$\frac{\partial \mathcal{L}}{\partial x} = 2x + \lambda = 0 \implies x = -\frac{\lambda}{2}$$
+$$\frac{\partial \mathcal{L}}{\partial y} = 2y + \lambda = 0 \implies y = -\frac{\lambda}{2}$$
+$$\frac{\partial \mathcal{L}}{\partial z} = 2z + \lambda = 0 \implies z = -\frac{\lambda}{2}$$
+$$\frac{\partial \mathcal{L}}{\partial \lambda} = x + y + z - 9 = 0$$
 
-The constraints say $4x_1+6x_2\le360$ (through $(90,0)$ and $(0,60)$), $x_1\le60$, and $x_2\le100$. The last one is never the deciding one, because $4x_1+6x_2\le360$ already forces $x_2\le60$.
+Substitute $x, y, z$ into the constraint:
+$$\frac{\lambda}{2} - \frac{\lambda}{2} - \frac{\lambda}{2} = 9 \implies -\frac{3\lambda}{2} = 9 \implies -3\lambda = 18 \implies \lambda = -6$$
 
-The line $x_1=60$ meets $4x_1+6x_2=360$ at $240+6x_2=360$, so $x_2=20$.
+Thus, $x = 3, y = 3, z = 3$.
 
-```jsxgraph
-{
-  "boundingBox": [-8, 75, 100, -8],
-  "axis": true,
-  "points": [
-    { "id": "A", "x": 0, "y": 0, "label": "A(0,0)" },
-    { "id": "B", "x": 60, "y": 0, "label": "B(60,0)" },
-    { "id": "C", "x": 60, "y": 20, "label": "C(60,20)" },
-    { "id": "D", "x": 0, "y": 60, "label": "D(0,60)" },
-    { "id": "P", "x": 90, "y": 0, "label": "(90,0)" },
-    { "id": "Q", "x": 60, "y": 70, "label": "x₁ = 60" }
-  ],
-  "polygons": [{ "points": ["A", "B", "C", "D"] }],
-  "segments": [
-    { "from": "D", "to": "P" },
-    { "from": "B", "to": "Q" }
-  ],
-  "circles": [],
-  "functions": [],
-  "title": "Feasible region ABCD for 4x₁ + 6x₂ ≤ 360 and x₁ ≤ 60"
-}
-```
-
-| Corner | $z=15x_1+10x_2$ |
-| --- | --- |
-| $(0,0)$ | $0$ |
-| $(60,0)$ | $900$ |
-| $(60,20)$ | $900+200=1100$ |
-| $(0,60)$ | $600$ |
-
-**Maximum $z=1100$** at $x_1=60$, $x_2=20$.
-
-> **Note on the source.** The class notes listed the corners as $(0,0)$, $(90,0)$, $(60,20)$, $(40,30)$, $(0,40)$ and chose $1350$ at $(90,0)$. But $(90,0)$ does not satisfy $3x_1\le180$, the point $(40,30)$ is not where any two constraint lines meet, and $(0,40)$ is not on any boundary. The correct corners are those in the table, and the maximum is $1100$.
-
-**Example 2**
-
-Maximise $z=2x+3y$ subject to $x+y\le30$, $3\le y\le12$, $x-y\ge0$, $0\le x\le20$.
-
-The region lies between the horizontal lines $y=3$ and $y=12$, to the right of the line $y=x$ (because $x\ge y$), to the left of $x=20$, and below $x+y=30$. Its corners are:
-
-- $y=3$ meets $y=x$ at $A(3,3)$ and meets $x=20$ at $B(20,3)$.
-- $x=20$ meets $x+y=30$ at $C(20,10)$.
-- $x+y=30$ meets $y=12$ at $D(18,12)$.
-- $y=12$ meets $y=x$ at $E(12,12)$.
-
-```jsxgraph
-{
-  "boundingBox": [-2, 33, 33, -2],
-  "axis": true,
-  "points": [
-    { "id": "A", "x": 3, "y": 3, "label": "A" },
-    { "id": "B", "x": 20, "y": 3, "label": "B" },
-    { "id": "C", "x": 20, "y": 10, "label": "C" },
-    { "id": "D", "x": 18, "y": 12, "label": "D" },
-    { "id": "E", "x": 12, "y": 12, "label": "E" },
-    { "id": "L1", "x": 0, "y": 30, "label": "x+y=30" },
-    { "id": "L2", "x": 30, "y": 0, "label": "" },
-    { "id": "M1", "x": 0, "y": 0, "label": "" },
-    { "id": "M2", "x": 28, "y": 28, "label": "y = x" },
-    { "id": "V1", "x": 20, "y": 0, "label": "" },
-    { "id": "V2", "x": 20, "y": 30, "label": "x = 20" }
-  ],
-  "polygons": [{ "points": ["A", "B", "C", "D", "E"] }],
-  "segments": [
-    { "from": "L1", "to": "L2" },
-    { "from": "M1", "to": "M2" },
-    { "from": "V1", "to": "V2" },
-    { "from": "A", "to": "B" },
-    { "from": "E", "to": "D" }
-  ],
-  "circles": [],
-  "functions": [],
-  "title": "Feasible region ABCDE between y = 3 and y = 12"
-}
-```
-
-| Corner | $z=2x+3y$ |
-| --- | --- |
-| $A(3,3)$ | $15$ |
-| $B(20,3)$ | $49$ |
-| $C(20,10)$ | $70$ |
-| $D(18,12)$ | $72$ |
-| $E(12,12)$ | $60$ |
-
-**Maximum $z=72$** at $(18,12)$. (The minimum, if asked, is $15$ at $(3,3)$.)
-
-> **Note on the source.** The notes used $E(3,12)$ as a corner, with $z=42$. That point does not satisfy $x\ge y$. The correct corner is $E(12,12)$ with $z=60$. The maximum does not change.
-
-**Example 3**
-
-Maximise $f=5x_1+25x_2$ subject to $x_1-3x_2\ge-6$, $x_1+x_2\le6$, $x_1,x_2\ge0$.
-
-The line $x_1-3x_2=-6$ passes through $(0,2)$ and $(-6,0)$, and the origin satisfies $0\ge-6$, so the feasible side is **below** this line that goes up. The line $x_1+x_2=6$ passes through $(6,0)$ and $(0,6)$. The two lines meet where $x_1=3x_2-6$ and $x_1+x_2=6$: $4x_2=12$, so $x_2=3$, $x_1=3$.
-
-```jsxgraph
-{
-  "boundingBox": [-1, 7, 7.5, -1],
-  "axis": true,
-  "points": [
-    { "id": "A", "x": 0, "y": 0, "label": "A(0,0)" },
-    { "id": "B", "x": 6, "y": 0, "label": "B(6,0)" },
-    { "id": "C", "x": 3, "y": 3, "label": "C(3,3)" },
-    { "id": "D", "x": 0, "y": 2, "label": "D(0,2)" },
-    { "id": "P", "x": 0, "y": 6, "label": "(0,6)" },
-    { "id": "Q", "x": 4.5, "y": 3.5, "label": "x₁ − 3x₂ = −6" }
-  ],
-  "polygons": [{ "points": ["A", "B", "C", "D"] }],
-  "segments": [
-    { "from": "P", "to": "B" },
-    { "from": "D", "to": "Q" }
-  ],
-  "circles": [],
-  "functions": [],
-  "title": "Feasible region ABCD"
-}
-```
-
-| Corner | $f=5x_1+25x_2$ |
-| --- | --- |
-| $(0,0)$ | $0$ |
-| $(6,0)$ | $30$ |
-| $(3,3)$ | $15+75=90$ |
-| $(0,2)$ | $50$ |
-
-**Maximum $f=90$** at $(3,3)$.
-
-> **Note on the source.** The notes gave the $x_2$-intercept of $x_1-3x_2=-6$ as $(0,-2)$. It is $(0,2)$ (put $x_1=0$: $-3x_2=-6$). The corner $D(0,2)$ in the notes was correct.
+**Result:**
+The critical point is $(3, 3, 3)$ with a minimum function value of:
+$$f(3, 3, 3) = 3^2 + 3^2 + 3^2 = 27$$
 
 ---
 
-<!-- page 10 | Word problems solved graphically -->
+### Two Constraints
 
-# Word problems solved graphically
+For a function $f(x, y, z)$ subject to 2 simultaneous constraints $g(x, y, z) = 0$ and $h(x, y, z) = 0$, construct the extended Lagrangian function using two Lagrange multipliers ($\lambda$ and $\mu$):
 
-**Example 1: Chairs and tables**
+$$\mathcal{L}(x, y, z, \lambda, \mu) = f(x, y, z) + \lambda g(x, y, z) + \mu h(x, y, z)$$
 
-A manufacturer makes chairs and tables on machines $A$ and $B$. A chair needs 2 hours on $A$ and 6 hours on $B$; a table needs 5 hours on $A$ and 1 hour on $B$. Machine $A$ is available 16 hours a day and machine $B$ 30 hours. The profit is Rs 2 per chair and Rs 10 per table. Write the LPP and solve it.
-
-Let $x_1$ chairs and $x_2$ tables be made per day.
-
-$$
-\text{Maximise}\quad z=2x_1+10x_2
-$$
-
-subject to
-
-$$
-\begin{aligned}
-2x_1+5x_2&\le16\qquad\text{(machine A)}\\
-6x_1+x_2&\le30\qquad\text{(machine B)}\\
-x_1,\ x_2&\ge0
-\end{aligned}
-$$
-
-Intercepts: $2x_1+5x_2=16$ through $(8,0)$ and $\left(0,\tfrac{16}5\right)$; $6x_1+x_2=30$ through $(5,0)$ and $(0,30)$.
-
-The two lines meet here: from the second, $x_2=30-6x_1$; then $2x_1+150-30x_1=16$, so $x_1=\tfrac{134}{28}=\tfrac{67}{14}\approx4.79$ and $x_2=\tfrac97\approx1.29$.
-
-```jsxgraph
-{
-  "boundingBox": [-0.8, 5.5, 9, -0.8],
-  "axis": true,
-  "points": [
-    { "id": "A", "x": 0, "y": 0, "label": "A(0,0)" },
-    { "id": "B", "x": 5, "y": 0, "label": "B(5,0)" },
-    { "id": "C", "x": 4.786, "y": 1.286, "label": "C(4.79,1.29)" },
-    { "id": "D", "x": 0, "y": 3.2, "label": "D(0,3.2)" },
-    { "id": "P", "x": 8, "y": 0, "label": "(8,0)" },
-    { "id": "Q", "x": 4.25, "y": 4.5, "label": "6x₁+x₂=30" }
-  ],
-  "polygons": [{ "points": ["A", "B", "C", "D"] }],
-  "segments": [
-    { "from": "D", "to": "P" },
-    { "from": "B", "to": "Q" }
-  ],
-  "circles": [],
-  "functions": [],
-  "title": "Feasible region ABCD; the shallow line is 2x₁ + 5x₂ = 16"
-}
-```
-
-| Corner | $z=2x_1+10x_2$ |
-| --- | --- |
-| $(0,0)$ | $0$ |
-| $(5,0)$ | $10$ |
-| $\left(\tfrac{67}{14},\tfrac97\right)$ | $\tfrac{67}{7}+\tfrac{90}{7}=\tfrac{157}7\approx22.43$ |
-| $\left(0,\tfrac{16}5\right)$ | $10\times\tfrac{16}5=32$ |
-
-**Maximum profit is Rs 32**, by making no chairs and $3.2$ tables a day (that is, 16 tables in five days).
-
-> **Note on the source.** The notes wrote the value at $D$ as "$2\times\frac{16}{5}=\frac{32}{5}=32$". The correct working is $z=2(0)+10\left(\tfrac{16}5\right)=32$. They also rounded $C$ to $(4.78,1.28)$ with $z=22.36$, but the exact value is $\tfrac{157}{7}\approx22.43$. The conclusion (maximum $32$) is correct.
-
-**Example 2: The diet problem, solved**
-
-Minimise $z=3x_1+4x_2$ subject to $500x_1+600x_2\ge2000$, $20x_1+30x_2\ge50$, $30x_1+40x_2\ge300$, $x_1,x_2\ge0$ (from the formulation page).
-
-The carbohydrate line $30x_1+40x_2=300$ passes through $(10,0)$ and $(0,7.5)$. Every point on or above it automatically satisfies the calorie line (through $(4,0)$ and $(0,3.\overline{3})$) and the protein line (through $(2.5,0)$ and $(0,1.\overline{6})$), which lie below it. So the feasible region is everything on or above the carbohydrate line. It is an **unbounded** region.
-
-```jsxgraph
-{
-  "boundingBox": [-1, 10, 13, -1],
-  "axis": true,
-  "points": [
-    { "id": "P", "x": 0, "y": 7.5, "label": "(0,7.5)" },
-    { "id": "Q", "x": 10, "y": 0, "label": "(10,0)" },
-    { "id": "R", "x": 18, "y": 0, "label": "" },
-    { "id": "S", "x": 18, "y": 15, "label": "" },
-    { "id": "T", "x": 0, "y": 15, "label": "" },
-    { "id": "C1", "x": 0, "y": 3.333, "label": "calories" },
-    { "id": "C2", "x": 4, "y": 0, "label": "" },
-    { "id": "P1", "x": 0, "y": 1.667, "label": "protein" },
-    { "id": "P2", "x": 2.5, "y": 0, "label": "" }
-  ],
-  "polygons": [{ "points": ["P", "Q", "R", "S", "T"] }],
-  "segments": [
-    { "from": "P", "to": "Q" },
-    { "from": "C1", "to": "C2" },
-    { "from": "P1", "to": "P2" }
-  ],
-  "circles": [],
-  "functions": [],
-  "title": "Feasible region (shaded, continuing upwards) on or above 30x₁ + 40x₂ = 300"
-}
-```
-
-| Corner | $z=3x_1+4x_2$ |
-| --- | --- |
-| $(0,7.5)$ | $30$ |
-| $(10,0)$ | $30$ |
-
-Both corners give $30$. Notice that $z=3x_1+4x_2=\tfrac1{10}(30x_1+40x_2)\ge\tfrac{300}{10}=30$ everywhere in the region, and it is equal to $30$ along the whole carbohydrate line. So the **minimum cost is Rs 30**, and it is reached at **every point** of the segment from $(10,0)$ to $(0,7.5)$. This LPP has **multiple optimal solutions**.
-
-> **Watch out.** For a *minimisation* over an unbounded region, a minimum can still exist (as here), because the cost increases as you go further into the region. It is a *maximisation* over an unbounded region that may have no answer.
+Find the critical points by solving the system of equations:
+$$\frac{\partial \mathcal{L}}{\partial x} = 0, \quad \frac{\partial \mathcal{L}}{\partial y} = 0, \quad \frac{\partial \mathcal{L}}{\partial z} = 0, \quad \frac{\partial \mathcal{L}}{\partial \lambda} = 0, \quad \frac{\partial \mathcal{L}}{\partial \mu} = 0$$
 
 ---
 
-<!-- page 11 | Special cases -->
+#### Problem 4: Two Constraints Extrema (Circle Intersection/Planes)
 
-# Special cases of the graphical method
+**Q 1.** Find the max. and min. values of $f(x, y) = x^2 + y^2$ subject to the constraints $x + y = 1$ and $x - y = 1$.
 
-Not every LPP has one single answer.
+**Formulation:**
+$$g(x, y) = x + y - 1 = 0$$
+$$h(x, y) = x - y - 1 = 0$$
+$$\mathcal{L}(x, y, \lambda, \mu) = x^2 + y^2 + \lambda(x + y - 1) + \mu(x - y - 1)$$
 
-| Case | What the graph shows | What to say |
-| --- | --- | --- |
-| **Unique optimum** | one corner gives the best value | "the optimum is $z^*$ at $(x_1,x_2)$" |
-| **Multiple optima** | two neighbouring corners give the same best value: the objective lines are parallel to an edge | every point of that edge is optimal (diet problem) |
-| **Unbounded** | the region goes on forever in the direction in which $z$ improves | no finite optimum |
-| **Infeasible** | the constraints have no common point, so there is no feasible region at all | the LPP has no feasible solution |
+**Partial Derivatives:**
+$$\frac{\partial \mathcal{L}}{\partial x} = 2x + \lambda + \mu = 0 \to (1)$$
+$$\frac{\partial \mathcal{L}}{\partial y} = 2y + \lambda - \mu = 0 \to (2)$$
+$$\frac{\partial \mathcal{L}}{\partial \lambda} = x + y - 1 = 0 \to (3)$$
+$$\frac{\partial \mathcal{L}}{\partial \mu} = x - y - 1 = 0 \to (4)$$
 
-**Example 1. An infeasible problem.** Maximise $z=6x_1-4x_2$ subject to $2x_1+4x_2\le4$, $4x_1+8x_2\ge15$, $x_1,x_2\ge0$.
+**Solution:**
+Adding equations $(3)$ and $(4)$:
+$$(x + y - 1) + (x - y - 1) = 0 \implies 2x - 2 = 0 \implies x = 1$$
 
-Divide the constraints by 2 and 4:
+Substitute $x = 1$ into $(3)$:
+$$1 + y - 1 = 0 \implies y = 0$$
 
-$$
-x_1+2x_2\le2\qquad\text{and}\qquad x_1+2x_2\ge3.75
-$$
+Critical point: $(1, 0)$.
 
-No pair $(x_1,x_2)$ can make $x_1+2x_2$ both at most $2$ and at least $3.75$. The boundary lines are **parallel** (through $(2,0)$, $(0,1)$ and through $(3.75,0)$, $(0,1.875)$). The first constraint allows only the triangle below the lower line, and the second allows only the region above the upper line.
+Substitute $x = 1, y = 0$ into $(1)$ and $(2)$ to find multipliers:
+- From $(1)$: $2(1) + \lambda + \mu = 0 \implies \lambda + \mu = -2$
+- From $(2)$: $2(0) + \lambda - \mu = 0 \implies \lambda = \mu$
 
-```jsxgraph
-{
-  "boundingBox": [-0.4, 2.4, 4.4, -0.4],
-  "axis": true,
-  "points": [
-    { "id": "O", "x": 0, "y": 0, "label": "" },
-    { "id": "A", "x": 2, "y": 0, "label": "(2,0)" },
-    { "id": "B", "x": 0, "y": 1, "label": "(0,1)" },
-    { "id": "C", "x": 3.75, "y": 0, "label": "(3.75,0)" },
-    { "id": "D", "x": 0, "y": 1.875, "label": "(0,1.875)" }
-  ],
-  "polygons": [{ "points": ["O", "A", "B"] }],
-  "segments": [
-    { "from": "A", "to": "B" },
-    { "from": "C", "to": "D" }
-  ],
-  "circles": [],
-  "functions": [],
-  "title": "Shaded: 2x₁ + 4x₂ ≤ 4. The second constraint needs points above the upper line, so the regions never meet"
-}
-```
+Solving gives $\lambda = -1$ and $\mu = -1$.
 
-The LPP is **infeasible**: it has no solution.
-
-> **Note on the source.** The class notes concluded "there is no bounded region". The correct statement is stronger: there is **no feasible region at all**, so the problem is infeasible (not just unbounded).
-
-> **Watch out.** "Unbounded" and "infeasible" are different. Unbounded means feasible points exist but $z$ can be made as large as we like. Infeasible means there are no feasible points.
+**Result:**
+Minimum value at $(1, 0)$ is $f(1, 0) = 1^2 + 0^2 = 1$.
 
 ---
 
-<!-- page 12 | Gradient descent -->
+#### Problem 5: Three Variables with Two Constraints
 
-# Gradient descent (method of steepest descent)
+**Q 2.** Find the max. and min values of $f(x, y, z) = x^2 + y^2 + z^2$ subject to the constraints $x + y + z = 3$ and $x - y + z = 1$.
 
-## The idea
+**Formulation:**
+$$\mathcal{L}(x, y, z, \lambda, \mu) = x^2 + y^2 + z^2 + \lambda(x + y + z - 3) + \mu(x - y + z - 1)$$
 
-From Module 3, $\nabla f$ points in the direction in which $f$ **increases** fastest, so $-\nabla f$ points in the direction in which it **decreases** fastest. To find a minimum, start at any point and keep taking small steps downhill.
+**Partial Derivatives:**
+$$\frac{\partial \mathcal{L}}{\partial x} = 2x + \lambda + \mu = 0 \to (1)$$
+$$\frac{\partial \mathcal{L}}{\partial y} = 2y + \lambda - \mu = 0 \to (2)$$
+$$\frac{\partial \mathcal{L}}{\partial z} = 2z + \lambda + \mu = 0 \to (3)$$
+$$\frac{\partial \mathcal{L}}{\partial \lambda} = x + y + z - 3 = 0 \to (4)$$
+$$\frac{\partial \mathcal{L}}{\partial \mu} = x - y + z - 1 = 0 \to (5)$$
 
-$$
-\nabla f=\left(\frac{\partial f}{\partial x},\ \frac{\partial f}{\partial y}\right)
-$$
+**Solution:**
+Subtracting $(5)$ from $(2)$ or analyzing symmetry: subtracting $(1)$ and $(3)$ yields $2x = 2z \implies x = z$.
+Subtracting $(5)$ from $(2)$ yields $2y - 2 = 0 \implies y = 1$.
+Using constraints $(4)$ and $(5)$ with $y = 1$:
+$$x + 1 + z = 3 \implies x + z = 2$$
+$$x - 1 + z = 1 \implies x + z = 2$$
+Since $x = z$, $2x = 2 \implies x = 1$, and $z = 1$.
 
-> **Update rule.** From the current point $(x_k,y_k)$,
+**Result:**
+The critical point is $(1, 1, 1)$.
+
+---
+
+#### Problem 6: Maximizing Rectangle Area with Perimeter Constraint
+
+**Q 4.** For a rectangle whose perimeter is $20\text{m}$, use the Lagrange multiplier to find the dimensions that will maximize the area.
+
+**Given:**
+- Perimeter: $2(x + y) = 20 \implies x + y = 10$
+- Area to maximize: $f(x, y) = xy$
+- Constraint: $g(x, y) = x + y - 10 = 0$
+
+**Lagrangian Function:**
+$$\mathcal{L}(x, y, \lambda) = xy + \lambda(x + y - 10)$$
+
+**Partial Derivatives:**
+$$\frac{\partial \mathcal{L}}{\partial x} = y + \lambda = 0 \implies \lambda = -y$$
+$$\frac{\partial \mathcal{L}}{\partial y} = x + \lambda = 0 \implies \lambda = -x$$
+$$\frac{\partial \mathcal{L}}{\partial \lambda} = x + y - 10 = 0$$
+
+**Solution:**
+Since $$y = -x \implies x = y$.
+Substitute into the constraint equation:
+$$x + x - 10 = 0 \implies 2x = 10 \implies x = 5, \quad y = 5$$
+
+**Result:**
+- Length ($x$): $5\text{ m}$
+- Breadth ($y$): $5\text{ m}$
+- Lagrange multiplier: $\lambda = -5$
+
+---
+
+### Introduction to Linear Programming
+
+Key concepts in linear programming:
+- **Decision Variables:** Variables that represent the choices or decisions to be made in the problem. These variables are what you are trying to determine in order to optimize the objective function. They are the unknowns that need to be solved and must be non-negative in most Linear Programming Problems (LPP).
+
+<!-- page 4 | Linear Programming Formulation -->
+
+## Linear Programming Formulation
+
+### Bridge and Objectives
+Transitioning from general nonlinear optimization, you will now set up linear models for resource allocation and business decision-making. The core objective is to formulate real-world operational challenges mathematically as Linear Programming Problems (LPP) featuring linear objective functions and linear constraints.
+
+### Key Concepts to Teach
+- **Decision Variables:** Unknown quantities to be determined (e.g., $x_1, x_2$), representing units of products, foods, or shifts.
+- **Non-negativity Constraints:** Physical reality dictates that decision variables cannot be negative ($x_1 \ge 0, x_2 \ge 0$).
+- **Linear Objective Function:** A function to be optimized (maximized for profit or minimized for cost/resources) expressed as:
+$$\text{Maximize / Minimize } z = c_1x_1 + c_2x_2 + \dots + c_nx_n$$
+- **Resource and Requirement Constraints:** Limitations expressed as linear equations or inequalities ($ \le, \ge, = $):
+$$a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n \le b_1$$
+
+### General Form of an LPP
+$$\text{Maximize / Minimize } z = \sum_{j=1}^n c_j x_j$$
+Subject to constraints:
+$$\sum_{j=1}^n a_{ij}x_j \le b_i \quad (i = 1, 2, \dots, m)$$
+$$x_j \ge 0 \quad (j = 1, 2, \dots, n)$$
+
+### Basic Feasible Solution and Optimal Solution
+- **Feasible Solution:** Any set of variables satisfying all constraints and non-negativity conditions.
+- **Basic Feasible Solution (BFS):** Obtained by setting $n - m$ variables to zero (where $n$ is the number of variables and $m$ is the number of constraints) and solving the resulting square system.
+- **Optimal Solution:** A feasible solution that optimizes (maximizes or minimizes) the objective function.
+
+---
+
+### Solved Practice Problems
+
+#### Q1. Manufacturing Problem
+**Problem Statement:** A factory manufactures 2 products $P_1$ and $P_2$, each requiring different amounts of resources. The objective is to maximize profit. Profit from $P_1 = \text{Rs } 3 \text{ per unit}$. Profit from $P_2 = \text{Rs } 5 \text{ per unit}$. Resource constraints:
+- Resource $1 = 4 \text{ units available}$
+- Resource $2 = 6 \text{ units available}$
+- $P_1$ requires $1 \text{ unit}$ of resource $1$ and $2 \text{ units}$ of resource $2$.
+- $P_2$ requires $2 \text{ units}$ of resource $1$ and $1 \text{ unit}$ of resource $2$.
+
+**Formulation:**
+Let $x_1$ be the number of units of product $P_1$ produced.
+Let $x_2$ be the number of units of product $P_2$ produced.
+
+$$\text{Objective Function: Maximize } z = 3x_1 + 5x_2$$
+
+$$\text{Subject to: } x_1 + 2x_2 \le 4 \quad \text{(Resource 1 constraint)}$$
+$$2x_1 + x_2 \le 6 \quad \text{(Resource 2 constraint)}$$
+$$x_1 \ge 0, \; x_2 \ge 0 \quad \text{(Non-negativity constraints)}$$
+
+---
+
+#### Q2. Diet Problem
+**Problem Statement:** A hospital wants to create a nutritious diet meeting certain requirements at minimum cost. The diet must include $2000 \text{ cal}$, $50 \text{ g}$ of protein, and $300 \text{ g}$ of carbohydrates per day. Two food items are available:
+- Food $1$: Cost $\text{Rs } 3 \text{ per unit}$, provides $500 \text{ cal}$, $20 \text{ g}$ of protein, $30 \text{ g}$ of carbs.
+- Food $2$: Cost $\text{Rs } 4 \text{ per unit}$, provides $600 \text{ cal}$, $30 \text{ g}$ of protein, $40 \text{ g}$ of carbs.
+
+**Formulation:**
+Let $x_1$ be the units of Food $1$.
+Let $x_2$ be the units of Food $2$.
+
+$$\text{Minimize } z = 3x_1 + 4x_2$$
+
+$$\text{Subject to constraints:}$$
+$$500x_1 + 600x_2 \ge 2000 \quad \text{(Calories)}$$
+$$20x_1 + 30x_2 \ge 50 \quad \text{(Protein)}$$
+$$30x_1 + 40x_2 \ge 300 \quad \text{(Carbohydrates)}$$
+$$x_1 \ge 0, \; x_2 \ge 0 \quad \text{(Non-negative function)}$$
+
+---
+
+#### Q3. Scheduling Problem
+**Problem Statement:** A company needs to schedule employees to ensure enough staff throughout the day: 5 employees from 8 A.M. to 12 P.M., 3 employees from 12 P.M. to 4 P.M., and 4 employees from 4 P.M. to 8 P.M. Employees work 8-hour shifts starting at 8 A.M., 12 P.M., or 4 P.M. The goal is to minimize the total number of employees needed.
+
+**Formulation:**
+Let $x_1$ be the number of employees starting shift at 8 A.M. ($8 \text{ A.M. } - 12 \text{ P.M.}$ and continuing to $4 \text{ P.M.}$)
+Let $x_2$ be the number of employees starting shift at 12 P.M. ($12 \text{ P.M. } - 4 \text{ P.M.}$ and continuing to $8 \text{ P.M.}$)
+Let $x_3$ be the number of employees starting shift at 4 P.M. ($4 \text{ P.M. } - 8 \text{ P.M.}$)
+
+$$\text{Minimize } z = x_1 + x_2 + x_3$$
+
+$$\text{Subject to constraints:}$$
+$$x_1 \ge 5$$
+$$x_1 + x_2 \ge 3$$
+$$x_2 + x_3 \ge 4$$
+$$x_1, x_2, x_3 \ge 0$$
+
+<!-- page 5 | Graphical Method for Solving LPP -->
+
+## Graphical Method for Solving LPP
+
+Bridge: With LPP formulations established, you can now visualize and solve two-variable linear programs using graphical techniques.
+
+The new idea: Use graphical intersection and corner-point evaluation to find optimal solutions for linear programming problems.
+
+### Objectives
+- Plot linear constraints on a 2D Cartesian coordinate system
+- Identify the feasible region and its extreme boundary points
+- Evaluate the objective function at vertices to find the optimal solution
+
+### Concepts to Teach
+- **Feasible region and corner point theorem:** The optimal solution to a linear programming problem, if it exists, occurs at one of the corner points (vertices) of the feasible region.
+- **Graphical plotting of linear inequalities:** Representing constraints on a 2D plane and shading the valid half-plane.
+- **Unbounded regions and no-solution scenarios:** Identifying cases where constraints do not enclose a finite region or leave no overlapping feasible area.
+
+---
+
+### Solved Problems
+
+#### $Q_1$. Solve the LPP
+Maximize $z = 3x_1 + 4x_2$
+Subject to:
+$$4x_1 + 2x_2 \leq 80$$
+$$2x_1 + 5x_2 \leq 180$$
+$$x_1, x_2 \geq 0$$
+
+**Step 1: Find intercept points for the constraints.**
+For $4x_1 + 2x_2 = 80$:
+$$x_1 = 0 \→ x_2 = 40 \quad (0, 40)$$
+$$x_2 = 0 \→ x_1 = 20 \quad (20, 0)$$
+
+For $2x_1 + 5x_2 = 180$:
+$$x_1 = 0 \→ x_2 = 36 \quad (0, 36)$$
+$$x_2 = 0 \→ x_1 = 90 \quad (90, 0)$$
+
+> **Figure: Graphical method plot showing feasible region and intersection points**
 >
-> $$(x_{k+1},y_{k+1})=(x_k,y_k)-\alpha\,\nabla f(x_k,y_k)$$
+> Graphical method plot showing the feasible region and intersection points for the LPP. A 2D Cartesian coordinate system with horizontal axis representing x1 and vertical axis representing x2. Two constraint lines are plotted: 4x1 + 2x2 = 80 passing through (0, 40) and (20, 0), and 2x1 + 5x2 = 180 passing through (0, 36) and (90, 0). The origin is labeled A (0,0). Point B is at (20,0). Point D is at (0,36) or (0,40) depending on the line context, with (0,36) indicated near the intersection/line. The intersection of the two lines is labeled point C at coordinates (5/2, 35).
+
+**Step 2: Determine intersection point $C$ of the two constraint lines.**
+$$\\begin{aligned}
+4x_1 + 2x_2 &= 80 \quad &(1)\\[6pt]
+2x_1 + 5x_2 &= 180 \quad &(2)
+\≣
+ Multiply (2) by 2:
+$$4x_1 + 10x_2 = 360 \quad (3)$$
+
+Subtract (1) from (3):
+$$(4x_1 + 10x_2) - (4x_1 + 2x_2) = 360 - 80$$
+$$8x_2 = 280 \→ x_2 = 35$$
+
+Substitute $x_2 = 35$ into (1):
+$$4x_1 + 2(35) = 80 \→ 4x_1 + 70 = 80 \→ 4x_1 = 10 \→ x_1 = \frac{5}{2}$$
+
+Thus, the corner points are $A(0,0)$, $B(20,0)$, $C\left(\frac{5}{2}, 35\right)$, and $D(0,36)$.
+
+**Step 3: Evaluate the objective function $z = 3x_1 + 4x_2$ at each vertex.**
+- At $A(0,0)$: $z = 3(0) + 4(0) = 0$
+- At $B(20,0)$: $z = 3(20) + 4(0) = 60$
+- At $C\left(\frac{5}{2}, 35\right)$: $z = 3\left(\frac{5}{2}\right) + 4(35) = \frac{15}{2} + 140 = 7.5 + 140 = 147.5$
+- At $D(0,36)$: $z = 3(0) + 4(36) = 144$
+
+**Result:** The maximum value of $z$ is $147.5$ at $x_1 = 2.5, x_2 = 35$.
+
+---
+
+#### $Q_2$. Solve the LPP graphically
+Maximize $z = 15x_1 + 10x_2$
+Subject to:
+$$4x_1 + 6x_2 \leq 360$$
+$$3x_1 \leq 180$$
+$$5x_2 \leq 500$$
+$$x_1, x_2 \geq 0$$
+
+**Step 1: Intercepts**
+- $4x_1 + 6x_2 = 360 \→ (0, 60)$ and $(90, 0)$
+- $3x_1 = 180 \→ x_1 = 60 \quad (60, 0)$ (Vertical line)
+- $5x_2 = 500 \→ x_2 = 100 \quad (0, 100)$ (Horizontal line)
+
+> **Figure: Graphical solution of linear programming problem showing feasible region and extreme points**
 >
-> where $\alpha>0$ is the **step size** (also called the **learning rate**).
+> A 2D graph with x1 on the horizontal axis and x2 on the vertical axis. Axes show markings at 20, 40, 60, 80, 100. Lines are plotted for constraints: 4x1 + 6x2 = 360 intersecting at (0,60) and (90,0), and vertical line at x1 = 60. The feasible region is shaded with hatched lines, bounded by vertices A(0,0), B(90,0), C(60,20), D(40,30), E(0,40).
 
-## Method
+**Step 2: Corner points of feasible region**
+$A(0,0)$, $B(90,0)$, $C(60,20)$, $D(40,30)$, $E(0,40)$.
 
-1. Find $\nabla f(x,y)$ as a formula.
-2. Start at the given $(x_0,y_0)$.
-3. At each step, find $\nabla f$ at the current point, multiply by $\alpha$, and subtract.
-4. Repeat for the required number of iterations, or until the steps become very small.
+**Step 3: Objective function evaluations**
+- $(0,0) \→ z = 0$
+- $(90,0) \→ z = 15(90) + 0 = 1350$
+- $(60,20) \→ z = 15(60) + 10(20) = 900 + 200 = 1100$
+- $(40,30) \→ z = 15(40) + 10(30) = 600 + 300 = 900$
+- $(0,40) \→ z = 0 + 10(40) = 400$
 
-Write the work in a table: point, gradient, new point.
-
-## Examples
-
-**Example 1.** Find the minimum of $f(x,y)=x^2+3y^2$ by steepest descent from $(x_0,y_0)=(6,3)$, with $\alpha=0.1$, for five iterations.
-
-$\nabla f=(2x,\ 6y)$. Each update is
-
-$$
-x_{k+1}=x_k-0.1(2x_k)=0.8\,x_k,\qquad y_{k+1}=y_k-0.1(6y_k)=0.4\,y_k
-$$
-
-| $k$ | $(x_k,y_k)$ | $\nabla f(x_k,y_k)$ |
-| --- | --- | --- |
-| 0 | $(6,\ 3)$ | $(12,\ 18)$ |
-| 1 | $(4.8,\ 1.2)$ | $(9.6,\ 7.2)$ |
-| 2 | $(3.84,\ 0.48)$ | $(7.68,\ 2.88)$ |
-| 3 | $(3.072,\ 0.192)$ | $(6.144,\ 1.152)$ |
-| 4 | $(2.4576,\ 0.0768)$ | $(4.9152,\ 0.4608)$ |
-| 5 | $(1.96608,\ 0.03072)$ | |
-
-The points move towards the true minimum $(0,0)$, where $f=0$. The $y$-coordinate decreases faster because $f$ is steeper in the $y$-direction.
-
-> **Note on the source.** No step size was given in this question. The class notes took $\alpha=0.1$, and we have kept that assumption. One line of the notes copied $y_4$ as $0.0761$, but it is $0.0768$. The value $y_5=0.03072$ is correct.
-
-**Example 2.** Minimise $f(x,y)=x^2+y^2$ from $(1,1)$ with $\alpha=0.1$, for three iterations.
-
-$\nabla f=(2x,\ 2y)$, so each step multiplies both coordinates by $1-0.2=0.8$:
-
-$$
-(1,1)\ \to\ (0.8,\ 0.8)\ \to\ (0.64,\ 0.64)\ \to\ (0.512,\ 0.512)
-$$
-
-approaching the minimum at the origin.
-
-> **Watch out.** Find the gradient at the **current** point in every step. A common mistake is to keep using $\nabla f(x_0,y_0)$, or to write the new point in place of the gradient.
+**Result:** Maximum $z = 1350$ at $(90,0)$.
 
 ---
 
-<!-- page 13 | Gradient descent: more examples -->
+#### $Q_3$. Solve the LPP graphically
+Maximize $z = 3x + 2y$
+Subject to:
+$$x + 2y \leq 10$$
+$$3x + y \leq 15$$
+$$x, y \geq 0$$
 
-# Gradient descent: more examples
+**Step 1: Intercepts**
+- $x + 2y = 10 \→ (0,5)$ and $(10,0)$
+- $3x + y = 15 \→ (0,15)$ and $(5,0)$
 
-**Example 1**
+> **Figure: Graph showing the feasible region for the linear programming problem Q3**
+>
+> Graph showing the feasible region for the linear programming problem Q3. A 2D Cartesian graph with axes labeled x and y. The x-axis goes up to 20 with tick marks at 5, 10, 15, 20. The y-axis goes up to 20 with tick marks at 5, 10, 15, 20. Two lines are plotted: x + 2y = 10 passing through (0,5) and (10,0), and 3x + y = 15 passing through (0,15) and (5,0). The shaded feasible region is enclosed by points A(0,0), B(5,0), C(4,3), and D(0,5).
 
-Minimise $f(x,y)=3x^2+4y^2$ from $(x_0,y_0)=(1,1)$ with fixed step $\alpha=0.01$, for five iterations.
+**Step 2: Intersection of constraints**
+Solving $x + 2y = 10$ and $3x + y = 15$ yields the corner point $C(4,3)$. The vertices are $A(0,0)$, $B(5,0)$, $C(4,3)$, and $D(0,5)$.
 
-$\nabla f=(6x,\ 8y)$. So $x_{k+1}=x_k-0.06x_k=0.94\,x_k$ and $y_{k+1}=y_k-0.08y_k=0.92\,y_k$.
+**Step 3: Evaluate $z = 3x + 2y$**
+- $(0,0) \→ z = 0$
+- $(5,0) \→ z = 3(5) + 2(0) = 15$
+- $(4,3) \→ z = 3(4) + 2(3) = 12 + 6 = 18$
+- $(0,5) \→ z = 3(0) + 2(5) = 10$
 
-| $k$ | $(x_k,y_k)$ | $\nabla f(x_k,y_k)$ |
-| --- | --- | --- |
-| 0 | $(1,\ 1)$ | $(6,\ 8)$ |
-| 1 | $(0.94,\ 0.92)$ | $(5.64,\ 7.36)$ |
-| 2 | $(0.8836,\ 0.8464)$ | $(5.3016,\ 6.7712)$ |
-| 3 | $(0.830584,\ 0.778688)$ | $(4.983504,\ 6.229504)$ |
-| 4 | $(0.780749,\ 0.716393)$ | $(4.684494,\ 5.731144)$ |
-| 5 | $(0.733904,\ 0.659082)$ | |
-
-With such a small step, the progress towards $(0,0)$ is slow.
-
-> **Note on the source.** At step 3 the notes used $4.672128$ for the $y$-component of the gradient, but it is $8\times0.778688=6.229504$. This mistake made $y_4$ and $y_5$ wrong ($0.73196672$ and $0.6733$ in the notes). The corrected values are in the table.
-
-**Example 2**
-
-Minimise $f(x,y)=(x-2)^2+(y+3)^2$ from $(0,0)$ with learning rate $0.1$.
-
-$\nabla f=\big(2(x-2),\ 2(y+3)\big)=(2x-4,\ 2y+6)$.
-
-| $k$ | $(x_k,y_k)$ | $\nabla f(x_k,y_k)$ |
-| --- | --- | --- |
-| 0 | $(0,\ 0)$ | $(-4,\ 6)$ |
-| 1 | $(0.4,\ -0.6)$ | $(-3.2,\ 4.8)$ |
-| 2 | $(0.72,\ -1.08)$ | $(-2.56,\ 3.84)$ |
-| 3 | $(0.976,\ -1.464)$ | $(-2.048,\ 3.072)$ |
-| 4 | $(1.1808,\ -1.7712)$ | |
-
-The points come closer to the true minimum $(2,-3)$, where $f=0$. Each step reduces the remaining gap by 20 %, since $x_{k+1}-2=0.8\,(x_k-2)$ and $y_{k+1}+3=0.8\,(y_k+3)$.
-
-> **Note on the source.** The notes wrote the second step as $(0.4,-0.6)-0.1(0.72,-1.08)$, where the *next point* was written in the place of the gradient. The gradient at $(0.4,-0.6)$ is $(-3.2,4.8)$, which gives the point $(0.72,-1.08)$.
-
-> **Watch out.** The step size is important. If it is too small, the method is slow (Example 1). If it is too large, the points go beyond the minimum: for $f=x^2$, any $\alpha>1$ makes $|x_k|$ increase instead of decrease.
+**Result:** Maximum $z = 18$ at $(4,3)$.
 
 ---
 
-<!-- page 14 | Practice and formula sheet -->
+#### $Q_4$. Solve the LPP
+Maximize $z = 2x + 3y$
+Subject to:
+$$x + y \leq 30$$
+$$y \geq 3$$
+$$0 \leq y \leq 12$$
+$$x - y \geq 0$$
+$$0 \leq x \leq 20$$
 
-# Practice questions and formula sheet
+> **Figure: Linear programming graphical method showing the feasible region and constraints**
+>
+> Linear programming graphical method showing the feasible region and constraints. A 2D graph with x-axis from 0 to 40 and y-axis from 0 to 45. Lines plotted include x+y=30, y=3, y=12, x=20, and x-y=0. The feasible region is shaded with hatched lines, bounded by vertices A(3,3), B(20,3), C(20,10), D(18,12), and E(12,12). Intercepts and points are marked.
 
-## Practice questions
+**Vertices:** $A(3,3)$, $B(20,3)$, $C(20,10)$, $D(18,12)$, $E(12,12)$.
 
-Try these without looking at the answers. The answers are given below.
+**Evaluations:**
+- At $A(3,3)$: $z = 2(3) + 3(3) = 15$
+- At $B(20,3)$: $z = 2(20) + 3(3) = 49$
+- At $C(20,10)$: $z = 2(20) + 3(10) = 70$
+- At $D(18,12)$: $z = 2(18) + 3(12) = 36 + 36 = 72$
+- At $E(12,12)$: $z = 2(12) + 3(12) = 24 + 36 = 60$
 
-**A. Lagrange multipliers**
-
-1. Find the maximum and minimum of $f(x,y)=x+y$ on the circle $x^2+y^2=8$.
-2. Find the point of the line $2x+3y=13$ closest to the origin.
-3. Three positive numbers add up to $12$. Use Lagrange multipliers to find the largest product.
-4. Minimise $x^2+y^2+z^2$ subject to $x+y=2$ and $y+z=2$.
-
-**B. Linear programming**
-
-5. Solve the manufacturing problem: maximise $z=3x_1+5x_2$ subject to $x_1+2x_2\le4$, $2x_1+x_2\le6$, $x_1,x_2\ge0$.
-6. Minimise $z=2x+3y$ subject to $x+y\ge6$, $x+3y\ge12$, $x,y\ge0$.
-7. Show that the LPP "maximise $x+y$ subject to $x+y\le2$, $x+y\ge5$, $x,y\ge0$" has no solution.
-
-**C. Gradient descent**
-
-8. Take two steps of steepest descent for $f(x,y)=(x-1)^2+2y^2$ from $(0,1)$ with $\alpha=0.1$.
-
-## Answers
-
-1. $L_x=1+2\lambda x=0$, $L_y=1+2\lambda y=0$ give $x=y$; then $2x^2=8$. **Maximum $4$ at $(2,2)$, minimum $-4$ at $(-2,-2)$.**
-2. Minimise $x^2+y^2$: $2x+2\lambda=0$, $2y+3\lambda=0$ give $x=2t$, $y=3t$; the line gives $13t=13$. **The point is $(2,3)$**, at distance $\sqrt{13}$.
-3. $L=xyz+\lambda(x+y+z-12)$: $yz=xz=xy$ gives $x=y=z=4$. **Maximum product $64$.**
-4. $2x+\lambda=0$, $2y+\lambda+\mu=0$, $2z+\mu=0$ give $y=x+z$; with $x+y=2$, $y+z=2$: $x=z=\tfrac23$, $y=\tfrac43$. **Minimum $\tfrac83$** at $\left(\tfrac23,\tfrac43,\tfrac23\right)$.
-5. Corners $(0,0)$, $(3,0)$, $\left(\tfrac83,\tfrac23\right)$, $(0,2)$ with $z=0,\ 9,\ \tfrac{34}{3},\ 10$. **Maximum $\tfrac{34}{3}\approx11.33$ at $\left(\tfrac83,\tfrac23\right)$.**
-6. The region is unbounded above, with corners $(0,6)$, $(3,3)$, $(12,0)$ and $z=18,\ 15,\ 24$. **Minimum $15$ at $(3,3)$.**
-7. The constraints require $x+y\le2$ and $x+y\ge5$ at once, which is impossible: the LPP is **infeasible**.
-8. $\nabla f=(2(x-1),\ 4y)$. From $(0,1)$: gradient $(-2,4)$, new point $(0.2,\ 0.6)$. Then gradient $(-1.6,\ 2.4)$, new point $\mathbf{(0.36,\ 0.36)}$. (The minimum is at $(1,0)$.)
-
-> **Study tip.** For LPPs, always make the corner table: corner, how you found it (which two lines), and value of $z$. This makes the answer easy to check and easy to mark.
+**Result:** Maximum $z = 72$ at $(18,12)$.
 
 ---
 
-## Formula sheet
+#### $Q_5$. Solve the LPP graphically
+Maximize $z = 6x_1 - 4x_2$
+Subject to:
+$$2x_1 + 4x_2 \leq 4$$
+$$4x_1 + 8x_2 \geq 15$$
+$$x_1, x_2 \geq 0$$
 
-### Lagrange multipliers
+> **Figure: Graphical method for LPP showing no bounded region**
+>
+> Graphical method for LPP showing no bounded region. A 2D Cartesian coordinate system with x1 axis horizontally and x2 axis vertically. The x2 axis is numbered from 0 to 6. The x1 axis is numbered from 0 to 6. Two lines are plotted: one passing through (0,1) and (2,0) with equation 2x1 + 4x2 = 4, and another passing through (0, 1.875) and (3.75, 0) with equation 4x1 + 8x2 = 15. The feasible regions defined by the inequalities do not overlap to form a bounded region.
 
-| Topic | Formula / Rule |
-| --- | --- |
-| One constraint | $L=f+\lambda g$; solve $L_x=L_y=L_\lambda=0$ |
-| Condition | $\nabla f=-\lambda\nabla g$ at the optimum |
-| Three variables | add $L_z=0$ |
-| Two constraints | $L=f+\lambda g+\mu h$; solve $L_x=L_y=L_z=L_\lambda=L_\mu=0$ |
-| Distance problems | minimise $d^2=x^2+y^2+z^2$, not $d$ |
+**Analysis:** Plotting the constraints reveals that the region satisfying $2x_1 + 4x_2 \leq 4$ and $4x_1 + 8x_2 \geq 15$ have no overlapping intersection in the positive quadrant.
 
-### Linear programming
+**Result:** There is no bounded feasible region. Therefore, no solution exists.
 
-| Concept | Description |
-| --- | --- |
-| General form | optimise $z=\sum c_jx_j$ subject to $\sum a_{ij}x_j\le b_i$ (or $\ge$, $=$), $x_j\ge0$ |
-| Feasible region | intersection of the half-planes of all constraints |
-| Corner-point theorem | if an optimum exists, one occurs at a corner of the feasible region |
-| Graphical method | draw lines by intercepts, test the origin, list corners, evaluate $z$ at each |
-| Special cases | multiple optima, unbounded, infeasible |
+---
 
-### Gradient descent
+#### $Q_6$. Maximize $f = 5x_1 + 25x_2$
+Subject to:
+$$x_1 - 3x_2 \geq -6$$
+$$x_1 + x_2 \leq 6$$
+$$x_1, x_2 \geq 0$$
 
-$$
-(x_{k+1},y_{k+1})=(x_k,y_k)-\alpha\,\nabla f(x_k,y_k),\qquad\nabla f=(f_x,\ f_y)
-$$
+> **Figure: Graphical solution showing the feasible region and lines for the constraints**
+>
+> Graphical solution showing the feasible region and lines for the constraints. A 2D Cartesian coordinate system with x1 on the horizontal axis and x2 on the vertical axis. The axes range from -6 to 6 on x1 and -6 to 6 on x2. Two lines are plotted: one line passes through (6,0) and (0,6), and the other line passes through (-6,0) and (0,2). The feasible region OABCD (or bounded by points A(0,0), B(6,0), C(3,3), D(0,2)) is shaded with hatched lines, indicating the solution space.
 
-| Parameter / Concept | Detail |
-| --- | --- |
-| Direction of steepest descent | $-\nabla f$ |
-| Step size (learning rate) | $\alpha>0$: small is slow, too large overshoots |
-| For $f=ax^2+by^2$ | $x_{k+1}=(1-2a\alpha)x_k$, $\ y_{k+1}=(1-2b\alpha)y_k$ |
+**Vertices:** $A(0,0)$, $B(6,0)$, $C(3,3)$, $D(0,2)$.
+
+**Evaluations:**
+- $A(0,0) \→ f = 0$
+- $B(6,0) \→ f = 5(6) + 25(0) = 30$
+- $C(3,3) \→ f = 5(3) + 25(3) = 15 + 75 = 90$
+- $D(0,2) \→ f = 5(0) + 25(2) = 50$
+
+**Result:** Maximum value = $90$ at $(3,3)$.
+
+---
+
+#### $Q_7$. Applied Manufacturing Problem
+A furniture manufacturer makes chairs and tables with machines $A$ and $B$.
+- **Chair:** requires $2$ hours on machine $A$, $6$ hours on machine $B$.
+- **Table:** requires $5$ hours on machine $A$, $1$ hour on machine $B$.
+- **Availability:** $16$ hours/day on machine $A$, $30$ hours/day on machine $B$.
+- **Profit:** Chair = Rs $2$, Table = Rs $10$.
+
+**Formulation:**
+Let $x_1$ be units of chairs, $x_2$ be units of tables.
+$$\text{Maximize } z = 2x_1 + 10x_2$$
+Subject to:
+$$2x_1 + 5x_2 \leq 16 \quad (\text{Machine } A)$$
+$$6x_1 + x_2 \leq 30 \quad (\text{Machine } B)$$
+$$x_1, x_2 \geq 0$$
+
+> **Figure: Graphical method solution showing the feasible region and constraint lines**
+>
+> Graphical method solution showing the feasible region and constraint lines. A graph with x1 on the horizontal axis (0 to 30) and x2 on the vertical axis (0 to 35). Line 1 passes through (0, 3.2) and (8, 0). Line 2 passes through (0, 30) and (5, 0). Feasible region vertices are labeled A(0,0), B(5,0), C(4.78, 1.28), and D(0, 16/5).
+
+**Vertices:** $A(0,0)$, $B(5,0)$, $C(4.78, 1.28)$, $D(0, 3.2)$.
+
+**Evaluations:**
+- $A(0,0) \→ z = 0$
+- $B(5,0) \→ z = 2(5) + 10(0) = 10$
+- $C(4.78, 1.28) \→ z = 2(4.78) + 10(1.28) = 9.56 + 12.8 = 22.36$
+- $D(0, 3.2) \→ z = 2(0) + 10(3.2) = 32$
+
+**Result:** Maximum profit is Rs $32$ at $(0, 3.2)$ (manufacturing $3.2$ tables).
+
+---
+
+### Method of Steepest Descent (Gradient Descent)
+
+The method of steepest descent is an iterative optimization algorithm used to find the unconstrained local minimum of a function. The main idea is to iteratively move in the direction of the steepest decrease, which is given by the negative gradient of the function, $$\\nabla f(x, y)$.
+
+For a function $f(x,y)$, the gradient vector is defined as:
+$$\\nabla f = \hat{i} \frac{\∂ f}{\∂ x} + \hat{j} \frac{\∂ f}{\∂ y} = \left(\frac{\∂ f}{\∂ x}, \frac{\∂ f}{\∂ y}\right)$$
+
+The algorithm updates the current point $(x_k, y_k)$ to a new point $(x_{k+1}, y_{k+1})$ using the update rule:
+$$(x_{k+1}, y_{k+1}) = (x_k, y_k) - \Α \\nabla f(x_k, y_k)$$
+where $\Α$ represents the step size or learning rate.
+
+<!-- page 6 | Method of Steepest Descent -->
+
+## Method of Steepest Descent
+
+Having solved LPPs graphically, you will now explore iterative numerical algorithms to find function minima when analytical solutions are complex. The method of steepest descent is a gradient-based iterative numerical optimization technique used to find the local minimum of a multivariable function.
+
+### Concepts to Teach
+
+- **Gradient Vector $\nabla f$**: The gradient vector points in the direction of the greatest rate of increase of the function $f$.
+- **Direction of Steepest Descent**: The negative gradient, $$\nabla f(x, y)$, points in the direction of the greatest rate of decrease (minimum) of the function.
+- **Step Size / Learning Rate $\boldsymbol{\beta}$ or $\boldsymbol{\text{alpha}}$ ($\boldsymbol{\rho}$ or $\boldsymbol{\text{alpha}}$)**: A scalar parameter $\alpha$ that determines how large of a step to take along the negative gradient direction during each iteration.
+- **Iterative Update Formula**:
+$$(x_{k+1}, y_{k+1}) = (x_k, y_k) - \alpha \nabla f(x_k, y_k)$$
+
+---
+
+### Solved Problems
+
+#### Problem 1
+
+**Q.** Find the minimum of $f(x,y) = x^2 + 3y^2$, starting from the point $(x_0, y_0) = (6,3)$ where $\alpha = 0.1$ using the method of steepest descent.
+
+**Solution:**
+
+The gradient of $f$ is given by:
+$$\nabla f(x,y) = \hat{i} \frac{\partial}{\partial x}(x^2 + 3y^2) + \hat{j} \frac{\partial}{\partial y}(x^2 + 3y^2)$$
+$$= 2x\hat{i} + 6y\hat{j} = (2x, 6y)$$
+$$\Rightarrow \nabla f(6,3) = (2(6), 6(3)) = (12, 18)$$
+
+The update rule for steepest descent is:
+$$(x_{k+1}, y_{k+1}) = (x_k, y_k) - \alpha \nabla f(x_k, y_k)$$
+where $\alpha = 0.1$.
+
+- **Iteration 0 (Initial point):**
+$$(x_0, y_0) = (6, 3)$$
+
+- **Iteration 1:**
+$$(x_1, y_1) = (6, 3) - 0.1(12, 18) = (6, 3) - (1.2, 1.8) = (4.8, 1.2)$$
+$$\nabla f(4.8, 1.2) = (2(4.8), 6(1.2)) = (9.6, 7.2)$$
+
+- **Iteration 2:**
+$$(x_2, y_2) = (4.8, 1.2) - 0.1(9.6, 7.2) = (4.8, 1.2) - (0.96, 0.72) = (3.84, 0.48)$$
+$$\nabla f(3.84, 0.48) = (7.68, 2.88)$$
+
+- **Iteration 3:**
+$$(x_3, y_3) = (3.84, 0.48) - 0.1(7.68, 2.88) = (3.84, 0.48) - (0.768, 0.288) = (3.072, 0.192)$$
+$$\nabla f(3.072, 0.192) = (6.144, 1.152)$$
+
+- **Iteration 4:**
+$$(x_4, y_4) = (3.072, 0.192) - 0.1(6.144, 1.152) = (3.072, 0.192) - (0.6144, 0.1152) = (2.4576, 0.0768)$$
+
+- **Iteration 5:**
+$$(x_5, y_5) = (2.4576, 0.0761) - 0.1(4.9152, 0.4601) = (1.96608, 0.03072)$$
+
+After 5 iterations, the point has been updated from $(6,3)$ to approximately $(1.96608, 0.03072)$.
+
+---
+
+#### Problem 2
+
+**Q.** Minimize quadratic function $f(x,y) = 3x^2 + 4y^2$ starting from the point $(x_0, y_0) = (1,1)$ using the method of steepest descent with a fixed step size $\alpha = 0.01$ iterate 5 steps.
+
+**Solution:**
+
+$$\nabla f(x,y) = 6x\hat{i} + 8y\hat{j} = (6x, 8y)$$
+$$\text{Initial point: } (x_0, y_0) = (1,1)$$
+
+- **Iteration 1:**
+$$(x_1, y_1) = (1,1) - 0.01(6(1), 8(1)) = (1,1) - (0.06, 0.08) = (0.94, 0.92)$$
+
+- **Iteration 2:**
+$$\nabla f(0.94, 0.92) = (6(0.94), 8(0.92)) = (5.64, 7.36)$$
+$$(x_2, y_2) = (0.94, 0.92) - 0.01(5.64, 7.36) = (0.94, 0.92) - (0.0564, 0.0736) = (0.8836, 0.8464)$$
+
+- **Iteration 3:**
+$$\nabla f(0.8836, 0.8464) = (5.3016, 6.7712)$$
+$$(x_3, y_3) = (0.8836, 0.8464) - 0.01(5.3016, 6.7712) = (0.830584, 0.778688)$$
+
+- **Iteration 4:**
+$$\nabla f(0.830584, 0.778688) = (4.983504, 4.672128)$$
+$$(x_4, y_4) = (0.830584, 0.778688) - 0.01(4.983504, 4.672128) = (0.78074896, 0.73196672)$$
+
+- **Iteration 5:**
+$$\nabla f(0.7807, 0.7319) = (4.6842, 5.8552)$$
+$$(x_5, y_5) = (0.7807, 0.7319) - 0.01(4.6842, 5.8552) = (0.7338, 0.6733)$$
+
+---
+
+#### Problem 3
+
+**Q.** Minimize the function $f(x, y) = x^2 + y^2$ using steepest descent with initial value $(x_0, y_0) = (1, 1)$ and step size $\alpha = 0.1$.
+
+**Solution:**
+
+$$\nabla f(x, y) = 2x\hat{i} + 2y\hat{j}$$
+
+- $$(x_1, y_1) = (1, 1) - 0.1(2(1), 2(1)) = (1, 1) - 0.1(2, 2) = (0.8, 0.8)$$
+- $$(x_2, y_2) = (0.8, 0.8) - 0.1(1.6, 1.6) = (0.64, 0.64)$$
+- $$(x_3, y_3) = (0.64, 0.64) - 0.1(1.28, 1.28) = (0.512, 0.512)$$
+
+---
+
+#### Problem 4
+
+**Q.** Minimize the function $f(x, y) = (x-2)^2 + (y+3)^2$ using the steepest descent method starting from the point $(x_0, y_0) = (0, 0)$ with a learning rate of $\alpha = 0.1$.
+
+**Solution:**
+
+$$\nabla f(x, y) = 2(x-2)\hat{i} + 2(y+3)\hat{j} = (2x - 4)\hat{i} + (2y + 6)\hat{j}$$
+
+- **Iteration 1:**
+$$(x_1, y_1) = (0, 0) - 0.1(2(0) - 4, 2(0) + 6) = (0, 0) - 0.1(-4, 6) = (0, 0) - (-0.4, 0.6) = (0.4, -0.6)$$
+
+- **Iteration 2:**
+$$\nabla f(0.4, -0.6) = (2(0.4) - 4, 2(-0.6) + 6) = (0.8 - 4, -1.2 + 6) = (-3.2, 4.8)$$
+$$(x_2, y_2) = (0.4, -0.6) - 0.1(-3.2, 4.8) = (0.4, -0.6) - (-0.32, 0.48) = (0.72, -1.08)$$

@@ -79,8 +79,8 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
   {
     name: "Chemistry",
     course: "Engineering Chemistry",
-    code: "GXCYT122",
-    syllabusHref: `/notes/${branchId}/s1/chemistry/syllabus`,
+    code: branchId === "civil" || branchId === "me" ? "GCCYT122" : "GXCYT122",
+    syllabusHref: branchId === "civil" || branchId === "me" ? undefined : `/notes/${branchId}/s1/chemistry/syllabus`,
     href: `/notes/${branchId}/s1/chemistry`,
     modules: [1, 2, 3, 4].map((n) => ({
       name: `Module ${n}`,
@@ -104,6 +104,17 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     href: `/notes/${branchId}/s1/electrical`,
     modules: [],
   },
+  ...(branchId === "ece" || branchId === "eee" ? [{
+    name: "Physics",
+    course: "Engineering Physics",
+    code: "GBPHT121",
+    href: `/notes/${branchId}/s1/physics`,
+    modules: [1, 2, 3, 4].map((n) => ({
+      name: `Module ${n}`,
+      detail: `Engineering Physics · Module ${n}`,
+      href: `/notes/${branchId}/s1/physics/module-${n}`,
+    })),
+  }] : []),
   {
     name: "Algorithmic Thinking with Python",
     course: "Algorithmic Thinking with Python",
