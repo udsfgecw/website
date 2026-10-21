@@ -1,0 +1,959 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "results": [
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 139,
+      "alt": "Problem Solving Chart showing a 4-step process: Understand -> Plan -> Solve -> Check",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-002-image-1.webp",
+      "context": "ror remains widely applied for straightforward diagnostics. Systematic Problem-Solving Framework Problem Solving Problem solving is the process of transforming the description of a problem into an effective solution by applying domain knowledge and selecting appropriate strategies and implementation tools. Core execution steps: 1. Define the problem. 2. Determine the root cause. 3. Identify, prioritize, and select alternative solutions. 4. Implement and verify the chosen solution. Polya's Four Phases of Problem Solving Phase 1: Understanding the Problem - Differentiate fact from opinion and specify underlying causes. - Consult all involved parties for factual data. - State the problem specifically. - Draw a figure and introduce suitable notation. - Identify violated standards or expectations, isolate where the problem lies, and avoid proceeding without data. Phase 2: Devising a Plan - Re",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A 4-step horizontal flowchart showing Understand, Plan, Solve, and Check with corresponding icons and arrows.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 310,
+      "alt": "Tower of Hanoi initial state with three disks on rod A",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-008-image-1-code.webp",
+      "context": ". Example 1: The Tower of Hanoi Puzzle The Tower of Hanoi consists of three rods: Source (A), Auxiliary (B), and Destination (C). Rod A contains disks stacked by size with the largest at the bottom. The objective is to transfer all disks from Rod A to Rod C while maintaining the proper size ordering. Rules: 1. Only one disk can be transferred at a time. 2. Each move transfers only the uppermost disk from one rod to another. 3. A larger disk may never be placed on top of a smaller disk. Fig 1: Initial State The recursive procedure to solve the problem for $N$ disks is: 1. Move the top $N-1$ disks from rod A to rod B, using rod C as the auxiliary rod. 2. Move the largest disk from rod A to rod C. 3. Move the $N-1$ disks from rod B to rod C, using rod A as the auxiliary rod. The minimum number of moves required to solve the puzzle is $2^N - 1$, where $N$ is the number of disks. For example,",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Tower of Hanoi initial state (Step 0) with three disks stacked on rod A.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 331,
+      "alt": "Example of Tower of Hanoi for n=3 showing 8 states from 0 to 7",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-009-image-2-code.webp",
+      "context": "auxiliary rod. The minimum number of moves required to solve the puzzle is $2^N - 1$, where $N$ is the number of disks. For example, with 14 disks, the minimum number of moves is $(2^{14}) - 1 = 16383$. mermaid flowchart LR S1[\"1 · Put N disks on source peg\"] -- S2[\"2 · Move top N−1 disks recursively to auxiliary peg\"] S2 -- S3[\"3 · Move largest disk from source to destination\"] S3 -- S4[\"4 · Move N−1 disks recursively from auxiliary to destination\"] Tower of Hanoi for $n = 3$: Minimum number of moves with 3 disks = $2^n-1 = 2^3-1 = 7$. Tower of Hanoi for $n = 4$: Minimum number of moves with 4 disks = $ 2^n - 1 = 2^4 - 1 = 15$. Example 2: Road Trip from Trivandrum to Kashmir Using means-ends analysis for long-distance travel planning: 1. Define the Goal",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Tower of Hanoi step-by-step progression for n=3, showing 8 states from Step 0 to Step 7.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 337,
+      "alt": "Diagram showing the sequence of moves for the Tower of Hanoi problem with 4 disks.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-010-image-1-code.webp",
+      "context": "· Move top N−1 disks recursively to auxiliary peg\"] S2 -- S3[\"3 · Move largest disk from source to destination\"] S3 -- S4[\"4 · Move N−1 disks recursively from auxiliary to destination\"] Tower of Hanoi for $n = 3$: Minimum number of moves with 3 disks = $2^n-1 = 2^3-1 = 7$. Tower of Hanoi for $n = 4$: Minimum number of moves with 4 disks = $ 2^n - 1 = 2^4 - 1 = 15$. Example 2: Road Trip from Trivandrum to Kashmir Using means-ends analysis for long-distance travel planning: 1. Define the Goal: Drive from Trivandrum to Kashmir. 2. Analyze Current State: In Trivandrum with a vehicle ready. 3. Identify Differences: Total road distance is approximately 3,700 kilometers. 4. Set Sub-Goals (Means): - Determine fuel and rest stops. - Set daily driving targets of 500–600",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Sequence of 16 steps (Step 0 to Step 15) showing the Tower of Hanoi puzzle solved with 4 disks.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 445,
+      "alt": "Tower of Hanoi initial state with three vertical rods on a base plate and three stacked disks on the leftmost rod.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-010-image-1.webp",
+      "context": "educe decision complexity when complete information is unavailable. Conditions favoring heuristic decisions include information overload, severe time constraints, low-stakes decisions, or limited data availability. Guess and Check Worked Example: To find the number that produces 32 when added to 15: - Initial guess: 20 - $15+20=35$ (too large). - Refined guess: 18 - $15+18=33$ (close, but too large). - Refined guess: 17 - $15+17=32$ (exact match). Tower of Hanoi (Formal Recurrence) Fig 1: Initial State The recurrence procedure for $N$ disks requires: 1. Move top $N-1$ disks from rod A to rod B via auxiliary rod C. 2. Move largest disk from rod A to rod C. 3. Move $N-1$ disks from rod B to rod C via auxiliary rod A. The minimal move sequence is governed by $2^N - 1$, where $N$ represents disk count; for 14 disks, the total is $(2^{14}) - 1 = 16383$ moves. The step-by-step recursive breakd",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Tower of Hanoi initial state showing three vertical rods and three stacked disks on the leftmost rod.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 459,
+      "alt": "Pictorial representation of the recursive procedure for N=4 disks in Tower of Hanoi",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-011-image-1-Imagen.webp",
+      "context": "le-1/assets/page-010-image-1.webp) Fig 1: Initial State The recurrence procedure for $N$ disks requires: 1. Move top $N-1$ disks from rod A to rod B via auxiliary rod C. 2. Move largest disk from rod A to rod C. 3. Move $N-1$ disks from rod B to rod C via auxiliary rod A. The minimal move sequence is governed by $2^N - 1$, where $N$ represents disk count; for 14 disks, the total is $(2^{14}) - 1 = 16383$ moves. The step-by-step recursive breakdown for $N=4$ disks is illustrated below: Tower of Hanoi solutions for small disk sets: Minimum moves for 3 disks = $2^n-1= 2^3-1=7$. Minimum moves for 4 disks = $2^n-1= 2^4-1=15$. Road Trip Segment Distances (MEA R",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "4-panel diagram showing the recursive procedure for the Tower of Hanoi problem (steps 1 through 4).",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 463,
+      "alt": "Tower of Hanoi solution steps for n=3",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-012-image-1-Imagen.webp",
+      "context": "rod C via auxiliary rod A. The minimal move sequence is governed by $2^N - 1$, where $N$ represents disk count; for 14 disks, the total is $(2^{14}) - 1 = 16383$ moves. The step-by-step recursive breakdown for $N=4$ disks is illustrated below: Tower of Hanoi solutions for small disk sets: Minimum moves for 3 disks = $2^n-1= 2^3-1=7$. Minimum moves for 4 disks = $2^n-1= 2^4-1=15$. Road Trip Segment Distances (MEA Route Details) - Segment 2: Bangalore to Hyderabad (approx. $570\\text{ km}$). - Segment 3: Hyderabad to Nagpur (approx. $500\\text{ km}$). - Segment 4: Nagpur to Jhansi (approx. $580\\text{ km}$). - Segment",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "Tower of Hanoi solution steps for n=3 disks showing 8 panels from Step 0 to Step 7.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 467,
+      "alt": "Tower of Hanoi solution steps for n=4",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-012-image-2-Imagen.webp",
+      "context": "for $N=4$ disks is illustrated below: Tower of Hanoi solutions for small disk sets: Minimum moves for 3 disks = $2^n-1= 2^3-1=7$. Minimum moves for 4 disks = $2^n-1= 2^4-1=15$. Road Trip Segment Distances (MEA Route Details) - Segment 2: Bangalore to Hyderabad (approx. $570\\text{ km}$). - Segment 3: Hyderabad to Nagpur (approx. $500\\text{ km}$). - Segment 4: Nagpur to Jhansi (approx. $580\\text{ km}$). - Segment 5: Jhansi to Agra (approx. $290\\text{ km}$). - Segment 6: Agra to Chandigarh (approx. $450\\text{ km}$). - Segment 7: Chandigarh to Jammu (approx. $350\\text{ km}$). - Segment 8: Jammu to Srinagar, Kashmir (ap",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "suspect",
+        "confidence": 0.9,
+        "observed": "Tower of Hanoi solution steps labeled from Step 0 to Step 15, but each peg contains 5 disks instead of 4.",
+        "issues": [
+          "The alt text and notes state n=4 disks, but the image clearly depicts 5 disks on the pegs."
+        ]
+      },
+      "humanReview": {
+        "status": "correct",
+        "reviewer": "manual visual inspection",
+        "reason": "The diagram shows four disks and 16 states (Step 0 through Step 15), matching the four-disk Tower of Hanoi description. Gemini miscounted the disks."
+      },
+      "geminiStatus": "suspect"
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 483,
+      "alt": "Backtracking search tree diagram showing start node X branching to A and D, A branching to B and C (both dead ends), D branching to E (dead end) and F, and F branching to G (Success node).",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-014-image-1-Imagen.webp",
+      "context": "Segment Distances (MEA Route Details) - Segment 2: Bangalore to Hyderabad (approx. $570\\text{ km}$). - Segment 3: Hyderabad to Nagpur (approx. $500\\text{ km}$). - Segment 4: Nagpur to Jhansi (approx. $580\\text{ km}$). - Segment 5: Jhansi to Agra (approx. $290\\text{ km}$). - Segment 6: Agra to Chandigarh (approx. $450\\text{ km}$). - Segment 7: Chandigarh to Jammu (approx. $350\\text{ km}$). - Segment 8: Jammu to Srinagar, Kashmir (approx. $270\\text{ km}$). State-Space Search Backtracking In systematic state-space exploration, whenever a path hits a dead end, execution rolls back to the most recent decision point to test alternative branches. Strategic Importance and Evaluation Benefits of Multiple Problem-Solving Strategies - Adaptability: Different problem classes demand different tools; familiarity with multiple strategies enables dynamic switching when an approach stalls. - Efficiency: ",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "Backtracking search tree diagram showing start node X branching to A and D, A to B and C (dead ends), D to E (dead end) and F, and F to G (Success node).",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 659,
+      "alt": "Block Diagram of a Digital Computer showing Von Neumann Architecture",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-016-image-1.webp",
+      "context": "ned stages: 1. Understanding the problem 2. Formulating a model 3. Developing an algorithm 4. Writing the program 5. Testing the program 6. Evaluating the solution Understanding the Problem The initial phase focuses on determining input requirements, output goals, and processing operations. Example 1: Finding the sum of two numbers - Input requirements : Two numeric values of any valid type (integer, real, or whole number). Von Neumann Architecture Block Diagram of a Digital Computer The model assumes a single CPU, which can be duplicated within multi-core and multi-processor modern architectures. Instruction Execution Cycle The CPU executes instructions sequentially through a standard cycle: 1. Fetch : Retrieve the instruction from memory. 2. Decode : Interpret the instruction and determine the required operation. 3. Execute : Carry out the decoded operation via CPU components. 4. Store",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A block diagram of Von Neumann architecture showing an input device, main memory, secondary memory, CPU containing CU and ALU, and an output device.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 734,
+      "alt": "Memory Hierarchy pyramid",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-020-image-1.webp",
+      "context": "ision, on the data. - Logic unit : Handles logical evaluations and comparisons. - Registers : - Accumulator (ACC) : Holds intermediate arithmetic and logic results. - Instruction Register (IR) : Stores the active instruction being executed. - Program Counter (PC) : Tracks the address of the next instruction to process. - Control Unit (CU) : Coordinates hardware operations, dispatches signals, coordinates I/O, and sequences instruction flow. Memory System Hierarchy Memory Hierarchy Memory is split into internal and external tiers: - Internal Memory : 1. Registers : Ultra-fast storage inside the processor. 2. Primary Memory : - RAM : Fast volatile memory holding active programs and transient data. - ROM : Non-volatile memory holding permanent startup routines. 3. Cache Memory : High-speed memory buffering transactions between the CPU and RAM. - External Memory : 1. Magnetic tape : Sequenti",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A memory hierarchy pyramid showing tiers from CPU Register down to Magnetic Tape.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1152,
+      "alt": "Table 1.2 showing test cases with columns Sl No, a, b, c, and d",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-029-image-1.webp",
+      "context": ") total += mark average = total / n print(f\"Average mark: {average:.2f}\") Discriminant Calculator Review Model formula: $$ D = b^2 - 4ac $$ Python implementation: python Input the coefficients a = int(input(\"Enter the value of first coefficient\")) b = int(input(\"Enter the value of second coefficient\")) c = int(input(\"Enter the value of third coefficient\")) python Find the discriminant d = (b 2) - (4 a c) Print the discriminant print(d) Verification suite: Language Architecture and Type Checking Binary machine code format: $$ 1010 \\underbrace{0011} {\\text{add}} \\underbrace{0110} {3} \\underbrace{\\quad} {6} $$ In high-level languages, addition is written concisely as $3+6$. Static Programming Language Static programming languages verify variable types at compi",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A table containing columns Sl No, a, b, c, and d with 6 rows of test case values.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1162,
+      "alt": "Binary code breakdown for addition showing opcode and operands",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-030-image-1.webp",
+      "context": "nter the value of third coefficient\")) python Find the discriminant d = (b 2) - (4 a c) Print the discriminant print(d) Verification suite: Language Architecture and Type Checking Binary machine code format: $$ 1010 \\underbrace{0011} {\\text{add}} \\underbrace{0110} {3} \\underbrace{\\quad} {6} $$ In high-level languages, addition is written concisely as $3+6$. Static Programming Language Static programming languages verify variable types at compile time (e.g., C, C++, Java). Explicit type declarations are required, enabling early error detection and optimized execution speeds. Dynamic Programming Language Dynamic programming languages resolve variable types at runtime (e.g., Python, JavaScript, PHP), eliminating the need for explicit type declarations before assignment. --",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Binary sequence 10100001110110 with brackets grouping bits into sections labeled 'add', '3', and '6'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1319,
+      "alt": "Features of Python list of 14 points arranged in two columns of rounded rectangular buttons",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-032-image-1.webp",
+      "context": ": C Compiler | Example : BASIC | Python Language Overview Python is a general-purpose, high-level, interpreted programming language created by Guido van Rossum in the late 1980s at the National Research Institute for Mathematics and Computer Science in the Netherlands. It supports diverse application domains, including console tools, desktop GUIs, web development, and data analysis. Its name comes from the television series Monty Python's Flying Circus . Feature Overview Application Domains Python is a versatile general-purpose language used across multiple specializations: Data Science : Supported by specialized packages like NumPy, Pandas, and Matplotlib for data processing and graphical output. Web Applications : Accelerated through web frameworks such as Django and Pyramid. Desktop GUI Applications Software Development Scientific and Numeric Computations Business Applications Audio o",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Two vertical columns of 7 rounded rectangular buttons each (yellow on left, green on right), numbered 1 through 14, listing features of Python.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1339,
+      "alt": "Command prompt window showing Python 3.8.3 interactive session executing print statements",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-033-image-1.webp",
+      "context": "raphical output. Web Applications : Accelerated through web frameworks such as Django and Pyramid. Desktop GUI Applications Software Development Scientific and Numeric Computations Business Applications Audio or Video Based Applications Script and Interactive Environments Python programs are commonly executed via the interactive interpreter prompt or by running stored script files across Python 2 or Python 3 installations. Python Interactive Shell The Python shell provides direct, interactive evaluation of language statements. Starting python3 displays initial environment details followed by the primary shell prompt: user@Ubuntu2204LTS:~$ python3 Python 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0] on linux Type \"help\", \"copyright\", \"credits\" or \"license\" for more information The prompt symbol awaits input commands: \"Welcome to the world of Python programming\" 'Welcome to the world ",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Command prompt window displaying Microsoft Windows header, Python 3.8.3 interactive shell startup banner, and two print command statements executing successfully.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1357,
+      "alt": "Example code block showing First.py content",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-034-image-1.webp",
+      "context": "followed by the primary shell prompt: user@Ubuntu2204LTS:~$ python3 Python 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0] on linux Type \"help\", \"copyright\", \"credits\" or \"license\" for more information The prompt symbol awaits input commands: \"Welcome to the world of Python programming\" 'Welcome to the world of Python programming' Stored Script Execution Script files allow saving multiple lines of Python instructions into .py files for batch execution. Script Execution Steps 1. Write instructions and save the source file with a .py extension (e.g., First.py ). 2. Create and edit the source text using an editor such as gedit or vim . 3. Open a command terminal in the file's working directory and execute the script: $$ \\text{python3 First.py} $$ The interpreter runs the scri",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A code block labeled Example: 'First.py' showing two print statements: print(\"Hello !\") and print(\"Welcome to Python Programming\")",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1359,
+      "alt": "Output block showing execution of First.py",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-034-image-2.webp",
+      "context": "yright\", \"credits\" or \"license\" for more information The prompt symbol awaits input commands: \"Welcome to the world of Python programming\" 'Welcome to the world of Python programming' Stored Script Execution Script files allow saving multiple lines of Python instructions into .py files for batch execution. Script Execution Steps 1. Write instructions and save the source file with a .py extension (e.g., First.py ). 2. Create and edit the source text using an editor such as gedit or vim . 3. Open a command terminal in the file's working directory and execute the script: $$ \\text{python3 First.py} $$ The interpreter runs the script and outputs the resulting data directly to standard output. --- <!-- page 6 | Python syntax fundamentals: comments, character set, and tokens -- Pyt",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "An output block labeled Output: $python3 First.py showing the resulting text 'Hello !' and 'Welcome to Python Programming'",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1561,
+      "alt": "Table of Python keywords",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-036-image-2.webp",
+      "context": ": Characters such as tab space, blank space, newline, and carriage return. --- Token Classification A token is the smallest individual unit in a Python program, forming the building block for all instructions. mermaid flowchart LR A[Tokens] -- B[Keywords] A -- C[Variables] A -- D[Operators] A -- E[Constants] A -- F[Special Character] Reserved Keywords Keywords carry reserved meaning within Python and cannot serve as identifiers or variable names. Identifier Conventions Identifiers uniquely label variables, functions, classes, and collections. Rules for valid identifiers: 1. Python is case-sensitive; case variations like geeks and Geeks represent different identifiers. 2. Identifiers must start with a capital letter ( A – Z ), a lowercase letter ( a – z ), or an underscore ( ). --- <!-- page 7 | Variables, dynamic typing, and type conversion -- Variables, dynamic typing, and type conversi",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A table containing standard Python keywords such as False, None, True, and, as, assert, break, class, etc.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1620,
+      "alt": "Table of Valid and Invalid Identifiers",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-037-image-1.webp",
+      "context": "ter or underscore\"] R -- C[\"Do not start with a number\"] R -- D[\"Variable names are case-sensitive\"] Naming Conventions and Rules Rules for forming identifiers: - An identifier can begin with a letter or an underscore ( ). - It cannot start with any other character. - Except for letters and underscores, digits can be part of an identifier but cannot be the first character. - Any other special characters or whitespaces are strictly prohibited. - An identifier cannot be a keyword. Memory and Variable Concept Variable A variable is a named memory location used to store program values. It serves as an identifier referring to a specific memory location. In Python, assigning any value automatically declares the variable without needing explicit type declarations. Variable Demonstration Exam",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A table titled 'Valid and Invalid Identifiers' with columns Identifier, Valid?, and Reason if invalid, listing examples like totalSales, total_Sales, total.Sales, 4thQtrSales, and totalSale$.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1628,
+      "alt": "Diagram showing rules to declare a variable in python",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-037-image-2.webp",
+      "context": "prohibited. - An identifier cannot be a keyword. Memory and Variable Concept Variable A variable is a named memory location used to store program values. It serves as an identifier referring to a specific memory location. In Python, assigning any value automatically declares the variable without needing explicit type declarations. Variable Demonstration Example: Vardemo.py python a=10 integer b=\"StudyGlance\" string c=12.5 float print(a) print(b) print(c) Output: $python3 Vardemo.py 10 StudyGlance 12.5 Multiple Assignment Python allows assigning a single value to multiple variables, or multiple values to multiple variables in a single statement. Assigning a Single Value to Multiple Variables Example: Vardemo1.py python x=y=z=50 print(x) print(y) print(z) Output:",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A flowchart with a central circle labeled 'Rules to declare a variable in python' pointing to four text boxes containing valid Python naming rules.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 1739,
+      "alt": "Table explaining int, float, and complex numeric datatypes with examples",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-039-image-2.webp",
+      "context": "[Bool\\nTrue, False] A -- D[Set\\n{2, 4, 6}] A -- E[Dict\\n{1:'a', 2:'b'}] A -- F[Sequence] B -- B1[Int\\n20] B -- B2[Float\\n35.75] B -- B3[complex\\n1+3j] F -- F1[String\\n'Jessa'] F -- F2[List\\n[2, 'a', 5.7]] F -- F3[Tuple\\n(3, 4.5, 'b')] Numeric Data Types Numeric data types represent values that contain numeric quantities. A numeric value can be an integer, a floating-point number, or a complex number. Python provides three numeric data types: 1. int 2. float 3. complex Example Program python num1 = 5 print(num1, 'is of type', type(num1)) num2 = 2.0 print(num2, 'is of type', type(num2)) num3 = 1 + 2j print(num3, 'is of type', type(num3)) Output: text 5 is of type <class 'int' 2.0 is of type <class 'float' (1+2j) is of type <class 'complex' Type Conversion Implicit Type Conversion Implicit type conversion (coercion) occurs automatically when Python converts one data type to another without ",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A table explaining int, float, and complex numeric data types with columns for Numeric Type, Definition, and Example.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 2192,
+      "alt": "Table of escape sequence codes and their results",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-041-image-1.webp",
+      "context": "math.sqrt(100) 10.0 math.sqrt(3) 1.7320508075688772 Advanced Escape Sequence Handling Escape Sequences in Detail An escape sequence begins with a backslash ( \\ ) followed by a character to produce a non-standard interpretation. For example, \\r moves the cursor to the beginning of the line without advancing downward; \\b moves the cursor back one space to overwrite the preceding character; and \\f advances to a form feed or page break in supporting consoles. Example python print(\"Hello\\nWorld\") print(\"Hello\\tWorld\") print(\"This is a backslash: \\\\\") print('It\\'s a beautiful day') print(\"She said, \\\"Hello!\\\"\") Output text Hello World Hello World This is a backslash: \\ It's a beautiful day She said, \"Hello!\" Sequence Representation and Visualizations Sequences organize items into ordered indexed positions. - String - List - Tuple String Representation A string consists of characters enclosed i",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A table showing Python escape sequence codes on the left column and their results/descriptions on the right column.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 2227,
+      "alt": "Python code and output showing the use of single, double, and triple quotes for strings",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-042-image-1.webp",
+      "context": "1.webp) Example python print(\"Hello\\nWorld\") print(\"Hello\\tWorld\") print(\"This is a backslash: \\\\\") print('It\\'s a beautiful day') print(\"She said, \\\"Hello!\\\"\") Output text Hello World Hello World This is a backslash: \\ It's a beautiful day She said, \"Hello!\" Sequence Representation and Visualizations Sequences organize items into ordered indexed positions. - String - List - Tuple String Representation A string consists of characters enclosed in quotes. List Mutability A list maintains mutable ordered items in square brackets. Tuple Immutability A tuple stores write-protected ordered values within parentheses. python var = (\"Geeks\", \"for\", \"Geeks\") print(var) Output: ('Geeks', 'for', 'Geeks') Dictionary, S",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A code editor interface showing python code for creating strings with single, double, and triple quotes, along with its execution output on the right.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 2233,
+      "alt": "Python code and output demonstrating the creation of a blank list and a list of numbers",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-042-image-2.webp",
+      "context": "Sequence Representation and Visualizations Sequences organize items into ordered indexed positions. - String - List - Tuple String Representation A string consists of characters enclosed in quotes. List Mutability A list maintains mutable ordered items in square brackets. Tuple Immutability A tuple stores write-protected ordered values within parentheses. python var = (\"Geeks\", \"for\", \"Geeks\") print(var) Output: ('Geeks', 'for', 'Geeks') Dictionary, Set, and Boolean Operations Dictionary Mapping A dictionary maps distinct keys to values while maintaining insertion order. Program python capitals = {\"USA\":\"Washington D.C.\",\"France\":\"Paris\", \"India\" :\"New Delhi\"} print(type(capitals)) Output <class 'dict'",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Text lines showing Python code snippets for lists: List = [] with 'Blank List: []', and List = [10, 20, 14] with 'List of numbers: [10, 20, 14]'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 3484,
+      "alt": "Python Operator Precedence Table",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-058-image-1.webp",
+      "context": "object and true otherwise | x is not y, there are no results in 1 if id(x) is not equal to id(y). | Example of Identity Operators x = 10 y = 5 print(x is y) The expression x is y checks whether x and y refer to the same object. Use == to compare their values; for example, x == y is False here. Output False Evaluation Order Reference When an expression or statement involves multiple operators then it will be resolve using the following operator precedence chart : Example 5.4. Consider the assignment statement $R = A + 3 < B 1 \\text{ or } C \\text{ and } D$ Let the values of the variables be $A = 1, B = 5, C = -1$, and $D = \\text{True}$. Figure 5.1 shows the structure of the evaluation. The numbers shown in the circle denote the order in which the various operators are applied. The final result is 1, which is assigned to R. --- <!-- page 12 | Operator precedence, associativity, and expressi",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A table detailing Python operator precedence from highest to lowest, listing operator signs and their corresponding names.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-1",
+      "notes": "src/features/notes/python-module-1/notes.md",
+      "line": 3530,
+      "alt": "Expression evaluation tree and corresponding table of operations",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-059-image-1.webp",
+      "context": "B 1 or C and D\"] E -- C[\"3: A + 3 < B 1\"] E -- A[\"4: C and D\"] C -- X[\"2: A + 3\"] C -- Y[\"1: B 1\"] X -- X1[\"A\"] X -- X2[\"3\"] Y -- Y1[\"B\"] Y -- Y2[\"1\"] A -- A1[\"C\"] A -- A2[\"D\"] Evaluation of an Arithmetic Expression | Order | Operation | Resultant | |---:|---|---:| | 1 | B 1 | 5 | | 2 | A+3 | 4 | | 3 | A+3 < B 1 | 1 | | 4 | C&&D | 1 | | 5 | A+3 < B 1 || C&&D | 1 | | 6 | R = A+3 < B 1 || C&&D | 1 | --- $$ R = A + 3 < B 1 \\text{ or } C \\text{ and } D $$ | Order | Operation | Resultant | | :---: | :---: | :---: | | 1 | $B 1$ | 5 | | 2 | $A + 3$ | 4 | | 3 | $A + 3 < B 1$ | 1 | | 4 | $C \\& \\& D$ | 1 | | 5 | $A + 3 < B 1 \\, || \\, C \\& \\& D$ | 1 | | 6 | $R = A + 3 < B 1 \\, || \\, C \\& \\& D$ | 1 | Evaluation of an arithmetic expression 53 --- --- <!-- page 13 | Worked practice problems and university examination questions -- Worked practice problems and university examination questions Short Answ",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "An evaluation tree diagram for an arithmetic expression with numbered steps, accompanied by an operation table showing the order and resultant values.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 28,
+      "alt": "Rounded START and STOP terminator symbols",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp",
+      "context": "ves a remainder. Pseudocode FOR i = 1 TO n includes both endpoints. Python uses different syntax and excludes the stop value of range() . Key idea. An algorithm describes the solution. Pseudocode and flowcharts are two ways of representing that solution. <!-- page 2 | Module 2 · source page 6 -- Start, stop, and flow lines Terminator A terminator is an oval or rounded rectangle containing START or STOP . A simple algorithm has one entry point and a clearly marked end. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp) Flow line A flow line is a line with an arrowhead. Follow its direction to determine the next instruction. Draw the main flow from top to bottom or left to right; avoid crossin",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart symbol diagram showing rounded rectangles labeled 'START' and 'STOP' with the caption 'A rounded terminator marks the beginning or end.'",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 36,
+      "alt": "An arrow connects Step 1 to Step 2",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp",
+      "context": "hon/module-2/assets/symbol-terminator.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-terminator.webp) Flow line A flow line is a line with an arrowhead. Follow its direction to determine the next instruction. Draw the main flow from top to bottom or left to right; avoid crossing lines when possible. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp) <!-- page 3 | Module 2 · source page 7 -- Processing and input/output symbols Process rectangle A process rectangle contains a calculation or an assignment, s",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A diagram with title 'Flow lines' showing two rectangular nodes labeled 'Step 1' and 'Step 2' connected by a horizontal arrow pointing right, with the caption 'Arrowheads show which step is followed next.'",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 48,
+      "alt": "A process rectangle containing total equals price times quantity",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp",
+      "context": "ebp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-flow-lines.webp) <!-- page 3 | Module 2 · source page 7 -- Processing and input/output symbols Process rectangle A process rectangle contains a calculation or an assignment, such as total = price × quantity . Write the operation inside the symbol. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp) Input/output parallelogram An input/output parallelogram represents reading data or displaying a result. State which values are read or printed. Initializing a variable is",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A diagram titled 'Process' showing a rectangular shape containing 'total = price × quantity', with the caption 'Use a rectangle for calculations and assignments.'",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 56,
+      "alt": "An input/output parallelogram for READ age or PRINT fare",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp",
+      "context": "ule-2/assets/symbol-process.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-process.webp) Input/output parallelogram An input/output parallelogram represents reading data or displaying a result. State which values are read or printed. Initializing a variable is a process, rather than an input operation. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp) <!-- page 4 | Module 2 · source page 8 -- Decisions and continuation connectors Decision diamond A decision diamond contains a condition. For a Boolean co",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A diagram titled 'Input / output' showing a parallelogram containing 'READ age / PRINT fare', with the caption 'A parallelogram represents reading or displaying data.'",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 68,
+      "alt": "A decision diamond with separate Yes and No branches",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp",
+      "context": "3.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-input-output.webp) <!-- page 4 | Module 2 · source page 8 -- Decisions and continuation connectors Decision diamond A decision diamond contains a condition. For a Boolean condition, draw two outgoing branches labelled Yes/No or True/False . Each branch must lead to the appropriate next step. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp) On-page connector An on-page connector is a labelled circle that continues the flow elsewhere on the same page. Off-page connector An off-page connector is commonly a pent",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A decision diamond labeled 'age >= 18?' with outgoing arrows labeled 'Yes' and 'No'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 80,
+      "alt": "Labelled circle A for an on-page connector and pentagon B for an off-page connector",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-connectors.webp",
+      "context": "73.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-decision.webp) On-page connector An on-page connector is a labelled circle that continues the flow elsewhere on the same page. Off-page connector An off-page connector is commonly a pentagon pointing downwards and refers to another page. Use matching labels so the reader can find the continuation. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-connectors.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-connectors.webp) <!-- page 5 | Module 2 · source page 9 -- Module calls and counter-loop notation Predefined process A predefined process is a rectangle with two vertical lines near",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A labeled circle 'A' representing an on-page connector and a pentagon 'B' representing an off-page connector.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 92,
+      "alt": "A predefined-process rectangle with double vertical edges",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp",
+      "context": "odule-2/assets/symbol-connectors.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-connectors.webp) <!-- page 5 | Module 2 · source page 9 -- Module calls and counter-loop notation Predefined process A predefined process is a rectangle with two vertical lines near its sides. It calls a named function or module whose steps are defined elsewhere. Show the call here and explain the called procedure separately. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp) The course uses a hexagon for counter-loop notation. Include the counter, starting value, ending value, and step. In other conventions, the same shape represents preparatio",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A rectangle with double vertical edges containing the text 'CALL calculate_average'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 98,
+      "alt": "A hexagonal counter-loop symbol showing i equals 1 to n with step 1",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-loop.webp",
+      "context": "ssets/symbol-module.webp)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp) The course uses a hexagon for counter-loop notation. Include the counter, starting value, ending value, and step. In other conventions, the same shape represents preparation or initialization, so state the convention you use. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-loop.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-loop.webp) A complete loop still needs a condition, a body, and an update. The worked flowcharts below show these explicitly with process and decision symbols. <!-- page 6 | Module",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A hexagonal shape containing the text 'i = 1 TO n, STEP 1' with a heading 'Counter-loop notation' and description below.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 116,
+      "alt": "Simple-interest flowchart using input/output and process symbols",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-simple-interest.webp",
+      "context": "le-2/assets/symbol-loop.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-loop.webp) A complete loop still needs a condition, a body, and an update. The worked flowcharts below show these explicitly with process and decision symbols. <!-- page 6 | Module 2 · source page 10 -- Calculate simple interest text START READ principal, rate, years SET interest = principal rate years / 100 PRINT interest STOP [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-simple-interest.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-simple-interest.webp) Inputs: principal, annual rate as a percentage, and time in years. Check: principal 1000, rate 5, and time 2 gives interest 100. This is simple interest, not compoun",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart titled 'Calculate simple interest' with Start, Read inputs, calculation process, Print interest, and Stop symbols.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 140,
+      "alt": "Flowchart comparing two inputs, including equal values",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-larger-two.webp",
+      "context": "(https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-simple-interest.webp) Inputs: principal, annual rate as a percentage, and time in years. Check: principal 1000, rate 5, and time 2 gives interest 100. This is simple interest, not compound interest. <!-- page 7 | Module 2 · source page 11 -- Find the larger of two numbers text START READ a, b IF a = b THEN SET largest = a ELSE SET largest = b END IF PRINT largest STOP [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-larger-two.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-larger-two.webp) If the inputs are equal, either value is the maximum. For (4, 9) the result is 9; for (7, 7) the result is 7. <!-- page 8 | Module 2 · source page 12 -- Flowchart example: find the smalles",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart titled 'Larger of two numbers' featuring Start, Read a, b, a decision diamond 'a >= b?', assignment boxes for largest, Print largest, and Stop.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 165,
+      "alt": "Flowchart that compares b and c with a running minimum",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-smallest-three.webp",
+      "context": "08e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-larger-two.webp) If the inputs are equal, either value is the maximum. For (4, 9) the result is 9; for (7, 7) the result is 7. <!-- page 8 | Module 2 · source page 12 -- Flowchart example: find the smallest of three numbers text SMALLEST 1. START 2. READ a, b, c 3. SET smallest = a 4. IF b < smallest THEN SET smallest = b END IF 5. IF c < smallest THEN SET smallest = c END IF 6. PRINT smallest 7. STOP [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-smallest-three.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-smallest-three.webp) Trace For (8, 8, 3) , the candidate minimum starts at 8, stays at 8 after comparing the second value, then becomes 3. Ties do not break this method. <!-- page 9 | Module 2 · source page",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A flowchart titled 'Smallest of three numbers' showing Start, READ a, b, c, smallest = a, decision b < smallest?, decision c < smallest?, PRINT smallest, and Stop.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 199,
+      "alt": "Zoo-ticket age selection flowchart",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-zoo-fare.webp",
+      "context": "do not break this method. <!-- page 9 | Module 2 · source page 13 -- Zoo-ticket selection Use the following age bands for this separate exercise. They differ from the concert-ticket bands later in the module. Assume age is non-negative. | Age | Fare | | :--- | :---: | | $< 10$ | $7$ | | $\\ge 10 \\text{ and } < 60$ | $10$ | | $\\ge 60$ | $5$ | text START READ age IF age < 10 THEN SET fare = 7 ELSE IF age < 60 THEN SET fare = 10 ELSE SET fare = 5 END IF PRINT fare STOP [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-zoo-fare.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-zoo-fare.webp) Boundary check Ages 9, 10, 59, and 60 should give fares 7, 10, 10, and 5 respectively. <!-- page 10 | Module 2 · source page 14 -- Select a colour from its code | Code | Message | | :--- ",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A flowchart titled 'Zoo ticket fare' showing conditional checks for age < 10 and age < 60, assigning corresponding fares, printing fare, and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 238,
+      "alt": "Colour code selection with a default outcome",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-colour.webp",
+      "context": "7, 10, 10, and 5 respectively. <!-- page 10 | Module 2 · source page 14 -- Select a colour from its code | Code | Message | | :--- | :--- | | $R$ | Red | | $G$ | Green | | $B$ | Blue | | Any other value | Wrong code | text PRINTCOLOUR 1 Start 2 READ(code) 3 caseof (code) 4 case ‘R’: 5 PRINT(“Red”) 6 break 7 case ‘G’: 8 PRINT(“Green”) 9 break 10 case ‘B’: 11 PRINT(“Blue”) 12 break 13 default : 14 PRINT(“Wrong code”) 15 endcase 16 Stop [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-colour.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-colour.webp) The OTHERWISE or default case handles an unrecognized code. Assume uppercase input; convert lowercase codes first if the program should accept them. <!-- page 11 | Module 2 · source page 15 -- Flowchart example: calculate a",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A flowchart titled 'Colour-code selection' handling code equals R, G, B, with a default branch for 'Wrong code', printing result, and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 262,
+      "alt": "Factorial flowchart with an increasing counter and loop-back arrow",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-up.webp",
+      "context": "The OTHERWISE or default case handles an unrecognized code. Assume uppercase input; convert lowercase codes first if the program should accept them. <!-- page 11 | Module 2 · source page 15 -- Flowchart example: calculate a factorial For a non-negative integer $n$, the factorial is $n! = n \\times (n-1) \\times \\cdots \\times 2 \\times 1$, and $0! = 1$. text FACTORIAL 1. START 2. READ n 3. SET fact = 1 4. FOR i = 1 TO n SET fact = fact i END FOR 5. PRINT fact 6. STOP [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-up.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-up.webp) Trace for n = 4 The product becomes 1, 2, 6, then 24. Reject negative or non-integer inputs before this algorithm starts. <!-- page 12 | Module 2 · source page 16 -- Factorial with ",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart representing a factorial calculation with an ascending counter, starting from Start, reading n, initializing fact = 1 and i = 1, checking condition i <= n, updating fact and i, looping back, and finally printing fact and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 288,
+      "alt": "Factorial flowchart with a decreasing counter and loop-back arrow",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-down.webp",
+      "context": "= 4 The product becomes 1, 2, 6, then 24. Reject negative or non-integer inputs before this algorithm starts. <!-- page 12 | Module 2 · source page 16 -- Factorial with a descending counter The same result can be found by starting at $n$ and counting down to 1. Initializing fact to 1 also handles $n=0$, because the loop then runs zero times. text FACTORIAL 1. START 2. READ n 3. SET fact = 1 4. FOR i = n DOWN TO 1 SET fact = fact i END FOR 5. PRINT fact 6. STOP [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-down.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-factorial-down.webp) The product is unchanged by reversing the order of multiplication. The descending counter must decrease on every iteration so that the condition eventually becomes false. <!-- page",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart representing a factorial calculation with a descending counter, starting from Start, reading n, initializing fact = 1 and i = n, checking condition i >= 1, updating fact and i, looping back, and finally printing fact and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 338,
+      "alt": "Flowchart checking a group count before calculating its average",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-group-average.webp",
+      "context": "ord skipped\" END IF END FOR IF boys count 0 THEN PRINT boys total / boys count ELSE PRINT \"No data for boys\" END IF IF girls count 0 THEN PRINT girls total / girls count ELSE PRINT \"No data for girls\" END IF STOP Trace B, 160 ; G, 150 ; B, 170 gives a boys' average of 165 and a girls' average of 150. An empty group has no average; never divide by a zero count. The SVG shows the final count check and average calculation; apply it separately to each group. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-group-average.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-group-average.webp) <!-- page 14 | Module 2 · source page 18 -- References and further reading - Algorithmic Thinking with Python , Ajeesh Ramanujan and Narasimhan T — source study material. - [Microsoft: flo",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart checking if count > 0; if yes, calculating result = total / count, if no, setting result = No data, then printing result and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 423,
+      "alt": "Algorithm, pseudocode, and implementation stages",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.webp",
+      "context": "changed. text READ a, b SET temp = a SET a = b SET b = temp PRINT a, b Trace: if a = 4 and b = 9 , then temp = 4 , a = 9 , and b = 4 . A direct a = b followed by b = a would lose the original value of a . <!-- page 18 | Module 2 · source page 5 -- Why use pseudocode? Pseudocode describes an algorithm in concise, structured language. It is designed for people to read, so it is not tied to the exact syntax of a programming language and cannot be executed directly. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-algorithm-to-code.webp) Pseudocode bridges an algorithm and its implementation: it makes the planned steps clear before they are translated into program code. Benefits - It is easy to read and und",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A vertical flowchart with three connected rectangular blocks titled 'Describe the algorithm', 'Write pseudocode', and 'Implement and check the program'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 469,
+      "alt": "Reference sheet showing all eight Module 2 flowchart symbol groups",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.webp",
+      "context": "steps simple, concise, and readable. Example: find the greatest of three numbers text READ a, b, c SET greatest = a IF b greatest THEN SET greatest = b END IF IF c greatest THEN SET greatest = c END IF PRINT greatest <!-- page 20 | Module 2 · source page 7 -- Flowchart symbol reference sheet Use this SVG sheet when drawing or checking a flowchart. Each symbol has a distinct role; a process step, input/output step, and decision should remain visually different. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flowchart-symbols-preview.webp) Check a finished chart by tracing at least one path through each decision. Every reachable branch must lead to another step or to a stop, and each loop must make progre",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A reference grid showing 8 flowchart symbols: Start/stop, Flow lines, Process, Input/output, Decision, On-page/off-page connectors, Predefined process/module, and Counter-loop notation.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 648,
+      "alt": "Parity flowchart: a zero remainder selects Even; the other branch selects Odd",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-parity.webp",
+      "context": "rules reduce the options quickly. If the choice matters more, compare more information before deciding. <!-- page 28 | Module 2 · source page 15 -- Flowchart: test whether a number is odd or even For an integer, a remainder of zero after division by 2 means even . A non-zero remainder means odd . This rule also works for zero and negative integers. text START READ number IF number MOD 2 = 0 THEN SET result = \"Even\" ELSE SET result = \"Odd\" END IF PRINT result STOP [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-parity.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-parity.webp) | Input | Remainder modulo 2 | Result | | --- | --- | --- | | 0 | 0 | Even | | 6 | 0 | Even | | 7 | 1 | Odd | | -4 | 0 | Even | <!-- page 29 | Module 2 · source page 16 -- Concert-ticket pricin",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A flowchart titled 'Odd or even?' starting with Start, reading number, checking 'number MOD 2 == 0?', branching to result = Even or result = Odd, printing result, and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 685,
+      "alt": "Concert-ticket flowchart with exclusive age branches and a shared output",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-concert-fare.webp",
+      "context": "16 | 7 | | 16 to under 65 | 10 | | 65 or over | 5 | 1. Read age. 2. If age is under 16, set charge to 7. 3. Otherwise, if age is at least 65, set charge to 5. 4. Otherwise, set charge to 10. 5. Display charge and stop. Use one selection chain so exactly one band determines the price. <!-- page 30 | Module 2 · source page 17 -- Concert-ticket flowchart A matching branch goes straight to the output. It must not continue into later price tests, which could overwrite the selected charge. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-concert-fare.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-concert-fare.webp) <!-- page 31 | Module 2 · source page 18 -- Concert-ticket pseudocode text START READ age IF age < 16 THEN SET charge = 7 ELSE IF age = 65 THEN SET charge = 5 E",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart titled 'Concert ticket fare' starting with Start, reading age, checking age < 16 (fare = 7), checking age >= 65 (fare = 5), default fare = 10, then printing fare and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 778,
+      "alt": "Commission rate flowchart with inclusive upper bounds at 2000, 4000, and 6000",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-commission.webp",
+      "context": "T rate = 0.06 END IF SET commission = sales rate PRINT rate, commission END IF STOP Boundary check Sales of 2000, 4000, and 6000 use rates 0.02, 0.04, and 0.07 respectively. A value just above each boundary enters the next band. <!-- page 35 | Module 2 · source page 22 -- Commission-rate flowchart After validating that sales is non-negative, select one rate using this chart. Calculate the amount as sales × rate when the question asks for the commission amount. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-commission.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/flow-commission.webp) <!-- page 36 | Module 2 · source page 23 -- Repeat-until loops A repeat-until loop runs its body first, then checks its condition. It always runs at least once and stops when the condition",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A flowchart titled 'Select a commission rate' with conditional checks for sales <= 2000, <= 4000, <= 6000, assigning respective rates, printing the rate, and stopping.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-2",
+      "notes": "src/features/notes/python-module-2/notes.md",
+      "line": 829,
+      "alt": "Predefined-process symbol for calling calculate_average",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp",
+      "context": "when the condition is true. Example To print 1 through 10, a while loop can continue while i <= 10 , whereas a repeat-until loop can stop when i 10 . Both require an update such as i = i + 1 . <!-- page 38 | Module 2 · source page 25 -- Module calls and loop setup A module call names an already defined procedure, such as calculate average(values) . Its flowchart symbol shows that the work is delegated to that procedure; the procedure's own chart explains the internal steps. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-2/assets/symbol-module.webp) Before a counter loop starts, define: - Its start value. - Its limit and whether that limit is included. - Its step value. - Any running totals or products needed by its body. Th",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1.0,
+        "observed": "A predefined process/module flowchart symbol with double vertical edges containing 'CALL calculate_average' and text below stating 'Double vertical edges mark a named subroutine call.'",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-3",
+      "notes": "src/features/notes/python-module-3/notes.md",
+      "line": 71,
+      "alt": "An age decision sends the true branch to Adult and the false branch to Minor.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/selection.webp",
+      "context": "deliberately excludes 0 because it asks for a positive single-digit integer. Assume number is an integer. Use lowercase if , finish the header with a colon, and indent its body consistently. <!-- page 3 | Module 3 · source page 3 -- Two-way and multi-way selection An if/else selects exactly one of two branches. This exercise classifies ages below 18 as minors; assume age is non-negative. python age = 12 if age = 18: print(\"Adult\") else: print(\"Minor\") Minor [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/selection.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/selection.webp) An if/elif/else chain checks conditions from top to bottom and runs the first matching branch. The example below uses illustrative grade bands, not an institutional grading policy. python def grade for(m",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A flowchart titled Two-way selection showing a condition 'age >= 18?' with True going to 'Print Adult' and False going to 'Print Minor'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-3",
+      "notes": "src/features/notes/python-module-3/notes.md",
+      "line": 317,
+      "alt": "A caller sends two arguments to add_numbers, receives a total, then prints the result.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/function-call.webp",
+      "context": "Prints 5 print(result) None Prefer returning results when the caller may need them for further calculations. Avoid naming a function sum , which hides Python's built-in sum() within the same scope. <!-- page 9 | Module 3 · source page 9 -- Function calls and worked examples A caller supplies arguments, the function computes its result, and control returns to the caller. Parameters and variables assigned inside a function are normally local to that function. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/function-call.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/function-call.webp) python def absolute value(number): if number < 0: return -number return number def is even(number): return number % 2 == 0 print(absolute value(-7)) 7 print(absolute value(0)) 0 print(is even(8))",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A diagram titled Arguments, call, and return illustrating a caller passing arguments to a function and receiving a result.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-3",
+      "notes": "src/features/notes/python-module-3/notes.md",
+      "line": 380,
+      "alt": "Hello World indexed from 0 to 10 and from -11 to -1; the space has its own position.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/string-indices.webp",
+      "context": "o arbitrary Python objects | Yes | | tuple | References to arbitrary Python objects | No | Python string A Python string is an immutable sequence of Unicode code points. Python code does not need a terminating null character to determine its length. A character is not necessarily one byte; encoded byte length depends on the encoding and the text. python text = \"Hello World\" print(len(text)) 11 print(text[0]) H print(text[-1]) d print(len(\"café\")) 4 [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/string-indices.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/string-indices.webp) This is an index diagram, not a physical memory layout. len() counts code points, which can differ from the number of user-perceived characters when combining marks or multi-code-point emoji are used. <",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "An index diagram for the string 'Hello World' showing positive indices 0-10 above and negative indices -11 to -1 below, with the space explicitly labeled as 'space'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-3",
+      "notes": "src/features/notes/python-module-3/notes.md",
+      "line": 605,
+      "alt": "Assignment creates an alias to one list, whereas slicing creates a separate outer list.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/list-alias-copy.webp",
+      "context": "17 | Module 3 · source page 17 -- List slices, mutation, and copying Lists use the same start-inclusive, stop-exclusive slicing rules as strings. A list slice creates a new list, but it is a shallow copy : references to nested objects are shared. python values = [10, 20, 30, 40] print(values[1:3]) [20, 30] values[2] = 35 print(values) [10, 20, 35, 40] alias = values copy = values[:] alias[0] = 99 print(values) [99, 20, 35, 40] print(copy) [10, 20, 35, 40] [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/list-alias-copy.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/list-alias-copy.webp) python original = [[1], [2]] shallow = original[:] shallow[0].append(9) print(original) [[1, 9], [2]] Reassigning an element in a shallow copy changes that copy's slot; mutating a shared nested",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Diagram showing 'values' and 'alias' pointing to the same shared list [10, 20, 30], while 'copy' points to a separate outer list with [10, 20, 30], illustrating assignment versus list slicing.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-3",
+      "notes": "src/features/notes/python-module-3/notes.md",
+      "line": 780,
+      "alt": "A two-row, three-column array with its row and column indices.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/array-shape.webp",
+      "context": "y has one data type; mixed inputs may be converted to a common type. python import numpy as np values = np.array([1, 2, 3, 4, 5, 6]) matrix = np.array([[1, 2, 3], [4, 5, 6]]) print(values.ndim) 1 print(values.shape) (6,) print(matrix.ndim) 2 print(matrix.shape) (2, 3) print(matrix.size) 6 | Attribute | Meaning | |---|---| | ndim | Number of axes | | shape | Tuple of lengths along those axes | | size | Total number of elements | | dtype | Element data type | [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/array-shape.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-3/assets/array-shape.webp) (6,) is a one-element shape tuple. (2, 3) means two rows and three columns. Shape must match the actual data: an array containing five values has shape (5,) , not (6,) . Object-dtype arrays are an ex",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A 2-row by 3-column NumPy array with row indices 0-1, column indices 0-2, containing values 1 through 6, and bottom text indicating shape = (2, 3) · ndim = 2 · size = 6.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-4",
+      "notes": "src/features/notes/python-module-4/notes.md",
+      "line": 45,
+      "alt": "Combinations 0000 to 9999 tried in order; the worst case is the last try.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/brute-force-padlock.webp",
+      "context": "many candidates early. Entering an unfamiliar grocery store, you would walk straight to the frozen-food aisle rather than inspect every aisle; brute force inspects them all. - Costly for large problems. The search space is never reduced, so running time grows quickly with input size. Example: padlock combination A padlock has a 4-digit code. Brute force tries 0000, 0001, 0002, and so on up to 9999. An $n$-digit lock has $10^n$ combinations, so the 4-digit lock has $10^4 = 10{,}000$. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/brute-force-padlock.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/brute-force-padlock.webp) python def crack lock(secret, digits=4): \"\"\"Return the number of attempts needed to find the secret code.\"\"\" for attempts, guess in enumerate(range(10 digits",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Flow diagram showing brute force on a 4-digit padlock starting with 0000 (first try) through 9998 to 9999 (worst case: last try), and a box showing 'n digits -> 10^n candidates'.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-4",
+      "notes": "src/features/notes/python-module-4/notes.md",
+      "line": 72,
+      "alt": "A problem divides into two sub-problems, each is solved recursively, and the results are combined.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/divide-conquer.webp",
+      "context": "Divide and conquer solves a problem in three steps. 1. Divide. Split the problem into smaller sub-problems of the same kind. Keep dividing until the pieces are small enough to solve directly. 2. Conquer. Solve each sub-problem. This is normally done by recursion , which stops at a base case : a sub-problem so small that it is solved with basic operations and not divided further. 3. Combine. Use the solutions of the sub-problems to build the solution of the original problem. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/divide-conquer.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/divide-conquer.webp) Recursion in divide and conquer A recursive function calls itself on a smaller input. It keeps shrinking the problem until the base case is reached, and then the returned value",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A diagram illustrating the divide, conquer, and combine steps of an algorithm with a problem split into two sub-problems.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-4",
+      "notes": "src/features/notes/python-module-4/notes.md",
+      "line": 88,
+      "alt": "Merge sort on 7, 6, 1, 5, 4, 3: split down to single elements, then merge back up to 1, 3, 4, 5, 6, 7.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/merge-sort-tree.webp",
+      "context": "king the problem until the base case is reached, and then the returned values are used to solve the larger problems on the way back. Example: merge sort Merge sort follows the pattern exactly. To sort $n$ elements: 1. Divide the sequence into two subsequences of about $n/2$ elements each. 2. Conquer by sorting each subsequence recursively. A sequence of one element is already sorted (the base case). 3. Combine by merging the two sorted subsequences into one sorted sequence. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/merge-sort-tree.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/merge-sort-tree.webp) python def merge sort(items): if len(items) <= 1: base case return items middle = len(items) // 2 left = merge sort(items[:middle]) divide + conquer right = merge sort(items[",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A merge sort tree diagram showing the list [7, 6, 1, 5, 4, 3] divided down to single elements and merged back up to a sorted list.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-4",
+      "notes": "src/features/notes/python-module-4/notes.md",
+      "line": 151,
+      "alt": "The recursion tree for F(4) repeats F(2); a table computes F(0) to F(4) once each.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/fibonacci-dp.webp",
+      "context": "l guarantees an optimal answer. Example: Fibonacci series Each Fibonacci number is the sum of the two before it: $F(0) = 0$, $F(1) = 1$, and $F(n) = F(n-1) + F(n-2)$ for $n \\ge 2$. The first five terms are 0, 1, 1, 2, 3. $$ \\begin{aligned} F(2) &= F(1) + F(0) = 1 + 0 = 1 \\\\ F(3) &= F(2) + F(1) = 1 + 1 = 2 \\\\ F(4) &= F(3) + F(2) = 2 + 1 = 3 \\end{aligned} $$ Plain recursion recomputes values such as $F(2)$ many times. DP computes each value once and reads earlier results from the table. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/fibonacci-dp.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/fibonacci-dp.webp) python def fib table(n): \"\"\"Bottom-up dynamic programming.\"\"\" if n < 2: return n table = [0, 1] for i in range(2, n + 1): table.append(table[i - 1] + table[i - 2]) retur",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "A diagram comparing plain recursion for F(4) with repeated F(2) nodes against dynamic programming showing values computed once in a table.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-4",
+      "notes": "src/features/notes/python-module-4/notes.md",
+      "line": 229,
+      "alt": "For 6 with coins 1, 3, 4, greedy uses 4+1+1 (three coins) but 3+3 (two coins) is optimal.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.webp",
+      "context": "): chosen, last finish = [], 0 for start, finish in sorted(activities, key=lambda a: a[1]): if start = last finish: chosen.append((start, finish)) last finish = finish return chosen print(select activities(activities)) [(1, 4), (5, 7), (8, 9)] When greedy fails With coins of value 1, 3 and 4, making 6 greedily takes 4 then 1 then 1: three coins. The optimum is 3 + 3: two coins. The first choice looked best but ruined the rest. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/greedy-vs-optimal.webp) Greedy versus dynamic programming | | Greedy | Dynamic programming | |---|---|---| | Decision | Best local choice, made once | Solves sub-problems, then chooses among their results | | Looks back? | No | Yes, uses stor",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Diagram illustrating greedy coin change (4, 1, 1 resulting in 3 coins) vs optimal coin change (3, 3 resulting in 2 coins) for making 6 with coins of value 1, 3, and 4.",
+        "issues": []
+      }
+    },
+    {
+      "module": "python-module-4",
+      "notes": "src/features/notes/python-module-4/notes.md",
+      "line": 295,
+      "alt": "The running average of simulated trials settles near the expected value of 29.29.",
+      "url": "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/randomized-convergence.webp",
+      "context": "jeans bought return total jeans / trials print(simulate coupon collector(10, 10000)) about 29.3 (varies from run to run) 1. Initialize n and an empty set of collected coupons. 2. Simulate buying jeans until the set holds all n coupons, counting purchases. 3. Repeat for many trials and average the counts. The exact expected value is $n\\left(1 + \\tfrac12 + \\dots + \\tfrac1n\\right)$, which is about 29.29 for $n = 10$. More trials bring the estimate closer to it. [ ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/randomized-convergence.webp) [Open full-size image](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-4/assets/randomized-convergence.webp) Example 2: hat check $n$ people leave their hats with a hat-check person. At the end of the party a different attendant returns the hats at random. What is the expected number ",
+      "model": "gemini-3.5-flash-lite",
+      "status": "correct",
+      "review": {
+        "status": "correct",
+        "confidence": 1,
+        "observed": "Line graph showing the running average of simulated trials settling near the expected value of roughly 29.29 as the number of simulated trials increases up to 300.",
+        "issues": []
+      }
+    }
+  ],
+  "source": "src/features/notes",
+  "modulePrefix": "python-module-"
+}

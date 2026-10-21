@@ -255,7 +255,7 @@ function options(args) {
   const o = { modules: [2, 3, 4], model: 'gemini-3.8-flash', rpm: 4, attempts: 12, agentDir: '/home/adhil/projects/notebook-agent', apply: false, build: false, dryRun: false };
   for (let i = 0; i < args.length; i++) {
     const a = args[i];
-    if (a === '--help') { console.log('node scripts/format-python-notes.mjs [--modules 2,3,4] [--rpm 4] [--attempts 12] [--agent-dir PATH] [--state-dir PATH] [--apply] [--build] [--dry-run]\nDefaults: gemini-3.8-flash, sequential, 4 RPM. Resumes automatically. --apply installs only complete validated modules; --build runs npm run build after all selected modules finish. --dry-run uses no API and writes nothing.'); return; }
+    if (a === '--help') { console.log('node scripts/format-python-notes.mjs [--modules 1,2,3,4] [--rpm 4] [--attempts 12] [--agent-dir PATH] [--state-dir PATH] [--apply] [--build] [--dry-run]\nDefaults: gemini-3.8-flash, sequential, 4 RPM. Resumes automatically. --apply installs only complete validated modules; --build runs npm run build after all selected modules finish. --dry-run uses no API and writes nothing.'); return; }
     if (['--apply', '--build', '--dry-run'].includes(a)) { o[{ '--apply': 'apply', '--build': 'build', '--dry-run': 'dryRun' }[a]] = true; continue; }
     if (!['--modules', '--rpm', '--attempts', '--agent-dir', '--state-dir'].includes(a) || !args[i + 1] || args[i + 1].startsWith('--')) throw Error(`Unknown/missing argument: ${a}. See --help`);
     const value = args[++i];
@@ -264,7 +264,7 @@ function options(args) {
     else if (a === '--attempts') o.attempts = Number(value);
     else o[a === '--agent-dir' ? 'agentDir' : 'stateDir'] = path.resolve(value);
   }
-  if (!o.modules.length || new Set(o.modules).size !== o.modules.length || o.modules.some(n => ![2, 3, 4].includes(n))) throw Error('--modules supports 2, 3, 4 or comma-separated selections');
+  if (!o.modules.length || new Set(o.modules).size !== o.modules.length || o.modules.some(n => ![1, 2, 3, 4].includes(n))) throw Error('--modules supports 1, 2, 3, 4 or comma-separated selections');
   if (!(o.rpm >= 1 && o.rpm <= 60) || !Number.isFinite(o.rpm)) throw Error('--rpm must be between 1 and 60');
   if (!Number.isInteger(o.attempts) || o.attempts < 1 || o.attempts > 30) throw Error('--attempts must be 1–30');
   if (o.build && !o.apply) throw Error('--build requires --apply');
