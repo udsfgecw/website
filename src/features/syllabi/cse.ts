@@ -97,6 +97,29 @@ const courses: Record<string, Course> = {
     outcomes: ["Explain electrical conductivity and superconductivity.", "Explain matter at atomic and subatomic scales using quantum mechanics.", "Apply semiconductor physics in engineering.", "Describe semiconductor materials and devices.", "Use physics principles to carry out experiments."],
     cie: ["Attendance — 5 marks", "Continuous assessment — 10 marks", "Two written internal examinations — 10 marks each", "Laboratory examination — 5 marks"],
   },
+  GBPHT121: {
+    objectives: ["Build a foundation in physics relevant to Electrical Science disciplines.", "Relate physics concepts to electrical engineering and develop practical applications."],
+    modules: [
+      { title: "Semiconductor Physics", hours: 9, topics: [
+        { title: "Semiconductors and charge carriers", subtopics: ["Intrinsic semiconductors", "Electron density in the conduction band and hole density in the valence band", "Intrinsic carrier concentration and its temperature dependence", "Extrinsic semiconductors (qualitative)"] },
+        { title: "P-N junction", subtopics: ["Junction formation and Fermi levels", "Energy-band diagram and qualitative charge flow", "Forward and reverse bias", "Diode equation (derivation) and V-I characteristics"] },
+      ] },
+      { title: "Semiconductor Devices", hours: 9, topics: [
+        { title: "Rectifiers and diodes", subtopics: ["Half-wave and full-wave rectifiers", "Zener characteristics and breakdown", "Tunnel-diode characteristics", "Applications of Zener and tunnel diodes"] },
+        { title: "Photonic devices", subtopics: ["Junction and PIN photodetectors and applications", "Solar-cell V-I characteristics and efficiency", "Stringing cells into a solar panel", "LEDs and applications"] },
+      ] },
+      { title: "Superconductivity and Dielectrics", hours: 9, topics: [
+        { title: "Superconductivity", subtopics: ["Superconductivity and transition temperature", "Critical field and Meissner effect", "Type I and Type II superconductors", "Applications of superconductors"] },
+        { title: "Dielectrics", subtopics: ["Dielectric constant, polarization and relative permittivity", "Relation between polarization and dielectric constant", "Types of polarization", "Internal fields in liquids and solids", "Clausius-Mossotti relation", "Dielectric loss and breakdown (qualitative)"] },
+      ] },
+      { title: "Laser and Fiber Optics", hours: 9, topics: [
+        { title: "Laser physics", subtopics: ["Absorption, spontaneous emission and stimulated emission", "Laser properties and conditions for sustained lasing", "Population inversion, pumping and metastable states", "Basic laser components", "Ruby laser construction and working", "Semiconductor laser (qualitative) and applications"] },
+        { title: "Optical fibers", subtopics: ["Principle of light propagation", "Step-index and graded-index fibers", "Numerical aperture (derivation)", "Applications and fiber-optic communication system block diagram"] },
+      ] },
+    ],
+    outcomes: ["Explain semiconductor physics and semiconductor devices.", "Explain superconductivity and the basic theory of dielectrics.", "Apply laser and fiber-optics principles in engineering.", "Apply physics principles in experiments."],
+    cie: ["Attendance — 5 marks", "Continuous assessment — 10 marks", "Two written internal examinations — 10 marks each", "Internal laboratory examination — 5 marks"],
+  },
   GXCYT122: {
     objectives: ["Understand chemistry concepts used in engineering.", "Learn applied topics in spectroscopy, electrochemistry and analytical methods.", "Understand environmental issues, pollution and waste management."],
     modules: [
@@ -160,9 +183,9 @@ const courses: Record<string, Course> = {
       { title: "Algorithms, flowcharts and control flow", hours: 9, topics: [
         { title: "Algorithms and pseudocode", subtopics: ["Meaning and purpose of pseudocode", "Sequence, selection (`if–else`, `case`) and repetition (`for`, `while`, `repeat–until`)", "Practice problems: expressions, interest, comparisons, grades, loops, factorial and largest value"] },
         { title: "Flowcharts", subtopics: ["Start/end, calculation, input/output and decision symbols", "Module calls, loops, flow lines and page connectors", "Use flowcharts to visualize algorithm control flow"] },
-        { title: "Selection, iteration and collections", subtopics: ["`if`, `elif`, `for`, `range` and `while`", "Lists, tuples, sets, strings and dictionaries", "Arrays using NumPy"] },
       ] },
       { title: "Decomposition, functions and recursion", hours: 10, topics: [
+        { title: "Selection, iteration and collections in Python", subtopics: ["`if`, `elif`, `for`, `range` and `while`", "Lists, tuples, sets, strings and dictionaries", "Arrays using NumPy"] },
         { title: "Decomposition and modularization", subtopics: ["Break complex problems into smaller parts", "Motivation for modular design", "Demonstrations using merge sort and finding the top three values"] },
         { title: "Functions", subtopics: ["Define and use functions", "Functions with multiple return values"] },
         { title: "Recursion", subtopics: ["Recursive calls and the call stack", "Avoid circularity", "Examples: Fibonacci numbers, GCD, factorial, addition and sum of digits"] },

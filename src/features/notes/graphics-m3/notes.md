@@ -10,15 +10,14 @@ By completing this notebook, you will be able to construct orthographic sectiona
 
 1. **Introduction to Sections of Solids and Cutting Planes**: A cutting plane appears as a single straight edge (trace) in the view corresponding to the reference plane it is perpendicular to, allowing us to see exactly where it slices the solid.
 2. **Finding Section Points and Projecting True Shapes**: By setting up an auxiliary reference line parallel to the cutting plane trace and transferring distances from the opposite view, we view the cut surface head-on to reveal its True Shape.
-3. **Conic Sections and Reverse Sectioning Problems**: Every width measured perpendicular to the cutting direction remains unchanged between the Top View and the True Shape, allowing us to work backward from a required shape to locate the cutting plane.
+3. **Conic sections on cones**: The cutting plane orientation determines whether a cone section is an ellipse, parabola, or hyperbola.
 4. **Principles of Surface Development: Parallel-Line Method**: Unrolling a prism or cylinder creates a flat rectangle whose width equals the base perimeter and where vertical edges remain parallel, allowing cut heights to be projected directly across from the Front View.
-5. **Radial-Line Development and Shortest Surface Paths**: Tapering solids unfold around their apex using radial arcs of true slant length, and any shortest path wrappped around a 3D surface becomes a simple straight line when drawn on the unfolded development.
+5. **Radial-Line Development and Shortest Surface Paths**: Tapering solids unfold around their apex using radial arcs of true slant length, and any shortest path wrapped around a 3D surface becomes a simple straight line when drawn on the unfolded development.
 6. **Sections of Prisms and Pyramids by Auxiliary Inclined Planes (AIP)**: When an inclined plane cuts a prism or pyramid, the cut appears as a straight line in the Front View, and projecting its intersections straight down to the Top View reveals the polygonal boundary of the cut.
 7. **Sections of Cylinders and Cones by Auxiliary Inclined Planes (AIP)**: Because cylinders and cones have no sharp vertical edges, we divide their circular bases into equal sectors to create artificial generator lines that act just like pyramid edges during projection.
 8. **Sections by Auxiliary Vertical Planes (AVP) and Profile Planes**: When a cutting plane is perpendicular to the Horizontal Plane, its trace appears in the Top View, and projecting upward to the Front View reveals the cut face—including hyperbolic curves on cones.
-9. **Reverse Section Problems: Finding the Cutting Plane from a Given True Shape**: By plotting the known widths of the desired True Shape directly onto the Top View first, we can project upward to the Front View to discover the exact points the cutting plane must pass through.
-10. **Development of Prisms and Cylinders (Parallel-Line Method)**: Because every vertical edge or generator on a prism or cylinder is parallel to the Vertical Plane, its true cut height in the Front View transfers horizontally onto the unfolded rectangular stretch-out.
-11. **Development of Pyramids, Cones, and Shortest-Path Applications (Radial-Line Method)**: On pyramids and cones, cut heights on interior slant lines are foreshortened in the Front View and must first be projected horizontally to the outer true-length boundary before being marked on the radial development.
+9. **Development of Prisms and Cylinders (Parallel-Line Method)**: Because every vertical edge or generator on a prism or cylinder is parallel to the Vertical Plane, its true cut height in the Front View transfers horizontally onto the unfolded rectangular stretch-out.
+10. **Development of Pyramids, Cones, and Shortest-Path Applications (Radial-Line Method)**: On pyramids and cones, cut heights on interior slant lines are foreshortened in the Front View and must first be projected horizontally to the outer true-length boundary before being marked on the radial development.
 
 <!-- page 2 | Introduction to Sections of Solids and Cutting Planes -->
 
@@ -78,39 +77,23 @@ A square pyramid (base 40 mm, axis 60 mm) rests on its base on the HP with base 
 - When a slant line is perpendicular to $XY$, shift the cut point horizontally to a true-length outer edge before projecting and swinging it back.
 - Always measure from the old $XY$ line and step off from the new $x_1\text{-}y_1$ line to plot the True Shape.
 
-<!-- page 4 | Conic Sections and Reverse Sectioning Problems -->
+<!-- page 4 | Conic Sections on a Cone -->
 
-## Conic Sections and Reverse Sectioning Problems
+## Conic Sections on a Cone
 
-You can now find the true shape resulting from a known cutting plane; next, we explore the special curves formed on cones and how to work backward when the desired true shape is specified first.
+When a plane cuts a cone, the section curve depends on the plane's angle to the cone's extreme generator. This classification helps you anticipate the true shape before constructing the projected views.
 
-Imagine shining a round flashlight beam at a wall. Tilting the flashlight changes the circle of light into different curves, called conic sections. A cone’s curved surface is made of straight lines running from the base to the apex, called generators. In the Front View, the outer boundary lines of the cone are the extreme generators. By comparing the tilt of a cutting plane to these extreme generators, you can predict the exact curve of the True Shape before drawing it.
+| Section curve | Plane orientation relative to an extreme generator | Result |
+|---|---|---|
+| **Ellipse** | The plane cuts across all generators on one nappe without being parallel to a generator. | A closed curve. A circle is the special case of a plane parallel to the cone's base. |
+| **Parabola** | The plane is parallel to an extreme generator. | An open curve. |
+| **Hyperbola** | The plane intersects both nappes of a double cone. | Two open branches. |
 
-| True Shape | Cutting Plane Angle (Front View) | What You See |
-| :--- | :--- | :--- |
-| **Ellipse** | Less steep than the extreme generators | Cuts through all generators; forms a closed oval. |
-| **Parabola** | Parallel to one extreme generator | Cuts the base; forms an open arch with a flat bottom. |
-| **Hyperbola** | Steeper than the extreme generators (or parallel to the axis) | Cuts the base; forms a steep open arch. |
-
-In a parabola or hyperbola, the flat base of the curve is the double ordinate (the chord width across the base circle in the Top View), and the height from that base to the curve's peak is the abscissa (the length of the cut line in the Front View).
-
-In real design, you often know the cut shape you need—like a specific opening for a pipe—and must find the angle to make the cut. This is a reverse sectioning problem. The rule is that widths measured perpendicular to the cutting plane trace never change between the Top View and the True Shape. This means you can lay out the required width as a chord in the Top View first, project it up to the Front View, and swing an arc equal to the required True Shape length to find the exact cutting plane trace.
-
-This reverse thinking also reveals the largest flat polygons you can slice inside faceted solids:
-* **Cube:** Slicing through opposite edges gives a rectangle; tilting the plane to pass through the midpoints of six edges yields a regular hexagon.
-* **Tetrahedron:** Slicing parallel to two opposite skew edges produces a square (at the midpoints) or a rectangle.
-
-### Worked example
-A cone (base diameter 60 mm, axis 70 mm) rests on the Horizontal Plane. Find the cutting plane that produces a parabola with a 40 mm double ordinate.
-1. **Draw the views:** Draw the Top View (a 60 mm circle) and project the Front View (a triangle 60 mm wide and 70 mm high) above the $XY$ line.
-2. **Place the double ordinate:** Because widths perpendicular to the cut remain true in the Top View, draw a vertical chord 40 mm long inside the 60 mm base circle, to the right of the center.
-3. **Project to the base:** Project the ends of this 40 mm chord straight up to meet the cone's base on the $XY$ line in the Front View. This point is the bottom of your cutting plane.
-4. **Draw the cutting plane:** For a parabola, the cut must be parallel to an extreme generator. From your base point on the $XY$ line, draw a line parallel to the left extreme generator until it hits the right generator. The length of this cut line is the parabola's abscissa.
+For engineering drawing, construct the section points from the given cutting plane using the applicable projection method in the following lessons. Do not start from a specified true shape to work backwards to a cutting plane; that reverse-section problem type is outside the KTU 2024 GMEST103 examination scope.
 
 ### Remember
-* Compare the cutting plane angle to the cone's extreme generator in the Front View: shallower gives an ellipse, parallel gives a parabola, steeper gives a hyperbola.
-* Widths parallel to $XY$ in the Top View are already true lengths; use them to locate the base of a reverse section.
-* The True Shape length along the symmetry line equals the exact length of the cutting plane trace in the Front View.
+- The visible section in a standard view may be foreshortened; use an auxiliary view to show its true shape.
+- Divide a circular base into equal parts and project the corresponding generators when constructing sections of cones and cylinders.
 
 <!-- page 5 | Principles of Surface Development: Parallel-Line Method -->
 
@@ -551,215 +534,7 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 
 **Answer:** The vertical profile plane cuts a chord of 40 mm in the Top View and produces the required hyperbolic true shape in the Side View.
 
-<!-- page 10 | Reverse Section Problems: Finding the Cutting Plane from a Given True Shape -->
-
-## Reverse Section Problems: Finding the Cutting Plane from a Given True Shape
-You can now find the true shape for any given cutting plane; in this challenging set, we reverse the process to find the unknown cutting plane angle (and even unknown solid heights) from a specified true shape. By plotting the known widths of the desired True Shape directly onto the Top View first, we can project upward to the Front View to discover the exact points the cutting plane must pass through.
-
-### The idea
-When an Auxiliary Inclined Plane (AIP) slices a solid, it tilts relative to the Horizontal Plane (HP) while staying perpendicular to the Vertical Plane (VP). Because of this orientation, any line on the cut surface that runs perpendicular to the reference line $xy$ is completely horizontal. Horizontal lines appear in their exact true length in the Top View. This geometric rule is the secret to solving reverse section problems: every width of the True Shape measured perpendicular to $xy$ is identical to its width in the Top View.
-
-To find an unknown cutting plane, we work backward. Instead of starting in the Front View, we begin in the Top View by fitting the given True Shape widths (such as the parallel sides of a trapezium or the **double ordinate**, which is the base chord width of a parabola) between the solid's edges or base boundary. Projecting these fitted points straight up to the matching edges in the Front View locates the exact points the cutting plane trace $VT$ must pass through.
-
-If the problem also gives a length measured along the slope of the cut—such as the altitude of a triangular section or the **abscissa** (the true length from a parabola's base chord to its vertex)—that dimension appears in its true length directly along the trace $VT$ in the Front View. By swinging an arc of this true length from one projected point in the Front View, we can locate the second cut point, or even determine the unknown height $H$ of the solid itself.
-
-### Worked example
-**Given:** A square pyramid of base edge 40 mm and height 60 mm resting on HP is cut by a section plane to produce a trapezium with parallel sides 30 mm and 20 mm. **Find:** The sectional top view, true shape, section plane inclination $\theta$, and distance between the parallel sides.
-
-1. Draw the Top View as a 40 mm square $abcd$ with sides parallel and perpendicular to $xy$, draw diagonals to meet at apex $o$, and project the Front View of height 60 mm with apex $o'$.
-
-![Initial orthographic projections of a square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-038-panel-2.webp)
-
-2. Because widths perpendicular to $xy$ do not foreshorten in the Top View, fit two vertical lines of lengths 30 mm and 20 mm symmetrically between the four slant edges in the Top View.
-3. Project the ends of the 30 mm line up to slant edge $o'a'(d')$ to get $1'$, and project the 20 mm line up to slant edge $o'b'(c')$ to get $2'$; join $1'2'$ as the cutting plane trace $VT$ and measure its inclination $\theta$.
-
-![Orthographic projections of a cut square pyramid (Step 96.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-039-panel-1.webp)
-
-4. Hatch the trapezium in the Top View, then draw an auxiliary reference line $x_1y_1$ parallel to $1'2'$.
-5. Project $1'$ and $2'$ perpendicular to $x_1y_1$, transfer the distances of the cut points from $xy$ in the Top View, and join them to complete the True Shape.
-
-![Auxiliary view showing the true shape of the section of a square pyramid (Step 96.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-039-panel-2.webp)
-
-**Answer:** Inclination $\theta = 50°$; distance between parallel sides is the perpendicular length $1'2'$ along the trace.
-
-### More problems
-
-#### Problem 100: Square prism cut to form a trapezium
-**Given:** A square prism of base 40 mm and height 70 mm on HP with vertical faces equally inclined to VP, cut to give a trapezium of parallel sides 20 mm and 40 mm. **Find:** Sectional top view, true shape, and inclination $\theta$.
-
-1. Draw the Top View as a 40 mm square rotated at 45° to $xy$ with corners $a(e)$, $b(f)$, $c(g)$, $d(h)$, and project the Front View to height 70 mm.
-
-![Step 100.1: Initial front and top views of the square prism resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-040-panel-2.webp)
-
-2. In the Top View, locate the 20 mm vertical chord between the left faces to project $1'$ onto the top face $a'b'(d')$ in the Front View.
-3. Locate the 40 mm vertical width across the right half of the square and project up to the bottom right corner $g'$ as $2'$; join $1'2'$ to find the trace and measure $\theta$.
-
-![Step 100.2: Orthographic projections of a truncated square prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-041-panel-1.webp)
-
-4. Set up $x_1y_1$ parallel to $1'2'$, project the cut points perpendicularly, and transfer Top View distances from $xy$ to draw the True Shape trapezium.
-
-![Step 100.3: True shape of section of the truncated square prism using an auxiliary plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-041-panel-2.webp)
-
-**Answer:** The cutting plane passes from the top face to the bottom right corner at inclination $\theta$.
-
-#### Problem 103: Square prism of unknown height cut into hexagon
-**Given:** A square prism of base 40 mm on HP with faces equally inclined to VP is cut into an irregular hexagon having two opposite parallel sides of 30 mm and four sides of 40 mm. **Find:** Unknown prism height $H$, sectional views, true shape, and inclination $\theta$.
-
-1. Draw the 45°-rotated 40 mm square in the Top View and extend vertical projectors upward for the Front View.
-
-![Step 103.1: Initial top view and base front view of the square prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-042-panel-2.webp)
-
-2. Fit the two 30 mm parallel vertical chords symmetrically near the left and right corners in the Top View.
-3. Construct the True Shape hexagon separately using the 30 mm parallel sides and 40 mm slant sides to measure its total length $L = 75$ mm.
-
-![Step 103.2 of orthographic projection and true shape construction](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-043-panel-1.webp)
-
-4. Since the cut stretches from the bottom face to the top face over length $L = 75$ mm, swing an arc of radius 75 mm across the projected chords in the Front View to find the prism height $H = 71$ mm.
-
-![Step 103.3 finding height H = 71 mm using arc of radius L = R75](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-043-panel-2.webp)
-
-5. Complete the Front View rectangle of height 71 mm, draw the cutting trace $1'2'3'$, measure $\theta = 69°$, and project the True Shape beside it.
-
-![Section of solid orthographic projections and true shape of section labeled 103.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-044-panel-1.webp)
-
-> **Watch out.** Do not confuse the prism's vertical height $H$ with the True Shape's total length $L = 75$ mm; $L$ is the hypotenuse along the inclined trace.
-
-**Answer:** Prism height $H = 71$ mm, inclination $\theta = 69°$.
-
-#### Problem 106: Cube cut to form a maximum rhombus
-**Given:** A cube of 40 mm side resting on HP with vertical faces equally inclined to VP, cut to produce a rhombus of maximum side length. **Find:** Sectional top view, true shape, inclination $\theta$, and rhombus side length.
-
-1. Draw the Top View as a 40 mm square rotated at 45° to $xy$ and project the 40 mm high Front View.
-
-![Orthographic projections of a square prism / cube standing vertically](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-045-panel-1.webp)
-
-2. To get a maximum rhombus, the plane must slice all four vertical faces from the top-left corner $a'$ ($1'$) to the bottom-right corner $g'$ ($3'$), passing through the center $2'$ on edge $b'(d')-f'(h')$.
-
-![Section of a square prism cut by an inclined cutting plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-045-panel-2.webp)
-
-3. Measure the trace inclination $\theta$, hatch the full square in the Top View, and project from $1'$, $2'$, $3'$ onto an auxiliary view parallel to $VT$ to draw the True Shape rhombus and measure its side.
-
-![Orthographic projections and true shape of a section of a cube](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-046-panel-1.webp)
-
-**Answer:** The cutting plane connects opposite elevation corners $a'$ and $g'$ at inclination $\theta$, yielding the maximum rhombus.
-
-#### Problem 109: Cube cut to form a regular hexagon
-**Given:** A cube of 40 mm side resting on HP is cut by a section plane so the true shape is a regular hexagon. **Find:** Sectional top view, true shape, inclination $\theta$, and hexagon side length.
-
-1. Draw the 45°-rotated 40 mm square in the Top View and project the 40 mm high cube in the Front View.
-
-![Orthographic projections of a square prism with its base inclined](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-047-panel-1.webp)
-
-2. A plane forms a regular hexagon only when it slices through the midpoints of six edges of the cube; mark $1'$ at the midpoint of $a'-b'(d')$, $2'$ at the midpoint of $b'(d')-f'(h')$, and $3'$ at the midpoint of $f'(h')-g'$.
-
-![Section of a square prism cut by an inclined section plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-047-panel-2.webp)
-
-3. Draw the trace $VT$ through $1'-2'-3'$, project the six midpoints down to hatch the Top View, and project perpendicular to $VT$ to construct the regular hexagon and measure its side.
-
-![Section of a cube showing sectional views and hexagonal true shape](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-048-panel-1.webp)
-
-> **Watch out.** The printed figure labels the angle $\theta = 55°$ against a vertical line, which is actually the complement; the true inclination of the trace to the horizontal $xy$ line is $55°$.
-
-**Answer:** Inclination $\theta = 55°$; hexagon side length equals half the face diagonal ($28.3$ mm).
-
-#### Problem 107: Cube cut to form a maximum equilateral triangle
-**Given:** A cube of 40 mm side is cut by a section plane to produce an equilateral triangle of maximum size. **Find:** Sectional top view, true shape, inclination $\theta$, and triangle side length.
-
-1. Draw the 45°-rotated 40 mm square in the Top View and project the 40 mm high Front View.
-
-![Projection of a square prism, step 107.1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-049-panel-1.webp)
-
-2. To get the largest equilateral triangle, the plane must pass through three non-adjacent corners of the cube; draw the trace $VT$ from the top central corner $b'(d')$ as $1'$ down to the bottom right corner $g'$ as $2'$.
-
-![Section of a square prism, step 107.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-049-panel-2.webp)
-
-3. Hatch the right half of the square in the Top View, measure $\theta$ in the Front View, and project $1'$ and $2'$ perpendicular to $VT$ to draw the True Shape equilateral triangle.
-
-![Orthographic projections and true shape of cut prism (Step 107.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-050-panel-1.webp)
-
-**Answer:** The cutting plane connects $b'(d')$ to $g'$ at inclination $\theta$, producing an equilateral triangle whose side equals the face diagonal.
-
-#### Problem 110: Tetrahedron cut to form a given triangle
-**Given:** A tetrahedron of 50 mm edge resting on HP is cut by an AIP to give a triangle of base 30 mm and altitude 35 mm. **Find:** Projections of the cut solid, true shape, and inclination $\theta$.
-
-1. Draw the equilateral triangle $abc$ of side 50 mm in the Top View with edge $ac$ vertical, locate centroid $o$, and project the Front View using true slant edge 50 mm to find apex $o'$.
-
-![Orthographic projections of a triangular pyramid (Step 110.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-051-panel-1.webp)
-
-2. Fit a vertical line of 30 mm between edges $ab$ and $bc$ in the Top View, and project it up to base $a'(c')-b'$ or slant edge $o'a'(c')$ to locate $1'$.
-3. From $1'$, swing an arc of radius equal to the altitude 35 mm to cut the right slant edge $o'b'$ at $2'$; join $1'2'$ to get trace $VT$ at $\theta = 35°$ and project $2'$ down to $ob$.
-
-![Section of triangular pyramid by an inclined cutting plane (Step 110.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-051-panel-2.webp)
-
-4. Project $1'$ and $2'$ perpendicular to $VT$ and transfer widths from the Top View to draw the True Shape triangle.
-
-![Orthographic projections and true shape of section for a tetrahedron cut by an inclined plane (Step 110.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-052-panel-1.webp)
-
-**Answer:** Inclination $\theta = 35°$.
-
-#### Problem 111: Tetrahedron cut to form a maximum square
-**Given:** A tetrahedron of 50 mm edge resting on HP is cut by an AIP to produce a square of maximum size. **Find:** Projections of the cut solid, true shape, and inclination $\theta$.
-
-1. Construct the Top View and Front View of the 50 mm tetrahedron with base edge $ac$ perpendicular to $xy$.
-
-![Engineering drawing step 111.1 showing projections of a triangular pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-053-panel-1.webp)
-
-2. A section of a regular tetrahedron is a maximum square of side 25 mm (half the 50 mm edge) when cut through the midpoints of four edges; locate the vertical chord of 25 mm in the Top View and project up to find $1'$ and $2'$ at the slant edge midpoints.
-
-![Engineering drawing step 111.2 showing section of a triangular pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-053-panel-2.webp)
-
-3. Draw trace $VT$ through $1'2'$, measure inclination $\theta$, and project perpendicular to $VT$ to draw the 25 mm True Shape square.
-
-![Projections and true shape of section of a solid (step 111.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-054-panel-1.webp)
-
-**Answer:** The cutting plane passes through the midpoints of the slant edges at inclination $\theta$, forming a 25 mm square.
-
-#### Problem 121: Cone cut to form a parabola
-**Given:** A cone of base diameter 50 mm and height 60 mm on HP is cut by an AIP to give a parabola of double ordinate 40 mm. **Find:** Projections of the cut solid and true shape.
-
-1. Draw the 50 mm diameter circle divided into sectors in the Top View, and project the 60 mm high cone in the Front View.
-
-![Orthographic projection of a cone - Step 121.1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-055-panel-1.webp)
-
-2. Fit the 40 mm double ordinate as a vertical chord in the Top View circle and project it up to the Front View base line $xy$ as point $1'$.
-3. Because a parabolic section on a cone requires the cutting plane to be parallel to an extreme generator, draw trace $VT$ from $1'$ parallel to the right-hand generator $o'b'$.
-
-![Orthographic projection of a cut cone - Step 121.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-055-panel-2.webp)
-
-4. Mark the intermediate generator intersections $2', 3', 4', 5'$ along $VT$ and project them down to the Top View generators (using the horizontal circle arc method for the central generator) to hatch the parabola.
-
-![Engineering graphics construction step 121.3 showing projections of a sectioned cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-056-panel-1.webp)
-
-5. Project $1'$ through $5'$ perpendicular to $VT$ and transfer the chord widths from the Top View to plot the smooth True Shape parabola.
-
-![Engineering graphics construction step 121.4 showing true shape of section of a cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-056-panel-2.webp)
-
-**Answer:** The cutting plane starts at the 40 mm base chord and runs parallel to the extreme generator.
-
-#### Problem 123: Cone of unknown height cut into parabola
-**Given:** A cone of base diameter 50 mm on HP is cut by an AIP to form a parabola of double ordinate 40 mm and abscissa 50 mm. **Find:** Unknown height of the cone, sectional views, and true shape.
-
-1. Draw the 50 mm base circle in the Top View, fit the 40 mm vertical chord (double ordinate) on the left side, and project it up to the $xy$ line to locate $1'$.
-
-![Step 123.1: Initial projection of cone with base diameter 50mm and chord of 40mm](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-057-panel-2.webp)
-
-2. For a parabola of abscissa 50 mm, the trace $1'5'$ has length 50 mm and is parallel to the opposite extreme generator; by similar triangles, the extreme generator length is also 50 mm, giving a vertical cone height of 57 mm (or 60 mm in the given box).
-
-![Step 123.2: Orthographic projections of a cone with section plane setup](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-058-panel-1.webp)
-
-3. Draw the cone Front View, mark generator intersections $1'$ through $5'$ along trace $VT$, and project them down to complete and hatch the sectional Top View.
-
-![Step 123.3: Completed section of the cone showing front view and hatched sectional top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-058-panel-2.webp)
-
-4. Project $1'$ through $5'$ perpendicular to $VT$ and transfer Top View distances from $xy$ to draw the True Shape parabola.
-
-![Section of a cone and true shape of section (Problem 123.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-059-panel-1.webp)
-
-> **Watch out.** The drawing's given box prints $H = 60$ mm while the elevation dimension marks 57 mm; moreover, a cone with a 50 mm base and 50 mm slant edge actually has a vertical height of $\sqrt{50^2 - 25^2} = 43.3$ mm.
-
-**Answer:** Cone height is dimensioned as 57 mm (with $H = 60$ mm in the data box).
-
-<!-- page 11 | Development of Prisms and Cylinders (Parallel-Line Method) -->
+<!-- page 10 | Development of Prisms and Cylinders (Parallel-Line Method) -->
 
 ## Development of Prisms and Cylinders (Parallel-Line Method)
 
@@ -959,7 +734,7 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 
 **Answer:** Stretch-out length = 125.6 mm with parallel upper and lower sinusoidal cut profiles.
 
-<!-- page 12 | Development of Pyramids, Cones, and Shortest-Path Applications (Radial-Line Method) -->
+<!-- page 11 | Development of Pyramids, Cones, and Shortest-Path Applications (Radial-Line Method) -->
 
 ## Development of Pyramids, Cones, and Shortest-Path Applications (Radial-Line Method)
 You can already unfold prisms and cylinders by projecting cut heights directly across from the Front View onto a rectangular stretch-out. Finally, we extend surface development to tapering solids—pyramids and cones—where edges converge at an apex, and use these radial developments to solve real-world shortest-path and surface-mapping problems. On pyramids and cones, cut heights on interior slant lines are foreshortened in the Front View and must first be projected horizontally to the outer true-length boundary before being marked on the radial development.

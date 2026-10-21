@@ -636,3 +636,35 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 ![Orthographic projections of a cylinder, frustum of cone, and sphere](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-054-panel-1.webp)
 
 **Answer:** Isometric projection of the coaxial stack: a 50 mm by 20 mm base cylinder, a 40 mm to 30 mm by 15 mm conical frustum, and a 20 mm top sphere.
+
+
+<!-- page 10 | Computer Aided Drawing -->
+
+## Computer Aided Drawing (CAD)
+
+This section supports the internal evaluation portion of GMEST103 Module 4. The end-semester drawing questions focus on the theory and manual drawing topics listed for the examination; CAD activities are for internal evaluation.
+
+### Introduction and role of CAD
+
+Computer Aided Drawing (CAD) uses software to create, edit, store, and communicate technical drawings. In product development, CAD helps engineers turn a design idea into a dimensioned drawing, revise alternatives quickly, reuse standard components, and share consistent drawing data with manufacturing and inspection teams. A CAD drawing supports engineering decisions; it does not replace checking dimensions, tolerances, material requirements, or applicable drawing standards.
+
+### Advantages of CAD
+
+- **Accuracy:** coordinates, constraints, and snapping help place geometry precisely.
+- **Efficient revision:** dimensions and geometry can be edited without redrawing the whole sheet.
+- **Reuse:** symbols, templates, blocks, and layers support consistent drawings.
+- **Clear communication:** line weights, linetypes, text, and dimensions can be controlled systematically.
+- **Storage and exchange:** files can be saved, copied, printed, and shared in suitable formats.
+
+### Creating a dimensioned two-dimensional drawing
+
+A general workflow in suitable CAD software is:
+
+1. **Set up the drawing:** choose units, drawing limits or sheet size, scale, and a suitable template.
+2. **Organize the content:** create layers for visible outlines, hidden details, centre lines, construction geometry, dimensions, and text. Assign appropriate line types and weights.
+3. **Construct the geometry:** use line, circle, arc, rectangle, and polygon tools. Enter coordinates or dimensions; use object snaps and geometric constraints to maintain alignment and size.
+4. **Check the views:** verify projection relationships, hidden lines, centre lines, and consistency between views. Remove construction geometry that should not appear in the final drawing.
+5. **Add dimensions:** select a consistent dimension style, units, precision, arrowheads, text height, and extension-line settings. Place dimensions so that they are legible and do not repeat the same measurement unnecessarily.
+6. **Review and output:** inspect the drawing at its intended print scale, check units and dimension values, set the plot area and line weights, then save the editable file and export or print the required sheet.
+
+The exact commands differ across CAD packages. The deliverable is a legible, accurately dimensioned 2D drawing prepared with suitable software.

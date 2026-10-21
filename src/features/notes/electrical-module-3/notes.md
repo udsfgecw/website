@@ -2,12 +2,12 @@
 
 ## Passive and Active Components in Electronics
 
-### Syllabus: Introduction to Electronic Devices
+### Syllabus: Electronic Devices (Module 3)
 
-- Passive and active components in electronics.
-- Working of PN junction diode, V-I characteristics of PN junction diode.
-- Zener diode and avalanche breakdown. Basics of Zener voltage regulator.
-- Block diagram of DC power supply, circuit and working of half wave, full wave and bridge rectifiers, ripple factor (with and without capacitor filters) – construction and working of BJT, characteristics of CE configuration, concept of amplification, basics of FET, MOSFET.
+- Passive and active components; PN-junction diode operation and V-I characteristics.
+- Zener and avalanche breakdown; Zener regulator; half-wave, full-wave, and bridge rectifiers, ripple factor, and filters.
+- BJT construction and characteristics; comparison of CE, CB, and CC configurations; biasing and load line; transistor as a switch and amplifier; RC-coupled amplifier and frequency response.
+- FET introduction; construction and working of N-channel and P-channel MOSFETs.
 
 ### Classification of Electronic Components
 
@@ -737,6 +737,54 @@ $$
 
 ---
 
+### Comparison of CB, CE, and CC configurations
+
+| Feature | Common base (CB) | Common emitter (CE) | Common collector (CC) |
+|---|---|---|---|
+| Common terminal | Base | Emitter | Collector |
+| Input / output | Emitter / collector | Base / collector | Base / emitter |
+| Current gain | Less than one ($\alpha$) | High ($\beta$) | High (approximately $\beta+1$) |
+| Voltage gain | Can be high | High | Approximately one |
+| Phase relation | No reversal | Output is inverted (180°) | No reversal |
+| Typical use | High-frequency stages and low-input-impedance matching | General voltage and power amplification | Buffering and impedance matching |
+
+These are qualitative comparisons for the usual small-signal configurations; actual gains and impedances depend on the circuit and its bias point.
+
+### DC load line, bias, and the Q-point
+
+For a CE output circuit with supply $V_{CC}$ and collector resistor $R_C$, Kirchhoff's voltage law gives
+
+$$V_{CE}=V_{CC}-I_C R_C.$$
+
+The endpoints of the straight-line relationship on the $I_C$–$V_{CE}$ graph are **cut-off** ($I_C=0$, $V_{CE}=V_{CC}$) and the idealized **saturation** endpoint ($V_{CE}\approx0$, $I_C\approx V_{CC}/R_C$). Joining these points gives the **DC load line**. The bias network sets the no-signal operating point, or **Q-point**. For undistorted amplification, choose a Q-point in the active region with enough room for the expected signal swing; a switch instead uses cut-off and saturation as its OFF and ON states.
+
+### RC-coupled amplifier and frequency response
+
+An RC-coupled amplifier uses a CE transistor stage. The input coupling capacitor $C_{in}$ passes the AC signal while blocking the source's DC; the output capacitor $C_{out}$ passes the amplified AC signal to the load while keeping the collector's DC bias out of the load. The emitter resistor $R_E$ stabilizes bias, and the bypass capacitor $C_E$ provides a low-impedance AC path around $R_E$ in the mid-band.
+
+```text
+                         VCC
+                          │
+                         RC
+                          │──── Cout ──── RL ── ground
+                          C
+Vin ── Cin ── B       NPN transistor
+           bias ────── B
+                          E
+                          │
+                      RE ║ CE
+                          │
+                        ground
+```
+
+The output is amplified and approximately 180° out of phase with the input. Its frequency-response curve has three regions:
+
+- **Low frequencies:** coupling and bypass capacitors have larger reactance, so gain falls.
+- **Mid-band:** capacitors act approximately as AC shorts and gain is comparatively flat.
+- **High frequencies:** transistor junction and stray capacitances reduce gain.
+
+The lower and upper cut-off frequencies $f_L$ and $f_H$ are conventionally taken at the points where voltage gain falls to $1/\sqrt{2}$ of its mid-band value. The bandwidth is $BW=f_H-f_L$.
+
 <!-- page 8 | Basics of FET and MOSFET -->
 
 ## Basics of FET and MOSFET
@@ -825,6 +873,15 @@ In a **MOSFET** (also called an **Insulated-Gate FET, IGFET**), the metal (or po
     $$
   - Because E-MOSFETs are normally OFF, consume tiny power, and occupy very small silicon area, they are the primary building blocks of modern digital CMOS integrated circuits and microprocessors.
 
+### P-channel MOSFETs
+
+A P-channel MOSFET uses a P-type channel or substrate and holes as the majority carriers. Its source, drain, gate, and body structure parallels the N-channel device, but the operating-voltage polarities are reversed. In the usual source-referenced convention, a P-channel device conducts when the gate is sufficiently negative relative to its source; conventional drain current flows in the opposite device-terminal direction to the comparable N-channel case.
+
+- **P-channel depletion MOSFET (D-MOSFET):** a P-type channel exists at $V_{GS}=0$. A positive gate voltage repels holes and depletes the channel; a negative gate voltage attracts holes and enhances conduction. It can operate in depletion and enhancement modes.
+- **P-channel enhancement MOSFET (E-MOSFET):** no conducting channel exists at $V_{GS}=0$. Making the gate sufficiently negative relative to the source attracts holes and forms a P-channel; the device is normally OFF.
+
+Always identify the device type and the source-referenced voltage polarities before drawing a circuit or predicting current direction. Complementary P- and N-channel devices are paired in CMOS logic.
+
 ### Comparison Between BJT and FET
 
 | Parameter | Bipolar Junction Transistor (BJT) | Field Effect Transistor (FET / MOSFET) |
@@ -844,155 +901,7 @@ In a **MOSFET** (also called an **Insulated-Gate FET, IGFET**), the metal (or po
 
 ---
 
-<!-- page 9 | Modern Electronics: Principles of Communication Systems -->
-
-## Modern Electronics: Principles of Communication Systems
-
-### Syllabus: Modern Electronics (Module 3 Continuation)
-
-- **Course Objectives (5 & 6):** Outline the principles of communication systems; Identify various applications of modern electronics in the contemporary world (electronic instrumentation, Internet of Things and its applications).
-
-### Block Diagram of a Basic Electronic Communication System
-
-**Communication** is the process of transferring meaningful information (voice, audio, video, text, or computer data) from one point (the source) to another point (the destination) across space and time. Every electronic communication system consists of five fundamental blocks:
-
-```
-  +-------------+    +-------------+    +---------------+    +----------+    +-------------+
-  | Information |--->| Transmitter |--->| Communication |--->| Receiver |--->| Destination |
-  |   Source    |    |    (Tx)     |    |    Channel    |    |   (Rx)   |    |   (User)    |
-  +-------------+    +-------------+    +---------------+    +----------+    +-------------+
-   (Input Message                        ^
-    / Transducer)                        |
-                                    +---------+
-                                    |  Noise  |
-                                    +---------+
-```
-
-1. **Information Source and Input Transducer:**
-   - The **information source** originates the message to be communicated (human speech, music, picture, temperature reading, or binary data).
-   - If the original message is non-electrical (such as sound waves or light), an **input transducer** converts it into a time-varying electrical signal called the **baseband or message signal**. *(Examples: a microphone converts acoustic pressure waves into an electrical audio signal; a camera sensor converts an optical image into a video signal.)*
-2. **Transmitter (Tx):**
-   - Processes and modifies the electrical message signal to make it suitable for efficient transmission over the communication channel.
-   - Typical transmitter operations include **amplification, filtering, encoding,modulation** (superimposing the low-frequency baseband signal onto a high-frequency carrier wave), and radiating the signal via a transmitting antenna or coupling it into a cable.
-3. **Communication Channel (Transmission Medium):**
-   - The physical medium or path through which the transmitted signal travels from transmitter to receiver. Channels are classified into two groups:
-     - **Guided (Wired) Channels:** Twisted-pair copper cable, coaxial cable, and **optical fiber cable** (which carries information as pulses of light using total internal reflection).
-     - **Unguided (Wireless) Channels:** Free space / atmosphere carrying **electromagnetic radio waves**, microwaves, satellite links, or infrared beams.
-   - As the signal propagates through the channel, it suffers **attenuation** (loss of signal strength) and **distortion**.
-4. **Noise and Interference:**
-   - **Noise** is any random, unwanted electrical energy that enters the communication system and degrades or masks the desired signal.
-   - **External noise:** Atmospheric noise (lightning), solar/cosmic noise, and man-made electromagnetic interference (motors, power lines, ignition systems).
-   - **Internal noise:** Thermal agitation noise (Johnson noise) in resistors and shot noise in semiconductor junctions inside the receiver. Signal quality is measured by the **Signal-to-Noise Ratio ($\text{SNR} = P_{\text{signal}}/P_{\text{noise}}$)**.
-5. **Receiver (Rx) and Destination (Output Transducer):**
-   - The **receiver** extracts the weak, noise-corrupted signal from the channel, amplifies and filters it, and performs **demodulation (detection)**—the inverse of modulation—to recover the original baseband electrical message signal.
-   - The **output transducer** converts the recovered electrical signal back into its original physical form for the **destination** (e.g., a loudspeaker converts electrical audio back into sound waves; a display screen reproduces the video image).
-
-### Need for Modulation and Basic Modulation Types
-
-Low-frequency baseband signals (such as human voice, $20\text{ Hz}$ to $20\text{ kHz}$) cannot be radiated directly through space as electromagnetic waves for three main reasons:
-
-1. **Practical Antenna Height:** For efficient radiation of electromagnetic waves, the physical length of the antenna must be at least a quarter-wavelength ($L \approx \lambda / 4$, where $\lambda = c / f$).
-   - At an audio frequency of $f = 15\text{ kHz}$, $\lambda = \frac{3 \times 10^8\text{ m/s}}{15 \times 10^3\text{ Hz}} = 20{,}000\text{ m}$, requiring an impossible antenna height of $\lambda/4 = 5{,}000\text{ m}$ ($5\text{ km}$).
-   - If the signal is translated to a high carrier frequency of $f_c = 100\text{ MHz}$, $\lambda = 3\text{ m}$ and the required quarter-wave antenna length is a practical $\lambda/4 = 0.75\text{ m}$.
-2. **Avoidance of Signal Mixing (Multiplexing):** All audio/speech signals occupy the same $20\text{ Hz}\text{–}20\text{ kHz}$ frequency band. If transmitted directly, signals from different stations would interfere inseparably. Assigning each station a distinct carrier frequency allows **Frequency Division Multiplexing (FDM)** so a receiver can tune to one station at a time.
-3. **Narrow Fractional Bandwidth and Longer Range:** High-frequency carrier waves radiate efficiently into space with higher power and travel long distances with lower attenuation.
-
-#### Basic Types of Analog Continuous-Wave Modulation
-
-**Modulation** is the process of varying one of the characteristic parameters (amplitude, frequency, or phase) of a high-frequency sinusoidal **carrier wave** $c(t) = A_c \cos(2\pi f_c t + \phi)$ in instantaneous proportion to the low-frequency **modulating (message) signal** $m(t)$:
-
-| Modulation Type | Parameter Varied | Parameters Kept Constant | Typical Application |
-| --- | --- | --- | --- |
-| **Amplitude Modulation (AM)** | Carrier Amplitude ($A_c$) | Frequency ($f_c$) and Phase ($\phi$) | Medium-wave / Short-wave radio broadcasting, aviation VHF |
-| **Frequency Modulation (FM)** | Carrier Frequency ($f_c$) | Amplitude ($A_c$) and Phase | High-fidelity FM stereo radio ($88\text{–}108\text{ MHz}$), telemetry |
-| **Phase Modulation (PM)** | Carrier Phase Angle ($\phi$) | Amplitude ($A_c$) | Digital phase-shift keying (PSK) in Wi-Fi, 4G/5G, satellite links |
-
-### Summary
-
-- A basic communication system comprises an **information source/input transducer, transmitter, channel, receiver, and output transducer/destination**, with **noise** corrupting the signal in the channel.
-- **Modulation** shifts a low-frequency baseband message onto a high-frequency carrier to obtain practical antenna dimensions ($\lambda/4$), prevent channel interference, and allow multiplexing.
-
----
-
-<!-- page 10 | Electronic Instrumentation and Internet of Things (IoT) Applications -->
-
-## Electronic Instrumentation and Internet of Things (IoT) Applications
-
-### Electronic Instrumentation System
-
-An **electronic instrumentation system** measures, monitors, displays, or records physical quantities (such as temperature, pressure, displacement, strain, light intensity, or heart rate) by converting them into electrical signals and processing them electronically.
-
-```
-  Physical     +------------------+   +--------------------+   +-----+   +-------------------+
-  Quantity --->| Sensor /         |-->| Signal Conditioner |-->| ADC |-->| Digital Display / |
-  (Measurand)  | Transducer       |   | (Amplifier/Filter) |   |     |   | Microcontroller   |
-               +------------------+   +--------------------+   +-----+   +-------------------+
-```
-
-1. **Sensor / Transducer:** Detects the physical quantity (**measurand**) and converts it into a proportional electrical signal (voltage, current, resistance, or capacitance).
-   - **Active Transducers (Self-generating):** Generate an electrical output directly without an external excitation voltage (e.g., **thermocouple** for temperature, **piezoelectric crystal** for force/vibration, **photovoltaic solar cell** for light).
-   - **Passive Transducers (Externally powered):** Produce a change in a passive electrical parameter ($R, L,$ or $C$) and require an external bridge or supply (e.g., **RTD / Thermistor** changing resistance with temperature, **LDR** changing resistance with light, **strain gauge** changing resistance with mechanical strain).
-2. **Signal Conditioning Unit:** Because raw sensor outputs are typically very small (in millivolts) and contaminated with noise, signal conditioning circuits use **instrumentation amplifiers, Wheatstone bridges, and active filters** to scale, linearize, and clean the analog signal.
-3. **Analog-to-Digital Converter (ADC):** Samples and quantizes the conditioned continuous-time analog voltage into binary digital words for digital processing.
-4. **Readout / Display / Controller:** Microcontrollers, digital panel meters (DMMs), digital storage oscilloscopes (DSOs), data loggers, or actuators that display the reading or close a feedback control loop.
-
-### Introduction to the Internet of Things (IoT)
-
-**Definition**
-
-The **Internet of Things (IoT)** is an interconnected network of physical objects ("things"—such as household appliances, industrial machines, vehicles, wearable devices, and environmental monitors) embedded with **sensors, actuators, microcontrollers, software, and network connectivity** that enables them to collect, exchange, and act upon data over the internet without requiring direct human-to-human or human-to-computer interaction.
-
-#### Four-Layer Architecture / Building Blocks of an IoT System
-
-```
-  +-------------------------------------------------------------------+
-  | 4. Application & User Layer (Dashboards, Mobile Apps, Alerts)     |
-  +-------------------------------------------------------------------+
-                                   ^  |
-  +-------------------------------------------------------------------+
-  | 3. Cloud Storage & Data Analytics Layer (AI/ML, Databases)        |
-  +-------------------------------------------------------------------+
-                                   ^  |
-  +-------------------------------------------------------------------+
-  | 2. Network & Gateway Layer (Wi-Fi, BLE, Zigbee, LoRaWAN, 4G/5G)   |
-  +-------------------------------------------------------------------+
-                                   ^  |
-  +-------------------------------------------------------------------+
-  | 1. Sensing & Actuation Layer (Sensors, Actuators, MCU/Edge Node)  |
-  +-------------------------------------------------------------------+
-```
-
-1. **Sensing and Actuation (Perception) Layer:** Physical **sensors** measure real-world parameters (temperature, humidity, gas, motion, GPS location, ECG), and **actuators** (relays, solenoids, servo/DC motors, smart valves) carry out physical actions in response to control commands. An embedded microcontroller node (e.g., Arduino, ESP32, Raspberry Pi) interfaces with these devices.
-2. **Network / Connectivity and Gateway Layer:** Transmits sensor data from edge nodes to the cloud and returns control commands using short-range wireless protocols (**Wi-Fi, Bluetooth Low Energy [BLE], Zigbee, RFID/NFC**) or wide-area protocols (**4G/5G cellular, LoRaWAN, NB-IoT**), communicating via lightweight IoT protocols such as **MQTT** or **HTTP/CoAP**.
-3. **Cloud Processing and Data Analytics Layer:** Stores time-series sensor streams in cloud databases and applies data analytics, threshold rules, or machine-learning algorithms to detect anomalies and make automated decisions.
-4. **Application Layer:** Provides user-facing dashboards, smartphone applications, and automated alerts across vertical domains.
-
-### Applications of Modern Electronics and IoT
-
-1. **Smart Homes and Building Automation:**
-   - **Smart Thermostats and HVAC:** Automatically learn occupancy patterns and adjust heating/cooling to save energy.
-   - **Smart Lighting and Appliances:** Motion- and ambient-light-controlled LED lighting, smart energy plugs, and voice-controlled appliances.
-   - **Home Security:** Smart door locks, IP surveillance cameras, and smoke/LPG gas-leak detectors that send instant smartphone alerts.
-2. **Smart Cities and Smart Grid:**
-   - **Intelligent Traffic and Parking Management:** Roadway sensors and cameras optimize traffic-light timing dynamically and guide drivers to vacant parking spots.
-   - **Smart Street Lighting and Waste Management:** Streetlights dim automatically when no pedestrians or vehicles are present; ultrasonic bin-level sensors optimize municipal garbage collection routes.
-   - **Smart Energy Meters (AMI):** Two-way smart meters report real-time power consumption to utilities and consumers.
-3. **Smart Healthcare (IoMT – Internet of Medical Things):**
-   - **Wearable Health Monitors:** Smartwatches and fitness bands continuously track heart rate (PPG/ECG), blood oxygen saturation ($\text{SpO}_2$), sleep quality, and physical activity.
-   - **Remote Patient Monitoring:** Connected glucometers, blood-pressure cuffs, and smart pacemakers transmit vital signs to physicians in real time and trigger emergency alerts for elderly patients.
-4. **Smart Agriculture (Precision Farming):**
-   - Soil-moisture, pH, and weather sensors automatically control drip-irrigation valves, conserving water and fertilizer while monitoring crop health via drone and satellite imagery.
-5. **Industrial IoT (IIoT / Industry 4.0) and Connected Vehicles:**
-   - Vibration and temperature sensors on factory motors enable **predictive maintenance** before breakdowns occur; connected/autonomous vehicles use radar, LiDAR, ultrasonic sensors, and V2X communication for collision avoidance and fleet tracking.
-
-### Summary
-
-- An **electronic instrumentation system** uses a **sensor/transducer, signal conditioner, ADC, and display/controller** to measure physical quantities accurately.
-- The **Internet of Things (IoT)** connects physical sensors and actuators through embedded controllers, wireless networks, and cloud analytics to enable **smart homes, smart cities, remote healthcare, precision agriculture, and Industrial IoT**.
-
----
-
-<!-- page 11 | Suggested reading -->
+<!-- page 9 | Suggested reading -->
 
 ## Suggested reading
 

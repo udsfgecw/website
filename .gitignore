@@ -2,6 +2,9 @@ node_modules
 dist
 .vercel
 dist-ssr
+/data/syllabus/processing/input/
+/data/syllabus/processing/raw-response-*.txt
+/data/syllabus/processing/topic-report-progress.log
 
 # Media lives in Cloudflare R2 (bucket "media"), not in git
 /public/activity-media/

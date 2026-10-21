@@ -16,6 +16,7 @@ async function loadSharedCseNotes(subject: string, key: string): Promise<NotesMo
     if (key === "module-1") return (await import("@/features/notes/electrical-module-1")).electricalmodule1;
     if (key === "module-2") return (await import("@/features/notes/electrical-module-2")).electricalmodule2;
     if (key === "module-3") return (await import("@/features/notes/electrical-module-3")).electricalmodule3;
+    if (key === "module-4") return (await import("@/features/notes/electrical-module-4")).electricalmodule4;
     if (key === "question-papers") return (await import("@/features/notes/question-papers")).gxest104QuestionPapers;
   }
   if (subject === "python") {
@@ -31,8 +32,8 @@ async function loadSharedCseNotes(subject: string, key: string): Promise<NotesMo
 const sharedModules: Record<string, LazyExoticComponent<ComponentType>> = {};
 for (const branch of ["ece", "eee", "civil", "me"] as const) {
   const subjects = branch === "ece" || branch === "eee"
-    ? [["graphics", ["m1", "m2", "m3", "m4", "question-papers"]], ["electrical", ["module-1", "module-2", "module-3", "question-papers"]], ["python", ["module-1", "module-2", "module-3", "module-4"]]] as const
-    : [["python", ["module-1", "module-2", "module-3", "module-4"]]] as const;
+    ? [["graphics", ["m1", "m2", "m3", "m4", "question-papers"]], ["electrical", ["module-1", "module-2", "module-3", "module-4", "question-papers"]], ["python", ["module-1", "module-2", "module-3", "module-4", "question-papers"]]] as const
+    : [["python", ["module-1", "module-2", "module-3", "module-4", "question-papers"]]] as const;
   for (const [subject, keys] of subjects) {
     for (const key of keys) {
       const route = `/notes/${branch}/s1/${subject}/${key}`;
@@ -104,6 +105,10 @@ const modules = {
   }),
   "/notes/cse/s1/electrical/module-3": lazy(async () => {
     const { electricalmodule3: notes } = await import("@/features/notes/electrical-module-3");
+    return { default: () => <ModuleNotesPage notes={notes} /> };
+  }),
+  "/notes/cse/s1/electrical/module-4": lazy(async () => {
+    const { electricalmodule4: notes } = await import("@/features/notes/electrical-module-4");
     return { default: () => <ModuleNotesPage notes={notes} /> };
   }),
   "/notes/cse/s1/graphics/m1": lazy(async () => {

@@ -2,11 +2,12 @@
 
 ## Module 3 overview
 
-This module develops the Python skills needed to control a program, divide its work into functions, and organize data in collections.
+This module covers Python selection and iteration, sequences and collections, decomposition, functions, and recursion.
 
 | Topic | What you should be able to do |
 |---|---|
 | Control flow | Choose branches, repeat actions, and trace loop execution |
+| Recursion | Identify base cases, trace stack frames, and write recursive functions that make progress |
 | Functions | Define parameters, pass arguments, return results, and separate tasks |
 | Strings and sequences | Index, slice, traverse, and transform ordered data |
 | Lists and tuples | Choose between mutable and immutable sequences |
@@ -1060,3 +1061,81 @@ print(student)         # {}
 - [Python library: string constants](https://docs.python.org/3/library/string.html).
 - [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html).
 - [NumPy: copies and views](https://numpy.org/doc/stable/user/basics.copies.html).
+
+
+<!-- page 30 | Recursion and the call stack -->
+
+## Recursion and the Call Stack
+
+A **recursive function** solves a problem by calling itself on a smaller version of that problem. A correct recursive definition has a **base case** that returns without another recursive call and a **recursive case** that makes progress toward a base case. Without those properties, calls can continue until Python raises `RecursionError`.
+
+### Call stack and stack frames
+
+Each call creates a stack frame containing that call's local variables and the point to resume after the call returns. Frames are pushed as calls descend and popped in reverse order as values return. The following trace for `factorial(3)` shows the order:
+
+```text
+factorial(3) waits for 3 × factorial(2)
+  factorial(2) waits for 2 × factorial(1)
+    factorial(1) waits for 1 × factorial(0)
+      factorial(0) returns 1          ← base case
+    factorial(1) returns 1 × 1 = 1
+  factorial(2) returns 2 × 1 = 2
+factorial(3) returns 3 × 2 = 6
+```
+
+### Recursive examples
+
+**Factorial:**
+
+```python
+def factorial(n):
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    if n == 0:                 # base case
+        return 1
+    return n * factorial(n - 1)  # n moves toward 0
+```
+
+**Fibonacci number:** `F(0)=0`, `F(1)=1`, and `F(n)=F(n-1)+F(n-2)` for `n ≥ 2`.
+
+```python
+def fibonacci(n):
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    if n < 2:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+```
+
+This direct version repeats work for larger `n`; it illustrates the definition, while Module 4 compares recursion with dynamic programming.
+
+**Greatest common divisor:** Euclid's algorithm reduces the second argument on every call until it is zero.
+
+```python
+def gcd(a, b):
+    if b == 0:
+        return abs(a)
+    return gcd(b, a % b)
+```
+
+**Add two non-negative integers:** decrease the second value and increase the first until the base case is reached.
+
+```python
+def add(a, b):
+    if b == 0:
+        return a
+    return add(a + 1, b - 1)
+```
+
+**Sum the digits of a non-negative integer:**
+
+```python
+def sum_digits(n):
+    if n < 10:
+        return n
+    return n % 10 + sum_digits(n // 10)
+```
+
+### Avoid circularity
+
+Before writing a recursive function, identify (1) the smallest input that can be answered directly, (2) how each recursive call makes the input smaller or simpler, and (3) why that progress must reach the base case. A call that repeats the same input, such as `return f(n)`, makes no progress and is circular.

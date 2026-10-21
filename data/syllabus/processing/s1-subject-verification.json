@@ -1,0 +1,249 @@
+{
+  "generatedAt": "2026-10-21T16:47:25.139Z",
+  "departments": [
+    {
+      "id": "cse",
+      "name": "Computer Science and Engineering",
+      "group": "A",
+      "file": "ktu-btech-2024-first-year-group-a.txt",
+      "codes": [
+        "GAMAT101",
+        "GAPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCPWT127",
+        "UCHUT128"
+      ],
+      "officialSyllabusCodes": [
+        "GAMAT101",
+        "GAPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCPWT127",
+        "UCHUT128"
+      ],
+      "currentlyListedInNotesCatalog": [
+        "GAMAT101",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GAPHT121"
+      ],
+      "catalogSource": "src/data/notes.ts (checked against source by this script)",
+      "syllabusCoursesFound": [
+        "GAMAT101",
+        "GAPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCPWT127",
+        "UCHUT128"
+      ],
+      "termAssignmentNeedsLocalScheduleCheck": true
+    },
+    {
+      "id": "ece",
+      "name": "Electronics and Communication Engineering",
+      "group": "B",
+      "file": "ktu-btech-2024-first-year-group-b.txt",
+      "codes": [
+        "GYMAT101",
+        "GBPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "officialSyllabusCodes": [
+        "GYMAT101",
+        "GBPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "currentlyListedInNotesCatalog": [
+        "GYMAT101",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "GBPHT121",
+        "UCEST105"
+      ],
+      "catalogSource": "src/data/notes.ts (checked against source by this script)",
+      "syllabusCoursesFound": [
+        "GYMAT101",
+        "GBPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "termAssignmentNeedsLocalScheduleCheck": true
+    },
+    {
+      "id": "eee",
+      "name": "Electrical and Electronics Engineering",
+      "group": "B",
+      "file": "ktu-btech-2024-first-year-group-b.txt",
+      "codes": [
+        "GYMAT101",
+        "GBPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "officialSyllabusCodes": [
+        "GYMAT101",
+        "GBPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "currentlyListedInNotesCatalog": [
+        "GYMAT101",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "GBPHT121",
+        "UCEST105"
+      ],
+      "catalogSource": "src/data/notes.ts (checked against source by this script)",
+      "syllabusCoursesFound": [
+        "GYMAT101",
+        "GBPHT121",
+        "GXCYT122",
+        "GMEST103",
+        "GXEST104",
+        "UCEST105",
+        "GXESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "termAssignmentNeedsLocalScheduleCheck": true
+    },
+    {
+      "id": "civil",
+      "name": "Civil Engineering",
+      "group": "C",
+      "file": "ktu-btech-2024-first-year-s1-s2.txt",
+      "codes": [
+        "GYMAT101",
+        "GZPHT121",
+        "GCCYT122",
+        "GCEST103",
+        "GCEST104",
+        "UCEST105",
+        "GCESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "officialSyllabusCodes": [
+        "GYMAT101",
+        "GZPHT121",
+        "GCCYT122",
+        "GCEST103",
+        "GCEST104",
+        "UCEST105",
+        "GCESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "currentlyListedInNotesCatalog": [
+        "GCCYT122",
+        "UCEST105"
+      ],
+      "catalogSource": "src/data/notes.ts (checked against source by this script)",
+      "syllabusCoursesFound": [
+        "GYMAT101",
+        "GZPHT121",
+        "GCCYT122",
+        "GCEST103",
+        "GCEST104",
+        "UCEST105",
+        "GCESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "termAssignmentNeedsLocalScheduleCheck": true
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "group": "C",
+      "file": "ktu-btech-2024-first-year-s1-s2.txt",
+      "codes": [
+        "GYMAT101",
+        "GZPHT121",
+        "GCCYT122",
+        "GCEST103",
+        "GCEST104",
+        "UCEST105",
+        "GCESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "officialSyllabusCodes": [
+        "GYMAT101",
+        "GZPHT121",
+        "GCCYT122",
+        "GCEST103",
+        "GCEST104",
+        "UCEST105",
+        "GCESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "currentlyListedInNotesCatalog": [
+        "GCCYT122",
+        "UCEST105"
+      ],
+      "catalogSource": "src/data/notes.ts (checked against source by this script)",
+      "syllabusCoursesFound": [
+        "GYMAT101",
+        "GZPHT121",
+        "GCCYT122",
+        "GCEST103",
+        "GCEST104",
+        "UCEST105",
+        "GCESL106",
+        "UCHWT127",
+        "UCHUT128"
+      ],
+      "termAssignmentNeedsLocalScheduleCheck": true
+    }
+  ],
+  "catalogChecks": {
+    "civilAndMechanicalGraphicsEntryIsBranchScopedAway": true,
+    "civilAndMechanicalElectricalEntryIsBranchScopedAway": true,
+    "pythonModuleLinksAreSharedAcrossBranches": true,
+    "civilAndMechanicalPythonRoutesResolve": true
+  },
+  "missing": []
+}

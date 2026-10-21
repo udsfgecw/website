@@ -16,6 +16,7 @@ import { GRAPHICS_M2_PATH } from "@/features/notes/graphics-m2/path";
 import { GRAPHICS_M3_PATH } from "@/features/notes/graphics-m3/path";
 import { GRAPHICS_M4_PATH } from "@/features/notes/graphics-m4/path";
 import { ELECTRICAL_MODULE_1_PATH } from "@/features/notes/electrical-module-1/path";
+import { ELECTRICAL_MODULE_4_PATH } from "@/features/notes/electrical-module-4/path";
 import { ELECTRICAL_MODULE_2_PATH } from "@/features/notes/electrical-module-2/path";
 import { ELECTRICAL_MODULE_3_PATH } from "@/features/notes/electrical-module-3/path";
 import { PYTHON_MODULE_1_PATH, PYTHON_MODULE_1_SUMMARY } from "@/features/notes/python-module-1/path";
@@ -114,7 +115,8 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     modules: branchId === "ece" || branchId === "eee" ? [
       { name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: `/notes/${branchId}/s1/electrical/module-1` },
       { name: "Module 2", detail: "Electromagnetic induction to three-phase AC systems", href: `/notes/${branchId}/s1/electrical/module-2` },
-      { name: "Module 3", detail: "Electronic devices to modern electronics", href: `/notes/${branchId}/s1/electrical/module-3` },
+      { name: "Module 3", detail: "Electronic devices", href: `/notes/${branchId}/s1/electrical/module-3` },
+      { name: "Module 4", detail: "Communication, instrumentation and modern electronics", href: `/notes/${branchId}/s1/electrical/module-4` },
       { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: `/notes/${branchId}/s1/electrical/question-papers` },
     ] : [],
   }]),
@@ -122,6 +124,7 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     name: "Physics",
     course: "Engineering Physics",
     code: "GBPHT121",
+    syllabusHref: `/notes/${branchId}/s1/physics/syllabus`,
     href: `/notes/${branchId}/s1/physics`,
     modules: [1, 2, 3, 4].map((n) => ({
       name: `Module ${n}`,
@@ -140,6 +143,7 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
       { name: "Module 2", detail: "Data structures and modular programming", href: `/notes/${branchId}/s1/python/module-2` },
       { name: "Module 3", detail: "Object-oriented and file-based programming", href: `/notes/${branchId}/s1/python/module-3` },
       { name: "Module 4", detail: "Algorithms and data analysis", href: `/notes/${branchId}/s1/python/module-4` },
+      { name: "Question Papers", detail: "2024 regular end-semester paper", href: `/notes/${branchId}/s1/python/question-papers` },
     ],
   },
 ];
@@ -202,7 +206,8 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
           modules: [
             { name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: ELECTRICAL_MODULE_1_PATH },
             { name: "Module 2", detail: "Electromagnetic induction to three-phase AC systems", href: ELECTRICAL_MODULE_2_PATH },
-            { name: "Module 3", detail: "Electronic devices to modern electronics", href: ELECTRICAL_MODULE_3_PATH },
+            { name: "Module 3", detail: "Electronic devices", href: ELECTRICAL_MODULE_3_PATH },
+            { name: "Module 4", detail: "Communication, instrumentation and modern electronics", href: ELECTRICAL_MODULE_4_PATH },
             { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: GXEST104_QP_PATH },
           ],
         },

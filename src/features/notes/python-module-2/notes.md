@@ -955,200 +955,93 @@ END FOR
 
 For example, `FOR i = 1 TO n` repeats a known number of times, while `WHILE condition` repeats until its condition becomes false.
 
-<!-- page 44 | Module 2 · source page 31 -->
+<!-- page 44 | Additional syllabus practice -->
 
-## The Python `range()` function
+## Additional Module 2 practice: pseudocode and flowcharts
 
-`range()` produces integers from a start value up to, but not including, the stop value. The step may be positive or negative.
+The following exercises use algorithms and pseudocode. Draw a flowchart for each using the symbols introduced earlier. Python-specific selection, loops, lists, and NumPy belong to Module 3.
 
-```python
-list(range(5))          # [0, 1, 2, 3, 4]
-list(range(1, 10, 2))   # [1, 3, 5, 7, 9]
-list(range(10, 0, -1))  # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+### Evaluate an expression
+
+For `d = a + b * c`, multiplication has higher precedence than addition.
+
+```text
+START
+INPUT a, b, c
+product ← b × c
+d ← a + product
+OUTPUT d
+STOP
 ```
 
-A `for` loop can use the same ranges without building a list first:
+### Print 50 down to 1
 
-```python
-for i in range(1, 6):
-    print(i)
+```text
+START
+FOR i ← 50 DOWNTO 1
+    OUTPUT i
+END FOR
+STOP
 ```
 
-`range(stop)` starts at 0 and uses step 1. A zero step raises `ValueError`; `range(1, 5, -1)` is empty because a negative step cannot move 1 toward the upper bound 5.
+### Sum n input values using each loop form
 
-<!-- page 45 | Module 2 · source page 32 -->
+**Count-controlled `FOR`:**
 
-## Examples: accumulation and repetition
-
-### Sum the first ten positive integers
-
-```python
-total = 0
-for number in range(1, 11):
-    total += number
-print(total)  # 55
+```text
+INPUT n
+sum ← 0
+FOR i ← 1 TO n
+    INPUT value
+    sum ← sum + value
+END FOR
+OUTPUT sum
 ```
 
-### Print the multiplication table of nine
+**Pre-test `WHILE`:**
 
-```python
-for multiplier in range(1, 11):
-    print(f"{multiplier} × 9 = {multiplier * 9}")
+```text
+INPUT n
+sum ← 0
+i ← 1
+WHILE i ≤ n
+    INPUT value
+    sum ← sum + value
+    i ← i + 1
+END WHILE
+OUTPUT sum
 ```
 
-Initialize an additive accumulator to 0; initialize a multiplicative accumulator to 1. The multiplication-table loop visits 1 through 10 because its Python stop value is 11.
+**Post-test `REPEAT–UNTIL`:**
 
-<!-- page 46 | Module 2 · source page 33 -->
-
-## Example: assign a grade with `if` and `elif`
-
-The conditions are checked from top to bottom. Once one condition matches, the remaining branches are skipped.
-
-```python
-mark = int(input("Enter the mark: "))
-
-if not 0 <= mark <= 100:
-    grade = "Invalid mark"
-elif mark >= 90:
-    grade = "A"
-elif mark >= 80:
-    grade = "B"
-elif mark >= 70:
-    grade = "C"
-elif mark >= 60:
-    grade = "D"
-else:
-    grade = "F"
-
-print(f"Grade: {grade}")
+```text
+INPUT n
+sum ← 0
+i ← 1
+REPEAT
+    INPUT value
+    sum ← sum + value
+    i ← i + 1
+UNTIL i > n
+OUTPUT sum
 ```
 
-### Example: determine whether a year is a leap year
+For `n = 0`, handle the empty input explicitly before entering the repeat-until loop.
 
-A year is a leap year when it is divisible by 400, or when it is divisible by 4 but not by 100.
+### Find the largest of n numbers
 
-```python
-year = int(input("Enter a year: "))
-if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
-    print("Leap year")
-else:
-    print("Not a leap year")
+```text
+INPUT n
+IF n ≤ 0 THEN
+    OUTPUT "At least one number is required"
+ELSE
+    INPUT largest
+    FOR i ← 2 TO n
+        INPUT value
+        IF value > largest THEN
+            largest ← value
+        END IF
+    END FOR
+    OUTPUT largest
+END IF
 ```
-
-**Checks:** marks 90, 89, 60, and 59 give A, B, D, and F. Years 1900, 2000, and 2024 are respectively not a leap year, a leap year, and a leap year.
-
-<!-- page 47 | Module 2 · source page 34 -->
-
-## Example: solve a quadratic equation
-
-For $ax^2 + bx + c = 0$, the discriminant $D = b^2 - 4ac$ determines the roots. This example prints real roots and handles the case where $a=0$.
-
-```python
-import math
-
-a = float(input("Enter a: "))
-b = float(input("Enter b: "))
-c = float(input("Enter c: "))
-
-if a == 0:
-    print("This is not a quadratic equation.")
-else:
-    discriminant = b**2 - 4 * a * c
-    if discriminant > 0:
-        root1 = (-b + math.sqrt(discriminant)) / (2 * a)
-        root2 = (-b - math.sqrt(discriminant)) / (2 * a)
-        print("Two real roots:", root1, "and", root2)
-    elif discriminant == 0:
-        print("One real root:", -b / (2 * a))
-    else:
-        print("There are no real roots.")
-```
-
-The complex roots for a negative discriminant can be found with `cmath.sqrt()`.
-
-**Checks:** `(a,b,c) = (1,-3,2)` gives roots 2 and 1; `(1,2,1)` gives -1; `(1,0,1)` has no real roots. The `a = 0` branch prevents division by zero. This introductory example uses an exact discriminant comparison; floating-point roundoff can require a tolerance in numerical applications.
-
-<!-- page 48 | Module 2 · source page 35 -->
-
-## Additional Python practice: list indexing and slicing
-
-```python
-fruits = ["apple", "mango", "grapes"]
-print(fruits[1:3])   # ['mango', 'grapes']
-print(fruits[-1])    # 'grapes'
-print(fruits[-3:-1]) # ['apple', 'mango']
-print(fruits[1:])    # ['mango', 'grapes']
-print(fruits[:2])    # ['apple', 'mango']
-
-fruits[1] = "orange"
-print(fruits)        # ['apple', 'orange', 'grapes']
-fruits[1:2] = ["cherry", "pineapple"]
-print(fruits)        # ['apple', 'cherry', 'pineapple', 'grapes']
-```
-
-* An index selects one item; a slice selects a new list.
-* Slice start is included and stop is excluded.
-* Negative indices count from the end.
-* Reading a slice does not change the original list; assigning to an index or slice does.
-
-<!-- page 49 | Module 2 · source page 36 -->
-
-## Sorting and iterating over a list
-
-```python
-fruits = ["apple", "mango", "grapes"]
-fruits.sort()
-print(fruits)  # ['apple', 'grapes', 'mango']
-
-fruits.sort(reverse=True)
-print(fruits)  # ['mango', 'grapes', 'apple']
-
-for fruit in fruits:
-    print(fruit)
-
-for i in range(len(fruits)):
-    print(i, fruits[i])
-```
-
-## NumPy arrays
-
-NumPy is an optional third-party library for working with arrays. Install it before using this example.
-
-```python
-import numpy as np
-
-arr = np.array([1, 2, 3, 4])
-print(arr)        # [1 2 3 4]
-print(type(arr))  # <class 'numpy.ndarray'>
-```
-
-* `sort()` changes the list in place and returns `None`.
-* `sorted(fruits)` returns a new sorted list.
-* `reverse()` reverses the current order rather than sorting.
-
-NumPy is additional practice and is not needed for the core algorithm and flowchart exercises.
-
-<!-- page 50 | Module 2 · source page 37 -->
-
-## Replacing part of a list with slice assignment
-
-**Slice assignment**
-
-A slice assignment replaces the selected range with items from an iterable. The replacement may contain a different number of items, changing the list length. Use a list even when replacing the slice with one item.
-
-```python
-numbers = [10, 20, 30, 40, 50]
-
-numbers[1:3] = [35, 45]
-print(numbers)  # [10, 35, 45, 40, 50]
-
-numbers[1:3] = [23, 27, 28]
-print(numbers)  # [10, 23, 27, 28, 40, 50]
-
-numbers[1:3] = [68]
-print(numbers)  # [10, 68, 28, 40, 50]
-```
-
-The last slice replaces only 23 and 27, so 28 remains in the list.
-
-Assigning `numbers[1:3] = 68` raises `TypeError` because the right side is not iterable. Use `[68]` to replace a slice with one item, or `numbers[1] = 68` to replace a single indexed item.
