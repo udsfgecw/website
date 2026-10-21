@@ -4,14 +4,18 @@ export interface PlotSpec {
   /** [left, top, right, bottom] in graph units */
   boundingBox: [number, number, number, number];
   axis?: boolean;
-  points?: { id: string; x: number; y: number; label?: string }[];
+  points?: { id: string; x: number; y: number; label?: string; show?: boolean }[];
   segments?: { from: string; to: string }[];
   /** filled regions, each a list of point ids in order around the edge */
-  polygons?: { points: string[] }[];
-  circles?: { center: string; radius: number }[];
+  polygons?: { points: string[]; fill?: string; stroke?: string }[];
+  circles?: { center: string; radius: number; stroke?: string }[];
+  arrows?: { from: string; to: string }[];
   /** y = vertex y + a (x - vertex x)², drawn across the box; the label sits just above its vertex */
   parabolas?: { vertex: [number, number]; a: number; label?: string }[];
   functions?: { expression: string; label?: string }[];
+  /** Sampled curves for scientific plots; points are in graph coordinates. */
+  polylines?: ({ points: [number, number][]; label?: string; stroke?: string; dashed?: boolean } | [number, number][])[];
+  labels?: { x: number; y: number; text: string }[];
   title?: string;
 }
 
@@ -59,12 +63,12 @@ export default function PlotFigure({ spec }: { spec: PlotSpec }) {
         {spec.polygons?.map((region, i) => {
           const corners = region.points.map((id) => points.get(id)).filter((p) => p !== undefined);
           if (corners.length < 3) return null;
-          return <polygon key={i} points={corners.map((p) => `${sx(p.x)},${sy(p.y)}`).join(" ")} fill="var(--color-green-tint)" />;
+          return <polygon key={i} points={corners.map((p) => `${sx(p.x)},${sy(p.y)}`).join(" ")} fill={region.fill ?? "var(--color-green-tint)"} stroke={region.stroke ?? "var(--color-green)"} strokeWidth="2.5" />;
         })}
         {spec.circles?.map((c, i) => {
           const centre = points.get(c.center);
           if (!centre) return null;
-          return <circle key={i} cx={sx(centre.x)} cy={sy(centre.y)} r={c.radius * scale} fill="none" stroke="var(--color-green)" strokeWidth="2.5" />;
+          return <circle key={i} cx={sx(centre.x)} cy={sy(centre.y)} r={c.radius * scale} fill="white" stroke={c.stroke ?? "var(--color-green)"} strokeWidth="2.5" />;
         })}
         {spec.parabolas?.map((p, i) => {
           const [vx, vy] = p.vertex;
@@ -86,11 +90,27 @@ export default function PlotFigure({ spec }: { spec: PlotSpec }) {
             </g>
           );
         })}
+        {spec.polylines?.map((line, i) => {
+          const linePoints = Array.isArray(line) ? line : line.points;
+          if (linePoints.length < 2) return null;
+          const stroke = Array.isArray(line) ? undefined : line.stroke;
+          const dashed = Array.isArray(line) ? false : line.dashed;
+          const path = linePoints.map(([x, y], index) =>
+            `${index ? "L" : "M"}${sx(x).toFixed(1)} ${sy(y).toFixed(1)}`,
+          ).join(" ");
+          return <path key={`polyline-${i}`} d={path} fill="none" stroke={stroke ?? "var(--color-green)"} strokeWidth="2.5" strokeDasharray={dashed ? "7 5" : undefined} clipPath={`url(#${clip})`} />;
+        })}
         {spec.segments?.map((s, i) => {
           const a = points.get(s.from);
           const b = points.get(s.to);
           if (!a || !b || a === b) return null;
           return <line key={i} x1={sx(a.x)} y1={sy(a.y)} x2={sx(b.x)} y2={sy(b.y)} stroke="var(--color-green)" strokeWidth="2.5" />;
+        })}
+        {spec.arrows?.map((s, i) => {
+          const a = points.get(s.from);
+          const b = points.get(s.to);
+          if (!a || !b || a === b) return null;
+          return <line key={`arrow-${i}`} x1={sx(a.x)} y1={sy(a.y)} x2={sx(b.x)} y2={sy(b.y)} stroke="var(--color-green)" strokeWidth="2.5" markerEnd={`url(#${marker})`} />;
         })}
         {spec.points?.map((p) => {
           // labels sit outside the point, away from the origin
@@ -98,7 +118,7 @@ export default function PlotFigure({ spec }: { spec: PlotSpec }) {
           const dy = Math.sign(p.y);
           return (
             <g key={p.id}>
-              <circle cx={sx(p.x)} cy={sy(p.y)} r="3.5" fill="currentColor" />
+              {p.show !== false && <circle cx={sx(p.x)} cy={sy(p.y)} r="3.5" fill="currentColor" />}
               {p.label && (
                 <text
                   x={sx(p.x) + (dx || 0.4) * 8}
@@ -114,6 +134,11 @@ export default function PlotFigure({ spec }: { spec: PlotSpec }) {
             </g>
           );
         })}
+        {spec.labels?.map((label, i) => (
+          <text key={`label-${i}`} x={sx(label.x)} y={sy(label.y)} textAnchor="middle" dominantBaseline="middle" fontSize="14" className="notes-figure-label">
+            {label.text}
+          </text>
+        ))}
       </svg>
       {spec.title && <figcaption>{spec.title}</figcaption>}
     </figure>

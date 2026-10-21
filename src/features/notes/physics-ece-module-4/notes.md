@@ -50,11 +50,7 @@ $$A + h\nu = A^*$$
 
 Where $A$ is an atom in the lower state and $A^*$ is an excited atom.
 
-![Absorption process energy level diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p002-1.webp)
-
-> **Figure: Absorption process energy level diagram**
->
-> Energy level diagram for absorption with two panels separated by a dashed vertical line. The left panel is labelled 'before' and shows two horizontal energy levels labelled E_2 (with number 2 at the right end) and E_1 (with number 1 at the right end). An atom is represented as a dot on the E_1 level, and an arrow indicating an incoming photon of energy hnu points towards it from the left. The right panel is labelled 'after' and shows the same two energy levels E_2 and E_1, with the atom now located as a dot on the higher energy level E_2.
+![Absorption process energy level diagram](/assets/notes/ece/s1/physics/module-4/p002-1-clean.webp)
 
 The rate of absorption is directly proportional to the energy density of the incident radiation $U(\nu)$ and the number of atoms in the ground level ($N_1$).
 
@@ -71,11 +67,7 @@ An atom in the excited state can stay in the higher energy level only for a fini
 
 $$A^* = A + h\nu$$
 
-![Spontaneous emission energy level transition diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p003-1.webp)
-
-> **Figure: Spontaneous emission energy level transition diagram**
->
-> Spontaneous emission energy level transition diagram showing energy levels E2 and E1. On the left under 'before', energy level E2 has a particle represented by a dot, and E1 is empty, with a vertical dashed transition line labelled 1. On the right under 'after', E2 is empty and E1 has a particle, with an emitted photon indicated by a wavy arrow labelled 2.
+![Spontaneous emission energy level transition diagram](/assets/notes/ece/s1/physics/module-4/p003-1-clean.webp)
 
 The rate of spontaneous emission is proportional to the number of atoms per unit volume in the excited level ($N_2$).
 
@@ -92,11 +84,7 @@ The process may be expressed as:
 
 $$A^* + h\nu = A + 2h\nu$$
 
-![Diagram showing stimulated emission before and after](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p004-1.webp)
-
-> **Figure: Diagram showing stimulated emission before and after**
->
-> Two energy level diagrams comparing the state before and after stimulated emission. Each diagram displays two horizontal energy levels labelled E2 at the top and E1 at the bottom. The left diagram is labelled 'before' showing dots representing particles in the excited state E2 and an incoming/incident action representation. The right diagram is labelled 'after' showing the transition with multiple particle markers and arrows indicating emitted photons moving outward between levels E2 and E1.
+![Diagram showing stimulated emission before and after](/assets/notes/ece/s1/physics/module-4/p004-1-clean.webp)
 
 The rate of transition to the lower energy level via stimulated emission is directly proportional to the number of atoms per unit volume in the excited level $N_2$ and the energy density of the interacting photon field $U(\nu)$:
 
@@ -203,11 +191,9 @@ In a laser system, an optical resonator produces a highly directional and highly
 
 **Structure of an Optical Resonator:** An optical resonator is a cavity consisting of two reflecting mirrors and an active medium. The active medium is placed between the mirrors. One mirror is fully reflecting and the other one is partially reflecting.
 
-![Laser resonant cavity diagram with fully reflecting mirror, active medium, partially reflecting mirror, and output laser beam.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p007-1.webp)
-
-> **Figure: Laser resonant cavity diagram with fully reflecting mirror, active medium, partially reflecting mirror, and output laser beam.**
->
-> Laser resonant cavity diagram showing a vertical line on the left representing the 'Fully reflecting mirror' with horizontal arrows pointing right towards a rectangular box labeled 'Active medium' which has horizontal arrows inside representing photons. To the right of the active medium, another vertical line represents the 'Partially reflecting mirror', followed by horizontal arrows extending to the right labeled 'Output beam (laser)'.
+```jsxgraph
+{"title":"Laser resonant cavity","boundingBox":[0,9,12,0],"axis":false,"points":[{"id":"l1","x":2,"y":2.7,"show":false},{"id":"l2","x":2,"y":6.3,"show":false},{"id":"r1","x":8,"y":2.7,"show":false},{"id":"r2","x":8,"y":6.3,"show":false},{"id":"ar1","x":3.1,"y":3.6,"show":false},{"id":"ar2","x":7.1,"y":3.6,"show":false},{"id":"ar3","x":3.1,"y":4.5,"show":false},{"id":"ar4","x":7.1,"y":4.5,"show":false},{"id":"ar5","x":3.1,"y":5.4,"show":false},{"id":"ar6","x":7.1,"y":5.4,"show":false},{"id":"out1","x":8,"y":4.5,"show":false},{"id":"out2","x":11,"y":4.5,"show":false}],"polylines":[[[2,2.7],[2,6.3]],[[8,2.7],[8,6.3]],[[3,3.1],[7,3.1],[7,5.9],[3,5.9],[3,3.1]]],"arrows":[{"from":"ar1","to":"ar2"},{"from":"ar3","to":"ar4"},{"from":"ar5","to":"ar6"},{"from":"out1","to":"out2"}],"labels":[{"x":2,"y":7.1,"text":"Fully reflecting mirror"},{"x":5,"y":2.25,"text":"Active medium (gain)"},{"x":8,"y":7.1,"text":"Partially reflecting mirror"},{"x":10,"y":5.1,"text":"Laser output"}]}
+```
 
 **Working:** We first activate the active medium so that photons are produced due to stimulated emission. Photons get reflected at the two mirrors and travel several times in between them. Finally, the photons are aligned parallel to the axis of the mirrors. Only those photons which are aligned parallel to the axis can escape through the partially reflecting mirror. Amplification of light takes place in the space between two reflecting surfaces called the resonant cavity.
 
@@ -249,20 +235,14 @@ The three basic components of a laser system are the active medium, pumping proc
 2. **Pumping Process:** Optical pumping is used to excite the chromium ions. The ruby rod is surrounded by a helical quartz tube containing Xenon gas at low pressure. Electrical discharge is maintained inside the tube through a capacitor bank. The flash of the Xenon tube produces optical pumping lasting for several milliseconds. Only a part of this energy is utilized to pump the $\text{Cr}^{3+}$ ions; the remaining energy heats up the apparatus, necessitating an external cooling mechanism.
 3. **Resonant Cavity:** The ends of the ruby rod are ground and polished flat, with one end completely silvered (fully reflecting) and the other partially silvered. These parallel ends form an optical resonant cavity.
 
-![Diagram of a Ruby laser setup showing xenon flash tube, ruby rod, fully reflecting and partially reflecting ends, and cooling system.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p008-1.webp)
-
-> **Figure: Diagram of a Ruby laser setup showing xenon flash tube, ruby rod, fully reflecting and partially reflecting ends, and cooling system.**
->
-> Diagram of a Ruby laser showing a cylindrical Xenon flash tube wrapped helically around a central Ruby rod. The left end of the ruby rod is labeled 'Fully reflecting' and the right end is labeled 'Partially reflecting'. An outer glass rod or envelope encloses them. A laser beam is shown emerging from the right end. The cooling system connections are indicated with arrows at the bottom. Circuit connections with a capacitor and power source are shown connected to the Xenon flash tube.
+![Diagram of a Ruby laser setup showing xenon flash tube, ruby rod, fully reflecting and partially reflecting ends, and cooling system.](/assets/notes/ece/s1/physics/module-4/p008-1-clean.webp)
 
 #### Working
 Chromium atoms in the ruby absorb green and blue light from the Xenon flash tube.
 
-![Energy level diagram of Ruby Laser](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p009-1.webp)
-
-> **Figure: Energy level diagram of Ruby Laser**
->
-> Energy level diagram of Ruby Laser showing ground state G at the bottom, excited energy bands E1 and E2 represented with hatched regions, and a metastable state M above G. Vertical upward arrows originate from G pointing to E2 (labelled lambda = 4200 Angstrom) and to E1 (labelled lambda = 5500 Angstrom). A diagonal arrow points from E1 to M with the text 'Very fast nonradiative transition'. A horizontal transition arrow goes from M down to G with wavy lines indicating laser emission, labelled 'Laser lambda = 6943 Angstrom'.
+```jsxgraph
+{"title":"Energy levels and transitions in a ruby laser","boundingBox":[-2,12,12,0],"axis":false,"points":[{"id":"e2l","x":2,"y":10,"show":false},{"id":"e2r","x":5.2,"y":10,"show":false},{"id":"e1l","x":2,"y":8.1,"show":false},{"id":"e1r","x":5.2,"y":8.1,"show":false},{"id":"ml","x":2,"y":5.4,"show":false},{"id":"mr","x":5.2,"y":5.4,"show":false},{"id":"gl","x":2,"y":2,"show":false},{"id":"gr","x":8.2,"y":2,"show":false},{"id":"pump1b","x":2.8,"y":2.2,"show":false},{"id":"pump1t","x":2.8,"y":8.1,"show":false},{"id":"pump2b","x":4.3,"y":2.2,"show":false},{"id":"pump2t","x":4.3,"y":10,"show":false},{"id":"nr2t","x":5.7,"y":10,"show":false},{"id":"nr2b","x":5.7,"y":5.4,"show":false},{"id":"nr1t","x":6.1,"y":8.1,"show":false},{"id":"nr1b","x":6.1,"y":5.4,"show":false},{"id":"laserTop","x":6.5,"y":5.4,"show":false},{"id":"laserBottom","x":6.5,"y":2.2,"show":false},{"id":"photonEnd","x":9.2,"y":5.4,"show":false}],"polylines":[[[2,10],[5.2,10]],[[2,8.1],[5.2,8.1]],[[2,5.4],[5.2,5.4]],[[2,2],[8.2,2]]],"arrows":[{"from":"pump1b","to":"pump1t"},{"from":"pump2b","to":"pump2t"},{"from":"nr1t","to":"nr1b"},{"from":"laserTop","to":"laserBottom"},{"from":"laserTop","to":"photonEnd"}],"labels":[{"x":3.6,"y":10.5,"text":"E₂ (excited band)"},{"x":3.6,"y":8.6,"text":"E₁ (excited band)"},{"x":3.6,"y":6.35,"text":"M (metastable)"},{"x":1.2,"y":1.5,"text":"G (ground)"},{"x":0.5,"y":4.6,"text":"λ = 4200 Å"},{"x":0.5,"y":3.5,"text":"λ = 5500 Å"},{"x":8.5,"y":9.3,"text":"Non-radiative transition"},{"x":9.6,"y":6.1,"text":"Laser output"},{"x":8.5,"y":4.5,"text":"λ = 6943 Å"}]}
+```
 
 - Upon absorbing optical energy, the chromium ions are raised from the ground state $G$ to broad excited energy bands $E_1$ and $E_2$.
 - The ions residing in bands $E_1$ and $E_2$ possess a very short lifetime. They undergo fast, non-radiative transitions down to a metastable state $M$, which has a much longer lifetime (approximately $3.5\text{ ms}$). Due to this long lifetime, atoms accumulate in state $M$, establishing a population inversion between the metastable state $M$ and the ground state $G$.
@@ -275,21 +255,13 @@ Chromium atoms in the ruby absorb green and blue light from the Xenon flash tube
 
 #### Construction
 
-![Construction of a semiconductor laser diode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p010-1.webp)
-
-> **Figure: Construction of a semiconductor laser diode**
->
-> 3D schematic diagram of a semiconductor laser diode showing p-type and n-type layers, an active region, roughened surfaces on the sides, optically flat and polished parallel faces at the front and rear emitting a laser beam, and ohmic contacts at the top and bottom with vertical arrows indicating Current.
+![Construction of a semiconductor laser diode](/assets/notes/ece/s1/physics/module-4/p010-1-clean.webp)
 
 Semiconductor laser diodes are extremely small in size, with side dimensions on the order of $1\text{ mm}$. The p-n junction lies in the horizontal plane through the center. The top and bottom faces are metallized to provide ohmic contacts for passing current through the diode. The front and rear faces are polished parallel to each other and perpendicular to the junction to act as the resonant cavity. The other two opposite faces are roughened to suppress transverse lasing. The active region consists of an ultrathin layer of about $1\text{ }\mu\text{m}$ thickness.
 
 #### Working and Population Inversion
 
-![Energy band diagram of a semiconductor laser under forward bias](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p010-2.webp)
-
-> **Figure: Energy band diagram of a semiconductor laser under forward bias**
->
-> Energy band diagram of a semiconductor laser under forward bias, showing p-region and n-region separated by a junction. The conduction band at the top contains electrons (represented as dots) and the valence band at the bottom contains holes (represented as circles). Wavy arrows on the right indicate photon emission.
+![Energy band diagram of a semiconductor laser under forward bias](/assets/notes/ece/s1/physics/module-4/p010-2-clean.webp)
 
 In a semiconductor laser, population inversion is achieved when more energy states are occupied by carriers in the conduction band than in the valence band. Under high forward bias, electrons are injected from the n-side into the p-side, and holes are injected from the p-side into the n-side.
 
@@ -364,11 +336,9 @@ Transitioning from laser light sources, we investigate how light is guided over 
 
 The fundamental principle underlying optical fiber communication is **Total Internal Reflection**. If the angle of incidence in the denser medium is greater than the critical angle $\theta_c$, the incident ray is reflected back into the same medium completely.
 
-![Diagram illustrating Total Internal Reflection in an optical fiber with denser medium n1 and rarer medium n2, showing critical angle theta_c and angles greater than theta_c.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p015-1.webp)
-
-> **Figure: Diagram illustrating Total Internal Reflection in an optical fiber with denser medium n1 and rarer medium n2, showing critical angle theta_c and angles greater than theta_c.**
->
-> Ray diagram illustrating total internal reflection with two horizontal regions: a top rarer medium with refractive index n2 and a bottom denser medium with refractive index n1. Rays originate at the boundary and travel from the denser to the rarer medium. Three points A, B, and C are marked along the interface from left to right. At point A, the angle of incidence equals the critical angle theta_c and the ray refracts along the boundary. At point B, the angle of incidence equals theta_c and the ray reflects entirely within the denser medium. At point C, the angle of incidence is greater than theta_c, marked as >theta_c, and the ray reflects completely back into the denser medium.
+```jsxgraph
+{"title":"Refraction, critical angle, and total internal reflection","boundingBox":[0,11,12,0],"axis":false,"points":[{"id":"A","x":3,"y":7,"show":false},{"id":"B","x":6,"y":7,"show":false},{"id":"C","x":9,"y":7,"show":false},{"id":"nA","x":3,"y":4,"show":false},{"id":"rA","x":5.4,"y":10.3,"show":false},{"id":"iB","x":4,"y":3,"show":false},{"id":"rB","x":9.6,"y":7,"show":false},{"id":"iC","x":6.5,"y":3,"show":false},{"id":"rC","x":11.5,"y":3,"show":false}],"polylines":[[[0.5,7],[11.5,7]],{"points":[[3,2.5],[3,10.5]],"dashed":true},{"points":[[6,2.5],[6,10.5]],"dashed":true},{"points":[[9,2.5],[9,10.5]],"dashed":true}],"arrows":[{"from":"nA","to":"A"},{"from":"A","to":"rA"},{"from":"iB","to":"B"},{"from":"B","to":"rB"},{"from":"iC","to":"C"},{"from":"C","to":"rC"}],"labels":[{"x":2.6,"y":7.6,"text":"A"},{"x":5.6,"y":7.6,"text":"B"},{"x":9.4,"y":7.6,"text":"C"},{"x":10.1,"y":9.8,"text":"n₂ (rarer)"},{"x":10.1,"y":1.5,"text":"n₁ (denser)"},{"x":1.3,"y":5.4,"text":"i < θc"},{"x":7.4,"y":8.0,"text":"i = θc"},{"x":10.8,"y":4.1,"text":"i > θc"}]}
+```
 
 The conditions required for total internal reflection are:
 1. Light must travel from an optically denser medium (refractive index $n_1$) to a rarer medium (refractive index $n_2$).
@@ -378,11 +348,7 @@ The conditions required for total internal reflection are:
 
 An optical fiber is a cylindrical dielectric waveguide consisting of three concentric coaxial regions:
 
-![Diagram showing the structure of an optical fiber consisting of Core, Cladding, and Protective plastic coating.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p015-2.webp)
-
-> **Figure: Diagram showing the structure of an optical fiber consisting of Core, Cladding, and Protective plastic coating.**
->
-> Cylindrical layered structure diagram representing an optical fiber. The innermost concentric cylinder is pointed to by a label 'Core'. The middle cylindrical layer is labelled 'Cladding'. The outermost cylindrical layer is labelled 'Protective plastic coating'.
+![Diagram showing the structure of an optical fiber consisting of Core, Cladding, and Protective plastic coating.](/assets/notes/ece/s1/physics/module-4/p015-2-clean.webp)
 
 i) **Core**: The innermost cylindrical region of the optical fiber through which light propagates. It is typically made of high-purity glass or plastic with a refractive index of $n_1$.
 
@@ -397,18 +363,28 @@ Optical fibers are broadly classified based on the refractive index profile of t
 2. Step-index multimode fiber
 3. Graded-index multimode fiber
 
-![Step index fibre profile and propagation modes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p016-1.webp)
+```jsxgraph
+{"title":"Step-index fiber refractive-index profile (normalized)","boundingBox":[-2.6,1.2,2.6,-0.2],"axis":true,"polylines":[[[-2.5,0.5],[-1,0.5],[-1,1],[1,1],[1,0.5],[2.5,0.5]]]}
+```
 
-> **Figure: Step index fibre profile and propagation modes**
->
-> FIG. 15: Step index multimode fibre. Sub-figure (a) shows the fiber cross-section with core diameter 50 micrometers and cladding diameter 125 micrometers, and a step-like refractive index profile graph with n1 = 1.470, n2 = 1.455, and radial distance on the horizontal axis. Sub-figure (b) shows various modes propagating through the step index multimode fiber in zigzag paths.
+Core has $n_1=1.470$ and radius $a=25\,\mu m$; cladding has $n_2=1.455$. Horizontal coordinate is $r/a$; vertical coordinate is normalized between cladding and core indices.
 
-![Graded index fibre profile and propagation modes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p016-2.webp)
+```jsxgraph
+{"title":"Step-index fiber ray paths in the core","boundingBox":[-2.6,1.2,2.6,-1.2],"axis":false,"polylines":[[[-2.4,-0.7],[-1.6,0.7],[-0.8,-0.7],[0,0.7],[0.8,-0.7],[1.6,0.7],[2.4,-0.7]],[[-2.4,0.7],[-1.6,-0.7],[-0.8,0.7],[0,-0.7],[0.8,0.7],[1.6,-0.7],[2.4,0.7]]]}
+```
 
-> **Figure: Graded index fibre profile and propagation modes**
->
-> FIG. 16: Graded index multimode fibre. Sub-figure (a) shows the fiber cross-section with core diameter 50 micrometers and cladding diameter 125 micrometers, and a parabolic refractive index profile graph with n1 = 1.470, n2 = 1.455, and radial distance on the horizontal axis. Sub-figure (b) shows sinusoidal light ray paths propagating through the graded index multimode fibre.
+The core boundaries are at $y=\pm1$; the zigzag paths illustrate total internal reflection.
+```jsxgraph
+{"title":"Graded-index fiber refractive-index profile (normalized)","boundingBox":[-2.6,1.2,2.6,-0.2],"axis":true,"polylines":[[[-2.5,0.5],[-2,0.5],[-1.5,0.5],[-1.2,0.5],[-1,0.5],[-0.8,0.68],[-0.6,0.82],[-0.4,0.92],[-0.2,0.98],[0,1.0],[0.2,0.98],[0.4,0.92],[0.6,0.82],[0.8,0.68],[1,0.5],[1.2,0.5],[1.5,0.5],[2,0.5],[2.5,0.5]]]}
+```
 
+Core has $n_1=1.470$ at the axis, decreasing approximately parabolically to $n_2=1.455$ at radius $a=25\,\mu m$; the cladding index is constant.
+
+```jsxgraph
+{"title":"Graded-index fiber ray paths in the core","boundingBox":[-2.6,1.2,2.6,-1.2],"axis":false,"polylines":[[[-2.5,0.0],[-2.4167,0.1913],[-2.3333,0.3742],[-2.25,0.5408],[-2.1667,0.6837],[-2.0833,0.7967],[-2.0,0.875],[-1.9167,0.915],[-1.8333,0.915],[-1.75,0.875],[-1.6667,0.7967],[-1.5833,0.6837],[-1.5,0.5408],[-1.4167,0.3742],[-1.3333,0.1913],[-1.25,-0.0],[-1.1667,-0.1913],[-1.0833,-0.3742],[-1.0,-0.5408],[-0.9167,-0.6837],[-0.8333,-0.7967],[-0.75,-0.875],[-0.6667,-0.915],[-0.5833,-0.915],[-0.5,-0.875],[-0.4167,-0.7967],[-0.3333,-0.6837],[-0.25,-0.5408],[-0.1667,-0.3742],[-0.0833,-0.1913],[0.0,0.0],[0.0833,0.1913],[0.1667,0.3742],[0.25,0.5408],[0.3333,0.6837],[0.4167,0.7967],[0.5,0.875],[0.5833,0.915],[0.6667,0.915],[0.75,0.875],[0.8333,0.7967],[0.9167,0.6837],[1.0,0.5408],[1.0833,0.3742],[1.1667,0.1913],[1.25,0.0],[1.3333,-0.1913],[1.4167,-0.3742],[1.5,-0.5408],[1.5833,-0.6837],[1.6667,-0.7967],[1.75,-0.875],[1.8333,-0.915],[1.9167,-0.915],[2.0,-0.875],[2.0833,-0.7967],[2.1667,-0.6837],[2.25,-0.5408],[2.3333,-0.3742],[2.4167,-0.1913],[2.5,-0.0]],[[-2.5,0.6193],[-2.4167,0.6162],[-2.3333,0.5976],[-2.25,0.564],[-2.1667,0.5162],[-2.0833,0.4554],[-2.0,0.3833],[-1.9167,0.3014],[-1.8333,0.2121],[-1.75,0.1173],[-1.6667,0.0197],[-1.5833,-0.0785],[-1.5,-0.1747],[-1.4167,-0.2665],[-1.3333,-0.3516],[-1.25,-0.4278],[-1.1667,-0.4934],[-1.0833,-0.5465],[-1.0,-0.5859],[-0.9167,-0.6106],[-0.8333,-0.6199],[-0.75,-0.6137],[-0.6667,-0.592],[-0.5833,-0.5555],[-0.5,-0.505],[-0.4167,-0.4419],[-0.3333,-0.3676],[-0.25,-0.2841],[-0.1667,-0.1935],[-0.0833,-0.098],[0.0,0.0],[0.0833,0.098],[0.1667,0.1935],[0.25,0.2841],[0.3333,0.3676],[0.4167,0.4419],[0.5,0.505],[0.5833,0.5555],[0.6667,0.592],[0.75,0.6137],[0.8333,0.6199],[0.9167,0.6106],[1.0,0.5859],[1.0833,0.5465],[1.1667,0.4934],[1.25,0.4278],[1.3333,0.3516],[1.4167,0.2665],[1.5,0.1747],[1.5833,0.0785],[1.6667,-0.0197],[1.75,-0.1173],[1.8333,-0.2121],[1.9167,-0.3014],[2.0,-0.3833],[2.0833,-0.4554],[2.1667,-0.5162],[2.25,-0.564],[2.3333,-0.5976],[2.4167,-0.6162],[2.5,-0.6193]]]}
+```
+
+The core boundaries are at $y=\pm1$; curved paths illustrate refraction through the graded index.
 | Step Index Fiber | Graded Index Fiber |
 | --- | --- |
 | 1. The refractive index changes abruptly at core to cladding boundary. | 1. The refractive index decreases radially outwards from core to cladding. |
@@ -441,11 +417,7 @@ The new idea: Numerical aperture quantifies the light gathering capacity of an o
 
 Communication systems that carry information through a guided optical fibre cable are called fibre optic communication systems. The information carrying capacity of a communication system is directly proportional to its bandwidth. The major components of an optical communication system are an **Optical Transmitter**, **Optical Fibre transmission line**, and **Optical Receiver**.
 
-![Block diagram of an optical communication system](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p017-1.webp)
-
-> **Figure: Block diagram of an optical communication system**
->
-> Block diagram of an optical communication system showing a Transmitter section enclosed in a dashed box containing blocks numbered 1, 2, and 3 connected in sequence; a middle section representing the OPTICAL FIBRE / TRANSMISSION NETWORK containing block 4; and a Receiver section enclosed in a dashed box containing blocks 5, 6, and 7 connected in sequence. The blocks are labelled below as: 1. Subscriber's Telephone, 2. Encoder, 3. Optical Transmitter, 4. Optical Fibre link, 5. semiconductor photo detector, 6. Decoder, 7. Subscriber's Telephone.
+![Block diagram of an optical communication system](/assets/notes/ece/s1/physics/module-4/p017-1-clean.webp)
 
 - **Unit 1:** Subscriber's telephone where sound wave is converted into corresponding electrical signal.
 - **Unit 2:** Encoder, which converts continuous electric signal into coded digital pulse by means of an analogue-to-digital converter.
@@ -469,17 +441,11 @@ $$\alpha_m = \sin^{-1}(\text{NA})$$
 
 ### Derivation of Numerical Aperture and Acceptance Angle
 
-![Ray propagation in a step-index optical fiber](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p019-1.webp)
+```jsxgraph
+{"title":"Ray propagation in a step-index optical fiber","boundingBox":[0,12,14,0],"axis":false,"points":[{"id":"f1","x":2,"y":4.5,"show":false},{"id":"f2","x":12,"y":4.5,"show":false},{"id":"f3","x":12,"y":7.5,"show":false},{"id":"f4","x":2,"y":7.5,"show":false},{"id":"c1","x":2,"y":7.5,"show":false},{"id":"c2","x":12,"y":7.5,"show":false},{"id":"c3","x":12,"y":8.3,"show":false},{"id":"c4","x":2,"y":8.3,"show":false},{"id":"b1","x":2,"y":3.7,"show":false},{"id":"b2","x":12,"y":3.7,"show":false},{"id":"b3","x":12,"y":4.5,"show":false},{"id":"b4","x":2,"y":4.5,"show":false},{"id":"in","x":0.3,"y":2,"show":false},{"id":"entry","x":2,"y":5.5,"show":false},{"id":"r1","x":5.1,"y":7.4,"show":false},{"id":"r2","x":8.1,"y":4.6,"show":false},{"id":"r3","x":11.1,"y":7.4,"show":false},{"id":"out","x":13.5,"y":5.1,"show":false},{"id":"axis1","x":0.4,"y":5.5,"show":false},{"id":"axis2","x":2,"y":5.5,"show":false}],"polygons":[{"points":["f1","f2","f3","f4"],"fill":"#f0fdf4","stroke":"#16a34a"},{"points":["c1","c2","c3","c4"],"fill":"#dbeafe","stroke":"#2563eb"},{"points":["b1","b2","b3","b4"],"fill":"#dbeafe","stroke":"#2563eb"}],"polylines":[{"points":[[0.4,5.5],[2,5.5]],"dashed":true}],"arrows":[{"from":"in","to":"entry"},{"from":"entry","to":"r1"},{"from":"r1","to":"r2"},{"from":"r2","to":"r3"},{"from":"r3","to":"out"}],"labels":[{"x":7,"y":6,"text":"Core (n\u2081)"},{"x":7,"y":7.9,"text":"Cladding (n\u2082)"},{"x":7,"y":3.3,"text":"Cladding (n\u2082)"},{"x":0.8,"y":1.3,"text":"n\u2080 (air)"},{"x":1.0,"y":6.1,"text":"\u03b1"},{"x":3.2,"y":6.0,"text":"\u03b8"},{"x":5.5,"y":8.8,"text":"\u03c6"}]}
+```
 
-> **Figure: Ray propagation in a step-index optical fiber**
->
-> Ray propagation diagram for a step-index optical fiber. Shows a central core of refractive index n1 and diameter/region labeled 'Core', surrounded by cladding labeled 'Cladding' of refractive index n2, situated in an external medium of refractive index n0. A dashed horizontal center axis runs along the length of the core. An incoming ray from the lower-left enters the core face at an angle of incidence alpha with respect to the normal/axis, refracts at an angle theta to the axis, and travels to strike the core-cladding interface at an angle phi to the normal, where it undergoes total internal reflection and continues forward inside the core.
-
-![Optical fiber acceptance angle illustration](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p020-1.webp)
-
-> **Figure: Optical fiber acceptance angle illustration**
->
-> Optical fiber acceptance angle illustration showing light rays entering an optical fiber core with acceptance angle alpha_m. The core has refractive index n1, cladding has n2, and surrounding medium has n0.
+![Optical fiber acceptance angle illustration](/assets/notes/ece/s1/physics/module-4/p020-1-clean.webp)
 
 Consider a step index fibre made of a core of refractive index $n_1$ and cladding of refractive index $n_2$ ($n_1 > n_2$). The end faces of the fibre are cut at right angles to the axis of the fibre. A ray of light enters through one end from air into the core at an acceptance angle $\alpha$. After refraction, the ray is incident at the core-cladding interface at an angle $\theta$, which is greater than the critical angle $\varnothing_c$. Hence, it undergoes total internal reflection.
 
