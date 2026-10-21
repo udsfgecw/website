@@ -1,720 +1,1269 @@
 <!-- page 1 | Start here -->
 
-## Partial Derivatives and Multivariable Calculus
+# Module 2 at a glance
 
-Master limits, continuity, first and higher-order partial derivatives, chain rules for functions of multiple variables, and implicit differentiation.
+Module 1 was about functions of **one** variable. But area, volume, temperature on a metal plate and the height of a hill depend on **two or more** inputs. Module 2 takes the same story to more variables, in the same order: **limits → derivatives → using derivatives**.
 
-**Before you start:** Single-variable limits and continuity; Basic differentiation rules (product, quotient, chain rule); Partial differentiation fundamentals.
+The only new difficulty is that with two inputs you can move in many directions. So every idea has one extra question: *in which direction?*
 
-### Your path through this module
+1. **Functions of two variables** $z=f(x,y)$: what they are and where they are defined.
+2. **Limits and continuity**: now we can reach a point along infinitely many paths, not just from the left and the right.
+3. **Partial derivatives**: change one input and keep the others fixed.
+4. **Chain rule and implicit differentiation**: how a change passes through a chain of dependent variables.
+5. **Applications**: slopes of surfaces, related rates, and level curves.
 
-1. **Limits and Continuity of Functions of Two Variables**: A limit in two variables must be independent of the path along which (x,y) approaches (a,b).
-2. **Limits, Continuity, and Domain/Range Practice**: Using paths like y = mx to prove limit non-existence and sketching concentric circles or parabolas for level curves.
-3. **First-Order Partial Derivatives and Slopes**: Partial derivatives represent directional slopes and rates of change along coordinate axes.
-4. **Higher-Order Partial Derivatives**: Mixed partial derivatives commute under continuity conditions (f_xy = f_yx).
-5. **Chain Rule for Functions of Two or More Variables**: Total derivative formulas aggregate contributions from all intermediate variable pathways using tree diagrams.
-6. **Implicit Differentiation Using Partial Derivatives**: The ratio of negative partial derivatives (-f_x / f_y) yields the derivative of an implicit function directly.
+## What you will be able to do
 
-<!-- page 2 | Limits and Continuity of Functions of Two Variables -->
+- State the domain and range of a function of two variables.
+- Find a two-variable limit, and prove that a limit does **not** exist by comparing two paths.
+- Check whether a function is continuous at a point.
+- Find first, second and mixed partial derivatives, and check that $f_{xy}=f_{yx}$.
+- Use the chain rule with one or two parameters, and draw the tree diagram that helps you organise it.
+- Find $\dfrac{dy}{dx}$ for an implicit curve using partial derivatives.
+- Solve related-rates problems with many changing quantities.
+- Sketch the level curves of a function.
 
-# Limits and Continuity of Functions of Two Variables
+## How to use these notes
 
-Transitioning from single-variable calculus to multivariable calculus requires a shift in how we think about approach and destination. For a function of a single variable, $y = f(x)$, a point $x$ can approach a value $a$ from only two directions: from the left ($x \to a^-$) and from the right ($x \to a^+$). If both one-sided limits are equal, the single-variable limit exists. For a function of two variables, $z = f(x,y)$, the input point $(x,y)$ can approach a target point $(a,b)$ from an infinite number of directions in the two-dimensional $xy$$plane (along straight lines, parabolas, spirals, etc.). This makes the concept of a limit and continuity much richer and more rigorous.
+- Every topic has the same shape: **idea → rule → worked example → common mistakes.**
+- Try each worked example yourself first. Cover the answer, solve it, and then compare.
+- Green boxes hold key ideas. Amber boxes marked **Watch out** show the mistakes that make you lose marks.
+- The last page has practice questions with answers, and then a one-page formula sheet for revision.
 
-## Limit of a Function of Two Variables
+## Where each topic sits
 
-We define a function of two variables, $f(x,y)$, as a rule that assigns a real number $z$ to each ordered pair $(x,y)$ in a subset of $\mathbb{R}^2$ called the domain. The value $L$ is defined as the limit of $f(x,y)$ as $(x,y)$ approaches $(a,b)$, denoted as:
+| Part | Topics |
+| --- | --- |
+| Functions | Domain, range |
+| Limits and continuity | Limits along paths, the two-path test, continuity |
+| Partial derivatives | First order, slope of a surface, second order, mixed partials |
+| Chain rule | One parameter, two parameters, related rates |
+| Implicit functions | $dy/dx=-f_x/f_y$ |
+| Pictures | Level curves |
 
-$$\lim_{(x,y) \to (a,b)} f(x,y) = L$$
-
-This equation means that the distance between $f(x,y)$ and $L$ can be made arbitrarily small by making the Euclidean distance between the point $(x,y)$ and the point $(a,b)$ sufficiently small, but not equal to $(a,b)$ itself. In formal terms, for every $\epsilon > 0$, there exists a $\delta > 0$ such that if $0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta$, then $$f(x,y) - L| < \epsilon$. The unit of distance in the $xy$$plane is dimensionless or measured in units of length, while $L$ has the physical units of the function $f(x,y)$.
-
-## Path-Dependent Limits
-
-Because $(x,y)$ can approach $(a,b)$ along any trajectory, a fundamental rule governs multivariable limits: **the limit must be unique regardless of the path of approach**. If $(x,y)$ approaches $(a,b)$ along two different paths and yields two different limiting values, the two-variable limit does not exist.
-
-A powerful testing technique is to let $(x,y)$ approach the origin $(0,0)$ along straight-line paths given by $y = mx$, where $m$ is the slope of the line.
-
-To visualize this approach path:
-1. Draw an $xy$coordinate system with an origin at $(0,0)$.
-2. Sketch a family of straight lines passing through the origin, representing $y = mx$ for various values of $m$.
-3. Imagine sliding a point $(x,y)$ along one of these lines toward $(0,0)$ and observing the resulting value of $f(x,y)$.
-
-Substituting $y = mx$ into $f(x,y)$ transforms the expression into a single-variable function of $x$. If the resulting limit depends on $m$, the limit depends on the path, proving that the limit does not exist.
-
-## Continuity Conditions
-
-Just as in single-variable calculus, continuity in two variables requires that the function has no breaks, jumps, or holes at a specific point. A function $f(x,y)$ is continuous at the point $(a,b)$ if three strict conditions are met:
-
-1. **Defined:** The point $(a,b)$ lies within the domain of $f$, meaning $f(a,b)$ is a real number.
-2. **Exists:** The limit $\lim_{(x,y) \to (a,b)} f(x,y)$ exists.
-3. **Equal:** The limit equals the function value at that point:
-
-$$\lim_{(x,y) \to (a,b)} f(x,y) = f(a,b)$$
-
-If a function fails any of these three conditions at $(a,b)$, it is discontinuous at that point. Polynomials in $x$ and $y$ are continuous everywhere in $\mathbb{R}^2$, and rational functions are continuous everywhere on their domains where the denominator is non-zero.
-
-## Worked Example
-
-**Problem:** Evaluate the limit or show that it does not exist:
-
-$$\lim_{(x,y) \to (0,0)} \frac{xy}{x^2 + y^2}$$
-
-**Solution:**
-
-1. **Test direct substitution:** Plugging in $(0,0)$ yields the indeterminate form $\frac{0}{0}$. We must evaluate the limit analytically.
-
-2. **Test linear paths ($y = mx$):** Substitute $y = mx$ into the limit expression:
-
-$$\lim_{x \to 0} \frac{x(mx)}{x^2 + (mx)^2}$$
-
-3. **Simplify the expression:** Factor out $x^2$ from the numerator and denominator:
-
-$$\lim_{x \to 0} \frac{m x^2}{x^2 (1 + m^2)} = \lim_{x \to 0} \frac{m}{1 + m^2} = \frac{m}{1 + m^2}$$
-
-4. **Analyze the result:** The resulting limit depends explicitly on the slope $m$. If we approach along the x-axis ($m = 0$), the limit is $0$. If we approach along the line $y = x$ ($m = 1$), the limit is $\frac{1}{2}$.
-
-5. **Conclusion:** Because different paths yield different limits, the limit does not exist.
-
-## Remember
-
-* A multivariable limit exists only if the same limiting value is obtained along every possible approach path.
-* Testing linear paths $y = mx$ is a primary tool for proving that a limit does not exist when the result depends on $m$.
-* Continuity at $(a,b)$ requires that the function is defined at the point, the limit exists as $(x,y) \to (a,b)$, and the limit matches the function value.
-
-<!-- page 3 | Limits, Continuity, and Domain/Range Practice -->
-
-## Limits, Continuity, and Domain/Range Practice
-
-Bridge: Now that we understand the theory of limits and continuity, we will solve limit evaluations, path-dependent limit proofs, and sketch level curves.
-
-The new idea: Using paths like $y = mx$ to prove limit non-existence and sketching concentric circles or parabolas for level curves.
-
-Objectives: Evaluate limits using algebraic manipulation; Show non-existence of limits using path tests; Determine domains, ranges, and level curves.
-
-Concepts to teach: Direct substitution; Rationalization; Path test for non-existence; Domain and Range; Level curves.
-
-### Limits for Functions of Two Variables
-
-A function $f(x,y)$ approaches the limit $L$ as ordered pair $(x,y)$ approaches $(x_0, y_0)$ and we write:
-$$\lim_{(x,y)\to(a,b)} f(x,y) = L.$$
-
-#### Solved Limit Problems
-
-1. Evaluate $\lim_{(x,y)\to(0,1)} \frac{x-xy+3}{x^2y+5xy-y^3}$
-
-$$\begin{aligned}
-&= \frac{\lim_{(x,y)\to(0,1)} (x-xy+3)}{\lim_{(x,y)\to(0,1)} (x^2y+5xy-y^3)} = \frac{0 - 0\times 1 + 3}{0^2\times 1 + 5\times 0\times 1 - 1^3}\\[6pt]
-&= \frac{3}{-1} = -3
-\end{aligned}$$
-
-2. Evaluate $\lim_{(x,y)\to(3,-4)} \sqrt{x^2+y^2}$
-
-$$\begin{aligned}
-&= \sqrt{\lim_{(x,y)\to(3,-4)} (x^2+y^2)} = \sqrt{3^2 + (-4)^2} = \sqrt{9+16} = \sqrt{25} = 5
-\end{aligned}$$
-
-3. Evaluate $\lim_{(x,y)\to(\pi/2,0)} \left( \frac{x}{\sin x} - \frac{\sin y}{y} \right)$
-
-$$\begin{aligned}
-&= \frac{\lim_{(x,y)\to(\pi/2,0)} x}{\lim_{(x,y)\to(\pi/2,0)} \sin x} - \frac{\lim_{(x,y)\to(\pi/2,0)} \sin y}{\lim_{(x,y)\to(\pi/2,0)} y}\\[6pt]
-&= \frac{\pi/2}{\sin \pi/2} - \frac{\sin 0}{0} = \frac{\pi - 0}{\frac{2}{1}} = \frac{\pi}{2} - 1
-\end{aligned}$$
-
-4. Evaluate $\lim_{(x,y) \to (0,0)} \frac{x^2 - xy}{\sqrt{x} - \sqrt{y}}$
-
-Initial direct substitution yields $\frac{0}{0}$. We rationalize the denominator:
-
-$$\begin{aligned}
-&= \lim_{(x,y) \to (0,0)} \frac{(x^2 - xy)(\sqrt{x} + \sqrt{y})}{(\sqrt{x})^2 - (\sqrt{y})^2} = \frac{x^2 \sqrt{x} + x^2 \sqrt{y} - xy \sqrt{x} - xy \sqrt{y}}{x - y}\\[6pt]
-&= \frac{x(x - y)(\sqrt{x} + \sqrt{y})}{x - y} = 0(0 + 0) = 0
-\end{aligned}$$
-
-#### Proofs of Limit Non-Existence via Paths
-
-1. Show that $\lim_{(x,y) \to (0,0)} \frac{x^2 - y^2}{x^2 + y^2}$ does not exist.
-
-Let $(x,y) \to (0,0)$ along the path $y = mx$. Substituting this into the expression:
-
-$$\lim_{x \to 0} \frac{x^2 - m^2 x^2}{x^2 + m^2 x^2} = \lim_{x \to 0} \frac{x^2 (1 - m^2)}{x^2 (1 + m^2)} = \frac{1 - m^2}{1 + m^2}$$
-
-Since the resulting limit depends on the slope $m$, the limit approaches different values along different paths. Therefore, the limit does not exist.
-
-2. Show that $\lim_{(x,y) \to (0,0)} \frac{xy}{x^2 + y^2}$ does not exist.
-
-Let $(x,y) \to (0,0)$ along the path $y = mx$:
-
-$$\lim_{x \to 0} \frac{x \cdot mx}{x^2 + m^2 x^2} = \frac{x^2 m}{x^2 (1 + m^2)} = \frac{m}{1 + m^2}$$
-
-Since this limit depends on $m$, the limit does not exist.
+> **Before you start.** You should know the differentiation from Module 1: the power, product, quotient and chain rules, and the derivatives of $e^x$, $\ln x$, $\sin x$, $\cos x$, $\tan x$ and $\tan^{-1}x$. Partial derivatives are just ordinary derivatives with a little extra care, so these rules do all the work.
 
 ---
 
-### Continuity
+<!-- page 2 | Functions of two variables -->
 
-A function $f(x,y)$ is continuous at $(x_0, y_0)$ if:
-1. $f(x_0, y_0)$ is defined.
-2. $\lim_{(x,y)\to(x_0, y_0)} f(x,y)$ exists.
-3. $\lim_{(x,y)\to(x_0, y_0)} f(x,y) = f(x_0, y_0)$.
+# Functions of two variables
 
-A function is continuous if it is continuous at every point of its domain.
+## The idea
 
-#### Solved Continuity Problems
+A function of two variables gives exactly one number for each pair $(x,y)$ in its **domain**:
 
-1. Show that $f(x,y) = \begin{cases} \frac{2xy}{x^2+y^2} & ; (x,y) \neq (0,0) \\ 0 & ; (x,y) = (0,0) \end{cases}$ is continuous at every point except the origin.
+$$
+z=f(x,y)
+$$
 
-Given $f(0,0) = 0$. Evaluating the limit along the path $y = mx$:
+Examples you already know: the area of a rectangle $A=xy$, the volume of a cone $V=\tfrac13\pi r^2h$, the distance from the origin $\sqrt{x^2+y^2}$.
 
-$$\lim_{(x,y)\to(0,0)} \frac{2x\cdot mx}{x^2+m^2x^2} = \lim_{(x,y)\to(0,0)} \frac{2x^2m}{x^2(1+m^2)} = \frac{2m}{1+m^2}$$
+The graph of $z=f(x,y)$ is a **surface** in space: above each point $(x,y)$ of the plane, there is a point at height $z$.
 
-Because the limit depends on the value of $m$, the limit does not exist at the origin. Thus, the function $f(x,y)$ is discontinuous at the origin.
+## Domain and range
 
-2. Show that $f(x,y) = \begin{cases} \frac{y}{\sqrt{x^2+y^2}} & ; (x,y) \neq (0,0) \\ 0 & ; (x,y) = (0,0) \end{cases}$ is discontinuous at $(0,0)$.
+**Domain**
 
-Given $f(0,0) = 0$. Evaluating along the path $y = mx$ yields a path-dependent expression, proving the limit does not exist, and hence the function is discontinuous at $(0,0)$.
+The domain is the set of all $(x,y)$ for which $f(x,y)$ is defined. It is a region of the plane, not an interval.
+
+**Range**
+
+The range is the set of all values $f(x,y)$ can take.
+
+The conditions are the same as in one variable:
+
+| Trouble | Rule |
+| --- | --- |
+| Division | the denominator must not be $0$ |
+| Even root | the expression under it must be $\ge 0$ |
+| Logarithm | the expression inside must be $>0$ |
+
+**Example 1.** $f(x,y)=x^2-y^2$.
+
+There is no problem anywhere, so the domain is all of $\mathbb{R}^2$. Every real number is a value: to get $k\ge0$ take $(\sqrt k,\,0)$, and to get $k<0$ take $(0,\,\sqrt{-k})$. So the range is $\mathbb{R}$.
+
+**Example 2.** $f(x,y)=\dfrac{x+y}{x-y}$.
+
+The denominator becomes zero when $x=y$. The domain is the whole plane **except the line** $y=x$:
+
+$$
+\mathbb{R}^2\setminus\{(x,y): x=y\}
+$$
+
+Every real $k$ is a value: for $k\ne-1$ take $x=1,\ y=\dfrac{k-1}{k+1}$, and for $k=-1$ take $(0,1)$. So the range is $\mathbb{R}$.
+
+**Example 3.** $f(x,y)=\sqrt{9-x^2-y^2}$.
+
+The root needs $9-x^2-y^2\ge0$, that is $x^2+y^2\le9$. The domain is the **closed disc** of radius $3$ centred at the origin. The largest value is $f(0,0)=3$ and the smallest is $0$ (on the edge of the disc), so the range is $[0,3]$. This is the upper half of a sphere. You will see it again in level curves.
+
+> **Watch out.** Write the domain as an equation or inequality in $x$ and $y$ (like "$x\neq y$" or "$x^2+y^2\le9$"). Writing only a one-variable condition like "$x\neq0$" is not enough, because the condition usually involves **both** variables together.
 
 ---
 
-### Domain and Range
+<!-- page 3 | Limits -->
 
-1. Find the domain and range of a function $f(x, y) = x^2 - y^2$.
-* **Domain:** All real numbers $\mathbb{R}^2$, because there are no restrictions on $x$ and $y$.
-* **Range:** All real numbers $\mathbb{R}$, because $x^2 - y^2$ can take any real value.
+# Limits of functions of two variables
 
-2. Find the domain and range of the function $f(x, y) = \frac{x+y}{x-y}$.
-* **Domain:** $\mathbb{R}^2 - \{(x, y) \mid x = y\}$, because the denominator cannot be zero.
-* **Range:** All real numbers $\mathbb{R}$.
+## The idea
+
+$$
+\lim_{(x,y)\to(a,b)}f(x,y)=L
+$$
+
+means: $f(x,y)$ comes as close to $L$ as we like when the point $(x,y)$ is close enough to $(a,b)$, but not equal to it.
+
+On a number line you can reach a point from only two sides, left and right. In the plane you can reach $(a,b)$ along **infinitely many paths**: straight lines, parabolas, spirals.
+
+> **Key idea.** The limit exists only if $f$ goes to the **same** number along **every** path to $(a,b)$. If even one path gives a different answer, the limit does not exist.
+
+## Easy case: just substitute
+
+The limit laws from Module 1 work in the same way for $(x,y)\to(a,b)$: you can take limits through sums, differences, constant multiples, products, quotients (when the limit of the denominator is $\ne0$), powers and roots.
+
+So for a polynomial, or a rational function whose denominator is not $0$ at the point, **substitute**.
+
+**Example 1.** $\displaystyle\lim_{(x,y)\to(0,1)}\frac{x-xy+3}{x^2y+5xy-y^3}$
+
+$$
+\frac{0-0\cdot1+3}{0^2\cdot1+5\cdot0\cdot1-1^3}=\frac{3}{-1}=\mathbf{-3}
+$$
+
+**Example 2.** $\displaystyle\lim_{(x,y)\to(3,-4)}\sqrt{x^2+y^2}$
+
+$$
+\sqrt{3^2+(-4)^2}=\sqrt{9+16}=\sqrt{25}=\mathbf{5}
+$$
+
+This is the distance from $(3,-4)$ to the origin.
+
+**Example 3.** $\displaystyle\lim_{(x,y)\to(\pi/2,\,0)}\left(\frac{x}{\sin x}-\frac{\sin y}{y}\right)$
+
+Take the two terms separately. The first is $\dfrac{\pi/2}{\sin(\pi/2)}=\dfrac{\pi}{2}$. The second gives $0/0$ on substitution, but it is the standard limit $\dfrac{\sin y}{y}\to1$ from Module 1. So the answer is
+
+$$
+\frac{\pi}{2}-1
+$$
+
+## When substitution gives $0/0$
+
+Do the same as in Module 1: factorise and cancel, or use the difference of squares.
+
+**Example 4.** $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2-xy}{\sqrt{x}-\sqrt{y}}$
+
+Substituting gives $0/0$. Factorise the top as $x(x-y)$ and write $x-y=(\sqrt x-\sqrt y)(\sqrt x+\sqrt y)$:
+
+$$
+\frac{x(x-y)}{\sqrt x-\sqrt y}=\frac{x(\sqrt x-\sqrt y)(\sqrt x+\sqrt y)}{\sqrt x-\sqrt y}=x(\sqrt x+\sqrt y)
+$$
+
+Now substitute: $0\cdot(0+0)=\mathbf{0}$. (The square roots need $x,y\ge0$, and $x\ne y$ keeps the original fraction defined.)
+
+## Showing a limit does not exist: the two-path test
+
+> **Two-path test.** If $f$ goes to **different** values along two different paths to $(a,b)$, then $\displaystyle\lim_{(x,y)\to(a,b)}f(x,y)$ does not exist.
+
+For the origin, the usual choice is the family of lines through it, $y=mx$. Put $y=mx$, let $x\to0$, and see whether the answer depends on $m$. If it does, the limit does not exist.
+
+**Example 5.** Show that $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2-y^2}{x^2+y^2}$ does not exist.
+
+Substitution gives $0/0$, so the limit laws do not help. Put $y=mx$:
+
+$$
+\lim_{x\to0}\frac{x^2-m^2x^2}{x^2+m^2x^2}=\lim_{x\to0}\frac{x^2(1-m^2)}{x^2(1+m^2)}=\frac{1-m^2}{1+m^2}
+$$
+
+The answer depends on $m$. Along the $x$-axis ($m=0$) it is $1$, and along $y=x$ ($m=1$) it is $0$. Different paths give different values, so the limit **does not exist**.
+
+**Example 6.** Show that $\displaystyle\lim_{(x,y)\to(0,0)}\frac{xy}{x^2+y^2}$ does not exist.
+
+Put $y=mx$:
+
+$$
+\lim_{x\to0}\frac{x\cdot mx}{x^2+m^2x^2}=\frac{m}{1+m^2}
+$$
+
+This is $0$ for $m=0$ and $\tfrac12$ for $m=1$. The limit **does not exist**.
+
+> **Watch out.** The two-path test can only prove that a limit does **not** exist. If every straight line gives the same value, that does **not** prove that the limit exists, because some curve may give a different value. For example $\dfrac{xy^2}{x^2+y^4}$ gives $0$ along every line $y=mx$, but along the parabola $x=y^2$ it equals $\dfrac{y^4}{2y^4}=\dfrac12$. So its limit at the origin does not exist.
 
 ---
 
-### Level Curves
+<!-- page 4 | Continuity -->
 
-A level curve of a function $f(x, y)$ is a curve along which the function maintains a constant value. For a given constant $k$, the level curve is defined by the equation $f(x, y) = k$.
+# Continuity
 
-1. Find the graph and level curves of the function $f(x, y) = \sqrt{9 - x^2 - y^2}$ for $c = 0, 1, 2,$ and $3$.
+## The idea
 
-$$\sqrt{9 - x^2 - y^2} = c \implies 9 - x^2 - y^2 = c^2 \implies x^2 + y^2 = 9 - c^2$$
+A function is continuous at a point when its graph has no break there: the value we **expect** from the nearby points is the value the function **actually has**.
 
-* When $c = 0 \implies x^2 + y^2 = 9$
-* When $c = 1 \implies x^2 + y^2 = 8$
-* When $c = 2 \implies x^2 + y^2 = 5$
-* When $c = 3 \implies x^2 + y^2 = 0$ (the origin)
-
-> **Figure: Level curves of f(x, y) = sqrt(9 - x^2 - y^2)**
+> **Definition.** $f(x,y)$ is **continuous at $(x_0,y_0)$** when all three hold:
 >
-> Level curves of f(x, y) = sqrt(9 - x^2 - y^2). A set of concentric circles centered at the origin on a Cartesian coordinate system with x and y axes. The outermost circle is labelled c = 0 passing through points (-3, 0), (3, 0), (0, 3), and (0, -3). Inside are circles labelled c = 1, c = 2, and the innermost point at the origin is c = 3.
+> 1. $f(x_0,y_0)$ is defined.
+> 2. $\displaystyle\lim_{(x,y)\to(x_0,y_0)}f(x,y)$ exists.
+> 3. $\displaystyle\lim_{(x,y)\to(x_0,y_0)}f(x,y)=f(x_0,y_0)$.
 
-2. Find the level curves for the function $f(x, y) = x^2 + 2y$ for $k = -2, 0, 2$.
+$f$ is **continuous** if it is continuous at every point of its domain.
 
-$$x^2 + 2y = k \implies x^2 = k - 2y$$
+## What you can take for granted
 
-* For $k = -2 \implies x^2 = -2 - 2y$
-* For $k = 0 \implies x^2 = -2y$
-* For $k = 2 \implies x^2 = 2 - 2y$
+- Polynomials are continuous everywhere.
+- A rational function is continuous everywhere its denominator is not $0$.
+- Sums, products, quotients (denominator $\ne0$) and compositions of continuous functions are continuous.
 
-> **Figure: Parabolas for level curves of f(x, y) = x^2 + 2y**
+So a problem can come only where the formula changes (a piecewise function), or where a denominator becomes zero. These are the points to check.
+
+## Method
+
+1. Away from the doubtful point, the function is made of continuous parts, so it is continuous there.
+2. At the doubtful point, check the three conditions. Most of the time, condition 2 fails. Use the two-path test.
+
+## Examples
+
+**Example 1.** Show that
+
+$$
+f(x,y)=\begin{cases}\dfrac{2xy}{x^2+y^2}, & (x,y)\neq(0,0)\\[8pt] 0, & (x,y)=(0,0)\end{cases}
+$$
+
+is continuous everywhere except the origin.
+
+*Away from the origin* it is a rational function with a non-zero denominator, so it is continuous.
+
+*At the origin* $f(0,0)=0$ is defined. Along $y=mx$:
+
+$$
+\lim_{x\to0}\frac{2x\cdot mx}{x^2+m^2x^2}=\frac{2m}{1+m^2}
+$$
+
+This depends on $m$, so the limit does not exist and $f$ is **not continuous at the origin**. Changing the value of $f(0,0)$ cannot fix this, because there is no single limit to match.
+
+**Example 2.** Show that
+
+$$
+f(x,y)=\begin{cases}\dfrac{y}{\sqrt{x^2+y^2}}, & (x,y)\neq(0,0)\\[8pt] 0, & (x,y)=(0,0)\end{cases}
+$$
+
+is discontinuous at $(0,0)$.
+
+Along $y=mx$ with $x>0$ we have $\sqrt{x^2+m^2x^2}=x\sqrt{1+m^2}$, so
+
+$$
+\lim_{x\to0^+}\frac{mx}{x\sqrt{1+m^2}}=\frac{m}{\sqrt{1+m^2}}
+$$
+
+This depends on $m$ (it is $0$ for $m=0$ and $\tfrac1{\sqrt2}$ for $m=1$), so the limit does not exist and $f$ is **discontinuous at $(0,0)$**.
+
+**Example 3.** Let $f(x,y)=x^2+y^2$ for $(x,y)\neq(0,0)$, and $f(0,0)=1$. Is $f$ continuous at the origin?
+
+Conditions 1 and 2 hold: $f(0,0)=1$ is defined, and the limit is $0^2+0^2=0$. But condition 3 fails because $0\neq1$. So $f$ is **not continuous** at the origin. This is a *removable* break: if we redefine $f(0,0)=0$, it is fixed.
+
+> **Watch out.** "The limit exists" and "the function is continuous" are different things. Example 3 has a limit but is still discontinuous. All **three** conditions must be true.
+
+---
+
+<!-- page 5 | Partial derivatives -->
+
+# Partial derivatives
+
+## The idea
+
+For $z=f(x,y)$ there are two natural questions: how fast does $z$ change if we move in the $x$ direction (keeping $y$ fixed), and how fast does it change if we move in the $y$ direction (keeping $x$ fixed)? The answers are the **partial derivatives**.
+
+$$
+\frac{\partial z}{\partial x}=\lim_{h\to0}\frac{f(x+h,\,y)-f(x,y)}{h}
+\qquad
+\frac{\partial z}{\partial y}=\lim_{h\to0}\frac{f(x,\,y+h)-f(x,y)}{h}
+$$
+
+Each one is just the Module 1 definition of a derivative, applied to one variable while the other is kept fixed.
+
+| Name | Common symbols |
+| --- | --- |
+| partial derivative with respect to $x$ | $\dfrac{\partial z}{\partial x},\quad \dfrac{\partial f}{\partial x},\quad f_x$ |
+| partial derivative with respect to $y$ | $\dfrac{\partial z}{\partial y},\quad \dfrac{\partial f}{\partial y},\quad f_y$ |
+
+The curly $\partial$ means "there are other variables also". The straight $d$ is only for functions of one variable.
+
+## Method
+
+> **Steps.**
 >
-> Sketches of parabolas opening downwards representing level curves for k = 2, k = 0, and k = -2 for the function f(x, y) = x^2 + 2y, showing coordinate axes and equations.
+> - For $f_x$: treat $y$ as a **constant** and differentiate with respect to $x$ using the usual rules.
+> - For $f_y$: treat $x$ as a **constant** and differentiate with respect to $y$.
 
-3. Find the level curves of the function $f(x,y) = x^2+y^2$ passing through specific points.
+A constant multiplier stays as it is. A term with only the *other* variable is a constant, so it becomes zero. 
 
-$$f(x,y) = x^2+y^2 = 2^2+0^2 = 4$$
+For example, for $x^2y$: differentiating in $x$ gives $2xy$ (the $y$ just stays as a multiplier), and differentiating in $y$ gives $x^2$.
 
-> **Figure: Sketch of a circle representing a level curve on an xy-plane**
+## Examples
+
+**Example 1.** $f(x,y)=x^2y+3xy^2$
+
+$$
+f_x=2xy+3y^2\qquad f_y=x^2+6xy
+$$
+
+**Example 2.** $f(x,y)=2x^2-3y-4$
+
+$$
+f_x=4x\qquad f_y=-3
+$$
+
+The $-3y$ is constant with respect to $x$, so it disappears from $f_x$. The $2x^2$ and $-4$ disappear from $f_y$.
+
+**Example 3.** $f(x,y)=(x+1)(y-2)$. Treat the other bracket as a constant factor.
+
+$$
+f_x=y-2\qquad f_y=x+1
+$$
+
+**Example 4.** $f(x,y)=\sqrt{x^2+y^2}$. Use the chain rule on the root.
+
+$$
+f_x=\frac{1}{2\sqrt{x^2+y^2}}\cdot2x=\frac{x}{\sqrt{x^2+y^2}}\qquad
+f_y=\frac{y}{\sqrt{x^2+y^2}}
+$$
+
+**Example 5.** $z=\sqrt{3x+4y}$
+
+$$
+\frac{\partial z}{\partial x}=\frac{1}{2\sqrt{3x+4y}}\cdot3=\frac{3}{2\sqrt{3x+4y}}\qquad
+\frac{\partial z}{\partial y}=\frac{1}{2\sqrt{3x+4y}}\cdot4=\frac{2}{\sqrt{3x+4y}}
+$$
+
+**Example 6.** $f(x,y)=\log(x^2+y^2)$ (natural logarithm)
+
+$$
+f_x=\frac{1}{x^2+y^2}\cdot2x=\frac{2x}{x^2+y^2}\qquad
+f_y=\frac{2y}{x^2+y^2}
+$$
+
+**Example 7.** $f(x,y)=e^{ax}\sin by$. Here $a$ and $b$ are constants.
+
+$$
+f_x=a\,e^{ax}\sin by\qquad f_y=b\,e^{ax}\cos by
+$$
+
+**Example 8.** $f(x,y)=x\,e^{-y}+5y$
+
+$$
+f_x=e^{-y}\qquad f_y=x\cdot e^{-y}\cdot(-1)+5=5-x\,e^{-y}
+$$
+
+**Example 9.** $f(x,y)=e^{x^2y^3}\sin(x^2-y^2)$. Use the product rule, and the chain rule inside each factor.
+
+$$
+\begin{aligned}
+f_x&=e^{x^2y^3}\cos(x^2-y^2)\cdot2x+\sin(x^2-y^2)\cdot e^{x^2y^3}\cdot2xy^3\\
+&=2x\,e^{x^2y^3}\cos(x^2-y^2)+2xy^3e^{x^2y^3}\sin(x^2-y^2)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+f_y&=e^{x^2y^3}\cos(x^2-y^2)\cdot(-2y)+\sin(x^2-y^2)\cdot e^{x^2y^3}\cdot3x^2y^2\\
+&=-2y\,e^{x^2y^3}\cos(x^2-y^2)+3x^2y^2e^{x^2y^3}\sin(x^2-y^2)
+\end{aligned}
+$$
+
+**Example 10.** $f(x,y)=\dfrac{x-y}{x^2+y^2}$. Use the quotient rule.
+
+$$
+f_x=\frac{(x^2+y^2)\cdot1-(x-y)\cdot2x}{(x^2+y^2)^2}=\frac{y^2-x^2+2xy}{(x^2+y^2)^2}
+$$
+
+$$
+f_y=\frac{(x^2+y^2)\cdot(-1)-(x-y)\cdot2y}{(x^2+y^2)^2}=\frac{y^2-x^2-2xy}{(x^2+y^2)^2}
+$$
+
+## Three or more variables
+
+Nothing changes. For $u=f(x,y,z)$, to find $u_x$ treat **both** $y$ and $z$ as constants, and similarly for the others.
+
+> **Watch out.** Students often forget the chain-rule factors. In Example 5 the $3$ and the $4$ come from differentiating the inside part $3x+4y$. In Example 8 the $-1$ comes from differentiating $-y$. Also, never write $d$ where you should write $\partial$.
+
+---
+
+<!-- page 6 | Slope and rate of change -->
+
+# Slope and rate of change
+
+## The idea
+
+Take the surface $z=f(x,y)$ and a point $(a,b)$ in the plane.
+
+- Cut the surface with the vertical plane $y=b$. You get an ordinary curve $z=f(x,b)$. Its slope at $x=a$ is $f_x(a,b)$.
+- Cut with the plane $x=a$. The slope of that curve at $y=b$ is $f_y(a,b)$.
+
+> **Meaning.** $\dfrac{\partial z}{\partial x}$ is the **slope of the surface in the $x$-direction**, and also the **rate of change of $z$ with respect to $x$** while $y$ is held fixed. Likewise $\dfrac{\partial z}{\partial y}$ for the $y$-direction.
+
+To find the value at a point, differentiate first and then substitute. The notation for "value at $(a,b)$" is
+
+$$
+\left.\frac{\partial z}{\partial x}\right|_{(a,b)}
+$$
+
+> **The sign tells the story.** A positive value means $z$ is **increasing** as you move in the positive direction. A negative value means it is **decreasing**. Zero means the surface is flat in that direction.
+
+## Examples
+
+**Example 1.** Find the slope of the surface $z=10-4x^2-2y^2$ at $(1,2)$ in the $x$-direction and the $y$-direction.
+
+$$
+\frac{\partial z}{\partial x}=-8x\ \Rightarrow\ \left.\frac{\partial z}{\partial x}\right|_{(1,2)}=-8(1)=\mathbf{-8}
+$$
+
+$$
+\frac{\partial z}{\partial y}=-4y\ \Rightarrow\ \left.\frac{\partial z}{\partial y}\right|_{(1,2)}=-4(2)=\mathbf{-8}
+$$
+
+The surface is a dome with its top at $(0,0,10)$. At $(1,2)$ it goes down with the same steepness in both directions.
+
+**Example 2.** Find the rate of change of $z=\sin(y^2-4x)$ with respect to $y$ at $(3,1)$.
+
+$$
+\frac{\partial z}{\partial y}=\cos(y^2-4x)\cdot2y=2y\cos(y^2-4x)
+$$
+
+$$
+\left.\frac{\partial z}{\partial y}\right|_{(3,1)}=2(1)\cos(1-12)=2\cos(-11)=\mathbf{2\cos 11}
+$$
+
+Cosine is an even function, so $\cos(-11)=\cos 11$. In radians this is about $0.009$, so at that point $z$ is almost flat in the $y$-direction.
+
+> **Watch out.** Put the point **after** differentiating. If you put $y=1$ in $z$ first, then $y$ becomes a constant and differentiating with respect to $y$ just gives $0$.
+
+---
+
+<!-- page 7 | Higher-order derivatives -->
+
+# Second-order partial derivatives
+
+## The idea
+
+A partial derivative is also a function of $x$ and $y$, so we can differentiate it again. A function of two variables has **four** second-order partial derivatives.
+
+| Symbol | Means | In words |
+| --- | --- | --- |
+| $f_{xx}=\dfrac{\partial^2f}{\partial x^2}$ | $\dfrac{\partial}{\partial x}\!\left(\dfrac{\partial f}{\partial x}\right)$ | differentiate with respect to $x$ twice |
+| $f_{yy}=\dfrac{\partial^2f}{\partial y^2}$ | $\dfrac{\partial}{\partial y}\!\left(\dfrac{\partial f}{\partial y}\right)$ | differentiate with respect to $y$ twice |
+| $f_{xy}=\dfrac{\partial^2f}{\partial y\,\partial x}$ | $\dfrac{\partial}{\partial y}\!\left(\dfrac{\partial f}{\partial x}\right)$ | $x$ first, then $y$ |
+| $f_{yx}=\dfrac{\partial^2f}{\partial x\,\partial y}$ | $\dfrac{\partial}{\partial x}\!\left(\dfrac{\partial f}{\partial y}\right)$ | $y$ first, then $x$ |
+
+The last two are the **mixed** derivatives. The subscripts in $f_{xy}$ are read left to right, but the $\partial$ notation is read right to left. Some books swap the names. This is not a problem here because of the next fact.
+
+> **Mixed partials are equal.** If $f_{xy}$ and $f_{yx}$ are continuous, then $f_{xy}=f_{yx}$. Every function in this module satisfies this, so the order of differentiation does not matter. Use it to **check** your answer: find both mixed derivatives and see that they are equal.
+
+## Examples
+
+**Example 1.** Find all second-order partial derivatives of $f(x,y)=x^3y+2xy^2$.
+
+First order:
+
+$$
+f_x=3x^2y+2y^2\qquad f_y=x^3+4xy
+$$
+
+Second order:
+
+$$
+f_{xx}=6xy\qquad f_{yy}=4x
+$$
+
+$$
+\frac{\partial^2f}{\partial y\,\partial x}=\frac{\partial}{\partial y}(3x^2y+2y^2)=3x^2+4y
+\qquad
+\frac{\partial^2f}{\partial x\,\partial y}=\frac{\partial}{\partial x}(x^3+4xy)=3x^2+4y
+$$
+
+The mixed derivatives agree.
+
+**Example 2.** For $f(x,y)=2x^5y^3+5x+7y$ find the mixed derivatives.
+
+$$
+f_x=10x^4y^3+5\qquad f_y=6x^5y^2+7
+$$
+
+$$
+\frac{\partial^2f}{\partial y\,\partial x}=30x^4y^2\qquad\frac{\partial^2f}{\partial x\,\partial y}=30x^4y^2
+$$
+
+(Also $f_{xx}=40x^3y^3$ and $f_{yy}=12x^5y$.)
+
+**Example 3.** For $f(x,y)=x^3y+e^{xy^2}$ show that $\dfrac{\partial^2f}{\partial y\,\partial x}=\dfrac{\partial^2f}{\partial x\,\partial y}$.
+
+$$
+f_x=3x^2y+y^2e^{xy^2}\qquad f_y=x^3+2xy\,e^{xy^2}
+$$
+
+Differentiate $f_x$ with respect to $y$ (product rule on the second term):
+
+$$
+\frac{\partial^2f}{\partial y\,\partial x}=3x^2+2y\,e^{xy^2}+y^2\cdot e^{xy^2}\cdot2xy=3x^2+2y\,e^{xy^2}+2xy^3e^{xy^2}
+$$
+
+Differentiate $f_y$ with respect to $x$:
+
+$$
+\frac{\partial^2f}{\partial x\,\partial y}=3x^2+2y\,e^{xy^2}+2xy\cdot e^{xy^2}\cdot y^2=3x^2+2y\,e^{xy^2}+2xy^3e^{xy^2}
+$$
+
+They are equal. $\checkmark$
+
+## Third order
+
+Derivatives of any order work in the same way. In $\dfrac{\partial^3f}{\partial x\,\partial y\,\partial z}$ read **from right to left**: first $z$, then $y$, then $x$.
+
+**Example 4.** If $f(x,y,z)=e^{xyz}$, find $\dfrac{\partial^3f}{\partial x\,\partial y\,\partial z}$.
+
+$$
+\frac{\partial f}{\partial z}=xy\,e^{xyz}
+$$
+
+$$
+\frac{\partial^2f}{\partial y\,\partial z}=x\,e^{xyz}+xy\cdot xz\,e^{xyz}=(x+x^2yz)\,e^{xyz}
+$$
+
+$$
+\begin{aligned}
+\frac{\partial^3f}{\partial x\,\partial y\,\partial z}&=(1+2xyz)\,e^{xyz}+(x+x^2yz)\,yz\,e^{xyz}\\
+&=e^{xyz}\left(1+2xyz+xyz+x^2y^2z^2\right)=\mathbf{e^{xyz}\left(1+3xyz+x^2y^2z^2\right)}
+\end{aligned}
+$$
+
+## Proving an equation with derivatives
+
+**Example 5. Laplace's equation.** If $u=\dfrac{1}{\sqrt{x^2+y^2+z^2}}$, prove that $\dfrac{\partial^2u}{\partial x^2}+\dfrac{\partial^2u}{\partial y^2}+\dfrac{\partial^2u}{\partial z^2}=0$.
+
+Write $\rho=x^2+y^2+z^2$, so $u=\rho^{-1/2}$ and $\dfrac{\partial\rho}{\partial x}=2x$. Then
+
+$$
+\frac{\partial u}{\partial x}=-\tfrac12\rho^{-3/2}\cdot2x=-x\,\rho^{-3/2}
+$$
+
+$$
+\frac{\partial^2u}{\partial x^2}=-\rho^{-3/2}+x\cdot\tfrac32\rho^{-5/2}\cdot2x=3x^2\rho^{-5/2}-\rho^{-3/2}
+$$
+
+By symmetry the $y$ and $z$ versions are $3y^2\rho^{-5/2}-\rho^{-3/2}$ and $3z^2\rho^{-5/2}-\rho^{-3/2}$. Add all three:
+
+$$
+\begin{aligned}
+u_{xx}+u_{yy}+u_{zz}&=3(x^2+y^2+z^2)\rho^{-5/2}-3\rho^{-3/2}\\
+&=3\rho\cdot\rho^{-5/2}-3\rho^{-3/2}=3\rho^{-3/2}-3\rho^{-3/2}=\mathbf{0}\ \checkmark
+\end{aligned}
+$$
+
+**Example 6.** If $u=x^2\tan^{-1}\!\dfrac yx-y^2\tan^{-1}\!\dfrac xy$, show that $\dfrac{\partial^2u}{\partial x\,\partial y}=\dfrac{x^2-y^2}{x^2+y^2}$.
+
+First differentiate with respect to $y$. For the first term:
+
+$$
+x^2\cdot\frac{1}{1+y^2/x^2}\cdot\frac1x=\frac{x^3}{x^2+y^2}
+$$
+
+For the second term (product rule):
+
+$$
+\frac{\partial}{\partial y}\left[y^2\tan^{-1}\frac xy\right]=2y\tan^{-1}\frac xy+y^2\cdot\frac{1}{1+x^2/y^2}\cdot\left(-\frac{x}{y^2}\right)=2y\tan^{-1}\frac xy-\frac{xy^2}{x^2+y^2}
+$$
+
+Subtract the second from the first, and note that $x^3+xy^2=x(x^2+y^2)$:
+
+$$
+\frac{\partial u}{\partial y}=\frac{x^3+xy^2}{x^2+y^2}-2y\tan^{-1}\frac xy=x-2y\tan^{-1}\frac xy
+$$
+
+Now differentiate with respect to $x$:
+
+$$
+\frac{\partial^2u}{\partial x\,\partial y}=1-2y\cdot\frac{1}{1+x^2/y^2}\cdot\frac1y=1-\frac{2y^2}{x^2+y^2}=\frac{x^2+y^2-2y^2}{x^2+y^2}=\mathbf{\frac{x^2-y^2}{x^2+y^2}}\ \checkmark
+$$
+
+> **Study tip.** Simplify after the first derivative, before differentiating again. In Example 6 the whole expression becomes $x-2y\tan^{-1}(x/y)$, which makes the second step easy.
+
+> **Watch out.** For $f_{xx}$ you differentiate with respect to $x$ **again** and still treat $y$ as a constant. Also, do not confuse $f_{xx}$ with $(f_x)^2$. They are different things.
+
+---
+
+<!-- page 8 | Chain rule: one parameter -->
+
+# Chain rule, part 1: one parameter
+
+## The idea
+
+If $z=f(x,y)$ and both $x$ and $y$ depend on one variable $t$, then $z$ becomes a function of $t$ alone. The chain rule gives $\dfrac{dz}{dt}$ without substituting first.
+
+> **Chain rule (one parameter).** If $z=f(x,y)$, $x=x(t)$, $y=y(t)$, then
 >
-> Sketch of a circle representing a level curve on an xy-plane. A Cartesian coordinate system with x and y axes showing a circle centered at the origin. Points marked on the axes are (2,0), (-2,0) (notated with possible typo -3,0), (0,2), and (0,-2).
+> $$\frac{dz}{dt}=\frac{\partial z}{\partial x}\cdot\frac{dx}{dt}+\frac{\partial z}{\partial y}\cdot\frac{dy}{dt}$$
 
-<!-- page 4 | First-Order Partial Derivatives and Slopes -->
+## The tree diagram
 
-## First-Order Partial Derivatives and Slopes
-
-### Introduction and Core Definitions
-Building on single-variable calculus, we extend the concept of differentiation to functions of multiple variables. For a function of two variables $z = f(x,y)$, the derivative cannot be defined in a single direction because the surface exists in three-dimensional space. Instead, we hold one variable constant and differentiate with respect to the other variable.
-
-#### Definition
-The partial derivative of $z = f(x,y)$ with respect to $x$ is denoted as $\frac{\partial z}{\partial x}$ or $f_x$, defined by the limit:
-$$\frac{\partial z}{\partial x} = \lim_{h \to 0} \frac{f(x+h, y) - f(x, y)}{h}$$
-
-The partial derivative of $z = f(x,y)$ with respect to $y$ is denoted as $\frac{\partial z}{\partial y}$ or $f_y$, defined by the limit:
-$$\frac{\partial z}{\partial y} = \lim_{h \to 0} \frac{f(x, y+h) - f(x, y)}{h}$$
-
-### Geometric Interpretation: Slopes and Rates of Change
-
-Let $z = f(x,y)$ represent a surface.
-- The partial derivative $\frac{\partial z}{\partial x}$ represents the slope of the tangent line to the curve formed by intersecting the surface with the plane $y = \text{constant}$, evaluated in the $x$direction.
-- The partial derivative $\frac{\partial z}{\partial y}$ represents the slope of the tangent line to the curve formed by intersecting the surface with the plane $x = \text{constant}$, evaluated in the $y$direction.
-- These derivatives also measure the instantaneous rate of change of $z$ with respect to $x$ (holding $y$ constant) and with respect to $y$ (holding $x$ constant).
-
----
-
-### Solved Problems
-
-#### Example 1
-**Problem:** Find the first-order partial derivatives of $f(x,y) = x^2y + 3xy^2$.
-
-**Solution:**
-- **With respect to $x$ (treating $y$ as a constant):**
-$$\begin{aligned}
-\frac{\partial f}{\partial x} &= y \cdot (2x) + 3y^2 \cdot (1) \\
-&= 2xy + 3y^2
-\end{aligned}$$
-
-- **With respect to $y$ (treating $x$ as a constant):**
-$$\begin{aligned}
-\frac{\partial f}{\partial y} &= x^2 \cdot (1) + 3x \cdot (2y) \\
-&= x^2 + 6xy
-\end{aligned}$$
-
-#### Example 2
-**Problem:** Let $f(x, y) = e^{x^2 y^3} \sin(x^2 - y^2)$, find $f_x$ and $f_y$.
-
-**Solution:**
-Applying the product rule and chain rule:
-$$\begin{aligned}
-f_x &= \frac{\partial}{\partial x}\left(e^{x^2 y^3}\right) \sin(x^2 - y^2) + e^{x^2 y^3} \frac{\partial}{\partial x}\left(\sin(x^2 - y^2)\right) \\
-&= (y^3 \cdot 2x e^{x^2 y^3}) \sin(x^2 - y^2) + e^{x^2 y^3} \cos(x^2 - y^2)(2x)
-\end{aligned}$$
-$$\begin{aligned}
-f_y &= \frac{\partial}{\partial y}\left(e^{x^2 y^3}\right) \sin(x^2 - y^2) + e^{x^2 y^3} \frac{\partial}{\partial y}\left(\sin(x^2 - y^2)\right) \\
-&= (3x^2 y^2 e^{x^2 y^3}) \sin(x^2 - y^2) + e^{x^2 y^3} \cos(x^2 - y^2)(-2y)
-\end{aligned}$$
-
-#### Example 3
-**Problem:** Let $f(x,y) = \frac{x-y}{x^2+y^2}$, find $f_x$ and $f_y$.
-
-**Solution:**
-Using the quotient rule:
-- **Derivative with respect to $x$:**
-$$\begin{aligned}
-f_x &= \frac{(x^2+y^2) \cdot 1 - (x-y) \cdot (2x)}{(x^2+y^2)^2} \\
-&= \frac{x^2 + y^2 - 2x^2 + 2xy}{(x^2+y^2)^2} = \frac{y^2 - x^2 + 2xy}{(x^2+y^2)^2}
-\end{aligned}$$
-
-- **Derivative with respect to $y$:**
-$$\begin{aligned}
-f_y &= \frac{(x^2+y^2) \cdot (-1) - (x-y) \cdot (2y)}{(x^2+y^2)^2} \\
-&= \frac{-x^2 - y^2 - 2xy + 2y^2}{(x^2+y^2)^2} = \frac{y^2 - x^2 - 2xy}{(x^2+y^2)^2}
-\end{aligned}$$
-
-#### Example 4
-**Problem:** Find the $1^{\text{st}}$ order partial derivatives of $f(x, y) = \sqrt{x^2+y^2}$.
-
-**Solution:**
-$$\begin{aligned}
-f_x &= \frac{1}{2\sqrt{x^2+y^2}} \cdot \frac{\partial}{\partial x}(x^2+y^2) = \frac{2x}{2\sqrt{x^2+y^2}} = \frac{x}{\sqrt{x^2+y^2}} \\
-f_y &= \frac{1}{2\sqrt{x^2+y^2}} \cdot \frac{\partial}{\partial y}(x^2+y^2) = \frac{2y}{2\sqrt{x^2+y^2}} = \frac{y}{\sqrt{x^2+y^2}}
-\end{aligned}$$
-
-#### Example 5
-**Problem:** Find the $1^{\text{st}}$ order partial derivatives of:
-1. $f(x,y) = 2x^2 - 3y - 4$
-2. $f(x,y) = (x+1)(y-2)$
-
-**Solution:**
-1. For $f(x,y) = 2x^2 - 3y - 4$:
-   - $f_x = 4x - 0 - 0 = 4x$
-   - $f_y = 0 - 3 - 0 = -3$
-
-2. For $f(x,y) = (x+1)(y-2)$:
-   - $f_x = (y-2) \cdot 1 = y - 2$
-   - $f_y = (x+1) \cdot 1 = x + 1$
-
-#### Example 6
-**Problem:** Find the $1^{\text{st}}$ order partial derivative of $f(x,y) = \log (x^2 + y^2)$.
-
-**Solution:**
-$$\begin{aligned}
-f_x &= \frac{1}{x^2+y^2} \cdot \frac{\partial}{\partial x}(x^2+y^2) = \frac{2x}{x^2+y^2} \\
-f_y &= \frac{1}{x^2+y^2} \cdot \frac{\partial}{\partial y}(x^2+y^2) = \frac{2y}{x^2+y^2}
-\end{aligned}$$
-
-#### Example 7
-**Problem:** Find the partial derivatives of $f(x,y) = e^{ax} \sin(by)$.
-
-**Solution:**
-$$\begin{aligned}
-f_x &= \sin(by) \cdot \frac{\partial}{\partial x}\left(e^{ax}\right) = a e^{ax} \sin(by) \\
-f_y &= e^{ax} \cdot \frac{\partial}{\partial y}\left(\sin(by)\right) = b e^{ax} \cos(by)
-\end{aligned}$$
-
-#### Example 8
-**Problem:** Find the partial derivatives of $z = \sqrt{3x + 4y}$.
-
-**Solution:**
-$$\begin{aligned}
-\frac{\partial z}{\partial x} &= \frac{1}{2\sqrt{3x + 4y}} \cdot 3 = \frac{3}{2\sqrt{3x + 4y}} \\
-\frac{\partial z}{\partial y} &= \frac{1}{2\sqrt{3x + 4y}} \cdot 4 = \frac{2}{\sqrt{3x + 4y}}
-\end{aligned}$$
-
-#### Example 9
-**Problem:** Find the partial derivatives of $f(x, y) = x e^{-y} + 5y$.
-
-**Solution:**
-$$\begin{aligned}
-\frac{\partial f}{\partial x} &= e^{-y} \cdot (1) + 0 = e^{-y} \\
-\frac{\partial f}{\partial y} &= x \cdot \left(-e^{-y}\right) + 5 = 5 - x e^{-y}
-\end{aligned}$$
-
----
-
-### Application Problems: Slopes and Rates of Change
-
-#### Application 1
-**Problem:** Find the slope of the surface $z = 10 - 4x^2 - 2y^2$ at the point $(1, 2)$ in the $x$direction and the $y$direction.
-
-**Solution:**
-- **In the $x$direction:**
-$$\frac{\partial z}{\partial x} = 0 - 8x - 0 = -8x$$
-Evaluating at $(1, 2)$:
-$$\left.\frac{\partial z}{\partial x}\right|_{(1,2)} = -8(1) = -8$$
-
-- **In the $y$direction:**
-$$\frac{\partial z}{\partial y} = 0 - 0 - 4y = -4y$$
-Evaluating at $(1, 2)$:
-$$\left.\frac{\partial z}{\partial y}\right|_{(1,2)} = -4(2) = -8$$
-
-#### Application 2
-**Problem:** Find the rate of change of $z = \sin(y^2 - 4x)$ with respect to $y$ at the point $(3, 1)$.
-
-**Solution:**
-$$\frac{\partial z}{\partial y} = \cos(y^2 - 4x) \cdot (2y - 0) = 2y \cos(y^2 - 4x)$$
-Evaluating at $(3, 1)$:
-$$\left.\frac{\partial z}{\partial y}\right|_{(3, 1)} = 2(1) \cos(1^2 - 4(3)) = 2 \cos(1 - 12) = 2 \cos(-11) = 2 \cos(11)$$
-
-<!-- page 5 | Higher-Order Partial Derivatives -->
-
-## Higher-Order Partial Derivatives
-
-Bridge: Having mastered first-order derivatives, we differentiate further to analyze curvature and verify symmetry of mixed partial derivatives. The new idea: Mixed partial derivatives commute under continuity conditions ($f_{xy} = f_{yx}$). Objectives: Compute second and third-order partial derivatives; Verify equality of mixed partial derivatives; Solve Laplace-type partial differential equations. Concepts to teach: Second-order partial derivatives; Mixed partial derivatives; Clairaut's theorem verification; Laplacian operator.
-
-### Second-Order Partial Derivatives
-
-Let $z = f(x, y)$. The $1^{\text{st}}$ order partial derivatives are $\frac{\partial z}{\partial x}$ and $\frac{\partial z}{\partial y}$. Differentiating these $1^{\text{st}}$ order derivatives with respect to $x$ and $y$ gives the $2^{\text{nd}}$ order partial derivatives:
-
-1) $\frac{\partial}{\partial x}\left(\frac{\partial z}{\partial x}\right) = \frac{\partial^2 z}{\partial x^2} = f_{xx}$
-
-2) $\frac{\partial}{\partial y}\left(\frac{\partial z}{\partial y}\right) = \frac{\partial^2 z}{\partial y^2} = f_{yy}$
-
-3) $\frac{\partial}{\partial y}\left(\frac{\partial z}{\partial x}\right) = \frac{\partial^2 z}{\partial y \partial x} = f_{yx}$
-
-4) $\frac{\partial}{\partial x}\left(\frac{\partial z}{\partial y}\right) = \frac{\partial^2 z}{\partial x \partial y} = f_{xy}$
-
-### Solved Problems
-
-#### Problem 1
-Find all the $2^{\text{nd}}$ order partial derivatives for the function: $f(x, y) = x^3 y + 2xy^2$
-
-Given:
-- $f(x, y) = x^3 y + 2xy^2$
-
-Find:
-- All second-order partial derivatives ($f_{xx}, f_{yy}, f_{yx}, f_{xy}$)
-
-Formula & Substitution:
-$$\begin{aligned}
-\frac{\partial f}{\partial x} &= \frac{\partial}{\partial x}\left(x^3 y + 2xy^2\right) = 3x^2y + 2y^2 \\[6pt]
-\frac{\partial f}{\partial y} &= \frac{\partial}{\partial y}\left(x^3 y + 2xy^2\right) = x^3 + 4xy \\[6pt]
-\frac{\partial^2 f}{\partial x^2} &= \frac{\partial}{\partial x}(3x^2y + 2y^2) = 6xy \\[6pt]
-\frac{\partial^2 f}{\partial y^2} &= \frac{\partial}{\partial y}(x^3 + 4xy) = 4x \\[6pt]
-\frac{\partial^2 f}{\partial y \partial x} &= \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right) = \frac{\partial}{\partial y}\left(3x^2y + 2y^2\right) = 3x^2 + 4y \\[6pt]
-\frac{\partial^2 f}{\partial x \partial y} &= \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right) = \frac{\partial}{\partial x}\left(x^3 + 4xy\right) = 3x^2 + 4y
-\end{aligned}$$
-
-Result:
-$f_{xx} = 6xy$, $f_{yy} = 4x$, $f_{yx} = 3x^2 + 4y$, $f_{xy} = 3x^2 + 4y$
-
----
-
-#### Problem 2
-If $f(x,y) = 2x^5y^3 + 5x + 7y$, find $\frac{\partial^2 f}{\partial x \partial y}$ and $\frac{\partial^2 f}{\partial y \partial x}$.
-
-Given:
-- $f(x,y) = 2x^5y^3 + 5x + 7y$
-
-Find:
-- $\frac{\partial^2 f}{\partial x \partial y}$ and $\frac{\partial^2 f}{\partial y \partial x}$
-
-Formula & Substitution:
-$$\begin{aligned}
-\frac{\partial f}{\partial x} &= 10x^4 y^3 + 5 \\[6pt]
-\frac{\partial f}{\partial y} &= 6x^5 y^2 + 7 \\[6pt]
-\frac{\partial^2 f}{\partial x \partial y} &= \frac{\partial}{\partial x} \left( \frac{\partial f}{\partial y} \right) = \frac{\partial}{\partial x} \left(6x^5 y^2 + 7\right) = 30x^4 y^2 \\[6pt]
-\frac{\partial^2 f}{\partial y \partial x} &= \frac{\partial}{\partial y} \left( \frac{\partial f}{\partial x} \right) = \frac{\partial}{\partial y} \left(10x^4 y^3 + 5\right) = 30x^4 y^2
-\end{aligned}$$
-
-Result:
-Both mixed partial derivatives equal $30x^4 y^2$.
-
----
-
-#### Problem 3
-If $f(x,y) = x^3 y + e^{xy^2}$, show that $\frac{\partial^2 f}{\partial y \partial x} = \frac{\partial^2 f}{\partial x \partial y}$.
-
-Given:
-- $f(x,y) = x^3 y + e^{xy^2}$
-
-Formula & Substitution:
-$$\begin{aligned}
-\frac{\partial f}{\partial x} &= 3x^2 y + y^2 e^{xy^2} \\[6pt]
-\frac{\partial f}{\partial y} &= x^3 + 2yx e^{xy^2} \\[6pt]
-\frac{\partial^2 f}{\partial y \partial x} &= \frac{\partial}{\partial y} \left( 3x^2 y + y^2 e^{xy^2} \right) = 3x^2 + 2y e^{xy^2} + 2xy^3 e^{xy^2} \\[6pt]
-\frac{\partial^2 f}{\partial x \partial y} &= \frac{\partial}{\partial x} \left( x^3 + 2yx e^{xy^2} \right) = 3x^2 + 2y e^{xy^2} + 2xy^3 e^{xy^2}
-\end{aligned}$$
-
-Result:
-$\frac{\partial^2 f}{\partial y \partial x} = \frac{\partial^2 f}{\partial x \partial y}$ verified successfully.
-
----
-
-#### Problem 4
-If $u = \frac{1}{\sqrt{x^2 + y^2 + z^2}}$, prove that $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} = 0$.
-
-Given:
-- $u = \left(x^2 + y^2 + z^2\right)^{-1/2}$
-
-Formula & Substitution:
-$$\begin{aligned}
-\frac{\partial u}{\partial x} &= -x \left(x^2+y^2+z^2\right)^{-3/2} \\[6pt]
-\frac{\partial^2 u}{\partial x^2} &= 3x^2 \left(x^2+y^2+z^2\right)^{-5/2} - \left(x^2+y^2+z^2\right)^{-3/2} \\[6pt]
-\frac{\partial^2 u}{\partial y^2} &= 3y^2 \left(x^2+y^2+z^2\right)^{-5/2} - \left(x^2+y^2+z^2\right)^{-3/2} \\[6pt]
-\frac{\partial^2 u}{\partial z^2} &= 3z^2 \left(x^2+y^2+z^2\right)^{-5/2} - \left(x^2+y^2+z^2\right)^{-3/2}
-\end{aligned}$$
-
-Summing the second derivatives:
-$$\begin{aligned}
-\nabla^2 u &= \left(3x^2 + 3y^2 + 3z^2\right) \left(x^2+y^2+z^2\right)^{-5/2} - 3 \left(x^2+y^2+z^2\right)^{-3/2} \\[6pt]
-&= 3\left(x^2+y^2+z^2\right) \left(x^2+y^2+z^2\right)^{-5/2} - 3 \left(x^2+y^2+z^2\right)^{-3/2} \\[6pt]
-&= 3\left(x^2+y^2+z^2\right)^{-3/2} - 3 \left(x^2+y^2+z^2\right)^{-3/2} = 0
-\end{aligned}$$
-
-Result:
-Proved that $\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} = 0$.
-
----
-
-#### $Q_1$ Implicit Differentiation using Partials
-Find $\frac{dy}{dx}$ if $u = x^2 + y^2 - a^2 = 0$.
-
-$$\begin{aligned}
-\frac{\partial u}{\partial x} &= 2x, \quad \frac{\partial u}{\partial y} = 2y \\[6pt]
-\frac{dy}{dx} &= -\frac{\frac{\partial u}{\partial x}}{\frac{\partial u}{\partial y}} = -\frac{2x}{2y} = -\frac{x}{y}
-\end{aligned}$$
-
----
-
-#### $Q_3$ Third-Order Mixed Partial
-If $f(x,y,z) = e^{xyz}$, find $\frac{\partial^3 f}{\partial x \partial y \partial z}$.
-
-$$\begin{aligned}
-\frac{\partial f}{\partial z} &= xy e^{xyz} \\[6pt]
-\frac{\partial^2 f}{\partial y \partial z} &= \frac{\partial}{\partial y}(xy e^{xyz}) = x e^{xyz} + xy^2 z e^{xyz} \\[6pt]
-\frac{\partial^3 f}{\partial x \partial y \partial z} &= \frac{\partial}{\partial x}\left(x e^{xyz} + x y^2 z e^{xyz}\right) = e^{xyz} \left[3xyz + x^2 y^2 z^2 + 1\right]
-\end{aligned}$$
-
-Result:
-$\frac{\partial^3 f}{\partial x \partial y \partial z} = e^{xyz} \left(1 + 3xyz + x^2y^2z^2\right)$.
-
-<!-- page 6 | Chain Rule for Functions of Two or More Variables -->
-
-## Chain Rule for Functions of Two or More Variables
-
-With partial derivatives established, we now tackle scenarios where intermediate variables depend on time or parameters. Total derivative formulas aggregate contributions from all intermediate variable pathways using tree diagrams.
-
-### Chain Rule for Two Variables ($z = f(x(t), y(t))$)
-
-Let $z = f(x, y)$ be a differentiable function of two variables $x$ and $y$, where $x = f(t)$ and $y = g(t)$ are differentiable functions of a single parameter $t$. Then $z$ is a function of $t$ alone, and its total derivative is given by:
-
-$$\frac{dz}{dt} = \frac{\partial z}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial z}{\partial y} \cdot \frac{dy}{dt}$$
-
-> **Figure: Tree diagram for chain rule with two variables**
->
-> Tree diagram representing the chain rule for a function of two variables. At the top root node is z, which branches into two intermediate nodes x (via branch labelled ∂z/∂x) and y (via branch labelled ∂z/∂y). From node x, a single branch extends downwards to variable t, labelled dx/dt. From node y, a single branch extends downwards to variable t, labelled dy/dt.
-
-#### Solved Problems
-
-**Q1.** Suppose that $z = 5x^3y^2$, $x = t^3$, $y = t^5$. Use the chain rule to find $\frac{dz}{dt}$ and check the result by expressing $z$ as a function of $t$ and differentiating directly.
-
-* **Given:** $z = 5x^3y^2$, $x = t^3$, $y = t^5$
-* **Find:** $\frac{dz}{dt}$
-
-* **Formula:**
-$$\frac{dz}{dt} = \frac{\partial z}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial z}{\partial y} \cdot \frac{dy}{dt}$$
-
-* **Substitution and Solution:**
-$$\frac{\partial z}{\partial x} = 15x^2y^2, \quad \frac{\partial z}{\partial y} = 10x^3y, \quad \frac{dx}{dt} = 3t^2, \quad \frac{dy}{dt} = 5t^4$$
-
-$$\frac{dz}{dt} = (15x^2y^2)(3t^2) + (10x^3y)(5t^4)$$
-
-Substituting $x = t^3$ and $y = t^5$:
-
-$$\frac{dz}{dt} = 45(t^3)^2(t^5)^2 \cdot t^2 + 50(t^3)^3 \cdot t^5 \cdot t^4 = 45t^{18} + 50t^{18} = 95t^{18}$$
-
-* **Direct Check:**
-$$z = 5(t^3)^3(t^5)^2 = 5t^9 t^{10} = 5t^{19}$$
-$$\frac{dz}{dt} = 5 \times 19 t^{18} = 95t^{18}$$
-
-* **Final Answer:** $\underline{95t^{18}}$
-
----
-
-**Q2.** Suppose that $z = \log(3x^2+y)$, $x = \sqrt{t}$, $y = t^{1/3}$. Use the chain rule to find $\frac{dz}{dt}$.
-
-* **Given:** $z = \ln(3x^2+y)$, $x = t^{1/2}$, $y = t^{1/3}$
-* **Formula:**
-$$\frac{dz}{dt} = \frac{\partial z}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial z}{\partial y} \cdot \frac{dy}{dt}$$
-
-* **Derivatives:**
-$$\frac{\partial z}{\partial x} = \frac{6x}{3x^2+y}, \quad \frac{\partial z}{\partial y} = \frac{1}{3x^2+y}, \quad \frac{dx}{dt} = \frac{1}{2\sqrt{t}}, \quad \frac{dy}{dt} = \frac{1}{3}t^{-2/3}$$
-
-* **Substitution:**
-$$\frac{dz}{dt} = \left(\frac{6x}{3x^2+y}\right)\left(\frac{1}{2\sqrt{t}}\right) + \left(\frac{1}{3x^2+y}\right)\left(\frac{1}{3}t^{-2/3}\right)$$
-
----
-
-**Q3.** The length ($x$) and width ($y$) of a rectangle are increasing at the rate of $1.5\text{ cm/sec}$ and $0.5\text{ cm s}^{-1}$ respectively. Find the rate at which the area is increasing at the instant when the length is $40\text{ cm}$ and width is $30\text{ cm}$.
-
-* **Given:** $\frac{dx}{dt} = 1.5\text{ cm s}^{-1}$, $\frac{dy}{dt} = 0.5\text{ cm s}^{-1}$, $x = 40\text{ cm}$, $y = 30\text{ cm}$
-* **Formula:** Area $A = xy$, hence:
-$$\frac{dA}{dt} = \frac{\partial A}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial A}{\partial y} \cdot \frac{dy}{dt}$$
-
-* **Substitution:**
-$$\frac{dA}{dt} = y \cdot \frac{dx}{dt} + x \cdot \frac{dy}{dt} = (30)(1.5) + (40)(0.5) = 45 + 20 = 65$$
-
-* **Final Answer:** $\underline{65\text{ cm}^2\text{s}^{-1}}$
-
----
-
-### Chain Rule for Partial Derivatives ($z = f(x(u,v), y(u,v))$)
-
-Let $z = f(x, y)$ be a function of two variables where $x = x(u, v)$ and $y = y(u, v)$ are functions of $u$ and $v$. Then the partial derivatives with respect to intermediate variables are:
-
-$$\frac{\partial z}{\partial u} = \frac{\partial z}{\partial x} \cdot \frac{\partial x}{\partial u} + \frac{\partial z}{\partial y} \cdot \frac{\partial y}{\partial u}$$
-
-$$\frac{\partial z}{\partial v} = \frac{\partial z}{\partial x} \cdot \frac{\partial x}{\partial v} + \frac{\partial z}{\partial y} \cdot \frac{\partial y}{\partial v}$$
+Draw the dependencies as a tree: $z$ at the top, the variables it depends on below it, and the parameter at the bottom.
 
 ```mermaid
 graph TD
-    z --> x
-    z --> y
-    x --> u1[u]
-    x --> v1[v]
-    y --> u2[u]
-    y --> v2[v]
+    z -->|∂z/∂x| x
+    z -->|∂z/∂y| y
+    x -->|dx/dt| t
+    y -->|dy/dt| t
 ```
 
-#### Solved Problems
+> **How to read the tree.** For each path from $z$ down to $t$, take the **product** of the derivatives along its branches. Then **add** all the paths. Here there are two paths ($z\to x\to t$ and $z\to y\to t$), so there are two terms.
 
-**Q.** Express $\frac{\partial w}{\partial r}$ and $\frac{\partial w}{\partial s}$ in terms of $r$ and $s$ if $w = x^2 + y^2$, $x = r - s$, $y = r + s$.
+With three variables $w=f(x,y,z)$ there are three paths:
 
-* **Given:** $w = x^2 + y^2$, $x = r - s$, $y = r + s$
-* **Derivatives:**
-$$\frac{\partial w}{\partial x} = 2x, \quad \frac{\partial w}{\partial y} = 2y$$
-$$\frac{\partial x}{\partial r} = 1, \quad \frac{\partial y}{\partial r} = 1, \quad \frac{\partial x}{\partial s} = -1, \quad \frac{\partial y}{\partial s} = 1$$
+$$
+\frac{dw}{dt}=\frac{\partial w}{\partial x}\frac{dx}{dt}+\frac{\partial w}{\partial y}\frac{dy}{dt}+\frac{\partial w}{\partial z}\frac{dz}{dt}
+$$
 
-* **Substitution:**
-$$\frac{\partial w}{\partial r} = (2x)(1) + (2y)(1) = 2(r - s) + 2(r + s) = 4r$$
-$$\frac{\partial w}{\partial s} = (2x)(-1) + (2y)(1) = -2(r - s) + 2(r + s) = 4s$$
+## Method
+
+1. Draw the tree.
+2. Find the partial derivatives of the outer function with respect to each middle variable.
+3. Find the derivative of each middle variable with respect to $t$.
+4. Multiply along each path, and then add.
+5. Put $x(t)$, $y(t)$, $\dots$ so that the answer is in terms of $t$ (or put the given value of $t$).
+
+## Examples
+
+**Example 1.** $z=5x^3y^2$, $x=t^3$, $y=t^5$. Find $\dfrac{dz}{dt}$, and check by substituting first.
+
+$$
+\frac{\partial z}{\partial x}=15x^2y^2\quad\frac{\partial z}{\partial y}=10x^3y\quad\frac{dx}{dt}=3t^2\quad\frac{dy}{dt}=5t^4
+$$
+
+$$
+\begin{aligned}
+\frac{dz}{dt}&=15x^2y^2\cdot3t^2+10x^3y\cdot5t^4\\
+&=45(t^3)^2(t^5)^2\,t^2+50(t^3)^3\,t^5\,t^4\\
+&=45t^{18}+50t^{18}=\mathbf{95t^{18}}
+\end{aligned}
+$$
+
+*Check.* If we substitute first, $z=5(t^3)^3(t^5)^2=5t^{19}$, so $\dfrac{dz}{dt}=95t^{18}$. $\checkmark$
+
+**Example 2.** $z=\log(3x^2+y)$, $x=\sqrt t$, $y=t^{1/3}$. Find $\dfrac{dz}{dt}$.
+
+$$
+\frac{\partial z}{\partial x}=\frac{6x}{3x^2+y}\quad\frac{\partial z}{\partial y}=\frac{1}{3x^2+y}\quad\frac{dx}{dt}=\frac{1}{2\sqrt t}\quad\frac{dy}{dt}=\frac13t^{-2/3}
+$$
+
+With $x=\sqrt t$ we get $3x^2+y=3t+t^{1/3}$, so
+
+$$
+\frac{dz}{dt}=\frac{6\sqrt t}{3t+t^{1/3}}\cdot\frac{1}{2\sqrt t}+\frac{1}{3t+t^{1/3}}\cdot\frac13t^{-2/3}
+=\frac{3+\tfrac13t^{-2/3}}{3t+t^{1/3}}
+$$
+
+Multiply the top and the bottom by $3t^{2/3}$ to simplify:
+
+$$
+\frac{dz}{dt}=\mathbf{\frac{9t^{2/3}+1}{3t\left(3t^{2/3}+1\right)}}
+$$
+
+**Example 3.** Find $\dfrac{dw}{dt}$ for $w=x^2+y^2$ along the path $x=at^2$, $y=2at$.
+
+$$
+\frac{\partial w}{\partial x}=2x\quad\frac{\partial w}{\partial y}=2y\quad\frac{dx}{dt}=2at\quad\frac{dy}{dt}=2a
+$$
+
+$$
+\frac{dw}{dt}=2(at^2)(2at)+2(2at)(2a)=\mathbf{4a^2t^3+8a^2t}
+$$
+
+(The path is a parabola, and $w$ is the square of the distance from the origin along it.)
+
+**Example 4.** Find $\dfrac{dw}{dt}$ at $t=3$ if $w=\ln(x^2+y^2+z^2)$, $x=\cos t$, $y=\sin t$, $z=4\sqrt t$.
+
+$$
+\frac{\partial w}{\partial x}=\frac{2x}{x^2+y^2+z^2}\quad\text{and similarly for }y,z;\qquad
+\frac{dx}{dt}=-\sin t\quad\frac{dy}{dt}=\cos t\quad\frac{dz}{dt}=\frac{2}{\sqrt t}
+$$
+
+Here $x^2+y^2+z^2=\cos^2t+\sin^2t+16t=1+16t$, so:
+
+$$
+\begin{aligned}
+\frac{dw}{dt}&=\frac{2\cos t(-\sin t)+2\sin t\cos t+2(4\sqrt t)\cdot\frac{2}{\sqrt t}}{1+16t}\\[4pt]
+&=\frac{-2\sin t\cos t+2\sin t\cos t+16}{1+16t}=\frac{16}{1+16t}
+\end{aligned}
+$$
+
+At $t=3$:
+
+$$
+\left.\frac{dw}{dt}\right|_{t=3}=\frac{16}{1+48}=\mathbf{\frac{16}{49}}
+$$
+
+> **Watch out.** Use $\partial$ for the outer function (it has many variables) and $d$ for the inner ones (each has only $t$). Do not forget the second path. Stopping after the $x$ term is the most common mistake.
+
+---
+
+<!-- page 9 | Chain rule: two parameters -->
+
+# Chain rule, part 2: two parameters
+
+## The idea
+
+Now let the middle variables depend on **two** parameters. If $z=f(x,y)$ with $x=x(u,v)$ and $y=y(u,v)$, then $z$ is a function of $u$ and $v$, and we need **partial** derivatives with respect to each.
+
+> **Chain rule (two parameters).**
+>
+> $$\frac{\partial z}{\partial u}=\frac{\partial z}{\partial x}\cdot\frac{\partial x}{\partial u}+\frac{\partial z}{\partial y}\cdot\frac{\partial y}{\partial u}$$
+>
+> $$\frac{\partial z}{\partial v}=\frac{\partial z}{\partial x}\cdot\frac{\partial x}{\partial v}+\frac{\partial z}{\partial y}\cdot\frac{\partial y}{\partial v}$$
 
 ```mermaid
-graph TD
-    w --> x
-    w --> y
-    x --> r
-    x --> s
-    y --> r
-    y --> s
+flowchart TD
+    Z[z] --- X[x]
+    Z --- Y[y]
+    X --- U1[u]
+    X --- V1[v]
+    Y --- U2[u]
+    Y --- V2[v]
+```
+
+The tree rule is the same. For $\dfrac{\partial z}{\partial u}$: take every path from $z$ down to **$u$**, multiply along each path, and add. For $\dfrac{\partial z}{\partial v}$: take every path down to **$v$**.
+
+## Examples
+
+**Example 1.** $z=x^2-y\tan x$, $x=\dfrac uv$, $y=uv$. Find $\dfrac{\partial z}{\partial u}$ and $\dfrac{\partial z}{\partial v}$.
+
+The pieces:
+
+$$
+\frac{\partial z}{\partial x}=2x-y\sec^2x\quad\frac{\partial z}{\partial y}=-\tan x
+$$
+
+$$
+\frac{\partial x}{\partial u}=\frac1v\quad\frac{\partial x}{\partial v}=-\frac{u}{v^2}\quad\frac{\partial y}{\partial u}=v\quad\frac{\partial y}{\partial v}=u
+$$
+
+Combine:
+
+$$
+\frac{\partial z}{\partial u}=(2x-y\sec^2x)\cdot\frac1v+(-\tan x)\cdot v
+=\frac{2x-y\sec^2x}{v}-v\tan x
+$$
+
+$$
+\frac{\partial z}{\partial v}=(2x-y\sec^2x)\cdot\left(-\frac{u}{v^2}\right)+(-\tan x)\cdot u
+$$
+
+Finally, put $x=\dfrac uv$ and $y=uv$ to write the answers in terms of $u$ and $v$:
+
+$$
+\frac{\partial z}{\partial u}=\mathbf{\frac{2u}{v^2}-u\sec^2\frac uv-v\tan\frac uv}
+$$
+
+$$
+\frac{\partial z}{\partial v}=\mathbf{-\frac{2u^2}{v^3}+\frac{u^2}{v}\sec^2\frac uv-u\tan\frac uv}
+$$
+
+**Example 2.** $z=e^{x^2y}$, $x=\sqrt{uv}$, $y=\dfrac1v$. Find $\dfrac{\partial z}{\partial u}$ and $\dfrac{\partial z}{\partial v}$.
+
+$$
+\frac{\partial z}{\partial x}=2xy\,e^{x^2y}\quad\frac{\partial z}{\partial y}=x^2e^{x^2y}
+$$
+
+$$
+\frac{\partial x}{\partial u}=\frac{v}{2\sqrt{uv}}\quad\frac{\partial x}{\partial v}=\frac{u}{2\sqrt{uv}}\quad\frac{\partial y}{\partial u}=0\quad\frac{\partial y}{\partial v}=-\frac1{v^2}
+$$
+
+Note that $x^2y=uv\cdot\dfrac1v=u$, so every exponential is $e^{u}$.
+
+$$
+\frac{\partial z}{\partial u}=2xy\,e^{u}\cdot\frac{v}{2\sqrt{uv}}+0
+=2\sqrt{uv}\cdot\frac1v\cdot\frac{v}{2\sqrt{uv}}\,e^{u}=\mathbf{e^{u}}
+$$
+
+$$
+\frac{\partial z}{\partial v}=2xy\,e^{u}\cdot\frac{u}{2\sqrt{uv}}+x^2e^{u}\cdot\left(-\frac1{v^2}\right)
+=\frac uv\,e^{u}-\frac{uv}{v^2}\,e^{u}=\mathbf{0}
+$$
+
+*Check.* If we substitute first, $z=e^{x^2y}=e^{u}$ depends on $u$ only, so $z_u=e^u$ and $z_v=0$. $\checkmark$
+
+**Example 3.** Express $\dfrac{\partial w}{\partial r}$ and $\dfrac{\partial w}{\partial s}$ in terms of $r$ and $s$, if $w=x^2+y^2$, $x=r-s$, $y=r+s$.
+
+$$
+\frac{\partial w}{\partial x}=2x\quad\frac{\partial w}{\partial y}=2y\quad
+\frac{\partial x}{\partial r}=1\quad\frac{\partial y}{\partial r}=1\quad
+\frac{\partial x}{\partial s}=-1\quad\frac{\partial y}{\partial s}=1
+$$
+
+$$
+\frac{\partial w}{\partial r}=2x\cdot1+2y\cdot1=2(r-s)+2(r+s)=\mathbf{4r}
+$$
+
+$$
+\frac{\partial w}{\partial s}=2x\cdot(-1)+2y\cdot1=-2(r-s)+2(r+s)=\mathbf{4s}
+$$
+
+*Check.* $w=(r-s)^2+(r+s)^2=2r^2+2s^2$, so $w_r=4r$ and $w_s=4s$. $\checkmark$
+
+**Example 4. Three middle variables.** Find the first-order partial derivatives of $w=x+2y+z^2$, where $x=\dfrac rs$, $y=r^2+\ln s$, $z=2r$.
+
+Here $z$ depends on $r$ only, so its branch goes to $r$ but not to $s$.
+
+```mermaid
+flowchart TD
+    W[w] --- X[x]
+    W --- Y[y]
+    W --- Z[z]
+    X --- R1[r]
+    X --- S1[s]
+    Y --- R2[r]
+    Y --- S2[s]
+    Z --- R3[r]
+```
+
+$$
+\frac{\partial w}{\partial x}=1\quad\frac{\partial w}{\partial y}=2\quad\frac{\partial w}{\partial z}=2z
+$$
+
+$$
+\frac{\partial x}{\partial r}=\frac1s\quad\frac{\partial y}{\partial r}=2r\quad\frac{\partial z}{\partial r}=2\qquad
+\frac{\partial x}{\partial s}=-\frac{r}{s^2}\quad\frac{\partial y}{\partial s}=\frac1s
+$$
+
+Three paths down to $r$, two paths down to $s$:
+
+$$
+\frac{\partial w}{\partial r}=1\cdot\frac1s+2\cdot2r+2z\cdot2=\frac1s+4r+8r=\mathbf{\frac1s+12r}
+$$
+
+$$
+\frac{\partial w}{\partial s}=1\cdot\left(-\frac{r}{s^2}\right)+2\cdot\frac1s=\mathbf{-\frac{r}{s^2}+\frac2s}
+$$
+
+## When a variable has two roles
+
+Sometimes the last variable also appears directly in the function. Then it gives **both** a direct path and the paths through the other variables.
+
+**Example 5.** Find $\dfrac{dw}{dx}$ at $x=0$ for $w=xy+yz$, with $y=\sin x$ and $z=e^x$.
+
+```mermaid
+flowchart TD
+    W[w] --- X1[x]
+    W --- Y[y]
+    W --- Z[z]
+    Y --- X2[x]
+    Z --- X3[x]
+```
+
+There are three paths from $w$ to $x$: directly, through $y$, and through $z$.
+
+$$
+\frac{dw}{dx}=\frac{\partial w}{\partial x}+\frac{\partial w}{\partial y}\cdot\frac{dy}{dx}+\frac{\partial w}{\partial z}\cdot\frac{dz}{dx}
+$$
+
+With $\dfrac{\partial w}{\partial x}=y$, $\dfrac{\partial w}{\partial y}=x+z$, $\dfrac{\partial w}{\partial z}=y$, $\dfrac{dy}{dx}=\cos x$, $\dfrac{dz}{dx}=e^x$:
+
+$$
+\frac{dw}{dx}=y+(x+z)\cos x+y\,e^x
+$$
+
+At $x=0$ we have $y=\sin0=0$ and $z=e^0=1$, so
+
+$$
+\left.\frac{dw}{dx}\right|_{x=0}=0+(0+1)(1)+0=\mathbf{1}
+$$
+
+*Check.* If we substitute first, $w=x\sin x+e^x\sin x$. Its derivative at $0$ is $0+0+1+0=1$. $\checkmark$
+
+> **Watch out.** In Example 5, $\dfrac{\partial w}{\partial x}$ (treat $y$ and $z$ as constants) and $\dfrac{dw}{dx}$ (let them change with $x$) are **different** quantities. Also, the point $(0,1,2)$ in the original question does not lie on this curve. The curve passes through $(0,0,1)$ at $x=0$.
+
+---
+
+<!-- page 10 | Related rates -->
+
+# Related rates
+
+## The idea
+
+If a quantity $z$ depends on $x$ and $y$, and $x$ and $y$ are changing with time, the chain rule gives the rate of change of $z$:
+
+$$
+\frac{dz}{dt}=\frac{\partial z}{\partial x}\cdot\frac{dx}{dt}+\frac{\partial z}{\partial y}\cdot\frac{dy}{dt}
+$$
+
+## Method
+
+1. Name the variables and write the formula $z=f(x,y)$ that connects them.
+2. Write the **given rates** $\dfrac{dx}{dt}$, $\dfrac{dy}{dt}$. A quantity that is **decreasing** has a **negative** rate. A quantity that is **constant** has rate $0$.
+3. Find $\dfrac{\partial z}{\partial x}$ and $\dfrac{\partial z}{\partial y}$.
+4. Use the chain rule, and then put the values **at that moment**.
+5. Write the answer with units, and say whether the quantity is increasing or decreasing.
+
+## Examples
+
+**Example 1. Area of a rectangle.** The length and width of a rectangle are increasing at $1.5\ \text{cm/s}$ and $0.5\ \text{cm/s}$. How fast is the area increasing when the length is $40\ \text{cm}$ and the width is $30\ \text{cm}$?
+
+Let $x$ = length, $y$ = width, $A=xy$. Then $\dfrac{dx}{dt}=1.5$ and $\dfrac{dy}{dt}=0.5$, with $\dfrac{\partial A}{\partial x}=y$ and $\dfrac{\partial A}{\partial y}=x$.
+
+$$
+\frac{dA}{dt}=y\cdot1.5+x\cdot0.5=30(1.5)+40(0.5)=45+20=\mathbf{65\ \text{cm}^2/\text{s}}
+$$
+
+The unit is square centimetre per second, because $A$ is an area.
+
+**Example 2. Volume of a cone.** The height of a right circular cone is increasing at $0.2\ \text{cm/s}$ and the radius of its base is decreasing at $0.3\ \text{cm/s}$. How fast is the volume changing when the height is $15\ \text{cm}$ and the radius is $10\ \text{cm}$?
+
+Let $x$ = radius, $y$ = height, $V=\tfrac13\pi x^2y$. The radius is decreasing, so $\dfrac{dx}{dt}=-0.3$, and $\dfrac{dy}{dt}=0.2$.
+
+$$
+\frac{\partial V}{\partial x}=\frac{2\pi xy}{3}\qquad\frac{\partial V}{\partial y}=\frac{\pi x^2}{3}
+$$
+
+$$
+\frac{dV}{dt}=\frac{2\pi xy}{3}(-0.3)+\frac{\pi x^2}{3}(0.2)
+$$
+
+At $x=10$, $y=15$:
+
+$$
+\frac{dV}{dt}=\frac{2\pi(150)}{3}(-0.3)+\frac{\pi(100)}{3}(0.2)=-30\pi+\frac{20\pi}{3}=\mathbf{-\frac{70\pi}{3}\ \text{cm}^3/\text{s}}\approx-73.3\ \text{cm}^3/\text{s}
+$$
+
+The volume is **decreasing**: the decreasing radius (which is squared in the formula) has more effect than the increasing height.
+
+**Example 3. A quantity kept constant.** Given $z=2xy^2-3x^2y$ and that $x$ is increasing at $2\ \text{cm/s}$, find the rate at which $y$ changes when $x=3$ and $y=1$, if $z$ stays constant.
+
+Constant $z$ means $\dfrac{dz}{dt}=0$. With $\dfrac{\partial z}{\partial x}=2y^2-6xy$ and $\dfrac{\partial z}{\partial y}=4xy-3x^2$:
+
+$$
+0=(2y^2-6xy)\cdot2+(4xy-3x^2)\frac{dy}{dt}
+$$
+
+At $(3,1)$: $\dfrac{\partial z}{\partial x}=2-18=-16$ and $\dfrac{\partial z}{\partial y}=12-27=-15$. So
+
+$$
+0=(-16)(2)+(-15)\frac{dy}{dt}\ \Rightarrow\ \frac{dy}{dt}=\mathbf{-\frac{32}{15}\ \text{cm/s}}
+$$
+
+So $y$ is **decreasing** at about $2.13\ \text{cm/s}$.
+
+> **Note on the source.** The handwritten page moved a bracket to the other side of the equals sign without changing its sign, and ended with $+\tfrac{32}{15}$. When we put the numbers first (as above), we get $-\tfrac{32}{15}$. The page also gave the rate of the cone's height as $0.2\ \text{m/s}$, but it must be $0.2\ \text{cm/s}$ to match the other units. One middle line in the cone problem had $\tfrac{140\pi}{3}$ before reaching the correct $\tfrac{70\pi}{3}$.
+
+> **Watch out.** Check signs and units at the end. A decreasing quantity needs a **negative** rate in the beginning. Also, all rates must be in the same units (here all in cm and seconds).
+
+---
+
+<!-- page 11 | Implicit differentiation -->
+
+# Implicit differentiation
+
+## The idea
+
+Sometimes $y$ is given **implicitly** by an equation such as $x^3+y^3=3axy$, which cannot be solved easily for $y$. Partial derivatives give a one-step formula for $\dfrac{dy}{dx}$.
+
+> **Implicit differentiation formula.** If $f(x,y)=c$ defines $y$ as a function of $x$, then
+>
+> $$\frac{dy}{dx}=-\frac{\partial f/\partial x}{\partial f/\partial y}=-\frac{f_x}{f_y}\qquad(f_y\neq0)$$
+
+## Why it works
+
+Along the curve $f(x,y)=c$ the value of $f$ does not change, so $\dfrac{d}{dx}f(x,y)=0$. The chain rule (with $x$ having both roles, as on the previous page) gives
+
+$$
+f_x\cdot1+f_y\cdot\frac{dy}{dx}=0
+$$
+
+and solving for $\dfrac{dy}{dx}$ gives the formula.
+
+## Method
+
+1. Take everything to one side so that the equation becomes $f(x,y)=0$ (or $=c$).
+2. Find $f_x$ and $f_y$ as normal partial derivatives.
+3. Write $\dfrac{dy}{dx}=-\dfrac{f_x}{f_y}$. Keep the minus sign in front of the **whole** fraction.
+
+## Examples
+
+**Example 1**
+
+Using partial derivatives, find $\dfrac{dy}{dx}$ if $x^3+y^3=3axy$. Then verify using ordinary implicit differentiation.
+
+Let $f(x,y)=x^3+y^3-3axy$. Then
+
+$$
+f_x=3x^2-3ay\qquad f_y=3y^2-3ax
+$$
+
+$$
+\frac{dy}{dx}=-\frac{3x^2-3ay}{3y^2-3ax}=\mathbf{\frac{ay-x^2}{y^2-ax}}
+$$
+
+*Verification.* Differentiate both sides of $x^3+y^3=3axy$ with respect to $x$:
+
+$$
+3x^2+3y^2\frac{dy}{dx}=3a\left(x\frac{dy}{dx}+y\right)
+$$
+
+Collect the $\dfrac{dy}{dx}$ terms:
+
+$$
+\frac{dy}{dx}\left(3y^2-3ax\right)=3ay-3x^2\ \Rightarrow\ \frac{dy}{dx}=\frac{3ay-3x^2}{3y^2-3ax}=\frac{ay-x^2}{y^2-ax}
+$$
+
+Both methods agree. $\checkmark$
+
+> **Note on the source.** The handwritten page wrote the first answer as $\dfrac{-3x^2-3ay}{3y^2-3ax}$, where the minus sign was applied wrongly. It should be $-(3x^2-3ay)=-3x^2+3ay$. The second method on the page gave the correct result.
+
+**Example 2**
+
+Find $\dfrac{dy}{dx}$ for the circle $x^2+y^2=a^2$.
+
+Let $f(x,y)=x^2+y^2-a^2$, so $f_x=2x$ and $f_y=2y$:
+
+$$
+\frac{dy}{dx}=-\frac{2x}{2y}=\mathbf{-\frac xy}
+$$
+
+This is the slope of the circle at $(x,y)$. It agrees with geometry: the tangent to a circle is perpendicular to the radius, which has slope $y/x$.
+
+> **Watch out.** Students make three mistakes here. (1) Missing the **minus sign**. (2) Writing $f_y$ on top and $f_x$ at the bottom. It is $f_x$ over $f_y$. (3) Forgetting that the formula needs the equation in the form $f(x,y)=c$, with **all** terms taken to one side first.
+
+---
+
+<!-- page 12 | Level curves -->
+
+# Level curves
+
+## The idea
+
+**Level curve**
+
+A level curve is the set of points where a function has one fixed value. Think of the contour lines on a map: each line joins the places that have the same height.
+
+> **Definition.** A **level curve** of $f(x,y)$ is the curve
+>
+> $$f(x,y)=k$$
+>
+> for a constant $k$.
+
+- Level curves **never cross** (a point cannot have two different values of $f$).
+- Where the curves are close together, the surface is steep. Where they are far apart, the surface is gentle.
+
+## Method
+
+1. Set $f(x,y)=k$ for each requested value of $k$.
+2. Simplify each equation to a known curve: a line, circle, parabola, ellipse, and so on.
+3. Draw all the curves together, and write the $k$ value on each.
+4. To find the level curve **through a given point**, put the point in $f$. That value is $k$.
+
+## Examples
+
+**Example 1.** Find the level curves of $f(x,y)=\sqrt{9-x^2-y^2}$ for $c=0,1,2,3$.
+
+Set $\sqrt{9-x^2-y^2}=c$ and square both sides:
+
+$$
+9-x^2-y^2=c^2\ \Rightarrow\ x^2+y^2=9-c^2
+$$
+
+| $c$ | Equation | Curve |
+| --- | --- | --- |
+| $0$ | $x^2+y^2=9$ | circle of radius $3$ |
+| $1$ | $x^2+y^2=8$ | circle of radius $2\sqrt2\approx2.83$ |
+| $2$ | $x^2+y^2=5$ | circle of radius $\sqrt5\approx2.24$ |
+| $3$ | $x^2+y^2=0$ | the single point $(0,0)$ |
+
+```jsxgraph
+{
+  "boundingBox": [-3.5, 3.5, 3.5, -3.5],
+  "axis": true,
+  "points": [
+    { "id": "O", "x": 0, "y": 0, "label": "c = 3" }
+  ],
+  "segments": [],
+  "circles": [
+    { "center": "O", "radius": 3 },
+    { "center": "O", "radius": 2.8284 },
+    { "center": "O", "radius": 2.2361 }
+  ],
+  "functions": [],
+  "title": "Level curves of f(x, y) = √(9 − x² − y²): from the outside in, c = 0, 1, 2; the point at the centre is c = 3"
+}
+```
+
+The graph of $f$ is the **upper half of a sphere** of radius $3$, and its level curves are the circles at each height. Notice that they come close together near the edge, where the surface is steepest.
+
+> **Watch out.** For $c>3$ there is no level curve, because $x^2+y^2=9-c^2$ would be negative. This agrees with the range $[0,3]$ found on the domain page. Also, $c$ must be $\ge0$, because a square root cannot be negative.
+
+**Example 2.** Find the level curves of $f(x,y)=x^2+2y$ for $k=-2,0,2$.
+
+Set $x^2+2y=k$. Solving for $y$ gives a parabola:
+
+$$
+y=\frac{k-x^2}{2}
+$$
+
+| $k$ | Equation | Vertex |
+| --- | --- | --- |
+| $-2$ | $x^2=-2(y+1)$ | $(0,-1)$ |
+| $0$ | $x^2=-2y$ | $(0,0)$ |
+| $2$ | $x^2=-2(y-1)$ | $(0,1)$ |
+
+```jsxgraph
+{
+  "boundingBox": [-3, 2.5, 3, -3.5],
+  "axis": true,
+  "points": [],
+  "segments": [],
+  "circles": [],
+  "parabolas": [
+    { "vertex": [0, 1], "a": -0.5, "label": "k = 2" },
+    { "vertex": [0, 0], "a": -0.5, "label": "k = 0" },
+    { "vertex": [0, -1], "a": -0.5, "label": "k = −2" }
+  ],
+  "functions": [],
+  "title": "Level curves of f(x, y) = x² + 2y: parabolas opening downward"
+}
+```
+
+These are identical parabolas. Each one moves up by one unit when $k$ increases by $2$.
+
+> **Parabola shape.** $x^2=4ay$ opens **upward** and $x^2=-4ay$ opens **downward** (here $4a=2$, and the minus sign gives downward).
+
+**Example 3.** Find and sketch the level curve of $f(x,y)=x^2+y^2$ that passes through $(2,0)$.
+
+Put the point to find the level:
+
+$$
+k=f(2,0)=2^2+0^2=4
+$$
+
+so the level curve is $x^2+y^2=4$: a circle of radius $2$ centred at the origin.
+
+```jsxgraph
+{
+  "boundingBox": [-3.5, 3.5, 3.5, -3.5],
+  "axis": true,
+  "points": [
+    { "id": "O", "x": 0, "y": 0, "label": "" },
+    { "id": "P1", "x": 2, "y": 0, "label": "(2,0)" },
+    { "id": "P2", "x": 0, "y": 2, "label": "(0,2)" },
+    { "id": "P3", "x": -2, "y": 0, "label": "(-2,0)" },
+    { "id": "P4", "x": 0, "y": -2, "label": "(0,-2)" }
+  ],
+  "segments": [],
+  "circles": [
+    { "center": "O", "radius": 2 }
+  ],
+  "functions": [],
+  "title": "Level curve x² + y² = 4: a circle of radius 2"
+}
 ```
 
 ---
 
-**Q.** Find the $1^{\text{st}}$ order partial derivatives of the function $w = x + 2y + z^2$, where $x = \frac{r}{s}$, $y = r^2 + \ln s$, $z = 2r$.
+<!-- page 13 | Practice and formula sheet -->
 
-* **Formulas:**
-$$\frac{\partial w}{\partial r} = \frac{\partial w}{\partial x}\frac{\partial x}{\partial r} + \frac{\partial w}{\partial y}\frac{\partial y}{\partial r} + \frac{\partial w}{\partial z}\frac{\partial z}{\partial r}$$
+# Practice questions and formula sheet
 
-* **Intermediate Derivatives:**
-$$\frac{\partial w}{\partial x} = 1, \quad \frac{\partial w}{\partial y} = 2, \quad \frac{\partial w}{\partial z} = 2z$$
-$$\frac{\partial x}{\partial r} = \frac{1}{s}, \quad \frac{\partial y}{\partial r} = 2r, \quad \frac{\partial z}{\partial r} = 2$$
-$$\frac{\partial x}{\partial s} = -\frac{r}{s^2}, \quad \frac{\partial y}{\partial s} = \frac{1}{s}, \quad \frac{\partial z}{\partial s} = 0$$
+## Practice questions
 
-* **Solution:**
-$$\frac{\partial w}{\partial r} = (1)\left(\frac{1}{s}\right) + (2)(2r) + (2z)(2) = \frac{1}{s} + 4r + 4(2r) = \frac{1}{s} + 12r$$
-$$\frac{\partial w}{\partial s} = (1)\left(-\frac{r}{s^2}\right) + (2)\left(\frac{1}{s}\right) + (2z)(0) = -\frac{r}{s^2} + \frac{2}{s}$$
+Try these without looking at the answers. The answers are given below.
 
-> **Figure: Tree diagram for partial derivatives of w with respect to x, y, z and r, s**
->
-> A tree diagram showing w at the top branching into x, y, and z. Below x, it branches into r and s. Below y, it branches into r and s. Below z, it branches into r and s. Labels include partial derivative symbols along the branches.
+**A. Limits and continuity**
 
-> **Figure: Tree diagram for chain rule with w, x, y, z**
->
-> A tree diagram showing w at the top branching into x, y, and z with partial derivatives. y branches down to x, and z branches down to x.
+1. $\displaystyle\lim_{(x,y)\to(1,2)}\frac{x^2y}{x+y}$
+2. Show that $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2}{x^2+y^2}$ does not exist.
+3. $\displaystyle\lim_{(x,y)\to(0,0)}\frac{x^2-y^2}{x-y}$
+4. Let $f(x,y)=\dfrac{x^3}{x^2+y^2}$ for $(x,y)\ne(0,0)$ and $f(0,0)=0$. Is $f$ continuous at the origin? (Hint: compare $|f|$ with $|x|$.)
+
+**B. Partial derivatives**
+
+5. Find $f_x$ and $f_y$ for $f=x^3-3xy^2+e^{xy}$.
+6. Find $z_x$ and $z_y$ for $z=\dfrac{x}{x^2+y^2}$.
+7. Verify that $f_{xy}=f_{yx}$ for $f=x^2y^3+\sin(xy)$.
+8. Show that $z=\ln(x^2+y^2)$ satisfies $z_{xx}+z_{yy}=0$.
+
+**C. Chain rule**
+
+9. Find $\dfrac{dz}{dt}$ for $z=x^2y$, $x=\cos t$, $y=\sin t$.
+10. Find $\dfrac{\partial w}{\partial u}$ and $\dfrac{\partial w}{\partial v}$ for $w=xy$, $x=u+v$, $y=u-v$.
+
+**D. Implicit differentiation.** Find $\dfrac{dy}{dx}$:
+
+11. $x^2+xy+y^2=7$
+12. $\sin(xy)=x+y$
+
+**E. Rates, level curves, revision**
+
+13. The radius of a cylinder is increasing at $0.5\ \text{cm/s}$ and its height is decreasing at $1\ \text{cm/s}$. How fast is the volume $V=\pi r^2h$ changing when $r=3\ \text{cm}$ and $h=10\ \text{cm}$?
+14. Find the level curve of $f(x,y)=x^2+4y^2$ through $(2,1)$ and say what shape it is.
+15. *From Module 1.* Find $\dfrac{d^2y}{dx^2}$ for $y=\dfrac{(3x^3+2x)(3x+5)}{x^4}$.
+
+## Answers
+
+1. $\dfrac{2}{3}$. Put the values: $\dfrac{1\cdot2}{1+2}$.
+2. Along $y=mx$ the value is $\dfrac1{1+m^2}$. It is $1$ for $m=0$ and $\tfrac12$ for $m=1$. The values are different, so the limit does not exist.
+3. $0$. Factorise: $\dfrac{(x-y)(x+y)}{x-y}=x+y\to0$.
+4. **Continuous.** $\left|\dfrac{x^3}{x^2+y^2}\right|\le\dfrac{|x|^3}{x^2}=|x|\to0=f(0,0)$, so by the sandwich theorem the limit equals $f(0,0)$.
+5. $f_x=3x^2-3y^2+y\,e^{xy}$, $\quad f_y=-6xy+x\,e^{xy}$
+6. $z_x=\dfrac{y^2-x^2}{(x^2+y^2)^2}$, $\quad z_y=-\dfrac{2xy}{(x^2+y^2)^2}$
+7. $f_x=2xy^3+y\cos(xy)$ and $f_y=3x^2y^2+x\cos(xy)$. Both mixed derivatives equal $6xy^2+\cos(xy)-xy\sin(xy)$.
+8. $z_x=\dfrac{2x}{x^2+y^2}$ gives $z_{xx}=\dfrac{2y^2-2x^2}{(x^2+y^2)^2}$. By symmetry $z_{yy}=\dfrac{2x^2-2y^2}{(x^2+y^2)^2}$. The sum is $0$.
+9. $\dfrac{dz}{dt}=2xy(-\sin t)+x^2\cos t=\cos^3t-2\sin^2t\cos t$. (Check: $z=\cos^2t\sin t$.)
+10. $w_u=y+x=2u$, $\quad w_v=y-x=-2v$. (Check: $w=u^2-v^2$.)
+11. $\dfrac{dy}{dx}=-\dfrac{2x+y}{x+2y}$
+12. With $f=\sin(xy)-x-y$: $\dfrac{dy}{dx}=-\dfrac{y\cos(xy)-1}{x\cos(xy)-1}=\dfrac{1-y\cos(xy)}{x\cos(xy)-1}$
+13. $\dfrac{dV}{dt}=2\pi rh\cdot\dfrac{dr}{dt}+\pi r^2\cdot\dfrac{dh}{dt}=2\pi(30)(0.5)+\pi(9)(-1)=30\pi-9\pi=21\pi\approx66.0\ \text{cm}^3/\text{s}$ (increasing).
+14. $k=4+4=8$. The level curve is $x^2+4y^2=8$, that is $\dfrac{x^2}{8}+\dfrac{y^2}{2}=1$: an **ellipse** with semi-axes $2\sqrt2$ (along $x$) and $\sqrt2$ (along $y$).
+15. Simplify first: $y=9+\dfrac{15}{x}+\dfrac{6}{x^2}+\dfrac{10}{x^3}$. Then $y'=-\dfrac{15}{x^2}-\dfrac{12}{x^3}-\dfrac{30}{x^4}$ and $y''=\dfrac{30}{x^3}+\dfrac{36}{x^4}+\dfrac{120}{x^5}=\dfrac{30x^2+36x+120}{x^5}$.
+
+> **Study tip.** In 15, if you expand and divide **before** differentiating, you can use the simple power rule instead of a long quotient rule. Use this shortcut whenever the denominator has only one term.
 
 ---
 
-### Related Rates in Engineering Problems
+## Formula sheet
 
-Engineering applications often require tracking rates of change of physical dimensions. For instance, the volume of a right-circular cone is $V = \frac{1}{3}\pi x^2 y$, where $x$ is radius and $y$ is altitude. The time rate of change is given by:
+### Functions, limits and continuity
 
-$$\frac{dV}{dt} = \frac{\partial V}{\partial x} \cdot \frac{dx}{dt} + \frac{\partial V}{\partial y} \cdot \frac{dy}{dt}$$
+| | |
+| --- | --- |
+| Domain | no zero denominators, no even roots of negative numbers, no logs of zero or negative numbers |
+| Limit | $\lim_{(x,y)\to(a,b)}f=L$ along **every** path |
+| Substitution | works for polynomials, and for rational functions with non-zero denominator |
+| $0/0$ | factorise and cancel, or use $x-y=(\sqrt x-\sqrt y)(\sqrt x+\sqrt y)$ |
+| Does not exist | two paths give different values; try $y=mx$ |
+| Continuous at $(a,b)$ | $f(a,b)$ defined, limit exists, limit $=f(a,b)$ |
 
-**Example:** The altitude of a right-circular cone is increasing at $0.2\text{ m s}^{-1}$, and the radius of its base is decreasing at $0.3\text{ cm s}^{-1}$. Find the rate at which its volume changes when altitude is $15\text{ cm}$ and radius is $10\text{ cm}$.
+### Partial derivatives
 
-* **Given:** $\frac{dx}{dt} = -0.3\text{ cm s}^{-1}$, $\frac{dy}{dt} = 0.2\text{ m s}^{-1} = 20\text{ cm s}^{-1}$ (or matched units), $y = 15\text{ cm}$, $x = 10\text{ cm}$
-* **Formula:** $\frac{dV}{dt} = \left(\frac{2\pi xy}{3}\right)\frac{dx}{dt} + \left(\frac{1}{3}\pi x^2\right)\frac{dy}{dt}$
-* **Result:** Substitution yields the net volumetric expansion rate with appropriate unit conversion.
+$$
+f_x=\lim_{h\to0}\frac{f(x+h,y)-f(x,y)}{h}\qquad f_y=\lim_{h\to0}\frac{f(x,y+h)-f(x,y)}{h}
+$$
 
-<!-- page 7 | Implicit Differentiation Using Partial Derivatives -->
+| | |
+| --- | --- |
+| $f_x$ | differentiate in $x$, treat $y$ as a constant |
+| $f_y$ | differentiate in $y$, treat $x$ as a constant |
+| Slope of surface | $f_x$ in the $x$-direction, $f_y$ in the $y$-direction |
+| Second order | $f_{xx}$, $f_{yy}$, and mixed $f_{xy}=\dfrac{\partial^2f}{\partial y\,\partial x}$, $f_{yx}=\dfrac{\partial^2f}{\partial x\,\partial y}$ |
+| Mixed partials | $f_{xy}=f_{yx}$ when they are continuous |
+| Laplace's equation | $u_{xx}+u_{yy}+u_{zz}=0$ |
 
-## Implicit Differentiation Using Partial Derivatives
+### Chain rule
 
-### Bridge and Objectives
-Having applied chain rules, we now use partial derivatives to simplify finding derivatives of implicitly defined functions. The primary objective is to find $\frac{dy}{dx}$ for implicitly defined functions using partial derivatives and to verify these results against standard single-variable calculus techniques.
+| Situation | Formula |
+| --- | --- |
+| $z=f(x,y)$, $x(t)$, $y(t)$ | $\dfrac{dz}{dt}=z_x\dfrac{dx}{dt}+z_y\dfrac{dy}{dt}$ |
+| $z=f(x,y)$, $x(u,v)$, $y(u,v)$ | $\dfrac{\partial z}{\partial u}=z_x\dfrac{\partial x}{\partial u}+z_y\dfrac{\partial y}{\partial u}$, and the same with $v$ |
+| $w=f(x,y,z)$, all depend on $t$ | $\dfrac{dw}{dt}=w_x\dfrac{dx}{dt}+w_y\dfrac{dy}{dt}+w_z\dfrac{dz}{dt}$ |
+| Variable in two roles | $\dfrac{dw}{dx}=\dfrac{\partial w}{\partial x}+\dfrac{\partial w}{\partial y}\dfrac{dy}{dx}+\dfrac{\partial w}{\partial z}\dfrac{dz}{dx}$ |
+| Tree rule | multiply along each path, add the paths |
 
-### The Implicit Differentiation Formula
-For a function of two variables defined implicitly by $f(x, y) = C$, or equivalently $f(x, y) - C = 0$, the derivative $\frac{dy}{dx}$ can be computed directly using the ratio of negative partial derivatives:
+### Implicit differentiation and level curves
 
-$$\frac{dy}{dx} = -\frac{\frac{\partial f}{\partial x}}{\frac{\partial f}{\partial y}} = -\frac{f_x}{f_y}$$
-
-This approach directly stems from the multivariable chain rule, treating $y$ as a function of $x$.
-
-### Solved Numerical Problems
-
-**Q1** Using partial derivatives find $\frac{dy}{dx}$ if $x^3 + y^3 = 3axy$, and verify the result using implicit differentiation.
-
-**Given:**
-Equation: $x^3 + y^3 = 3axy$
-
-**Find:**
-$\frac{dy}{dx}$ using partial derivatives and standard implicit differentiation.
-
-**Formula:**
-$$\frac{dy}{dx} = -\frac{\frac{\partial f}{\partial x}}{\frac{\partial f}{\partial y}}$$
-
-**Solution Part 1: Using Partial Derivatives**
-Rewrite the equation in the form $f(x, y) = C$:
-$$f(x, y) = x^3 + y^3 - 3axy = 0$$
-
-Compute the partial derivative with respect to $x$:
-$$\frac{\partial f}{\partial x} = \frac{\partial}{\partial x}(x^3 + y^3 - 3axy) = 3x^2 - 3ay$$
-
-Compute the partial derivative with respect to $y$:
-$$\frac{\partial f}{\partial y} = \frac{\partial}{\partial y}(x^3 + y^3 - 3axy) = 3y^2 - 3ax$$
-
-Substitute into the implicit differentiation formula:
-$$\frac{dy}{dx} = -\frac{3x^2 - 3ay}{3y^2 - 3ax} = \frac{3ay - 3x^2}{3y^2 - 3ax} = \frac{ay - x^2}{y^2 - ax}$$
-
-**Solution Part 2: Verification Using Standard Implicit Differentiation**
-Differentiate both sides of $x^3 + y^3 = 3axy$ with respect to $x$ using the product rule on the right-hand side:
-$$\frac{d}{dx}(x^3) + \frac{d}{dx}(y^3) = 3a \frac{d}{dx}(xy)$$
-$$3x^2 + 3y^2 \frac{dy}{dx} = 3a \left[x \cdot \frac{dy}{dx} + y\right]$$
-$$3x^2 + 3y^2 \frac{dy}{dx} = 3ax \frac{dy}{dx} + 3ay$$
-
-Group all terms containing $\frac{dy}{dx}$ on one side:
-$$3y^2 \frac{dy}{dx} - 3ax \frac{dy}{dx} = 3ay - 3x^2$$
-$$\frac{dy}{dx} \left[3y^2 - 3ax\right] = 3ay - 3x^2$$
-
-Isolate $\frac{dy}{dx}$:
-$$\frac{dy}{dx} = \frac{3ay - 3x^2}{3y^2 - 3ax} = \frac{ay - x^2}{y^2 - ax}$$
-
-**Result:**
-Both methods yield identical expressions for $\frac{dy}{dx}$.
+| | |
+| --- | --- |
+| Implicit | $f(x,y)=c\ \Rightarrow\ \dfrac{dy}{dx}=-\dfrac{f_x}{f_y}$ |
+| Level curve | $f(x,y)=k$ |
+| Through a point $(a,b)$ | take $k=f(a,b)$ |
+| Related rates | quantity decreasing: negative rate. Held constant: rate $0$ |
