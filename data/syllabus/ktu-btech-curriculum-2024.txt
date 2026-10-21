@@ -1,0 +1,1006 @@
+                     B .Tech
+
+                 Curriculum - 2024
+
+
+
+www.ktu.edu.in                       university@ktu.edu.in
+                                                                                             B. Tech Curriculum, 2024
+
+    1. Grouping
+APJ Abdul Kalam Technological University offers various engineering branches that can be grouped
+into four broad categories based on their specialization.
+
+        Group                                                        Branches
+                         Computer Science and Engineering                 Information Technology
+                         Artificial Intelligence                          Computer Science and Engineering and
+                         Computer Science and Engineering                  Business Systems
+           A              (Artificial Intelligence)                        CSE (Data Science)
+                         Computer Science and Engineering                 CSE (Artificial Intelligence and Data
+    Computer and          (Artificial Intelligence and Machine              Science)
+     Information          Learning)                                        CSE (Internet of Things), CSE(IoT)
+       Science           AI and Machine Learning                          CSE (Block Chain)
+                         Artificial Intelligence and Data Science         CSE (Cyber Security)
+                         CS and Business Systems                          CSE (IoT and CS including Block Chain
+                         CS and Design                                     Technology)
+                         Cyber Security
+                         Electronics & Communication Engineering          Electronics and Computer Engineering
+                         Electrical and Electronics Engineering           Electrical and Computer Engineering
+                         Electronics and Biomedical Engineering           Electronics and Communication
+           B             Biomedical Engineering                            (Advanced Communication Technology)
+      Electrical         Electronics & Instrumentation Engineering        Electronics Engineering (VLSI Design and
+       Science           Instrumentation and Control Engineering           Technology)
+                         Applied Electronics & Instrumentation            Biomedical and Robotics
+                          Engineering                                      Robotics and Artificial Intelligence
+                         Cyber Physical System.                           Robotics and Automation
+
+                         Civil Engineering                                Aeronautical Engineering
+                         Chemical Engineering                             Agriculture Engineering
+                         Civil and Environmental Engineering              Industrial Engineering
+                         Mechanical Engineering                           Metallurgical & Materials Engineering
+           C             Mechanical Engineering (Auto)                    Naval Architecture & Ship Building
+   Physical Science      Mechanical Engineering (Automobile)               Engineering
+                         Automobile Engineering                           Polymer Engineering.
+                         Mechatronics Engineering                         Safety and Fire Engineering
+                         Production Engineering
+
+           D             Biotechnology                                    Biotechnology and Biochemical
+     Life Science        Food Technology                                   Engineering
+
+
+    2. Course Category
+    University Core (UC): The university core is a compulsory set of courses for all B. Tech students,
+       which includes basic courses in Humanities and Computer Science.
+    University Elective (UE): These are elective courses from a basket of courses in the Humanities and
+       Social Sciences.
+    Group Core (GC): Courses listed under Group Core of a curriculum are group specific. These courses
+       ensure that students gain specialized knowledge and skills in their chosen field of study.
+                                                                                APJ Abdul Kalam Technological University   1
+                                                                                                                B. Tech Curriculum, 2024
+
+                                                     FIRST SEMESTER (July-December): Group A
+
+                                                    10 Days Compulsory Induction Program and UHV
+
+
+
+
+                           Course Type
+                                                                                                    Credit              Total
+
+
+                                                                                                                                              Hrs./Week
+ Sl.            Course                    Course                                                   Structure            Marks
+ No:    Slot     Code
+                                                                    Course Title                                SS               Credits
+                                         Category                  (Course Name)
+                                                                                                   L T P R             CIA ESE
+
+  1     A GAMAT101 BSC GC Mathematics for Information Science-1                                    3 0 0 0 4.5 40           60       3          3
+        B GAPHT121          Physics for Information Science
+  2     S1/          BSC GC                                                                        3 0 2 0 5.5 40           60       4          5
+        S2 GXCYT122         Chemistry for Information Science
+        C                   Engineering Graphics and Computer Aided
+  3         GMEST103 ESC GC                                                                        2 0 2 0       4     40   60       3          4
+                            Drawing.
+                            Introduction to Electrical & Electronics
+        D                   Engineering                                                            2 0 0 0       3     20   30
+  4         GXEST104 ESC GC (part 1: Electrical Engineering)                                                                      2+2=4         4
+                                                    (Part 2: Electronics Engineering)              2 0 0 0       3     20   30
+
+  5     F UCEST105 ESC UC Algorithmic Thinking with Python                                         3 0 2 0 5.5 40           60       4          5
+        L                                           Basic Electrical and Electronics Engineering
+  6            GXESL106 ESC GC                                                                     0 0 2 0       1     50   50       1          2
+                                                    Workshop
+        I* UCPWT127 PW                              Health and Wellness                            1 0 1 0       0     50    0
+  7     S1/                               UC                                                                                         1        2/3
+        S2
+            UCHUT128 HMC                            Life Skills and Professional Communication     2 0 1 0 3.5 100           0
+        S1/                 Skill Enhancement Course:
+  8         UCSEM129 SEC UC                                                                         MOOC         2                   -
+        S2                  Digital 101(NASSCOM)
+                                                                                                                 30/                          25/
+                                                              Total                                              32                 20
+                                                                                                                                              26
+                      Bridge Course (Mathematics or Introduction to Computer Science) *:                       Total 15 Hrs.
+
+*Valuation for HMC courses will be done at college level, Question papers will be provided by the University.
+*No Grade Points will be awarded for the MOOC course and I slot course.
+
+       L-T-P-R: Lecture-Tutorial-Practical-Project
+       SS (Self Study) Hours= 1.5L+0.5 T+0.5P+R
+       CIA: Continuous Internal Assessment, ESE: End Semester Examination
+                                                             Digital 101 (NASSCOM)
+            Sl. No:                                   Technologies Covered                                              Hours
+               1       Artificial intelligence and Big Data Analytics (AI/BDA)                                           11
+               2       Internet of Things (IoT)                                                                          2.5
+               3       Cyber Security                                                                                    2.5
+               4       Block Chain                                                                                       2.5
+               5       Robotic Process Automation                                                                        1.5
+               6       Augmented Reality and Virtual Reality (AR and VR)                                                 2.5
+               7       Cloud Computing                                                                                   2.5
+               8       3 D Printing and Modelling                                                                         2
+               9       Web, Mobile Dev and Marketing                                                                      2
+              10       Responsible AI                                                                                     1
+                                                           Total Hours                                                   30
+
+Note: Physics, Chemistry, Health and Wellness & Life Skill and Professional Communication can be offered in both Semester 1
+(S1) and Semester 2 (S2). Institutions are encouraged to guide approximately 50% of their branches to choose between Physics or
+Chemistry (Slot B) and Health and Wellness or Life Skill and Professional Communication (Slot I) in Semester 1.
+
+
+                                                                                                   APJ Abdul Kalam Technological University         2
+                                                                                                                  B. Tech Curriculum, 2024
+
+
+
+
+                                                       FIRST SEMESTER (July-December): Group B
+
+                                                      10 Days Compulsory Induction Program and UHV
+
+
+
+
+                             Course Type
+                                                                                                      Credit              Total
+
+
+                                                                                                                                                Hrs./Week
+ Sl.              Course                    Course                                                   Structure            Marks
+ No:      Slot     Code
+                                                                      Course Title                                SS               Credits
+                                           Category                  (Course Name)
+                                                                                                     L T P R             CIA ESE
+
+  1       A GYMAT101 BSC GC Mathematics for Electrical Science-1                                     3 0 0 0 4.5 40           60       3          3
+          B GBPHT121          Physics for Electrical Science
+  2       S1/          BSC GC                                                                        3 0 2 0 5.5 40           60       4          5
+          S2 GXCYT122         Chemistry for Electrical Science
+          C                   Engineering Graphics and Computer Aided
+  3           GMEST103 ESC GC                                                                        2 0 2 0       4     40   60       3          4
+                              Drawing.
+                              Introduction to Electrical & Electronics
+          D                   Engineering                                                            2 0 0 0       3     20   30
+  4           GXEST104 ESC GC (part 1: Electrical Engineering)                                                                      2+2=4         4
+                                                      (Part 2: Electronics Engineering)              2 0 0 0       3     20   30
+
+  5       F UCEST105 ESC UC Algorithmic Thinking with Python                                         3 0 2 0 5.5 40           60       4          5
+          L                                           Basic Electrical and Electronics Engineering
+  6              GXESL106 ESC GC                                                                     0 0 2 0       1     50   50       1          2
+                                                      Workshop
+          I* UCPWT127 PW                              Health and Wellness                            1 0 1 0       0     50    0
+  7       S1/         HMC                   UC                                                                                         1        2/3
+          S2 UCHUT128                                 Life Skills and Professional Communication     2 0 1 0 3.5 100           0
+          S1/                 Skill Enhancement Course:
+  8           UCSEM129 SEC UC                                                                         MOOC         2                   -
+          S2                  Digital 101(NASSCOM)
+                                                                                                                   30/                          25/
+                                                                Total                                              32                 20
+                                                                                                                                                26
+                      Bridge Course (Mathematics or Introduction to Computer Science) *:                         Total 15 Hrs.
+*No Grade Points will be awarded for the MOOC course and I slot course.
+
+Skill Enhancement Course: Digital 101 is an introductory Massive Open Online Course (MOOC) offered by NASSCOM. It is
+designed to provide students with foundational knowledge and skills in digital technologies, preparing them for further studies and
+careers in the digital domain. By incorporating the Digital 101 course into the curriculum, KTU ensures that all students gain
+valuable digital skills early in their academic journey, enhancing their readiness for advanced courses and future careers in
+technology.
+Course Registration and Completion:
+           Students have the flexibility to register and complete the Digital 101 course either in their first semester (S1) or second
+            semester (S2).
+           The credit for this course (1 credit) will be officially recorded in the second semester grade card.
+
+
+
+
+                                                                                                     APJ Abdul Kalam Technological University         3
+                                                                                                       B. Tech Curriculum, 2024
+
+
+                                                     FIRST SEMESTER (July-December): Group C
+
+                                                    10 Days Compulsory Induction Program and UHV
+
+
+
+
+                        Course Type
+                                                                                           Credit             Total
+
+
+                                                                                                                                     Hrs./Week
+Sl.           Course                      Course                                          Structure           Marks
+No:   Slot     Code
+                                                                    Course Title                       SS               Credits
+                                         Category                  (Course Name)
+                                                                                         L T P R             CIA ESE
+
+ 1    A GYMAT101 BSC GC Mathematics for Physical Science-1                               3 0 0 0 4.5 40            60      3           3
+      B GZPHT121         Physics for Physical Science
+ 2    S1/         BSC GC                                                                 3 0 2 0 5.5 40            60      4           5
+      S2 GCCYT122        Chemistry for Physical Science
+ 3    C GCEST103 ESC GC Engineering Mechanics                                            3 0 0 0 4.5 40            60      3           3
+                               Introduction to Mechanical Engineering &
+             GCEST104          Civil Engineering                                         2 0 0 0        3    20    30
+ 4    D                 ESC GC (Part1: Mechanical Engineering)                                                           2+2=4         4
+                                                    (Part 2: Civil Engineering)          2 0 0 0        3    20    30
+ 5     F UCEST105 ESC UC Algorithmic Thinking with Python                                3 0 2 0 5.5 40            60      4           5
+ 6     L GCESL106 ESC GC Engineering Workshop                                            0 0 2 0 1 50              50      1           2
+      I* UCPWT127 PW      Health and Wellness                                            1 0 1 0 0 50               0
+ 7    S1/              UC                                                                                                  1         2/3
+      S2
+          UCHUT128 HMC    Life Skills and Professional Communication                     2 0 1 0 3.5 100           0
+      S1/                 Skill Enhancement Course:
+ 8        UCSEM129 SEC UC                                                                  MOOC         2                   -
+      S2                  Digital 101(NASSCOM)
+                                                                                                       30/                           24/
+                                                              Total                                    32                  20
+                                                                                                                                     25
+                  Bridge Course (Mathematics or Introduction to Computer Science) *:                  Total 15 Hrs.
+
+
+                                                     FIRSTSEMESTER (July-December): Group D
+                                                         10 Days Compulsory Induction Program
+
+
+
+                           Course Type                                                                                               Hrs./Week
+                                                                                           Credit             Total
+Sl.           Course                       Course                                         Structure           Marks
+No:   Slot     Code
+                                                                    Course Title                       SS               Credits
+                                          Category                 (Course Name)
+                                                                                         L T P R             CIA ESE
+ 1    A GDMAT101 BSC GC Mathematics for Life Science-1                                   3 0 0 0 4.5 40            60      3           3
+      B GZPHT121          Physics for Life Science
+ 2    S1/          BSC GC                                                                3 0 2 0 5.5 40            60      4           5
+      S2  GDCYT122        Chemistry for Life Science
+      C GMEST103          Engineering Graphics and Computer Aided
+ 3                 ESC GC                                                                2 0 2 0        4    40    60      3           4
+                          Drawing.
+      D GDXXT104          Introduction to Biotechnology/Food
+ 4                 ESC GC                                                                3 1 0 0        5    40    60      4           4
+                          Technology
+ 5     F UCEST105 ESC UC Algorithmic Thinking with Python                                3 0 2 0 5.5 40            60      4           5
+       L GDXXL106         Foundations of Biotechnology/Food
+ 6                 ESC GC                                                                0 0 2 0        1    50    50      1           2
+                          Technology Lab
+      I* UCPWT127 PW      Health and Wellness                                            1 0 1 0        0    50    0
+ 7    S1/ UCHUT128     UC                                                                                                  1         2/3
+      S2           HMC    Life Skills and Professional Communication                     2 0 1 0 3.5 100           0
+      S1/ UCSEM129                                  Skill Enhancement Course:
+ 8                      SEC                UC                                              MOOC         2                   -
+      S2                                            Digital 101(NASSCOM)
+                                                                                                       29/                           25/
+                                                              Total                                    31                  20
+                                                                                                                                     26
+                  Bridge Course (Mathematics or Introduction to Computer Science) *:                  Total 15 Hrs.
+*No Grade Points will be awarded for the MOOC course and I slot course.
+                                                                                          APJ Abdul Kalam Technological University           4
+                                                                                                     B. Tech Curriculum, 2024
+
+
+                                              SECOND SEMESTER (January-June): Group A
+
+
+
+
+                         Course Type
+                                                                                         Credit             Total
+
+                                                                                                                                   Hrs./Week
+ Sl.           Course                   Course                                          Structure           Marks
+ No:   Slot     Code
+                                                            Course Title                             SS               Credits
+                                       Category            (Course Name)
+                                                                                        L T P R            CIA ESE
+  1    A GAMAT201 BSC GC Mathematics for Information Science-2                          3 0 0 0 4.5 40           60       3          3
+       B GAPHT121         Physics for Information Science
+  2    S1/         BSC GC                                                               3 0 2 0 5.5 40           60       4          5
+       S2 GXCYT122        Chemistry for Information Science
+
+                                              Foundations of Computing: From Hardware
+  3    C GXEST203        ESC GC                                                         3 0 0 0 4.5 40           60       3          3
+                                              Essentials to Web Design
+
+  4    D GXEST204        ESC GC Programming in C                                        3 0 2 0 5.5 40           60       4          5
+  5     E PCXXT205        PC PC Programme Core-1                                        3 1 0 0       5    40    60       4          4
+  6     F UCEST206 ESC UC Engineering Entrepreneurship & IPR                            3 0 0 0 4.5 60           40       3          3
+       I* UCPWT127 PW      Health and Wellness                                          1 0 1 0 0 50              0
+  7    S1/ UCHUT128     UC                                                                                                1        2/3
+       S2           HMC    Life Skills and Professional Communication                   2 0 1 0 3.5 100           0
+
+
+  8    L GXESL208        ESC GC IT Workshop                                             0 0 2 0       1    50    50       1          2
+
+       S1/ UCSEM129 SEC UC Skill Enhancement Course:
+                                                                                         MOOC                             1
+       S2                  Digital 101(NASSCOM)
+                                                                                                                                   27/
+                                                      Total                                           34                 24
+                                                                                                                                   28
+
+                                              SECOND SEMESTER (January-June): Group B
+
+
+
+
+                         Course Type
+                                                                                         Credit             Total
+
+                                                                                                                                   Hrs./Week
+ Sl.           Course                   Course                                          Structure           Marks
+ No:   Slot     Code
+                                                            Course Title                             SS               Credits
+                                       Category            (Course Name)
+                                                                                        L T P R            CIA ESE
+  1    A      GYMAT201
+                    BSC GC Mathematics for Electrical Science-2                         3 0 0 0 4.5 40           60       3          3
+       B GBPHT121          Physics for Electrical Science
+  2    S1/          BSC GC                                                              3 0 2 0 5.5 40           60       4          5
+       S2  GXCYT122        Chemistry for Electrical Science
+           GXEST203        Foundations of Computing: From Hardware
+  3    C            ESC GC Essentials to Web Design                                     3 0 0 0 4.5 40           60       3          3
+           GBEST213        Engineering Mechanics (EEE, CP, RA & RU)
+  4     D GXEST204 ESC GC Programming in C                                              3 0 2 0 5.5 40           60       4          5
+  5     E PCXXT205 PC PC Programme Core-1                                               3 1 0 0       5    40    60       4          4
+  6     F UCEST206 ESC UC Engineering Entrepreneurship & IPR                            3 0 0 0 4.5 60           40       3          3
+       I* UCPWT127 PW      Health and Wellness                                          1 0 1 0 0 50              0
+  7    S1/ UCHUT128     UC                                                                                                1        2/3
+       S2           HMC    Life Skills and Professional Communication                   2 0 1 0 3.5 100           0
+
+
+  8     L GXESL208 ESC GC IT Workshop                                                   0 0 2 0       1    50    50       1          2
+
+       S1/ UCSEM129 SEC UC Skill Enhancement Course:
+                                                                                         MOOC                             1
+       S2                  Digital 101(NASSCOM)
+                                                                                                                                   27/
+                                                      Total                                           34                 24
+                                                                                                                                   28
+*No Grade Points will be awarded for the MOOC course and I slot course.
+
+
+                                                                                        APJ Abdul Kalam Technological University         5
+                                                                                               B. Tech Curriculum, 2024
+
+
+                                                 SECOND SEMESTER (January-June): Group C
+
+
+
+
+                        Course Type
+                                                                                   Credit             Total
+
+
+                                                                                                                             Hrs./Week
+Sl.           Course                   Course                                     Structure           Marks
+No:   Slot     Code
+                                                                 Course Title                  SS               Credits
+                                      Category                  (Course Name)
+                                                                                 L T P R            CIA ESE
+
+ 1     A     GYMAT201 BSC              GC Mathematics for Physical Science-2     3 0 0 0 4.5 40            60      3           3
+       B     GZPHT121                            Physics for Physical Science
+ 2    S1/         BSC                  GC                                        3 0 2 0 5.5 40            60      4           5
+      S2 GCCYT122            Chemistry for Physical Science
+       C                     Engineering Graphics and Computer Aided
+ 3           GZEST203 ESC GC                                                     2 0 2 0        4   40     60      3           4
+                             Drawing
+                             Basic Electrical & Electronics Engineering
+       D     GCEST204                                                            2 0 0 0        3   20     30
+ 4                    ESC GC (Part 1: Electrical Engineering)                                                    2+2=4         4
+                             (Part 2: Electronics Engineering)                   2 0 0 0        3   20     30
+ 5     E PCXXT205 PC PC Programme Core-1                                         3 1 0 0 5 40              60      4           4
+ 6     F UCEST206 ESC UC Engineering Entrepreneurship & IPR                      3 0 0 0 4.5 60            40      3           3
+      I* UCPWT127 PW      Health and Wellness                                    1 0 1 0 0 50               0
+ 7    S1/              UC                                                                                          1         2/3
+      S2
+          UCHUT128 HMC    Life Skills and Professional Communication             2 0 1 0 3.5 100           0
+                          Basic Electrical and Electronics Engineering
+             GZESL208
+ 8     L           ESC GC workshop                                               0 0 2 0        1   50     50      1           2
+          GCESL218        Civil Engineering Drafting Lab(CE,CV)
+      S1/          SEC UC Skill Enhancement Course:
+          UCSEM129                                                                 MOOC                            1
+      S2                  Digital 101(NASSCOM)
+                                                                                                                             27/
+                                                          Total                                34                  24        28
+
+
+                                                 SECOND SEMESTER (January-June): Group D
+
+
+
+
+                        Course Type
+                                                                                   Credit             Total
+
+
+                                                                                                                             Hrs./Week
+Sl.           Course                   Course                                     Structure           Marks
+No:   Slot     Code
+                                                                 Course Title                  SS               Credits
+                                      Category                  (Course Name)
+                                                                                 L T P R            CIA ESE
+
+ 1    A GDMAT201 BSC GC Mathematics for Life Science-2                           3 0 0 0 4.5 40            60      3           3
+      B GZPHT121                                 Physics for Life Science
+ 2                      BSC GC                                                   3 0 2 0 5.5 40            60      4           5
+      1/2 GDCYT122      Chemistry for Life Science
+ 3    C GDEST203 ESC GC Basic Mechanical & Civil Engineering                     3 0 0 0 4.5 40            60      3           3
+                        Basic Electrical & Electronics Engineering
+                                                                                 2 0 0 0        3   20     30
+                        (Part 1: Electrical Engineering)
+ 4    D GDEST204 ESC GC                                                                                          2+2=4         4
+                        (Part 2: Electronics Engineering)                        2 0 0 0        3   20     30
+
+ 5    E PCXXT205        PC             PC Programme Core-1                       3 1 0 0        5   40     60      4           4
+ 6    F UCEST206 ESC UC Engineering Entrepreneurship & IPR                       3 0 0 0 4.5 60            40      3           3
+             UCPWT127 PW  Health and Wellness                                    1 0 1 0 0 50              0
+ 7    I*                               UC                                                                          1         2/3
+             UCHUT128 HMC Life Skills and Professional Communication             2 0 1 0 3.5 100           0
+                          Basic Electrical and Electronics Engineering
+ 8    L GZESL208 ESC GC                                                          0 0 2 0        1   50     50      1           2
+                          Workshop
+      S1/          SEC UC Skill Enhancement Course:
+          UCSEM129                                                                 MOOC                            1
+      S2                  Digital 101(NASSCOM)
+                                                                                                                             26/
+                                                          Total                                34                  24
+                                                                                                                             27
+*No Grade Points will be awarded for the MOOC course and I slot course.
+                                                                                  APJ Abdul Kalam Technological University           6
+                                                                                                          B. Tech Curriculum, 2024
+
+
+
+
+                                                 THIRD SEMESTER (July-December)
+
+                                                                                           Credit               Total
+Sl.             Course    Course    Course                   Course Title                 Structure             Marks              Hrs./
+No:    Slot      Code                                       (Course Name)
+                                                                                                         SS              Credits
+                                                                                                                                   Week
+                           Type    Category
+                                                                                         L     T P R           CIA ESE
+ 1     A GYMAT301 BSC                GC        Mathematics for -------Science-3          3     0 0 0 4.5 40         60     3        3
+ 2     B PCXXT302 PC                 PC        Programme Core-2                          3     1 0 0 5 40           60     4        4
+ 3     C PCXXT303 PC                 PC        Programme Core-3                          3     1 0 0 5 40           60     4        4
+         PBXXT304 PC-
+ 4     D                             PB        Programme Core-PBL-1                      3     0 0 1 5.5 60         40     4        4
+                  PBL
+                                               Group A:
+                                               Digital Electronics & Logic Design
+              GAEST305/
+ 5     F GNEST305         ESC        GC        Group B, C and D:                         3     1 0        5    40   60     4        4
+                                               Introduction to Artificial Intelligence
+                                               and Data Science
+              UCHUT346                         Economics for Engineers
+ 6     G                  HMC        UC                                                  2     0 0 0 3         50   50     2        2
+      S3/S4 UCHUT347                           Engineering Ethics and Sustainable
+                                               Development
+ 7     L PCXXL307         PCL        PC        Lab-1                                     0     0 3 0 1.5 50         50     2        3
+ 8     Q PCXXL308 PCL                PC        Lab-2                                     0     0 3 0 1.5 50         50     2        3
+ 9    R/M         VAC                          Remedial/Minor Course                     3     1 0 0 5                     4*       4*
+                                                                                                         31/
+                                                    Total                                                36              25/29* 27/31*
+                                   Bridge Course for Lateral Entry Students:             Total 15 Hrs.
+
+
+                                                FOURTH SEMESTER (January-June)
+
+                                                                                            Credit      Total
+Sl.            Course     Course    Course                   Course Title
+    Slot                                                                                   Structure SS Marks Credits Hrs./
+No:             Code       Type                             (Course Name)                                             Week
+                                   Category
+                                                                                          L T P R      CIA ESE
+ 1     A      GYMAT401  BSC         GC        Mathematics for -------Science-4            3    0   0   0 4.5 40     60     3         3
+ 2     B      PCXXT402   PC         PC        Programme Core-4                            3    1   0   0 5 40       60     4         4
+ 3     C      PCXXT403   PC         PC        Programme Core-5                            3    1   0   0 5 40       60     4         4
+ 4     D      PBXXT404 PC-PBL       PB        Programme Core-PBL-2                        3    0   0   1 5.5 60     40     4         4
+ 5     E PEXXT41N          PE       PE PE-1                                               3 0 0 0 4.5 40            60     3         3
+              UCHUT346                 Economics for Engineers
+ 6     G                  HMC       UC Engineering Ethics and Sustainable                 2 0 0 0 3            50   50     2         2
+      S3/S4 UCHUT347
+                                       Development
+ 7     L PCXXL407         PCL       PC Lab-3                                              0 0 3 0 1.5 50            50     2         3
+ 8     Q PCXXL408         PCL       PC Lab-4                                              0 0 3 0 1.5 50            50     2         3
+      R/M/
+ 9                        VAC                 Remedial/Minor/Honours Course               3 1 0 0 5                        4*       4*
+       H
+                                                                                                         31/              24/      26/
+                                                    Total                                                36               28*      30*
+
+Note: Engineering Economics and Engineering Ethics and Sustainable Development shall be offered in both S3 and S4.
+Institutions can advise students belonging to about 50% of the number of branches in the Institution to opt for
+Engineering Economics in S3 and Engineering Ethics &Sustainable Development in S4 and vice versa.
+
+
+                                                                                             APJ Abdul Kalam Technological University    7
+                                                                                                  B. Tech Curriculum, 2024
+
+
+                                             FIFTH SEMESTER (July-December)
+
+                                                                                Credit                  Total
+ Sl.                   Course    Course                     Course Title       Structure SS             Marks Credits Hrs./
+     Slot    Course
+ No:                    Type                               (Course Name)                                              Week
+              Code              Category
+                                                                              L T P R                  CIA ESE
+  1    A PCXXT501        PC      PC        Programme Core-6                    3 1 0 0 5 40                 60     4      4
+  2    B PCXXT502        PC      PC        Programme Core-7                    3 1 0 0 5 40                 60     4      4
+  3    C PCXXT503        PC      PC        Programme Core-8                    3 0 0 0 4.5 40               60     3      3
+                        PC-
+  4    D PBXXT504                PB        Programme Core-PBL-3                3 0 0 1 5.5 60               40     4      4
+                        PBL
+  5    E PEXXT52N        PE      PE        PE-2                                3 0 0 0 4.5 40               60     3      3
+  6    I* UCHUM506 HMC           UC Constitution Of India (MOOC)               -     -   -   -   2      -   -      1      -
+  7    L PCXXL507       PCL      PC        Lab-5                               0 0 3         0 1.5 50       50     2      3
+  8    Q PCXXL508       PCL      PC        Lab-6                               0 0 3 0 1.5 50               50     2      3
+      R/M/
+  9                     VAC                Remedial/Minor/Honours Course       3 1 0 0 5                          4*      4*
+       H
+       S5/    Industrial Visit (Maximum 12 Days are permitted, Not Exceeding more than 6
+       S6                          Working Days) /Industrial Training
+                                                                                                 30/
+                                                   Total                                         35
+                                                                                                                 23/27* 24/28*
+
+
+*No Grade Points will be awarded for the MOOC course and I slot course.
+
+Industrial Training:
+Students who are not participating in the industrial visit must attend industrial training during that period.
+
+
+
+
+                                                                                   APJ Abdul Kalam Technological University    8
+                                                                                              B. Tech Curriculum, 2024
+
+                                           SIXTH SEMESTER (January-June)
+                                                                               Credit             Total
+ Sl.          Course   Course    Course               Course Title            Structure           Marks              Hrs/
+ No:   Slot    Code                                  (Course Name)
+                                                                                           SS              Credits
+                                                                                                                     Week
+                        Type    Category                                     L T P R             CIA ESE
+
+  1    A PCXXT601       PC       PC Programme Core-9                         3 1    0   0 5      40   60      4        4
+  2    B PCXXT602     PC         PC Programme Core-10                        3 0
+                                                                            0 4.5   0            40   60      3        3
+  3    C PEXXT63N     PE   PE PE-3                                           3 0
+                                                                            0 4.5   0            40   60      3        3
+  4    D PBXXT604   PC-PBL PB   Core-PBL-4                                  1 5.5
+                                                                             3 0    0            60   40      4        4
+       F G(A/B/C/D)  ESC   GC Design Thinking and Product Development
+  5      EST605
+                                                                      2 0 0 0 3                  40   60      2        2
+                                (Group Specific Syllabus)
+  6    O OEXXT61N/ OE/ILE OE/IE OE/ILE-1                              3 0 0 0 4.5                40   60      3        3
+         IEXXT61N
+  7    L PCXXL607   PCL      PC Lab-7                                      0 0 3 0 1.5 50             50      2        3
+  8  P PCXXP608 PWS         PC Mini Project: Socially Relevant Project     0 0 3 0 1.5 50             50      2        3
+    R/
+  9 M/              VAC         Remedial/Minor/Honours Course              3 0 0 0 4.5                        3*       3*
+     H
+    S5/ Industrial Visit (Maximum of 12 Days are permitted, Not Exceeding more than 6
+    S6                         Working Days) /Industrial Training
+                                                                                           30/
+                                             Total                                         35
+                                                                                                           23/26* 25/28*
+
+
+Note: Open Electives are such courses which will be offered by other departments. Like CSE department students have
+to opt open electives from ECE/ME/EEE etc. departments.
+
+Industrial Training:
+Students who are not participating in the industrial visit must attend industrial training during that period.
+
+
+
+
+                                                                                APJ Abdul Kalam Technological University    9
+                                                                                                B. Tech Curriculum, 2024
+
+                                          SIXTH SEMESTER (CE, EE, ME)
+                                                                               Credit             Total
+Sl.          Course   Course    Course              Course Title              Structure           Marks             Hrs/
+No:   Slot    Code                                 (Course Name)
+                                                                                          SS              Credits
+                                                                                                                    Week
+                       Type    Category                                      L T P R            CIA ESE
+
+ 1    A PCXXT601       PC       PC Programme Core-9                          3 0 0 0 4.5 40          60       3        3
+ 2    B PCXXT602       PC       PC Programme Core-10                         3 0 0 0 4.5 40          60       3        3
+ 3    C PEXXT63N    PE    PE PE-3                                            3 0 0 0 4.5 40          60       3        3
+ 4    D PBXXT604  PC-PBL  PB   Core-PBL-4                            3 0 0 1 5.5 60                  40       4        4
+      F G(B/C)EST6 ESC    GC Design Thinking and Product Development
+ 5      05
+                                                                     2 0 0 0 3 40                    60       2        2
+                               (Group Specific Syllabus)
+ 6    O OEXXT61N/ OE/ILE OE/IE OE/ILE-1                              3 0 0 0 4.5 40                  60       3        3
+        IEXXT61N
+ 7 L PCXXL607       PCL      PC Lab-7                                      0 0 3 0 1.5 50            50       2        3
+ 8 P PCXXP608 PWS           PC Mini Project: Socially Relevant Project     0 0 3 0 1.5 50            50       2        3
+ 9 Q* PCXXL609      PCL      PC Lab-8                                      0 0 2 0 1 50              50       1        2
+    R/
+ 10 M/              VAC         Remedial/Minor/Honours Course              3 0 0 0 5                         3*       3*
+     H
+    S5/ Industrial Visit (Maximum of 12 Days are permitted, Not Exceeding more than 6
+    S6                         Working Days) /Industrial Training
+                                                                                          29/
+                                           Total                                          34
+                                                                                                           23/26* 26/29*
+
+
+*The LAB-8 course is included in the curriculum of the following branches:
+
+             ● Civil Engineering
+             ● Electrical and Electronics Engineering
+             ● Mechanical Engineering
+
+
+
+Note: Open Electives are such courses which will be offered by other departments. Like CSE department students have
+to opt open electives from ECE/ME/EEE etc. departments.
+
+Industrial Training:
+Students who are not participating in the industrial visit must attend industrial training during that period.
+
+
+
+
+                                                                                APJ Abdul Kalam Technological University   10
+                                                                                                       B. Tech Curriculum, 2024
+
+
+
+
+                                          SEVENTH SEMESTER (July-December)
+                                                                                       Credit           Total
+                               Course
+Sl.               Course        Type                     Course Title                 Structure         Marks                Hrs/
+No:   Slot                     Course                   (Course Name)
+                                                                                                  SS               Credits
+                                                                                                                             Week
+                   Code                                                               L T P R          CIA ESE
+                              Category
+
+             PEXXT74N/
+                                       PE-4
+ 1    A PEXXM74N               PE   PE (Internship Students: Self Study/MOOC          3 0 0 0 4.5      40     60       3        3
+                                         Approved by the University/Online Classes)
+             PEXXT75N/
+                                       PE-5
+ 2    B PEXXM75N               PE   PE (Internship Students: Self Study/MOOC          3 0 0 0 4.5      40     60       3        3
+                                         Approved by the University/Online Classes)
+         OEXXT72N/          OE/ILE-2
+                   OE/
+ 3    O IEXXT72N/ ILE OE/IE (Internship Students: Self Study/MOOC                     3 0 0 0 4.5      40     60       3        3
+         OEXXM72N           Approved by the University/Online Classes)
+                            Elective
+         UEHUT704/
+                            (Internship Students: Self Study/MOOC
+ 4    I* UEHUM70N HMC UE                                                              2 0 0 0 3        50     50       2        2
+                            Approved by the University/Online
+                            Classes)
+ 5    S PCXXS705   PWS PC Seminar                                                     0 0 3 0 1.5      50      0       2        3
+         PCXXP706/          Option 1: Major Project
+ 6    P PCXXI706   PWS PC                                                             0 0 0 8 8        100     0       4        8
+                            Option 2: Internship (4-6 Months)
+                                                Total                                             26                  17       22
+
+
+*No Grade Points will be awarded for the I slot courses
+*Students can opt for the internship either in the 7th or 8th semester.
+* Option 1: Work on a Project in the institute/department under the mentorship of faculty members.
+Option 2: Full semester Internship in an Industry/organization (7th or 8th semester)
+
+Note: Open Electives are such courses which will be offered by other departments.
+
+
+                                           Slot I: HMC Elective
+              1            Project Management: Planning, Execution, Evaluation and Control
+              2            Proficiency course in French. (MOOC) (B1 level)
+              3            Proficiency Course in German (B1 Level). (MOOC)
+              4            Proficiency Course in Spanish (B1 Level) (MOOC)
+              5            Introduction to Japanese Language and Culture (N5 level). (MOOC)
+
+
+
+
+                                                                                         APJ Abdul Kalam Technological University   11
+                                                                                                     B. Tech Curriculum, 2024
+
+
+
+                                           EIGHT SEMESTER (January-June)
+                                                                                         Credit      Total
+Sl.                    Course    Course                    Course Title                 Structure SS Marks Credits          Hrs/
+    Slot    Course
+No:                     Type                              (Course Name)                                                     Week
+             Code               Category
+                                                                                        L T P R          CIA ESE
+           PEXXT86N                        PE-6
+ 1    A        /        PE       PE        (Internship Students: Self Study/MOOC        3 0 0 0 4.5 40        60      3        3
+           PEXXM86N                        Approved by the University/Online Classes)
+           OEXXT83N/                  OE/ILE-3
+ 2    O     IEXXT83N/ OE/ILE    OE/IE (Internship Students: Self Study/MOOC             3 0 0 0 4.5 40        60      3        3
+           OEXXM83N                        Approved by the University/Online Classes)
+         UEHUT803/
+                                           Organizational Behavior and Business
+ 3    I* UEHUM803 HMC            UC        Communication                                2 0 0 0 3        50   50      1        2
+                                           (Internship Students: Self Study/MOOC
+                                           Approved by the University/Online Classes)
+                                           Option 1: Major Project
+           PCXXP806/
+                                           Option 2: Internship (4-6 Months)
+           PCXXI806/
+ 4    P    PCXXJ806    PWS       PC        Option 3: Major Project Phase -II            0 0 0 8 8 100         0       4        8
+                                            (For the students who have not opted for
+                                           internship in S7/S8)
+                                                  Total                                             20               11       16
+
+*No Grade Points will be awarded for the I slot courses
+* Option 2: Full semester Internship in an Industry/organization (7th or 8th semester)
+
+
+
+
+                                                                                        APJ Abdul Kalam Technological University   12
+                                                                                B. Tech Curriculum, 2024
+
+
+                                              HMC Courses
+Sl. No:   Semester                                 Course Area                                     Credits
+   1       S1/S2     Life Skills and Professional Communication                                        1
+  2                  Economics for Engineers                                                           2
+           S3/S4
+  3                  Engineering Ethics and Sustainable Development                                    2
+  4         S5       Constitution Of India. (MOOC)                                                     1
+  5         S7       Elective (Project Management/Foreign Languages)                                   2
+  6         S8       Organizational Behavior and Business Communication                                1
+                                       Total Credits                                                  9
+
+
+                                             BSC Courses
+Sl. No:   Semester                                Course Area                                      Credits
+   1        S1       Group Specific Mathematics-1                                                     3
+   2                 Physics for Engineers                                                            4
+           S1/S2
+   3                 Chemistry for Engineers                                                          4
+   4        S2       Group Specific Mathematics-2                                                     3
+   5        S3       Group Specific Mathematics-3                                                     3
+   6        S4       Group Specific Mathematics-4                                                     3
+                                      Total Credits                                                   20
+
+
+                                        ESC Courses (Group A)
+Sl. No:   Semester                                 Course Area                                     Credits
+   1                  Engineering Graphics and Computer Aided Drawing                                3
+   2                  Introduction to Electrical and Electronics Engineering                         4
+             S1
+   3                  Algorithmic Thinking with Python                                               4
+   4                  Basic Electrical and Electronics Engineering Workshop                          1
+   5                  Foundations of Computing: From Hardware Essentials to Web Design               3
+   6                  Programming in C                                                               4
+             S2
+   7                  Engineering Entrepreneurship and IPR                                           3
+   8                  IT Workshop                                                                    1
+   9         S3       Digital Electronics & Logic Design                                             4
+  10         S6       Design Thinking and Product Development                                        2
+                                      Total Credits                                                  29
+
+
+                                        ESC Courses (Group B)
+Sl. No:   Semester                                  Course Area                                    Credits
+   1                  Engineering Graphics and Computer Aided Drawing                                3
+   2                  Introduction to Electrical and Electronics Engineering                         4
+             S1
+   3                  Algorithmic Thinking with Python                                               4
+   4                  Basic Electrical and Electronics Engineering Workshop                          1
+                      Foundations of Computing: From Hardware Essentials to Web Design /
+   5                                                                                                   3
+                      Engineering Mechanics (EEE, CP, RA and RU)
+   6         S2       Programming in C                                                                4
+   7                  Engineering Entrepreneurship and IPR                                            3
+   8                  IT Workshop                                                                     1
+   9         S3       Introduction to Artificial Intelligence and Data Science                        4
+  10         S6       Design Thinking and Creativity                                                  2
+                                      Total Credits                                                   29
+
+
+
+                                                                   APJ Abdul Kalam Technological University   13
+                                                                                      B. Tech Curriculum, 2024
+
+
+                                           ESC Courses (Group C)
+Sl. No:   Semester                                     Course Area                                       Credits
+   1                     Engineering Mechanics                                                             3
+   2                     Introduction to Mechanical Engineering/ Civil Engineering                         4
+            S1
+   3                     Algorithmic Thinking with Python                                                  4
+   4                     Engineering Workshop                                                              1
+   5                     Engineering Graphics and Computer Aided Drawing                                   3
+   6                     Basic Electrical and Electronics Engineering                                      4
+   7        S2           Engineering Entrepreneurship and IPR                                              3
+   8                     Basic Electrical and Electronics Engineering Workshop                             1
+                         Civil Engineering Drafting Lab (CE, CV)
+   9        S3           Introduction to Artificial Intelligence and Data Science                            4
+  10        S6           Design Thinking and Creativity                                                     2
+                                        Total Credits                                                       29
+
+
+                                           ESC Courses (Group D)
+Sl. No:   Semester                                     Course Area                                       Credits
+   1                   Engineering Graphics and Computer Aided Drawing                                     3
+   2                   Introduction to Biotechnology/Food Technology/Agriculture Engineering               4
+            S1
+   3                   Algorithmic Thinking with Python                                                    4
+   4                   Foundations of Biotechnology/Food Technology/Agriculture Engineering                1
+                       Lab
+   5                   Basic Mechanical Engineering and Civil Engineering                                    3
+   6                   Basic Electrical and Electronics Engineering                                          4
+            S2
+   7                   Engineering Entrepreneurship and IPR                                                  3
+   8                   Basic Electrical and Electronics Engineering Workshop                                 1
+   9        S3         Introduction to Artificial Intelligence and Data Science                              4
+  10        S6         Design Thinking and Creativity                                                        2
+                                        Total Credits                                                       29
+
+
+                                     Programme Core Courses (PC)
+Sl. No:   Semester                              Course Area                                              Credits
+   1         S2       Core 1                                                                                4
+   2                  Core 2                                                                                4
+   3                  Core 3                                                                                4
+             S3
+   4                  Lab-1                                                                                 2
+   5                  Lab-2                                                                                 2
+   6                  Core 4                                                                                 4
+   7                  Core 5                                                                                 4
+             S4
+   8                  Lab-3                                                                                  2
+   9                  Lab-4                                                                                  2
+  10                  Core 6                                                                                 4
+  11                  Core 7                                                                                 4
+  12         S5       Core 8                                                                                 3
+  13                  Lab-5                                                                                  2
+  14                  Lab-6                                                                                  2
+  15                  Core 9                                                                                 4
+  16                  Core 10                                                                                3
+             S6
+  17                  Lab-7                                                                                  2
+  18                  Mini Project                                                                           2
+                     Total Credits (Theory -10, Lab-7, Mini Project-1)                                      54
+
+                                                                         APJ Abdul Kalam Technological University   14
+                                                                                      B. Tech Curriculum, 2024
+
+                          Programme Core Courses (CE, EE, ME Branches)
+Sl. No:   Semester                            Course Area                                                Credits
+   1         S2       Core 1                                                                                4
+   2                  Core 2                                                                                4
+   3                  Core 3                                                                                4
+             S3
+   4                  Lab-1                                                                                 2
+   5                  Lab-2                                                                                 2
+   6                  Core 4                                                                                 4
+   7                  Core 5                                                                                 4
+             S4
+   8                  Lab-3                                                                                  2
+   9                  Lab-4                                                                                  2
+  10                  Core 6                                                                                 4
+  11                  Core 7                                                                                 4
+  12         S5       Core 8                                                                                 3
+  13                  Lab-5                                                                                  2
+  14                  Lab-6                                                                                  2
+  15                  Core 9                                                                                 3
+  16                  Core 10                                                                                3
+  17         S6       Lab-7                                                                                  2
+  18                  Mini Project                                                                           2
+  19                  Lab-8                                                                                  1
+                     Total Credits (Theory -10, Lab-8, Mini Project-1)                                      54
+
+                             Programme Core-Project Based Learning (PBL)
+Sl. No:   Semester                              Course Area                                              Credits
+  1          S3       Core PBL-1                                                                            4
+  2          S4       Core PBL-2                                                                            4
+  3          S5       Core PBL-3                                                                            4
+  4          S6       Core PBL-4                                                                            4
+                                        Total Credits                                                       16
+
+                                     Programme Elective Courses (PE)
+Sl. No:   Semester                               Course Type                                             Credits
+   1         S4       PE-1                                                                                 3
+   2         S5       PE-2                                                                                  3
+   3         S6       PE-3                                                                                  3
+   4                  PE-4                                                                                  3
+             S7
+   5                  PE-5                                                                                   3
+   6         S8       PE-6                                                                                   3
+                                        Total Credits                                                       18
+
+                             Open Elective Courses/Industry Elective( OE/IEL)
+Sl. No:   Semester                                    Course Type                                        Credits
+    1        S6       OE/ILE-1                                                                             3
+    2        S7       OE/ILE-2                                                                             3
+    3        S8       OE/ILE-3                                                                             3
+                                        Total Credits                                                       9
+
+                                      Project/ Internship and Seminar
+Sl. No:   Semester                                  Course Type                                          Credits
+   1                  Seminar                                                                               2
+             S7
+   2                  Major Project/Internship                                                              4
+   3         S8       Major Project/Internship/Research Project                                             4
+                                        Total Credits                                                       10
+
+                                                                         APJ Abdul Kalam Technological University   15
+                                                                                                     B. Tech Curriculum, 2024
+
+                                                         Activity Points
+                                                                                                                  Minimum
+ Sl. No     Group                                     Courses                                     Credits           Credit
+                                                                                                                 Requirements
+   1                       NSS, NCC, NSO (National Sports Organization)
+                           Arts/Sports/Games                                                         1
+   2             I
+                                                                                                (40 Points)
+   3                       Union/Club Activities
+
+   4                       English Proficiency Certification (TOFEL, IELTS, BEC etc)
+
+                           Aptitude Proficiency Certification (GRE, CAT, GMAT
+   5
+                           etc)/Valid Gate Score
+                           Short Term Internship (Minimum 2 weeks), Clinical                         1           3 Credits (One
+                 II                                                                                             credit from each
+                                                                                                (40 Points)
+                           Exposure/Training (Minimum 2 weeks), Conferences/Paper                                   Group)
+   6                       Presentation/ Workshop Activities/ Professional Body
+                           Activities, Participation in University level/State Level/
+                           National Level Hackathons
+                           Journal Publication, Patents, Start-Up, Innovation, Winners of
+   7
+                           National/ International Level Hackathons                                  1
+                 III
+                                                                                                (40 Points)
+   8                       Skilling Certificates (Approved by the University)
+
+*30 Points/group for B. Tech Lateral Entry Students
+
+         A minimum of 120 Activity points are to be acquired for obtaining the 3 Activity Credits required in the
+          curriculum.
+                      Table : Course classifications of the B. Tech Programmes and Overall Credit Structure
+             Sl.
+                                                     Category                                       Code         Credits
+             No
+             1           Humanities and Social Sciences including Management Courses               HMC              9
+             2           Basic Science Courses                                                     BSC              20
+             3           Engineering Science Courses                                               ESC              29
+             4           Programme (Professional) Core Courses                                     PCC              54
+             5           Programme (Professional) Core Courses-Project Based Learning              PBL              16
+             6           Programme Elective Courses                                                PEC              18
+             7           Open Elective Courses/Industry Linked Elective                           OEC/ILE           9
+             8           Project Work/Internship and Seminar                                       PWS              10
+             9           Health and Wellness                                                        PW               1
+             10          Skill Enhancement Courses (Digital 101)                                   SEC              1
+             11          Mandatory Student Activities.                                             MSA              3
+                                       Total Mandatory Credits                                                     170
+
+
+    Dr. Libish T M                                                                        Dr. Vinu Thomas
+    Director (Academic)                                                                   Dean (Academic)
+    APJ Abdul Kalam Technological University                                              APJ Abdul Kalam Technological University
+
+                                                                                        APJ Abdul Kalam Technological University   16
+

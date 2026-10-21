@@ -1,0 +1,252 @@
+{
+  "group": "Group C (Civil and Mechanical Engineering, Semester S1)",
+  "overall": "fail",
+  "checks": [
+    {
+      "course_code": "GYMAT101",
+      "title": "Mathematics for Electrical Science and Physical Science - 1",
+      "note_dirs": [
+        "electrical-maths-module-1",
+        "electrical-maths-module-2",
+        "electrical-maths-module-3",
+        "electrical-maths-module-4"
+      ],
+      "note_status": "complete_but_unlinked_in_group_c_catalog",
+      "syllabus_reader_status": "complete_but_unlinked_in_group_c_catalog",
+      "severity": "high",
+      "findings": [
+        {
+          "issue": "Confirmed mismatch: GYMAT101 is the official S1 mathematics course for Group C (Civil & Mechanical), and complete notes plus a matching syllabus reader exist in the repo, but the catalog omits GYMAT101 entirely for 'civil' and 'me' branches.",
+          "source_evidence": "PDF p. 3: 'SEMESTER S1 / MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE - 1 / (Groups B & C) / Course Code GYMAT101'. PDF pp. 3-4: Modules 1-4.",
+          "repo_evidence": "src/data/notes.ts: sharedS1Subjects(branchId) wraps the GYMAT101 entry in `...(branchId === 'ece' || branchId === 'eee' ? [...] : [])`, excluding 'civil' and 'me'. Notes in electrical-maths-module-1..4 and courses.GYMAT101 in src/features/syllabi/cse.ts cover all 4 modules accurately."
+        }
+      ],
+      "missing_topics": [],
+      "extra_or_wrong_topics": []
+    },
+    {
+      "course_code": "GZPHT121",
+      "title": "Physics for Physical Science and Life Science",
+      "note_dirs": [],
+      "note_status": "missing",
+      "syllabus_reader_status": "missing",
+      "severity": "high",
+      "findings": [
+        {
+          "issue": "Confirmed missing course: Official Group C S1/S2 Physics course GZPHT121 has no mapped note directories, no syllabus reader definition, and no catalog entry under Civil or Mechanical S1.",
+          "source_evidence": "PDF pp. 8-10: 'SEMESTER S1/S2 / PHYSICS FOR PHYSICAL SCIENCE AND LIFE SCIENCE (Groups C & D) / Course Code GZPHT121' covering Module 1 (Laser & Fibre Optics), Module 2 (Interference and Diffraction), Module 3 (Quantum Mechanics), Module 4 (Waves & Acoustics).",
+          "repo_evidence": "No mapped note directories for GZPHT121; src/features/syllabi/cse.ts only defines GAPHT121; src/data/notes.ts only adds Physics (GBPHT121) for 'ece' and 'eee', leaving 'civil' and 'me' with no Physics entry."
+        }
+      ],
+      "missing_topics": [
+        "Module 1: Laser & Fibre Optics (Ruby, CO2, semiconductor lasers, numerical aperture, fibre optic communication)",
+        "Module 2: Interference and Diffraction (Cosine law, thin films, Newton's rings, air wedge, single slit, grating)",
+        "Module 3: Quantum Mechanics (Uncertainty principle, Schrodinger equations, 1D box, quantum tunnelling)",
+        "Module 4: Waves & Acoustics (Stretched string vibrations, reverberation, Sabine's formula, ultrasonics, NDT, SONAR)"
+      ],
+      "extra_or_wrong_topics": []
+    },
+    {
+      "course_code": "GCCYT122",
+      "title": "Chemistry for Physical Science",
+      "note_dirs": [
+        "chemistry-civil-mech-module-1",
+        "chemistry-civil-mech-module-2",
+        "chemistry-civil-mech-module-3",
+        "chemistry-civil-mech-module-4"
+      ],
+      "note_status": "partial",
+      "syllabus_reader_status": "missing",
+      "severity": "medium",
+      "findings": [
+        {
+          "issue": "Confirmed missing syllabus reader: GCCYT122 is missing from the syllabus reader definitions, and syllabusHref is explicitly disabled (undefined) for 'civil' and 'me' in the catalog.",
+          "source_evidence": "PDF pp. 17-19: 'SEMESTER S1/S2 / CHEMISTRY FOR PHYSICAL SCIENCE (Group C) / Course Code GCCYT122'.",
+          "repo_evidence": "src/features/syllabi/cse.ts defines GXCYT122 (Group A/B Chemistry) but not GCCYT122. src/data/notes.ts sets `syllabusHref: branchId === 'civil' || branchId === 'me' ? undefined : ...` and titles the course 'Engineering Chemistry' instead of 'Chemistry for Physical Science'."
+        },
+        {
+          "issue": "Possible gap in Module 1 notes: Solid and semisolid lubricants classification and supercapacitor materials in nanomaterials are not clearly evidenced in the Module 1 note outline.",
+          "source_evidence": "PDF p. 18, Module 1: 'Lubricants: Classification - Solid, Semisolid and Liquid lubricants' and 'Nanomaterials: ... Applications of nanomaterials – Supercapacitor Materials'.",
+          "repo_evidence": "chemistry-civil-mech-module-1/notes.md p. 7 (L341-L412) lists 'Classification of Greases' and 'Liquid Lubricants' without an explicit solid lubricants heading; p. 11 (L768) lists 'Applications of Nanomaterials' without explicitly highlighting supercapacitor materials."
+        },
+        {
+          "issue": "Possible gap in Module 2 notes: Nernst equation for single electrode and cell (and numerical problems) is not explicitly shown in the Module 2 section headings.",
+          "source_evidence": "PDF p. 18, Module 2: 'Electrochemical Cell- Electrode potential- Nernst equation for single electrode and cell (Numerical problems)'.",
+          "repo_evidence": "chemistry-civil-mech-module-2/notes.md pp. 2-4 (L21-L300) covers Daniell cell, reference electrodes, and electrochemical series applications (equilibrium constant/feasibility), without a dedicated Nernst equation heading."
+        },
+        {
+          "issue": "Possible gap in Module 3 notes: Beer-Lambert's law (and numericals), role of conjugation in electronic spectroscopy, DTA of CaC2O4.H2O, and GC exhaust gas analysis are not explicitly surfaced in headings.",
+          "source_evidence": "PDF p. 19, Module 3: 'Beer Lambert’s law – Numerical problems', 'Role of Conjugation in absorption maxima', 'DTA of CaC2O4.H2O', 'Analysis of chemical composition of exhaust gases'.",
+          "repo_evidence": "chemistry-civil-mech-module-3/notes.md p. 2-3 (L20-L179) has 'Worked Example' and 'UV-Visible Spectroscopy Fundamentals'; p. 5 (L310, L354-L383) explicitly lists 'Thermogram of Calcium Oxalate Monohydrate' under TGA but not under DTA; p. 6 (L446) lists general 'Applications of Gas Chromatography'."
+        }
+      ],
+      "missing_topics": [
+        "Module 1: Solid lubricants (possible gap in outline)",
+        "Module 1: Supercapacitor materials under nanomaterials (possible gap in outline)",
+        "Module 2: Nernst equation for single electrode and cell and numerical problems (possible gap in outline)",
+        "Module 3: Beer-Lambert's law and numerical problems, Role of conjugation in absorption maxima (possible gap in outline)",
+        "Module 3: DTA of CaC2O4.H2O and GC analysis of exhaust gases (possible gap in outline)"
+      ],
+      "extra_or_wrong_topics": []
+    },
+    {
+      "course_code": "GCEST103",
+      "title": "Engineering Mechanics",
+      "note_dirs": [],
+      "note_status": "missing",
+      "syllabus_reader_status": "missing",
+      "severity": "high",
+      "findings": [
+        {
+          "issue": "Confirmed missing course & wrong course in catalog: Group C S1 requires GCEST103 (Engineering Mechanics), which has no notes, no syllabus reader, and no catalog entry. Instead, the catalog lists GMEST103 (Engineering Graphics) in S1 for Civil and Mechanical.",
+          "source_evidence": "PDF p. 26: 'SEMESTER S1 / ENGINEERING MECHANICS / Course Code GCEST103' (Modules 1-4: Statics/Force systems, Friction/Centroid/Moment of inertia, Rectilinear translation/D'Alembert's principle, Curvilinear translation/Projectile/Rotation). PDF p. 95 shows Engineering Graphics for Group C is S2 course GCEST203 (which includes Tetrahedron and Frustum, unlike GMEST103).",
+          "repo_evidence": "src/data/notes.ts: sharedS1Subjects assigns GMEST103 ('Engineering Graphics and Computer Aided Drawing') with `modules: []` to 'civil' and 'me' in S1. GCEST103 is absent from both src/data/notes.ts and src/features/syllabi/cse.ts."
+        }
+      ],
+      "missing_topics": [
+        "Module 1: Introduction to statics, forces in space, support reactions of beams (point load and UDL), 2D and 3D force systems, moment, couple, resultants, free-body diagram and 2D/3D equilibrium",
+        "Module 2: Friction (laws, blocks and ladder), Centroid of composite areas, Moment of inertia (parallel/perpendicular axis theorems, polar MOI, radius of gyration, mass MOI of ring and disc)",
+        "Module 3: Dynamics - rectilinear translation, kinematics and kinetics equations of motion, D'Alembert's principle, motion on horizontal/inclined surfaces, connected bodies",
+        "Module 4: Curvilinear translation, differential equations of projectile motion, kinematics of rotation, rotation of rigid body about fixed axis under constant moment"
+      ],
+      "extra_or_wrong_topics": [
+        "Catalog and syllabus reader expose GMEST103 (Group A/B Engineering Graphics) in S1 instead of GCEST103 (Engineering Mechanics)"
+      ]
+    },
+    {
+      "course_code": "GCEST104",
+      "title": "Introduction to Mechanical Engineering & Civil Engineering",
+      "note_dirs": [],
+      "note_status": "missing",
+      "syllabus_reader_status": "missing",
+      "severity": "high",
+      "findings": [
+        {
+          "issue": "Confirmed missing course & wrong course in catalog: Group C S1 requires GCEST104 (Introduction to Mechanical Engineering & Civil Engineering), which has no notes, no syllabus reader, and no catalog entry. Instead, the catalog lists GXEST104 (Introduction to Electrical and Electronics Engineering) in S1 for Civil and Mechanical.",
+          "source_evidence": "PDF pp. 30-32: 'SEMESTER S1 / INTRODUCTION TO MECHANICAL ENGINEERING & CIVIL ENGINEERING / Course Code GCEST104'. (In Group C, Basic Electrical & Electronics Engineering is S2 course GZEST204 on PDF p. 99, which also differs in syllabus from GXEST104).",
+          "repo_evidence": "src/data/notes.ts: sharedS1Subjects assigns GXEST104 ('Introduction to Electrical and Electronics Engineering') with `modules: []` to 'civil' and 'me' in S1. GCEST104 is completely absent from src/data/notes.ts and src/features/syllabi/cse.ts."
+        }
+      ],
+      "missing_topics": [
+        "Module 1: Thermodynamic cycles (Carnot, Otto, Diesel), IC Engines (CI, SI, 2-stroke, 4-stroke, CRDI, MPFI, hybrid), Refrigeration (reversed Carnot, vapour compression) & Psychrometry, Central AC layout",
+        "Module 2: Pumps (Reciprocating, Centrifugal) & Hydraulic Turbines, Power transmission (gears, clutches, bearings), Manufacturing (casting, forging, rolling, extrusion, welding, soldering, brazing, machining, CNC, 3D printing)",
+        "Module 3: Civil Engineering disciplines, NBC occupancy types, load/non-load bearing structures, residential building components and site selection, KBR area definitions (built-up, plinth, floor, carpet, FAR), relevance of NBC/KBR/CRZ",
+        "Module 4: Conventional construction materials (brick, stone, sand, cement, timber), Cement concrete & IS tests (slump, cube compressive strength), Structural steel & reinforcements, Soil origin and weathering"
+      ],
+      "extra_or_wrong_topics": [
+        "Catalog and syllabus reader expose GXEST104 (Group A/B Introduction to Electrical and Electronics Engineering) in S1 instead of GCEST104 (Introduction to Mechanical Engineering & Civil Engineering)"
+      ]
+    },
+    {
+      "course_code": "UCEST105",
+      "title": "Algorithmic Thinking with Python",
+      "note_dirs": [
+        "python-module-1",
+        "python-module-2",
+        "python-module-3",
+        "python-module-4"
+      ],
+      "note_status": "partial",
+      "syllabus_reader_status": "misplaced_topics",
+      "severity": "high",
+      "findings": [
+        {
+          "issue": "Confirmed catalog linkage bug: Although UCEST105 is in the catalog for 'civil' and 'me' and shared Python notes exist in the repo, the catalog sets `modules: []` for 'civil' and 'me', hiding all four note modules from Group C students.",
+          "source_evidence": "PDF p. 37: 'SEMESTER S1 / ALGORITHMIC THINKING WITH PYTHON / (Common to All Branches) / Course Code UCEST105'.",
+          "repo_evidence": "src/data/notes.ts: In sharedS1Subjects, UCEST105 sets `modules: branchId === 'ece' || branchId === 'eee' ? [...] : []`, leaving 'civil' and 'me' with an empty module list."
+        },
+        {
+          "issue": "Confirmed missing topic in Module 3 notes: Recursion (definition, call stack, avoiding circularity, and recursive sample problems) is completely absent from python-module-3/notes.md.",
+          "source_evidence": "PDF p. 38, Module 3: 'RECURSION:- Recursion Defined, Reasons for using Recursion, The Call Stack, Recursion and the Stack, Avoiding Circularity in Recursion, Sample problems - Finding the nth Fibonacci number, greatest common divisor of two positive integers, the factorial of a positive integer, adding two positive integers, the sum of digits of a positive number'.",
+          "repo_evidence": "python-module-3/notes.md (pp. 1-29, L1-L1054) covers selection, loops, functions, strings, lists, tuples, NumPy arrays, sets, and dictionaries, but contains no section or page on Recursion or the Call Stack (only a brief 1-paragraph mention of recursion inside Divide and Conquer in python-module-4/notes.md p. 4 L76)."
+        },
+        {
+          "issue": "Confirmed missing/incomplete sample problems in Module 2 & 3 notes: Expression evaluation d=a+b*c, printing numbers 1 to 50 in descending order, largest of n numbers, and merge sort decomposition demonstration are missing or incomplete.",
+          "source_evidence": "PDF p. 38, Module 2: '* - Evaluate an expression, d=a+b*c... print the numbers from 1 to 50 in descending order, find the sum of n numbers input by the user (using all the three loop variants)... largest of n numbers'. PDF pp. 38-39, Module 3: 'Functions with multiple return values' and '* The idea should be introduced and demonstrated using Merge sort, the problem of returning the top three integers from a list of n>=3 integers as examples.'",
+          "repo_evidence": "python-module-2/notes.md omits d=a+b*c, descending 1 to 50, and largest of n numbers (and spills Python `range()`, `if/elif`, lists, and NumPy arrays into Module 2 pp. 44-50). python-module-3/notes.md p. 20 (L686) demonstrates returning the top 3 largest values in a list, but omits Merge sort in Module 3 (covered only in Module 4 p. 4 L80) and does not explicitly highlight multiple return values via tuple packing."
+        },
+        {
+          "issue": "Confirmed syllabus reader module boundary mismatch: src/features/syllabi/cse.ts places Module 3's 'SELECTION AND ITERATION USING PYTHON', 'Sequence data types in Python', and 'Numpy library' into Module 2 of the syllabus reader.",
+          "source_evidence": "PDF p. 38: Module 2 covers only 'ALGORITHM AND PSEUDOCODE REPRESENTATION' and 'FLOWCHARTS'. Module 3 begins with 'SELECTION AND ITERATION USING PYTHON:- if-else, elif, for loop, range, while loop. Sequence data types in Python - list, tuple, set, strings, dictionary, Creating and using Arrays in Python (using Numpy library).'",
+          "repo_evidence": "src/features/syllabi/cse.ts: courses.UCEST105.modules[1] ('Module 2: Algorithms, flowcharts and control flow') includes `{ title: 'Selection, iteration and collections', subtopics: ['if, elif, for, range and while', 'Lists, tuples, sets, strings and dictionaries', 'Arrays using NumPy'] }`, which belongs to Module 3."
+        }
+      ],
+      "missing_topics": [
+        "Module 2: Sample problems - Evaluate expression d=a+b*c, print numbers from 1 to 50 in descending order, largest of n numbers",
+        "Module 3: Recursion - definition, reasons for using recursion, the call stack, recursion and the stack, avoiding circularity in recursion",
+        "Module 3: Recursion sample problems - nth Fibonacci number, GCD of two positive integers, factorial, adding two positive integers, sum of digits of a positive number",
+        "Module 3: Problem decomposition demonstrated using Merge sort, and explicit coverage of functions with multiple return values"
+      ],
+      "extra_or_wrong_topics": [
+        "Syllabus reader (src/features/syllabi/cse.ts) places Module 3 topics (Python selection/iteration, sequence data types, NumPy arrays) into Module 2",
+        "python-module-2/notes.md (pp. 44-50) includes Python range(), if/elif, quadratic solver, list slicing, and NumPy arrays which belong to Module 3"
+      ]
+    }
+  ],
+  "catalogue_findings": [
+    {
+      "severity": "high",
+      "branches": [
+        "civil",
+        "me"
+      ],
+      "issue": "Missing S1 Mathematics (GYMAT101) in Civil and Mechanical catalog: GYMAT101 is common to Groups B & C, but `sharedS1Subjects` restricts it to `branchId === 'ece' || branchId === 'eee'`.",
+      "evidence": "PDF p. 3 (GYMAT101 for Groups B & C); src/data/notes.ts lines 60-72 (`...(branchId === 'ece' || branchId === 'eee' ? [{ name: 'Mathematics', code: 'GYMAT101', ... }] : [])`)."
+    },
+    {
+      "severity": "high",
+      "branches": [
+        "civil",
+        "me"
+      ],
+      "issue": "Missing Group C Physics (GZPHT121) in Civil and Mechanical catalog: Group C takes GZPHT121 (Physics for Physical Science and Life Science), which is completely absent from `sharedS1Subjects` and `src/features/syllabi/cse.ts`.",
+      "evidence": "PDF p. 8 (GZPHT121 for Groups C & D); src/data/notes.ts lines 101-110 (only adds GBPHT121 for ECE/EEE; Civil/ME get no Physics subject)."
+    },
+    {
+      "severity": "high",
+      "branches": [
+        "civil",
+        "me"
+      ],
+      "issue": "Wrong Engineering Science courses in Civil and Mechanical S1 catalog: Lists Group A/B courses GMEST103 (Engineering Graphics) and GXEST104 (Intro to Electrical & Electronics Engg) instead of Group C S1 courses GCEST103 (Engineering Mechanics) and GCEST104 (Intro to Mechanical & Civil Engg).",
+      "evidence": "PDF pp. 26, 30 (GCEST103 and GCEST104 are the S1 courses for Group C; Engineering Graphics GCEST203 and Basic Electrical & Electronics GZEST204 are S2 courses on PDF pp. 95, 99); src/data/notes.ts lines 82-100."
+    },
+    {
+      "severity": "high",
+      "branches": [
+        "civil",
+        "me"
+      ],
+      "issue": "Chemistry (GCCYT122) has no syllabus reader and wrong course title in Civil and Mechanical catalog, and its module links are not wired to `chemistry-civil-mech-module-1..4` in `src/data/notes.ts`.",
+      "evidence": "PDF p. 17 (GCCYT122: Chemistry for Physical Science); src/data/notes.ts lines 73-81 sets `course: 'Engineering Chemistry'`, `syllabusHref: undefined` for `civil`/`me`, and uses generic `/notes/${branchId}/s1/chemistry/module-${n}` paths while `src/features/syllabi/cse.ts` has no `GCCYT122` key."
+    },
+    {
+      "severity": "high",
+      "branches": [
+        "civil",
+        "me"
+      ],
+      "issue": "Python (UCEST105) module list is empty for Civil and Mechanical in S1 catalog, and the non-CSE module descriptions for ECE/EEE are inaccurate.",
+      "evidence": "PDF pp. 37-39 (UCEST105 common to all branches); src/data/notes.ts lines 111-123 sets `modules: branchId === 'ece' || branchId === 'eee' ? [...] : []`, leaving `civil` and `me` with `modules: []`."
+    }
+  ],
+  "model": "gemini-4-argon",
+  "usage": {
+    "promptTokenCount": 111931,
+    "candidatesTokenCount": 5333,
+    "totalTokenCount": 117264,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 111931
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5333
+      }
+    ]
+  }
+}

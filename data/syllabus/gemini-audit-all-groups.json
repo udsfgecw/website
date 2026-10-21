@@ -1,0 +1,822 @@
+{
+  "model": "gemini-4-argon",
+  "groups": [
+    {
+      "group": "Group A (Semester 1 - CSE)",
+      "overall": "partial_match_with_significant_gaps",
+      "checks": [
+        {
+          "course_code": "GAMAT101",
+          "title": "Mathematics for Information Science 1",
+          "note_dirs": [
+            "maths-module-1",
+            "maths-module-2",
+            "maths-module-3",
+            "maths-module-4"
+          ],
+          "note_status": "complete",
+          "syllabus_reader_status": "accurate",
+          "severity": "low",
+          "findings": [
+            {
+              "issue": "All four modules in the notes and syllabus reader accurately reflect the KTU 2024 Group A syllabus.",
+              "source_evidence": "PDF pages 3-5 (GAMAT101 Modules 1-4)",
+              "repo_evidence": "maths-module-1/notes.md to maths-module-4/notes.md; src/features/syllabi/cse.ts (GAMAT101)"
+            }
+          ],
+          "missing_topics": [],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GAPHT121",
+          "title": "Physics for Information Science",
+          "note_dirs": [
+            "physics-module-1",
+            "physics-module-2",
+            "physics-module-3",
+            "physics-module-4"
+          ],
+          "note_status": "complete",
+          "syllabus_reader_status": "accurate",
+          "severity": "low",
+          "findings": [
+            {
+              "issue": "Notes and syllabus reader comprehensively cover all four modules of GAPHT121. Extracurricular helpers (e.g., capacitor filter, carrier density in doped semiconductors) are clearly marked as 'beyond the syllabus'.",
+              "source_evidence": "PDF pages 8-10 (GAPHT121 Modules 1-4)",
+              "repo_evidence": "physics-module-1/notes.md to physics-module-4/notes.md; src/features/syllabi/cse.ts (GAPHT121)"
+            }
+          ],
+          "missing_topics": [],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GXCYT122",
+          "title": "Chemistry for Information Science and Electrical Science",
+          "note_dirs": [
+            "chemistry-module-1",
+            "chemistry-module-2",
+            "chemistry-module-3",
+            "chemistry-module-4"
+          ],
+          "note_status": "complete",
+          "syllabus_reader_status": "minor_discrepancy",
+          "severity": "low",
+          "findings": [
+            {
+              "issue": "Catalog names the course 'Engineering Chemistry' instead of the official title 'Chemistry for Information Science and Electrical Science'.",
+              "source_evidence": "PDF page 15 (GXCYT122 title)",
+              "repo_evidence": "src/data/notes.ts L181"
+            },
+            {
+              "issue": "Syllabus reader omits 'Flow diagram' under Sewage water treatment in Module 4 and 'Number of vibrational modes' under Vibrational spectroscopy in Module 3.",
+              "source_evidence": "PDF pages 16-17 (GXCYT122 Modules 3 & 4)",
+              "repo_evidence": "src/features/syllabi/cse.ts (GXCYT122)"
+            }
+          ],
+          "missing_topics": [],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GMEST103",
+          "title": "Engineering Graphics and Computer Aided Drawing",
+          "note_dirs": [
+            "graphics-m1",
+            "graphics-m2",
+            "graphics-m3",
+            "graphics-m4"
+          ],
+          "note_status": "minor_gaps_and_syllabus_exclusions_included",
+          "syllabus_reader_status": "minor_discrepancy",
+          "severity": "medium",
+          "findings": [
+            {
+              "issue": "Module 3 notes include an entire section on 'Reverse Section Problems: Finding the Cutting Plane from a Given True Shape', which the official syllabus explicitly excludes ('Exclude true shape given problems').",
+              "source_evidence": "PDF page 24 (GMEST103 Module 3)",
+              "repo_evidence": "graphics-m3/notes.md L83, L556-L760"
+            },
+            {
+              "issue": "Module 4 notes omit the introductory theory on Computer Aided Drawing (CAD) (Introduction, Role of CAD in design and development of new products, Advantages of CAD), although the syllabus notes CAD is for internal evaluation only.",
+              "source_evidence": "PDF page 24 (GMEST103 Module 4)",
+              "repo_evidence": "graphics-m4/notes.md"
+            },
+            {
+              "issue": "Generated GMEST103 syllabus reader data copies a verbatim typo from the PDF ('In Part A, all questions need to be answered...') into the ESE array, even though GMEST103 has no Part A and consists of 8 questions carrying 15 marks each (4 to be answered).",
+              "source_evidence": "PDF page 25 (GMEST103 ESE table)",
+              "repo_evidence": "src/features/syllabi/generated/GMEST103.json"
+            }
+          ],
+          "missing_topics": [
+            "Module 4: Computer Aided Drawing (CAD) - Introduction, Role of CAD in design and development of new products, Advantages of CAD (internal evaluation only)"
+          ],
+          "extra_or_wrong_topics": [
+            "Module 3: Reverse Section Problems / True shape given problems (explicitly excluded by syllabus)"
+          ]
+        },
+        {
+          "course_code": "GXEST104",
+          "title": "Introduction to Electrical and Electronics Engineering",
+          "note_dirs": [
+            "electrical-module-1",
+            "electrical-module-2",
+            "electrical-module-3"
+          ],
+          "note_status": "incomplete",
+          "syllabus_reader_status": "accurate",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Course has 4 official modules, but the repository only has 3 note directories (electrical-module-1 to 3), with Module 4 topics partially merged into the end of electrical-module-3 (pages 9-10) and no electrical-module-4 directory mapped in the catalog.",
+              "source_evidence": "PDF pages 27-29 (GXEST104 Modules 1-4)",
+              "repo_evidence": "electrical-module-3/notes.md L849-L990; src/data/notes.ts L195-L202"
+            },
+            {
+              "issue": "In Module 1 notes, the energy stored in a capacitor is not explicitly outlined alongside inductor energy storage.",
+              "source_evidence": "PDF page 27 (GXEST104 Module 1: 'Capacitors & Inductors: V-I relations and Energy stored')",
+              "repo_evidence": "electrical-module-1/notes.md L55-L96"
+            },
+            {
+              "issue": "In Module 3 notes, multiple core transistor and amplifier topics are missing from the outline.",
+              "source_evidence": "PDF page 29 (GXEST104 Module 3)",
+              "repo_evidence": "electrical-module-3/notes.md L539-L845"
+            },
+            {
+              "issue": "In Module 4 (appended to electrical-module-3), the majority of communication systems, block diagrams, and instrumentation topics are missing.",
+              "source_evidence": "PDF page 29 (GXEST104 Module 4)",
+              "repo_evidence": "electrical-module-3/notes.md L849-L990"
+            }
+          ],
+          "missing_topics": [
+            "Module 1: Energy stored in a capacitor",
+            "Module 3: Comparison of CE, CB and CC configurations",
+            "Module 3: Concept of biasing and load line",
+            "Module 3: Transistor as a switch",
+            "Module 3: RC coupled amplifier - Circuit diagram and frequency response",
+            "Module 3: P-Channel MOSFET construction and working (only D-MOSFET and E-MOSFET general headings shown)",
+            "Module 4: Block diagram of Fiber optic Communication system",
+            "Module 4: Block diagram of AM and FM super-heterodyne receiver",
+            "Module 4: Basic concepts of Wired and Wireless communication",
+            "Module 4: Block diagram of GSM",
+            "Module 4: Comparison of 3G, 4G, 5G and 6G communication technologies",
+            "Module 4: Block diagrams of Digital Multimeter and Function generator",
+            "Module 4: Introduction to CRO and Lissajous patterns"
+          ],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "UCEST105",
+          "title": "Algorithmic Thinking with Python",
+          "note_dirs": [
+            "python-module-1",
+            "python-module-2",
+            "python-module-3",
+            "python-module-4"
+          ],
+          "note_status": "incomplete",
+          "syllabus_reader_status": "module_misalignment",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Module 3 notes completely omit the entire 'RECURSION' unit (Recursion Defined, Reasons for using Recursion, The Call Stack, Recursion and the Stack, Avoiding Circularity in Recursion, and all 5 sample recursive problems) as well as problem decomposition demonstrated using Merge sort.",
+              "source_evidence": "PDF pages 34-35 (UCEST105 Module 3)",
+              "repo_evidence": "python-module-3/notes.md"
+            },
+            {
+              "issue": "Module 2 notes omit several required sample problems/flowcharts: evaluating d=a+b*c, printing numbers from 1 to 50 in descending order, largest of n numbers, KTU grade scale using case structure, and sum of n numbers using all three loop variants.",
+              "source_evidence": "PDF page 34 (UCEST105 Module 2)",
+              "repo_evidence": "python-module-2/notes.md"
+            },
+            {
+              "issue": "Module 2 notes include misplaced topics from Module 1 (jigsaw puzzle trial and error, restaurant heuristics) and Module 3 (if/elif, range, lists, NumPy arrays).",
+              "source_evidence": "PDF pages 33-34 (UCEST105 Modules 1-3)",
+              "repo_evidence": "python-module-2/notes.md L603-L630, L960-L1140"
+            },
+            {
+              "issue": "Module 4 notes omit the Brute-force 'Password guessing' example.",
+              "source_evidence": "PDF page 35 (UCEST105 Module 4)",
+              "repo_evidence": "python-module-4/notes.md L32-L63"
+            },
+            {
+              "issue": "In the syllabus reader (src/features/syllabi/cse.ts), the topic 'Selection, iteration and collections' (if, elif, for, range, while, lists, tuples, sets, strings, dictionaries, NumPy arrays) is placed under Module 2 instead of Module 3.",
+              "source_evidence": "PDF page 34 (UCEST105 Module 3)",
+              "repo_evidence": "src/features/syllabi/cse.ts (UCEST105 modules[1] vs modules[2])"
+            }
+          ],
+          "missing_topics": [
+            "Module 2: Sample problems - Evaluate d=a+b*c, print numbers from 1 to 50 in descending order, largest of n numbers, KTU grade scale using case structure, sum of n numbers input by user using all three loop variants",
+            "Module 3: Problem decomposition as a strategy for solving complex problems (demonstrated using Merge sort)",
+            "Module 3: Recursion Defined, Reasons for using Recursion, The Call Stack, Recursion and the Stack, Avoiding Circularity in Recursion",
+            "Module 3: Recursion sample problems - nth Fibonacci number, greatest common divisor of two positive integers, factorial of a positive integer, adding two positive integers, sum of digits of a positive number",
+            "Module 4: Brute-force example - Password guessing"
+          ],
+          "extra_or_wrong_topics": [
+            "Module 2 notes: Trial and error jigsaw puzzle and Heuristics restaurant selection (belong to Module 1)",
+            "Module 2 notes: Python range(), if/elif, list indexing/slicing, and NumPy arrays (belong to Module 3)",
+            "Syllabus reader (UCEST105): 'Selection, iteration and collections' placed in Module 2 instead of Module 3"
+          ]
+        }
+      ],
+      "catalogue_findings": [
+        {
+          "severity": "medium",
+          "branches": [
+            "cse"
+          ],
+          "issue": "In CSE S1, GXEST104 lists only 3 modules instead of 4, and GXCYT122 is titled 'Engineering Chemistry' instead of 'Chemistry for Information Science and Electrical Science'. Also, both S1/S2 slot courses (GAPHT121 Physics and GXCYT122 Chemistry) are listed simultaneously in S1.",
+          "evidence": "src/data/notes.ts L181-L227; PDF pages 8, 15, 27"
+        },
+        {
+          "severity": "high",
+          "branches": [
+            "ece",
+            "eee"
+          ],
+          "issue": "In ECE and EEE S1 (Group B), the Mathematics course is assigned code 'GYMAT101' (which is not an official KTU 2024 Group B code; Group B Mathematics 1 is GBMAT101), Physics (GBPHT121) has no syllabusHref and GBPHT121 is missing from cseSyllabusModule, GXEST104 only lists 3 modules, and UCEST105 module descriptions in sharedS1Subjects ('Data structures and modular programming', 'Object-oriented and file-based programming', 'Algorithms and data analysis') do not match the KTU 2024 UCEST105 syllabus.",
+          "evidence": "src/data/notes.ts L62-L138; src/features/syllabi/cse.ts"
+        },
+        {
+          "severity": "high",
+          "branches": [
+            "civil",
+            "me"
+          ],
+          "issue": "In Civil and Mechanical S1 (Group C), Mathematics (GCMAT101) and Physics (GCPHT121) are completely missing from the catalog; Group A/B courses GMEST103 and GXEST104 are wrongly assigned to Civil/ME instead of Group C's Engineering Mechanics (GCEST103) and Introduction to Mechanical & Civil Engineering (GCEST104); Chemistry (GCCYT122) has no syllabusHref and is missing from cseSyllabusModule; and the modules arrays for Graphics, Electrical, and Python are empty [].",
+          "evidence": "src/data/notes.ts L61-L139; src/features/syllabi/cse.ts"
+        }
+      ],
+      "model": "gemini-4-argon",
+      "usage": {
+        "promptTokenCount": 117315,
+        "candidatesTokenCount": 3710,
+        "totalTokenCount": 121025,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 117315
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 3710
+          }
+        ]
+      }
+    },
+    {
+      "group": "Group B (ECE, EEE) - Semester 1",
+      "overall": "Partial alignment with significant gaps: GYMAT101 is well-covered in both notes and syllabus reader, but GBPHT121 lacks a syllabus reader and omits Superconductivity in Module 3; GXCYT122 omits E-waste and Climate Change/SDG topics in Module 4; GMEST103 omits CAD in Module 4, includes excluded reverse-section problems in Module 3, and has a corrupted ESE Part A description in its reader; GXEST104 compresses Modules 3 and 4 into a single 3-module structure with heavy omissions of BJT amplifiers, MOSFETs, communication systems, and instrumentation; UCEST105 omits recursion in Module 3 notes and has misaligned module descriptions and syllabus reader placement.",
+      "checks": [
+        {
+          "course_code": "GYMAT101",
+          "title": "Mathematics for Electrical Science and Physical Science - 1",
+          "note_dirs": [
+            "electrical-maths-module-1",
+            "electrical-maths-module-2",
+            "electrical-maths-module-3",
+            "electrical-maths-module-4"
+          ],
+          "note_status": "Aligned. All four modules comprehensively cover the KTU 2024 syllabus topics.",
+          "syllabus_reader_status": "Aligned. Defined in src/features/syllabi/cse.ts under GYMAT101 with accurate modules, hours, outcomes, CIE, and ESE.",
+          "severity": "low",
+          "findings": [
+            {
+              "issue": "Notes and syllabus reader accurately match the official GYMAT101 syllabus across all 4 modules.",
+              "source_evidence": "PDF pages 3-6 (GYMAT101 Modules 1-4)",
+              "repo_evidence": "electrical-maths-module-1/notes.md to electrical-maths-module-4/notes.md; src/features/syllabi/cse.ts (GYMAT101)"
+            }
+          ],
+          "missing_topics": [],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GBPHT121",
+          "title": "Physics for Electrical Science",
+          "note_dirs": [
+            "physics-ece-module-1",
+            "physics-ece-module-2",
+            "physics-ece-module-3",
+            "physics-ece-module-4"
+          ],
+          "note_status": "Incomplete. Module 3 completely omits the Superconductivity half of the module, and Module 1 lacks explicit headings for hole density derivation in the valence band and Fermi level in extrinsic semiconductors.",
+          "syllabus_reader_status": "Missing. GBPHT121 is not defined in src/features/syllabi/cse.ts, and syllabusHref is omitted for Physics in ECE/EEE in src/data/notes.ts.",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed mismatch: The entire Superconductivity section of Module 3 is absent from the Module 3 notes, which only cover Dielectrics.",
+              "source_evidence": "PDF page 9 (Module 3: Super conductivity, Transition temperature, Critical field, Meissner effect, Type I and Type II Super conductors, Applications of superconductors)",
+              "repo_evidence": "physics-ece-module-3/notes.md L3-L9 (Dielectrics - Module 3 only)"
+            },
+            {
+              "issue": "Confirmed missing reader: GBPHT121 has no entry in courses record in src/features/syllabi/cse.ts and no syllabusHref in src/data/notes.ts.",
+              "source_evidence": "PDF pages 8-10 (GBPHT121 syllabus)",
+              "repo_evidence": "src/features/syllabi/cse.ts (only GAPHT121 defined); src/data/notes.ts (Physics entry for ece/eee lacks syllabusHref)"
+            },
+            {
+              "issue": "Possible gap: Module 1 outline explicitly shows derivation of electron concentration in conduction band and Fermi level in intrinsic semiconductors, but does not show explicit sections for derivation of density of holes in valence band or Fermi level in extrinsic semiconductors.",
+              "source_evidence": "PDF page 8 (Module 1: Derivation of density of electrons in conduction band and density of holes in valence band; Fermi level in semiconductors-intrinsic and extrinsic)",
+              "repo_evidence": "physics-ece-module-1/notes.md L78, L172, L197-L266"
+            },
+            {
+              "issue": "Possible gap: Module 2 outline does not show explicit subsections for applications of Zener diodes and applications of Photodetectors.",
+              "source_evidence": "PDF page 9 (Module 2: Applications of Zener and Tunnel diodes; Photo detectors (Junction and PIN photodiodes), Applications)",
+              "repo_evidence": "physics-ece-module-2/notes.md L199-L273, L321-L386"
+            }
+          ],
+          "missing_topics": [
+            "Superconductivity, Transition temperature, Critical field, Meissner effect, Type I and Type II Superconductors, Applications of superconductors (Module 3)",
+            "Derivation of density of holes in valence band (Module 1 - possible gap)",
+            "Fermi level in extrinsic semiconductors (Module 1 - possible gap)",
+            "Applications of Zener diodes and Applications of Photodetectors (Module 2 - possible gap)"
+          ],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GXCYT122",
+          "title": "Chemistry for Information Science and Electrical Science",
+          "note_dirs": [
+            "chemistry-ece-module-1",
+            "chemistry-ece-module-2",
+            "chemistry-ece-module-3",
+            "chemistry-ece-module-4"
+          ],
+          "note_status": "Mostly aligned for Modules 1-3, but Module 4 omits the final waste management and climate change topics.",
+          "syllabus_reader_status": "Aligned. GXCYT122 is accurately represented in src/features/syllabi/cse.ts.",
+          "severity": "medium",
+          "findings": [
+            {
+              "issue": "Confirmed mismatch: Module 4 notes end after Tertiary Sewage Treatment and omit E-Waste disposal, Chemistry of climate change, Greenhouse Gases, Ozone Depletion, and Sustainable Development / SDGs.",
+              "source_evidence": "PDF page 17 (Module 4: E Waste, Methods of disposal – recycle, recovery and reuse. Chemistry of climate change- Greenhouse Gases- Ozone Depletion-Sustainable Development- an introduction to Sustainable Development Goals)",
+              "repo_evidence": "chemistry-ece-module-4/notes.md L555-L664 (ends at III. Tertiary Treatment)"
+            },
+            {
+              "issue": "Possible gap: Module 1 outline lists Impressed Current Cathodic Protection in page 9, but does not show an explicit heading for Sacrificial Anodic Protection.",
+              "source_evidence": "PDF page 15 (Module 1: Cathodic Protection - Sacrificial anodic protection and impressed current cathodic protection)",
+              "repo_evidence": "chemistry-ece-module-1/notes.md L880-L912"
+            },
+            {
+              "issue": "Possible gap: Module 3 outline does not explicitly highlight Role of conjugation in absorption maxima or specific CO2 and H2O vibrational mode headings (may be covered under Classification of Electronic Transitions and Illustrations).",
+              "source_evidence": "PDF page 16 (Module 3: Role of conjugation in absorption maxima; Vibrational modes of CO2 and H2O)",
+              "repo_evidence": "chemistry-ece-module-3/notes.md L269, L425-L441"
+            }
+          ],
+          "missing_topics": [
+            "E-Waste and methods of disposal: recycle, recovery and reuse (Module 4)",
+            "Chemistry of climate change, Greenhouse Gases, Ozone Depletion (Module 4)",
+            "Sustainable Development and introduction to Sustainable Development Goals (Module 4)",
+            "Sacrificial anodic protection (Module 1 - possible gap)"
+          ],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GMEST103",
+          "title": "Engineering Graphics and Computer Aided Drawing",
+          "note_dirs": [
+            "graphics-m1",
+            "graphics-m2",
+            "graphics-m3",
+            "graphics-m4"
+          ],
+          "note_status": "Partially aligned. Modules 1-3 cover core projection topics well, but Module 3 includes excluded reverse-section ('true shape given') problems, and Module 4 completely omits Computer Aided Drawing (CAD).",
+          "syllabus_reader_status": "Minor defect. Module topics in generated GMEST103.json match the syllabus, but the ESE array erroneously includes a Part A/Part B rule from 3-mark question courses alongside the 15x4=60 rule.",
+          "severity": "medium",
+          "findings": [
+            {
+              "issue": "Confirmed mismatch: Module 4 notes cover Isometric Projection only and omit the Computer Aided Drawing (CAD) section of Module 4.",
+              "source_evidence": "PDF page 24 (Module 4: Computer Aided Drawing (CAD): Introduction, Role of CAD in design and development of new products, Advantages of CAD. Creating two-dimensional drawing with dimensions using suitable software)",
+              "repo_evidence": "graphics-m4/notes.md L3-L614 (Isometric projections only)"
+            },
+            {
+              "issue": "Confirmed mismatch: Module 3 notes dedicate Lessons 4 and 10 to finding the cutting plane from a given true shape, which the official syllabus explicitly excludes.",
+              "source_evidence": "PDF page 24 (Module 3: True shape of the sections. (Exclude true shape given problems))",
+              "repo_evidence": "graphics-m3/notes.md L83-L110 (Conic Sections and Reverse Sectioning Problems), L556-L760 (Reverse Section Problems: Finding the Cutting Plane from a Given True Shape)"
+            },
+            {
+              "issue": "Possible violation: Module 4 notes include practice on a cylindrical through-hole in a hexagonal prism, whereas Module 3 excludes through-holes (though Module 4 isometric combinations do not explicitly state this exclusion).",
+              "source_evidence": "PDF page 24 (Module 3: Exclude problems with through holes; Module 4: Isometric View and Projections of Prisms, Pyramids, Cone, Cylinder, Sphere, Hemisphere and their combinations)",
+              "repo_evidence": "graphics-m4/notes.md L302 (Problem 160: Cylindrical through-hole in a hexagonal prism)"
+            },
+            {
+              "issue": "Confirmed syllabus reader defect: GMEST103.json ESE array includes 'In Part A, all questions need to be answered and in Part B, each student can choose any one full question out of two questions', whereas official GMEST103 ESE has no Part A/Part B split (only 8 questions, 2 per module, choose 1 per module, 15x4 = 60 marks).",
+              "source_evidence": "PDF page 25 (End Semester Examination Marks: Student can choose any one full question out of two questions from each module. 2 Questions from one module. Total 8 Questions, each question carries 15 marks (15x4 = 60 marks))",
+              "repo_evidence": "src/features/syllabi/generated/GMEST103.json ese[0]"
+            }
+          ],
+          "missing_topics": [
+            "Computer Aided Drawing (CAD): Introduction, Role of CAD in design and development of new products, Advantages of CAD, Creating 2D drawing with dimensions (Module 4)"
+          ],
+          "extra_or_wrong_topics": [
+            "Reverse Section Problems: Finding the Cutting Plane from a Given True Shape / Tetrahedron sections (graphics-m3/notes.md pages 4 and 10; explicitly excluded by syllabus)"
+          ]
+        },
+        {
+          "course_code": "GXEST104",
+          "title": "Introduction to Electrical and Electronics Engineering",
+          "note_dirs": [
+            "electrical-module-1",
+            "electrical-module-2",
+            "electrical-module-3"
+          ],
+          "note_status": "Major mismatch. Only 3 note directories exist for a 4-module course; Module 3 compresses official Modules 3 and 4 into one module and omits numerous mandatory topics from both modules.",
+          "syllabus_reader_status": "Aligned. GXEST104 in src/features/syllabi/cse.ts accurately lists all 4 official modules and topics.",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed structural mismatch: The course has 4 official modules, but the repository provides only 3 note modules (electrical-module-1, 2, 3), merging a truncated Module 4 into electrical-module-3/notes.md (pages 9-10) and omitting Module 4 from src/data/notes.ts.",
+              "source_evidence": "PDF pages 27-29 (Modules 1 to 4)",
+              "repo_evidence": "src/data/notes.ts (GXEST104 lists only Module 1, Module 2, Module 3); electrical-module-3/notes.md L849-L995"
+            },
+            {
+              "issue": "Confirmed missing topics in Module 3: Notes omit comparison of CE, CB, and CC configurations, concept of biasing and load line, transistor as a switch, RC coupled amplifier (circuit diagram and frequency response), and construction/working of P-channel MOSFETs.",
+              "source_evidence": "PDF page 29 (Module 3: Comparison of CE, CB and CC configurations; Concept of biasing and load line; Transistor as a switch; RC coupled amplifier - Circuit diagram and frequency response; Construction and working of N-channel and P-Channel MOSFETs)",
+              "repo_evidence": "electrical-module-3/notes.md pages 6-8 (L539-L845)"
+            },
+            {
+              "issue": "Confirmed missing topics in Module 4: Notes omit Block diagram of Fiber optic Communication system, Block diagram of AM and FM super-heterodyne receiver, Basic concepts of Wired and Wireless communication, Block diagram of GSM, Comparison of 3G, 4G, 5G and 6G communication technologies, Block diagrams of Digital Multimeter and Function generator, and Introduction to CRO and Lissajous patterns.",
+              "source_evidence": "PDF page 29 (Module 4 syllabus description)",
+              "repo_evidence": "electrical-module-3/notes.md pages 9-10 (L849-L995)"
+            },
+            {
+              "issue": "Possible gap in Module 1: Energy stored in a capacitor is not explicitly listed in the page 1 headings (which list V-I Relation of a Capacitor and Energy Stored in an Inductor).",
+              "source_evidence": "PDF page 27 (Module 1: Capacitors & Inductors: V-I relations and Energy stored)",
+              "repo_evidence": "electrical-module-1/notes.md L55-L108"
+            }
+          ],
+          "missing_topics": [
+            "Energy stored in a capacitor (Module 1 - possible gap)",
+            "Comparison of CE, CB and CC configurations (Module 3)",
+            "Concept of biasing and load line (Module 3)",
+            "Transistor as a switch (Module 3)",
+            "RC coupled amplifier - circuit diagram and frequency response (Module 3)",
+            "Construction and working of P-Channel MOSFET (Module 3; notes include JFET/D-MOSFET/E-MOSFET overview)",
+            "Block diagram of Fiber optic Communication system (Module 4)",
+            "Block diagram of AM and FM super-heterodyne receiver (Module 4)",
+            "Basic concepts of Wired and Wireless communication, Block diagram of GSM (Module 4)",
+            "Comparison of 3G, 4G, 5G and 6G communication technologies (Module 4)",
+            "Block diagrams of Digital Multimeter and Function generator (Module 4)",
+            "Introduction to CRO and Lissajous patterns (Module 4)"
+          ],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "UCEST105",
+          "title": "Algorithmic Thinking with Python",
+          "note_dirs": [
+            "python-module-1",
+            "python-module-2",
+            "python-module-3",
+            "python-module-4"
+          ],
+          "note_status": "Partially aligned. Module 3 notes completely omit Recursion and the specific decomposition demonstrations (Merge sort and top-3 integers) required by Module 3, and some Module 2 sample problems are absent or altered.",
+          "syllabus_reader_status": "Misaligned module boundary. In src/features/syllabi/cse.ts, 'Selection, iteration and collections' (if-else, loops, list/tuple/set/strings/dict, NumPy arrays) is placed inside Module 2 instead of Module 3.",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed mismatch: Module 3 notes completely omit the Recursion section (Recursion defined, reasons, Call Stack, avoiding circularity, and sample recursive problems: nth Fibonacci, GCD, factorial, adding two positive integers, sum of digits).",
+              "source_evidence": "PDF page 35 (Module 3: RECURSION)",
+              "repo_evidence": "python-module-3/notes.md pages 1-29 (covers selection, loops, functions, strings, lists, tuples, NumPy, sets, dictionaries; no recursion pages)"
+            },
+            {
+              "issue": "Confirmed mismatch: Module 3 notes do not demonstrate Problem Decomposition using Merge Sort (Merge Sort only appears in Module 4).",
+              "source_evidence": "PDF pages 34-35 (Module 3: DECOMPOSITION AND MODULARISATION* ... demonstrated using Merge sort, the problem of returning the top three integers)",
+              "repo_evidence": "python-module-3/notes.md pages 7-9 (L219-L355)"
+            },
+            {
+              "issue": "Confirmed syllabus reader mismatch: In src/features/syllabi/cse.ts, UCEST105 places 'Selection, iteration and collections' (`if`, `elif`, `for`, `range`, `while`, lists, tuples, sets, strings, dictionaries, NumPy arrays) under Module 2 instead of Module 3 where the official syllabus places it.",
+              "source_evidence": "PDF page 34 (Module 3: SELECTION AND ITERATION USING PYTHON; Sequence data types in Python; Creating and using Arrays in Python (using Numpy library))",
+              "repo_evidence": "src/features/syllabi/cse.ts UCEST105.modules[1].topics[2]"
+            },
+            {
+              "issue": "Possible gap in Module 2 sample problems: Several specified sample problems (evaluate d=a+b*c, KTU grade scale using case structure, print 1 to 50 in descending order, sum of n numbers using all three loop variants, largest of n numbers) are not explicitly shown in the Module 2 outline.",
+              "source_evidence": "PDF page 34 (Module 2 sample problems *)",
+              "repo_evidence": "python-module-2/notes.md pages 1-50"
+            },
+            {
+              "issue": "Possible gap in Module 4: Brute-force Approach page lists Padlock combination example but does not explicitly show a separate Password guessing heading.",
+              "source_evidence": "PDF page 35 (Module 4: Brute-force Approach - Example: Padlock, Password guessing)",
+              "repo_evidence": "python-module-4/notes.md L32-L63"
+            }
+          ],
+          "missing_topics": [
+            "Recursion: Definition, Reasons for using Recursion, The Call Stack, Recursion and the Stack, Avoiding Circularity, and recursive sample problems (nth Fibonacci, GCD, factorial, adding two positive integers, sum of digits) (Module 3)",
+            "Problem decomposition demonstrated using Merge sort (Module 3)",
+            "Specific Module 2 sample exercises: print 1 to 50 in descending order, sum of n numbers using all three loop variants, largest of n numbers (Module 2 - possible gap)"
+          ],
+          "extra_or_wrong_topics": [
+            "Selection, iteration, sequence data types, and NumPy arrays are previewed in python-module-1/notes.md (page 8) and python-module-2/notes.md (pages 44-50) in addition to Module 3, and misplaced into Module 2 in the syllabus reader."
+          ]
+        }
+      ],
+      "catalogue_findings": [
+        {
+          "severity": "high",
+          "branches": [
+            "ECE",
+            "EEE"
+          ],
+          "issue": "GBPHT121 (Physics for Electrical Science) has no syllabusHref in src/data/notes.ts and no syllabus definition in src/features/syllabi/cse.ts (which only defines GAPHT121 for Group A). If cseSyllabusModule is invoked for GBPHT121, it returns empty pages and chapters.",
+          "evidence": "src/data/notes.ts sharedS1Subjects ('Physics', code: 'GBPHT121', missing syllabusHref); src/features/syllabi/cse.ts courses record (missing GBPHT121 key)"
+        },
+        {
+          "severity": "high",
+          "branches": [
+            "ECE",
+            "EEE",
+            "CSE"
+          ],
+          "issue": "GXEST104 (Introduction to Electrical and Electronics Engineering) only lists 3 modules in src/data/notes.ts instead of the 4 modules in the KTU 2024 syllabus.",
+          "evidence": "src/data/notes.ts sharedS1Subjects ('Electrical and Electronics Engineering', code: 'GXEST104', modules array has only Module 1, Module 2, Module 3)"
+        },
+        {
+          "severity": "medium",
+          "branches": [
+            "ECE",
+            "EEE"
+          ],
+          "issue": "In src/data/notes.ts, UCEST105 (Algorithmic Thinking with Python) for ECE and EEE uses hardcoded, inaccurate module detail strings ('Data structures and modular programming', 'Object-oriented and file-based programming', 'Algorithms and data analysis') instead of the official syllabus topics or the PYTHON_MODULE_*_SUMMARY constants used in CSE.",
+          "evidence": "src/data/notes.ts sharedS1Subjects ('Algorithmic Thinking with Python' modules array for ece/eee)"
+        },
+        {
+          "severity": "low",
+          "branches": [
+            "ECE",
+            "EEE"
+          ],
+          "issue": "Course titles in src/data/notes.ts for GXCYT122 and GBPHT121 use generic names ('Engineering Chemistry' and 'Engineering Physics') instead of the official KTU 2024 Group B titles ('Chemistry for Information Science and Electrical Science' and 'Physics for Electrical Science').",
+          "evidence": "src/data/notes.ts sharedS1Subjects; PDF pages 8 and 15"
+        }
+      ],
+      "model": "gemini-4-argon",
+      "usage": {
+        "promptTokenCount": 122742,
+        "candidatesTokenCount": 5471,
+        "totalTokenCount": 128213,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 122742
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 5471
+          }
+        ]
+      }
+    },
+    {
+      "group": "Group C (Civil and Mechanical Engineering, Semester S1)",
+      "overall": "fail",
+      "checks": [
+        {
+          "course_code": "GYMAT101",
+          "title": "Mathematics for Electrical Science and Physical Science - 1",
+          "note_dirs": [
+            "electrical-maths-module-1",
+            "electrical-maths-module-2",
+            "electrical-maths-module-3",
+            "electrical-maths-module-4"
+          ],
+          "note_status": "complete_but_unlinked_in_group_c_catalog",
+          "syllabus_reader_status": "complete_but_unlinked_in_group_c_catalog",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed mismatch: GYMAT101 is the official S1 mathematics course for Group C (Civil & Mechanical), and complete notes plus a matching syllabus reader exist in the repo, but the catalog omits GYMAT101 entirely for 'civil' and 'me' branches.",
+              "source_evidence": "PDF p. 3: 'SEMESTER S1 / MATHEMATICS FOR ELECTRICAL SCIENCE AND PHYSICAL SCIENCE - 1 / (Groups B & C) / Course Code GYMAT101'. PDF pp. 3-4: Modules 1-4.",
+              "repo_evidence": "src/data/notes.ts: sharedS1Subjects(branchId) wraps the GYMAT101 entry in `...(branchId === 'ece' || branchId === 'eee' ? [...] : [])`, excluding 'civil' and 'me'. Notes in electrical-maths-module-1..4 and courses.GYMAT101 in src/features/syllabi/cse.ts cover all 4 modules accurately."
+            }
+          ],
+          "missing_topics": [],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GZPHT121",
+          "title": "Physics for Physical Science and Life Science",
+          "note_dirs": [],
+          "note_status": "missing",
+          "syllabus_reader_status": "missing",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed missing course: Official Group C S1/S2 Physics course GZPHT121 has no mapped note directories, no syllabus reader definition, and no catalog entry under Civil or Mechanical S1.",
+              "source_evidence": "PDF pp. 8-10: 'SEMESTER S1/S2 / PHYSICS FOR PHYSICAL SCIENCE AND LIFE SCIENCE (Groups C & D) / Course Code GZPHT121' covering Module 1 (Laser & Fibre Optics), Module 2 (Interference and Diffraction), Module 3 (Quantum Mechanics), Module 4 (Waves & Acoustics).",
+              "repo_evidence": "No mapped note directories for GZPHT121; src/features/syllabi/cse.ts only defines GAPHT121; src/data/notes.ts only adds Physics (GBPHT121) for 'ece' and 'eee', leaving 'civil' and 'me' with no Physics entry."
+            }
+          ],
+          "missing_topics": [
+            "Module 1: Laser & Fibre Optics (Ruby, CO2, semiconductor lasers, numerical aperture, fibre optic communication)",
+            "Module 2: Interference and Diffraction (Cosine law, thin films, Newton's rings, air wedge, single slit, grating)",
+            "Module 3: Quantum Mechanics (Uncertainty principle, Schrodinger equations, 1D box, quantum tunnelling)",
+            "Module 4: Waves & Acoustics (Stretched string vibrations, reverberation, Sabine's formula, ultrasonics, NDT, SONAR)"
+          ],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GCCYT122",
+          "title": "Chemistry for Physical Science",
+          "note_dirs": [
+            "chemistry-civil-mech-module-1",
+            "chemistry-civil-mech-module-2",
+            "chemistry-civil-mech-module-3",
+            "chemistry-civil-mech-module-4"
+          ],
+          "note_status": "partial",
+          "syllabus_reader_status": "missing",
+          "severity": "medium",
+          "findings": [
+            {
+              "issue": "Confirmed missing syllabus reader: GCCYT122 is missing from the syllabus reader definitions, and syllabusHref is explicitly disabled (undefined) for 'civil' and 'me' in the catalog.",
+              "source_evidence": "PDF pp. 17-19: 'SEMESTER S1/S2 / CHEMISTRY FOR PHYSICAL SCIENCE (Group C) / Course Code GCCYT122'.",
+              "repo_evidence": "src/features/syllabi/cse.ts defines GXCYT122 (Group A/B Chemistry) but not GCCYT122. src/data/notes.ts sets `syllabusHref: branchId === 'civil' || branchId === 'me' ? undefined : ...` and titles the course 'Engineering Chemistry' instead of 'Chemistry for Physical Science'."
+            },
+            {
+              "issue": "Possible gap in Module 1 notes: Solid and semisolid lubricants classification and supercapacitor materials in nanomaterials are not clearly evidenced in the Module 1 note outline.",
+              "source_evidence": "PDF p. 18, Module 1: 'Lubricants: Classification - Solid, Semisolid and Liquid lubricants' and 'Nanomaterials: ... Applications of nanomaterials – Supercapacitor Materials'.",
+              "repo_evidence": "chemistry-civil-mech-module-1/notes.md p. 7 (L341-L412) lists 'Classification of Greases' and 'Liquid Lubricants' without an explicit solid lubricants heading; p. 11 (L768) lists 'Applications of Nanomaterials' without explicitly highlighting supercapacitor materials."
+            },
+            {
+              "issue": "Possible gap in Module 2 notes: Nernst equation for single electrode and cell (and numerical problems) is not explicitly shown in the Module 2 section headings.",
+              "source_evidence": "PDF p. 18, Module 2: 'Electrochemical Cell- Electrode potential- Nernst equation for single electrode and cell (Numerical problems)'.",
+              "repo_evidence": "chemistry-civil-mech-module-2/notes.md pp. 2-4 (L21-L300) covers Daniell cell, reference electrodes, and electrochemical series applications (equilibrium constant/feasibility), without a dedicated Nernst equation heading."
+            },
+            {
+              "issue": "Possible gap in Module 3 notes: Beer-Lambert's law (and numericals), role of conjugation in electronic spectroscopy, DTA of CaC2O4.H2O, and GC exhaust gas analysis are not explicitly surfaced in headings.",
+              "source_evidence": "PDF p. 19, Module 3: 'Beer Lambert’s law – Numerical problems', 'Role of Conjugation in absorption maxima', 'DTA of CaC2O4.H2O', 'Analysis of chemical composition of exhaust gases'.",
+              "repo_evidence": "chemistry-civil-mech-module-3/notes.md p. 2-3 (L20-L179) has 'Worked Example' and 'UV-Visible Spectroscopy Fundamentals'; p. 5 (L310, L354-L383) explicitly lists 'Thermogram of Calcium Oxalate Monohydrate' under TGA but not under DTA; p. 6 (L446) lists general 'Applications of Gas Chromatography'."
+            }
+          ],
+          "missing_topics": [
+            "Module 1: Solid lubricants (possible gap in outline)",
+            "Module 1: Supercapacitor materials under nanomaterials (possible gap in outline)",
+            "Module 2: Nernst equation for single electrode and cell and numerical problems (possible gap in outline)",
+            "Module 3: Beer-Lambert's law and numerical problems, Role of conjugation in absorption maxima (possible gap in outline)",
+            "Module 3: DTA of CaC2O4.H2O and GC analysis of exhaust gases (possible gap in outline)"
+          ],
+          "extra_or_wrong_topics": []
+        },
+        {
+          "course_code": "GCEST103",
+          "title": "Engineering Mechanics",
+          "note_dirs": [],
+          "note_status": "missing",
+          "syllabus_reader_status": "missing",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed missing course & wrong course in catalog: Group C S1 requires GCEST103 (Engineering Mechanics), which has no notes, no syllabus reader, and no catalog entry. Instead, the catalog lists GMEST103 (Engineering Graphics) in S1 for Civil and Mechanical.",
+              "source_evidence": "PDF p. 26: 'SEMESTER S1 / ENGINEERING MECHANICS / Course Code GCEST103' (Modules 1-4: Statics/Force systems, Friction/Centroid/Moment of inertia, Rectilinear translation/D'Alembert's principle, Curvilinear translation/Projectile/Rotation). PDF p. 95 shows Engineering Graphics for Group C is S2 course GCEST203 (which includes Tetrahedron and Frustum, unlike GMEST103).",
+              "repo_evidence": "src/data/notes.ts: sharedS1Subjects assigns GMEST103 ('Engineering Graphics and Computer Aided Drawing') with `modules: []` to 'civil' and 'me' in S1. GCEST103 is absent from both src/data/notes.ts and src/features/syllabi/cse.ts."
+            }
+          ],
+          "missing_topics": [
+            "Module 1: Introduction to statics, forces in space, support reactions of beams (point load and UDL), 2D and 3D force systems, moment, couple, resultants, free-body diagram and 2D/3D equilibrium",
+            "Module 2: Friction (laws, blocks and ladder), Centroid of composite areas, Moment of inertia (parallel/perpendicular axis theorems, polar MOI, radius of gyration, mass MOI of ring and disc)",
+            "Module 3: Dynamics - rectilinear translation, kinematics and kinetics equations of motion, D'Alembert's principle, motion on horizontal/inclined surfaces, connected bodies",
+            "Module 4: Curvilinear translation, differential equations of projectile motion, kinematics of rotation, rotation of rigid body about fixed axis under constant moment"
+          ],
+          "extra_or_wrong_topics": [
+            "Catalog and syllabus reader expose GMEST103 (Group A/B Engineering Graphics) in S1 instead of GCEST103 (Engineering Mechanics)"
+          ]
+        },
+        {
+          "course_code": "GCEST104",
+          "title": "Introduction to Mechanical Engineering & Civil Engineering",
+          "note_dirs": [],
+          "note_status": "missing",
+          "syllabus_reader_status": "missing",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed missing course & wrong course in catalog: Group C S1 requires GCEST104 (Introduction to Mechanical Engineering & Civil Engineering), which has no notes, no syllabus reader, and no catalog entry. Instead, the catalog lists GXEST104 (Introduction to Electrical and Electronics Engineering) in S1 for Civil and Mechanical.",
+              "source_evidence": "PDF pp. 30-32: 'SEMESTER S1 / INTRODUCTION TO MECHANICAL ENGINEERING & CIVIL ENGINEERING / Course Code GCEST104'. (In Group C, Basic Electrical & Electronics Engineering is S2 course GZEST204 on PDF p. 99, which also differs in syllabus from GXEST104).",
+              "repo_evidence": "src/data/notes.ts: sharedS1Subjects assigns GXEST104 ('Introduction to Electrical and Electronics Engineering') with `modules: []` to 'civil' and 'me' in S1. GCEST104 is completely absent from src/data/notes.ts and src/features/syllabi/cse.ts."
+            }
+          ],
+          "missing_topics": [
+            "Module 1: Thermodynamic cycles (Carnot, Otto, Diesel), IC Engines (CI, SI, 2-stroke, 4-stroke, CRDI, MPFI, hybrid), Refrigeration (reversed Carnot, vapour compression) & Psychrometry, Central AC layout",
+            "Module 2: Pumps (Reciprocating, Centrifugal) & Hydraulic Turbines, Power transmission (gears, clutches, bearings), Manufacturing (casting, forging, rolling, extrusion, welding, soldering, brazing, machining, CNC, 3D printing)",
+            "Module 3: Civil Engineering disciplines, NBC occupancy types, load/non-load bearing structures, residential building components and site selection, KBR area definitions (built-up, plinth, floor, carpet, FAR), relevance of NBC/KBR/CRZ",
+            "Module 4: Conventional construction materials (brick, stone, sand, cement, timber), Cement concrete & IS tests (slump, cube compressive strength), Structural steel & reinforcements, Soil origin and weathering"
+          ],
+          "extra_or_wrong_topics": [
+            "Catalog and syllabus reader expose GXEST104 (Group A/B Introduction to Electrical and Electronics Engineering) in S1 instead of GCEST104 (Introduction to Mechanical Engineering & Civil Engineering)"
+          ]
+        },
+        {
+          "course_code": "UCEST105",
+          "title": "Algorithmic Thinking with Python",
+          "note_dirs": [
+            "python-module-1",
+            "python-module-2",
+            "python-module-3",
+            "python-module-4"
+          ],
+          "note_status": "partial",
+          "syllabus_reader_status": "misplaced_topics",
+          "severity": "high",
+          "findings": [
+            {
+              "issue": "Confirmed catalog linkage bug: Although UCEST105 is in the catalog for 'civil' and 'me' and shared Python notes exist in the repo, the catalog sets `modules: []` for 'civil' and 'me', hiding all four note modules from Group C students.",
+              "source_evidence": "PDF p. 37: 'SEMESTER S1 / ALGORITHMIC THINKING WITH PYTHON / (Common to All Branches) / Course Code UCEST105'.",
+              "repo_evidence": "src/data/notes.ts: In sharedS1Subjects, UCEST105 sets `modules: branchId === 'ece' || branchId === 'eee' ? [...] : []`, leaving 'civil' and 'me' with an empty module list."
+            },
+            {
+              "issue": "Confirmed missing topic in Module 3 notes: Recursion (definition, call stack, avoiding circularity, and recursive sample problems) is completely absent from python-module-3/notes.md.",
+              "source_evidence": "PDF p. 38, Module 3: 'RECURSION:- Recursion Defined, Reasons for using Recursion, The Call Stack, Recursion and the Stack, Avoiding Circularity in Recursion, Sample problems - Finding the nth Fibonacci number, greatest common divisor of two positive integers, the factorial of a positive integer, adding two positive integers, the sum of digits of a positive number'.",
+              "repo_evidence": "python-module-3/notes.md (pp. 1-29, L1-L1054) covers selection, loops, functions, strings, lists, tuples, NumPy arrays, sets, and dictionaries, but contains no section or page on Recursion or the Call Stack (only a brief 1-paragraph mention of recursion inside Divide and Conquer in python-module-4/notes.md p. 4 L76)."
+            },
+            {
+              "issue": "Confirmed missing/incomplete sample problems in Module 2 & 3 notes: Expression evaluation d=a+b*c, printing numbers 1 to 50 in descending order, largest of n numbers, and merge sort decomposition demonstration are missing or incomplete.",
+              "source_evidence": "PDF p. 38, Module 2: '* - Evaluate an expression, d=a+b*c... print the numbers from 1 to 50 in descending order, find the sum of n numbers input by the user (using all the three loop variants)... largest of n numbers'. PDF pp. 38-39, Module 3: 'Functions with multiple return values' and '* The idea should be introduced and demonstrated using Merge sort, the problem of returning the top three integers from a list of n>=3 integers as examples.'",
+              "repo_evidence": "python-module-2/notes.md omits d=a+b*c, descending 1 to 50, and largest of n numbers (and spills Python `range()`, `if/elif`, lists, and NumPy arrays into Module 2 pp. 44-50). python-module-3/notes.md p. 20 (L686) demonstrates returning the top 3 largest values in a list, but omits Merge sort in Module 3 (covered only in Module 4 p. 4 L80) and does not explicitly highlight multiple return values via tuple packing."
+            },
+            {
+              "issue": "Confirmed syllabus reader module boundary mismatch: src/features/syllabi/cse.ts places Module 3's 'SELECTION AND ITERATION USING PYTHON', 'Sequence data types in Python', and 'Numpy library' into Module 2 of the syllabus reader.",
+              "source_evidence": "PDF p. 38: Module 2 covers only 'ALGORITHM AND PSEUDOCODE REPRESENTATION' and 'FLOWCHARTS'. Module 3 begins with 'SELECTION AND ITERATION USING PYTHON:- if-else, elif, for loop, range, while loop. Sequence data types in Python - list, tuple, set, strings, dictionary, Creating and using Arrays in Python (using Numpy library).'",
+              "repo_evidence": "src/features/syllabi/cse.ts: courses.UCEST105.modules[1] ('Module 2: Algorithms, flowcharts and control flow') includes `{ title: 'Selection, iteration and collections', subtopics: ['if, elif, for, range and while', 'Lists, tuples, sets, strings and dictionaries', 'Arrays using NumPy'] }`, which belongs to Module 3."
+            }
+          ],
+          "missing_topics": [
+            "Module 2: Sample problems - Evaluate expression d=a+b*c, print numbers from 1 to 50 in descending order, largest of n numbers",
+            "Module 3: Recursion - definition, reasons for using recursion, the call stack, recursion and the stack, avoiding circularity in recursion",
+            "Module 3: Recursion sample problems - nth Fibonacci number, GCD of two positive integers, factorial, adding two positive integers, sum of digits of a positive number",
+            "Module 3: Problem decomposition demonstrated using Merge sort, and explicit coverage of functions with multiple return values"
+          ],
+          "extra_or_wrong_topics": [
+            "Syllabus reader (src/features/syllabi/cse.ts) places Module 3 topics (Python selection/iteration, sequence data types, NumPy arrays) into Module 2",
+            "python-module-2/notes.md (pp. 44-50) includes Python range(), if/elif, quadratic solver, list slicing, and NumPy arrays which belong to Module 3"
+          ]
+        }
+      ],
+      "catalogue_findings": [
+        {
+          "severity": "high",
+          "branches": [
+            "civil",
+            "me"
+          ],
+          "issue": "Missing S1 Mathematics (GYMAT101) in Civil and Mechanical catalog: GYMAT101 is common to Groups B & C, but `sharedS1Subjects` restricts it to `branchId === 'ece' || branchId === 'eee'`.",
+          "evidence": "PDF p. 3 (GYMAT101 for Groups B & C); src/data/notes.ts lines 60-72 (`...(branchId === 'ece' || branchId === 'eee' ? [{ name: 'Mathematics', code: 'GYMAT101', ... }] : [])`)."
+        },
+        {
+          "severity": "high",
+          "branches": [
+            "civil",
+            "me"
+          ],
+          "issue": "Missing Group C Physics (GZPHT121) in Civil and Mechanical catalog: Group C takes GZPHT121 (Physics for Physical Science and Life Science), which is completely absent from `sharedS1Subjects` and `src/features/syllabi/cse.ts`.",
+          "evidence": "PDF p. 8 (GZPHT121 for Groups C & D); src/data/notes.ts lines 101-110 (only adds GBPHT121 for ECE/EEE; Civil/ME get no Physics subject)."
+        },
+        {
+          "severity": "high",
+          "branches": [
+            "civil",
+            "me"
+          ],
+          "issue": "Wrong Engineering Science courses in Civil and Mechanical S1 catalog: Lists Group A/B courses GMEST103 (Engineering Graphics) and GXEST104 (Intro to Electrical & Electronics Engg) instead of Group C S1 courses GCEST103 (Engineering Mechanics) and GCEST104 (Intro to Mechanical & Civil Engg).",
+          "evidence": "PDF pp. 26, 30 (GCEST103 and GCEST104 are the S1 courses for Group C; Engineering Graphics GCEST203 and Basic Electrical & Electronics GZEST204 are S2 courses on PDF pp. 95, 99); src/data/notes.ts lines 82-100."
+        },
+        {
+          "severity": "high",
+          "branches": [
+            "civil",
+            "me"
+          ],
+          "issue": "Chemistry (GCCYT122) has no syllabus reader and wrong course title in Civil and Mechanical catalog, and its module links are not wired to `chemistry-civil-mech-module-1..4` in `src/data/notes.ts`.",
+          "evidence": "PDF p. 17 (GCCYT122: Chemistry for Physical Science); src/data/notes.ts lines 73-81 sets `course: 'Engineering Chemistry'`, `syllabusHref: undefined` for `civil`/`me`, and uses generic `/notes/${branchId}/s1/chemistry/module-${n}` paths while `src/features/syllabi/cse.ts` has no `GCCYT122` key."
+        },
+        {
+          "severity": "high",
+          "branches": [
+            "civil",
+            "me"
+          ],
+          "issue": "Python (UCEST105) module list is empty for Civil and Mechanical in S1 catalog, and the non-CSE module descriptions for ECE/EEE are inaccurate.",
+          "evidence": "PDF pp. 37-39 (UCEST105 common to all branches); src/data/notes.ts lines 111-123 sets `modules: branchId === 'ece' || branchId === 'eee' ? [...] : []`, leaving `civil` and `me` with `modules: []`."
+        }
+      ],
+      "model": "gemini-4-argon",
+      "usage": {
+        "promptTokenCount": 111931,
+        "candidatesTokenCount": 5333,
+        "totalTokenCount": 117264,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 111931
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 5333
+          }
+        ]
+      }
+    }
+  ]
+}

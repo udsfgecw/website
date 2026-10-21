@@ -91,7 +91,7 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
       href: `/notes/${branchId}/s1/chemistry/module-${n}`,
     })),
   },
-  {
+  ...(branchId === "civil" || branchId === "me" ? [] : [{
     name: "Engineering Graphics",
     course: "Engineering Graphics and Computer Aided Drawing",
     code: "GMEST103",
@@ -104,8 +104,8 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
       { name: "Module 4", detail: "Isometric projection", href: `/notes/${branchId}/s1/graphics/m4` },
       { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: `/notes/${branchId}/s1/graphics/question-papers` },
     ] : [],
-  },
-  {
+  }]),
+  ...(branchId === "civil" || branchId === "me" ? [] : [{
     name: "Electrical and Electronics Engineering",
     course: "Introduction to Electrical and Electronics Engineering",
     code: "GXEST104",
@@ -117,7 +117,7 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
       { name: "Module 3", detail: "Electronic devices to modern electronics", href: `/notes/${branchId}/s1/electrical/module-3` },
       { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: `/notes/${branchId}/s1/electrical/question-papers` },
     ] : [],
-  },
+  }]),
   ...(branchId === "ece" || branchId === "eee" ? [{
     name: "Physics",
     course: "Engineering Physics",
@@ -135,13 +135,12 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     code: "UCEST105",
     syllabusHref: `/notes/${branchId}/s1/python/syllabus`,
     href: `/notes/${branchId}/s1/python`,
-    modules: branchId === "ece" || branchId === "eee" ? [
+    modules: [
       { name: "Module 1", detail: "Introduction to algorithms and Python", href: `/notes/${branchId}/s1/python/module-1` },
       { name: "Module 2", detail: "Data structures and modular programming", href: `/notes/${branchId}/s1/python/module-2` },
       { name: "Module 3", detail: "Object-oriented and file-based programming", href: `/notes/${branchId}/s1/python/module-3` },
       { name: "Module 4", detail: "Algorithms and data analysis", href: `/notes/${branchId}/s1/python/module-4` },
-      { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: `/notes/${branchId}/s1/python/question-papers` },
-    ] : [],
+    ],
   },
 ];
 

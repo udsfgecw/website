@@ -29,8 +29,11 @@ async function loadSharedCseNotes(subject: string, key: string): Promise<NotesMo
 }
 
 const sharedModules: Record<string, LazyExoticComponent<ComponentType>> = {};
-for (const branch of ["ece", "eee"] as const) {
-  for (const [subject, keys] of [["graphics", ["m1", "m2", "m3", "m4", "question-papers"]], ["electrical", ["module-1", "module-2", "module-3", "question-papers"]], ["python", ["module-1", "module-2", "module-3", "module-4", "question-papers"]]] as const) {
+for (const branch of ["ece", "eee", "civil", "me"] as const) {
+  const subjects = branch === "ece" || branch === "eee"
+    ? [["graphics", ["m1", "m2", "m3", "m4", "question-papers"]], ["electrical", ["module-1", "module-2", "module-3", "question-papers"]], ["python", ["module-1", "module-2", "module-3", "module-4"]]] as const
+    : [["python", ["module-1", "module-2", "module-3", "module-4"]]] as const;
+  for (const [subject, keys] of subjects) {
     for (const key of keys) {
       const route = `/notes/${branch}/s1/${subject}/${key}`;
       sharedModules[route] = lazy(async () => {
