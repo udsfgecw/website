@@ -97,7 +97,13 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     code: "GMEST103",
     syllabusHref: `/notes/${branchId}/s1/graphics/syllabus`,
     href: `/notes/${branchId}/s1/graphics`,
-    modules: [],
+    modules: branchId === "ece" || branchId === "eee" ? [
+      { name: "Module 1", detail: "Introduction, projection of points and lines", href: `/notes/${branchId}/s1/graphics/m1` },
+      { name: "Module 2", detail: "Projection of solids", href: `/notes/${branchId}/s1/graphics/m2` },
+      { name: "Module 3", detail: "Sections of solids and development of surfaces", href: `/notes/${branchId}/s1/graphics/m3` },
+      { name: "Module 4", detail: "Isometric projection", href: `/notes/${branchId}/s1/graphics/m4` },
+      { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: `/notes/${branchId}/s1/graphics/question-papers` },
+    ] : [],
   },
   {
     name: "Electrical and Electronics Engineering",
@@ -105,7 +111,12 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     code: "GXEST104",
     syllabusHref: `/notes/${branchId}/s1/electrical/syllabus`,
     href: `/notes/${branchId}/s1/electrical`,
-    modules: [],
+    modules: branchId === "ece" || branchId === "eee" ? [
+      { name: "Module 1", detail: "Introduction to Electrical and Electronics Engineering", href: `/notes/${branchId}/s1/electrical/module-1` },
+      { name: "Module 2", detail: "Electromagnetic induction to three-phase AC systems", href: `/notes/${branchId}/s1/electrical/module-2` },
+      { name: "Module 3", detail: "Electronic devices to modern electronics", href: `/notes/${branchId}/s1/electrical/module-3` },
+      { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: `/notes/${branchId}/s1/electrical/question-papers` },
+    ] : [],
   },
   ...(branchId === "ece" || branchId === "eee" ? [{
     name: "Physics",
@@ -124,7 +135,13 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     code: "UCEST105",
     syllabusHref: `/notes/${branchId}/s1/python/syllabus`,
     href: `/notes/${branchId}/s1/python`,
-    modules: [],
+    modules: branchId === "ece" || branchId === "eee" ? [
+      { name: "Module 1", detail: "Introduction to algorithms and Python", href: `/notes/${branchId}/s1/python/module-1` },
+      { name: "Module 2", detail: "Data structures and modular programming", href: `/notes/${branchId}/s1/python/module-2` },
+      { name: "Module 3", detail: "Object-oriented and file-based programming", href: `/notes/${branchId}/s1/python/module-3` },
+      { name: "Module 4", detail: "Algorithms and data analysis", href: `/notes/${branchId}/s1/python/module-4` },
+      { name: "Question Papers", detail: "2024 and 2025 regular end-semester papers", href: `/notes/${branchId}/s1/python/question-papers` },
+    ] : [],
   },
 ];
 

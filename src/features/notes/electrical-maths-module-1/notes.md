@@ -216,15 +216,11 @@ Equipped with the rules of linear equations and Gaussian elimination, you can no
 ### The idea
 A system of $m$ linear equations in $n$ unknowns $x_1, x_2, \dots, x_n$ is written in matrix form as $Ax = b$, where the **coefficient matrix** $A = [a_{jk}]$ holds the multipliers of the unknowns, $x$ is the column vector of unknowns, and $b$ is the column vector of right-hand side constants:
 
-> **Figure: Matrix equation components showing A, x, and b matrices**
->
-> Handwritten matrix definitions showing three bracketed arrays side by side: First, A = [ [a_11, a_12, ..., a_1n], [a_21, a_22, ..., a_2n], [..., ..., ..., ...], [a_m1, a_m2, ..., a_mn] ]. Second, after an ampersand (&), the column vector x = [x_1, x_2, ..., x_n]^T with vertical dots between x_2 and x_n. Third, after an ampersand (&), the column vector b = [b_1, b_2, ..., b_m]^T with vertical dots between b_2 and b_m.
+![Matrix equation Ax = b showing coefficient matrix, unknown vector, and constant vector](/assets/notes/ece/s1/maths/module-1/matrix-components.svg)
 
 To solve the system without repeatedly writing the variable names, we append the column $b$ to the right of $A$ to form the **augmented matrix** $\tilde{A}$:
 
-> **Figure: Augmented matrix A tilde**
->
-> Handwritten augmented matrix expression: A-tilde (A with a tilde above it) equals a square-bracketed matrix with a vertical dashed line separating the coefficient matrix entries on the left from the constant column on the right. Row 1: a_11, a_12, ..., a_1n | b_1. Row 2: a_21, a_22, ..., a_2n | b_2. Next is a horizontal dashed line across the matrix. Last row: a_m1, a_m2, ..., a_mn | b_m.
+![Augmented matrix with coefficients separated from constants](/assets/notes/ece/s1/maths/module-1/augmented-matrix.svg)
 
 Applying elementary row operations reduces $\tilde{A}$ to an **upper triangular form**, where all entries below the main diagonal are zero. Once the system is triangular, we apply **back substitution**: we solve the last nonzero equation for its single unknown, then substitute that value upward row by row to find the remaining unknowns.
 
@@ -237,21 +233,18 @@ Physical networks produce linear systems directly from conservation laws. In dir
 1. Interpret each equation in $x_1$ and $x_2$ as a straight line in the $x_1 x_2$-plane, because a pair $(x_1, x_2)$ solves the system if and only if the point $P(x_1, x_2)$ lies on both lines.
 2. Plot Case (i) ($x_1 + x_2 = 1$ and $2x_1 - x_2 = 0$): the lines have different slopes, so they intersect at a single point, giving precisely one unique solution.
 
-> **Figure: Case (i) graph showing intersecting lines**
->
-> A 2D coordinate system with horizontal axis $x_1$ and vertical axis $x_2$. Two intersecting lines are plotted. One line is labeled $2x_1 - x_2 = 0$ passing through the origin. The second line is labeled $x_1 + x_2 = 1$ intersecting the axes. The axes have tick marks -2, -1, 0, 1, 2, 3.
+![Graph of two intersecting lines with unique solution](/assets/notes/ece/s1/maths/module-1/case-one.svg)
+
 
 3. Plot Case (ii) ($x_1 + x_2 = 1$ and $2x_1 + 2x_2 = 2$): the second equation is twice the first, so the two lines coincide and every point on the line is a solution, giving infinitely many solutions.
 
-> **Figure: Case (ii) graph showing coincident lines**
->
-> A 2D coordinate system with horizontal axis and vertical axis. Two overlapping (coincident) lines are plotted, representing $x_1 + x_2 = 1$ and $2x_1 + 2x_2 = 2$. Both lines are labeled along the path.
+![Graph of coincident lines with infinitely many solutions](/assets/notes/ece/s1/maths/module-1/case-two.svg)
+
 
 4. Plot Case (iii) ($x_1 + x_2 = 1$ and $x_1 + x_2 = 0$): the lines have the same slope but different intercepts, so they are parallel and never meet, giving no solution (which can never happen if the system is homogeneous with $b = 0$).
 
-> **Figure: Case (iii) graph showing parallel lines**
->
-> A 2D coordinate system with vertical and horizontal axes. Two parallel lines are plotted, labeled $x_1 + x_2 = 1$ and $x_1 + x_2 = 0$. The lines do not intersect.
+![Graph of parallel lines with no solution](/assets/notes/ece/s1/maths/module-1/case-three.svg)
+
 
 **Answer:** Case (i) has precisely one solution (intersecting lines); Case (ii) has infinitely many solutions (coincident lines); Case (iii) has no solution (parallel lines).
 
@@ -290,9 +283,8 @@ Physical networks produce linear systems directly from conservation laws. In dir
 7. Solve row 3 ($-95x_3 = -190$) to get $x_3 = 2$, then substitute into row 2 ($10x_2 + 25(2) = 90$) to get $x_2 = 4$.
 8. Substitute $x_2 = 4$ and $x_3 = 2$ into row 1 ($x_1 - 4 + 2 = 0$) to find $x_1 = 2$.
 
-> **Figure: Circuit diagram with resistors and voltage sources**
->
-> A two-loop electrical circuit diagram with a top middle node labelled Q and a bottom middle node labelled P. The left branch connecting Q and P consists of a top-left horizontal 20 Ω resistor, a left vertical wire with a downward current arrow labelled i₁ above a DC voltage source (shorter plate on top, longer plate on bottom, with a downward arrow alongside it labelled 80V), and a plain bottom-left horizontal wire connected to node P. The central vertical branch between node Q and node P contains a 10 Ω resistor and an upward current arrow labelled i₂ pointing from P toward Q. The right branch connecting Q and P consists of a top-right horizontal 10 Ω resistor, a right vertical wire with a downward current arrow labelled i₃ above a DC voltage source (shorter plate on top, longer plate on bottom, with a downward arrow alongside it labelled 90V), and a bottom-right horizontal 15 Ω resistor connected to node P.
+![Three-branch Kirchhoff circuit with resistors, voltage sources, and branch current directions](/assets/notes/ece/s1/maths/module-1/circuit.svg)
+
 
 > **Watch out.** In step 4, the operation eliminating $x_1$ from the fourth row ($20x_1 + 10x_2 = 80$) is written in the step label as $R_3 \to -20R_1 + R_3$, but it actually acts on $R_4$ before the zero row in $R_2$ is swapped to the bottom.
 
@@ -462,17 +454,7 @@ By the **Fundamental Theorem for Linear Systems**, a system $Ax = b$ with $n$ un
 
 3. Observe that the leftmost nonzero entry in each row now shifts strictly to the right of the previous row, which matches the general row echelon structure:
 
-> **Figure: Row echelon form of an augmented matrix**
->
-> A handwritten augmented matrix enclosed in large square brackets illustrating the general structure of row echelon form. Each row has matrix entries on the left separated by a colon (or vertical dotted separator) from the augmented column entry on the right:
-> - Row 1: r_{11}, r_{12}, ..., r_{1n} : f_1
-> - Row 2: 0, r_{21} (or r_{2j}), ..., r_{2n} : f_2
-> - Row 3: 0, 0 ... r_{k_2} . . . . .
-> - Row 4 (r-th row): 0 .. 0 ... r_{r} ... r_{rn} : f_r
-> - Row 5: 0 . . . . . 0 : f_{r+1}
-> - Row 6: 0 . . . . . 0 : f_{r+2}
-> - Row 7: horizontal dots across the row (. . . . .)
-> - Bottom row (m-th row): 0 . . . 0   f_m
+![General row echelon form of an augmented matrix, with leading entries stepping right and zero rows at the bottom](/assets/notes/ece/s1/maths/module-1/row-echelon-structure.svg)
 
 4. Count the nonzero rows in this echelon matrix to find $\text{rank } A = 3$, and compare it to the number of vectors $p = 3$; because $\text{rank } A = p$, no row can be eliminated as a combination of the others.
 

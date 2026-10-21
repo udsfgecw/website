@@ -4,7 +4,9 @@
 
 Master the principles of water hardness, water softening techniques, disinfection methods, and sewage treatment processes, along with numerical calculations for water analysis.
 
-**Before you start:** Basic knowledge of chemical reactions and stoichiometry; Understanding of solution concentration units like ppm, normality, and molarity.
+**Before you start:**
+
+Basic knowledge of chemical reactions and stoichiometry; Understanding of solution concentration units like ppm, normality, and molarity.
 
 ### Your path through this module
 
@@ -67,7 +69,9 @@ Hardness of water is classified into two main types based on the dissolved salts
    $$\text{CaCl}_2 + \text{Na}_2\text{CO}_3 \longrightarrow \text{CaCO}_3 \downarrow + 2\text{NaCl}$$
    $$\text{CaSO}_4 + \text{Na}_2\text{Ze} \longrightarrow \text{CaZe} + \text{Na}_2\text{SO}_4$$
 
-**Total Hardness**: Defined as the sum of temporary hardness and permanent hardness.
+**Total Hardness**
+
+Total Hardness is defined as the sum of temporary hardness and permanent hardness.
 
 ### Disadvantages of Using Hard Water
 
@@ -90,7 +94,9 @@ Hardness of water is classified into two main types based on the dissolved salts
 
 #### For Domestic Purposes
 
-Hard water wastes soap due to scum formation, forms crusty deposits on kettles and plumbing fixtures, and is unsuitable for cooking and drinking applications where mineral buildup is undesirable.
+**Domestic Disadvantages**
+
+Domestic Disadvantages include soap wastage due to scum formation, crusty deposits on kettles and plumbing fixtures, and being unsuitable for cooking and drinking applications where mineral buildup is undesirable.
 
 <!-- page 3 | Expression of Hardness and Numerical Problems -->
 
@@ -112,9 +118,18 @@ The new idea: Hardness of any salt is expressed in terms of calcium carbonate eq
 - Non-carbonate hardness calculation
 
 ### Characteristics and Effects of Hardness
-1. It tastes bitter, but it provides calcium ions for the healthy growth of bones and teeth. Hardness level between 60 to 100 ppm is recommended for drinking water.
-2. It produces bathroom stains in bathroom fittings.
-3. It causes the wastage of soap in laundry.
+
+**Taste and Health**
+
+It tastes bitter, but it provides calcium ions for the healthy growth of bones and teeth. Hardness level between 60 to 100 ppm is recommended for drinking water.
+
+**Bathroom Stains**
+
+It produces bathroom stains in bathroom fittings.
+
+**Soap Wastage**
+
+It causes the wastage of soap in laundry.
 
 ### Degree of Hardness: Expression of Hardness in Terms of Equivalents of $\text{CaCO}_3$
 
@@ -128,7 +143,9 @@ $$\text{Amount equivalent to } \text{CaCO}_3 = \frac{\text{Amount of hardness pr
 
 $$\text{Amount equivalent to } \text{CaCO}_3 = \frac{\text{Amount of hardness producing salt} \times \text{Equivalent weight of } \text{CaCO}_3}{\text{Equivalent weight of hardness producing salt}}$$
 
-**Example:** If the concentration (or) weight of $\text{CaSO}_4$ is $43$ mg/lit, then:
+**Example**
+
+If the concentration (or) weight of $\text{CaSO}_4$ is $43$ mg/lit, then:
 
 $$\text{weight equivalent to } \text{CaCO}_3 = \frac{43 \times 100}{136} \text{ mg/lit}.$$
 
@@ -222,6 +239,9 @@ Demineralization process is carried out by using ion exchange resins, which are 
 2. Anion exchange resin (or) Anion exchanger
 
 ### 1. Cation Exchanger
+
+**Cation exchange resin**
+
 Resins containing acidic functional groups ($\text{-COOH}$ or $\text{-SO}_3\text{H}$) are capable of exchanging their $\text{H}^+$ ions with the cations present in hard water.
 
 <!-- page 4 | Water Softening, Ion Exchange, and Desalination -->
@@ -238,11 +258,26 @@ The new idea: Ion-exchange resins remove both cations and anions completely, whi
 - Explain reverse osmosis for water desalination.
 
 ### Concepts to Teach
-- **Demineralized water vs soft water:** Soft water has its calcium and magnesium ions replaced by sodium ions, whereas demineralized (deionized) water is completely free from all cations and anions.
-- **Cation and anion exchange resins:** Insoluble cross-linked organic polymers with acidic or basic functional groups capable of exchanging ions.
-- **Resin regeneration:** Restoring the exchange capacity of exhausted resins using dilute acids and bases.
-- **Reverse Osmosis (RO) and semi-permeable membranes:** A separation process where solvent flows from a concentrated solution to a dilute solution under a hydrostatic pressure exceeding the osmotic pressure.
-- **Super-filtration:** Another term for reverse osmosis due to its ability to filter out non-ionic, ionic, and colloidal molecules.
+
+**Demineralized water vs soft water**
+
+Soft water has its calcium and magnesium ions replaced by sodium ions, whereas demineralized (deionized) water is completely free from all cations and anions.
+
+**Cation and anion exchange resins**
+
+Insoluble cross-linked organic polymers with acidic or basic functional groups capable of exchanging ions.
+
+**Resin regeneration**
+
+Restoring the exchange capacity of exhausted resins using dilute acids and bases.
+
+**Reverse Osmosis (RO) and semi-permeable membranes**
+
+A separation process where solvent flows from a concentrated solution to a dilute solution under a hydrostatic pressure exceeding the osmotic pressure.
+
+**Super-filtration**
+
+Another term for reverse osmosis due to its ability to filter out non-ionic, ionic, and colloidal molecules.
 
 ---
 
@@ -416,12 +451,14 @@ $$\text{Na}_2\text{SO}_3 + \text{Cl}_2 + \text{H}_2\text{O} \rightarrow \text{Na
 - **pH of water:** The optimum pH range for effective chlorination is 5 to 6.5.
 
 ### Advantages of Chlorination
+
 - Very effective and economical.
 - Stable; requires minimal storage space and does not deteriorate upon long-term storage.
 - Operates effectively at both low and high temperatures.
 - Does not introduce undesirable chemical impurities into the treated water.
 
 ### Disadvantages of Chlorination
+
 - Excess chlorine imparts an unpleasant taste and odor to water.
 - Becomes less effective at higher pH levels (above 6.5).
 - Excess chlorine irritates mucous membranes (noticeable at 0.1–0.2 ppm levels).
@@ -437,12 +474,14 @@ $$\text{O}_3 \rightarrow \text{O}_2 + [\text{O}]$$
 The nascent oxygen ($\text{[O]}$) is a potent oxidizing agent that rapidly destroys bacteria and organic contaminants.
 
 #### Advantages of Ozonization
+
 - Effective over a wide pH range.
 - Possesses powerful oxidizing capabilities with a short reaction time.
 - Does not add residual chemical compounds to the water.
 - Eliminates a wide variety of inorganic, organic, microbial, taste, and odor problems.
 
 #### Disadvantages of Ozonization
+
 - The process is costly and difficult to implement on a massive scale.
 - Ozone is unstable and cannot be stored for long periods.
 - Ozone has low solubility in water, necessitating specialized mixing techniques.
@@ -460,6 +499,8 @@ The wastewater generated from domestic, municipal, and industrial sources is cal
 Having studied drinking water treatment, we now shift our focus to waste water and sewage characteristics before disposal. The new idea is that BOD measures the oxygen required by bacteria for biological oxidation, whereas COD measures both biologically oxidizable and inert organic matter. The objectives are to define sewage and express its strength, differentiate between Dissolved Oxygen, Biological Oxygen Demand, and Chemical Oxygen Demand, and interpret BOD and COD values for water quality assessment.
 
 ### (i) Dissolved Oxygen (DO)
+
+**Dissolved oxygen**
 
 Dissolved oxygen is the level of free non-compounded oxygen present in water or other liquid.
 
@@ -479,6 +520,8 @@ DO decreases exponentially as salt level increases.
 
 ### (ii) Biological Oxygen Demand (BOD)
 
+**Biological oxygen demand**
+
 BOD is defined as, "the amount of free oxygen required by bacteria for the biological oxidation of the organic matter under aerobic conditions at $20^{\circ}\text{C}$ for a period of 5 days".
 
 #### Significance of BOD
@@ -490,6 +533,8 @@ BOD is defined as, "the amount of free oxygen required by bacteria for the biolo
 (iii) Lesser the BOD, better is the quality of water, i.e. the water sample with BOD of less than $3\text{ ppm}$ is considered as pure water, whereas the water more than $4\text{ ppm}$ is considered as polluted water.
 
 ### (iii) Chemical Oxygen Demand (COD)
+
+**Chemical oxygen demand**
 
 COD is defined as, "the measure of amount of oxygen required to chemically oxidize all the oxidizable impurities present in the sewage using an oxidising agent like acidified $\text{K}_2\text{Cr}_2\text{O}_7$"
 
@@ -554,30 +599,32 @@ graph LR
 
 ### I. Preliminary Treatment (Primary)
 
-a) **Screening**
+**Screening**
 
-In this treatment, wastewater is passed through a bar screen and then mesh screens to remove suspended solids.
+Screening is a treatment where wastewater is passed through a bar screen and then mesh screens to remove suspended solids.
 
-b) **Sedimentation or Settling Process**
+**Sedimentation**
 
-The suspended organic and inorganic matters are removed by this process. For this, sewage water is stored in a large tank for some time where the suspended particles settle down due to gravity. To accelerate the process, coagulants like alum are added. These produce large gelatinous precipitates, which entrap finely divided organic matter and settle rapidly.
+Sedimentation is the settling process by which suspended organic and inorganic matters are removed by storing sewage water in a large tank for some time where the suspended particles settle down due to gravity, and coagulants like alum are added to accelerate the process and produce large gelatinous precipitates that entrap finely divided organic matter and settle rapidly.
 
 $$\text{Al}_2(\text{SO}_4)_3 + 6\text{H}_2\text{O} \rightarrow 2\text{Al(OH)}_3\downarrow + 3\text{H}_2\text{SO}_4$$
 
 ### II. Secondary or Biological Treatment
 
-This process is used for treating the filtrate obtained in the primary process. It involves the biological oxidation of organic compounds under aerobic or anaerobic conditions, during which the conversion of carbon to $\text{CO}_2$, nitrogen to $\text{NH}_3$, and finally to nitrites and nitrates occurs.
+Secondary treatment is the process used for treating the filtrate obtained in the primary process involving the biological oxidation of organic compounds under aerobic or anaerobic conditions, during which the conversion of carbon to $\text{CO}_2$, nitrogen to $\text{NH}_3$, and finally to nitrites and nitrates occurs.
 
 - Aerobic treatment process by **trickling filter process**
 - Anaerobic treatment process by **UASB process**
 
 #### (a) Trickling Filter Process (Aerobic Filtration Method)
 
-It is a circular tank filled with material like broken bricks, crushed rocks, etc., and fitted with a rotating distributor. Sewage is trickled over this filter with the help of the rotating distributor.
+**Trickling filter**
+
+A trickling filter is a circular tank filled with material like broken bricks, crushed rocks, etc., and fitted with a rotating distributor over which sewage is trickled to allow microorganisms growing over the surface of the filtering media to consume the organic matter and collect a more or less clear effluent.
 
 ![Trickling filter cross-section](/assets/notes/ece/s1/chemistry/module-4/trickling.webp)
 
-When sewage moves down through the filtering medium, microorganisms start consuming the organic matter in the sewage. They grow over the surface of the filtering media and a more or less clear effluent is collected. After completion of aerobic oxidation, the treated sewage is taken to the settling tank and the sludge is removed. This process removes about 80-85% of BOD.
+After completion of aerobic oxidation, the treated sewage is taken to the settling tank and the sludge is removed. This process removes about 80-85% of BOD.
 
 **Advantages:**
 * Trickling filters efficiently reduce organic matter.
@@ -592,13 +639,9 @@ When sewage moves down through the filtering medium, microorganisms start consum
 
 #### (b) UASB (Upflow Anaerobic Sludge Blanket) Process
 
-The reactor of an upflow anaerobic sludge blanket (UASB) is a single tank process used to treat industrial wastewater. It mainly removes organic pollutants.
+**UASB reactor**
 
-**Process:**
-
-UASB reactors are constructed in concrete or another watertight material and are designed in a circular way. Wastewater is allowed to enter into the reactor from the bottom and flows upward through a sludge blanket. The suspended sludge blanket filters and treats the wastewater as it flows through it.
-
-Bacteria (microorganisms) living in the sludge break down the organic matter by anaerobic digestion, transforming it into biogas. The gases are collected through the gas collector dome at the top of the reactor.
+A UASB reactor is a single tank process used to treat industrial wastewater by allowing it to enter from the bottom and flow upward through a sludge blanket where bacteria break down organic matter by anaerobic digestion, transforming it into biogas collected through a gas collector dome at the top of the reactor.
 
 ![UASB reactor cross-section](/assets/notes/ece/s1/chemistry/module-4/uasb.webp)
 
@@ -618,7 +661,9 @@ Baffles at the top of the reactor allow gases to escape and prevent an outflow o
 
 ### III. Tertiary Treatment
 
-This is the advanced phase of sewage treatment. By this process, the amount of nitrogen and phosphorous compounds present in the effluent can be reduced. The three steps involved are:
+**Tertiary treatment**
+
+Tertiary treatment is the advanced phase of sewage treatment by which the amount of nitrogen and phosphorous compounds present in the effluent can be reduced through precipitation, nitrogen stripping, and chlorination.
 
 a) **Precipitation:** Effluent from the secondary process is treated with $\text{CaO}$ so that calcium phosphate will be precipitated.
 

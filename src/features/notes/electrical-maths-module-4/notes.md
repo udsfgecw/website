@@ -439,9 +439,8 @@ $$a_0 = \frac{1}{2\pi}\left[\int_{-\pi}^{0} (-K)\,dx + \int_{0}^{\pi} K\,dx\righ
 
    $$\frac{\pi^2}{4} = \frac{\pi^2}{12} + \sum_{n=1}^{\infty}\frac{1}{n^2} \implies \sum_{n=1}^{\infty}\frac{1}{n^2} = \frac{\pi^2}{6}$$
 
-> **Figure: Graph of the periodic function (pi - x)^2 / 4**
->
-> A 2D coordinate graph titled 'Figure 4.7 : Graph of the periodic function (pi - x)^2 / 4'. A horizontal axis (x-axis) with a rightward-pointing arrowhead at the right end is marked from left to right with values -2pi, -pi, 0, pi, 2pi, 3pi, and 4pi. A vertical axis (y-axis) with an upward-pointing arrowhead at the top intersects the horizontal axis at 0 and has tick labels 1 and 3 to the left of the axis. The plotted curve consists of three repeating, upward-opening parabolic segments over the intervals [-2pi, 0], [0, 2pi], and [2pi, 4pi], representing the 2pi-periodic extension of f(x) = (pi - x)^2 / 4. The curve touches the horizontal axis (minimum y = 0) at x = -pi, pi, and 3pi, and rises to sharp peaks (cusps at y = pi^2 / 4, slightly below the label 3) at x = -2pi, 0, 2pi, and 4pi.
+![Periodic parabolic graph of (π − x)² / 4](/assets/notes/ece/s1/maths/module-4/m4-parabola-periodic.svg)
+
 
 > **Watch out.** When differentiating $(\pi - x)^2$ during tabular integration, do not forget the inner derivative $(-1)$: its first derivative is $-2(\pi - x)$ and its second derivative is $+2$.
 
@@ -563,9 +562,8 @@ Once you have the series, you can evaluate multiple numerical sums from a single
 
 5. Substitute $a_0$, $a_n$, and $b_n$ into the Fourier series expansion.
 
-> **Figure: Graph of periodic function e^-x**
->
-> Figure 4.13: Graph of periodic function e^-x. A two-dimensional Cartesian coordinate graph with a horizontal axis pointing right and a vertical axis pointing up through 0. The horizontal axis has tick marks labeled -2, -1, 0, 1, and 2. The vertical axis has the value 1 labeled just to the left of the axis at the peak of the curve at x = 0. Four identical decreasing, concave-up exponential curve segments are drawn across the intervals [-2, -1], [-1, 0], [0, 1], and [1, 2], each starting at a height of 1 at the left endpoint of its interval and decaying to a smaller positive height at the right endpoint. Vertical dashed lines at x = -1 and x = 1 connect the lower end of one curve segment to the upper starting point (height 1) of the next segment.
+![Periodic graph of e⁻ˣ](/assets/notes/ece/s1/maths/module-4/m4-exp-negative-periodic.svg)
+
 
 > **Watch out.** In steps 3 and 4, the integral starts with upper limit $2$, but the evaluation switches the upper limit to $1$, producing $e^{-1}(-1)^n$ instead of $e^{-2}$.
 
@@ -764,9 +762,8 @@ Once you have the series, you can evaluate multiple numerical sums from a single
 
    $$\frac{1}{2}\left(\frac{\pi^2}{12} + \frac{\pi^2}{6}\right) = \frac{1}{1^2} + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$$
 
-> **Figure: Graph of periodic function 2x - x^2**
->
-> Coordinate graph titled 'Figure 4.12 : Graph of periodic function 2x - x^2' with period 3. The horizontal x-axis has a right-pointing arrowhead and tick marks labelled -3, -2, -1, 0, 1, 2, 3, 4, 5, 6. The vertical y-axis has an upward-pointing arrowhead and tick marks labelled -3, -2, -1, 1. Three identical downward-opening parabolic segments are plotted over consecutive intervals of length 3: the first on [-3, 0] passing through (-3, 0), vertex (-2, 1), (-1, 0), and ending at (0, -3); the second (drawn with a thicker line) on [0, 3] passing through the origin (0, 0), vertex (1, 1), x-intercept (2, 0), and ending at (3, -3), with a vertical dashed line connecting (3, 0) down to (3, -3); the third on [3, 6] passing through (3, 0), vertex (4, 1), x-intercept (5, 0), and ending at (6, -3).
+![Periodic graph of 2x − x²](/assets/notes/ece/s1/maths/module-4/m4-quadratic-periodic.svg)
+
 
 **Answer:** $S(x) = \sum_{n=1}^{\infty}\left[-\frac{9}{n^2\pi^2}\cos\frac{2n\pi x}{3} + \frac{3}{n\pi}\sin\frac{2n\pi x}{3}\right]$; (i) $\frac{\pi^2}{12}$; (ii) $\frac{\pi^2}{6}$; (iii) $\frac{\pi^2}{8}$.
 
@@ -778,17 +775,14 @@ You already know how to integrate over a full interval $[-L, L]$ to find both co
 ### The idea
 When a function $f(x)$ is given only on the half-interval $[0, L]$, we can mirror its graph across the vertical axis to create an **even extension** $F(x)$ on $[-L, L]$, where $F(x) = f(-x)$ for $-L < x \le 0$ and $F(x) = f(x)$ for $0 \le x < L$. Repeating this symmetric shape every $2L$ units produces an **even periodic extension**.
 
-> **Figure: Graph of f(x)**
->
-> Coordinate axes for Figure 4.15 ('Graph of f(x)'). A horizontal axis (with a rightward arrowhead at the right end) intersects a vertical axis (with an upward arrowhead at the top end) at the origin, which is labelled '0' in the fourth quadrant just below the horizontal axis and to the right of the vertical axis. A tick mark to the right of the origin on the horizontal axis is labelled 'L'. In the first quadrant, over the interval from 0 to L, a smooth curve labelled 'f(x)' starts at a positive height on the vertical axis (at x = 0), dips slightly to a local minimum, and then rises to a higher positive value above the tick mark L (at x = L).
+![Graph of f(x) on [0, L]](/assets/notes/ece/s1/maths/module-4/m4-generic-base.svg)
 
-> **Figure: Graph of even extension of f(x)**
->
-> Coordinate axes for Figure 4.16 ('F(x) : Graph of even extension of f(x)'). A horizontal axis (with a rightward arrowhead) intersects a vertical axis (with an upward arrowhead) at the origin, labelled '0'. Two tick marks on the horizontal axis are symmetrically placed on either side of the origin: '-L' to the left and 'L' to the right. Above the horizontal axis over the interval [-L, L] is a continuous curve symmetric about the vertical axis and labelled 'f(x)' in the first quadrant. On [0, L] it is the same curve as in Figure 4.15 (starting at a positive y-intercept, dipping slightly, then rising to a maximum at x = L), and on [-L, 0] it is its mirror image across the vertical axis (starting at the same high value at x = -L, dipping slightly to a local minimum, and rising slightly to meet the positive y-intercept at x = 0).
 
-> **Figure: Graph of even periodic extension of f(x)**
->
-> Coordinate axes for Figure 4.17 ('Graph of even periodic extension of f(x)'). A horizontal axis (with a rightward arrowhead) intersects a vertical axis (with an upward arrowhead) at the origin, labelled '0'. Tick marks along the horizontal axis from left to right are labelled '-2L', '-L', '0' (at the vertical axis), 'L', and '2L'. Above the horizontal axis is a continuous, wave-like periodic curve with period 2L, symmetric about the vertical axis and labelled 'f(x)' in the first quadrant. The even extension pattern from [-L, L] repeats periodically across [-2L, -L] and [L, 2L], showing peaks at x = -L and x = L, and dipping segments with a slight central bump around x = -2L, x = 0, and x = 2L.
+![Even extension of f(x) on [−L, L]](/assets/notes/ece/s1/maths/module-4/m4-generic-even.svg)
+
+
+![Even periodic extension of f(x) with period 2L](/assets/notes/ece/s1/maths/module-4/m4-generic-even-periodic.svg)
+
 
 Because $F(x)$ is symmetric across the vertical axis, its product with $\sin(n\pi x/L)$ is odd, forcing every sine coefficient $b_n$ to be zero. The products for $a_0$ and $a_n$ are even, so integrating from $-L$ to $L$ is just twice the integral from $0$ to $L$. This gives the **half-range cosine series** $S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos\left(\frac{n\pi x}{L}\right)$ on $0 < x < L$, with coefficients:
 
@@ -826,9 +820,8 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 
    $$1 = e - 1 + 2 \sum_{n=1}^{\infty} \frac{e(-1)^n - 1}{1 + n^2\pi^2} \implies \sum_{n=1}^{\infty} \frac{e(-1)^n - 1}{1 + n^2\pi^2} = \frac{2 - e}{2}$$
 
-> **Figure: Graph of even periodic extension of e^x**
->
-> Figure 4.18: Graph of even periodic extension of e^x. A two-dimensional Cartesian coordinate graph with a horizontal x-axis (with a right-pointing arrowhead) and a vertical y-axis (with an upward-pointing arrowhead) intersecting at the origin. The horizontal axis has tick marks labeled -3, -2, -1, 0, 1, 2, 3. The vertical axis has tick marks labeled 1 and 2 above the origin. A continuous, symmetric, periodic wave is plotted across the interval from x = -3 to x = 3: on [0, 1] it follows the curve y = e^x from (0, 1) up to a sharp peak of height e (just above y = 2) at x = 1; on [-1, 0] it is the reflection y = e^(-x) from the peak at (-1, e) down to the cusp minimum at (0, 1); this V-shaped exponential pattern repeats periodically with period 2, having local minima (cusps) of y = 1 at x = -2, 0, 2 and local maxima (peaks) of y = e at x = -3, -1, 1, 3.
+![Even periodic extension of eˣ](/assets/notes/ece/s1/maths/module-4/m4-even-exp.svg)
+
 
 **Answer:** $S(x) = e - 1 + \sum_{n=1}^{\infty} \frac{2[e(-1)^n - 1]}{1 + n^2\pi^2} \cos(n\pi x)$, and the sum is $\frac{2 - e}{2}$.
 
@@ -858,9 +851,8 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 
    $$0 = \frac{25}{3} + \frac{100}{\pi^2} \sum_{n=1}^{\infty} \frac{(-1)^n}{n^2} \implies 1 - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \cdots = \frac{\pi^2}{12}$$
 
-> **Figure: Graph of even periodic extension of x^2**
->
-> Figure 4.21: Graph of even periodic extension of x^2. A 2D Cartesian coordinate graph with a horizontal axis pointing right (with an arrowhead at the right end) and a vertical axis pointing up through the origin (with an arrowhead at the top). Along the horizontal axis, tick marks and labels are shown below the axis at -10, -5, 0, 5, and 10. Along the vertical axis, the value 25 is labelled to the left of the axis at the level of the curve's peaks. The plotted curve is an even, periodic function of period 10 consisting of three contiguous upward-opening parabolic arches: the central arch y = x^2 has its vertex tangent to the horizontal axis at (0, 0) and rises symmetrically to sharp peaks (cusps) at (-5, 25) and (5, 25); the left arch y = (x + 10)^2 has its vertex tangent to the horizontal axis at (-10, 0), meeting the central arch at the peak (-5, 25) and rising to height 25 on the far left (at x = -15); the right arch y = (x - 10)^2 has its vertex tangent to the horizontal axis at (10, 0), meeting the central arch at the peak (5, 25) and rising to height 25 on the far right (at x = 15).
+![Even periodic extension of x²](/assets/notes/ece/s1/maths/module-4/m4-even-x2.svg)
+
 
 **Answer:** $S(x) = \frac{25}{3} + \frac{100}{\pi^2} \sum_{n=1}^{\infty} \frac{(-1)^n}{n^2} \cos\left(\frac{n\pi x}{5}\right)$, and the sum is $\frac{\pi^2}{12}$.
 
@@ -892,9 +884,8 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 
    $$0 = \frac{2}{\pi} - \frac{4}{\pi} \sum_{n=1}^{\infty} \frac{1}{(2n-1)(2n+1)} \implies \frac{1}{1 \cdot 3} + \frac{1}{3 \cdot 5} + \frac{1}{5 \cdot 7} + \cdots = \frac{1}{2}$$
 
-> **Figure: Graph of even periodic extension of sin(x)**
->
-> A coordinate graph captioned 'Figure 4.19 : Graph of even periodic extension of sin(x)', showing the rectified sine wave |sin(x)| over the interval [-pi, 2*pi]. The horizontal axis has an arrowhead on the right and is marked from left to right with labels -pi, -pi/2, 0, pi/2, pi, and 2*pi. The vertical axis intersects the horizontal axis at 0, has an arrowhead at the top, and has a tick mark labeled 1 corresponding to the maximum height of the curve. The graph consists of three identical upward-curving half-sine arches above the horizontal axis: the first starts at (-pi, 0), reaches a peak of height 1 at x = -pi/2, and returns to (0, 0); the second starts at (0, 0), reaches a peak of height 1 at x = pi/2, and returns to (pi, 0); the third starts at (pi, 0), reaches a peak of height 1 halfway between pi and 2*pi, and returns to (2*pi, 0).
+![Even periodic extension of sin(x)](/assets/notes/ece/s1/maths/module-4/m4-even-sin.svg)
+
 
 **Answer:** $S(x) = \frac{2}{\pi} - \frac{4}{\pi} \sum_{n=1}^{\infty} \frac{1}{4n^2 - 1} \cos(2nx)$, and the sum is $\frac{1}{2}$.
 
@@ -958,9 +949,8 @@ When $f(x)$ contains a sine or cosine factor, rewrite the integrand using a prod
 
 > **Watch out.** Because the general formula for $a_n$ divides by $n - 1$, you must start the summation at $n = 2$ and add the separately computed $a_1 \cos x$ term in front.
 
-> **Figure: Graph of even periodic extension of x sin(x)**
->
-> Figure 4.20: Graph of the even periodic extension of x sin(x). A 2D coordinate plot with a horizontal axis pointing right and a vertical axis pointing up. The horizontal axis has tick marks and labels at -2π, -π, 0, π, and 2π (and unlabelled intercepts at -3π and 3π). The vertical axis has tick marks and labels at 1 and 2. On the fundamental interval [-π, π], the curve is symmetric about the vertical axis: it has a smooth local minimum tangent to the horizontal axis at (0, 0), rises to rounded peaks of height slightly below 2 on either side of the vertical axis (around x ≈ ±2.03), and falls steeply to sharp cusps on the horizontal axis at (-π, 0) and (π, 0). This two-humped pattern repeats periodically with period 2π over [-3π, -π] (touching (-2π, 0) smoothly between two peaks) and [π, 3π] (touching (2π, 0) smoothly between two peaks).
+![Even periodic extension of x sin(x)](/assets/notes/ece/s1/maths/module-4/m4-even-xsin.svg)
+
 
 **Answer:** $S(x) = 1 - \frac{1}{2}\cos x + 2\sum_{n=2}^{\infty} \frac{(-1)^{n-1}}{(n-1)(n+1)} \cos(nx)$, and the sum is $\frac{\pi - 2}{4}$.
 
@@ -976,21 +966,18 @@ When a function $f(x)$ is given only on the half-interval $[0, L]$, we can repre
 
 $$F(x) = \begin{cases} -f(-x) & \text{if } -L < x \le 0 \\ f(x) & \text{if } 0 \le x < L \end{cases}$$
 
-> **Figure: Graph of f(x) defined on interval [0, L]**
->
-> Figure 4.22 (Graph of f(x)): A 2D coordinate system with a horizontal axis (arrow pointing right) and a vertical axis (arrow pointing up) intersecting at the origin, which is labelled 0 just below and to the right of the intersection. A tick mark on the positive horizontal axis is labelled L. On the interval [0, L] in the first quadrant, a smooth curve labelled f(x) starts at a small positive value on the vertical axis at x = 0, dips slightly to a local minimum, and then rises to a higher positive value above x = L.
+![Graph of f(x) on [0, L]](/assets/notes/ece/s1/maths/module-4/m4-generic-base.svg)
 
-> **Figure: Graph of F(x), odd extension of f(x)**
->
-> Figure 4.23 (F(x): Graph of odd extension of f(x)): A 2D coordinate system with a horizontal axis (arrow pointing right) and a vertical axis (arrow pointing up) intersecting at the origin labelled 0. Tick marks on the horizontal axis are labelled -L on the left and L on the right. On [0, L] in the first quadrant, the curve labelled f(x) is identical to Figure 4.22 (starting at a small positive height at x = 0, dipping slightly, then rising toward x = L). On [-L, 0] in the third quadrant, the curve is reflected through the origin to form the odd extension -f(-x), starting at a negative value at x = -L, rising to a local maximum, and ending at a small negative value on the vertical axis at x = 0.
+
+![Odd extension of f(x) on [−L, L]](/assets/notes/ece/s1/maths/module-4/m4-generic-odd.svg)
+
 
 Repeating $F(x)$ every $2L$ units forms the **odd periodic extension**. Because $F(x)$ is odd, its product with $\cos(n\pi x/L)$ is odd (so $a_0 = 0$ and $a_n = 0$), while its product with $\sin(n\pi x/L)$ is even. Doubling the integral over the half-interval $[0, L]$ gives the **half-range sine series**:
 
 $$S(x) = \sum_{n=1}^{\infty} b_n \sin\left(\frac{n\pi x}{L}\right), \quad \text{where} \quad b_n = \frac{2}{L} \int_{0}^{L} f(x) \sin\left(\frac{n\pi x}{L}\right) dx$$
 
-> **Figure: Graph of odd periodic extension of f(x)**
->
-> Figure 4.24 (Graph of odd periodic extension of f(x)): A 2D coordinate system with a horizontal axis (arrow pointing right) and a vertical axis (arrow pointing up) intersecting at the origin labelled 0. Tick marks along the horizontal axis from left to right are labelled -2L, -L, 0, L, and 2L. The odd extension on [-L, L] from Figure 4.23 (labelled f(x) in the first quadrant) is repeated periodically with period 2L: on [-2L, -L] the positive first-quadrant branch from [0, L] is repeated, and on [L, 2L] the negative third-quadrant branch from [-L, 0] is repeated. Vertical dashed segments at x = -L and x = L indicate the jump discontinuities between the upper and lower branches.
+![Odd periodic extension of f(x) with period 2L](/assets/notes/ece/s1/maths/module-4/m4-generic-odd-periodic.svg)
+
 
 Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi x/L)$ evaluates to zero there. If $f(0) \ne 0$ or $f(L) \ne 0$, the odd periodic extension jumps from $-f(0)$ to $+f(0)$ at $x = 0$, and from $f(L)$ to $-f(L)$ at $x = L$. At any interior continuity point $x \in (0, L)$, Dirichlet's theorem guarantees $S(x) = f(x)$, whereas at jump discontinuities $S(x) = \frac{f(x^+) + f(x^-)}{2}$.
 
@@ -1013,9 +1000,8 @@ Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi 
 
    $$b_n = \frac{2}{5} \left[ \frac{-125(-1)^n}{n\pi} + \frac{250}{n^3\pi^3}\big((-1)^n - 1\big) \right] = \frac{50(-1)^{n+1}}{n\pi} + \frac{100}{n^3\pi^3}\big[(-1)^n - 1\big]$$
 
-> **Figure: Graph of odd periodic extension of x^2**
->
-> Figure 4.25: Graph of odd periodic extension of x^2. A 2D Cartesian coordinate graph with a horizontal axis (with a rightward arrow at the right end) and a vertical axis (with an upward arrow at the top end) intersecting at the origin labeled 0. Along the horizontal axis, tick marks and labels are placed at -10, -5, 0, 5, and 10. Along the vertical axis, tick marks and labels are placed at -25 (below the origin) and 25 (above the origin). Two vertical dashed lines at x = -5 and x = 5 extend between y = -25 and y = 25, marking the discontinuities of the periodic extension (period T = 10). Three identical S-shaped cubic-like curve branches of the odd extension are drawn: the central branch starts at (-5, -25), curves upward with decreasing slope to pass smoothly with a horizontal tangent and inflection point through the origin (0, 0) (representing -x^2 on (-5, 0) and x^2 on (0, 5)), and continues curving steeply upward to (5, 25); an identical left branch starts at (-15, -25) (partially shown starting from y = -25 around x = -15), passes through (-10, 0) with a horizontal tangent, and rises to (-5, 25); an identical right branch starts at (5, -25), passes through (10, 0) with a horizontal tangent, and rises to (15, 25).
+![Odd periodic extension of x²](/assets/notes/ece/s1/maths/module-4/m4-odd-x2.svg)
+
 
 **Answer:** $S(x) = \sum_{n=1}^{\infty} \left( \frac{50(-1)^{n+1}}{n\pi} + \frac{100}{n^3\pi^3} [(-1)^n - 1] \right) \sin\left(\frac{n\pi x}{5}\right)$.
 
@@ -1036,9 +1022,8 @@ Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi 
 
 4. Substitute $b_n$ into the sine series expansion; note that the odd periodic extension has jump discontinuities at all integers.
 
-> **Figure: Graph of odd periodic extension of e^x**
->
-> A Cartesian graph titled 'Figure 4.27 : Graph of odd periodic extension of e^x'. The horizontal x-axis has a rightward arrow at its positive end and tick marks labelled -3, -2, -1, 0, 1, 2, 3. The vertical y-axis has an upward arrow at its positive end and tick marks labelled -2, -1, 1, 2. The graph shows the odd periodic extension of f(x) = e^x from (0, 1) with period 2: on (-3, -2), an increasing curve from (-3, -e) (below -2) to (-2, -1); on (-2, -1), an increasing curve from (-2, 1) to (-1, e) (above 2); on (-1, 0), an increasing curve from (-1, -e) to (0, -1); on (0, 1), a thicker increasing curve from (0, 1) to (1, e); on (1, 2), an increasing curve from (1, -e) to (2, -1); and on (2, 3), an increasing curve from (2, 1) to (3, e). Vertical dashed lines connect the jump discontinuities at x = -2 (between y = -1 and y = 1), x = -1 (between y = -e and y = e), x = 1 (between y = -e and y = e), and x = 2 (between y = -1 and y = 1).
+![Odd periodic extension of eˣ](/assets/notes/ece/s1/maths/module-4/m4-odd-exp.svg)
+
 
 **Answer:** $S(x) = \sum_{n=1}^{\infty} \frac{2n\pi}{1 + n^2\pi^2} \left[ e(-1)^{n+1} + 1 \right] \sin(n\pi x)$.
 
@@ -1066,9 +1051,8 @@ Notice what happens at the endpoints $x = 0$ and $x = L$: every term $\sin(n\pi 
 
    $$\frac{\pi}{2} = \frac{4}{\pi} \left( 1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots \right)$$
 
-> **Figure: Graph of Odd periodic extension of f(x)**
->
-> Figure 4.26: Graph of Odd periodic extension of f(x). A 2D Cartesian coordinate plane with a horizontal x-axis (with an arrowhead pointing right) and a vertical y-axis (with an arrowhead pointing up) intersecting at the origin labeled 0. Along the horizontal axis, tick marks and labels from left to right are -π, -π/2, 0, π/2, and π. Along the vertical axis, tick marks are labeled π/2 above the origin and -π/2 below the origin. The graph is a continuous, piecewise-linear triangular wave representing an odd periodic function: starting from a high point of y = π/2 at the left (x = -3π/2, unlabeled), a straight line segment slopes downward through (-π, 0) to a local minimum (trough) at (-π/2, -π/2); from (-π/2, -π/2), a straight line segment slopes upward through the origin (0, 0) to a local maximum (peak) at (π/2, π/2); from (π/2, π/2), a straight line segment slopes downward through (π, 0) to a low point of y = -π/2 at the right (x = 3π/2, unlabeled).
+![Odd periodic triangular wave](/assets/notes/ece/s1/maths/module-4/m4-odd-triangle.svg)
+
 
 **Answer:** $S(x) = \sum_{n=1}^{\infty} \frac{4}{\pi n^2} \sin\left(\frac{n\pi}{2}\right) \sin(nx)$, and $1 + \frac{1}{3^2} + \frac{1}{5^2} + \dots = \frac{\pi^2}{8}$.
 

@@ -26,7 +26,7 @@ export interface NotesModule {
   displayDescription?: string;
   /** Reorganized study notes navigate by topic section instead of scanned page. */
   unitLabel?: "page" | "section";
-  outlinedProblems?: boolean;
+  outlinedProblems?: boolean | "numbered";
   /** breadcrumb from the notes shelf down to this module; the last step has no link */
   trail: { label: string; href?: string }[];
   /** e.g. "Module 1" */

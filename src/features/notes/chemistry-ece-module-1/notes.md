@@ -4,9 +4,11 @@
 
 Master fundamental electrochemistry, electrochemical cells, reference electrodes, conductivity, batteries, fuel cells, and corrosion control mechanisms through structured theory and applied numericals.
 
-**Before you start:** Basic thermodynamics and free energy concepts; High school oxidation-reduction reactions; Basic stoichiometry and solution concentration units.
+**Prerequisites**
 
-### Your path through this module
+Prerequisites include basic thermodynamics and free energy concepts, high school oxidation-reduction reactions, and basic stoichiometry and solution concentration units.
+
+### Module Roadmap
 
 1. **Introduction to Electrochemical and Electrolytic Cells**: The separation of redox half-reactions using a salt bridge to establish electrical continuity without direct mixing.
 2. **Single Electrode Potential and Electrochemical Series**: Quantifying single-electrode tendencies and ranking metals on the hydrogen scale to predict redox spontaneity.
@@ -20,6 +22,8 @@ Master fundamental electrochemistry, electrochemical cells, reference electrodes
 <!-- page 2 | Introduction to Electrochemical and Electrolytic Cells -->
 
 ## Introduction to Electrochemical and Electrolytic Cells
+
+**Electrochemistry**
 
 Electrochemistry is a branch of chemistry that deals with the chemical applications of electricity. It mainly focuses on chemical reactions produced by passing an electric current through an electrolyte, or the production of an electric current through chemical reactions.
 
@@ -35,6 +39,8 @@ Cells that interconvert chemical and electrical energy are categorized into two 
 | Anode is negative terminal | Anode is positive terminal |
 
 ### Electrochemical Cells or Galvanic Cells
+
+**Galvanic cells**
 
 Galvanic cells are electrochemical cells in which electrons transferred due to a spontaneous redox reaction are converted into electrical energy. A classic example is the Daniel Cell.
 
@@ -70,11 +76,16 @@ In this convention, the anode is written on the left, the cathode on the right, 
 
 ### Salt Bridge and its Significance
 
+**Salt bridge**
+
 A salt bridge is typically an inverted U-tube filled with a concentrated solution of an inert electrolyte. An inert electrolyte is one whose constituent ions are neither involved in any electrochemical change nor do they react chemically with the electrolytes in the two half-cells. Generally, salts like $\text{KCl}$, $\text{KNO}_3$, and $\text{NH}_4\text{NO}_3$ are used.
 
-**Preparation:** To prepare a salt bridge, gelatin or agar-agar is dissolved in a hot concentrated aqueous solution of an inert electrolyte, and the resulting solution is poured into the U-tube. Upon cooling, the solution sets into the form of a gel. The ends of the U-tube are plugged with cotton wool to minimize diffusion effects while maintaining ionic contact.
+**Preparation**
 
-**Significance of Salt Bridge:**
+To prepare a salt bridge, gelatin or agar-agar is dissolved in a hot concentrated aqueous solution of an inert electrolyte, and the resulting solution is poured into the U-tube. Upon cooling, the solution sets into the form of a gel. The ends of the U-tube are plugged with cotton wool to minimize diffusion effects while maintaining ionic contact.
+
+**Significance of Salt Bridge**
+
 1. It connects the solutions of the two half-cells and completes the electrical cell circuit.
 2. It prevents the physical transference or diffusion of bulk electrolyte solutions from one half-cell to the other.
 3. It maintains electrical neutrality in the solutions of both half-cells by allowing counter-ions to migrate appropriately.
@@ -85,11 +96,7 @@ A salt bridge is typically an inverted U-tube filled with a concentrated solutio
 
 When a metal rod is placed in contact with a solution containing its own ions, it may undergo either oxidation ($M \rightarrow M^{n+} + n\text{e}^-$) or reduction ($M^{n+} + n\text{e}^- \rightarrow M$) depending on the inherent nature of the metal.
 
-![Single electrode cell (half-cell)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p003-1.webp)
-
-> **Figure: Single electrode cell (half-cell)**
->
-> Diagram of a single electrode cell (half-cell) titled 'Single electrode cell (half-cell)'. It shows a container holding a solution with positive metal ions (M+) and negative ions, and a metal rod labeled 'M' immersed in the solution. At the top, a potential difference is indicated by 'Delta phi'. Electrons (e-) are shown near the metal-solution interface. The bottom of the figure includes the website label www.substech.com.
+![Generated diagram of a metal electrode in an electrolyte, showing the interfacial potential difference, metal ions, counter-ions, and excess electrons](/assets/notes/ece/s1/chemistry/module-1/half-cell.svg)
 
 <!-- page 3 | Single Electrode Potential and Electrochemical Series -->
 
@@ -109,11 +116,22 @@ If the metal possesses a stronger anodic nature, metal ions ($\text{M}^{n+}$) pa
 
 This initial transfer of charge creates an electrostatic attraction: a negatively charged metal rod attracts positive ions from the solution, whereas a positively charged metal rod attracts negative ions. This accumulation forms a tightly bound layer of ions of opposite charge immediately adjacent to the metal surface. This microscopic charge separation is known as the **Helmholtz electrical double layer**.
 
-![Electrochemical Series Table](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p006-1.webp)
+#### Standard reduction potentials at 25 °C
 
-> **Figure: Electrochemical Series Table**
->
-> Electrochemical Series Table with columns for Redox couple, Half-reaction, and Standard potential (V). Row 1: Mg2+/Mg, Mg2+ + 2e- -> Mg, -2.37. Row 2: Pb2+/Pb, Pb2+ + 2e- -> Pb, -1.12. Row 3: Zn2+/Zn, Zn2+ + 2e- -> Zn, -0.76. Row 4: Fe2+/Fe, Fe2+ + 2e- -> Fe, -0.44. Row 5: Sn2+/Sn, Sn2+ + 2e- -> Sn, -0.136. Row 6: H+/H2, 2H+ + 2e- -> H2, 0.00, Pt-reference. Row 7: Cu2+/Cu, Cu2+ + 2e- -> Cu, +0.34. Row 8: Ag+/Ag, Ag+ + e- -> Ag, +0.80. Row 9: Au+/Au, Au+ + e- -> Au, +1.50. Row 10: 1/2 F2 / F-, 1/2 F2 + e- -> F-, +2.87. An arrow points upwards on the right side above the hydrogen reference labeled with an upward-pointing arrow, and an arrow points downwards below the hydrogen reference labeled 'Cathodic'.
+| Redox couple | Standard reduction half-reaction | $E^\circ$ (V) |
+|:--|:--|--:|
+| $\mathrm{Mg^{2+}/Mg}$ | $\mathrm{Mg^{2+} + 2e^- \rightarrow Mg}$ | $-2.37$ |
+| $\mathrm{Pb^{2+}/Pb}$ | $\mathrm{Pb^{2+} + 2e^- \rightarrow Pb}$ | $-1.12$ |
+| $\mathrm{Zn^{2+}/Zn}$ | $\mathrm{Zn^{2+} + 2e^- \rightarrow Zn}$ | $-0.76$ |
+| $\mathrm{Fe^{2+}/Fe}$ | $\mathrm{Fe^{2+} + 2e^- \rightarrow Fe}$ | $-0.44$ |
+| $\mathrm{Sn^{2+}/Sn}$ | $\mathrm{Sn^{2+} + 2e^- \rightarrow Sn}$ | $-0.136$ |
+| $\mathrm{H^+/H_2}$ | $\mathrm{2H^+ + 2e^- \rightarrow H_2}$ | $0.00$ |
+| $\mathrm{Cu^{2+}/Cu}$ | $\mathrm{Cu^{2+} + 2e^- \rightarrow Cu}$ | $+0.34$ |
+| $\mathrm{Ag^+/Ag}$ | $\mathrm{Ag^+ + e^- \rightarrow Ag}$ | $+0.80$ |
+| $\mathrm{Au^{3+}/Au}$ | $\mathrm{Au^{3+} + 3e^- \rightarrow Au}$ | $+1.50$ |
+| $\mathrm{F_2/F^-}$ | $\mathrm{\frac12 F_2 + e^- \rightarrow F^-}$ | $+2.87$ |
+
+The standard hydrogen electrode is the zero-potential reference. More positive reduction potentials lie above it; less positive potentials lie below it in the electrochemical series.
 
 The formation of the Helmholtz electrical double layer sets up a potential difference between the metal and the solution, which halts further net transfer of ions across the interface. Once dynamic equilibrium is attained, this potential difference becomes constant and is defined as the single electrode potential.
 
@@ -124,10 +142,21 @@ The magnitude of an electrode potential depends on:
 
 ### Key Definitions
 
-- **Single electrode potential ($E$):** The measure of the tendency of a metallic electrode to lose or gain electrons when it is in contact with a solution of its own salt.
-- **Standard electrode potential ($E^{\bullet}$):** The measure of the tendency of a metallic electrode to lose or gain electrons when it is in contact with a solution of its own salt at 1 molar concentration at $25^\text{o}\text{C}$ ($298\text{ K}$). Units are in Volts ($\text{V}$).
-- **Oxidation potential:** The potential acquired by an electrode when oxidation (loss of electrons) occurs at equilibrium.
-- **Reduction potential:** The potential acquired by an electrode when reduction (gain of electrons) occurs at equilibrium. By IUPAC convention, standard electrode potentials are expressed as standard reduction potentials.
+**Single electrode potential**
+
+Single electrode potential ($E$): The measure of the tendency of a metallic electrode to lose or gain electrons when it is in contact with a solution of its own salt.
+
+**Standard electrode potential**
+
+Standard electrode potential ($E^{\bullet}$): The measure of the tendency of a metallic electrode to lose or gain electrons when it is in contact with a solution of its own salt at 1 molar concentration at $25^\text{o}\text{C}$ ($298\text{ K}$). Units are in Volts ($\text{V}$).
+
+**Oxidation potential**
+
+Oxidation potential: The potential acquired by an electrode when oxidation (loss of electrons) occurs at equilibrium.
+
+**Reduction potential**
+
+Reduction potential: The potential acquired by an electrode when reduction (gain of electrons) occurs at equilibrium. By IUPAC convention, standard electrode potentials are expressed as standard reduction potentials.
 
 ### Electrochemical Series (EMF Series)
 
@@ -237,9 +266,11 @@ $$E = E^{\circ} + \frac{2.303RT}{nF} \log [\text{M}^{n+}]$$
 Substituting the standard values $R = 8.314 \text{ J/K/mol}$, $F = 96500 \text{ C}$, and $T = 298 \text{ K}$ ($25^{\circ}\text{C}$), the constant term $\frac{2.303RT}{F}$ evaluates to approximately $0.0591$:
 
 For **reduction potential**:
+
 $$E = E_{\text{red}}^{\circ} + \frac{0.0591}{n} \log [\text{M}^{n+}]$$
 
 For **oxidation potential**:
+
 $$E = E_{\text{oxi}}^{\circ} - \frac{0.0591}{n} \log [\text{M}^{n+}]$$
 
 ---
@@ -338,9 +369,15 @@ $$E_{\text{cell}} = E_{\text{cell}}^{\circ} - \frac{0.0591}{2} \log \frac{[\text
 
 ## Reference Electrodes and pH Determination
 
-Bridge: Because absolute single electrode potentials cannot be measured directly, we learn to use reference electrodes to measure unknown potentials and pH.
+**Bridge**
 
-The new idea: Using a primary or secondary reference standard with fixed potential to isolate and measure half-cell potentials.
+Bridge is a concept where because absolute single electrode potentials cannot be measured directly, we learn to use reference electrodes to measure unknown potentials and pH.
+
+**The new idea**
+
+The new idea involves using a primary or secondary reference standard with fixed potential to isolate and measure half-cell potentials.
+
+**Reference electrode**
 
 A reference electrode is an electrode whose potential is known and hence can be used to compare the potential of other electrodes. They are divided into two types:
 
@@ -511,7 +548,9 @@ Equation (1) has the form of a straight-line equation, $y = c + mx$, having inte
 
 ## Conductivity of Electrolytes
 
-**Specific Conductance ($\boldsymbol{\text{\tau}}$):** It is the conductance of $1\text{ cm}^3$ of a material or solution held between two electrodes of $1\text{ cm}^2$ area placed on the opposite pairs of faces of a cube of edge length $1\text{ cm}$.
+**Specific Conductance ($\boldsymbol{\text{\tau}}$)**
+
+Specific Conductance is the conductance of $1\text{ cm}^3$ of a material or solution held between two electrodes of $1\text{ cm}^2$ area placed on the opposite pairs of faces of a cube of edge length $1\text{ cm}$.
 
 $$\tau = \text{conductance} \times \frac{l}{a}$$
 $$\tau = \frac{1}{R} \times \frac{l}{a} \text{ where } \frac{1}{R} = c$$
@@ -528,6 +567,8 @@ Objectives: Define specific conductance and cell constant; Explain the experimen
 
 ### Specific Conductance and Cell Constant
 
+**Specific conductance**
+
 Specific conductance (also known as conductivity), denoted by $K$, is the reciprocal of specific resistance ($\rho$). It measures the ability of a given volume of solution to conduct electrical current.
 
 $$\text{Specific Conductance } (K) = \frac{1}{\rho} = \frac{1}{R}\times\frac{l}{a}$$
@@ -536,9 +577,9 @@ Units of specific conductance:
 
 $$K = \frac{1}{\text{ohm}\times\text{cm}} = \text{ohm}^{-1}\text{cm}^{-1} \text{ or } \text{mho}\cdot\text{cm}^{-1} \text{ or } \text{S}\cdot\text{cm}^{-1}$$
 
-**Cell constant ($x$):**
+**Cell constant**
 
-It is the ratio of the distance between two electrodes ($l$) and the area of the electrodes ($a$).
+Cell constant ($x$) is the ratio of the distance between two electrodes ($l$) and the area of the electrodes ($a$).
 
 $$x = \frac{l}{a}$$
 
@@ -552,17 +593,17 @@ $$x = \frac{\text{cm}}{\text{cm}^2} = \text{cm}^{-1}$$
 
 ### Conductivity Cell and Measurement Techniques
 
-**Conductivity Cell:**
+**Conductivity Cell**
 
 A conductivity cell consists of two electrode plates coated with finely divided platinum black. These two electrodes are welded with the ends of platinum wires that are sealed through two glass tubes. The tubes are strongly fixed such that the distance between electrodes remains unaltered.
 
-**Determination of Cell Constant:**
+**Determination of Cell Constant**
 
 Cell constant is measured by filling the conductivity cell with a solution of known conductivity, such as a $0.1\text{ M KCl}$ solution ($K = 0.01288\text{ S}\cdot\text{cm}^{-1}$ at $298\text{ K}$). By measuring the conductance of the $0.1\text{ M KCl}$ solution in the given cell, the cell constant can be determined.
 
 $$\text{Cell constant} = \frac{\text{conductivity of } 0.1\text{ M KCl solution } (K)}{\text{conductance } (C) \text{ of } 0.1\text{ M KCl solution}}$$
 
-**Measurement of Conductivity Using Digital Conductivity Meter:**
+**Measurement of Conductivity Using Digital Conductivity Meter**
 
 The conductivity cell is connected to the digital conductivity meter and the appropriate temperature is selected. The conductivity cell is then fully dipped into the sample solution taken in a beaker. The conductance of the solution is measured by selecting the proper range switch (milli S or micro S). The digital conductivity meter directly reads out the conductance.
 
@@ -607,17 +648,17 @@ A battery is an arrangement of several electrochemical cells connected in series
 
 ### Types of Battery
 
-**1. Primary Battery (or) Primary cells (or) Non-reversible Battery**
+**Primary Battery**
 
-In these cells, the electrode and the electrode reactions cannot be reversed by passing an external electrical energy. The reactions occur only once and after use they become dead. Therefore, they are not chargeable. Example: Dry cell, Daniel cell
+Primary Battery (or) Primary cells (or) Non-reversible Battery: In these cells, the electrode and the electrode reactions cannot be reversed by passing an external electrical energy. The reactions occur only once and after use they become dead. Therefore, they are not chargeable. Example: Dry cell, Daniel cell
 
-**2. Secondary Battery (or) Secondary cells (or) Reversible Battery**
+**Secondary Battery**
 
-In these cells, the electrode reactions can be reversed by passing an external electrical energy. Therefore, they can be recharged by passing electric current and used again and again. These are also called Storage cells (or) Accumulators. Example: Lithium ion battery
+Secondary Battery (or) Secondary cells (or) Reversible Battery: In these cells, the electrode reactions can be reversed by passing an external electrical energy. Therefore, they can be recharged by passing electric current and used again and again. These are also called Storage cells (or) Accumulators. Example: Lithium ion battery
 
-**3. Flow battery (or) Fuel cells**
+**Flow battery**
 
-In these cells, the reactants, products and electrolytes are continuously passing through the cell. Here chemical energy gets converted into electrical energy. Example: Hydrogen-oxygen fuel cell.
+Flow battery (or) Fuel cells: In these cells, the reactants, products and electrolytes are continuously passing through the cell. Here chemical energy gets converted into electrical energy. Example: Hydrogen-oxygen fuel cell.
 
 ### Lithium-ion Battery
 
@@ -668,29 +709,22 @@ When $\text{Li}$ ion cells are allowed to charge completely ($x=1$) anode materi
 
 #### Advantages
 
-i. Available in large number of shapes and sizes.
-
-ii. It is much lighter.
-
-iii. It has low self-discharge capacity.
+1. Available in large number of shapes and sizes.
+2. It is much lighter.
+3. It has low self-discharge capacity.
 
 #### Disadvantages
 
-i. Offers high internal resistance.
-
-ii. On overheating, the cell ruptures ignite or explode.
-
-iii. Expensive to manufacture $40\text{ } > \text{Ni-Cd}$.
+1. Offers high internal resistance.
+2. On overheating, the cell ruptures ignite or explode.
+3. Expensive to manufacture $40\text{ } > \text{Ni-Cd}$.
 
 #### Applications
 
-i. Used for portable devices like notebook computers.
-
-ii. Used in mobile phones and other electronic devices.
-
-iii. Used in small digital music devices like iPods MP3 players etc.
-
-iv. Use in electric vehicles.
+1. Used for portable devices like notebook computers.
+2. Used in mobile phones and other electronic devices.
+3. Used in small digital music devices like iPods MP3 players etc.
+4. Use in electric vehicles.
 
 ### Fuel Cell
 
@@ -769,7 +803,11 @@ Metals are isolated from their ores, generally at high temperature, in a process
 >
 > Block diagram comparing metal extraction and corrosion. A box on the left contains 'Metal' with a label below 'Thermodynamically unstable'. An arrow points to the right labelled 'Corrosion (Oxidation)' to a box on the right containing 'Metallic compound Mineral/ore' and '+ Energy' outside to the right, with a label below 'Thermodynamically stable'. Below this, an arrow points from right to left labelled 'Metal extraction (Reduction)'.
 
-Corrosion is a slow process of deterioration of a metal from its surface due to unwanted chemical or electrochemical interaction with its environment. Thus, corrosion is a process "reverse of extraction of metals." Examples include the rusting of iron and the tarnishing of silver or copper.
+**Corrosion**
+
+Corrosion is a slow process of deterioration of a metal from its surface due to unwanted chemical or electrochemical interaction with its environment.
+
+Thus, corrosion is a process "reverse of extraction of metals." Examples include the rusting of iron and the tarnishing of silver or copper.
 
 ### Classification of Corrosion
 
@@ -943,9 +981,11 @@ To deposit a layer of copper metal on an iron object, take a glass jar and fill 
 
 ### Electroless Plating
 
-"Without using electrical energy, the deposition of a noble metal from its salt solution on a catalytically active less noble metal surface by a suitable reducing agent is known as electroless plating." It is also known as auto-catalytic plating. It is a chemical reduction process which once initiated, become autocatalytic hence the name. The process is similar to electroplating except that no outside current is needed.
+**Autocatalytic plating**
 
-**Theory of Autocatalytic Plating:**
+Autocatalytic plating is defined as without using electrical energy, the deposition of a noble metal from its salt solution on a catalytically active less noble metal surface by a suitable reducing agent is known as electroless plating. It is also known as auto-catalytic plating. It is a chemical reduction process which once initiated, become autocatalytic hence the name. The process is similar to electroplating except that no outside current is needed.
+
+**Theory of Autocatalytic Plating**
 
 In Electroless plating, metallic ions are reduced to the metal with the help of reducing agents and deposited on a catalytic surface.
 

@@ -27,6 +27,9 @@ const plainRemarkPlugins = [remarkGfm];
 const mathRemarkPlugins = [remarkGfm, remarkMath];
 const plainProblemPlugins = [remarkGfm, remarkProblemCards];
 const mathProblemPlugins = [remarkGfm, remarkMath, remarkProblemCards];
+const numberedProblemCards: [typeof remarkProblemCards, { numberedProblems: boolean }] = [remarkProblemCards, { numberedProblems: true }];
+const plainNumberedProblemPlugins = [remarkGfm, numberedProblemCards];
+const mathNumberedProblemPlugins = [remarkGfm, remarkMath, numberedProblemCards];
 const mathPlugins: NonNullable<Parameters<typeof ReactMarkdown>[0]["rehypePlugins"]> = [
   [rehypeKatex, { strict: false }],
 ];
@@ -105,6 +108,8 @@ const components: Components = {
       || /^\/notes\/cse\/s1\/chemistry\/module-3\/assets\/.*-clean\.webp$/.test(localPath!)
       || /^\/notes\/(?:ece|eee)\/s1\/chemistry\/module-[1-4]\/assets\/.*\.webp$/.test(localPath!)
       || /^\/assets\/notes\/ece\/s1\/chemistry\/module-1\/.*\.webp$/.test(localPath!)
+      || /^\/assets\/notes\/ece\/s1\/chemistry\/module-[1-4]\/.*\.svg$/.test(localPath!)
+      || /^\/assets\/notes\/ece\/s1\/maths\/module-[14]\/.*\.svg$/.test(localPath!)
     );
     const graphics = typeof src === "string" && graphicsFigure.test(localPath!);
     const dimensions = typeof src === "string" ? diagramDimensions[localPath!] : undefined;
@@ -156,15 +161,17 @@ function normalizeMath(text: string): string {
 }
 
 /* One page of notes. Memoised, so scrolling (which updates the reader) doesn't re-render the maths. */
-export default memo(function PageMarkdown({ content, outlinedProblems = false }: { content: string; outlinedProblems?: boolean }) {
+export default memo(function PageMarkdown({ content, outlinedProblems = false }: { content: string; outlinedProblems?: boolean | "numbered" }) {
   // Most Python pages have no maths, and many maths pages have no code. Avoid
   // walking their entire syntax trees with plugins that have nothing to render.
   const maths = content.includes("$");
   const code = /(?:`{3,}|~{3,})/.test(content);
   const normalized = maths ? normalizeMath(content) : content;
   const rehypePlugins = maths ? (code ? allPlugins : mathPlugins) : (code ? highlightPlugins : noPlugins);
-  const remarkPlugins = outlinedProblems
-    ? (maths ? mathProblemPlugins : plainProblemPlugins)
+  const remarkPlugins = outlinedProblems === "numbered"
+    ? (maths ? mathNumberedProblemPlugins : plainNumberedProblemPlugins)
+    : outlinedProblems
+      ? (maths ? mathProblemPlugins : plainProblemPlugins)
     : (maths ? mathRemarkPlugins : plainRemarkPlugins);
   return (
     <ReactMarkdown remarkPlugins={remarkPlugins} rehypePlugins={rehypePlugins} components={components}>

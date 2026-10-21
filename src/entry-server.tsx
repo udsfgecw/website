@@ -150,6 +150,20 @@ export const pages: StaticPage[] = [
       chunk: "src/pages/notes/ImportedModulePage.tsx",
     })),
   ),
+  ...(["ece", "eee"] as const).flatMap((branch) => [
+    ...(["m1", "m2", "m3", "m4", "question-papers"] as const).map((module) => {
+      const url = `/notes/${branch}/s1/graphics/${module}`;
+      return { url, file: fileFor(url), chunk: "src/pages/notes/ImportedModulePage.tsx" } satisfies StaticPage;
+    }),
+    ...(["module-1", "module-2", "module-3", "question-papers"] as const).map((module) => {
+      const url = `/notes/${branch}/s1/electrical/${module}`;
+      return { url, file: fileFor(url), chunk: "src/pages/notes/ImportedModulePage.tsx" } satisfies StaticPage;
+    }),
+    ...(["module-1", "module-2", "module-3", "module-4", "question-papers"] as const).map((module) => {
+      const url = `/notes/${branch}/s1/python/${module}`;
+      return { url, file: fileFor(url), chunk: "src/pages/notes/ImportedModulePage.tsx" } satisfies StaticPage;
+    }),
+  ]),
   ...(["civil", "me"] as const).flatMap((branch) =>
     ([1, 2, 3, 4] as const).map((n): StaticPage => ({
       url: `/notes/${branch}/s1/chemistry/module-${n}`,

@@ -23,7 +23,11 @@ Bridge: Having reviewed basic physical chemistry, we now examine how electromagn
 
 The new idea: Quantization of molecular energy levels and their interaction with electromagnetic radiation leading to absorption and emission spectra.
 
+**Spectroscopy**
+
 Spectroscopy deals with the interaction of atoms, molecules, or matter with electromagnetic radiation. Molecules possess different quantum mechanical energy states such as electronic, vibrational, rotational, and nuclear. Transitions occur between these states by the absorption or emission of radiation.
+
+**Spectrometry**
 
 Spectroscopy involves the production, measurement, and interpretation of electromagnetic spectra arising from the emission or absorption of electromagnetic radiation by atoms or molecules. Detailed information regarding structure, bonding, and inter- and intramolecular processes is obtained through spectroscopic analysis using instruments known as spectrometers.
 
@@ -32,7 +36,6 @@ Spectroscopy involves the production, measurement, and interpretation of electro
 Based on the nature of interaction, spectra are divided into absorption and emission spectra:
 
 1. **Absorption Spectrum:** When an atom or molecule undergoes a transition from a lower energy level $E_i$ to a higher energy level $E_f$ with the absorption of a photon of energy $h\nu$, an absorption spectrum is obtained. Techniques such as UV-Visible, IR, Microwave, and NMR belong to absorption spectroscopy.
-
 2. **Emission Spectrum:** When an atom or molecule undergoes a transition from a higher energy level $E_i$ to a lower energy level $E_f$ with the emission of a photon of energy $h\nu$, an emission spectrum is obtained. For emission to be observed, higher energy states must be more populated than lower energy states. Hydrogen spectra, atomic emission spectra (AES), and fluorescence spectra belong to this class.
 
 ![Absorption and emission energy-level transitions](/assets/notes/ece/s1/chemistry/module-3/abs-em.webp)
@@ -52,6 +55,8 @@ Based on the nature of the interacting species, spectra are categorized into:
 
 ## Electromagnetic Spectrum
 
+**Electromagnetic spectrum**
+
 The range of photon energies is called the electromagnetic spectrum, representing the systematic arrangement of electromagnetic waves in increasing or decreasing order of their properties.
 
 The entire range consists of radio waves, microwaves, infrared radiation, visible light, ultraviolet radiation, X-rays, gamma rays, and cosmic rays in the increasing order of frequency and decreasing order of wavelength.
@@ -67,6 +72,8 @@ A molecule possesses four types of energies:
 3. **Rotational energy ($E_{rot}$):** Associated with the rotation of a molecule in space about an axis passing through its center of mass. Energy gaps fall in the microwave region.
 4. **Translational energy ($E_{trans}$):** Associated with the change in position of the center of mass with time.
 
+**Total molecular energy**
+
 The total energy is given by:
 
 $$E_{total} = E_{el} + E_{vib} + E_{rot} + E_{trans}$$
@@ -80,6 +87,8 @@ $$E_{total} = E_{el} + E_{vib} + E_{rot} + E_{trans}$$
 Electronic transitions in a molecule are always accompanied by vibrational and rotational transitions. Consequently, UV spectra always appear as broad bands.
 
 ## Beer-Lambert's Law
+
+**Beer-Lambert's law**
 
 When a beam of monochromatic radiation is passed through a solution of an absorbing substance, the rate of decrease of intensity of radiation ($-dI$) with thickness of the absorbing solution ($dx$) is proportional to the intensity of incident radiation ($I$) as well as the concentration of the solution ($C$).
 
@@ -271,12 +280,15 @@ Concepts to teach: $\sigma \rightarrow \sigma^*$; $n \rightarrow \sigma^*$; $\pi
 When molecules absorb ultraviolet or visible radiation, valence electrons are excited from lower-energy molecular orbitals to higher-energy antibonding molecular orbitals. The principal electronic transitions are:
 
 1. **$\sigma \rightarrow \sigma^*$ Transitions**
+
 These transitions occur in saturated hydrocarbons where only $\sigma$ bonds are present (e.g., $\text{CH}_4$, $\text{CH}_3-\text{CH}_3$). The energy required for this transition is large, and absorption bands appear in the far UV region ($120-136\text{ nm}$). For methane ($\text{CH}_4$), $\lambda_{\text{max}} = 121.9\text{ nm}$.
 
 2. **$n \rightarrow \sigma^*$ Transitions**
+
 These transitions occur in saturated compounds containing heteroatoms with non-bonding lone pairs of electrons (N, O, S, halogens), such as amines (e.g., $(\text{CH}_3)_3\text{N}$). The energy required is less than that for $\sigma \rightarrow \sigma^*$ transitions, and absorption bands appear in the near UV region ($180-200\text{ nm}$). These are generally forbidden transitions.
 
 3. **$\pi \rightarrow \pi^*$ Transitions**
+
 These transitions occur in unsaturated systems containing double or triple bonds where electrons move from a bonding $\pi$ orbital to an antibonding $\pi^*$ orbital. In molecules with conjugated double bonds, these transitions take place from the Highest Occupied Molecular Orbital (HOMO) to the Lowest Unoccupied Molecular Orbital (LUMO).
 
 ![Ethylene molecule and energy level transition diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p008-1.webp)
@@ -313,6 +325,7 @@ As the extent of conjugation increases, the energy gap between the HOMO and LUMO
 > Chemical structure of lycopene showing a long carbon chain with 11 conjugated double bonds, with methyl groups (CH3) attached at various positions along the chain.
 
 4. **$n \rightarrow \pi^*$ Transitions**
+
 These transitions are characteristic of unsaturated molecules containing heteroatoms with lone pairs (such as carbonyl groups, $\text{C}=\text{O}$, and nitrogen or sulfur heteroatoms). Non-bonding electrons are promoted to antibonding $\pi^*$ orbitals. These give weak absorption bands at longer wavelengths.
 
 ![Chemical structure for aldehyde and ketone example](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p009-3.webp)
@@ -416,14 +429,21 @@ Moving from electronic transitions to lower-energy molecular motions, we investi
 
 Because atoms in a molecule are continuously vibrating, molecules exhibit fundamental vibrations divided into two main categories:
 
-1. **Stretching Vibrations:** During stretching, the distance between two atoms increases or decreases, but the bond angle remains unaltered.
-   - *(a) Symmetric Stretching:* The movement of atoms with respect to a central atom is in the same direction, causing bond lengths to simultaneously increase or decrease.
-   - *(b) Asymmetric Stretching:* One atom approaches the central atom while the other departs from it.
-2. **Bending (Deformation) Vibrations:** During bending, bond angles increase or decrease while bond distances remain unaltered.
-   - *(a) Scissoring:* Atoms move away and come close to each other in the same plane, like the blades of a scissor.
-   - *(b) Rocking:* The movement of atoms takes place in the same direction within the plane.
-   - *(c) Twisting:* One atom moves up the plane while the other moves down the plane with respect to the central atom.
-   - *(d) Wagging:* Two atoms move up and below the plane simultaneously with respect to the central atom.
+**Stretching Vibrations**
+
+Stretching vibrations are characterized by the distance between two atoms increasing or decreasing, while the bond angle remains unaltered.
+
+- *(a) Symmetric Stretching:* The movement of atoms with respect to a central atom is in the same direction, causing bond lengths to simultaneously increase or decrease.
+- *(b) Asymmetric Stretching:* One atom approaches the central atom while the other departs from it.
+
+**Bending Vibrations**
+
+Bending vibrations are characterized by bond angles increasing or decreasing while bond distances remain unaltered.
+
+- *(a) Scissoring:* Atoms move away and come close to each other in the same plane, like the blades of a scissor.
+- *(b) Rocking:* The movement of atoms takes place in the same direction within the plane.
+- *(c) Twisting:* One atom moves up the plane while the other moves down the plane with respect to the central atom.
+- *(d) Wagging:* Two atoms move up and below the plane simultaneously with respect to the central atom.
 
 ![Types of molecular vibrations including symmetric stretch, asymmetric stretch, scissoring, rocking, wagging, and twisting.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p012-1.webp)
 
@@ -571,11 +591,17 @@ The electron gun generates a beam of energetic electrons, which are subsequently
 ## Dielectric Thermal Analysis (DETA)
 
 ### Thermal Analysis and Dielectric Measurements
-Thermal analysis encompasses a group of techniques used to study the physical and chemical properties of materials as a function of temperature. These methods measure the dynamic relationship between temperature and properties such as mass change, heat change, mechanical properties, and phase transitions. Common techniques include Thermogravimetric Analysis (TGA), Differential Thermal Analysis (DTA), and Dielectric Thermal Analysis (DETA).
 
-Dielectric analysis measures the dielectric properties of a material as a function of time, temperature, or frequency. In Dielectric Thermal Analysis (DETA), the change in dielectric properties under an applied alternating voltage is recorded continuously as the temperature is varied. This allows for the simultaneous study of thermal and dielectric behavior.
+**Thermal analysis**
+
+Thermal analysis encompasses a group of techniques used to study the physical and chemical properties of materials as a function of temperature.
+
+**Dielectric analysis**
+
+Dielectric analysis measures the dielectric properties of a material as a function of time, temperature, or frequency.
 
 ### DETA Instrumentation
+
 The experimental setup for Dielectric Thermal Analysis consists of several key components:
 
 1. **Sample Holder / Capacitor:** The sample (prepared as a thin film, powder, sheet, or pellet) is placed between two parallel metal plate electrodes. Proper electrical contact must be maintained. A grounded electrode called a **guard ring** is sometimes used around one plate to eliminate stray electric fields and improve measurement accuracy. Known standard materials (e.g., low-density polyethylene, alumina) serve as references for calibration.
@@ -584,7 +610,7 @@ The experimental setup for Dielectric Thermal Analysis consists of several key c
 4. **Frequency Generator:** Supplies a sinusoidal alternating current (AC) voltage, allowing dielectric properties to be evaluated across different frequencies.
 5. **Environment Control Equipment:** Maintains the desired sample atmosphere (such as air or an inert gas).
 6. **Temperature Control Equipment:** Prevents sample overheating.
-7. **Dielectric Analyzer:** The core detection component (typically containing an impedance analyzer or LCR meter) that measures relative permittivity (\(\varepsilon'\)) and dielectric loss (\(\varepsilon''\)).
+7. **Dielectric Analyzer:** The core detection component (typically containing an impedance analyzer or LCR meter) that measures relative permittivity (\(\varepsilon'\)) and dielectric loss (\(\'\varepsilon''\)).
 8. **Recorder:** A computer system that logs data to generate DETA profiles (plots of temperature vs. relative permittivity or dielectric loss).
 
 ![Block diagram of DETA experimental setup](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p018-1.webp)
@@ -594,6 +620,7 @@ The experimental setup for Dielectric Thermal Analysis consists of several key c
 > Block diagram of a Dielectric Thermal Analysis (DETA) experimental setup. A programmable furnace (enclosed by a dashed box) contains a sample placed between two electrodes. An AC source is connected across the sample and electrodes. External components connected via lines include: Environmental control equipment, Dielectric analyzer, Recorder/PC, Thermocouple/Temperature sensor, and Temperature control equipment.
 
 ### Working Principle
+
 The sample is positioned between the two parallel plate electrodes inside the programmable furnace. An alternating electric field (sinusoidal voltage) is applied to the first electrode, and the response signal is measured at the second electrode. While the temperature is ramped at a controlled rate, a dielectric analyzer records changes in relative permittivity (\(\varepsilon'\)) and dielectric loss (\(\varepsilon''\)) at constant frequency.
 
 For example, in the DETA profile of Polyethylene terephthalate (PET), the glass-rubber transition of the polymer appears as a characteristic step increase in relative permittivity (\(\varepsilon'\)) and a corresponding peak in dielectric loss (\(\varepsilon''\)) around \(150^\circ\text{C}\).
@@ -601,6 +628,7 @@ For example, in the DETA profile of Polyethylene terephthalate (PET), the glass-
 ### Applications and Advantages
 
 **Applications:**
+
 1. Analysis of polymers, plastics, glasses, ceramics, pharmaceuticals, foods, and proteins.
 2. Identification of phase transition temperatures, particularly the glass-rubber transition (\(T_g\)) in polymers that may remain undetected by conventional thermal techniques.
 3. Monitoring the curing profiles, flow behavior, melting, and crystallization of thermosetting polymers and composite materials.
@@ -608,5 +636,6 @@ For example, in the DETA profile of Polyethylene terephthalate (PET), the glass-
 5. Developing novel electrical insulating materials and energy storage systems based on high-temperature dielectric performance.
 
 **Advantages:**
+
 1. Applicable to solid, semi-solid, and liquid sample states.
 2. Exhibits superior sensitivity compared to many standard thermal analysis methods.

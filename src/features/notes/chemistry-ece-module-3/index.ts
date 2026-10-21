@@ -26,5 +26,6 @@ export function chemistryEceModule3(branch: "ece" | "eee"): NotesModule {
     source: "Processed from the supplied KTU GXCYT122 Module 3 study notes for ECE/EEE.",
     pages,
     chapters,
+    outlinedProblems: "numbered",
   };
 }

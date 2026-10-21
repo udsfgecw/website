@@ -4,13 +4,28 @@ const textOf = (node: { value?: string; children?: unknown[] }): string =>
   node.value ?? (node.children ?? []).map((child) => textOf(child as Parameters<typeof textOf>[0])).join("");
 
 /** Keep a worked example's heading, question, calculations and answer in one card. */
-export default function remarkProblemCards() {
+export default function remarkProblemCards(options: { numberedProblems?: boolean } = {}) {
   return (tree: Root) => {
     const result: RootContent[] = [];
     let practice = false;
 
     for (let i = 0; i < tree.children.length; i++) {
       const node = tree.children[i];
+      if (options.numberedProblems && node.type === "paragraph" && /^Problem\s+\d+\s*[:.)]/i.test(textOf(node).trim())) {
+        const children: RootContent[] = [node];
+        while (i + 1 < tree.children.length) {
+          const next = tree.children[i + 1];
+          if (next.type === "heading" || (next.type === "paragraph" && /^Problem\s+\d+\s*[:.)]/i.test(textOf(next).trim()))) break;
+          children.push(next);
+          i++;
+        }
+        result.push({
+          type: "blockquote",
+          children: children as Blockquote["children"],
+          data: { hName: "div", hProperties: { className: ["notes-problem-card"] } },
+        });
+        continue;
+      }
       if (node.type === "heading") {
         const title = textOf(node).trim();
         practice = /^Numerical practice problems$/i.test(title);

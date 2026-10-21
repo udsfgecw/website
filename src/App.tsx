@@ -87,6 +87,20 @@ export default function App() {
           <Route path="/notes/:branch/s1/chemistry/module-2/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/chemistry/module-3/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/chemistry/module-4/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/graphics/m1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/graphics/m2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/graphics/m3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/graphics/m4/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/graphics/question-papers/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/electrical/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/electrical/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/electrical/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/electrical/question-papers/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/python/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/python/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/python/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/python/module-4/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/python/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/electrical/module-1/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/electrical/module-2/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/electrical/module-3/:page?" element={<ImportedModulePage />} />

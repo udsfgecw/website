@@ -27,7 +27,9 @@ The new idea: Materials exhibit drastically altered properties when reduced to d
 
 Nanomaterials are defined as materials having components with a size less than $100\text{ nm}$ at least in one dimension. They can comprise metals, ceramics, polymeric materials, or composite materials.
 
-**Nanotechnology** is the study of manipulating matter on an atomic and molecular scale. Generally, nanotechnology deals with structures sized between $1$ to $100\text{ nanometers}$ in at least one dimension, and involves developing materials or devices within that size. The term "nano" means a billionth ($1 \times 10^{-9}\text{ m}$ or $1\text{ nm}$).
+**Nanotechnology**
+
+Nanotechnology is the study of manipulating matter on an atomic and molecular scale. Generally, nanotechnology deals with structures sized between $1$ to $100\text{ nanometers}$ in at least one dimension, and involves developing materials or devices within that size. The term "nano" means a billionth ($1 \times 10^{-9}\text{ m}$ or $1\text{ nm}$).
 
 ### Classification of Nanomaterials
 
@@ -60,7 +62,9 @@ Nanoparticles of metal oxides can be prepared by the hydrolysis of their alkoxid
 
 $$\text{Ti(OR)}_4 + 2\text{H}_2\text{O} \rightarrow \text{TiO}_2 + 4\text{ROH}$$
 
-**Sol-Gel Process:** This technique is based on the phase transformation of a sol into a gel. Hydrolysis of metallic alkoxides or metal salts yields a sol at a suitable temperature and pH. Since the sol contains impurities, it is transformed into a gel by altering factors such as pH. The resulting gel is purified by filtration and washing with suitable solvents. Drying the purified gel produces solid nanoparticles.
+**Sol-Gel Process**
+
+Sol-Gel Process is this technique based on the phase transformation of a sol into a gel. Hydrolysis of metallic alkoxides or metal salts yields a sol at a suitable temperature and pH. Since the sol contains impurities, it is transformed into a gel by altering factors such as pH. The resulting gel is purified by filtration and washing with suitable solvents. Drying the purified gel produces solid nanoparticles.
 
 For instance, aluminium nanoparticles are obtained via the hydrolysis of aluminium alkoxide using the sol-gel technique:
 
@@ -70,8 +74,9 @@ $$2\text{Al(OR)}_3 + 3\text{H}_2\text{O} \rightarrow \text{Al}_2\text{O}_3 + 3\t
 
 Nanoparticles of noble metals like gold and silver can be prepared by reducing their respective salt solutions using suitable reducing agents such as sodium borohydride (\(\text{NaBH}_4\)), glucose, or trisodium citrate.
 
-**Reduction using reducing agents:**
-Nanoparticles of molybdenum can be produced from \(\text{MoCl}_2\) in a toluene solution using \(\text{NaBH(C}_2\text{H}_5)_3\) as a reducing agent at room temperature:
+**Reduction using reducing agents**
+
+Reduction using reducing agents produces nanoparticles of molybdenum from \(\text{MoCl}_2\) in a toluene solution using \(\text{NaBH(C}_2\text{H}_5)_3\) as a reducing agent at room temperature:
 
 $$3\text{MoCl}_2 + 6\text{NaBH(C}_2\text{H}_5)_3 \rightarrow 3\text{Mo} + 6\text{NaCl} + 3\text{H}_2 + 6\text{B(C}_2\text{H}_5)_3$$
 
@@ -90,9 +95,13 @@ Building on general nanomaterials, we examine carbon nanotubes as specialized 1D
 Carbon is an element with four well-known allotropic forms: diamond, graphite, fullerene, and carbon nanotubes. Carbon nanotubes (CNTs), originally referred to as Bucky tubes, are one-dimensional nanoparticles characterized by tube-like structures with diameters ranging from approximately $1\text{ nm}$ to $30\text{ nm}$ and lengths on the order of millimeters. All atoms in CNTs are carbon. They are approximately $10^5$ times thinner than a human hair and at least $100$ times stronger than steel.
 
 ### Classification of CNTs
+
 Depending on the number of walls, carbon nanotubes are categorized into two main types: Single-Walled Carbon Nanotubes (SWCNTs) and Multi-Walled Carbon Nanotubes (MWCNTs).
 
 #### Single-Walled Carbon Nanotubes (SWCNTs)
+
+**Single-Walled Carbon Nanotubes**
+
 An SWCNT consists of only a single layer constructed by rolling up a one-atom-thick sheet of graphite (graphene) into a cylinder. The diameter of an SWCNT typically varies from $1\text{ nm}$ to $5\text{ nm}$.
 
 ![Armchair, zigzag, and chiral carbon nanotube structures](/assets/notes/ece/s1/chemistry/module-2/cnt.webp)
@@ -104,11 +113,15 @@ An SWCNT consists of only a single layer constructed by rolling up a one-atom-th
 > SWCNT atomic model. A 3D molecular model of a single-walled carbon nanotube showing a cylindrical lattice of carbon atoms with green and blue coloring.
 
 SWCNTs can be visualized as rolled-up tubular shells of a graphene sheet. Based on variations arising from specific orientations and rolling angles of the graphene sheets, SWCNTs are classified into three distinct types:
+
 1. **Armchair Nanotubes:** Exhibit an arrangement where the rolling axis aligns with the hexagonal lattice of graphene, resulting in equal edge lengths.
 2. **Zigzag Nanotubes:** Formed when the rolling axis is along the zigzag pattern of the graphene lattice, leading to edges consisting solely of zigzag lines.
 3. **Chiral Nanotubes:** Characterized by a rolling axis oriented at an angle to the graphene lattice, resulting in unequal edge lengths and a helical structure.
 
 #### Multi-Walled Carbon Nanotubes (MWCNTs)
+
+**Multi-Walled Carbon Nanotubes**
+
 An MWCNT consists of a stack of graphene sheets rolled up into concentric cylinders, resembling the growth rings of a tree trunk. They contain multiple concentric nanotube cylinders constructed one inside the other. The inner diameter of MWCNTs varies from $1.5\text{ nm}$ to $5\text{ nm}$ and the outer diameter varies from $2.5\text{ nm}$ to $30\text{ nm}$. Generally, SWCNTs are more stable and exhibit better-defined cylindrical shapes than MWCNTs.
 
 ![MWCNT nested atomic model](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-2.webp)
@@ -118,16 +131,19 @@ An MWCNT consists of a stack of graphene sheets rolled up into concentric cylind
 > MWCNT nested atomic model. A 3D molecular model of a multi-walled carbon nanotube showing multiple concentric cylindrical layers of carbon atoms in different colors (blue, red, orange).
 
 Three different structural models are proposed for MWCNTs:
+
 - **Russian Doll Model:** Sheets of graphene are arranged into concentric cylinders.
 - **Parchment Model:** A single graphene sheet is rolled around itself multiple times, similar to a scroll of parchment.
 - **Mixed Model:** A combination of both the Russian doll and parchment models.
 
 ### Properties of CNTs
+
 1. **Electrical Conductivity:** They are highly conducting and can behave as metallic or semiconducting materials depending on their chirality and diameter.
 2. **Thermal Conductivity:** They exhibit very high thermal conductivity and kinetic properties.
 3. **Chemical Inertness:** CNTs are chemically very inert and difficult to oxidize.
 
 ### Applications of CNTs
+
 1. **Shielding Materials:** Used as lightweight shielding materials for protecting sensitive electronic equipment.
 2. **Catalysts:** Act as efficient catalyst supports for various chemical reactions.
 3. **Water Treatment:** Used as a microscopic filter medium in water softening and filtration processes.
@@ -169,24 +185,57 @@ Fullerenes are stable, but not totally unreactive. The $\text{sp}^2$ hybridized 
 
 #### Properties of Fullerenes
 
-1. **Solubility**: Fullerenes are sparingly soluble in many solvents but soluble in toluene and $\text{CS}_2$.
-2. **Colour**:
+1. **Solubility**
+
+   Fullerenes are sparingly soluble in many solvents but soluble in toluene and $\text{CS}_2$.
+
+2. **Colour**
+
    - Fullerene ($\text{C}_{60}$) is a fine black powder.
    - Solutions of $\text{C}_{70}$ are reddish-brown in colour.
    - The higher fullerenes $\text{C}_{76}$ to $\text{C}_{84}$ have a variety of colours.
-3. **Conductivity**: Fullerenes are electrical insulators as there is no movement of electrons available from one molecule to another. However, when crystallized with alkali metals, the resultant compound can be conducting or even superconducting.
-4. **Hydrogenation**: As $\text{C}_{60}$ exhibits a small degree of aromatic character, it undergoes addition reactions with hydrogen.
-5. **Halogenation**: $\text{C}_{60}$ undergoes halogenation with F, Cl, and Br under a variety of conditions.
-6. **Physical Strength**: Fullerenes are extremely strong molecules, able to resist great pressures and will bounce back to their original shape after being subjected to over 3,000 atmospheres. They can withstand collisions of up to 15,000 mph against stainless steel, demonstrating exceptionally high stability.
-7. **Light Absorption**: Fullerenes absorb strongly in the UV region and moderately in the visible regions of the spectrum.
-8. **Chemical Reactivity**: The carbon atoms within a fullerene molecule are $\text{sp}^2$ and $\text{sp}^3$ hybridized, of which the $\text{sp}^2$ carbons are responsible for the considerable angle strain present. $\text{C}_{60}$ and $\text{C}_{70}$ exhibit the capacity to be reversibly reduced with up to six electrons.
+
+3. **Conductivity**
+
+   Fullerenes are electrical insulators as there is no movement of electrons available from one molecule to another. However, when crystallized with alkali metals, the resultant compound can be conducting or even superconducting.
+
+4. **Hydrogenation**
+
+   As $\text{C}_{60}$ exhibits a small degree of aromatic character, it undergoes addition reactions with hydrogen.
+
+5. **Halogenation**
+
+   $\text{C}_{60}$ undergoes halogenation with F, Cl, and Br under a variety of conditions.
+
+6. **Physical Strength**
+
+   Fullerenes are extremely strong molecules, able to resist great pressures and will bounce back to their original shape after being subjected to over 3,000 atmospheres. They can withstand collisions of up to 15,000 mph against stainless steel, demonstrating exceptionally high stability.
+
+7. **Light Absorption**
+
+   Fullerenes absorb strongly in the UV region and moderately in the visible regions of the spectrum.
+
+8. **Chemical Reactivity**
+
+   The carbon atoms within a fullerene molecule are $\text{sp}^2$ and $\text{sp}^3$ hybridized, of which the $\text{sp}^2$ carbons are responsible for the considerable angle strain present. $\text{C}_{60}$ and $\text{C}_{70}$ exhibit the capacity to be reversibly reduced with up to six electrons.
 
 #### Applications of Fullerenes
 
-1. **Coatings and Lubricants**: Used for making durable, high-performance coatings that resist wear and corrosion, and as miniature 'ball bearings' or catalysts to lubricate surfaces.
-2. **Biomedical**: Employed to deliver drugs to specific cells or tissues due to stable complex formation, and as contrast agents in imaging techniques such as MRI or ultrasound.
-3. **Energy Storage**: Employed in energy storage devices due to electrical conductivity and stability, including hydrogen storage.
-4. **Environmental**: Applied in water treatment for the removal of pollutants, and in sensors for detecting environmental toxins.
+1. **Coatings and Lubricants**
+
+   Used for making durable, high-performance coatings that resist wear and corrosion, and as miniature 'ball bearings' or catalysts to lubricate surfaces.
+
+2. **Biomedical**
+
+   Employed to deliver drugs to specific cells or tissues due to stable complex formation, and as contrast agents in imaging techniques such as MRI or ultrasound.
+
+3. **Energy Storage**
+
+   Employed in energy storage devices due to electrical conductivity and stability, including hydrogen storage.
+
+4. **Environmental**
+
+   Applied in water treatment for the removal of pollutants, and in sensors for detecting environmental toxins.
 
 ## Graphene
 
@@ -280,7 +329,9 @@ Among halogens, bromine is found to be more effective in quenching fire. However
 
 # Conducting Polymers
 
-**An organic polymer which can conduct electricity is called a conducting polymer. Examples include polyacetylenes, polyanilines, and polypyrroles. Broadly, they are categorized into:**
+**Conducting polymers**
+
+An organic polymer which can conduct electricity is called a conducting polymer. Examples include polyacetylenes, polyanilines, and polypyrroles. Broadly, they are categorized into:
 
 ### 1. Intrinsically Conducting Polymers
 This type of polymer has extensive conjugation in the backbone (continuous $\text{Sp}^2$ hybridized carbon centers) which is responsible for conductance. These are subdivided into two:
@@ -301,10 +352,14 @@ These polymers owe their conductivity to the presence of externally added ingred
 To become electrically conductive, the electrons of the polymer need to be free to move. The polymer having conjugated double bonds must be disturbed either by removing electrons from or inserting electrons into the polymer by oxidation or reduction. This process is known as doping.
 
 #### Types of Doping:
-1. **p-doping:** Oxidation with Lewis acids or halogens. In p-doping, an intrinsically conducting polymer or a polymer having conjugated $\text{C}=\text{C}$ bonds is treated with Lewis acids or halogens, which oxidizes the polymer and creates positively charged sites on the polymer backbone. Due to the positive charge, they act as good conductors of electricity similar to metals.
+1. **p-doping**
+
+   Oxidation with Lewis acids or halogens. In p-doping, an intrinsically conducting polymer or a polymer having conjugated $\text{C}=\text{C}$ bonds is treated with Lewis acids or halogens, which oxidizes the polymer and creates positively charged sites on the polymer backbone. Due to the positive charge, they act as good conductors of electricity similar to metals.
    * *Examples for p-dopant:* $\text{I}_2, \text{Br}_2, \text{AlCl}_3, \text{AsF}_5, \text{FeCl}_3$.
 
-2. **n-doping:** Reduction with Lewis bases or alkali metals. In n-doping, an intrinsically conducting polymer or a polymer having conjugated $\text{C}=\text{C}$ bonds is treated with Lewis bases or alkali metals, which reduces the polymer and creates negatively charged sites on the polymer backbone. Due to the negative charge, they act as good conductors of electricity.
+2. **n-doping**
+
+   Reduction with Lewis bases or alkali metals. In n-doping, an intrinsically conducting polymer or a polymer having conjugated $\text{C}=\text{C}$ bonds is treated with Lewis bases or alkali metals, which reduces the polymer and creates negatively charged sites on the polymer backbone. Due to the negative charge, they act as good conductors of electricity.
    * *Examples for n-dopant:* $\text{Na}, \text{K}, \text{Lithium naphthalides}$, etc.
 
 <!-- page 6 | Polyaniline, Polypyrrole, and OLEDs -->
@@ -415,9 +470,13 @@ The new idea: Dye-sensitized solar cells mimic natural photosynthesis using dye 
 
 ### Dye-Sensitized Solar Cells (DSSCs)
 
-Semiconductor metal oxide nanoparticles: Semiconducting metal oxides with high surface area and wide band gaps are used in DSSCs. $\text{TiO}_2$ is the commonly used metal oxide. Other metal oxide like $\text{ZnO}$ and $\text{SnO}_2$ are also used.
+**Semiconductor metal oxide nanoparticles**
 
-Dye/photo sensitiser: Surface of the metal oxide particle is coated with dye molecules. These dye molecules are responsible for absorbing sunlight and inject the photoexcited electrons to the conduction band of the semiconductor. Dye-sensitized metal oxide semiconductor acts as the anode. Ruthenium-based complexes and organic dyes are commonly used. Natural dyes extracted from plants can also be used as photosensitiser.
+Semiconductor metal oxide nanoparticles are semiconducting metal oxides with high surface area and wide band gaps that are used in DSSCs. $\text{TiO}_2$ is the commonly used metal oxide. Other metal oxide like $\text{ZnO}$ and $\text{SnO}_2$ are also used.
+
+**Dye/photo sensitiser**
+
+Dye/photo sensitiser refers to molecules where the surface of the metal oxide particle is coated with dye molecules. These dye molecules are responsible for absorbing sunlight and inject the photoexcited electrons to the conduction band of the semiconductor. Dye-sensitized metal oxide semiconductor acts as the anode. Ruthenium-based complexes and organic dyes are commonly used. Natural dyes extracted from plants can also be used as photosensitiser.
 
 ![Chemical structure of N3-dye](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p017-1.webp)
 
@@ -431,13 +490,19 @@ Dye/photo sensitiser: Surface of the metal oxide particle is coated with dye mol
 >
 > Chemical structure of N719 dye showing a Ruthenium (Ru) central atom coordinated with SCN, NCS groups, and bipyridine ligands with Bu4N+ and COO- groups. The text 'N719 dye' is centered below the structure.
 
-Electrolyte: Redox couple iodate/triiodide solution is used as the electrolyte. Electrolyte should have good contact with the dye-sensitized metal oxide semiconductor and the counter electrode.
+**Electrolyte**
 
-Counter electrode: Platinum or graphite based materials are employed as the counter electrodes, which acts as the cathode. It facilitates the reduction of the oxidized dye molecules and completes the electrical circuit.
+Electrolyte is a redox couple iodate/triiodide solution used as the electrolyte medium. Electrolyte should have good contact with the dye-sensitized metal oxide semiconductor and the counter electrode.
+
+**Counter electrode**
+
+Counter electrode consists of platinum or graphite based materials employed as the counter electrodes, which acts as the cathode. It facilitates the reduction of the oxidized dye molecules and completes the electrical circuit.
 
 ![Dye-sensitized solar cell structure and electron flow](/assets/notes/ece/s1/chemistry/module-2/dssc.webp)
 
-Working of Dye-sensitized solar cells: Sunlight passes through the transparent conductive oxide layer and the dye molecules coated on the metal oxide semiconductor absorb the light. The electrons of the dye molecule then get excited and are injected into the conduction band of the metal oxide semiconductor. These electrons travel through metal oxide and move towards the external circuit to generate electric current. Electrons reach the counter electrode through the circuit and generate electricity. The oxidized dye molecules will get reduced by gaining electrons from the electrolyte and come back to their original form. The oxidized electrolyte species diffuse towards the counter electrode and get reduced. This process continues to produce the current.
+**Working of Dye-sensitized solar cells**
+
+Working of Dye-sensitized solar cells involves sunlight passing through the transparent conductive oxide layer and the dye molecules coated on the metal oxide semiconductor absorb the light. The electrons of the dye molecule then get excited and are injected into the conduction band of the metal oxide semiconductor. These electrons travel through metal oxide and move towards the external circuit to generate electric current. Electrons reach the counter electrode through the circuit and generate electricity. The oxidized dye molecules will get reduced by gaining electrons from the electrolyte and come back to their original form. The oxidized electrolyte species diffuse towards the counter electrode and get reduced. This process continues to produce the current.
 
 #### Advantages of DSSC
 - The fabrication of DSSCs is simpler processes compared to conventional silicon solar cells.
@@ -454,11 +519,15 @@ Working of Dye-sensitized solar cells: Sunlight passes through the transparent c
 
 ### Materials in Quantum Computing Technologies
 
+**Quantum computing**
+
 Quantum computing is an emerging computer technology that uses the principle of quantum theory for computation. Quantum computers harness the properties such as superposition (quantum particles as combination of all possible states), entanglement (ability of quantum particles to correlate their measurement results with each other) and quantum interference (behaviour of a qubit, arising from superposition, which influences the probability of the qubit collapsing to one state or another upon measurement) for computing.
 
 Quantum computing uses quantum bits (qubits) that are superpositions of 'spin up' and 'spin down' states, allowing them to represent all numbers between 0 and 255 simultaneously. This allows quantum computers to perform many calculations in parallel. Spintronic devices have the potential for quantum computing. The spins of the electrons are expected to play an important role in the quantum computers, as they can be used as qubits or quantum bit. Hexagonal boron nitride, a material consisting of just a few monolayers of atoms, can be stacked to serve as the insulating layer in the capacitors used in superconducting qubits. Diamonds with nitrogen-vacancy (NV) centers, nanowires, including semiconductor, superconducting, and topological nanowires are also used in quantum computing. Metals like Al, Nb are used in used in superconducting circuits. Quantum dots materials like indium arsenide (InAs) and gallium arsenide (GaAs) are employed to produce single photons, which are crucial for quantum communication applications. Quantum computing requires very low temperatures to avoid decoherence so that qubits remains in their quantum states and prevents error rates.
 
 ### Supercapacitors
+
+**Supercapacitor**
 
 A supercapacitor is an electrochemical energy storage device, which can be used to store and deliver charge by reversible adsorption and desorption of ions at the interface between the electrode material and electrolyte. Supercapacitors are also called ultracapacitors or electrochemical capacitors.
 
@@ -492,6 +561,8 @@ In supercapacitors energy is stored electrostatically and electrochemically and 
 | High internal resistance | Very low internal resistance |
 
 ### Spintronics
+
+**Spintronics**
 
 Spintronics or spin-electronics is an emerging field that exploits the spin of electrons, in addition to charge, to process information in new generation transistors, lasers and integrated magnetic sensors. They act by storing information in electron spins, transmitting this information via mobile electrons and reading it at a terminal. Spin orientation lasts longer than charge-based information, making them suitable for memory storage, magnetic sensors and quantum computing.
 

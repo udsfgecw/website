@@ -1,7 +1,57 @@
-import { lazy } from "react";
+import { lazy, type ComponentType, type LazyExoticComponent } from "react";
 import { useLocation } from "react-router-dom";
 import ModuleNotesPage from "./ModuleNotesPage";
 import NotFoundPage from "@/pages/NotFoundPage";
+import type { NotesModule } from "@/features/notes/types";
+
+async function loadSharedCseNotes(subject: string, key: string): Promise<NotesModule> {
+  if (subject === "graphics") {
+    if (key === "m1") return (await import("@/features/notes/graphics-m1")).graphicsm1;
+    if (key === "m2") return (await import("@/features/notes/graphics-m2")).graphicsm2;
+    if (key === "m3") return (await import("@/features/notes/graphics-m3")).graphicsm3;
+    if (key === "m4") return (await import("@/features/notes/graphics-m4")).graphicsm4;
+    if (key === "question-papers") return (await import("@/features/notes/question-papers")).gmest103QuestionPapers;
+  }
+  if (subject === "electrical") {
+    if (key === "module-1") return (await import("@/features/notes/electrical-module-1")).electricalmodule1;
+    if (key === "module-2") return (await import("@/features/notes/electrical-module-2")).electricalmodule2;
+    if (key === "module-3") return (await import("@/features/notes/electrical-module-3")).electricalmodule3;
+    if (key === "question-papers") return (await import("@/features/notes/question-papers")).gxest104QuestionPapers;
+  }
+  if (subject === "python") {
+    if (key === "module-1") return (await import("@/features/notes/python-module-1")).pythonmodule1;
+    if (key === "module-2") return (await import("@/features/notes/python-module-2")).pythonmodule2;
+    if (key === "module-3") return (await import("@/features/notes/python-module-3")).pythonmodule3;
+    if (key === "module-4") return (await import("@/features/notes/python-module-4")).pythonmodule4;
+    if (key === "question-papers") return (await import("@/features/notes/question-papers")).ucest105QuestionPapers;
+  }
+  throw new Error(`Unknown shared CSE notes: ${subject}/${key}`);
+}
+
+const sharedModules: Record<string, LazyExoticComponent<ComponentType>> = {};
+for (const branch of ["ece", "eee"] as const) {
+  for (const [subject, keys] of [["graphics", ["m1", "m2", "m3", "m4", "question-papers"]], ["electrical", ["module-1", "module-2", "module-3", "question-papers"]], ["python", ["module-1", "module-2", "module-3", "module-4", "question-papers"]]] as const) {
+    for (const key of keys) {
+      const route = `/notes/${branch}/s1/${subject}/${key}`;
+      sharedModules[route] = lazy(async () => {
+        const source = await loadSharedCseNotes(subject, key);
+        const branchName = branch.toUpperCase();
+        const notes: NotesModule = {
+          ...source,
+          basePath: route,
+          storageKey: source.storageKey.replace("cse", branch),
+          title: source.title.replace("CSE", branchName),
+          trail: source.trail.map((item) => ({
+            ...item,
+            label: item.label === "CSE" ? branchName : item.label,
+            href: item.href?.replace("/notes/cse", `/notes/${branch}`),
+          })),
+        };
+        return { default: () => <ModuleNotesPage notes={notes} /> };
+      });
+    }
+  }
+}
 
 // Each route loads only its own Markdown; the catalogue imports lightweight paths.
 const modules = {
@@ -218,6 +268,6 @@ const modules = {
 export default function ImportedModulePage() {
   const pathname = useLocation().pathname.replace(/\/$/, "");
   const basePath = pathname.replace(/\/[^/]+$/, "");
-  const Module = modules[pathname as keyof typeof modules] ?? modules[basePath as keyof typeof modules];
+  const Module = modules[pathname as keyof typeof modules] ?? modules[basePath as keyof typeof modules] ?? sharedModules[pathname] ?? sharedModules[basePath];
   return Module ? <Module /> : <NotFoundPage />;
 }
