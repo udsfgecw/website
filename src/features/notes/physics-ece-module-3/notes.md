@@ -143,6 +143,8 @@ $$P = E \varepsilon_0 (\varepsilon_r - 1) \longrightarrow (4)$$
 Equation $(4)$ gives the fundamental relation between polarization and the dielectric constant (relative permittivity $\varepsilon_r$). The general vector form of the relation is:
 $$\vec{D} = \varepsilon_0 \vec{E} + \vec{P}$$
 
+![Diagram showing a dielectric slab between two plates with polarization and displacement vectors](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-3/assets/p008-1.webp)
+
 > **Figure: Diagram showing a dielectric slab between two plates with polarization and displacement vectors**
 >
 > A diagram showing a rectangular dielectric slab placed horizontally between two charged regions. A top horizontal line has '+' signs above and '-' signs below it. A bottom horizontal line has '+' signs above the bottom surface of the slab and '-' signs below it. On the left, four vertical lines with downward-pointing arrows pass through the slab, labelled 'D' at the bottom. On the right, four vertical lines with upward-pointing arrows inside the slab point upwards towards the top surface, labelled 'P' below the bottom region.
@@ -164,11 +166,15 @@ The new idea: Total polarization is the sum of distinct microscopic mechanisms o
 
 The electronic polarization arises due to the displacement of the electron cloud of an atom relative to its nucleus in the presence of an applied electric field.
 
+![Electronic Polarisation diagrams showing unpolarized atom with E=0 and polarized atom with E pointing right](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-3/assets/p009-1.webp)
+
 > **Figure: Electronic Polarisation diagrams showing unpolarized atom with E=0 and polarized atom with E pointing right**
 >
 > Two diagrams illustrating electronic polarisation. The left diagram is labelled 'unpolarized atom' with 'E = 0' above it, showing a circular electron cloud with negative signs and a central positive nucleus represented by a plus sign inside a small circle. The right diagram is labelled 'Polarized atom' with an electric field arrow pointing right labelled 'E' above it, showing an oval-shaped (horizontally elongated) electron cloud with negative signs and a central positive nucleus shifted to the right side inside a small circle.
 
 It is the polarization of a single atom in a dielectric material. The polarization as well as the dielectric constant of a material at optical frequency results mainly from electronic polarizability. The electronic polarization is proportional to electric field $E$ and is given by:
+
+![Equation for electronic polarisation](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-3/assets/p010-1.webp)
 
 > **Figure: Equation for electronic polarisation**
 >
@@ -212,11 +218,15 @@ where $e$ is electronic charge, $\omega_0$ is the natural frequency of ionic osc
 
 Orientation polarization is exhibited by polar molecules such as $\text{H}_2\text{O}$, $\text{HCl}$, phenol, etc. Polar molecules have a permanent dipole moment even in the absence of an electric field. In the absence of an electric field, the permanent dipoles are oriented randomly so that the net dipole moment is zero.
 
+![Diagram showing random dipole orientations with E=0 and no applied field](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-3/assets/p013-1.webp)
+
 > **Figure: Diagram showing random dipole orientations with E=0 and no applied field**
 >
 > A rectangular box representing a dielectric medium containing several small arrows pointing in random, varying directions. Below the box, the text reads E = 0 No applied field.
 
 When an electric field is applied to a polar molecule, the dipole experiences a torque and aligns parallel to the applied field.
+
+![Diagram showing aligned dipoles with E > 0 with field](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-3/assets/p013-2.webp)
 
 > **Figure: Diagram showing aligned dipoles with E > 0 with field**
 >
@@ -269,6 +279,8 @@ The local field experienced by a molecule differs from the macroscopic applied f
 To calculate the internal field acting on a particular molecule, we imagine carving out a microscopic spherical cavity around the molecule under consideration. The total internal field $E_m$ at the center of this cavity is given by the superposition of four distinct electric field components:
 
 $$E_m = E_1 + E_2 + E_3 + E_4$$
+
+![Internal field diagram between two plates with a dielectric sphere inside](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-3/assets/p017-1.webp)
 
 > **Figure: Internal field diagram between two plates with a dielectric sphere inside**
 >

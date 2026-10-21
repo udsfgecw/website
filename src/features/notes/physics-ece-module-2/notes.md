@@ -33,6 +33,8 @@ Rectifiers are generally classified into two basic types:
 
 A half-wave rectifier is a type of rectifier that converts only half of the input AC signal into a pulsating DC output signal, while the remaining half of the signal is blocked or lost. In a half-wave rectifier, a single p-n junction diode is connected in series with a load resistor and an AC supply (typically fed via a step-up or step-down transformer).
 
+![Half wave rectifier circuit diagram and input-output waveforms](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p003-1.webp)
+
 > **Figure: Half wave rectifier circuit diagram and input-output waveforms**
 >
 > Half wave rectifier circuit diagram and input-output waveforms. The top shows a transformer with a primary winding connected to an AC voltage source (indicated by a circle with a sine wave symbol) and a secondary winding connected between terminals A and B, with AC voltage V_in across them. Terminal A connects in series with a diode pointing right and a load resistor R_L, with output voltage V_o (or V_out) across it. Arrows indicate current direction. Below the circuit are two waveform graphs with axes labelled t and V_in or V_out: the input voltage graph shows a complete sinusoidal wave against time t, and the output voltage graph shows only the positive half-cycles of the sine wave against time t.
@@ -86,6 +88,8 @@ $$\text{Maximum Rectifier Efficiency} = \frac{4}{\pi^2} \approx 0.406 \text{ or 
 
 ### Full-Wave Rectifier Preview
 
+![Centre tap full wave rectifier circuit diagram and output waveform](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p007-1.webp)
+
 > **Figure: Centre tap full wave rectifier circuit diagram and output waveform**
 >
 > Centre tap full wave rectifier circuit diagram and output waveform. A circuit diagram showing an AC source connected to the primary winding of a transformer. The secondary winding AB has a centre tap O. Diode D1 is connected in series with terminal A, and diode D2 is connected in series with terminal B. Both diodes feed into a common load resistor RL that is connected back to the centre tap O. Arrows show the direction of current flow. To the right, a graph of Voutput versus time shows a rectified pulsating DC waveform consisting of a sequence of positive half-sine waves labelled alternately D1, D2, D1, D2.
@@ -120,17 +124,23 @@ where $V_m$ is the maximum secondary voltage.
 
 To overcome the limitations of the centre-tap configuration, the bridge rectifier uses four diodes without requiring a centre-tapped transformer.
 
+![Full wave bridge rectifier circuit diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p009-1.webp)
+
 > **Figure: Full wave bridge rectifier circuit diagram**
 >
 > Full wave bridge rectifier circuit diagram. A circuit diagram showing an AC input connected to the primary winding of a transformer. The secondary winding has terminals P and Q. Terminal P connects to a bridge network of four diodes (D1, D2, D3, D4). Between the input junctions A and B of the bridge, a load resistor RL is connected with polarity minus at the top and plus at the bottom, leading to ground. Ground symbol is also connected between diodes D1 and D2 at node A.
 
 *Figure 1: Full wave bridge rectifier circuit diagram*
 
+![Secondary voltage waveform](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p009-2.webp)
+
 > **Figure: Secondary voltage waveform**
 >
 > Secondary voltage waveform. A sinusoidal voltage waveform plot with axes Vo versus t. The sine wave shows positive and negative alternating half cycles, with an arrow pointing to the wave labelled secondary voltage.
 
 *Figure 2: Secondary voltage waveform*
+
+![Output voltage waveform Vout](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p009-3.webp)
 
 > **Figure: Output voltage waveform Vout**
 >
@@ -198,6 +208,8 @@ A Zener diode is a heavily doped $pn$ junction diode engineered to operate safel
 ### Introduction and Construction
 While standard p-n junction diodes are designed to block reverse current, heavily doped silicon p-n junction diodes called **Zener diodes** are specifically engineered to operate stably in the reverse breakdown region without getting damaged. Due to heavy doping concentration, the depletion region of a Zener diode is extremely thin. Consequently, a high electric field is established across the junction even at relatively low reverse voltages.
 
+![Symbol of zener diode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p014-1.webp)
+
 > **Figure: Symbol of zener diode**
 >
 > Symbol of zener diode. A standard diode symbol with a triangular anode pointing right, a vertical cathode line with bent tips pointing outwards at the top and bottom, and connecting horizontal lines on the left and right terminals. Text beside reads Symbol of zener diode.
@@ -209,6 +221,8 @@ The standard circuit symbol of a Zener diode is similar to that of a normal p-n 
 ### Working Principle of Zener Diode
 1. **Forward-Biased Condition:** When the Zener diode is forward-biased, it behaves exactly like an ordinary p-n junction diode, allowing current to flow freely once the cut-in voltage (approx. $0.7\text{ V}$ for silicon) is exceeded.
 2. **Reverse-Biased Condition:** When reverse-biased, a very small leakage current (reverse saturation current) flows due to thermally generated minority carriers. As the reverse voltage is increased and reaches a critical value known as the **Zener breakdown voltage** ($V_z$), the diode begins to conduct heavily. The reverse current increases sharply, but the voltage across the Zener terminals remains remarkably constant.
+
+![Diagram of a reverse-biased pn junction diode showing thin depletion region and circuit connections](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p016-1.webp)
 
 > **Figure: Diagram of a reverse-biased pn junction diode showing thin depletion region and circuit connections**
 >
@@ -225,6 +239,8 @@ As the reverse voltage exceeds $V_z$, the strong electric field across the narro
 - It is not immediately destroyed upon entering the breakdown region, provided the power dissipation remains within safe manufacturer limits.
 
 ### I-V Characteristics of a Zener Diode
+
+![I-V characteristics of a Zener diode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p017-1.webp)
 
 > **Figure: I-V characteristics of a Zener diode**
 >
@@ -278,6 +294,8 @@ Building upon the heavy doping concepts explored in Zener diodes, extreme doping
 
 A tunnel diode is a heavily doped p-n junction diode that exhibits a negative resistance region in its forward-biased condition. Due to heavy doping, the depletion region becomes extremely thin (in the order of $10^{-8}\text{ m}$). This allows charge carriers to penetrate the potential barrier rather than surmount it, a quantum mechanical phenomenon known as tunneling.
 
+![Tunnel diode symbol](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p021-1.webp)
+
 > **Figure: Tunnel diode symbol**
 >
 > Tunnel diode symbol. Circuit symbol for a tunnel diode, showing a standard diode symbol with a horizontal bar across the top of the cathode bar, and a vertical line through the center representing the leads, with the label "Tunnel diode Symbol" beside it.
@@ -295,6 +313,8 @@ In a heavily doped p-n junction:
 ### VI Characteristics of a Tunnel Diode
 
 The current-voltage (VI) characteristics of a tunnel diode display distinct operational regions as the forward voltage is increased:
+
+![VI characteristics of a Tunnel Diode graph](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p023-1.webp)
 
 > **Figure: VI characteristics of a Tunnel Diode graph**
 >
@@ -334,6 +354,8 @@ A **photodetector** requires the following key operational characteristics:
 
 Common examples include photodiodes and phototransistors. The standard circuit symbol for a photodiode features a conventional diode symbol enclosed in a circle with two arrows pointing *towards* the device, indicating incident light.
 
+![Photodiode symbol](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p027-1.webp)
+
 > **Figure: Photodiode symbol**
 >
 > Circuit symbol of a photodiode showing a diode symbol with two arrows pointing towards the diode. The left terminal is labelled 'Anode' and the right terminal is labelled 'cathode'.
@@ -343,6 +365,8 @@ Common examples include photodiodes and phototransistors. The standard circuit s
 A junction photodiode is a reverse-biased p-n junction embedded in a clear plastic medium where the current varies linearly with incident light flux.
 
 #### Construction and Working Principle
+
+![Construction diagram of a junction photodiode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p028-1.webp)
 
 > **Figure: Construction diagram of a junction photodiode**
 >
@@ -367,6 +391,8 @@ To maximize sensitivity, the dark current must be minimized, and the depletion r
 ### 3. PIN Photodiode
 
 To overcome the speed and absorption limitations of standard p-n junction photodiodes, the **PIN photodiode** inserts a wide, lightly-doped intrinsic (I) region between heavily doped p-type and n-type semiconductor layers.
+
+![Structure of a PIN Diode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p033-1.webp)
 
 > **Figure: Structure of a PIN Diode**
 >
@@ -396,11 +422,15 @@ Solar cells are solid-state semiconductor devices that directly convert solar ra
 
 A solar cell consists of a heavily doped p-n junction with a large surface area to maximize light absorption. The top n-type layer is made extremely thin so that incident photons can easily penetrate the depletion region. An antireflection coating is applied on the topmost surface to minimize optical reflection losses, accompanied by metallic grid contacts to collect the generated charge carriers without blocking incoming sunlight. The bottom contact covers the p-type layer.
 
+![Solar cell diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p035-1.webp)
+
 > **Figure: Solar cell diagram**
 >
 > Solar cell cross-section diagram showing an upper n-type semiconductor layer with striped metal fingers and an antireflection layer on top. Sunlight is indicated by wavy downward arrows labelled 'Sunlight'. Below the n-type layer is a thicker p-type layer. At the bottom of the p-type layer is a hatched metal contact strip labelled 'metal contact'. A label points to the top antireflection layer with the text 'Antireflection layer'.
 
 When sunlight strikes the semiconductor wafer, photons with energy greater than or equal to the band gap energy ($h\nu \ge E_g$) excite valence band electrons into the conduction band, creating electron-hole pairs. The built-in electric field of the p-n junction sweeps the photogenerated electrons toward the n-type region and holes toward the p-type region. When an external load is connected, these charge carriers flow through the circuit, generating a usable electric current.
+
+![Circuit diagram of a solar cell with voltmeter, ammeter, and load resistance](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p036-1.webp)
 
 > **Figure: Circuit diagram of a solar cell with voltmeter, ammeter, and load resistance**
 >
@@ -408,6 +438,8 @@ When sunlight strikes the semiconductor wafer, photons with energy greater than 
 
 ### I-V Characteristics and Power Output
 The electrical performance of a solar cell is evaluated using its current-voltage ($I$-$V$) characteristics curve.
+
+![I-V curve and power output of a solar cell](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p037-1.webp)
 
 > **Figure: I-V curve and power output of a solar cell**
 >
@@ -434,6 +466,8 @@ Connecting the positive terminal of one solar cell to the negative terminal of t
 $$V_{oc(\text{total})} = N \times V_{oc}$$
 $$I_{sc(\text{total})} = I_{sc}$$
 
+![Diagram showing solar cells connected in series/parallel combination with voltage readings](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p042-1.webp)
+
 > **Figure: Diagram showing solar cells connected in series/parallel combination with voltage readings**
 >
 > Hand-drawn circuit diagram showing four solar cells arranged horizontally in a row. The cells are connected by lines representing electrical connections. A smaller box below two adjacent cells shows a voltage of 0.6V, and a larger box spanning across the bottom of the entire four-cell assembly shows a voltage of 2.4V.
@@ -443,9 +477,13 @@ Connecting all positive terminals together and all negative terminals together m
 $$V_{oc(\text{total})} = V_{oc}$$
 $$I_{sc(\text{total})} = N \times I_{sc}$$
 
+![Four solar cells connected in parallel with a voltage of 0.6V](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p043-1.webp)
+
 > **Figure: Four solar cells connected in parallel with a voltage of 0.6V**
 >
 > Hand-drawn schematic diagram showing four rectangular solar cells stacked vertically, connected in parallel. A voltage value of 0.6 V is indicated in a box connected across the parallel configuration.
+
+![Current vs Voltage characteristics for series and parallel solar cell configurations](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p043-2.webp)
 
 > **Figure: Current vs Voltage characteristics for series and parallel solar cell configurations**
 >
@@ -460,6 +498,8 @@ $$I_{sc(\text{total})} = N \times I_{sc}$$
 A Light Emitting Diode (LED) is a heavily doped p-n junction diode that emits spontaneous radiation when it is forward-biased. While conventional diodes convert electrical energy into heat and standard reverse-biased photodiodes convert light into electrical energy, an LED performs the direct reverse of a photodiode: it converts electrical energy directly into optical radiation through a process called **electroluminescence**.
 
 When the p-n junction is forward-biased by an external DC voltage source, the potential barrier at the junction is significantly reduced. This allows electrons from the n-region to cross over into the p-region, and holes from the p-region to cross over into the n-region. As these minority carriers drift across the junction, they recombine with majority carriers. During this electron-hole recombination event, the relaxing electrons fall from the conduction band to the valence band, releasing their excess energy. In direct band gap semiconductors, this energy is released primarily in the form of photons (light quanta) rather than heat.
+
+![LED structure and circuit symbol](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-2/assets/p045-1.webp)
 
 > **Figure: LED structure and circuit symbol**
 >

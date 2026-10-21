@@ -39,6 +39,8 @@ The fundamental differences between an electrolytic cell and a galvanic cell are
 
 The Daniell cell is a classic example of a galvanic cell that harnesses a spontaneous redox reaction to generate electrical energy. It consists of two half-cells: a zinc rod immersed in a zinc sulfate ($\text{ZnSO}_4$) solution acting as the anode, and a copper rod immersed in a copper sulfate ($\text{CuSO}_4$) solution acting as the cathode.
 
+![Galvanic cell diagram with salt bridge](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p004-1.webp)
+
 > **Figure: Galvanic cell diagram with salt bridge**
 >
 > Galvanic cell diagram showing an anode half-cell on the left with a Zn rod immersed in ZnSO4 solution, labelled Anode (Oxidation) and Zn. A cathode half-cell on the right with a Cu rod immersed in CuSO4 solution, labelled Cathode (Reduction) and Cu with a plus sign. An inverted U-shaped salt bridge containing KCL connects the two beakers. A voltmeter is connected at the top with arrows indicating electron flow from Zn to Cu.
@@ -109,6 +111,8 @@ Eg. Glass electrode consists of an ion selective membrane sensitive to $\text{H}
 
 It consists of inert platinum electrode dipped in $1\text{ M HCl}$. Which is in contact with $\text{H}_2$ gas at $1\text{ atm}$ pressure at $298\text{ K}$.
 
+![Diagram of The Standard Hydrogen Electrode (SHE)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p006-1.webp)
+
 > **Figure: Diagram of The Standard Hydrogen Electrode (SHE)**
 >
 > Diagram of The Standard Hydrogen Electrode (SHE). It shows a beaker containing 1M Hydrochloric acid solution, an outer glass jacket surrounding an inner tube through which hydrogen gas (H2(g)) at 1 atm enters, a platinum wire extending from the top and connected to the high resistance voltmeter, and a platinised platinum electrode covered in platinum black at the bottom inside the jacket.
@@ -141,6 +145,8 @@ An electrochemical series is a series in which the electrodes are arranged in th
 
 Calomel electrode can be represented as, $\text{Pt,Hg}(l)\mid\text{Hg}_2\text{Cl}_2(s)\mid\text{KCl(sat)}$
 
+![Diagram of a Calomel electrode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p009-1.webp)
+
 > **Figure: Diagram of a Calomel electrode**
 >
 > Diagram of a Calomel electrode. A schematic diagram showing labels for Saturated KCl, Hg + Hg2Cl2, Hg, and Pt wire. The electrode has an inner glass tube containing mercury and a paste of mercury and calomel, surrounded by a jacket of saturated potassium chloride solution.
@@ -150,6 +156,8 @@ $$\text{Hg}_2\text{Cl}_2 + 2\text{e}^- \rightarrow 2\text{Hg} (l) + 2\text{Cl}^-
 
 #### Working of Calomel Electrode (Determination of Electrode Potential)
 In order to measure the electrode potential of an electrode (e.g., Zn electrode), it is coupled with SCE using a digital voltmeter. The voltmeter reading will give the cell emf. The reduction potential of SCE is $0.2422\text{ V}$, which is higher than the reduction potential of $\text{Zn}^{2+}/\text{Zn}$ ($-0.76\text{ V}$). Therefore, reduction reaction takes place at SCE.
+
+![Experimental setup for determining electrode potential using a calomel electrode coupled with a Zn electrode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p009-2.webp)
 
 > **Figure: Experimental setup for determining electrode potential using a calomel electrode coupled with a Zn electrode**
 >
@@ -189,6 +197,8 @@ $$2\text{Hg} + 2\text{Cl}^- \rightarrow \text{Hg}_2\text{Cl}_2 + 2\text{e}^-$$
 * It is then filled with $0.1\text{ N}$ $\text{HCl}$ solution. $\text{HCl}$ in the bulb furnishes a constant $\text{H}^{+}$ ion concentration.
 * The electrode representation is written as:
 $$\text{Ag/AgCl}/0.1\text{ M H}^+$$
+
+![Diagram of a glass electrode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p010-1.webp)
 
 > **Figure: Diagram of a glass electrode**
 >
@@ -234,6 +244,8 @@ The new idea: Arranging electrodes in order of reduction potential to quantitati
 Objectives: Define the electrochemical series and understand standard reduction potentials; Predict feasibility of redox reactions and metal displacement; Calculate standard cell EMF.
 
 Concepts to teach: Electrochemical series, standard reduction potential, standard cell EMF, displacement reactions, equilibrium constant, spontaneity of redox reactions.
+
+![Electrochemical series showing half reactions and standard potentials](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p007-1.webp)
 
 > **Figure: Electrochemical series showing half reactions and standard potentials**
 >
@@ -352,6 +364,8 @@ $$\mathbf{\text{Cell Constant} = \frac{\text{Conductivity } (k)}{\text{Conductan
 
 ## Types of Electrochemical Cells
 
+![Primary Cell and Secondary Cell comparison boxes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p014-1.webp)
+
 > **Figure: Primary Cell and Secondary Cell comparison boxes**
 >
 > Two side-by-side comparative text boxes describing types of electrochemical cells. The left box features an orange header with the text 'PRIMARY CELL' and contains the description: 'A PRIMARY CELL IS A BATTERY THAT IS DESIGNED TO BE USED ONCE AND DISCARDED, AND NOT RECHARGED WITH ELECTRICITY AND REUSED LIKE A SECONDARY CELL IN GENERAL. THE ELECTROCHEMICAL REACTION OCCURRING IN THE CELL IS NOT REVERSIBLE, RENDERING THE CELL UNRECHARGEABLE.' The right box features a pink header with the text 'SECONDARY CELL' and contains the description: 'A SECONDARY CELL IS A TYPE OF ELECTRICAL BATTERY WHICH CAN BE CHARGED, DISCHARGED INTO A LOAD, AND RECHARGED MANY TIMES, AS OPPOSED TO A DISPOSABLE OR PRIMARY BATTERY, WHICH IS SUPPLIED FULLY CHARGED AND DISCARDED AFTER USE.'
@@ -375,6 +389,8 @@ The new idea: Intercalation-based energy storage in lithium batteries and contin
 ### Lithium-Ion Battery Mechanisms
 
 A Lithium-ion cell is a rechargeable battery that operates through the intercalation and de-intercalation of lithium ions between the anode and cathode materials during charging and discharging cycles.
+
+![Diagram of a Lithium-ion cell showing Anode, Cathode, Separator, and Electrolyte with charge and discharge directions.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p015-1.webp)
 
 > **Figure: Diagram of a Lithium-ion cell showing Anode, Cathode, Separator, and Electrolyte with charge and discharge directions.**
 >
@@ -404,6 +420,8 @@ $$2\text{H}_{2(\text{g})} + \text{O}_{2(\text{g})} \rightarrow 2\text{H}_2\text{
 * **Electrodes:** Two porous graphite electrodes impregnated with metal catalysts such as platinum.
 * **Electrolyte:** A fabric-like matrix made of teflon-bonded silicon carbide dispersed with highly concentrated phosphoric acid ($\text{H}_3\text{PO}_4$) acts as an Arrhenius acid electrolyte to transport hydrogen ions ($\text{H}^+$).
 * **Operating Parameters:** Hydrogen and oxygen gases under high pressure ($50\text{ atm}$) are continuously passed through the anodic and cathodic chambers respectively. The cell operates at temperatures between $150\,^{\circ}\text{C}$ and $200\,^{\circ}\text{C}$ to overcome the low ionic conductivity of phosphoric acid at lower temperatures. Cooling plates are used to maintain a stable operating temperature near $200\,^{\circ}\text{C}$.
+
+![Diagram of a Hydrogen-Oxygen Acid Fuel Cell](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p017-1.webp)
 
 > **Figure: Diagram of a Hydrogen-Oxygen Acid Fuel Cell**
 >
@@ -530,6 +548,8 @@ $$E^{\circ} = 0.40 - (-0.44) = 0.84\text{ V}$$
 
 Relative corrosion affinities of metals and alloys can be systematically evaluated using the galvanic series. This series is established by studying the corrosion behavior of metals and alloys in unpolluted seawater, accounting for surface conditions and oxide films. A metal higher in this series is more active/anodic and undergoes corrosion faster than a metal positioned below it.
 
+![Galvanic series listing various metals and alloys from Active or Anodic to Noble or Cathodic](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p021-1.webp)
+
 > **Figure: Galvanic series listing various metals and alloys from Active or Anodic to Noble or Cathodic**
 >
 > A vertical galvanic series list with an arrow pointing upwards. At the top of the arrow is the label 'Active or Anodic' and at the bottom is 'Noble or Cathodic'. The numbered list from 1 to 27 contains: 1. Mg, 2. Mg Alloy, 3. Zn, 4. Al, 5. Cd, 6. Al Alloy, 7. Mild Steel, 8. Cast Iron, 9. High Ni Cast Iron, 10. Pb-Sn Solder, 11. Pb, 12. Sn, 13. Inconel, 14. Ni-Mo-Fe Alloys, 15. Brass, 16. Monel (30% Cu, 7% Ni and rest Fe), 17. Ag Solder, 18. Cu, 19. Ni, 20. Cr Stainless steel, 21. 18-8 Stainless Steel, 22. 18-8 Mo Stainless Steel, 23. Ag, 24. Ti, 25. Graphite, 26. Au, 27. Pt.
@@ -560,11 +580,15 @@ In cathodic protection, the metal to be protected is made to act as a cathode so
 
 a) **Sacrificial anodic protection:** The metal to be protected is connected by an external metallic wire to a more anodic (active) metal. The more active metal undergoes oxidation and sacrifices itself while the protected metal remains intact. Common sacrificial metals include magnesium ($\text{Mg}$), zinc ($\text{Zn}$), aluminum ($\text{Al}$), and their alloys.
 
+![Diagram showing sacrificial anodic protection of a metal pipe using a magnesium anode connected by a wire.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p022-1.webp)
+
 > **Figure: Diagram showing sacrificial anodic protection of a metal pipe using a magnesium anode connected by a wire.**
 >
 > Diagram showing sacrificial anodic protection. A cylindrical pipe is connected by an external wire to a vertical magnesium (Mg) block. Arrows indicate electrons (e-) flowing from the Mg block to the pipe, and oxidation of Mg to Mg2+ ions near the block. The caption reads 'Sacrificial anodic protection'.
 
 b) **Impressed current cathodic protection:** An external direct current is applied in the opposite direction to nullify the natural corrosion current, converting the corroding structure from an anode to a cathode. The required direct current is supplied via a DC power source connected to an insoluble auxiliary anode (such as graphite or high-silica iron) buried in the ground or immersed in the liquid. This method is widely used for protecting open water box coolers, storage tanks, and buried pipelines.
+
+![Diagram of impressed current cathodic protection](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p023-1.webp)
 
 > **Figure: Diagram of impressed current cathodic protection**
 >

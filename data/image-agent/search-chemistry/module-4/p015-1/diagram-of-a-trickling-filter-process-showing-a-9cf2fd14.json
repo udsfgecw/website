@@ -1,0 +1,19 @@
+{
+  "description": "Diagram of a Trickling filter process showing a circular tank filled with filtering medium (broken bricks/crushed rocks). Labeled parts include: Effluent from primary treatment entering from the left, a central vertical pipe with Rotary arms at the top, air flow arrows pointing up and down through the filtering media, treated effluent flowing to a settling tank on the right with a chlorination arrow pointing down, an Effluent output, and a Sludge output at the bottom of the settling tank.",
+  "file": "diagram-of-a-trickling-filter-process-showing-a-9cf2fd14.png",
+  "source": "wikimedia-commons",
+  "pageUrl": "https://commons.wikimedia.org/wiki/File:Trickling_Filter_diagram.svg",
+  "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Trickling_Filter_diagram.svg/1280px-Trickling_Filter_diagram.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "license": "CC BY 3.0",
+  "author": "Eawag: Swiss Federal Institute of Aquatic Science and Technology Technical drawings: designport, Paolo Monaco, Zurich See http://ecompendium.sswm.info/copyright",
+  "verifiedBy": "gemini-3.5-flash-lite",
+  "review": {
+    "match": true,
+    "score": 9,
+    "shows": "A detailed diagram of a trickling filter system showing filtering medium, sprinklers, feed pipe, air flow, and outlet collection.",
+    "problems": [
+      "The secondary settling tank and chlorination steps are not fully detailed in this specific crop/version of the diagram, focusing primarily on the filter bed itself."
+    ]
+  },
+  "title": "Trickling Filter diagram"
+}

@@ -50,6 +50,8 @@ $$A + h\nu = A^*$$
 
 Where $A$ is an atom in the lower state and $A^*$ is an excited atom.
 
+![Absorption process energy level diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p002-1.webp)
+
 > **Figure: Absorption process energy level diagram**
 >
 > Energy level diagram for absorption with two panels separated by a dashed vertical line. The left panel is labelled 'before' and shows two horizontal energy levels labelled E_2 (with number 2 at the right end) and E_1 (with number 1 at the right end). An atom is represented as a dot on the E_1 level, and an arrow indicating an incoming photon of energy hnu points towards it from the left. The right panel is labelled 'after' and shows the same two energy levels E_2 and E_1, with the atom now located as a dot on the higher energy level E_2.
@@ -69,6 +71,8 @@ An atom in the excited state can stay in the higher energy level only for a fini
 
 $$A^* = A + h\nu$$
 
+![Spontaneous emission energy level transition diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p003-1.webp)
+
 > **Figure: Spontaneous emission energy level transition diagram**
 >
 > Spontaneous emission energy level transition diagram showing energy levels E2 and E1. On the left under 'before', energy level E2 has a particle represented by a dot, and E1 is empty, with a vertical dashed transition line labelled 1. On the right under 'after', E2 is empty and E1 has a particle, with an emitted photon indicated by a wavy arrow labelled 2.
@@ -87,6 +91,8 @@ An atom in the excited state interacts with an external photon of matching energ
 The process may be expressed as:
 
 $$A^* + h\nu = A + 2h\nu$$
+
+![Diagram showing stimulated emission before and after](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p004-1.webp)
 
 > **Figure: Diagram showing stimulated emission before and after**
 >
@@ -197,6 +203,8 @@ In a laser system, an optical resonator produces a highly directional and highly
 
 **Structure of an Optical Resonator:** An optical resonator is a cavity consisting of two reflecting mirrors and an active medium. The active medium is placed between the mirrors. One mirror is fully reflecting and the other one is partially reflecting.
 
+![Laser resonant cavity diagram with fully reflecting mirror, active medium, partially reflecting mirror, and output laser beam.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p007-1.webp)
+
 > **Figure: Laser resonant cavity diagram with fully reflecting mirror, active medium, partially reflecting mirror, and output laser beam.**
 >
 > Laser resonant cavity diagram showing a vertical line on the left representing the 'Fully reflecting mirror' with horizontal arrows pointing right towards a rectangular box labeled 'Active medium' which has horizontal arrows inside representing photons. To the right of the active medium, another vertical line represents the 'Partially reflecting mirror', followed by horizontal arrows extending to the right labeled 'Output beam (laser)'.
@@ -241,12 +249,16 @@ The three basic components of a laser system are the active medium, pumping proc
 2. **Pumping Process:** Optical pumping is used to excite the chromium ions. The ruby rod is surrounded by a helical quartz tube containing Xenon gas at low pressure. Electrical discharge is maintained inside the tube through a capacitor bank. The flash of the Xenon tube produces optical pumping lasting for several milliseconds. Only a part of this energy is utilized to pump the $\text{Cr}^{3+}$ ions; the remaining energy heats up the apparatus, necessitating an external cooling mechanism.
 3. **Resonant Cavity:** The ends of the ruby rod are ground and polished flat, with one end completely silvered (fully reflecting) and the other partially silvered. These parallel ends form an optical resonant cavity.
 
+![Diagram of a Ruby laser setup showing xenon flash tube, ruby rod, fully reflecting and partially reflecting ends, and cooling system.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p008-1.webp)
+
 > **Figure: Diagram of a Ruby laser setup showing xenon flash tube, ruby rod, fully reflecting and partially reflecting ends, and cooling system.**
 >
 > Diagram of a Ruby laser showing a cylindrical Xenon flash tube wrapped helically around a central Ruby rod. The left end of the ruby rod is labeled 'Fully reflecting' and the right end is labeled 'Partially reflecting'. An outer glass rod or envelope encloses them. A laser beam is shown emerging from the right end. The cooling system connections are indicated with arrows at the bottom. Circuit connections with a capacitor and power source are shown connected to the Xenon flash tube.
 
 #### Working
 Chromium atoms in the ruby absorb green and blue light from the Xenon flash tube.
+
+![Energy level diagram of Ruby Laser](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p009-1.webp)
 
 > **Figure: Energy level diagram of Ruby Laser**
 >
@@ -263,6 +275,8 @@ Chromium atoms in the ruby absorb green and blue light from the Xenon flash tube
 
 #### Construction
 
+![Construction of a semiconductor laser diode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p010-1.webp)
+
 > **Figure: Construction of a semiconductor laser diode**
 >
 > 3D schematic diagram of a semiconductor laser diode showing p-type and n-type layers, an active region, roughened surfaces on the sides, optically flat and polished parallel faces at the front and rear emitting a laser beam, and ohmic contacts at the top and bottom with vertical arrows indicating Current.
@@ -270,6 +284,8 @@ Chromium atoms in the ruby absorb green and blue light from the Xenon flash tube
 Semiconductor laser diodes are extremely small in size, with side dimensions on the order of $1\text{ mm}$. The p-n junction lies in the horizontal plane through the center. The top and bottom faces are metallized to provide ohmic contacts for passing current through the diode. The front and rear faces are polished parallel to each other and perpendicular to the junction to act as the resonant cavity. The other two opposite faces are roughened to suppress transverse lasing. The active region consists of an ultrathin layer of about $1\text{ }\mu\text{m}$ thickness.
 
 #### Working and Population Inversion
+
+![Energy band diagram of a semiconductor laser under forward bias](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p010-2.webp)
 
 > **Figure: Energy band diagram of a semiconductor laser under forward bias**
 >
@@ -348,6 +364,8 @@ Transitioning from laser light sources, we investigate how light is guided over 
 
 The fundamental principle underlying optical fiber communication is **Total Internal Reflection**. If the angle of incidence in the denser medium is greater than the critical angle $\theta_c$, the incident ray is reflected back into the same medium completely.
 
+![Diagram illustrating Total Internal Reflection in an optical fiber with denser medium n1 and rarer medium n2, showing critical angle theta_c and angles greater than theta_c.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p015-1.webp)
+
 > **Figure: Diagram illustrating Total Internal Reflection in an optical fiber with denser medium n1 and rarer medium n2, showing critical angle theta_c and angles greater than theta_c.**
 >
 > Ray diagram illustrating total internal reflection with two horizontal regions: a top rarer medium with refractive index n2 and a bottom denser medium with refractive index n1. Rays originate at the boundary and travel from the denser to the rarer medium. Three points A, B, and C are marked along the interface from left to right. At point A, the angle of incidence equals the critical angle theta_c and the ray refracts along the boundary. At point B, the angle of incidence equals theta_c and the ray reflects entirely within the denser medium. At point C, the angle of incidence is greater than theta_c, marked as >theta_c, and the ray reflects completely back into the denser medium.
@@ -359,6 +377,8 @@ The conditions required for total internal reflection are:
 ### Structure of an Optical Fiber
 
 An optical fiber is a cylindrical dielectric waveguide consisting of three concentric coaxial regions:
+
+![Diagram showing the structure of an optical fiber consisting of Core, Cladding, and Protective plastic coating.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p015-2.webp)
 
 > **Figure: Diagram showing the structure of an optical fiber consisting of Core, Cladding, and Protective plastic coating.**
 >
@@ -377,9 +397,13 @@ Optical fibers are broadly classified based on the refractive index profile of t
 2. Step-index multimode fiber
 3. Graded-index multimode fiber
 
+![Step index fibre profile and propagation modes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p016-1.webp)
+
 > **Figure: Step index fibre profile and propagation modes**
 >
 > FIG. 15: Step index multimode fibre. Sub-figure (a) shows the fiber cross-section with core diameter 50 micrometers and cladding diameter 125 micrometers, and a step-like refractive index profile graph with n1 = 1.470, n2 = 1.455, and radial distance on the horizontal axis. Sub-figure (b) shows various modes propagating through the step index multimode fiber in zigzag paths.
+
+![Graded index fibre profile and propagation modes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p016-2.webp)
 
 > **Figure: Graded index fibre profile and propagation modes**
 >
@@ -417,6 +441,8 @@ The new idea: Numerical aperture quantifies the light gathering capacity of an o
 
 Communication systems that carry information through a guided optical fibre cable are called fibre optic communication systems. The information carrying capacity of a communication system is directly proportional to its bandwidth. The major components of an optical communication system are an **Optical Transmitter**, **Optical Fibre transmission line**, and **Optical Receiver**.
 
+![Block diagram of an optical communication system](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p017-1.webp)
+
 > **Figure: Block diagram of an optical communication system**
 >
 > Block diagram of an optical communication system showing a Transmitter section enclosed in a dashed box containing blocks numbered 1, 2, and 3 connected in sequence; a middle section representing the OPTICAL FIBRE / TRANSMISSION NETWORK containing block 4; and a Receiver section enclosed in a dashed box containing blocks 5, 6, and 7 connected in sequence. The blocks are labelled below as: 1. Subscriber's Telephone, 2. Encoder, 3. Optical Transmitter, 4. Optical Fibre link, 5. semiconductor photo detector, 6. Decoder, 7. Subscriber's Telephone.
@@ -443,9 +469,13 @@ $$\alpha_m = \sin^{-1}(\text{NA})$$
 
 ### Derivation of Numerical Aperture and Acceptance Angle
 
+![Ray propagation in a step-index optical fiber](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p019-1.webp)
+
 > **Figure: Ray propagation in a step-index optical fiber**
 >
 > Ray propagation diagram for a step-index optical fiber. Shows a central core of refractive index n1 and diameter/region labeled 'Core', surrounded by cladding labeled 'Cladding' of refractive index n2, situated in an external medium of refractive index n0. A dashed horizontal center axis runs along the length of the core. An incoming ray from the lower-left enters the core face at an angle of incidence alpha with respect to the normal/axis, refracts at an angle theta to the axis, and travels to strike the core-cladding interface at an angle phi to the normal, where it undergoes total internal reflection and continues forward inside the core.
+
+![Optical fiber acceptance angle illustration](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-4/assets/p020-1.webp)
 
 > **Figure: Optical fiber acceptance angle illustration**
 >

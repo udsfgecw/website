@@ -34,6 +34,8 @@ Nanomaterials are defined as materials having components with a size less than $
 #### Classification Based on Dimensions
 Nanomaterials are classified into four types based on the number of dimensions that are not confined to the nanoscale range ($\le 100\text{ nm}$):
 
+![Classification table of nanomaterials based on dimensions](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p002-1.webp)
+
 > **Figure: Classification table of nanomaterials based on dimensions**
 >
 > Classification table of nanomaterials based on dimensions. A table with three columns labelled S.No, Co-ordinates, and Examples. Row 1: 1, 0-dimension, Nanoclusters, nanoparticles. Row 2: 2, 1-dimension, Nanotubes, nanowires. Row 3: 3, 2-dimension, Thin Films, surface coatings. Row 4: 4, 3-dimension, Precipitates, colloids.
@@ -93,9 +95,13 @@ Depending on the number of walls, carbon nanotubes are categorized into two main
 #### Single-Walled Carbon Nanotubes (SWCNTs)
 An SWCNT consists of only a single layer constructed by rolling up a one-atom-thick sheet of graphite (graphene) into a cylinder. The diameter of an SWCNT typically varies from $1\text{ nm}$ to $5\text{ nm}$.
 
+![Three renderings of single-walled carbon nanotubes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p004-1.webp)
+
 > **Figure: Three renderings of single-walled carbon nanotubes**
 >
 > Three 3D renderings of single-walled carbon nanotubes showing the hexagonal atomic lattice structure, displayed against a blue-to-purple background gradient. The leftmost rendering shows a complete cylindrical nanotube, while the two renderings to the right show partially unrolled or angled tubular graphene sheets.
+
+![SWCNT atomic model](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-1.webp)
 
 > **Figure: SWCNT atomic model**
 >
@@ -109,6 +115,8 @@ SWCNTs can be visualized as rolled-up tubular shells of a graphene sheet. Based 
 #### Multi-Walled Carbon Nanotubes (MWCNTs)
 An MWCNT consists of a stack of graphene sheets rolled up into concentric cylinders, resembling the growth rings of a tree trunk. They contain multiple concentric nanotube cylinders constructed one inside the other. The inner diameter of MWCNTs varies from $1.5\text{ nm}$ to $5\text{ nm}$ and the outer diameter varies from $2.5\text{ nm}$ to $30\text{ nm}$. Generally, SWCNTs are more stable and exhibit better-defined cylindrical shapes than MWCNTs.
 
+![MWCNT nested atomic model](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-2.webp)
+
 > **Figure: MWCNT nested atomic model**
 >
 > MWCNT nested atomic model. A 3D molecular model of a multi-walled carbon nanotube showing multiple concentric cylindrical layers of carbon atoms in different colors (blue, red, orange).
@@ -117,6 +125,8 @@ Three different structural models are proposed for MWCNTs:
 - **Russian Doll Model:** Sheets of graphene are arranged into concentric cylinders.
 - **Parchment Model:** A single graphene sheet is rolled around itself multiple times, similar to a scroll of parchment.
 - **Mixed Model:** A combination of both the Russian doll and parchment models.
+
+![Classification chart of Carbon Nanotubes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-3.webp)
 
 > **Figure: Classification chart of Carbon Nanotubes**
 >
@@ -145,6 +155,8 @@ Three different structural models are proposed for MWCNTs:
 
 Fullerenes are zero-dimensional, hollow, closed-cage nanoparticles composed entirely of carbon atoms. They consist of fused hexagonal rings and alternating pentagonal rings of carbon closed in spherical or ellipsoidal geometries.
 
+![Fullerene / buckyball and C20 fullerene](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p006-1.webp)
+
 > **Figure: Fullerene / buckyball and C20 fullerene**
 >
 > Two chemical structure diagrams side-by-side representing fullerenes. (a) Fullerene / buckyball: a spherical cage structure composed of interconnected pentagonal and hexagonal carbon rings, illustrating a buckyball. (b) C20 fullerene: a smaller cage structure composed entirely of pentagonal rings forming a dodecahedral shape. Labels underneath are (a) Fullerene / buckyball and (b) C20 fullerene.
@@ -162,6 +174,8 @@ Bridge: From 1D nanotubes, we expand to zero-dimensional closed cages (fullerene
 The new idea: Graphene serves as the fundamental 2D building block of all graphitic materials, exhibiting massless relativistic charge carriers and extreme mechanical flexibility.
 
 ### Fullerenes ($C_{60}$)
+
+![C60 bucky ball fullerene structure](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p007-1.webp)
 
 > **Figure: C60 bucky ball fullerene structure**
 >
@@ -193,6 +207,8 @@ Fullerenes are stable, but not totally unreactive. The $\text{sp}^2$ hybridized 
 ## Graphene
 
 Graphene is an allotrope of carbon consisting of a monolayer of carbon atoms arranged in a two-dimensional honeycomb lattice. It can be visualized as a single layer extracted from the layered structure of graphite. Graphite is three-dimensional whereas graphene is two-dimensional with a thickness of one atom.
+
+![Graphite and Graphene structure comparison](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p009-1.webp)
 
 > **Figure: Graphite and Graphene structure comparison**
 >
@@ -258,6 +274,8 @@ A polymer may consist of monomers of identical or different chemical structures,
 
 Most of the polymers contain organic compounds as monomers and are flammable. **Fire-retardant polymers resist ignition and slow the spread of flames.** Phenolic polymers such as novolac and bakelite, as well as aromatic heterocyclic polyimides and polybenzoxazoles, are examples of intrinsically fire-resistant polymers.
 
+![Examples for non-halogenated fire-retardant polymers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p011-1.webp)
+
 > **Figure: Examples for non-halogenated fire-retardant polymers**
 >
 > Figure 2.4: Examples for non-halogenated fire-retardant polymers. Shows a chemical reaction pathway where 'n' molecules of Methylol phenol link to form 'Novolac' via a condensation reaction releasing water molecules. Below Novolac, the complex 2D cross-linked chemical structure of 'Bakelite' is shown with alternating phenolic rings connected by CH2 bridges and pendant OH groups. At the bottom, the chemical structures for 'Polyimide' and 'Polybenzoxazole' are shown side by side, consisting of alternating aromatic and heterocyclic rings connected by chemical bonds.
@@ -265,6 +283,8 @@ Most of the polymers contain organic compounds as monomers and are flammable. **
 Figure 2.4: Examples for non-halogenated fire-retardant polymers. Shows a chemical reaction pathway where 'n' molecules of Methylol phenol link to form 'Novolac' via a condensation reaction releasing water molecules. Below Novolac, the complex 2D cross-linked chemical structure of 'Bakelite' is shown with alternating phenolic rings connected by $CH_2$ bridges and pendant OH groups.
 
 Halogenated polymers are also fire-retardant polymers. Fire is a free radical chain reaction system which contains radicals such as $\text{H}^{\bullet}$, $\text{OH}^{\bullet}$, $\text{OOH}^{\bullet}$, and $\text{CH}^{\bullet}_3$. In the case of halogenated polymers like PVC and polybrominated styrene, halogen radicals ($\text{Cl}^{\bullet}$, $\text{Br}^{\bullet}$) are introduced into the fire, which combine with hydrogen and hydroxyl radicals to form stable molecules like $\text{HX}$ and $\text{HOX}$ (where $\text{X}$ can be $\text{Cl}$ or $\text{Br}$), resulting in quenching of the chain reaction.
+
+![Examples for halogenated fire-retardant polymers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p012-1.webp)
 
 > **Figure: Examples for halogenated fire-retardant polymers**
 >
@@ -317,6 +337,8 @@ The new idea: Organic light-emitting diodes generate radiation through the recom
 
 Polyaniline is a conjugated polymer considered as an organic metal. Its conductivity and thermal dependence of conductivity are like those of semi-metals, but all other properties are like those of metals. It is prepared by the slow addition of an aqueous solution of ammonium persulphate to a solution of aniline in aqueous $\text{HCl}$ at a lower temperature ($0\text{-}5^\circ\text{C}$). The precipitate formed is separated by filtration, which is emeraldine hydrochloride.
 
+![Preparation reaction of Polyaniline from Aniline and Ammonium persulphate](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p014-1.webp)
+
 > **Figure: Preparation reaction of Polyaniline from Aniline and Ammonium persulphate**
 >
 > Preparation reaction of Polyaniline from Aniline and Ammonium persulphate. Chemical reaction showing n molecules of Aniline (a benzene ring with NH2 group) plus n (NH4)2S2O8 (Ammonium persulphate) reacting via an arrow to form Polyaniline (bracketed repeat unit with a benzene ring attached to an N-H group and subscript n) plus H2SO4.
@@ -342,6 +364,8 @@ Polypyrrole is an organic polymer formed by the polymerization of pyrrole. Polym
 
 Polypyrrole is prepared by oxidation (p-doping) of pyrrole using ferric chloride in methanol.
 
+![Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p014-2.webp)
+
 > **Figure: Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride**
 >
 > Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride. Chemical reaction showing n molecules of Pyrrole (a five-membered ring with NH at the bottom) plus n FeCl3 reacting via an arrow to form Polypyrrole (bracketed repeat unit showing two connected pyrrole rings with alternating double bonds and N-H groups, with subscript n).
@@ -362,6 +386,8 @@ The polymerization and p-doping can also be carried out electrochemically.
 ### OLED (Organic Light Emitting Diode)
 
 An organic light emitting diode (OLED) is a light-emitting diode in which the emissive electroluminescent layer is a film of an organic compound that emits light in response to an electric current. An organic semiconductor is situated between two electrodes: the anode and cathode. The HOMO (Highest Occupied Molecular Orbital) and the LUMO (Lowest Unoccupied Molecular Orbital) of organic semiconductors are analogous to the valence and conduction bands of inorganic semiconductors.
+
+![Diagram of an OLED structure showing layers and emission of radiation](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p015-1.webp)
 
 > **Figure: Diagram of an OLED structure showing layers and emission of radiation**
 >
@@ -413,9 +439,13 @@ Semiconductor metal oxide nanoparticles: Semiconducting metal oxides with high s
 
 Dye/photo sensitiser: Surface of the metal oxide particle is coated with dye molecules. These dye molecules are responsible for absorbing sunlight and inject the photoexcited electrons to the conduction band of the semiconductor. Dye-sensitized metal oxide semiconductor acts as the anode. Ruthenium-based complexes and organic dyes are commonly used. Natural dyes extracted from plants can also be used as photosensitiser.
 
+![Chemical structure of N3-dye](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p017-1.webp)
+
 > **Figure: Chemical structure of N3-dye**
 >
 > Chemical structure of N3-dye showing a Ruthenium (Ru) central atom coordinated with SCN, NCS groups, and bipyridine ligands functionalized with COOH groups. The text 'N3-dye' is centered below the structure.
+
+![Chemical structure of N719 dye](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p017-2.webp)
 
 > **Figure: Chemical structure of N719 dye**
 >
@@ -424,6 +454,8 @@ Dye/photo sensitiser: Surface of the metal oxide particle is coated with dye mol
 Electrolyte: Redox couple iodate/triiodide solution is used as the electrolyte. Electrolyte should have good contact with the dye-sensitized metal oxide semiconductor and the counter electrode.
 
 Counter electrode: Platinum or graphite based materials are employed as the counter electrodes, which acts as the cathode. It facilitates the reduction of the oxidized dye molecules and completes the electrical circuit.
+
+![Schematic representation of DSSC](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p017-3.webp)
 
 > **Figure: Schematic representation of DSSC**
 >
@@ -453,6 +485,8 @@ Quantum computing uses quantum bits (qubits) that are superpositions of 'spin up
 ### Supercapacitors
 
 A supercapacitor is an electrochemical energy storage device, which can be used to store and deliver charge by reversible adsorption and desorption of ions at the interface between the electrode material and electrolyte. Supercapacitors are also called ultracapacitors or electrochemical capacitors.
+
+![Supercapacitor How It Works diagram showing charged and discharged states](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p019-1.webp)
 
 > **Figure: Supercapacitor How It Works diagram showing charged and discharged states**
 >

@@ -1,0 +1,18 @@
+{
+  "description": "Daniell cell galvanic cell diagram with zinc and copper electrodes and salt bridge",
+  "file": "daniell-cell-galvanic-cell-diagram-with-zinc-and-dde4197c.jpg",
+  "source": "wikimedia-commons",
+  "pageUrl": "https://commons.wikimedia.org/wiki/File:%C3%89l%C3%A9ment_Daniell.jpg",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/%C3%89l%C3%A9ment_Daniell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "Public domain",
+  "author": "Gillard",
+  "verifiedBy": "gemini-3.5-flash-lite",
+  "review": {
+    "match": true,
+    "score": 9,
+    "shows": "An antique historical diagram of a Daniell cell showing a zinc electrode, copper electrode, and a porous vessel acting as the barrier.",
+    "problems": [
+      "Uses a porous pot instead of a conventional U-tube salt bridge, though this is historically accurate for a Daniell cell."
+    ]
+  }
+}

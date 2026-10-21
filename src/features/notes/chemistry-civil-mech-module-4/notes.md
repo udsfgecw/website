@@ -33,6 +33,8 @@ The new idea: Expressing diverse mineral impurities into a unified scale of calc
 
 Water described as "hard" is high in dissolved minerals, specifically calcium and magnesium. Hard water is not a health risk, but a nuisance because of mineral buildup on fixtures, poor soap and detergent performance, and the formation of scales in boilers. Hardness is classified into two types: temporary and permanent hardness.
 
+![Table comparing temporary and permanent hardness of water](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p002-1.webp)
+
 > **Figure: Table comparing temporary and permanent hardness of water**
 >
 > A table comparing temporary and permanent hardness of water with two columns: Temporary Hardness and Permanent Hardness. Row 1: Temporary hardness is due to the presence of bicarbonates of calcium and magnesium. | It is due to the presence of chlorides of Sulfates of Calcium and Magnesium. Row 2: Can be removing by boiling. | Can't be removing by boiling. Row 3: Hardness removal is cheap. | Hardness removal is expensive. Row 4: H2O(l) + CO2(g) + CaCO3(s) -> Ca(HCO3)2(aq) | aq. + CaSO4(s) -> Ca2+(aq) + SO4 2-(aq).
@@ -116,11 +118,15 @@ Ion exchange resins are insoluble, cross-linked, long-chain organic polymers hav
 - **Cation exchange resin ($RH^+$)** contains acidic functional groups like $-\text{COOH}$, $-\text{SO}_3\text{H}$, etc. They are basically styrene-divinylbenzene copolymers which, upon sulphonation or carboxylation, attain the capability to exchange their $\text{H}^+$ ions with cations present in water.
 - **Anion exchange resin ($ROH^-$)** contains basic functional groups like $-\text{OH}$, $-\text{NH}_2$. They are basically styrene-divinylbenzene or amine-formaldehyde copolymers containing quaternary ammonium groups, which upon treatment with $\text{NaOH}$ attain the capability to exchange their $\text{OH}^-$ ions with anions of water.
 
+![Cation exchange resin chemical structure](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p004-1.webp)
+
 > **Figure: Cation exchange resin chemical structure**
 >
 > Chemical structure of cation exchange resin showing a polymer backbone with a benzene ring attached, substituted with SO3H. Labelled at the bottom as Cation exchange resin.
 
 Cation exchange resin chemical structure. Chemical structure of cation exchange resin showing a polymer backbone with a benzene ring attached, substituted with $\text{SO}_3\text{H}$. Labelled at the bottom as Cation exchange resin.
+
+![Anion exchange resin chemical structure](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p004-2.webp)
 
 > **Figure: Anion exchange resin chemical structure**
 >
@@ -178,6 +184,8 @@ Water containing high concentrations of dissolved salts with a brackish taste is
 - **Osmosis:** When two solutions of unequal concentrations are separated by a semipermeable membrane, the solvent flows from the dilute to the concentrated solution.
 - **Reverse Osmosis:** If a hydrostatic pressure greater than the osmotic pressure is applied, the solvent flows through the semipermeable membrane in the opposite direction (from the concentrated to the dilute solution).
 - In this process, a pressure of the order of $15$ to $40\text{ kg/cm}^2$ is applied to seawater to force pure water out through the semipermeable membrane, leaving behind dissolved solids. Commonly used membranes are made of polymethacrylate, polysulphones, etc.
+
+![Reverse osmosis process diagram showing sea water, semi-permeable membrane, and pure water under pressure.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p006-1.webp)
 
 > **Figure: Reverse osmosis process diagram showing sea water, semi-permeable membrane, and pure water under pressure.**
 >
@@ -240,6 +248,8 @@ Break point of chlorination is defined as the addition of a sufficient amount of
 
 If we plot residual chlorine against applied chlorine, we obtain a characteristic curve. The dip in the curve shows the break point.
 
+![Break point of chlorination graph showing residual chlorine vs applied chlorine](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p007-1.webp)
+
 > **Figure: Break point of chlorination graph showing residual chlorine vs applied chlorine**
 >
 > Line graph representing the Break point of chlorination. The y-axis represents 'Chlorine residuals (mg/L)' with values from 0 to 5. The x-axis represents 'Applied chlorine' with values from 0 to 11. The curve starts at the origin, rises with a section labelled 'Destruction of chlorine residual by reducing compounds' (around point A), passes through 'Formation of chloro-organic and chloramine compounds' and 'Combined residuals', reaches a peak labelled 'B' ('Destruction of chloramines and chloro organic compounds'), dips to a local minimum labelled 'Breakpoint' at point 'C', and then rises linearly as 'Free and combined residuals' and 'Free residual'.
@@ -268,6 +278,8 @@ Chloramine is an effective disinfectant whose residuals remain in water for a lo
 #### 3. Using Ozone
 
 Ozone is an excellent disinfectant used in gaseous form. It is produced by passing a silent electric discharge through cold and dry oxygen. Unstable ozone breaks down to liberate nascent oxygen, a powerful oxidizing agent that destroys bacteria and oxidizes organic matter.
+
+![Chemical reactions for the production and decomposition of ozone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p008-1.webp)
 
 > **Figure: Chemical reactions for the production and decomposition of ozone**
 >
@@ -303,6 +315,8 @@ Disinfection can be brought about by exposing water to UV light using a quartz t
 ### Sewage (Wastewater)
 
 Sewage is liquid waste including human waste, household waste, and industrial waste. It contains $99.99\%$ water and $0.01\%$ organic matter, inorganic matter, suspended impurities, and colloidal impurities. Sewage contains both aerobic and anaerobic bacteria that drive the oxidation of organic compounds.
+
+![Table distinguishing between aerobic and anaerobic oxidation](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p009-1.webp)
 
 > **Figure: Table distinguishing between aerobic and anaerobic oxidation**
 >
@@ -340,6 +354,8 @@ Chemical Oxygen Demand is defined as the amount of oxygen required for the compl
 
 The COD test takes only about $3\text{ hours}$ to complete compared to the $5\text{ days}$ required for BOD. Because chemical oxidants break down both biodegradable and non-biodegradable compounds, COD values are always greater than BOD values.
 
+![Table comparing BOD and COD](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p011-1.webp)
+
 > **Figure: Table comparing BOD and COD**
 >
 > Table comparing BOD and COD. It has two main columns titled BOD and COD, and three rows of comparisons covering what they measure, test duration, and relative values.
@@ -365,6 +381,8 @@ Bridge: Having defined sewage pollution metrics like BOD and COD, we now study m
 The new idea: Combining physical settling, biological microbial degradation, and advanced chemical polishing to systematically clean complex wastewater streams.
 
 ### Flow diagram of sewage (Wastewater) treatment
+
+![Flow diagram of sewage wastewater treatment](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p012-1.webp)
 
 > **Figure: Flow diagram of sewage wastewater treatment**
 >
@@ -405,6 +423,8 @@ $$\text{HNO}_2 + \text{HNO}_3 \xrightarrow{\text{Bases present in soil}} \text{N
 - The treated (clearer) water is collected at the bottom through the drainage system.
 - This process reduces organic impurities and improves water quality.
 
+![Diagram of a trickling filter system](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p013-1.webp)
+
 > **Figure: Diagram of a trickling filter system**
 >
 > Cross-section diagram of a Trickling Filter apparatus. Features a central rotating sewage distributor at the top, a container filled with filtering media (crushed stones) in the middle, and an under drainage system at the bottom. Labels point to: Sewage distributor, Ground level, Sewage inlet, Filtering media, Under drainage System, and Effluent outlet. The bottom center is labelled Trickling Filter.
@@ -421,6 +441,8 @@ It is also a biological treatment. In this process, aerobic oxidation of sewage 
 - The gas bubbles carry granules upward, but only gases escape at the top, while granules settle back forming the sludge blanket again.
 - The gases are collected in a gas collector dome at the top.
 - This method reduces organic waste and produces biogas which can be used as fuel.
+
+![USAB reactor diagram showing wastewater flow, sludge blanket, gas collectors, treated effluent, and biogas collection.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p014-1.webp)
 
 > **Figure: USAB reactor diagram showing wastewater flow, sludge blanket, gas collectors, treated effluent, and biogas collection.**
 >

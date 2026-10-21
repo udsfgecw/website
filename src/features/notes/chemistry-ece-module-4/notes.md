@@ -134,6 +134,8 @@ $$\text{weight equivalent to } \text{CaCO}_3 = \frac{43 \times 100}{136} \text{ 
 
 ### Molecular Weights of Some Hardness Producing Salts
 
+![Table of molecular weights of hardness producing salts](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p004-1.webp)
+
 > **Figure: Table of molecular weights of hardness producing salts**
 >
 > Table of molecular weights of hardness producing salts containing four columns: Hardness producing salt, Molecular weight, Hardness producing salt, and Molecular weight. Row 1: Ca(HCO3)2, 162, MgSO4, 120. Row 2: Mg(HCO3)2, 146, CaSO4, 136. Row 3: CaCl2, 111, Ca2+, 40. Row 4: MgCl2, 95, Mg2+, 24. Row 5: CaCO3, 100, HCO3-, 61x2=122. Row 6: CaSO4, 136, empty, empty.
@@ -142,9 +144,13 @@ $$\text{weight equivalent to } \text{CaCO}_3 = \frac{43 \times 100}{136} \text{ 
 
 **Problem 1:** Calculate the carbonate and non-carbonate hardness of a sample of water containing the dissolved salts as given below in mg/lit $\text{Mg(HCO}_3)_2 = 7.3$; $\text{Ca(HCO}_3)_2 = 40.5$; $\text{CaSO}_4 = 13.6$; $\text{MgCl}_2 = 21.75$ and $\text{NaCl} = 50$.
 
+![Table header for Problem 1 solution](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p004-2.webp)
+
 > **Figure: Table header for Problem 1 solution**
 >
 > Table header for Problem 1 solution containing four columns: Name of the hardness, Amount in, Molecular, Amounts equivalent to.
+
+![Table of hardness calculations for various salts](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p005-1.webp)
 
 > **Figure: Table of hardness calculations for various salts**
 >
@@ -159,6 +165,8 @@ Total hardness = $\text{Carbonate hardness} + \text{Non-carbonate hardness}$
 $= 30 + 32.9 = 62.9\text{ mgs/lit}$
 
 **Problem 2:** Water sample on analysis give the following data $\text{Ca}^{2+} = 20\text{ ppm}$, $\text{Mg}^{2+} = 25\text{ ppm}$, $\text{CO}_2 = 30\text{ ppm}$, $\text{HCO}_3^- = 150\text{ ppm}$, $\text{K}^+ = 10\text{ ppm}$. Calculate temporary and permanent hardness.
+
+![Table of hardness calculations for Problem 2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p005-2.webp)
 
 > **Figure: Table of hardness calculations for Problem 2**
 >
@@ -264,6 +272,8 @@ $$\text{RH}_2 + \text{CaCl}_2 \rightarrow \text{RCa} + 2\text{HCl}$$
 
 $$\text{RH}_2 + \text{MgSO}_4 \rightarrow \text{RMg} + \text{H}_2\text{SO}_4$$
 
+![Demineralization of water apparatus showing cation and anion exchange columns](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p007-1.webp)
+
 > **Figure: Demineralization of water apparatus showing cation and anion exchange columns**
 >
 > Demineralization of water apparatus showing a schematic diagram with two main columns: a cation exchanger and an anion exchanger. Raw water enters at the top left and goes into the cation exchanger column. Acid for regeneration (Dil HCl container) is connected above the cation exchanger via valves. The treated water flows from the bottom of the cation exchanger to the top of the anion exchanger column. Alkali for regeneration (Dil NaOH container) is connected above the anion exchanger via valves. Bottom outlets provide Wash and Deionised water streams.
@@ -306,6 +316,8 @@ The process of removing dissolved common salt (sodium chloride) and other minera
 
 #### Reverse Osmosis (RO)
 When two solutions of different concentrations are separated by a semi-permeable membrane, and a hydrostatic pressure in excess of the osmotic pressure is applied on the higher concentration side, the solvent (water) flows from the higher concentration to the lower concentration. This process is called **reverse osmosis** or **super-filtration**.
+
+![Diagram of Reverse Osmosis process](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p009-1.webp)
 
 > **Figure: Diagram of Reverse Osmosis process**
 >
@@ -388,6 +400,8 @@ $$\text{Hypochlorous acid}$$
 Raw water typically contains impurities such as bacteria, organic impurities, reducing substances (like $\text{Fe}^{2+}$, $\text{H}_2\text{S}$, etc.), and free ammonia.
 
 Break point chlorination is the addition of chlorine to water to such an extent that it kills all microorganisms, completely oxidizes all reducing substances and organic impurities, and allows free residual chlorine to begin appearing.
+
+![Break point chlorination graph showing residual chlorine vs applied chlorine](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p011-1.webp)
 
 > **Figure: Break point chlorination graph showing residual chlorine vs applied chlorine**
 >
@@ -575,9 +589,12 @@ This process is used for treating the filtrate obtained in the primary process. 
 
 It is a circular tank filled with material like broken bricks, crushed rocks, etc., and fitted with a rotating distributor. Sewage is trickled over this filter with the help of the rotating distributor.
 
+![Trickling filter showing the rotating sprinkler, filter bed, airflow, and effluent collection](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Trickling_Filter_diagram.svg/1280px-Trickling_Filter_diagram.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
+> Source: [Trickling Filter diagram](https://commons.wikimedia.org/wiki/File:Trickling_Filter_diagram.svg) — CC BY 3.0, Eawag: Swiss Federal Institute of Aquatic Science and Technology; technical drawings by designport, Paolo Monaco, Zurich.
+
 > **Figure: Trickling filter process diagram**
 >
-> Diagram of a Trickling filter process showing a circular tank filled with filtering medium (broken bricks/crushed rocks). Labeled parts include: Effluent from primary treatment entering from the left, a central vertical pipe with Rotary arms at the top, air flow arrows pointing up and down through the filtering media, treated effluent flowing to a settling tank on the right with a chlorination arrow pointing down, an Effluent output, and a Sludge output at the bottom of the settling tank.
+> Schematic showing a rotating sprinkler over the filter bed, feed pipe, filter media, airflow, support layer, and effluent collection. This illustration does not show the downstream settling tank or disinfection stage.
 
 When sewage moves down through the filtering medium, microorganisms start consuming the organic matter in the sewage. They grow over the surface of the filtering media and a more or less clear effluent is collected. After completion of aerobic oxidation, the treated sewage is taken to the settling tank and the sludge is removed. This process removes about 80-85% of BOD.
 
@@ -602,9 +619,12 @@ UASB reactors are constructed in concrete or another watertight material and are
 
 Bacteria (microorganisms) living in the sludge break down the organic matter by anaerobic digestion, transforming it into biogas. The gases are collected through the gas collector dome at the top of the reactor.
 
+![UASB reactor showing upward flow through sludge granules, gas bubbles, and a top biogas outlet](https://upload.wikimedia.org/wikipedia/commons/d/da/Schematic_of_the_Upflow_Anaerobic_Sludge_Blanket_Reactor_UASB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+> Source: [Schematic of the UASB reactor](https://commons.wikimedia.org/wiki/File:Schematic_of_the_Upflow_Anaerobic_Sludge_Blanket_Reactor_UASB.jpg) — CC BY-SA 3.0, Tilley, E., Ulrich, L., Lüthi, C., Reymond, Ph., Zurbrügg, C.
+
 > **Figure: Diagram of UASB reactor**
 >
-> Diagram of a UASB (Upflow Anaerobic Sludge Blanket) reactor showing labels for Overflow weir, Gas collector (Biogas), Gas/liquid/solid separator, Effluent, Baffles, Gas bubbles, Sludge granule, Sludge bed, Influent, and Distributor. Upward arrows indicate the flow of wastewater from the distributor at the bottom through the sludge bed and sludge granule zones.
+> Schematic of a UASB reactor showing the bottom inlet, upward flow through sludge granules and gas bubbles, a top biogas outlet, separator baffles, and a side effluent outlet. Some internal parts use different labels or are not individually labeled in this source image.
 
 Baffles at the top of the reactor allow gases to escape and prevent an outflow of the sludge blanket. As with all aerobic treatments, UASB also requires post-treatment to remove pathogens, but due to a low removal of nutrients, the effluent water as well as the stabilized sludge can be used in agriculture.
 

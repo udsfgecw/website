@@ -102,6 +102,7 @@ const components: Components = {
       || /^\/notes\/cse\/s1\/chemistry\/module-1\/assets\/.*-clean\.webp$/.test(localPath!)
       || /^\/notes\/cse\/s1\/chemistry\/module-2\/assets\/.*\.webp$/.test(localPath!)
       || /^\/notes\/cse\/s1\/chemistry\/module-3\/assets\/.*-clean\.webp$/.test(localPath!)
+      || /^\/notes\/(?:ece|eee)\/s1\/chemistry\/module-[1-4]\/assets\/.*\.webp$/.test(localPath!)
     );
     const graphics = typeof src === "string" && graphicsFigure.test(localPath!);
     const dimensions = typeof src === "string" ? diagramDimensions[localPath!] : undefined;

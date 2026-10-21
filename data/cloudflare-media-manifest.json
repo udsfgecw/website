@@ -17431,11 +17431,1636 @@
       "contentType": "image/webp",
       "bytes": 41778,
       "sha256": "f131c6184a1262729ec466b136a3ca1ab63947ae42651d3ce0dd742deb1d97c3"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p002-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 22428,
+      "sha256": "6917ddda263cea9c290d659d39b7769f60598b0f328c256c5c0d851314617e87"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p003-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p003-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14090,
+      "sha256": "0cbcda0f8b95fab3ae996900eada003e430148933259f5135ef6c1ffb87968e3"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p005-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 51958,
+      "sha256": "2b546f0afd2602dfb870ed4dd1eb94584dc73afeb1189143c905c8a91dde5aac"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p006-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p006-1.webp",
+      "contentType": "image/webp",
+      "bytes": 35520,
+      "sha256": "f8ecb6e206c695c84033b96efde6efa3ee16c83e866a13b52968f7c7ce12fc52"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p012-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 17326,
+      "sha256": "cb5c7c80966ee55eb548f58c1ef6b87fccd26506ac49d693f09374f6670e149c"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p013-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p013-1.webp",
+      "contentType": "image/webp",
+      "bytes": 18314,
+      "sha256": "c2f0ddecc5c2c1f8d9e7139b1b0a0a3ae80a0639a916cbd37bbecd5be5979ba2"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p015-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12810,
+      "sha256": "db7771cf14b38caaca5b1680aa4589372af2beb34a534e05b3d160f3154e5af8"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p016-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 27326,
+      "sha256": "52407b38f66e12533e28b616c7ea7cab04db13c39e8e4d0477d148208fc3dc2c"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p019-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p019-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21550,
+      "sha256": "15b7648591e9f3e85d9ddcb571f0882c16c5e9c4102654292c5c0d5804364442"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p020-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p020-1.webp",
+      "contentType": "image/webp",
+      "bytes": 27872,
+      "sha256": "20b3504ed98d61e0b2c84ec18f267356aa57aa320cb1fed5499f5eaaa16d8c06"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p022-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p022-1.webp",
+      "contentType": "image/webp",
+      "bytes": 9436,
+      "sha256": "637081bbd88b0608a1467d90b8b693af5e9739bd158a74436fbf34e11ca6b04e"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p024-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p024-1.webp",
+      "contentType": "image/webp",
+      "bytes": 63368,
+      "sha256": "5335280aa8bc7e1645dc96eead5f779f744754b2fa7c7ee66449a0aaba7dbc03"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p025-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p025-1.webp",
+      "contentType": "image/webp",
+      "bytes": 54624,
+      "sha256": "0560b6a7b2ff01467047ffaaccb2f552bc21d516ada7f3e8d36cfeb9a84f8ce5"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p028-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p028-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14596,
+      "sha256": "388ee41ec8a38fb4b00f2eb337b34959e7741e8790a5788f73ae5360ea67c8f0"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p028-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p028-2.webp",
+      "contentType": "image/webp",
+      "bytes": 9414,
+      "sha256": "8585c6b58940c27863597d9b1decd38797fb1bf5ba228e96abdfc1409ce5d0a3"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p029-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p029-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10260,
+      "sha256": "df2eea00094b1206f8204fd17b7b81cffc2053d56b65992bf23b49541ee40b84"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-1/assets/p029-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-1/assets/p029-2.webp",
+      "contentType": "image/webp",
+      "bytes": 10772,
+      "sha256": "f4809f2262966f62df7c9d1b19a459e1500edb6da36b0c81e3508e14b96fb347"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p002-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 23512,
+      "sha256": "3f6ffbc774cdf3388db0119b235eeb3405ec80684dc0a7348b372ea85df09038"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p004-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10568,
+      "sha256": "dae12acfa03dc510eccaf261ab23f611215f36ad297a87c485a4a992a9dee9f8"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p005-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12456,
+      "sha256": "50921d5bb7e15827101126141d54e0a7527dbda3ace424aeed72d7500b7cc96f"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p005-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p005-2.webp",
+      "contentType": "image/webp",
+      "bytes": 21974,
+      "sha256": "546f30efbb521be710f3bcac441b0317fd825a328d26695ce30c8531c9dee4b2"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p005-3.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p005-3.webp",
+      "contentType": "image/webp",
+      "bytes": 56236,
+      "sha256": "fc03730240cbd7f9eaf61fe5abede6c74cbc5bbdee41afdee4130c1fac5a8c3a"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p006-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p006-1.webp",
+      "contentType": "image/webp",
+      "bytes": 13882,
+      "sha256": "12e6310407b9aa3f5405ad8ea30ee3b707db3ad29b28bb4df47472e76d1349a0"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p007-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16432,
+      "sha256": "cb5e331df37dd14fe0b9b7def8fffe805446df7e21c1fee6901124f8fc75ee4b"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p009-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 17530,
+      "sha256": "98c4fdf85cc21baf703ddaebd20fea3765f9b033d43fd66a5a2959c3798a75a4"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p011-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p011-1.webp",
+      "contentType": "image/webp",
+      "bytes": 39182,
+      "sha256": "719b20584907ca8a047628fdb868561e9de8e8c21e3bcd87c1833f7cd13ca46c"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p012-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 42042,
+      "sha256": "9b62019776294341cbf722c0561193b776c15bf5cc0f2f6b26f46c7749ee9ce8"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p014-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p014-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10490,
+      "sha256": "1b0a475d8ba55a246c60cf6402f7885e10bb2a076b64b529685f228fbfbe6674"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p014-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p014-2.webp",
+      "contentType": "image/webp",
+      "bytes": 31514,
+      "sha256": "89a8481e0fca681415e8e6a9e01c0a14f7d3fa8666a4132b3095d95684cc6da8"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p015-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 62446,
+      "sha256": "fd26acc02fa9823bbb34766457efc234d37798db36a56be6ebefb80402b5aef6"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p017-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 6398,
+      "sha256": "1a475f82d8d9a60cf950080689aabc3cb0e1df922a38c870d14569473564a0a4"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p017-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p017-2.webp",
+      "contentType": "image/webp",
+      "bytes": 56386,
+      "sha256": "9295859994eddc4b8a1023d03ac1f023147fc8c83fd40d799fdeb82cefd073f2"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p017-3.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p017-3.webp",
+      "contentType": "image/webp",
+      "bytes": 31074,
+      "sha256": "0a1fb8f457a2bd510b2264356c2b49fe8a3e8f324e5110e71a3b8c358c321ba4"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-2/assets/p019-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-2/assets/p019-1.webp",
+      "contentType": "image/webp",
+      "bytes": 30242,
+      "sha256": "020594bcf055ec02056355d2e6835a743c60e8e30d001e589152c4b3bbfdc6da"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p002-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 4386,
+      "sha256": "ecaacc9fbb8db595f24af7b4d91257e61df68ba9b6893220f449945b18870451"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p002-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p002-2.webp",
+      "contentType": "image/webp",
+      "bytes": 1942,
+      "sha256": "8e3b3635c15e35c8a432654af6ff01a3f7cb24937bfb003765166dd8f2a1a268"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p003-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p003-1.webp",
+      "contentType": "image/webp",
+      "bytes": 31274,
+      "sha256": "ea4746d65e43c5edb926568c08944c914132ecec3c2d54ebdf6f1c7b59e2c8d1"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p004-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10006,
+      "sha256": "158790c53f910a1adaaad35d4db8fb53ae0d581bf8d0883e4ec22229c3d8796e"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p004-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p004-2.webp",
+      "contentType": "image/webp",
+      "bytes": 15274,
+      "sha256": "c0fbe9d3c82a619707dca88dfa65cf7e969ff10aa38ed39f7e193912a3e2cd89"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p007-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10950,
+      "sha256": "91b0fe8abe224e9e6b4bd07a8ec7f85a39bfa522cacf05a0e039c85e7f38f99d"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p008-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p008-1.webp",
+      "contentType": "image/webp",
+      "bytes": 2748,
+      "sha256": "44ff68b167ed00a14b90c4f3750d6422763de78d10f779f70299735fdfaabfa9"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p008-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p008-2.webp",
+      "contentType": "image/webp",
+      "bytes": 32794,
+      "sha256": "7b655546931d48311bbcd95bba46ba5dfd33547c9ac987eb2deed1749da670d7"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p009-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16596,
+      "sha256": "e1e360b965e9abc5ccfce5150cadf52e5fc369c33846f8dbdc8e2f4ba247c440"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p009-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p009-2.webp",
+      "contentType": "image/webp",
+      "bytes": 2978,
+      "sha256": "6be65b9c9e5acdf7d2201d367a41429dca8b55424135c3227883f097e3be9d46"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p009-3.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p009-3.webp",
+      "contentType": "image/webp",
+      "bytes": 2574,
+      "sha256": "08829ef1ee9e728512d85e4a6af365a0704e714919e08a0906b7212ac9a947da"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p009-4.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p009-4.webp",
+      "contentType": "image/webp",
+      "bytes": 11460,
+      "sha256": "48bb57b5c83c4081c55be9c9745ec77b018465667224aac38bcf449a2540771f"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p011-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p011-1.webp",
+      "contentType": "image/webp",
+      "bytes": 5346,
+      "sha256": "882c49b4cddafe538c3130b28c9417580914fdcac2b560adfb4f60cc15409985"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p012-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14570,
+      "sha256": "70165c727f26ba0d9743ad24c5bb3a82807b1a29cc103d46956e7842c4e38f46"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p013-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p013-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12642,
+      "sha256": "2586f448237ae16cb6adf574830f789e406f855e66af1c36a2d4333e5310c4fa"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p013-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p013-2.webp",
+      "contentType": "image/webp",
+      "bytes": 10730,
+      "sha256": "3687f64de5b53abdca28ea429739333f8f599d6abc1978c5e24a67989e588390"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p015-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 25502,
+      "sha256": "8d06b0617270151707ba1dc10bc5ef48c08abc449afe8f16996190523feb77f1"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p016-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16638,
+      "sha256": "d7d013038b70ef4c8302565048e11b96a25c3c8db4b41fc0fff59f70606522ec"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-3/assets/p018-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-3/assets/p018-1.webp",
+      "contentType": "image/webp",
+      "bytes": 15916,
+      "sha256": "68017d8f6c39c6e6baa258e4ab4dab082e0806777e371f68d3eb7a42c711380e"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p004-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 30984,
+      "sha256": "ee655b989c00c38ae65fd02d11ba35a233cd80868d8c42dbba3a31de5dfd42ae"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p004-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p004-2.webp",
+      "contentType": "image/webp",
+      "bytes": 7112,
+      "sha256": "d07b82e05f04d8d069c4a51fc962c618cbbd34c82eb36d84bba221c04627c3ce"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p005-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 32568,
+      "sha256": "6f4829fccd28c1b96a40cbc15f9c7472e916b65555271ae493e221567402a92f"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p005-2.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p005-2.webp",
+      "contentType": "image/webp",
+      "bytes": 26278,
+      "sha256": "e67134dab87a647e0972de5d66f69a3293661cad75d0149c48daa0b2c7a77cb0"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p007-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 49256,
+      "sha256": "7a508e216ce6d98a07ffadd945fcd6e51afa31122f8d879e3798582c34e6a22f"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p009-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 32222,
+      "sha256": "78b3a845922875927c0275cf229d3c23109a70cada6b9624f0ca4e119b49e4a6"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p011-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p011-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21894,
+      "sha256": "3e75cb6f0ba51fe1ee3314c050cbb0d29d7278dcfdf9508cd8b63f9b4d2f46e5"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p015-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 36786,
+      "sha256": "5858945403174fe62f27bd2c4889035d89cac8ac8d3294a3bf4101500779c8e6"
+    },
+    {
+      "key": "notes/ece/s1/chemistry/module-4/assets/p016-1.webp",
+      "localPath": "public/notes/ece/s1/chemistry/module-4/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 31896,
+      "sha256": "1afae05e20b9af2c515d8f756040f4d52de0d09a9edc782defa28ca9eb17bb0a"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p003-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p003-1.webp",
+      "contentType": "image/webp",
+      "bytes": 58018,
+      "sha256": "8d3244b392b0760935b235baa535c02452b5267b50bce4a47be843dec55dfb9d"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p005-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10816,
+      "sha256": "cc42cbafa411cbc44a0902dfac8999f29ce2ed20457f5e84e6b20cc2e74f62e0"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p009-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 82640,
+      "sha256": "50e2d0e0aaff7fc92fd4ffadf6680957f39f729f374e5655ac403704ae0377ba"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p020-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p020-1.webp",
+      "contentType": "image/webp",
+      "bytes": 63578,
+      "sha256": "32ff99b45b475f1771893f3595bf1d2d9cece64bdb1c44b034cd8bedf83af71b"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p020-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p020-2.webp",
+      "contentType": "image/webp",
+      "bytes": 6976,
+      "sha256": "f68162f18e1238db6c1661d6c5b2ef80127cb395a6cbd5f8dc74d97a0175ef4c"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p021-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p021-1.webp",
+      "contentType": "image/webp",
+      "bytes": 11422,
+      "sha256": "445fef68b4aa8515e5f8d58aa89f1fa6d2e068f80486107ad848c4ad4a1d0de1"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p023-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p023-1.webp",
+      "contentType": "image/webp",
+      "bytes": 11600,
+      "sha256": "3fbe8cf76921ac9edd10289d9b320083795644700ad932d1815bac8fdc95e746"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p023-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p023-2.webp",
+      "contentType": "image/webp",
+      "bytes": 17292,
+      "sha256": "c323351db03f57b4e70eab1dbf705d7fda640e5c8758eea6f48c9333054c0b28"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p024-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p024-1.webp",
+      "contentType": "image/webp",
+      "bytes": 9416,
+      "sha256": "d43a82428af36d4db23d25d1432f3466c72a554f5d121deae77ba0b6febe192f"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p024-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p024-2.webp",
+      "contentType": "image/webp",
+      "bytes": 13822,
+      "sha256": "91466d31ad0bae025ed24d0e3d67f5383fd33b38aded67f14108994279934f64"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p027-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p027-1.webp",
+      "contentType": "image/webp",
+      "bytes": 99892,
+      "sha256": "783e470fa05a3db296ae52d3e115723f85f0d3f08416c83b54eeb11c03c103ee"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-1/assets/p030-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-1/assets/p030-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14916,
+      "sha256": "94e9ffab72d401adfd79e4abc4c1874f3e5f92090d02b39b273c7b3c30fc4018"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p004-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12208,
+      "sha256": "4b2d16215594b80baecf75c1d377b7d2efeee94858ae5c1da5ce10b170bf4eaa"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p006-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p006-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10076,
+      "sha256": "8fcabea7484e295c3dcf85e79220deba1706488c86be90ce69f66cdae31fff82"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p007-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 36942,
+      "sha256": "ad98e5c0b4a801afa2f1f498960f89e1e848035ae5262cd6da69e7cbb98eb838"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p009-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12636,
+      "sha256": "496a8baac772520333117c604449a3b23e5f5c709fbdd875ddf31ab67bbd263e"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p009-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p009-2.webp",
+      "contentType": "image/webp",
+      "bytes": 10880,
+      "sha256": "8abe0c1436ad2fb35889868427c6d98440872eff6d07435ad99bbc33e2f43f2f"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p010-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p010-1.webp",
+      "contentType": "image/webp",
+      "bytes": 4776,
+      "sha256": "d690a4ad56d81e67340cc5e5b959c1597ba4de055dc437e2167ae8993ba1c0b7"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p014-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p014-1.webp",
+      "contentType": "image/webp",
+      "bytes": 34708,
+      "sha256": "2ac908d53b7b1968e709ec61f470e503932c6b738ece59c887ae507a75763ec8"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p015-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12204,
+      "sha256": "a90a717e1e246c24f58de14f15f207853ea2583efa02fd947ff5724ed7baa4d9"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p017-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 25210,
+      "sha256": "fd2efbfac6dec38d446d974feb03427069c5850403c7828e4730912a04fffcf8"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p021-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p021-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21544,
+      "sha256": "4488c546a161904830552193142647c533f526341bf0ad06a3aa8244b439bd86"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p022-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p022-1.webp",
+      "contentType": "image/webp",
+      "bytes": 19542,
+      "sha256": "736c0302c222f7c4a9c34ddd1276bae7abf1298da758b8da1c53aead3b58d181"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-2/assets/p023-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-2/assets/p023-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16254,
+      "sha256": "31b707fd122108492f09abf5bcf0548ffa62abfaa35d0c3eed0f70960be5e6f1"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p004-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 11794,
+      "sha256": "ba9f5b38e25390d6210f9a6c4488a8164ae360b55280543ac66d7563bd93cd08"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p005-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 8426,
+      "sha256": "2dc4104c99a4510ca524c992c3074defdb1dcf4c38acb62eeaff7747d53a8dac"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p005-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p005-2.webp",
+      "contentType": "image/webp",
+      "bytes": 23608,
+      "sha256": "5be5d582bc58ebc3faaf01faa6f5877520c846730c673b479f15503c4cdd0ba3"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p006-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p006-1.webp",
+      "contentType": "image/webp",
+      "bytes": 18082,
+      "sha256": "60d87e6a88d31f209646b91edc4f37841f430745749ef910a313c311b61d5749"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p007-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 24748,
+      "sha256": "ac5f497b41ccf788b7fbc1335f667107154ef6556fdd4d7642a9491f25773afb"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p008-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p008-1.webp",
+      "contentType": "image/webp",
+      "bytes": 6122,
+      "sha256": "62faaf9c8b58fded5e1e66ec4ca262f177b25dd28d6785dbd396aafe66f7b0a4"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p008-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p008-2.webp",
+      "contentType": "image/webp",
+      "bytes": 17350,
+      "sha256": "427a756486d190c2356dd374844a0ec052447b678e97c3ac39f2034e77c67bf0"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p008-3.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p008-3.webp",
+      "contentType": "image/webp",
+      "bytes": 6366,
+      "sha256": "3ec089a719c279d99307312ac0e6cfd9d219a3526aaeb38d77e1d8684f45dc0b"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p008-4.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p008-4.webp",
+      "contentType": "image/webp",
+      "bytes": 578,
+      "sha256": "2d849b2d3599851ecb005e4139e28cd8fe1a692ebff1605d1ea4df721c3f8ca8"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p009-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 13482,
+      "sha256": "4820dacf02d1e06ea33cfdb3d6ab8fba98cd3b1882e447bded0f398cff117fce"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p009-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p009-2.webp",
+      "contentType": "image/webp",
+      "bytes": 2430,
+      "sha256": "57592d55b1fb8c80800b98c84fc706ab156fd8b7dea845b8172e17b372d06d84"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p010-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p010-1.webp",
+      "contentType": "image/webp",
+      "bytes": 29250,
+      "sha256": "e799eee2592f1631823fa06edb41a367a9bf222d32948bd1e060c085485439ef"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p012-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16966,
+      "sha256": "9078e02baea7cc3da04489ac4e5375107edde7d2c96580b2d5452150adda41dd"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p012-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p012-2.webp",
+      "contentType": "image/webp",
+      "bytes": 22866,
+      "sha256": "558197f1993e20c05ce08e53f4633dcb53266d0b1b0f1c25e0281a11a11ed449"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p013-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p013-1.webp",
+      "contentType": "image/webp",
+      "bytes": 13810,
+      "sha256": "4deafd97c63b85f0dcfffa92f1b6140ef3ff8a76fa44db66a0241fdd70c4d417"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p013-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p013-2.webp",
+      "contentType": "image/webp",
+      "bytes": 27054,
+      "sha256": "6b2361d726dca5373f8a2a01907be93ba0e8042edff736fd0c50316cacd74d80"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p014-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p014-1.webp",
+      "contentType": "image/webp",
+      "bytes": 31184,
+      "sha256": "f1d8508a5c280af87893e8ebf3e65eb8ac7a4abfe25420965a49107191bd18bc"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p014-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p014-2.webp",
+      "contentType": "image/webp",
+      "bytes": 30260,
+      "sha256": "a234a788176afd2d42fd08ad3ccf4d941d03e8da2db3d3ce4a3fa556a5412839"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p017-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 25208,
+      "sha256": "82a5c28d3364421cf017648e9e71a6df21112bcf7bf9e62a3b1e3c81f4ba3cf2"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-3/assets/p019-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-3/assets/p019-1.webp",
+      "contentType": "image/webp",
+      "bytes": 23480,
+      "sha256": "2e171b176e97e7f89cd1f95d906714115be443eec94a7bda82b993059c348845"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p002-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 50034,
+      "sha256": "0b8c68a320ac8fbf543ea498825d9c641cc750d663fffa270e8bc57ca15427fa"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p004-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 7124,
+      "sha256": "c262b38b03ad3814478881aa2ccec1cf802d693d19f5a4ff9478ad620f202cf2"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p004-2.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p004-2.webp",
+      "contentType": "image/webp",
+      "bytes": 11258,
+      "sha256": "55071379acab3df2f68530fe8639634fc424de87dbb071f932b1d1a253266f22"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p006-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p006-1.webp",
+      "contentType": "image/webp",
+      "bytes": 38478,
+      "sha256": "beb7a66cc7ff7a9695e32736f1a63357e5ad229959feded44c71a7a59067e69a"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p007-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16046,
+      "sha256": "f99a5a5da59130bdadde87f9fb4682ceb8d1715bb5a219968a8510476aab4579"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p008-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p008-1.webp",
+      "contentType": "image/webp",
+      "bytes": 37008,
+      "sha256": "d103955dbca642be72a0b293090442c179fca92f3b5942143477a4da7bc776b1"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p009-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 51126,
+      "sha256": "22365d54da1d88482962cab0fd4b1df27a68860b94904b44aeaec11d0c38579a"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p011-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p011-1.webp",
+      "contentType": "image/webp",
+      "bytes": 36704,
+      "sha256": "2162de47ef2b86f3ef596d96594d764432a37611f087d6c49b58cac1b94307dd"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p012-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 20016,
+      "sha256": "5d3448b60f063ad129e1725c89f9aee4756b3df31b26d60985e37adb7067af71"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p013-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p013-1.webp",
+      "contentType": "image/webp",
+      "bytes": 28952,
+      "sha256": "d2479733f91857be39e18a8443c2cb1c016e100e638a6e493773d5af63274369"
+    },
+    {
+      "key": "notes/civil-mech/s1/chemistry/module-4/assets/p014-1.webp",
+      "localPath": "public/notes/civil-mech/s1/chemistry/module-4/assets/p014-1.webp",
+      "contentType": "image/webp",
+      "bytes": 35082,
+      "sha256": "6278e930649662af85649e0ef483360af6807922c14070f1ebb04de24b25dffc"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p002-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 28918,
+      "sha256": "eeeee7852ea99380b157d72aea292d2d89f2271425c6cf18fcc66bd8100aa20d"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p003-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p003-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14090,
+      "sha256": "0cbcda0f8b95fab3ae996900eada003e430148933259f5135ef6c1ffb87968e3"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p005-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 51958,
+      "sha256": "2b546f0afd2602dfb870ed4dd1eb94584dc73afeb1189143c905c8a91dde5aac"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p006-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p006-1.webp",
+      "contentType": "image/webp",
+      "bytes": 35520,
+      "sha256": "f8ecb6e206c695c84033b96efde6efa3ee16c83e866a13b52968f7c7ce12fc52"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p012-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 17326,
+      "sha256": "cb5c7c80966ee55eb548f58c1ef6b87fccd26506ac49d693f09374f6670e149c"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p013-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p013-1.webp",
+      "contentType": "image/webp",
+      "bytes": 18314,
+      "sha256": "c2f0ddecc5c2c1f8d9e7139b1b0a0a3ae80a0639a916cbd37bbecd5be5979ba2"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p015-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12810,
+      "sha256": "db7771cf14b38caaca5b1680aa4589372af2beb34a534e05b3d160f3154e5af8"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p016-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 27326,
+      "sha256": "52407b38f66e12533e28b616c7ea7cab04db13c39e8e4d0477d148208fc3dc2c"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p019-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p019-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21550,
+      "sha256": "15b7648591e9f3e85d9ddcb571f0882c16c5e9c4102654292c5c0d5804364442"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p020-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p020-1.webp",
+      "contentType": "image/webp",
+      "bytes": 27872,
+      "sha256": "20b3504ed98d61e0b2c84ec18f267356aa57aa320cb1fed5499f5eaaa16d8c06"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p022-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p022-1.webp",
+      "contentType": "image/webp",
+      "bytes": 9436,
+      "sha256": "637081bbd88b0608a1467d90b8b693af5e9739bd158a74436fbf34e11ca6b04e"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p024-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p024-1.webp",
+      "contentType": "image/webp",
+      "bytes": 63368,
+      "sha256": "5335280aa8bc7e1645dc96eead5f779f744754b2fa7c7ee66449a0aaba7dbc03"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p025-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p025-1.webp",
+      "contentType": "image/webp",
+      "bytes": 54624,
+      "sha256": "0560b6a7b2ff01467047ffaaccb2f552bc21d516ada7f3e8d36cfeb9a84f8ce5"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p028-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p028-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14596,
+      "sha256": "388ee41ec8a38fb4b00f2eb337b34959e7741e8790a5788f73ae5360ea67c8f0"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p028-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p028-2.webp",
+      "contentType": "image/webp",
+      "bytes": 9414,
+      "sha256": "8585c6b58940c27863597d9b1decd38797fb1bf5ba228e96abdfc1409ce5d0a3"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p029-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p029-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10260,
+      "sha256": "df2eea00094b1206f8204fd17b7b81cffc2053d56b65992bf23b49541ee40b84"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-1/assets/p029-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-1/assets/p029-2.webp",
+      "contentType": "image/webp",
+      "bytes": 10772,
+      "sha256": "f4809f2262966f62df7c9d1b19a459e1500edb6da36b0c81e3508e14b96fb347"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p002-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 23512,
+      "sha256": "3f6ffbc774cdf3388db0119b235eeb3405ec80684dc0a7348b372ea85df09038"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p004-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10568,
+      "sha256": "dae12acfa03dc510eccaf261ab23f611215f36ad297a87c485a4a992a9dee9f8"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p005-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12456,
+      "sha256": "50921d5bb7e15827101126141d54e0a7527dbda3ace424aeed72d7500b7cc96f"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p005-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p005-2.webp",
+      "contentType": "image/webp",
+      "bytes": 21974,
+      "sha256": "546f30efbb521be710f3bcac441b0317fd825a328d26695ce30c8531c9dee4b2"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p005-3.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p005-3.webp",
+      "contentType": "image/webp",
+      "bytes": 56236,
+      "sha256": "fc03730240cbd7f9eaf61fe5abede6c74cbc5bbdee41afdee4130c1fac5a8c3a"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p006-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p006-1.webp",
+      "contentType": "image/webp",
+      "bytes": 13882,
+      "sha256": "12e6310407b9aa3f5405ad8ea30ee3b707db3ad29b28bb4df47472e76d1349a0"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p007-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16432,
+      "sha256": "cb5e331df37dd14fe0b9b7def8fffe805446df7e21c1fee6901124f8fc75ee4b"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p009-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 17530,
+      "sha256": "98c4fdf85cc21baf703ddaebd20fea3765f9b033d43fd66a5a2959c3798a75a4"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p011-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p011-1.webp",
+      "contentType": "image/webp",
+      "bytes": 39182,
+      "sha256": "719b20584907ca8a047628fdb868561e9de8e8c21e3bcd87c1833f7cd13ca46c"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p012-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 42042,
+      "sha256": "9b62019776294341cbf722c0561193b776c15bf5cc0f2f6b26f46c7749ee9ce8"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p014-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p014-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10490,
+      "sha256": "1b0a475d8ba55a246c60cf6402f7885e10bb2a076b64b529685f228fbfbe6674"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p014-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p014-2.webp",
+      "contentType": "image/webp",
+      "bytes": 31514,
+      "sha256": "89a8481e0fca681415e8e6a9e01c0a14f7d3fa8666a4132b3095d95684cc6da8"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p015-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 62446,
+      "sha256": "fd26acc02fa9823bbb34766457efc234d37798db36a56be6ebefb80402b5aef6"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p017-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 6398,
+      "sha256": "1a475f82d8d9a60cf950080689aabc3cb0e1df922a38c870d14569473564a0a4"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p017-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p017-2.webp",
+      "contentType": "image/webp",
+      "bytes": 56386,
+      "sha256": "9295859994eddc4b8a1023d03ac1f023147fc8c83fd40d799fdeb82cefd073f2"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p017-3.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p017-3.webp",
+      "contentType": "image/webp",
+      "bytes": 31074,
+      "sha256": "0a1fb8f457a2bd510b2264356c2b49fe8a3e8f324e5110e71a3b8c358c321ba4"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-2/assets/p019-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-2/assets/p019-1.webp",
+      "contentType": "image/webp",
+      "bytes": 30242,
+      "sha256": "020594bcf055ec02056355d2e6835a743c60e8e30d001e589152c4b3bbfdc6da"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p002-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 4386,
+      "sha256": "ecaacc9fbb8db595f24af7b4d91257e61df68ba9b6893220f449945b18870451"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p002-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p002-2.webp",
+      "contentType": "image/webp",
+      "bytes": 1942,
+      "sha256": "8e3b3635c15e35c8a432654af6ff01a3f7cb24937bfb003765166dd8f2a1a268"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p003-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p003-1.webp",
+      "contentType": "image/webp",
+      "bytes": 31274,
+      "sha256": "ea4746d65e43c5edb926568c08944c914132ecec3c2d54ebdf6f1c7b59e2c8d1"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p004-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10006,
+      "sha256": "158790c53f910a1adaaad35d4db8fb53ae0d581bf8d0883e4ec22229c3d8796e"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p004-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p004-2.webp",
+      "contentType": "image/webp",
+      "bytes": 15274,
+      "sha256": "c0fbe9d3c82a619707dca88dfa65cf7e969ff10aa38ed39f7e193912a3e2cd89"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p007-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10950,
+      "sha256": "91b0fe8abe224e9e6b4bd07a8ec7f85a39bfa522cacf05a0e039c85e7f38f99d"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p008-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p008-1.webp",
+      "contentType": "image/webp",
+      "bytes": 2748,
+      "sha256": "44ff68b167ed00a14b90c4f3750d6422763de78d10f779f70299735fdfaabfa9"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p008-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p008-2.webp",
+      "contentType": "image/webp",
+      "bytes": 32794,
+      "sha256": "7b655546931d48311bbcd95bba46ba5dfd33547c9ac987eb2deed1749da670d7"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p009-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16596,
+      "sha256": "e1e360b965e9abc5ccfce5150cadf52e5fc369c33846f8dbdc8e2f4ba247c440"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p009-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p009-2.webp",
+      "contentType": "image/webp",
+      "bytes": 2978,
+      "sha256": "6be65b9c9e5acdf7d2201d367a41429dca8b55424135c3227883f097e3be9d46"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p009-3.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p009-3.webp",
+      "contentType": "image/webp",
+      "bytes": 2574,
+      "sha256": "08829ef1ee9e728512d85e4a6af365a0704e714919e08a0906b7212ac9a947da"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p009-4.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p009-4.webp",
+      "contentType": "image/webp",
+      "bytes": 11460,
+      "sha256": "48bb57b5c83c4081c55be9c9745ec77b018465667224aac38bcf449a2540771f"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p011-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p011-1.webp",
+      "contentType": "image/webp",
+      "bytes": 5346,
+      "sha256": "882c49b4cddafe538c3130b28c9417580914fdcac2b560adfb4f60cc15409985"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p012-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p012-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14570,
+      "sha256": "70165c727f26ba0d9743ad24c5bb3a82807b1a29cc103d46956e7842c4e38f46"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p013-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p013-1.webp",
+      "contentType": "image/webp",
+      "bytes": 12642,
+      "sha256": "2586f448237ae16cb6adf574830f789e406f855e66af1c36a2d4333e5310c4fa"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p013-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p013-2.webp",
+      "contentType": "image/webp",
+      "bytes": 10730,
+      "sha256": "3687f64de5b53abdca28ea429739333f8f599d6abc1978c5e24a67989e588390"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p015-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 25502,
+      "sha256": "8d06b0617270151707ba1dc10bc5ef48c08abc449afe8f16996190523feb77f1"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p016-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16638,
+      "sha256": "d7d013038b70ef4c8302565048e11b96a25c3c8db4b41fc0fff59f70606522ec"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-3/assets/p018-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-3/assets/p018-1.webp",
+      "contentType": "image/webp",
+      "bytes": 15916,
+      "sha256": "68017d8f6c39c6e6baa258e4ab4dab082e0806777e371f68d3eb7a42c711380e"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p004-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 30984,
+      "sha256": "ee655b989c00c38ae65fd02d11ba35a233cd80868d8c42dbba3a31de5dfd42ae"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p004-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p004-2.webp",
+      "contentType": "image/webp",
+      "bytes": 7112,
+      "sha256": "d07b82e05f04d8d069c4a51fc962c618cbbd34c82eb36d84bba221c04627c3ce"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p005-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p005-1.webp",
+      "contentType": "image/webp",
+      "bytes": 32568,
+      "sha256": "6f4829fccd28c1b96a40cbc15f9c7472e916b65555271ae493e221567402a92f"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p005-2.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p005-2.webp",
+      "contentType": "image/webp",
+      "bytes": 26278,
+      "sha256": "e67134dab87a647e0972de5d66f69a3293661cad75d0149c48daa0b2c7a77cb0"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p007-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 49256,
+      "sha256": "7a508e216ce6d98a07ffadd945fcd6e51afa31122f8d879e3798582c34e6a22f"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p009-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 32222,
+      "sha256": "78b3a845922875927c0275cf229d3c23109a70cada6b9624f0ca4e119b49e4a6"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p011-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p011-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21894,
+      "sha256": "3e75cb6f0ba51fe1ee3314c050cbb0d29d7278dcfdf9508cd8b63f9b4d2f46e5"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p015-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 36786,
+      "sha256": "5858945403174fe62f27bd2c4889035d89cac8ac8d3294a3bf4101500779c8e6"
+    },
+    {
+      "key": "notes/eee/s1/chemistry/module-4/assets/p016-1.webp",
+      "localPath": "public/notes/eee/s1/chemistry/module-4/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 31896,
+      "sha256": "1afae05e20b9af2c515d8f756040f4d52de0d09a9edc782defa28ca9eb17bb0a"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p016-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 10652,
+      "sha256": "98c17d95232fcba11ce3295c1deffac632695fa567b7d2275ef9deed238bda62"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p016-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p016-2.webp",
+      "contentType": "image/webp",
+      "bytes": 9324,
+      "sha256": "705b03875ce79f29564a1c7ac05b036da5cb41930b5d3198d96e59225ef84c5b"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p017-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 11336,
+      "sha256": "5d6be9fb76bb2883821d814023509b4948addb34048e1acf0b312163d0c8c6d2"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p017-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p017-2.webp",
+      "contentType": "image/webp",
+      "bytes": 20418,
+      "sha256": "3208bfbcc8dac5725413748bfb87fc34f0bde35d0ba2a2abe007b50cb020e2b0"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p019-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p019-1.webp",
+      "contentType": "image/webp",
+      "bytes": 90214,
+      "sha256": "ad7a0d2d6c949c13e11307853cdcdbc2bed92a0569448328802bc222d9872229"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p024-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p024-1.webp",
+      "contentType": "image/webp",
+      "bytes": 27086,
+      "sha256": "591b89586846e0e0dc1da101cf0bda527479b2f19a524bc32f3afa0cdbf9df10"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p028-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p028-1.webp",
+      "contentType": "image/webp",
+      "bytes": 15002,
+      "sha256": "b82164a07b5c7f5829581af9573397a1bdcec146eb2be919009cab8fa8316706"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p031-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p031-1.webp",
+      "contentType": "image/webp",
+      "bytes": 22432,
+      "sha256": "54558e663c722e970d2a8d146029d1321d14c549323b8ed9c9c463c3f1047de0"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p031-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p031-2.webp",
+      "contentType": "image/webp",
+      "bytes": 29170,
+      "sha256": "394036885e84f9f4b9082bb10b9ea99410c6fd3c870af208c31fdd3032fc018c"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p031-3.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p031-3.webp",
+      "contentType": "image/webp",
+      "bytes": 23448,
+      "sha256": "551bb9195c065cf40cc324223ccd7b258fb0bab64f990303970bae69d7eb4669"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p036-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p036-1.webp",
+      "contentType": "image/webp",
+      "bytes": 11782,
+      "sha256": "b3e77df98fe49e6e84d81a87d925353077d6d33be6fa1935b6b4049ad8d20d1b"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-1/assets/p039-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-1/assets/p039-1.webp",
+      "contentType": "image/webp",
+      "bytes": 13550,
+      "sha256": "296f0cdfd6dda2e704ac9a05205af19683c5670a393372acc6b5eee967939716"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p003-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p003-1.webp",
+      "contentType": "image/webp",
+      "bytes": 24138,
+      "sha256": "fcad640b966d8c50843d7658392291c1ad1569b95e2ab1d68fbc6a5fcb9558f0"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p007-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 26948,
+      "sha256": "bcdc75b46209a51969c1ada414822a91c845c2e5191976cdc7458a780ff2c993"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p009-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 27012,
+      "sha256": "d4d1eccb08273f31c208a18da47fc899b83f29185cf9f4ab42a760e440bd13c8"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p009-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p009-2.webp",
+      "contentType": "image/webp",
+      "bytes": 6090,
+      "sha256": "a9a589ba529a3e9d28da24273ce36eb850b73ffe893e70d583e7b21fb2ffe338"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p009-3.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p009-3.webp",
+      "contentType": "image/webp",
+      "bytes": 6698,
+      "sha256": "b2a86add6a938c9aa4eaa02ae29c87d8ae31495e859a7c7dc3b8c55f15d626c0"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p014-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p014-1.webp",
+      "contentType": "image/webp",
+      "bytes": 7698,
+      "sha256": "e888d005bc797536eaff49de833121bd5676b15381e457a0e0ceb6d4cf012670"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p016-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 31994,
+      "sha256": "56ca1d81effc69b96ec832aa44b7584a9bc845a85ae0ee3625e691cb1365aa1d"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p017-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21884,
+      "sha256": "26a5f7d44c05b76d639a89c7729f80b431e3ad303541a70ea60fef924bdeaf30"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p021-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p021-1.webp",
+      "contentType": "image/webp",
+      "bytes": 3838,
+      "sha256": "7fecda12cb77a46105f9049adf9fef7eec4d10fcbbeaac3a9c39986a1ddf1df0"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p023-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p023-1.webp",
+      "contentType": "image/webp",
+      "bytes": 23002,
+      "sha256": "430e47c2ced0800a6ccf2e91a0a6118fe561527e77e65b8660837ef30353ca82"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p027-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p027-1.webp",
+      "contentType": "image/webp",
+      "bytes": 5728,
+      "sha256": "b6a32d5a95bda94ccc7c6e1216d5b4bc0e6b717a65431238dc5c5a99c68c9750"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p028-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p028-1.webp",
+      "contentType": "image/webp",
+      "bytes": 32750,
+      "sha256": "0967984b484d7bcc550cb9c12a0f04c9f9823cdb5e3bcb1957a1576603ec815e"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p033-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p033-1.webp",
+      "contentType": "image/webp",
+      "bytes": 20778,
+      "sha256": "8a2b268acfb7d0e62ffca7f635f4a5968b43964be05b6b19cf8aef0f1f96fc30"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p035-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p035-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21686,
+      "sha256": "25592df968cf234e708e6d41d3751045c85a4ef9f3ae0850473da9712095a1e7"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p036-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p036-1.webp",
+      "contentType": "image/webp",
+      "bytes": 15106,
+      "sha256": "06997fd0b80458cf3102d37a9cce4f74907ed470b03787beb9be050b98b5c5ba"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p037-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p037-1.webp",
+      "contentType": "image/webp",
+      "bytes": 21048,
+      "sha256": "49c1905b78d2f6167e94c25d83bab1a1f04cdcc6ca85f050a9abd617130f9ccf"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p042-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p042-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16102,
+      "sha256": "27a756fa23fed2b09d51b1462cafe6fb601b5356ce4234c7f146f6767b6798b4"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p043-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p043-1.webp",
+      "contentType": "image/webp",
+      "bytes": 24182,
+      "sha256": "ecd3ebc067d358c2b064dc002d51dafabd35156a2ea25b9ad2c027b3b24ece2c"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p043-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p043-2.webp",
+      "contentType": "image/webp",
+      "bytes": 19452,
+      "sha256": "6a6cec8980074ae81e65a6853cc6a6e1115de34cd33b4864e4902abe9abc8f76"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-2/assets/p045-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-2/assets/p045-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14850,
+      "sha256": "bd6be0dc4f4e77771d6d9c174b68bf9a98651cfa766190f8a260bc1fd4d9f280"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-3/assets/p008-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-3/assets/p008-1.webp",
+      "contentType": "image/webp",
+      "bytes": 16204,
+      "sha256": "f9d61f680886d207976aac79cac1e97eb73a3892ddaead2c1ce010627140a236"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-3/assets/p009-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-3/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 15616,
+      "sha256": "772bd72cf39524c078f69acbc46b0bfd024863c9d0297fb22c6fba32ad5851c7"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-3/assets/p010-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-3/assets/p010-1.webp",
+      "contentType": "image/webp",
+      "bytes": 3358,
+      "sha256": "a07cedfdc91354b4d43528036cd0e136b340b364bff64f05f4260cd7c5a6c8f7"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-3/assets/p013-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-3/assets/p013-1.webp",
+      "contentType": "image/webp",
+      "bytes": 5074,
+      "sha256": "0ff2800f736fe6f3a6485257cadb2f3b3297f486d3fa3806868fe6dec1b826b8"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-3/assets/p013-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-3/assets/p013-2.webp",
+      "contentType": "image/webp",
+      "bytes": 9932,
+      "sha256": "ea4c8288633a8f38ee00eabb7041909137cf2a16e47d624ca9517c9ae24f79c2"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-3/assets/p017-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-3/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 20392,
+      "sha256": "6284aa854a949d530efa2dca453981f237ca7a5f15d40db2ed8f9fa1ad9dde19"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p002-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p002-1.webp",
+      "contentType": "image/webp",
+      "bytes": 4536,
+      "sha256": "00fc7b5f4f836a8d40cf9b8d2400c373802f20d250d4f7f45223c725916243d2"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p003-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p003-1.webp",
+      "contentType": "image/webp",
+      "bytes": 32482,
+      "sha256": "cdb1e4dd1a8c01ce8122682473decd969c562e4999227d1fc84c7a6cdd946e03"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p004-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p004-1.webp",
+      "contentType": "image/webp",
+      "bytes": 5232,
+      "sha256": "bdaeb650b0e6dbe9f7d6808eda2cbe8fa3b9fb4b5abbeb86bb20d43f340c026d"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p007-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p007-1.webp",
+      "contentType": "image/webp",
+      "bytes": 8980,
+      "sha256": "ce785c34235caaac2cb86bd2582982dd8183b9d7ab573a1069c2f958cec1650d"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p008-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p008-1.webp",
+      "contentType": "image/webp",
+      "bytes": 11970,
+      "sha256": "e48687ae1f22e541008d83f835276168f97cdb4f857a95b5260789da093d37a3"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p009-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p009-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14716,
+      "sha256": "c1153f4c5fcf12fd6a14446507b2f19737111a301aedf08c2661def10bde49b6"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p010-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p010-1.webp",
+      "contentType": "image/webp",
+      "bytes": 11150,
+      "sha256": "140338423f324d5a0228d326db3bc897c1314edbc0e921d4867d1e0aff3eaa73"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p010-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p010-2.webp",
+      "contentType": "image/webp",
+      "bytes": 22726,
+      "sha256": "b6eb01fa7f3fc9675ed290d0e0b1c99847fe89b257c95cbe4f90804edc404d1e"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p015-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p015-1.webp",
+      "contentType": "image/webp",
+      "bytes": 8294,
+      "sha256": "17687335ebb6e34ae1fb7665426cbce0b8f8c704961a3bff7d6ac6abd4a18ebe"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p015-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p015-2.webp",
+      "contentType": "image/webp",
+      "bytes": 36450,
+      "sha256": "7208ee3665925aa103567e36c62a3a7ade1c94b964dfe3ec0031e141ef91f27b"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p016-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p016-1.webp",
+      "contentType": "image/webp",
+      "bytes": 14570,
+      "sha256": "397d3559dd564817b4593accf97d0bcae99494f805a598944123ecc50e738b9a"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p016-2.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p016-2.webp",
+      "contentType": "image/webp",
+      "bytes": 15922,
+      "sha256": "f7844ee23518562209b6c26ebc01957a8a76a14e3a077d93793750a2e85ac12d"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p017-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p017-1.webp",
+      "contentType": "image/webp",
+      "bytes": 15306,
+      "sha256": "c09ee61efc377db5c1cb0d7e17bcfac264aa61bd18e5a615dbb820ec4339711d"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p019-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p019-1.webp",
+      "contentType": "image/webp",
+      "bytes": 15042,
+      "sha256": "a93c2bb1607f1659cb66de0ea9d91c4a09595c1fed404057571bddd3cf8fca79"
+    },
+    {
+      "key": "notes/physics/s1/physics/module-4/assets/p020-1.webp",
+      "localPath": "public/notes/physics/s1/physics/module-4/assets/p020-1.webp",
+      "contentType": "image/webp",
+      "bytes": 1836,
+      "sha256": "35050e3ac333ca8ccc4e7d50b9e6f8db120d508ac467ac14b7f404ea926cd9e3"
     }
   ],
   "summary": {
-    "images": 1714,
+    "images": 2358,
     "videos": 336,
-    "subtitles": 11
+    "subtitleTracks": 28,
+    "totalBytes": 1389372706
   }
 }

@@ -159,6 +159,8 @@ Important properties inferred from the equation include:
 2. It has an exponential dependence on the band gap $E_g$.
 3. It exhibits a strong dependence on absolute temperature $T$.
 
+![PN junction diode formation and carrier diffusion](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p024-1.webp)
+
 > **Figure: PN junction diode formation and carrier diffusion**
 >
 > Schematic diagram depicting the formation of a p-n junction and its depletion region in two stages connected by a rightward transition arrow:
@@ -194,6 +196,8 @@ $$E_F = \frac{E_g}{2}$$
 
 Thus, in an intrinsic semiconductor, the Fermi level lies exactly in the middle of the forbidden energy band gap.
 
+![Energy band diagram showing Conduction Band, Valence Band, and Fermi Energy Level](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p028-1.webp)
+
 > **Figure: Energy band diagram showing Conduction Band, Valence Band, and Fermi Energy Level**
 >
 > Energy band diagram of an intrinsic semiconductor. A vertical axis pointing upwards on the left is labeled 'Energy'. Towards the top, a horizontal rectangular box is labeled 'Conduction Band'. Towards the bottom, a horizontal rectangular box is labeled 'Valence Band'. A vertical double-headed arrow between the top edge of the Valence Band and the bottom edge of the Conduction Band indicates the band gap, labeled 'E_g'. Exactly halfway between the Valence Band and Conduction Band, a horizontal dashed line extends across, labeled to its right as 'Fermi Energy Level E_F'.
@@ -212,9 +216,13 @@ Examples:
 - Silicon doped with Phosphorus
 - Germanium doped with Arsenic
 
+![Diagram of n-type semiconductor with charge carriers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p016-1.webp)
+
 > **Figure: Diagram of n-type semiconductor with charge carriers**
 >
 > Schematic diagram of an n-type semiconductor connected in an external circuit, labelled 'fig(1)' and 'n-type Semiconductor' to the right. The semiconductor block is shown horizontally with a label 'n-type' in the center. Inside the block are six donor ions represented as circles with plus signs inside, arranged in two rows of three. Above the donor ions are arrows pointing to the left representing electron flow. The block is connected to an external circuit with a DC battery at the bottom consisting of four alternating long and short plates (negative on left, positive on right or vice versa). Directional arrows in the external loop show current/electron movement: on the left vertical segment, an arrow points downward; along the bottom wire, arrows point rightward on either side of the battery; on the right vertical segment, an arrow points upward; along the upper horizontal leads, arrows point leftward.
+
+![Energy band diagram of an n-type semiconductor](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p016-2.webp)
 
 > **Figure: Energy band diagram of an n-type semiconductor**
 >
@@ -228,9 +236,13 @@ Examples:
 - Silicon doped with Boron
 - Germanium doped with Aluminium
 
+![Fig: 1 p-type semiconductor](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p017-1.webp)
+
 > **Figure: Fig: 1 p-type semiconductor**
 >
 > Schematic diagram titled 'Fig: 1 p-type semiconductor' showing charge carrier conduction in a p-type semiconductor connected to an external battery. The central rectangular block is labelled 'p-type' below it. Inside this block are two rows of three hollow circles (representing holes) each with an arrow pointing to the right (→). Below the block, an electrical circuit contains a multi-cell DC battery symbol. In the external circuit, conduction by electrons is indicated by solid dots with arrows: two dots with right-pointing arrows (→) to the left of the battery, and two dots with right-pointing arrows (→) to the right of the battery. Flanking the semiconductor block are additional arrows representing current/electron flow: on the upper left, a left-pointing arrow with a dot; on the far left, a downward-pointing arrow; on the upper right, a left-pointing arrow with a dot; and on the far right, an upward-pointing arrow.
+
+![Fig: 2 Energy band description of p-type semiconductor](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p017-2.webp)
 
 > **Figure: Fig: 2 Energy band description of p-type semiconductor**
 >
@@ -243,6 +255,8 @@ Examples:
 - **Conductivity:** The conductivity is high compared to intrinsic semiconductors due to an increased number of charge carriers.
 - **Charge Carriers:** Depending on the type of dopants, the majority charge carriers may be electrons or holes.
 - **Position of the Fermi Level:** For n-type semiconductors, the Fermi level shifts towards the conduction band, and for p-type semiconductors, it shifts towards the valence band.
+
+![Comparison table of semiconductor properties](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p019-1.webp)
 
 > **Figure: Comparison table of semiconductor properties**
 >
@@ -320,6 +334,8 @@ The electric field creates a **drift current** of minority carriers that opposes
 #### i) Equilibrium Condition
 Under equilibrium (zero external voltage), the Fermi level $E_F$ across the p-n junction remains constant. The conduction band $E_C$ and valence band $E_V$ bend upward from the p-side to the n-side by an energy amount equal to $qV_0$, where $q$ is the electronic charge and $V_0$ is the built-in potential. This band bending creates a potential barrier that prevents further net diffusion of majority carriers.
 
+![Energy band diagram under equilibrium condition](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p031-1.webp)
+
 > **Figure: Energy band diagram under equilibrium condition**
 >
 > Energy band diagram of a p-n junction under 'Equilibrium Condition'. The diagram is divided into three vertically aligned sections by dashed lines indicating the depletion layer boundaries and the junction interface: 1) Physical junction diagram: A rectangular semiconductor block with regions 'P' on the left and 'n' on the right, connected externally by a short-circuit wire. Across the central junction, the depletion layer contains fixed ionized acceptors (two columns of two '⊖' symbols) in the P-side and fixed ionized donors (two columns of two '⊕' symbols) in the n-side. 2) Energy band diagram: Shows conduction band edge '$E_c$' and valence band edge '$E_v$'. Both bands are flat in the neutral P-region, bend smoothly downward across the depletion region, and become flat again in the neutral n-region. The total band bending (energy barrier) between the P-side and n-side conduction band edges is indicated by dashed horizontal alignment lines and labeled '$qV_0$'. 3) Potential energy diagram: Labeled 'potential Energy' along the vertical axis, showing an energy profile that starts high in the P-region, slopes downward across the depletion region, and flattens out lower in the n-region, with a total step height labeled '$V_0$' (built-in potential).
@@ -329,6 +345,8 @@ Under equilibrium (zero external voltage), the Fermi level $E_F$ across the p-n 
 #### ii) Forward Bias Condition
 When a positive external DC voltage is applied to the p-type region relative to the n-type region, the external electric field opposes the built-in potential. Consequently, the effective potential barrier is reduced from $qV_0$ to $q(V_0 - V)$, where $V$ is the applied forward voltage. This causes the depletion region to narrow, allowing majority carriers to easily cross the junction, recombine, and generate a large forward current.
 
+![Energy band diagram under forward bias](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p031-2.webp)
+
 > **Figure: Energy band diagram under forward bias**
 >
 > Energy band diagram of a p-n junction under 'Forward Bias'. Structured into three vertically aligned sections: 1) Physical junction diagram: A semiconductor block with 'P' region connected to the positive terminal (long line) and 'n' region connected to the negative terminal (short line) of an external DC voltage source. The depletion layer is narrower than in equilibrium, containing only one column of two '⊖' ions on the P-side and one column of two '⊕' ions on the n-side. 2) Energy band diagram: Bands '$E_c$' and '$E_v$' bend downward across the narrowed depletion region from P to n. The barrier height is reduced compared to equilibrium, labeled '$q(V_0 - V_F)$' between the horizontal levels of the conduction band edge on the P-side and n-side. 3) Potential energy diagram: Shows a potential barrier across the narrowed depletion layer with a reduced height difference labeled '$(V_0 - V_F)$'.
@@ -337,6 +355,8 @@ When a positive external DC voltage is applied to the p-type region relative to 
 
 #### iii) Reverse Bias Condition
 When a negative external DC voltage is applied to the p-type region relative to the n-type, the external voltage adds to the built-in potential. The potential barrier increases to $q(V_0 + V_R)$, where $V_R$ is the reverse voltage. This widens the depletion region, preventing majority carriers from crossing. Only a very small reverse saturation current flows due to thermally generated minority carriers sweeping across the junction.
+
+![Energy band diagram under reverse bias](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p031-3.webp)
 
 > **Figure: Energy band diagram under reverse bias**
 >
@@ -423,6 +443,8 @@ where $\eta = 1$ for Germanium and $\eta = 2$ for Silicon.
 
 The V-I characteristics graphically display the current response of a p-n junction diode under varying external terminal voltages. The voltage $V$ is plotted along the abscissa (x-axis) and the current $I$ along the ordinate (y-axis).
 
+![Circuit diagram for studying VI characteristics of p-n junction](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p036-1.webp)
+
 > **Figure: Circuit diagram for studying VI characteristics of p-n junction**
 >
 > Circuit diagram for studying the V-I characteristics of a p-n junction diode in forward bias. A DC battery source (with 4 pairs of long and short plates, positive terminal on top) is connected in series with an open key labeled 'K' on the top rail. Following key K, a potential divider (vertical zigzag resistor) is connected across the rails. A variable slider contact (wiper arrow) from the potential divider leads to a series resistor labeled 'R'. After resistor R, the line splits into two parallel branches: a vertical branch containing a voltmeter represented by a circle with 'V', connected between this node and the bottom return rail; and the continuation of the top rail which passes through a milliammeter represented by a circle with 'mA'. Following the milliammeter, the circuit connects to a p-n junction diode represented as a vertically stacked rectangular box divided into two compartments labeled 'p' (top) and 'n' (bottom). The bottom 'n' terminal of the diode connects to the common bottom return wire, which connects back to the negative terminal of the battery.
@@ -436,6 +458,8 @@ The operation divides into three distinct regions:
 2. **Forward Bias Region**: The p-n junction is connected with positive terminal to the p-type and negative to the n-type. The external field opposes and reduces the internal barrier potential. Initially, current grows very slowly (region OA) as voltage is consumed overcoming the potential barrier. Once the applied voltage exceeds the knee voltage, current increases exponentially and rapidly (region AB), and the diode operates as a normal low-resistance conductor. This region is utilized for rectification and signal amplification.
 
 3. **Reverse Bias Region**: The p-n junction is connected with negative terminal to the p-type and positive to the n-type. The barrier potential and depletion width increase. Only a minuscule reverse saturation current ($I_0$) flows due to thermally generated minority carriers (region OC). If the reverse voltage is raised excessively, high-energy minority carriers induce impact ionization, causing an avalanche breakdown where current surges and resistance drops abruptly.
+
+![Reverse bias V-I characteristic graph showing knee voltage, point A, B, and breakdown voltage at point C.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/physics/s1/physics/module-1/assets/p039-1.webp)
 
 > **Figure: Reverse bias V-I characteristic graph showing knee voltage, point A, B, and breakdown voltage at point C.**
 >

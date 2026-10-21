@@ -1,0 +1,19 @@
+{
+  "description": "Diagram of a UASB (Upflow Anaerobic Sludge Blanket) reactor showing labels for Overflow weir, Gas collector (Biogas), Gas/liquid/solid separator, Effluent, Baffles, Gas bubbles, Sludge granule, Sludge bed, Influent, and Distributor. Upward arrows indicate the flow of wastewater from the distributor at the bottom through the sludge bed and sludge granule zones.",
+  "file": "diagram-of-a-uasb-upflow-anaerobic-sludge-blanke-3f420add.jpg",
+  "source": "wikimedia-commons",
+  "pageUrl": "https://commons.wikimedia.org/wiki/File:Schematic_of_the_Upflow_Anaerobic_Sludge_Blanket_Reactor_UASB.jpg",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Schematic_of_the_Upflow_Anaerobic_Sludge_Blanket_Reactor_UASB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "CC BY-SA 3.0",
+  "author": "Tilley, E., Ulrich, L., L\u00fcthi, C., Reymond, Ph., Zurbr\u00fcgg, C.",
+  "verifiedBy": "gemini-3.5-flash-lite",
+  "review": {
+    "match": true,
+    "score": 8,
+    "shows": "A schematic diagram of a UASB reactor showing inlet, outlet, biogas collection, sludge granules, gas bubbles, and internal separator components.",
+    "problems": [
+      "Some specific requested labels such as overflow weir, sludge bed, and distributor are missing or labeled with alternative terms like inlet/outlet."
+    ]
+  },
+  "title": "Schematic of the Upflow Anaerobic Sludge Blanket Reactor UASB"
+}

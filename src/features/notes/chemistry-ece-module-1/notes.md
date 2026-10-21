@@ -42,9 +42,11 @@ Galvanic cells are electrochemical cells in which electrons transferred due to a
 
 The Daniel cell consists of a zinc electrode dipped in a $1 \text{ M } \text{ ZnSO}_4$ solution and a copper electrode dipped in a $1 \text{ M } \text{ CuSO}_4$ solution. Each electrode is known as a half-cell. The two solutions are interconnected by a salt bridge, and the two electrodes are connected by an external wire through a voltmeter.
 
+![Daniell cell showing the zinc anode, copper cathode, salt bridge, and ion movement](https://upload.wikimedia.org/wikipedia/commons/3/3a/Daniell_cell_with_non-specific_salt_bridge.png)
+
 > **Figure: Daniel Cell diagram**
 >
-> Daniel Cell diagram showing a Zinc electrode (Anode) on the left dipped in Zinc sulphate solution, connected via a wire with an electron flow arrow (e-) and a voltmeter (V) to a Copper electrode (Cathode) on the right dipped in Copper sulphate solution. A salt bridge with a porous plug connects the two solutions.
+> Daniell cell schematic showing zinc and copper half-cells, electron flow through the external circuit, and ion migration through a KNO₃ salt bridge. [Source: Wikimedia Commons, CC0](https://commons.wikimedia.org/wiki/File:Daniell_cell_with_non-specific_salt_bridge.png).
 
 #### Reactions Occurring in the Cell
 
@@ -83,6 +85,8 @@ A salt bridge is typically an inverted U-tube filled with a concentrated solutio
 
 When a metal rod is placed in contact with a solution containing its own ions, it may undergo either oxidation ($M \rightarrow M^{n+} + n\text{e}^-$) or reduction ($M^{n+} + n\text{e}^- \rightarrow M$) depending on the inherent nature of the metal.
 
+![Single electrode cell (half-cell)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p003-1.webp)
+
 > **Figure: Single electrode cell (half-cell)**
 >
 > Diagram of a single electrode cell (half-cell) titled 'Single electrode cell (half-cell)'. It shows a container holding a solution with positive metal ions (M+) and negative ions, and a metal rod labeled 'M' immersed in the solution. At the top, a potential difference is indicated by 'Delta phi'. Electrons (e-) are shown near the metal-solution interface. The bottom of the figure includes the website label www.substech.com.
@@ -97,11 +101,15 @@ When a metal rod is placed in contact with a solution containing its own metal i
 
 If the metal possesses a stronger anodic nature, metal ions ($\text{M}^{n+}$) pass from the metal into the solution, leaving behind excess electrons on the metal rod. Consequently, the metal develops a negative charge. Conversely, if the metal possesses a cathodic nature, metal ions from the solution undergo reduction on the metal surface, causing the rod to develop a positive charge.
 
+![Zn electrode in ZnSO4 solution and Cu electrode in CuSO4 solution](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p005-1.webp)
+
 > **Figure: Zn electrode in ZnSO4 solution and Cu electrode in CuSO4 solution**
 >
 > Two diagrams showing (a) Zn electrode in ZnSO4 solution and (b) Cu electrode in CuSO4 solution. Diagram (a) shows a Zn electrode immersed in a Zn2+ ion solution with Zn2+ ions leaving the electrode. Diagram (b) shows a Cu electrode immersed in a Cu2+ ion solution with Cu2+ ions moving towards the electrode.
 
 This initial transfer of charge creates an electrostatic attraction: a negatively charged metal rod attracts positive ions from the solution, whereas a positively charged metal rod attracts negative ions. This accumulation forms a tightly bound layer of ions of opposite charge immediately adjacent to the metal surface. This microscopic charge separation is known as the **Helmholtz electrical double layer**.
+
+![Electrochemical Series Table](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p006-1.webp)
 
 > **Figure: Electrochemical Series Table**
 >
@@ -347,6 +355,8 @@ Standard Hydrogen Electrode (SHE) is an example of a primary reference electrode
 
 A hydrogen electrode consists of a platinum foil connected to a platinum wire and sealed in a glass tube. Hydrogen gas is passed through the side arm of the glass tube. This electrode, when dipped in $1\text{ N HCl}$ and hydrogen gas at $1\text{ atmospheric pressure}$ is passed, forms a standard hydrogen electrode. The electrode potential of SHE is zero at all temperatures.
 
+![Standard hydrogen electrode diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p012-1.webp)
+
 > **Figure: Standard hydrogen electrode diagram**
 >
 > A schematic diagram of a Standard Hydrogen Electrode (SHE) showing a central glass tube with an outer glass jacket. A platinum wire runs down the center, connected to a platinum foil at the bottom. A side arm on the upper right admits H2 gas, labelled with an arrow pointing to the interior ('H2 gas'). The lower part of the apparatus is submerged in a beaker containing 'HCl Solution'. A platinum foil is indicated near the bottom inside the solution ('Platinum foil').
@@ -382,6 +392,8 @@ $$2\text{H}^+ + 2\text{e}^- \rightarrow \text{H}_2\text{(g)}$$
 #### Construction
 
 A calomel electrode consists of a glass tube containing mercury at the bottom over which mercurous chloride ($\text{Hg}_2\text{Cl}_2$, calomel) is placed. The remaining portion of the tube is filled with a saturated solution of $\text{KCl}$. The bottom of the tube is sealed with a platinum wire. The side tube is used for making electrical contact with a salt bridge. The electrode potential of the saturated calomel electrode is $+0.2422\text{ V}$.
+
+![Diagram of a Calomel Electrode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p013-1.webp)
 
 > **Figure: Diagram of a Calomel Electrode**
 >
@@ -439,6 +451,8 @@ $$\text{Pt}, 0.1\text{ M HCl} / \text{Glass}$$
 
 The $\text{HCl}$ in the bulb furnishes a constant $\text{H}^+$ ion concentration.
 
+![Glass electrode diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p015-1.webp)
+
 > **Figure: Glass electrode diagram**
 >
 > Diagram of a glass electrode. A platinum wire connected to a coil spring at the top dips into 0.1 M HCl solution contained inside a cylindrical glass tube. The bottom of the tube terminates in a thin walled glass bulb. Pointer lines indicate 'Platinum wire', '0.1 M HCl', and 'Thin walled glass bulb'.
@@ -478,6 +492,8 @@ Where $E^\bullet_G$ is a constant for a particular variety of glass ($E^\bullet_
 ### Determination of pH of a Solution Using a Glass Electrode
 
 The glass electrode is placed in the solution under test and is coupled with a saturated calomel electrode, as shown in the figure below.
+
+![Determination of pH using glass electrode setup](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p016-1.webp)
 
 > **Figure: Determination of pH using glass electrode setup**
 >
@@ -620,6 +636,8 @@ $$\text{Li}_x\text{ C}_6 \text{ | Li } X \text{ in PC-EC | Li}_{1-x}\text{ MO}_2
 
 Where $\text{Li } X$ is lithium salt. $\text{PC-EC}$ is a mixed propylene carbonate-ethylene carbonate solvent and $\text{M}$ is transition metal like ($\text{Co}, \text{Ni}, \text{Mn}$ etc.). The emf of the cell varies from about $2.7\text{ V} - 4.23\text{ V}$.
 
+![Diagram of a Lithium-ion battery showing charging and discharging mechanisms](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p019-1.webp)
+
 > **Figure: Diagram of a Lithium-ion battery showing charging and discharging mechanisms**
 >
 > Diagram of a Lithium-ion battery showing charging and discharging mechanisms. The structure includes an Anode (graphite) on the left in blue, a Separator in the middle, an Electrolyte, and a Cathode (LiCoO2) on the right in brown. Yellow circles representing Li+ ions are shown moving between the electrodes. Two horizontal arrows indicate Charging pointing right in red and Discharging pointing left in green.
@@ -688,6 +706,8 @@ Example: Hydrogen-oxygen fuel cell.
 
 Hydrogen-oxygen fuel cell is the simplest and most successful fuel cell, in which the fuel-hydrogen and the oxidizer-oxygen and the liquid electrolyte are continuously passed through the cell.
 
+![Hydrogen-Oxygen fuel cell diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p020-1.webp)
+
 > **Figure: Hydrogen-Oxygen fuel cell diagram**
 >
 > Diagram of a Hydrogen-Oxygen fuel cell showing Anode (-) on the left and Cathode (+) on the right, connected at the top by a circuit with a voltmeter and a water output (H2O). Hydrogen (H2) enters on the left and Oxygen (O2) enters on the right. Inside, porous carbon electrodes enclose an electrolyte containing OH- ions. Electrons (e-) flow from anode to cathode.
@@ -742,6 +762,8 @@ The emf of the cell = $0.8$ to $1.0\text{ V}$
 
 Metals are isolated from their ores, generally at high temperature, in a process that involves an increase in free energy. Most metals—except noble metals such as $\text{Au}$, $\text{Ag}$, and $\text{Pt}$—exist in nature in combined forms as oxides, hydroxides, carbonates, chlorides, sulphides, sulphites, silicates, etc. These are known as minerals or ores. During extraction, these metal ores are reduced to their metallic states, requiring a considerable amount of energy. Consequently, isolated pure metals exist in a higher energy (excited) state than their corresponding ores, giving them a natural tendency to revert to a combined, lower energy state. When exposed to the environment (dry gases, moisture, liquids, etc.) during use, the exposed metal surfaces begin to decay. This destruction or deterioration of the metal at the surface is known as **corrosion**.
 
+![Diagram comparing metal extraction and corrosion](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p022-1.webp)
+
 > **Figure: Diagram comparing metal extraction and corrosion**
 >
 > Block diagram comparing metal extraction and corrosion. A box on the left contains 'Metal' with a label below 'Thermodynamically unstable'. An arrow points to the right labelled 'Corrosion (Oxidation)' to a box on the right containing 'Metallic compound Mineral/ore' and '+ Energy' outside to the right, with a label below 'Thermodynamically stable'. Below this, an arrow points from right to left labelled 'Metal extraction (Reduction)'.
@@ -774,6 +796,8 @@ Depending on the environment, the cathode reaction proceeds via one of two pathw
 ##### a. Hydrogen Evolution Corrosion in Acid Medium
 Occurs in acidic environments (e.g., industrial areas) where a metal like $\text{Fe}$ or $\text{Al}$ is in contact with $\text{HCl}$. For iron, the hydrogen electrode potential in an acid medium ($E^0_{\text{H}^+/\text{H}_2} = 0\text{ V}$) is higher than the electrode potential of iron ($E^0_{\text{Fe}^{2+}/\text{Fe}} = -0.44\text{ V}$).
 
+![Mechanism of hydrogen evolution corrosion in acid medium showing anodic and cathodic areas on iron.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p024-1.webp)
+
 > **Figure: Mechanism of hydrogen evolution corrosion in acid medium showing anodic and cathodic areas on iron.**
 >
 > Mechanism of hydrogen evolution corrosion in acid medium showing anodic and cathodic areas on iron. Diagram illustrating hydrogen evolution corrosion. It shows an Iron surface with 'Anodic area (large)' on the left and right, and a 'Small cathodic area' in the middle. The bulk solution is labelled 'Acidic solution (electrolyte)'. Labels point to parts of the diagram: 'Diffusion of ferrous ions formed into electrolyte' with an arrow pointing from the iron into the solution, 'H+' ions in solution, '$2\text{H}^+ + 2\text{e}^- \rightarrow \text{H}_2\text{(g)}$' at the cathodic surface, '$\text{Fe} \rightarrow \text{Fe}^{2+} + 2\text{e}^-$' at the anodic areas, electron flow 'e^-' from anode to cathode, and H2(g) bubbles evolving at the cathode.
@@ -797,6 +821,8 @@ $$\begin{aligned}
 
 ##### a. Oxygen Absorption Corrosion in Acid or Neutral Environment
 Occurs in neutral aqueous electrolyte solutions (e.g., $\text{NaCl}$) containing dissolved atmospheric oxygen, such as the rusting of iron with a cracked oxide scale.
+
+![Mechanism of oxygen absorption corrosion in neutral/acid medium on iron](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p025-1.webp)
 
 > **Figure: Mechanism of oxygen absorption corrosion in neutral/acid medium on iron**
 >
@@ -867,9 +893,13 @@ Objectives: Describe cathodic protection methods including sacrificial anodes an
 
 As a result of corrosion an electronic flow occurs from the anodic part to cathodic part and it is known as corrosion current. In this method an impressed current from a DC source is applied in opposite direction to neutralize corrosion current and convert the corroding metal from anode to cathode. Usually impressed current is derived from a battery with an insoluble anode like Graphite or silica, iron, stainless steel, Pt etc. The anode is to be kept in a region of good conductivity.
 
+![Sacrificial anode method: ship hull and underground water pipeline](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p028-1.webp)
+
 > **Figure: Sacrificial anode method: ship hull and underground water pipeline**
 >
 > Figure 1: Sacrificial anode method: ship hull and underground water pipeline. The diagram shows two setups. Left setup: a ship hull labelled 'Protected base metal- steel' with attached rectangular blocks labelled 'sacrificial anode-Zn' in water. Right setup: an underground pipeline where a copper wire connects a 'Sacrificial anode' surrounded by 'Electrolyte' in the soil to an 'Iron pipe' buried under 'Soil'.
+
+![Impressed current cathodic protection setup](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p028-2.webp)
 
 > **Figure: Impressed current cathodic protection setup**
 >
@@ -890,6 +920,8 @@ It is the process by which the coating metal is deposited on the base metal by p
 
 The base metal to be plated is usually made as the cathode whereas the anode is either the coating metal itself or an inert material of good electrical conductivity like graphite.
 
+![Electroplating setup diagram showing a battery, anode, cathode, coating layer, electroplating bath, and electrolyte solution.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p029-1.webp)
+
 > **Figure: Electroplating setup diagram showing a battery, anode, cathode, coating layer, electroplating bath, and electrolyte solution.**
 >
 > Schematic diagram of a general electroplating cell setup. At the top, a battery is connected via wires to two submerged electrodes inside a rectangular container representing the electroplating bath. The left electrode is hatched and labeled 'Anode'. The right electrode has a solid outline with an inner layer labeled 'Coating layer', and is labeled 'Cathode'. The liquid inside the container is pointed to by labels 'electroplating Bath' and 'electrolyte sol'.
@@ -899,6 +931,8 @@ Electroplating of metals is done to protect them from corrosion and for decorati
 #### Electroplating of Copper
 
 Copper electroplating is the process of electroplating a layer of copper onto the surface of a metal object. E.g. Electroplating iron object with copper metal.
+
+![Copper electroplating setup showing a DC power source, copper plate anode, iron object cathode, and CuSO4 solution.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-1/assets/p029-2.webp)
 
 > **Figure: Copper electroplating setup showing a DC power source, copper plate anode, iron object cathode, and CuSO4 solution.**
 >

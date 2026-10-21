@@ -1,0 +1,16 @@
+{
+  "description": "Daniell galvanic cell diagram: two beakers, Zn rod in 1M ZnSO4 (anode, minus) and Cu rod in 1M CuSO4 blue solution (cathode, plus), U-shaped salt bridge between them, voltmeter in external wire, electron flow arrows from Zn to Cu",
+  "file": "daniell-galvanic-cell-diagram-two-beakers-zn-rod-b4c29ae9.png",
+  "source": "wikimedia-commons",
+  "pageUrl": "https://commons.wikimedia.org/wiki/File:Daniell_cell_with_KNO3_salt_bridge.png",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Daniell_cell_with_KNO3_salt_bridge.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "CC0",
+  "author": "Dubito, ergo quaero",
+  "verifiedBy": "gemini-3.5-flash-lite",
+  "review": {
+    "match": true,
+    "score": 10,
+    "shows": "A clear diagram of a Daniell galvanic cell featuring two beakers, a Zn anode, a Cu cathode, a U-shaped salt bridge, an external wire with a meter, and electron flow indicators.",
+    "problems": []
+  }
+}

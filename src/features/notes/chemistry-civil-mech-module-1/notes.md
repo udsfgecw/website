@@ -67,6 +67,8 @@ A bomb calorimeter consists of the following key assemblies:
 - **Copper Calorimeter:** Houses the bomb and a known mass of water, equipped with an electrical stirrer and a Beckmann thermometer capable of measuring temperature differences down to $0.01^\circ\text{C}$.
 - **Insulating Jackets:** The copper calorimeter is surrounded by an air jacket and a water jacket to minimize heat loss via radiation.
 
+![Diagram of a Bomb Calorimeter](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p003-1.webp)
+
 > **Figure: Diagram of a Bomb Calorimeter**
 >
 > Diagram of a Bomb Calorimeter. Schematic diagram showing various components: Beckmann's thermometer on the left inserted into the copper calorimeter, Oxygen valve at the top center leading into the bomb, 6V Battery connected via wires to the electrodes for the fuse wire, Electrically operated stirrer at the top right, Electrodes extending into the bomb, Copper calorimeter containing water, Stainless steel bomb in the center, Solid fuel inside the crucible, Fuse wire dipping into the solid fuel in the crucible, Stainless steel crucible, Air jacket surrounding the calorimeter, and Water jacket surrounding the air jacket.
@@ -147,6 +149,8 @@ $$\text{Gross calorific value} = \frac{(W + w)(T_2 - T_1 + \text{cooling correct
 ### Theoretical Calculation of Calorific Value (Dulong's Formula)
 
 According to Dulong, the calorific value of a fuel is the sum of the calorific values of its constituent elements ($\text{C}, \text{H}, \text{S}$).
+
+![Table 1.2: Calorific value of the fuel](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p005-1.webp)
 
 > **Figure: Table 1.2: Calorific value of the fuel**
 >
@@ -233,6 +237,8 @@ The new idea: Octane and cetane numbers quantify the anti-knock characteristics 
 ### Diesel Fuels and Cetane Number
 
 A lower cetane number means the fuel takes longer to ignite, causing engine noise and less efficiency. Therefore, a higher cetane number corresponds to a better quality diesel fuel.
+
+![Chemical structures of n-hexadecane (cetane) and 1-methylnaphthalene](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p009-1.webp)
 
 > **Figure: Chemical structures of n-hexadecane (cetane) and 1-methylnaphthalene**
 >
@@ -514,6 +520,8 @@ The principal raw materials for cement production include:
 #### Step B: Calcination in a Rotary Kiln
 The rotary kiln is a long, inclined, rotating steel cylinder lined internally with refractory firebricks operating up to $1750^{\circ}\text{C}$, where raw feed resides for $2$ to $3$ hours.
 
+![Diagram of a rotary kiln used for cement manufacturing](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p020-1.webp)
+
 > **Figure: Diagram of a rotary kiln used for cement manufacturing**
 >
 > Diagram of a rotary kiln used for cement manufacturing. Key labels include: Chimney, Flue gases, Dry mix or slurry feed tank, Drying zone, Revolving kiln, Calcination zone, Refractory bricks lining, Clinkering zone, Hot flame, Fuel oil or powdered coal, Roller bearings, Concrete support, Trolley, Air inlet, Clinker, Hot air blower, Dust catcher.
@@ -551,6 +559,8 @@ Polymers are high-molecular-mass macromolecules constructed via covalent linking
 
 #### ABS (Acrylonitrile Butadiene Styrene)
 **Preparation:** Synthesized by dissolving polybutadiene in liquid acrylonitrile and styrene monomers in the presence of a free-radical initiator, yielding a tough engineering thermoplastic.
+
+![Chemical equation for the preparation of ABS polymer](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p020-2.webp)
 
 > **Figure: Chemical equation for the preparation of ABS polymer**
 >
@@ -593,6 +603,8 @@ ABS is a thermoplastic terpolymer produced by polymerizing styrene and acrylonit
 ### Kevlar
 
 Kevlar is a specialized aramid fiber chemically known as poly-para-phenylene terephthalamide. It is synthesized via the condensation polymerization of $p$-phenylenediamine and terephthaloyl chloride, eliminating hydrochloric acid ($\text{HCl}$) as a byproduct.
+
+![Chemical reaction for the synthesis of Kevlar from para-phenylene diamine and terephthaloyl chloride](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p021-1.webp)
 
 > **Figure: Chemical reaction for the synthesis of Kevlar from para-phenylene diamine and terephthaloyl chloride**
 >
@@ -649,6 +661,8 @@ Bridge: Having studied insulating structural polymers, we now examine organic ma
 
 These conducting polymers contain conjugated electrons along the polymeric chain. The orbitals of conjugated electrons overlap over the entire polymeric back-bone, resulting in the formation of a valence band and a conduction band, which extends over the entire polymeric backbone. These bands are separated by a very small band gap. Thus, electrical conduction occurs when electrons from the valence band are excited to the conduction band either thermally or photolytically. An example of this is polyacetylene.
 
+![Addition polymerisation of acetylene to form polyacetylene](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p023-1.webp)
+
 > **Figure: Addition polymerisation of acetylene to form polyacetylene**
 >
 > Chemical reaction showing the addition polymerisation of n molecules of acetylene (n HC=CH) to form polyacetylene. An arrow pointing right is labelled Addition polymerisation. The product is a polymer chain with alternating single and double bonds, flanked by wavy lines indicating continuation, labelled polyacetylene.
@@ -664,6 +678,8 @@ Conductivity of intrinsically conducting polymers can be increased by creating a
 
 \(\text{p}\)-Doping is done via an oxidation process. In this process, some electrons of the \(\text{pi}\)-bonds of the conjugated double bonds are removed, and holes are created which can move along the polymer, rendering it electrically conductive. The radical cation produced is called a **polaron**. Polarons are mobile and can move along the polymer chain by the rearrangement of double and single bonds. The oxidation process is typically brought about by Lewis acids like \(\text{FeCl}_3\).
 
+![Propagation of poloron through the conjugated polymer chain by shifting of double bonds](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p023-2.webp)
+
 > **Figure: Propagation of poloron through the conjugated polymer chain by shifting of double bonds**
 >
 > Reaction scheme showing the mechanism of conduction by p-doping in polyacetylene. A polyacetylene chain loses an electron (-1 e-) resulting in a radical cation (poloron) with a positive charge and a radical dot. A second step below shows the propagation of the poloron through the conjugated polymer chain by the shifting of double bonds, indicated by curved arrows pointing between adjacent single and double bonds.
@@ -675,12 +691,16 @@ Conductivity of intrinsically conducting polymers can be increased by creating a
 
 \(\text{n}\)-Doping is done via a reduction process. In this process, electrons are introduced into the polymer having conjugated double bonds. Reduction can be accomplished using Lewis bases such as sodium naphthalide. This leads to the formation of polarons and bipolarons in stepwise reactions.
 
+![Poly acetylene reduction mechanism step 1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p024-1.webp)
+
 > **Figure: Poly acetylene reduction mechanism step 1**
 >
 > Chemical reaction diagram showing Polyacetylene undergoing n-doping via reduction by adding +1e-. Curved arrows indicate the shifting of electrons along the conjugated double bond backbone to form a radical/polaron intermediate species. The label 'Poly acetylene' is centered below the starting structure, and an arrow labeled '+1e-' points to the resulting polymer chain structure with radical and ionic markers.
 
  Poly acetylene reduction mechanism step 1
   Chemical reaction diagram showing Polyacetylene undergoing n-doping via reduction by adding $+1e^-$. Curved arrows indicate the shifting of electrons along the conjugated double bond backbone to form a radical/polaron intermediate species. The label 'Poly acetylene' is centered below the starting structure, and an arrow labeled '+1e-' points to the resulting polymer chain structure with radical and ionic charges.
+
+![Propagation of bipoloron through conjugated polymer chain](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p024-2.webp)
 
 > **Figure: Propagation of bipoloron through conjugated polymer chain**
 >
@@ -752,6 +772,8 @@ Metal nanoparticles such as gold and silver are prepared by reducing their respe
 - Carbon-based nanoparticles are widely utilized as electrode materials in supercapacitors.
 
 ### Graphene
+
+![Graphene hexagonal honeycomb structure](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p027-1.webp)
 
 > **Figure: Graphene hexagonal honeycomb structure**
 >
@@ -826,6 +848,8 @@ Carbon nanotubes are one-dimensional carbon allotropes formed by rolling graphen
 
 ### Fullerenes
 Fullerenes are zero-dimensional, hollow, closed-cage nanoparticles composed entirely of carbon atoms.
+
+![Structure of a fullerene molecule](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p030-1.webp)
 
 > **Figure: Structure of a fullerene molecule**
 >

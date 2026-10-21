@@ -106,6 +106,8 @@ $$E_{\text{total}} = E_{el} + E_{vib} + E_{rot} + E_{trans}$$
 
 Ultraviolet-Visible spectroscopy covers the UV region ($200-400\text{ nm}$) and the Visible region ($400-800\text{ nm}$). It corresponds to electronic excitation between molecular orbitals. Transitions involving $\pi$ orbitals and non-bonding lone pairs ($n$) are particularly important for identifying conjugated systems.
 
+![Electronic transitions energy level diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p004-1.webp)
+
 > **Figure: Electronic transitions energy level diagram**
 >
 > Electronic transitions energy level diagram. An energy level diagram showing various electronic energy levels from bottom to top: sigma, pi, n, pi*, and sigma*. Vertical arrows indicate electronic transitions: a long arrow from sigma to sigma* labeled sigma to sigma*, a shorter arrow from pi to pi* labeled pi to pi*, an arrow from n to pi* labeled n to pi*, and an arrow from n to sigma* labeled n to sigma*. A vertical axis on the left has an arrow pointing upwards with the label Energy.
@@ -121,11 +123,15 @@ When a molecule absorbs UV-Visible radiation, electrons are promoted from a bond
 
 
 
+![Electron configuration of ground state and excited state](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p005-1.webp)
+
 > **Figure: Electron configuration of ground state and excited state**
 >
 > Two energy level diagrams illustrating the most stable electron configuration (ground state) on the left and the electron configuration of the excited state on the right. Left diagram shows orbitals psi_1 (with two paired electrons), psi_2 (with two paired electrons), psi_3 (with two paired electrons, labeled HOMO), psi_4* (empty, labeled LUMO), psi_5* (empty), and psi_6* (empty). An arrow points from HOMO to LUMO with the label Delta E = h nu. Right diagram shows orbitals psi_1 (two paired electrons), psi_2 (two paired electrons), psi_3 (one single electron), psi_4* (one single electron), psi_5* (empty), and psi_6* (empty).
 
 
+
+![Transition for 1,3,5 hexatriene showing ground to excited state at 258 nm](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p005-2.webp)
 
 > **Figure: Transition for 1,3,5 hexatriene showing ground to excited state at 258 nm**
 >
@@ -135,6 +141,8 @@ When a molecule absorbs UV-Visible radiation, electrons are promoted from a bond
    - **Benzene:** Possesses six $\pi$ molecular orbitals where $\psi_1$ is bonding, $\psi_2 \& \psi_3$ are degenerate bonding MOs (HOMO), $\psi_4 \& \psi_5$ are degenerate antibonding MOs (LUMO), and $\psi_6^*$ is antibonding. HOMO to LUMO transition occurs at $255\text{ nm}$.
 
 
+
+![Benzene molecular orbital energy levels and structure (b)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p006-1.webp)
 
 > **Figure: Benzene molecular orbital energy levels and structure (b)**
 >
@@ -151,6 +159,8 @@ Modern UV-Vis instruments are typically double-beam spectrometers.
 - **Beer-Lambert Law Application:** The instrument measures the transmittance or absorbance ($A$), defined as:
   $$A = \log\left(\frac{I_0}{I}\right) = \varepsilon c l$$
   where $\varepsilon$ is the molar absorptivity, $c$ is concentration, and $l$ is path length.
+
+![UV-VIS spectrophotometer setup diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p007-1.webp)
 
 > **Figure: UV-VIS spectrophotometer setup diagram**
 >
@@ -180,6 +190,10 @@ When molecules absorb infrared radiation, they undergo transitions between quant
 - **Heteronuclear Diatomic Molecules:** Molecules like $\text{HCl}$ undergo stretching vibrations where the internuclear distance changes, resulting in a fluctuating dipole moment. Hence, they are IR active.
 - **Homonuclear Diatomic Molecules:** Molecules like $\text{H}_2, \text{O}_2,$ and $\text{N}_2$ possess no permanent dipole moment and exhibit no change in dipole moment during stretching. Therefore, they are vibrationally inactive.
 
+![Symmetric Stretching of CO2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p008-1.webp)
+
+![Asymmetric Stretching of CO2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p008-2.webp)
+
 > **Figure: Symmetric Stretching of CO2**
 >
 > Diagram showing symmetric stretching of CO2. The molecule O=C=O has horizontal arrows pointing outwards from the outer oxygen atoms. Labels below read: Symmetric Stretching, No Change in dipole moment, IR inactive.
@@ -188,9 +202,13 @@ When molecules absorb infrared radiation, they undergo transitions between quant
 >
 > Diagram showing asymmetric stretching of CO2. The molecule O=C=O has two parallel horizontal arrows pointing to the right. Labels below read: Asymetric Stretching, Change in dipole moment, IR active.
 
+![Bending inplane of CO2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p008-3.webp)
+
 > **Figure: Bending inplane of CO2**
 >
 > Diagram showing bending inplane of CO2. The molecule O=C=O has a vertical arrow pointing upwards from the central carbon atom and curved arrows at the ends. Labels below read: Bending inplane, Change in dipole moment, IR active.
+
+![Bending out plane of CO2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p008-4.webp)
 
 > **Figure: Bending out plane of CO2**
 >
@@ -218,6 +236,8 @@ These four modes consist of:
 $$\text{Vibrational modes} = 3(3) - 6 = 3$$
 These three modes are symmetric stretching, asymmetric stretching, and a single bending vibration. During stretching vibrations, bond lengths change while bond angles remain constant; conversely, during bending vibrations, bond angles change while bond lengths remain constant.
 
+![Vibrational modes of water molecule](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p009-1.webp)
+
 > **Figure: Vibrational modes of water molecule**
 >
 > Vibrational modes of water molecule. Three chemical structure diagrams showing a central oxygen (O) atom bonded to two hydrogen (H) atoms in a bent geometry. The first diagram is labeled 'Symmetric stretching' with arrows pointing outwards along both O-H bonds away from the O atom. The second diagram is labeled 'Asymmetric stretching' with arrows pointing in asymmetric directions relative to the bonds. The third diagram is labeled 'Bending in plane' with curved double-headed arrows indicating in-plane bending motion of the two H atoms toward and away from each other.
@@ -225,6 +245,8 @@ These three modes are symmetric stretching, asymmetric stretching, and a single 
 ### Force Constant and Diatom Vibrations
 
 The fundamental frequency of vibration or wavenumber ($\bar{\nu}$) is directly proportional to the square root of the force constant $k$ (representing bond strength) and inversely proportional to the square root of the reduced mass $\mu$ of the vibrating atoms.
+
+![Formulas for frequency, wave number, and force constant](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p009-2.webp)
 
 > **Figure: Formulas for frequency, wave number, and force constant**
 >
@@ -252,6 +274,8 @@ Where:
 - **Intermolecular Hydrogen Bonding:** Found in molecules like $p$-hydroxy phenol, where association between distinct molecules weakens upon dilution, causing a measurable shift in absorption frequency.
 - **Intramolecular Hydrogen Bonding:** Found in molecules like $o$-hydroxy phenol, where chelation occurs internally within the same molecule and remains unaffected by dilution.
 
+![Intermolecular and intramolecular H-bonding](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p010-1.webp)
+
 > **Figure: Intermolecular and intramolecular H-bonding**
 >
 > Figure 3.17 illustrating intermolecular and intramolecular hydrogen bonding. On the left and middle, two p-hydroxy phenol molecules are shown with intermolecular hydrogen bonding represented by dashed lines between the hydrogen of one molecule and oxygen of another. On the right, a single o-hydroxy phenol molecule is shown with intramolecular hydrogen bonding represented by a dashed line forming a closed loop structure between the adjacent OH groups.
@@ -265,6 +289,8 @@ Moving from spectroscopic radiation interactions, we now explore thermal methods
 ### Thermogravimetric Analysis (TGA)
 
 Thermogravimetric analysis (TGA) is a technique in which the mass of a substance is monitored as a function of temperature, as the sample is heated from room temperature to a temperature as high as $1200\text{ }^\circ\text{C}$ in a controlled atmosphere. As the temperature increases, the sample may undergo physical or chemical changes accompanied by a mass loss.
+
+![Block diagram of TGA apparatus](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p012-1.webp)
 
 > **Figure: Block diagram of TGA apparatus**
 >
@@ -283,6 +309,10 @@ The sample to be analyzed (typically about $3\text{ mg}$) is placed in the sampl
 
 #### Thermogram of Calcium Oxalate Monohydrate
 
+![Thermogram of calcium oxalate](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p012-2.webp)
+
+![Derivative thermogram of calcium oxalate monohydrate](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p013-2.webp)
+
 > **Figure: Thermogram of calcium oxalate**
 >
 > Thermogram of calcium oxalate. A thermogravimetric analysis (TGA) graph of Weight (mg) versus Temperature (C) for CaC2O4.H2O. The curve shows steps corresponding to weight loss: starting with CaC2O4.H2O, passing 100 C, dropping to CaC2O4 + H2O, passing 226 C and 346 C, dropping to CaCO3 at 420 C, passing 660 C and 840 C, and finally reaching CaO at 980 C.
@@ -295,6 +325,8 @@ Thermogravimetric analysis can be used for the identification of inorganic compo
 5. The formed calcium carbonate is stable up to $660\text{ }^\circ\text{C}$. Above this temperature, it decomposes to yield calcium monoxide ($\text{CaO}$) and carbon dioxide ($\text{CO}_2$), with decomposition completing around $840\text{ }^\circ\text{C}$ to $980\text{ }^\circ\text{C}$.
 
 #### TGA of Polymers
+
+![TGA curves for various polymers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p013-1.webp)
 
 > **Figure: TGA curves for various polymers**
 >
@@ -326,11 +358,15 @@ In Differential Thermal Analysis (DTA), the material under study and an inert re
 - Endothermic processes (such as fusion, transition, and sublimation) are represented by downward peaks.
 - Exothermic processes (such as crystallization or certain decompositions) are represented by upward peaks.
 
+![DTA curve of calcium oxalate monohydrate](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p014-1.webp)
+
 > **Figure: DTA curve of calcium oxalate monohydrate**
 >
 > Figure 3.23: DTA of calcium oxalate monohydrate (CaC2O4.H2O) in a current of air. A graph showing Differential temperature on the y-axis (Exothermic at the top, Endothermic at the bottom, zero in the middle) versus Sample temperature in °C on the x-axis (ranging from 0 to 900 with major marks at 100, 200, 300, 400, 500, 600, 700, 800, 900). The curve displays an endothermic downward peak around 200-300 °C labeled 'CaC2O4.H2O -> CaC2O4 + H2O', an exothermic sharp upward peak around 450-500 °C labeled '2CaC2O4 + O2 -> 2CaCO3 + 2CO2', and an endothermic downward valley around 700-800 °C labeled 'CaCO3 -> CaO + CO2'.
 
 #### Instrumentation and Working
+
+![Instrumentation block diagram for DTA](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p014-2.webp)
 
 > **Figure: Instrumentation block diagram for DTA**
 >
@@ -371,6 +407,8 @@ Gas chromatography (GC) is a powerful analytical separation technique used to an
 The separation of components depends upon the extent of adsorption or partition of the analytes with the stationary phase and the different rates at which the components are swept through the system by the mobile phase. Analytes with stronger interactions with the stationary phase are retained longer, whereas those with weaker interactions elute faster.
 
 ### Instrumentation
+
+![Gas Chromatography schematic diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p017-1.webp)
 
 > **Figure: Gas Chromatography schematic diagram**
 >
@@ -433,6 +471,8 @@ An SEM system consists of several critical components housed within a rigid fram
 * **Scan Coils:** Deflect the electron beam horizontally and vertically so it rasters across a rectangular area of the sample.
 * **Sample Chamber & Vacuum System:** Maintains a high to ultra-high vacuum environment to ensure that electrons do not collide with gas molecules in the air, which would scatter the beam and distort the image.
 * **Detectors:** Specialized sensors (such as Everhart-Thornley detectors for secondary electrons) that collect the emitted signals and amplify them for digital image processing.
+
+![Diagram of a Scanning Electron Microscope (SEM)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p019-1.webp)
 
 > **Figure: Diagram of a Scanning Electron Microscope (SEM)**
 >
