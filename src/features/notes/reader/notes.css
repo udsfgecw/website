@@ -198,6 +198,10 @@
   width: min(100%, 720px);
   max-height: none;
 }
+.notes-prose a.notes-figure-link {
+  display: block;
+  cursor: zoom-in;
+}
 .notes-prose .notes-code {
   margin: 1.4em 0;
   border: 1px solid var(--color-line);

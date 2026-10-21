@@ -16,5 +16,5 @@ export const graphicsm2: NotesModule = {
     { label: "PROJECTION OF SOLIDS" },
   ],
   module: "Projection of Solids", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", summary: "Projection of solids in simple and inclined positions",
-  source: "KTU 2024 scheme, GMEST103 Engineering Graphics and Computer Aided Drawing, from the KTUNOTES.LIVE problem sets.", pages, chapters,
+  source: "KTU 2024 scheme, GMEST103 Engineering Graphics and Computer Aided Drawing, from the KTUNOTES.LIVE problem sets. Drawings by Sumesh (Graphicszone2021).", pages, chapters,
 };

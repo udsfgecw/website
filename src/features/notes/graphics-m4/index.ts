@@ -16,5 +16,5 @@ export const graphicsm4: NotesModule = {
     { label: "ISOMETRIC PROJECTION" },
   ],
   module: "Isometric Projection", course: "Engineering Graphics and Computer Aided Drawing", code: "GMEST103", summary: "Isometric views of solids and their combinations",
-  source: "KTU 2024 scheme, GMEST103 Engineering Graphics and Computer Aided Drawing, from the KTUNOTES.LIVE problem sets.", pages, chapters,
+  source: "KTU 2024 scheme, GMEST103 Engineering Graphics and Computer Aided Drawing, from the KTUNOTES.LIVE problem sets. Drawings by Sumesh (Graphicszone2021).", pages, chapters,
 };

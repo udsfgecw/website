@@ -646,9 +646,7 @@ Similarly, if a problem gives an apparent angle ($\alpha$ or $\beta$), draw that
 }
 ```
 
-> **Figure: Worked solution step 204 for projection of line PQ**
->
-> Orthographic projection diagram labelled 204 showing line PQ with reference line xy. Point p(v) lies on the xy line, and p'(VT) is 15 mm above the xy line on the same vertical projector. Locus of q' and q1' is a horizontal line 30 mm above xy. The top view pq has length 70 mm and is inclined at beta = 45 degrees below xy, ending at q (which coincides with q2). An arc goes from q(q2) up to q1 on the xy line (with upward arrow), and a vertical projector goes from q1 up to q1' on the 30 mm locus (with upward arrow), giving true length p'q1'. A vertical projector goes from q up to q' on the 30 mm locus (with upward arrow), giving front view p'q'. Extending p'q' backwards to the left meets the xy line at h'. Extending the top view pq backwards above the xy line meets the vertical projector through h' at HT above xy. Box 'GIVEN': [1] TV - 70mm, [2] beta - 45°, [3] P - in VP, [4] P - 15 aHP, [5] Q - 30 aHP. Box 'ANSWERS': [1] p'q' - 52mm, [2] TL - 72mm, [3] phi - 44°, [4] theta - 12°, [5] h'-HT - 49mm, [6] v-VT - 15mm.
+![Worked solution step 204 for projection of line PQ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-024-panel-1.webp)
 
 **Answer:** True length = 71.6 mm, elevation $p'q' = 51.7$ mm, $\theta = 12.1^\circ$, $\phi = 43.7^\circ$, HT = 49.5 mm from XY, VT = 15 mm from XY.
 
@@ -683,9 +681,7 @@ Similarly, if a problem gives an apparent angle ($\alpha$ or $\beta$), draw that
 }
 ```
 
-> **Figure: Projection of line PQ (solution step 193)**
->
-> Orthographic projection of line PQ with reference line xy. Point p' is on the xy line. Point p is 20 mm below xy. Front view p'q' has length 50 mm and makes an angle alpha = 45 degrees with xy. Top view pq has length 65 mm. Point q is projected up to the xy line to get q1', and rotated around p' to the locus of q' to get q2', giving the true length in the front view p'q2' inclined at theta to xy. Point q' is projected down to the horizontal line through p, and rotated around p to the locus of q to get q1, giving the true length in the top view pq1 (labelled TL) inclined at phi to the horizontal. Box '193'. Box 'GIVEN': [1] P - on HP, [2] P - 20 fVP, [3] alpha - 45 deg, [4] FV - 50mm, [5] TV - 65mm. Box 'ANSWERS': [1] TL - 74mm, [2] theta - 29 deg, [3] phi - 48 deg.
+![Projection of line PQ (solution step 193)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-027-panel-1.webp)
 
 **Answer:** True length = 74 mm, $\theta = 28.5^\circ$, $\phi = 47.5^\circ$, HT = 20 mm from XY, VT = 13 mm from XY.
 
@@ -773,21 +769,11 @@ Similarly, if a problem gives an apparent angle ($\alpha$ or $\beta$), draw that
 7. With center $a$ and radius equal to the true length $a'b_1'$, cut the horizontal locus of $b$ above XY at $b_2$ and measure $\phi$ between $ab_2$ and the horizontal.
 > **Watch out.** A point in the second quadrant equidistant from the HP and the VP has both its front view $b'$ and top view $b$ at the exact same distance above the XY line, so $b$ and $b'$ coincide at one point.
 
-> **Figure: Projection of line AB for Q11**
->
-> Problem Q11: Line AB with end A 25 mm in front of VP and 15 mm above HP, inclined at theta = 20 degrees to HP, top view length 80 mm, and end B in the second quadrant equidistant from HP and VP (so B.z > 0, B.y < 0, and B.z = -B.y).
+![Step 11.1 of projection of straight line AB](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-028-panel-1.webp)
 
-> **Figure: Step 11.1 of projection of straight line AB**
->
-> Drawing labelled 11.1 showing the initial step of constructing the projections of line AB. A horizontal reference line XY is drawn with labels 'x' on the left and 'y' on the right. Point a' is located 15 mm above the XY line, and point a is located 25 mm below the XY line on the same vertical projector (dimensioned 15 and 25 on the left). From a, a horizontal line ab1 of length 80 mm (dimensioned 80 at the bottom) is drawn parallel to XY. From a', a line a'b1' is drawn inclined at 20° to the horizontal. A vertical projector is drawn upward from b1 to meet the inclined line from a' at b1', with a horizontal locus line passing through b1'. Beside the drawing: GIVEN box: [1] TV - 80mm, [2] A - 15 aHP, [3] A - 25 fVP, [4] θ - 20°, [5] b & b' - on same locus. ANSWERS box: [1] TL - 85mm, [2] a'b' - 49mm, [3] φ - 55°. Text below boxes: SCALE 1:1, ALL DIMENSIONS ARE IN mm.
+![Step 11.2 of projection of straight line AB](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-028-panel-2.webp)
 
-> **Figure: Step 11.2 of projection of straight line AB**
->
-> Drawing labelled 11.2 showing the completed projections of line AB. Building upon step 11.1, with a' 15 mm above XY, a 25 mm below XY, horizontal line ab1 = 80 mm, and line a'b1' at 20° to the horizontal meeting the vertical projector from b1 at b1'. With centre a and radius ab1 (80 mm), an arc is swung counterclockwise (upward) from b1 to intersect the horizontal locus line through b1' at point labelled b'b. The top view line ab and front view line a'b' both terminate at this coincided point b'b on the upper locus line. The angle between the horizontal line ab1 and the top view line ab is marked as φ. Beside the drawing: GIVEN box: [1] TV - 80mm, [2] A - 15 aHP, [3] A - 25 fVP, [4] θ - 20°, [5] b & b' - on same locus. ANSWERS box: [1] TL - 85mm, [2] a'b' - 49mm, [3] φ - 55°. Text below boxes: SCALE 1:1, ALL DIMENSIONS ARE IN mm.
-
-> **Figure: Step 11.3 of projection of line AB with given data and final answers**
->
-> Engineering drawing labelled '11.3' showing the complete orthographic projection of a line AB. A horizontal reference line is labelled 'x' and 'y'. Point a' is 15 mm above the xy line, and point a is 25 mm below the xy line on the same vertical projector. From a, a horizontal segment a-b1 of length 80 mm extends to the right. A vertical projector goes up from b1 to intersect a line from a' inclined at 20 degrees to the horizontal, locating point b1' on the upper horizontal locus line. Note: the top view b and front view b' lie on the same upper horizontal locus line, denoted as 'b'b' at the intersection of the vertical projector of b/b' with the upper locus line. The front view line segment a'-b' and top view line segment a-b both terminate at this same point 'b'b' above the xy line. An arc centered at a goes from b1 upwards and leftwards to meet the upper locus line at point b2', and a line is drawn from a to b2' making an angle phi with the horizontal line a-b1. Beside the drawing are two boxes: 'GIVEN: [1] TV - 80mm, [2] A - 15 aHP, [3] A - 25 fVP, [4] \theta - 20^\circ, [5] b & b' - on same locus' and 'ANSWERS: [1] TL - 85mm, [2] a'b' - 49mm, [3] \phi - 55^\circ'. Below the boxes is text: 'SCALE 1:1', 'ALL DIMENSIONS ARE IN mm'.
+![Step 11.3 of projection of line AB with given data and final answers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-029-panel-1.webp)
 
 **Answer:** True length $AB = a'b_1'$, inclination with the VP $\phi$ is the angle between $ab_2$ and the horizontal.
 
@@ -1038,9 +1024,7 @@ If a line crosses between quadrants, an endpoint's distance may be above $XY$ wh
 }
 ```
 
-> **Figure: Worked orthographic projection solution step 207**
->
-> Orthographic projection diagram labelled 207. Horizontal reference line xy. Left end projector has point a' 40 mm above xy and point a 20 mm below xy. Right end projector is at a horizontal distance of 100 mm from the left projector, with point b 50 mm above xy and point b' 30 mm below xy. Front view segment a'b' and top view segment ab cross the xy line. On a'b', point h' is on xy; perpendicular to xy at h' meets ab at HT. On ab, point v is on xy; perpendicular to xy at v meets a'b' at VT. Using a trapezoid/rabatment construction: perpendiculars are erected to a'b' at a' and b' to locate A and B (giving true length AB and angle phi at a' between a'b' and AB), and perpendiculars are erected to ab at a and b to locate A and B (giving true length AB and angle theta at b between ab and AB). Box GIVEN: [1] A - 40 aHP, [2] A - 20 fVP, [3] B - 30 bHP, [4] B - 50 bVP, [5] EP - 100mm. Box ANSWERS: [1] TL - 141mm, [2] v-VT - 20mm, [3] h'-HT - 20mm, [4] phi - 30°, [5] theta - 30°.
+![Worked orthographic projection solution step 207](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-035-panel-1.webp)
 
 **Answer:** $TL = 140.7$ mm, $a'b' = 122.1$ mm, $ab = 122.1$ mm, $\theta = 29.8$°, $\phi = 29.8$°, $HT = 20$ mm from $XY$, $VT = 20$ mm from $XY$.
 
@@ -1141,9 +1125,7 @@ Finally, in boundary-condition problems where end $A$ is in the HP ($a'$ on XY) 
 3. Alternatively, from $b'(B)$ at height $80 \sin 30^\circ = 40$ mm on the vertical projector, draw the 80 mm true-length line down at $60^\circ$ to the vertical to meet $x_1y_1$ at $a_1A$ at distance 69.3 mm.
 4. Transfer the horizontal distance of 69.3 mm onto the vertical projector above XY (representing $A$ behind VP) to mark $a$ at 69.3 mm from XY, completing front view $a'b' = 40$ mm and top view $ab = 69.3$ mm.
 
-> **Figure: Worked solution step labelled 17 for a line projection problem**
->
-> Orthographic projection diagram labelled 17 at the bottom right. It has two perpendicular reference lines: horizontal line $x_1 y_1$ and vertical line $y_2 x_2$ intersecting at point $a'(b)$. Above $x_1 y_1$, along the vertical line $y_2 x_2$, is the front view segment from $a'(b)$ up to $b'(B)$. From $b'(B)$, a true length line of 80 mm extends down and left to point $a_1 A$ on the horizontal line $x_1 y_1$. The angle between this 80 mm line and the horizontal line $x_1 y_1$ at $a_1 A$ is $30^\circ$. The angle between this 80 mm line and the vertical line $y_2 x_2$ at $b'(B)$ is $60^\circ$. Below $x_1 y_1$, an arc with center $a'(b)$ is swung from $a_1 A$ counter-clockwise down to meet the vertical line $y_2 x_2$ at point $a$. The segment along $y_2 x_2$ from $a'(b)$ down to $a$ represents the top view $ab$. Right of the drawing are two boxes and text: 'GIVEN: [1] AB - 80mm, [2] A - in HP, [3] B - in VP, [4] $\theta$ - $30^\circ$, [5] $\phi$ - $60^\circ$'; 'ANSWERS: [1] $a'b'$ - 40mm, [2] $ab$ - 69mm'; 'SCALE 1:1, ALL DIMENSIONS ARE IN mm'; and '17' in a square box.
+![Worked solution step labelled 17 for a line projection problem](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-039-panel-1.webp)
 
 ```line-projection
 {
@@ -1296,21 +1278,15 @@ Once those two trace lines are drawn, the paths of both views are locked in. You
 
 1. Draw the reference line $XY$ and two vertical trace projectors 95 mm apart; mark $h'$ on $XY$ with $HT$ 30 mm below $XY$ on the left projector, and mark $v$ on $XY$ with $VT$ 45 mm above $XY$ on the right projector, then join $h'\text{–}VT$ and $HT\text{–}v$ to establish the paths of the front and top views.
 
-> **Figure: Step 26.1: Locating HT, VT, h', and v with connecting trace lines**
->
-> Engineering drawing step labelled 26.1. A horizontal reference line is labelled x at the left end and y at the right end. On the left, a vertical projector goes through point h' on the xy line and extends downward by 30 mm to point HT below the xy line. On the right, at a horizontal distance of 95 mm from the left projector, a vertical projector goes through point v on the xy line and extends upward by 45 mm to point VT above the xy line. A straight line connects h' to VT above the xy line, and another straight line connects HT to v below the xy line. Below the drawing is the note: 'a,b,v,HT -same line' and 'a',b',h',VT - same line'. On the right side, a GIVEN box lists: [1] HT-VT - 95mm, [2] EP - 65mm, [3] HT - 30 fVP, [4] VT - 45 aHP, [5] A - 10 aHP (with items 1, 3, 4 highlighted in red). Below it, an ANSWERS box lists: [1] θ - 24°, [2] φ - 16°, [3] TL - 75mm, [4] a'b' - 72mm, [5] ab - 68mm. Beneath the boxes: 'ALL DIMENSIONS ARE IN mm', 'SCALE 1:1'.
+![Step 26.1: Locating HT, VT, h', and v with connecting trace lines](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-044-panel-1.webp)
 
 2. Locate $a'$ on the line $h'\text{–}VT$ at 10 mm above $XY$ (which places $A$ 23.3 mm in front of the $VP$), drop a vertical projector to meet $HT\text{–}v$ at $a$, and draw a second vertical projector 65 mm away to cut the extended trace lines at $b'$ (20.8 mm below $XY$) and $b$ (43.9 mm below $XY$).
 
-> **Figure: Step 26.2: Drawing front view a'b' and top view ab between the trace lines**
->
-> Engineering drawing step labelled 26.2, building on step 26.1. On the line connecting h' and VT, point a' is located at a height of 10 mm above the xy line. A vertical end projector (marked with a small circle above xy and a small square below xy) passes through a' and extends downward to intersect the line HT-v at point a, which is the top view of end A. At a horizontal distance of 65 mm to the right of the projector a'a, the second vertical end projector (marked with three small horizontal tick marks) intersects the line h'-VT at b' and the line HT-v at b. The thick segment a'b' represents the front view, and the thick segment ab represents the top view. Below the drawing is the note: 'a,b,v,HT -same line' and 'a',b',h',VT - same line'. On the right side, a GIVEN box lists: [1] HT-VT - 95mm, [2] EP - 65mm, [3] HT - 30 fVP, [4] VT - 45 aHP, [5] A - 10 aHP (all in red). Below it, an ANSWERS box lists: [1] θ - 24°, [2] φ - 16°, [3] TL - 75mm, [4] a'b' - 72mm, [5] ab - 68mm. Beneath the boxes: 'ALL DIMENSIONS ARE IN mm', 'SCALE 1:1'.
+![Step 26.2: Drawing front view a'b' and top view ab between the trace lines](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-044-panel-2.webp)
 
 3. Apply the trapezoidal method by erecting perpendiculars at the views equal to their opposite distances from $XY$ to fold out the true-length line $AB$ and measure $TL = 74.8$ mm, $\theta = 24.3°$, and $\phi = 15.9°$.
 
-> **Figure: Step 26.3: Orthographic projection solution for Problem 26 using the trapezoidal method**
->
-> Solution step labelled 26.3. Horizontal reference line xy. Two vertical trace projectors are spaced 95 mm apart: the left one connects h' on xy to HT (30 mm below xy); the right one connects v on xy to VT (45 mm above xy). Line h'-VT contains the front view segment a'b' (where a' is 10 mm above xy). Line HT-v contains the top view segment ab. The distance between end projectors a'a and b'b is dimensioned as 65 mm. Using the trapezoidal method: perpendiculars to a'b' at a' and b' have lengths equal to the distances of a and b from xy, locating A and B above xy; angle between a'b' and AB is labelled phi. Perpendiculars to ab at a and b have lengths equal to the distances of a' and b' from xy (marked with three tick marks on b' and bB), locating A and B below xy; angle between ab and AB is labelled theta. Notes at bottom left: 'a,b,v,HT -same line' and 'a',b',h',VT - same line'. Box 'GIVEN': [1] HT-VT - 95mm, [2] EP - 65mm, [3] HT - 30 fVP, [4] VT - 45 aHP, [5] A - 10 aHP. Box 'ANSWERS': [1] theta - 24°, [2] phi - 16°, [3] TL - 75mm, [4] a'b' - 72mm, [5] ab - 68mm. 'ALL DIMENSIONS ARE IN mm', 'SCALE 1:1'.
+![Step 26.3: Orthographic projection solution for Problem 26 using the trapezoidal method](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-045-panel-1.webp)
 
 ```line-projection
 {
@@ -1966,16 +1942,12 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 2. Draw the reference line $XY$ representing the floor, and draw a vertical line perpendicular to $XY$ to represent the wall seen edge-on.
 3. Mark the foot of the ladder $A$ on the $XY$ line at 50 mm (2.5 m) to the left of the wall.
 
-> **Figure: Step 44.1 showing a ladder leaning against a wall at scale 1:50**
->
-> Drawing labelled 44.1 at bottom-left. A text box at top-left reads: 'SCALE 1:50', '50mm : 2.5m', '50mm : 2500mm', '1: 50'. A horizontal reference line labelled 'x' on the left has point 'A' on it. A vertical line intersects the horizontal line to the right of A, extending above and below the horizontal line. The horizontal distance from A to the vertical line is dimensioned below the line as '50mm = 2.5m'. Above the horizontal line, the vertical segment goes up to point 'B' and is dimensioned on the right as '64mm = 3.2m -WALL'. A thick hypotenuse connects A and B, with a parallel dimension line above it labelled 'LADDER'. Below the horizontal line, a quarter-circle arc with a clockwise arrow starts at A and swings down to meet the vertical line below.
+![Step 44.1 showing a ladder leaning against a wall at scale 1:50](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-090-panel-1.webp)
 
 4. Mark the top of the ladder on the vertical wall at a height of 64 mm (3.2 m) above $XY$; because the ladder rests squarely against the wall, its projection lies in a plane parallel to the viewing plane, so the line joining $A$ to the top of the wall shows the true length directly.
 5. Measure this inclined length on paper (81 mm) and convert it back using the 1:50 scale.
 
-> **Figure: Step 44.2 showing the complete orthographic projection and true length of the ladder**
->
-> Drawing labelled 44.2 at bottom-left. At top-left, an 'ANSWER' box reads: 'LENGTH OF THE LADDER - 4.05m'. Below it, a box reads: 'SCALE 1:50', '50mm : 2.5m', '50mm : 2500mm', '1: 50'. A horizontal reference line XY is labelled 'x' on the left and 'y' on the right. On the left side, the construction from 44.1 is shown: point 'A' on the x-y line, horizontal distance '2.5m' to the vertical wall line, vertical height '3.2m -WALL' up to point 'B', and hypotenuse AB dimensioned as '(81mm x 50 =4.05m) L'. An arc swings from A downwards and rightwards to meet the vertical line below XY. From the bottom of this arc, a horizontal construction line with a rightward arrow goes to point 'a', which is the bottom of a vertical line on the right side. This right-hand vertical line represents the front and top views aligned along a single projector: from 'a' up to the XY line is the top view, dimensioned '2.5m' on the left, meeting XY at 'a' b'. Above XY, the vertical line continues up to 'b'', dimensioned '3.2m' on the left. A horizontal line with a rightward arrow connects B to b'.
+![Step 44.2 showing the complete orthographic projection and true length of the ladder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-090-panel-2.webp)
 
 **Answer:** Length of the ladder = 4.05 m.
 
@@ -2048,9 +2020,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 
 5. Rotate the top view $ab$ about the left corner until it is parallel to $XY$, project up to the horizontal locus of the top corner at height 3.6 m, and measure the true length and floor inclination $	heta$.
 
-> **Figure: Worked orthographic projection solution step 194 for a room diagonal PQ**
->
-> Orthographic projection diagram labelled 194, with SCALE 1:100 and ALL DIMENSIONS ARE IN m. A horizontal reference line xy is drawn. Point p' and p coincide on the xy line on the left. Above xy, a rectangle represents the front view of the room of length 4.8m (horizontal distance from p' to the right projector) and height 3.6m (vertical distance from xy up to q'). The front view diagonal p'q' connects p' on xy to the top-right corner q'. Below xy, a rectangle represents the top view of the room of length 4.8m and breadth 4.2m (vertical distance from xy down to q). The top view diagonal pq connects p on xy to the bottom-right corner q. To find the true length (TL), an arc is swung from q (or q' projected) onto the locus to construct the true length line from p, dimensioned as TL. Accompanying text boxes read: GIVEN: ROOM L-4.8m, B-4.2m; H-3.6m. ANSWERS: [1] TL - 7.3m.
+![Worked orthographic projection solution step 194 for a room diagonal PQ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-089-panel-1.webp)
 
 **Answer:** True distance = 7.3 m ($a'b' = 6$ m, $ab = 6.4$ m, $	heta = 29.4^	ext{o}$, $	ext{phi} = 35^	ext{o}$).
 
@@ -2065,9 +2035,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 5. Join $a'b'$ and $ab$, then rotate the top view $ab$ about $a$ until it lies on $XY$.
 6. Project the rotated end vertically up to the horizontal locus of $b'$ (4 m above $XY$) and measure the true distance from $a'$.
 
-> **Figure: Worked solution step 202 showing orthographic projection for a line in a rectangle of 5m by 5m and height 6m**
->
-> Orthographic projection diagram labelled 202 in a box on the right. The drawing shows a rectangular enclosure in front view (height 6m above the horizontal reference line) and top view (width 5m along the horizontal line and depth 5m below the horizontal line). Point a' and point a lie at the bottom-left corner of the front view and top-left corner of the top view respectively, on the horizontal reference line. In the top view, segment ab goes from the top-left corner 'a' to a point 'b' located 2.5m to the right and 2.5m below the horizontal reference line. In the front view, segment a'b' goes from 'a'' to 'b'', where b' is on the vertical projector of b at a height of 4m above the horizontal reference line. The true length (TL) line is constructed in the front view by rotating the length from the top view or projecting to the upper locus, with a dimension line labelled 'TL' along the rotated segment from a' to the top locus at 6m height (or b' rotated). Small circle markers are shown on the construction lines. Beside the drawing is an ANSWER box: 'ANSWER: [1] TL - 5.3m', and below the box: 'SCALE 1:100'.
+![Worked solution step 202 showing orthographic projection for a line in a rectangle of 5m by 5m and height 6m](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-084-panel-1.webp)
 
 **Answer:** True distance between the lamp and the floor corner = 5.34 m.
 
@@ -2078,22 +2046,16 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 1. Using scale 1:100 (1 m = 10 mm), draw $XY$, the front-view rectangle of $80	ext{ mm} 	imes 40	ext{ mm}$ ($8	ext{ m} 	imes 4	ext{ m}$) above $XY$, and the top-view rectangle of $80	ext{ mm} 	imes 50	ext{ mm}$ ($8	ext{ m} 	imes 5	ext{ m}$) below $XY$.
 2. Draw the central vertical projector 40 mm (4 m) from the side wall: mark the bulb $b'$ in the front view 10 mm (1 m) below the ceiling line, and $b$ in the top view at the center 25 mm (2.5 m) below $XY$.
 
-> **Figure: Step 41.1: Orthographic projection of room and point B**
->
-> Drawing labelled 41.1 showing the front view (above) and top view (below) of a room of width 8m, depth 5m, and height 4m. A vertical projector is located 4m from the right wall (or middle of the 8m width). On this projector, point b' in the front view is located 1m below the top ceiling line, and point b in the top view is located 2.5m below the horizontal reference line (middle of the 5m depth). Boxes on the right state: 'ANSWER: [1] TL - 5.1m' and 'SCALE 1:100, 80mm : 8m, 80mm : 8000mm, 1: 100'.
+![Step 41.1: Orthographic projection of room and point B](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-082-panel-1.webp)
 
 3. On the left wall corner, mark the spot image $a'$ in the front view at 10 mm (1 m) above the floor line $XY$, and mark $a$ in the top view at the top-left corner on $XY$; join $a'b'$ and $ab$.
 
-> **Figure: Step 41.2: Orthographic projection of room with line AB in front and top views**
->
-> Drawing labelled 41.2 building upon 41.1. The room has width 8m, depth 5m, and height 4m. Point b' is 4m from the right wall and 1m below the ceiling; point b is 2.5m from the front/back wall on the same projector. On the left wall, point a' in the front view is 1m above the floor line (horizontal reference line), and point a in the top view lies at the top-left corner of the plan (on the reference line). Thick lines connect a' to b' (front view) and a to b (top view). Boxes on the right state: 'ANSWER: [1] TL - 5.1m' and 'SCALE 1:100, 80mm : 8m, 80mm : 8000mm, 1: 100'.
+![Step 41.2: Orthographic projection of room with line AB in front and top views](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-082-panel-2.webp)
 
 4. With center $b$, swing the top view $ba$ to the horizontal locus through $b$ to make it parallel to $XY$.
 5. Project this rotated point up to the horizontal locus through $a'$ (1 m above $XY$), join to $b'$, and measure the true length at 1:100 scale.
 
-> **Figure: Solution step 41.3 showing orthographic projection of a line inside a 8m x 5m x 4m room**
->
-> Drawing labelled '41.3' showing the front view and top view of a room of width 8m, depth 5m (top view below horizontal reference line), and height 4m (front view above horizontal reference line). On the left wall, point a' is in the front view at height 1m above the floor line, and point a is on the horizontal line (back wall). Point b' in the front view is 4m from the right wall and 1m below the top ceiling line. Point b in the top view is 2.5m below the horizontal reference line, on the same vertical projector as b' (marked with a small square symbol). Segment a'b' is drawn in bold in the front view, and segment ab is drawn in bold in the top view. An auxiliary projection (true length construction) is drawn perpendicular to ab from points a and b: segment aA of length corresponding to 1m (with a small circle right-angle symbol at a), and a perpendicular at b with a small square right-angle symbol extending to point B on the bottom floor line of the top view. Segment AB is drawn in bold and dimensioned as 'TL'. Two text boxes sit on the right: 'ANSWER: [1] TL - 5.1m, AB = 51mm, 51mm x 100, 5.1mm = 5.1m' and 'SCALE 1:100, 80mm : 8m, 80mm : 8000mm, 1: 100'.
+![Solution step 41.3 showing orthographic projection of a line inside a 8m x 5m x 4m room](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-083-panel-1.webp)
 
 **Answer:** True length of the line joining the bulb and the black spot = 5.12 m.
 
@@ -2106,35 +2068,15 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 1. Using scale 1:100 (1 m = 10 mm), draw $XY$ and construct the top-view equilateral triangle below $XY$ with horizontal base $a(b)-e(f) = 50$ mm (5 m) parallel to $XY$ and apex $c(d)$.
 2. Project up from the three corners to the $XY$ floor line to mark bases $b', d', f'$, and draw the vertical poles above $XY$ of heights $b'a' = 20$ mm (2 m), $d'c' = 40$ mm (4 m), and $f'e' = 80$ mm (8 m).
 
-> **Figure: Step 42.1: Orthographic projection of three vertical poles arranged in an equilateral triangle**
->
-> Step 42.1 of problem 42. A horizontal reference line XY is drawn with 'x' at the left end and 'y' at the right end. Below XY (top view), an equilateral triangle represents the bases of three vertical poles with vertices labelled 'a(b)' at the bottom-left, 'e(f)' at the bottom-right, and 'c(d)' at the top apex. The horizontal base between 'a(b)' and 'e(f)' is dimensioned as '50mm = 5m'. Vertical projectors extend upwards from 'a(b)', 'c(d)', and 'e(f)' across the XY line. Above XY (front view), three vertical segments represent the poles with bases on the XY line at 'b'', 'd'', and 'f'' respectively: pole b'a' on the left has height dimensioned as '20mm = 2m' (marked with a small circle on the pole), pole d'c' in the middle has height dimensioned as '40mm = 4m' (marked with a small square on the pole), and pole f'e' on the right has height dimensioned as '80mm = 8m' (marked with a small triangle on the pole). A box on the top right reads: 'ANSWER: [1] AE - 7.8m, [2] AC - 5.4m, [3] CE - 6.4m'. A box on the bottom right reads: 'SCALE 1:100, 80mm : 8m, 80mm : 8000mm, 1: 100'.
+![Step 42.1: Orthographic projection of three vertical poles arranged in an equilateral triangle](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-085-panel-1.webp)
 
 3. Connect the pole tops in the front view to form triangle $a'c'e'$; because base $a(b)-e(f)$ is parallel to $XY$, the front view $a'e'$ already shows the true length $AE$ and its true floor inclination.
 
-> **Figure: Step 42.2: Orthographic projection connecting the tops of the three poles**
->
-> Step 42.2 of problem 42. It builds on step 42.1 with the same XY line, top-view equilateral triangle 'a(b) - c(d) - e(f)' of base '5m', and front-view vertical poles b'a' ('2m'), d'c' ('4m'), and f'e' ('8m'). In the front view above XY, straight lines now connect the tops of the poles, forming triangle a'c'e'. Since segment a(b)-e(f) in the top view is parallel to XY, the front-view segment a'e' gives the true length, which is dimensioned parallel to a'e' as 'AE'. A box on the top right reads: 'ANSWER: [1] AE - 7.8m, [2] AC - 5.4m, [3] CE - 6.4m'. A box on the bottom right reads: 'SCALE 1:100, 80mm : 8m, 80mm : 8000mm, 1: 100'.
+![Step 42.2: Orthographic projection connecting the tops of the three poles](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-085-panel-2.webp)
 
 4. To find the true length and floor inclination of $AC$, rotate the top-view side $a(b)-c(d)$ about $a(b)$ until it is parallel to $XY$, project up to the horizontal locus of $c'$, and join to $a'$.
 5. Similarly, rotate the top-view side $c(d)-e(f)$ about $c(d)$ until it is parallel to $XY$, project up to the horizontal locus of $e'$, and join to $c'$ to measure the true length $CE$ and its inclination.
 
-> **Figure: Step 42.3: Projection drawing finding true lengths AE, AC, and CE of triangle poles**
->
-> Engineering drawing labelled 42.3 showing the projections of three vertical poles and the true lengths of the wires connecting their tops, along with an ANSWER box and a SCALE box.
-> 
-> Reference line $xy$ separates the front view (above) and top view (below).
-> - Top view (below $xy$): An equilateral triangle with vertices $a(b)$, $e(f)$ along a horizontal base of length $5\text{ m}$, and apex $c(d)$ above the base. Auxiliary rabatted/projected lines are drawn perpendicular to the sides of the triangle to find true lengths (or auxiliary views): alongside $a(b)-c(d)$ a line segment is dimensioned as '$(54\text{mm} \times 100 = 5.4\text{m})\text{ AC}$'; alongside $c(d)-e(f)$ a line segment is dimensioned as '$(64\text{mm} \times 100 = 6.4\text{m})\text{ CE}$'.
-> - Front view (above $xy$): Three vertical posts rise from $xy$: $b'a'$ of height $2\text{ m}$ (with circle symbol), $d'c'$ of height $4\text{ m}$ (with square symbol), and $f'e'$ of height $8\text{ m}$ (with triangle symbol). The tops $a'$, $c'$, $e'$ are joined to form triangle $a'c'e'$. Since $a(b)-e(f)$ is parallel to $xy$, $a'e'$ gives the true length Directly, dimensioned as '$(78\text{mm} \times 100 = 7.8\text{m})\text{ AE}$'.
-> 
-> Top-right box labelled 'ANSWER':
-> - [1] AE - 7.8m
-> - [2] AC - 5.4m
-> - [3] CE - 6.4m
-> 
-> Bottom-right box labelled 'SCALE 1:100':
-> - 80mm : 8m
-> - 80mm : 8000mm
-> - 1 : 100
+![Step 42.3: Projection drawing finding true lengths AE, AC, and CE of triangle poles](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-086-panel-1.webp)
 
 **Answer:** $AE = 7.81$ m ($	heta_{AE} = 50^	ext{o}$), $AC = 5.39$ m ($	heta_{AC} = 22^	ext{o}$), and $CE = 6.40$ m ($	heta_{CE} = 39^	ext{o}$).

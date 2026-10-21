@@ -1,4 +1,6 @@
 import { mediaPath } from "@/lib/media";
+import { GRAPHICS_FIGURE_DIMENSIONS } from "@/data/graphics-figure-dimensions";
+import { IMPORTED_FIGURE_DIMENSIONS } from "@/data/imported-figure-dimensions";
 import { MEDIA_DIMENSIONS } from "@/data/media-dimensions";
 import { isValidElement, memo } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
@@ -34,7 +36,9 @@ const highlightPlugins: NonNullable<Parameters<typeof ReactMarkdown>[0]["rehypeP
 ];
 const allPlugins = [...mathPlugins, ...highlightPlugins];
 const noPlugins: typeof mathPlugins = [];
-const diagramDimensions = { ...MEDIA_DIMENSIONS, ...module3DiagramDimensions, ...module4DiagramDimensions };
+const diagramDimensions = { ...MEDIA_DIMENSIONS, ...module3DiagramDimensions, ...module4DiagramDimensions, ...GRAPHICS_FIGURE_DIMENSIONS, ...IMPORTED_FIGURE_DIMENSIONS };
+// Engineering Graphics drawings cropped from the source sheets: full width, linked to the full-size crop.
+const graphicsFigure = /^\/notes\/cse\/s1\/graphics\/module-[1-4]\/assets\/.*\.webp$/;
 
 type HastNode = {
   type: string;
@@ -99,8 +103,10 @@ const components: Components = {
       || /^\/notes\/cse\/s1\/chemistry\/module-2\/assets\/.*\.webp$/.test(localPath!)
       || /^\/notes\/cse\/s1\/chemistry\/module-3\/assets\/.*-clean\.webp$/.test(localPath!)
     );
+    const graphics = typeof src === "string" && graphicsFigure.test(localPath!);
     const dimensions = typeof src === "string" ? diagramDimensions[localPath!] : undefined;
-    return <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
+    const image = <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram || graphics ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
+    return graphics ? <a href={src} target="_blank" rel="noopener" className="notes-figure-link" title="Open the full-size drawing">{image}</a> : image;
   },
   p({ node, children }) {
     return <p className={isQuestion(node as HastNode) ? "notes-question" : undefined}>{children}</p>;
