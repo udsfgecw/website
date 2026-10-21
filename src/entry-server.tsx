@@ -18,6 +18,10 @@ import { chemistrymodule1 } from "./features/notes/chemistry-module-1";
 import { chemistrymodule2 } from "./features/notes/chemistry-module-2";
 import { chemistrymodule3 } from "./features/notes/chemistry-module-3";
 import { chemistrymodule4 } from "./features/notes/chemistry-module-4";
+import { chemistryEceModule1 } from "./features/notes/chemistry-ece-module-1";
+import { chemistryEceModule2 } from "./features/notes/chemistry-ece-module-2";
+import { chemistryEceModule3 } from "./features/notes/chemistry-ece-module-3";
+import { chemistryEceModule4 } from "./features/notes/chemistry-ece-module-4";
 import { graphicsm1 } from "./features/notes/graphics-m1";
 import { graphicsm2 } from "./features/notes/graphics-m2";
 import { graphicsm3 } from "./features/notes/graphics-m3";
@@ -61,6 +65,9 @@ const NOTES_MODULES: NotesModule[] = [
   graphicsm1, graphicsm2, graphicsm3, graphicsm4,
   electricalmodule1, electricalmodule2, electricalmodule3,
   pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4,
+  ...(["ece", "eee"] as const).flatMap((branch) => [
+    chemistryEceModule1(branch), chemistryEceModule2(branch), chemistryEceModule3(branch), chemistryEceModule4(branch),
+  ]),
   ...(["ece", "eee"] as const).flatMap((branch) => [
     physicseceModule1(branch), physicseceModule2(branch), physicseceModule3(branch), physicseceModule4(branch),
   ]),
