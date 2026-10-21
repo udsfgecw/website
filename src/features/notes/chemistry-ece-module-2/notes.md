@@ -95,11 +95,7 @@ Depending on the number of walls, carbon nanotubes are categorized into two main
 #### Single-Walled Carbon Nanotubes (SWCNTs)
 An SWCNT consists of only a single layer constructed by rolling up a one-atom-thick sheet of graphite (graphene) into a cylinder. The diameter of an SWCNT typically varies from $1\text{ nm}$ to $5\text{ nm}$.
 
-![Three renderings of single-walled carbon nanotubes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p004-1.webp)
-
-> **Figure: Three renderings of single-walled carbon nanotubes**
->
-> Three 3D renderings of single-walled carbon nanotubes showing the hexagonal atomic lattice structure, displayed against a blue-to-purple background gradient. The leftmost rendering shows a complete cylindrical nanotube, while the two renderings to the right show partially unrolled or angled tubular graphene sheets.
+![Armchair, zigzag, and chiral carbon nanotube structures](/assets/notes/ece/s1/chemistry/module-2/cnt.webp)
 
 ![SWCNT atomic model](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-1.webp)
 
@@ -125,12 +121,6 @@ Three different structural models are proposed for MWCNTs:
 - **Russian Doll Model:** Sheets of graphene are arranged into concentric cylinders.
 - **Parchment Model:** A single graphene sheet is rolled around itself multiple times, similar to a scroll of parchment.
 - **Mixed Model:** A combination of both the Russian doll and parchment models.
-
-![Classification chart of Carbon Nanotubes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p005-3.webp)
-
-> **Figure: Classification chart of Carbon Nanotubes**
->
-> Classification chart of Carbon Nanotubes. A hierarchical flowchart titled Carbon Nanotubes. It splits into Single walled CNTs and Multi walled CNTs. Single walled CNTs branch into Armchair, Zigzag, and Chiral, each with a corresponding hexagonal lattice diagram below them. Multi walled CNTs branch into Russian doll model, Parchment model, and Mixed model, each with a corresponding concentric/scroll cross-section diagram below them.
 
 ### Properties of CNTs
 1. **Electrical Conductivity:** They are highly conducting and can behave as metallic or semiconducting materials depending on their chirality and diameter.
@@ -174,12 +164,6 @@ Bridge: From 1D nanotubes, we expand to zero-dimensional closed cages (fullerene
 The new idea: Graphene serves as the fundamental 2D building block of all graphitic materials, exhibiting massless relativistic charge carriers and extreme mechanical flexibility.
 
 ### Fullerenes ($C_{60}$)
-
-![C60 bucky ball fullerene structure](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p007-1.webp)
-
-> **Figure: C60 bucky ball fullerene structure**
->
-> A 3D ball-and-stick molecular structure of a C60 buckyball fullerene, showing a spherical network of interconnected carbon atoms forming alternating pentagonal and hexagonal rings.
 
 Fullerenes are stable, but not totally unreactive. The $\text{sp}^2$ hybridized carbon atoms, which are at their energy minimum in planar graphite, must be bent to form the closed sphere or tube, which produces angle strain. The characteristic reaction of fullerenes is electrophilic addition at 6,6-double bonds, which reduces angle strain by changing $\text{sp}^2$ hybridized carbons into $\text{sp}^3$ hybridized ones. The change in hybridized orbitals causes the bond angles to decrease from about $120^\circ$ in the $\text{sp}^2$ orbitals to about $109.5^\circ$ in the $\text{sp}^3$ orbitals. This decrease in bond angles allows for the bonds to bend less when closing the sphere or tube, and thus, the molecule becomes more stable.
 
@@ -387,11 +371,7 @@ The polymerization and p-doping can also be carried out electrochemically.
 
 An organic light emitting diode (OLED) is a light-emitting diode in which the emissive electroluminescent layer is a film of an organic compound that emits light in response to an electric current. An organic semiconductor is situated between two electrodes: the anode and cathode. The HOMO (Highest Occupied Molecular Orbital) and the LUMO (Lowest Unoccupied Molecular Orbital) of organic semiconductors are analogous to the valence and conduction bands of inorganic semiconductors.
 
-![Diagram of an OLED structure showing layers and emission of radiation](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p015-1.webp)
-
-> **Figure: Diagram of an OLED structure showing layers and emission of radiation**
->
-> Cross-sectional schematic diagram of an OLED (Organic Light Emitting Diode). From top to bottom, the layers are: Cathode (-), Emissive layer, Conductive layer, and Anode (+). On the left, two wavy arrows labeled 'Emission of Radiation' point outwards from a central zone showing electron-hole recombination with a flash symbol. The layers are clearly indicated with bracketed labels on the right side.
+![OLED layers and electron-hole recombination](/assets/notes/ece/s1/chemistry/module-2/oled.webp)
 
 #### Structure
 A typical OLED consists of the following parts:
@@ -455,11 +435,7 @@ Electrolyte: Redox couple iodate/triiodide solution is used as the electrolyte. 
 
 Counter electrode: Platinum or graphite based materials are employed as the counter electrodes, which acts as the cathode. It facilitates the reduction of the oxidized dye molecules and completes the electrical circuit.
 
-![Schematic representation of DSSC](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p017-3.webp)
-
-> **Figure: Schematic representation of DSSC**
->
-> Schematic representation of a Dye-Sensitized Solar Cell (DSSC). On the left, a sun symbol emits rays labeled 'Light' towards the cell. The cell has layers labeled from left to right: 'FTO glass', 'Nano TiO2', 'Pt layer', and 'Dye' (represented by circles attached to the nano TiO2). The central region contains an electrolyte with ions labeled 'I3-' and '3I-' with circular flow arrows, labeled 'Electrolyte'. The figure caption reads 'Fig. Schematic representation of DSSC'.
+![Dye-sensitized solar cell structure and electron flow](/assets/notes/ece/s1/chemistry/module-2/dssc.webp)
 
 Working of Dye-sensitized solar cells: Sunlight passes through the transparent conductive oxide layer and the dye molecules coated on the metal oxide semiconductor absorb the light. The electrons of the dye molecule then get excited and are injected into the conduction band of the metal oxide semiconductor. These electrons travel through metal oxide and move towards the external circuit to generate electric current. Electrons reach the counter electrode through the circuit and generate electricity. The oxidized dye molecules will get reduced by gaining electrons from the electrolyte and come back to their original form. The oxidized electrolyte species diffuse towards the counter electrode and get reduced. This process continues to produce the current.
 
@@ -486,11 +462,7 @@ Quantum computing uses quantum bits (qubits) that are superpositions of 'spin up
 
 A supercapacitor is an electrochemical energy storage device, which can be used to store and deliver charge by reversible adsorption and desorption of ions at the interface between the electrode material and electrolyte. Supercapacitors are also called ultracapacitors or electrochemical capacitors.
 
-![Supercapacitor How It Works diagram showing charged and discharged states](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-2/assets/p019-1.webp)
-
-> **Figure: Supercapacitor How It Works diagram showing charged and discharged states**
->
-> An educational diagram titled SUPERCAPACITOR HOW IT WORKS? divided into two sections: CHARGED and DISCHARGED. The charged section shows an electric double layer with two electrodes labeled C1 and C2, a separator, and an external power source. The discharged section shows a load and randomly distributed ions.
+![Supercapacitor charging and discharging](/assets/notes/ece/s1/chemistry/module-2/supercap.webp)
 
 In supercapacitors energy is stored electrostatically and electrochemically and bridges the gap between traditional capacitors and batteries. A capacitor contains two metal plates separated by a dielectric material whereas a supercapacitor generally consists of electrodes, electrolyte, separator and collector.
 

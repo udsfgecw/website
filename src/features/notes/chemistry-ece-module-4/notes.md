@@ -272,11 +272,7 @@ $$\text{RH}_2 + \text{CaCl}_2 \rightarrow \text{RCa} + 2\text{HCl}$$
 
 $$\text{RH}_2 + \text{MgSO}_4 \rightarrow \text{RMg} + \text{H}_2\text{SO}_4$$
 
-![Demineralization of water apparatus showing cation and anion exchange columns](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p007-1.webp)
-
-> **Figure: Demineralization of water apparatus showing cation and anion exchange columns**
->
-> Demineralization of water apparatus showing a schematic diagram with two main columns: a cation exchanger and an anion exchanger. Raw water enters at the top left and goes into the cation exchanger column. Acid for regeneration (Dil HCl container) is connected above the cation exchanger via valves. The treated water flows from the bottom of the cation exchanger to the top of the anion exchanger column. Alkali for regeneration (Dil NaOH container) is connected above the anion exchanger via valves. Bottom outlets provide Wash and Deionised water streams.
+![Ion-exchange demineralization apparatus](/assets/notes/ece/s1/chemistry/module-4/ion-exchange.webp)
 
 The cation-free water is then passed through an anion exchange column, which adsorbs all the anions like $\text{Cl}^-$, $\text{SO}_4^{2-}$, $\text{HCO}_3^-$, etc., present in the water.
 
@@ -317,11 +313,7 @@ The process of removing dissolved common salt (sodium chloride) and other minera
 #### Reverse Osmosis (RO)
 When two solutions of different concentrations are separated by a semi-permeable membrane, and a hydrostatic pressure in excess of the osmotic pressure is applied on the higher concentration side, the solvent (water) flows from the higher concentration to the lower concentration. This process is called **reverse osmosis** or **super-filtration**.
 
-![Diagram of Reverse Osmosis process](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p009-1.webp)
-
-> **Figure: Diagram of Reverse Osmosis process**
->
-> Diagram illustrating the Reverse Osmosis process. It shows a horizontal cylindrical vessel containing Saline water on the left and Fresh water on the right, separated vertically by a shaded Semipermeable membrane. A Piston with a cross-hatched face is positioned on the left side of the saline water chamber, with three horizontal arrows pointing to the right labeled 'Pressure'. Horizontal arrows pointing to the right across the membrane are labeled 'Direction of reverse osmosis'. Horizontal arrows pointing to the left across the membrane are labeled 'Direction of osmosis'.
+![Reverse osmosis desalination process](/assets/notes/ece/s1/chemistry/module-4/ro.webp)
 
 Common semi-permeable membranes used include cellulose acetate and cellulose butyrate.
 
@@ -401,13 +393,7 @@ Raw water typically contains impurities such as bacteria, organic impurities, re
 
 Break point chlorination is the addition of chlorine to water to such an extent that it kills all microorganisms, completely oxidizes all reducing substances and organic impurities, and allows free residual chlorine to begin appearing.
 
-![Break point chlorination graph showing residual chlorine vs applied chlorine](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-4/assets/p011-1.webp)
-
-> **Figure: Break point chlorination graph showing residual chlorine vs applied chlorine**
->
-> A line graph showing breakpoint chlorination. The horizontal axis represents 'Applied chlorine' with an arrow pointing right. The vertical axis represents 'Residual chlorine' with an arrow pointing up. The curve starts at the origin, rises straight up along a vertical dashed line labeled vertically on the left as 'Kill the bacteria, and oxidation of reducing substances by chlorine', then continues rising to a peak labeled 'Formation of chloramine & chloro compounds', drops down to a minimum point labeled 'Destruction of chloramine & chloro compounds' with a vertical dashed line separating the peak and the minimum, and finally rises upward with a solid line labeled 'Free residual chlorine'.
-
- Break point chlorination graph showing residual chlorine vs applied chlorine
+![Breakpoint chlorination curve](/assets/notes/ece/s1/chemistry/module-4/breakpoint.webp)
 
 The graph illustrates the relationship between the amount of applied chlorine and the resulting residual chlorine. Initially, applied chlorine is consumed entirely in killing bacteria and oxidizing reducing substances, resulting in zero free residual chlorine. As more chlorine is added, combined residual chlorine rises due to the formation of chloramines and chloro compounds. Eventually, further chlorination initiates the oxidation of these chloramines and impurities, causing a sharp dip in the curve. The minimum point reached where all impurities and chloramines are fully oxidized, and free residual chlorine finally begins to appear, is known as the **break point**.
 
@@ -589,12 +575,7 @@ This process is used for treating the filtrate obtained in the primary process. 
 
 It is a circular tank filled with material like broken bricks, crushed rocks, etc., and fitted with a rotating distributor. Sewage is trickled over this filter with the help of the rotating distributor.
 
-![Trickling filter showing the rotating sprinkler, filter bed, airflow, and effluent collection](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Trickling_Filter_diagram.svg/1280px-Trickling_Filter_diagram.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail)
-> Source: [Trickling Filter diagram](https://commons.wikimedia.org/wiki/File:Trickling_Filter_diagram.svg) — CC BY 3.0, Eawag: Swiss Federal Institute of Aquatic Science and Technology; technical drawings by designport, Paolo Monaco, Zurich.
-
-> **Figure: Trickling filter process diagram**
->
-> Schematic showing a rotating sprinkler over the filter bed, feed pipe, filter media, airflow, support layer, and effluent collection. This illustration does not show the downstream settling tank or disinfection stage.
+![Trickling filter cross-section](/assets/notes/ece/s1/chemistry/module-4/trickling.webp)
 
 When sewage moves down through the filtering medium, microorganisms start consuming the organic matter in the sewage. They grow over the surface of the filtering media and a more or less clear effluent is collected. After completion of aerobic oxidation, the treated sewage is taken to the settling tank and the sludge is removed. This process removes about 80-85% of BOD.
 
@@ -619,12 +600,7 @@ UASB reactors are constructed in concrete or another watertight material and are
 
 Bacteria (microorganisms) living in the sludge break down the organic matter by anaerobic digestion, transforming it into biogas. The gases are collected through the gas collector dome at the top of the reactor.
 
-![UASB reactor showing upward flow through sludge granules, gas bubbles, and a top biogas outlet](https://upload.wikimedia.org/wikipedia/commons/d/da/Schematic_of_the_Upflow_Anaerobic_Sludge_Blanket_Reactor_UASB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
-> Source: [Schematic of the UASB reactor](https://commons.wikimedia.org/wiki/File:Schematic_of_the_Upflow_Anaerobic_Sludge_Blanket_Reactor_UASB.jpg) — CC BY-SA 3.0, Tilley, E., Ulrich, L., Lüthi, C., Reymond, Ph., Zurbrügg, C.
-
-> **Figure: Diagram of UASB reactor**
->
-> Schematic of a UASB reactor showing the bottom inlet, upward flow through sludge granules and gas bubbles, a top biogas outlet, separator baffles, and a side effluent outlet. Some internal parts use different labels or are not individually labeled in this source image.
+![UASB reactor cross-section](/assets/notes/ece/s1/chemistry/module-4/uasb.webp)
 
 Baffles at the top of the reactor allow gases to escape and prevent an outflow of the sludge blanket. As with all aerobic treatments, UASB also requires post-treatment to remove pathogens, but due to a low removal of nutrients, the effluent water as well as the stabilized sludge can be used in agriculture.
 

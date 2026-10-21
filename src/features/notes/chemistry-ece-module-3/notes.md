@@ -33,19 +33,9 @@ Based on the nature of interaction, spectra are divided into absorption and emis
 
 1. **Absorption Spectrum:** When an atom or molecule undergoes a transition from a lower energy level $E_i$ to a higher energy level $E_f$ with the absorption of a photon of energy $h\nu$, an absorption spectrum is obtained. Techniques such as UV-Visible, IR, Microwave, and NMR belong to absorption spectroscopy.
 
-![Absorption spectrum energy level diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p002-1.webp)
-
-> **Figure: Absorption spectrum energy level diagram**
->
-> Absorption spectrum energy level diagram showing a lower horizontal line labeled E_i and an upper horizontal line labeled E_f. An upward vertical arrow points from the E_i level to the E_f level. A straight arrow points toward the vertical transition from the left, representing an incoming photon labeled with the symbol h nu.
-
 2. **Emission Spectrum:** When an atom or molecule undergoes a transition from a higher energy level $E_i$ to a lower energy level $E_f$ with the emission of a photon of energy $h\nu$, an emission spectrum is obtained. For emission to be observed, higher energy states must be more populated than lower energy states. Hydrogen spectra, atomic emission spectra (AES), and fluorescence spectra belong to this class.
 
-![Emission spectrum energy level diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p002-2.webp)
-
-> **Figure: Emission spectrum energy level diagram**
->
-> Emission spectrum energy level diagram showing an upper horizontal line labeled E_i and a lower horizontal line labeled E_f. A downward vertical arrow points from the E_i level to the E_f level. A wavy arrow points away to the right from the vertical transition, representing an emitted photon labeled with the symbol h nu.
+![Absorption and emission energy-level transitions](/assets/notes/ece/s1/chemistry/module-3/abs-em.webp)
 
 Based on the nature of the interacting species, spectra are categorized into:
 
@@ -66,11 +56,7 @@ The range of photon energies is called the electromagnetic spectrum, representin
 
 The entire range consists of radio waves, microwaves, infrared radiation, visible light, ultraviolet radiation, X-rays, gamma rays, and cosmic rays in the increasing order of frequency and decreasing order of wavelength.
 
-![Electromagnetic spectrum diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p003-1.webp)
-
-> **Figure: Electromagnetic spectrum diagram**
->
-> Electromagnetic spectrum diagram. A horizontal spectrum axis shows regions from left to right: gamma ray, X-ray, ultraviolet, visible (indicated with a small rainbow colored box), infrared, microwave, and radio. Two horizontal directional arrows below the spectrum indicate that going left corresponds to shorter wavelength, higher frequency, and higher energy, whereas going right corresponds to longer wavelength, lower frequency, and lower energy. At the bottom, a continuous wavy sine-like waveform is depicted.
+![Electromagnetic spectrum and wavelength, frequency, and energy trends](/assets/notes/ece/s1/chemistry/module-3/spectrum.webp)
 
 ## Molecular Energy Levels
 
@@ -457,24 +443,10 @@ The total number of fundamental (normal) vibrational modes of a molecule contain
 1. **Water ($\text{H}_2\text{O}$), $n = 3$ (Non-linear):**
    Water is a bent triatomic molecule with $3(3) - 6 = 3$ fundamental vibrational modes: symmetric stretching, asymmetric stretching, and a bending mode. Stretching frequencies are much higher than bending frequencies because more energy is required to stretch a bond than to bend it. All three vibrations involve a change in dipole moment and are IR active, producing absorption bands at $3652\text{ cm}^{-1}$ (symmetric stretch), $3756\text{ cm}^{-1}$ (asymmetric stretch), and $1596\text{ cm}^{-1}$ (bending).
 
-
-
-![Vibrational modes of H2O](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p013-1.webp)
-
-> **Figure: Vibrational modes of H2O**
->
-> Fig. 1.4 Vibrational modes of H2O showing three modes: (i) Symmetric stretching vibration with v1 = 3652 cm^-1, showing arrows pointing outwards along the O-H bonds; (ii) Asymmetric stretching vibration with v2 = 3756 cm^-1, showing arrows in opposite directions; (iii) Bending stretching vibration with v3 = 1596 cm^-1, showing arrows bending outward.
+![Vibrational modes of H2O and CO2](/assets/notes/ece/s1/chemistry/module-3/vibrations.webp)
 
 2. **Carbon Dioxide ($\text{CO}_2$), $n = 3$ (Linear):**
    Carbon dioxide is a linear triatomic molecule with $3(3) - 5 = 4$ fundamental vibrational modes: symmetric stretching, asymmetric stretching, and two bending vibrations in mutually perpendicular planes. The asymmetric stretch and the two degenerate bending vibrations involve a change in dipole moment and are IR active. The symmetric stretch involves no change in dipole moment and is IR inactive. Because the two bending vibrations share the same frequency, the IR spectrum exhibits only two bands: $666\text{ cm}^{-1}$ (bending) and $2350\text{ cm}^{-1}$ (asymmetric stretching).
-
-
-
-![Vibrational modes of CO2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p013-2.webp)
-
-> **Figure: Vibrational modes of CO2**
->
-> Fig. 1.5 Vibrational modes of CO2 showing four modes: (i) Symmetric stretching with v = 1340 cm^-1, showing O=C=O with arrows pointing outwards from central C; (ii) Asymmetric stretching with v = 2350 cm^-1, showing O=C=O with arrows pointing to the right; (iii) In-plane bending with v = 666 cm^-1, showing vertical arrows on O atoms and opposite vertical arrow on central C; (iv) Out-of-plane bending with v = 666 cm^-1, showing circled plus and minus signs for out of plane motion.
 
 ### Applications of IR Spectroscopy
 
@@ -580,11 +552,7 @@ SEMs consist of several key components working under high vacuum:
 7. **Detectors:** Specialized sensors designed to detect SE, BSE, and X-rays.
 8. **PC Control:** Processes detected signals to construct the final SEM image.
 
-![Diagram of a Scanning Electron Microscope (SEM)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/ece/s1/chemistry/module-3/assets/p016-1.webp)
-
-> **Figure: Diagram of a Scanning Electron Microscope (SEM)**
->
-> Diagram of a Scanning Electron Microscope (SEM) showing components vertically aligned: Electron source at the top, Anode, Condenser lens, Scan coils, and Objective lens, with the Sample at the bottom. A Secondary electron detector is on the left side pointing at the sample location. Straight and crossed lines indicate the electron beam path from the source through the lenses and coils to the sample.
+![Scanning electron microscope schematic](/assets/notes/ece/s1/chemistry/module-3/sem.webp)
 
 ### Working Mechanism
 
