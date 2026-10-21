@@ -17,6 +17,7 @@ const LINKS = [
   ["/activities", "Our progress"],
   ["/events", "Events"],
   ["/#alliance", "Alliance"],
+  ["/contact", "Contact"],
 ] as const;
 
 const EXPLORE = [
@@ -98,7 +99,7 @@ export default function Nav() {
         </Link>
 
         <div className="flex items-center justify-self-end gap-4 md:gap-6">
-          <Link to="/contact" className={link} onClick={() => setOpen(false)}>Contact</Link>
+          <Link to="/contact" className={cn(link, "max-md:hidden")} onClick={() => setOpen(false)}>Contact</Link>
           <Link to="/notes" className={link} onClick={() => setOpen(false)}>Notes</Link>
         </div>
       </div>
