@@ -378,7 +378,11 @@ Polypyrrole is an organic polymer formed by the polymerization of pyrrole. Polym
 
 Polypyrrole is prepared by oxidation (p-doping) of pyrrole using ferric chloride in methanol.
 
-![Preparation reaction of Polypyrrole from Pyrrole and Ferric chloride](/assets/notes/ece/s1/chemistry/module-2/p014-2-gemini.webp)
+| Reactant | Oxidative polymerization | Product |
+| --- | --- | --- |
+| Pyrrole monomers, $\mathrm{C_4H_5N}$ | $\mathrm{FeCl_3}$ in methanol; coupling occurs mainly at the 2- and 5-positions | Polypyrrole with an idealized repeat unit $\mathrm{(C_4H_3N)_n}$ |
+
+The polymer backbone contains connected pyrrole rings. Oxidation can p-dope the chain; the actual charge and counter-ion content depend on the preparation conditions.
 
 The polymerization and p-doping can also be carried out electrochemically.
 
