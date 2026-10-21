@@ -25,8 +25,8 @@ const CURATED = SELECTION.flatMap(({ id, title, detail }) => {
     ...original,
     title: "Union Inauguration Pro Show",
     caption: "Night-time stage performance at the Sathva College Union 2026 inauguration. An excerpt from the original inauguration reel.",
-    video: "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-stories/show-union-inauguration-2026.webm",
-    image: "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/event-stories/show-union-inauguration-2026.webp",
+    video: "https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/event-stories/show-union-inauguration-2026.webm",
+    image: "https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/event-stories/show-union-inauguration-2026.webp",
     subtitles: undefined,
   } : original;
   return [{ post, title, detail }];

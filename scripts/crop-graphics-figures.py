@@ -28,7 +28,7 @@ from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parent.parent
 PIPELINE = ROOT.parent / "pdf-to-notes" / "out"
-MEDIA_BASE = "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev"
+MEDIA_BASE = "https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev"
 MODULES = [("m1v2", 1), ("m2", 2), ("m3", 3), ("m4", 4)]
 PLACEHOLDER = re.compile(r"^> \*\*Figure: (?P<alt>.*?)\*\*\n>\n(?P<body>(?:> .*\n?)+)", re.M)
 LABEL = re.compile(r"\b(\d{1,3}\.\d)\b")

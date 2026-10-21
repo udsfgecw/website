@@ -10,7 +10,7 @@ export const WEB3FORMS_KEY = "8c5f8cda-265b-41cf-b819-70fe4ef2b186";
 export const SITE_URL = (import.meta.env.VITE_SITE_URL ?? "https://udsfgecw.in").replace(/\/+$/, "");
 
 /** Logo used for link previews and structured data. */
-export const SITE_LOGO = "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/assets/logo-512.webp";
+export const SITE_LOGO = "https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/assets/logo-512.webp";
 
 /** "Page | UDSF GECW" */
 export const pageTitle = (page?: string) => (page ? `${page} | ${SITE_NAME}` : SITE_NAME);

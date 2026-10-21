@@ -33,7 +33,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 AGENT_DIR = ROOT.parent / "notebook-agent"
 AGENT = "http://127.0.0.1:4010"
-MEDIA_BASE = "https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev"
+MEDIA_BASE = "https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev"
 MODELS = {"textModel": "gemini-3.5-flash-lite", "refineModel": "gemini-3.8-flash", "imageModel": "gemini-3.1-flash-image", "concurrency": "3"}
 # status -> phase to start next; in-progress statuses are waited on
 NEXT = {"uploaded": "extract", "extraction_failed": "extract", "extracted": "refine", "refine_failed": "refine",

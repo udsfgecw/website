@@ -1,4 +1,4 @@
-import { mediaPath } from "@/lib/media";
+import { mediaPath, resolveMediaUrl } from "@/lib/media";
 import { GRAPHICS_FIGURE_DIMENSIONS } from "@/data/graphics-figure-dimensions";
 import { IMPORTED_FIGURE_DIMENSIONS } from "@/data/imported-figure-dimensions";
 import { MEDIA_DIMENSIONS } from "@/data/media-dimensions";
@@ -97,6 +97,7 @@ const components: Components = {
   },
   img({ src, alt }) {
     const localPath = typeof src === "string" ? mediaPath(src) : undefined;
+    const imageSrc = typeof src === "string" ? resolveMediaUrl(src) : src;
     const moduleDiagram = typeof src === "string" && (
       /^\/notes\/cse\/s1\/python\/module-[234]\/assets\/.*\.webp$/.test(localPath!)
       || /^\/notes\/cse\/s1\/chemistry\/module-1\/assets\/.*-clean\.webp$/.test(localPath!)
@@ -106,8 +107,11 @@ const components: Components = {
     );
     const graphics = typeof src === "string" && graphicsFigure.test(localPath!);
     const dimensions = typeof src === "string" ? diagramDimensions[localPath!] : undefined;
-    const image = <img src={src} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram || graphics ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
-    return graphics ? <a href={src} target="_blank" rel="noopener" className="notes-figure-link" title="Open the full-size drawing">{image}</a> : image;
+    const image = <img src={imageSrc} alt={alt || "Notes diagram"} {...dimensions} className={moduleDiagram || graphics ? "notes-module-diagram" : undefined} loading="lazy" decoding="async" />;
+    return graphics ? <a href={imageSrc} target="_blank" rel="noopener" className="notes-figure-link" title="Open the full-size drawing">{image}</a> : image;
+  },
+  a({ href, children, ...props }) {
+    return <a href={href ? resolveMediaUrl(href) : href} {...props}>{children}</a>;
   },
   p({ node, children }) {
     return <p className={isQuestion(node as HastNode) ? "notes-question" : undefined}>{children}</p>;
