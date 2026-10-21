@@ -89,9 +89,33 @@ const modules = {
     const { electricalMathsModule1 } = await import("@/features/notes/electrical-maths-module-1");
     return { default: () => <ModuleNotesPage notes={electricalMathsModule1("ece")} /> };
   }),
+  "/notes/ece/s1/maths/module-2": lazy(async () => {
+    const { electricalMathsModule2 } = await import("@/features/notes/electrical-maths-module-2");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule2("ece")} /> };
+  }),
+  "/notes/ece/s1/maths/module-3": lazy(async () => {
+    const { electricalMathsModule3 } = await import("@/features/notes/electrical-maths-module-3");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule3("ece")} /> };
+  }),
+  "/notes/ece/s1/maths/module-4": lazy(async () => {
+    const { electricalMathsModule4 } = await import("@/features/notes/electrical-maths-module-4");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule4("ece")} /> };
+  }),
   "/notes/eee/s1/maths/module-1": lazy(async () => {
     const { electricalMathsModule1 } = await import("@/features/notes/electrical-maths-module-1");
     return { default: () => <ModuleNotesPage notes={electricalMathsModule1("eee")} /> };
+  }),
+  "/notes/eee/s1/maths/module-2": lazy(async () => {
+    const { electricalMathsModule2 } = await import("@/features/notes/electrical-maths-module-2");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule2("eee")} /> };
+  }),
+  "/notes/eee/s1/maths/module-3": lazy(async () => {
+    const { electricalMathsModule3 } = await import("@/features/notes/electrical-maths-module-3");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule3("eee")} /> };
+  }),
+  "/notes/eee/s1/maths/module-4": lazy(async () => {
+    const { electricalMathsModule4 } = await import("@/features/notes/electrical-maths-module-4");
+    return { default: () => <ModuleNotesPage notes={electricalMathsModule4("eee")} /> };
   }),
   "/notes/ece/s1/chemistry/module-1": lazy(async () => {
     const { chemistryEceModule1 } = await import("@/features/notes/chemistry-ece-module-1");

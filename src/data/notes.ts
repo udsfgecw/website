@@ -72,8 +72,11 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     code: "GYMAT101",
     syllabusHref: `/notes/${branchId}/s1/maths/syllabus`,
     href: `/notes/${branchId}/s1/maths`,
-    modules: [
+    modules: branchId !== "ece" && branchId !== "eee" ? [] : [
       { name: "Module 1", detail: "Linear systems, matrix rank, eigenvalues and diagonalization", href: `/notes/${branchId}/s1/maths/module-1` },
+      { name: "Module 2", detail: "Second-order linear ODEs: homogeneous, undetermined coefficients, variation of parameters", href: `/notes/${branchId}/s1/maths/module-2` },
+      { name: "Module 3", detail: "Laplace transforms, inverse transforms and solving initial value problems", href: `/notes/${branchId}/s1/maths/module-3` },
+      { name: "Module 4", detail: "Taylor and Maclaurin series, Fourier series and half-range expansions", href: `/notes/${branchId}/s1/maths/module-4` },
     ],
   },
   {

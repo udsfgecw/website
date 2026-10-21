@@ -104,6 +104,9 @@ export default function App() {
           <Route path="/notes/cse/s1/electrical/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/python/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/maths/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/maths/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/maths/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/maths/module-4/:page?" element={<ImportedModulePage />} />
           <Route path="/gate" element={<GateExamPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/activities" element={<ActivitiesPage />} />

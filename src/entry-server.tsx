@@ -129,11 +129,13 @@ export const pages: StaticPage[] = [
   { url: pythonmodule2.basePath, file: fileFor(pythonmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule3.basePath, file: fileFor(pythonmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule4.basePath, file: fileFor(pythonmodule4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
-  ...(["ece", "eee"] as const).map((branch): StaticPage => ({
-    url: `/notes/${branch}/s1/maths/module-1`,
-    file: fileFor(`/notes/${branch}/s1/maths/module-1`),
-    chunk: "src/pages/notes/ImportedModulePage.tsx",
-  })),
+  ...(["ece", "eee"] as const).flatMap((branch) =>
+    ([1, 2, 3, 4] as const).map((n): StaticPage => ({
+      url: `/notes/${branch}/s1/maths/module-${n}`,
+      file: fileFor(`/notes/${branch}/s1/maths/module-${n}`),
+      chunk: "src/pages/notes/ImportedModulePage.tsx",
+    })),
+  ),
   ...(["ece", "eee"] as const).flatMap((branch) =>
     ([1, 2, 3, 4] as const).map((n): StaticPage => ({
       url: `/notes/${branch}/s1/chemistry/module-${n}`,
