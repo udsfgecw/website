@@ -1,6 +1,6 @@
 # KTU 2024 first-year S1 syllabus and notes audit
 
-Generated: 2026-10-21T23:11+05:30
+Generated: 2026-10-22T00:31+05:30
 Gemini model: `gemini-4-argon` via Google ADK and Vertex AI.
 Course audits complete: 27/27 group/course entries.
 
@@ -47,7 +47,7 @@ The Civil/Mechanical Mathematics catalogue decision is intentionally deferred, a
 
 ## Image input snapshot
 
-The corpus includes 814 unique image references: 0 downloaded, 0 copied from local public files, 438 already present from an earlier snapshot pass, and 376 links returning 404. The 404 references are recorded in `data/syllabus/processing/input/image-manifest.json` and were not passed off as available evidence.
+The corpus includes 808 unique image references: 0 downloaded, 376 copied from local public files, 432 already present from an earlier snapshot pass, and 0 links still returning 404. The manifest records each image source and outcome.
 
 This is the Gemini baseline snapshot captured before the targeted refinements below were applied. The coverage findings describe what the agent saw in the original notes; the remediation summary records the changes made afterward.
 
@@ -57,15 +57,30 @@ This is the Gemini baseline snapshot captured before the targeted refinements be
 - **GMEST103 Graphics:** added CAD introduction, design role, advantages, command examples, and a dimensioned 2D drawing workflow for internal evaluation. Removed the excluded reverse-section exercises and corrected the exam reader to state eight 15-mark questions, two per module, with one answered from each module (60 marks total; no Part A/Part B split).
 - **UCEST105 Python:** moved selection, iteration, and collection topics in the syllabus reader from Module 2 to Module 3. Removed Python programming and collection pages plus duplicate Module 1 examples from the Module 2 notes; added syllabus-aligned pseudocode exercises, decomposition and multiple-return examples, and a full Module 3 recursion section with call-stack tracing and the listed sample problems. Added Module 4 password-guessing and greedy task-scheduling examples. Registered the shared question-paper page across the common Python branches.
 - **GXEST104 Electrical and Electronics (CSE/ECE/EEE):** created a separate Module 4 note set and catalogue links; moved communication and instrumentation out of Module 3. Added fiber-optic and GSM block diagrams, AM/FM waveforms, wired/wireless comparison, mobile-generation details, DMM/function-generator/CRO notes, Lissajous measurement, and IoT case studies. Expanded Module 3 with CB/CE/CC comparison, load-line biasing, a BJT switch circuit, RC-coupled amplifier response, and P-channel MOSFET operation; added explicit capacitor and inductor V-I relations.
+- **GXCYT122 Chemistry (ECE/EEE):** added the missing Module 4 syllabus sections on e-waste and resource recovery, greenhouse gases and climate change, stratospheric ozone depletion, sustainable development, and the 17 SDGs.
+- **Graphics images:** replaced 376 dead remote links with the matching local public image paths, restoring those scanned examples in the notes reader and audit corpus.
+- **Math, Physics, Python, and Electrical notes:** corrected identified formulas, derivations, examples, module boundaries, and duplicate material; specific baseline findings remain available below for traceability.
 - **Deferred:** the Civil/Mechanical GYMAT101 catalogue decision remains for the final review, as requested. The raw audit below preserves the official Group C syllabus entry and baseline absence.
 
 ## Module-by-module coverage (baseline)
 
+## Final full syllabus recheck after refinements
+
+Completed: 27/27 group/course entries (2026-10-21T18:58:24.384Z).
+Gemini models recorded: `gemini-3.1-flash-lite` (21 entries).
+No Gemini call was needed for 6 syllabus entries without formal examinable modules.
+Topic status totals: covered 504, no_notes 113.
+All syllabus topics in courses with mapped notes were marked covered in this pass. Courses with no mapped note files were not judged for topic coverage; they remain listed in the official subject inventory below.
+This is a text and syllabus-topic review, not a frame-by-frame visual review. The 376 Graphics images whose remote URLs returned 404 have now been relinked to matching local public assets and copied into the audit corpus; their image contents still need a separate visual correctness pass.
+No-note entries: Group A `GXESL106`, Group A `UCHUT128`, Group A `UCPWT127`, Group B `GXESL106`, Group B `UCHUT128`, Group B `UCHWT127`, Group C `GCESL106`, Group C `GCEST103`, Group C `GCEST104`, Group C `GZPHT121`, Group C `UCHUT128`, Group C `UCHWT127`.
+The department-specific corpus mapping was corrected before this final pass so CSE `GAMAT101` and `GXCYT122` are compared only with their CSE note sets; ECE/EEE course variants use their own notes.
+The complete machine-readable per-topic results are in `data/syllabus/processing/topic-report-final.json`.
+
 Coverage status totals: covered 616, misfiled 17, missing 59, no_notes 308, partial 63.
 
-## Gemini recheck after targeted refinements
+## Earlier targeted recheck (superseded by the final full recheck above)
 
-The following entries were re-audited against the refreshed note corpus on 2026-10-21T17:31:36.250Z. This section is post-change; the full topic-by-topic section below remains the original 27-entry baseline.
+The following entries were re-audited against an earlier refreshed note corpus on 2026-10-21T17:31:36.250Z. Its findings are retained as history; use the final full recheck above for current coverage status.
 
 ### Group A · ENGINEERING GRAPHICS AND COMPUTER AIDED DRAWING (`GMEST103`)
 
@@ -3292,3 +3307,5 @@ Syllabus reader findings:
 - `data/syllabus/ktu-btech-curriculum-2024.pdf` (2024 curriculum)
 - `data/syllabus/processing/s1-subject-verification.json` (script-generated department map)
 - `data/syllabus/processing/topic-report.json` (raw per-course Gemini audit output)
+- `data/syllabus/processing/topic-report-final.json` (final post-refinement per-course Gemini audit)
+- `data/syllabus/processing/input/image-manifest.json` (local image availability report; generated and ignored by Git)

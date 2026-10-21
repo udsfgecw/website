@@ -71,6 +71,17 @@ const workers = Array.from({ length: 3 }, async () => {
       if (finishedImages % 50 === 0) console.log(`prepared ${finishedImages}/${imageManifest.length} referenced images`);
       continue;
     }
+    const mirroredPath = new URL(item.url).pathname;
+    const mirroredLocal = path.join(root, "public", mirroredPath.slice(1));
+    try {
+      await stat(mirroredLocal);
+      await copyFile(mirroredLocal, dest);
+      item.status = "copied";
+      item.localSource = path.relative(root, mirroredLocal);
+      finishedImages++;
+      if (finishedImages % 50 === 0) console.log(`prepared ${finishedImages}/${imageManifest.length} referenced images`);
+      continue;
+    } catch { /* No local mirror; try the remote URL below. */ }
     try {
       let response;
       for (let attempt = 0; attempt < 2; attempt++) {
@@ -118,7 +129,7 @@ for (const department of departments) {
     const next = after.search(/\n\s*Course Code\s+[A-Z]{2,6}\d{3}\b/);
     const end = next < 0 ? Math.min(text.length, hits[occurrence].index + 45000) : hits[occurrence].index + code.length + next;
     const section = text.slice(start, end).trim();
-    const courseNotes = noteModules.filter((module) => noteFilesForCourse(code, module.moduleId, module.relative));
+    const courseNotes = noteModules.filter((module) => noteFilesForCourse(department.group, code, module.moduleId, module.relative));
     courses.push({ department: department.id, departmentName: department.name, group: department.group, code, syllabusFile: department.file, syllabusExcerpt: section, notesModules: courseNotes.map(({ relative, moduleId, text: noteText }) => ({ moduleId, source: relative, text: noteText })) });
   }
 }
@@ -152,13 +163,15 @@ await writeFile(path.join(output, "syllabus-corpus.json"), JSON.stringify({ gene
 await writeFile(path.join(output, "../s1-subject-verification.json"), JSON.stringify({ generatedAt: new Date().toISOString(), departments: subjectMap, catalogChecks, missing }, null, 2) + "\n");
 console.log(JSON.stringify({ departments: departments.length, courses: courses.length, subjectCodes: new Set(courses.map((course) => course.code)).size, noteModules: noteModules.length, images: imageManifest.length, missing }, null, 2));
 
-function noteFilesForCourse(code, moduleId, relative) {
+function noteFilesForCourse(group, code, moduleId, relative) {
   const modulesByCode = {
-    GAMAT101: ["maths-module-1", "maths-module-2", "maths-module-3", "maths-module-4", "electrical-maths-module-1", "electrical-maths-module-2", "electrical-maths-module-3", "electrical-maths-module-4"],
+    GAMAT101: ["maths-module-1", "maths-module-2", "maths-module-3", "maths-module-4"],
     GYMAT101: ["electrical-maths-module-1", "electrical-maths-module-2", "electrical-maths-module-3", "electrical-maths-module-4"],
     GAPHT121: ["physics-module-1", "physics-module-2", "physics-module-3", "physics-module-4"],
     GBPHT121: ["physics-ece-module-1", "physics-ece-module-2", "physics-ece-module-3", "physics-ece-module-4"],
-    GXCYT122: ["chemistry-module-1", "chemistry-module-2", "chemistry-module-3", "chemistry-module-4", "chemistry-ece-module-1", "chemistry-ece-module-2", "chemistry-ece-module-3", "chemistry-ece-module-4"],
+    GXCYT122: group === "A"
+      ? ["chemistry-module-1", "chemistry-module-2", "chemistry-module-3", "chemistry-module-4"]
+      : ["chemistry-ece-module-1", "chemistry-ece-module-2", "chemistry-ece-module-3", "chemistry-ece-module-4"],
     GCCYT122: ["chemistry-civil-mech-module-1", "chemistry-civil-mech-module-2", "chemistry-civil-mech-module-3", "chemistry-civil-mech-module-4"],
     GMEST103: ["graphics-m1", "graphics-m2", "graphics-m3", "graphics-m4"],
     GXEST104: ["electrical-module-1", "electrical-module-2", "electrical-module-3", "electrical-module-4"],

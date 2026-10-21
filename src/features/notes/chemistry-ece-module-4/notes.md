@@ -674,3 +674,63 @@ b) **Nitrogen stripping:** Ammonia gas is removed by passing the effluent throug
 c) **Chlorination:** Disinfection of sewage is done by treating with chlorine, when pathogenic bacteria are killed.
 
 After tertiary treatment, the water can be sent to ponds or water bodies.
+
+<!-- page 8 | E-waste, climate change, ozone depletion, and sustainable development -->
+
+## E-waste and resource recovery
+
+**Electronic waste (e-waste)** is discarded electrical or electronic equipment and its components, such as phones, computers, circuit boards, batteries, lamps, and household appliances. It contains recoverable materials (copper, aluminium, iron, gold, and plastics) as well as hazardous constituents. Lead, cadmium, mercury, chromium compounds, and some brominated flame retardants can harm people and ecosystems if devices are burned, dumped, or dismantled without controls.
+
+### Safe management and recovery
+
+1. **Collect and sort:** keep e-waste separate from ordinary household waste; identify equipment that can be repaired or reused.
+2. **Prepare for reuse:** test, repair, and refurbish functioning equipment, and recover usable components.
+3. **Dismantle safely:** remove batteries, lamps, and other hazardous parts before size reduction. Use suitable protection and ventilation.
+4. **Separate materials:** use mechanical methods such as screening, magnetic separation, and eddy-current separation to sort ferrous metals, non-ferrous metals, and plastics.
+5. **Recover resources:** send fractions to appropriate metal-recovery processes. Hydrometallurgy dissolves selected metals in controlled aqueous solutions, followed by separation and recovery; residues and process liquids still need safe treatment.
+6. **Treat residues:** send hazardous fractions to authorized treatment or disposal facilities. Never recover metals by open burning or uncontrolled acid leaching.
+
+The waste hierarchy is **reduce → repair/reuse → refurbish → recycle → treat/dispose**. Recovery conserves finite mineral resources and can reduce the energy and environmental burden of mining, while safe collection prevents toxic releases.
+
+## Greenhouse gases and climate change
+
+The **greenhouse effect** is the warming that occurs when atmospheric gases absorb and re-emit part of the infrared radiation emitted by Earth's surface. Water vapour, carbon dioxide ($\mathrm{CO_2}$), methane ($\mathrm{CH_4}$), nitrous oxide ($\mathrm{N_2O}$), and some industrial gases absorb infrared radiation in characteristic wavelength bands. This natural effect keeps Earth habitable; increasing greenhouse-gas concentrations strengthen the effect and cause **global warming**.
+
+Human activities that raise greenhouse-gas concentrations include burning coal, oil, and natural gas; deforestation; cement production; agriculture and livestock; and leakage of industrial refrigerants. **Climate change** includes the resulting long-term shifts in temperature, rainfall, extreme events, sea level, and ecosystems. It is broader than the rise in average temperature alone.
+
+**Mitigation** reduces the sources of greenhouse gases or increases their removal: energy efficiency, low-carbon electricity, public transport, forest protection, and lower-emission industrial processes. **Adaptation** reduces harm from impacts already occurring or expected, for example heat plans, water conservation, resilient infrastructure, and flood planning.
+
+## Stratospheric ozone depletion
+
+The **ozone layer** is in the stratosphere and absorbs much of the Sun's harmful ultraviolet radiation. Ozone forms when ultraviolet light splits oxygen molecules and the resulting oxygen atoms combine with oxygen molecules:
+
+$$
+\mathrm{O_2 + h\nu \rightarrow 2O}\qquad\mathrm{O + O_2 \rightarrow O_3}
+$$
+
+Chlorofluorocarbons (CFCs) are stable in the lower atmosphere, so they can reach the stratosphere. There, ultraviolet radiation releases chlorine radicals. A chlorine radical catalytically destroys ozone and is regenerated:
+
+$$
+\mathrm{Cl + O_3 \rightarrow ClO + O_2}\qquad
+\mathrm{ClO + O \rightarrow Cl + O_2}
+$$
+
+**Net reaction:** $\mathrm{O_3 + O \rightarrow 2O_2}$. Because chlorine is regenerated, one radical can participate in many reaction cycles. Ozone depletion allows more harmful UV-B radiation to reach Earth's surface, increasing risks to human health, crops, and aquatic ecosystems. This differs from greenhouse warming: ozone depletion concerns loss of stratospheric ozone, while climate change is driven by heat-trapping gases in the atmosphere.
+
+## Sustainable development and the Sustainable Development Goals
+
+**Sustainable development** meets present needs while protecting the ability of future generations to meet their needs. It balances environmental protection, social well-being, and economic development. In chemistry and engineering, this means choosing safer materials and reactions, reducing energy and water use, preventing pollution at its source, and designing products for durability and recovery.
+
+In 2015, the United Nations adopted the **2030 Agenda for Sustainable Development** with 17 interconnected Sustainable Development Goals (SDGs):
+
+1. No Poverty; 2. Zero Hunger; 3. Good Health and Well-being; 4. Quality Education; 5. Gender Equality; 6. Clean Water and Sanitation; 7. Affordable and Clean Energy; 8. Decent Work and Economic Growth; 9. Industry, Innovation and Infrastructure; 10. Reduced Inequalities; 11. Sustainable Cities and Communities; 12. Responsible Consumption and Production; 13. Climate Action; 14. Life Below Water; 15. Life on Land; 16. Peace, Justice and Strong Institutions; 17. Partnerships for the Goals.
+
+Examples of chemistry's contribution include water treatment and contaminant monitoring (SDG 6), efficient batteries and renewable-energy materials (SDG 7), safer product design and recycling (SDG 12), lower-emission processes (SDG 13), and preventing chemical pollution in aquatic and terrestrial environments (SDGs 14 and 15).
+
+### Quick revision questions
+
+1. Define e-waste and list four hazardous constituents found in discarded electronics.
+2. Arrange the preferred e-waste management steps and explain how metal recovery conserves resources.
+3. Explain the greenhouse effect and distinguish global warming from climate change.
+4. Write the two chlorine-radical reactions responsible for catalytic ozone destruction and give the net reaction.
+5. State the meaning of sustainable development and name the 17 SDGs.

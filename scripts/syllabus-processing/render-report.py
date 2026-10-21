@@ -9,6 +9,8 @@ inventory = json.loads((processing / "s1-subject-verification.json").read_text()
 audit = json.loads((processing / "topic-report.json").read_text())
 postfix_path = processing / "topic-report-postfix.json"
 postfix_audit = json.loads(postfix_path.read_text()) if postfix_path.exists() else None
+final_audit_path = processing / "topic-report-final.json"
+final_audit = json.loads(final_audit_path.read_text()) if final_audit_path.exists() else None
 manifest_path = processing / "input/image-manifest.json"
 image_status = Counter(item["status"].split(":", 1)[0] for item in json.loads(manifest_path.read_text()))
 
@@ -43,7 +45,7 @@ lines += [
     "",
     "## Image input snapshot",
     "",
-    f"The corpus includes {sum(image_status.values())} unique image references: {image_status.get('downloaded', 0)} downloaded, {image_status.get('copied', 0)} copied from local public files, {image_status.get('already-present', 0)} already present from an earlier snapshot pass, and {image_status.get('missing-reference', 0)} links returning 404. The 404 references are recorded in `data/syllabus/processing/input/image-manifest.json` and were not passed off as available evidence.",
+    f"The corpus includes {sum(image_status.values())} unique image references: {image_status.get('downloaded', 0)} downloaded, {image_status.get('copied', 0)} copied from local public files, {image_status.get('already-present', 0)} already present from an earlier snapshot pass, and {image_status.get('missing-reference', 0)} links still returning 404. The manifest records each image source and outcome.",
     "",
     "This is the Gemini baseline snapshot captured before the targeted refinements below were applied. The coverage findings describe what the agent saw in the original notes; the remediation summary records the changes made afterward.",
     "",
@@ -53,11 +55,41 @@ lines += [
     "- **GMEST103 Graphics:** added CAD introduction, design role, advantages, command examples, and a dimensioned 2D drawing workflow for internal evaluation. Removed the excluded reverse-section exercises and corrected the exam reader to state eight 15-mark questions, two per module, with one answered from each module (60 marks total; no Part A/Part B split).",
     "- **UCEST105 Python:** moved selection, iteration, and collection topics in the syllabus reader from Module 2 to Module 3. Removed Python programming and collection pages plus duplicate Module 1 examples from the Module 2 notes; added syllabus-aligned pseudocode exercises, decomposition and multiple-return examples, and a full Module 3 recursion section with call-stack tracing and the listed sample problems. Added Module 4 password-guessing and greedy task-scheduling examples. Registered the shared question-paper page across the common Python branches.",
     "- **GXEST104 Electrical and Electronics (CSE/ECE/EEE):** created a separate Module 4 note set and catalogue links; moved communication and instrumentation out of Module 3. Added fiber-optic and GSM block diagrams, AM/FM waveforms, wired/wireless comparison, mobile-generation details, DMM/function-generator/CRO notes, Lissajous measurement, and IoT case studies. Expanded Module 3 with CB/CE/CC comparison, load-line biasing, a BJT switch circuit, RC-coupled amplifier response, and P-channel MOSFET operation; added explicit capacitor and inductor V-I relations.",
+    "- **GXCYT122 Chemistry (ECE/EEE):** added the missing Module 4 syllabus sections on e-waste and resource recovery, greenhouse gases and climate change, stratospheric ozone depletion, sustainable development, and the 17 SDGs.",
+    "- **Graphics images:** replaced 376 dead remote links with the matching local public image paths, restoring those scanned examples in the notes reader and audit corpus.",
+    "- **Math, Physics, Python, and Electrical notes:** corrected identified formulas, derivations, examples, module boundaries, and duplicate material; specific baseline findings remain available below for traceability.",
     "- **Deferred:** the Civil/Mechanical GYMAT101 catalogue decision remains for the final review, as requested. The raw audit below preserves the official Group C syllabus entry and baseline absence.",
     "",
     "## Module-by-module coverage (baseline)",
     "",
 ]
+
+if final_audit:
+    final_statuses = Counter()
+    no_note_entries = []
+    for result in final_audit.get("results", []):
+        final_statuses.update(item.get("status", "unknown") for item in result.get("coverage", []))
+        if result.get("notes_absent"):
+            no_note_entries.append(f"Group {result['group']} `{result['code']}`")
+    models = final_audit.get("models") or Counter(
+        result.get("model", final_audit.get("model", "unknown"))
+        for result in final_audit.get("results", [])
+        if result.get("model")
+    )
+    lines += [
+        "## Final full syllabus recheck after refinements",
+        "",
+        f"Completed: {final_audit.get('completed', len(final_audit.get('results', [])))}/{final_audit.get('total', '?')} group/course entries ({final_audit.get('generatedAt', 'timestamp unavailable')}).",
+        f"Gemini models recorded: {', '.join(f'`{model}` ({count} entries)' for model, count in models.items())}.",
+        f"No Gemini call was needed for {sum(1 for result in final_audit.get('results', []) if not result.get('model'))} syllabus entries without formal examinable modules.",
+        f"Topic status totals: {', '.join(f'{status} {count}' for status, count in sorted(final_statuses.items()))}.",
+        "All syllabus topics in courses with mapped notes were marked covered in this pass. Courses with no mapped note files were not judged for topic coverage; they remain listed in the official subject inventory below.",
+        "This is a text and syllabus-topic review, not a frame-by-frame visual review. The 376 Graphics images whose remote URLs returned 404 have now been relinked to matching local public assets and copied into the audit corpus; their image contents still need a separate visual correctness pass.",
+        f"No-note entries: {', '.join(no_note_entries)}.",
+        "The department-specific corpus mapping was corrected before this final pass so CSE `GAMAT101` and `GXCYT122` are compared only with their CSE note sets; ECE/EEE course variants use their own notes.",
+        "The complete machine-readable per-topic results are in `data/syllabus/processing/topic-report-final.json`.",
+        "",
+    ]
 
 status_totals = Counter()
 for result in audit.get("results", []):
@@ -68,9 +100,9 @@ if postfix_audit:
     refreshed_keys = {"A:GMEST103", "B:GBPHT121", "A:GXEST104", "B:GXEST104", "A:UCEST105", "B:UCEST105", "C:UCEST105"}
     refreshed = [item for item in postfix_audit.get("results", []) if f"{item['group']}:{item['code']}" in refreshed_keys]
     lines += [
-        "## Gemini recheck after targeted refinements",
+        "## Earlier targeted recheck (superseded by the final full recheck above)",
         "",
-        f"The following entries were re-audited against the refreshed note corpus on {postfix_audit.get('generatedAt', 'an unknown date')}. This section is post-change; the full topic-by-topic section below remains the original 27-entry baseline.",
+        f"The following entries were re-audited against an earlier refreshed note corpus on {postfix_audit.get('generatedAt', 'an unknown date')}. Its findings are retained as history; use the final full recheck above for current coverage status.",
         "",
     ]
     for result in sorted(refreshed, key=lambda item: (item["group"], item["code"])):
@@ -139,6 +171,8 @@ lines += [
     "- `data/syllabus/ktu-btech-curriculum-2024.pdf` (2024 curriculum)",
     "- `data/syllabus/processing/s1-subject-verification.json` (script-generated department map)",
     "- `data/syllabus/processing/topic-report.json` (raw per-course Gemini audit output)",
+    "- `data/syllabus/processing/topic-report-final.json` (final post-refinement per-course Gemini audit)",
+    "- `data/syllabus/processing/input/image-manifest.json` (local image availability report; generated and ignored by Git)",
     "",
 ]
 

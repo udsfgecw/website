@@ -154,23 +154,23 @@ When two or three polyhedra share a **coaxial** vertical axis, you build them se
 1. Construct an isometric scale converting the true lengths 20 mm, 40 mm, and 60 mm into foreshortened isometric lengths, because an isometric projection requires all parallel dimensions to be scaled by $\cos 30^\circ / \cos 45^\circ$.
 2. Draw the orthographic front and top views of the coaxial pair to visualize how the 40 mm cube sits inside the 60 mm square slab, leaving a uniform border of $(60 - 40) / 2 = 10$ mm on all four sides.
 
-![Orthographic projections showing front view and top view of a cube on a square prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-002-panel-2.webp)
+![Orthographic projections showing front view and top view of a cube on a square prism](/notes/cse/s1/graphics/module-4/assets/page-002-panel-2.webp)
 
 3. Draw the bottom isometric rhombus $ABCD$ of side ISO 60 mm with edges inclined at 30° to the horizontal to represent the base of the square slab.
 
-![Engineering drawing showing orthographic views, given dimensions, isometric view and construction scale for problem 156.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-003-panel-1.webp)
+![Engineering drawing showing orthographic views, given dimensions, isometric view and construction scale for problem 156.2](/notes/cse/s1/graphics/module-4/assets/page-003-panel-1.webp)
 
 4. Raise vertical edges of height ISO 20 mm from corners $A, B, C, D$ and join their tops to complete the lower square slab.
 
-![Engineering drawing showing orthographic views, given dimensions, isometric view and construction scale for problem 156.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-003-panel-2.webp)
+![Engineering drawing showing orthographic views, given dimensions, isometric view and construction scale for problem 156.3](/notes/cse/s1/graphics/module-4/assets/page-003-panel-2.webp)
 
 5. On the top face of the slab, step inward by an isometric offset of ISO 10 mm from each side to draw parallel grid lines that locate the centered base $PQRS$ of the 40 mm cube.
 
-![Isometric and orthographic views for problem 156.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-004-panel-1.webp)
+![Isometric and orthographic views for problem 156.4](/notes/cse/s1/graphics/module-4/assets/page-004-panel-1.webp)
 
 6. Erect vertical lines of height ISO 40 mm from $P, Q, R, S$ to complete the upper cube, darkening all visible front and top edges while omitting hidden rear lines.
 
-![Isometric and orthographic views for problem 156.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-004-panel-2.webp)
+![Isometric and orthographic views for problem 156.5](/notes/cse/s1/graphics/module-4/assets/page-004-panel-2.webp)
 
 **Answer:** Isometric projection of the 40 mm cube centered with a 10 mm offset on the 60 mm by 20 mm square slab.
 
@@ -186,7 +186,7 @@ When two or three polyhedra share a **coaxial** vertical axis, you build them se
 3. Transfer the pentagon vertices $A, B, C, D, E$ onto the front vertical face of the isometric box by measuring their coordinate offsets along the box edges.
 4. Project parallel lines of length ISO 70 mm from each vertex along the horizontal isometric axis to locate the rear pentagon and darken visible edges.
 
-![Orthographic projections and isometric view of a pentagonal prism resting on a rectangular face](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-008-panel-2.webp)
+![Orthographic projections and isometric view of a pentagonal prism resting on a rectangular face](/notes/cse/s1/graphics/module-4/assets/page-008-panel-2.webp)
 
 **Answer:** Isometric projection of the horizontal pentagonal prism of base 30 mm and length 70 mm.
 
@@ -204,13 +204,13 @@ When two or three polyhedra share a **coaxial** vertical axis, you build them se
 
 > **Watch out.** Because a regular hexagon is wider across its corners (60 mm) than across its flats (52 mm), the two offsets to center the 24 mm square inside the enclosing box are unequal (18 mm and 14 mm).
 
-![Orthographic projection showing a square pyramid placed centrally on top of a hexagonal prism, with dimensions and labels.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-005-panel-2.webp)
+![Orthographic projection showing a square pyramid placed centrally on top of a hexagonal prism, with dimensions and labels.](/notes/cse/s1/graphics/module-4/assets/page-005-panel-2.webp)
 
-![Orthographic projections of hexagonal slab with square pyramid on top](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-006-panel-1.webp)
+![Orthographic projections of hexagonal slab with square pyramid on top](/notes/cse/s1/graphics/module-4/assets/page-006-panel-1.webp)
 
-![Orthographic projections of hexagonal slab with square pyramid on top](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-006-panel-2.webp)
+![Orthographic projections of hexagonal slab with square pyramid on top](/notes/cse/s1/graphics/module-4/assets/page-006-panel-2.webp)
 
-![Orthographic projections of a square pyramid on a hexagonal slab](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-007-panel-1.webp)
+![Orthographic projections of a square pyramid on a hexagonal slab](/notes/cse/s1/graphics/module-4/assets/page-007-panel-1.webp)
 
 **Answer:** Isometric projection of the 24 mm by 40 mm square pyramid centered on the 30 mm by 20 mm hexagonal slab.
 
@@ -226,19 +226,19 @@ When two or three polyhedra share a **coaxial** vertical axis, you build them se
 5. On the cube's top face, step inward uniformly by $(40 - 30) / 2 = 5$ mm (ISO 5 mm) from all four edges to plot the 30 mm square base of the pyramid.
 6. Intersect the diagonals of the pyramid base to find its center, raise the vertical axis by ISO 40 mm to the apex, and join the apex to the four base corners.
 
-![Orthographic views showing front elevation and top view of square pyramid on cube on rectangular slab with dimensions](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-047-panel-2.webp)
+![Orthographic views showing front elevation and top view of square pyramid on cube on rectangular slab with dimensions](/notes/cse/s1/graphics/module-4/assets/page-047-panel-2.webp)
 
-![Engineering drawing showing orthographic projections and isometric view for problem 174.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-048-panel-1.webp)
+![Engineering drawing showing orthographic projections and isometric view for problem 174.2](/notes/cse/s1/graphics/module-4/assets/page-048-panel-1.webp)
 
-![Engineering drawing showing orthographic projections and isometric view for problem 174.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-048-panel-2.webp)
+![Engineering drawing showing orthographic projections and isometric view for problem 174.3](/notes/cse/s1/graphics/module-4/assets/page-048-panel-2.webp)
 
-![Problem 174.4 Orthographic and isometric projections of a rectangular prism with a square recess and a square pyramid inside](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-049-panel-1.webp)
+![Problem 174.4 Orthographic and isometric projections of a rectangular prism with a square recess and a square pyramid inside](/notes/cse/s1/graphics/module-4/assets/page-049-panel-1.webp)
 
-![Problem 174.5 Orthographic and isometric projections of a rectangular prism topped with a cube and a square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-049-panel-2.webp)
+![Problem 174.5 Orthographic and isometric projections of a rectangular prism topped with a cube and a square pyramid](/notes/cse/s1/graphics/module-4/assets/page-049-panel-2.webp)
 
-![Orthographic and isometric projection of combination of solids 174.6](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-050-panel-1.webp)
+![Orthographic and isometric projection of combination of solids 174.6](/notes/cse/s1/graphics/module-4/assets/page-050-panel-1.webp)
 
-![Orthographic and isometric projection of combination of solids 174.7](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-050-panel-2.webp)
+![Orthographic and isometric projection of combination of solids 174.7](/notes/cse/s1/graphics/module-4/assets/page-050-panel-2.webp)
 
 **Answer:** Isometric projection of the 30 mm by 40 mm square pyramid on the 40 mm cube on the 60 mm by 50 mm by 20 mm rectangular slab.
 
@@ -265,11 +265,11 @@ When the lower solid is an upward-facing hemisphere, always start at its flat ci
 5. From the center of rhombus $1234$, erect a vertical axis of isometric height 70 mm to locate the cone's apex.
 6. Draw two straight generators from the apex tangent to the outer left and right arcs of the ellipse, and darken only the visible front arc of the shared base.
 
-![Orthographic projections of a cone placed on a hemisphere with a given values box](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-015-panel-2.webp)
+![Orthographic projections of a cone placed on a hemisphere with a given values box](/notes/cse/s1/graphics/module-4/assets/page-015-panel-2.webp)
 
-![Engineering drawing showing orthographic projections and isometric view for problem 161.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-016-panel-1.webp)
+![Engineering drawing showing orthographic projections and isometric view for problem 161.2](/notes/cse/s1/graphics/module-4/assets/page-016-panel-1.webp)
 
-![Engineering drawing showing orthographic projections and isometric view for problem 161.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-016-panel-2.webp)
+![Engineering drawing showing orthographic projections and isometric view for problem 161.3](/notes/cse/s1/graphics/module-4/assets/page-016-panel-2.webp)
 
 **Answer:** Isometric projection of a 50 mm diameter, 70 mm high cone coaxially mounted on a 50 mm diameter hemisphere.
 
@@ -287,15 +287,15 @@ When the lower solid is an upward-facing hemisphere, always start at its flat ci
 6. From the center of the inner rhombus, measure 45 mm vertically up to mark the apex and draw two tangent generators to the 30 mm ellipse.
 7. Darken the visible outlines and erase the hidden rear arc of the cone's base.
 
-![Orthographic projections of a cone placed on a cylinder with dimensions](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-009-panel-2.webp)
+![Orthographic projections of a cone placed on a cylinder with dimensions](/notes/cse/s1/graphics/module-4/assets/page-009-panel-2.webp)
 
-![Orthographic projections and isometric projection step for a cylindrical slab with a cone on top, labelled 158.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-010-panel-1.webp)
+![Orthographic projections and isometric projection step for a cylindrical slab with a cone on top, labelled 158.2](/notes/cse/s1/graphics/module-4/assets/page-010-panel-1.webp)
 
-![Orthographic projections and isometric projection step for a cylindrical slab with a cone on top, labelled 158.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-010-panel-2.webp)
+![Orthographic projections and isometric projection step for a cylindrical slab with a cone on top, labelled 158.3](/notes/cse/s1/graphics/module-4/assets/page-010-panel-2.webp)
 
-![Engineering drawing and isometric view for problem 158.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-011-panel-1.webp)
+![Engineering drawing and isometric view for problem 158.4](/notes/cse/s1/graphics/module-4/assets/page-011-panel-1.webp)
 
-![Engineering drawing and isometric view for problem 158.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-011-panel-2.webp)
+![Engineering drawing and isometric view for problem 158.5](/notes/cse/s1/graphics/module-4/assets/page-011-panel-2.webp)
 
 **Answer:** Isometric projection of a cone (diameter 30 mm, height 45 mm) on a cylindrical slab (diameter 50 mm, height 20 mm).
 
@@ -310,15 +310,15 @@ When the lower solid is an upward-facing hemisphere, always start at its flat ci
 5. Apply the four-center method inside this 30 mm rhombus to draw the complete top ellipse representing the mouth of the cylindrical through-hole.
 6. Darken the top ellipse and all visible front and top edges of the hexagonal prism.
 
-![Orthographic projections showing top view as a hexagon with a concentric circle and front view as a rectangle](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-012-panel-2.webp)
+![Orthographic projections showing top view as a hexagon with a concentric circle and front view as a rectangle](/notes/cse/s1/graphics/module-4/assets/page-012-panel-2.webp)
 
-![Step 160.2 of technical drawing showing orthographic projections and isometric step](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-013-panel-1.webp)
+![Step 160.2 of technical drawing showing orthographic projections and isometric step](/notes/cse/s1/graphics/module-4/assets/page-013-panel-1.webp)
 
-![Step 160.3 of technical drawing showing orthographic projections and isometric step](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-013-panel-2.webp)
+![Step 160.3 of technical drawing showing orthographic projections and isometric step](/notes/cse/s1/graphics/module-4/assets/page-013-panel-2.webp)
 
-![Engineering drawing and isometric view for problem 160.4 showing a hexagonal slab with a cylindrical hole.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-014-panel-1.webp)
+![Engineering drawing and isometric view for problem 160.4 showing a hexagonal slab with a cylindrical hole.](/notes/cse/s1/graphics/module-4/assets/page-014-panel-1.webp)
 
-![Engineering drawing and isometric view for problem 160.5 showing a hexagonal slab with a cylindrical hole.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-014-panel-2.webp)
+![Engineering drawing and isometric view for problem 160.5 showing a hexagonal slab with a cylindrical hole.](/notes/cse/s1/graphics/module-4/assets/page-014-panel-2.webp)
 
 **Answer:** Isometric projection of a hexagonal prism (base edge 30 mm, height 20 mm) with a central 30 mm cylindrical hole.
 
@@ -333,15 +333,15 @@ When the lower solid is an upward-facing hemisphere, always start at its flat ci
 5. From the center of rhombus $abcd$, erect a vertical axis of 40 mm to locate the pyramid's apex.
 6. Connect the apex to the visible corners of base $abcd$ and darken the visible portions of the pyramid and hemisphere.
 
-![Orthographic views of a square pyramid resting centrally on a hemisphere](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-017-panel-2.webp)
+![Orthographic views of a square pyramid resting centrally on a hemisphere](/notes/cse/s1/graphics/module-4/assets/page-017-panel-2.webp)
 
-![Isometric projection step 162.2 of a square pyramid on a hemisphere](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-018-panel-1.webp)
+![Isometric projection step 162.2 of a square pyramid on a hemisphere](/notes/cse/s1/graphics/module-4/assets/page-018-panel-1.webp)
 
-![Isometric projection step 162.3 of a square pyramid on a hemisphere](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-018-panel-2.webp)
+![Isometric projection step 162.3 of a square pyramid on a hemisphere](/notes/cse/s1/graphics/module-4/assets/page-018-panel-2.webp)
 
-![Orthographic and isometric projections of a square pyramid resting on a hemisphere for problem 162.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-019-panel-1.webp)
+![Orthographic and isometric projections of a square pyramid resting on a hemisphere for problem 162.4](/notes/cse/s1/graphics/module-4/assets/page-019-panel-1.webp)
 
-![Orthographic and isometric projections of a square pyramid resting on a hemisphere for problem 162.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-019-panel-2.webp)
+![Orthographic and isometric projections of a square pyramid resting on a hemisphere for problem 162.5](/notes/cse/s1/graphics/module-4/assets/page-019-panel-2.webp)
 
 **Answer:** Isometric projection of a square pyramid (base 24 mm, height 40 mm) centered on a 50 mm diameter hemisphere.
 
@@ -358,15 +358,15 @@ When the lower solid is an upward-facing hemisphere, always start at its flat ci
 
 > **Watch out.** Because the cone's 50 mm diameter is wider than the block's 40 mm width, the cone overhangs the front and back edges of the block by $(50 - 40)/2 = 5$ mm on each side.
 
-![Orthographic views of a cone on a rectangular block](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-020-panel-2.webp)
+![Orthographic views of a cone on a rectangular block](/notes/cse/s1/graphics/module-4/assets/page-020-panel-2.webp)
 
-![Orthographic and isometric views showing step 163.2 for a rectangular block and cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-021-panel-1.webp)
+![Orthographic and isometric views showing step 163.2 for a rectangular block and cone](/notes/cse/s1/graphics/module-4/assets/page-021-panel-1.webp)
 
-![Orthographic and isometric views showing step 163.3 for a rectangular block and cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-021-panel-2.webp)
+![Orthographic and isometric views showing step 163.3 for a rectangular block and cone](/notes/cse/s1/graphics/module-4/assets/page-021-panel-2.webp)
 
-![Orthographic and isometric views for problem 163.4 showing a cone on a plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-022-panel-1.webp)
+![Orthographic and isometric views for problem 163.4 showing a cone on a plane](/notes/cse/s1/graphics/module-4/assets/page-022-panel-1.webp)
 
-![Orthographic and isometric views for problem 163.5 showing a cone on a rectangular block](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-022-panel-2.webp)
+![Orthographic and isometric views for problem 163.5 showing a cone on a rectangular block](/notes/cse/s1/graphics/module-4/assets/page-022-panel-2.webp)
 
 **Answer:** Isometric projection of a 50 mm diameter, 70 mm high cone resting centrally on a $50\text{ mm} \times 40\text{ mm} \times 30\text{ mm}$ rectangular block.
 
@@ -396,11 +396,11 @@ When a second sphere rests coaxially on top of a lower sphere of radius $R_1$, t
 4. From the contact point $O_1$, step vertically upward by the isometric radius of the sphere ($R_{\text{iso}}$ for $R = 30$ mm) to locate the sphere's isometric center $O_2$, since vertical distances along the axis are foreshortened.
 5. With center $O_2$ and the sphere's true radius of 30 mm, draw a full circle for the sphere's outline, and darken the visible front edges of the square block outside the circle.
 
-![Orthographic views of a sphere resting on a square block with a given data box](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-023-panel-2.webp)
+![Orthographic views of a sphere resting on a square block with a given data box](/notes/cse/s1/graphics/module-4/assets/page-023-panel-2.webp)
 
-![Orthographic and isometric projections for step 205.2 showing a square prism with a given height and a sphere.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-024-panel-1.webp)
+![Orthographic and isometric projections for step 205.2 showing a square prism with a given height and a sphere.](/notes/cse/s1/graphics/module-4/assets/page-024-panel-1.webp)
 
-![Orthographic and isometric projections for step 205.3 showing a square prism with a sphere placed on top.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-024-panel-2.webp)
+![Orthographic and isometric projections for step 205.3 showing a square prism with a sphere placed on top.](/notes/cse/s1/graphics/module-4/assets/page-024-panel-2.webp)
 
 **Answer:** The isometric view is completed with a 70 mm by 20 mm square block and a 30 mm true-radius circle centered at $R_{\text{iso}}$ above the top face center.
 
@@ -418,11 +418,11 @@ When a second sphere rests coaxially on top of a lower sphere of radius $R_1$, t
 
 > **Watch out.** Do not step up by the true radii (25 mm and 15 mm) to locate the centers; if you do, the two true-radius circles will only touch at a single point instead of overlapping as a tilted 3D stack.
 
-![Orthographic views and given/answer boxes for two spheres, sphere 1 diameter 50 and sphere 2 diameter 30](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-045-panel-2.webp)
+![Orthographic views and given/answer boxes for two spheres, sphere 1 diameter 50 and sphere 2 diameter 30](/notes/cse/s1/graphics/module-4/assets/page-045-panel-2.webp)
 
-![Engineering drawing step 171.2 showing two stacked spheres in orthographic projection](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-046-panel-1.webp)
+![Engineering drawing step 171.2 showing two stacked spheres in orthographic projection](/notes/cse/s1/graphics/module-4/assets/page-046-panel-1.webp)
 
-![Engineering drawing step 171.3 showing two stacked spheres in orthographic projection](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-046-panel-2.webp)
+![Engineering drawing step 171.3 showing two stacked spheres in orthographic projection](/notes/cse/s1/graphics/module-4/assets/page-046-panel-2.webp)
 
 **Answer:** The isometric projection consists of a 15 mm true-radius circle above a partially hidden 25 mm true-radius circle, spaced vertically by their isometric center heights.
 
@@ -436,11 +436,11 @@ When a second sphere rests coaxially on top of a lower sphere of radius $R_1$, t
 4. Step vertically upward from the top face center by the sphere's isometric radius ($R_{\text{iso}}$ for $R = 20$ mm) to locate the sphere center.
 5. Draw the sphere as a circle of true radius 20 mm around the sphere center, leaving the front lower arc of the cylinder visible and hiding the rear covered portion.
 
-![Orthographic projection showing front and top views of a sphere on a cylindrical slab](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-025-panel-2.webp)
+![Orthographic projection showing front and top views of a sphere on a cylindrical slab](/notes/cse/s1/graphics/module-4/assets/page-025-panel-2.webp)
 
-![Isometric and orthographic projection step 164.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-026-panel-1.webp)
+![Isometric and orthographic projection step 164.2](/notes/cse/s1/graphics/module-4/assets/page-026-panel-1.webp)
 
-![Isometric and orthographic projection step 164.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-026-panel-2.webp)
+![Isometric and orthographic projection step 164.3](/notes/cse/s1/graphics/module-4/assets/page-026-panel-2.webp)
 
 **Answer:** The isometric projection shows the 50 mm diameter, 20 mm high four-center cylindrical slab topped by a 20 mm true-radius circle centered at $R_{\text{iso}}$ above the top ellipse center.
 
@@ -454,11 +454,11 @@ When a second sphere rests coaxially on top of a lower sphere of radius $R_1$, t
 4. Draw the intersecting axis lines across the top face to locate the central contact point, then step vertically upward by the sphere's isometric radius ($R_{\text{iso}}$ for $R = 20$ mm).
 5. Using that elevated point as center, draw a circle of true radius 20 mm for the sphere and darken the visible front edges of the hexagonal block.
 
-![Orthographic projections showing front view and top view of a sphere resting on a hexagonal block](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-027-panel-2.webp)
+![Orthographic projections showing front view and top view of a sphere resting on a hexagonal block](/notes/cse/s1/graphics/module-4/assets/page-027-panel-2.webp)
 
-![Solution step 216.1 - Part 1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-028-panel-1.webp)
+![Solution step 216.1 - Part 1](/notes/cse/s1/graphics/module-4/assets/page-028-panel-1.webp)
 
-![Orthographic projections and isometric projection of a sphere on a hexagonal slab](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-029-panel-1.webp)
+![Orthographic projections and isometric projection of a sphere on a hexagonal slab](/notes/cse/s1/graphics/module-4/assets/page-029-panel-1.webp)
 
 **Answer:** The isometric view shows the 30 mm edge, 20 mm high hexagonal block obtained by the box method, surmounted by a 20 mm true-radius sphere.
 
@@ -490,13 +490,13 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 7. With the compass set to the sphere's true radius of 15 mm, draw a full circle centered at the sphere's isometric center, because a sphere's contour always projects as its true radius.
 8. Darken all visible edges of the frustum and erase the back edges of the top face that are hidden behind the opaque sphere.
 
-![Solution step 170.1 showing front view, top view, and given parameters for a frustum of a square pyramid surmounted by a sphere](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-043-panel-1.webp)
+![Solution step 170.1 showing front view, top view, and given parameters for a frustum of a square pyramid surmounted by a sphere](/notes/cse/s1/graphics/module-4/assets/page-043-panel-1.webp)
 
-![Solution step 170.2 showing orthographic projections, given parameters, and an isometric base plate view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-043-panel-2.webp)
+![Solution step 170.2 showing orthographic projections, given parameters, and an isometric base plate view](/notes/cse/s1/graphics/module-4/assets/page-043-panel-2.webp)
 
-![Orthographic and isometric projections for problem 170.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-044-panel-1.webp)
+![Orthographic and isometric projections for problem 170.3](/notes/cse/s1/graphics/module-4/assets/page-044-panel-1.webp)
 
-![Orthographic and isometric projections for problem 170.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-044-panel-2.webp)
+![Orthographic and isometric projections for problem 170.4](/notes/cse/s1/graphics/module-4/assets/page-044-panel-2.webp)
 
 **Answer:** The completed isometric projection shows the square frustum (isometric bases 50 mm and 30 mm, isometric height 40 mm) topped by a sphere of true radius 15 mm centered at an isometric height of 15 mm above the top face.
 
@@ -512,13 +512,13 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 5. Inscribe a four-center ellipse inside the 50 mm rhombus to represent the flat underside of the overhanging rivet head.
 6. With the compass at the top face center, draw an upper semicircular arc of radius 25 mm tangent to the ellipse.
 
-![Orthographic projections of a rivet consisting of a hemisphere over a cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-035-panel-2.webp)
+![Orthographic projections of a rivet consisting of a hemisphere over a cylinder](/notes/cse/s1/graphics/module-4/assets/page-035-panel-2.webp)
 
-![Engineering drawing and isometric projection for 166.2 showing a cylinder and hemisphere combination](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-036-panel-1.webp)
+![Engineering drawing and isometric projection for 166.2 showing a cylinder and hemisphere combination](/notes/cse/s1/graphics/module-4/assets/page-036-panel-1.webp)
 
-![Engineering drawing and isometric projection for 166.3 showing a cylinder and hemisphere combination](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-036-panel-2.webp)
+![Engineering drawing and isometric projection for 166.3 showing a cylinder and hemisphere combination](/notes/cse/s1/graphics/module-4/assets/page-036-panel-2.webp)
 
-![Orthographic views of a cylinder and hemisphere combination](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-037-panel-1.webp)
+![Orthographic views of a cylinder and hemisphere combination](/notes/cse/s1/graphics/module-4/assets/page-037-panel-1.webp)
 
 **Answer:** Isometric projection of a 30 mm by 60 mm cylindrical shank capped by an overhanging 50 mm hemispherical head.
 
@@ -532,13 +532,13 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 5. Because the hemisphere's flat face matches the 30 mm top face, its base is the upper ellipse already drawn.
 6. From the top face center, sweep a semicircular dome tangent to the upper ellipse using the radius of 15 mm.
 
-![Engineering drawing step 217.1 showing orthographic projections of a frustum with a hemisphere on top](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-033-panel-1.webp)
+![Engineering drawing step 217.1 showing orthographic projections of a frustum with a hemisphere on top](/notes/cse/s1/graphics/module-4/assets/page-033-panel-1.webp)
 
-![Engineering drawing step 217.2 showing orthographic projections and an auxiliary or isometric construction view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-033-panel-2.webp)
+![Engineering drawing step 217.2 showing orthographic projections and an auxiliary or isometric construction view](/notes/cse/s1/graphics/module-4/assets/page-033-panel-2.webp)
 
-![Engineering drawing step 217.3 showing orthogonal projections and isometric view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-034-panel-1.webp)
+![Engineering drawing step 217.3 showing orthogonal projections and isometric view](/notes/cse/s1/graphics/module-4/assets/page-034-panel-1.webp)
 
-![Engineering drawing step 217.4 showing orthogonal projections and isometric view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-034-panel-2.webp)
+![Engineering drawing step 217.4 showing orthogonal projections and isometric view](/notes/cse/s1/graphics/module-4/assets/page-034-panel-2.webp)
 
 **Answer:** Isometric view of the conical frustum (diameters 50 mm and 30 mm, height 50 mm) capped flush by a 30 mm hemispherical dome.
 
@@ -553,15 +553,15 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 6. Construct a rhombus at this top center and inscribe a four-center ellipse for the hemisphere's open top face.
 7. Sweep the lower curved bowl tangent to the upper ellipse from the top center, hiding the obscured frustum lines.
 
-![Orthographic projection of a hemisphere resting on a frustum of a cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-030-panel-1.webp)
+![Orthographic projection of a hemisphere resting on a frustum of a cone](/notes/cse/s1/graphics/module-4/assets/page-030-panel-1.webp)
 
-![Orthographic projection with numbering for construction](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-030-panel-2.webp)
+![Orthographic projection with numbering for construction](/notes/cse/s1/graphics/module-4/assets/page-030-panel-2.webp)
 
-![Engineering drawing and isometric view for problem 165.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-031-panel-1.webp)
+![Engineering drawing and isometric view for problem 165.3](/notes/cse/s1/graphics/module-4/assets/page-031-panel-1.webp)
 
-![Engineering drawing and isometric view for problem 165.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-031-panel-2.webp)
+![Engineering drawing and isometric view for problem 165.4](/notes/cse/s1/graphics/module-4/assets/page-031-panel-2.webp)
 
-![Orthographic and isometric projections of a hemisphere on a frustum of a cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-032-panel-1.webp)
+![Orthographic and isometric projections of a hemisphere on a frustum of a cone](/notes/cse/s1/graphics/module-4/assets/page-032-panel-1.webp)
 
 > **Watch out.** The specification tables list the hemisphere diameter as 40 mm, whereas the front orthographic views label it as $\varnothing 50$ mm while keeping the top view circle at 40 mm.
 
@@ -578,13 +578,13 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 6. From the top hexagon's center, step vertically upward by the sphere's isometric radius of 15 mm to find the sphere's center.
 7. Set the compass to the true radius of 15 mm and draw the sphere's circular outline around this center, hiding covered edges.
 
-![Engineering drawing showing the orthographic projection of a frustum of a hexagonal prism with a sphere on top](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-038-panel-1.webp)
+![Engineering drawing showing the orthographic projection of a frustum of a hexagonal prism with a sphere on top](/notes/cse/s1/graphics/module-4/assets/page-038-panel-1.webp)
 
-![Engineering drawing showing orthographic and isometric construction steps for a frustum of a hexagonal prism with a sphere](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-038-panel-2.webp)
+![Engineering drawing showing orthographic and isometric construction steps for a frustum of a hexagonal prism with a sphere](/notes/cse/s1/graphics/module-4/assets/page-038-panel-2.webp)
 
-![Engineering drawing showing orthographic projections and isometric view of a frustum of a hexagonal prism with a sphere on top for problem 167.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-039-panel-1.webp)
+![Engineering drawing showing orthographic projections and isometric view of a frustum of a hexagonal prism with a sphere on top for problem 167.3](/notes/cse/s1/graphics/module-4/assets/page-039-panel-1.webp)
 
-![Engineering drawing showing orthographic projections and isometric view of a frustum of a hexagonal prism with a sphere placed on top for problem 167.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-039-panel-2.webp)
+![Engineering drawing showing orthographic projections and isometric view of a frustum of a hexagonal prism with a sphere placed on top for problem 167.4](/notes/cse/s1/graphics/module-4/assets/page-039-panel-2.webp)
 
 **Answer:** Isometric projection of the hexagonal frustum (sides 30 mm and 20 mm, height 40 mm) topped by a sphere of true radius 15 mm.
 
@@ -599,13 +599,13 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 6. Use the four-center method to inscribe the hemisphere's 30 mm base ellipse, which overhangs the 20 mm top hexagon.
 7. Sweep a semicircular arc of radius 15 mm from the top center, tangent to the ellipse, and erase hidden lines.
 
-![Orthographic views of a hemisphere on a frustum of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-040-panel-2.webp)
+![Orthographic views of a hemisphere on a frustum of a hexagonal pyramid](/notes/cse/s1/graphics/module-4/assets/page-040-panel-2.webp)
 
-![Engineering drawing showing orthogonal projections and an isometric step for problem 199.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-041-panel-1.webp)
+![Engineering drawing showing orthogonal projections and an isometric step for problem 199.2](/notes/cse/s1/graphics/module-4/assets/page-041-panel-1.webp)
 
-![Engineering drawing showing orthogonal projections and a complete isometric projection for problem 199.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-041-panel-2.webp)
+![Engineering drawing showing orthogonal projections and a complete isometric projection for problem 199.3](/notes/cse/s1/graphics/module-4/assets/page-041-panel-2.webp)
 
-![Orthographic and isometric views of a hemisphere on a frustum of a hexagonal prism, with given dimensions.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-042-panel-1.webp)
+![Orthographic and isometric views of a hemisphere on a frustum of a hexagonal prism, with given dimensions.](/notes/cse/s1/graphics/module-4/assets/page-042-panel-1.webp)
 
 > **Watch out.** The problem text states a bottom base side of 50 mm, but the specification banner and solution drawings construct the bottom base with a 30 mm side.
 
@@ -623,17 +623,17 @@ When stacking a curved solid onto a frustum or cylinder, the orientation and siz
 7. Draw straight lines tangent to the 40 mm and 30 mm ellipses to complete the conical frustum.
 8. From the frustum's top center, rise by the sphere's isometric radius of 10 mm and draw a circle of true radius 10 mm.
 
-![Orthographic views and given dimensions of a sphere on a frustum of a cone on a cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-051-panel-2.webp)
+![Orthographic views and given dimensions of a sphere on a frustum of a cone on a cylinder](/notes/cse/s1/graphics/module-4/assets/page-051-panel-2.webp)
 
-![Engineering drawing showing orthographic projections and isometric construction step 175.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-052-panel-1.webp)
+![Engineering drawing showing orthographic projections and isometric construction step 175.2](/notes/cse/s1/graphics/module-4/assets/page-052-panel-1.webp)
 
-![Engineering drawing showing orthographic projections and isometric construction step 175.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-052-panel-2.webp)
+![Engineering drawing showing orthographic projections and isometric construction step 175.3](/notes/cse/s1/graphics/module-4/assets/page-052-panel-2.webp)
 
-![Orthographic projection showing front view and top view of a combination of a cylinder, frustum of cone, and sphere.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-053-panel-1.webp)
+![Orthographic projection showing front view and top view of a combination of a cylinder, frustum of cone, and sphere.](/notes/cse/s1/graphics/module-4/assets/page-053-panel-1.webp)
 
-![Orthographic projection showing front view and top view for problem 175.6.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-053-panel-2.webp)
+![Orthographic projection showing front view and top view for problem 175.6.](/notes/cse/s1/graphics/module-4/assets/page-053-panel-2.webp)
 
-![Orthographic projections of a cylinder, frustum of cone, and sphere](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-4/assets/page-054-panel-1.webp)
+![Orthographic projections of a cylinder, frustum of cone, and sphere](/notes/cse/s1/graphics/module-4/assets/page-054-panel-1.webp)
 
 **Answer:** Isometric projection of the coaxial stack: a 50 mm by 20 mm base cylinder, a 40 mm to 30 mm by 15 mm conical frustum, and a 20 mm top sphere.
 

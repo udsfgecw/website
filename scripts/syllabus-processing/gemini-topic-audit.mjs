@@ -8,6 +8,7 @@ const outputDir = path.join(root, "data/syllabus/processing");
 const reportFile = path.resolve(outputDir, process.env.AUDIT_REPORT_PATH || "topic-report.json");
 if (!reportFile.startsWith(`${outputDir}${path.sep}`)) throw new Error("AUDIT_REPORT_PATH must stay inside data/syllabus/processing/.");
 const refreshCodes = new Set((process.env.AUDIT_REFRESH_CODES || "").split(",").map((value) => value.trim()).filter(Boolean));
+const onlyCodes = new Set((process.env.AUDIT_ONLY_CODES || "").split(",").map((value) => value.trim()).filter(Boolean));
 const corpus = JSON.parse(await readFile(path.join(inputDir, "syllabus-corpus.json"), "utf8"));
 
 // Read the notebook-agent Vertex configuration without printing or copying credentials.
@@ -29,7 +30,7 @@ for (const course of corpus.courses) {
   const key = `${course.group}:${course.code}`;
   if (!distinct.has(key)) distinct.set(key, course);
 }
-const courses = [...distinct.values()];
+const courses = [...distinct.values()].filter((course) => !onlyCodes.size || onlyCodes.has(`${course.group}:${course.code}`));
 const courseByKey = new Map(courses.map((course) => [`${course.group}:${course.code}`, course]));
 const existing = new Map();
 try {
@@ -125,6 +126,7 @@ await Promise.all(Array.from({ length: concurrency }, async () => {
     }
     parsed.group = course.group;
     parsed.code = course.code;
+    parsed.model = model;
     parsed.departments = corpus.departments.filter((department) => department.group === course.group && department.officialSyllabusCodes.includes(course.code)).map((department) => department.id);
     parsed.note_sources = course.notesModules.map((module) => module.source);
     completed.set(key, parsed);

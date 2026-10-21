@@ -174,19 +174,19 @@ In the **sectional top view**, the cut surface appears foreshortened because the
 1. Draw the reference line $y$-$y$ and construct the Top View as a 40 mm square $a(e)$-$b(f)$-$c(g)$-$d(h)$ with its sides inclined at 45° to $y$-$y$ so the vertical faces are equally inclined to VP.
 2. Project the corners up to draw the Front View as a rectangle of height 70 mm resting on $y$-$y$, with top corners $a'$, $b'(d')$, $c'$ and base corners $e'$, $f'(h')$, $g'$.
 
-![Step 98.1: Projections of square prism resting on HP with faces equally inclined to VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-002-panel-2.webp)
+![Step 98.1: Projections of square prism resting on HP with faces equally inclined to VP](/notes/cse/s1/graphics/module-3/assets/page-002-panel-2.webp)
 
 3. Mark a point on the central axis $b'f'$ at 15 mm below the top face and draw the cutting plane line $V$-$T$ through it at 55° to $y$-$y$; mark intersection $1'$ on vertical edge $a'e'$, $2'$ on vertical edges $b'f'$ and $d'h'$, and $3'$ where $V$-$T$ exits through the top face between $b'(d')$ and $c'$.
 
-![Section of a square prism - cutting plane representation (Step 98.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-003-panel-1.webp)
+![Section of a square prism - cutting plane representation (Step 98.2)](/notes/cse/s1/graphics/module-3/assets/page-003-panel-1.webp)
 
 4. Project the cut points down to the Top View: $1'$ lands directly on corner $a(e)$, $2'$ lands on corners $b(f)$ and $d(h)$ (marked $2$ and $2_1$), and $3'$ projects down to top edges $b$-$c$ and $d$-$c$ (marked $3$ and $3_1$); hatch the polygon $1$-$2$-$3$-$3_1$-$2_1$ and darken the retained lower boundary in the Front View.
 
-![Sectional top view and front view of the cut square prism (Step 98.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-003-panel-2.webp)
+![Sectional top view and front view of the cut square prism (Step 98.3)](/notes/cse/s1/graphics/module-3/assets/page-003-panel-2.webp)
 
 5. Draw projectors perpendicular to $V$-$T$ from $1'$, $2'$, and $3'$, transfer each point's distance from $y$-$y$ in the Top View to locate $1$, $2$, $3$, $3_1$, and $2_1$, and join and hatch them to complete the True Shape.
 
-![Sectional views and true shape of section of a square prism cut by an inclined cutting plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-004-panel-1.webp)
+![Sectional views and true shape of section of a square prism cut by an inclined cutting plane](/notes/cse/s1/graphics/module-3/assets/page-004-panel-1.webp)
 
 **Answer:** Elevation, sectional plan (pentagonal cut surface $1$-$2$-$3$-$3_1$-$2_1$), and true shape constructed as shown.
 
@@ -199,21 +199,21 @@ In the **sectional top view**, the cut surface appears foreshortened because the
 
 1. Draw the Top View as a regular pentagon $a$-$b$-$c$-$d$-$e$ of side 30 mm with left edge $a$-$e$ perpendicular to $x$-$y$ and slant edges meeting at apex $o$, then project up to form the Front View of height 60 mm with apex $o'$.
 
-![Projection of a pentagonal pyramid (Step 86.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-005-panel-1.webp)
+![Projection of a pentagonal pyramid (Step 86.1)](/notes/cse/s1/graphics/module-3/assets/page-005-panel-1.webp)
 
 2. Draw the cutting plane $V$-$T$ at 45° to $x$-$y$ bisecting the axis at 30 mm above the base; mark intersections $1'$ on slant edges $o'a'(e')$, $2'$ on $o'b'(d')$, and $3'$ on $o'c'$.
 
-![Section plane cutting pentagonal pyramid (Step 86.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-005-panel-2.webp)
+![Section plane cutting pentagonal pyramid (Step 86.2)](/notes/cse/s1/graphics/module-3/assets/page-005-panel-2.webp)
 
 > **Watch out.** In the drawing above, the 30 mm height is measured at the right slant edge $o'c'$ rather than at the central axis.
 
 3. Project $1'$, $2'$, and $3'$ straight down to their corresponding slant edges in the Top View to mark $1$ on $oa$, $1_1$ on $oe$, $2$ on $ob$, $2_1$ on $od$, and $3$ on $oc$, then join and hatch polygon $1$-$2$-$3$-$2_1$-$1_1$ and darken the retained lower edges.
 
-![Orthographic projections and sectional top view of a cut pentagonal pyramid (Step 86.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-006-panel-1.webp)
+![Orthographic projections and sectional top view of a cut pentagonal pyramid (Step 86.3)](/notes/cse/s1/graphics/module-3/assets/page-006-panel-1.webp)
 
 4. Project lines perpendicular to $V$-$T$ from $1'$, $2'$, and $3'$, transfer the distances of $1$, $2$, $3$, $2_1$, and $1_1$ from $x$-$y$ in the Top View to plot and hatch the True Shape, and measure its height along the center line from edge $1$-$1_1$ to vertex $3$.
 
-![True shape of section of the pentagonal pyramid (Step 86.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-006-panel-2.webp)
+![True shape of section of the pentagonal pyramid (Step 86.4)](/notes/cse/s1/graphics/module-3/assets/page-006-panel-2.webp)
 
 **Answer:** True height (width) of the section $W =$ 36 mm.
 
@@ -224,21 +224,21 @@ In the **sectional top view**, the cut surface appears foreshortened because the
 
 1. Draw the Top View as a regular hexagon $a$-$b$-$c$-$d$-$e$-$f$ of side 30 mm with edges $b$-$c$ and $f$-$e$ parallel to $x$-$y$ and slant edges joined to center $o$, then project up the Front View with apex $o'$ at 60 mm above $x$-$y$.
 
-![Projections of a hexagonal pyramid resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-007-panel-2.webp)
+![Projections of a hexagonal pyramid resting on HP](/notes/cse/s1/graphics/module-3/assets/page-007-panel-2.webp)
 
 2. Draw the cutting plane $V$-$T$ inclined at 30° to $x$-$y$ passing 25 mm above the base, and mark cut points $1'$ on $o'a'$, $2'$ on $o'b'(f')$, $3'$ on $o'c'(e')$, and $4'$ on $o'd'$.
 
-![Step 91.2: Front view and top view of hexagonal pyramid showing cutting plane location](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-008-panel-1.webp)
+![Step 91.2: Front view and top view of hexagonal pyramid showing cutting plane location](/notes/cse/s1/graphics/module-3/assets/page-008-panel-1.webp)
 
 > **Watch out.** The problem text states 25 mm from the vertex, but the summary and construction place the plane 25 mm above the base at the right slant edge.
 
 3. Project $1'$, $2'$, $3'$, and $4'$ straight down to the matching slant edges in the Top View to get points $1$, $2$, $3$, $4$, $3_1$, and $2_1$; connect and hatch the hexagon and darken the retained solid.
 
-![Step 91.3: Final sectional top view and front view of the truncated hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-008-panel-2.webp)
+![Step 91.3: Final sectional top view and front view of the truncated hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-008-panel-2.webp)
 
 4. Draw projectors perpendicular to $V$-$T$ from $1'$, $2'$, $3'$, and $4'$, transfer each point's distance from $x$-$y$ in the Top View, and join and hatch $1$-$2$-$3$-$4$-$3_1$-$2_1$ to get the True Shape.
 
-![Orthographic projection and true shape of section of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-009-panel-1.webp)
+![Orthographic projection and true shape of section of a hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-009-panel-1.webp)
 
 **Answer:** Elevation, sectional plan, and hexagonal true shape $1$-$2$-$3$-$4$-$3_1$-$2_1$ constructed as shown.
 
@@ -249,19 +249,19 @@ In the **sectional top view**, the cut surface appears foreshortened because the
 
 1. Construct the Top View as a regular pentagon $a$-$b$-$c$-$d$-$e$ of side 30 mm with edge $e$-$a$ perpendicular to $x$-$y$ and slant edges meeting at $o$, then project the Front View with apex $o'$ at height 60 mm.
 
-![Step 87.1: Orthographic projections of a pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-010-panel-1.webp)
+![Step 87.1: Orthographic projections of a pentagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-010-panel-1.webp)
 
 2. Draw the cutting plane $V$-$T$ at 60° to $x$-$y$ passing 15 mm above the base at the right slant edge $o'c'$, and mark intersections $1'$ on $o'a'(e')$, $2'$ on $o'b'(d')$, and $3'$ on $o'c'$.
 
-![Step 87.2: Pentagonal pyramid cut by a section plane inclined at 60 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-010-panel-2.webp)
+![Step 87.2: Pentagonal pyramid cut by a section plane inclined at 60 degrees](/notes/cse/s1/graphics/module-3/assets/page-010-panel-2.webp)
 
 3. Project $1'$, $2'$, and $3'$ straight down to the Top View slant edges to locate $1$ on $oa$, $1_1$ on $oe$, $2$ on $ob$, $2_1$ on $od$, and $3$ on $oc$; join and hatch $1$-$2$-$3$-$2_1$-$1_1$ and darken the retained portion.
 
-![Section of a pentagonal pyramid - Step 87.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-011-panel-1.webp)
+![Section of a pentagonal pyramid - Step 87.3](/notes/cse/s1/graphics/module-3/assets/page-011-panel-1.webp)
 
 4. Project perpendiculars from $1'$, $2'$, and $3'$ across $V$-$T$, transfer the Top View distances from $x$-$y$ to plot and hatch the True Shape $1$-$2$-$3$-$2_1$-$1_1$, and measure its height from edge $1$-$1_1$ to vertex $3$.
 
-![True shape of section of a pentagonal pyramid - Step 87.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-011-panel-2.webp)
+![True shape of section of a pentagonal pyramid - Step 87.4](/notes/cse/s1/graphics/module-3/assets/page-011-panel-2.webp)
 
 **Answer:** True height (width) of the section $W =$ 43 mm.
 
@@ -283,21 +283,21 @@ On a cone, the shape of the section depends on the cutting plane angle relative 
 1. Draw the Top View as a circle of diameter 40 mm, and divide it into 8 equal parts to create imaginary vertical generators labeled $a(i)$ through $h(p)$ so we have reference lines to locate points on the smooth surface.
 2. Project the base points up to the $xy$ line and draw the Front View as a 40 mm by 60 mm rectangle with vertical generator lines.
 
-![Projections of a cylinder resting on its base (Step 114.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-012-panel-2.webp)
+![Projections of a cylinder resting on its base (Step 114.1)](/notes/cse/s1/graphics/module-3/assets/page-012-panel-2.webp)
 
 3. Mark the midpoint of the axis at 30 mm height, and draw the cutting plane line $V$-$T$ through it inclined at 30° to $xy$.
 4. Label the intersection points $1'$ to $8'$ where the cutting plane crosses each vertical generator in the Front View.
 
-![Projection of cylinder cut by an inclined section plane (Step 114.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-013-panel-1.webp)
+![Projection of cylinder cut by an inclined section plane (Step 114.2)](/notes/cse/s1/graphics/module-3/assets/page-013-panel-1.webp)
 
 5. Darken the retained lower boundary of the Front View, and hatch the entire Top View circle because the cutting plane slices across the full width of the vertical cylinder.
 
-![Sectional top view and front view of the cut cylinder (Step 114.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-013-panel-2.webp)
+![Sectional top view and front view of the cut cylinder (Step 114.3)](/notes/cse/s1/graphics/module-3/assets/page-013-panel-2.webp)
 
 6. Draw an auxiliary reference line $x_1y_1$ parallel to the cutting plane $V$-$T$, and project perpendicular lines from points $1'$ through $8'$ across $x_1y_1$.
 7. Measure the distance of each generator point from $xy$ in the Top View, transfer those distances from $x_1y_1$ along the matching projectors, and join the points with a smooth curve to reveal the elliptical True Shape.
 
-![Projections and true shape of section of a cylinder cut by an inclined plane (step 114.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-014-panel-1.webp)
+![Projections and true shape of section of a cylinder cut by an inclined plane (step 114.4)](/notes/cse/s1/graphics/module-3/assets/page-014-panel-1.webp)
 
 **Answer:** The sectional Top View is a circle of diameter 40 mm, and the True Shape is an ellipse with a minor axis of 40 mm and a major axis equal to the cut length $1'$-$5'$.
 
@@ -308,19 +308,19 @@ On a cone, the shape of the section depends on the cutting plane angle relative 
 
 1. Draw the 40 mm diameter Top View circle divided into 8 generators, and project the 60 mm high Front View.
 
-![Step 115.1: Projections of a cylinder resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-015-panel-1.webp)
+![Step 115.1: Projections of a cylinder resting on HP](/notes/cse/s1/graphics/module-3/assets/page-015-panel-1.webp)
 
 2. Draw the 50° cutting plane $V$-$T$ through the axis at 45 mm height, cutting the top face at $4'$ and generators at $1'$ to $7'$.
 
-![Step 115.2: Cylinder cut by an inclined section plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-015-panel-2.webp)
+![Step 115.2: Cylinder cut by an inclined section plane](/notes/cse/s1/graphics/module-3/assets/page-015-panel-2.webp)
 
 3. Project the top face cut point $4'$ straight down to the Top View circle to mark the boundary chord, and hatch the cut area to its right.
 
-![Orthographic projections of a truncated cylinder (Step 115.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-016-panel-1.webp)
+![Orthographic projections of a truncated cylinder (Step 115.3)](/notes/cse/s1/graphics/module-3/assets/page-016-panel-1.webp)
 
 4. Project perpendiculars from $1'$ through $7'$ across a parallel reference line $x_1y_1$, transfer Top View distances from $xy$, and join into a smooth truncated ellipse.
 
-![Auxiliary view showing true shape of section of a truncated cylinder (Step 115.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-016-panel-2.webp)
+![Auxiliary view showing true shape of section of a truncated cylinder (Step 115.4)](/notes/cse/s1/graphics/module-3/assets/page-016-panel-2.webp)
 
 **Answer:** The True Shape is a truncated ellipse bounded by a flat chord where the plane exits the top face.
 
@@ -329,19 +329,19 @@ On a cone, the shape of the section depends on the cutting plane angle relative 
 
 1. Draw the 50 mm diameter Top View circle with 8 radial generators connected to center $o$, and project the 60 mm high triangular Front View.
 
-![Projections of a cone resting on HP (Step 117.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-017-panel-2.webp)
+![Projections of a cone resting on HP (Step 117.1)](/notes/cse/s1/graphics/module-3/assets/page-017-panel-2.webp)
 
 2. Draw the cutting plane at 50° to $xy$ starting from the extreme left base point $a'$, and mark intersection points $1'$ through $8'$ on the generators.
 
-![Step 117.2: Cone with section plane inclined at 50 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-018-panel-1.webp)
+![Step 117.2: Cone with section plane inclined at 50 degrees](/notes/cse/s1/graphics/module-3/assets/page-018-panel-1.webp)
 
 3. Project points down to their matching Top View radial generators; for points $3'$ and $7'$ on the vertical center generator, rotate horizontally to the extreme generator first, drop to $o$-$e$, and swing to $o$-$c$ and $o$-$g$.
 
-![Step 117.3: Sectional top view and front view of truncated cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-018-panel-2.webp)
+![Step 117.3: Sectional top view and front view of truncated cone](/notes/cse/s1/graphics/module-3/assets/page-018-panel-2.webp)
 
 4. Connect the Top View points into an ellipse and hatch it, then project from $1'$ to $8'$ across $x_1y_1$ and transfer Top View distances from $xy$ to draw the True Shape ellipse.
 
-![Orthographic projections and true shape of section of a cone cut by an inclined section plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-019-panel-1.webp)
+![Orthographic projections and true shape of section of a cone cut by an inclined section plane](/notes/cse/s1/graphics/module-3/assets/page-019-panel-1.webp)
 
 > **Watch out.** Points on the center generator $o'c'(g')$ cannot be projected straight down; you must project them horizontally to the extreme generator $o'e'$ to find their true radial radius from the axis.
 
@@ -352,19 +352,19 @@ On a cone, the shape of the section depends on the cutting plane angle relative 
 
 1. Draw the 50 mm diameter Top View circle divided into 8 radial generators, and project the 60 mm high Front View.
 
-![Orthographic projections of a cone - Step 122.1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-020-panel-1.webp)
+![Orthographic projections of a cone - Step 122.1](/notes/cse/s1/graphics/module-3/assets/page-020-panel-1.webp)
 
 2. Draw the cutting plane $V$-$T$ parallel to the left extreme generator $o'a'$ at a perpendicular distance of 10 mm, marking where it cuts the base and generators.
 
-![Section of a cone - Step 122.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-020-panel-2.webp)
+![Section of a cone - Step 122.2](/notes/cse/s1/graphics/module-3/assets/page-020-panel-2.webp)
 
 3. Project the base cut straight down to the Top View perimeter, project the generator intersections to their matching radial lines (using horizontal rotation for the center generator), and hatch the resulting open curve.
 
-![Step 122.3: Section of a cone with cutting plane parallel to generator](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-021-panel-1.webp)
+![Step 122.3: Section of a cone with cutting plane parallel to generator](/notes/cse/s1/graphics/module-3/assets/page-021-panel-1.webp)
 
 4. Set up $x_1y_1$ parallel to $V$-$T$, project all cut points perpendicular to $x_1y_1$, and transfer Top View distances from $xy$ to plot the parabolic True Shape.
 
-![Step 122.4: True shape of the section of a cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-021-panel-2.webp)
+![Step 122.4: True shape of the section of a cone](/notes/cse/s1/graphics/module-3/assets/page-021-panel-2.webp)
 
 **Answer:** The True Shape of the section is a parabola bounded by a flat chord across the base.
 
@@ -391,18 +391,18 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 1. Draw the Top View as a circle of diameter 50 mm centered at $o$ and divide it into 8 equal sectors ($a$ through $h$) to create artificial generators.
 2. Project the base points up to $xy$ and draw the Front View triangle of height 60 mm with apex $o'$ and corresponding front-view generators.
 
-![Projections of a cone, step 118.1](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-030-panel-1.webp)
+![Projections of a cone, step 118.1](/notes/cse/s1/graphics/module-3/assets/page-030-panel-1.webp)
 
 3. In the Top View, draw the horizontal cutting plane trace $HT$ parallel to $xy$ and 10 mm below the axis $o$, because the vertical plane is parallel to VP and 10 mm in front of the axis.
 4. Mark the intersection points $1$ and $5$ on the base circle, and points $2$, $3$, and $4$ where $HT$ crosses generators $ob$, $oc$, and $od$.
 
-![Projections of a cone with cutting plane line, step 118.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-030-panel-2.webp)
+![Projections of a cone with cutting plane line, step 118.2](/notes/cse/s1/graphics/module-3/assets/page-030-panel-2.webp)
 
 5. Project points $1$ and $5$ straight up to the base line $xy$ in the Front View, and project points $2$ and $4$ straight up to their respective generators $o'b'$ and $o'd'$.
 6. Because generator $o'c'$ is vertical in both views, rotate point $3$ in the Top View around center $o$ to the outer horizontal generator $oe$, project up to the true slant edge $o'e'$, and carry that height horizontally back to $o'c'$ to locate point $3'$.
 7. Join points $1, 2, 3, 4, 5$ in the Front View with a smooth hyperbolic curve and hatch the area; since the cutting plane is parallel to VP, this sectional front view directly shows the True Shape.
 
-![Orthographic projections of a cone cut by a section plane, showing a hyperbolic cross-section.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-031-panel-1.webp)
+![Orthographic projections of a cone cut by a section plane, showing a hyperbolic cross-section.](/notes/cse/s1/graphics/module-3/assets/page-031-panel-1.webp)
 
 **Answer:** The sectional front view directly gives the true shape, which is a rectangular hyperbola.
 
@@ -414,19 +414,19 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 
 1. Draw the Top View pentagon $abcde$ of side 30 mm with edge $ae$ perpendicular to $xy$, join corners to apex $o$, and project the Front View of height 60 mm.
 
-![Initial orthographic projections of a pentagonal pyramid resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-022-panel-2.webp)
+![Initial orthographic projections of a pentagonal pyramid resting on HP](/notes/cse/s1/graphics/module-3/assets/page-022-panel-2.webp)
 
 2. In the Top View, draw the cutting plane line $HT$ inclined at 30° to $xy$ and tangent to a 10 mm radius circle around $o$, marking cut points $1$ and $4$ on the base edges and $2$ and $3$ on slant edges $ob$ and $oc$.
 
-![Step 88.2 of section of a pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-023-panel-1.webp)
+![Step 88.2 of section of a pentagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-023-panel-1.webp)
 
 3. Project points $1$ and $4$ up to $xy$ at $1'$ and $4'$, and project $2$ and $3$ up to slant edges $o'b'$ and $o'c'$ at $2'$ and $3'$, then connect and hatch $1'2'3'4'$.
 
-![Step 88.3 showing the sectional front view of the pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-023-panel-2.webp)
+![Step 88.3 showing the sectional front view of the pentagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-023-panel-2.webp)
 
 4. Draw auxiliary line $x_1y_1$ parallel to $HT$, project perpendiculars from points $1, 2, 3, 4$, and transfer the heights of $1', 2', 3', 4'$ above $xy$ from the Front View to complete the True Shape.
 
-![Orthographic projections and true shape of section of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-024-panel-1.webp)
+![Orthographic projections and true shape of section of a hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-024-panel-1.webp)
 
 **Answer:** The sectional views and true shape polygon $1''2''3''4''$ are constructed as shown.
 
@@ -436,19 +436,19 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 
 1. Draw the Top View regular hexagon $abcdef$ of side 30 mm with two edges parallel to $xy$, and project the Front View pyramid of height 60 mm.
 
-![Step 92.1: Projections of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-025-panel-1.webp)
+![Step 92.1: Projections of a hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-025-panel-1.webp)
 
 2. Draw the cutting plane trace $HT$ in the Top View inclined at 20° to $xy$ at a perpendicular distance of 15 mm from $o$, marking intersections $1$ and $4$ on the base and $2$ and $3$ on slant edges $ob$ and $oc$.
 
-![Step 92.2: Section plane in top view of hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-025-panel-2.webp)
+![Step 92.2: Section plane in top view of hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-025-panel-2.webp)
 
 3. Project points $1, 2, 3, 4$ straight up to the corresponding base and slant edges in the Front View to mark $1', 2', 3', 4'$, and hatch the cut face.
 
-![Orthographic projections of a truncated hexagonal pyramid (step 92.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-026-panel-1.webp)
+![Orthographic projections of a truncated hexagonal pyramid (step 92.3)](/notes/cse/s1/graphics/module-3/assets/page-026-panel-1.webp)
 
 4. Set up reference line $x_1y_1$ parallel to $HT$, project perpendiculars from $1, 2, 3, 4$, and transfer the heights of $1'$ through $4'$ above $xy$ to plot the True Shape.
 
-![Projections and true shape of section of a hexagonal pyramid (step 92.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-026-panel-2.webp)
+![Projections and true shape of section of a hexagonal pyramid (step 92.4)](/notes/cse/s1/graphics/module-3/assets/page-026-panel-2.webp)
 
 > **Watch out.** The problem text says "meeting the axis 15 mm from the vertex", which means a perpendicular offset of 15 mm from the top-view center $o$.
 
@@ -460,19 +460,19 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 
 1. Draw the Top View pentagon $abcde$ (side 30 mm) with edge $ed$ parallel to $xy$, and project the Front View triangle of height 60 mm.
 
-![Step 89.1: Orthographic projections of the pentagonal pyramid before sectioning](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-027-panel-2.webp)
+![Step 89.1: Orthographic projections of the pentagonal pyramid before sectioning](/notes/cse/s1/graphics/module-3/assets/page-027-panel-2.webp)
 
 2. Draw the cutting plane trace $HT$ in the Top View at 45° to $xy$ and 10 mm from center $o$, cutting the base at $1$ and $4$ and slant edges $od$ and $oc$ at $2$ and $3$.
 
-![Step 89.2: Projections of a pentagonal pyramid with a section plane in the top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-028-panel-1.webp)
+![Step 89.2: Projections of a pentagonal pyramid with a section plane in the top view](/notes/cse/s1/graphics/module-3/assets/page-028-panel-1.webp)
 
 3. Project $1, 2, 4$ up to $1', 2', 4'$; because edge $oc$ is vertical, rotate point $3$ around $o$ to horizontal line $oc_1$, project to true slant edge $o'c_1'$, and carry horizontally to $o'c'$ to find $3'$.
 
-![Step 89.3: Sectional front view of the pentagonal pyramid with hatching](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-028-panel-2.webp)
+![Step 89.3: Sectional front view of the pentagonal pyramid with hatching](/notes/cse/s1/graphics/module-3/assets/page-028-panel-2.webp)
 
 4. Draw an auxiliary line parallel to $HT$, project perpendiculars from $1, 2, 3, 4$, and transfer the front-view heights above $xy$ to construct the True Shape.
 
-![Section of a pentagonal pyramid and true shape of section](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-029-panel-1.webp)
+![Section of a pentagonal pyramid and true shape of section](/notes/cse/s1/graphics/module-3/assets/page-029-panel-1.webp)
 
 **Answer:** The sectional front view, top view, and true shape are obtained as shown.
 
@@ -482,19 +482,19 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 
 1. Draw the Top View circle of diameter 50 mm divided into 8 sectors ($a$ through $h$) and project the Front View cone of height 60 mm.
 
-![Orthographic projections of a cone (Step 119.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-032-panel-1.webp)
+![Orthographic projections of a cone (Step 119.1)](/notes/cse/s1/graphics/module-3/assets/page-032-panel-1.webp)
 
 2. In the Top View, draw the cutting plane line $HT$ at 45° to $xy$ and tangent to a 10 mm radius offset circle around $o$, marking cut points $1$ through $5$ on the base and generators.
 
-![Section plane cutting the top view of the cone (Step 119.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-032-panel-2.webp)
+![Section plane cutting the top view of the cone (Step 119.2)](/notes/cse/s1/graphics/module-3/assets/page-032-panel-2.webp)
 
 3. Project points $1$ through $5$ up to their respective front-view generators (rotating point $2$ on the vertical generator $oc$ to the outer generator first) and join them into a hatched curve.
 
-![Orthographic projection step 119.3 of a cone cut by an inclined section plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-033-panel-1.webp)
+![Orthographic projection step 119.3 of a cone cut by an inclined section plane](/notes/cse/s1/graphics/module-3/assets/page-033-panel-1.webp)
 
 4. Draw auxiliary line $x_1y_1$ parallel to $HT$, project perpendiculars from points $1$ through $5$, and transfer heights above $xy$ from the Front View to draw the hyperbolic True Shape.
 
-![Orthographic projection step 119.4 showing true shape of the hyperbolic section](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-033-panel-2.webp)
+![Orthographic projection step 119.4 showing true shape of the hyperbolic section](/notes/cse/s1/graphics/module-3/assets/page-033-panel-2.webp)
 
 **Answer:** The true shape of the section is a hyperbola.
 
@@ -504,15 +504,15 @@ Two special cases simplify the work. First, when a vertical plane cuts a vertica
 
 1. Draw the Top View hexagon (side 30 mm) with two edges perpendicular to $xy$, project the Front View (height 60 mm), and construct the initial Side View across vertical reference line $x'y'$.
 
-![Step 93.1: Projections and initial side view of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-034-panel-2.webp)
+![Step 93.1: Projections and initial side view of a hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-034-panel-2.webp)
 
 2. Draw the vertical cutting plane line 15 mm to the left of the axis in both the Front and Top Views, marking top-view intersections $1, 2, 3, 4$ and front-view heights on the vertical trace.
 
-![Step 93.2: Orthographic projections and side view construction for a cut hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-035-panel-1.webp)
+![Step 93.2: Orthographic projections and side view construction for a cut hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-035-panel-1.webp)
 
 3. Project the top-view widths of $1, 2, 3, 4$ to the Side View via a 45° mitre line (or compass arcs) and intersect them with horizontal projectors from the Front View to hatch the True Shape.
 
-![Step 93.3: Sectional side view and final views of the cut hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-035-panel-2.webp)
+![Step 93.3: Sectional side view and final views of the cut hexagonal pyramid](/notes/cse/s1/graphics/module-3/assets/page-035-panel-2.webp)
 
 **Answer:** The sectional side view directly reveals the true shape of the section.
 
@@ -539,16 +539,16 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 1. Draw a 40 mm square below the $xy$ line with edges parallel to $xy$ for the Top View, and project the 70 mm high rectangular Front View above $xy$ because the vertical edges are parallel to VP.
 2. Mark the axis midpoint at 35 mm height in the Front View and draw the cutting plane line $V\text{-}T$ at 45° to $xy$, marking cut points $1'$ on the left edges $a'(d')$ and $2'$ on the right edges $b'(c')$.
 
-![Orthographic projections of square prism cut by an AIP at 45 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-062-panel-2.webp)
+![Orthographic projections of square prism cut by an AIP at 45 degrees](/notes/cse/s1/graphics/module-3/assets/page-062-panel-2.webp)
 
 3. Darken the retained lower portion in the Front View and hatch the entire square in the Top View at 45° because the cutting plane slices across the full width of the prism.
 
-![Step 126.2: Front view and top view of a cut square prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-063-panel-1.webp)
+![Step 126.2: Front view and top view of a cut square prism](/notes/cse/s1/graphics/module-3/assets/page-063-panel-1.webp)
 
 4. Draw a horizontal stretch-out line to the right of the Front View of length $4 \times 40 = 160$ mm, divide it into four 40 mm faces ($E\text{-}F\text{-}G\text{-}H\text{-}E$), and erect vertical fold lines.
 5. Project cut heights $1'$ and $2'$ horizontally from the Front View to the corresponding vertical fold lines on the development, and connect them with straight dark lines to complete the pattern.
 
-![Step 126.3: Lateral surface development of the truncated square prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-063-panel-2.webp)
+![Step 126.3: Lateral surface development of the truncated square prism](/notes/cse/s1/graphics/module-3/assets/page-063-panel-2.webp)
 
 **Answer:** Stretch-out length = 160 mm; cut heights on vertical edges steps from 15 mm on $A$ and $D$ up to 55 mm on $B$ and $C$.
 
@@ -561,15 +561,15 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 1. Draw a regular pentagon of side 30 mm below $xy$ with back edge $ed$ parallel to $xy$, and project the 70 mm high Front View.
 2. Draw the 45° cutting plane through the axis midpoint (35 mm height), marking intersections $1', 2', 3', 4', 5'$ on vertical edges $a', e', b', d', c'$.
 
-![Projection of a pentagonal prism cut by an auxiliary inclined plane (AIP) at 45 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-064-panel-2.webp)
+![Projection of a pentagonal prism cut by an auxiliary inclined plane (AIP) at 45 degrees](/notes/cse/s1/graphics/module-3/assets/page-064-panel-2.webp)
 
 3. Darken the lower prism in the Front View and hatch the entire pentagon in the Top View to represent the cut surface.
 
-![Orthographic projections and sectional cutting plane of a pentagonal prism (Step 128.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-065-panel-1.webp)
+![Orthographic projections and sectional cutting plane of a pentagonal prism (Step 128.2)](/notes/cse/s1/graphics/module-3/assets/page-065-panel-1.webp)
 
 4. Draw a stretch-out line of length $5 \times 30 = 150$ mm divided into five 30 mm strips, project $1'$ through $5'$ horizontally to their respective fold lines, and join them with straight segments.
 
-![Development of the lateral surface of a truncated pentagonal prism (Step 128.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-065-panel-2.webp)
+![Development of the lateral surface of a truncated pentagonal prism (Step 128.3)](/notes/cse/s1/graphics/module-3/assets/page-065-panel-2.webp)
 
 **Answer:** Stretch-out length = 150 mm divided into five 30 mm faces.
 
@@ -580,15 +580,15 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 1. Construct a 30 mm regular hexagon in the Top View with two vertical sides perpendicular to $xy$, and project the 70 mm tall Front View.
 2. Draw the cutting plane at 30° to $xy$ through the axis midpoint (35 mm height), labeling cut points $1', 2', 3'$ on the projected vertical edges.
 
-![Step 129.1: Projections of hexagonal prism cut by an auxiliary inclined plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-066-panel-2.webp)
+![Step 129.1: Projections of hexagonal prism cut by an auxiliary inclined plane](/notes/cse/s1/graphics/module-3/assets/page-066-panel-2.webp)
 
 3. Outline the retained lower portion in the Front View and hatch the complete hexagonal Top View.
 
-![Section of a regular hexagonal prism cut by an inclined plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-067-panel-1.webp)
+![Section of a regular hexagonal prism cut by an inclined plane](/notes/cse/s1/graphics/module-3/assets/page-067-panel-1.webp)
 
 4. Lay out a stretch-out line of $6 \times 30 = 180$ mm with six 30 mm faces, project heights $1', 2', 3'$ horizontally across, and connect the points with straight lines.
 
-![Development of lateral surface of a truncated hexagonal prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-067-panel-2.webp)
+![Development of lateral surface of a truncated hexagonal prism](/notes/cse/s1/graphics/module-3/assets/page-067-panel-2.webp)
 
 **Answer:** Stretch-out length = 180 mm divided into six 30 mm faces.
 
@@ -598,13 +598,13 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 
 1. Draw the Top View hexagon of side 30 mm with two edges parallel to $xy$, and project the 70 mm high Front View.
 
-![Step 131.1: Orthographic projections of the hexagonal prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-068-panel-2.webp)
+![Step 131.1: Orthographic projections of the hexagonal prism](/notes/cse/s1/graphics/module-3/assets/page-068-panel-2.webp)
 
 2. Construct the $180 \text{ mm} \times 70 \text{ mm}$ rectangular development alongside the Front View, divided into six 30 mm vertical strips labeled $A$ through $A$.
 3. Draw a straight line from bottom corner $A$ to top corner $D$ (three faces over, 90 mm horizontally) because a flat straight line gives the shortest surface path.
 4. Mark points $1', 2', 3', 4'$ where this diagonal crosses fold lines $A, B, C, D$, project them horizontally back to edges $a', b', c', d'$ in the Front View, and connect them.
 
-![Orthographic projections and lateral surface development of a hexagonal prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-069-panel-1.webp)
+![Orthographic projections and lateral surface development of a hexagonal prism](/notes/cse/s1/graphics/module-3/assets/page-069-panel-1.webp)
 
 **Answer:** Stretch-out length = 180 mm; the shortest path spans three faces (90 mm width by 70 mm height) on the development.
 
@@ -615,15 +615,15 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 1. Draw a 40 mm circle in the Top View divided into 8 equal sectors ($a$ to $h$), and project the 60 mm high Front View with its vertical generators.
 2. Draw the cutting plane at 30° to $xy$ passing through the axis 20 mm from the top (40 mm from base), marking cut points $1'$ to $5'$.
 
-![Orthographic projections and cutting plane of a cylinder (Step 133.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-070-panel-1.webp)
+![Orthographic projections and cutting plane of a cylinder (Step 133.1)](/notes/cse/s1/graphics/module-3/assets/page-070-panel-1.webp)
 
 3. Darken the lower cylinder in the Front View and hatch the entire circle in the Top View.
 
-![Sectional views of the cut cylinder (Step 133.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-070-panel-2.webp)
+![Sectional views of the cut cylinder (Step 133.2)](/notes/cse/s1/graphics/module-3/assets/page-070-panel-2.webp)
 
 4. Draw a stretch-out of length $\pi \times 40 = 125.6$ mm divided into 8 equal parts, project $1'$ to $5'$ horizontally to the corresponding generators, and join them with a smooth curve.
 
-![Orthographic projection and development of a cut cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-071-panel-1.webp)
+![Orthographic projection and development of a cut cylinder](/notes/cse/s1/graphics/module-3/assets/page-071-panel-1.webp)
 
 > **Watch out.** The problem text states a 45° cutting plane, but the worked construction uses a 30° cutting plane passing 20 mm below the top.
 
@@ -636,15 +636,15 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 1. Draw the 40 mm circle divided into 8 sectors in the Top View and project the 60 mm tall Front View.
 2. Draw a 45° cutting plane down from the top-right corner $e'$ in the Front View, intersecting the generators at $1', 2', 3', 4', 5'$.
 
-![Step 134.1: Orthographic projection of a cylinder cut by an inclined section plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-072-panel-1.webp)
+![Step 134.1: Orthographic projection of a cylinder cut by an inclined section plane](/notes/cse/s1/graphics/module-3/assets/page-072-panel-1.webp)
 
 3. Darken the retained Front View outline and hatch the full circle in the Top View because the plane cuts every vertical generator.
 
-![Step 134.2: Sectional top view showing hatched section of the cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-072-panel-2.webp)
+![Step 134.2: Sectional top view showing hatched section of the cylinder](/notes/cse/s1/graphics/module-3/assets/page-072-panel-2.webp)
 
 4. Lay out the 125.6 mm stretch-out in 8 divisions, project points $1'$ to $5'$ horizontally across, and draw a smooth curve through them.
 
-![Orthographic projections and lateral surface development of a cut cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-073-panel-1.webp)
+![Orthographic projections and lateral surface development of a cut cylinder](/notes/cse/s1/graphics/module-3/assets/page-073-panel-1.webp)
 
 > **Watch out.** The summary banner under the problem states 30°, but the problem statement and drawings use a 45° cutting plane.
 
@@ -656,15 +656,15 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 
 1. Project the 60 mm Front View from an 8-sector, 40 mm diameter Top View circle, and draw a 60° cutting plane through the top center $c'$.
 
-![Step 135.1: Section plane cutting a cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-074-panel-1.webp)
+![Step 135.1: Section plane cutting a cylinder](/notes/cse/s1/graphics/module-3/assets/page-074-panel-1.webp)
 
 2. Mark cut points $1', 2', 3'$ on the left half of the Front View, and hatch only the left semicircle ($a\text{-}b\text{-}c\text{-}g\text{-}h$) in the Top View because the right half remains uncut.
 
-![Step 135.2: Truncated cylinder and hatched cut section](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-074-panel-2.webp)
+![Step 135.2: Truncated cylinder and hatched cut section](/notes/cse/s1/graphics/module-3/assets/page-074-panel-2.webp)
 
 3. Draw the $125.6 \text{ mm} \times 60 \text{ mm}$ development in 8 divisions, project $1', 2', 3'$ to the outer quarters ($A\text{-}C$ and $G\text{-}A$), and leave the middle half ($C\text{-}E\text{-}G$) flat at 60 mm height.
 
-![Orthographic views and development of a cut cylinder (Problem 135.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-075-panel-1.webp)
+![Orthographic views and development of a cut cylinder (Problem 135.3)](/notes/cse/s1/graphics/module-3/assets/page-075-panel-1.webp)
 
 **Answer:** Stretch-out length = 125.6 mm; curved cut on outer quarters and full 60 mm height across the middle half.
 
@@ -674,16 +674,16 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 
 1. Draw the 40 mm circle divided into 8 sectors in the Top View and project the 60 mm high Front View with generators $a'$ to $e'$.
 
-![Step 136.1: Orthographic projections of a cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-076-panel-1.webp)
+![Step 136.1: Orthographic projections of a cylinder](/notes/cse/s1/graphics/module-3/assets/page-076-panel-1.webp)
 
 2. Draw the $125.6 \text{ mm} \times 60 \text{ mm}$ development divided into 8 vertical strips; for two turns of 30 mm pitch, draw a line from $A$ at the base to $A$ at 30 mm height, and a parallel line from 30 mm to 60 mm height.
 3. Project the generator intersections from both straight lines horizontally back to the Front View and join them into two smooth sinusoidal turns.
 
-![Step 136.2: Development and orthographic projection of a double helix on a cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-076-panel-2.webp)
+![Step 136.2: Development and orthographic projection of a double helix on a cylinder](/notes/cse/s1/graphics/module-3/assets/page-076-panel-2.webp)
 
 4. For the alternative single-revolution shortest path, draw one diagonal from bottom-left $A$ to top-right $A$ across the full 60 mm height and project its points back to the Front View.
 
-![Orthographic projections and surface development for shortest path of an ant on a cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-077-panel-1.webp)
+![Orthographic projections and surface development for shortest path of an ant on a cylinder](/notes/cse/s1/graphics/module-3/assets/page-077-panel-1.webp)
 
 **Answer:** Stretch-out length = 125.6 mm; pitch = 30 mm per turn for the double helix (or 60 mm for one full turn).
 
@@ -694,11 +694,11 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 1. Draw the 40 mm, 8-sector circle in the Top View and project the 60 mm Front View.
 2. Draw the top mitre cut at 45° down from the top-left corner ($1'$ to $5'$) and the bottom cut at 20° up from the bottom-left corner ($6'$ to $10'$).
 
-![Orthographic projections of a cylinder truncated by two inclined cutting planes (Step 137.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-078-panel-1.webp)
+![Orthographic projections of a cylinder truncated by two inclined cutting planes (Step 137.1)](/notes/cse/s1/graphics/module-3/assets/page-078-panel-1.webp)
 
 3. Construct the 125.6 mm stretch-out with 8 divisions, project both sets of points ($1'\text{--}5'$ and $6'\text{--}10'$) horizontally to the generators, and trace smooth curves for both top and bottom edges.
 
-![Development of the lateral surface of the truncated cylinder (Step 137.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-078-panel-2.webp)
+![Development of the lateral surface of the truncated cylinder (Step 137.2)](/notes/cse/s1/graphics/module-3/assets/page-078-panel-2.webp)
 
 **Answer:** Stretch-out length = 125.6 mm bounded by two smooth sinusoidal curves at top and bottom.
 
@@ -708,11 +708,11 @@ Connecting these projected points gives the upper boundary of the flat pattern: 
 
 1. Draw the 8-sector, 40 mm circle in the Top View and project the 60 mm Front View; draw a 30° line from the top-right corner ($1'\text{--}5'$) and a parallel 30° line from the bottom-left corner ($6'\text{--}10'$).
 
-![Orthographic projections of sectioned cylinder (Step 138.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-079-panel-2.webp)
+![Orthographic projections of sectioned cylinder (Step 138.1)](/notes/cse/s1/graphics/module-3/assets/page-079-panel-2.webp)
 
 2. Lay out the 125.6 mm stretch-out divided into 8 strips, project upper points $1'\text{--}5'$ and lower points $6'\text{--}10'$ horizontally to their matching generators, and connect both sets with smooth curves.
 
-![Orthographic projections and lateral surface development of a cut cylinder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-080-panel-1.webp)
+![Orthographic projections and lateral surface development of a cut cylinder](/notes/cse/s1/graphics/module-3/assets/page-080-panel-1.webp)
 
 **Answer:** Stretch-out length = 125.6 mm with parallel upper and lower sinusoidal cut profiles.
 
@@ -741,9 +741,9 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 6. With center $O$ and radius equal to true length $o'b_1'$, swing a development arc and step off four 40 mm chords $A$-$B$-$C$-$D$-$A$, joining each to $O$.
 7. Measure true distances $o'1''$ and $o'2''$ from $O$ along the corresponding radial edges ($OA, OD$ and $OB, OC$) and join the points with straight lines to complete the development.
 
-![Step 142.1: Projections of a square pyramid cut by an inclined section plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-081-panel-1.webp)
+![Step 142.1: Projections of a square pyramid cut by an inclined section plane](/notes/cse/s1/graphics/module-3/assets/page-081-panel-1.webp)
 
-![Step 142.2: Sectional views and surface development of the truncated square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-081-panel-2.webp)
+![Step 142.2: Sectional views and surface development of the truncated square pyramid](/notes/cse/s1/graphics/module-3/assets/page-081-panel-2.webp)
 
 **Answer:** The development consists of four isosceles triangles of true slant side $o'b_1'$ and base 40 mm, truncated at true radial distances $o'1''$ and $o'2''$ from apex $O$.
 
@@ -761,9 +761,9 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 
 > **Watch out.** Because the cutting plane hits the base between $b$ and $c$ (and $d$ and $c$), mark the cut point $3$ directly along base chords $BC$ and $DC$ on the development rather than on radial edge $OC$.
 
-![Step 143.1: Projections of square pyramid and cutting plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-082-panel-2.webp)
+![Step 143.1: Projections of square pyramid and cutting plane](/notes/cse/s1/graphics/module-3/assets/page-082-panel-2.webp)
 
-![Projections and surface development of a cut pentagonal pyramid labelled 143.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-083-panel-1.webp)
+![Projections and surface development of a cut pentagonal pyramid labelled 143.2](/notes/cse/s1/graphics/module-3/assets/page-083-panel-1.webp)
 
 **Answer:** The lateral development spans four 40 mm base chords on a true-length arc of radius $o'c'$, with corner $C$ completely removed outside the base cuts on $BC$ and $DC$.
 
@@ -777,9 +777,9 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 4. Draw the radial development from $O$ with radius $o'c'$, stepping off five 30 mm base chords $A$-$B$-$C$-$D$-$E$-$A$.
 5. Project both the upper horizontal cut and lower cut points $2'$ and $3'$ horizontally to true-length line $o'c'$, transfer these radial distances to the development, and join them with straight lines.
 
-![Orthographic projections of a pentagonal pyramid with cutting planes (Step 144.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-084-panel-1.webp)
+![Orthographic projections of a pentagonal pyramid with cutting planes (Step 144.1)](/notes/cse/s1/graphics/module-3/assets/page-084-panel-1.webp)
 
-![Development of the lateral surface of the truncated pentagonal pyramid (Step 144.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-084-panel-2.webp)
+![Development of the lateral surface of the truncated pentagonal pyramid (Step 144.2)](/notes/cse/s1/graphics/module-3/assets/page-084-panel-2.webp)
 
 **Answer:** The development forms a five-panel radial band bounded between the uniform upper cut radius and the lower inclined cut lines.
 
@@ -793,9 +793,9 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 4. Project the 50 mm top face of the frustum horizontally to the true-length line to find the upper cut radial distance from $o'$.
 5. Swing concentric arcs from $O$ using the full true length $R = 104$ mm and the upper cut distance, step off four 40 mm chords on the outer arc, and join the radial and chordal lines.
 
-![Orthographic projection of a frustum of a square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-085-panel-2.webp)
+![Orthographic projection of a frustum of a square pyramid](/notes/cse/s1/graphics/module-3/assets/page-085-panel-2.webp)
 
-![Orthographic projections and radial line development of the surface of a frustum of a square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-086-panel-1.webp)
+![Orthographic projections and radial line development of the surface of a frustum of a square pyramid](/notes/cse/s1/graphics/module-3/assets/page-086-panel-1.webp)
 
 **Answer:** Virtual apex height is 100 mm, true slant edge $R = 104$ mm, with four trapezoidal panels tapering from 40 mm to 20 mm.
 
@@ -809,9 +809,9 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 4. Mark the intersections of this straight line with radial edges $OB, OC, OD, OE, OF$, and transfer their radial distances from $O$ back to the true-length line $o'd'$ in the Front View.
 5. Project these points horizontally from $o'd'$ to the corresponding slant edges in the Front View to get $1', 2', 3', 4'$, then project straight down to the Top View slant edges and connect the path in both views.
 
-![Orthographic projections of a hexagonal pyramid (Step 145.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-087-panel-1.webp)
+![Orthographic projections of a hexagonal pyramid (Step 145.1)](/notes/cse/s1/graphics/module-3/assets/page-087-panel-1.webp)
 
-![Orthographic projections and development of the surface of a cut hexagonal pyramid (Step 145.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-087-panel-2.webp)
+![Orthographic projections and development of the surface of a cut hexagonal pyramid (Step 145.2)](/notes/cse/s1/graphics/module-3/assets/page-087-panel-2.webp)
 
 **Answer:** The shortest path is the straight line $A$-$A$ on the six-face radial development, projecting as a polygonal loop through $1', 2', 3', 4'$ in the Front View and around the Top View.
 
@@ -825,9 +825,9 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 4. Calculate the development sector angle $\theta = (25 \times 360) / 65 = 138^\circ$, draw the sector of radius $R = 65$ mm, and divide it into 8 equal generator divisions.
 5. Project cut points $1'$ to $5'$ horizontally to the outer true-length generator $o'e'$, transfer these true radial distances onto the corresponding development generators, and join with a smooth curve.
 
-![Step 147.1: Orthographic projections of cone with cutting plane](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-088-panel-2.webp)
+![Step 147.1: Orthographic projections of cone with cutting plane](/notes/cse/s1/graphics/module-3/assets/page-088-panel-2.webp)
 
-![Orthographic projections and surface development of a cut cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-089-panel-1.webp)
+![Orthographic projections and surface development of a cut cone](/notes/cse/s1/graphics/module-3/assets/page-089-panel-1.webp)
 
 **Answer:** True slant length $R = 65$ mm and sector angle $\theta = 138^\circ$, bounded at the top by a smooth symmetrical curve.
 
@@ -840,9 +840,9 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 3. Draw the development sector of radius $R = 65$ mm and angle $\theta = (25 \times 360) / 65 = 138^\circ$, divided into 8 equal parts.
 4. Project $1'$ to $6'$ horizontally to the outer true-length generator, transfer the radial distances to the development generators (swinging a constant-radius arc for the horizontal cut $6'$), and draw the smooth boundary.
 
-![Orthographic projections of a cone cut by section planes (Step 149.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-090-panel-1.webp)
+![Orthographic projections of a cone cut by section planes (Step 149.1)](/notes/cse/s1/graphics/module-3/assets/page-090-panel-1.webp)
 
-![Orthographic projections and development of the lateral surface of a truncated cone (Step 149.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-090-panel-2.webp)
+![Orthographic projections and development of the lateral surface of a truncated cone (Step 149.2)](/notes/cse/s1/graphics/module-3/assets/page-090-panel-2.webp)
 
 **Answer:** True slant length $R = 65$ mm and sector angle $\theta = 138^\circ$, with a lower curved cut starting from $A$ and an upper circular arc cut near the apex.
 
@@ -856,7 +856,7 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 4. Measure the radial distances from $O$ where the chord crosses the 8 generators, mark them on the outer true-length line in the Front View, and project horizontally inward to the respective generators ($1'$ to $5'$).
 5. Project the Front View path points down to the Top View generators (transferring the center generator point via the outer generator) and join with smooth curves in both views.
 
-![Orthographic projections and development of the surface of a cone showing shortest path of an ant](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-091-panel-2.webp)
+![Orthographic projections and development of the surface of a cone showing shortest path of an ant](/notes/cse/s1/graphics/module-3/assets/page-091-panel-2.webp)
 
 **Answer:** True slant length $R = 65$ mm and sector angle $\theta = 138^\circ$, with the straight chord $A$-$A$ projecting as a smooth loop rising to peak $5'$ in the Front View.
 
@@ -870,7 +870,7 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 4. Transfer the radial distances where line $AE$ crosses generators $OB, OC, OD$ back to the outer true-length line in the Front View, and project horizontally to the corresponding generators ($1', 2', 3', 4', 5'$).
 5. Project these points down to the Top View generators and trace the smooth curve from $a$ to $e$ in both views.
 
-![Orthographic projections and surface development of a cone showing the shortest path of an insect](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-092-panel-2.webp)
+![Orthographic projections and surface development of a cone showing the shortest path of an insect](/notes/cse/s1/graphics/module-3/assets/page-092-panel-2.webp)
 
 **Answer:** The shortest path is the straight line $A$-$E$ across half the development sector ($69^\circ$ central angle on radius $R = 65$ mm), projecting as a single rising and falling curve from $a'$ to $e'$.
 
@@ -884,6 +884,6 @@ For a frustum where the apex is missing, extend the tapering sides upward in the
 4. Mark the intersection points of the inscribed circle with each radial generator on the development, and transfer their radial distances from $O$ to the outer true-length line in the Front View.
 5. Project these heights horizontally to the corresponding generators in the Front View, then project down to the Top View generators and draw smooth closed curves in both views.
 
-![Orthographic projections and surface development of a cone with an inscribed circle](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-3/assets/page-093-panel-2.webp)
+![Orthographic projections and surface development of a cone with an inscribed circle](/notes/cse/s1/graphics/module-3/assets/page-093-panel-2.webp)
 
 **Answer:** Cone base diameter is 60 mm, inscribed circle radius is 30 mm, projecting as a closed loop touching the apex and middle generator base in the Front View.

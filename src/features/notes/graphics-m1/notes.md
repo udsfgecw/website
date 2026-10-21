@@ -660,7 +660,7 @@ Similarly, if a problem gives an apparent angle ($\alpha$ or $\beta$), draw that
 }
 ```
 
-![Worked solution step 204 for projection of line PQ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-024-panel-1.webp)
+![Worked solution step 204 for projection of line PQ](/notes/cse/s1/graphics/module-1/assets/page-024-panel-1.webp)
 
 **Answer:** True length = 71.6 mm, elevation $p'q' = 51.7$ mm, $\theta = 12.1^\circ$, $\phi = 43.7^\circ$, HT = 49.5 mm from XY, VT = 15 mm from XY.
 
@@ -695,7 +695,7 @@ Similarly, if a problem gives an apparent angle ($\alpha$ or $\beta$), draw that
 }
 ```
 
-![Projection of line PQ (solution step 193)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-027-panel-1.webp)
+![Projection of line PQ (solution step 193)](/notes/cse/s1/graphics/module-1/assets/page-027-panel-1.webp)
 
 **Answer:** True length = 74 mm, $\theta = 28.5^\circ$, $\phi = 47.5^\circ$, HT = 20 mm from XY, VT = 13 mm from XY.
 
@@ -783,11 +783,11 @@ Similarly, if a problem gives an apparent angle ($\alpha$ or $\beta$), draw that
 7. With center $a$ and radius equal to the true length $a'b_1'$, cut the horizontal locus of $b$ above XY at $b_2$ and measure $\phi$ between $ab_2$ and the horizontal.
 > **Watch out.** A point in the second quadrant equidistant from the HP and the VP has both its front view $b'$ and top view $b$ at the exact same distance above the XY line, so $b$ and $b'$ coincide at one point.
 
-![Step 11.1 of projection of straight line AB](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-028-panel-1.webp)
+![Step 11.1 of projection of straight line AB](/notes/cse/s1/graphics/module-1/assets/page-028-panel-1.webp)
 
-![Step 11.2 of projection of straight line AB](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-028-panel-2.webp)
+![Step 11.2 of projection of straight line AB](/notes/cse/s1/graphics/module-1/assets/page-028-panel-2.webp)
 
-![Step 11.3 of projection of line AB with given data and final answers](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-029-panel-1.webp)
+![Step 11.3 of projection of line AB with given data and final answers](/notes/cse/s1/graphics/module-1/assets/page-029-panel-1.webp)
 
 **Answer:** True length $AB = a'b_1'$, inclination with the VP $\phi$ is the angle between $ab_2$ and the horizontal.
 
@@ -1038,7 +1038,7 @@ If a line crosses between quadrants, an endpoint's distance may be above $XY$ wh
 }
 ```
 
-![Worked orthographic projection solution step 207](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-035-panel-1.webp)
+![Worked orthographic projection solution step 207](/notes/cse/s1/graphics/module-1/assets/page-035-panel-1.webp)
 
 **Answer:** $TL = 140.7$ mm, $a'b' = 122.1$ mm, $ab = 122.1$ mm, $\theta = 29.8$°, $\phi = 29.8$°, $HT = 20$ mm from $XY$, $VT = 20$ mm from $XY$.
 
@@ -1139,7 +1139,7 @@ Finally, in boundary-condition problems where end $A$ is in the HP ($a'$ on XY) 
 3. Alternatively, from $b'(B)$ at height $80 \sin 30^\circ = 40$ mm on the vertical projector, draw the 80 mm true-length line down at $60^\circ$ to the vertical to meet $x_1y_1$ at $a_1A$ at distance 69.3 mm.
 4. Transfer the horizontal distance of 69.3 mm onto the vertical projector above XY (representing $A$ behind VP) to mark $a$ at 69.3 mm from XY, completing front view $a'b' = 40$ mm and top view $ab = 69.3$ mm.
 
-![Worked solution step labelled 17 for a line projection problem](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-039-panel-1.webp)
+![Worked solution step labelled 17 for a line projection problem](/notes/cse/s1/graphics/module-1/assets/page-039-panel-1.webp)
 
 ```line-projection
 {
@@ -1292,15 +1292,15 @@ Once those two trace lines are drawn, the paths of both views are locked in. You
 
 1. Draw the reference line $XY$ and two vertical trace projectors 95 mm apart; mark $h'$ on $XY$ with $HT$ 30 mm below $XY$ on the left projector, and mark $v$ on $XY$ with $VT$ 45 mm above $XY$ on the right projector, then join $h'\text{–}VT$ and $HT\text{–}v$ to establish the paths of the front and top views.
 
-![Step 26.1: Locating HT, VT, h', and v with connecting trace lines](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-044-panel-1.webp)
+![Step 26.1: Locating HT, VT, h', and v with connecting trace lines](/notes/cse/s1/graphics/module-1/assets/page-044-panel-1.webp)
 
 2. Locate $a'$ on the line $h'\text{–}VT$ at 10 mm above $XY$ (which places $A$ 23.3 mm in front of the $VP$), drop a vertical projector to meet $HT\text{–}v$ at $a$, and draw a second vertical projector 65 mm away to cut the extended trace lines at $b'$ (20.8 mm below $XY$) and $b$ (43.9 mm below $XY$).
 
-![Step 26.2: Drawing front view a'b' and top view ab between the trace lines](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-044-panel-2.webp)
+![Step 26.2: Drawing front view a'b' and top view ab between the trace lines](/notes/cse/s1/graphics/module-1/assets/page-044-panel-2.webp)
 
 3. Apply the trapezoidal method by erecting perpendiculars at the views equal to their opposite distances from $XY$ to fold out the true-length line $AB$ and measure $TL = 74.8$ mm, $\theta = 24.3°$, and $\phi = 15.9°$.
 
-![Step 26.3: Orthographic projection solution for Problem 26 using the trapezoidal method](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-045-panel-1.webp)
+![Step 26.3: Orthographic projection solution for Problem 26 using the trapezoidal method](/notes/cse/s1/graphics/module-1/assets/page-045-panel-1.webp)
 
 ```line-projection
 {
@@ -1956,12 +1956,12 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 2. Draw the reference line $XY$ representing the floor, and draw a vertical line perpendicular to $XY$ to represent the wall seen edge-on.
 3. Mark the foot of the ladder $A$ on the $XY$ line at 50 mm (2.5 m) to the left of the wall.
 
-![Step 44.1 showing a ladder leaning against a wall at scale 1:50](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-090-panel-1.webp)
+![Step 44.1 showing a ladder leaning against a wall at scale 1:50](/notes/cse/s1/graphics/module-1/assets/page-090-panel-1.webp)
 
 4. Mark the top of the ladder on the vertical wall at a height of 64 mm (3.2 m) above $XY$; because the ladder rests squarely against the wall, its projection lies in a plane parallel to the viewing plane, so the line joining $A$ to the top of the wall shows the true length directly.
 5. Measure this inclined length on paper (81 mm) and convert it back using the 1:50 scale.
 
-![Step 44.2 showing the complete orthographic projection and true length of the ladder](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-090-panel-2.webp)
+![Step 44.2 showing the complete orthographic projection and true length of the ladder](/notes/cse/s1/graphics/module-1/assets/page-090-panel-2.webp)
 
 **Answer:** Length of the ladder = 4.05 m.
 
@@ -2034,7 +2034,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 
 5. Rotate the top view $ab$ about the left corner until it is parallel to $XY$, project up to the horizontal locus of the top corner at height 3.6 m, and measure the true length and floor inclination $\heta$.
 
-![Worked orthographic projection solution step 194 for a room diagonal PQ](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-089-panel-1.webp)
+![Worked orthographic projection solution step 194 for a room diagonal PQ](/notes/cse/s1/graphics/module-1/assets/page-089-panel-1.webp)
 
 **Answer:** True distance = 7.3 m ($a'b' = 6$ m, $ab = 6.4$ m, $\heta = 29.4^\ext{o}$, $\ext{phi} = 35^\ext{o}$).
 
@@ -2049,7 +2049,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 5. Join $a'b'$ and $ab$, then rotate the top view $ab$ about $a$ until it lies on $XY$.
 6. Project the rotated end vertically up to the horizontal locus of $b'$ (4 m above $XY$) and measure the true distance from $a'$.
 
-![Worked solution step 202 showing orthographic projection for a line in a rectangle of 5m by 5m and height 6m](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-084-panel-1.webp)
+![Worked solution step 202 showing orthographic projection for a line in a rectangle of 5m by 5m and height 6m](/notes/cse/s1/graphics/module-1/assets/page-084-panel-1.webp)
 
 **Answer:** True distance between the lamp and the floor corner = 5.34 m.
 
@@ -2060,16 +2060,16 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 1. Using scale 1:100 (1 m = 10 mm), draw $XY$, the front-view rectangle of $80\ext{ mm} \imes 40\ext{ mm}$ ($8\ext{ m} \imes 4\ext{ m}$) above $XY$, and the top-view rectangle of $80\ext{ mm} \imes 50\ext{ mm}$ ($8\ext{ m} \imes 5\ext{ m}$) below $XY$.
 2. Draw the central vertical projector 40 mm (4 m) from the side wall: mark the bulb $b'$ in the front view 10 mm (1 m) below the ceiling line, and $b$ in the top view at the center 25 mm (2.5 m) below $XY$.
 
-![Step 41.1: Orthographic projection of room and point B](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-082-panel-1.webp)
+![Step 41.1: Orthographic projection of room and point B](/notes/cse/s1/graphics/module-1/assets/page-082-panel-1.webp)
 
 3. On the left wall corner, mark the spot image $a'$ in the front view at 10 mm (1 m) above the floor line $XY$, and mark $a$ in the top view at the top-left corner on $XY$; join $a'b'$ and $ab$.
 
-![Step 41.2: Orthographic projection of room with line AB in front and top views](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-082-panel-2.webp)
+![Step 41.2: Orthographic projection of room with line AB in front and top views](/notes/cse/s1/graphics/module-1/assets/page-082-panel-2.webp)
 
 4. With center $b$, swing the top view $ba$ to the horizontal locus through $b$ to make it parallel to $XY$.
 5. Project this rotated point up to the horizontal locus through $a'$ (1 m above $XY$), join to $b'$, and measure the true length at 1:100 scale.
 
-![Solution step 41.3 showing orthographic projection of a line inside a 8m x 5m x 4m room](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-083-panel-1.webp)
+![Solution step 41.3 showing orthographic projection of a line inside a 8m x 5m x 4m room](/notes/cse/s1/graphics/module-1/assets/page-083-panel-1.webp)
 
 **Answer:** True length of the line joining the bulb and the black spot = 5.12 m.
 
@@ -2082,15 +2082,15 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 1. Using scale 1:100 (1 m = 10 mm), draw $XY$ and construct the top-view equilateral triangle below $XY$ with horizontal base $a(b)-e(f) = 50$ mm (5 m) parallel to $XY$ and apex $c(d)$.
 2. Project up from the three corners to the $XY$ floor line to mark bases $b', d', f'$, and draw the vertical poles above $XY$ of heights $b'a' = 20$ mm (2 m), $d'c' = 40$ mm (4 m), and $f'e' = 80$ mm (8 m).
 
-![Step 42.1: Orthographic projection of three vertical poles arranged in an equilateral triangle](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-085-panel-1.webp)
+![Step 42.1: Orthographic projection of three vertical poles arranged in an equilateral triangle](/notes/cse/s1/graphics/module-1/assets/page-085-panel-1.webp)
 
 3. Connect the pole tops in the front view to form triangle $a'c'e'$; because base $a(b)-e(f)$ is parallel to $XY$, the front view $a'e'$ already shows the true length $AE$ and its true floor inclination.
 
-![Step 42.2: Orthographic projection connecting the tops of the three poles](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-085-panel-2.webp)
+![Step 42.2: Orthographic projection connecting the tops of the three poles](/notes/cse/s1/graphics/module-1/assets/page-085-panel-2.webp)
 
 4. To find the true length and floor inclination of $AC$, rotate the top-view side $a(b)-c(d)$ about $a(b)$ until it is parallel to $XY$, project up to the horizontal locus of $c'$, and join to $a'$.
 5. Similarly, rotate the top-view side $c(d)-e(f)$ about $c(d)$ until it is parallel to $XY$, project up to the horizontal locus of $e'$, and join to $c'$ to measure the true length $CE$ and its inclination.
 
-![Step 42.3: Projection drawing finding true lengths AE, AC, and CE of triangle poles](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-1/assets/page-086-panel-1.webp)
+![Step 42.3: Projection drawing finding true lengths AE, AC, and CE of triangle poles](/notes/cse/s1/graphics/module-1/assets/page-086-panel-1.webp)
 
 **Answer:** $AE = 7.81$ m ($\heta_{AE} = 50^\ext{o}$), $AC = 5.39$ m ($\heta_{AC} = 22^\ext{o}$), and $CE = 6.40$ m ($\heta_{CE} = 39^\ext{o}$).

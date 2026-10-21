@@ -216,23 +216,23 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 
 1. **Stage 1 (Simple position):** Draw the top view as an equilateral triangle $abc(123)$ of side 30 mm below $xy$ with edge $b(2)-c(3)$ vertical on the right so the resting edge becomes a point in elevation; project the front view as a rectangle of height 50 mm above $xy$.
 
-![Step 211-1: Initial projection of triangular prism resting with its base on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-002-panel-2.webp)
+![Step 211-1: Initial projection of triangular prism resting with its base on HP](/notes/cse/s1/graphics/module-2/assets/page-002-panel-2.webp)
 
 2. **Stage 2 (Front view):** Redraw the front view tilted on the right base edge $2'(3')$ on $xy$ so the axis is inclined at 35° to $xy$ (the base makes $90^\circ - 35^\circ = 55^\circ$ with $xy$).
 
-![Orthographic projection of a triangular prism - Step 211-2: Front view tilted at 35 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-003-panel-1.webp)
+![Orthographic projection of a triangular prism - Step 211-2: Front view tilted at 35 degrees](/notes/cse/s1/graphics/module-2/assets/page-003-panel-1.webp)
 
 3. **Stage 2 (Top view):** Project vertically down from the tilted front view and horizontally from the Stage 1 top view to complete the foreshortened Stage 2 top view, marking the hidden lower edge $2-3$ as dashed.
 
-![Orthographic projection of a triangular prism - Step 211-3: Projection of final top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-003-panel-2.webp)
+![Orthographic projection of a triangular prism - Step 211-3: Projection of final top view](/notes/cse/s1/graphics/module-2/assets/page-003-panel-2.webp)
 
 4. **Stage 3 (Top view):** Because the resting base edge $2-3$ stays on HP in true length, rotate the Stage 2 top view directly so edge $2-3$ is inclined at 45° to $xy$.
 
-![Orthographic projections of a triangular prism in three stages (Problem 211-4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-004-panel-1.webp)
+![Orthographic projections of a triangular prism in three stages (Problem 211-4)](/notes/cse/s1/graphics/module-2/assets/page-004-panel-1.webp)
 
 5. **Stage 3 (Front view):** Project vertically up from the Stage 3 top view and horizontally from the Stage 2 front view to complete the final front view, drawing visible edges solid and hidden edges dashed.
 
-![Complete orthographic projections of a triangular prism in three stages (Problem 211-5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-004-panel-2.webp)
+![Complete orthographic projections of a triangular prism in three stages (Problem 211-5)](/notes/cse/s1/graphics/module-2/assets/page-004-panel-2.webp)
 
 **Answer:** The three-stage projections of the 30 mm by 50 mm triangular prism with axis at 35° to HP and resting edge at 45° to VP are completed as shown.
 
@@ -248,15 +248,15 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 4. Rotate the Stage 2 top view so resting edge $b-c$ is at 45° to $xy$ and apex $o$ points down away from $xy$ (away from VP) to the right.
 5. Project up to meet horizontal projectors from the Stage 2 front view to complete the final front view.
 
-![Step 51.1: Simple position projections of a square pyramid standing on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-005-panel-2.webp)
+![Step 51.1: Simple position projections of a square pyramid standing on HP](/notes/cse/s1/graphics/module-2/assets/page-005-panel-2.webp)
 
-![Projection of a square pyramid, step 51.2: tilting the front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-006-panel-1.webp)
+![Projection of a square pyramid, step 51.2: tilting the front view](/notes/cse/s1/graphics/module-2/assets/page-006-panel-1.webp)
 
-![Projection of a square pyramid, step 51.3: obtaining the second-stage top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-006-panel-2.webp)
+![Projection of a square pyramid, step 51.3: obtaining the second-stage top view](/notes/cse/s1/graphics/module-2/assets/page-006-panel-2.webp)
 
-![Orthographic projections of a square pyramid tilted in two stages (Problem 51.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-007-panel-1.webp)
+![Orthographic projections of a square pyramid tilted in two stages (Problem 51.4)](/notes/cse/s1/graphics/module-2/assets/page-007-panel-1.webp)
 
-![Complete orthographic projections of a square pyramid tilted in two stages (Problem 51.5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-007-panel-2.webp)
+![Complete orthographic projections of a square pyramid tilted in two stages (Problem 51.5)](/notes/cse/s1/graphics/module-2/assets/page-007-panel-2.webp)
 
 **Answer:** Projections completed with base edge 40 mm, height 60 mm, axis at 40° to HP, and resting edge at 45° to VP (apex away from VP on the right).
 
@@ -270,15 +270,15 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 4. Rotate the Stage 2 top view so edge $b-c$ makes 45° with $xy$, orienting apex $o$ upward towards $xy$ (towards VP) on the right.
 5. Project vertically up and horizontally across to complete the Stage 3 front view, checking visibility from the bottom of the top view.
 
-![Step 52.1: Initial projections of a square pyramid resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-008-panel-2.webp)
+![Step 52.1: Initial projections of a square pyramid resting on HP](/notes/cse/s1/graphics/module-2/assets/page-008-panel-2.webp)
 
-![Step 52.2: Projection of square pyramid tilted at 40 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-009-panel-1.webp)
+![Step 52.2: Projection of square pyramid tilted at 40 degrees](/notes/cse/s1/graphics/module-2/assets/page-009-panel-1.webp)
 
-![Step 52.3: Completed top view for tilted square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-009-panel-2.webp)
+![Step 52.3: Completed top view for tilted square pyramid](/notes/cse/s1/graphics/module-2/assets/page-009-panel-2.webp)
 
-![Orthographic projections of a square pyramid for Problem 52.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-010-panel-1.webp)
+![Orthographic projections of a square pyramid for Problem 52.4](/notes/cse/s1/graphics/module-2/assets/page-010-panel-1.webp)
 
-![Orthographic projections of a square pyramid for Problem 52.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-010-panel-2.webp)
+![Orthographic projections of a square pyramid for Problem 52.5](/notes/cse/s1/graphics/module-2/assets/page-010-panel-2.webp)
 
 **Answer:** Projections completed with base edge 40 mm, height 60 mm, axis at 40° to HP, and resting edge at 45° to VP (apex towards VP on the right).
 
@@ -292,15 +292,15 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 4. Rotate the Stage 2 top view so resting edge $a-d$ is at 45° to $xy$ with apex $o$ pointing downward away from $xy$ (away from VP) on the left.
 5. Project up from the rotated top view and across from the Stage 2 front view to complete the final front view.
 
-![Step 53.1: Initial projection of a square pyramid standing on its base](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-011-panel-2.webp)
+![Step 53.1: Initial projection of a square pyramid standing on its base](/notes/cse/s1/graphics/module-2/assets/page-011-panel-2.webp)
 
-![Step 53.2: Tilting the front view of a square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-012-panel-1.webp)
+![Step 53.2: Tilting the front view of a square pyramid](/notes/cse/s1/graphics/module-2/assets/page-012-panel-1.webp)
 
-![Step 53.3: Projecting the final top view of the tilted square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-012-panel-2.webp)
+![Step 53.3: Projecting the final top view of the tilted square pyramid](/notes/cse/s1/graphics/module-2/assets/page-012-panel-2.webp)
 
-![Orthographic projections of a square pyramid - Problem 53.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-013-panel-1.webp)
+![Orthographic projections of a square pyramid - Problem 53.4](/notes/cse/s1/graphics/module-2/assets/page-013-panel-1.webp)
 
-![Orthographic projections of a square pyramid - Problem 53.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-013-panel-2.webp)
+![Orthographic projections of a square pyramid - Problem 53.5](/notes/cse/s1/graphics/module-2/assets/page-013-panel-2.webp)
 
 **Answer:** Projections completed with base edge 40 mm, height 60 mm, axis at 40° to HP, and resting edge at 45° to VP (apex away from VP on the left).
 
@@ -316,15 +316,15 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 
 > **Watch out.** When the apex is tilted to the left and rotated towards VP, the base faces the observer in the front view, making all four base edges visible.
 
-![Step 1: Simple position projections of the square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-014-panel-2.webp)
+![Step 1: Simple position projections of the square pyramid](/notes/cse/s1/graphics/module-2/assets/page-014-panel-2.webp)
 
-![Orthographic projection of a square pyramid tilted to the HP (Step 54.2)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-015-panel-1.webp)
+![Orthographic projection of a square pyramid tilted to the HP (Step 54.2)](/notes/cse/s1/graphics/module-2/assets/page-015-panel-1.webp)
 
-![Complete second stage orthographic projection of a square pyramid tilted to the HP (Step 54.3)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-015-panel-2.webp)
+![Complete second stage orthographic projection of a square pyramid tilted to the HP (Step 54.3)](/notes/cse/s1/graphics/module-2/assets/page-015-panel-2.webp)
 
-![Orthographic projections of a square pyramid tilted in stages (Problem 54.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-016-panel-1.webp)
+![Orthographic projections of a square pyramid tilted in stages (Problem 54.4)](/notes/cse/s1/graphics/module-2/assets/page-016-panel-1.webp)
 
-![Complete orthographic projections of a square pyramid tilted in three stages (Problem 54.5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-016-panel-2.webp)
+![Complete orthographic projections of a square pyramid tilted in three stages (Problem 54.5)](/notes/cse/s1/graphics/module-2/assets/page-016-panel-2.webp)
 
 **Answer:** Projections completed with base edge 40 mm, height 60 mm, axis at 40° to HP, and resting edge at 45° to VP (apex towards VP on the left).
 
@@ -338,15 +338,15 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 4. Because the angle of the top view of the slant edge is given directly, rotate the Stage 2 top view so $o-c$ makes 30° with $xy$.
 5. Project up and across to complete the final front view.
 
-![Step 55.1: Initial position of pentagonal pyramid resting on base in HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-017-panel-2.webp)
+![Step 55.1: Initial position of pentagonal pyramid resting on base in HP](/notes/cse/s1/graphics/module-2/assets/page-017-panel-2.webp)
 
-![Orthographic projection step 55.2 of a pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-018-panel-1.webp)
+![Orthographic projection step 55.2 of a pentagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-018-panel-1.webp)
 
-![Orthographic projection step 55.3 of a pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-018-panel-2.webp)
+![Orthographic projection step 55.3 of a pentagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-018-panel-2.webp)
 
-![Projections of a pentagonal pyramid (Problem 55.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-019-panel-1.webp)
+![Projections of a pentagonal pyramid (Problem 55.4)](/notes/cse/s1/graphics/module-2/assets/page-019-panel-1.webp)
 
-![Projections of a pentagonal pyramid (Problem 55.5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-019-panel-2.webp)
+![Projections of a pentagonal pyramid (Problem 55.5)](/notes/cse/s1/graphics/module-2/assets/page-019-panel-2.webp)
 
 **Answer:** Projections completed with base edge 30 mm, height 60 mm, slant edge at 50° to HP, and top view of slant edge at 30° to $xy$.
 
@@ -360,15 +360,15 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 4. Rotate the Stage 2 top view directly so the true-length resting edge $3-4$ is inclined at 50° to $xy$.
 5. Project vertically up and horizontally across to complete the Stage 3 front view.
 
-![Step 250.1: Initial position projections of the hexagonal prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-026-panel-2.webp)
+![Step 250.1: Initial position projections of the hexagonal prism](/notes/cse/s1/graphics/module-2/assets/page-026-panel-2.webp)
 
-![Projection of hexagonal prism - Step 250.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-027-panel-1.webp)
+![Projection of hexagonal prism - Step 250.2](/notes/cse/s1/graphics/module-2/assets/page-027-panel-1.webp)
 
-![Projection of hexagonal prism - Step 250.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-027-panel-2.webp)
+![Projection of hexagonal prism - Step 250.3](/notes/cse/s1/graphics/module-2/assets/page-027-panel-2.webp)
 
-![Step-by-step projection of a hexagonal prism tilted to HP and VP (Step 250.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-028-panel-1.webp)
+![Step-by-step projection of a hexagonal prism tilted to HP and VP (Step 250.4)](/notes/cse/s1/graphics/module-2/assets/page-028-panel-1.webp)
 
-![Final orthographic projection of hexagonal prism inclined to both HP and VP (Step 250.5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-028-panel-2.webp)
+![Final orthographic projection of hexagonal prism inclined to both HP and VP (Step 250.5)](/notes/cse/s1/graphics/module-2/assets/page-028-panel-2.webp)
 
 **Answer:** Projections completed with base edge 30 mm, height 80 mm, axis at 45° to HP, and resting base edge at 50° to VP.
 
@@ -384,15 +384,15 @@ Second, pay attention to **apex orientation** in pyramids. In Stage 2, tilting t
 
 > **Watch out.** Do not confuse "resting base edge at 40° to VP" with "plane containing the axis at 40° to VP"—the two lines are perpendicular in the top view, so rotating the axis to 40° puts the resting edge at 50° to $xy$.
 
-![Step 79.1: Simple position orthographic projection of hexagonal prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-029-panel-2.webp)
+![Step 79.1: Simple position orthographic projection of hexagonal prism](/notes/cse/s1/graphics/module-2/assets/page-029-panel-2.webp)
 
-![Projections of a hexagonal prism: Step 79.2 showing initial position and tilted front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-030-panel-1.webp)
+![Projections of a hexagonal prism: Step 79.2 showing initial position and tilted front view](/notes/cse/s1/graphics/module-2/assets/page-030-panel-1.webp)
 
-![Projections of a hexagonal prism: Step 79.3 showing complete second stage top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-030-panel-2.webp)
+![Projections of a hexagonal prism: Step 79.3 showing complete second stage top view](/notes/cse/s1/graphics/module-2/assets/page-030-panel-2.webp)
 
-![Projections of a hexagonal prism tilted to HP and VP, Step 79.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-031-panel-1.webp)
+![Projections of a hexagonal prism tilted to HP and VP, Step 79.4](/notes/cse/s1/graphics/module-2/assets/page-031-panel-1.webp)
 
-![Completed orthographic projections of a hexagonal prism, Step 79.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-031-panel-2.webp)
+![Completed orthographic projections of a hexagonal prism, Step 79.5](/notes/cse/s1/graphics/module-2/assets/page-031-panel-2.webp)
 
 **Answer:** Projections completed with base edge 30 mm, height 80 mm, axis at 45° to HP, and top view of axis at 40° to $xy$.
 
@@ -419,23 +419,23 @@ When finishing each view, always check base visibility first: if the base is til
 
 1. **Stage 1 (Simple position):** Draw the top view as a circle of diameter 40 mm below XY, divide it into 8 equal parts numbered 1 to 8 with point 5 at the extreme right so it becomes the resting point, and project the front view as an isosceles triangle of base 40 mm on XY and height 60 mm.
 
-![Step 69.1: Simple position of the cone with base on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-038-panel-2.webp)
+![Step 69.1: Simple position of the cone with base on HP](/notes/cse/s1/graphics/module-2/assets/page-038-panel-2.webp)
 
 2. **Stage 2 Front View:** Copy the front-view triangle with point $5'$ resting on the XY line and incline the right-hand generator $5'o'$ at 40° to XY so the cone tilts to the right.
 
-![Orthographic projection of a cone - Step 69.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-039-panel-1.webp)
+![Orthographic projection of a cone - Step 69.2](/notes/cse/s1/graphics/module-2/assets/page-039-panel-1.webp)
 
 3. **Stage 2 Top View:** Drop vertical projectors from $1' \ext{ to } 5'$ and $o'$ to meet horizontal projectors from the Stage 1 circle; join points 1 to 8 with a smooth ellipse (keeping the lower half dashed if hidden from above) and draw the two extreme tangent generators to apex $o$.
 
-![Orthographic projection of a cone - Step 69.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-039-panel-2.webp)
+![Orthographic projection of a cone - Step 69.3](/notes/cse/s1/graphics/module-2/assets/page-039-panel-2.webp)
 
 4. **Stage 3 Top View:** Because a vertical plane appears as a straight line in the top view, rotate the entire Stage 2 top view directly so the axis line $o\ext{–}5$ makes 45° with the XY line, placing apex $o$ closer to XY (away from the observer, or toward VP as drawn).
 
-![Projection of a cone: step 69.4 showing stage 1, stage 2, and stage 3 top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-040-panel-1.webp)
+![Projection of a cone: step 69.4 showing stage 1, stage 2, and stage 3 top view](/notes/cse/s1/graphics/module-2/assets/page-040-panel-1.webp)
 
 5. **Stage 3 Front View:** Project all eight base points and apex $o$ vertically up to meet horizontal projectors from the Stage 2 front view, draw the smooth elliptical base (with the back half dashed), and connect the extreme tangent generators to apex $o'$.
 
-![Projection of a cone: step 69.5 showing completed projection with final front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-040-panel-2.webp)
+![Projection of a cone: step 69.5 showing completed projection with final front view](/notes/cse/s1/graphics/module-2/assets/page-040-panel-2.webp)
 
 > **Watch out.** The problem text states the axis is inclined at 40° to HP and the apex is away from VP, whereas the worked drawing inclines generator $5'o'$ at 40° to XY and places the apex closer to XY in the top view.
 
@@ -455,15 +455,15 @@ When finishing each view, always check base visibility first: if the base is til
 5. Rotate the Stage 2 top view so diameter 3–7 makes 45° with XY (making the axis also 45° to XY) with apex $o$ towards XY.
 6. Project vertically up from the Stage 3 top view and horizontally across from Stage 2 to plot the final front view.
 
-![Step 70.1: Initial position projection of a cone resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-041-panel-2.webp)
+![Step 70.1: Initial position projection of a cone resting on HP](/notes/cse/s1/graphics/module-2/assets/page-041-panel-2.webp)
 
-![Projection of a cone: step 70.2 showing simple position views and tilted front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-042-panel-1.webp)
+![Projection of a cone: step 70.2 showing simple position views and tilted front view](/notes/cse/s1/graphics/module-2/assets/page-042-panel-1.webp)
 
-![Projection of a cone: step 70.3 showing the completed top view of the inclined cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-042-panel-2.webp)
+![Projection of a cone: step 70.3 showing the completed top view of the inclined cone](/notes/cse/s1/graphics/module-2/assets/page-042-panel-2.webp)
 
-![Projection of a cone: Step 70.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-043-panel-1.webp)
+![Projection of a cone: Step 70.4](/notes/cse/s1/graphics/module-2/assets/page-043-panel-1.webp)
 
-![Projection of a cone: Step 70.5 (Final projection)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-043-panel-2.webp)
+![Projection of a cone: Step 70.5 (Final projection)](/notes/cse/s1/graphics/module-2/assets/page-043-panel-2.webp)
 
 **Answer:** Three-stage projections of the cone ($D = 40$ mm, $H = 60$ mm) with generator $5'o'$ at 40° to HP and horizontal base diameter 3–7 at 45° to VP.
 
@@ -478,15 +478,15 @@ When finishing each view, always check base visibility first: if the base is til
 4. Rotate the Stage 2 top view directly so the axis makes 35° with the XY line.
 5. Project all sixteen points of both bases up to the Stage 2 height levels to draw the two final front-view ellipses and boundary generators.
 
-![Initial position projection of a vertical cylinder (Step 219.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-044-panel-2.webp)
+![Initial position projection of a vertical cylinder (Step 219.1)](/notes/cse/s1/graphics/module-2/assets/page-044-panel-2.webp)
 
-![Projection of cylinder inclined to HP - Step 219.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-045-panel-1.webp)
+![Projection of cylinder inclined to HP - Step 219.2](/notes/cse/s1/graphics/module-2/assets/page-045-panel-1.webp)
 
-![Projection of cylinder inclined to HP - Step 219.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-045-panel-2.webp)
+![Projection of cylinder inclined to HP - Step 219.3](/notes/cse/s1/graphics/module-2/assets/page-045-panel-2.webp)
 
-![Projection of a cylinder: Step 219.4 showing Stage 1, Stage 2, and Stage 3 top view inclined at 35 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-046-panel-1.webp)
+![Projection of a cylinder: Step 219.4 showing Stage 1, Stage 2, and Stage 3 top view inclined at 35 degrees](/notes/cse/s1/graphics/module-2/assets/page-046-panel-1.webp)
 
-![Projection of a cylinder: Step 219.5 showing the completed three-stage projection including the final front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-046-panel-2.webp)
+![Projection of a cylinder: Step 219.5 showing the completed three-stage projection including the final front view](/notes/cse/s1/graphics/module-2/assets/page-046-panel-2.webp)
 
 > **Watch out.** The summary banner on the problem page prints "TOP VIEW 30° TO XY", but the problem statement and the solution drawing both use 35°.
 
@@ -503,15 +503,15 @@ When finishing each view, always check base visibility first: if the base is til
 4. Rotate the Stage 2 top view so the axis (and resting generator $5\ext{–}o$) makes 40° with XY, placing apex $o$ towards XY (away from the observer).
 5. Project upward to the Stage 2 height levels to complete the final front view, keeping the rear half of the base ellipse dashed.
 
-![Step 71.1: Initial projection of cone with base on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-059-panel-2.webp)
+![Step 71.1: Initial projection of cone with base on HP](/notes/cse/s1/graphics/module-2/assets/page-059-panel-2.webp)
 
-![Step 71.2: Projection of a cone with generator on HP - tilted front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-060-panel-1.webp)
+![Step 71.2: Projection of a cone with generator on HP - tilted front view](/notes/cse/s1/graphics/module-2/assets/page-060-panel-1.webp)
 
-![Step 71.3: Projection of a cone with generator on HP - completed top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-060-panel-2.webp)
+![Step 71.3: Projection of a cone with generator on HP - completed top view](/notes/cse/s1/graphics/module-2/assets/page-060-panel-2.webp)
 
-![Projections of a cone - Problem 71.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-061-panel-1.webp)
+![Projections of a cone - Problem 71.4](/notes/cse/s1/graphics/module-2/assets/page-061-panel-1.webp)
 
-![Projections of a cone - Problem 71.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-061-panel-2.webp)
+![Projections of a cone - Problem 71.5](/notes/cse/s1/graphics/module-2/assets/page-061-panel-2.webp)
 
 **Answer:** Three-stage projections of the cone ($D = 40$ mm, $H = 60$ mm) resting on generator $5'o'$ on HP with top-view axis at 40° to XY.
 
@@ -526,15 +526,15 @@ When finishing each view, always check base visibility first: if the base is til
 4. Rotate the Stage 2 top view by 90° so the axis is perpendicular to XY (lying on a Profile Plane) with apex $o$ touching the XY line.
 5. Project up to the Stage 2 heights to draw the final front view; the entire elliptical base faces the observer and is fully visible.
 
-![Step 73.1: Simple position of the cone with base on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-065-panel-2.webp)
+![Step 73.1: Simple position of the cone with base on HP](/notes/cse/s1/graphics/module-2/assets/page-065-panel-2.webp)
 
-![Projection of a cone: step 73.2 showing initial views and tilted front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-066-panel-1.webp)
+![Projection of a cone: step 73.2 showing initial views and tilted front view](/notes/cse/s1/graphics/module-2/assets/page-066-panel-1.webp)
 
-![Projection of a cone: step 73.3 completing the top view of the tilted cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-066-panel-2.webp)
+![Projection of a cone: step 73.3 completing the top view of the tilted cone](/notes/cse/s1/graphics/module-2/assets/page-066-panel-2.webp)
 
-![Orthographic projections of a cone, Step 73.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-067-panel-1.webp)
+![Orthographic projections of a cone, Step 73.4](/notes/cse/s1/graphics/module-2/assets/page-067-panel-1.webp)
 
-![Orthographic projections of a cone, Step 73.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-067-panel-2.webp)
+![Orthographic projections of a cone, Step 73.5](/notes/cse/s1/graphics/module-2/assets/page-067-panel-2.webp)
 
 **Answer:** Three-stage projections of the cone ($D = 40$ mm, $H = 60$ mm) on generator $5'o'$ on HP with the top-view axis perpendicular to XY (90°) and apex on XY.
 
@@ -549,15 +549,15 @@ When finishing each view, always check base visibility first: if the base is til
 4. Rotate the Stage 2 top view until generator $o\ext{–}7$ lies directly on the XY line, placing that generator on VP.
 5. Project up from the Stage 3 top view to the Stage 2 height levels (keeping point $5'$ on XY) to complete the final front view.
 
-![Step 75.1: Initial projections of the cone resting with its base on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-068-panel-2.webp)
+![Step 75.1: Initial projections of the cone resting with its base on HP](/notes/cse/s1/graphics/module-2/assets/page-068-panel-2.webp)
 
-![Projection of a cone: Stage 2 front view tilted at 60 degrees](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-069-panel-1.webp)
+![Projection of a cone: Stage 2 front view tilted at 60 degrees](/notes/cse/s1/graphics/module-2/assets/page-069-panel-1.webp)
 
-![Projection of a cone: Stage 2 completed front and top views](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-069-panel-2.webp)
+![Projection of a cone: Stage 2 completed front and top views](/notes/cse/s1/graphics/module-2/assets/page-069-panel-2.webp)
 
-![Projection of a cone: Step 4 (75.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-070-panel-1.webp)
+![Projection of a cone: Step 4 (75.4)](/notes/cse/s1/graphics/module-2/assets/page-070-panel-1.webp)
 
-![Projection of a cone: Final Step (75.5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-070-panel-2.webp)
+![Projection of a cone: Final Step (75.5)](/notes/cse/s1/graphics/module-2/assets/page-070-panel-2.webp)
 
 **Answer:** Three-stage projections of the cone ($D = 40$ mm, $H = 60$ mm) with base at 60° to HP, base point $5'$ on HP, and generator $o\ext{–}7$ lying on XY (VP).
 
@@ -584,23 +584,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. **Stage 1 (Simple position):** Draw the top view as a square $abcd$ of side 30 mm below $xy$ with right-hand edge $bc$ perpendicular to $xy$ so the triangular face $obc$ will appear as a single edge in the front view. Join the diagonals to mark the apex $o$. Project up to draw the front view triangle $a'(d')-b'(c')-o'$ of height 60 mm resting on $xy$.
 
-![Step 213.1: Projections of square pyramid in simple position](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-050-panel-2.webp)
+![Step 213.1: Projections of square pyramid in simple position](/notes/cse/s1/graphics/module-2/assets/page-050-panel-2.webp)
 
 2. **Stage 2 Front View (Lying on triangular face):** Rotate the front view triangle to the right until the right-hand slant face $b'(c')-o'$ lies flat on the $xy$ line. Use compass arcs from $b'(c')$ and $o'$ to locate the lifted base edge $a'(d')$.
 
-![Step 213.2 of projection of a square pyramid lying on a slant triangular face or edge on the HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-051-panel-1.webp)
+![Step 213.2 of projection of a square pyramid lying on a slant triangular face or edge on the HP](/notes/cse/s1/graphics/module-2/assets/page-051-panel-1.webp)
 
 3. **Stage 2 Top View:** Project vertical lines down from $a'(d')$, $b'(c')$, and $o'$ in the tilted front view, and intersect them with horizontal locus lines from the Stage 1 top view. Darken the visible upper faces and draw the hidden bottom base edge $bc$ as a dashed line.
 
-![Step 213.3 of projection of a square pyramid showing top view of tilted pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-051-panel-2.webp)
+![Step 213.3 of projection of a square pyramid showing top view of tilted pyramid](/notes/cse/s1/graphics/module-2/assets/page-051-panel-2.webp)
 
 4. **Stage 3 Top View (Base edge at $30^\circ$ to VP):** Draw a construction line below $xy$ inclined at $30^\circ$ to $xy$, and reproduce the Stage 2 top view so the resting base edge $bc$ lies along this $30^\circ$ line.
 
-![Projection of a square pyramid - intermediate step 213.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-052-panel-1.webp)
+![Projection of a square pyramid - intermediate step 213.4](/notes/cse/s1/graphics/module-2/assets/page-052-panel-1.webp)
 
 5. **Stage 3 Front View:** Project vertical lines up from all corners of the Stage 3 top view to meet horizontal locus lines from the Stage 2 front view. Connect the base $a'b'c'd'$ and slant edges to $o'$, keeping edges from the back corner $b'$ dashed.
 
-![Projection of a square pyramid - completed solution 213.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-052-panel-2.webp)
+![Projection of a square pyramid - completed solution 213.5](/notes/cse/s1/graphics/module-2/assets/page-052-panel-2.webp)
 
 **Answer:** The complete three-stage orthographic projections of the square pyramid lying on its triangular face $obc$ with base edge $bc$ at $30^\circ$ to VP are shown in Figure 213.5.
 
@@ -613,23 +613,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. Draw a regular hexagon $abcdef$ of side 30 mm below $xy$ with right edge $cd \perp xy$, and project the Stage 1 front view of height 60 mm.
 
-![Step 58.1: Initial orthographic projection of hexagonal pyramid resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-053-panel-2.webp)
+![Step 58.1: Initial orthographic projection of hexagonal pyramid resting on HP](/notes/cse/s1/graphics/module-2/assets/page-053-panel-2.webp)
 
 2. Rotate the front view so the triangular face $c'(d')-o'$ lies flat on the $xy$ line.
 
-![Step 58.2: Projection of hexagonal pyramid tilted on a slant edge](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-054-panel-1.webp)
+![Step 58.2: Projection of hexagonal pyramid tilted on a slant edge](/notes/cse/s1/graphics/module-2/assets/page-054-panel-1.webp)
 
 3. Project down from the tilted front view and across from Stage 1 to complete the Stage 2 top view, marking hidden base edge $cd$ dashed.
 
-![Step 58.3: Top view projection of tilted hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-054-panel-2.webp)
+![Step 58.3: Top view projection of tilted hexagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-054-panel-2.webp)
 
 4. Rotate the Stage 2 top view so the resting base edge $cd$ is inclined at $50^\circ$ to $xy$ with apex $o$ pointing downward (nearer the observer).
 
-![Orthographic projections of a hexagonal pyramid - Step 58.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-055-panel-1.webp)
+![Orthographic projections of a hexagonal pyramid - Step 58.4](/notes/cse/s1/graphics/module-2/assets/page-055-panel-1.webp)
 
 5. Project up from the Stage 3 top view and across from Stage 2 to complete the final front view.
 
-![Orthographic projections of a hexagonal pyramid - Step 58.5 (Complete solution)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-055-panel-2.webp)
+![Orthographic projections of a hexagonal pyramid - Step 58.5 (Complete solution)](/notes/cse/s1/graphics/module-2/assets/page-055-panel-2.webp)
 
 **Answer:** Projections of the hexagonal pyramid lying on face $ocd$ with edge $cd$ at $50^\circ$ to VP are completed in Figure 58.5.
 
@@ -640,23 +640,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. Draw top view hexagon $abcdef$ of side 30 mm with corner $d$ on the extreme right so lateral edge $od$ is parallel to $xy$, then project the front view of height 60 mm.
 
-![Step 59.1: Initial projection of hexagonal pyramid resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-056-panel-2.webp)
+![Step 59.1: Initial projection of hexagonal pyramid resting on HP](/notes/cse/s1/graphics/module-2/assets/page-056-panel-2.webp)
 
 2. Rotate the front view until the right-hand slant edge $o'-d'$ rests completely flat on the $xy$ line.
 
-![Orthographic projection of a hexagonal pyramid - Step 2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-057-panel-1.webp)
+![Orthographic projection of a hexagonal pyramid - Step 2](/notes/cse/s1/graphics/module-2/assets/page-057-panel-1.webp)
 
 3. Intersect vertical projectors from Stage 2 with horizontal lines from Stage 1 to draw the Stage 2 top view, showing hidden edge $od$ dashed.
 
-![Orthographic projection of a hexagonal pyramid - Step 3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-057-panel-2.webp)
+![Orthographic projection of a hexagonal pyramid - Step 3](/notes/cse/s1/graphics/module-2/assets/page-057-panel-2.webp)
 
 4. Redraw the Stage 2 top view so the resting lateral edge $od$ lies on a line inclined at $30^\circ$ to $xy$ with apex $o$ nearer the observer.
 
-![Orthographic projections of a hexagonal pyramid inclined to HP and VP - Problem 59.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-058-panel-1.webp)
+![Orthographic projections of a hexagonal pyramid inclined to HP and VP - Problem 59.4](/notes/cse/s1/graphics/module-2/assets/page-058-panel-1.webp)
 
 5. Project up to meet horizontal locus lines from Stage 2 and complete the Stage 3 front view.
 
-![Complete orthographic projections of a hexagonal pyramid inclined to HP and VP - Problem 59.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-058-panel-2.webp)
+![Complete orthographic projections of a hexagonal pyramid inclined to HP and VP - Problem 59.5](/notes/cse/s1/graphics/module-2/assets/page-058-panel-2.webp)
 
 **Answer:** Projections of the hexagonal pyramid lying on lateral edge $od$ at $30^\circ$ to VP are completed in Figure 59.5.
 
@@ -667,23 +667,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. Draw top view square $abcd$ of side 40 mm with edge $bc \perp xy$, and project the Stage 1 front view of height 60 mm.
 
-![Step 60.1: Initial projection of square pyramid resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-071-panel-2.webp)
+![Step 60.1: Initial projection of square pyramid resting on HP](/notes/cse/s1/graphics/module-2/assets/page-071-panel-2.webp)
 
 2. Rotate the front view about $b'(c')$ on $xy$ until the triangular face $b'(c')-o'$ stands perpendicular ($90^\circ$) to $xy$, keeping it parallel to HP's vertical projector.
 
-![Orthographic projection of a square pyramid, Step 60.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-072-panel-1.webp)
+![Orthographic projection of a square pyramid, Step 60.2](/notes/cse/s1/graphics/module-2/assets/page-072-panel-1.webp)
 
 3. Project down and across to construct the Stage 2 top view, where the vertical face $obc$ appears as a single horizontal line segment.
 
-![Orthographic projection of a square pyramid, Step 60.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-072-panel-2.webp)
+![Orthographic projection of a square pyramid, Step 60.3](/notes/cse/s1/graphics/module-2/assets/page-072-panel-2.webp)
 
 4. Rotate the Stage 2 top view by $90^\circ$ so face $obc$ becomes parallel to $xy$ at the back, placing the base toward the observer so it is visible.
 
-![Orthographic projection stages of a square pyramid (Problem 60.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-073-panel-1.webp)
+![Orthographic projection stages of a square pyramid (Problem 60.4)](/notes/cse/s1/graphics/module-2/assets/page-073-panel-1.webp)
 
 5. Project up from Stage 3 and across from Stage 2 to complete the final front view with the full square base $a'b'c'd'$ visible.
 
-![Complete orthographic projection of a square pyramid (Problem 60.5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-073-panel-2.webp)
+![Complete orthographic projection of a square pyramid (Problem 60.5)](/notes/cse/s1/graphics/module-2/assets/page-073-panel-2.webp)
 
 > **Watch out.** For a tilted triangular face to be parallel to VP in Stage 3, it must first be made vertical (perpendicular to HP) in Stage 2.
 
@@ -696,23 +696,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. Draw regular pentagon $abcde$ of side 30 mm below $xy$ with left edge $ae \perp xy$, and project the Stage 1 front view of height 60 mm.
 
-![Step 197.1: Initial projection of pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-074-panel-2.webp)
+![Step 197.1: Initial projection of pentagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-074-panel-2.webp)
 
 2. Tilt the front view about base edge $a'(e')$ on $xy$ until the left triangular face $o'-a'(e')$ is perpendicular ($90^\circ$) to $xy$.
 
-![Projection of a pentagonal pyramid, step 197.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-075-panel-1.webp)
+![Projection of a pentagonal pyramid, step 197.2](/notes/cse/s1/graphics/module-2/assets/page-075-panel-1.webp)
 
 3. Project vertical lines down and horizontal lines across to complete the Stage 2 top view.
 
-![Projection of a pentagonal pyramid, step 197.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-075-panel-2.webp)
+![Projection of a pentagonal pyramid, step 197.3](/notes/cse/s1/graphics/module-2/assets/page-075-panel-2.webp)
 
 4. Rotate the Stage 2 top view by $90^\circ$ so resting base edge $ae$ is parallel to $xy$ and placed nearer to the $xy$ line.
 
-![Orthographic projection of a pentagonal pyramid, stages 1 and 2 with rotated top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-076-panel-1.webp)
+![Orthographic projection of a pentagonal pyramid, stages 1 and 2 with rotated top view](/notes/cse/s1/graphics/module-2/assets/page-076-panel-1.webp)
 
 5. Project up to intersect horizontal locus lines from the Stage 2 front view and complete the final front view.
 
-![Complete three-stage orthographic projection of a pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-076-panel-2.webp)
+![Complete three-stage orthographic projection of a pentagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-076-panel-2.webp)
 
 **Answer:** Projections of the pentagonal pyramid with face $oae \perp$ HP and edge $ae$ parallel and nearer to VP are shown in Figure 197.4.
 
@@ -723,23 +723,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. Draw top view square $abcd$ of side 40 mm with diagonals parallel and perpendicular to $xy$ (corner $c$ on right), and project the front view of height 60 mm.
 
-![Step 61.1: Initial projection of square pyramid with base corner on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-077-panel-2.webp)
+![Step 61.1: Initial projection of square pyramid with base corner on HP](/notes/cse/s1/graphics/module-2/assets/page-077-panel-2.webp)
 
 2. Rotate the front view about corner $c'$ on $xy$ until the right-hand slant edge $o'-c'$ stands perpendicular ($90^\circ$) to $xy$.
 
-![Projection of a square pyramid, step 61.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-078-panel-1.webp)
+![Projection of a square pyramid, step 61.2](/notes/cse/s1/graphics/module-2/assets/page-078-panel-1.webp)
 
 3. Project down and across to draw the Stage 2 top view, where points $o$ and $c$ coincide at a single point.
 
-![Projection of a square pyramid, step 61.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-078-panel-2.webp)
+![Projection of a square pyramid, step 61.3](/notes/cse/s1/graphics/module-2/assets/page-078-panel-2.webp)
 
 4. Rotate the Stage 2 top view by $90^\circ$ so the symmetry line $ac$ is perpendicular to $xy$ and the base lies nearer the observer.
 
-![Orthographic projections of a square pyramid (Step 61.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-079-panel-1.webp)
+![Orthographic projections of a square pyramid (Step 61.4)](/notes/cse/s1/graphics/module-2/assets/page-079-panel-1.webp)
 
 5. Project up and across to complete the Stage 3 front view with the entire base $a'b'c'd'$ visible.
 
-![Orthographic projections of a square pyramid (Step 61.5 - Final Stage)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-079-panel-2.webp)
+![Orthographic projections of a square pyramid (Step 61.5 - Final Stage)](/notes/cse/s1/graphics/module-2/assets/page-079-panel-2.webp)
 
 **Answer:** Projections of the square pyramid with lateral edge $oc \perp$ HP and base visible are shown in Figure 61.5.
 
@@ -750,23 +750,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. Draw top view square $abcd$ of side 40 mm with diagonal $ac$ parallel to $xy$, and project an inverted front view with apex $o'$ on $xy$ and base $a'c'$ 60 mm above $xy$.
 
-![Step 62.1: Initial position of square pyramid resting on its apex on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-080-panel-2.webp)
+![Step 62.1: Initial position of square pyramid resting on its apex on HP](/notes/cse/s1/graphics/module-2/assets/page-080-panel-2.webp)
 
 2. Rotate the inverted front view about $o'$ on $xy$ until the right slant edge $o'-c'$ is vertical ($90^\circ$ to $xy$).
 
-![Step 62.2: Projection of a square pyramid with axis/slant edge inclined to HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-081-panel-1.webp)
+![Step 62.2: Projection of a square pyramid with axis/slant edge inclined to HP](/notes/cse/s1/graphics/module-2/assets/page-081-panel-1.webp)
 
 3. Project down from the tilted front view and across from Stage 1 to complete the Stage 2 top view.
 
-![Step 62.3: Final top view projection of the square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-081-panel-2.webp)
+![Step 62.3: Final top view projection of the square pyramid](/notes/cse/s1/graphics/module-2/assets/page-081-panel-2.webp)
 
 4. Rotate the Stage 2 top view by $90^\circ$ so the base faces the observer (downward) and symmetry line $ac$ is perpendicular to $xy$.
 
-![Orthographic projections of an inverted square pyramid tilted on its slant edge](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-082-panel-1.webp)
+![Orthographic projections of an inverted square pyramid tilted on its slant edge](/notes/cse/s1/graphics/module-2/assets/page-082-panel-1.webp)
 
 5. Project up and across to draw the final front view.
 
-![Completed three-stage orthographic projection of an inverted square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-082-panel-2.webp)
+![Completed three-stage orthographic projection of an inverted square pyramid](/notes/cse/s1/graphics/module-2/assets/page-082-panel-2.webp)
 
 > **Watch out.** A triangular face cannot contain a single diagonal slant edge $oc$; the solution places the vertical slant edge $oc$ in a plane perpendicular to VP.
 
@@ -779,23 +779,23 @@ In Stage 3, translate the second condition into a top-view rotation. For example
 
 1. Draw top view square $abcd(1234)$ of side 40 mm with edges at $45^\circ$ to $xy$ so diagonal $1c$ is parallel to $xy$, and project the Stage 1 front view of height 40 mm with body diagonal $1'-c'$ drawn.
 
-![Step 82.1: Initial projection of a 40 mm cube](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-083-panel-2.webp)
+![Step 82.1: Initial projection of a 40 mm cube](/notes/cse/s1/graphics/module-2/assets/page-083-panel-2.webp)
 
 2. Tilt the front view about resting corner $3'$ on $xy$ until the body diagonal $1'-c'$ is horizontal (parallel to $xy$).
 
-![Projection of a solid - Step 82.2: Initial views and tilted front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-084-panel-1.webp)
+![Projection of a solid - Step 82.2: Initial views and tilted front view](/notes/cse/s1/graphics/module-2/assets/page-084-panel-1.webp)
 
 3. Project down from Stage 2 and across from Stage 1 to complete the Stage 2 top view, where body diagonal $1c$ appears in true length parallel to $xy$.
 
-![Projection of a solid - Step 82.3: Final front and top views](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-084-panel-2.webp)
+![Projection of a solid - Step 82.3: Final front and top views](/notes/cse/s1/graphics/module-2/assets/page-084-panel-2.webp)
 
 4. Rotate the Stage 2 top view by $90^\circ$ so the horizontal body diagonal $1c$ becomes perpendicular to $xy$.
 
-![Orthographic projections of a cube (side 40 mm) - Step 82.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-085-panel-1.webp)
+![Orthographic projections of a cube (side 40 mm) - Step 82.4](/notes/cse/s1/graphics/module-2/assets/page-085-panel-1.webp)
 
 5. Project up and across to complete the Stage 3 front view, where the body diagonal $1'(c')$ reduces to a single point at the center.
 
-![Orthographic projections of a cube (side 40 mm) - Complete Step 82.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-085-panel-2.webp)
+![Orthographic projections of a cube (side 40 mm) - Complete Step 82.5](/notes/cse/s1/graphics/module-2/assets/page-085-panel-2.webp)
 
 > **Watch out.** Because a body diagonal connects opposite corners through the cube's interior, you must orient the Stage 1 top view with its diagonal parallel to $xy$ so the body diagonal shows its true length in the Stage 1 front view.
 
@@ -820,23 +820,23 @@ A special case occurs when the true angles with HP and VP are **complementary in
 
 1. Draw the Stage 1 top view as a regular pentagon $abcde$ of side 30 mm with left edge $ae$ perpendicular to $xy$ so corner $c$ points to the right, and project the Stage 1 front view of height 60 mm.
 
-![Step 56.1: Initial projection of pentagonal pyramid resting on base in HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-020-panel-2.webp)
+![Step 56.1: Initial projection of pentagonal pyramid resting on base in HP](/notes/cse/s1/graphics/module-2/assets/page-020-panel-2.webp)
 
 2. Rotate the Stage 1 front view about corner $c'$ on $xy$ until the right-hand slant edge $o'c'$ makes $50^\circ$ with $xy$ because this slant edge is in true length in Stage 1.
 
-![Projection of a pentagonal pyramid - Step 56.2: Initial projections and tilted front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-021-panel-1.webp)
+![Projection of a pentagonal pyramid - Step 56.2: Initial projections and tilted front view](/notes/cse/s1/graphics/module-2/assets/page-021-panel-1.webp)
 
 3. Project vertical lines down from the tilted front view to meet horizontal locus lines from the Stage 1 top view, completing the Stage 2 top view where slant edge $oc$ is foreshortened.
 
-![Projection of a pentagonal pyramid - Step 56.3: Complete projection with second stage top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-021-panel-2.webp)
+![Projection of a pentagonal pyramid - Step 56.3: Complete projection with second stage top view](/notes/cse/s1/graphics/module-2/assets/page-021-panel-2.webp)
 
 4. In Stage 3, draw a construction line from $c$ at the true angle $\phi = 30^\circ$ to $xy$, step off the true slant-edge length $L = o'c'$ along it to draw a horizontal locus line, and swing an arc of radius $L_1 = oc$ (from Stage 2) to cut the locus at $o$ for an apparent angle $\beta = 51^\circ$; then copy the Stage 2 top view onto line $oc$.
 
-![Orthographic projection steps of a pentagonal pyramid (base side 30 mm, height 60 mm) showing stage 1, stage 2, and stage 3 top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-022-panel-1.webp)
+![Orthographic projection steps of a pentagonal pyramid (base side 30 mm, height 60 mm) showing stage 1, stage 2, and stage 3 top view](/notes/cse/s1/graphics/module-2/assets/page-022-panel-1.webp)
 
 5. Project upward from the Stage 3 top view to meet horizontal locus lines from the Stage 2 front view, drawing the visible upper slant faces with continuous lines and the hidden edges meeting at bottom corner $c'$ as dashed lines.
 
-![Complete three-stage orthographic projection of a pentagonal pyramid inclined to both reference planes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-022-panel-2.webp)
+![Complete three-stage orthographic projection of a pentagonal pyramid inclined to both reference planes](/notes/cse/s1/graphics/module-2/assets/page-022-panel-2.webp)
 
 **Answer:** Apparent angle $\beta = 51^\circ$.
 
@@ -848,24 +848,24 @@ A special case occurs when the true angles with HP and VP are **complementary in
 
 1. Draw the Stage 1 top view as a regular hexagon of side 30 mm with right edge $3–4$ perpendicular to $xy$, and project the 80 mm tall front view.
 
-![Step 80.1: Initial projection of hexagonal prism resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-032-panel-2.webp)
+![Step 80.1: Initial projection of hexagonal prism resting on HP](/notes/cse/s1/graphics/module-2/assets/page-032-panel-2.webp)
 
 2. Tilt the front view on base edge $3'(4')$ on $xy$ so the axis makes $45^\circ$ with $xy$ (base at $45^\circ$).
 
-![Stage 80.2: Projection of hexagonal prism with axis inclined at 45 degrees to HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-033-panel-1.webp)
+![Stage 80.2: Projection of hexagonal prism with axis inclined at 45 degrees to HP](/notes/cse/s1/graphics/module-2/assets/page-033-panel-1.webp)
 
 3. Project down from the tilted front view and across from the Stage 1 top view to complete the Stage 2 top view.
 
-![Stage 80.3: Completed projection of hexagonal prism including top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-033-panel-2.webp)
+![Stage 80.3: Completed projection of hexagonal prism including top view](/notes/cse/s1/graphics/module-2/assets/page-033-panel-2.webp)
 
 4. From axis endpoint $p$ in Stage 3, draw a line at $40^\circ$ to $xy$ of true axis length 80 mm to set the horizontal locus.
 5. Swing an arc of Stage 2 top-view axis length $op$ from $p$ to cut the locus at $\beta = 66^\circ$, and copy the Stage 2 top view along it.
 
-![Projection of hexagonal prism - Step 80.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-034-panel-1.webp)
+![Projection of hexagonal prism - Step 80.4](/notes/cse/s1/graphics/module-2/assets/page-034-panel-1.webp)
 
 6. Project vertically to the Stage 2 front-view heights to complete the Stage 3 front view, dashing hidden edges from $3'(4')$.
 
-![Projection of hexagonal prism - Step 80.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-034-panel-2.webp)
+![Projection of hexagonal prism - Step 80.5](/notes/cse/s1/graphics/module-2/assets/page-034-panel-2.webp)
 
 **Answer:** Apparent angle $\beta = 66^\circ$.
 
@@ -875,23 +875,23 @@ A special case occurs when the true angles with HP and VP are **complementary in
 
 1. Draw the Stage 1 top view as a 40 mm circle divided into 8 parts ($1–8$, $a–h$), and project the 60 mm tall rectangular front view.
 
-![Step 85.1: Initial projection of cylinder resting on HP with axis perpendicular to HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-047-panel-2.webp)
+![Step 85.1: Initial projection of cylinder resting on HP with axis perpendicular to HP](/notes/cse/s1/graphics/module-2/assets/page-047-panel-2.webp)
 
 2. Tilt the front view about base point $5'$ on $xy$ so the axis is inclined at $30^\circ$ to $xy$ (base at $60^\circ$).
 
-![Step 85.2: Projection of cylinder with axis inclined at 30 degrees to HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-048-panel-1.webp)
+![Step 85.2: Projection of cylinder with axis inclined at 30 degrees to HP](/notes/cse/s1/graphics/module-2/assets/page-048-panel-1.webp)
 
 3. Project down from the tilted front view and across from the Stage 1 circle to draw the elliptical Stage 2 top view.
 
-![Step 85.3: Completed projections of cylinder inclined at 30 degrees to HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-048-panel-2.webp)
+![Step 85.3: Completed projections of cylinder inclined at 30 degrees to HP](/notes/cse/s1/graphics/module-2/assets/page-048-panel-2.webp)
 
 4. Construct the locus triangle in Stage 3 using true length 60 mm at $30^\circ$ to $xy$ and Stage 2 axis length $op$ to find $\beta = 36^\circ$, then reproduce the Stage 2 top view.
 
-![Orthographic projection of a cylinder - Step 85.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-049-panel-1.webp)
+![Orthographic projection of a cylinder - Step 85.4](/notes/cse/s1/graphics/module-2/assets/page-049-panel-1.webp)
 
 5. Project up to the Stage 2 front-view heights to plot the Stage 3 front view ellipses, dashing the hidden lower half of base $1'–5'$, and add tangent outer generators.
 
-![Orthographic projection of a cylinder - Step 85.5 (Final projection)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-049-panel-2.webp)
+![Orthographic projection of a cylinder - Step 85.5 (Final projection)](/notes/cse/s1/graphics/module-2/assets/page-049-panel-2.webp)
 
 **Answer:** Apparent angle $\beta = 36^\circ$.
 
@@ -901,24 +901,24 @@ A special case occurs when the true angles with HP and VP are **complementary in
 
 1. Draw the Stage 1 top view as a 40 mm circle divided into 8 parts ($1–8$), and project the triangular front view of height 60 mm.
 
-![Step 72.1: Projections of cone resting with base on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-062-panel-2.webp)
+![Step 72.1: Projections of cone resting with base on HP](/notes/cse/s1/graphics/module-2/assets/page-062-panel-2.webp)
 
 2. Rotate the front view until right-hand generator $o'5'$ lies flat on $xy$ so the cone rests on a generator on HP.
 
-![Projection of a cone resting on a generator - Step 72.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-063-panel-1.webp)
+![Projection of a cone resting on a generator - Step 72.2](/notes/cse/s1/graphics/module-2/assets/page-063-panel-1.webp)
 
 3. Project down from the tilted front view and across from Stage 1 to draw the Stage 2 top view with axis $op$.
 
-![Projection of a cone resting on a generator - Step 72.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-063-panel-2.webp)
+![Projection of a cone resting on a generator - Step 72.3](/notes/cse/s1/graphics/module-2/assets/page-063-panel-2.webp)
 
 4. Draw a line from base center $p$ at $40^\circ$ to $xy$ pointing away from $xy$ so apex $o$ lies nearer to the observer (further below $xy$).
 5. Mark true axis length 60 mm along the $40^\circ$ line to set the horizontal locus, swing an arc of Stage 2 length $po$ to find the apparent axis, and copy the Stage 2 top view.
 
-![Projections of a cone resting on a generator on HP with axis inclined to VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-064-panel-1.webp)
+![Projections of a cone resting on a generator on HP with axis inclined to VP](/notes/cse/s1/graphics/module-2/assets/page-064-panel-1.webp)
 
 6. Project up to the Stage 2 heights to complete the Stage 3 front view with a fully visible base ellipse.
 
-![Projections of a cone resting on a generator on HP with apparent angle inclination to VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-064-panel-2.webp)
+![Projections of a cone resting on a generator on HP with apparent angle inclination to VP](/notes/cse/s1/graphics/module-2/assets/page-064-panel-2.webp)
 
 **Answer:** Cone projected with generator $o'5'$ on HP, axis at true angle $40^\circ$ to VP, and apex $o$ nearer to the observer.
 
@@ -928,23 +928,23 @@ A special case occurs when the true angles with HP and VP are **complementary in
 
 1. Draw the Stage 1 top view as a regular pentagon of side 30 mm with left edge $ae$ vertical and corner $c$ on the right, and project the 60 mm tall front view.
 
-![Step 57.1: Initial front and top views of pentagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-023-panel-2.webp)
+![Step 57.1: Initial front and top views of pentagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-023-panel-2.webp)
 
 2. Rotate the front view about corner $c'$ on $xy$ so slant edge $o'c'$ is inclined at $50^\circ$ to $xy$.
 
-![Orthographic projections of a pentagonal pyramid - Step 57.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-024-panel-1.webp)
+![Orthographic projections of a pentagonal pyramid - Step 57.2](/notes/cse/s1/graphics/module-2/assets/page-024-panel-1.webp)
 
 3. Project down and across to complete the Stage 2 top view.
 
-![Orthographic projections of a pentagonal pyramid - Step 57.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-024-panel-2.webp)
+![Orthographic projections of a pentagonal pyramid - Step 57.3](/notes/cse/s1/graphics/module-2/assets/page-024-panel-2.webp)
 
 4. In Stage 3, draw true length $o'c'$ from $c$ at $40^\circ$ to $xy$ to set the locus; because $50^\circ + 40^\circ = 90^\circ$, the arc of radius $oc$ meets the locus at $\beta = 90^\circ$ (perpendicular to $xy$).
 
-![Orthographic projection of a pentagonal pyramid - Step 57.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-025-panel-1.webp)
+![Orthographic projection of a pentagonal pyramid - Step 57.4](/notes/cse/s1/graphics/module-2/assets/page-025-panel-1.webp)
 
 5. Rotate the Stage 2 top view so $oc$ is vertical, and project upward to the Stage 2 heights to complete the Stage 3 front view.
 
-![Orthographic projection of a pentagonal pyramid - Step 57.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-025-panel-2.webp)
+![Orthographic projection of a pentagonal pyramid - Step 57.5](/notes/cse/s1/graphics/module-2/assets/page-025-panel-2.webp)
 
 **Answer:** Apparent angle $\beta = 90^\circ$ (slant edge $oc$ lies in a Profile Plane).
 
@@ -954,23 +954,23 @@ A special case occurs when the true angles with HP and VP are **complementary in
 
 1. Draw the Stage 1 top view as a 30 mm regular pentagon with left edge $a(1)–e(5)$ vertical and corner $c(3)$ on the right, and project the 80 mm tall front view.
 
-![Step 84.1: Initial projections of pentagonal prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-035-panel-2.webp)
+![Step 84.1: Initial projections of pentagonal prism](/notes/cse/s1/graphics/module-2/assets/page-035-panel-2.webp)
 
 2. Tilt the front view on base corner $3'$ on $xy$ so the longer edge/axis makes $45^\circ$ with $xy$.
 
-![Step 84.2: Projection of a pentagonal prism with its axis/base inclined to the HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-036-panel-1.webp)
+![Step 84.2: Projection of a pentagonal prism with its axis/base inclined to the HP](/notes/cse/s1/graphics/module-2/assets/page-036-panel-1.webp)
 
 3. Project down and across to complete the Stage 2 top view.
 
-![Step 84.3: Final top view projection of the tilted pentagonal prism](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-036-panel-2.webp)
+![Step 84.3: Final top view projection of the tilted pentagonal prism](/notes/cse/s1/graphics/module-2/assets/page-036-panel-2.webp)
 
 4. Construct the locus at $45^\circ$ to $xy$ in Stage 3 to verify $\beta = 90^\circ$ ($45^\circ + 45^\circ = 90^\circ$), and rotate the Stage 2 top view.
 
-![Orthographic projections of a pentagonal prism inclined to HP and VP (Problem 84.4)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-037-panel-1.webp)
+![Orthographic projections of a pentagonal prism inclined to HP and VP (Problem 84.4)](/notes/cse/s1/graphics/module-2/assets/page-037-panel-1.webp)
 
 5. Project up from the Stage 3 top view to the Stage 2 heights to complete the Stage 3 front view.
 
-![Complete orthographic projections of a pentagonal prism including final front view (Problem 84.5)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-037-panel-2.webp)
+![Complete orthographic projections of a pentagonal prism including final front view (Problem 84.5)](/notes/cse/s1/graphics/module-2/assets/page-037-panel-2.webp)
 
 > **Watch out.** Although the locus construction and printed label give $\beta = 90^\circ$ because $45^\circ + 45^\circ = 90^\circ$, the Stage 3 drawing rotates the top view directly at $45^\circ$ to $xy$ instead of $90^\circ$; always state $\beta = 90^\circ$ for complementary angles.
 
@@ -996,23 +996,23 @@ In **Stage 3**, we incline the solid to HP ($θ$). Because inclination to HP is 
 
 1. Begin in the simple position with the axis perpendicular to VP so the base is parallel to VP and shows its true shape in the front view. Draw a 40 mm square above the XY line with its vertical edges perpendicular to XY, placing the resting base edge $2'3'$ on the right. Project downward to draw the Stage 1 top view as a 40 mm by 80 mm rectangle with the base $1(4)\ext{--}2(3)$ resting directly on the XY line.
 
-![Step 81.1: Initial projection of square prism with base on VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-092-panel-2.webp)
+![Step 81.1: Initial projection of square prism with base on VP](/notes/cse/s1/graphics/module-2/assets/page-092-panel-2.webp)
 
 2. Incline the axis at 30° to VP in the top view, where angles with VP appear in their true size. Reproduce the Stage 1 top view rectangle below XY with corner $2(3)$ on the XY line and the axis inclined at 30° to XY (so the base makes 60° with XY).
 
-![Orthographic projection of a square prism - Stage 1 and Stage 2 top view rotation](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-093-panel-1.webp)
+![Orthographic projection of a square prism - Stage 1 and Stage 2 top view rotation](/notes/cse/s1/graphics/module-2/assets/page-093-panel-1.webp)
 
 3. Project upward from all corners of the Stage 2 top view to intersect horizontal projectors from the Stage 1 front view. Connect the vertices to complete the Stage 2 front view, drawing the hidden resting edge $2'3'$ as a dashed line because it lies at the back (closest to VP).
 
-![Completed orthographic projection of a square prism inclined to VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-093-panel-2.webp)
+![Completed orthographic projection of a square prism inclined to VP](/notes/cse/s1/graphics/module-2/assets/page-093-panel-2.webp)
 
 4. Since the resting base edge $2'3'$ remains in true length on VP, rotate the entire Stage 2 front view directly so that edge $2'3'$ is inclined at 40° to the XY line.
 
-![Projection of a square prism, Step 81.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-094-panel-1.webp)
+![Projection of a square prism, Step 81.4](/notes/cse/s1/graphics/module-2/assets/page-094-panel-1.webp)
 
 5. Project vertically downward from every corner of the Stage 3 front view to intersect horizontal projectors from the Stage 2 top view, and join the points with visible and hidden lines to complete the final top view.
 
-![Projection of a square prism, Step 81.5 (Completed projection)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-094-panel-2.webp)
+![Projection of a square prism, Step 81.5 (Completed projection)](/notes/cse/s1/graphics/module-2/assets/page-094-panel-2.webp)
 
 **Answer:** Completed three-stage projections of the 40 mm by 80 mm square prism with its axis at 30° to VP and resting base edge at 40° to HP.
 
@@ -1024,23 +1024,23 @@ In **Stage 3**, we incline the solid to HP ($θ$). Because inclination to HP is 
 
 1. Draw a 40 mm diameter circle above XY divided into 8 sectors, and project a 60 mm high triangle below XY.
 
-![Step 74.1: Initial projection of a cone resting with its base on the VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-098-panel-2.webp)
+![Step 74.1: Initial projection of a cone resting with its base on the VP](/notes/cse/s1/graphics/module-2/assets/page-098-panel-2.webp)
 
 2. Rotate the Stage 1 top view triangle keeping base point 5 on XY so the axis is inclined at 30° to XY.
 
-![Projection of an inclined cone, step 74.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-099-panel-1.webp)
+![Projection of an inclined cone, step 74.2](/notes/cse/s1/graphics/module-2/assets/page-099-panel-1.webp)
 
 3. Project upward from the Stage 2 top view to meet horizontal projectors from Stage 1, forming the Stage 2 front view.
 
-![Projection of an inclined cone, step 74.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-099-panel-2.webp)
+![Projection of an inclined cone, step 74.3](/notes/cse/s1/graphics/module-2/assets/page-099-panel-2.webp)
 
 4. Because the apparent front-view angle is given directly, rotate the Stage 2 front view so axis $o'o_1'$ is at 45° to XY.
 
-![Projection of a cone, step 74.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-100-panel-1.webp)
+![Projection of a cone, step 74.4](/notes/cse/s1/graphics/module-2/assets/page-100-panel-1.webp)
 
 5. Project downward from Stage 3 and horizontally from Stage 2 to plot the elliptical base and complete the final top view.
 
-![Projection of a cone, completed step 74.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-100-panel-2.webp)
+![Projection of a cone, completed step 74.5](/notes/cse/s1/graphics/module-2/assets/page-100-panel-2.webp)
 
 **Answer:** Completed projections of the cone ($D = 40$ mm, $H = 60$ mm) with axis at 30° to VP and front-view axis at 45° to XY.
 
@@ -1050,23 +1050,23 @@ In **Stage 3**, we incline the solid to HP ($θ$). Because inclination to HP is 
 
 1. Draw a regular hexagon of side 30 mm above XY with edge $c'd'$ vertical, and project the 60 mm triangle below XY.
 
-![Step 63.1: Simple position projections of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-095-panel-2.webp)
+![Step 63.1: Simple position projections of a hexagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-095-panel-2.webp)
 
 2. Rotate the top view triangle so slant face $c(d)o$ lies flat along the XY line, putting the triangular face on VP.
 
-![Orthographic projection step 63.2 of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-096-panel-1.webp)
+![Orthographic projection step 63.2 of a hexagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-096-panel-1.webp)
 
 3. Project upward from the tilted top view to intersect horizontal projectors from Stage 1, completing the Stage 2 front view.
 
-![Orthographic projection step 63.3 of a hexagonal pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-096-panel-2.webp)
+![Orthographic projection step 63.3 of a hexagonal pyramid](/notes/cse/s1/graphics/module-2/assets/page-096-panel-2.webp)
 
 4. Rotate the Stage 2 front view so edge $c'd'$ makes 45° with XY and corner $d'$ touches the XY line (on HP).
 
-![Projections of a hexagonal pyramid - Problem 63.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-097-panel-1.webp)
+![Projections of a hexagonal pyramid - Problem 63.4](/notes/cse/s1/graphics/module-2/assets/page-097-panel-1.webp)
 
 5. Project downward from Stage 3 and horizontally from Stage 2 to connect all edges and complete the final top view.
 
-![Projections of a hexagonal pyramid - Problem 63.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-097-panel-2.webp)
+![Projections of a hexagonal pyramid - Problem 63.5](/notes/cse/s1/graphics/module-2/assets/page-097-panel-2.webp)
 
 > **Watch out.** Because the pyramid simultaneously rests on a base corner on HP, make sure corner $d'$ is placed directly on the XY line when inclining edge $c'd'$ at 45° in Stage 3.
 
@@ -1078,23 +1078,23 @@ In **Stage 3**, we incline the solid to HP ($θ$). Because inclination to HP is 
 
 1. Draw a 40 mm diameter circle divided into 8 parts above XY, and project the 60 mm triangle with base on XY.
 
-![Step 76.1: Initial orthographic projection of the cone with base on VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-101-panel-2.webp)
+![Step 76.1: Initial orthographic projection of the cone with base on VP](/notes/cse/s1/graphics/module-2/assets/page-101-panel-2.webp)
 
 2. Rotate the top view triangle below XY so the rightmost generator $5o$ lies completely flat along the XY line.
 
-![Step 76.2: Initial views and tilted top view of a cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-102-panel-1.webp)
+![Step 76.2: Initial views and tilted top view of a cone](/notes/cse/s1/graphics/module-2/assets/page-102-panel-1.webp)
 
 3. Project upward from the Stage 2 top view to meet horizontal projectors from Stage 1, forming the Stage 2 front view.
 
-![Step 76.3: Final front view projection of the tilted cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-102-panel-2.webp)
+![Step 76.3: Final front view projection of the tilted cone](/notes/cse/s1/graphics/module-2/assets/page-102-panel-2.webp)
 
 4. Since generator $o'5'$ is on VP (true length), rotate the Stage 2 front view with $o'5'$ at 40° to XY and apex $o'$ on XY.
 
-![Step 76.4: Projections of a cone with inclined axis](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-103-panel-1.webp)
+![Step 76.4: Projections of a cone with inclined axis](/notes/cse/s1/graphics/module-2/assets/page-103-panel-1.webp)
 
 5. Project downward from the Stage 3 front view and horizontally from Stage 2 to complete the final top view.
 
-![Step 76.5: Final top view projection of the inclined cone](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-103-panel-2.webp)
+![Step 76.5: Final top view projection of the inclined cone](/notes/cse/s1/graphics/module-2/assets/page-103-panel-2.webp)
 
 **Answer:** Completed projections of the cone ($D = 40$ mm, $H = 60$ mm) resting on generator $o5$ on VP at 40° to HP with apex $o'$ on HP.
 
@@ -1104,23 +1104,23 @@ In **Stage 3**, we incline the solid to HP ($θ$). Because inclination to HP is 
 
 1. Draw a 50 mm diameter circle with 8 divisions above XY, and project the 70 mm high triangle below XY.
 
-![Step 198.1: Initial projections of a cone resting with its base on the VP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-104-panel-2.webp)
+![Step 198.1: Initial projections of a cone resting with its base on the VP](/notes/cse/s1/graphics/module-2/assets/page-104-panel-2.webp)
 
 2. Rotate the top view triangle keeping base point 5 on XY so the axis is inclined at 45° to XY.
 
-![Projection of a cone: Step 198.2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-105-panel-1.webp)
+![Projection of a cone: Step 198.2](/notes/cse/s1/graphics/module-2/assets/page-105-panel-1.webp)
 
 3. Project upward from the Stage 2 top view to meet horizontal projectors from Stage 1, obtaining foreshortened axis $o_1'o'$.
 
-![Projection of a cone: Step 198.3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-105-panel-2.webp)
+![Projection of a cone: Step 198.3](/notes/cse/s1/graphics/module-2/assets/page-105-panel-2.webp)
 
 4. Draw a line at 30° to XY with true length 70 mm for the locus, swing arc $o_1'o'$ to find apparent angle, and rotate the Stage 2 front view.
 
-![Orthographic projection of a cone - Step 198.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-106-panel-1.webp)
+![Orthographic projection of a cone - Step 198.4](/notes/cse/s1/graphics/module-2/assets/page-106-panel-1.webp)
 
 5. Project downward from Stage 3 and horizontally from Stage 2 to plot the base and complete the final top view.
 
-![Orthographic projection of a cone - Step 198.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-106-panel-2.webp)
+![Orthographic projection of a cone - Step 198.5](/notes/cse/s1/graphics/module-2/assets/page-106-panel-2.webp)
 
 > **Watch out.** Because the axis is already inclined at 45° to VP, its Stage 2 front view $o_1'o'$ is foreshortened; you must construct the locus triangle above XY to find the apparent inclination before rotating Stage 3, orienting the apex downward toward XY so it lies nearer to HP.
 
@@ -1150,23 +1150,23 @@ Instead of being given a numerical angle with HP for Stage 2, the suspension rul
 1. Draw the Stage 1 top view as an equilateral triangle $abc$ of side 40 mm with edge $bc$ perpendicular to $xy$ on the right, placing the suspension corner $a$ at the extreme left so it tilts cleanly in the front view.
 2. Project up to draw the Stage 1 front view with base $a'b'(c')$ on $xy$ and apex $o'$ at height 60 mm, then mark the center of gravity $g'$ on the axis at $H/4 = 60/4 = 15$ mm above the base and join $a'g'$.
 
-![Projection of triangular pyramid in simple position (Step 64.1)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-086-panel-2.webp)
+![Projection of triangular pyramid in simple position (Step 64.1)](/notes/cse/s1/graphics/module-2/assets/page-086-panel-2.webp)
 
 3. For Stage 2, redraw the front view so the suspension line $a'g'$ is perpendicular to $xy$ (resting apex $o'$ on $xy$), because a freely hanging body settles with its center of gravity directly below the point of suspension.
 
-![Orthographic projection step 64.2 of a triangular pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-087-panel-1.webp)
+![Orthographic projection step 64.2 of a triangular pyramid](/notes/cse/s1/graphics/module-2/assets/page-087-panel-1.webp)
 
 4. Project downward from the tilted Stage 2 front view and across from the Stage 1 top view to complete the Stage 2 top view, marking the foreshortened axis and hidden edges.
 
-![Orthographic projection step 64.3 of a triangular pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-087-panel-2.webp)
+![Orthographic projection step 64.3 of a triangular pyramid](/notes/cse/s1/graphics/module-2/assets/page-087-panel-2.webp)
 
 5. Since the problem gives the angle of the top view of the axis directly, draw a line inclined at 50° to $xy$ and reproduce the Stage 2 top view along it to get the Stage 3 top view.
 
-![Orthographic projection steps of a triangular pyramid - Step 64.4](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-091-panel-1.webp)
+![Orthographic projection steps of a triangular pyramid - Step 64.4](/notes/cse/s1/graphics/module-2/assets/page-091-panel-1.webp)
 
 6. Project vertically up from the Stage 3 top view and horizontally across from the Stage 2 front view to complete the final Stage 3 front view, checking visibility from the bottom of the top view.
 
-![Completed orthographic projection of a triangular pyramid - Step 64.5](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-091-panel-2.webp)
+![Completed orthographic projection of a triangular pyramid - Step 64.5](/notes/cse/s1/graphics/module-2/assets/page-091-panel-2.webp)
 
 **Answer:** The pyramid hangs with line $a'g'$ vertical ($g'$ at 15 mm from the base along the 60 mm axis) and its top-view axis rotated directly at 50° to $xy$.
 
@@ -1178,24 +1178,24 @@ Instead of being given a numerical angle with HP for Stage 2, the suspension rul
 1. Draw the Stage 1 top view as a 40 mm square $abcd$ with diagonal $ac$ parallel to $xy$ so the suspension corner $a$ (or $c$) lies at an extreme position.
 2. Project the Stage 1 front view of height 60 mm, mark $g'$ on the axis $p'o'$ at $60/4 = 15$ mm above the base, and join $g'$ to suspension corner $a'$.
 
-![Step 65.1: Initial front and top views of the square pyramid resting on HP](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-088-panel-2.webp)
+![Step 65.1: Initial front and top views of the square pyramid resting on HP](/notes/cse/s1/graphics/module-2/assets/page-088-panel-2.webp)
 
 3. Redraw the front view in Stage 2 with the line $a'g'$ perpendicular to $xy$ and apex $o'$ touching $xy$ to satisfy the free-suspension equilibrium condition.
 
-![Step 65.2: Projection of a square pyramid tilted in front view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-089-panel-1.webp)
+![Step 65.2: Projection of a square pyramid tilted in front view](/notes/cse/s1/graphics/module-2/assets/page-089-panel-1.webp)
 
 4. Project down from the Stage 2 front view and across from Stage 1 to complete the Stage 2 top view, obtaining the foreshortened axis length $po$.
 
-![Step 65.3: Projection of a square pyramid with second stage top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-089-panel-2.webp)
+![Step 65.3: Projection of a square pyramid with second stage top view](/notes/cse/s1/graphics/module-2/assets/page-089-panel-2.webp)
 
 5. Because the 30° angle to VP is a true inclination of an already-tilted axis, draw a line from $p$ at 30° to $xy$, step off the true axis length 60 mm to establish a horizontal locus, and swing the foreshortened length $po$ to find the apparent angle $\beta = 35^\circ$.
 6. Rotate the Stage 2 top view so its axis $po$ lies along the $\beta = 35^\circ$ line to complete the Stage 3 top view.
 
-![Step 65.4: Orthographic projection of a square pyramid up to inclined top view](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-090-panel-1.webp)
+![Step 65.4: Orthographic projection of a square pyramid up to inclined top view](/notes/cse/s1/graphics/module-2/assets/page-090-panel-1.webp)
 
 7. Project vertically up from the Stage 3 top view to meet horizontal projectors from the Stage 2 front view and draw the final Stage 3 front view.
 
-![Step 65.5: Complete three-stage orthographic projection of the square pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/graphics/module-2/assets/page-090-panel-2.webp)
+![Step 65.5: Complete three-stage orthographic projection of the square pyramid](/notes/cse/s1/graphics/module-2/assets/page-090-panel-2.webp)
 
 > **Watch out.** Do not rotate the Stage 2 top view directly at 30°; since the axis is inclined to HP during suspension, you must use the locus construction to find the apparent angle 35° with $xy$.
 
