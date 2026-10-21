@@ -423,11 +423,16 @@ $$0 = 12$$
 6. Substitute $x_2$ into the first row $4x_1 + x_2 + x_3 - 2x_4 = 4$: $4x_1 = -2x_4 + x_3 - x_3 + 2x_4 + 4 = 4$, so $x_1 = 1$.
 7. Let the free variables be $x_3 = t_1$ and $x_4 = t_2$.
 
-> **Figure: Linear system solution continuation**
+> **Solution summary.** The two non-pivot variables are free parameters; the pivot variables depend on them.
 >
-> Continuation of back substitution showing equations and calculations at the bottom of the page.
-
-**Answer:** $x_1 = 1$, $x_2 = 2t_2 - t_1$, $x_3 = t_1$, $x_4 = t_2$, where $t_1, t_2$ are arbitrary.
+> | Variable | Role | Value |
+> | --- | --- | --- |
+> | $x_1$ | Pivot variable | $1$ |
+> | $x_2$ | Pivot variable | $2t_2 - t_1$ |
+> | $x_3$ | Free variable | $t_1$ |
+> | $x_4$ | Free variable | $t_2$ |
+>
+> Here, $t_1$ and $t_2$ are arbitrary real numbers.
 
 <!-- page 9 | Determining Matrix Rank and Vector Independence -->
 
@@ -592,9 +597,13 @@ To solve a cubic characteristic equation, test small integer values to find one 
 6. Use synthetic division with $\lambda = 2$ on coefficients $1, -7, 16, -12$ to get the depressed quadratic $\lambda^2 - 5\lambda + 6 = 0$.
 7. Factor $(\lambda - 3)(\lambda - 2) = 0$ to find the remaining roots $\lambda = 3, 2$.
 
-> **Figure: Synthetic division table for polynomial root finding**
+> **Synthetic division by $\lambda - 2$.**
 >
-> Synthetic division table showing division of lambda^3 - 7lambda^2 + 16lambda - 12 by (lambda - 2). The top row headers are lambda^3, lambda^2, lambda, constant. The values in the table are: outer divisor 2; row 1 coefficients: 1, -7, 16, -12; row 2: 0, 2, -10, 12; row 3 result coefficients: 1, -5, 6, 0. Below the result coefficients, labels indicate lambda^2, lambda, constant.
+> | Row | $\lambda^3$ coefficient | $\lambda^2$ coefficient | $\lambda$ coefficient | Constant |
+> | --- | ---: | ---: | ---: | ---: |
+> | Coefficients | $1$ | $-7$ | $16$ | $-12$ |
+> | Products | — | $2$ | $-10$ | $12$ |
+> | Quotient / remainder | $1$ | $-5$ | $6$ | $0$ |
 
 **Answer:** $2, 3, 2$.
 
@@ -653,9 +662,13 @@ Even when roots are repeated or come in **complex conjugate** pairs ($a \pm ib$)
 6. For the repeated root $\lambda = -3$, form $(A + 3I)x = 0$ as $\begin{bmatrix} 1 & 2 & -3 \\ 2 & 4 & -6 \\ -1 & -2 & 3 \end{bmatrix} x = 0$ and reduce with $R_2 \to -2R_1 + R_2$ and $R_3 \to R_2 + R_3$ to get two zero rows.
 7. Solve the remaining equation $x_1 = 3x_3 - 2x_2$ by choosing $(x_2, x_3) = (1, 0)$ and then $(x_2, x_3) = (0, 1)$ to get two independent eigenvectors.
 
-> **Figure: Synthetic division table**
+> **Synthetic division by $\lambda - 5$.**
 >
-> Synthetic division showing 5 divided into coefficients 1, 1, -21, -45. Row 1: 1, 1, -21, -45. Row 2: 0, 5, 30, 45. Bottom row: 1, 6, 9, with remainder 0 enclosed.
+> | Row | $\lambda^3$ coefficient | $\lambda^2$ coefficient | $\lambda$ coefficient | Constant |
+> | --- | ---: | ---: | ---: | ---: |
+> | Coefficients | $1$ | $1$ | $-21$ | $-45$ |
+> | Products | — | $5$ | $30$ | $45$ |
+> | Quotient / remainder | $1$ | $6$ | $9$ | $0$ |
 
 > **Watch out.** The given matrix has $a_{21} = -1$ and $a_{31} = 1$, which gives $S_2 = -13$, $|A| = -27$, and $x_2 = 2x_3$ for $\lambda = 5$, whereas the worked solution switches those entries to $a_{21} = 2$ and $a_{31} = -1$ (making $S_2 = -21$ and $|A| = 45$) and writes $x_2 = -2x_3$.
 
@@ -670,11 +683,15 @@ Even when roots are repeated or come in **complex conjugate** pairs ($a \pm ib$)
 3. Factor the quotient $\lambda^2 + 2\lambda + 1 = (\lambda + 1)^2 = 0$ to find the triple eigenvalue $\lambda = -1, -1, -1$.
 4. Substitute $\lambda = -1$ into $(A - \lambda I)x = 0$ to obtain the system $\begin{bmatrix} 7 & -6 & 5 \\ 14 & -12 & 10 \\ 7 & -6 & 5 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$.
 5. Eliminate the second and third proportional rows to leave a single plane equation $7x_1 - 6x_2 + 5x_3 = 0$, or $7x_1 = 6x_2 - 5x_3$.
-6. Choose $x_3 = 0$ and $x_2 = 7$ to get $x_1 = 6$,Choose $x_2 = 0$ and $x_3 = 7$ to get $x_1 = -5$, and choose $x_1 = 0$ and $x_2 = 5$ to get $x_3 = 6$.
+6. Choose $x_3 = 0$ and $x_2 = 7$ to get $x_1 = 6$; choose $x_2 = 0$ and $x_3 = 7$ to get $x_1 = -5$; or choose $x_1 = 0$ and $x_2 = 5$ to get $x_3 = 6$.
 
-> **Figure: Synthetic division calculation**
+> **Synthetic division by $\lambda + 1$.**
 >
-> Handwritten synthetic division table for dividing the polynomial lambda^3 + 3*lambda^2 + 3*lambda + 1 by (lambda + 1) using root -1. An L-shaped bracket has the divisor root -1 written to the left of the vertical bar. Inside the bracket, the first row lists the coefficients: 1, 3, 3, 1. The second row above the horizontal line shows: 0, -1, -2, -1. Below the horizontal line, the bottom row shows the quotient coefficients and remainder: 1, 2 (written below a crossed-out digit), 1, and 0 (enclosed in a small L-shaped corner bracket to indicate the remainder).
+> | Row | $\lambda^3$ coefficient | $\lambda^2$ coefficient | $\lambda$ coefficient | Constant |
+> | --- | ---: | ---: | ---: | ---: |
+> | Coefficients | $1$ | $3$ | $3$ | $1$ |
+> | Products | — | $-1$ | $-2$ | $-1$ |
+> | Quotient / remainder | $1$ | $2$ | $1$ | $0$ |
 
 > **Watch out.** Because $\text{rank}(A + I) = 1$, the eigenspace has geometric multiplicity $m_{-1} = 3 - 1 = 2$, so only two of the three listed vectors are linearly independent; also note that the final line writes $\lambda = 7$ instead of $\lambda = -1$ and $R_3 \to -2R_1 + R_3$ instead of $R_3 \to -R_1 + R_3$.
 
