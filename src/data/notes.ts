@@ -89,6 +89,14 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     })),
   },
   {
+    name: "Engineering Graphics",
+    course: "Engineering Graphics and Computer Aided Drawing",
+    code: "GMEST103",
+    syllabusHref: `/notes/${branchId}/s1/graphics/syllabus`,
+    href: `/notes/${branchId}/s1/graphics`,
+    modules: [],
+  },
+  {
     name: "Electrical and Electronics Engineering",
     course: "Introduction to Electrical and Electronics Engineering",
     code: "GXEST104",
@@ -106,7 +114,11 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
   },
 ];
 
-const sharedBranch = (id: "ece" | "eee", name: string, short: "ECE" | "EEE"): Branch => ({
+const sharedBranch = (
+  id: "ece" | "eee" | "me" | "civil",
+  name: string,
+  short: "ECE" | "EEE" | "ME" | "CIVIL",
+): Branch => ({
   id,
   name,
   short,
@@ -194,5 +206,7 @@ export const NOTES_CATALOGUE: readonly Branch[] = [
     ],
   },
   sharedBranch("ece", "Electronics and Communication Engineering", "ECE"),
+  sharedBranch("me", "Mechanical Engineering", "ME"),
+  sharedBranch("civil", "Civil Engineering", "CIVIL"),
   sharedBranch("eee", "Electrical and Electronics Engineering", "EEE"),
 ];
