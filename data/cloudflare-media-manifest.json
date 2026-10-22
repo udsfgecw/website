@@ -19055,6 +19055,573 @@
       "contentType": "image/webp",
       "bytes": 1836,
       "sha256": "35050e3ac333ca8ccc4e7d50b9e6f8db120d508ac467ac14b7f404ea926cd9e3"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-002-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-002-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 13252,
+      "sha256": "6ac9430005ebb3e0d80e642a481fa6ddb2e2ad6b24beb8ab2869f8e02be5b95d"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-005-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-005-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 16004,
+      "sha256": "b8bab5aa4ce1ca937e9ed2e04f92f596332a3753d1df13adc844a6912907fe74"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-006-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-006-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 16630,
+      "sha256": "1137b81a71d7791e2f2765c6b70d853358b1da0331e8861f84d42a484fa930cc"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-007-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-007-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 15854,
+      "sha256": "24b58de163590fda0a5fab8b901ba70bab944831c9c392621ac7820be001f2e8"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-009-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-009-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 24584,
+      "sha256": "b8d8766c1352ba304249fd04cd1e73efa697062b47adf48cb7d1161a4d1f9556"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-010-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-010-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 24644,
+      "sha256": "a042efc16e49666e967a12a885943038e9c71ade405538c87f885c324a0f405f"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-011-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-011-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 19144,
+      "sha256": "cf047dafcfc5efa21afed8ac8dcafd2cd8768068b73421b97af38030eed29ea7"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-012-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-012-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 15770,
+      "sha256": "c49f35940c3252b48302861d8ce3e6b58804fdc26e6e66e47dc0c3f742b174d8"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-013-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-013-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 17098,
+      "sha256": "6702641b1b8cb695dbe9862f2cb8b7d1883a8378ff0dd4d60b8eb48bbab60b7c"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-014-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-014-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 8514,
+      "sha256": "d1975587db140e276cf2725dce49851a760f16f7b3e0d376515e78f3d55becd0"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-015-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-015-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 12466,
+      "sha256": "7f381a928487b3ca19e6e9d447e5a3cd41c87b40f07a800d00a9e6c02b87f26d"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-016-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-016-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 15624,
+      "sha256": "12ee41a4061743e0f2116947429c275cd81caa18216d705b9ee735c2cc24e1b2"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-017-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-017-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 25940,
+      "sha256": "bd65502c1987f87876b88a0f530e85457d82fc593ce197d6a0973f1c4b2cea81"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-018-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-018-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 22508,
+      "sha256": "4b3a2e5ce438b0ea37022e29c29a6411c186cbff57fab7bc69b06f95321198fa"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-022-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-022-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 37902,
+      "sha256": "3f86ebeba1e704b8e9e606f4bf41b0b13ce869954a76100c1d0bfd999fee2b0d"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-022-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-022-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 14194,
+      "sha256": "f4a757fe3923ced7bd1175d152d6136a8c00b950d93cc3981664cdd09a95e6a1"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-023-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-023-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 13580,
+      "sha256": "2567003b7fce6acbd8d6adcbae2ee289c15f1f70c493808324ae0c0603a70f8f"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-025-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-025-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 14894,
+      "sha256": "cbd70a275fc252e6115317e0f9b48dee6966ce83020e186de8aad0cecb68b93d"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-028-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-028-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 16270,
+      "sha256": "c869f451f6a7a54712bf1f8b1504452d1ae3ec906cf95da32d2027fd99558c7c"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-031-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-031-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 14516,
+      "sha256": "2e9d142c348a5c40e636fa5d10c6aadfbc84e1214d13890a2b38df5ea4e7abcb"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-035-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-035-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 12242,
+      "sha256": "2ac3ae555e4df10f41a1e4116d369a6ea8e17587e953a607fbc99cc4912cc265"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-036-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-036-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 13822,
+      "sha256": "efec3a53aa7813efb92d94f51f82474198efad57dee2da2beaa5be51023a7a0d"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-039-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-039-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 18450,
+      "sha256": "3ed0c28550c5745124d4168bce4884d714508b5323ff698da93fe19349050d83"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-039-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-039-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 28842,
+      "sha256": "0342e0bb73ebd475a8aff8d912f887d24559a5b2a85f04bd54516b1c0f483723"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-040-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-040-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 21510,
+      "sha256": "d39030f266f2a9d883941ba6d0cc7a994569b2904ed7e3cbfc28827851e52fb1"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-040-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-040-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 25508,
+      "sha256": "cbd72689f56cf34de90b090f55ddbb26d64b6021b2f7ebdc6aae8c71bc11bf1d"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-041-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-041-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 15878,
+      "sha256": "a7ab65d6825f234c542539bf7ed2dd43a5e140c2d17ec0be67f3696a86224645"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-042-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-042-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 32666,
+      "sha256": "b269ede51ff012ad30e21aa43422aa482d30e70d56f8b6711c0d8d764854336e"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-043-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-043-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 12208,
+      "sha256": "53839bbbbbcd229f9a50492aab815374ce1bdb46f112ba47b9f8b5741afc1488"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-043-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-043-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 11684,
+      "sha256": "107432cb34e1be62e3f51eb287896eeb7374ec3c242dfca7beb4d6c60a6ff754"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-044-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-044-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 43054,
+      "sha256": "7f964a9aff6c8171433da98184bca476674654aa0b36bf0a1b76488f97f75d28"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-045-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-045-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 31366,
+      "sha256": "d5f5a5d30b1441b07dd7f93819edaa233621ff4a6352c82266e1a272d5cb96f8"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-046-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-046-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 39708,
+      "sha256": "3e8d472aa3dc40203ca834b826fa0c175b85496c4626be5ebb2eb9fa5f665a80"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-047-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-047-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 31474,
+      "sha256": "3bbe4612c55f1407641b4f20ce555289d210fb7e811c46f84824aaa5f81f9c14"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-048-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-048-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 31988,
+      "sha256": "bb3e69e0611040b6daf33d6b37d31426b4231e2850b24c84a00257b1803369dc"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-048-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-048-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 17214,
+      "sha256": "591bfdd862fba8aa0e1f4b30d49afcc0dbbc100cd90bd3bbedbdf3c604ded570"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-049-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-049-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 28194,
+      "sha256": "d5d19e866ca3ccd3d20d49c302d0b91c1f2a7e85d72b34aa1ae075b531ad02fa"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-050-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-050-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 17456,
+      "sha256": "cba7814fffcb4515f7586971640f33ef15f975bc88236dc8ebbd653201d489a4"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-051-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-051-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 11334,
+      "sha256": "568c2ffcb7b4c8526de1bcc3e56581498a39559d3afd510f66847a2de93465c8"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-052-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-052-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 25548,
+      "sha256": "1dceab13bedad5f46997590ee102d054e0a0d75d340d1f58f71217a9c2b80fa7"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-053-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-053-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 28558,
+      "sha256": "e31f6fe400e659ea6bc2edf1080fc7003f1b8afe8834b0c222ed82647cd5af5d"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-054-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-054-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 30482,
+      "sha256": "c77574a9d16fd767e470fc7aada4654b13496ef7666ba9663d0b07624ea8bda9"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-054-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-054-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 28602,
+      "sha256": "32cc80af72028abd3c5a4233a31e6f74b33833c6db711ed8bb1d0e69707b09a1"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-055-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-055-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 29128,
+      "sha256": "8766de7dc63323cbcc40c1ee8bf926539161a87e557024fc706d0b1ef97ff2bc"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-056-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-056-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 21984,
+      "sha256": "640522ee960cd8f55ac7f36345fbf75d41ea00a68413a0f6030e987fc2a89ba4"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-057-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-057-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 18918,
+      "sha256": "fb99a4bb9e750f8b993fd7cdfbd109acddb198625b08517b80cdd680abf54898"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-057-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-057-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 29500,
+      "sha256": "aaa42ef9b8c80cb9bcd710e1d13b73ac368e3563b13fc886ec4c34c09802eb9c"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-058-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-058-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 19868,
+      "sha256": "c844cf93682b76231b7c18f2063dd4105248a9bbb76f37c7210431430b795c11"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-059-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-059-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 16754,
+      "sha256": "9884b83ce4cec654d06bed6c47ed5712ffbf453da342c8edd0d5c93102df5cd6"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-059-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-059-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 24876,
+      "sha256": "fc6867ef577323d11250c471038e44cb0acc702cbd977f7f0aa9a2026f27c0b6"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-060-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-060-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 36030,
+      "sha256": "820b1459d9162135aca1e3089f2854193dd6f0ef774f65570d6e5ffa601bcc4b"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-061-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-061-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 41234,
+      "sha256": "a6e61414cb92215c1c4e9c7d63dbff3065a6066739d9e840ae2dc3ba189f362c"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-061-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-061-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 37040,
+      "sha256": "310a6ababdb815053f58c5d720637713e4894a03b066936840a48fea86e73ac0"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-062-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-062-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 26586,
+      "sha256": "b842ed6a4138e3ced5d0b7e1bd93ec42c7939061a48894e87aebbe502dc77b2e"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-063-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-063-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 32316,
+      "sha256": "97f994c65bfc87ad11c16853a6f9f2ed2708e06634ae3088e97b13921b1529c8"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-063-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-063-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 28454,
+      "sha256": "b8a39f4dd4f3d11c5be18d46001528c2eb9320f1d33fb7dc2c8c05bbad6b5f30"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-063-image-3-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-063-image-3-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 18512,
+      "sha256": "bebdf6cffa8d600d2e7eff8f71aaa0dd68d16c67f872110ce3054d51640bf6ac"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-065-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-065-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 22590,
+      "sha256": "610ded11bc72688826427abf6e3c45e7a12635a16f89d9439891aac2b55b5a78"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-065-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-065-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 29572,
+      "sha256": "312106b300580d51b79d8799da94e9a05217583e5e88ef83ba8187563b569af1"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-066-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-066-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 37102,
+      "sha256": "fe6028fc256e00643ae046629e6900303af114ec1c59104470da3d3d233e8052"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-067-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-067-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 33902,
+      "sha256": "2bf776dcce0755dfce4e3f437ce653075359ab87480e0a67cce71e5b31ccb930"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-068-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-068-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 18492,
+      "sha256": "ac8b92ae93483f2c652b8505790ddee452fd6d2977e1721d22031bd4a1ce8961"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-069-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-069-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 26740,
+      "sha256": "5ec7fcde8d4567d079b0df451c69cb4c5477314227804938349619d2f67eadfc"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-073-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-073-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 18348,
+      "sha256": "eaec3934da5608ad9314b210303d748f879f71c81746691822872f831991c50a"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-073-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-073-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 20330,
+      "sha256": "ef4c1e29bf25e7275a61f160f5c8dbf1de292caa5d8de82e38844db0f5dda759"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-074-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-074-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 17696,
+      "sha256": "ae5728f5a80aed27bfe84c14d38bbab39d9ded1154f3ad52b76bc7a54d70cbcd"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-075-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-075-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 20438,
+      "sha256": "174dba42df3ef7164058dd66d4ab4c78d13623f53e9c4bd86bfeb766f49b551c"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-077-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-077-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 5174,
+      "sha256": "93d3903ca95a49ec5106d5fc7748698e4af6d01ed67191843d8befe08a20edb9"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-078-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-078-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 29882,
+      "sha256": "6344f7fc7ab99aa5159bfaa5e5b9b99b2d59d141f0b474645016192c0be1b9d1"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-082-image-2-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-082-image-2-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 20968,
+      "sha256": "8aceb36ee57e7103d94ddc00a24afc7436a032dfa3e16900b4e50fb7b646e7d7"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-083-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-083-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 30824,
+      "sha256": "20a40c00ebee2d23c763a461c260fc569212fba3b211831f4b6ce06f2cd03eff"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-084-image-4-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-084-image-4-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 23526,
+      "sha256": "40640c48fac4318e39426cc6f5a9de0b4f10de11c03ae920c222b890a9d5427f"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-085-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-085-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 25370,
+      "sha256": "3d232ba712e72252e72f002fd81a74656e656e6994bb91629ea432974445d647"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-088-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-088-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 13818,
+      "sha256": "ff740b6c3d37eff1edeb044c7a09061808072b1141dad7b032d4d823f7cffd75"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-089-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-089-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 17900,
+      "sha256": "1454082e6615b0835bb9469e1c3e4cebd421eca8caff84481398cb575d3efaa7"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-092-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-092-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 22980,
+      "sha256": "4ef9aec2f51314cc2293e4fe209652f178cd7818c26b0873fb682fef44a74525"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-093-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-093-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 19278,
+      "sha256": "8afff1f8c0a60b469e6f653505e2ef062af4fa39a518b5ddff89e5fae99e1c6f"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-095-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-095-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 25418,
+      "sha256": "88272dd4c04c44f0611183b15c48e7a1b4166cf3f2dbd2d1906f3b42baa80806"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-097-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-097-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 21726,
+      "sha256": "d31fc81c3728ab6e7aac877c77099980009da3010d270172cce16439a475752a"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-099-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-099-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 35792,
+      "sha256": "c473fab3cc094c75887993a77a93f5e0866df020c293738c6d215daf05740566"
+    },
+    {
+      "key": "notes/cse/s1/electrical/module-1/assets/page-100-image-1-clean.webp",
+      "localPath": "public/notes/cse/s1/electrical/module-1/assets/page-100-image-1-clean.webp",
+      "contentType": "image/webp",
+      "bytes": 37650,
+      "sha256": "4a802d6664e39355028d6d67d773898423b416778b2b81aaab2241906c50b913"
     }
   ],
   "summary": {
