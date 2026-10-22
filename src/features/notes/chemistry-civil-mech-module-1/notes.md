@@ -771,13 +771,7 @@ Metal nanoparticles such as gold and silver are prepared by reducing their respe
 
 ### Graphene
 
-![Graphene hexagonal honeycomb structure](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p027-1.webp)
-
-> **Figure: Graphene hexagonal honeycomb structure**
->
-> Graphene hexagonal honeycomb structure. A 2D molecular structure of graphene showing a hexagonal honeycomb lattice of carbon atoms connected by bonds, with arrows labelled V (pointing up) and U (pointing right) at the bottom left.
-
-Graphene hexagonal honeycomb structure. A 2D molecular structure of graphene showing a hexagonal honeycomb lattice of carbon atoms connected by bonds, with arrows labelled V (pointing up) and U (pointing right) at the bottom left.
+![Schematic of graphene as a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice](/assets/notes/civil-mech/s1/chemistry/module-1/graphene-honeycomb.svg)
 
 #### Structure
 - Graphene is an allotrope of carbon consisting of a monolayer of carbon atoms arranged in a two-dimensional honeycomb lattice, serving as the fundamental building block of all graphitic materials (fullerenes, nanotubes, graphite).
