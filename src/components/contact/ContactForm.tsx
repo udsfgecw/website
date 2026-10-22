@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const TOPICS = ["A concern", "An idea", "Joining UDSF", "Something else"] as const;
 
-const field =
+export const field =
   "w-full rounded-xl border border-line bg-white px-4 text-[0.95rem] text-ink placeholder:text-ink-2/60 transition-colors duration-200 hover:border-ink/25 focus:border-ink/60 focus-visible:outline-none";
 
 type Status = "idle" | "sending" | "sent" | "error";

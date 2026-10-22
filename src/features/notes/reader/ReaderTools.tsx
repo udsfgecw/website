@@ -30,7 +30,7 @@ function Choice<T extends string | number>({ label, value, options, onChange }: 
             type="button"
             aria-pressed={o.value === value}
             onClick={() => onChange(o.value)}
-            className={cn("flex-1 rounded-lg px-2 py-1.5 text-[0.85rem] transition-colors", o.value === value ? "bg-white font-semibold text-green-ink shadow-sm" : "text-ink-2 hover:text-ink")}
+            className={cn("min-h-11 flex-1 rounded-lg px-2 py-2 text-[0.9rem] transition-colors sm:min-h-0 sm:py-1.5 sm:text-[0.85rem]",o.value === value ? "bg-white font-semibold text-green-ink shadow-sm" : "text-ink-2 hover:text-ink")}
           >
             {o.label}
           </button>
@@ -95,12 +95,12 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
   const goTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   const goBottom = () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
   const go = (n: number) => onGoto(Math.min(total, Math.max(1, n)));
-  const pill = "flex items-center justify-center gap-2 rounded-xl border border-line bg-white px-3 py-2 text-[0.85rem] hover:bg-paper disabled:opacity-30";
+  const pill = "flex min-h-11 items-center justify-center gap-2 rounded-xl border border-line bg-white px-3 py-2.5 text-[0.9rem] hover:bg-paper disabled:opacity-30 sm:min-h-0 sm:py-2 sm:text-[0.85rem]";
 
   return (
     <div ref={root} className="fixed right-4 bottom-4 z-[55] flex flex-col items-end gap-3 sm:right-6 sm:bottom-6" inert={!visible}>
       {open && (
-        <div role="dialog" aria-label="Reading settings" className="flex max-h-[min(34rem,calc(100svh-6rem))] w-[min(20rem,calc(100vw-2rem))] flex-col gap-5 overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-xl">
+        <div role="dialog" aria-label="Reading settings" className="flex max-h-[min(34rem,calc(100svh-6rem))] w-[calc(100vw-2rem)] flex-col gap-5 overflow-y-auto rounded-2xl border border-line bg-white p-5 shadow-xl sm:w-80">
           <div>
             <p className="label mb-2 text-ink-2">Go to</p>
             <div className="grid grid-cols-2 gap-2">
@@ -130,7 +130,7 @@ export default function ReaderTools({ notes, page, size, prefs, onSize, onPrefs,
                   max={total}
                   defaultValue={page}
                   aria-label={`Go to ${unit} number`}
-                  className="w-16 rounded-lg border border-line px-2 py-1 text-center tabular-nums text-ink"
+                  className="min-h-11 w-16 rounded-lg border border-line px-2 py-2 text-center tabular-nums text-ink sm:min-h-0 sm:py-1"
                   onKeyDown={(e) => {
                     if (e.key === "Enter") go(Number(e.currentTarget.value) || page);
                   }}

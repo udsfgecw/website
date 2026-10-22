@@ -9,6 +9,7 @@ import { usePageMeta } from "@/lib/meta";
 import { breadcrumbLd, notesCrumbs, studyNotesLd } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 import { chapterFor, pageAnchor, type NotesModule } from "../types";
+import NoteErrorForm from "./NoteErrorForm";
 import PageMarkdown from "./PageMarkdown";
 import ReaderTools from "./ReaderTools";
 import { findSubjectNav } from "./subjectNav";
@@ -185,12 +186,12 @@ export default function Reader({ notes }: { notes: NotesModule }) {
   const textSize = (
     <div className="flex items-center gap-1 text-[0.85rem]">
       <span className="label mr-2 text-ink-2">Text size</span>
-      <button className="rounded-md px-2 py-1 hover:bg-paper disabled:opacity-30" aria-label="Smaller text" disabled={size <= TEXT_SIZES[0]} onClick={() => changeSize(size - 2)}>
+      <button className="min-h-11 min-w-11 rounded-md px-3 py-2 hover:bg-paper disabled:opacity-30 sm:min-h-0 sm:min-w-0 sm:px-2 sm:py-1" aria-label="Smaller text" disabled={size <= TEXT_SIZES[0]} onClick={() => changeSize(size - 2)}>
         A−
       </button>
       <span className="w-6 text-center tabular-nums">{size}</span>
       <button
-        className="rounded-md px-2 py-1 hover:bg-paper disabled:opacity-30"
+        className="min-h-11 min-w-11 rounded-md px-3 py-2 hover:bg-paper disabled:opacity-30 sm:min-h-0 sm:min-w-0 sm:px-2 sm:py-1"
         aria-label="Larger text"
         disabled={size >= TEXT_SIZES[TEXT_SIZES.length - 1]}
         onClick={() => changeSize(size + 2)}
@@ -230,14 +231,17 @@ export default function Reader({ notes }: { notes: NotesModule }) {
             <p className="text-[0.95rem] text-ink-2">
               {notes.code} · {total} {unit}s · {saved ? "Your place is saved in this browser" : "This browser can’t save your place"}
             </p>
-            <button
-              type="button"
-              onClick={() => window.print()}
-              className="print:hidden inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-[0.85rem] font-medium text-ink shadow-2xs transition-colors hover:border-ink hover:bg-paper"
-            >
-              <Printer size={15} aria-hidden="true" />
-              Print notes
-            </button>
+            <div className="flex flex-wrap items-center gap-2">
+              <NoteErrorForm title={notes.title} unitLabel={unit} unit={page} topic={chapter.title} />
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="print:hidden inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-[0.85rem] font-medium text-ink shadow-2xs transition-colors hover:border-ink hover:bg-paper"
+              >
+                <Printer size={15} aria-hidden="true" />
+                Print notes
+              </button>
+            </div>
           </div>
           {nav && (
             <nav aria-label="Course navigation" className="mt-7 flex flex-wrap items-center gap-2 pt-4 border-t border-line/60">
