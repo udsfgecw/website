@@ -431,3 +431,37 @@
   background: var(--secondary, #edf3ec);
   border-radius: 0 0.4rem 0.4rem 0;
 }
+
+.reader-ad {
+  clear: both;
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  margin: 2.5rem auto;
+  max-width: 100%;
+  color: var(--muted-foreground, #73777f);
+  font: 0.68rem/1.2 system-ui, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.reader-ad__label {
+  display: block;
+}
+.reader-ad__reserved,
+.reader-ad__unit {
+  display: block;
+  width: min(100%, 720px);
+  min-height: 120px;
+}
+.reader-ad__reserved {
+  border: 1px dashed var(--border, #e6e7ea);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--muted, #f5f5f5) 35%, transparent);
+}
+
+@media (min-width: 768px) {
+  .reader-ad__reserved,
+  .reader-ad__unit {
+    min-height: 180px;
+  }
+}

@@ -10,19 +10,36 @@
 
 ### Resistors
 
-![An illustrated cutaway of a carbon composition resistor showing internal structure and color code bands](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-005-image-1-source.webp)
-
 **Resistor**
 
-A resistor is a passive two-terminal electrical component that restricts or regulates the flow of electric current in a circuit. Resistance opposes current flow through atomic collisions.
+A resistor is a passive two-terminal component designed to provide a specified resistance. It limits current, produces a voltage drop, and converts electrical energy into heat. Its circuit symbol is shown below:
 
-**Resistance**
+```text
+A o────/\/\/────o B
+         R
+```
 
-Resistance is measured in ohms ($\Omega$).
+**Resistance** is the measure of how strongly a component opposes electric current. For an ohmic resistor at constant physical conditions, resistance is the ratio of the voltage across it to the current through it:
+
+$$
+R=\frac{V}{I}, \qquad V=IR, \qquad I=\frac{V}{R}.
+$$
+
+The SI unit is the **ohm** ($\Omega$), where $1\,\Omega=1\,\mathrm{V/A}$. For example, a $10\,\Omega$ resistor carrying $0.2\,\mathrm A$ has a voltage drop of $V=IR=2\,\mathrm V$.
+
+For a uniform conductor, resistance also depends on its material and dimensions:
+
+$$
+R=\rho\frac{\ell}{A},
+$$
+
+where $\rho$ is resistivity ($\Omega\,\mathrm m$), $\ell$ is conductor length, and $A$ is its cross-sectional area. A longer conductor has greater resistance; a larger cross-sectional area gives lower resistance. Temperature can also change resistance.
 
 **Ohm's Law**
 
-Ohm's law defines a resistor's behavior through the formula $R = V/I$, where $R$ is resistance, $V$ is voltage, and $I$ is current.
+Ohm's law states that current is directly proportional to voltage when temperature and other physical conditions remain constant. The proportionality constant is the conductance $G=1/R$, so $I=GV$.
+
+The microscopic picture below compares a pure copper crystal with a copper-zinc alloy. Alloying increases electron scattering and therefore generally increases resistivity; the figure illustrates one material-level cause of resistance.
 
 ![Diagram comparing pure copper crystal structure with brass alloy structure containing copper and zinc atoms](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-005-image-2-source.webp)
 
@@ -64,7 +81,6 @@ A constant voltage gives zero steady current in an ideal capacitor. Reversing th
 
 ### Inductors
 
-![Types of inductors: air core, iron core, ferrite core, and variable core](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-009-image-1-source.webp)
 
 **Inductance**
 
@@ -78,7 +94,6 @@ $$
 
 ### V-I Characteristics and Switching Behavior of an Inductor
 
-![V-I characteristic and inductor response graph with circuit diagrams](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-010-image-1-source.webp)
 
 For an ideal inductor with constant inductance $L$ (passive sign convention),
 
@@ -127,39 +142,73 @@ A constant voltage source is a device that maintains a constant voltage across i
 * **Behavior on Short Circuit:** Tries to supply infinite current, which can damage the device or blow a fuse.
 * **Behavior on Open Circuit:** Outputs its rated voltage with zero current flow.
 
+An **independent source** specifies its voltage or current without reference to another circuit variable. Its value may be constant or time-varying. The ideal voltage and current source models described below are independent sources.
+
+### Dependent (Controlled) Sources
+
+A dependent source has an output set by a voltage or current elsewhere in the same circuit. It is drawn with a diamond-shaped symbol and is used to model devices such as transistors and amplifiers. The four linear types are:
+
+| Type | Output relation | Meaning |
+| --- | --- | --- |
+| Voltage-controlled voltage source (VCVS) | $v_s=\mu v_x$ | Output voltage is proportional to a controlling voltage. |
+| Voltage-controlled current source (VCCS) | $i_s=g v_x$ | Output current is proportional to a controlling voltage. |
+| Current-controlled voltage source (CCVS) | $v_s=r i_x$ | Output voltage is proportional to a controlling current. |
+| Current-controlled current source (CCCS) | $i_s=\beta i_x$ | Output current is proportional to a controlling current. |
+
+Here $\mu$ and $\beta$ are dimensionless gains, $g$ is transconductance in siemens, and $r$ is transresistance in ohms. The controlling variable can be in a different branch; its reference direction and polarity must be stated when solving a circuit.
+
 ### Behavior Under Load
 
-For a connected load resistor ($R$), the output current ($I$) varies while terminal voltage ($V$) remains constant.
+For an ideal voltage source connected to a load $R_L$, the terminal voltage remains $V_s$ and the load current is $I_L=V_s/R_L$. A practical source's terminal voltage can fall as load current increases because of its internal resistance.
 
-![Circuit diagram showing a resistor connected across a constant voltage source battery](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-015-image-1-source.webp)
 
 ### Circuit Conditions for Voltage Sources
 
 #### Behavior on Short Circuit
 
-![Circuit diagram showing a short circuit with a battery, fuse, and switch, with a lightning bolt pointing to the fuse.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-016-image-1-source.webp)
+For a practical source with emf $E$ and internal resistance $r_s$, a short circuit makes the external load resistance nearly zero. Current is then limited mainly by $r_s$ and the wiring:
+
+$$I_{sc}\approx\frac{E}{r_s}.$$
+
+```text
+       practical source                 shorted terminals
+   (+) ──( E )──[ r_s ]────┐
+    │                      │
+   (−) ────────────────────┘
+```
+
+An ideal voltage source has $r_s=0$ and predicts unbounded short-circuit current; real sources have nonzero internal and circuit resistance. A short can overheat equipment, so protection such as a fuse or circuit breaker is required.
 
 #### Behavior on Open Circuit
 
-![Circuit diagram showing a battery, a fuse, and two switches connected in series](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-017-image-1-source.webp)
+An open circuit has no conducting path through the load, so $R_L\to\infty$ and the source current is $I=0$. An ideal voltage source still has its rated terminal voltage $V_T=E$; with no current, a practical source also has essentially no drop across its internal resistance.
+
+```text
+      source E          open load
+   ┌──( + − )──┬──o  o──┐
+   │           │        │
+   └───────────┴────────┘       I = 0,  V_T = E
+```
 
 ### Voltage Source Characteristics
 
-**Ideal Voltage Source**
+**Ideal voltage source:** The terminal voltage remains $V_T=E$ for any load current. Its V-I graph is a horizontal line at $V_T=E$.
 
-An ideal voltage source maintains an exact constant voltage output ($E$) independent of load current demand.
+**Practical voltage source:** Model it as an ideal emf $E$ in series with internal resistance $r_s$. For load current $I_L$, the terminal voltage is
 
-![Two alternative circuit symbols for an ideal voltage source between terminals A and B](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-018-image-1-source.webp)
+$$V_T=E-I_Lr_s.$$
 
-Or $E$:
+At open circuit, $I_L=0$ and $V_T=E$. At short circuit, $V_T=0$ and $I_{sc}=E/r_s$. Thus the practical V-I graph is a straight line from $(I_L=0,V_T=E)$ to $(I_L=E/r_s,V_T=0)$; a smaller $r_s$ gives better voltage regulation.
 
-![Circuit diagram and V-I or V-time characteristic curve for an ideal voltage source](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-018-image-2-source.webp)
-
-#### V-I Characteristic
-
-Practical Voltage Source and Its Graph:
-
-![Circuit diagram of a practical voltage source with internal resistance R_int and a V-I characteristic graph showing ideal and practical curves.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-019-image-1-source.webp)
+```text
+V_T
+ ↑  E •──────────── ideal source
+ │     \
+ │      \ practical: V_T = E − I_L r_s
+ │       \
+ 0└────────•────────────→ I_L
+          E/r_s
+```
 
 **Constant Current Source**
 
@@ -167,19 +216,28 @@ A constant current source is a device that maintains a constant current; the out
 
 * **Internal Resistance:** Has a very high (ideally infinite) internal resistance.
 * **Behavior on Short Circuit:** Safely delivers its rated current at near-zero voltage.
-* **Behavior on Open Circuit:** Tries to drive voltage to its maximum limit to force current.
+* **Behavior on Open Circuit:** The output voltage rises to the source's compliance limit; beyond that limit, it cannot maintain the specified current.
 
 #### Behavior on Open Circuit
 
-![Circuit diagram showing a solar panel or battery connected in series with a fuse, an open switch, and another open switch.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-021-image-1-source.webp)
+An ideal current source would require unbounded terminal voltage to keep delivering its rated current into an open circuit. A practical current source can only raise its output voltage to a finite **compliance voltage**; beyond that limit, it cannot maintain the set current.
 
 #### V-I Characteristic
 
-![Circuit diagram of a current source in parallel with a resistor](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-024-image-1-source.webp)
+An ideal current source holds $I_L=I_s$ as load voltage changes. A practical source is modeled as $I_s$ in parallel with a large output resistance $R_p$; current division gives $I_L=I_s-V_T/R_p$. Its output current is nearly constant over the normal voltage range and falls as the compliance limit is approached.
 
-![Graph showing the V-I characteristic of a practical current source](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-024-image-2-source.webp)
+```text
+I_L
+ ↑  I_s •──────────── ideal source
+ │       \
+ │        \\ practical source
+ │         \
+ 0└─────────•───────────→ V_T
+          I_s R_p
+```
 
-![Circuit diagram with a resistor connected to a DC power source or solar panel](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-025-image-1-source.webp)
+For an ideal current source, a short circuit carries the rated current at approximately zero terminal voltage. For a practical source, a short circuit has nearly zero terminal voltage and carries approximately the set current, subject to the source current limit.
+
 
 ---
 
@@ -227,7 +285,6 @@ Ohm's law states that the current flowing through a conductor is directly propor
 
 Georg Simon Ohm (16 March 1789 – 6 July 1854) was a German physicist and mathematician who formulated the relationship between voltage, current, and resistance.
 
-![Portrait of Georg Simon Ohm](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-030-image-1-source.webp)
 
 **Joseph Henry**
 
@@ -257,18 +314,18 @@ In a series circuit:
 2. There will be a voltage drop across each resistance given by Ohm's law.
 3. The sum of the voltage drops is equal to the applied voltage.
 
-![Series circuit diagram with voltage source Vs, current I, and three series resistances R1, R2, R3 with voltage drops V1, V2, V3 respectively.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-033-image-1-source.webp)
-
-3rd point:
-
-![Series resistor circuit diagram with voltage source V_s, current I, resistors R1, R2, R3, and voltage drops V1, V2, V3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-034-image-1-source.webp)
+```text
+       I →
+ (+) ──[ R_1 ]──[ R_2 ]──[ R_3 ]── (−)
+          V_1       V_2       V_3
+```
 
 From Figure 1.7, $V_S = V_1 + V_2 + V_3$
 
 $$
 \begin{aligned}
-&= IR_1 + IR_2 + IR_3 \
-&= I(R_1 + R_2 + R_3) \
+&= IR_1 + IR_2 + IR_3 \\
+&= I(R_1 + R_2 + R_3) \\
 &= IR \quad \text{where } R \text{ is the equivalent resistance.}
 \end{aligned}
 $$
@@ -288,8 +345,6 @@ In a parallel circuit:
 ![Circuit diagram showing three resistors in parallel connected to a voltage source](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-035-image-1-source.webp)
 
 Figure 1.8: Resistances in parallel
-
-From the figure, $I = I_1 + I_2 + I_3$
 
 From the figure, $I = I_1 + I_2 + I_3$
 
@@ -330,9 +385,14 @@ If current is not given in a circuit, the voltage division rule can be used. If 
 
 **Voltage Divider Rule**
 
-The voltage across any resistor in a series network is equal to the ratio of its individual resistance to the total resistance of the series network, multiplied by the total voltage in the circuit.
+The voltage across resistor $R_k$ is proportional to its share of the total series resistance, provided the output is not loaded enough to change the divider current.
 
-![Circuit diagram for voltage divider rule showing a voltage source V and two series resistors R1 and R2 with voltage drops V1 and V2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-039-image-1-source.webp)
+```text
+       I →
+ V_s ──[ R_1 ]──[ R_2 ]── 0 V
+         V_1       V_2
+```
+
 
 Figure 2 - Voltage Division Rule
 
@@ -408,7 +468,6 @@ $$
 
 The current in any branch is equal to the ratio of opposite branch resistance to the total resistance of the circuit multiplied by the total current in the circuit.
 
-![Current divider circuit diagram with two parallel resistors R1 and R2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-042-image-1-source.webp)
 
 $$
 I_1 = \frac{IR_2}{R_1 + R_2}
@@ -430,7 +489,6 @@ $$
 R_T = \frac{R_1 R_2}{R_1 + R_2}
 $$
 
-![Blue arrow pointing to the right](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-043-image-1-code.webp)
 
 $$
 \text{Parallel equivalent: } R_T = \frac{R_1 R_2}{R_1 + R_2}
@@ -452,7 +510,6 @@ $$
 I = \frac{I_1 R_1 (R_1 + R_2)}{R_1 R_2} = \frac{I_1 (R_1 + R_2)}{R_2}
 $$
 
-![Blue arrow pointing to the right](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-043-image-2-code.webp)
 
 $$
 I_1 = \frac{I R_2}{R_1 + R_2}
@@ -460,7 +517,6 @@ $$
 
 Current flow through $R_2$:
 
-![Blue arrow pointing to the right](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-043-image-3-code.webp)
 
 $$
 I_2 = \frac{I R_1}{R_1 + R_2}
@@ -477,9 +533,15 @@ $$
 
 **Example 1**
 
-Find voltage drop across each resistance.
+A $6\,\mathrm V$ source feeds two series resistors, $200\,\Omega$ and $100\,\Omega$. Find the voltage drop across each resistor.
 
-![Circuit diagram with a 6V voltage source and two series resistors of 200 ohm and 100 ohm.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-045-image-1-source.webp)
+```text
+       200 Ω          100 Ω
+  ┌───/\/\───────/\/\───┐
+  │                         │
+  └────────── 6 V ──────────┘
+```
+
 
 Applying the voltage division rule, voltage across $200\,\Omega$ resistance we get:
 
@@ -488,7 +550,7 @@ E_1 = \frac{E}{r_1+r_2} r_1
 $$
 
 $$
-E_1 = \frac{6}{200+100} \text{ X } 200 = 4\text{V}
+E_1 = \frac{6}{200+100} \times 200 = 4\text{V}
 $$
 
 Voltage across $100\,\Omega$ resistance we get:
@@ -498,16 +560,22 @@ E_2 = \frac{E}{r_1+r_2} r_2
 $$
 
 $$
-E_2 = \frac{6}{200+100} \text{ X } 100 = 2\text{V}
+E_2 = \frac{6}{200+100} \times 100 = 2\text{V}
 $$
 
 **Example 2**
 
-Consider two resistors $20\,\Omega$ and $40\,\Omega$ are connected in a parallel with a current source of $20\text{ A}$. Find out the current flowing through each resistor in the parallel circuit.
+A $20\,\mathrm A$ current source supplies two parallel resistors, $20\,\Omega$ and $40\,\Omega$. Find the current in each branch.
 
-![Circuit diagram showing a parallel circuit with a current source of 20A and two resistors R1 (20 ohms) and R2 (40 ohms)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-046-image-1-source.webp)
+```text
+                 ┌──/\/\── 20 Ω ──┐
+        20 A  ↑  │                   │
+                 └──/\/\── 40 Ω ──┘
+                   (parallel branches)
+```
 
-Applying the current division rule voltage across $20\,\Omega$ resistance we get:
+
+Applying the current-divider rule, the current through the $20\,\Omega$ resistor is:
 
 $$
 I_1 = \frac{I}{r_1+r_2} r_2
@@ -517,7 +585,7 @@ $$
 I_1 = \frac{20}{20+40} \times 40 = 13.33\text{A}
 $$
 
-Voltage across $40\,\Omega$ resistance we get:
+The current through the $40\,\Omega$ resistor is:
 
 $$
 I_2 = \frac{I}{r_1+r_2} r_1
@@ -529,7 +597,13 @@ $$
 
 **Example 1.11.1**
 
-A resistor of $5\;\Omega$ is connected in series with a parallel combination of $6\;\Omega$ and $3\;\Omega$. Find the supply current taken from a $35\;\text{V}$ dc source.
+A $5\;\Omega$ resistor is in series with a parallel pair of $6\;\Omega$ and $3\;\Omega$ resistors across a $35\;\mathrm V$ DC source. Find the supply current.
+
+```text
+  ┌──/\/\ 5 Ω──┬──/\/\ 6 Ω──┐
+  │              └──/\/\ 3 Ω──┤
+  └────────────── 35 V ──────────┘
+```
 
 **Solution**
 
@@ -537,7 +611,6 @@ Let $R_P$ be the equivalent resistance of the parallel combination of $3\;\Omega
 
 Then $\dfrac{1}{R_P} = \dfrac{1}{3} + \dfrac{1}{6} = \dfrac{3}{6}$
 
-![Circuit diagram showing a parallel combination of 3 ohm and 6 ohm resistors in series with a 5 ohm resistor, connected across a 35 V source.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-047-image-1-source.webp)
 
 Therefore, $R_P = 2\;\Omega$
 
@@ -557,7 +630,7 @@ Figure 1.13
 
 $$
 \begin{aligned}
-R_{XZ} &= \frac{2 \times 2}{2 + 2} = 1\text{ }\Omega\
+R_{XZ} &= \frac{2 \times 2}{2 + 2} = 1\text{ }\Omega\\
 \frac{1}{R_{ZY}} &= \frac{1}{4} + \frac{1}{4} + \frac{1}{4} + \frac{1}{4} = \frac{4}{4} = 1
 \end{aligned}
 $$
@@ -582,13 +655,17 @@ Power consumed $= VI = 12 \times 12 = 144\text{ W}$
 
 **Example 1.11.3**
 
-Three resistors $10\ \Omega$, $20\ \Omega$ and $30\ \Omega$ are connected in series across a $100\text{ V}$ supply. Find the voltage across each resistor.
+Three resistors $10\,\Omega$, $20\,\Omega$ and $30\,\Omega$ are connected in series across a $100\,\mathrm V$ supply. Find the voltage across each resistor.
+
+```text
+  ┌──/\/\ 10 Ω──/\/\ 20 Ω──/\/\ 30 Ω──┐
+  └──────────────── 100 V ──────────────────┘
+```
 
 **Solution**
 
-![Circuit diagram of three resistors connected in series with a voltage source V = 100 V](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-050-image-1-source.webp)
 
-Figure 1.15
+*Figure 1.15: Three series resistors connected across a 100 V source.*
 
 Let $R_S$ be the equivalent series resistance:
 
@@ -662,17 +739,25 @@ The voltage across $6\ \Omega$ and $12\ \Omega$ resistors are the same because t
 
 #### Voltage source to current source
 
-![Diagram showing voltage source to current source transformation](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-054-image-1-source.webp)
+```text
+Voltage form:  ──( Vs )──[ R ]──       Current form:  ──┬──[ R ]──┬──
+                                                        │          │
+                                                        └──( ↑Is )─┘
+```
 
-*Figure 2.5: Voltage source to current source transformation*
+*Figure 2.5: Equivalent voltage-source and current-source forms*
 
 A voltage source $V_s$ in series with resistance $R$ can be transformed into a current source $I_s$ in parallel with resistance $R$ where $I_s = \frac{V_s}{R}$.
 
 #### Current source to voltage source
 
-![Current source to voltage source transformation diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-055-image-1-source.webp)
+```text
+Current form:  ──┬──[ R ]──┬──       Voltage form:  ──( Vs )──[ R ]──
+                 │          │
+                 └──( ↑Is )─┘
+```
 
-*Figure 2.6: Current source to voltage source transformation*
+*Figure 2.6: Equivalent current-source and voltage-source forms*
 
 Similarly, a current source $I_S$ in parallel with a resistance $R$ can be transformed into a voltage $V_S$ series with a resistance $R$ where $V_S = I_S R$.
 
@@ -682,7 +767,6 @@ Similarly, a current source $I_S$ in parallel with a resistance $R$ can be trans
 
 A node is a junction where two or more network elements are connected together.
 
-![Node diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-056-image-1-source.webp)
 
 **Branch**
 
@@ -714,7 +798,6 @@ Key network components include:
 
 ### Circuit versus network
 
-![Circuit vs Network comparison diagram showing a simple circuit with a battery, resistor, and capacitor, alongside a complex network of resistors.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-058-image-1-source.webp)
 
 **Electrical Circuit**
 
@@ -728,9 +811,7 @@ A loop is any closed part of the circuit.
 
 A mesh is the most elementary form of a loop and cannot be further divided into other loops. All meshes are loops, but all loops are not meshes.
 
-![Two-mesh circuit diagram illustrating loop currents i1 and i2.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-058-image-2-source.webp)
 
-![Single mesh circuit labeled Mesh 1 with current i1, voltage source V1, and resistor R1.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-058-image-3-source.webp)
 
 ### Potential and reference levels
 
@@ -748,19 +829,18 @@ $$
 V_{AB} = V_A - V_B
 $$
 
+For example, if $V_A=8\,\mathrm V$ and $V_B=3\,\mathrm V$ relative to the same reference, then $V_{AB}=5\,\mathrm V$. Reversing the order changes the sign: $V_{BA}=-V_{AB}$.
+
 **Relative Potential**
 
 Relative potential (or potential difference) is the voltage of one point in a circuit measured with respect to another point, rather than to ground.
 
-![Circuit diagram illustrating absolute and relative potential with nodes A, B, C, D, resistors, a voltage source, and ground.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-060-image-1-source.webp)
 
-![Circuit diagram illustrating electrical concepts including Nodes, Branches, and Loops](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-061-image-1-source.webp)
 
 **Branch**
 
 A branch is a single path containing a circuit component connected between two nodes.
 
-![Circuit diagram illustrating branches with resistors and a voltage source](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-062-image-1-source.webp)
 
 ---
 
@@ -770,37 +850,30 @@ A branch is a single path containing a circuit component connected between two n
 
 ### Finding Loops in a Circuit
 
-![Circuit diagram illustrating loops with resistors, a voltage source, and mesh currents i1 and i2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-063-image-1-source.webp)
 
 **Mesh**
 
 A mesh is a closed loop that does not contain any other loop within it. In other words, any path within a circuit that does not include any other path is considered a mesh.
 
-![Circuit diagram illustrating Mesh 1 and Mesh 2](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-064-image-1-source.webp)
 
-The overall circuit depicted in Figure 1 comprises **6 Nodes**, **7 Branches**, **3 Loops**, and **2 Meshes**, as illustrated in Figure 6.
+To count these quantities in any given network, first mark every distinct node, then count the branches between node pairs. A loop is any closed path; a mesh is a loop with no smaller loop inside it.
 
-![Circuit diagram illustrating nodes, branches, loops, and meshes](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-065-image-1-source.webp)
 
 Robert Kirchhoff (1824–1887) was a German physicist and mathematician who contributed significantly to the fundamental understanding of electrical circuits.
 
-![Portrait illustration of Robert Kirchhoff](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-066-image-1-source.webp)
 
 **Kirchhoff's Voltage Law (KVL)**
 
 Kirchhoff's voltage law states that the algebraic sum of all voltages in a closed path in a circuit is always zero at all instants of time. Alternatively, the sum of potential drops is equal to the sum of potential rises.
 
-![Circuit diagram illustrating Kirchhoff's Voltage Law](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-067-image-1-source.webp)
 
 ### Voltage Polarities and Sign Conventions
 
 ![Circuit diagram showing a closed loop with a voltage source V and four resistors R1, R2, R3, R4 with indicated polarities and current I](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-068-image-1-source.webp)
 
-Potential rise and potential drops:
+If $V$ denotes the source voltage rise and $V_1$ through $V_4$ are the resistor voltage drops, KVL gives:
 
-$V + V_1 + V_2 + V_3 + V_4 = 0$
-
-V across the resistance $R_1 = IR_1$
+$$V - V_1 - V_2 - V_3 - V_4 = 0, \qquad V_k=IR_k.$$
 
 ![Single loop electrical circuit with resistors and voltage sources](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-069-image-1-source.webp)
 
@@ -813,8 +886,8 @@ Potential rise
 Potential drop
 
 Key conventions for analysis:
-* **Current direction:** Shared branches take $(i_1 - i_2)$ for the first loop and $(i_2 - i_1)$ for the adjacent loop when mesh currents flow in the same direction, or $(i_1 + i_2)$ and $(i_2 + i_1)$ when in opposing directions.
-* **Voltage polarity:** Always start with the voltage source when setting up mesh equations.
+* **Shared branch:** With clockwise mesh currents in adjacent loops, the currents oppose one another in their common branch. The reference current is therefore $i_1-i_2$ for loop 1 and $i_2-i_1$ for loop 2. If the chosen reference directions agree in that branch, use a sum instead.
+* **Voltage polarity:** Choose a loop-traversal direction, then assign each rise or drop by the polarity encountered. Keep that convention consistent through the whole equation.
 
 **Sign Convention for KVL Equations**
 
@@ -824,7 +897,6 @@ When traversing a loop:
 
 ### Formulating KVL Equations
 
-![Circuit diagram illustrating KVL with a voltage source V and resistors R1, R2, R3, and R4 in a single closed loop with clockwise current I.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-071-image-1-source.webp)
 
 ![Polarity convention inset box showing plus to minus gives negative (-ve) and minus to plus gives positive (+ve).](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-071-image-2-code.webp)
 
@@ -836,33 +908,7 @@ $$
 
 ### Single-Mesh Analysis
 
-**Example 2.6.1** Find the current in the circuit shown in Figure 2.
-
-![Circuit diagram with a single loop, three resistors, and two voltage sources](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-072-image-1-source.webp)
-
-**Solution**
-
-Let the current $I$ flow in the clockwise direction. Marking the polarities of voltages across resistors according to the sign convention as shown in Figure 2.19:
-
-![Circuit diagram with clockwise current I and voltage polarities across components](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-072-image-2-source.webp)
-
-Figure 2.19
-
-![Blue arrow pointing right](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-072-image-3-code.webp)
-
-Applying KVL, we get:
-
-$$
-\begin{aligned}
-E_1 - IR_1 - IR_2 - E_2 - IR_3 &= 0 \
-12 - 2 \times I - 3 \times I - 3 - 4 \times I &= 0 \
-9 - 9I &= 0 \
-\therefore \text{Current}, I &= 1\text{ A}
-
-\end{aligned}
-$$
-
-**Example 2.6.1 (Variant)** Find the current in the circuit shown in Figure 2.18.
+**Example 2.6.1** Find the current in the circuit shown in Figure 2.18.
 
 ![Circuit diagram with two voltage sources E1 (12 V) and E2 (3 V) and three resistors R1 (2 ohm), R2 (3 ohm), and R3 (4 ohm).](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-073-image-1-source.webp)
 
@@ -880,12 +926,11 @@ Applying KVL, we get:
 
 $$
 \begin{aligned}
-E_1 - IR_1 - IR_2 - E_2 - IR_3 &= 0 \
-12 - 2 \times I - 3 \times I - 3 - 4 \times I &= 0 \
-9 - 9I &= 0 \
-9I &= 9 \
+E_1 - IR_1 - IR_2 - E_2 - IR_3 &= 0 \\
+12 - 2 \times I - 3 \times I - 3 - 4 \times I &= 0 \\
+9 - 9I &= 0 \\
+9I &= 9 \\
 I = 1\text{ A}
-
 \end{aligned}
 $$
 
@@ -937,20 +982,14 @@ $$
 I_2 = 3I_1 - 3
 $$
 
-From **Equation 1**, express $I_2$ in terms of $I_1$:
-
-$$
-I_2 = 3I_1 - 3
-$$
-
 Substitute $I_2$ into **Equation 2**:
 
 $$
 \begin{aligned}
-5I_1 - 9(3I_1 - 3) &= 9 \
-5I_1 - 27I_1 + 27 &= 9 \
--22I_1 &= 9 - 27 \
--22I_1 &= -18 \
+5I_1 - 9(3I_1 - 3) &= 9 \\
+5I_1 - 27I_1 + 27 &= 9 \\
+-22I_1 &= 9 - 27 \\
+-22I_1 &= -18 \\
 I_1 = \frac{-18}{-22} &= \frac{9}{11}\text{ A} \approx 0.818\text{ A}
 \end{aligned}
 $$
@@ -959,7 +998,7 @@ Now, calculate $I_2$:
 
 $$
 \begin{aligned}
-I_2 &= 3\left(\frac{9}{11}\right) - 3 \
+I_2 &= 3\left(\frac{9}{11}\right) - 3 \\
 I_2 &= \frac{27}{11} - \frac{33}{11} = -\frac{6}{11}\text{ A} \approx -0.545\text{ A}
 \end{aligned}
 $$
@@ -968,7 +1007,7 @@ $$
 
 **Example 2.6.3** Find the loop currents in the electric circuit shown in Figure 2.21.
 
-![Electric circuit diagram with 3 meshes and 3 mesh currents I1, I2, and I3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-077-image-1-source.webp)
+![Circuit diagram with three loops and multiple resistors and voltage sources.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-078-image-1-source.webp)
 
 **Solution**
 
@@ -984,39 +1023,21 @@ $$
 5I_2 - I_1 - 2I_3 = 0 \tag{2.2}
 $$
 
-![Circuit diagram with three loops and multiple resistors and voltage sources.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-078-image-1-source.webp)
-
 From loop 3: $-2(I_3 - I_2) - 3I_3 + 10 = 0$
 
 $$
 5I_3 - 2I_2 = 10 \tag{2.3}
 $$
 
-Solving Equations 2.1, 2.2, and 2.3, we get:
+From Equation (2.1), $I_2 = 6I_1 - 5$. From Equation (2.3), $5I_3 = 10 + 2I_2$, so $I_3=2.4I_1$.
 
-$$
-I_1 = 1.03\text{ A}
-$$
-
-$$
-I_2 = 1.198\text{ A}
-$$
-
-$$
-I_3 = 2.48\text{ A}
-$$
-
-From (Eq. 1): $I_2 = 6I_1 - 5$
-
-From (Eq. 3): $5I_3 = 10 + 2I_2 = 10 + 2(6I_1 - 5) = 10 + 12I_1 - 10 = 12I_1 \implies I_3 = 2.4I_1$
-
-Substitute $I_2$ and $I_3$ into (Eq. 2):
+Substitute these into Equation (2.2), $5I_2-I_1-2I_3=0$:
 
 $$
 \begin{aligned}
-I_1 - 5(6I_1 - 5) + 2(2.4I_1) &= 0 \
-I_1 - 30I_1 + 25 + 4.8I_1 &= 0 \
--24.2I_1 &= -25
+5(6I_1-5)-I_1-2(2.4I_1)&=0 \\
+30I_1-25-I_1-4.8I_1&=0 \\
+24.2I_1&=25
 \end{aligned}
 $$
 
@@ -1024,14 +1045,12 @@ $$
 I_1 = \frac{25}{24.2} = \frac{125}{121} \approx 1.033\text{ A}
 $$
 
-Now, calculate $I_2$ and $I_3$:
+Now calculate the other mesh currents:
 
 $$
-I_2 = 6 \cdot \left(\frac{125}{121}\right) - 5 = \frac{750}{121} - \frac{605}{121} = \frac{145}{121} \approx 1.198\text{ A}
-$$
-
-$$
-I_3 = 2.4 \cdot \left(\frac{125}{121}\right) = \frac{12}{5} \cdot \frac{125}{121} = \frac{300}{121} \approx 2.479\text{ A}
+I_2=6\left(\frac{125}{121}\right)-5=\frac{145}{121}\approx1.198\text{ A},
+\qquad
+I_3=2.4\left(\frac{125}{121}\right)=\frac{300}{121}\approx2.479\text{ A}.
 $$
 
 ---
@@ -1058,18 +1077,13 @@ To analyze a circuit containing a supermesh:
 
 A current source is located on the boundary shared by two meshes.
 
-**Example 1.** Determine the current in the $5\text{ }\Omega$ resistor in the network given in Fig.
+**Example 1.** Determine the current in the $5\,\Omega$ resistor in the three-mesh network shown below. The equations use clockwise mesh references $I_1$, $I_2$, and $I_3$; the $5\,\Omega$ branch is shared by meshes 1 and 3.
 
-![Electrical network with meshes, resistors, a voltage source, and a current source](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-082-image-1-source.webp)
 
 ![Electrical circuit diagram with three mesh currents, voltage source, current source, and resistors](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-083-image-1-source.webp)
 
 $$
-50 - 10(I_1 - I_2) - 5(I_1 - I_3) = 0
-$$
-
-$$
-(1)
+50 - 10(I_1 - I_2) - 5(I_1 - I_3) = 0 \tag{1}
 $$
 
 $$
@@ -1083,7 +1097,6 @@ The $2\text{ A}$ current source is in a branch shared by Mesh 2 and Mesh 3.
 * Current $I_2$ flows in the same direction as the source (right to left).
 * Current $I_3$ flows in the opposite direction (left to right).
 
-![Circuit diagram showing a supermesh with a 50V source, 10 ohm, 5 ohm, 2 ohm, 3 ohm, and 1 ohm resistors, and a 2A current source between mesh 2 and mesh 3.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-084-image-1-source.webp)
 
 $$
 I_2 - I_3 = 2 \implies I_2 = I_3 + 2 - (\text{Eq. 2})
@@ -1099,20 +1112,33 @@ $$
 \ -15I_1 + 12I_2 + 6I_3 = 0 \quad (3)
 $$
 
-#### Step C: Solving the System of Equations
+#### Step C: Solve the System of Equations
 
-Substitute $I_2 = I_3 + 2$ from **(Eq. 2)** into **(Eq. 1)** and **(Eq. 3)**:
-
-From **(Eq. 1)**:
+The supermesh equation is Equation (1), the current-source constraint is Equation (2), and Equation (3) is the KVL equation around the larger loop. First divide Equation (1), $15I_1-10I_2-5I_3=50$, by $5$:
 
 $$
-3I_1 - 2(I_3 + 2) - I_3 = 10 \implies 3I_1 - 3I_3 = 14 \implies I_1 - I_3 = \frac{14}{3}\text{ A}
+3I_1-2I_2-I_3=10.
 $$
 
-Interestingly, we do not need to go further because the question asks for the current in the $5\text{ }\Omega$ resistor. Looking at the diagram, the net downward current in the $5\text{ }\Omega$ resistor is exactly $(I_1 - I_3)$.
+Use the constraint $I_2=I_3+2$:
 
 $$
-I_{5\Omega} = I_1 - I_3 = \frac{14}{3}\text{ A} \approx 4.67\text{ A}
+3I_1-2(I_3+2)-I_3=10
+\implies I_1-I_3=\frac{14}{3}\text{ A}.
+$$
+
+Substitute $I_1=I_3+14/3$ and $I_2=I_3+2$ into Equation (3):
+
+$$
+-15\left(I_3+\frac{14}{3}\right)+12(I_3+2)+6I_3=0
+\implies 3I_3=46
+\implies I_3=\frac{46}{3}\text{ A}.
+$$
+
+Therefore $I_2=52/3\text{ A}$ and $I_1=20\text{ A}$. The $5\,\Omega$ branch current is the difference of its adjacent mesh currents:
+
+$$
+I_{5\Omega}=I_1-I_3=20-\frac{46}{3}=\frac{14}{3}\text{ A}\approx4.67\text{ A}.
 $$
 
 If a current source is on the outside of the circuit (not shared), you don't need a supermesh.
@@ -1218,7 +1244,7 @@ $V_1 \text{ is } - \text{ to } + \text{ then } v_1$
 $V_2 \text{ is } + \text{ to } - \text{ then } -v_2$
 
 $$
-\begin{bmatrix} R_{11} & -R_{12} & -R_{13} \ -R_{21} & R_{22} & -R_{23} \ -R_{31} & -R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \ V_2 \ V_3 \end{bmatrix}
+\begin{bmatrix} R_{11} & -R_{12} & -R_{13} \\ -R_{21} & R_{22} & -R_{23} \\ -R_{31} & -R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \\ V_2 \\ V_3 \end{bmatrix}
 $$
 
 ### Matrix Formulation Rules
@@ -1240,15 +1266,15 @@ Applying KVL to each mesh yields the following equations:
 ![Circuit diagram with three meshes and mesh currents I1, I2, I3](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-095-image-1-source.webp)
 
 $$
-\begin{bmatrix} R_{11} & R_{12} & R_{13} \ R_{21} & R_{22} & R_{23} \ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \ V_2 \ V_3 \end{bmatrix}
+\begin{bmatrix} R_{11} & R_{12} & R_{13} \\ R_{21} & R_{22} & R_{23} \\ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \\ V_2 \\ V_3 \end{bmatrix}
 $$
 
 Rearranging the equations gives:
 
 $$
 \begin{aligned}
-(R_1 + R_2)I_1 &- R_2 I_2 & &= V_1 \
--R_2 I_1 &+ (R_2 + R_3 + R_4)I_2 &- R_4 I_3 &= 0 \
+(R_1 + R_2)I_1 &- R_2 I_2 & &= V_1 \\
+-R_2 I_1 &+ (R_2 + R_3 + R_4)I_2 &- R_4 I_3 &= 0 \\
 &-R_4 I_2 &+ (R_4 + R_5)I_3 &= -V_2
 \end{aligned}
 $$
@@ -1257,19 +1283,19 @@ These equations are expressed in matrix form as:
 
 $$
 \begin{bmatrix}
-(R_1 + R_2) & -R_2 & 0 \
--R_2 & R_2 + R_3 + R_4 & -R_4 \
+(R_1 + R_2) & -R_2 & 0 \\
+-R_2 & R_2 + R_3 + R_4 & -R_4 \\
 0 & -R_4 & R_4 + R_5
 \end{bmatrix}
 \begin{bmatrix}
-I_1 \
-I_2 \
+I_1 \\
+I_2 \\
 I_3
 \end{bmatrix}
 =
 \begin{bmatrix}
-V_1 \
-0 \
+V_1 \\
+0 \\
 -V_2
 \end{bmatrix}
 $$
@@ -1284,26 +1310,28 @@ Figure 2.26
 
 **Solution**
 
+In Figure 2.26, the reference directions for $I_2$ and $I_3$ are opposite across their shared $2\,\Omega$ resistor. Their mutual resistance terms are therefore $+2$; mesh-current matrix off-diagonal signs depend on the chosen reference directions.
+
 The matrix equation for the network is:
 
 $$
-\begin{bmatrix}8&-3&0\-3&9&2\0&2&10\end{bmatrix}\begin{bmatrix}I_1\I_2\I_3\end{bmatrix}=\begin{bmatrix}5\10\35\end{bmatrix}\tag{2.19}
+\begin{bmatrix}8&-3&0\\-3&9&2\\0&2&10\end{bmatrix}\begin{bmatrix}I_1\\I_2\\I_3\end{bmatrix}=\begin{bmatrix}5\\10\\35\end{bmatrix}\tag{2.19}
 $$
 
 $$
-\Delta_R = \begin{vmatrix} 8 & -3 & 0 \ -3 & 9 & 2 \ 0 & 2 & 10 \end{vmatrix} = 8(90 - 4) - 3(+30) = 598
+\Delta_R = \begin{vmatrix} 8 & -3 & 0 \\ -3 & 9 & 2 \\ 0 & 2 & 10 \end{vmatrix} = 8(90 - 4) - 3(+30) = 598
 $$
 
 $$
-\Delta_1 = \begin{vmatrix} 5 & -3 & 0 \ 10 & 9 & 2 \ 35 & 2 & 10 \end{vmatrix} = 5(90 - 4) + 3(100 - 70) = 520
+\Delta_1 = \begin{vmatrix} 5 & -3 & 0 \\ 10 & 9 & 2 \\ 35 & 2 & 10 \end{vmatrix} = 5(90 - 4) + 3(100 - 70) = 520
 $$
 
 $$
-\Delta_2 = \begin{vmatrix} 8 & 5 & 0 \ -3 & 10 & 2 \ 0 & 35 & 10 \end{vmatrix} = 8(100 - 70) - 5(-30) = 390
+\Delta_2 = \begin{vmatrix} 8 & 5 & 0 \\ -3 & 10 & 2 \\ 0 & 35 & 10 \end{vmatrix} = 8(100 - 70) - 5(-30) = 390
 $$
 
 $$
-\Delta_3 = \begin{vmatrix} 8 & -3 & 5 \ -3 & 9 & 10 \ 0 & 2 & 35 \end{vmatrix} = 8(315 - 20) + 3(-105) + 5(-6) = 2015
+\Delta_3 = \begin{vmatrix} 8 & -3 & 5 \\ -3 & 9 & 10 \\ 0 & 2 & 35 \end{vmatrix} = 8(315 - 20) + 3(-105) + 5(-6) = 2015
 $$
 
 $$
@@ -1331,27 +1359,27 @@ Figure 2.27
 The matrix equation for the network is:
 
 $$
-\begin{bmatrix} R_{11} & R_{12} & R_{13} \ R_{21} & R_{22} & R_{23} \ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \ V_2 \ V_3 \end{bmatrix}
+\begin{bmatrix} R_{11} & R_{12} & R_{13} \\ R_{21} & R_{22} & R_{23} \\ R_{31} & R_{32} & R_{33} \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} V_1 \\ V_2 \\ V_3 \end{bmatrix}
 $$
 
 $$
-\begin{bmatrix} 10 & -4 & -3 \ -4 & 8 & -2 \ -3 & -2 & 9 \end{bmatrix} \begin{bmatrix} I_1 \ I_2 \ I_3 \end{bmatrix} = \begin{bmatrix} 10 \ 0 \ 0 \end{bmatrix} \tag{2.20}
+\begin{bmatrix} 10 & -4 & -3 \\ -4 & 8 & -2 \\ -3 & -2 & 9 \end{bmatrix} \begin{bmatrix} I_1 \\ I_2 \\ I_3 \end{bmatrix} = \begin{bmatrix} 10 \\ 0 \\ 0 \end{bmatrix} \tag{2.20}
 $$
 
 $$
-\Delta_R = \begin{vmatrix} 10 & -4 & -3 \ -4 & 8 & -2 \ -3 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(-36 - 6) - 3(8 + 24) = 416
+\Delta_R = \begin{vmatrix} 10 & -4 & -3 \\ -4 & 8 & -2 \\ -3 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(-36 - 6) - 3(8 + 24) = 416
 $$
 
 $$
-\Delta_1 = \begin{vmatrix} 10 & -4 & -3 \ 0 & 8 & -2 \ 0 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(0 - 0) - 3(0 - 0) = 680
+\Delta_1 = \begin{vmatrix} 10 & -4 & -3 \\ 0 & 8 & -2 \\ 0 & -2 & 9 \end{vmatrix} = 10(72 - 4) + 4(0 - 0) - 3(0 - 0) = 680
 $$
 
 $$
-\Delta_2 = \begin{vmatrix} 10 & 10 & -3 \ -4 & 0 & -2 \ -3 & 0 & 9 \end{vmatrix} = 10(0 - 0) - 10(-36 - 6) - 3(0 - 0) = 420
+\Delta_2 = \begin{vmatrix} 10 & 10 & -3 \\ -4 & 0 & -2 \\ -3 & 0 & 9 \end{vmatrix} = 10(0 - 0) - 10(-36 - 6) - 3(0 - 0) = 420
 $$
 
 $$
-\Delta_3 = \begin{vmatrix} 10 & -4 & 10 \ -4 & 8 & 0 \ -3 & -2 & 0 \end{vmatrix} = 10(0 - 0) + 4(0 - 0) + 10(8 + 24) = 320
+\Delta_3 = \begin{vmatrix} 10 & -4 & 10 \\ -4 & 8 & 0 \\ -3 & -2 & 0 \end{vmatrix} = 10(0 - 0) + 4(0 - 0) + 10(8 + 24) = 320
 $$
 
 $$
@@ -1375,14 +1403,6 @@ Figure 2.27
 <!-- page 10 | Node voltage method and numerical problems -->
 
 ## Node voltage method and numerical problems
-
-### Homework Problem
-
-3. (a) Determine the current $I_L$ in the circuit shown in the given figure by mesh analysis using matrix form.
-
-![Circuit diagram for mesh analysis with multiple voltage sources and resistors](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-001-image-1-source.webp)
-
-(10)
 
 ### Kirchhoff's Current Law (KCL)
 
@@ -1595,7 +1615,7 @@ $$
 $$
 
 $$
-\text{Current through } 20\text{ }\Omega,\ i_2 = \frac{V_b}{20} = \frac{4.7}{20} = 0.24\text{ A}
+\text{Current through } 20\,\Omega,\ i_2 = \frac{V_b}{20} = \frac{4.727}{20} \approx 0.236\text{ A}
 $$
 
 #### Example 2.7.2
@@ -1611,16 +1631,19 @@ First find the node voltages, then calculate the branch current.
 ![Circuit diagram with a voltage source, two resistors, and a current source](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-015-image-1-source.webp)
 
 $$
-\frac{V_1 - 10}{10} + \frac{V_1}{5} - 1 = 0
+\frac{V_a - 10}{10} + \frac{V_a}{5} - 1 = 0
 $$
 
+Expand and collect the voltage terms:
+
 $$
-V_b \left(\frac{1}{10} + \frac{1}{5}\right) = 2
+\frac{V_a}{10} - 1 + \frac{V_a}{5} - 1 = 0
+\implies V_a\left(\frac{1}{10} + \frac{1}{5}\right) = 2.
 $$
 
-Solving for $V_b$, we get $V_b = 6.67\text{ V}$.
+Solving gives $V_a = 6.67\text{ V}$.
 
-Current through resistor $R_1$, $i_1 = \frac{V_a - V_b}{R_1}\text{ A}$:
+Current through resistor $R_1$, $i_1 = \frac{10 - V_a}{R_1}\text{ A}$:
 
 $$
 = \frac{10 - 6.67}{10} = 0.333\text{ A}
@@ -1682,7 +1705,9 @@ Solving for $V_a$ and $V_c$, we get $V_a = 35.84\text{ V}$ and $V_c = 47.21\text
 
 An ideal voltage source cannot be expressed using Ohm's Law directly because an ideal voltage source has zero internal resistance.
 
-#### Two-Node Circuit Formulation
+#### Equivalent calculation with node labels $V_1$ and $V_2$
+
+This is the same circuit as the preceding solution, written with the labels $V_1=V_a$ and $V_2=V_c$. It provides a matrix-form check of the node-voltage results.
 
 **KCL at Node 1 ($V_1$):**
 
@@ -1749,10 +1774,6 @@ $$
 $$
 
 $$
--20V_1 + 258.5V_1 - 7050 = 1500
-$$
-
-$$
 238.5V_1 = 8550
 $$
 
@@ -1774,15 +1795,7 @@ $$
 
 ### Nodal Voltage Matrix Formulation
 
-In general, for any circuit, the node voltage equation can be written as
-
-$$
-V/R=I
-$$
-
-$$
-G \times V = I_S
-$$
+For a linear resistive network, nodal analysis produces a system of equations. In matrix form, $\mathbf G\mathbf V=\mathbf I_s$, where $\mathbf G$ is the nodal conductance matrix, $\mathbf V$ contains the non-reference node voltages, and $\mathbf I_s$ contains the net currents injected into those nodes.
 
 where
 
@@ -1802,11 +1815,11 @@ Matrix $G$ is called the conductance matrix.
 Conductance, $G = \frac{1}{R}$, is defined as the reciprocal of resistance:
 
 $$
-V = \begin{bmatrix} V_1 \ V_2 \ \dots \ V_n \end{bmatrix}
+V = \begin{bmatrix} V_1 \\ V_2 \\ \dots \\ V_n \end{bmatrix}
 $$
 
 $$
-I_S = \begin{bmatrix} I_{S1} \ I_{S2} \ \dots \ I_{Sn} \end{bmatrix}
+I_S = \begin{bmatrix} I_{S1} \\ I_{S2} \\ \dots \\ I_{Sn} \end{bmatrix}
 $$
 
 ### Comparison of Mesh Current and Node Voltage Matrix Methods
@@ -1826,18 +1839,18 @@ $$
 
 $$
 \begin{bmatrix}
-R_{11} & R_{12} & \dots & R_{1m} \
-R_{21} & R_{22} & \dots & R_{2m} \\vdots & \vdots & \ddots & \vdots \
+R_{11} & R_{12} & \dots & R_{1m} \\
+R_{21} & R_{22} & \dots & R_{2m} \\ \vdots & \vdots & \ddots & \vdots \\
 R_{m1} & R_{m2} & \dots & R_{mm}
 \end{bmatrix} \begin{bmatrix}
-I_1 \
-I_2 \
-\vdots \
+I_1 \\
+I_2 \\
+\vdots \\
 I_m
 \end{bmatrix} = \begin{bmatrix}
-V_{s1} \
-V_{s2} \
-\vdots \
+V_{s1} \\
+V_{s2} \\
+\vdots \\
 V_{sm}
 \end{bmatrix}
 $$
@@ -1850,19 +1863,19 @@ $$
 
 $$
 \begin{bmatrix}
-G_{11} & G_{12} & \dots & G_{1n} \
-G_{21} & G_{22} & \dots & G_{2n} \
-\vdots & \vdots & \ddots & \vdots \
+G_{11} & G_{12} & \dots & G_{1n} \\
+G_{21} & G_{22} & \dots & G_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
 G_{n1} & G_{n2} & \dots & G_{nn}
 \end{bmatrix} \begin{bmatrix}
-V_1 \
-V_2 \
-\vdots \
+V_1 \\
+V_2 \\
+\vdots \\
 V_n
 \end{bmatrix} = \begin{bmatrix}
-I_{s1} \
-I_{s2} \
-\vdots \
+I_{s1} \\
+I_{s2} \\
+\vdots \\
 I_{sn}
 \end{bmatrix}
 $$
@@ -1904,7 +1917,7 @@ Figure 2.41: Circuit for Example 2.7.5
 Node Voltage Matrix Equation:
 
 $$
-\begin{bmatrix} G_{11} & G_{12} & \dots & G_{1n} \ G_{21} & G_{22} & \dots & G_{2n} \ \vdots & \vdots & \ddots & \vdots \ G_{n1} & G_{n2} & \dots & G_{nn} \end{bmatrix} \begin{bmatrix} V_1 \ V_2 \ \vdots \ V_n \end{bmatrix} = \begin{bmatrix} I_{s1} \ I_{s2} \ \vdots \ I_{sn} \end{bmatrix}
+\begin{bmatrix} G_{11} & G_{12} & \dots & G_{1n} \\ G_{21} & G_{22} & \dots & G_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ G_{n1} & G_{n2} & \dots & G_{nn} \end{bmatrix} \begin{bmatrix} V_1 \\ V_2 \\ \vdots \\ V_n \end{bmatrix} = \begin{bmatrix} I_{s1} \\ I_{s2} \\ \vdots \\ I_{sn} \end{bmatrix}
 $$
 
 **Solution**
@@ -1916,7 +1929,7 @@ Therefore, the order of the conductance matrix is $n = 3 - 1 = 2$.
 Therefore, we can write the conductance matrix as described above:
 
 $$
-G = \begin{bmatrix} G_{11} & -G_{12} \ -G_{21} & G_{22} \end{bmatrix}
+G = \begin{bmatrix} G_{11} & -G_{12} \\ -G_{21} & G_{22} \end{bmatrix}
 $$
 
 * $G_{11}$ is the sum of conductance connected to node 1, i.e., $G_{11} = \left(\frac{1}{R_1} + \frac{1}{R_2}\right) = \left(1 + \frac{1}{4}\right) = \frac{5}{4}$.
@@ -1925,10 +1938,9 @@ $$
 
 Therefore, the conductance matrix is:
 
-![Electrical circuit diagram with current sources and resistors](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-024-image-1-source.webp)
 
 $$
-G = \begin{bmatrix} G_{11} & -G_{12} \ -G_{21} & G_{22} \end{bmatrix} = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}
+G = \begin{bmatrix} G_{11} & -G_{12} \\ -G_{21} & G_{22} \end{bmatrix} = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \\ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}
 $$
 
 We can write node voltage equations in matrix form as:
@@ -1940,20 +1952,22 @@ $$
 Where
 
 $$
-G = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}, \quad V = \begin{bmatrix} V_1 \ V_2 \end{bmatrix}, \quad \text{and } I_s = \begin{bmatrix} I_{S1} \ I_{S2} \end{bmatrix} = \begin{bmatrix} 3 \ 2 \end{bmatrix}
+G = \begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \\ -\frac{1}{4} & \frac{5}{12} \end{bmatrix}, \quad V = \begin{bmatrix} V_1 \\ V_2 \end{bmatrix}, \quad \text{and } I_s = \begin{bmatrix} I_{S1} \\ I_{S2} \end{bmatrix} = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
 $$
 
 Therefore,
 
 $$
-\begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \ -\frac{1}{4} & \frac{5}{12} \end{bmatrix} \begin{bmatrix} V_1 \ V_2 \end{bmatrix} = \begin{bmatrix} 3 \ 2 \end{bmatrix}
+\begin{bmatrix} \frac{5}{4} & -\frac{1}{4} \\ -\frac{1}{4} & \frac{5}{12} \end{bmatrix} \begin{bmatrix} V_1 \\ V_2 \end{bmatrix} = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
 $$
 
 We can solve for node voltages $V_1$ and $V_2$ using Cramer's rule as discussed in section 2.6.1.
 
 We get, $V_1 = 3.82\text{ V}$ and $V_2 = 7.09\text{ V}$.
 
-### Example: Matrix Node Analysis with Branch Currents
+#### Branch-current verification for Example 2.7.5
+
+Use the same circuit and nodal conductance matrix as the preceding Example 2.7.5. The following branch-current calculation checks the two node voltages.
 
 ![Electrical circuit diagram with current sources, resistors, and node voltages](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-025-image-1-source.webp)
 
@@ -1966,62 +1980,43 @@ We get, $V_1 = 3.82\text{ V}$ and $V_2 = 7.09\text{ V}$.
 2. Source Currents ($I_{si}$):
 
 * $I_{s1} = \text{Net current entering Node } 1 = 3\text{ A } (\text{from } I_{S1})$
-* $I_{s2} = \text{Net current entering Node } 2 = -2\text{ A } (\text{since } I_{S2} = 2\text{ A leaves Node } 2)$
+* $I_{s2} = \text{Net current entering Node } 2 = +2\text{ A } (\text{the source arrow points into Node } 2)$
 
-The matrix equation:
-
-$$
-\begin{bmatrix} 1.25 & -0.25 \ -0.25 & \frac{5}{12} \end{bmatrix} \begin{bmatrix} V_1 \ V_2 \end{bmatrix} = \begin{bmatrix} 3 \ -2 \end{bmatrix}
-$$
-
-Using Cramer's Rule or matrix inversion:
+The two ideal current sources both point upward, so they inject $3\,\mathrm A$ into node 1 and $2\,\mathrm A$ into node 2. The nodal equations are:
 
 $$
-\Delta = \det(G) = (1.25)\left(\frac{5}{12}\right) - (-0.25)(-0.25) = \frac{5}{4} \cdot \frac{5}{12} - \frac{1}{16} = \frac{25}{48} - \frac{3}{48} = \frac{22}{48}
+\begin{bmatrix} 1.25 & -0.25 \\ -0.25 & 5/12 \end{bmatrix}
+\begin{bmatrix}V_1\\V_2\end{bmatrix}=
+\begin{bmatrix}3\\2\end{bmatrix}.
 $$
 
-$\circ$ Solve $V_1$:
+Equivalently,
 
 $$
-\Delta_1 = \det \begin{bmatrix} 3 & -0.25 \ -2 & \frac{5}{12} \end{bmatrix} = (3)\left(\frac{5}{12}\right) - (-2)(-0.25) = \frac{5}{4} - \frac{1}{2} = \frac{3}{4}
+\frac54V_1-\frac14V_2=3,\qquad -\frac14V_1+\frac5{12}V_2=2.
 $$
 
-$$
-V_1 = \frac{\Delta_1}{\Delta} = \frac{3/4}{11/24} = \frac{3}{4} \times \frac{24}{11} = \frac{\mathbf{18}}{\mathbf{11}} \text{ V} \approx \mathbf{1.636}\text{ V}
-$$
-
-Solve $V_2$:
+The determinant is $\Delta=(5/4)(5/12)-(1/4)^2=11/24$. Cramer's rule gives
 
 $$
-\Delta_2 = \det \begin{bmatrix} 1.25 & 3 \ -0.25 & -2 \end{bmatrix} = (1.25)(-2) - (-0.25)(3) = -2.5 + 0.75 = -1.75
+V_1=\frac{7/4}{11/24}=\frac{42}{11}\,\mathrm V\approx3.818\,\mathrm V,
+\qquad
+V_2=\frac{13/4}{11/24}=\frac{78}{11}\,\mathrm V\approx7.091\,\mathrm V.
 $$
 
-$$
-V_2 = \frac{\Delta_2}{\Delta} = \frac{-7/4}{11/24} = -\frac{7}{4} \times \frac{24}{11} = -\frac{\mathbf{42}}{\mathbf{11}} \text{ V} \approx \mathbf{-3.818}\text{ V}
-$$
+#### Branch-current check
 
-#### Step 3: Calculate Branch Currents ($i_1, i_2, i_3$)
-
-Using the calculated node voltages:
-
-1. Current $i_1$ (downward through $R_1$):
+Using the arrows shown in the circuit ($i_1$ downward, $i_2$ left-to-right, and $i_3$ downward):
 
 $$
-i_1 = \frac{V_1 - 0}{R_1} = \frac{18/11}{1} = \frac{18}{11} \text{ A} \approx \mathbf{1.636} \text{ A}
+i_1=\frac{V_1}{1\,\Omega}=\frac{42}{11}\,\mathrm A\approx3.818\,\mathrm A,
+\quad
+i_2=\frac{V_1-V_2}{4\,\Omega}=-\frac9{11}\,\mathrm A\approx-0.818\,\mathrm A,
+\quad
+i_3=\frac{V_2}{6\,\Omega}=\frac{13}{11}\,\mathrm A\approx1.182\,\mathrm A.
 $$
 
-2. Current $i_2$ (left-to-right through $R_2$):
-
-$$
-i_2 = \frac{V_1 - V_2}{R_2} = \frac{\frac{18}{11} - \left(-\frac{42}{11}\right)}{4} = \frac{\frac{60}{11}}{4} = \frac{\mathbf{15}}{\mathbf{11}} \text{ A} \approx \mathbf{1.364} \text{ A}
-$$
-
-3. Current $i_3$ (downward through $R_3$):
-
-$$
-i_3 = \frac{V_2 - 0}{R_3} = \frac{-42/11}{6} = -\frac{\mathbf{7}}{\mathbf{11}} \text{ A} \approx \mathbf{-0.636} \text{ A}
-$$
-
+The negative sign means the actual current through $R_2$ flows right-to-left. KCL checks: $i_1+i_2=3\,\mathrm A$ at node 1, and $-i_2+i_3=2\,\mathrm A$ at node 2.
 ---
 
 <!-- page 12 | Supernode analysis and procedure -->
@@ -2041,25 +2036,11 @@ To analyze a circuit containing a supernode, use the following procedure:
 3. Enclose the voltage source and apply Kirchhoff's Current Law (KCL) ($1^{\text{st}}$ statement: the current entering the node is equal to the current leaving the node) across the combined supernode boundary.
 4. Solve the resulting system of equations for the node voltages.
 
-Apply the rule: current entering = current leaving (supernode case).
+Use KCL around the combined supernode: current entering equals current leaving.
 
-![Circuit diagram illustrating a super node case](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-030-image-1-source.webp)
-
-Figure 1
-
-Apply the rule: current entering = current leaving (supernode case).
+### Worked Example 1: Supernode with a Current Source
 
 ![Circuit diagram showing a supernode with two voltage nodes V1 and V2, a 2V independent voltage source between them, resistors of 2 ohms and 1 ohm, current sources of 3A (upward) and 2A (downward), and branch currents I1, I2, I3.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-031-image-1-source.webp)
-
-$$
-\text{Currents Entering} = \text{Currents Leaving}
-$$
-
-$$
-3 = \frac{V_1}{2} + \frac{V_2}{1} + 2
-$$
-
-### Example 1
 
 #### Step 1: Constraint Equation
 
@@ -2069,63 +2050,61 @@ $$
 V_1 - V_2 = 2 \implies V_1 = V_2 + 2 - (\text{Equation 1})
 $$
 
-$$
-\begin{aligned}
--3 &= \frac{V_1}{2} + \frac{V_2}{1} + 2\
--3 + \frac{V_1}{2} + \frac{V_2}{1} + 2 &= 0
-\end{aligned}
-$$
-
 #### Step 2: KCL at the Supernode ($N_1 - N_2$)
 
-Summing all currents leaving the supernode boundary to equal zero:
+The $3\,\mathrm A$ source injects current into the supernode; the $2\,\mathrm A$ source and the resistor currents leave it. KCL gives:
 
 $$
-\frac{V_1}{2} + V_2 - 1 = 0
+3=\frac{V_1}{2}+V_2+2
 $$
 
-Multiply the entire equation by 2:
+Rearranging gives the second equation:
 
 $$
-V_1 + 2V_2 = 2 - (\text{Equation 2})
+V_1+2V_2=2. \tag{2}
 $$
 
 #### Step 3: Solve for Node Voltages
 
-Substitute $V_1 = V_2 + 2$ from Equation 1 into Equation 2: $(V_2 + 2) + 2V_2 = 2$
+Substitute $V_1=V_2+2$ from Equation (1) into Equation (2): $(V_2+2)+2V_2=2$.
 
 $$
 3V_2 + 2 = 2 \quad 3V_2 = 0 \implies \mathbf{V_2 = 0\text{ V}}
 $$
 
-Substitute $V_2 = 0\text{ V}$ back into Equation 1: $\mathbf{V_1 = 2}$
+Substitute $V_2=0\,\mathrm V$ into Equation (1): $V_1=2\,\mathrm V$.
 
 #### Step 4: Branch Currents
 
 Using the calculated node voltages:
 
-* $I_1$ (through $2\text{ }\Omega$ resistor):
+The downward current through the $2\,\Omega$ resistor is $I_1=V_1/2=1\,\mathrm A$; through the $1\,\Omega$ resistor it is $I_2=V_2/1=0\,\mathrm A$. KCL shows that $I_3=2\,\mathrm A$ flows through the voltage-source branch from $N_1$ to $N_2$. These values satisfy the source directions and both node-current balances.
 
-For the indicated direction from node $N_1$ to node $N_2$, Ohm's law gives
-
-$$I_1=\frac{V_1-V_2}{2\,\Omega}=\frac{2-0}{2}=1\text{ A}.$$
-
-If the reference arrow is drawn the other way, the signed current is $-1\text{ A}$.
-
-![Circuit diagram with nodes N1 and N2, a 3A current source, a 2 ohm resistor, a 1 ohm resistor, and a 2A current source.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-033-image-1-source.webp)
 
 ### Example 2
 
 Apply the rule: current entering = current leaving (supernode case).
 
-![Circuit diagram illustrating a super node with voltage and current sources](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-034-image-1-source.webp)
+The following circuit shows the branches represented by the KCL equation. The 1 V source connects nodes $v_1$ and $v_2$, so those nodes form one supernode; the 2 V source fixes the reference voltage at the top of the right-hand resistor. The current-source arrow follows the sign convention used below.
 
-Figure 1
+```text
+                         1 Ω                 1 Ω
+                 ┌─────/\/\─────┬──────/\/\─────┐
+                 │                │                    │
+             ┌───┴───┐          ( + ) 1 V          ( + ) 2 V
+             │  2 A  │            ( - )                ( - )
+             └───┬───┘              │                    │
+                 │                  │                    │
+               /\/\ 1 Ω          /\/\ 1 Ω             │
+                 │                  │                    │
+                 └──────────────────┴────────────────────┘ ground
+                v₁                 v₂
+```
 
 #### Step 1: Constraint Equation
 
 $$
-v_1 - v_2 = 1 \[6pt] v_1 = v_2 + 1 \quad - (\text{Equation 1})
+v_1-v_2=1 \quad\Longrightarrow\quad v_1=v_2+1. \tag{1}
 $$
 
 #### Step 2: KCL Equation at the Supernode $(1 - 2)$
@@ -2136,9 +2115,13 @@ $$
 \underbrace{2}_{\text{from } 2\text{A source}} + \underbrace{\frac{v_1}{1}}_{\text{down } 1\Omega \text{ resistor}} + \underbrace{\frac{v_2}{1}}_{\text{down middle } 1\Omega \text{ resistor}} + \underbrace{\frac{v_2 - 2}{1}}_{\text{down right } 1\Omega \text{ branch}} = 0
 $$
 
+Collecting terms gives $v_1+2v_2=0$. This is Equation (2).
+
+The constant terms cancel because the $2\,\mathrm A$ source term is opposed by the $2\,\mathrm V/1\,\Omega=2\,\mathrm A$ part of the right-hand resistor current.
+
 #### Step 3: Solve the System of Equations
 
-Substitute Equation 1 ($v_1 = v_2 + 1$) into Equation 2:
+Substitute Equation (1), $v_1=v_2+1$, into Equation (2):
 
 $$
 (v_2 + 1) + 2v_2 = 0
@@ -2188,19 +2171,25 @@ $$
 \frac{V_2 - V_1}{2} + \frac{V_2}{1} + \frac{V_3 - 10}{5} + \frac{V_3}{2} = 0
 $$
 
-#### Step 4: Calculate Current in the $5\,\Omega$ Resistor
+#### Step 4: Solve the Node Voltages and Find the $5\,\Omega$ Current
 
-The $5\,\Omega$ resistor is connected between node $V_3$ and the $10\text{ V}$ source. The current $I_{5\,\Omega}$ flowing downwards through the resistor is given by:
+From the node-1 equation, $-10+V_1/3+(V_1-V_2)/2=0$, so $V_1=12+0.6V_2$. The source constraint gives $V_2=V_3+20$. Substituting both into the supernode equation yields:
+
+$$
+1.2V_2+0.7V_3-8=0,\qquad 1.9V_3=-16,
+$$
+
+Thus $V_3=-160/19\approx-8.421\,\mathrm V$ and $V_2=220/19\approx11.579\,\mathrm V$. For the downward reference direction through the $5\,\Omega$ resistor:
 
 $$
 I_{5\,\Omega} = \frac{V_3 - 10}{5}
 $$
 
-Substitute $V_3 = -8.421\text{ V}$:
+$$
+I_{5\,\Omega} = \frac{-160/19 - 10}{5} = -\frac{70}{19}\text{ A} \approx -3.684\text{ A}
+$$
 
-$$
-I_{5\,\Omega} = \frac{-8.421 - 10}{5} = \frac{-18.421}{5} = -3.684\text{ A}
-$$
+The negative sign means the actual current is upward, opposite to the assumed reference direction.
 
 ---
 
@@ -2312,7 +2301,7 @@ For the network shown in figure, determine the equivalent delta network using de
 
 ![Electrical circuit diagram with three voltage sources, three series resistors, and a star-connected load network.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-052-image-1-source.webp)
 
-![An electrical circuit diagram with two 100V DC sources, three line resistors of 2Γ each, current indicators I1, I2, I3, and a delta-connected load of three 24Γ resistors between nodes A, B, and C.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-053-image-1-source.webp)
+![An electrical circuit diagram with two 100V DC sources, three line resistors of 2 Ω each, current indicators I1, I2, I3, and a delta-connected load of three 24 Ω resistors between nodes A, B, and C.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-053-image-1-source.webp)
 
 Using delta to star transformation:
 
@@ -2322,8 +2311,8 @@ Using delta to star transformation:
 
 $$
 \begin{aligned}
-I_1 &= \frac{10}{3} + \frac{20}{3} = 10\text{ A} \
-I_2 &= \frac{10}{3} - \frac{10}{3} = 0 \
+I_1 &= \frac{10}{3} + \frac{20}{3} = 10\text{ A} \\
+I_2 &= \frac{10}{3} - \frac{10}{3} = 0 \\
 I_3 &= -\frac{10}{3} - \frac{20}{3} = -10\text{ A}
 \end{aligned}
 $$
@@ -2386,7 +2375,6 @@ Figure 2.44
 
 Figure 2.43
 
-![Blue arrow pointing right](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-059-image-3-code.webp)
 
 Two parallel resistances between S and B can be simplified to a single resistance of $\frac{35}{9} \ \Omega$ as:
 
@@ -2428,7 +2416,6 @@ $$
 
 ![Circuit diagram with star transformation, Figure 2.46](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-061-image-3-source.webp)
 
-![Arrow pointing upward](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-061-image-4-code.webp)
 
 $$
 R_{FE} = 1.6 + 2.2 + \frac{1.6 \times 2.2}{1.6} = 6\;\Omega
@@ -2439,7 +2426,7 @@ R_{DE} = 1.6 + 2.2 + \frac{1.6 \times 2.2}{1.6} = 6\;\Omega
 $$
 
 $$
-R_{FD} = 1.6 + 1.6 + \frac{1.6 \times 1.6}{2} = 4.36\;\Omega
+R_{FD} = 1.6 + 1.6 + \frac{1.6 \times 1.6}{2.2} \approx 4.36\;\Omega
 $$
 
 Resistances $R_{AB}$, $R_{BC}$ and $R_{AC}$ are given by:
@@ -2461,7 +2448,7 @@ $$
 $$
 
 $$
-= \frac{(1.78 + 1.5) \times 0.8}{(1.78 + 1.5) + 0.8} = 0.64\;\Omega
+= \frac{(1.78+1.5)\times0.86}{(1.78+1.5)+0.86}\approx0.68\;\Omega.
 $$
 
 **Example 2.8.3**
@@ -2482,8 +2469,8 @@ Figure 2.49
 
 $$
 \begin{aligned}
-R_{CE} &= 2 + 3 + \frac{2 \times 3}{4} = 6.5 \; \Omega \
-R_{EB} &= 3 + 4 + \frac{4 \times 3}{2} = 13 \; \Omega \
+R_{CE} &= 2 + 3 + \frac{2 \times 3}{4} = 6.5 \; \Omega \\
+R_{EB} &= 3 + 4 + \frac{4 \times 3}{2} = 13 \; \Omega \\
 R_{BC} &= 2 + 4 + \frac{2 \times 4}{3} = 8.66 \; \Omega
 \end{aligned}
 $$
@@ -2496,8 +2483,8 @@ Figure 2.50
 
 $$
 \begin{aligned}
-R_1 &= \frac{4 \times 4}{4 + 2 + 6.5} = 0.64 \; \Omega \
-R_2 &= \frac{6.5 \times 2}{4 + 2 + 6.5} = 1.04 \; \Omega \
+R_1 &= \frac{4 \times 4}{4 + 2 + 6.5} = 0.64 \; \Omega \\
+R_2 &= \frac{6.5 \times 2}{4 + 2 + 6.5} = 1.04 \; \Omega \\
 R_3 &= \frac{4 \times 6.5}{4 + 2 + 6.5} = 2.08 \; \Omega
 \end{aligned}
 $$
@@ -2522,15 +2509,11 @@ $$
 
 **Example 2.8.4**
 
-Find the equivalent resistance across the battery terminals
-
-![Bridge circuit with resistors and a battery](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-064-image-1-source.webp)
-
-in the bridge network shown in Figure 2.52.
+Find the equivalent resistance across the battery terminals of the bridge network shown below.
 
 ![Bridge network with resistors connected in a diamond shape and a DC voltage source at the bottom.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-065-image-1-source.webp)
 
-Figure 2.52
+**Figure 2.52.** Bridge network used in Example 2.8.4.
 
 *Solution:*
 
@@ -2558,10 +2541,6 @@ $$
 0.5 + (0.25 + 1) \parallel (0.5 + 1) = 0.5 + \frac{1.25 \times 1.5}{1.25 + 1.5} = \frac{13}{11}\ \Omega
 $$
 
-![Battery symbol](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-065-image-3-code.webp)
-
-Figure 2.52
-
 **Example 2.8.5**
 
 Obtain a simplified delta network from the network shown in Figure 2.54.
@@ -2578,8 +2557,8 @@ The star in the Figure 2.54 is converted to delta and combined with the existing
 
 $$
 \begin{aligned}
-R_{AB} &= 6 + 4 + \frac{6 \times 4}{3} = 18\text{ }\Omega\
-R_{AC} &= 6 + 3 + \frac{6 \times 3}{4} = 13.5\text{ }\Omega\
+R_{AB} &= 6 + 4 + \frac{6 \times 4}{3} = 18\text{ }\Omega\\
+R_{AC} &= 6 + 3 + \frac{6 \times 3}{4} = 13.5\text{ }\Omega\\
 R_{BC} &= 4 + 3 + \frac{4 \times 3}{6} = 9\text{ }\Omega
 \end{aligned}
 $$
@@ -2716,7 +2695,7 @@ $$
 where:
 - $l = \text{mean length of magnetic circuit in meter}$
 - $A = \text{area of cross-section of magnetic circuit in } m^2$
-- $\mu_0 = \text{permeability of free space} = 4\pi \times 10^{-7} \text{ Henry/meter}$
+- $\mu_0 = \text{permeability of free space} = 4\pi \times 10^{-7} \text{ H/m}$
 - $\mu_r = \text{relative permeability of magnetic material}$
 
 Thus, reluctance depends directly on the physical dimensions and core material of the magnetic circuit.
@@ -2802,7 +2781,7 @@ Parameters for this circuit are defined as follows:
 - Length of the flux path through air gap: $= l_g$ (m)
 - Cross-sectional area: $= A$ ($\text{m}^2$)
 - Magnetic flux density: $= B$ ($\text{Wb}/\text{m}^2$)
-- Permeability of iron: $= \mu_i$ ($\text{Henry}/\text{m}^2$)
+- Relative permeability of iron: $= \mu_{ri}$ (dimensionless; absolute permeability $\mu=\mu_0\mu_{ri}$ is measured in H/m)
 - Reluctance of iron: $= \mathcal{S}_i$ ($\text{AT}/\text{Wb}$)
 - Reluctance of air gap: $= \mathcal{S}_g$ ($\text{AT}/\text{Wb}$)
 
@@ -2814,17 +2793,19 @@ $$
 NI = H_i l_i + H_g l_g
 $$
 
-Magnetic field intensity required for iron, $H_i = \dfrac{B}{\mu_0 \mu_i}$
+Magnetic field intensity required for iron, $H_i = \dfrac{B}{\mu_0 \mu_{ri}}$
 
 Magnetic field intensity required for air, $H_g = \dfrac{B}{\mu_0}$
 
-Therefore,
+Therefore, using $H_i = B/(\mu_0\mu_{ri})$ in the iron and $H_g = B/\mu_0$ in the air gap:
 
 $$
-NI = H_i l_i + H_g l_g
+NI = \frac{B l_i}{\mu_0\mu_{ri}} + \frac{B l_g}{\mu_0}
+= \Phi\left(\frac{l_i}{\mu_0\mu_{ri} A} + \frac{l_g}{\mu_0 A}\right)
+= \Phi(\mathcal S_i+\mathcal S_g).
 $$
 
-![Derivation steps for the total mmf and flux in a magnetic circuit with an air gap](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-080-image-2-source.webp)
+The coil's magnetomotive force equals the sum of the iron and air-gap mmf drops.
 
 ### Role of the Air Gap
 

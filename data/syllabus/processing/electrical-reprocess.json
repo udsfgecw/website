@@ -1,0 +1,473 @@
+{
+  "model": "gemini-4-argon",
+  "generatedAt": "2026-10-22T00:10:56.924Z",
+  "completed": 1,
+  "total": 1,
+  "results": [
+    {
+      "course_name": "INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING",
+      "course_code": "GXEST104",
+      "official_term_label": "SEMESTER S1 / B. Tech 2024 –S1/S2",
+      "official_modules": [
+        {
+          "module": "Module 1",
+          "topics": [
+            "Elementary concepts of DC electric circuits: Current and Voltage Division Rule",
+            "Relative potential",
+            "Capacitors & Inductors: V-I relations and Energy stored",
+            "Ohms Law and Kirchhoff's laws - numerical problems",
+            "Star-delta conversion (resistive networks only - derivation not required) - numerical problems",
+            "Analysis of DC Electric circuits: Mesh current method - matrix representation - Solution of network equations",
+            "Node voltage methods-matrix representation-solution of network equations by matrix methods - numerical problems",
+            "Elementary Concepts of Magnetic circuits: Basic Terminology: MMF, field strength, flux density, reluctance",
+            "Comparison between electric and magnetic circuits",
+            "Series and parallel magnetic circuits with composite materials (numerical problems not needed)"
+          ]
+        },
+        {
+          "module": "Module 2",
+          "topics": [
+            "Electromagnetic Induction: Faraday's laws, Lenz's law",
+            "Statically induced and dynamically induced emf",
+            "Self-inductance and mutual inductance, coefficient of coupling (numerical problems not needed)",
+            "Alternating Current fundamentals: Generation of alternating voltages",
+            "Representation of sinusoidal waveforms: frequency, period, average value, RMS value and form factor - numerical problems",
+            "AC Circuits: Phasor representation of sinusoidal quantities, Trigonometric, Rectangular, Polar and complex forms",
+            "Analysis of simple AC circuits: Purely resistive, inductive & capacitive circuits; Inductive and capacitive reactance, concept of impedance - numerical problems",
+            "RL, RC and RLC series circuits- power factor, active, reactive and apparent power. Simple numerical problems",
+            "Three phase AC systems: Generation of three phase voltages, advantages of three phase systems",
+            "Star and delta connections (balanced only), relation between line and phase voltages, line and phase currents- numerical problems"
+          ]
+        },
+        {
+          "module": "Module 3",
+          "topics": [
+            "Introduction to Electronic devices: Passive and active components in electronics",
+            "Working of PN junction diode, V-I characteristics of PN Junction diode",
+            "Zener diode and avalanche breakdown",
+            "Basics of Zener voltage regulator",
+            "Block diagram of DC power supply",
+            "Circuit and working of half wave, full wave and bridge rectifiers",
+            "Ripple factor (with and without capacitor filters)",
+            "Construction, working and V-I Characteristics of BJT",
+            "Input output characteristics of CE configuration",
+            "Comparison of CE, CB and CC configurations",
+            "Concept of biasing and load line",
+            "Transistor as a switch",
+            "Transistor as an amplifier (Circuit Diagram and working)",
+            "RC coupled amplifier - Circuit diagram and frequency response",
+            "Introduction to FET",
+            "Construction and working of N-channel and P-Channel MOSFETs"
+          ]
+        },
+        {
+          "module": "Module 4",
+          "topics": [
+            "Modern Electronics and its applications: General block diagram of a Communication system",
+            "Block diagram of Fiber optic Communication system",
+            "Concept of AM and FM (No derivation required)",
+            "Block diagram of AM and FM super-heterodyne receiver",
+            "Basic concepts of Wired and Wireless communication",
+            "Block diagram of GSM",
+            "Comparison of 3G, 4G, 5G and 6G communication technologies",
+            "Block diagrams of Electronic instrumentation system, Digital Multimeter, Function generator",
+            "Introduction to CRO and Lissajous patterns",
+            "Applications of modern electronics – IoT based smart homes, healthcare and agriculture (Case study only)"
+          ]
+        }
+      ],
+      "coverage": [
+        {
+          "official_module": "Module 1",
+          "topic": "Elementary concepts of DC electric circuits: Current and Voltage Division Rule",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Page 5 covers Voltage Divider Rule and Current Divider Rule with formulas, derivations, and worked numerical examples.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Relative potential",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Page 6 defines Absolute (Node) Potential and Relative Potential (V_AB = V_A - V_B) with an example.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Capacitors & Inductors: V-I relations and Energy stored",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Page 1 explains capacitance, energy stored (1/2 CV^2), V-I relation of a capacitor, inductance, V-I relation of an inductor, and energy stored (1/2 Li^2).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Ohms Law and Kirchhoff's laws - numerical problems",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Pages 1 and 3 define Ohm's law; Pages 4-5 have series/parallel numerical problems; Pages 7 and 10 define KVL and KCL with multiple worked numerical problems.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Star-delta conversion (resistive networks only - derivation not required) - numerical problems",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Page 13 provides Star-to-Delta and Delta-to-Star conversion formulas for resistive networks and 8 worked numerical problems.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Analysis of DC Electric circuits: Mesh current method - matrix representation - Solution of network equations",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Pages 7-8 cover mesh and supermesh analysis; Page 9 covers Mesh current method with matrix representation [R][I]=[V] and solutions using Cramer's rule.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Node voltage methods-matrix representation-solution of network equations by matrix methods - numerical problems",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Pages 10 and 12 cover node voltage and supernode analysis with numerical problems; Page 11 covers nodal conductance matrix formulation [G][V]=[I_s] and solution by Cramer's rule.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Elementary Concepts of Magnetic circuits: Basic Terminology: MMF, field strength, flux density, reluctance",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Page 14 defines magnetic flux, flux density (B), magnetomotive force (MMF), magnetic field intensity/strength (H), permeability, and reluctance (S).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Comparison between electric and magnetic circuits",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Page 14 provides tables comparing similarities (analogies) and differences between electric and magnetic circuits.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 1",
+          "topic": "Series and parallel magnetic circuits with composite materials (numerical problems not needed)",
+          "status": "covered",
+          "found_in_module": "electrical-module-1",
+          "evidence": "Page 15 explains series composite magnetic circuits (iron core with air gap), role of air gap, and series-parallel magnetic circuits with electrical equivalent representations.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Electromagnetic Induction: Faraday's laws, Lenz's law",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 1 covers electromagnetic induction, flux linkage, Faraday's first and second laws, and Lenz's law with conservation of energy.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Statically induced and dynamically induced emf",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 1 explains dynamically induced emf (e = Blv sin(theta), Fleming's Right-Hand Rule) and statically induced emf (self and mutually induced), plus a comparison table.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Self-inductance and mutual inductance, coefficient of coupling (numerical problems not needed)",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 2 derives expressions for self-inductance (L), mutual inductance (M), and coefficient of coupling (M = k*sqrt(L1*L2)), along with a comparison table.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Alternating Current fundamentals: Generation of alternating voltages",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 3 explains generation of alternating voltage in a rotating coil and derives the sinusoidal EMF equation e(t) = E_m sin(omega*t).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Representation of sinusoidal waveforms: frequency, period, average value, RMS value and form factor - numerical problems",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Pages 3-4 define instantaneous/peak values, cycle, period, frequency, and derive average value, RMS value, form factor, and peak factor, with worked numerical problems.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "AC Circuits: Phasor representation of sinusoidal quantities, Trigonometric, Rectangular, Polar and complex forms",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 5 explains phasors, phase difference, Polar, Exponential (complex), Trigonometric, and Rectangular forms, conversions, j-operator, and worked examples.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Analysis of simple AC circuits: Purely resistive, inductive & capacitive circuits; Inductive and capacitive reactance, concept of impedance - numerical problems",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 6 analyzes pure R, pure L, and pure C circuits, defines inductive reactance (X_L), capacitive reactance (X_C), complex impedance (Z), and includes worked numerical examples.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "RL, RC and RLC series circuits- power factor, active, reactive and apparent power. Simple numerical problems",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 7 covers series RL, RC, and RLC circuits with voltage/impedance triangles and worked example; Page 8 covers instantaneous/average power, active (P), reactive (Q), apparent power (S), power factor, and worked numerical problems.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Three phase AC systems: Generation of three phase voltages, advantages of three phase systems",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Page 9 covers principle of generation of three-phase voltages, equations, phase sequence, and five advantages of three-phase systems over single-phase systems.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 2",
+          "topic": "Star and delta connections (balanced only), relation between line and phase voltages, line and phase currents- numerical problems",
+          "status": "covered",
+          "found_in_module": "electrical-module-2",
+          "evidence": "Pages 9-10 derive line and phase voltage/current relations for balanced Star and Delta connections, three-phase power formulas, and provide 3 worked numerical examples.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Introduction to Electronic devices: Passive and active components in electronics",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 1 defines and compares passive components (R, L, C, transformer) and active components (diodes, BJT, FET, Op-Amp/ICs).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Working of PN junction diode, V-I characteristics of PN Junction diode",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 2 explains unbiased PN junction, forward and reverse bias working, Shockley's diode equation, V-I characteristics across all three regions, and a worked example.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Zener diode and avalanche breakdown",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 3 explains Zener diode operation and compares Zener breakdown vs. Avalanche breakdown mechanisms in detail.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Basics of Zener voltage regulator",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 3 explains the Zener shunt voltage regulator circuit, line and load regulation, governing equations, and a worked numerical example.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Block diagram of DC power supply",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 4 presents the block diagram of a regulated DC power supply (Transformer -> Rectifier -> Filter -> Regulator) and explains each stage.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Circuit and working of half wave, full wave and bridge rectifiers",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 4 provides circuit diagrams, working principles during positive/negative half-cycles, and key parameters for HWR, center-tapped FWR, and bridge rectifier.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Ripple factor (with and without capacitor filters)",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 5 defines ripple factor, derives unfiltered values (1.21 for HWR, 0.482 for FWR), explains shunt capacitor filter working, gives filtered ripple factor formulas, and solves a numerical example.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Construction, working and V-I Characteristics of BJT",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 6 covers NPN/PNP construction, doping/width of Emitter, Base, Collector, operating regions, active-region working, current gain relations (alpha, beta), and Page 7 covers V-I characteristics.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Input output characteristics of CE configuration",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 7 explains the CE configuration circuit, input characteristics (I_B vs V_BE, Early effect, r_i), and output characteristics (I_C vs V_CE, active, saturation, cut-off regions, r_o).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Comparison of CE, CB and CC configurations",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 7 includes a comparison table of CB, CE, and CC configurations across common terminal, gains, impedances, phase relation, and typical use.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Concept of biasing and load line",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 7 explains DC biasing, the DC load line equation V_CE = V_CC - I_C*R_C, cut-off and saturation endpoints, and Q-point selection.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Transistor as a switch",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 7 includes a circuit diagram and explanation of a BJT as a low-side electronic switch operating between saturation (ON) and cut-off (OFF).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Transistor as an amplifier (Circuit Diagram and working)",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 7 provides the circuit diagram and step-by-step working of a single-stage CE amplifier, including positive/negative half-cycle operation and 180-degree phase reversal.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "RC coupled amplifier - Circuit diagram and frequency response",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 7 provides the circuit diagram of an RC-coupled CE amplifier, explains the role of R1, R2, RE, CE, Cin, Cout, and illustrates the frequency response curve with lower/upper cut-off frequencies and bandwidth.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Introduction to FET",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 8 introduces FETs as unipolar voltage-controlled devices, their terminals (Source, Drain, Gate), classification, JFET construction/working, and a BJT vs FET comparison table.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 3",
+          "topic": "Construction and working of N-channel and P-Channel MOSFETs",
+          "status": "covered",
+          "found_in_module": "electrical-module-3",
+          "evidence": "Page 8 covers construction and working of N-channel Depletion and Enhancement MOSFETs, and P-channel Depletion and Enhancement MOSFETs.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Modern Electronics and its applications: General block diagram of a Communication system",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 1 provides the block diagram and functional explanation of a basic communication system (information source, input transducer, transmitter, channel, noise, receiver, output transducer, destination).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Block diagram of Fiber optic Communication system",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 2 provides the block diagram of a fiber-optic communication system (Electrical input -> driver/modulator -> LED/laser -> optical fiber -> photodetector -> receiver/amplifier -> electrical output) and explains each block.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Concept of AM and FM (No derivation required)",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 1 explains the concepts, waveforms, modulation indices, bandwidth, and comparison of Amplitude Modulation (AM) and Frequency Modulation (FM).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Block diagram of AM and FM super-heterodyne receiver",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 1 provides separate block diagrams and explanations for both the AM superheterodyne receiver (with envelope detector and AGC) and FM superheterodyne receiver (with limiter, discriminator, and de-emphasis).",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Basic concepts of Wired and Wireless communication",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 2 explains wired (guided) and wireless (unguided) communication and compares them across medium, mobility, interference, installation, and examples.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Block diagram of GSM",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 2 provides the GSM architecture block diagram (MS, BTS, BSC/BSS, MSC/GMSC, HLR, VLR, AuC, EIR, OSS) and explains each subsystem.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Comparison of 3G, 4G, 5G and 6G communication technologies",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 2 compares 3G, 4G, 5G, and 6G mobile network generations in a table and accompanying text.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Block diagrams of Electronic instrumentation system, Digital Multimeter, Function generator",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 3 provides block diagrams and functional descriptions for a general electronic instrumentation system, a Digital Multimeter (DMM), and a Function Generator.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Introduction to CRO and Lissajous patterns",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 3 explains the CRO block diagram, voltage/frequency/phase measurement formulas, X-Y mode operation, and Lissajous patterns for frequency ratio and phase difference.",
+          "needed_fix": ""
+        },
+        {
+          "official_module": "Module 4",
+          "topic": "Applications of modern electronics – IoT based smart homes, healthcare and agriculture (Case study only)",
+          "status": "covered",
+          "found_in_module": "electrical-module-4",
+          "evidence": "Page 4 presents the general IoT block architecture and covers case studies for smart home, healthcare, and agriculture.",
+          "needed_fix": ""
+        }
+      ],
+      "module_boundary_issues": [],
+      "reader_issues": [
+        "In electrical-module-1 (page 13, Example 2), the worked solution relies heavily on four embedded circuit images (pages 52-54) to show the intermediate resistance values before stating the final current sums.",
+        "In electrical-module-3 (page 4, Full-Wave Bridge Rectifier), the ASCII diagram has escaped double backslashes (\\\\) that slightly distort the visual alignment, though an explicit node-to-node connection table is provided below it."
+      ],
+      "notes_absent": false,
+      "confidence": "high",
+      "uncertainties": [
+        "Several worked examples in electrical-module-1 (e.g., pages 5, 7, 8, 9, 10, 13) use external webp images for circuit topology; while the surrounding text and equations substantively confirm the methods and solutions, exact visual labels inside the images cannot be inspected directly from text alone."
+      ],
+      "group": "A",
+      "code": "GXEST104",
+      "model": "gemini-4-argon",
+      "departments": [
+        "cse"
+      ],
+      "note_sources": [
+        "src/features/notes/electrical-module-1/notes.md",
+        "src/features/notes/electrical-module-2/notes.md",
+        "src/features/notes/electrical-module-3/notes.md",
+        "src/features/notes/electrical-module-4/notes.md"
+      ]
+    }
+  ]
+}

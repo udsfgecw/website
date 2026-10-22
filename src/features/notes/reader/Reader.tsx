@@ -304,10 +304,13 @@ export default function Reader({ notes }: { notes: NotesModule }) {
               className={cn("notes-prose min-w-0", notes.unitLabel === "section" && "notes-prose--sectioned")}
               style={{ fontSize: size, lineHeight: LEADING[prefs.leading], maxWidth: WIDTH[prefs.width], fontFamily: prefs.font === "serif" ? SERIF : undefined }}
             >
-              {notes.pages.map((p) => (
-                <section key={p.number} id={pageAnchor(p.number)}>
-                  <PageMarkdown content={p.content} outlinedProblems={notes.outlinedProblems} />
-                </section>
+              {notes.pages.map((p, index) => (
+                <Fragment key={p.number}>
+                  <section id={pageAnchor(p.number)}>
+                    <PageMarkdown content={p.content} outlinedProblems={notes.outlinedProblems} />
+                  </section>
+                  {(index + 1) % 4 === 0 && index < notes.pages.length - 1 && <ReaderAd />}
+                </Fragment>
               ))}
               <footer className="mt-8 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>
                 <p className="font-medium text-ink">You’ve reached the end of {notes.title}.</p>
@@ -474,5 +477,38 @@ export default function Reader({ notes }: { notes: NotesModule }) {
         onGoto={(n) => scrollToPlace({ page: n, offset: 0 })}
       />
     </SiteLayout>
+  );
+}
+
+function ReaderAd() {
+  const slotId = import.meta.env.VITE_ADSENSE_NOTES_SLOT_ID?.trim();
+
+  useEffect(() => {
+    if (!slotId) return;
+    try {
+      const target = window as Window & { adsbygoogle?: unknown[] };
+      target.adsbygoogle = target.adsbygoogle || [];
+      target.adsbygoogle.push({});
+    } catch {
+      // Ad blockers and unavailable AdSense requests should not affect reading.
+    }
+  }, [slotId]);
+
+  return (
+    <aside className="reader-ad" aria-label="Advertisement">
+      <span className="reader-ad__label">Advertisement</span>
+      {slotId ? (
+        <ins
+          className="adsbygoogle reader-ad__unit"
+          style={{ display: "block" }}
+          data-ad-client="ca-pub-1481892525343877"
+          data-ad-slot={slotId}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+      ) : (
+        <div className="reader-ad__reserved" />
+      )}
+    </aside>
   );
 }

@@ -134,9 +134,23 @@ where:
 
 The $V\text{–}I$ characteristic curve plots diode current $I_D$ on the vertical axis against diode voltage $V_D$ on the horizontal axis across three distinct regions:
 
-1. **Forward Bias Region ($V_D > 0$):** For $V_D < V_\gamma$, the forward current is very small because of the potential barrier. Beyond the **knee voltage** $V_\gamma$ ($0.7\text{ V}$ for $\text{Si}$, $0.3\text{ V}$ for $\text{Ge}$), the current rises sharply and almost linearly, limited primarily by external circuit resistance and the diode's small bulk/dynamic forward resistance $r_f = \Delta V_F / \Delta I_F$.
+1. **Forward Bias Region ($V_D > 0$):** For $V_D < V_\gamma$, the forward current is small because of the junction barrier. Beyond the approximate knee voltage $V_\gamma$ ($0.7\text{ V}$ for silicon and $0.3\text{ V}$ for germanium in the usual room-temperature model), current rises steeply and exponentially; the external circuit limits the resulting current.
 2. **Reverse Bias Region ($-V_{BR} < V_D < 0$):** Current remains nearly constant and extremely small at $-I_S$ (the reverse saturation current). The diode acts almost like an open switch.
-3. **Reverse Breakdown Region ($V_D \le -V_{BR}$):** If the reverse voltage exceeds a critical value called the **breakdown voltage** ($V_{BR}$) or **Peak Inverse Voltage (PIV)** rating, the reverse current increases abruptly. Unless limited by an external resistor, excessive heating ($P = V_{BR} I_R$) permanently destroys a conventional junction diode.
+3. **Reverse Breakdown Region ($V_D \le -V_{BR}$):** At the diode's breakdown voltage, reverse current rises sharply. The **peak inverse voltage (PIV)** is the maximum reverse voltage a rectifier diode is specified to withstand; it is a rating, not another name for breakdown voltage. Limit reverse current to keep dissipation within the device rating and avoid thermal damage.
+
+```text
+                         I_D
+                          ↑              forward conduction
+                          │                   /
+                          │                 _/
+                          │               _/
+───────────────┬──────────┼──────────────_/────────→ V_D
+         -V_BR │          │           V_γ
+   breakdown   │          │  small reverse saturation current (−I_S)
+       region  ↓
+```
+
+The sketch is qualitative and not to scale: the forward branch rises steeply after the knee, while reverse current stays small until breakdown.
 
 ### Worked Example 1: Diode Current and Forward Voltage Drop
 
@@ -372,7 +386,21 @@ Uses a **center-tapped step-down transformer** (with the center tap $CT$ taken a
 
 Overcomes the need for a heavy, expensive center-tapped transformer by using an ordinary two-terminal secondary winding and **four diodes ($D_1, D_2, D_3, D_4$)** arranged in a bridge configuration.
 
-The bridge has two AC input terminals ($A$ and $B$) and two DC output terminals ($+$ and $-$). Its diode connections are:
+The bridge has two AC input terminals ($A$ and $B$) and two DC output terminals ($+$ and $-$). Read the four diode branches as these node-to-node connections; connect the load between the two output nodes:
+
+```text
+                         (+)
+                      ╱       ╲
+               D1 ↗  ╱         ╲  ↖ D2
+                   ╱             ╲
+             A (~) o             o (~) B
+                   ╲             ╱
+               D4 ↖ ╲           ╱ ↗ D3
+                      ╲       ╱
+                         (−)
+
+                (+) ── R_L ── (−)
+```
 
 | Diode | Anode | Cathode |
 | --- | --- | --- |
@@ -381,7 +409,7 @@ The bridge has two AC input terminals ($A$ and $B$) and two DC output terminals 
 | $D_3$ | $-$ | $B$ |
 | $D_4$ | $-$ | $A$ |
 
-Connect $R_L$ between the $+$ and $-$ output terminals. This connection table fixes the diode polarity unambiguously; the conducting pair for each half-cycle is described below.
+The cathodes of $D_1$ and $D_2$ join at the positive output; the anodes of $D_3$ and $D_4$ join at the negative output. This connection table fixes the bridge topology and diode polarity unambiguously. During each half-cycle, one diode from each output junction conducts, keeping load current from $+$ to $-$.
 
 - **Positive Half-Cycle:** Terminal $A$ is positive and $B$ is negative. Diodes **$D_1$ and $D_3$ are forward biased** (ON), while $D_2$ and $D_4$ are reverse biased (OFF). Current flows from $A \to D_1 \to R_L \to D_3 \to B$.
 - **Negative Half-Cycle:** Terminal $B$ is positive and $A$ is negative. Diodes **$D_2$ and $D_4$ are forward biased** (ON), while $D_1$ and $D_3$ are reverse biased (OFF). Current flows from $B \to D_2 \to R_L \to D_4 \to A$, passing through $R_L$ in the **same direction**.
@@ -702,6 +730,11 @@ The output characteristic family is divided into three distinct operating region
 2. **Saturation Region:** The steep region near the vertical axis where $V_{CE}$ is very small ($V_{CE(\text{sat})} \approx 0.2\text{ V}$ for $\text{Si}$). Both $J_{EB}$ and $J_{CB}$ are forward biased. Collector current no longer obeys $I_C = \beta I_B$ and is limited by the external collector circuit ($I_{C(\text{sat})} \approx V_{CC}/R_C$). Used as a **closed (ON) switch**.
 3. **Cut-off Region:** The region below the $I_B = 0$ curve. Both junctions are reverse biased, and only a negligible leakage current $I_{CEO}$ flows ($I_C \approx 0$, $V_{CE} = V_{CC}$). Used as an **open (OFF) switch**.
 
+- **Dynamic Output Resistance ($r_o$):**
+  $$
+  r_o = \left.\frac{\Delta V_{CE}}{\Delta I_C}\right|_{I_B = \text{constant}} \qquad (\text{typically } 20\text{ k}\Omega \text{ to } 50\text{ k}\Omega)
+  $$
+
 ### BJT as a low-side electronic switch
 
 ```text
@@ -716,18 +749,29 @@ Control ─RB─ B   NPN
             ground
 ```
 
-A logic-high control signal supplies base current through $R_B$, driving the transistor into saturation. The collector-emitter voltage then becomes small and the load is ON. With the control low, base current is approximately zero; the transistor is in cut-off and the load is OFF. Choose $R_B$ to limit base current and provide enough drive for the required load current; do not leave the base floating.
-
-- **Dynamic Output Resistance ($r_o$):**
-  $$
-  r_o = \left.\frac{\Delta V_{CE}}{\Delta I_C}\right|_{I_B = \text{constant}} \qquad (\text{typically } 20\text{ k}\Omega \text{ to } 50\text{ k}\Omega)
-  $$
+A logic-high control signal supplies base current through $R_B$, driving the transistor into saturation; the small collector-emitter voltage turns the load on. With the control low, the transistor is in cut-off and the load is off. Choose $R_B$ to limit base current while supplying enough drive for the required load current.
 
 ### Concept of Amplification (Single-Stage CE Amplifier)
 
 **Amplification** is the process of increasing the amplitude (voltage, current, or power) of a weak time-varying signal without altering its waveform shape or frequency, by using the weak input signal to control energy drawn from a DC power supply ($V_{CC}$).
 
 #### How a CE Amplifier Works
+
+```text
+                         VCC
+                          │
+                         RC
+                          │──────── Cout ── Vout → load
+                          C
+Vin ── Cin ── B       Q1 (NPN)
+            │             E
+      bias network        │
+                       RE ∥ CE
+                          │
+                        ground
+```
+
+The coupling capacitors pass the AC signal while isolating DC bias. The collector resistor converts changes in collector current into changes in output voltage; the emitter network stabilizes the operating point and can provide AC bypassing.
 
 In a basic Common-Emitter amplifier, a load resistor $R_C$ is connected in series with the collector and the DC supply $V_{CC}$, so that by KVL on the output loop:
 
@@ -755,10 +799,12 @@ $$
 | Input / output | Emitter / collector | Base / collector | Base / emitter |
 | Current gain | Less than one ($\alpha$) | High ($\beta$) | High (approximately $\beta+1$) |
 | Voltage gain | Can be high | High | Approximately one |
+| Input impedance | Low | Medium | High |
+| Output impedance | High | Medium to high | Low |
 | Phase relation | No reversal | Output is inverted (180°) | No reversal |
 | Typical use | High-frequency stages and low-input-impedance matching | General voltage and power amplification | Buffering and impedance matching |
 
-These are qualitative comparisons for the usual small-signal configurations; actual gains and impedances depend on the circuit and its bias point.
+These are qualitative comparisons for the usual small-signal configurations. Actual input/output impedances depend on the transistor, bias network, load, and frequency.
 
 ### DC load line, bias, and the Q-point
 
@@ -802,6 +848,19 @@ The lower and upper cut-off frequencies $f_L$ and $f_H$ are conventionally taken
 | Above $f_H$ | Gain falls as frequency increases | Transistor junction and stray capacitances |
 
 On a sketch of gain against logarithmic frequency, draw a low-frequency rise, a nearly flat mid-band, and a high-frequency roll-off. Mark $f_L$ and $f_H$ where the curve crosses $0.707A_{v,mid}$; do not treat them as frequencies at which gain becomes zero.
+
+```text
+Gain (dB)
+  ↑                    ┌───────────────┐  mid-band
+  │                  /                   \
+  │                /                       \
+  │______________/                           \
+  │            f_L                           f_H
+  └────────────────────────────────────────────→ log frequency
+               −3 dB                     −3 dB
+```
+
+This curve is qualitative: the exact slope and cut-off frequencies depend on the transistor, bias components, coupling capacitors, bypass capacitor, and load.
 
 <!-- page 8 | Basics of FET and MOSFET -->
 
@@ -894,6 +953,24 @@ In a **MOSFET** (also called an **Insulated-Gate FET, IGFET**), the metal (or po
 ### P-channel MOSFETs
 
 A P-channel MOSFET uses a P-type channel or substrate and holes as the majority carriers. Its source, drain, gate, and body structure parallels the N-channel device, but the operating-voltage polarities are reversed. In the usual source-referenced convention, a P-channel device conducts when the gate is sufficiently negative relative to its source; conventional drain current flows in the opposite device-terminal direction to the comparable N-channel case.
+
+For a P-channel enhancement MOSFET, the P$^+$ source and drain are formed in an N-type body. With the gate near the source potential, no channel connects them. Making the gate sufficiently negative relative to the source attracts holes to the oxide interface and induces a P-type channel:
+
+```
+             Source (S)       Gate (G)       Drain (D)
+                 |          +---------+          |
+              +------+    +---------------+   +------+
+              | P+   |    |   Gate metal  |   | P+   |
+              +------+    +---------------+   +------+
+                           |    SiO2     |
+              ··········· induced P-channel ·········
+              |                                     |
+              |              N-body                |
+              +------------------+------------------+
+                                 | Body (B)
+```
+
+The diagram is a cross-section, not a circuit symbol. For this P-channel enhancement device, the channel is induced when $V_{GS}<V_{TP}$ (equivalently, when $V_{SG}>|V_{TP}|$); the source is normally at the higher potential. These polarities are the reverse of the N-channel enhancement case.
 
 - **P-channel depletion MOSFET (D-MOSFET):** a P-type channel exists at $V_{GS}=0$. A positive gate voltage repels holes and depletes the channel; a negative gate voltage attracts holes and enhances conduction. It can operate in depletion and enhancement modes.
 - **P-channel enhancement MOSFET (E-MOSFET):** no conducting channel exists at $V_{GS}=0$. Making the gate sufficiently negative relative to the source attracts holes and forms a P-channel; the device is normally OFF.

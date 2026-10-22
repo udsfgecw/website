@@ -43,7 +43,7 @@ $$
 If the flux changes uniformly from $\phi_1$ to $\phi_2$ in time $t$ seconds:
 
 $$
-|e| = N \frac{\phi_2 - \phi_1}{t} \quad \text{(volts)}
+|e| = N \frac{|\phi_2 - \phi_1|}{t} \quad \text{(volts)}
 $$
 
 ### Lenz's Law
