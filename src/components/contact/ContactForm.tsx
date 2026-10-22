@@ -22,6 +22,11 @@ export default function ContactForm() {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
+    if (!String(data.get("email")).trim() && !String(data.get("phone")).trim()) {
+      setError("Add an email or a phone number so we can reply.");
+      setStatus("error");
+      return;
+    }
     setStatus("sending");
     try {
       const res = await fetch(FORM_URL, { method: "POST", headers: { Accept: "application/json" }, body: data });
@@ -83,16 +88,23 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor={`${id}-email`} className="label text-ink-2">Email</label>
-          <input id={`${id}-email`} name="email" type="email" required autoComplete="email" className={cn(field, "mt-2 h-12")} />
+          <input id={`${id}-email`} name="email" type="email" autoComplete="email" className={cn(field, "mt-2 h-12")} />
         </div>
       </div>
 
-      <div className="mt-3">
-        <label htmlFor={`${id}-dept`} className="label text-ink-2">
-          Branch &amp; year <span className="tracking-normal normal-case text-ink-2/60">(optional)</span>
-        </label>
-        <input id={`${id}-dept`} name="branch_and_year" placeholder="e.g. CSE, S3" className={cn(field, "mt-2 h-12")} />
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        <div>
+          <label htmlFor={`${id}-phone`} className="label text-ink-2">Phone</label>
+          <input id={`${id}-phone`} name="phone" type="tel" autoComplete="tel" className={cn(field, "mt-2 h-12")} />
+        </div>
+        <div>
+          <label htmlFor={`${id}-dept`} className="label text-ink-2">
+            Branch &amp; year <span className="tracking-normal normal-case text-ink-2/60">(optional)</span>
+          </label>
+          <input id={`${id}-dept`} name="branch_and_year" placeholder="e.g. CSE, S3" className={cn(field, "mt-2 h-12")} />
+        </div>
       </div>
+      <p className="mt-2 text-[0.8rem] text-ink-2/60">Give us an email, a phone number, or both.</p>
 
       <div className="mt-3">
         <label htmlFor={`${id}-message`} className="label text-ink-2">Message</label>
