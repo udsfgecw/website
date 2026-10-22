@@ -1,7 +1,8 @@
 import { useId, useState } from "react";
 import { ArrowUpRight, Check, LoaderCircle } from "lucide-react";
-import { WEB3FORMS_KEY } from "@/config";
 import { cn } from "@/lib/utils";
+
+const FORM_URL = "https://dropgram.anokhagecw.workers.dev/f/fk_sEhI19VCYrbhNuTNaiunUQ";
 
 const TOPICS = ["A concern", "An idea", "Joining UDSF", "Something else"] as const;
 
@@ -10,7 +11,7 @@ export const field =
 
 type Status = "idle" | "sending" | "sent" | "error";
 
-/* Contact form, delivered to the union inbox by Web3Forms. */
+/* Contact form, delivered to the union inbox by Dropgram. */
 export default function ContactForm() {
   const id = useId();
   const [topic, setTopic] = useState<(typeof TOPICS)[number]>(TOPICS[0]);
@@ -21,14 +22,10 @@ export default function ContactForm() {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    data.set("access_key", WEB3FORMS_KEY);
-    data.set("subject", `UDSF GECW website: ${topic} from ${String(data.get("name")).trim()}`);
-    data.set("from_name", "UDSF GECW website");
     setStatus("sending");
     try {
-      const res = await fetch("https://api.web3forms.com/submit", { method: "POST", headers: { Accept: "application/json" }, body: data });
-      const json = await res.json();
-      if (!res.ok || !json.success) throw new Error(json.message);
+      const res = await fetch(FORM_URL, { method: "POST", headers: { Accept: "application/json" }, body: data });
+      if (!res.ok) throw new Error(`Dropgram responded ${res.status}`);
       form.reset();
       setTopic(TOPICS[0]);
       setStatus("sent");
@@ -102,8 +99,8 @@ export default function ContactForm() {
         <textarea id={`${id}-message`} name="message" required rows={5} className={cn(field, "mt-2 block min-h-32 resize-y py-3 leading-[1.55]")} />
       </div>
 
-      {/* spam trap: Web3Forms drops submissions that tick it */}
-      <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
+      {/* spam trap: Dropgram drops submissions that fill it in */}
+      <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
 
       <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
         <button
