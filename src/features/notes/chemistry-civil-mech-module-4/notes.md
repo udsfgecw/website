@@ -185,13 +185,15 @@ Water containing high concentrations of dissolved salts with a brackish taste is
 - **Reverse Osmosis:** If a hydrostatic pressure greater than the osmotic pressure is applied, the solvent flows through the semipermeable membrane in the opposite direction (from the concentrated to the dilute solution).
 - In this process, a pressure of the order of $15$ to $40\text{ kg/cm}^2$ is applied to seawater to force pure water out through the semipermeable membrane, leaving behind dissolved solids. Commonly used membranes are made of polymethacrylate, polysulphones, etc.
 
-![Reverse osmosis process diagram showing sea water, semi-permeable membrane, and pure water under pressure.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-4/assets/p006-1.webp)
+```mermaid
+flowchart LR
+    A[Saline feed water] --> B[High-pressure pump]
+    B --> C[Semipermeable membrane]
+    C -->|Water passes through| D[Fresh permeate]
+    C -->|Dissolved salts retained| E[Concentrated brine]
+```
 
-> **Figure: Reverse osmosis process diagram showing sea water, semi-permeable membrane, and pure water under pressure.**
->
-> Reverse osmosis process diagram. A container is divided horizontally by a semi-permeable membrane. The top section contains sea water, and a piston with an arrow pointing downwards is labeled 'Pressure'. The bottom section contains pure water, with an arrow pointing outwards labeled 'Pure water'.
-
-Reverse osmosis process diagram showing sea water, semi-permeable membrane, and pure water under pressure. A container is divided horizontally by a semi-permeable membrane. The top section contains sea water, and a piston with an arrow pointing downwards is labeled 'Pressure'. The bottom section contains pure water, with an arrow pointing outwards labeled 'Pure water'.
+Pressure applied to the saline side must exceed the osmotic pressure to drive water through the membrane. The salt-rich reject stream leaves separately; dissolved salts do not pass through with the permeate in the idealized model.
 
 #### Advantages and Disadvantages of Reverse Osmosis
 

@@ -558,13 +558,11 @@ Hydration yields interlocking gels and crystalline hydrates that fill interstiti
 Polymers are high-molecular-mass macromolecules constructed via covalent linking of repeating monomer units.
 
 #### ABS (Acrylonitrile Butadiene Styrene)
-**Preparation:** Synthesized by dissolving polybutadiene in liquid acrylonitrile and styrene monomers in the presence of a free-radical initiator, yielding a tough engineering thermoplastic.
+ABS is made by polymerizing styrene and acrylonitrile in the presence of polybutadiene rubber. In a common structure, styrene-acrylonitrile (SAN) chains are grafted onto polybutadiene particles and are also present as the surrounding matrix. It is therefore misleading to depict ABS as one simple, uniform chain made by joining three monomers in a single row.
 
-![Chemical equation for the preparation of ABS polymer](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p020-2.webp)
+**Preparation, schematically:** polybutadiene rubber + styrene + acrylonitrile $\longrightarrow$ polybutadiene toughening phase with grafted SAN and SAN matrix (ABS).
 
-> **Figure: Chemical equation for the preparation of ABS polymer**
->
-> Chemical reaction showing the preparation of ABS. Reactants on the left: x H2C=CH-CN (Acrylonitrile) + y H2C=CH-C(H)=CH2 (Butadiene) + z H2C=CH-(C6H5) (Styrene). An arrow points to the right to the ABS polymer structure containing repeating units indexed by x, y, and z.
+The components contribute complementary properties: acrylonitrile improves chemical and heat resistance, styrene contributes rigidity and surface finish, and the rubber phase absorbs impact energy. The exact phase structure depends on the commercial grade and manufacturing process.
 
 <!-- page 9 | Advanced Engineering Polymers: ABS and Kevlar -->
 

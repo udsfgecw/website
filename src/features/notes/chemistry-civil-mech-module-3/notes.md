@@ -131,12 +131,7 @@ When a molecule absorbs UV-Visible radiation, electrons are promoted from a bond
 
 
 
-![Transition for 1,3,5 hexatriene showing ground to excited state at 258 nm](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p005-2.webp)
-
-> **Figure: Transition for 1,3,5 hexatriene showing ground to excited state at 258 nm**
->
-> Transition for 1,3,5 hexatriene showing the ground state on the left and the excited state on the right. Left diagram has energy levels psi_1 (2 electrons), psi_2 (2 electrons), psi_3 (2 electrons, with a red upward arrow to psi_4*), psi_4* (empty), psi_5* (empty), psi_6* (empty). A vertical double-sided arrow on the far left indicates Delta E = 111 kcal/mol between psi_3 and psi_4*. A horizontal arrow labeled 258 nm points from the left ground state to the right excited state diagram. Right diagram shows excited state with psi_1 (2 electrons), psi_2 (2 electrons), psi_3 (1 electron), psi_4* (1 electron), psi_5* (empty), and psi_6* (empty).
-
+The HOMO-to-LUMO transition promotes one electron from $\psi_3$ to $\psi_4^*$. The photon energy is $\Delta E=hc/\lambda$; for $\lambda=258\,\mathrm{nm}$, $\Delta E\approx7.70\times10^{-19}\,\mathrm{J}$ per photon (about $4.81\,\mathrm{eV}$). The ground-state and excited-state orbital occupancies are shown in the preceding energy-level figure.
 
    - **Benzene:** Possesses six $\pi$ molecular orbitals where $\psi_1$ is bonding, $\psi_2 \& \psi_3$ are degenerate bonding MOs (HOMO), $\psi_4 \& \psi_5$ are degenerate antibonding MOs (LUMO), and $\psi_6^*$ is antibonding. HOMO to LUMO transition occurs at $255\text{ nm}$.
 
@@ -246,11 +241,7 @@ These three modes are symmetric stretching, asymmetric stretching, and a single 
 
 The fundamental frequency of vibration or wavenumber ($\bar{\nu}$) is directly proportional to the square root of the force constant $k$ (representing bond strength) and inversely proportional to the square root of the reduced mass $\mu$ of the vibrating atoms.
 
-![Formulas for frequency, wave number, and force constant](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-3/assets/p009-2.webp)
-
-> **Figure: Formulas for frequency, wave number, and force constant**
->
-> Formulas displayed inside an image box for a diatomic molecule: Frequency, nu_0 = (1 / (2 * pi)) * sqrt(k / mu); Wave number, nu_bar = (1 / (2 * pi * c)) * sqrt(k / mu); Force constant, k = 4 * pi^2 * nu_0^2 * mu = 4 * pi^2 * c^2 * nu_bar^2 * mu. Below the formulas, text states: Where c is the velocity of light in vacuum (3 * 10^8 m/s) and mu is the reduced mass of atoms of masses m_1 and m_2 connected by a bond, mu = (m_1 * m_2) / (m_1 + m_2).
+The fundamental frequency and wavenumber are related to the bond force constant and reduced mass by:
 
 $$\nu_0 = \frac{1}{2\pi} \sqrt{\frac{k}{\mu}}$$
 

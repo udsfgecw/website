@@ -518,3 +518,23 @@ By varying the chemical composition and doping ratios of ternary or quaternary s
 ### Disadvantages
 - Highly sensitive to electrical overstress; even a slight unintended excess in forward voltage or driving current can permanently destroy the device.
 - Optical conversion efficiency decreases as the operating forward current increases due to internal heating effects.
+
+### Worked Example: Rectifier Output and Diode PIV
+
+An ideal rectifier is supplied by a sinusoid with peak secondary voltage $V_m=20\,\mathrm{V}$. Find the average and RMS load voltages for half-wave and full-wave rectification, and compare the peak inverse voltage (PIV) ratings required by common circuits. Ignore diode drops.
+
+For a half-wave rectifier, the output is a positive half-sine followed by zero:
+
+$$V_{\mathrm{dc}}=\frac{V_m}{\pi}=\frac{20}{\pi}=6.37\,\mathrm{V},\qquad V_{\mathrm{rms}}=\frac{V_m}{2}=10.0\,\mathrm{V}.$$
+
+For a full-wave rectifier, both half-cycles become positive pulses:
+
+$$V_{\mathrm{dc}}=\frac{2V_m}{\pi}=12.73\,\mathrm{V},\qquad V_{\mathrm{rms}}=\frac{V_m}{\sqrt2}=14.14\,\mathrm{V}.$$
+
+The average output doubles because the negative half-cycle is also delivered to the load. For the same $V_m$ convention, a half-wave circuit requires a diode PIV of $V_m=20\,\mathrm{V}$; a centre-tapped full-wave circuit requires $2V_m=40\,\mathrm{V}$ per diode; a bridge circuit requires approximately $V_m=20\,\mathrm{V}$ per diode. Always check how $V_m$ is defined in a centre-tapped transformer problem (half-winding versus full-secondary peak).
+
+### How to Approach Semiconductor Device Questions
+
+1. Sketch or identify the device's bias condition before selecting its model. A photodiode is usually reverse-biased in detector mode; an LED is forward-biased; a Zener diode regulates in reverse breakdown.
+2. State the assumptions (ideal diode, constant-drop model, or full device equation). Do not combine results from different models.
+3. For solar-cell stringing, series-connected cells add voltage while the same current passes through each cell; parallel strings add current while their voltage is shared. A shaded or mismatched cell can limit a series string.

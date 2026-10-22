@@ -157,11 +157,7 @@ $$\text{Hg}_2\text{Cl}_2 + 2\text{e}^- \rightarrow 2\text{Hg} (l) + 2\text{Cl}^-
 #### Working of Calomel Electrode (Determination of Electrode Potential)
 In order to measure the electrode potential of an electrode (e.g., Zn electrode), it is coupled with SCE using a digital voltmeter. The voltmeter reading will give the cell emf. The reduction potential of SCE is $0.2422\text{ V}$, which is higher than the reduction potential of $\text{Zn}^{2+}/\text{Zn}$ ($-0.76\text{ V}$). Therefore, reduction reaction takes place at SCE.
 
-![Experimental setup for determining electrode potential using a calomel electrode coupled with a Zn electrode](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-2/assets/p009-2.webp)
-
-> **Figure: Experimental setup for determining electrode potential using a calomel electrode coupled with a Zn electrode**
->
-> Experimental setup for determining electrode potential using a calomel electrode coupled with a Zn electrode. A setup showing a Zn electrode in a beaker of ZnSO4(aq) connected via a digital voltmeter to a calomel electrode. Labels include Digital Voltmeter, Zn, ZnSO4(aq), Pt foil, Hg, Paste of Hg + Hg2Cl2, and Saturated KCl solution.
+**Cell arrangement:** immerse a zinc strip in $\mathrm{ZnSO_4(aq)}$ and connect it through a salt bridge to the saturated calomel electrode. Connect both electrode terminals to a high-resistance voltmeter. The calomel electrode is the positive cathode under these conditions; zinc is the negative anode and is oxidized. The salt bridge completes the ionic circuit while limiting direct mixing of the solutions.
 
 Cathode:
 $$\text{Hg}_2\text{Cl}_2 + 2\text{e}^- \rightarrow 2\text{Hg} + 2\text{Cl}^-$$

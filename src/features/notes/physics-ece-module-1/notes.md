@@ -10,7 +10,7 @@ Master the fundamentals of intrinsic and extrinsic semiconductors, derive carrie
 
 1. **Introduction to Energy Bands in Solids**: Electrons in closely packed solid atoms occupy allowed energy bands separated by forbidden energy gaps.
 2. **Intrinsic Semiconductors and Electron Concentration**: Integration of the density of states and the Fermi distribution yields the conduction band electron concentration.
-3. **Intrinsic Carrier Concentration and Fermi Level**: The intrinsic carrier concentration depends exponentially on the band gap, and the Fermi level lies exactly midway between bands at zero Kelvin.
+3. **Intrinsic Carrier Concentration and Fermi Level**: The intrinsic carrier concentration depends exponentially on the band gap; the intrinsic Fermi level lies near mid-gap, with a small effective-mass correction at nonzero temperature.
 4. **Extrinsic Semiconductors and Doping**: Pentavalent and trivalent dopants create donor and acceptor energy levels, shifting the Fermi level and making one carrier type dominant.
 5. **P-N Junction Formation and Energy Bands**: Carrier diffusion creates a space-charge depletion region and a built-in barrier potential that balances drift and diffusion currents at equilibrium.
 6. **Diode Equation and V-I Characteristics**: The diode current equation models exponential current growth under forward bias and a constant leakage current under reverse bias until breakdown.
@@ -41,8 +41,14 @@ The relationship between these bands dictates whether a material behaves as a co
 
 **Solution:**
 1. Identify the conversion factor: $1\text{ eV} = 1.602 \times 10^{-19}\text{ Joules}$.
-2. Multiply the given energy gap by the conversion factor:
-\[E_g = 1.1\text{ eV} \times 1.602 \times 10^{-19}\text{ J/eV} = 1.762 \times 10^{-19}\text{ J}\]
+2. Multiply the numerical value in electron-volts by the joules-per-electron-volt conversion factor:
+$$
+E_g = 1.1\,\mathrm{eV}\times 1.602\times10^{-19}\,\frac{\mathrm{J}}{\mathrm{eV}}
+    = 1.7622\times10^{-19}\,\mathrm{J}
+    \approx 1.76\times10^{-19}\,\mathrm{J}.
+$$
+
+The unit eV cancels, leaving joules. The answer is an energy per electron; it is not the energy of a mole of electrons.
 
 ## Remember
 - Atomic energy levels broaden into continuous allowed bands in a solid.
@@ -200,15 +206,15 @@ $$2 \left(\frac{2\pi m_e^* kT}{h^2}\right)^{\frac{3}{2}} e^{\frac{E_F - E_c}{kT}
 Simplifying and taking the natural logarithm to solve for $E_F$:
 $$\left(\frac{m_e^*}{m_h^*}\right)^{3/2} = e^{\frac{E_v - 2E_F + E_c}{kT}}$$
 
-$$E_F = \frac{3}{4} kT \log\left(\frac{m_h^*}{m_e^*}\right) + \left(\frac{E_v + E_c}{2}\right)$$
+$$E_F = \frac{E_c+E_v}{2}+\frac{3}{4}kT\ln\left(\frac{m_h^*}{m_e^*}\right)$$
 
-At absolute zero ($T = 0\text{ K}$), assuming effective masses are comparable:
+At absolute zero ($T = 0\text{ K}$), the temperature-dependent effective-mass correction vanishes:
 $$E_F = \frac{E_v + E_c}{2} = \frac{E_g}{2} + E_v$$
 
 If the valence band edge $E_v$ is taken as the reference zero energy level:
 $$E_F = \frac{E_g}{2}$$
 
-Thus, in an intrinsic semiconductor, the Fermi level lies exactly in the middle of the forbidden energy band gap.
+Thus, the intrinsic Fermi level is at mid-gap when the electron and hole effective masses are equal. In real materials it is generally close to mid-gap, with its exact position set by the effective-mass ratio and temperature. Do not confuse this intrinsic result with the extrinsic case: donor doping moves the Fermi level toward the conduction band, while acceptor doping moves it toward the valence band.
 
 ![Energy band diagram showing Conduction Band, Valence Band, and Fermi Energy Level](/assets/notes/ece/s1/physics/module-1/p028-1-clean.webp)
 
@@ -413,7 +419,7 @@ where $I_0 = (I_{sp} + I_{sn})$ is the reverse saturation current, which is heav
 
 $$I = I_0 \left(e^{\frac{V}{\eta V_T}} - 1\right)$$
 
-where $\eta = 1$ for Germanium and $\eta = 2$ for Silicon.
+where $\eta$ is the ideality factor (commonly between 1 and 2; its value depends on the junction and dominant transport mechanism, rather than being fixed solely by whether the diode is silicon or germanium).
 
 ### V-I Characteristics of a P-N Junction
 
@@ -442,5 +448,17 @@ Reverse bias V-I characteristic graph showing knee voltage, point A, B, and brea
 
 - **Thermal Voltage ($V_T$)**: The voltage equivalent of temperature, equal to $kT/e$ (approx. $26\text{ mV}$ at $300\text{ K}$). It scales the exponential voltage dependence of current.
 - **Reverse Saturation Current ($I_0$)**: A tiny leakage current flowing under reverse bias caused by minority carrier drift across the depletion region. It is independent of applied reverse voltage but highly sensitive to temperature.
-- **Knee Voltage**: The minimum forward bias voltage required to cause a sharp, exponential rise in diode current. Width of the depletion layer decreases when the knee voltage increases. Typical values are $0.3\text{ V}$ for Germanium and $0.7\text{ V}$ for Silicon.
-- **Peak Inverse Voltage (PIV)** / **Breakdown Voltage**: The maximum reverse voltage a diode can withstand without experiencing non-destructive or destructive junction breakdown. PIV is $25\text{ V}$ for Germanium and $35\text{ V}$ for Silicon.
+- **Knee Voltage**: A practical approximation for the forward voltage at which current becomes appreciable. A silicon diode is often approximated as having a $0.7\text{ V}$ drop and a germanium diode about $0.3\text{ V}$, but the actual current varies continuously and exponentially with voltage; there is no perfectly sharp threshold.
+- **Peak Inverse Voltage (PIV)**: The largest reverse voltage a diode is designed to withstand in a specified circuit. It is given by the circuit configuration and the individual diode's rating, not by a universal value for silicon or germanium. Exceeding the rated reverse voltage can cause breakdown and damage unless the diode is specifically designed for controlled breakdown.
+
+### Worked Example: Forward Current of a Silicon Diode
+
+Estimate the current for a diode with reverse saturation current $I_s=1.0\times10^{-12}\,\mathrm{A}$, ideality factor $n=1$, forward voltage $V_D=0.60\,\mathrm{V}$, and room-temperature thermal voltage $V_T=kT/q\approx0.0259\,\mathrm{V}$.
+
+$$
+I=I_s\left(e^{V_D/(nV_T)}-1\right)
+  =10^{-12}\left(e^{0.60/0.0259}-1\right)\,\mathrm{A}
+  \approx 1.2\times10^{-2}\,\mathrm{A}=12\,\mathrm{mA}.
+$$
+
+The exponent is dimensionless because both $V_D$ and $V_T$ are voltages. Since $V_D\gg V_T$, the minus-one term is negligible here. This idealized estimate ignores series resistance and self-heating, which limit current in a practical circuit.

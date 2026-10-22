@@ -451,3 +451,17 @@ where:
 * $\tan\phi$ = dielectric loss tangent or power factor of the dielectric (dimensionless)
 
 Thus, for fixed values of voltage $V$, angular frequency $\omega$, and capacitance $C$, the power loss depends directly on the loss tangent $\tan\phi$ of the dielectric medium.
+
+### Worked Examples: Dielectric Relations
+
+**1. Find polarization from relative permittivity.** A linear dielectric has $\varepsilon_r=4.0$ and is placed in a uniform field $E=2.0\times10^5\,\mathrm{V/m}$. Using $P=\varepsilon_0(\varepsilon_r-1)E$ and $\varepsilon_0=8.854\times10^{-12}\,\mathrm{F/m}$:
+
+$$P=(8.854\times10^{-12})(4-1)(2.0\times10^5)=5.31\times10^{-6}\,\mathrm{C/m^2}.$$
+
+The displacement is $D=\varepsilon_0\varepsilon_rE=7.08\times10^{-6}\,\mathrm{C/m^2}$. Checking $D=\varepsilon_0E+P$ gives $1.77\times10^{-6}+5.31\times10^{-6}=7.08\times10^{-6}\,\mathrm{C/m^2}$, as required.
+
+**2. Interpret the Clausius-Mossotti relation.** For a material with $\varepsilon_r=4$,
+
+$$\frac{\varepsilon_r-1}{\varepsilon_r+2}=\frac{4-1}{4+2}=0.5=\frac{N\alpha}{3\varepsilon_0}.$$
+
+Therefore $N\alpha=1.5\varepsilon_0$. This combination measures the material's total molecular polarizability per unit volume. The relation assumes an isotropic, non-polar or weakly polar dielectric in which the Lorentz local-field model is appropriate; it should not be applied indiscriminately to strongly polar or anisotropic materials.
