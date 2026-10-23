@@ -17,7 +17,7 @@ export default function Progress() {
     <section id="progress" aria-labelledby="progress-title" className="border-y border-line bg-[#fafbf9]">
       <div className="wrap py-[clamp(3.5rem,7vw,6rem)]">
         <Label>Our progress · UDSF GECW</Label>
-        <div className="mt-5 flex flex-wrap items-end justify-between gap-6">
+        <div className="mt-5">
           <div>
             <h2 id="progress-title" className="max-w-[22ch] text-[length:clamp(2rem,4.6vw,3.9rem)] font-semibold leading-[1.08] tracking-[-0.045em] text-ink">
               What we’ve brought to campus.
@@ -26,7 +26,6 @@ export default function Progress() {
               A few highlights of UDSF GECW’s work for better facilities and student life.
             </p>
           </div>
-          <CtaLink to="/activities">View all progress</CtaLink>
         </div>
 
         <ul className="mt-10 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -47,6 +46,10 @@ export default function Progress() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-10 flex justify-center sm:justify-start">
+          <CtaLink to="/activities">View all progress</CtaLink>
+        </div>
       </div>
       <Lightbox items={PHOTOS} index={open} onIndex={setOpen} />
     </section>

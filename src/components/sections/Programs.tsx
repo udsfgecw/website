@@ -14,7 +14,7 @@ export default function Programs() {
   return (
     <section id="programs" aria-labelledby="programs-title" className="bg-[#0a0a0a] text-white">
       <div className="wrap py-[clamp(3.5rem,7vw,6rem)]">
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        <div>
           <div>
             <p className="label flex items-center gap-2 text-white/45">
               Pro shows &amp; live performances
@@ -23,9 +23,6 @@ export default function Programs() {
               Live on campus<span className="text-green">.</span>
             </h2>
           </div>
-          <CtaLink to="/events" variant="ghost">
-            All events &amp; programs
-          </CtaLink>
         </div>
 
         {/* every reel plays silently while it is on screen; tap one for sound and full screen */}
@@ -51,6 +48,12 @@ export default function Programs() {
             </li>
           ))}
         </ol>
+
+        <div className="mt-10 flex justify-center sm:justify-start">
+          <CtaLink to="/events" variant="ghost">
+            All events &amp; programs
+          </CtaLink>
+        </div>
       </div>
 
       <Lightbox items={MEDIA} index={open} onIndex={setOpen} />
