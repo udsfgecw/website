@@ -7,11 +7,9 @@ import { pageTitle } from "@/config";
 import { EVENT_CATALOGUE, eventDay } from "@/data/event-catalogue";
 import { usePageMeta } from "@/lib/meta";
 import { breadcrumbLd, collectionPageLd } from "@/lib/seo";
-import { cn } from "@/lib/utils";
 
 const DESCRIPTION = "Live artist, DJ and band performances at UDSF GECW pro shows and college events at Government Engineering College Wayanad.";
 const BATCH = 24;
-const YEARS = [...new Set(EVENT_CATALOGUE.map((event) => event.year))].sort().reverse();
 
 export default function EventsPage() {
   usePageMeta({
@@ -22,15 +20,14 @@ export default function EventsPage() {
       breadcrumbLd([{ name: "Home", path: "/" }, { name: "Pro shows", path: "/events" }]),
     ],
   });
-  const [year, setYear] = useState<string | null>(null);
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
   const [shown, setShown] = useState(BATCH);
   const [open, setOpen] = useState<number | null>(null);
   const events = useMemo(() => EVENT_CATALOGUE.filter((event) => {
     const day = eventDay(event);
-    return (!year || event.year === year) && (!from || day >= from) && (!to || day <= to);
-  }), [year, from, to]);
+    return (!from || day >= from) && (!to || day <= to);
+  }), [from, to]);
   const media = useMemo(() => events.flatMap((event) => event.post ? [event.post] : []), [events]);
 
   return (
@@ -42,16 +39,11 @@ export default function EventsPage() {
           <p className="mt-6 max-w-[58ch] text-[1rem] leading-relaxed text-ink-2">A curated collection of live artist, DJ and band performances. Each card includes an AI-written description of the show media.</p>
         </section>
         <section className="wrap pb-24" aria-label="Pro shows">
-          <div className="flex flex-wrap items-center gap-2 border-y border-line py-4" role="group" aria-label="Filter by year">
-            {[null, ...YEARS].map((value) => (
-              <button key={value ?? "all"} type="button" aria-pressed={year === value} onClick={() => { setYear(value); setShown(BATCH); setOpen(null); }} className={cn("label rounded-full border px-4 py-2.5 transition", year === value ? "border-ink bg-ink text-white" : "border-line bg-white text-ink hover:border-ink/40")}>
-                {value ?? "All years"} <span className="ml-1.5 opacity-50">{value ? EVENT_CATALOGUE.filter((event) => event.year === value).length : EVENT_CATALOGUE.length}</span>
-              </button>
-            ))}
+          <div className="flex flex-wrap items-center gap-2 border-y border-line py-4" role="group" aria-label="Filter by date">
             <div className="ml-auto flex flex-wrap items-center gap-2">
               <label className="label flex items-center gap-2 text-ink">From <input type="date" value={from} max={to || undefined} onChange={(e) => { setFrom(e.target.value); setShown(BATCH); setOpen(null); }} className="rounded-full border border-line bg-white px-3 py-2 text-ink" /></label>
               <label className="label flex items-center gap-2 text-ink">To <input type="date" value={to} min={from || undefined} onChange={(e) => { setTo(e.target.value); setShown(BATCH); setOpen(null); }} className="rounded-full border border-line bg-white px-3 py-2 text-ink" /></label>
-              {(from || to || year) && <button type="button" onClick={() => { setYear(null); setFrom(""); setTo(""); setShown(BATCH); setOpen(null); }} className="label rounded-full px-4 py-2.5 text-ink underline-offset-4 hover:underline">Clear filters</button>}
+              {(from || to) && <button type="button" onClick={() => { setFrom(""); setTo(""); setShown(BATCH); setOpen(null); }} className="label rounded-full px-4 py-2.5 text-ink underline-offset-4 hover:underline">Clear filters</button>}
             </div>
           </div>
           <p className="mt-4 text-sm text-ink-2" aria-live="polite">{events.length} {events.length === 1 ? "entry" : "entries"}, newest first</p>
