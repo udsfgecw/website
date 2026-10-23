@@ -70,8 +70,7 @@ export default function ActivitiesPage() {
         <section className="wrap pb-12 pt-[clamp(2.5rem,5vw,4rem)]">
           <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4">
             <div>
-              <Label>Since {FIRST_YEAR}</Label>
-              <h1 className="mt-3 text-[length:clamp(2.2rem,4.5vw,3.4rem)] font-semibold leading-[1] tracking-[-0.05em] text-ink">
+              <h1 className="text-[length:clamp(2.2rem,4.5vw,3.4rem)] font-semibold leading-[1] tracking-[-0.05em] text-ink">
                 Our progress<span className="text-green">.</span>
               </h1>
             </div>
