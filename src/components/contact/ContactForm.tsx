@@ -2,7 +2,7 @@ import { useId, useState } from "react";
 import { ArrowUpRight, Check, LoaderCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const FORM_URL = "https://dropgram.anokhagecw.workers.dev/f/fk_sEhI19VCYrbhNuTNaiunUQ";
+export const FORM_URL = "https://dropgram.anokhagecw.workers.dev/f/fk_sEhI19VCYrbhNuTNaiunUQ";
 
 const TOPICS = ["A concern", "An idea", "Joining UDSF", "Something else"] as const;
 

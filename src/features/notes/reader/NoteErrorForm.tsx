@@ -1,9 +1,8 @@
 import { useId, useState } from "react";
 import { ArrowUpRight, Check, Flag, LoaderCircle } from "lucide-react";
-import { field } from "@/components/contact/ContactForm";
+import { field, FORM_URL } from "@/components/contact/ContactForm";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { WEB3FORMS_KEY } from "@/config";
 import { cn } from "@/lib/utils";
 
 const KINDS = ["Wrong text or spelling", "Wrong number or formula", "Diagram or image problem", "Something else"] as const;
@@ -20,7 +19,7 @@ interface Props {
   topic: string;
 }
 
-/* Lets a reader report a mistake in the notes. Delivered to the union inbox by Web3Forms, like the contact form. */
+/* Lets a reader report a mistake in the notes. Delivered to the union inbox by Dropgram, like the contact form. */
 export default function NoteErrorForm({ title, unitLabel, unit, topic }: Props) {
   const id = useId();
   const [open, setOpen] = useState(false);
@@ -39,15 +38,12 @@ export default function NoteErrorForm({ title, unitLabel, unit, topic }: Props) 
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    data.set("access_key", WEB3FORMS_KEY);
     data.set("subject", `UDSF GECW notes error: ${kind} in ${title}, ${unitLabel} ${unit}`);
-    data.set("from_name", "UDSF GECW notes");
     data.set("where", where);
     setStatus("sending");
     try {
-      const res = await fetch("https://api.web3forms.com/submit", { method: "POST", headers: { Accept: "application/json" }, body: data });
-      const json = await res.json();
-      if (!res.ok || !json.success) throw new Error(json.message);
+      const res = await fetch(FORM_URL, { method: "POST", headers: { Accept: "application/json" }, body: data });
+      if (!res.ok) throw new Error(`Dropgram responded ${res.status}`);
       form.reset();
       setKind(KINDS[0]);
       setStatus("sent");
@@ -131,8 +127,8 @@ export default function NoteErrorForm({ title, unitLabel, unit, topic }: Props) 
               </div>
             </div>
 
-            {/* spam trap: Web3Forms drops submissions that tick it */}
-            <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
+            {/* spam trap: Dropgram drops submissions that fill it in */}
+            <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
 
             <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
               <button
