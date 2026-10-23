@@ -79,19 +79,6 @@ export default function ActivitiesPage() {
               What UDSF GECW asked for, pushed on and got done. Tap any poster to read the original post.
             </p>
           </div>
-          <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-4">
-            {[
-              [DELIVERED, "Changes delivered"],
-              [STORIES.length, "Asks we saw through"],
-              [BY_THEME.length, "Areas of work"],
-              [ENTRIES.length, "Posts in the record"],
-            ].map(([value, label]) => (
-              <div key={label} className="bg-white px-5 py-4">
-                <dd className="text-[1.9rem] font-semibold leading-none tracking-[-0.05em] text-ink tabular-nums">{value}</dd>
-                <dt className="mt-2 text-[0.85rem] text-ink-2">{label}</dt>
-              </div>
-            ))}
-          </dl>
         </section>
 
         {/* the biggest finished changes */}
