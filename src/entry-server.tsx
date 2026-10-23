@@ -29,6 +29,7 @@ import { graphicsm4 } from "./features/notes/graphics-m4";
 import { electricalmodule1 } from "./features/notes/electrical-module-1";
 import { electricalmodule2 } from "./features/notes/electrical-module-2";
 import { electricalmodule3 } from "./features/notes/electrical-module-3";
+import { electricalmodule4 } from "./features/notes/electrical-module-4";
 import { pythonmodule1 } from "./features/notes/python-module-1";
 import { pythonmodule2 } from "./features/notes/python-module-2";
 import { pythonmodule3 } from "./features/notes/python-module-3";
@@ -63,7 +64,7 @@ const NOTES_MODULES: NotesModule[] = [
   physicsModule1, physicsModule2, physicsModule3, physicsModule4,
   chemistrymodule1, chemistrymodule2, chemistrymodule3, chemistrymodule4,
   graphicsm1, graphicsm2, graphicsm3, graphicsm4,
-  electricalmodule1, electricalmodule2, electricalmodule3,
+  electricalmodule1, electricalmodule2, electricalmodule3, electricalmodule4,
   pythonmodule1, pythonmodule2, pythonmodule3, pythonmodule4,
   ...(["ece", "eee"] as const).flatMap((branch) => [
     chemistryEceModule1(branch), chemistryEceModule2(branch), chemistryEceModule3(branch), chemistryEceModule4(branch),
@@ -125,6 +126,7 @@ export const pages: StaticPage[] = [
   { url: electricalmodule1.basePath, file: fileFor(electricalmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule2.basePath, file: fileFor(electricalmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: electricalmodule3.basePath, file: fileFor(electricalmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
+  { url: electricalmodule4.basePath, file: fileFor(electricalmodule4.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule1.basePath, file: fileFor(pythonmodule1.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule2.basePath, file: fileFor(pythonmodule2.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
   { url: pythonmodule3.basePath, file: fileFor(pythonmodule3.basePath), chunk: "src/pages/notes/ImportedModulePage.tsx" },
@@ -155,7 +157,7 @@ export const pages: StaticPage[] = [
       const url = `/notes/${branch}/s1/graphics/${module}`;
       return { url, file: fileFor(url), chunk: "src/pages/notes/ImportedModulePage.tsx" } satisfies StaticPage;
     }),
-    ...(["module-1", "module-2", "module-3", "question-papers"] as const).map((module) => {
+    ...(["module-1", "module-2", "module-3", "module-4", "question-papers"] as const).map((module) => {
       const url = `/notes/${branch}/s1/electrical/${module}`;
       return { url, file: fileFor(url), chunk: "src/pages/notes/ImportedModulePage.tsx" } satisfies StaticPage;
     }),

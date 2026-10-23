@@ -14,6 +14,6 @@ export const electricalmodule3: NotesModule = {
     { label: "ELECTRICAL AND ELECTRONICS ENGINEERING", href: "/notes/cse/s1/electrical" },
     { label: "MODULE 3" },
   ],
-  module: "Module 3", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", summary: "Module 3",
+  module: "Module 3", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", summary: "Electronic devices: diodes, rectifiers, transistors and FETs",
   source: "Drafted with notebook-agent (ADK, gemini-4-argon) from the KTU GXEST104 syllabus and its listed reference textbooks. Not yet checked against the books.", pages, chapters,
 };

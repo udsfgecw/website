@@ -14,6 +14,6 @@ export const electricalmodule2: NotesModule = {
     { label: "ELECTRICAL AND ELECTRONICS ENGINEERING", href: "/notes/cse/s1/electrical" },
     { label: "MODULE 2" },
   ],
-  module: "Module 2", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", summary: "Module 2",
+  module: "Module 2", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", summary: "Magnetic circuits, electromagnetic induction and AC circuits",
   source: "Drafted with notebook-agent (ADK, gemini-4-argon) from the KTU GXEST104 syllabus and its listed reference textbooks. Not yet checked against the books.", pages, chapters,
 };

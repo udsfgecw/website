@@ -1,3 +1,290 @@
+<!-- page 14 | Magnetic circuits: basic terminology and laws -->
+
+## Magnetic circuits: basic terminology and laws
+
+### Elementary Concepts of Magnetic Circuits ($2^{\text{nd}}$ half)
+
+Magnetic circuits basic terminology includes MMF, field strength, flux density, and reluctance, alongside comparisons between electric and magnetic circuits and series/parallel magnetic circuits with composite materials.
+
+**Magnetism**
+
+A magnet is a material that possesses magnetic properties, attracting pieces of iron and aligning North–South when freely suspended. The phenomenon of attraction is termed magnetism. Magnets are broadly classified into permanent magnets and electromagnets.
+
+Understanding magnetic circuit principles is essential for the design and analysis of electromagnetic devices such as transformers, generators, and motors.
+
+A magnetic field surrounds any magnet. The lines of magnetic field from a bar magnet form continuous, closed loops directed outward from the North Pole and into the South Pole.
+
+![Magnetic field around a bar magnet showing closed lines of force originating from the North (N) pole and entering the South (S) pole.](/assets/notes/ece/s1/electrical/module-2/bar-magnet-field-lines.svg)
+
+Figure 3.1: Magnetic field around a bar magnet
+
+**Magnetic Field Around a Current-Carrying Conductor**
+
+A magnetic field is likewise established surrounding any conductor carrying an electric current.
+
+![Diagram of a straight vertical conductor carrying current I, surrounded by concentric circular magnetic field lines.](/assets/notes/ece/s1/electrical/module-2/straight-conductor-field.svg)
+
+(b)
+
+**Magnetic Flux**
+
+Magnetic flux is the total number of magnetic lines of force existing in a magnetic field. It is denoted by $\Phi$ and measured in Webers (Wb).
+
+Properties of magnetic flux:
+- Magnetic flux lines are imaginary lines.
+- Each line of magnetic flux forms a closed loop.
+- Magnetic flux lines never intersect each other.
+- They behave like stretched elastic threads, tending to shorten along their length.
+- Parallel flux lines acting in the same direction exert a repulsive force on each other.
+
+**Magnetic Circuit**
+
+A magnetic circuit is the closed path followed by magnetic flux lines.
+
+**Magnetic Flux Density**
+
+Magnetic flux density is the flux per unit area perpendicular to the direction of the flux. If $\Phi$ is the flux and $A$ is the cross-sectional area, magnetic flux density $B$ is defined as:
+
+$$
+B = \frac{\Phi}{A}
+$$
+
+The unit of magnetic flux density is $\text{Wb/m}^2$ or Tesla (T).
+
+**Magnetomotive Force (MMF)**
+
+Magnetomotive force (MMF) is the driving force that establishes magnetic flux in a magnetic circuit. When current passes through an excitation coil, magnetic flux is produced. The product of current ($I$) and the number of turns ($N$) of the coil gives the mmf.
+
+MMF, $F$ is expressed as:
+
+$$
+F = NI
+$$
+
+The unit of MMF is Ampere-Turns (AT).
+
+**Magnetic Field Intensity**
+
+Magnetic field intensity is the magnetomotive force per unit length of the magnetic circuit. Denoted by $H$, its unit is Ampere-Turns per meter (AT/m). It is also known as magnetic field strength or magnetizing force.
+
+$$
+H = \frac{\text{mmf}}{l} = \frac{F}{l}
+$$
+
+$$
+H = \frac{NI}{l}
+$$
+
+Or, $F = NI = Hl$ (3.1)
+
+**Permeability**
+
+Permeability is the ability of a material to conduct magnetic flux through it. Represented by $\mu$, its unit is Henry per meter (H/m). Flux density $B$ is directly proportional to magnetizing force $H$:
+
+$$
+B \propto H
+$$
+
+$$
+B = \mu H \tag{3.2}
+$$
+
+$$
+\mu = \frac{B}{H} \tag{3.3}
+$$
+
+where $\mu$ is the permeability of the material. The permeability of free space is denoted by $\mu_o$, equal to $\mu_o = 4\pi \times 10^{-7}$ H/m.
+
+**Relative Permeability**
+
+Relative permeability is the ratio of the flux density produced in a given material to the flux density produced in vacuum by the same magnetizing force. When an mmf is applied to ferromagnetic materials, the resulting flux is significantly greater than in air, vacuum, or nonmagnetic materials. It is denoted by $\mu_r$:
+
+$$
+\text{i.e., } \mu_r = \frac{\text{Flux density produced in a material}}{\text{Flux density in vacuum}}
+$$
+
+Also:
+
+$$
+\mu_r = \frac{\mu}{\mu_0}
+$$
+
+This yields the relation $B = \mu_0 \mu_r H$.
+
+**Reluctance**
+
+Reluctance is the opposition offered by a material to the creation of magnetic flux. Denoted by $S$, reluctance is directly proportional to the path length and inversely proportional to the cross-sectional area of the magnetic path, analogous to resistance in an electric circuit:
+
+$$
+S \propto \frac{l}{A}
+$$
+
+$$
+\boxed{S = \frac{l}{\mu_0 \mu_r A}} \tag{3.4}
+$$
+
+where:
+- $l = \text{mean length of magnetic circuit in meter}$
+- $A = \text{area of cross-section of magnetic circuit in } m^2$
+- $\mu_0 = \text{permeability of free space} = 4\pi \times 10^{-7} \text{ H/m}$
+- $\mu_r = \text{relative permeability of magnetic material}$
+
+Thus, reluctance depends directly on the physical dimensions and core material of the magnetic circuit.
+
+Reluctance can also be expressed through circuit variables:
+
+$$
+\text{Reluctance} = \frac{\text{mmf}}{\text{Flux}}
+$$
+
+i.e.,
+
+$S = \frac{F}{\Phi}$
+
+From expressions 3.1 and 3.2:
+
+$$
+F = Hl = \frac{B}{\mu_0 \mu_r} l = \frac{\Phi}{A \mu_0 \mu_r} l \quad \text{since } B = \frac{\Phi}{A}
+$$
+
+From equation 3.4, $F = S\Phi$:
+
+i.e., $\text{mmf} = \text{Reluctance} \times \text{Flux} \text{ (3.5)}$
+
+$$
+\boxed{\text{Reluctance, } S = \frac{F}{\Phi} = \frac{NI}{\Phi} = \frac{Hl}{\Phi}}
+$$
+
+The unit of reluctance is Ampere-Turns per Weber (AT/Wb).
+
+### Comparison of Electric and Magnetic Circuits
+
+Electric and magnetic circuits exhibit direct mathematical analogies as well as key operational differences.
+
+![Electric circuit diagram showing a closed loop with a DC voltage source E, a resistor R, and current I flowing clockwise.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-077-image-1-clean.webp)
+
+![Magnetic circuit diagram showing a magnetic core wrapped with a coil carrying current I, producing flux Phi.](/assets/notes/ece/s1/electrical/module-2/magnetic-circuit-coil-flux.svg)
+
+| Sl. No. | Electric circuit | Magnetic circuit |
+| :--- | :--- | :--- |
+| 1 | The closed path for electric current is called an electric circuit. | The closed path for magnetic flux is called a magnetic circuit. |
+| 2 | The cause of current flow is electromotive force (emf). | The cause of generation of flux is magnetomotive force (mmf). |
+| 3 | Opposition to current flow is offered by resistance $R$. | Opposition to flux is offered by reluctance $S$. |
+| 4 | Current $I = \frac{\text{emf}}{\text{Resistance}}$ is expressed in amperes (A). | Flux $\Phi = \frac{\text{mmf}}{\text{Reluctance}}$ is expressed in webers (Wb). |
+| 5 | Electromotive force is expressed in volts (V). | Magnetomotive force is expressed in Ampere-Turns (AT). |
+| 6 | Current density $J = \frac{I}{A}$ is expressed in $A/m^2$. | Flux density $B = \frac{\Phi}{A}$ is expressed in $Wb/m^2$. |
+| 7 | Resistance $R = \frac{l}{\sigma A}$, where $\sigma$ is conductivity. | Reluctance $S = \frac{l}{\mu A}$, where $\mu$ is permeability. |
+
+### Differences Between Electric and Magnetic Circuits
+
+| No. | Electric circuit | Magnetic circuit |
+| :--- | :--- | :--- |
+| 1 | Electric current actually flows via physical charge carrier movement. | Magnetic flux is a field quantity; it does not physically flow like electric charge. |
+| 2 | Energy is continuously expended as long as current flows in a resistive circuit. | Energy is required only to establish the magnetic field; maintaining a steady field idealizes zero continuous energy loss, though coil resistance consumes power. |
+| 3 | At constant temperature, resistance is independent of current for an ohmic conductor. | Reluctance depends nonlinearly on flux density because material permeability varies with saturation. |
+| 4 | Good electrical insulators can virtually eliminate current leakage outside the conductor path. | Magnetic flux cannot be entirely insulated or confined; some leakage flux always exists in surrounding air. |
+
+---
+
+<!-- page 15 | Series and parallel composite magnetic circuits -->
+
+## Series and parallel composite magnetic circuits
+
+### Series Magnetic Circuit
+
+Consider a simple magnetic circuit shown in Figure 3.7. It consists of a coil of $N$ turns wound over a single core material having uniform cross-sectional area $A$ and mean length of flux path $l$. mmf is indicated by $NI$ which is equal to $Hl$. It is represented by $\mathcal{F}$. Reluctance offered by the circuit to the flow of flux is denoted as $S$ in its electrical equivalent representation. This is useful for simplifying analysis of magnetic circuit even though there is no physical connection between winding and core.
+
+![Diagram showing a physical magnetic core with a coil and its electrical equivalent circuit](/assets/notes/ece/s1/electrical/module-2/series-magnetic-circuit.svg)
+
+**Figure 3.7: Simple magnetic circuit**
+
+Polarity of mmf is determined based on the direction of flux. Here it is in clockwise direction as indicated in figure. mmf source is expressed by $NI$ and mmf drops are expressed by $Hl$, where $H$ is the magnetizing force on a section of a magnetic circuit and $l$ is the length of the section.
+
+![Magnetic circuit with air gap and its equivalent electrical/magnetic circuit diagram](/assets/notes/ece/s1/electrical/module-2/magnetic-circuit-air-gap.svg)
+
+Consider a composite magnetic circuit with an air gap of length $l_g$. Thus there are two mediums in the magnetic circuit namely (a) iron and (b) air. Magnetic flux is same through these mediums and thus it is a series magnetic circuit. Also total reluctance of the circuit is the sum of reluctances of iron and air.
+
+Parameters for this circuit are defined as follows:
+
+- Number of turns: $= N$
+- Current through the coil (exciting current): $= I$ (A)
+- Mean length of the flux path through iron: $= l_i$ (m)
+- Length of the flux path through air gap: $= l_g$ (m)
+- Cross-sectional area: $= A$ ($\text{m}^2$)
+- Magnetic flux density: $= B$ ($\text{Wb}/\text{m}^2$)
+- Relative permeability of iron: $= \mu_{ri}$ (dimensionless; absolute permeability $\mu=\mu_0\mu_{ri}$ is measured in H/m)
+- Reluctance of iron: $= \mathcal{S}_i$ ($\text{AT}/\text{Wb}$)
+- Reluctance of air gap: $= \mathcal{S}_g$ ($\text{AT}/\text{Wb}$)
+
+We can develop equations for this magnetic circuit as:
+
+Total mmf in the circuit,
+
+$$
+NI = H_i l_i + H_g l_g
+$$
+
+Magnetic field intensity required for iron, $H_i = \dfrac{B}{\mu_0 \mu_{ri}}$
+
+Magnetic field intensity required for air, $H_g = \dfrac{B}{\mu_0}$
+
+Therefore, using $H_i = B/(\mu_0\mu_{ri})$ in the iron and $H_g = B/\mu_0$ in the air gap:
+
+$$
+NI = \frac{B l_i}{\mu_0\mu_{ri}} + \frac{B l_g}{\mu_0}
+= \Phi\left(\frac{l_i}{\mu_0\mu_{ri} A} + \frac{l_g}{\mu_0 A}\right)
+= \Phi(\mathcal S_i+\mathcal S_g).
+$$
+
+The coil's magnetomotive force equals the sum of the iron and air-gap mmf drops.
+
+### Role of the Air Gap
+
+If the core contains an air gap ($l_g$), the gap increases the total reluctance of the magnetic circuit, because the permeability of air ($\mu_0$) is far lower than that of iron.
+
+### Series-Parallel Magnetic Circuits
+
+Now consider a parallel magnetic circuit in which a coil of $N$ turns is wound on an iron core as shown in Figure 3.12.
+
+For analyzing it, we draw its equivalent electrical representation as indicated in Figure 3.13.
+
+![Figure 3.12: A series-parallel magnetic circuit showing an iron core with a coil of N turns and magnetic flux paths.](/assets/notes/ece/s1/electrical/module-2/series-parallel-magnetic-circuit.svg)
+
+**Figure 3.12: A series-parallel magnetic circuit**
+
+![Figure 3.13: Electrical equivalent circuit of series-parallel magnetic circuit.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-082-image-2-clean.webp)
+
+**Figure 3.13: Electrical equivalent circuit of series-parallel magnetic circuit**
+
+We usually refer vertical links of core as limbs and horizontal links as yoke. In the figure $AF$, $BE$ and $CD$ are the limbs whereas $AB$, $BC$, $FE$ and $ED$ are the yokes.
+
+When the coil carries a current $I$ in the direction shown, a magnetic flux $\Phi_1$ will be created in the first limb ($AF$) which will be in the upward direction. Flux $\Phi_1$ will be same along the yoke $AB$. At point $B$, there are two parallel paths for flux. Thus $\Phi_1$ will be split into two components $\Phi_2$ and $\Phi_3$ such that $\Phi_1 = \Phi_2 + \Phi_3$, $\Phi_2$ along the central limb $BE$ and $\Phi_3$ along the yoke $BC$. Values of $\Phi_1$ and $\Phi_2$ depend on respective reluctances of the paths. $\Phi_2$ and $\Phi_3$ again recombine at point $E$ and completes the path.
+
+$$
+\text{Total flux, } \Phi_1 = \Phi_2 + \Phi_3
+$$
+
+$$
+\text{Total mmf required} = \text{mmf for path EFAB} + \text{mmf for path BE or path BCDE}
+$$
+
+$$
+NI = \Phi_1 S_1 + \Phi_2 S_2 = \Phi_1 S_1 + \Phi_3 S_3
+$$
+
+Some other forms of series-parallel magnetic circuits and their electric equivalent representations are shown below.
+
+![Magnetic core (a) with Gap a and Gap b and its magnetic circuit equivalent (b)](/assets/notes/ece/s1/electrical/module-2/core-gap-a-gap-b.svg)
+
+![Magnetic core with two windows and two windings (a)](/assets/notes/ece/s1/electrical/module-2/two-window-core-two-windings.svg)
+
+![Magnetic core with center gap and side gap (a) and its equivalent magnetic circuit (b)](/assets/notes/ece/s1/electrical/module-2/centre-gap-side-gap-core.svg)
+
+![Magnetic circuit equivalent with two mmf sources and two loops](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-084-image-4-clean.webp)
+
+**Figure 3.14: A series-parallel magnetic circuit and its electric-equivalent representation**
+
+
 <!-- page 1 | Electromagnetic induction: Faraday's laws and Lenz's law -->
 
 ## Electromagnetic induction: Faraday's laws and Lenz's law
@@ -73,21 +360,7 @@ Lenz's law is a direct consequence of the **law of conservation of energy**:
 
 An emf can be induced in a conductor by changing the flux linkage in two fundamental ways:
 
-```
-                   Induced EMF
-                        |
-        +---------------+---------------+
-        |                               |
-Dynamically Induced EMF        Statically Induced EMF
-(Conductor moves OR            (Both conductor and magnet
- field moves physically)        are stationary; flux magnitude
-                                varies with time)
-                                        |
-                        +---------------+---------------+
-                        |                               |
-               Self-Induced EMF               Mutually Induced EMF
-               (In the same coil)             (In a neighboring coil)
-```
+![Tree diagram of induced EMF: dynamically induced EMF, and statically induced EMF which splits into self-induced EMF and mutually induced EMF](/assets/notes/ece/s1/electrical/module-2/induced-emf-types.svg)
 
 ### Dynamically Induced EMF
 
@@ -143,7 +416,18 @@ Statically induced emf is further classified into two types:
 
 ---
 
+**Joseph Henry**
+
+Joseph Henry was an American scientist whose work on electromagnetism led to the characterization of electromagnetic induction.
+
+![Portrait of American scientist Joseph Henry](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-032-image-1-source.webp)
+
+**Henry**
+
+One henry is defined as the inductance of a circuit where an induced voltage of one volt is produced by a current changing at a rate of one ampere per second.
+
 <!-- page 2 | Self-inductance, mutual inductance and coefficient of coupling -->
+
 
 ## Self-inductance, mutual inductance and coefficient of coupling
 
@@ -187,12 +471,7 @@ Assuming the magnetic core has constant permeability (no magnetic saturation), t
 
 Consider two coils, Coil 1 (having $N_1$ turns) and Coil 2 (having $N_2$ turns), placed close to each other so that a portion of the magnetic flux produced by one coil links with the other:
 
-```
-   i1 -->  +--------+           +--------+
-           | Coil 1 |  Phi_12   | Coil 2 |  --> Induced emf e_M2
-           | (N1)   | ========> | (N2)   |
-           +--------+           +--------+
-```
+![Two coils: current i1 in Coil 1 produces flux Phi-12 that links Coil 2, inducing emf e_M2 in Coil 2](/assets/notes/ece/s1/electrical/module-2/mutual-induction-coils.svg)
 
 When a time-varying current $i_1$ flows in Coil 1, it produces a total flux $\phi_1$. A part of this flux, denoted $\phi_{12}$, links with Coil 2. As $i_1$ changes, $\phi_{12}$ changes, inducing an emf $e_{M2}$ in Coil 2. This is called **mutually induced emf**.
 
@@ -281,17 +560,7 @@ The **coefficient of coupling** ($k$) between two magnetically coupled coils is 
 
 An alternating voltage is generated based on **Faraday's law of electromagnetic induction** either by rotating a rectangular coil with constant angular velocity inside a uniform stationary magnetic field, or by rotating a magnetic field inside a stationary set of coils (as in large commercial alternators).
 
-```
-      N-Pole                     S-Pole
-     +------+       (b)         +------+
-     |      |        o          |      |
-     |      |       /           |      |
-     |  B   |  --->  O  omega   |  B   |
-     |      |       /           |      |
-     |      |      o            |      |
-     +------+      (a)          +------+
-            Axis of coil rotation
-```
+![Rectangular coil rotating with angular velocity omega between an N-pole and an S-pole in magnetic field B, showing coil positions (a) and (b)](/assets/notes/ece/s1/electrical/module-2/alternator-rotating-coil.svg)
 
 **Derivation of the Sinusoidal EMF Equation:**
 
@@ -372,9 +641,9 @@ $$
 
 ---
 
-<!-- page 4 | Average value, RMS value, form factor and peak factor -->
+<!-- page 4 | Average value, RMS value and form factor -->
 
-## Average value, RMS value, form factor and peak factor
+## Average value, RMS value and form factor
 
 ### Average Value ($I_{\text{avg}}$ or $V_{\text{avg}}$)
 
@@ -434,9 +703,7 @@ $$
 V_{\text{rms}} = \frac{V_m}{\sqrt{2}} \approx 0.707 V_m
 $$
 
-### Form Factor ($K_f$) and Peak (Crest) Factor ($K_p$)
-
-**Form Factor ($K_f$)**
+### Form Factor ($K_f$)
 
 The **form factor** of an alternating waveform is defined as the ratio of its RMS value to its average value:
 
@@ -449,29 +716,6 @@ For a pure sinusoidal waveform:
 $$
 K_f = \frac{I_m / \sqrt{2}}{2 I_m / \pi} = \frac{\pi}{2\sqrt{2}} \approx 1.11
 $$
-
-**Peak Factor / Crest Factor / Amplitude Factor ($K_p$)**
-
-The **peak factor** (or crest factor) of an alternating waveform is defined as the ratio of its maximum (peak) value to its RMS value:
-
-$$
-\text{Peak Factor } (K_p) = \frac{\text{Maximum (Peak) Value}}{\text{RMS Value}} = \frac{I_m}{I_{\text{rms}}}
-$$
-
-For a pure sinusoidal waveform:
-
-$$
-K_p = \frac{I_m}{I_m / \sqrt{2}} = \sqrt{2} \approx 1.414
-$$
-
-### Summary Table for Standard Waveforms
-
-| Waveform Type | Average Value | RMS Value | Form Factor ($K_f$) | Peak Factor ($K_p$) |
-| --- | --- | --- | --- | --- |
-| **Pure Sine Wave** (or full-wave rectified sine) | $\frac{2 V_m}{\pi} = 0.637 V_m$ | $\frac{V_m}{\sqrt{2}} = 0.707 V_m$ | $1.11$ | $\sqrt{2} = 1.414$ |
-| **Half-Wave Rectified Sine Wave** | $\frac{V_m}{\pi} = 0.318 V_m$ | $\frac{V_m}{2} = 0.5 V_m$ | $\frac{\pi}{2} = 1.57$ | $2.0$ |
-| **Symmetrical Square Wave** (peak $\pm V_m$) | $V_m$ | $V_m$ | $1.0$ | $1.0$ |
-| **Triangular / Sawtooth Wave** (peak $V_m$) | $\frac{V_m}{2} = 0.5 V_m$ | $\frac{V_m}{\sqrt{3}} = 0.577 V_m$ | $\frac{2}{\sqrt{3}} = 1.155$ | $\sqrt{3} = 1.732$ |
 
 ### Worked Example 1
 
@@ -496,29 +740,10 @@ $$
 
 **Answer:** $V_m = 325.27\text{ V}$, $V_{\text{rms}} = 230\text{ V}$, $V_{\text{avg}} = 207.2\text{ V}$, $f = 50\text{ Hz}$, $T = 0.02\text{ s}$, $K_f = 1.11$.
 
-### Worked Example 2
-
-**Problem:** Find the average value, RMS value, and form factor of a periodic voltage waveform that increases linearly from $0\text{ V}$ to $100\text{ V}$ in $0.01\text{ s}$ and then drops instantly to $0\text{ V}$, repeating with a time period $T = 0.01\text{ s}$ (a sawtooth waveform).
-
-**Solution:**
-
-1. **Write the equation of the waveform for one period ($0 \le t \le T$):**
-   With $V_m = 100\text{ V}$ and $T = 0.01\text{ s}$, the straight line through the origin is:
-   $$v(t) = \frac{V_m}{T} t$$
-2. **Calculate the average value ($V_{\text{avg}}$):**
-   $$V_{\text{avg}} = \frac{1}{T} \int_{0}^{T} \left(\frac{V_m}{T} t\right) dt = \frac{V_m}{T^2} \left[\frac{t^2}{2}\right]_{0}^{T} = \frac{V_m}{2} = \frac{100}{2} = 50\text{ V}$$
-3. **Calculate the RMS value ($V_{\text{rms}}$):**
-   $$V_{\text{rms}} = \sqrt{\frac{1}{T} \int_{0}^{T} \left(\frac{V_m}{T} t\right)^2 dt} = \sqrt{\frac{V_m^2}{T^3} \left[\frac{t^3}{3}\right]_{0}^{T}} = \frac{V_m}{\sqrt{3}} = \frac{100}{1.732} = 57.74\text{ V}$$
-4. **Calculate the form factor ($K_f$):**
-   $$K_f = \frac{V_{\text{rms}}}{V_{\text{avg}}} = \frac{57.74}{50} = 1.155$$
-
-**Answer:** $V_{\text{avg}} = 50\text{ V}$, $V_{\text{rms}} = 57.74\text{ V}$, $K_f = 1.155$.
-
 ### Summary
 
 - For a sine wave: $I_{\text{avg}} = \frac{2I_m}{\pi} = 0.637 I_m$ and $I_{\text{rms}} = \frac{I_m}{\sqrt{2}} = 0.707 I_m$.
 - Form factor $K_f = \frac{\text{RMS}}{\text{Average}} = 1.11$ (for sine wave).
-- Peak factor $K_p = \frac{\text{Peak}}{\text{RMS}} = 1.414$ (for sine wave).
 
 ---
 
@@ -561,17 +786,7 @@ the difference between their phase angles, $\phi = \phi_1 - \phi_2$, is called t
 2. **Leading ($\phi_1 > \phi_2$):** Voltage $v(t)$ reaches its positive zero and positive peak earlier in time by angle $\phi = \phi_1 - \phi_2$ than current $i(t)$. We say **$v$ leads $i$ by angle $\phi$**. In a phasor diagram (where rotation is counter-clockwise), the phasor $\mathbf{V}$ lies ahead of $\mathbf{I}$ in the counter-clockwise direction by angle $\phi$.
 3. **Lagging ($\phi_1 < \phi_2$):** Current $i(t)$ reaches its peak behind voltage $v(t)$ by angle $\phi$. We say **$i$ lags behind $v$ by angle $\phi$** (located clockwise relative to $\mathbf{V}$).
 
-```
-      Imaginary (+j)
-          ^
-          |      / V (Leads I by phi)
-          |     /
-          |    /  phi1
-          |   /    \  phi2
-   -------+--o----------------> Real (Reference Axis)
-          |   \
-          |    \ I (Lags V)
-```
+![Phasor diagram with voltage V leading current I by phi, angles phi1 and phi2 measured from the real reference axis](/assets/notes/ece/s1/electrical/module-2/phasor-leading-lagging.svg)
 
 ### Mathematical Forms of a Phasor
 
@@ -684,14 +899,7 @@ Using the RMS value $V = V_m/\sqrt{2}$ and phase angle $\phi$, a sinusoidal quan
 
 Consider an AC voltage source $v(t) = V_m \sin(\omega t)$ connected across a pure resistor of resistance $R$ ohms.
 
-```
-         i(t) --->
-      +-----/\/\/\-----+
-      |       R        |
-     (~) v(t)          |
-      |                |
-      +----------------+
-```
+![AC voltage source v(t) connected across a resistor R, with current i(t) flowing around the loop](/assets/notes/ece/s1/electrical/module-2/ac-resistor-circuit.svg)
 
 1. **Current Equation:** By Ohm's law, the instantaneous current is:
    $$i(t) = \frac{v(t)}{R} = \frac{V_m \sin(\omega t)}{R} = I_m \sin(\omega t)$$
@@ -826,14 +1034,7 @@ where the magnitude of impedance is $Z = \sqrt{R^2 + X^2}$ and the phase angle i
 
 Consider a resistor $R$ and an inductor $L$ connected in series across an AC supply $v(t) = V_m \sin(\omega t)$. Since the circuit is in series, the same current $\mathbf{I} = I\angle 0^\circ$ (taken as the reference phasor) flows through both elements.
 
-```
-         I --->      V_R          V_L
-      +-----------/\/\/\-------uuuuuu-------+
-      |             R            L          |
-     (~) V                                  |
-      |                                     |
-      +-------------------------------------+
-```
+![Series RL circuit across an AC supply V with current I, voltage V_R across R and V_L across L](/assets/notes/ece/s1/electrical/module-2/series-rl-circuit.svg)
 
 1. **Component Voltage Phasors:**
    - Voltage drop across $R$: $\mathbf{V}_R = I R \angle 0^\circ = V_R + j0$ (in phase with $\mathbf{I}$).
@@ -848,15 +1049,7 @@ Consider a resistor $R$ and an inductor $L$ connected in series across an AC sup
    where magnitude $Z = \sqrt{R^2 + X_L^2}$ and phase angle $\phi = \tan^{-1}\left(\frac{X_L}{R}\right) = \tan^{-1}\left(\frac{V_L}{V_R}\right)$.
 4. **Phase Relationship:** Since $\phi$ is positive ($0^\circ < \phi < 90^\circ$), the supply voltage $\mathbf{V}$ leads the current $\mathbf{I}$ by angle $\phi$, or **current $\mathbf{I}$ lags behind voltage $\mathbf{V}$ by angle $\phi$**.
 
-```
-   Voltage Triangle (RL)             Impedance Triangle (RL)
-          /|                                /|
-       V / | V_L = I*X_L                 Z / | X_L
-        /  |                              /  |
-       /phi|                             /phi|
-      +----+                            +----+
-     V_R = I*R                            R
-```
+![Voltage triangle and impedance triangle for a series RL circuit, both with angle phi](/assets/notes/ece/s1/electrical/module-2/rl-voltage-impedance-triangles.svg)
 
 ### 2. Series RC Circuit
 
@@ -871,20 +1064,14 @@ Consider a resistor $R$ and a capacitor $C$ connected in series carrying referen
    $$V = \sqrt{V_R^2 + V_C^2} = I \sqrt{R^2 + X_C^2}$$
 3. **Impedance ($\mathbf{Z}$):**
    $$\mathbf{Z} = \frac{\mathbf{V}}{\mathbf{I}} = R - j X_C = Z \angle -\phi$$
-   where magnitude $Z = \sqrt{R^2 + X_C^2}$ and phase angle Magnitude $\phi = \tan^{-1}\left(\frac{X_C}{R}\right) = \tan^{-1}\left(\frac{V_C}{V_R}\right)$ (or $\theta_Z = \tan^{-1}(-X_C/R) = -\phi$).
+   where magnitude $Z = \sqrt{R^2 + X_C^2}$ and phase angle $\phi = \tan^{-1}\left(\frac{X_C}{R}\right) = \tan^{-1}\left(\frac{V_C}{V_R}\right)$ (or $\theta_Z = \tan^{-1}(-X_C/R) = -\phi$).
 4. **Phase Relationship:** The supply voltage $\mathbf{V}$ lags behind $\mathbf{I}$ by angle $\phi$, or **current $\mathbf{I}$ leads the supply voltage $\mathbf{V}$ by angle $\phi$** ($0^\circ < \phi < 90^\circ$).
 
 ### 3. Series RLC Circuit
 
 Consider a resistor $R$, an inductor $L$, and a capacitor $C$ connected in series across an AC supply $\mathbf{V}$, carrying a common reference current $\mathbf{I} = I\angle 0^\circ$.
 
-```
-         I --->    V_R       V_L       V_C
-      +----------/\/\/\----uuuuuu------||------+
-      |            R         L         C       |
-     (~) V                                     |
-      +----------------------------------------+
-```
+![Series RLC circuit across an AC supply V with current I and voltages V_R, V_L and V_C across R, L and C](/assets/notes/ece/s1/electrical/module-2/series-rlc-circuit.svg)
 
 1. **Phasor KVL Equation:**
    - $\mathbf{V}_R = I R$ (along $+x$ axis, in phase with $\mathbf{I}$)
@@ -981,15 +1168,7 @@ where $\phi$ is the phase angle between voltage and current.
 
 In an AC circuit, power is characterized by three related quantities that form a right-angled triangle called the **Power Triangle**:
 
-```
-             /|
-            / |
-   S = VI  /  | Q = VI sin(phi)  [Reactive Power, VAR]
-  [VA]    /   |
-         /phi |
-        +-----+
-     P = VI cos(phi)  [Active Power, W]
-```
+![Power triangle with apparent power S = VI in VA, reactive power Q = VI sin(phi) in VAR, and active power P = VI cos(phi) in W](/assets/notes/ece/s1/electrical/module-2/power-triangle.svg)
 
 1. **Active Power / Real Power / True Power ($P$):**
    The actual power consumed or dissipated in the resistive part of the circuit that does useful work (converted into heat, light, or mechanical work).
@@ -1003,8 +1182,6 @@ In an AC circuit, power is characterized by three related quantities that form a
 3. **Apparent Power ($S$):**
    The product of the RMS voltage $V$ and the RMS current $I$ supplied to the circuit, without considering the phase angle. Electrical equipment such as transformers and AC generators are rated in terms of apparent power ($S$).
    $$S = V I = I^2 Z = \sqrt{P^2 + Q^2} \quad \text{(Unit: volt-ampere, VA or kilovolt-ampere, kVA)}$$
-
-*(Note: **Complex Power** is written as $\mathbf{S} = \mathbf{V} \mathbf{I}^* = P + jQ = S\angle\phi\text{ VA}$.)*
 
 ### Power Factor ($\cos\phi$)
 
@@ -1115,17 +1292,7 @@ A **three-phase AC system** consists of three identical single-phase AC voltage 
   $$\mathbf{E}_Y = E_{ph} \angle -120^\circ$$
   $$\mathbf{E}_B = E_{ph} \angle -240^\circ = E_{ph} \angle +120^\circ$$
 
-```
-             E_B (120 deg)
-               \
-                \  120 deg
-                 \
-                  o------------> E_R (0 deg)
-                 /
-                /  120 deg
-               /
-             E_Y (-120 deg)
-```
+![Balanced three-phase voltage phasors: E_R at 0 degrees, E_Y at -120 degrees, E_B at 120 degrees](/assets/notes/ece/s1/electrical/module-2/three-phase-phasor-diagram.svg)
 
 **Important Property:** At every instant of time, the algebraic sum of the three balanced instantaneous three-phase voltages is zero, and their phasor sum is also zero:
 $$e_R(t) + e_Y(t) + e_B(t) = 0 \quad \text{and} \quad \mathbf{E}_R + \mathbf{E}_Y + \mathbf{E}_B = 0$$
@@ -1153,17 +1320,7 @@ The order in which the voltages in the three phases attain their positive maximu
 
 In a **Star (Y) connection**, the similar ends (starting ends or finishing ends) of the three phase impedances are joined together at a common point $N$ called the **neutral point** (or star point), and the other three ends are connected to the three line conductors $R$, $Y$, and $B$.
 
-```
-   Line R ------>----+   I_L = I_ph
-                     |
-                    [Z_ph]  (V_ph = V_RN)
-                     |
-   Neutral N --------*-------------------- (Neutral Wire)
-                    / \
-     (V_YN) [Z_ph] /   \ [Z_ph] (V_BN)
-                  /     \
-   Line Y ------>+       +<------ Line B
-```
+![Balanced star (wye) connection: line terminals R, Y, B feed phase impedances Z_ph joined at neutral point N](/assets/notes/ece/s1/electrical/module-2/star-connection.svg)
 
 **Derivation of Line-to-Phase Relations in Star Connection:**
 
@@ -1189,16 +1346,7 @@ In a **Star (Y) connection**, the similar ends (starting ends or finishing ends)
 
 In a **Delta ($\Delta$) connection**, the finishing end of one phase impedance is connected to the starting end of the next phase impedance to form a closed triangular loop, and the three line conductors $R$, $Y$, and $B$ are connected to the three junction points.
 
-```
-   Line R (I_R) ---------->---------*
-                                   / \
-                                  /   \
-                   (I_BR) [Z_ph] /     \ [Z_ph] (I_RY = I_ph)
-                                /       \
-   Line B (I_B) ------>--------*---------*--------<------ Line Y (I_Y)
-                                  [Z_ph]
-                                  (I_YB)
-```
+![Balanced delta (mesh) connection: phase impedances Z_ph form a closed loop fed from line terminals R, Y, B](/assets/notes/ece/s1/electrical/module-2/delta-connection.svg)
 
 **Derivation of Line-to-Phase Relations in Delta Connection:**
 
@@ -1223,134 +1371,6 @@ In a **Delta ($\Delta$) connection**, the finishing end of one phase impedance i
 
 - **Star (Y) connection:** $I_L = I_{ph}$ and $V_L = \sqrt{3} V_{ph}$.
 - **Delta ($\Delta$) connection:** $V_L = V_{ph}$ and $I_L = \sqrt{3} I_{ph}$.
-
----
-
-<!-- page 10 | Power in balanced three-phase circuits and worked problems -->
-
-## Power in balanced three-phase circuits and worked problems
-
-### Power Expressions in a Balanced Three-Phase Circuit
-
-In any balanced three-phase circuit (whether connected in Star or Delta), each of the three identical phases has phase voltage $V_{ph}$, phase current $I_{ph}$, and phase angle $\phi$ between $V_{ph}$ and $I_{ph}$ (where $\cos\phi = R_{ph}/Z_{ph}$).
-
-Therefore, the active power consumed per phase is $P_{ph} = V_{ph} I_{ph} \cos\phi$, and the **total three-phase active power** $P$ is three times the single-phase power:
-
-$$
-P = 3 P_{ph} = 3 V_{ph} I_{ph} \cos\phi \quad \text{(watts, W)}
-$$
-
-**Expressing Three-Phase Power in Terms of Line Quantities ($V_L$ and $I_L$):**
-
-1. **For a Balanced Star (Y) Connection:**
-   Substitute $V_{ph} = \frac{V_L}{\sqrt{3}}$ and $I_{ph} = I_L$:
-   $$P = 3 \left(\frac{V_L}{\sqrt{3}}\right) I_L \cos\phi = \sqrt{3} V_L I_L \cos\phi \quad \text{(W)}$$
-
-2. **For a Balanced Delta ($\Delta$) Connection:**
-   Substitute $V_{ph} = V_L$ and $I_{ph} = \frac{I_L}{\sqrt{3}}$:
-   $$P = 3 V_L \left(\frac{I_L}{\sqrt{3}}\right) \cos\phi = \sqrt{3} V_L I_L \cos\phi \quad \text{(W)}$$
-
-Thus, the expressions for **Total Active, Reactive, and Apparent Power** in terms of line voltage $V_L$ and line current $I_L$ are identical for both Star and Delta connections:
-
-- **Total Active Power ($P$):**
-  $$P = 3 V_{ph} I_{ph} \cos\phi = \sqrt{3} V_L I_L \cos\phi = 3 I_{ph}^2 R_{ph} \quad \text{(W)}$$
-- **Total Reactive Power ($Q$):**
-  $$Q = 3 V_{ph} I_{ph} \sin\phi = \sqrt{3} V_L I_L \sin\phi = 3 I_{ph}^2 X_{ph} \quad \text{(VAR)}$$
-- **Total Apparent Power ($S$):**
-  $$S = 3 V_{ph} I_{ph} = \sqrt{3} V_L I_L = \sqrt{P^2 + Q^2} \quad \text{(VA)}$$
-
-*(Important Note: In all these formulas, $\phi$ is always the **phase angle** between the phase voltage $\mathbf{V}_{ph}$ and the phase current $\mathbf{I}_{ph}$, i.e., $\cos\phi = R_{ph}/Z_{ph}$, NOT the angle between $V_L$ and $I_L$.)*
-
-### Comparison: Balanced Star vs. Balanced Delta Connection
-
-| Parameter | Star (Y) Connection | Delta ($\Delta$) Connection |
-| --- | --- | --- |
-| **Voltage relation** | $V_L = \sqrt{3} V_{ph}$ | $V_L = V_{ph}$ |
-| **Current relation** | $I_L = I_{ph}$ | $I_L = \sqrt{3} I_{ph}$ |
-| **Phase current ($I_{ph}$)** | $I_{ph} = \frac{V_L}{\sqrt{3} Z_{ph}}$ | $I_{ph} = \frac{V_L}{Z_{ph}}$ |
-| **Line current ($I_L$)** | $I_{L(\text{star})} = \frac{V_L}{\sqrt{3} Z_{ph}}$ | $I_{L(\text{delta})} = \frac{\sqrt{3} V_L}{Z_{ph}} = 3 \, I_{L(\text{star})}$ |
-| **Total Active Power ($P$)** | $P = \sqrt{3} V_L I_L \cos\phi$ | $P = \sqrt{3} V_L I_L \cos\phi = 3 \, P_{\text{star}}$ (for same $Z_{ph}$ and $V_L$) |
-| **Neutral point** | Available (permits 3-phase 4-wire supply) | Not available (3-phase 3-wire only) |
-
-### Worked Example 1 (Star-Connected Load)
-
-**Problem:** Three identical coils, each having a resistance of $15\ \Omega$ and an inductance of $0.04\text{ H}$, are connected in **star** across a $400\text{ V}, 50\text{ Hz}$, three-phase balanced AC supply. Calculate:
-(a) Phase voltage,
-(b) Impedance and power factor of each phase,
-(c) Phase current and line current, and
-(d) Total active power, reactive power, and apparent power absorbed by the load.
-
-**Solution:**
-
-1. **Identify given data:** $V_L = 400\text{ V}$, $f = 50\text{ Hz}$, $R_{ph} = 15\ \Omega$, $L_{ph} = 0.04\text{ H}$ (Star connected).
-2. (a) **Calculate phase voltage ($V_{ph}$):**
-   $$V_{ph} = \frac{V_L}{\sqrt{3}} = \frac{400}{1.732} = 230.94\text{ V}$$
-3. (b) **Calculate phase impedance ($Z_{ph}$) and power factor ($\cos\phi$):**
-   - Inductive reactance per phase:
-     $$X_{ph} = 2\pi f L_{ph} = 2\pi \times 50 \times 0.04 = 12.57\ \Omega$$
-   - Impedance per phase:
-     $$Z_{ph} = \sqrt{R_{ph}^2 + X_{ph}^2} = \sqrt{15^2 + 12.57^2} = \sqrt{225 + 158.0} = \sqrt{383.0} = 19.57\ \Omega$$
-   - Power factor:
-     $$\cos\phi = \frac{R_{ph}}{Z_{ph}} = \frac{15}{19.57} = 0.7665\text{ (lagging)}$$
-     $$\phi = \cos^{-1}(0.7665) = 39.96^\circ, \qquad \sin\phi = \frac{X_{ph}}{Z_{ph}} = \frac{12.57}{19.57} = 0.6423$$
-4. (c) **Calculate phase current ($I_{ph}$) and line current ($I_L$):**
-   $$I_{ph} = \frac{V_{ph}}{Z_{ph}} = \frac{230.94}{19.57} = 11.80\text{ A}$$
-   For a star connection:
-   $$I_L = I_{ph} = 11.80\text{ A}$$
-5. (d) **Calculate total $P$, $Q$, and $S$:**
-   - Total Active Power:
-     $$P = \sqrt{3} V_L I_L \cos\phi = 1.732 \times 400 \times 11.80 \times 0.7665 = 6266\text{ W} = 6.266\text{ kW}$$
-   - Total Reactive Power:
-     $$Q = \sqrt{3} V_L I_L \sin\phi = 1.732 \times 400 \times 11.80 \times 0.6423 = 5251\text{ VAR} = 5.251\text{ kVAR}$$
-   - Total Apparent Power:
-     $$S = \sqrt{3} V_L I_L = 1.732 \times 400 \times 11.80 = 8175\text{ VA} = 8.175\text{ kVA}$$
-
-**Answer:** (a) $V_{ph} = 230.94\text{ V}$; (b) $Z_{ph} = 19.57\ \Omega, \cos\phi = 0.7665\text{ (lag)}$; (c) $I_{ph} = I_L = 11.80\text{ A}$; (d) $P = 6.266\text{ kW}, Q = 5.251\text{ kVAR}, S = 8.175\text{ kVA}$.
-
-### Worked Example 2 (Delta-Connected Load)
-
-**Problem:** If the same three coils of Worked Example 1 ($R_{ph} = 15\ \Omega$, $L_{ph} = 0.04\text{ H}$) are reconnected in **delta** across the same $400\text{ V}, 50\text{ Hz}$ three-phase supply, calculate: (a) Phase voltage, (b) Phase current, (c) Line current, and (d) Total active power consumed.
-
-**Solution:**
-
-1. From Worked Example 1, per-phase impedance and power factor remain unchanged:
-   $$Z_{ph} = 19.57\ \Omega \quad \text{and} \quad \cos\phi = 0.7665\text{ (lagging)}$$
-2. (a) **Phase voltage ($V_{ph}$) in Delta:**
-   $$V_{ph} = V_L = 400\text{ V}$$
-3. (b) **Phase current ($I_{ph}$):**
-   $$I_{ph} = \frac{V_{ph}}{Z_{ph}} = \frac{400}{19.57} = 20.44\text{ A}$$
-4. (c) **Line current ($I_L$):**
-   $$I_L = \sqrt{3} I_{ph} = 1.732 \times 20.44 = 35.40\text{ A}$$
-   *(Notice that $I_{L(\text{delta})} = 35.40\text{ A} = 3 \times 11.80\text{ A} = 3 I_{L(\text{star})}$.)*
-5. (d) **Total Active Power ($P$):**
-   $$P = \sqrt{3} V_L I_L \cos\phi = 1.732 \times 400 \times 35.40 \times 0.7665 = 18.80\text{ kW}$$
-   *(Notice that $P_{\text{delta}} = 18.80\text{ kW} = 3 \times 6.266\text{ kW} = 3 P_{\text{star}}$.)*
-
-**Answer:** (a) $V_{ph} = 400\text{ V}$; (b) $I_{ph} = 20.44\text{ A}$; (c) $I_L = 35.40\text{ A}$; (d) $P = 18.80\text{ kW}$.
-
-### Worked Example 3
-
-**Problem:** A balanced three-phase delta-connected load draws a total active power of $12\text{ kW}$ at a lagging power factor of $0.8$ from a $415\text{ V}, 50\text{ Hz}$ three-phase supply. Find the line current, phase current, and the resistance and reactance of each phase of the load.
-
-**Solution:**
-
-1. **Calculate line current ($I_L$):**
-   $$P = \sqrt{3} V_L I_L \cos\phi \implies I_L = \frac{P}{\sqrt{3} V_L \cos\phi} = \frac{12000}{1.732 \times 415 \times 0.8} = 20.87\text{ A}$$
-2. **Calculate phase current ($I_{ph}$) for Delta:**
-   $$I_{ph} = \frac{I_L}{\sqrt{3}} = \frac{20.87}{1.732} = 12.05\text{ A}$$
-3. **Calculate phase impedance ($Z_{ph}$), resistance ($R_{ph}$), and reactance ($X_{ph}$):**
-   - For Delta, $V_{ph} = V_L = 415\text{ V}$.
-   - $Z_{ph} = \frac{V_{ph}}{I_{ph}} = \frac{415}{12.05} = 34.44\ \Omega$
-   - $R_{ph} = Z_{ph} \cos\phi = 34.44 \times 0.8 = 27.55\ \Omega$
-   - Since $\cos\phi = 0.8$, $\sin\phi = 0.6$:
-     $$X_{ph} = Z_{ph} \sin\phi = 34.44 \times 0.6 = 20.66\ \Omega$$
-
-**Answer:** $I_L = 20.87\text{ A}$, $I_{ph} = 12.05\text{ A}$, $R_{ph} = 27.55\ \Omega$, $X_{ph} = 20.66\ \Omega$.
-
-### Summary
-
-- In both Star and Delta balanced 3-phase circuits: $P = \sqrt{3} V_L I_L \cos\phi$, $Q = \sqrt{3} V_L I_L \sin\phi$, and $S = \sqrt{3} V_L I_L$.
-- When three identical impedances are switched from Star to Delta across the same line voltage $V_L$, both the line current drawn and the total power consumed increase by a factor of $3$ ($I_{L(\Delta)} = 3I_{L(Y)}$ and $P_{\Delta} = 3P_Y$).
 
 ---
 

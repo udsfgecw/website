@@ -14,6 +14,6 @@ export const electricalmodule1: NotesModule = {
     { label: "ELECTRICAL AND ELECTRONICS ENGINEERING", href: "/notes/cse/s1/electrical" },
     { label: "MODULE 1" },
   ],
-  module: "Module 1", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", summary: "Module 1",
+  module: "Module 1", course: "Introduction to Electrical and Electronics Engineering", code: "GXEST104", summary: "Basic circuit elements, DC network analysis and Kirchhoff's laws",
   source: "KTU GXEST104 study notes, imported from the provided complete study pack.", pages, chapters,
 };

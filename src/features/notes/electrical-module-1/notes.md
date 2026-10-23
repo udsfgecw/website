@@ -14,10 +14,7 @@
 
 A resistor is a passive two-terminal component designed to provide a specified resistance. It limits current, produces a voltage drop, and converts electrical energy into heat. Its circuit symbol is shown below:
 
-```text
-A o────/\/\/────o B
-         R
-```
+![Resistor circuit symbol with terminals A and B and a zigzag element labelled R](/assets/notes/ece/s1/electrical/module-1/resistor-symbol.svg)
 
 **Resistance** is the measure of how strongly a component opposes electric current. For an ohmic resistor at constant physical conditions, resistance is the ratio of the voltage across it to the current through it:
 
@@ -41,7 +38,7 @@ Ohm's law states that current is directly proportional to voltage when temperatu
 
 The microscopic picture below compares a pure copper crystal with a copper-zinc alloy. Alloying increases electron scattering and therefore generally increases resistivity; the figure illustrates one material-level cause of resistance.
 
-![Diagram comparing pure copper crystal structure with brass alloy structure containing copper and zinc atoms](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-005-image-2-source.webp)
+![Diagram comparing pure copper crystal structure with brass alloy structure containing copper and zinc atoms](/assets/notes/ece/s1/electrical/module-1/copper-brass-atom-arrangement.svg)
 
 ### V-I Characteristics of a Resistor
 
@@ -135,112 +132,9 @@ $$
 
 <!-- page 2 | Independent and dependent voltage and current sources -->
 
-## Independent and dependent voltage and current sources
+## Independent voltage and current sources
 
-**Constant Voltage Source**
-
-A constant voltage source is a device that maintains a constant voltage across its terminals, with the output current changing depending on the connected load resistance (such as a battery).
-
-* **Internal Resistance:** Has a very low (ideally zero) internal resistance.
-* **Behavior on Short Circuit:** Tries to supply infinite current, which can damage the device or blow a fuse.
-* **Behavior on Open Circuit:** Outputs its rated voltage with zero current flow.
-
-An **independent source** specifies its voltage or current without reference to another circuit variable. Its value may be constant or time-varying. The ideal voltage and current source models described below are independent sources.
-
-### Dependent (Controlled) Sources
-
-A dependent source has an output set by a voltage or current elsewhere in the same circuit. It is drawn with a diamond-shaped symbol and is used to model devices such as transistors and amplifiers. The four linear types are:
-
-| Type | Output relation | Meaning |
-| --- | --- | --- |
-| Voltage-controlled voltage source (VCVS) | $v_s=\mu v_x$ | Output voltage is proportional to a controlling voltage. |
-| Voltage-controlled current source (VCCS) | $i_s=g v_x$ | Output current is proportional to a controlling voltage. |
-| Current-controlled voltage source (CCVS) | $v_s=r i_x$ | Output voltage is proportional to a controlling current. |
-| Current-controlled current source (CCCS) | $i_s=\beta i_x$ | Output current is proportional to a controlling current. |
-
-Here $\mu$ and $\beta$ are dimensionless gains, $g$ is transconductance in siemens, and $r$ is transresistance in ohms. The controlling variable can be in a different branch; its reference direction and polarity must be stated when solving a circuit.
-
-### Behavior Under Load
-
-For an ideal voltage source connected to a load $R_L$, the terminal voltage remains $V_s$ and the load current is $I_L=V_s/R_L$. A practical source's terminal voltage can fall as load current increases because of its internal resistance.
-
-
-### Circuit Conditions for Voltage Sources
-
-#### Behavior on Short Circuit
-
-For a practical source with emf $E$ and internal resistance $r_s$, a short circuit makes the external load resistance nearly zero. Current is then limited mainly by $r_s$ and the wiring:
-
-$$I_{sc}\approx\frac{E}{r_s}.$$
-
-```text
-       practical source                 shorted terminals
-   (+) ──( E )──[ r_s ]────┐
-    │                      │
-   (−) ────────────────────┘
-```
-
-An ideal voltage source has $r_s=0$ and predicts unbounded short-circuit current; real sources have nonzero internal and circuit resistance. A short can overheat equipment, so protection such as a fuse or circuit breaker is required.
-
-#### Behavior on Open Circuit
-
-An open circuit has no conducting path through the load, so $R_L\to\infty$ and the source current is $I=0$. An ideal voltage source still has its rated terminal voltage $V_T=E$; with no current, a practical source also has essentially no drop across its internal resistance.
-
-```text
-      source E          open load
-   ┌──( + − )──┬──o  o──┐
-   │           │        │
-   └───────────┴────────┘       I = 0,  V_T = E
-```
-
-### Voltage Source Characteristics
-
-**Ideal voltage source:** The terminal voltage remains $V_T=E$ for any load current. Its V-I graph is a horizontal line at $V_T=E$.
-
-**Practical voltage source:** Model it as an ideal emf $E$ in series with internal resistance $r_s$. For load current $I_L$, the terminal voltage is
-
-$$V_T=E-I_Lr_s.$$
-
-At open circuit, $I_L=0$ and $V_T=E$. At short circuit, $V_T=0$ and $I_{sc}=E/r_s$. Thus the practical V-I graph is a straight line from $(I_L=0,V_T=E)$ to $(I_L=E/r_s,V_T=0)$; a smaller $r_s$ gives better voltage regulation.
-
-```text
-V_T
- ↑  E •──────────── ideal source
- │     \
- │      \ practical: V_T = E − I_L r_s
- │       \
- 0└────────•────────────→ I_L
-          E/r_s
-```
-
-**Constant Current Source**
-
-A constant current source is a device that maintains a constant current; the output voltage changes depending on the connected load resistance.
-
-* **Internal Resistance:** Has a very high (ideally infinite) internal resistance.
-* **Behavior on Short Circuit:** Safely delivers its rated current at near-zero voltage.
-* **Behavior on Open Circuit:** The output voltage rises to the source's compliance limit; beyond that limit, it cannot maintain the specified current.
-
-#### Behavior on Open Circuit
-
-An ideal current source would require unbounded terminal voltage to keep delivering its rated current into an open circuit. A practical current source can only raise its output voltage to a finite **compliance voltage**; beyond that limit, it cannot maintain the set current.
-
-#### V-I Characteristic
-
-An ideal current source holds $I_L=I_s$ as load voltage changes. A practical source is modeled as $I_s$ in parallel with a large output resistance $R_p$; current division gives $I_L=I_s-V_T/R_p$. Its output current is nearly constant over the normal voltage range and falls as the compliance limit is approached.
-
-```text
-I_L
- ↑  I_s •──────────── ideal source
- │       \
- │        \\ practical source
- │         \
- 0└─────────•───────────→ V_T
-          I_s R_p
-```
-
-For an ideal current source, a short circuit carries the rated current at approximately zero terminal voltage. For a practical source, a short circuit has nearly zero terminal voltage and carries approximately the set current, subject to the source current limit.
-
+An **independent voltage source** maintains a specified voltage across its terminals, and an **independent current source** maintains a specified current through its branch. In both cases the value is set without reference to any other circuit variable and may be constant or time-varying. These are the sources used in the voltage and current division rules that follow.
 
 ---
 
@@ -289,16 +183,6 @@ Ohm's law states that the current flowing through a conductor is directly propor
 Georg Simon Ohm (16 March 1789 – 6 July 1854) was a German physicist and mathematician who formulated the relationship between voltage, current, and resistance.
 
 
-**Joseph Henry**
-
-Joseph Henry was an American scientist whose work on electromagnetism led to the characterization of electromagnetic induction.
-
-![Portrait of American scientist Joseph Henry](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-032-image-1-source.webp)
-
-**Henry**
-
-One henry is defined as the inductance of a circuit where an induced voltage of one volt is produced by a current changing at a rate of one ampere per second.
-
 ---
 
 <!-- page 4 | Series and parallel resistor combinations -->
@@ -317,11 +201,7 @@ In a series circuit:
 2. There will be a voltage drop across each resistance given by Ohm's law.
 3. The sum of the voltage drops is equal to the applied voltage.
 
-```text
-       I →
- (+) ──[ R_1 ]──[ R_2 ]──[ R_3 ]── (−)
-          V_1       V_2       V_3
-```
+![Series resistors R1, R2 and R3 with current I and voltage drops V1, V2 and V3](/assets/notes/ece/s1/electrical/module-1/series-resistors-voltage-drops.svg)
 
 From Figure 1.7, $V_S = V_1 + V_2 + V_3$
 
@@ -382,7 +262,6 @@ $$
 ### Applications of Ohm's Law
 
 1. Voltage divider and current divider rules
-2. Source transformation rule
 
 If current is not given in a circuit, the voltage division rule can be used. If voltage is not given in a circuit, the current division rule can be used.
 
@@ -390,14 +269,10 @@ If current is not given in a circuit, the voltage division rule can be used. If 
 
 The voltage across resistor $R_k$ is proportional to its share of the total series resistance, provided the output is not loaded enough to change the divider current.
 
-```text
-       I →
- V_s ──[ R_1 ]──[ R_2 ]── 0 V
-         V_1       V_2
-```
+![Voltage divider with series resistors R1 and R2 between Vs and 0 V, current I, and voltages V1 and V2](/assets/notes/ece/s1/electrical/module-1/voltage-divider-rule.svg)
 
 
-Figure 2 - Voltage Division Rule
+Voltage Division Rule
 
 * $v_1$ = voltage across first resistor
 * $V$ = total voltage in the circuit
@@ -538,12 +413,7 @@ $$
 
 A $6\,\mathrm V$ source feeds two series resistors, $200\,\Omega$ and $100\,\Omega$. Find the voltage drop across each resistor.
 
-```text
-       200 Ω          100 Ω
-  ┌───/\/\───────/\/\───┐
-  │                         │
-  └────────── 6 V ──────────┘
-```
+![A 6 V source feeding 200 Ω and 100 Ω resistors in series in a single loop](/assets/notes/ece/s1/electrical/module-1/example-1-series-divider.svg)
 
 
 Applying the voltage division rule, voltage across $200\,\Omega$ resistance we get:
@@ -570,12 +440,7 @@ $$
 
 A $20\,\mathrm A$ current source supplies two parallel resistors, $20\,\Omega$ and $40\,\Omega$. Find the current in each branch.
 
-```text
-                 ┌──/\/\── 20 Ω ──┐
-        20 A  ↑  │                   │
-                 └──/\/\── 40 Ω ──┘
-                   (parallel branches)
-```
+![A 20 A current source supplying a 20 Ω resistor and a 40 Ω resistor in parallel](/assets/notes/ece/s1/electrical/module-1/example-2-current-divider.svg)
 
 
 Applying the current-divider rule, the current through the $20\,\Omega$ resistor is:
@@ -602,11 +467,7 @@ $$
 
 A $5\;\Omega$ resistor is in series with a parallel pair of $6\;\Omega$ and $3\;\Omega$ resistors across a $35\;\mathrm V$ DC source. Find the supply current.
 
-```text
-  ┌──/\/\ 5 Ω──┬──/\/\ 6 Ω──┐
-  │              └──/\/\ 3 Ω──┤
-  └────────────── 35 V ──────────┘
-```
+![A 5 Ω resistor in series with parallel 6 Ω and 3 Ω resistors across a 35 V source](/assets/notes/ece/s1/electrical/module-1/example-1-11-1-series-parallel.svg)
 
 **Solution**
 
@@ -660,10 +521,7 @@ Power consumed $= VI = 12 \times 12 = 144\text{ W}$
 
 Three resistors $10\,\Omega$, $20\,\Omega$ and $30\,\Omega$ are connected in series across a $100\,\mathrm V$ supply. Find the voltage across each resistor.
 
-```text
-  ┌──/\/\ 10 Ω──/\/\ 20 Ω──/\/\ 30 Ω──┐
-  └──────────────── 100 V ──────────────────┘
-```
+![Resistors 10 Ω, 20 Ω and 30 Ω in series across a 100 V supply](/assets/notes/ece/s1/electrical/module-1/example-1-11-3-series-supply.svg)
 
 **Solution**
 
@@ -734,35 +592,7 @@ The voltage across $6\ \Omega$ and $12\ \Omega$ resistors are the same because t
 
 <!-- page 6 | Source transformation and relative potential -->
 
-## Source transformation and relative potential
-
-### Source transformation
-
-* Ohm's law
-
-#### Voltage source to current source
-
-```text
-Voltage form:  ──( Vs )──[ R ]──       Current form:  ──┬──[ R ]──┬──
-                                                        │          │
-                                                        └──( ↑Is )─┘
-```
-
-*Figure 2.5: Equivalent voltage-source and current-source forms*
-
-A voltage source $V_s$ in series with resistance $R$ can be transformed into a current source $I_s$ in parallel with resistance $R$ where $I_s = \frac{V_s}{R}$.
-
-#### Current source to voltage source
-
-```text
-Current form:  ──┬──[ R ]──┬──       Voltage form:  ──( Vs )──[ R ]──
-                 │          │
-                 └──( ↑Is )─┘
-```
-
-*Figure 2.6: Equivalent current-source and voltage-source forms*
-
-Similarly, a current source $I_S$ in parallel with a resistance $R$ can be transformed into a voltage $V_S$ series with a resistance $R$ where $V_S = I_S R$.
+## Network topology and relative potential
 
 ### Network topology definitions
 
@@ -775,19 +605,20 @@ A node is a junction where two or more network elements are connected together.
 
 A branch is an element or number of elements connected between two nodes.
 
-![Branch diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-056-image-2-source.webp)
+![Branch diagram: a resistor R1 connected between two nodes, enclosed in an ellipse labelled branch](/assets/notes/ece/s1/electrical/module-1/branch-between-two-nodes.svg)
 
 **Junction**
 
 A junction is a point where three or more circuit components meet.
 
-![Junction diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-056-image-3-source.webp)
+![Junction diagram: a resistor R1 leading from two junction points inside a dashed outline](/assets/notes/ece/s1/electrical/module-1/junction-between-components.svg)
 
 **Electrical Network**
 
 An electrical network is an interconnection of electrical elements.
 
 Key network components include:
+
 - Node
 - Junction
 - Branch
@@ -1058,166 +889,6 @@ $$
 
 ---
 
-<!-- page 8 | Supermesh analysis and numerical problems -->
-
-## Supermesh analysis and numerical problems
-
-**Supermesh**
-
-A supermesh is created in circuit analysis when a current source (independent or dependent) is located on the boundary shared by two adjacent meshes.
-
-### Supermesh Analysis Procedure
-
-To analyze a circuit containing a supermesh:
-
-1. Identify shared sources: Determine when a current source is located on the boundary shared by two meshes.
-2. Form the supermesh: Temporarily remove the shared current source and any element connected strictly in series with it, leaving an open circuit to create a larger combined loop.
-3. Apply KVL: Apply Kirchhoff's Voltage Law around the newly formed supermesh loop.
-4. Write the constraint equation: Formulate an auxiliary equation relating the mesh currents flowing through the shared current source branch.
-5. Unshared current sources: If a current source is located on the outside of the circuit (not shared between meshes), a supermesh is not needed because the mesh current is determined directly.
-
-### Worked Numerical Problems
-
-A current source is located on the boundary shared by two meshes.
-
-**Example 1.** Determine the current in the $5\,\Omega$ resistor in the three-mesh network shown below. The equations use clockwise mesh references $I_1$, $I_2$, and $I_3$; the $5\,\Omega$ branch is shared by meshes 1 and 3.
-
-
-![Electrical circuit diagram with three mesh currents, voltage source, current source, and resistors](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-083-image-1-clean.webp)
-
-$$
-50 - 10(I_1 - I_2) - 5(I_1 - I_3) = 0 \tag{1}
-$$
-
-$$
-15I_1 - 10I_2 - 5I_3 = 50
-$$
-
-#### Step B: Constraint Equation for the Supermesh
-
-The $2\text{ A}$ current source is in a branch shared by Mesh 2 and Mesh 3.
-
-* Current $I_2$ flows in the same direction as the source (right to left).
-* Current $I_3$ flows in the opposite direction (left to right).
-
-
-$$
-I_2 - I_3 = 2 \implies I_2 = I_3 + 2 - (\text{Eq. 2})
-$$
-
-![Electrical circuit diagram with three mesh currents I1, I2, I3, resistors of 10 ohm, 2 ohm, 5 ohm, 1 ohm, a 50V voltage source, and a 2A current source with a blue overlay box.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-085-image-1-clean.webp)
-
-$$
--2I_2 - I_3 - 5(I_3 - I_1) - 10(I_2 - I_1) = 0
-$$
-
-$$
-\ -15I_1 + 12I_2 + 6I_3 = 0 \quad (3)
-$$
-
-#### Step C: Solve the System of Equations
-
-The supermesh equation is Equation (1), the current-source constraint is Equation (2), and Equation (3) is the KVL equation around the larger loop. First divide Equation (1), $15I_1-10I_2-5I_3=50$, by $5$:
-
-$$
-3I_1-2I_2-I_3=10.
-$$
-
-Use the constraint $I_2=I_3+2$:
-
-$$
-3I_1-2(I_3+2)-I_3=10
-\implies I_1-I_3=\frac{14}{3}\text{ A}.
-$$
-
-Substitute $I_1=I_3+14/3$ and $I_2=I_3+2$ into Equation (3):
-
-$$
--15\left(I_3+\frac{14}{3}\right)+12(I_3+2)+6I_3=0
-\implies 3I_3=46
-\implies I_3=\frac{46}{3}\text{ A}.
-$$
-
-Therefore $I_2=52/3\text{ A}$ and $I_1=20\text{ A}$. The $5\,\Omega$ branch current is the difference of its adjacent mesh currents:
-
-$$
-I_{5\Omega}=I_1-I_3=20-\frac{46}{3}=\frac{14}{3}\text{ A}\approx4.67\text{ A}.
-$$
-
-If a current source is on the outside of the circuit (not shared), you don't need a supermesh.
-
-**Example 2.** Write the mesh equations for the circuit shown in Fig. and determine the currents $I_1$, $I_2$ and $I_3$.
-
-![Circuit diagram with three meshes containing a 10A current source, resistors of 3 ohms, 2 ohms, and 1 ohm, and a 10V voltage source.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-088-image-1-clean.webp)
-
-Summing the voltage drops to zero:
-
-$$
-3(I_2 - I_1) + 10 + 2(I_2 - I_3) = 0
-$$
-
-Substitute $I_1 = 10$:
-
-$$
-3(I_2 - 10) + 10 + 2(I_2 - I_3) = 0
-$$
-
-$$
-3I_2 - 30 + 10 + 2I_2 - 2I_3 = 0
-$$
-
-$$
-5I_2 - 2I_3 = 20 \quad \text{--- (Equation 1)}
-$$
-
-$$
-1 \cdot I_3 + 2(I_3 - I_2) - 10 = 0
-$$
-
-$$
--2I_2 + 3I_3 = 10 \quad \text{--- (Equation 2)}
-$$
-
-![Circuit diagram showing a mesh analysis problem with mesh currents I1, I2, I3, a 10A current source, a 3 ohm resistor, a 10V voltage source, a 2 ohm resistor, and a 1 ohm resistor.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-089-image-1-clean.webp)
-
-### Solving the System of Equations
-
-From equation 2:
-
-$$
-3I_3=2I_2+10,\qquad I_3=\frac{2I_2+10}{3}.
-$$
-
-Substitute into equation 1:
-
-$$
-5I_2-2\left(\frac{2I_2+10}{3}\right)=20.
-$$
-
-Multiplying by 3 and simplifying:
-
-$$
-15I_2-4I_2-20=60,\qquad 11I_2=80.
-$$
-
-$$
-I_2=\frac{80}{11}\,\mathrm{A}\approx7.27\,\mathrm{A}.
-$$
-
-Then:
-
-$$
-I_3=\frac{2(80/11)+10}{3}=\frac{270}{33}=\frac{90}{11}\,\mathrm{A}\approx8.18\,\mathrm{A}.
-$$
-
-### Final Currents
-
-$$
-I_1=10\,\mathrm{A},\qquad I_2=\frac{80}{11}\,\mathrm{A},\qquad I_3=\frac{90}{11}\,\mathrm{A}.
-$$
-
----
-
 <!-- page 9 | Mesh current method with matrix representation -->
 
 ## Mesh current method with matrix representation
@@ -1431,7 +1102,7 @@ A node is a junction where two or more network elements are connected together.
 
 Algebraic sum: $\sum I = 0$
 
-![Current meeting at a node diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-003-image-1-source.webp)
+![Current meeting at a node: currents I1 and I5 entering a node and I2, I3 and I4 leaving it](/assets/notes/ece/s1/electrical/module-1/current-meeting-at-node.svg)
 
 $$
 I_1 + I_5 - I_2 - I_3 - I_4 = 0
@@ -1447,7 +1118,7 @@ $$
 
 In this method, one of the independent nodes is chosen as the reference node ($0\text{v}$) and the voltages of the remaining independent nodes are defined with respect to it.
 
-![Circuit diagram with a voltmeter and nodes A, B, and C](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-004-image-1-source.webp)
+![Circuit diagram with a voltmeter and nodes A, B, and C](/assets/notes/ece/s1/electrical/module-1/node-voltage-reference-voltmeter.svg)
 
 Consider the circuit above containing 3 independent nodes: A, B, and C.
 
@@ -2020,179 +1691,6 @@ i_3=\frac{V_2}{6\,\Omega}=\frac{13}{11}\,\mathrm A\approx1.182\,\mathrm A.
 $$
 
 The negative sign means the actual current through $R_2$ flows right-to-left. KCL checks: $i_1+i_2=3\,\mathrm A$ at node 1, and $-i_2+i_3=2\,\mathrm A$ at node 2.
----
-
-<!-- page 12 | Supernode analysis and procedure -->
-
-## Supernode analysis and procedure
-
-### Supernode Analysis Procedure
-
-**Supernode**
-
-A supernode is formed when a voltage source (independent or dependent) is connected between two non-reference nodes.
-
-To analyze a circuit containing a supernode, use the following procedure:
-
-1. Identify the supernode containing the voltage source connected between two non-reference nodes.
-2. Formulate the constraint equation relating the voltages of the two connected nodes.
-3. Enclose the voltage source and apply Kirchhoff's Current Law (KCL) ($1^{\text{st}}$ statement: the current entering the node is equal to the current leaving the node) across the combined supernode boundary.
-4. Solve the resulting system of equations for the node voltages.
-
-Use KCL around the combined supernode: current entering equals current leaving.
-
-### Worked Example 1: Supernode with a Current Source
-
-![Circuit diagram showing a supernode with two voltage nodes V1 and V2, a 2V independent voltage source between them, resistors of 2 ohms and 1 ohm, current sources of 3A (upward) and 2A (downward), and branch currents I1, I2, I3.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-031-image-1-clean.webp)
-
-#### Step 1: Constraint Equation
-
-The independent voltage source is connected directly between $N_1$ and $N_2$ (positive terminal at $N_1$):
-
-$$
-V_1 - V_2 = 2 \implies V_1 = V_2 + 2 - (\text{Equation 1})
-$$
-
-#### Step 2: KCL at the Supernode ($N_1 - N_2$)
-
-The $3\,\mathrm A$ source injects current into the supernode; the $2\,\mathrm A$ source and the resistor currents leave it. KCL gives:
-
-$$
-3=\frac{V_1}{2}+V_2+2
-$$
-
-Rearranging gives the second equation:
-
-$$
-V_1+2V_2=2. \tag{2}
-$$
-
-#### Step 3: Solve for Node Voltages
-
-Substitute $V_1=V_2+2$ from Equation (1) into Equation (2): $(V_2+2)+2V_2=2$.
-
-$$
-3V_2 + 2 = 2 \quad 3V_2 = 0 \implies \mathbf{V_2 = 0\text{ V}}
-$$
-
-Substitute $V_2=0\,\mathrm V$ into Equation (1): $V_1=2\,\mathrm V$.
-
-#### Step 4: Branch Currents
-
-Using the calculated node voltages:
-
-The downward current through the $2\,\Omega$ resistor is $I_1=V_1/2=1\,\mathrm A$; through the $1\,\Omega$ resistor it is $I_2=V_2/1=0\,\mathrm A$. KCL shows that $I_3=2\,\mathrm A$ flows through the voltage-source branch from $N_1$ to $N_2$. These values satisfy the source directions and both node-current balances.
-
-
-### Example 2
-
-Apply the rule: current entering = current leaving (supernode case).
-
-The following circuit shows the branches represented by the KCL equation. The 1 V source connects nodes $v_1$ and $v_2$, so those nodes form one supernode; the 2 V source fixes the reference voltage at the top of the right-hand resistor. The current-source arrow follows the sign convention used below.
-
-```text
-                         1 Ω                 1 Ω
-                 ┌─────/\/\─────┬──────/\/\─────┐
-                 │                │                    │
-             ┌───┴───┐          ( + ) 1 V          ( + ) 2 V
-             │  2 A  │            ( - )                ( - )
-             └───┬───┘              │                    │
-                 │                  │                    │
-               /\/\ 1 Ω          /\/\ 1 Ω             │
-                 │                  │                    │
-                 └──────────────────┴────────────────────┘ ground
-                v₁                 v₂
-```
-
-#### Step 1: Constraint Equation
-
-$$
-v_1-v_2=1 \quad\Longrightarrow\quad v_1=v_2+1. \tag{1}
-$$
-
-#### Step 2: KCL Equation at the Supernode $(1 - 2)$
-
-Applying KCL (sum of all currents leaving the supernode boundary = 0):
-
-$$
-\underbrace{2}_{\text{from } 2\text{A source}} + \underbrace{\frac{v_1}{1}}_{\text{down } 1\Omega \text{ resistor}} + \underbrace{\frac{v_2}{1}}_{\text{down middle } 1\Omega \text{ resistor}} + \underbrace{\frac{v_2 - 2}{1}}_{\text{down right } 1\Omega \text{ branch}} = 0
-$$
-
-Collecting terms gives $v_1+2v_2=0$. This is Equation (2).
-
-The constant terms cancel because the $2\,\mathrm A$ source term is opposed by the $2\,\mathrm V/1\,\Omega=2\,\mathrm A$ part of the right-hand resistor current.
-
-#### Step 3: Solve the System of Equations
-
-Substitute Equation (1), $v_1=v_2+1$, into Equation (2):
-
-$$
-(v_2 + 1) + 2v_2 = 0
-$$
-
-$$
-3v_2 + 1 = 0
-$$
-
-$$
-3v_2 = -1 \implies \mathbf{v_2 = -\frac{1}{3} \text{ V} \approx -0.333 \text{ V}}
-$$
-
-Substitute $v_2 = -\frac{1}{3} \text{ V}$ back into Equation 1:
-
-$$
-v_1 = -\frac{1}{3} + 1 \implies \mathbf{v_1 = \frac{2}{3} \text{ V} \approx 0.667 \text{ V}}
-$$
-
-### Example 3
-
-Apply the rule: current entering = current leaving (supernode case).
-
-Determine the current in the $5\,\Omega$ resistor for the circuit shown in fig.
-
-![Circuit diagram with nodes V1, V2, V3, a 10A current source, a 20V independent voltage source, and resistors of 2Ω, 3Ω, 1Ω, 5Ω, and 2Ω.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-036-image-1-clean.webp)
-
-#### Step 1: Constraint Equation
-
-$$
-V_2 - V_3 = 20 \implies V_2 = V_3 + 20
-$$
-
-#### Step 2: KCL at Node 1 ($V_1$)
-
-Summing currents leaving node $V_1$:
-
-$$
--10 + \frac{V_1}{3} + \frac{V_1 - V_2}{2} = 0
-$$
-
-#### Step 3: KCL at the Supernode ($2-3$)
-
-Summing all currents leaving the combined supernode $2-3$:
-
-$$
-\frac{V_2 - V_1}{2} + \frac{V_2}{1} + \frac{V_3 - 10}{5} + \frac{V_3}{2} = 0
-$$
-
-#### Step 4: Solve the Node Voltages and Find the $5\,\Omega$ Current
-
-From the node-1 equation, $-10+V_1/3+(V_1-V_2)/2=0$, so $V_1=12+0.6V_2$. The source constraint gives $V_2=V_3+20$. Substituting both into the supernode equation yields:
-
-$$
-1.2V_2+0.7V_3-8=0,\qquad 1.9V_3=-16,
-$$
-
-Thus $V_3=-160/19\approx-8.421\,\mathrm V$ and $V_2=220/19\approx11.579\,\mathrm V$. For the downward reference direction through the $5\,\Omega$ resistor:
-
-$$
-I_{5\,\Omega} = \frac{V_3 - 10}{5}
-$$
-
-$$
-I_{5\,\Omega} = \frac{-160/19 - 10}{5} = -\frac{70}{19}\text{ A} \approx -3.684\text{ A}
-$$
-
-The negative sign means the actual current is upward, opposite to the assumed reference direction.
 
 ---
 
@@ -2202,7 +1700,7 @@ The negative sign means the actual current is upward, opposite to the assumed re
 
 **Star and Delta Configurations**
 
-Star (Wye, Y) and Delta ($\Delta$) are the two main ways to connect three-phase electrical loads or impedance networks.
+Star (Wye, Y) and Delta ($\Delta$) are the two standard arrangements of three resistors joining three terminals of a resistive network. Replacing one arrangement with the other creates series and parallel combinations that can then be reduced with the usual rules.
 
 ![T-network circuit diagram](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-039-image-1-clean.webp)
 
@@ -2417,7 +1915,7 @@ $$
 R_F = \frac{3 \times 1}{1 + 1 + 3} = 0.6\;\Omega
 $$
 
-![Circuit diagram with star transformation, Figure 2.46](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-061-image-3-source.webp)
+![Delta network converted to star, Figure 2.46, with branches A-B, B-C, C-A and star arms D, E and F](/assets/notes/ece/s1/electrical/module-1/star-delta-figure-2-46.svg)
 
 
 $$
@@ -2569,296 +2067,3 @@ $$
 The simplified delta network is shown in figure 2.55(b).
 
 ---
-
-<!-- page 14 | Magnetic circuits: basic terminology and laws -->
-
-## Magnetic circuits: basic terminology and laws
-
-### Elementary Concepts of Magnetic Circuits ($2^{\text{nd}}$ half)
-
-Magnetic circuits basic terminology includes MMF, field strength, flux density, and reluctance, alongside comparisons between electric and magnetic circuits and series/parallel magnetic circuits with composite materials.
-
-**Magnetism**
-
-A magnet is a material that possesses magnetic properties, attracting pieces of iron and aligning North–South when freely suspended. The phenomenon of attraction is termed magnetism. Magnets are broadly classified into permanent magnets and electromagnets.
-
-Understanding magnetic circuit principles is essential for the design and analysis of electromagnetic devices such as transformers, generators, and motors.
-
-A magnetic field surrounds any magnet. The lines of magnetic field from a bar magnet form continuous, closed loops directed outward from the North Pole and into the South Pole.
-
-![Magnetic field around a bar magnet showing closed lines of force originating from the North (N) pole and entering the South (S) pole.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-070-image-1-source.webp)
-
-Figure 3.1: Magnetic field around a bar magnet
-
-**Magnetic Field Around a Current-Carrying Conductor**
-
-A magnetic field is likewise established surrounding any conductor carrying an electric current.
-
-![Diagram of a straight vertical conductor carrying current I, surrounded by concentric circular magnetic field lines.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-071-image-1-source.webp)
-
-(b)
-
-**Magnetic Flux**
-
-Magnetic flux is the total number of magnetic lines of force existing in a magnetic field. It is denoted by $\Phi$ and measured in Webers (Wb).
-
-Properties of magnetic flux:
-- Magnetic flux lines are imaginary lines.
-- Each line of magnetic flux forms a closed loop.
-- Magnetic flux lines never intersect each other.
-- They behave like stretched elastic threads, tending to shorten along their length.
-- Parallel flux lines acting in the same direction exert a repulsive force on each other.
-
-**Magnetic Circuit**
-
-A magnetic circuit is the closed path followed by magnetic flux lines.
-
-**Magnetic Flux Density**
-
-Magnetic flux density is the flux per unit area perpendicular to the direction of the flux. If $\Phi$ is the flux and $A$ is the cross-sectional area, magnetic flux density $B$ is defined as:
-
-$$
-B = \frac{\Phi}{A}
-$$
-
-The unit of magnetic flux density is $\text{Wb/m}^2$ or Tesla (T).
-
-**Magnetomotive Force (MMF)**
-
-Magnetomotive force (MMF) is the driving force that establishes magnetic flux in a magnetic circuit. When current passes through an excitation coil, magnetic flux is produced. The product of current ($I$) and the number of turns ($N$) of the coil gives the mmf.
-
-MMF, $F$ is expressed as:
-
-$$
-F = NI
-$$
-
-The unit of MMF is Ampere-Turns (AT).
-
-**Magnetic Field Intensity**
-
-Magnetic field intensity is the magnetomotive force per unit length of the magnetic circuit. Denoted by $H$, its unit is Ampere-Turns per meter (AT/m). It is also known as magnetic field strength or magnetizing force.
-
-$$
-H = \frac{\text{mmf}}{l} = \frac{F}{l}
-$$
-
-$$
-H = \frac{NI}{l}
-$$
-
-Or, $F = NI = Hl$ \dots(3.1)
-
-**Permeability**
-
-Permeability is the ability of a material to conduct magnetic flux through it. Represented by $\mu$, its unit is Henry per meter (H/m). Flux density $B$ is directly proportional to magnetizing force $H$:
-
-$$
-B \propto H
-$$
-
-$$
-B = \mu H \tag{3.2}
-$$
-
-$$
-\mu = \frac{B}{H} \tag{3.3}
-$$
-
-where $\mu$ is the permeability of the material. The permeability of free space is denoted by $\mu_o$, equal to $\mu_o = 4\pi \times 10^{-7}$ H/m.
-
-**Relative Permeability**
-
-Relative permeability is the ratio of the flux density produced in a given material to the flux density produced in vacuum by the same magnetizing force. When an mmf is applied to ferromagnetic materials, the resulting flux is significantly greater than in air, vacuum, or nonmagnetic materials. It is denoted by $\mu_r$:
-
-$$
-\text{i.e., } \mu_r = \frac{\text{Flux density produced in a material}}{\text{Flux density in vacuum}}
-$$
-
-Also:
-
-$$
-\mu_r = \frac{\mu}{\mu_0}
-$$
-
-This yields the relation $B = \mu_0 \mu_r H$.
-
-**Reluctance**
-
-Reluctance is the opposition offered by a material to the creation of magnetic flux. Denoted by $S$, reluctance is directly proportional to the path length and inversely proportional to the cross-sectional area of the magnetic path, analogous to resistance in an electric circuit:
-
-$$
-S \propto \frac{l}{A}
-$$
-
-$$
-\boxed{S = \frac{l}{\mu_0 \mu_r A}} \tag{3.4}
-$$
-
-where:
-- $l = \text{mean length of magnetic circuit in meter}$
-- $A = \text{area of cross-section of magnetic circuit in } m^2$
-- $\mu_0 = \text{permeability of free space} = 4\pi \times 10^{-7} \text{ H/m}$
-- $\mu_r = \text{relative permeability of magnetic material}$
-
-Thus, reluctance depends directly on the physical dimensions and core material of the magnetic circuit.
-
-Reluctance can also be expressed through circuit variables:
-
-$$
-\text{Reluctance} = \frac{\text{mmf}}{\text{Flux}}
-$$
-
-i.e.,
-
-$S = \frac{F}{\Phi}$
-
-From expressions 3.1 and 3.2:
-
-$$
-F = Hl = \frac{B}{\mu_0 \mu_r} l = \frac{\Phi}{A \mu_0 \mu_r} l \quad \text{since } B = \frac{\Phi}{A}
-$$
-
-From equation 3.4, $F = S\Phi$:
-
-i.e., $\text{mmf} = \text{Reluctance} \times \text{Flux} \text{ (3.5)}$
-
-$$
-\boxed{\text{Reluctance, } S = \frac{F}{\Phi} = \frac{NI}{\Phi} = \frac{Hl}{\Phi}}
-$$
-
-The unit of reluctance is Ampere-Turns per Weber (AT/Wb).
-
-### Comparison of Electric and Magnetic Circuits
-
-Electric and magnetic circuits exhibit direct mathematical analogies as well as key operational differences.
-
-![Electric circuit diagram showing a closed loop with a DC voltage source E, a resistor R, and current I flowing clockwise.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-077-image-1-clean.webp)
-
-![Magnetic circuit diagram showing a magnetic core wrapped with a coil carrying current I, producing flux Phi.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-077-image-2-source.webp)
-
-| Sl. No. | Electric circuit | Magnetic circuit |
-| :--- | :--- | :--- |
-| 1 | The closed path for electric current is called an electric circuit. | The closed path for magnetic flux is called a magnetic circuit. |
-| 2 | The cause of current flow is electromotive force (emf). | The cause of generation of flux is magnetomotive force (mmf). |
-| 3 | Opposition to current flow is offered by resistance $R$. | Opposition to flux is offered by reluctance $S$. |
-| 4 | Current $I = \frac{\text{emf}}{\text{Resistance}}$ is expressed in amperes (A). | Flux $\Phi = \frac{\text{mmf}}{\text{Reluctance}}$ is expressed in webers (Wb). |
-| 5 | Electromotive force is expressed in volts (V). | Magnetomotive force is expressed in Ampere-Turns (AT). |
-| 6 | Current density $J = \frac{I}{A}$ is expressed in $A/m^2$. | Flux density $B = \frac{\Phi}{A}$ is expressed in $Wb/m^2$. |
-| 7 | Resistance $R = \frac{l}{\sigma A}$, where $\sigma$ is conductivity. | Reluctance $S = \frac{l}{\mu A}$, where $\mu$ is permeability. |
-
-### Differences Between Electric and Magnetic Circuits
-
-| No. | Electric circuit | Magnetic circuit |
-| :--- | :--- | :--- |
-| 1 | Electric current actually flows via physical charge carrier movement. | Magnetic flux is a field quantity; it does not physically flow like electric charge. |
-| 2 | Energy is continuously expended as long as current flows in a resistive circuit. | Energy is required only to establish the magnetic field; maintaining a steady field idealizes zero continuous energy loss, though coil resistance consumes power. |
-| 3 | At constant temperature, resistance is independent of current for an ohmic conductor. | Reluctance depends nonlinearly on flux density because material permeability varies with saturation. |
-| 4 | Good electrical insulators can virtually eliminate current leakage outside the conductor path. | Magnetic flux cannot be entirely insulated or confined; some leakage flux always exists in surrounding air. |
-
----
-
-<!-- page 15 | Series and parallel composite magnetic circuits -->
-
-## Series and parallel composite magnetic circuits
-
-### Series Magnetic Circuit
-
-Consider a simple magnetic circuit shown in Figure 3.7. It consists of a coil of $N$ turns wound over a single core material having uniform cross-sectional area $A$ and mean length of flux path $l$. mmf is indicated by $NI$ which is equal to $Hl$. It is represented by $\mathcal{F}$. Reluctance offered by the circuit to the flow of flux is denoted as $S$ in its electrical equivalent representation. This is useful for simplifying analysis of magnetic circuit even though there is no physical connection between winding and core.
-
-![Diagram showing a physical magnetic core with a coil and its electrical equivalent circuit](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-079-image-1-source.webp)
-
-**Figure 3.7: Simple magnetic circuit**
-
-Polarity of mmf is determined based on the direction of flux. Here it is in clockwise direction as indicated in figure. mmf source is expressed by $NI$ and mmf drops are expressed by $Hl$, where $H$ is the magnetizing force on a section of a magnetic circuit and $l$ is the length of the section.
-
-![Magnetic circuit with air gap and its equivalent electrical/magnetic circuit diagram](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-080-image-1-source.webp)
-
-Consider a composite magnetic circuit with an air gap of length $l_g$. Thus there are two mediums in the magnetic circuit namely (a) iron and (b) air. Magnetic flux is same through these mediums and thus it is a series magnetic circuit. Also total reluctance of the circuit is the sum of reluctances of iron and air.
-
-Parameters for this circuit are defined as follows:
-
-- Number of turns: $= N$
-- Current through the coil (exciting current): $= I$ (A)
-- Mean length of the flux path through iron: $= l_i$ (m)
-- Length of the flux path through air gap: $= l_g$ (m)
-- Cross-sectional area: $= A$ ($\text{m}^2$)
-- Magnetic flux density: $= B$ ($\text{Wb}/\text{m}^2$)
-- Relative permeability of iron: $= \mu_{ri}$ (dimensionless; absolute permeability $\mu=\mu_0\mu_{ri}$ is measured in H/m)
-- Reluctance of iron: $= \mathcal{S}_i$ ($\text{AT}/\text{Wb}$)
-- Reluctance of air gap: $= \mathcal{S}_g$ ($\text{AT}/\text{Wb}$)
-
-We can develop equations for this magnetic circuit as:
-
-Total mmf in the circuit,
-
-$$
-NI = H_i l_i + H_g l_g
-$$
-
-Magnetic field intensity required for iron, $H_i = \dfrac{B}{\mu_0 \mu_{ri}}$
-
-Magnetic field intensity required for air, $H_g = \dfrac{B}{\mu_0}$
-
-Therefore, using $H_i = B/(\mu_0\mu_{ri})$ in the iron and $H_g = B/\mu_0$ in the air gap:
-
-$$
-NI = \frac{B l_i}{\mu_0\mu_{ri}} + \frac{B l_g}{\mu_0}
-= \Phi\left(\frac{l_i}{\mu_0\mu_{ri} A} + \frac{l_g}{\mu_0 A}\right)
-= \Phi(\mathcal S_i+\mathcal S_g).
-$$
-
-The coil's magnetomotive force equals the sum of the iron and air-gap mmf drops.
-
-### Role of the Air Gap
-
-An air gap ($l_g$) is intentional in magnetic cores (like inductors, flyback transformers, and DC-biased systems) to control magnetic flux and prevent core saturation.
-
-- **Prevents Core Saturation:** High magnetic permeability in iron cores means they saturate quickly under high current or DC bias. The air gap acts as high magnetic reluctance, flattening the B-H curve so the core can handle higher currents without saturating.
-- **Stores Magnetic Energy:** Ferromagnetic core materials hold very little energy, whereas air stores significant magnetic energy. The air gap serves as the primary energy storage region in devices like inductors and flyback transformers ($W = \frac{1}{2} \text{ }\text{·}\text{ } \frac{B^2}{\mu_0} \text{ }\text{·}\text{ } V_{\text{gap}}$).
-- **Stabilizes Inductance:** An air gap makes total circuit reluctance dominated by the gap length rather than fluctuations in core permeability ($\mu_r$), keeping inductance ($L$) stable across temperature changes and varying operating currents.
-- **Linearizes the Magnetic Circuit:** Air has a completely linear B-H response, reducing harmonic distortion in signal-processing inductors and audio transformers.
-
-### Series-Parallel Magnetic Circuits
-
-Now consider a parallel magnetic circuit in which a coil of $N$ turns is wound on an iron core as shown in Figure 3.12.
-
-For analyzing it, we draw its equivalent electrical representation as indicated in Figure 3.13.
-
-![Figure 3.12: A series-parallel magnetic circuit showing an iron core with a coil of N turns and magnetic flux paths.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-082-image-1-source.webp)
-
-**Figure 3.12: A series-parallel magnetic circuit**
-
-![Figure 3.13: Electrical equivalent circuit of series-parallel magnetic circuit.](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-082-image-2-clean.webp)
-
-**Figure 3.13: Electrical equivalent circuit of series-parallel magnetic circuit**
-
-We usually refer vertical links of core as limbs and horizontal links as yoke. In the figure $AF$, $BE$ and $CD$ are the limbs whereas $AB$, $BC$, $FE$ and $ED$ are the yokes.
-
-When the coil carries a current $I$ in the direction shown, a magnetic flux $\Phi_1$ will be created in the first limb ($AF$) which will be in the upward direction. Flux $\Phi_1$ will be same along the yoke $AB$. At point $B$, there are two parallel paths for flux. Thus $\Phi_1$ will be split into two components $\Phi_2$ and $\Phi_3$ such that $\Phi_1 = \Phi_2 + \Phi_3$, $\Phi_2$ along the central limb $BE$ and $\Phi_3$ along the yoke $BC$. Values of $\Phi_1$ and $\Phi_2$ depend on respective reluctances of the paths. $\Phi_2$ and $\Phi_3$ again recombine at point $E$ and completes the path.
-
-$$
-\text{Total flux, } \Phi_1 = \Phi_2 + \Phi_3
-$$
-
-$$
-\text{Total mmf required} = \text{mmf for path EFAB} + \text{mmf for path BE or path BCDE}
-$$
-
-$$
-NI = \Phi_1 S_1 + \Phi_2 S_2 = \Phi_1 S_1 + \Phi_3 S_3
-$$
-
-Some other forms of series-parallel magnetic circuits and their electric equivalent representations are shown below.
-
-![Magnetic core (a) with Gap a and Gap b and its magnetic circuit equivalent (b)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-084-image-1-source.webp)
-
-**Figure 3.14: A series-parallel magnetic circuit and its electric-equivalent representation**
-
-![Magnetic core with two windows and two windings (a)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-084-image-2-source.webp)
-
-![Magnetic core with center gap and side gap (a) and its equivalent magnetic circuit (b)](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/electrical/module-1/assets/page-084-image-3-source.webp)
-
-![Magnetic circuit equivalent with two mmf sources and two loops](https://pub-bb6bc322a59c4c0787d9a4ccd091dced.r2.dev/notes/cse/s1/electrical/module-1/assets/page-084-image-4-clean.webp)
-
-**Series-parallel magnetic circuit and its electric-equivalent**

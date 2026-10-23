@@ -20,7 +20,6 @@ Passive components are circuit elements that cannot by themselves amplify a sign
 1. **Resistor ($R$):** Opposes the flow of electric current and dissipates electrical energy as heat ($P = I^2 R$). Used for current limiting, voltage division, and biasing.
 2. **Capacitor ($C$):** Stores electrical energy in an electrostatic field between two conducting plates separated by a dielectric ($E = \frac{1}{2}CV^2$). Blocks steady DC while allowing AC to pass; used in filters, coupling, and timing circuits.
 3. **Inductor ($L$):** Stores energy in a magnetic field created by current flowing through a coil ($E = \frac{1}{2}LI^2$). Opposes changes in current; used in chokes, filters, and tuned circuits.
-4. **Transformer:** Transfers AC electrical energy from one circuit to another through mutual electromagnetic induction without changing frequency. Used to step up or step down AC voltages and to provide electrical isolation.
 
 **Active Components**
 
@@ -30,7 +29,6 @@ Active components are semiconductor (or vacuum) devices that rely on an external
 2. **Zener Diode:** A heavily doped PN diode designed to operate reliably in the reverse breakdown region; used as a voltage reference and regulator.
 3. **Bipolar Junction Transistor (BJT):** A three-terminal current-controlled device (emitter, base, collector) used for amplification and switching.
 4. **Field Effect Transistor (FET / MOSFET):** A three-terminal voltage-controlled device (source, gate, drain) featuring very high input impedance.
-5. **Operational Amplifier (Op-Amp) and Integrated Circuits (ICs):** Monolithic circuits combining many active and passive elements on a single silicon chip.
 
 ### Comparison Between Passive and Active Components
 
@@ -41,22 +39,12 @@ Active components are semiconductor (or vacuum) devices that rely on an external
 | **Control Action** | Cannot control current by means of another electrical signal | Control current flow using another current (BJT) or voltage (FET) |
 | **Linearity** | Mostly linear ($R, L, C$ have linear $V\text{–}I$ or flux/charge relations) | Inherently non-linear devices |
 | **Directionality** | Bilateral (current flows equally well in either direction) | Unilateral (conduction depends on polarity of applied voltage) |
-| **Examples** | Resistor, Capacitor, Inductor, Transformer | Diode, Zener diode, LED, BJT, JFET, MOSFET, Op-Amp |
-
-### Review of Semiconductors
-
-Semiconductors (such as Silicon, $\text{Si}$, and Germanium, $\text{Ge}$) have electrical conductivity intermediate between conductors and insulators.
-
-- **Intrinsic Semiconductor:** Pure semiconductor crystal with four valence electrons per atom forming covalent bonds. At room temperature, thermal energy generates an equal number of free electrons and holes ($n = p = n_i$).
-- **Extrinsic Semiconductor:** Doped with a small, controlled impurity to increase conductivity:
-  - **N-type semiconductor:** Doped with pentavalent (donor) impurities such as Phosphorus ($\text{P}$), Arsenic ($\text{As}$), or Antimony ($\text{Sb}$). **Majority carriers** are free electrons; **minority carriers** are holes.
-  - **P-type semiconductor:** Doped with trivalent (acceptor) impurities such as Boron ($\text{B}$), Gallium ($\text{Ga}$), or Indium ($\text{In}$). **Majority carriers** are holes; **minority carriers** are free electrons.
+| **Examples** | Resistor, Capacitor, Inductor | Diode, Zener diode, BJT, JFET, MOSFET |
 
 ### Summary
 
 - **Passive components** ($R, L, C$) store or dissipate energy and cannot amplify signals.
-- **Active components** (diodes, transistors, ICs) control electron flow and can rectify, switch, or amplify signals when biased by a DC power source.
-- Doping pure silicon with pentavalent or trivalent impurities creates **N-type** and **P-type** semiconductors, which form the building blocks of all solid-state devices.
+- **Active components** (diodes, transistors) control electron flow and can rectify, switch, or amplify signals when biased by a DC power source.
 
 ---
 
@@ -68,18 +56,7 @@ Semiconductors (such as Silicon, $\text{Si}$, and Germanium, $\text{Ge}$) have e
 
 When a P-type semiconductor and an N-type semiconductor are fabricated on the same continuous crystal wafer, the boundary between them is called a **PN junction**.
 
-```
-       P-region                Depletion                N-region
-  (Majority: Holes)             Region           (Majority: Electrons)
- +--------------------+------------------------+--------------------+
- |  (+)   (+)   (+)   |   (-)  (-) | (+)  (+)  |   (-)   (-)   (-)  |
- |                    |   (-)  (-) | (+)  (+)  |                    |
- |  (+)   (+)   (+)   |   Immobile | Immobile  |   (-)   (-)   (-)  |
- |                    |  Acceptors |  Donors   |                    |
- +--------------------+------------------------+--------------------+
-                                   |<-- W_d -->|
-                                   V_0 (Barrier Potential)
-```
+![PN junction at formation: P-region holes, depletion region with immobile acceptor and donor ions, N-region electrons, with depletion width W_d and barrier potential V_0 marked](/assets/notes/ece/s1/electrical/module-3/pn-junction-formation-regions.svg)
 
 1. **Diffusion:** Immediately upon formation, holes from the P-side diffuse across the junction into the N-side, and free electrons from the N-side diffuse into the P-side due to the sharp concentration gradient.
 2. **Depletion Region (Space-Charge Region):** As electrons and holes recombine near the junction, they leave behind uncovered, immobile negative acceptor ions on the P-side and immobile positive donor ions on the N-side. This region is depleted of mobile charge carriers and is called the **depletion layer**.
@@ -89,12 +66,7 @@ When a P-type semiconductor and an N-type semiconductor are fabricated on the sa
 
 **Circuit Symbol of a PN Diode**
 
-```
-      Anode (A)              Cathode (K)
-      (P-side)     |\  |      (N-side)
-     o-------------| > |-------------o
-                   |/  |
-```
+![Circuit symbol of a PN junction diode with anode on the P side and cathode on the N side](/assets/notes/ece/s1/electrical/module-3/pn-diode-symbol.svg)
 
 ### Working of PN Junction Diode Under Bias
 
@@ -115,21 +87,6 @@ A PN junction is **reverse biased** when the negative terminal of the external D
 - Majority carrier diffusion drops to zero. However, thermally generated **minority carriers** (electrons in P, holes in N) are swept across the junction by the strong electric field, creating a tiny **reverse saturation current** $I_S$ (or $I_0$).
 - $I_S$ is typically in nanoamperes ($\text{nA}$) for Silicon and microamperes ($\mu\text{A}$) for Germanium, and depends mainly on temperature (roughly doubling for every $10^\circ\text{C}$ rise in temperature).
 
-### Shockley's Diode Equation
-
-The mathematical relationship between the diode current $I_D$ and diode voltage $V_D$ in both forward and reverse bias (prior to breakdown) is given by:
-
-$$
-I_D = I_S \left( e^{\frac{V_D}{\eta V_T}} - 1 \right)
-$$
-
-where:
-- $I_D$ = diode current ($\text{A}$)
-- $I_S$ = reverse saturation current ($\text{A}$)
-- $V_D$ = applied voltage across the diode ($+$ for forward, $-$ for reverse)
-- $\eta$ = ideality factor ($1$ for $\text{Ge}$; between $1$ and $2$ for $\text{Si}$)
-- $V_T = \frac{kT}{q}$ = thermal voltage ($\approx 26\text{ mV}$ at room temperature $T = 300\text{ K}$)
-
 ### V-I Characteristics of a PN Junction Diode
 
 The $V\text{–}I$ characteristic curve plots diode current $I_D$ on the vertical axis against diode voltage $V_D$ on the horizontal axis across three distinct regions:
@@ -138,17 +95,7 @@ The $V\text{–}I$ characteristic curve plots diode current $I_D$ on the vertica
 2. **Reverse Bias Region ($-V_{BR} < V_D < 0$):** Current remains nearly constant and extremely small at $-I_S$ (the reverse saturation current). The diode acts almost like an open switch.
 3. **Reverse Breakdown Region ($V_D \le -V_{BR}$):** At the diode's breakdown voltage, reverse current rises sharply. The **peak inverse voltage (PIV)** is the maximum reverse voltage a rectifier diode is specified to withstand; it is a rating, not another name for breakdown voltage. Limit reverse current to keep dissipation within the device rating and avoid thermal damage.
 
-```text
-                         I_D
-                          ↑              forward conduction
-                          │                   /
-                          │                 _/
-                          │               _/
-───────────────┬──────────┼──────────────_/────────→ V_D
-         -V_BR │          │           V_γ
-   breakdown   │          │  small reverse saturation current (−I_S)
-       region  ↓
-```
+![Diode V-I characteristic: forward conduction after the knee voltage V_gamma, small reverse saturation current -I_S, and breakdown at -V_BR](/assets/notes/ece/s1/electrical/module-3/diode-vi-characteristic.svg)
 
 The sketch is qualitative and not to scale: the forward branch rises steeply after the knee, while reverse current stays small until breakdown.
 
@@ -192,12 +139,7 @@ A **Zener diode** is a specially designed, heavily doped silicon PN junction dio
 
 **Circuit Symbol**
 
-```
-      Anode (A)              Cathode (K)
-                  _|\  |
-     o-------------| > |-------------o
-                   |/  |_
-```
+![Circuit symbol of a Zener diode with anode and cathode marked](/assets/notes/ece/s1/electrical/module-3/zener-diode-symbol.svg)
 
 - In **forward bias**, a Zener diode behaves just like an ordinary silicon PN diode with a $0.7\text{ V}$ forward drop.
 - In **reverse bias**, when the applied reverse voltage reaches the sharp **Zener breakdown voltage ($V_Z$)**, the reverse current $I_Z$ rises almost vertically while the voltage across the diode remains nearly constant at $V_Z$ over a wide range of currents from $I_{Z(\min)}$ (knee current $I_{ZK}$) to $I_{Z(\max)}$.
@@ -235,18 +177,7 @@ Two distinct physical mechanisms cause reverse breakdown in PN junctions dependi
 
 A **voltage regulator** is a circuit that maintains a constant DC output voltage across a load despite variations in the input DC voltage (line regulation) or changes in the load current (load regulation).
 
-```
-                 I_S        R_S         I_L
-        +--------->-------/\/\/\----+---->----+
-        |                           |         |
-        |                       I_Z |         |
-       +|                           v        +|
-       V_in                       -----      V_L = V_Z     R_L (Load)
-       -|                          / \        |
-        |                         /___\      -|
-        |                           |         |
-        +---------------------------+---------+
-```
+![Zener shunt voltage regulator: series resistor R_S from V_in, Zener diode in reverse bias across load R_L, with currents I_S, I_Z and I_L and V_L = V_Z](/assets/notes/ece/s1/electrical/module-3/zener-shunt-regulator.svg)
 
 #### Circuit Operation
 
@@ -313,18 +244,12 @@ $$
 
 Most electronic circuits require a steady, constant DC voltage to bias their active components, whereas the mains supply is AC ($230\text{ V}, 50\text{ Hz}$). A **regulated DC power supply** converts the AC mains voltage into a constant, ripple-free DC voltage in four stages:
 
-```
-  230V, 50Hz   +-------------+   +-----------+   +--------+   +-----------+   Regulated
-  AC Mains --->| Transformer |-->| Rectifier |-->| Filter |-->| Regulator |--> DC Output
-               +-------------+   +-----------+   +--------+   +-----------+     (Load)
-               (Steps down AC)  (AC to Pulsating (Smooths     (Constant DC
-                                      DC)         ripples)      voltage)
-```
+![Block diagram of a regulated DC power supply: transformer, rectifier, filter and regulator from 230 V 50 Hz AC mains to regulated DC output](/assets/notes/ece/s1/electrical/module-3/regulated-dc-supply-block-diagram.svg)
 
 1. **Step-Down Transformer:** Reduces the high-voltage AC mains ($230\text{ V}$ RMS) to the required low AC secondary voltage and provides electrical isolation from the power line.
 2. **Rectifier:** Uses one or more PN junction diodes to convert bidirectional AC voltage into unidirectional **pulsating DC** (which contains both a desired DC component and unwanted AC harmonic ripples).
 3. **Filter:** A passive circuit (most commonly a shunt capacitor filter) that suppresses the AC ripple component from the rectifier output, producing a relatively smooth DC voltage.
-4. **Voltage Regulator:** A Zener regulator or monolithic IC regulator (such as the 78XX series) that maintains a constant DC output voltage despite fluctuations in AC mains voltage or load current.
+4. **Voltage Regulator:** A Zener regulator that maintains a constant DC output voltage despite fluctuations in AC mains voltage or load current.
 
 ### 1. Half-Wave Rectifier (HWR)
 
@@ -332,14 +257,7 @@ Most electronic circuits require a steady, constant DC voltage to bias their act
 
 A half-wave rectifier consists of a step-down transformer, a **single PN junction diode $D$**, and a load resistor $R_L$ connected in series across the secondary winding. Let the instantaneous secondary voltage be $v_s = V_m \sin\omega t$.
 
-```
-      Transformer         D
-      Secondary      +---|>|---+
-        ) || (       |         |
-   v_s  ) || (       |         \  R_L
-        ) || (       |         /  (v_L)
-        ) || (-------+---------+
-```
+![Half-wave rectifier: transformer secondary feeding one diode D in series with load R_L](/assets/notes/ece/s1/electrical/module-3/half-wave-rectifier-circuit.svg)
 
 - **Positive Half-Cycle ($0 < \omega t < \pi$):** The top terminal of the secondary is positive with respect to the bottom. Diode $D$ is **forward biased** and conducts. Current $i_L = \frac{V_m \sin\omega t}{R_f + R_L} = I_m \sin\omega t$ flows through $R_L$, producing a positive half-sine voltage across the load.
 - **Negative Half-Cycle ($\pi < \omega t < 2\pi$):** The top terminal is negative. Diode $D$ is **reverse biased** and acts as an open switch. No current flows ($i_L = 0$) and the load voltage is zero ($v_L = 0$).
@@ -364,17 +282,7 @@ A half-wave rectifier consists of a step-down transformer, a **single PN junctio
 
 Uses a **center-tapped step-down transformer** (with the center tap $CT$ taken as ground reference) and **two diodes $D_1$ and $D_2$** whose cathodes are tied together and connected to the load $R_L$ returning to $CT$. Each half of the secondary winding develops $v_s = V_m \sin\omega t$.
 
-```
-                      D1
-          A +--------|>|--------+
-            )                   |
-            )              +----+----+
-       CT   )              |         \
-      ------+--------------+         / R_L (v_L)
-            )                        \
-            )        D2              |
-          B +--------|>|-------------+
-```
+![Centre-tapped full-wave rectifier: transformer with terminals A, B and centre tap CT, diodes D1 and D2 feeding load R_L](/assets/notes/ece/s1/electrical/module-3/center-tapped-full-wave-rectifier.svg)
 
 - **Positive Half-Cycle ($0 < \omega t < \pi$):** Terminal $A$ is positive and terminal $B$ is negative with respect to center tap $CT$. Diode $D_1$ is **forward biased** and conducts through $R_L$ from top to bottom; diode $D_2$ is reverse biased (OFF).
 - **Negative Half-Cycle ($\pi < \omega t < 2\pi$):** Terminal $A$ is negative and terminal $B$ is positive with respect to $CT$. Diode $D_1$ is OFF and diode $D_2$ is **forward biased**, conducting through $R_L$ in the **same direction** (top to bottom).
@@ -388,19 +296,7 @@ Overcomes the need for a heavy, expensive center-tapped transformer by using an 
 
 The bridge has two AC input terminals ($A$ and $B$) and two DC output terminals ($+$ and $-$). Read the four diode branches as these node-to-node connections; connect the load between the two output nodes:
 
-```text
-                         (+)
-                      ╱       ╲
-               D1 ↗  ╱         ╲  ↖ D2
-                   ╱             ╲
-             A (~) o             o (~) B
-                   ╲             ╱
-               D4 ↖ ╲           ╱ ↗ D3
-                      ╲       ╱
-                         (−)
-
-                (+) ── R_L ── (−)
-```
+![Full-wave bridge rectifier: four diodes between AC terminals A and B and DC output terminals (+) and (-), with load R_L across the output](/assets/notes/ece/s1/electrical/module-3/bridge-rectifier-circuit.svg)
 
 | Diode | Anode | Cathode |
 | --- | --- | --- |
@@ -480,14 +376,7 @@ $$
 
 To reduce the ripple factor significantly, a large **shunt capacitor $C$** is connected directly in parallel with the load resistor $R_L$ at the rectifier output. It works on the principle that a capacitor offers a low capacitive reactance $X_C = \frac{1}{2\pi f_r C}$ to AC ripples while acting as an open circuit to steady DC ($f = 0$).
 
-```
-       From Rectifier  ----+-------+-------+
-                           |       |       |
-                           |      --- C    \
-                           |      ---      / R_L    v_L(t)
-                           |       |       \
-       Common Return   ----+-------+-------+
-```
+![Shunt capacitor filter: capacitor C and load R_L in parallel across the rectifier output](/assets/notes/ece/s1/electrical/module-3/capacitor-filter-rectifier.svg)
 
 #### Working of Capacitor Filter
 
@@ -568,18 +457,7 @@ There are two types of BJTs depending on layer arrangement:
 1. **NPN Transistor:** A thin P-type layer sandwiched between two N-type layers.
 2. **PNP Transistor:** A thin N-type layer sandwiched between two P-type layers.
 
-```
-         NPN Transistor                            PNP Transistor
-    +-------+-----+-------+                   +-------+-----+-------+
-    |       |     |       |                   |       |     |       |
-  E |   N   |  P  |   N   | C               E |   P   |  N  |   P   | C
-    |       |     |       |                   |       |     |       |
-    +-------+--+--+-------+                   +-------+--+--+-------+
-               |                                         |
-               B                                         B
-   (Arrow on Emitter points OUT:             (Arrow on Emitter points IN:
-        "Not Pointing iN")                        "Pointing iN Proudly")
-```
+![NPN and PNP transistor layer structure with emitter, base and collector; the emitter arrow points out for NPN and in for PNP](/assets/notes/ece/s1/electrical/module-3/bjt-npn-pnp-structure.svg)
 
 *(In the circuit symbol of a BJT, the arrow is always placed on the **Emitter** terminal and indicates the direction of conventional current flow when the emitter-base junction is forward biased.)*
 
@@ -676,20 +554,7 @@ Because a BJT has only three terminals whereas a two-port circuit requires four 
 
 The **Common Emitter (CE) configuration** is the most widely used transistor arrangement because it is the only configuration that provides **both high current gain ($\beta \gg 1$) and high voltage gain ($A_v \gg 1$)**, resulting in the highest **power gain** of all three configurations. It also provides moderate input and output impedances suitable for cascading stages.
 
-```
-                        I_C
-                         +-----[ mA ]-----+
-                         |                |
-        I_B              |/ C             |
-   +---[ uA ]----+-------|      NPN       |
-   |             |       |\ E             |
-  +|            +|         |              +|
-  V_BB          V_BE       |             V_CE     V_CC
-  -|            -|         |              -|
-   |             |         |              |
-   +-------------+---------+--------------+
-                 (Common Emitter)
-```
+![Common-emitter NPN bias circuit with base current I_B in microamps, collector current I_C in milliamps, V_BB, V_CC, V_BE and V_CE](/assets/notes/ece/s1/electrical/module-3/ce-bias-circuit-npn.svg)
 
 In this circuit:
 - **Input quantities:** Base current $I_B$ ($\mu\text{A}$) and Base-Emitter voltage $V_{BE}$ ($\text{V}$).
@@ -701,53 +566,22 @@ In this circuit:
 
 - Since the base-emitter junction is forward biased, the input characteristic resembles the **forward $V\text{–}I$ characteristic of a PN junction diode**.
 - Below the cut-in voltage ($V_{BE} \approx 0.7\text{ V}$ for $\text{Si}$), $I_B$ is negligible; above $0.7\text{ V}$, $I_B$ rises rapidly.
-- **Effect of increasing $V_{CE}$ (Early Effect / Base-Width Modulation):** When $V_{CE}$ is increased, the reverse bias across the collector-base junction increases. This widens the collector-base depletion region into the base, reducing the effective width of the base. Fewer carriers recombine in the narrower base, so $I_B$ decreases slightly for a given $V_{BE}$ (the curve shifts slightly to the right for higher $V_{CE}$).
-- **Dynamic Input Resistance ($r_i$):**
-  $$
-  r_i = \left.\frac{\Delta V_{BE}}{\Delta I_B}\right|_{V_{CE} = \text{constant}} \qquad (\text{typically } 500\,\Omega \text{ to } 2\text{ k}\Omega)
-  $$
 
 ### 2. Output Characteristics of CE Configuration
 
 **Definition:** The family of curves plotted between the output current $I_C$ (on the Y-axis, in $\text{mA}$) and the output voltage $V_{CE}$ (on the X-axis, in $\text{V}$) for several fixed values of base current $I_B$ ($\mu\text{A}$).
 
-```
-   I_C (mA)
-    ^     Saturation
-    |     |        Active Region (I_C = beta * I_B)
-    |     |  /---------------------------------------  I_B = 40 uA
-    |     | /----------------------------------------  I_B = 30 uA
-    |     |/-----------------------------------------  I_B = 20 uA
-    |    /|------------------------------------------  I_B = 10 uA
-    |   / |------------------------------------------  I_B = 0 (Cut-off)
-    +--+--+------------------------------------------> V_CE (V)
-       0  V_CE(sat) (~0.2V)
-```
+![CE output characteristics: collector current I_C against V_CE for base currents of 10, 20, 30 and 40 microamps, with the saturation, active and cut-off regions](/assets/notes/ece/s1/electrical/module-3/ce-output-characteristics.svg)
 
 The output characteristic family is divided into three distinct operating regions:
 
-1. **Active Region:** The nearly horizontal portion of the curves where $V_{CE} > V_{CE(\text{sat})}$. Here $J_{EB}$ is forward biased and $J_{CB}$ is reverse biased. The collector current $I_C \approx \beta I_B$ is controlled almost entirely by the base current $I_B$ and increases only slightly with $V_{CE}$ (due to the Early effect). **A transistor must be biased in the center of the active region to work as an undistorted linear amplifier.**
+1. **Active Region:** The nearly horizontal portion of the curves where $V_{CE} > V_{CE(\text{sat})}$. Here $J_{EB}$ is forward biased and $J_{CB}$ is reverse biased. The collector current $I_C \approx \beta I_B$ is controlled almost entirely by the base current $I_B$ and increases only slightly with $V_{CE}$. **A transistor must be biased in the center of the active region to work as an undistorted linear amplifier.**
 2. **Saturation Region:** The steep region near the vertical axis where $V_{CE}$ is very small ($V_{CE(\text{sat})} \approx 0.2\text{ V}$ for $\text{Si}$). Both $J_{EB}$ and $J_{CB}$ are forward biased. Collector current no longer obeys $I_C = \beta I_B$ and is limited by the external collector circuit ($I_{C(\text{sat})} \approx V_{CC}/R_C$). Used as a **closed (ON) switch**.
 3. **Cut-off Region:** The region below the $I_B = 0$ curve. Both junctions are reverse biased, and only a negligible leakage current $I_{CEO}$ flows ($I_C \approx 0$, $V_{CE} = V_{CC}$). Used as an **open (OFF) switch**.
 
-- **Dynamic Output Resistance ($r_o$):**
-  $$
-  r_o = \left.\frac{\Delta V_{CE}}{\Delta I_C}\right|_{I_B = \text{constant}} \qquad (\text{typically } 20\text{ k}\Omega \text{ to } 50\text{ k}\Omega)
-  $$
-
 ### BJT as a low-side electronic switch
 
-```text
-             VCC
-              │
-            Load
-              │
-              C
-Control ─RB─ B   NPN
-              E
-              │
-            ground
-```
+![BJT low-side switch: control input through base resistor R_B, NPN transistor switching a load connected to VCC](/assets/notes/ece/s1/electrical/module-3/bjt-low-side-switch.svg)
 
 A logic-high control signal supplies base current through $R_B$, driving the transistor into saturation; the small collector-emitter voltage turns the load on. With the control low, the transistor is in cut-off and the load is off. Choose $R_B$ to limit base current while supplying enough drive for the required load current.
 
@@ -757,19 +591,7 @@ A logic-high control signal supplies base current through $R_B$, driving the tra
 
 #### How a CE Amplifier Works
 
-```text
-                         VCC
-                          │
-                         RC
-                          │──────── Cout ── Vout → load
-                          C
-Vin ── Cin ── B       Q1 (NPN)
-            │             E
-      bias network        │
-                       RE ∥ CE
-                          │
-                        ground
-```
+![Single-stage common-emitter amplifier with collector resistor R_C, input and output coupling capacitors, bias network and emitter bypass network](/assets/notes/ece/s1/electrical/module-3/ce-amplifier-circuit.svg)
 
 The coupling capacitors pass the AC signal while isolating DC bias. The collector resistor converts changes in collector current into changes in output voltage; the emitter network stabilizes the operating point and can provide AC bypassing.
 
@@ -782,7 +604,7 @@ $$
 1. **DC Biasing (Quiescent Point / Q-Point):** Before applying any AC signal, DC bias resistors set a steady base current $I_{BQ}$, collector current $I_{CQ}$, and collector-emitter voltage $V_{CEQ}$ in the middle of the active region (on the **DC load line**) so that neither positive nor negative signal peaks are clipped.
 2. **Positive Half-Cycle of AC Input ($v_{in}$):** When a small positive-going AC input signal $v_{in}$ is superimposed on the base, the total base-emitter voltage $v_{BE}$ increases. This produces a small increase $\Delta i_B$ in base current, which causes a **$\beta$-times larger increase** $\Delta i_C = \beta\,\Delta i_B$ in collector current. Consequently, the voltage drop $i_C R_C$ across $R_C$ increases significantly, and $v_{CE} = V_{CC} - i_C R_C$ **decreases** (goes through a large negative half-cycle).
 3. **Negative Half-Cycle of AC Input ($v_{in}$):** When $v_{in}$ goes negative, $i_B$ decreases, $i_C$ decreases by $\beta\,\Delta i_B$, the drop $i_C R_C$ decreases, and $v_{CE}$ **increases** (goes through a large positive half-cycle).
-4. **180° Phase Reversal:** Thus, a CE amplifier produces an amplified output voltage $v_{out}$ across the collector that is **$180^\circ$ out of phase** with the input voltage $v_{in}$, with voltage gain magnitude $|A_v| \approx \beta \frac{R_C}{r_i}$.
+4. **180° Phase Reversal:** Thus, a CE amplifier produces an amplified output voltage $v_{out}$ across the collector that is **$180^\circ$ out of phase** with the input voltage $v_{in}$.
 
 ### Summary
 
@@ -806,29 +628,47 @@ $$
 
 These are qualitative comparisons for the usual small-signal configurations. Actual input/output impedances depend on the transistor, bias network, load, and frequency.
 
-### DC load line, bias, and the Q-point
+### Common Collector (CC) Configuration
 
-For a CE output circuit with supply $V_{CC}$ and collector resistor $R_C$, Kirchhoff's voltage law gives
+In the common collector (CC) configuration, the collector is common to the input and output circuits. The input signal is applied between the **base** and the collector, and the output is taken between the **emitter** and the collector. Because the emitter voltage follows the base voltage, this arrangement is also called an **emitter follower**.
 
-$$V_{CE}=V_{CC}-I_C R_C.$$
+- **Voltage gain:** approximately $1$ (slightly less than unity). The output is in phase with the input, so there is no phase reversal.
+- **Current gain:** high (approximately $\beta + 1$), so the stage still provides appreciable power gain.
+- **Input impedance:** high, because the base draws only a small current from the signal source.
+- **Output impedance:** low, because the emitter can supply current to a low-resistance load.
 
-The endpoints of the straight-line relationship on the $I_C$–$V_{CE}$ graph are **cut-off** ($I_C=0$, $V_{CE}=V_{CC}$) and the idealized **saturation** endpoint ($V_{CE}\approx0$, $I_C\approx V_{CC}/R_C$). Joining these points gives the **DC load line**. The bias network sets the no-signal operating point, or **Q-point**. For undistorted amplification, choose a Q-point in the active region with enough room for the expected signal swing; a switch instead uses cut-off and saturation as its OFF and ON states.
+Because it presents a high load to its source and drives a low-impedance load without loading the preceding stage, the CC stage is used as a **buffer** and for impedance matching.
+
+### DC Load Line, Biasing, and the Q-Point
+
+#### Concept of Biasing
+
+A transistor amplifier must be **biased**: steady DC voltages and currents are applied before any signal arrives so that the transistor operates in its active region. The emitter-base junction must be forward biased beyond its cut-in voltage and the collector-base junction reverse biased, so that the transistor responds to the input signal in a linear way.
+
+The no-signal operating point is the **quiescent point (Q-point)**, defined by $I_{CQ}$ and $V_{CEQ}$. The AC input signal swings about this point. If the Q-point sits too close to cut-off or saturation, the positive or negative peaks of the output are clipped and the amplified waveform is distorted. The Q-point is therefore placed near the middle of the active region, where there is room for the signal to swing in both directions.
+
+#### DC Load Line for a CE Stage
+
+For a CE stage with supply $V_{CC}$ and collector resistor $R_C$, Kirchhoff's voltage law in the output loop gives
+
+$$V_{CE} = V_{CC} - I_C R_C.$$
+
+This is a straight line on the $I_C$–$V_{CE}$ output characteristics, drawn between two points:
+
+- **On the $V_{CE}$ axis:** $I_C = 0$ gives $V_{CE} = V_{CC}$ (cut-off).
+- **On the $I_C$ axis:** $V_{CE} = 0$ gives $I_C = V_{CC}/R_C$ (idealized saturation).
+
+Joining these two points gives the **DC load line**.
+
+#### Finding the Q-Point
+
+Each output characteristic curve corresponds to one fixed base current $I_B$. The bias network fixes $I_B$, and the Q-point is the intersection of the DC load line with the characteristic curve for that base current. Changing the base bias moves the Q-point along the load line. A switch uses cut-off and saturation as its OFF and ON states, whereas an amplifier uses a Q-point in the active region with enough room for the expected signal swing.
 
 ### RC-coupled amplifier and frequency response
 
 An RC-coupled amplifier uses a CE transistor stage. The input coupling capacitor $C_{in}$ passes the AC signal while blocking the source's DC; the output capacitor $C_{out}$ passes the amplified AC signal to the load while keeping the collector's DC bias out of the load. The emitter resistor $R_E$ stabilizes bias, and the bypass capacitor $C_E$ provides a low-impedance AC path around $R_E$ in the mid-band.
 
-```text
-VCC ── RC ──┬── C (Q1, NPN)
-            └── Cout ── RL ── GND
-
-Vin ── Cin ──┬── B (Q1)
-VCC ── R1 ────┤
-GND ── R2 ────┘
-
-E (Q1) ──┬── RE ── GND
-         └── CE ── GND
-```
+![RC-coupled common-emitter stage: VCC, R_C, input coupling C_in, bias resistors R1 and R2, emitter R_E with bypass C_E, and output coupling C_out into load R_L](/assets/notes/ece/s1/electrical/module-3/rc-coupled-ce-amplifier-netlist.svg)
 
 In this sketch, $R_1$ and $R_2$ form the base voltage-divider bias network: $R_1$ connects from $V_{CC}$ to the base node and $R_2$ connects from the base node to ground. $R_E$ and $C_E$ are in parallel between the emitter and ground. The collector resistor $R_C$ connects the collector to $V_{CC}$; $C_{out}$ couples the collector's AC signal to the load.
 
@@ -849,16 +689,7 @@ The lower and upper cut-off frequencies $f_L$ and $f_H$ are conventionally taken
 
 On a sketch of gain against logarithmic frequency, draw a low-frequency rise, a nearly flat mid-band, and a high-frequency roll-off. Mark $f_L$ and $f_H$ where the curve crosses $0.707A_{v,mid}$; do not treat them as frequencies at which gain becomes zero.
 
-```text
-Gain (dB)
-  ↑                    ┌───────────────┐  mid-band
-  │                  /                   \
-  │                /                       \
-  │______________/                           \
-  │            f_L                           f_H
-  └────────────────────────────────────────────→ log frequency
-               −3 dB                     −3 dB
-```
+![Frequency response of an RC-coupled amplifier: gain against log frequency, with lower and upper cut-off f_L and f_H at the -3 dB points](/assets/notes/ece/s1/electrical/module-3/rc-coupled-frequency-response.svg)
 
 This curve is qualitative: the exact slope and cut-off frequencies depend on the transistor, bias components, coupling capacitors, bypass capacitor, and load.
 
@@ -883,38 +714,7 @@ A **Field Effect Transistor (FET)** is a three-terminal **unipolar, voltage-cont
    - **Depletion-type MOSFET (D-MOSFET):** N-channel and P-channel.
    - **Enhancement-type MOSFET (E-MOSFET):** N-channel and P-channel.
 
-### 1. Junction Field Effect Transistor (JFET)
-
-#### Construction of N-Channel JFET
-
-An N-channel JFET consists of an N-type silicon bar with ohmic contacts at the two ends forming the **Drain ($D$)** and **Source ($S$)**. Two heavily doped P-type regions are diffused on opposite sides of the bar and internally connected together to form the **Gate ($G$)**. The region of the N-bar between the two P-gate regions is the **N-channel**.
-
-```
-                   Drain (D)
-                      |
-               +-------------+
-               |      N      |
-               | +---+ +---+ |
-      Gate (G) --| P | | P |-- (Internally connected to Gate)
-               | +---+ +---+ |
-               |  Channel(N) |
-               +-------------+
-                      |
-                  Source (S)
-```
-
-#### Working Principle of N-Channel JFET
-
-In normal operation, the Drain is made positive with respect to the Source ($V_{DS} > 0$) and the Gate-Source PN junction is always **reverse biased** ($V_{GS} \le 0$).
-
-1. **When $V_{GS} = 0\text{ V}$ and $V_{DS}$ is increased:** Electrons flow from Source to Drain through the N-channel, producing drain current $I_D$ (conventional current from $D$ to $S$). As $V_{DS}$ increases, the reverse bias across the gate-channel junction is greater near the drain end than near the source end, so the depletion layers widen into the channel in a wedge shape until they nearly meet at the **pinch-off voltage ($V_P$)**, after which $I_D$ saturates at its maximum value **$I_{DSS}$** (Drain-to-Source current with gate shorted).
-2. **When negative gate voltage $V_{GS} < 0$ is applied:** The reverse bias across the Gate-Source junction increases, causing the depletion regions to penetrate deeper into the N-channel. This **narrows the conducting channel**, increases its resistance, and reduces the drain current $I_D$.
-3. **Cut-off / Pinch-off ($V_{GS} = V_{GS(\text{off})} = -V_P$):** When $V_{GS}$ is made sufficiently negative, the two depletion regions completely close off the channel and drain current drops to zero ($I_D = 0$). In the saturation region, drain current follows **Shockley's equation**:
-   $$
-   I_D = I_{DSS}\left(1 - \frac{V_{GS}}{V_P}\right)^2
-   $$
-
-### 2. MOSFET (Metal-Oxide-Semiconductor FET)
+### MOSFET (Metal-Oxide-Semiconductor FET)
 
 In a **MOSFET** (also called an **Insulated-Gate FET, IGFET**), the metal (or polysilicon) Gate electrode is electrically **insulated** from the semiconductor channel by a very thin dielectric layer of **silicon dioxide ($\text{SiO}_2$)**. Because of this insulating $\text{SiO}_2$ layer, the gate current is virtually zero ($I_G \approx 0$) for both positive and negative gate voltages, giving a MOSFET an **extremely high input impedance** ($10^{10}\,\Omega$ to $10^{15}\,\Omega$).
 
@@ -929,18 +729,7 @@ In a **MOSFET** (also called an **Insulated-Gate FET, IGFET**), the metal (or po
 
 - **Construction (N-channel):** Two heavily doped $N^+$ regions (Source and Drain) are diffused into a P-type substrate, separated by the substrate itself—**no physical channel exists** between Source and Drain during manufacturing.
 
-```
-            Source (S)      Gate (G)       Drain (D)
-                |         +---------+          |
-             +-----+   +---------------+    +-----+
-             +--+--+---|  SiO2 Layer   |----+--+--+
-             |  N+  |  +---------------+    |  N+  |
-             +------+  (Induced N-channel)  +------+
-             |                                     |
-             |            P-Substrate              |
-             +------------------+------------------+
-                                | Substrate (SS)
-```
+![Cross-section of an N-channel enhancement MOSFET: N+ source and drain in a P-substrate, SiO2 gate insulator, and induced N-channel](/assets/notes/ece/s1/electrical/module-3/nmos-enhancement-cross-section.svg)
 
 - **Working:**
   - **When $V_{GS} = 0$:** Two back-to-back PN junctions exist between Drain and Source; no channel is present and **$I_D = 0$** (the E-MOSFET is a **normally-OFF** device).
@@ -956,19 +745,7 @@ A P-channel MOSFET uses a P-type channel or substrate and holes as the majority 
 
 For a P-channel enhancement MOSFET, the P$^+$ source and drain are formed in an N-type body. With the gate near the source potential, no channel connects them. Making the gate sufficiently negative relative to the source attracts holes to the oxide interface and induces a P-type channel:
 
-```
-             Source (S)       Gate (G)       Drain (D)
-                 |          +---------+          |
-              +------+    +---------------+   +------+
-              | P+   |    |   Gate metal  |   | P+   |
-              +------+    +---------------+   +------+
-                           |    SiO2     |
-              ··········· induced P-channel ·········
-              |                                     |
-              |              N-body                |
-              +------------------+------------------+
-                                 | Body (B)
-```
+![Cross-section of a P-channel enhancement MOSFET: P+ source and drain in an N-body, SiO2 gate insulator, and induced P-channel](/assets/notes/ece/s1/electrical/module-3/pmos-enhancement-cross-section.svg)
 
 The diagram is a cross-section, not a circuit symbol. For this P-channel enhancement device, the channel is induced when $V_{GS}<V_{TP}$ (equivalently, when $V_{SG}>|V_{TP}|$); the source is normally at the higher potential. These polarities are the reverse of the N-channel enhancement case.
 
@@ -977,21 +754,9 @@ The diagram is a cross-section, not a circuit symbol. For this P-channel enhance
 
 Always identify the device type and the source-referenced voltage polarities before drawing a circuit or predicting current direction. Complementary P- and N-channel devices are paired in CMOS logic.
 
-### Comparison Between BJT and FET
-
-| Parameter | Bipolar Junction Transistor (BJT) | Field Effect Transistor (FET / MOSFET) |
-| --- | --- | --- |
-| **Control Type** | Current-controlled device ($I_C$ controlled by $I_B$) | Voltage-controlled device ($I_D$ controlled by $V_{GS}$) |
-| **Carrier Polarity** | Bipolar (both electrons and holes participate) | Unipolar (only majority carriers—electrons or holes) |
-| **Input Impedance** | Low to moderate ($1\text{ k}\Omega$ to $2\text{ k}\Omega$ in CE) | Very high ($10^8\,\Omega$ for JFET; $10^{12}\text{–}10^{15}\,\Omega$ for MOSFET) |
-| **Thermal Stability** | Poorer; prone to thermal runaway | Better thermal stability; negative temperature coefficient at high current |
-| **Noise Level** | Higher (due to carrier recombination across junctions) | Very low noise (no minority-carrier junction noise) |
-| **Packing Density / Size** | Larger area on IC chip | Very compact; ideal for VLSI/CMOS digital ICs |
-
 ### Summary
 
 - A **FET** is a unipolar, voltage-controlled device with **Source, Drain, and Gate** terminals and very high input impedance.
-- In a **JFET**, reverse-biasing the gate-source junction widens the depletion layer and narrows the conducting channel.
 - A **MOSFET** has an insulated $\text{SiO}_2$ gate layer: **D-MOSFETs** have a pre-existing channel and work in both depletion and enhancement modes, while **E-MOSFETs** have no initial channel and conduct only when $V_{GS} > V_T$.
 
 ---

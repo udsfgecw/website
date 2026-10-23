@@ -8,11 +8,7 @@ This module introduces communication-system blocks, analog modulation, wired and
 
 A communication system carries information from a source to a destination. A typical chain is:
 
-```text
-Information source → input transducer → transmitter → communication channel → receiver → output transducer → destination
-                                                     ↑
-                                                   noise
-```
+![Block diagram of a basic communication system from information source through transmitter, channel and receiver to destination, with noise entering the channel](/assets/notes/ece/s1/electrical/module-4/communication-system-chain.svg)
 
 The transmitter prepares the signal for the channel; the receiver selects and recovers the message. A channel may be a wire, free space, or an optical fiber. Noise is an unwanted disturbance added during transmission.
 
@@ -29,59 +25,39 @@ A high-frequency carrier is varied to carry a lower-frequency message.
 
 AM has a simpler receiver but is more affected by amplitude noise. FM is less sensitive to amplitude noise, but uses more bandwidth and requires a different detector. The syllabus requires the concepts and waveforms, not mathematical derivations.
 
-```text
-Message:       ____/‾‾‾\____          ____/‾‾‾\____
-AM carrier:    /\/\/\/\/\/\/\        /\/\/\/\/\/\/\
-Envelope:     /              \______/              \
+![AM and FM waveforms showing a message, the amplitude-modulated carrier with its envelope, and the frequency-modulated carrier with wide spacing at low frequency and tight spacing at high frequency](/assets/notes/ece/s1/electrical/module-4/am-fm-carrier-waveforms.svg)
 
-FM carrier:   /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
-              wide spacing     tight spacing    wide spacing
-              (lower f_i)      (higher f_i)     (lower f_i)
-```
+In AM, the upper and lower envelopes follow the message, while carrier-cycle spacing stays fixed. If the message is too large for the carrier, the envelope is overmodulated and distorted.
 
-In AM, the upper and lower envelopes follow the message, while carrier-cycle spacing stays fixed. For a single-tone message, the conventional expression is $s_{AM}(t)=A_c[1+m_a\cos(2\pi f_m t)]\cos(2\pi f_c t)$, where $m_a=A_m/A_c$ is the modulation index. For undistorted conventional AM, keep $0\le m_a\le1$; overmodulation distorts the envelope. Its approximate bandwidth is $2f_m$.
-
-In FM, carrier amplitude stays approximately fixed while instantaneous frequency varies around $f_c$. A single-tone form is $s_{FM}(t)=A_c\cos[2\pi f_ct+\beta\sin(2\pi f_mt)]$, where $\beta=\Delta f/f_m$ is the modulation index and $\Delta f$ is peak frequency deviation. These expressions identify the quantities being varied; derivations are not required by the syllabus.
+In FM, carrier amplitude stays approximately fixed while instantaneous frequency varies around the carrier frequency.
 
 | Exam point | AM | FM |
 |---|---|---|
 | Quantity varied | Carrier amplitude | Instantaneous carrier frequency |
 | Carrier amplitude | Changes with the message | Ideally constant |
-| Noise response | Amplitude noise directly affects the envelope | Limiting can remove amplitude noise before demodulation |
-| Bandwidth | Approximately $2f_m$ for a single-tone message | Depends on peak deviation and message frequency |
-| Demodulator | Envelope detector for conventional AM | Frequency discriminator or another FM detector |
+| Noise response | Amplitude noise directly affects the envelope | Less sensitive to amplitude noise |
+| Bandwidth | Narrower than FM for a given message | Wider; depends on peak deviation and message frequency |
+| Demodulator | Envelope detector for conventional AM | FM detector |
 
 ### Superheterodyne radio receiver
 
 A superheterodyne receiver converts a selected radio-frequency signal to a fixed intermediate frequency (IF), where amplification and filtering are easier.
 
-```text
-Antenna → RF tuner/amplifier → mixer ← local oscillator
-                                      ↓
-          loudspeaker ← audio amplifier ← detector/demodulator ← IF amplifier/filter
-```
+![Block diagram of a superheterodyne receiver: antenna, RF tuner/amplifier, mixer fed by a local oscillator, IF amplifier/filter, detector/demodulator, audio amplifier and loudspeaker](/assets/notes/ece/s1/electrical/module-4/superheterodyne-receiver.svg)
 
-The tuner selects the desired station. The mixer combines it with the local-oscillator signal; the selected difference frequency is $f_{IF}=|f_{LO}-f_{RF}|$. The local oscillator tracks the tuned station so the IF remains fixed. The IF stage provides most of the receiver's gain and selectivity. The detector recovers the audio message: an envelope detector is commonly used for AM, while an FM discriminator or detector is used for FM. The audio amplifier drives the output transducer.
+The tuner selects the desired station. The mixer combines it with the local-oscillator signal; the selected difference frequency is $f_{IF}=|f_{LO}-f_{RF}|$. The local oscillator tracks the tuned station so the IF remains fixed. The IF stage provides most of the receiver's gain and selectivity. The detector recovers the audio message: an envelope detector is commonly used for AM, while an FM detector is used for FM. The audio amplifier drives the output transducer.
 
 #### AM superheterodyne receiver
 
-```text
-Antenna → RF tuned amplifier → Mixer → IF filter/amplifier → Envelope detector → Audio amplifier → Speaker
-                                  ↑                                  │
-                           Local oscillator                         └── AGC feedback to RF/IF gain stages
-```
+![Block diagram of an AM superheterodyne receiver: antenna, RF tuned amplifier, mixer with local oscillator, IF filter/amplifier, envelope detector, audio amplifier and speaker](/assets/notes/ece/s1/electrical/module-4/am-superheterodyne-receiver.svg)
 
-The envelope detector follows the AM carrier's envelope to recover the message. Automatic gain control (AGC) uses a slowly varying detector output to reduce RF/IF gain when a strong station is received, helping keep the output level more uniform.
+The envelope detector follows the AM carrier's envelope to recover the message.
 
 #### FM superheterodyne receiver
 
-```text
-Antenna → RF tuned amplifier → Mixer → IF filter/amplifier → Limiter → FM discriminator → De-emphasis → Audio amplifier → Speaker
-                                  ↑
-                           Local oscillator
-```
+![Block diagram of an FM superheterodyne receiver: antenna, RF tuned amplifier, mixer with local oscillator, IF filter/amplifier, FM detector, audio amplifier and speaker](/assets/notes/ece/s1/electrical/module-4/fm-superheterodyne-receiver.svg)
 
-The limiter removes unwanted amplitude variations before frequency demodulation. The discriminator converts the FM frequency deviation back to the message signal. De-emphasis restores the audio frequency balance after the matching transmitter pre-emphasis. The AM envelope detector and FM discriminator are different demodulators; do not interchange them.
+The AM envelope detector and the FM detector are different demodulators; do not interchange them.
 
 <!-- page 2 | Wired and wireless communication -->
 
@@ -103,43 +79,33 @@ In **wireless communication**, an antenna radiates and receives electromagnetic 
 
 A fiber-optic link converts an electrical message to light, guides the light through an optical fiber, then converts it back to an electrical signal.
 
-```text
-Electrical input → driver/modulator → LED or laser → optical fiber → photodetector → receiver/amplifier → electrical output
-```
+![Block diagram of a fiber-optic link: electrical input, driver/modulator, optical source, optical fiber, optical detector, receiver/amplifier and electrical output](/assets/notes/ece/s1/electrical/module-4/fiber-optic-link.svg)
 
-The transmitter drives the LED or laser. The fiber guides the optical signal; connectors, splices, and repeaters may be used along a long link. A photodiode at the receiver converts received light to current, which is amplified and recovered. Optical links offer high bandwidth and are not affected by electromagnetic interference in the same way as copper conductors. Attenuation reduces received optical power, while dispersion spreads pulses in time; link length and data rate therefore influence whether repeaters or optical amplifiers are needed.
+The transmitter drives the optical source. The fiber guides the optical signal, and the receiver converts the received light back into an electrical signal. Optical links offer high bandwidth and are not affected by electromagnetic interference in the same way as copper conductors.
 
 ### GSM architecture
 
-The Global System for Mobile Communications (GSM) separates the mobile radio access network from its switching and subscriber databases.
+The Global System for Mobile Communications (GSM) separates the mobile radio access network from its switching equipment.
 
-```text
-Mobile Station (MS) ⇄ BTS ⇄ BSC ── Base Station Subsystem (BSS) ── MSC/GMSC ── other networks
-                                      │                                  │
-                                      └──────────────────────────────────┤
-                                      HLR · VLR · AuC · EIR               OSS
-```
+![Block diagram of GSM architecture: mobile station, BTS and BSC forming the base station subsystem, then MSC/GMSC and other networks](/assets/notes/ece/s1/electrical/module-4/gsm-architecture.svg)
 
 - **MS:** handset and SIM used by the subscriber.
 - **BTS:** radio equipment that communicates with mobiles in a cell.
 - **BSC:** controls a group of BTSs and radio-channel allocation; together BTS and BSC form the **BSS**.
 - **MSC/GMSC:** switches calls and connects the mobile network to other networks.
-- **HLR/VLR:** hold permanent and currently visited subscriber and location records.
-- **AuC/EIR:** support authentication and equipment-identity checks.
-- **OSS:** supports operation, maintenance, and network management.
 
-In a simplified mobile-originated call, the **MS** requests a radio channel through its serving **BTS**. The **BSC** assigns and manages radio resources, then the **MSC** routes the call; the **VLR/HLR** provide subscriber and location information, and the **AuC** supports authentication. For a call to another network, the **GMSC** provides the gateway connection. When a subscriber moves, location updates let the network route later calls through the subscriber's current serving area. In an exam diagram, show the MS–BTS–BSC radio path, the MSC/GMSC switching path, and the subscriber databases as support blocks.
+The MS connects over the radio path to the BTS and BSC, which together form the BSS; the MSC/GMSC switches calls and provides the gateway to other networks.
 
 ### Mobile-network generations
 
 | Generation | Main development | Typical capabilities emphasized in an introductory comparison |
 |---|---|---|
 | **3G** | Digital mobile broadband beyond voice and basic data | Mobile internet, video calling, and packet data |
-| **4G** | All-IP broadband (for example, LTE) | Higher data rates, lower latency than 3G, and multimedia services |
-| **5G** | New radio and a flexible core network | Enhanced mobile broadband, low-latency services, and support for many connected devices |
-| **6G** | Research and future development beyond 5G | Candidate goals include integrated sensing, AI-assisted networks, and further improvements in capacity and latency; capabilities remain under development |
+| **4G** | All-IP broadband | Higher data rates, lower latency than 3G, and multimedia services |
+| **5G** | Flexible radio and core network design | Enhanced mobile broadband, low-latency services, and support for many connected devices |
+| **6G** | Research and future development beyond 5G | Further improvements in capacity and latency are under study; capabilities remain under development |
 
-Examples often used to distinguish the generations are UMTS/HSPA for 3G, LTE for 4G, and 5G New Radio (NR) for 5G. 3G emphasizes mobile packet data and multimedia; 4G uses an all-IP broadband architecture; 5G adds flexible radio deployments and service classes for broadband, low-latency, and large-scale device connectivity. 6G remains a research and standardization direction rather than a deployed commercial generation in this syllabus overview.
+3G emphasizes mobile packet data and multimedia; 4G uses an all-IP broadband architecture; 5G adds flexible radio deployments and service classes for broadband, low-latency, and large-scale device connectivity. 6G remains a research and standardization direction rather than a deployed commercial generation in this syllabus overview.
 
 These labels describe broad technology generations; actual performance depends on the deployment, spectrum, device, and network configuration.
 
@@ -149,52 +115,31 @@ These labels describe broad technology generations; actual performance depends o
 
 An electronic instrument converts a physical quantity into a readable measurement. A general measurement chain is:
 
-```text
-Measurand → sensor/transducer → signal conditioning → conversion/processing → display or storage
-```
+![Block diagram of an electronic measurement chain: measurand, sensor/transducer, signal conditioning, conversion/processing, and display or storage](/assets/notes/ece/s1/electrical/module-4/measurement-chain.svg)
 
-The sensor responds to the quantity being measured. Signal conditioning may amplify, filter, linearize, or isolate the signal; a converter or processor then scales the result into useful units. The output stage displays, records, or transmits the measurement. Calibration, range, resolution, accuracy, response time, and loading effects matter when interpreting a reading. For example, a high-resistance voltmeter input reduces loading on the circuit under measurement.
+The sensor responds to the quantity being measured. Signal conditioning may amplify, filter, linearize, or isolate the signal; a converter or processor then scales the result into useful units. The output stage displays, records, or transmits the measurement.
 
 ### Digital multimeter (DMM)
 
-A DMM measures quantities such as voltage, current, and resistance. For voltage, a divider scales the input; for current, a shunt converts current to a small voltage; for resistance, the meter applies a known test current and measures the resulting voltage. Input protection and range selection condition the signal, and an analog-to-digital converter (ADC) produces a digital value for the display. Select the correct function and range, observe the meter's input terminals, and connect a current range in series with the circuit. Never place a current input directly across a voltage source.
+A DMM measures quantities such as voltage, current, and resistance. Its input is protected and its range selected, the signal is conditioned, and the result is converted to digital form for the display.
 
-```text
-Input terminals → protection/range selection → signal conditioning → ADC → display
-```
+![Block diagram of a digital multimeter: input terminals, protection and range selection, signal conditioning, digital conversion, and display](/assets/notes/ece/s1/electrical/module-4/digital-multimeter-chain.svg)
 
 ### Function generator
 
-A function generator produces test waveforms such as sine, square, and triangular waves. A waveform source or oscillator establishes shape and frequency; amplitude and offset controls set the output level, and an output stage drives the load. A sine wave is useful for frequency-response measurements, a square wave reveals transient response, and a triangle wave provides a linearly changing test signal. The specified amplitude may depend on whether the output is terminated in the stated load.
+A function generator produces test waveforms such as sine, square, and triangular waves. A waveform source or oscillator establishes shape and frequency; amplitude and offset controls set the output level, and an output stage provides the output signal.
 
-```text
-Waveform source/oscillator → shape and frequency controls → amplitude/offset → output amplifier → output
-```
-
-Check the selected waveform, frequency, amplitude, DC offset, and load before connecting it to a circuit.
+![Block diagram of a function generator: waveform source or oscillator, shape and frequency controls, amplitude/offset, output amplifier and output](/assets/notes/ece/s1/electrical/module-4/function-generator-chain.svg)
 
 ### Cathode-ray oscilloscope (CRO)
 
-A CRO displays voltage against time. The vertical system conditions the input signal; the time-base and horizontal system sweep the trace across the screen; the trigger stabilizes a repeating waveform. The display lets an observer compare amplitude, period, phase, and waveform shape. With vertical scale $S_V$ in volts per division and a measured peak-to-peak height of $n_V$ divisions, $V_{pp}=n_VS_V$ (adjust for probe attenuation). With a time-base scale $S_T$ in seconds per division and $n_T$ divisions per cycle, $T=n_TS_T$ and $f=1/T$. A two-channel time delay $\Delta t$ gives phase difference $\phi=360^\circ\Delta t/T$ for same-frequency sinusoids.
+A CRO displays voltage against time. The vertical system conditions the input signal; the time-base and horizontal system sweep the trace across the screen; the trigger stabilizes a repeating waveform. The display lets an observer compare amplitude, period, phase, and waveform shape.
 
-```text
-Input → attenuator/vertical amplifier → vertical deflection
-Trigger circuit → time-base generator → horizontal amplifier → horizontal deflection
-```
+![Block diagram of cathode-ray oscilloscope signal paths: a vertical path from input through attenuator/vertical amplifier to vertical deflection, and a horizontal path from trigger circuit through time-base generator and horizontal amplifier to horizontal deflection](/assets/notes/ece/s1/electrical/module-4/cro-signal-paths.svg)
 
-In **X-Y mode**, one periodic signal drives the horizontal input and another drives the vertical input. The resulting Lissajous pattern can compare their frequencies and phase. For a stable pattern, if $N_h$ and $N_v$ are the numbers of horizontal and vertical tangencies to the bounding box, respectively, then $f_y/f_x=N_h/N_v$ (with $x$ driven by $f_x$ and $y$ by $f_y$). Use the instrument's axis convention when counting. For equal frequencies, the trace is a straight line or ellipse; its intercept and direction of travel indicate the phase difference. If the ellipse is centered and $y_0$ is its vertical intercept at $x=0$, then $|\sin\phi|=|y_0|/B$, where $B$ is the peak vertical amplitude; the direction of rotation resolves the sign/quadrant.
+In **X-Y mode**, one periodic signal drives the horizontal input and another drives the vertical input. The resulting Lissajous pattern can compare their frequencies and phase. For equal frequencies, the trace is a straight line or ellipse; its shape and direction of travel indicate the phase difference.
 
-```text
-Equal frequencies, same phase      90° phase difference       180° phase difference
-          y                              y                            y
-          ↑                              ↑                            ↑
-          │       /                      │      .---.                 │      /
-          │     /                        │    /       \               │    /
-          │   /                          │    \       /               │  /
-          │ /                            │      '---'                 │/
-          └────────→ x                   └────────→ x                 └────────→ x
-           rising line                  circle or ellipse                falling line
-```
+![Three X-Y Lissajous patterns for equal frequencies: a rising straight line at zero phase difference, a circle or ellipse at 90 degrees, and a falling straight line at 180 degrees](/assets/notes/ece/s1/electrical/module-4/lissajous-phase-patterns.svg)
 
 For equal amplitudes, the 90° pattern is a circle; unequal amplitudes produce an ellipse. These shapes assume stable sinusoidal inputs of equal frequency.
 
@@ -204,9 +149,7 @@ For equal amplitudes, the 90° pattern is a circle; unequal amplitudes produce a
 
 An Internet of Things system connects sensors and actuators to a local controller or network service. A simple architecture is:
 
-```text
-Sensors/actuators → device controller → network/gateway → data service → user interface
-```
+![Block diagram of an IoT architecture: sensors and actuators, device controller, network or gateway, data service and user interface](/assets/notes/ece/s1/electrical/module-4/iot-system-architecture.svg)
 
 The design must consider power, connectivity, data privacy, security, and what happens when the network is unavailable.
 
