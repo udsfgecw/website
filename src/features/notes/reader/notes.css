@@ -171,6 +171,10 @@
   border-top: 1px solid var(--color-line);
   margin: 2em 0;
 }
+/* a rule inside a box (question and solution) runs edge to edge, across the box padding */
+.notes-prose blockquote > hr {
+  margin: 1.1em -1.3em;
+}
 .notes-prose .katex {
   font-size: 1.08em;
 }
@@ -419,9 +423,34 @@
   font-size: 0.82em;
   opacity: 0.75;
 }
-.notes-epure-answers {
+.notes-prose .notes-line-projection {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: clip;
+}
+.notes-prose .notes-epure-answers {
+  display: table;
+  width: 100%;
   margin: 1rem auto 0;
   font-size: 0.85em;
+  table-layout: auto;
+}
+.notes-epure-answers th,
+.notes-epure-answers td {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  .notes-prose .notes-epure-answers {
+    font-size: 0.78em;
+  }
+  .notes-epure-answers th,
+  .notes-epure-answers td {
+    padding: 0.4em 0.5em;
+  }
+  .notes-epure-steps button,
+  .notes-epure-tabs button {
+    max-width: 100%;
+  }
 }
 .notes-epure-givens {
   margin: 0 0 0.8rem;

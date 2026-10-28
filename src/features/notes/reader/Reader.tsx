@@ -317,13 +317,8 @@ export default function Reader({ notes }: { notes: NotesModule }) {
                 </Fragment>
               ))}
               <footer className="mt-8 border-t border-line pt-8 pb-4 text-[0.85rem] leading-[1.6] text-ink-2" style={{ fontSize: 14 }}>
-                <p className="font-medium text-ink">You’ve reached the end of {notes.title}.</p>
-                <p className="mt-2">
-                  Source: {notes.source} Check the original material if a step looks unclear.
-                </p>
-
                 {nav && (
-                  <div className="mt-8 flex flex-col gap-6 border-t border-line pt-6">
+                  <div className="flex flex-col gap-6">
                     {(nav.prevModule || nav.nextModule) && (
                       <div className="grid gap-3 sm:grid-cols-2">
                         {nav.prevModule ? (

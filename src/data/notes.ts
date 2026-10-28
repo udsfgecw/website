@@ -84,7 +84,7 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
     name: "Chemistry",
     course: "Engineering Chemistry",
     code: branchId === "civil" || branchId === "me" ? "GCCYT122" : "GXCYT122",
-    syllabusHref: branchId === "civil" || branchId === "me" ? undefined : `/notes/${branchId}/s1/chemistry/syllabus`,
+    syllabusHref: `/notes/${branchId}/s1/chemistry/syllabus`,
     href: `/notes/${branchId}/s1/chemistry`,
     modules: [1, 2, 3, 4].map((n) => ({
       name: `Module ${n}`,
@@ -92,6 +92,42 @@ const sharedS1Subjects = (branchId: string): SubjectNotes[] => [
       href: `/notes/${branchId}/s1/chemistry/module-${n}`,
     })),
   },
+  ...(branchId === "civil" || branchId === "me" ? [{
+    name: "Engineering Mechanics",
+    course: "Engineering Mechanics",
+    code: "GCEST103",
+    href: `/notes/${branchId}/s1/engineering-mechanics`,
+    modules: [
+      { name: "Module 1", detail: "Rigid bodies, scalars and vectors, and force systems", href: `/notes/${branchId}/s1/engineering-mechanics/module-1` },
+      { name: "Module 2", detail: "Friction and radius of gyration", href: `/notes/${branchId}/s1/engineering-mechanics/module-2` },
+      { name: "Module 3", detail: "Kinematics and kinetics of particles and bodies", href: `/notes/${branchId}/s1/engineering-mechanics/module-3` },
+      { name: "Module 4", detail: "Mechanical vibrations and oscillation", href: `/notes/${branchId}/s1/engineering-mechanics/module-4` },
+    ],
+  }] : []),
+  ...(branchId === "civil" || branchId === "me" ? [{
+    name: "IME & ICE",
+    course: "Introduction to Mechanical and Civil Engineering",
+    code: "GCEST104",
+    href: `/notes/${branchId}/s1/ime-ice`,
+    modules: [
+      { name: "Module 1", detail: "Thermodynamics: systems, states and laws", href: `/notes/${branchId}/s1/ime-ice/module-1` },
+      { name: "Module 2", detail: "Pumps: reciprocating and centrifugal", href: `/notes/${branchId}/s1/ime-ice/module-2` },
+      { name: "Module 3", detail: "Introduction to civil engineering", href: `/notes/${branchId}/s1/ime-ice/module-3` },
+      { name: "Module 4", detail: "Bricks and building materials", href: `/notes/${branchId}/s1/ime-ice/module-4` },
+    ],
+  }] : []),
+  ...(branchId === "me" ? [{
+    name: "Mathematics",
+    course: "Mathematics for Electrical Science and Physical Science 1",
+    code: "GYMAT101",
+    href: `/notes/${branchId}/s1/maths`,
+    modules: [
+      { name: "Module 1", detail: "Linear systems and Gauss elimination", href: `/notes/${branchId}/s1/maths/module-1` },
+      { name: "Module 2", detail: "Second-order linear ODEs", href: `/notes/${branchId}/s1/maths/module-2` },
+      { name: "Module 3", detail: "Laplace transforms", href: `/notes/${branchId}/s1/maths/module-3` },
+      { name: "Module 4", detail: "Taylor, Maclaurin and Fourier series", href: `/notes/${branchId}/s1/maths/module-4` },
+    ],
+  }] : []),
   ...(branchId === "civil" || branchId === "me" ? [] : [{
     name: "Engineering Graphics",
     course: "Engineering Graphics and Computer Aided Drawing",

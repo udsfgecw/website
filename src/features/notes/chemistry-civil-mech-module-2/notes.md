@@ -86,27 +86,6 @@ Bridge: Building on single half-cell potentials, this topic introduces reference
 The new idea: Using secondary reference electrodes like the Calomel electrode for convenient potential measurements.
 Objectives: Classify types of electrodes; Describe the construction, working, and limitations of a Standard Hydrogen Electrode (SHE); Explain the Saturated Calomel Electrode (SCE) and its application in potential measurements; Detail the glass electrode mechanism and its use in pH determination
 
-### Classification of Electrodes
-
-#### 1. Metal-Metal Ion Electrode
-A metal is immersed in its own ionic solution, resultant electrode is called metal-metal ion electrode. Such as Zinc in Zinc sulphate, copper in copper sulphate $\text{Zn/Zn}^{2+}$, $\text{Cu/Cu}^{2+}$.
-
-#### 2. Gas Electrode
-In gas electrode, gas is passed through an inert electrode like platinum which is immersed in a solution containing its own ion.
-Eg. Hydrogen electrode $(\text{Pt/H}_2\text{/H}^+)$.
-
-#### 3. Metal-Metal Insoluble Salt Common Ion Electrode
-In metal-metal insoluble salt electrode, metal is covered with a paste of its insoluble metal salt which is in contact with a solution containing a common ion with the insoluble salt.
-Eg. Calomel electrode, Mercury in contact with an insoluble precipitate of $\text{Hg}_2\text{Cl}_2$ which is in contact with $\text{KCl}$ solution, $\text{Hg/Hg}_2\text{Cl}_2\text{/Cl}^-$.
-
-#### 4. Redox Electrode
-An electrode in contact with a redox system is called redox electrode.
-Eg: Platinum electrode immersed in the mixture of Ferric chloride and Ferrous Chloride Solution $\text{Pt}|\text{Fe}^{2+}|\text{Fe}^{3+}$.
-
-#### 5. Ion Selective Electrode
-In this electrode, the sensing part of the electrode is made up of an ion selective membrane.
-Eg. Glass electrode consists of an ion selective membrane sensitive to $\text{H}^+$ ions.
-
 ### Standard Hydrogen Electrode (SHE)
 
 It consists of inert platinum electrode dipped in $1\text{ M HCl}$. Which is in contact with $\text{H}_2$ gas at $1\text{ atm}$ pressure at $298\text{ K}$.

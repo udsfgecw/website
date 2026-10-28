@@ -5,7 +5,7 @@ import { PYTHON_MODULE_1_PATH, PYTHON_MODULE_1_SUMMARY } from "./path";
 const { pages, chapters } = titledPages(source);
 export const pythonmodule1: NotesModule = {
   basePath: PYTHON_MODULE_1_PATH,
-  storageKey: "udsf:notes:cse:s1:python-1:v1",
+  storageKey: "udsf:notes:cse:s1:python-1:v2",
   title: "S1 CSE Algorithmic Thinking with Python · Module 1",
   trail: [
     { label: "NOTES", href: "/notes" },

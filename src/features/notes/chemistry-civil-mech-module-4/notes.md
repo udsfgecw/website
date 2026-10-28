@@ -267,16 +267,6 @@ At the break point, all colour, odour, and taste disappear, and all disease-caus
 
 The amount of free chlorine required for continuing further disinfection is $0.1-0.2\text{ ppm}$. If over-chlorination occurs, excess chlorine can be removed by passing the water through a molecular sieve, stirring it with activated carbon followed by filtration, or adding dechlorinating agents like $\text{SO}_2$, $\text{Na}_2\text{SO}_3$, or sodium thiosulphate.
 
-#### 2. Addition of Chloramine ($\text{ClNH}_2$)
-
-Chlorine reacts with ammonia to produce chloramine:
-
-$$\text{Cl}_2 + \text{NH}_3 \rightarrow \text{ClNH}_2$$
-
-$$\text{ClNH}_2 + \text{H}_2\text{O} \rightarrow \text{HOCl} + \text{NH}_3$$
-
-Chloramine is an effective disinfectant whose residuals remain in water for a longer period, continuing disinfection without producing irritating odours and imparting good taste.
-
 #### 3. Using Ozone
 
 Ozone is an excellent disinfectant used in gaseous form. It is produced by passing a silent electric discharge through cold and dry oxygen. Unstable ozone breaks down to liberate nascent oxygen, a powerful oxidizing agent that destroys bacteria and oxidizes organic matter.
@@ -290,16 +280,6 @@ Ozone is an excellent disinfectant used in gaseous form. It is produced by passi
 **Advantages:**
 - Simultaneous removal of colour, odour, and taste without leaving chemical residuals.
 - Excess ozone does not cause harm since nascent oxygen is unstable and readily converts to molecular oxygen.
-
-#### 4. Addition of Bleaching Powder
-
-Bleaching powder (calcium oxychloride, $\text{CaOCl}_2$) is added at a rate of $1\text{ kg}$ per $1000\text{ kL}$ of water and allowed to stand undisturbed for several hours. The resulting hypochlorous acid acts as a powerful germicide by deactivating enzymes within microbial cells:
-
-$$\begin{aligned}
-\text{CaOCl}_2 + \text{H}_2\text{O} &\rightarrow \text{Ca(OH)}_2 + \text{Cl}_2 \\
-\text{H}_2\text{O} + \text{Cl}_2 &\rightarrow \text{HCl} + \text{HOCl} \\
-\text{HOCl} + \text{Germs} &\rightarrow \text{Germs are killed} \rightarrow \text{water purified}
-\end{aligned}$$
 
 #### 5. Disinfection by UV Light
 
@@ -430,9 +410,6 @@ $$\text{HNO}_2 + \text{HNO}_3 \xrightarrow{\text{Bases present in soil}} \text{N
 > **Figure: Diagram of a trickling filter system**
 >
 > Cross-section diagram of a Trickling Filter apparatus. Features a central rotating sewage distributor at the top, a container filled with filtering media (crushed stones) in the middle, and an under drainage system at the bottom. Labels point to: Sewage distributor, Ground level, Sewage inlet, Filtering media, Under drainage System, and Effluent outlet. The bottom center is labelled Trickling Filter.
-
-#### b. Activated sludge process
-It is also a biological treatment. In this process, aerobic oxidation of sewage is carried out in the presence of activated sludge. Activated sludge is the sludge taken from previous oxidation process.
 
 #### c. Upflow Anaerobic Sludge Blanket (UASB) (USAB) process
 - It is an anaerobic wastewater treatment method.

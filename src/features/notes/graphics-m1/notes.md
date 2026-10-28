@@ -1943,7 +1943,7 @@ Real structures are too large to draw at full size, so we first apply an **engin
 
 To model a rectangular room or **cuboid** of length $L$, breadth $B$, and height $H$, place its floor on the horizontal plane (HP) and its back wall on the vertical plane (VP). The $XY$ line represents the intersection of the floor and the back wall. Above $XY$, the front view is a rectangle of width $L$ and height $H$ showing all vertical heights. Below $XY$, the top view is a rectangle of width $L$ and depth $B$ showing all horizontal floor positions.
 
-Any straight path inside the room—such as a light ray, a ladder, a guy wire between vertical poles, or a **space diagonal** connecting opposite corners—becomes a standard line $AB$. Because you can plot the exact height of each endpoint in the front view ($a'$, $b'$) and its exact floor position in the top view ($a$, $b$), both apparent views $a'b'$ and $ab$ are immediately known. You then apply either the line rotation method or the plane rotation (trapezoidal) method to find the true length ($TL$) and true inclination ($\heta$) to the floor.
+Any straight path inside the room—such as a light ray, a ladder, a guy wire between vertical poles, or a **space diagonal** connecting opposite corners—becomes a standard line $AB$. Because you can plot the exact height of each endpoint in the front view ($a'$, $b'$) and its exact floor position in the top view ($a$, $b$), both apparent views $a'b'$ and $ab$ are immediately known. You then apply either the line rotation method or the plane rotation (trapezoidal) method to find the true length ($TL$) and true inclination ($\theta$) to the floor.
 
 ### Worked example
 
@@ -1999,7 +1999,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 }
 ```
 
-**Answer:** True length of the rod = 78.1 mm ($\heta = 22.6^\ext{o}$, $\ext{phi} = 30.8^\ext{o}$).
+**Answer:** True length of the rod = 78.1 mm ($\theta = 22.6^{\circ}$, $\phi = 30.8^{\circ}$).
 
 #### Problem 49: Distance between diagonally opposite room corners
 **Given:** A room of length 4.8 m, breadth 4.2 m, and height 3.6 m.
@@ -2032,18 +2032,18 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 }
 ```
 
-5. Rotate the top view $ab$ about the left corner until it is parallel to $XY$, project up to the horizontal locus of the top corner at height 3.6 m, and measure the true length and floor inclination $\heta$.
+5. Rotate the top view $ab$ about the left corner until it is parallel to $XY$, project up to the horizontal locus of the top corner at height 3.6 m, and measure the true length and floor inclination $\theta$.
 
 ![Worked orthographic projection solution step 194 for a room diagonal PQ](/notes/cse/s1/graphics/module-1/assets/page-089-panel-1.webp)
 
-**Answer:** True distance = 7.3 m ($a'b' = 6$ m, $ab = 6.4$ m, $\heta = 29.4^\ext{o}$, $\ext{phi} = 35^\ext{o}$).
+**Answer:** True distance = 7.3 m ($a'b' = 6$ m, $ab = 6.4$ m, $\theta = 29.4^{\circ}$, $\phi = 35^{\circ}$).
 
 #### Problem Q202 (46): Distance from hanging lamp to floor corner
-**Given:** A room of $5\ext{ m} \imes 5\ext{ m}$ and height 6 m; a lamp hangs from the roof center at 4 m above the floor.
+**Given:** A room of $5\text{ m} \times 5\text{ m}$ and height 6 m; a lamp hangs from the roof center at 4 m above the floor.
 **Find:** The true distance between the lamp and any floor corner.
 
 1. Choose a suitable scale (1:100, so 1 m = 10 mm) and draw the reference line $XY$.
-2. Above $XY$, draw the front-view rectangle of width 50 mm (5 m) and height 60 mm (6 m); below $XY$, draw the top-view square of $50\ext{ mm} \imes 50\ext{ mm}$ ($5\ext{ m} \imes 5\ext{ m}$).
+2. Above $XY$, draw the front-view rectangle of width 50 mm (5 m) and height 60 mm (6 m); below $XY$, draw the top-view square of $50\text{ mm} \times 50\text{ mm}$ ($5\text{ m} \times 5\text{ m}$).
 3. Locate the floor corner $A$ at the left on $XY$ ($a'$ at the bottom-left of the front view, $a$ at the top-left of the top view).
 4. Locate the lamp $B$ on the vertical center projector (2.5 m from the left wall): mark $b$ at the center of the top-view square (2.5 m below $XY$) and $b'$ in the front view at 4 m above $XY$.
 5. Join $a'b'$ and $ab$, then rotate the top view $ab$ about $a$ until it lies on $XY$.
@@ -2057,7 +2057,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 **Given:** A room 8 m long, 5 m wide, and 4 m high; a bulb hangs at the ceiling center 1 m below it; its spot image falls on a room corner 1 m above the floor. Use scale 1:100.
 **Find:** The true length of the line joining the bulb and the black spot image.
 
-1. Using scale 1:100 (1 m = 10 mm), draw $XY$, the front-view rectangle of $80\ext{ mm} \imes 40\ext{ mm}$ ($8\ext{ m} \imes 4\ext{ m}$) above $XY$, and the top-view rectangle of $80\ext{ mm} \imes 50\ext{ mm}$ ($8\ext{ m} \imes 5\ext{ m}$) below $XY$.
+1. Using scale 1:100 (1 m = 10 mm), draw $XY$, the front-view rectangle of $80\text{ mm} \times 40\text{ mm}$ ($8\text{ m} \times 4\text{ m}$) above $XY$, and the top-view rectangle of $80\text{ mm} \times 50\text{ mm}$ ($8\text{ m} \times 5\text{ m}$) below $XY$.
 2. Draw the central vertical projector 40 mm (4 m) from the side wall: mark the bulb $b'$ in the front view 10 mm (1 m) below the ceiling line, and $b$ in the top view at the center 25 mm (2.5 m) below $XY$.
 
 ![Step 41.1: Orthographic projection of room and point B](/notes/cse/s1/graphics/module-1/assets/page-082-panel-1.webp)
@@ -2073,7 +2073,7 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 
 **Answer:** True length of the line joining the bulb and the black spot = 5.12 m.
 
-> **Watch out.** Both the bulb and the spot are elevated above the floor (3 m and 1 m high), so their vertical height difference is only $3\ext{ m} - 1\ext{ m} = 2\ext{ m}$, not the full 3 m height of the bulb.
+> **Watch out.** Both the bulb and the spot are elevated above the floor (3 m and 1 m high), so their vertical height difference is only $3\text{ m} - 1\text{ m} = 2\text{ m}$, not the full 3 m height of the bulb.
 
 #### Problem Q42 (47): Three vertical poles in an equilateral triangle
 **Given:** Three vertical poles $AB = 2$ m, $CD = 4$ m, and $EF = 8$ m stand on floor corners $B, D, F$ forming an equilateral triangle of side 5 m with $BF$ parallel to VP. Use scale 1:100.
@@ -2093,4 +2093,4 @@ Any straight path inside the room—such as a light ray, a ladder, a guy wire be
 
 ![Step 42.3: Projection drawing finding true lengths AE, AC, and CE of triangle poles](/notes/cse/s1/graphics/module-1/assets/page-086-panel-1.webp)
 
-**Answer:** $AE = 7.81$ m ($\heta_{AE} = 50^\ext{o}$), $AC = 5.39$ m ($\heta_{AC} = 22^\ext{o}$), and $CE = 6.40$ m ($\heta_{CE} = 39^\ext{o}$).
+**Answer:** $AE = 7.81$ m ($\theta_{AE} = 50^{\circ}$), $AC = 5.39$ m ($\theta_{AC} = 22^{\circ}$), and $CE = 6.40$ m ($\theta_{CE} = 39^{\circ}$).

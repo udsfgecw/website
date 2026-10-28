@@ -27,59 +27,6 @@ Well-defined problems have specific goals, clear constraints, and definite crite
 
 Ill-defined problems have unclear goals or constraints and may allow several reasonable solutions.
 
-### Comparison of Well-Defined and Ill-Defined Problems
-
-| No. | Well-defined Problems | Ill-defined Problems |
-|---|---|---|
-| 1. | Clear goals and objectives | Unclear and vague goals and objectives |
-| 2. | Specific, measurable outcomes | Multiple, conflicting outcomes |
-| 3. | Well-defined constraints | Ambiguous or uncertain constraints |
-| 4. | Relevant data available | Insufficient data available |
-| 5. | Single, identifiable solution | Multiple possible solutions |
-| 6. | Logical, step-by-step approach | Requires creative, iterative approach |
-| 7. | Example: Chess game | Example: Paint a beautiful picture |
-
-### Case Analysis: Problem Categorization
-
-#### Well-Defined Problem Scenarios
-
-These problems have clear goals, a defined path to a solution, and specific criteria for determining when the problem is solved:
-
-1. **Mathematical Equation:**
-   - **Problem:** Solve the equation $2x+3=7$.
-   - **Justification:** The problem has a clear goal (find the value of $x$), a specific method (solve for $x$ using algebraic rules), and a definite solution ($x=2$).
-
-2. **Crossword Puzzle:**
-   - **Problem:** Complete a standard crossword puzzle.
-   - **Justification:** The crossword has a clear objective (fill in all the squares with the correct words), a specific set of rules, and a single correct solution.
-
-3. **Recipe Execution:**
-   - **Problem:** Bake a chocolate cake using a provided recipe.
-   - **Justification:** The goal (bake a chocolate cake) is clear, the process is outlined step-by-step in the recipe, and success is measurable by the outcome (a baked cake that meets the description).
-
-#### Ill-Defined Problem Scenarios
-
-These problems are ambiguous, lack clear criteria for solutions, and often have multiple possible solutions:
-
-1. **Designing a Sustainable City:**
-   - **Problem:** How can we design a sustainable city for the future?
-   - **Justification:** The problem is broad, with no single clear solution. Factors such as environmental impact, social equity, and economic viability must be balanced, and stakeholders may disagree about what counts as a sustainable city.
-
-2. **Writing a Novel:**
-   - **Problem:** Write a compelling novel that appeals to a broad audience.
-   - **Justification:** The goal is subjective, the process varies widely, and success is difficult to measure because readers interpret appeal differently.
-
-3. **Resolving Workplace Conflict:**
-   - **Problem:** Resolve a conflict between two team members in the workplace.
-   - **Justification:** The problem is complex with no single clear solution, involving interpersonal dynamics, emotions, and communication styles.
-
-**Summary of Classification**
-
-- **Well-Defined Problems** are structured, with a clear path and definitive solution.
-- **Ill-Defined Problems** are open-ended, ambiguous, and often subjective.
-
-Understanding the nature of the problem guides the selection of an appropriate strategy.
-
 ### Strategy Fundamentals
 
 **Problem-Solving Strategy**
@@ -122,77 +69,6 @@ Examples:
 2. Diagnosing phone malfunctions by consecutively restarting the device, toggling Wi-Fi, and resetting Bluetooth.
 
 Although not the most time-efficient technique, trial and error remains widely applied for straightforward diagnostics.
-
-### Systematic Problem-Solving Framework
-
-**Problem Solving**
-
-Problem solving is the process of transforming the description of a problem into an effective solution by applying domain knowledge and selecting appropriate strategies and implementation tools.
-
-Core execution steps:
-
-1. Define the problem.
-2. Determine the root cause.
-3. Identify, prioritize, and select alternative solutions.
-4. Implement and verify the chosen solution.
-
-![Problem Solving Chart showing a 4-step process: Understand -> Plan -> Solve -> Check](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-002-image-1.webp)
-
-### Polya's Four Phases of Problem Solving
-
-#### Phase 1: Understanding the Problem
-
-- Differentiate fact from opinion and specify underlying causes.
-- Consult all involved parties for factual data.
-- State the problem specifically.
-- Draw a figure and introduce suitable notation.
-- Identify violated standards or expectations, isolate where the problem lies, and avoid proceeding without data.
-
-#### Phase 2: Devising a Plan
-
-- Relate the situation to previously encountered or familiar problems with similar unknowns.
-- Split the problem into smaller, simpler sub-problems.
-- If the original problem cannot be solved directly, attempt a related, more general, or specialized sub-case.
-
-#### Phase 3: Carrying Out the Plan
-
-- Execute the planned steps and verify each stage.
-- Ensure each step is demonstrably correct and valid.
-
-#### Phase 4: Looking Back
-
-- Check the result and determine whether it can be derived differently.
-- Evaluate whether the result or method can be transferred to other problems.
-
-### Additional Problem Classification Examples
-
-#### Mathematical and Procedural Tasks (Well-Defined)
-
-1. **Mathematical Equation:**
-   - **Problem:** Solve the equation $2x+3=7$.
-   - **Justification:** The problem has a clear goal (find the value of $x$), a specific method (solve for $x$ using algebraic rules), and a definite solution ($x=2$).
-
-2. **Crossword Puzzle:**
-   - **Problem:** Complete a standard crossword puzzle.
-   - **Justification:** The goal is explicit (fill all squares with matching words) following fixed puzzle rules to reach a single solution.
-
-3. **Recipe Execution:**
-   - **Problem:** Bake a chocolate cake using a provided recipe.
-   - **Justification:** The goal is clear, the procedure is defined step-by-step, and success is measurable against product specifications.
-
-#### Complex Open-Ended Tasks (Ill-Defined)
-
-1. **Designing a Sustainable City:**
-   - **Problem:** How can we design a sustainable city for the future?
-   - **Justification:** The problem is open-ended with balancing trade-offs between environmental impact, social equity, and economic feasibility.
-
-2. **Writing a Novel:**
-   - **Problem:** Write a compelling novel that appeals to a broad audience.
-   - **Justification:** Success criteria are subjective, structural choices vary widely, and audience reception is multi-faceted.
-
-3. **Resolving Workplace Conflict:**
-   - **Problem:** Resolve a conflict between two team members in the workplace.
-   - **Justification:** Resolving interpersonal dynamics depends on multiple situational and emotional variables without an algorithmic path.
 
 ### Core Value of Problem-Solving Strategies
 
@@ -319,12 +195,12 @@ The recursive procedure to solve the problem for $N$ disks is:
 
 The minimum number of moves required to solve the puzzle is $2^N - 1$, where $N$ is the number of disks. For example, with 14 disks, the minimum number of moves is $(2^{14}) - 1 = 16383$.
 
-```mermaid
-flowchart LR
-S1["1 · Put N disks on source peg"] --> S2["2 · Move top N−1 disks recursively to auxiliary peg"]
-S2 --> S3["3 · Move largest disk from source to destination"]
-S3 --> S4["4 · Move N−1 disks recursively from auxiliary to destination"]
-```
+The steps for $N$ disks, in order:
+
+1. Put $N$ disks on the source peg.
+2. Move the top $N-1$ disks recursively to the auxiliary peg.
+3. Move the largest disk from the source peg to the destination peg.
+4. Move the $N-1$ disks recursively from the auxiliary peg to the destination peg.
 
 *Tower of Hanoi for $n = 3$:*
 
@@ -334,7 +210,7 @@ Minimum number of moves with 3 disks = $2^n-1 = 2^3-1 = 7$.
 
 *Tower of Hanoi for $n = 4$:*
 
-![Diagram showing the sequence of moves for the Tower of Hanoi problem with 4 disks.](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-010-image-1-code.webp)
+![Diagram showing the sequence of moves for the Tower of Hanoi problem with 4 disks, steps 0 to 15 in a grid.](/assets/notes/cse/s1/python/module-1/tower-of-hanoi-n4-grid.svg)
 
 Minimum number of moves with 4 disks = $ 2^n - 1 = 2^4 - 1 = 15$.
 
@@ -495,9 +371,9 @@ In systematic state-space exploration, whenever a path hits a dead end, executio
 
 ---
 
-<!-- page 3 | Computer as a model of computation and Von Neumann architecture -->
+<!-- page 3 | Computer as a model of computation -->
 
-## Computer as a model of computation and Von Neumann architecture
+## Computer as a model of computation
 
 The model assumes a single CPU (Central Processing Unit). Many computers today have multiple CPUs, allowing this model to be duplicated multiple times within a single system.
 
@@ -529,108 +405,6 @@ A typical computer architecture comprises three main components:
 
 The I/O unit consists of input and output devices. Input devices accept data from the user for the CPU to process. Output devices transfer processed data (information) to the user. The memory unit stores input data, instructions required for processing, and output information.
 
-### Input Devices
-
-Input devices allow users to enter data into the computer for processing. Data can take the form of text, audio, video, and other media.
-
-**Human Data Entry Devices**
-
-Human data entry devices require the user to enter data directly by typing or pointing:
-
-- **Keyboard**: The most common typing device.
-- **Mouse**: A pointing device where moving the device moves a display pointer (cursor).
-- **Trackball**: An alternative to a mouse featuring a top-mounted ball used to move the cursor.
-- **Joystick**: A device with a stick whose directional movement controls cursor position.
-- **Graphics tablet**: A device that converts hand-drawn artwork into digital data.
-
-**Source Data Entry Devices**
-
-Source data entry devices collect data directly at the source and feed machine-readable data into the computer:
-
-- **Audio input devices**: Capture speech or sound via microphones.
-- **Video input devices**: Capture video or still images via webcams and digital cameras.
-- **Optical input devices**: Capture data using optical sensors, such as barcode scanners and image scanners.
-
-### Output Devices
-
-Output devices convert processed digital data into human-understandable information.
-
-**Hard Copy Devices**
-
-Hard copy devices produce physical output on paper or other surfaces that can be stored permanently and read without a computer:
-
-- **Printer**: Prints text and images on paper (e.g., drum, inkjet, laser printers).
-- **Plotter**: Produces large architectural or engineering drawings using fine pens (e.g., flatbed and drum plotters).
-
-**Soft Copy Devices**
-
-Soft copy devices generate transient electronic output via visual displays, audio units, or video units:
-
-- **Monitor**: The primary visual display device of a computer.
-- **Video output devices**: Project images or video onto large screens via projectors.
-- **Audio output devices**: Produce sound using speakers, headphones, or headsets.
-
-### Central Processing Unit
-
-**Central Processing Unit (CPU)**
-
-The Central Processing Unit (CPU) is the primary processor of a computer. It comprises an Arithmetic Logic Unit (ALU), a Control Unit (CU), and internal registers.
-
-**Arithmetic Logic Unit (ALU)**
-
-The Arithmetic Logic Unit performs operations via two dedicated sub-units:
-
-- **Arithmetic unit**: Executes operations such as addition, subtraction, multiplication, and division.
-- **Logic unit**: Executes comparisons and logical decisions.
-
-**Registers**
-
-Registers are small, high-speed storage locations within the CPU used to hold temporary data, addresses, and instructions:
-
-- **Accumulator (ACC)**: Stores the immediate results of arithmetic and logical operations.
-- **Instruction Register (IR)**: Holds the instruction currently being executed.
-- **Program Counter (PC)**: Holds the memory address of the next instruction to be fetched.
-
-**Control Unit (CU)**
-
-The Control Unit manages and coordinates all computer operations:
-
-- Generates internal control signals.
-- Fetches instructions from memory, decodes them, and directs the ALU during execution.
-- Manages communication with I/O devices.
-- Determines timing for fetching data, executing operations, and storing results.
-
-**Memory Unit**
-
-The memory unit provides storage space for data, instructions, and intermediate processing results organized in a hierarchical structure.
-
-```mermaid
-flowchart TB
-R["CPU Register"] --> C["Cache Memory"] --> M["Main Memory"] --> D["Magnetic Disk"] --> O["Optical Disk"] --> T["Magnetic Tape"]
-```
-
-*Memory Hierarchy*
-
-Computer memory is categorized into internal and external memory:
-
-**Internal Memory**
-
-Internal memory resides directly on the motherboard or within the CPU:
-
-1. **Registers**: High-speed, small-capacity storage units within the CPU.
-2. **Primary Memory**: The main addressable memory space:
-   - **Random Access Memory (RAM)**: Volatile memory that stores running programs and working data; contents are lost if power is interrupted.
-   - **Read-Only Memory (ROM)**: Non-volatile memory containing permanent system instructions such as bootstrap routines.
-3. **Cache Memory**: High-speed buffer memory placed between RAM and the CPU to store frequently accessed data and instructions.
-
-**External Memory**
-
-External memory consists of secondary storage devices located outside the processor bus:
-
-1. **Magnetic Tape**: Sequential-access storage medium with magnetic coating.
-2. **Magnetic Disk**: Direct-access storage coated with magnetic material, such as hard disk drives.
-3. **Optical Disk**: Storage media read and written by laser light, including CDs and DVDs.
-
 ### Computer as a Model of Computation
 
 **Problem Solving**
@@ -653,101 +427,6 @@ The initial phase focuses on determining input requirements, output goals, and p
 **Example 1: Finding the sum of two numbers**
 
 - **Input requirements**: Two numeric values of any valid type (integer, real, or whole number).
-
-### Von Neumann Architecture
-
-![Block Diagram of a Digital Computer showing Von Neumann Architecture](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-016-image-1.webp)
-
-*Block Diagram of a Digital Computer*
-
-The model assumes a single CPU, which can be duplicated within multi-core and multi-processor modern architectures.
-
-**Instruction Execution Cycle**
-
-The CPU executes instructions sequentially through a standard cycle:
-
-1. **Fetch**: Retrieve the instruction from memory.
-2. **Decode**: Interpret the instruction and determine the required operation.
-3. **Execute**: Carry out the decoded operation via CPU components.
-4. **Store**: Write the result back to memory or send it to an output device.
-
-```mermaid
-flowchart TD
-  Fetch["FETCH Instruction"]
-  Decode["DECODE instruction"]
-  Execute["EXECUTE instruction"]
-  Fetch --> Decode
-  Decode --> Execute
-  Execute --> Fetch
-```
-
-A typical architecture contains three primary functional units:
-
-1. **Input/Output (I/O) Unit**
-2. **Central Processing Unit (CPU)**
-3. **Memory Unit**
-
-The I/O unit contains input devices to collect user data and output devices to convey processed information. The memory unit retains instructions, current data, and final output.
-
-**Input Devices Classification**
-
-1. **Human data entry devices**:
-   - **Keyboard**: Standard text entry device.
-   - **Mouse**: Common pointing device controlling an on-screen cursor.
-   - **Trackball**: Pointing device with a top-mounted roller ball.
-   - **Joystick**: Directional lever used for cursor positioning.
-   - **Graphics tablet**: Digitizer converting hand-drawn input to digital formats.
-
-2. **Source data entry devices**:
-   - **Audio input devices**: Sound input via microphones.
-   - **Video input devices**: Visual feed via video cameras and webcams.
-   - **Optical input devices**: Data collection via barcode readers and optical scanners.
-
-**Output Devices Classification**
-
-1. **Hard copy devices**:
-   - **Printer**: Produces persistent text or graphic prints on paper (e.g., drum, inkjet, laser).
-   - **Plotter**: High-precision drafting on large sheets using pens.
-
-2. **Soft copy devices**:
-   - **Monitor**: Primary visual display interface.
-   - **Video output devices**: Projection devices displaying data onto large viewing surfaces.
-   - **Audio output devices**: Sound reproduction devices including speakers and headphones.
-
-**CPU Components**
-
-The CPU processes instructions using two functional units and dedicated register storage:
-
-- **Arithmetic Logic Unit (ALU)**: Executes computations and comparisons.
-
-    a. **Arithmetic unit** – performs arithmetic operations like addition, subtraction, multiplication, and division, on the data.
-
-- **Logic unit**: Handles logical evaluations and comparisons.
-- **Registers**:
-  - **Accumulator (ACC)**: Holds intermediate arithmetic and logic results.
-  - **Instruction Register (IR)**: Stores the active instruction being executed.
-  - **Program Counter (PC)**: Tracks the address of the next instruction to process.
-- **Control Unit (CU)**: Coordinates hardware operations, dispatches signals, coordinates I/O, and sequences instruction flow.
-
-**Memory System Hierarchy**
-
-![Memory Hierarchy pyramid](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-020-image-1.webp)
-
-*Memory Hierarchy*
-
-Memory is split into internal and external tiers:
-
-- **Internal Memory**:
-  1. **Registers**: Ultra-fast storage inside the processor.
-  2. **Primary Memory**:
-     - **RAM**: Fast volatile memory holding active programs and transient data.
-     - **ROM**: Non-volatile memory holding permanent startup routines.
-  3. **Cache Memory**: High-speed memory buffering transactions between the CPU and RAM.
-
-- **External Memory**:
-  1. **Magnetic tape**: Sequential-access storage medium.
-  2. **Magnetic disk**: Random-access storage plates (e.g., hard disk).
-  3. **Optical disk**: Optical storage media (e.g., CD, DVD).
 
 ### Problem-Solving Framework
 
@@ -994,248 +673,11 @@ print(d)
 | 5 | 3 | 2 | 5 | -56 |
 | 6 | 2 | 8 | 2 | 48 |
 
-### Essentials of Python Programming Overview
+<!-- page 5 | Running a Python script -->
 
-Syllabus coverage includes creating and using variables, numeric and string data types, the `math` module, basic I/O with `print` and `input`, and operator precedence.
+## Running a Python script
 
-**Programming Languages**
 
-Programming languages are formal systems used to write programs that provide precise representations of algorithms and control computer behavior. Each language possesses unique keywords and syntax rules.
-
-#### Categories of Programming Languages
-
-**Machine Language**
-
-Machine language is the native low-level binary language understood directly by computer hardware. Programs consist exclusively of 0s and 1s, execute rapidly without translation, but are machine-dependent.
-
-If opcode and operands each occupy 4 bits and addition is encoded as `1010`, adding 3 (`0011`) and 6 (`0110`) is represented as:
-
-$$
-\underbrace{1010}_{\text{add}} \underbrace{0011}_{3} \underbrace{0110}_{6}
-$$
-
-**Assembly Language**
-
-Assembly language is an intermediate low-level language that replaces binary opcodes with readable symbolic names called mnemonic codes (such as `ADD` or `SUB`). For example, adding 3 and 6 is written as `ADD 3, 6`.
-
-**High-Level Language**
-
-High-level languages provide English-like syntax and abstract mathematical expressions, making programs simpler to read, write, and maintain across different hardware platforms (e.g., C, Java, Python). For example, adding 3 and 6 is written as `3 + 6`.
-
-**Translator Software**
-
-Translator software converts source code written in assembly or high-level languages into machine-executable target code.
-
-1. **Assembler**: Converts assembly language mnemonics into machine code.
-2. **Compiler**: Translates entire high-level programs into machine code prior to execution.
-3. **Interpreter**: Executes high-level programs statement by statement at runtime.
-
----
-
-<!-- page 5 | Python introduction, execution models, and translator software -->
-
-## Python introduction, execution models, and translator software
-
-### Compiler versus Interpreter
-
-| Compiler | Interpreter |
-| :--- | :--- |
-| A traditional compiler translates the program (often as a whole) | An interpreter executes program instructions through a runtime |
-| Intermediate Object Code is **Generated** | No Intermediate Object Code is **Generated** |
-| **Memory Requirement : More** (Since Object Code is Generated) | **Memory Requirement is Less** |
-| Program need not be **compiled** every time | Every time higher level program is converted into lower level program |
-| Errors are displayed after entire program is checked | Errors are displayed for every instruction interpreted (if any) |
-| **Example :** C Compiler | **Example :** BASIC |
-
-**Python**
-
-Python is a general-purpose, high-level, interpreted programming language developed by *Guido van Rossum* in the late 1980s at the National Research Institute for Mathematics and Computer Science in the Netherlands. Python is one of the most popular and widely used programming languages, utilized for console-based, GUI-based, web programming, and data analysis tasks. It is named after the comedy television show *Monty Python's Flying Circus*.
-
-### Features of Python
-
-| No. | Python feature | No. | Python feature |
-|---:|---|---:|---|
-| 1 | Easy to Learn and Use | 8 | Easy to Maintain |
-| 2 | Expressive Language | 9 | Extensible Feature |
-| 3 | Interpreted Language | 10 | High-Level Language |
-| 4 | Cross-platform Language | 11 | Broad Standard Library |
-| 5 | Free and Open Source | 12 | Dynamic Typed |
-| 6 | Object-Oriented Language | 13 | GUI Support |
-| 7 | Interactive | 14 | Databases Support |
-
-### Applications of Python
-
-Python is a general-purpose programming language applied across multiple domains:
-
-* **Data Science**: Python libraries like NumPy, Pandas, and Matplotlib are used for data analysis and visualization.
-* **Web Applications**: Python frameworks like Django and Pyramid simplify the development and deployment of web applications.
-* **Desktop GUI Applications**
-* **Software Development**
-* **Scientific and Numeric Computations**
-* **Business Applications**
-* **Audio or Video Based Applications**
-
-### Execution Modes in Python
-
-There are two major Python versions: Python 2 and Python 3. Python 3 is semantically cleaner and supports newer language features. After installation, programs can be interpreted and executed in two primary ways:
-
-1. Using the interactive interpreter prompt
-2. Using a script file
-
-#### Interactive Interpreter Prompt
-
-The interactive prompt allows statement-by-statement execution. It is suited for immediate feedback on individual lines of code. To start interactive mode, open a terminal or command prompt and enter `python3`.
-
-```text
-Microsoft Windows [Version 6.1.7601]
-Copyright (c) 2009 Microsoft Corporation. All rights reserved.
-
-C:\Users\Madhu>python3
-Python 3.8.3 (tags/v3.8.3:6f8c832, May 13 2020, 22:20:19) [MSC v.1925 32 bit (Intel)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> print("Hello")
-Hello
->>> print("Welcome to Python")
-Welcome to Python
->>>
-```
-
-The Python shell is an interactive environment where statements are executed immediately upon entry. Launch it by entering `python3` (or `python` depending on the installation environment):
-
-`user@Ubuntu2204LTS:~$ python3`
-`Python 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0] on linux`
-`Type "help", "copyright", "credits" or "license" for more information`
-
-The `>>>` prompt marks the line where statements can be entered. When a statement is submitted, the interpreter processes it, returns any output, and displays a fresh prompt:
-
-`>>> "Welcome to the world of Python programming"`
-`'Welcome to the world of Python programming'`
-`>>>`
-
-#### Script Files
-
-Script files are used to execute multi-line programs together rather than command by command. Program statements are saved into a plain text file using the `.py` extension.
-
-```python
-print("Hello !")
-print("Welcome to Python Programming")
-```
-
-```
-Hello !
-Welcome to Python Programming
-```
-
-#### Running as a Script
-
-1. Combine statements into a script file and save it with a `.py` extension (for example, `sample.py`).
-2. Use a text editor (such as `gedit` or `vim`) to edit script contents.
-3. Open a terminal in the file's directory and run the script:
-
-$$
-\mathbf{python3\ First.py}
-$$
-
-Executing this command runs the script and outputs the results to the terminal.
-
-* Dynamically typed: variables do not require explicit type declarations, making code faster and simpler to write.
-
-**Compile Time**
-
-Compile time is the period during which program source code is translated from human-readable text into machine code. Errors detected at this stage are compile-time errors (such as syntax errors, missing colons, or improper variable declarations), checked by the compiler.
-
-**Runtime**
-
-Runtime is the period during which a compiled or interpreted program is actively executing. Errors detected during execution are runtime errors, handled by the interpreter or runtime environment.
-
-**Translator Software**
-
-Translator software converts programs written in assembly or high-level languages into machine code (binary 0s and 1s) that the CPU can execute. The initial input is known as source code, and the generated machine instructions form the target or object code.
-
-Translators are categorized into three main types:
-
-1. **Assembler**: Converts assembly language programs into executable machine code.
-2. **Compiler**: Translates entire high-level language source files into machine code before execution.
-3. **Interpreter**: Executes instructions directly through a runtime system, either line by line or via an intermediate representation.
-
-### Compiler and Interpreter Differences
-
-| Compiler | Interpreter |
-| :--- | :--- |
-| A traditional compiler translates the program (often as a whole) | Interpreter takes single instruction as input |
-| Intermediate Object Code is **Generated** | No Intermediate Object Code is **Generated** |
-| Memory Requirement: **More** (since object code is generated) | Memory Requirement is **Less** |
-| Program need not be **compiled** every time | Every time higher level program is converted into lower level program |
-| Errors are displayed after entire program is checked | Errors are displayed for every instruction interpreted (if any) |
-| **Example :** C Compiler | **Example :** BASIC |
-
-**Python Language Overview**
-
-Python is a general-purpose, high-level, interpreted programming language created by **Guido van Rossum** in the late 1980s at the National Research Institute for Mathematics and Computer Science in the Netherlands. It supports diverse application domains, including console tools, desktop GUIs, web development, and data analysis. Its name comes from the television series *Monty Python's Flying Circus*.
-
-### Feature Overview
-
-![Features of Python list of 14 points arranged in two columns of rounded rectangular buttons](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-032-image-1.webp)
-
-### Application Domains
-
-Python is a versatile general-purpose language used across multiple specializations:
-
-* **Data Science**: Supported by specialized packages like NumPy, Pandas, and Matplotlib for data processing and graphical output.
-* **Web Applications**: Accelerated through web frameworks such as Django and Pyramid.
-* **Desktop GUI Applications**
-* **Software Development**
-* **Scientific and Numeric Computations**
-* **Business Applications**
-* **Audio or Video Based Applications**
-
-### Script and Interactive Environments
-
-Python programs are commonly executed via the interactive interpreter prompt or by running stored script files across Python 2 or Python 3 installations.
-
-#### Python Interactive Shell
-
-![Command prompt window showing Python 3.8.3 interactive session executing print statements](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-033-image-1.webp)
-
-The Python shell provides direct, interactive evaluation of language statements. Starting `python3` displays initial environment details followed by the primary shell prompt:
-
-*user@Ubuntu2204LTS:~$ python3*
-*Python 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0] on linux*
-*Type "help", "copyright", "credits" or "license" for more information*
-
-The prompt symbol `>>>` awaits input commands:
-
-`>>> "Welcome to the world of Python programming"`
-`'Welcome to the world of Python programming'`
-`>>>`
-
-#### Stored Script Execution
-
-Script files allow saving multiple lines of Python instructions into `.py` files for batch execution.
-
-![Example code block showing First.py content](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-034-image-1.webp)
-
-![Output block showing execution of First.py](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-034-image-2.webp)
-
-#### Script Execution Steps
-
-1. Write instructions and save the source file with a `.py` extension (e.g., `First.py`).
-2. Create and edit the source text using an editor such as `gedit` or `vim`.
-3. Open a command terminal in the file's working directory and execute the script:
-
-$$
-\text{python3 First.py}
-$$
-
-The interpreter runs the script and outputs the resulting data directly to standard output.
-
----
-
-<!-- page 6 | Python syntax fundamentals: comments, character set, and tokens -->
-
-## Python syntax fundamentals: comments, character set, and tokens
-
-### Running a Python Script
 
 **Example**
 
@@ -1244,22 +686,6 @@ Suppose you have written a script `sample.py` to display the message “My first
 _user@Ubuntu2204LTS:~$ python3 First.py_
 
 **My first Python program!**
-
-### Source Code Comments
-
-**Comments**
-
-Comments are used in a programming language to describe the program or to hide some part of code from the interpreter. A comment is not an executable part of the program, but it enhances interactivity and makes the program readable.
-
-Python supports two types of comments:
-1. Single Line Comment
-2. Multi Line Comment
-
-**Single-Line Comments**
-
-Single-line comments begin with the `#` symbol. When a user wants to specify a single-line comment, the line must start with `#`.
-
-**Example**
 
 ```python
 # This is single line comment
@@ -1291,62 +717,7 @@ print("Hello Python")
 Hello Python
 ```
 
-### Character Set Standards
-
-**Character Set**
-
-A character set is a set of valid characters acceptable by a programming language in scripting.
-
-The Python character set consists of:
-- **Alphabets**: All uppercase (`A`–`Z`) and lowercase (`a`–`z`) letters.
-- **Digits**: All digits `0`–`9`.
-- **Special Symbols**: Python supports special symbols including: `"` `'` `;` `:` `!` `~` `@` `#` `$` `%` `^` `` ` `` `&` `*` `(` `)` `_` `+` `-` `=` `{` `}` `[` `]` `\`
-- **White Spaces**: Whitespace characters including tab space, blank space, newline, and carriage return.
-
----
-
-### Lexical Units
-
-**Tokens**
-
-A token is the smallest individual unit in a Python program. All statements and instructions in a program are built with tokens.
-
-The various tokens in Python include:
-
-```mermaid
-flowchart TD
-Tokens --> Keywords
-Tokens --> Variables
-Tokens --> Operators
-Tokens --> Constants
-Tokens --> Special_Character
-```
-
-**Keywords**
-
-Keywords (reserved words) are words that have special meaning or significance in a programming language. They cannot be used as variable names, function names, or for any other arbitrary purpose.
-
-| | | | | |
-|---|---|---|---|---|
-| False | class | finally | is | return |
-| None | continue | for | lambda | try |
-| True | def | from | nonlocal | while |
-| and | del | global | not | with |
-| as | elif | if | or | yield |
-| assert | else | import | pass | |
-| break | except | in | raise | |
-
-**Identifiers**
-
-Identifiers are the names given to any variable, function, class, list, method, or object for identification.
-
-Rules to name an identifier:
-1. Python is **case-sensitive**, meaning case matters in naming identifiers (for example, `geeks` and `Geeks` are two distinct identifiers).
-2. Identifiers must start with an uppercase letter (`A`–`Z`), a lowercase letter (`a`–`z`), or an underscore (`_`).
-
----
-
-<!-- page 7 | Variables, dynamic typing, and type conversion -->
+<!-- page 6 | Variables, dynamic typing, and type conversion -->
 
 ## Variables, dynamic typing, and type conversion
 
@@ -1561,7 +932,7 @@ print(type(z)) # <class 'float'>
 
 ---
 
-<!-- page 8 | Data types: numeric, sequence, mapping, set, and boolean -->
+<!-- page 7 | Data types: numeric, sequence, mapping, set, and boolean -->
 
 ## Data types: numeric, sequence, mapping, set, and boolean
 
@@ -1702,9 +1073,7 @@ Python supports the following conversion functions:
 2. `float()`: Converts compatible data types to a floating-point number.
 3. `str()`: Converts any data type to a string representation.
 
-| Program | Output |
-| --- | --- |
-| ```python
+```python
 #convert from int to float:
 x = float(1)
 
@@ -1721,14 +1090,18 @@ print(z)
 print(type(x))
 print(type(y))
 print(type(z))
-``` | ```
+```
+
+Output:
+
+```
 1.0
 2
 (1+0j)
 <class 'float'>
 <class 'int'>
 <class 'complex'>
-``` | |
+```
 
 **Escape Sequence**
 
@@ -1902,7 +1275,7 @@ The `math.sqrt()` method computes the square root of a numeric argument.
 
 ---
 
-<!-- page 9 | Standard library math module and basic I/O operations -->
+<!-- page 8 | Standard library math module and basic I/O operations -->
 
 ## Standard library math module and basic I/O operations
 
@@ -1912,48 +1285,60 @@ The `math.sqrt()` method computes the square root of a numeric argument.
 
 math.ceil() approximates the given number to the smallest integer, greater than or equal to the given floating point number.
 
+```python
 >>> math.ceil(4.5867)
 5
+```
 
 **math.floor()**
 
 math.floor() returns the greatest integer less than or equal to the input.
 
+```python
 >>> math.floor(4.5687)
 4
+```
 
 **math.fabs()**
 
 math.fabs() returns the absolute value of x.
 
+```python
 >>> math.fabs(-5.5)
 5.5
+```
 
 **math.pi**
 
 math.pi is a constant containing the value of PI (3.14...).
 
+```python
 >>> x = math.pi
 >>> print(x)
 3.14...
+```
 
 **math.factorial()**
 
 math.factorial() is used for finding the factorial of a given number in a single line.
 
+```python
 >>> a = 5
 >>> print("The factorial of", a, "is", math.factorial(a))
 The factorial of 5 is 120
+```
 
 **math.gcd()**
 
 math.gcd() is used to find the greatest common divisor of two numbers.
 
+```python
 >>> a = 15
 >>> b = 5
 >>> print ("The gcd of 5 and 15 is : ")
 >>> print (math.gcd(b, a))
 The gcd of 5 and 15 is : 5
+```
 
 ### Logarithmic and Power Functions
 
@@ -1961,24 +1346,30 @@ The gcd of 5 and 15 is : 5
 
 math.exp() is used to calculate the power of e.
 
+```python
 >>> test = 4
 >>> print (math.exp(test))
 54.598150033144236
+```
 
 **math.pow()**
 
 math.pow() receives two float arguments, raises the first to the second, and returns the result. In other words, pow(2,3) is equivalent to 2**3.
 
+```python
 >>> math.pow(2,4)
 16.0
+```
 
 **math.log()**
 
 math.log() is used to calculate the logarithmic value of a with base b.
 
+```python
 >>> print ("The value of log 2 with base 3 is : ")
 >>> print (math.log(2,3))
 The value of log 2 with base 3 is : 0.6309297535714574
+```
 
 ### Trigonometric and Angular Functions
 
@@ -2061,21 +1452,25 @@ What is your number? 45
 
 Or:
 
+```python
 >>> price = float(input("Enter the price of each item"))
 >>> print(price)
 Enter the price of each item 50
 50.0
+```
 
 For taking multiple inputs from the user in a single line, use the split() function.
 
 EXAMPLE
 
+```python
 >>> x, y = input("Enter two numbers: ").split()
 >>> print("No. of boys: ", x)
 >>> print("No. of girls: ", y)
 Enter two numbers: 23 22
 No. of boys: 23
 No. of girls: 22
+```
 
 **Python Output**
 
@@ -2091,12 +1486,16 @@ Using the above syntax, multiple objects can be passed into print() separated by
 
 EXAMPLE
 
+```python
 >>> print(100)
 100
+```
 
+```python
 >>> num = 65
 >>> print ('The value of the number is', num)
 The value of the number is 65
+```
 
 Another Syntax:
 
@@ -2106,6 +1505,7 @@ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 
 EXAMPLE
 
+```python
 # Python program to illustrate print()
 # Passing sep and end parameters
 >>> num = 7
@@ -2113,6 +1513,7 @@ EXAMPLE
 >>> a = 2
 >>> print('Value of a: ', a, sep = '000', end = '\n')
 >>> print('Car', 'Bike', 'Train', 'Plane', sep = ' | ', end = '\n\n')
+```
 
 OUTPUT
 
@@ -2160,15 +1561,12 @@ The value of sine of pi/6 is : 0.49999999999999994
 The value of cosine of pi/6 is : 0.8660254037844387
 The value of tangent of pi/6 is : 0.5773502691896257
 
-<!-- page 10 | Python operators: arithmetic, relational, and assignment -->
+<!-- page 9 | Python operators: arithmetic, relational, and assignment -->
 
 ## Python operators: arithmetic, relational, and assignment
 
 3. Assignment Operators
 4. Logical Operators
-5. Bitwise Operators
-6. Membership Operators
-7. Identity Operators
 
 ```mermaid
 flowchart TD
@@ -2176,9 +1574,6 @@ Root[Python Operators] --> A[Arithmetic Operators]
 Root --> B[Comparison Operators]
 Root --> C[Assignment Operators]
 Root --> D[Logical Operators]
-Root --> E[Bitwise Operators]
-Root --> F[Membership Operators]
-Root --> G[Identity Operators]
 ```
 
 ### Arithmetic Operators
@@ -2258,6 +1653,7 @@ Python assignment operators are used to assign values to variables in Python. Th
 
 **Assignment Operators Execution**
 
+```python
 # Assignment Operator
 a = 10
 
@@ -2288,11 +1684,13 @@ print ("a **= 2 :", a)
 # Floor Division Assignment
 a //= 3
 print ("a //= 3 :", a)
+```
 
 The Python assignment operators are shown in this code in the Python Editor. It begins with the value of 'a' equal to 10, and then goes through the steps of addition, subtraction, multiplication, division, remainder, exponentiation, and floor division, updating 'a' as necessary and outputting the results.
 
 **Output**
 
+```
 a += 5 : 15
 
 a -= 5 : 10
@@ -2306,35 +1704,6 @@ a %= 3 : 1.0
 a **= 2 : 1.0
 
 a //= 3 : 0.0
-
-### Bitwise Operators
-
-**Python Bitwise Operators**
-
-Python bitwise operators execute operations on individual bits of binary integers. They work with integer binary representations, performing logical operations on each bit location. Python includes various bitwise operators, such as AND (&), OR (|), NOT (~), XOR (^), left shift (<<), and right shift (>>).
-
-| Operator | Name | Example |
-| :--- | :--- | :--- |
-| & | Binary AND | Sets each bit to 1 if both bits are 1 |
-| \| | Binary OR | Sets each bit to 1 if one of the two bits is 1 |
-| ^ | Binary XOR | Sets each bit to 1 if only one of two bits is 1 |
-
-3. Assignment Operators
-4. Logical Operators
-5. Membership Operators
-6. Identity Operators
-7.
-
-```mermaid
-flowchart TD
-PO[Python Operators]
-PO --> AO[Arithmetic Operators]
-PO --> CO[Comparison Operators]
-PO --> AsO[Assignment Operators]
-PO --> LO[Logical Operators]
-PO --> BO[Bitwise Operators]
-PO --> MO[Membership Operators]
-PO --> IO[Identity Operators]
 ```
 
 ### Comparison Operations Reference
@@ -2380,75 +1749,10 @@ a <= b : True
 
 ---
 
-<!-- page 11 | Advanced operators: bitwise, logical, identity, and membership -->
+<!-- page 10 | Logical operators -->
 
-## Advanced operators: bitwise, logical, identity, and membership
+## Logical operators
 
-### Bitwise Operators
-
-| Operator | Name | Description |
-| :--- | :--- | :--- |
-| ~ | Binary Ones Complement | Inverts all the bits |
-| << | Binary Left Shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off |
-| >> | Binary Right Shift | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off |
-
-**Bitwise Operations Example**
-
-a = 60 # 60 = 0011 1100
-
-b = 13 # 13 = 0000 1101
-
-# Binary AND
-
-c = a & b # 12 = 0000 1100
-
-print ("a & b : ", c)
-
-# Binary OR
-
-c = a | b # 61 = 0011 1101
-
-print ("a | b : ", c)
-
-# Binary XOR
-
-c = a ^ b # 49 = 0011 0001
-
-print ("a ^ b : ", c)
-
-# Binary Ones Complement
-
-c = ~a # -61 = 1100 0011
-
-print ("~a : ", c)
-
-# Binary Left Shift
-
-c = a << 2; # 240 = 1111 0000
-
-print ("a << 2 : ", c)
-
-# Binary Right Shift
-
-c = a >> 2; # 15 = 0000 1111
-
-print ("a >> 2 : ", c)
-
-The binary representations of the numbers 'a and b' are subjected to bitwise operations in this code. It displays the results of binary AND, OR, XOR, Ones Complement, Left Shift, and Right Shift operations.
-
-**Output**
-
-a & b : 12
-
-a | b : 61
-
-a ^ b : 49
-
-~a : -61
-
-a << 2 : 240
-
-a >> 2 : 15
 
 ### Logical Operators
 
@@ -2483,69 +1787,6 @@ The code assigns the values 5 and 10 to variables x and y. It determines whether
 
 Both x and y are within the specified range
 
-### Membership Operators
-
-**Python Membership Operators**
-
-Python membership operators are used to determine whether or not a certain value occurs within a sequence. They make it simple to determine the membership of elements in various Python data structures such as lists, tuples, sets, and strings.
-
-Python includes two primary membership operators:
-
-1. `in`
-2. `not in`
-
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| in | Evaluates to true if it finds a variable in the specified sequence and false otherwise. | x in y, here in results in a 1 if x is a member of sequence y. |
-| not in | Evaluates to true if it does not find a variable in the specified sequence and false otherwise. | x not in y, here not in results in a 1 if x is not a member of sequence y. |
-
-**Example: Membership Operators**
-
-```python
-fruits = ["apple", "banana", "cherry"]
-print("banana" in fruits)
-```
-
-The code defines a list of fruits and tests to see if the word "banana" appears in the list. If it is present, "True" is printed on screen.
-
-**Output**
-
-```
-True
-```
-
-### Identity Operators
-
-**Python Identity Operators**
-
-Python identity operators are used to compare two objects' memory addresses rather than their values. If the two objects refer to the same memory address, they evaluate to True; otherwise, they evaluate to False.
-
-Python includes two identity operators:
-
-1. `is`
-2. `is not`
-
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| is | Evaluates to true if the variables on either side of the operator point to the same object and false otherwise | x is y, here are results in 1 if id(x) equals id(y) |
-| is not | Evaluates to false if the variables on either side of the operator point to the same object and true otherwise | x is not y, there are no results in 1 if id(x) is not equal to id(y). |
-
-**Example: Identity Operators**
-
-```python
-x = 10
-```
-
-y = 5
-
-print(x is y)
-
-The expression `x is y` checks whether `x` and `y` refer to the same object. Use `==` to compare their values; for example, `x == y` is `False` here.
-
-**Output**
-
-False
-
 ### Operator Precedence
 
 When an expression or statement involves multiple operators, it is resolved using standard operator precedence:
@@ -2553,14 +1794,10 @@ When an expression or statement involves multiple operators, it is resolved usin
 | Precedence | Operator sign | Operator name |
 | :--- | :--- | :--- |
 | Highest | `**` | Exponentiation |
-| | `+X`, `-X`, `~X` | Unary positive, unary negative, bitwise negation |
+| | `+X`, `-X` | Unary positive, unary negative |
 | | `*`, `/`, `//`, `%` | Multiplication, division, floor division, modulus |
 | | `+`, `-` | Addition, subtraction |
-| | `<<`, `>>` | Left-shift, right-shift |
-| | `&` | Bitwise AND |
-| | `^` | Bitwise XOR |
-| | `|` | Bitwise OR |
-| | `==`, `!=`, `<`, `<=`, `>`, `>=`, `is`, `is not` | Comparison, Identity |
+| | `==`, `!=`, `<`, `<=`, `>`, `>=` | Comparison |
 | | `not` | Boolean NOT |
 | | `and` | Boolean AND |
 | Lowest | `or` | Boolean OR |
@@ -2571,24 +1808,10 @@ $R = A + 3 < B * 1 \text{ or } C \text{ and } D$
 
 Let the values of the variables be $A = 1, B = 5, C = -1, \text{ and } D = \text{ True}$. Figure 5.1 shows the structure of the evaluation. The numbers shown in the circle denote the order in which the various operators are applied. The final result is 1, which is assigned to R.
 
-<!-- page 12 | Operator precedence, associativity, and expression evaluation trees -->
+<!-- page 11 | Operator precedence and associativity -->
 
-## Operator precedence, associativity, and expression evaluation trees
+## Operator precedence and associativity
 
-```mermaid
-flowchart TB
-R["6: R = A + 3 < B * 1 or C and D"] --> E["5: A + 3 < B * 1 or C and D"]
-E --> C["3: A + 3 < B * 1"]
-E --> A["4: C and D"]
-C --> X["2: A + 3"]
-C --> Y["1: B * 1"]
-X --> X1["A"]
-X --> X2["3"]
-Y --> Y1["B"]
-Y --> Y2["1"]
-A --> A1["C"]
-A --> A2["D"]
-```
 
 ### Evaluation of an Arithmetic Expression
 
@@ -2607,7 +1830,6 @@ $$
 R = A + 3 < B * 1 \text{ or } C \text{ and } D
 $$
 
-![Expression evaluation tree and corresponding table of operations](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/cse/s1/python/module-1/assets/page-059-image-1.webp)
 
 | Order | Operation | Resultant |
 | :---: | :---: | :---: |
@@ -2626,7 +1848,7 @@ Evaluation of an arithmetic expression
 
 ---
 
-<!-- page 13 | Worked practice problems and university examination questions -->
+<!-- page 12 | Worked practice problems and university examination questions -->
 
 ## Worked practice problems and university examination questions
 

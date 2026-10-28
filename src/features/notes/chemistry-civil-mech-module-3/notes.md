@@ -330,18 +330,6 @@ Comparison of polymer TGA curves indicates varying thermal stabilities. For exam
 - Allows analysis of reactions with air, oxygen, or other reactive gases.
 - Used to measure evaporation rates of liquid mixtures.
 
-### Derivative Thermogravimetry (DTG)
-
-Derivative thermogravimetry (DTG) represents the rate of change of mass with respect to temperature ($\frac{\Delta m}{\Delta T}$) plotted against temperature ($T$).
-
-> **Figure: Derivative thermogram of calcium oxalate monohydrate**
->
-> Figure 3.22: Derivative thermogram of calcium oxalate monohydrate. A graph with Sample temperature in degree Celsius on the x-axis from 0 to 1100. The left y-axis shows Sample weight in weight percentage from 30 to 110 (represented by a descending dashed step curve with plateaus and formulas: Ca(COO)2.H2O, Ca(COO)2, CaCO3, and CaO). The right y-axis shows Weight change (delta m / delta T) from -5 to 1 (represented by a solid curve featuring three distinct downward peaks corresponding to the decomposition stages).
-
-Each downward peak on a DTG curve signifies the temperature at which the maximum rate of decomposition takes place, helping to resolve overlapping weight-loss steps.
-
----
-
 ### Differential Thermal Analysis (DTA)
 
 #### Principle
@@ -377,10 +365,6 @@ Two thermocouples ($T_1$ and $T_2$) record the temperatures of the sample and th
 Chromatography is an analytical technique used for separation based on distribution between two phases:
 - **Stationary phase:** A fixed phase (e.g., column of adsorbent, paper, or thin film of liquid supported on an inert solid).
 - **Mobile phase:** A moving liquid or gas that carries the analytes through the stationary phase.
-
-### Classification of Chromatography
-- **Adsorption Chromatography:** The stationary phase is a solid and the mobile phase is a liquid or gas. Separation occurs due to differences in adsorption coefficients.
-- **Partition Chromatography:** The stationary phase is a liquid supported on an inert solid. The mobile phase is a liquid or gas. Separation is caused by partitioning of components between the phases.
 
 <!-- page 6 | Chromatographic Methods: Gas Chromatography -->
 

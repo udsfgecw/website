@@ -240,36 +240,116 @@ const modules = {
     return { default: () => <ModuleNotesPage notes={physicseceModule4("eee")} /> };
   }),
   "/notes/civil/s1/chemistry/module-1": lazy(async () => {
-    const { chemistrycivilmechModule1 } = await import("@/features/notes/chemistry-civil-mech-module-1");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule1("civil")} /> };
+    const { chemistrygccyt122module1 } = await import("@/features/notes/chemistry-gccyt122-module-1");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module1("civil")} /> };
   }),
   "/notes/civil/s1/chemistry/module-2": lazy(async () => {
-    const { chemistrycivilmechModule2 } = await import("@/features/notes/chemistry-civil-mech-module-2");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule2("civil")} /> };
+    const { chemistrygccyt122module2 } = await import("@/features/notes/chemistry-gccyt122-module-2");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module2("civil")} /> };
   }),
   "/notes/civil/s1/chemistry/module-3": lazy(async () => {
-    const { chemistrycivilmechModule3 } = await import("@/features/notes/chemistry-civil-mech-module-3");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule3("civil")} /> };
+    const { chemistrygccyt122module3 } = await import("@/features/notes/chemistry-gccyt122-module-3");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module3("civil")} /> };
   }),
   "/notes/civil/s1/chemistry/module-4": lazy(async () => {
-    const { chemistrycivilmechModule4 } = await import("@/features/notes/chemistry-civil-mech-module-4");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule4("civil")} /> };
+    const { chemistrygccyt122module4 } = await import("@/features/notes/chemistry-gccyt122-module-4");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module4("civil")} /> };
   }),
   "/notes/me/s1/chemistry/module-1": lazy(async () => {
-    const { chemistrycivilmechModule1 } = await import("@/features/notes/chemistry-civil-mech-module-1");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule1("me")} /> };
+    const { chemistrygccyt122module1 } = await import("@/features/notes/chemistry-gccyt122-module-1");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module1("me")} /> };
   }),
   "/notes/me/s1/chemistry/module-2": lazy(async () => {
-    const { chemistrycivilmechModule2 } = await import("@/features/notes/chemistry-civil-mech-module-2");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule2("me")} /> };
+    const { chemistrygccyt122module2 } = await import("@/features/notes/chemistry-gccyt122-module-2");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module2("me")} /> };
   }),
   "/notes/me/s1/chemistry/module-3": lazy(async () => {
-    const { chemistrycivilmechModule3 } = await import("@/features/notes/chemistry-civil-mech-module-3");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule3("me")} /> };
+    const { chemistrygccyt122module3 } = await import("@/features/notes/chemistry-gccyt122-module-3");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module3("me")} /> };
   }),
   "/notes/me/s1/chemistry/module-4": lazy(async () => {
-    const { chemistrycivilmechModule4 } = await import("@/features/notes/chemistry-civil-mech-module-4");
-    return { default: () => <ModuleNotesPage notes={chemistrycivilmechModule4("me")} /> };
+    const { chemistrygccyt122module4 } = await import("@/features/notes/chemistry-gccyt122-module-4");
+    return { default: () => <ModuleNotesPage notes={chemistrygccyt122module4("me")} /> };
+  }),
+  "/notes/civil/s1/engineering-mechanics/module-1": lazy(async () => {
+    const { engineeringmechanicsmodule1 } = await import("@/features/notes/engineering-mechanics-module-1");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule1("civil")} /> };
+  }),
+  "/notes/civil/s1/engineering-mechanics/module-2": lazy(async () => {
+    const { engineeringmechanicsmodule2 } = await import("@/features/notes/engineering-mechanics-module-2");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule2("civil")} /> };
+  }),
+  "/notes/civil/s1/engineering-mechanics/module-3": lazy(async () => {
+    const { engineeringmechanicsmodule3 } = await import("@/features/notes/engineering-mechanics-module-3");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule3("civil")} /> };
+  }),
+  "/notes/civil/s1/engineering-mechanics/module-4": lazy(async () => {
+    const { engineeringmechanicsmodule4 } = await import("@/features/notes/engineering-mechanics-module-4");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule4("civil")} /> };
+  }),
+  "/notes/me/s1/engineering-mechanics/module-1": lazy(async () => {
+    const { engineeringmechanicsmodule1 } = await import("@/features/notes/engineering-mechanics-module-1");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule1("me")} /> };
+  }),
+  "/notes/me/s1/engineering-mechanics/module-2": lazy(async () => {
+    const { engineeringmechanicsmodule2 } = await import("@/features/notes/engineering-mechanics-module-2");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule2("me")} /> };
+  }),
+  "/notes/me/s1/engineering-mechanics/module-3": lazy(async () => {
+    const { engineeringmechanicsmodule3 } = await import("@/features/notes/engineering-mechanics-module-3");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule3("me")} /> };
+  }),
+  "/notes/me/s1/engineering-mechanics/module-4": lazy(async () => {
+    const { engineeringmechanicsmodule4 } = await import("@/features/notes/engineering-mechanics-module-4");
+    return { default: () => <ModuleNotesPage notes={engineeringmechanicsmodule4("me")} /> };
+  }),
+  "/notes/civil/s1/ime-ice/module-1": lazy(async () => {
+    const { imeicemodule1 } = await import("@/features/notes/ime-ice-module-1");
+    return { default: () => <ModuleNotesPage notes={imeicemodule1("civil")} /> };
+  }),
+  "/notes/civil/s1/ime-ice/module-2": lazy(async () => {
+    const { imeicemodule2 } = await import("@/features/notes/ime-ice-module-2");
+    return { default: () => <ModuleNotesPage notes={imeicemodule2("civil")} /> };
+  }),
+  "/notes/civil/s1/ime-ice/module-3": lazy(async () => {
+    const { imeicemodule3 } = await import("@/features/notes/ime-ice-module-3");
+    return { default: () => <ModuleNotesPage notes={imeicemodule3("civil")} /> };
+  }),
+  "/notes/civil/s1/ime-ice/module-4": lazy(async () => {
+    const { imeicemodule4 } = await import("@/features/notes/ime-ice-module-4");
+    return { default: () => <ModuleNotesPage notes={imeicemodule4("civil")} /> };
+  }),
+  "/notes/me/s1/ime-ice/module-1": lazy(async () => {
+    const { imeicemodule1 } = await import("@/features/notes/ime-ice-module-1");
+    return { default: () => <ModuleNotesPage notes={imeicemodule1("me")} /> };
+  }),
+  "/notes/me/s1/ime-ice/module-2": lazy(async () => {
+    const { imeicemodule2 } = await import("@/features/notes/ime-ice-module-2");
+    return { default: () => <ModuleNotesPage notes={imeicemodule2("me")} /> };
+  }),
+  "/notes/me/s1/ime-ice/module-3": lazy(async () => {
+    const { imeicemodule3 } = await import("@/features/notes/ime-ice-module-3");
+    return { default: () => <ModuleNotesPage notes={imeicemodule3("me")} /> };
+  }),
+  "/notes/me/s1/ime-ice/module-4": lazy(async () => {
+    const { imeicemodule4 } = await import("@/features/notes/ime-ice-module-4");
+    return { default: () => <ModuleNotesPage notes={imeicemodule4("me")} /> };
+  }),
+  "/notes/me/s1/maths/module-1": lazy(async () => {
+    const { mathsgymat101module1 } = await import("@/features/notes/maths-gymat101-module-1");
+    return { default: () => <ModuleNotesPage notes={mathsgymat101module1("me")} /> };
+  }),
+  "/notes/me/s1/maths/module-2": lazy(async () => {
+    const { mathsgymat101module2 } = await import("@/features/notes/maths-gymat101-module-2");
+    return { default: () => <ModuleNotesPage notes={mathsgymat101module2("me")} /> };
+  }),
+  "/notes/me/s1/maths/module-3": lazy(async () => {
+    const { mathsgymat101module3 } = await import("@/features/notes/maths-gymat101-module-3");
+    return { default: () => <ModuleNotesPage notes={mathsgymat101module3("me")} /> };
+  }),
+  "/notes/me/s1/maths/module-4": lazy(async () => {
+    const { mathsgymat101module4 } = await import("@/features/notes/maths-gymat101-module-4");
+    return { default: () => <ModuleNotesPage notes={mathsgymat101module4("me")} /> };
   }),
 };
 

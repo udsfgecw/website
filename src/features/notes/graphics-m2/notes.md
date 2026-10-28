@@ -425,11 +425,11 @@ When finishing each view, always check base visibility first: if the base is til
 
 ![Orthographic projection of a cone - Step 69.2](/notes/cse/s1/graphics/module-2/assets/page-039-panel-1.webp)
 
-3. **Stage 2 Top View:** Drop vertical projectors from $1' \ext{ to } 5'$ and $o'$ to meet horizontal projectors from the Stage 1 circle; join points 1 to 8 with a smooth ellipse (keeping the lower half dashed if hidden from above) and draw the two extreme tangent generators to apex $o$.
+3. **Stage 2 Top View:** Drop vertical projectors from $1' \text{ to } 5'$ and $o'$ to meet horizontal projectors from the Stage 1 circle; join points 1 to 8 with a smooth ellipse (keeping the lower half dashed if hidden from above) and draw the two extreme tangent generators to apex $o$.
 
 ![Orthographic projection of a cone - Step 69.3](/notes/cse/s1/graphics/module-2/assets/page-039-panel-2.webp)
 
-4. **Stage 3 Top View:** Because a vertical plane appears as a straight line in the top view, rotate the entire Stage 2 top view directly so the axis line $o\ext{–}5$ makes 45° with the XY line, placing apex $o$ closer to XY (away from the observer, or toward VP as drawn).
+4. **Stage 3 Top View:** Because a vertical plane appears as a straight line in the top view, rotate the entire Stage 2 top view directly so the axis line $o\text{–}5$ makes 45° with the XY line, placing apex $o$ closer to XY (away from the observer, or toward VP as drawn).
 
 ![Projection of a cone: step 69.4 showing stage 1, stage 2, and stage 3 top view](/notes/cse/s1/graphics/module-2/assets/page-040-panel-1.webp)
 
@@ -472,7 +472,7 @@ When finishing each view, always check base visibility first: if the base is til
 **Given:** Cylinder ($D = 40$ mm, $H = 60$ mm) resting on base point $5'$ on HP, base at 60° to HP, top view of axis at 35° to XY.
 **Find:** The three-stage orthographic projections of the cylinder.
 
-1. Draw the Stage 1 top-view circle ($D = 40$ mm, 8 divisions: $1\ext{–}8$ bottom, $a\ext{–}h$ top) and front-view rectangle ($H = 60$ mm) on XY.
+1. Draw the Stage 1 top-view circle ($D = 40$ mm, 8 divisions: $1\text{–}8$ bottom, $a\text{–}h$ top) and front-view rectangle ($H = 60$ mm) on XY.
 2. Redraw the Stage 2 front-view rectangle resting on base point $5'$ on XY with its base $1'5'$ inclined at 60° to XY.
 3. Project both bases down to form two ellipses in the Stage 2 top view, keeping the lower half of the bottom base dashed.
 4. Rotate the Stage 2 top view directly so the axis makes 35° with the XY line.
@@ -500,7 +500,7 @@ When finishing each view, always check base visibility first: if the base is til
 1. Construct the Stage 1 circle ($D = 40$ mm, 8 parts) in the top view and triangle ($H = 60$ mm) on XY in the front view.
 2. Rotate the front-view triangle in Stage 2 until generator $5'o'$ lies flat on the XY line.
 3. Project down to complete the Stage 2 top view; the entire elliptical base faces upward and is completely visible.
-4. Rotate the Stage 2 top view so the axis (and resting generator $5\ext{–}o$) makes 40° with XY, placing apex $o$ towards XY (away from the observer).
+4. Rotate the Stage 2 top view so the axis (and resting generator $5\text{–}o$) makes 40° with XY, placing apex $o$ towards XY (away from the observer).
 5. Project upward to the Stage 2 height levels to complete the final front view, keeping the rear half of the base ellipse dashed.
 
 ![Step 71.1: Initial projection of cone with base on HP](/notes/cse/s1/graphics/module-2/assets/page-059-panel-2.webp)
@@ -545,8 +545,8 @@ When finishing each view, always check base visibility first: if the base is til
 
 1. Draw the Stage 1 top-view circle ($D = 40$ mm, 8 divisions) and front-view triangle ($H = 60$ mm) on XY.
 2. Tilt the front-view triangle in Stage 2 with point $5'$ on XY so the base $1'5'$ makes 60° with XY.
-3. Project the Stage 2 top view below XY; note that the extreme back generator $o\ext{–}7$ is parallel to HP and therefore shows its true length.
-4. Rotate the Stage 2 top view until generator $o\ext{–}7$ lies directly on the XY line, placing that generator on VP.
+3. Project the Stage 2 top view below XY; note that the extreme back generator $o\text{–}7$ is parallel to HP and therefore shows its true length.
+4. Rotate the Stage 2 top view until generator $o\text{–}7$ lies directly on the XY line, placing that generator on VP.
 5. Project up from the Stage 3 top view to the Stage 2 height levels (keeping point $5'$ on XY) to complete the final front view.
 
 ![Step 75.1: Initial projections of the cone resting with its base on HP](/notes/cse/s1/graphics/module-2/assets/page-068-panel-2.webp)
@@ -559,7 +559,7 @@ When finishing each view, always check base visibility first: if the base is til
 
 ![Projection of a cone: Final Step (75.5)](/notes/cse/s1/graphics/module-2/assets/page-070-panel-2.webp)
 
-**Answer:** Three-stage projections of the cone ($D = 40$ mm, $H = 60$ mm) with base at 60° to HP, base point $5'$ on HP, and generator $o\ext{–}7$ lying on XY (VP).
+**Answer:** Three-stage projections of the cone ($D = 40$ mm, $H = 60$ mm) with base at 60° to HP, base point $5'$ on HP, and generator $o\text{–}7$ lying on XY (VP).
 
 <!-- page 9 | Practice: Pyramids and Cubes on HP with Special Face, Edge, and Diagonal Conditions -->
 
@@ -994,7 +994,7 @@ In **Stage 3**, we incline the solid to HP ($θ$). Because inclination to HP is 
 **Given:** Square prism, base side $B = 40$ mm, length $H = 80$ mm, resting on a base edge on VP, axis at 30° to VP, resting base edge at 40° to HP.
 **Find:** The three-stage orthographic projections of the prism.
 
-1. Begin in the simple position with the axis perpendicular to VP so the base is parallel to VP and shows its true shape in the front view. Draw a 40 mm square above the XY line with its vertical edges perpendicular to XY, placing the resting base edge $2'3'$ on the right. Project downward to draw the Stage 1 top view as a 40 mm by 80 mm rectangle with the base $1(4)\ext{--}2(3)$ resting directly on the XY line.
+1. Begin in the simple position with the axis perpendicular to VP so the base is parallel to VP and shows its true shape in the front view. Draw a 40 mm square above the XY line with its vertical edges perpendicular to XY, placing the resting base edge $2'3'$ on the right. Project downward to draw the Stage 1 top view as a 40 mm by 80 mm rectangle with the base $1(4)\text{--}2(3)$ resting directly on the XY line.
 
 ![Step 81.1: Initial projection of square prism with base on VP](/notes/cse/s1/graphics/module-2/assets/page-092-panel-2.webp)
 

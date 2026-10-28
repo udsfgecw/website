@@ -35,13 +35,13 @@ import { pythonmodule2 } from "./features/notes/python-module-2";
 import { pythonmodule3 } from "./features/notes/python-module-3";
 import { pythonmodule4 } from "./features/notes/python-module-4";
 import { physicseceModule1 } from "./features/notes/physics-ece-module-1";
-import { chemistrycivilmechModule1 } from "./features/notes/chemistry-civil-mech-module-1";
+import { chemistrygccyt122module1 } from "./features/notes/chemistry-gccyt122-module-1";
 import { physicseceModule2 } from "./features/notes/physics-ece-module-2";
-import { chemistrycivilmechModule2 } from "./features/notes/chemistry-civil-mech-module-2";
+import { chemistrygccyt122module2 } from "./features/notes/chemistry-gccyt122-module-2";
 import { physicseceModule3 } from "./features/notes/physics-ece-module-3";
-import { chemistrycivilmechModule3 } from "./features/notes/chemistry-civil-mech-module-3";
+import { chemistrygccyt122module3 } from "./features/notes/chemistry-gccyt122-module-3";
 import { physicseceModule4 } from "./features/notes/physics-ece-module-4";
-import { chemistrycivilmechModule4 } from "./features/notes/chemistry-civil-mech-module-4";
+import { chemistrygccyt122module4 } from "./features/notes/chemistry-gccyt122-module-4";
 import {
   gamat101QuestionPapers,
   gapht121QuestionPapers,
@@ -73,7 +73,7 @@ const NOTES_MODULES: NotesModule[] = [
     physicseceModule1(branch), physicseceModule2(branch), physicseceModule3(branch), physicseceModule4(branch),
   ]),
   ...(["civil", "me"] as const).flatMap((branch) => [
-    chemistrycivilmechModule1(branch), chemistrycivilmechModule2(branch), chemistrycivilmechModule3(branch), chemistrycivilmechModule4(branch),
+    chemistrygccyt122module1(branch), chemistrygccyt122module2(branch), chemistrygccyt122module3(branch), chemistrygccyt122module4(branch),
   ]),
   gamat101QuestionPapers, gapht121QuestionPapers, gmest103QuestionPapers, gxest104QuestionPapers, ucest105QuestionPapers,
 ];

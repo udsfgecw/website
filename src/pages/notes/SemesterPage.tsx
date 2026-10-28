@@ -9,6 +9,9 @@ import { breadcrumbLd, collectionPageLd } from "@/lib/seo";
 import NotFoundPage from "@/pages/NotFoundPage";
 import Breadcrumb from "./Breadcrumb";
 
+/* Counts only the numbered modules, not the Question Papers entry listed beside them. */
+const countModules = (modules: { name: string }[]) => modules.filter((module) => module.name.startsWith("Module")).length;
+
 /* The subjects of one semester, reached by clicking the semester on the notes shelf. */
 export default function SemesterPage() {
   const params = useParams();
@@ -62,7 +65,7 @@ export default function SemesterPage() {
                     <span className="mt-1 text-[0.85rem] leading-[1.5] text-ink-2">{subject.course}</span>
                     {subject.modules.length > 0 && (
                       <span className="text-[0.85rem] leading-[1.5] text-ink-2">
-                        {subject.modules.length} {subject.modules.length === 1 ? "module" : "modules"}
+                        {countModules(subject.modules)} {countModules(subject.modules) === 1 ? "module" : "modules"}
                       </span>
                     )}
                     <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-[0.9rem] font-medium">

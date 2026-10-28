@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { chemPresets } from "./chemPresets";
+import { Loader } from "@/components/ui/loader";
 
 export interface KekuleViewerProps {
   source: string;
@@ -115,7 +116,7 @@ export default function KekuleViewer({ source }: KekuleViewerProps) {
           {error ? (
             <p className="text-xs text-muted-foreground">{error}</p>
           ) : (
-            <p className="text-xs text-muted-foreground">Loading molecular viewer...</p>
+            <Loader variant="inline" label="Loading molecule" />
           )}
         </div>
       </div>

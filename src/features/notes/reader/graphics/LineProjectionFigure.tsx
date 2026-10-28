@@ -1,4 +1,5 @@
 import { lazy, Suspense, useMemo, useState } from "react";
+import { Loader } from "@/components/ui/loader";
 import Epure from "./Epure";
 import { compareWithPrinted, solveLine, type LineProjectionSpec } from "./lineProjection";
 
@@ -51,7 +52,7 @@ export default function LineProjectionFigure({ source }: { source: string }) {
       {tab === "2d" ? (
         <Epure solved={scaled} divisor={factor} />
       ) : (
-        <Suspense fallback={<p className="notes-epure-note">Loading the 3D view…</p>}>
+        <Suspense fallback={<Loader variant="inline" label="Loading 3D view" />}>
           <Space3D solved={scaled} />
         </Suspense>
       )}

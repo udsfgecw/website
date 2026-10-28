@@ -146,28 +146,6 @@ Applying all corrections, the corrected Gross Calorific Value formula is:
 
 $$\text{Gross calorific value} = \frac{(W + w)(T_2 - T_1 + \text{cooling correction}) - (\text{acid} + \text{fuse correction})}{X}$$
 
-### Theoretical Calculation of Calorific Value (Dulong's Formula)
-
-According to Dulong, the calorific value of a fuel is the sum of the calorific values of its constituent elements ($\text{C}, \text{H}, \text{S}$).
-
-![Table 1.2: Calorific value of the fuel](https://pub-d3b7759adb7e43a7bf3f61bf5308e473.r2.dev/notes/civil-mech/s1/chemistry/module-1/assets/p005-1.webp)
-
-> **Figure: Table 1.2: Calorific value of the fuel**
->
-> Table 1.2: Calorific value of the fuel. A table with two rows. Row 1 has the header Constituents with three columns: C, H, and S. Row 2 has the header HCV (kcal/kg) with the corresponding values for the constituents: 8080 for C, 34500 for H, and 2240 for S.
-
-If oxygen is present in the fuel, it is assumed to be in combined form with hydrogen (as fixed hydrogen, $\text{H}_2\text{O}$), which is unavailable for combustion. According to the reaction:
-
-$$\text{H}_2 + \frac{1}{2}\text{O}_2 \longrightarrow \text{H}_2\text{O}$$
-
-One part of hydrogen combines with $8$ parts of oxygen by mass. Therefore, the amount of hydrogen available for combustion is:
-
-$$\text{Available Hydrogen} = \left[\text{H} - \frac{\text{O}}{8}\right]$$
-
-Dulong's formula for calculating the theoretical higher calorific value (HCV) is:
-
-$$\text{HCV} = \frac{1}{100} \left[ 8080\text{C} + 34500\left(\text{H} - \frac{\text{O}}{8}\right) + 2240\text{S} \right] \text{ kcal/kg}$$
-
 ### Introduction to Fossil Fuels
 
 * Fossil fuels are non-renewable energy sources formed from the remains of vegetable matter buried in the earth's crust for millions of years.
@@ -180,15 +158,6 @@ $$\text{HCV} = \frac{1}{100} \left[ 8080\text{C} + 34500\left(\text{H} - \frac{\
 Bridge: Building on general fuel definitions, we examine solid fossil fuels and standardized methods to grade their quality.
 
 The new idea: Proximate analysis provides empirical parameters regarding moisture, volatile matter, ash, and fixed carbon to assess industrial coal utility.
-
-### Classification of Coal Ranks
-
-Important fossil fuels include coal, petroleum, and natural gas. Coal is a black or brownish-black combustible sedimentary rock composed primarily of carbon. It forms from plant remains buried under earth and rock, subjected to high heat and pressure over millions of years. Coal is classified by rank, representing the degree of alteration from the parent material wood:
-
-1. **Peat**: The first stage of coal formation. It is brown or black, contains 80–90\% moisture, and serves as a low-energy fuel with a calorific value of approximately $5400 \text{ kcal/kg}$ when dried.
-2. **Lignite (Brown Coal)**: Known as immature coal, containing 30–60\% moisture. It is soft, light brown to black, ignites easily after air drying, burns with a long, smoky flame, and has a calorific value of $6500–7100 \text{ kcal/kg}$.
-3. **Bituminous Coal**: The most commonly used commercial coal. It is hard, dark black, burns with a smoky yellow flame, contains a good amount of fixed carbon, and possesses a calorific value of approximately $8000 \text{ kcal/kg}$.
-4. **Anthracite**: The final, most mature stage of coal formation. It is a hard, shiny, black coal that burns with a blue, smokeless flame. It contains the highest fixed carbon content ($92–98\%$) with very low volatile matter and moisture, and a calorific value of approximately $8600 \text{ kcal/kg}$, making it the cleanest and most efficient coal.
 
 ### Proximate Analysis of Coal
 
@@ -462,37 +431,6 @@ The Aniline Point of an oil is the lowest temperature at which the oil is comple
 ## Cement: Chemistry and Manufacturing
 
 Transitioning from machinery lubricants, we examine construction materials capable of hydraulic binding and hardening. Cement manufacturing involves high-temperature clinkering of calcareous and argillaceous mixes followed by controlled hydration to build crystalline strength.
-
-### Classification of Cement
-
-Cement is a light greenish heavy powder described as a material possessing adhesive and cohesive properties capable of binding materials like stones and bricks. Cements are hydraulic in nature, meaning they possess the property of setting and hardening under water. The essential constituents of cement are compounds of calcareous ($\text{Ca}$) and argillaceous ($\text{Al}+\text{Si}$) materials.
-
-#### 1. Natural Cement
-- Made by heating natural limestone containing some clay without adding extra materials.
-- Sets quickly but exhibits low strength and is largely obsolete.
-
-#### 2. Puzzolana Cement
-- One of the oldest types, made by mixing volcanic ash (puzzolana) with lime without requiring high-temperature heating.
-- Possesses hydraulic properties and is typically mixed with Portland cement to enhance performance.
-
-#### 3. Slag Cement
-- Formed from blast furnace slag (a steel production waste) and lime. Slag is rapidly quenched in water, dried, blended with lime, and ground.
-- Sets slowly with low strength and durability, utilized in large concrete works where ultra-high strength is unneeded.
-
-#### 4. Portland Cement
-- The most common and vital modern cement, produced by firing limestone and clay together at approximately $1500^{\circ}\text{C}$.
-- Gypsum is added post-cooling to regulate setting times. It provides exceptional strength and versatility.
-
-#### 5. Special Cements
-
-| Type | Simple Use / Feature |
-| :--- | :--- |
-| White Cement | Utilized for decorative work and tiles due to its white appearance. |
-| Rapid Hardening Cement | Sets and gains strength rapidly, ideal for urgent repair work. |
-| Low Heat Cement | Evolves lower thermal energy during hydration, critical for massive structures like dams. |
-| High Alumina Cement | Exhibits extreme strength and heat resistance, suited for furnace linings. |
-| Coloured Cement | Formed by blending white cement with tailored color pigments. |
-| Sulphate Resisting Cement | Withstands harsh chemical attacks, deployed in sewage systems and marine environments. |
 
 ### Raw Materials and Functions
 

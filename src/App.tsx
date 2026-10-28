@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect } from "react";
+import { Loader } from "@/components/ui/loader";
 import { Route, Routes, useLocation, useNavigationType } from "react-router-dom";
 import { MATHS_MODULE_1_PATH } from "@/features/notes/maths-module-1/path";
 import { MATHS_MODULE_2_PATH } from "@/features/notes/maths-module-2/path";
@@ -63,7 +64,7 @@ export default function App() {
       <NavigationProgress />
       <ScrollOnNavigate />
       {/* One boundary for every route, so pre-rendered pages hydrate with the same structure. */}
-      <Suspense fallback={<p role="status" className="wrap py-24 text-ink-2">Loading…</p>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/notes" element={<NotesPage />} />
@@ -118,6 +119,14 @@ export default function App() {
           <Route path="/notes/cse/s1/graphics/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/electrical/question-papers/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/cse/s1/python/question-papers/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/engineering-mechanics/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/engineering-mechanics/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/engineering-mechanics/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/engineering-mechanics/module-4/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/ime-ice/module-1/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/ime-ice/module-2/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/ime-ice/module-3/:page?" element={<ImportedModulePage />} />
+          <Route path="/notes/:branch/s1/ime-ice/module-4/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/maths/module-1/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/maths/module-2/:page?" element={<ImportedModulePage />} />
           <Route path="/notes/:branch/s1/maths/module-3/:page?" element={<ImportedModulePage />} />

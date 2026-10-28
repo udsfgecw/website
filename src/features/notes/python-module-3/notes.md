@@ -99,7 +99,7 @@ print(grade_for(45))  # E
 print(grade_for(39))  # F
 ```
 
-Use `and` to combine Boolean conditions, or write a chained comparison such as `80 <= mark < 90`. The `&` operator is bitwise AND and is not a substitute for `and` in these scalar comparisons. Here, descending thresholds make a second upper-bound check unnecessary.
+Use `and` to combine Boolean conditions, or write a chained comparison such as `80 <= mark < 90`. Here, descending thresholds make a second upper-bound check unnecessary.
 
 **Boundary checks**
 
@@ -144,7 +144,7 @@ Always check how the loop makes progress. Removing `count -= 1` from this exampl
 
 <!-- page 5 | Module 3 · source page 5 -->
 
-## Nested loops and loop-control statements
+## Nested loops
 
 A nested loop runs an inner loop during each iteration of an outer loop. If both ranges have fixed lengths, the total number of inner-body executions is their product.
 
@@ -156,64 +156,8 @@ for row in range(3):
 # Three rows, each containing: 1 2 3 4
 ```
 
-| Statement | Effect |
-|---|---|
-| `break` | Exit the innermost enclosing loop immediately |
-| `continue` | Skip the remaining statements of the current iteration |
-| `pass` | Do nothing; it is a placeholder, not a loop jump |
-
-```python
-for number in range(1, 6):
-    if number == 3:
-        break
-    print(number, end=" ")
-print()  # Preceding line: 1 2
-
-for number in range(1, 6):
-    if number % 2 == 0:
-        continue
-    print(number, end=" ")
-print()  # Preceding line: 1 3 5
-
-for number in range(1, 4):
-    if number == 2:
-        pass
-    print(number, end=" ")
-print()  # Preceding line: 1 2 3
-```
-
-In nested loops, `break` exits the inner loop containing it, not every enclosing loop.
-
-In a `while` loop, ensure that `continue` does not skip the update needed for termination.
 
 <!-- page 6 | Module 3 · source page 6 -->
-
-## Short-circuit evaluation
-
-Python evaluates logical operands from left to right. For `and`, it skips the right operand when the left is false. For `or`, it skips the right operand when the left is true.
-
-```python
-numerator = 10
-denominator = 0
-if denominator != 0 and numerator / denominator > 0:
-    print("Positive quotient")
-else:
-    print("Zero denominator or non-positive quotient")
-```
-
-The division is skipped when `denominator` is zero. Testing `denominator > 0` would also avoid zero division, but would unnecessarily reject negative non-zero denominators. Put a required safety check before the operation it protects.
-
-```python
-values = []
-if values and values[0] > 0:
-    print("First value is positive")
-
-name = ""
-display_name = name or "Guest"
-print(display_name)  # Guest
-```
-
-`and` and `or` return one of their operands, which is not necessarily a Boolean. Use `bool(...)` when an explicit Boolean result is required. Short-circuiting can save work, but the order must first preserve the intended logic and required side effects.
 
 <!-- page 7 | Module 3 · source page 7 -->
 
@@ -556,33 +500,6 @@ for index, value in enumerate(primes):
 Use `enumerate()` when both positions and values are needed. An empty list is `[]`, and `len([])` is 0. Avoid changing a list's size while traversing it unless the algorithm deliberately accounts for that change.
 
 <!-- page 16 | Module 3 · source page 16 -->
-
-## List comprehensions and operations
-
-**List comprehension**
-
-A list comprehension builds a new list by evaluating an expression for items in an iterable, optionally filtering with a condition. It need not start from an existing list.
-
-```python
-numbers = [1, 28, 73, 4, 100, 358, 75, 208]
-odd = [number for number in numbers if number % 2 != 0]
-squares = [number ** 2 for number in range(1, 5)]
-print(odd)      # [1, 73, 75]
-print(squares)  # [1, 4, 9, 16]
-print(list(range(10, 20, 2)))  # [10, 12, 14, 16, 18]
-```
-
-| Operation | Example | Meaning |
-|---|---|---|
-| Concatenation | `[2, 3] + [5, 7]` | New list combining both sequences |
-| Repetition | `[0, 1] * 2` | New list `[0, 1, 0, 1]` |
-| Equality | `[2, 4] == [2, 4]` | Same values in the same order |
-| Membership | `4 in [2, 4, 6]` | Whether a value occurs |
-| Ordering | `[2, 3, 7] < [2, 4, 6]` | Lexicographic comparison |
-
-Lists compare element by element, stopping at the first unequal pair. If one is a prefix of the other, the shorter list comes first. Ordering elements of incompatible types, such as an integer and a string, can raise `TypeError`.
-
-> **Watch out.** Repetition copies references, not nested objects. `[[]] * 3` contains three references to the same inner list. Use `[[] for _ in range(3)]` when independent inner lists are required.
 
 <!-- page 17 | Module 3 · source page 17 -->
 

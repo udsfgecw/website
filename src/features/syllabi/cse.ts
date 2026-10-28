@@ -120,6 +120,35 @@ const courses: Record<string, Course> = {
     outcomes: ["Explain semiconductor physics and semiconductor devices.", "Explain superconductivity and the basic theory of dielectrics.", "Apply laser and fiber-optics principles in engineering.", "Apply physics principles in experiments."],
     cie: ["Attendance — 5 marks", "Continuous assessment — 10 marks", "Two written internal examinations — 10 marks each", "Internal laboratory examination — 5 marks"],
   },
+  GCCYT122: {
+    objectives: ["Understand chemistry concepts relevant to engineering applications.", "Learn applied topics in spectroscopy, electrochemistry and instrumental methods.", "Understand environmental issues, including climate change, pollution and waste management."],
+    modules: [
+      { title: "Engineering materials", hours: 9, topics: [
+        { title: "Fuels", subtopics: ["Calorific value: HCV and LCV, and experimental determination for solid fuels", "Analysis of coal: proximate analysis", "Octane and cetane numbers", "Biofuels: biodiesel and green hydrogen"] },
+        { title: "Lubricants", subtopics: ["Classification: solid, semisolid and liquid lubricants", "Properties: viscosity index, flash point, fire point, cloud point, pour point and aniline point"] },
+        { title: "Cement", subtopics: ["Manufacture of Portland cement", "Theory of setting and hardening"] },
+        { title: "Nanomaterials", subtopics: ["Classification by dimension and material", "Sol–gel and chemical-reduction synthesis", "Supercapacitor materials", "Carbon nanotubes, fullerenes and graphene: structure, properties and applications"] },
+        { title: "Polymers", subtopics: ["ABS and Kevlar: synthesis, properties and applications", "Conducting polymers: classification and applications"] },
+      ] },
+      { title: "Electrochemistry and corrosion science", hours: 9, topics: [
+        { title: "Electrochemical cells", subtopics: ["Electrode potential and the Nernst equation for a single electrode and a cell", "Standard hydrogen and calomel reference electrodes: construction and working", "Electrochemical series and applications", "Glass electrode and pH measurement", "Conductivity measurement using a digital conductivity meter"] },
+        { title: "Batteries and fuel cells", subtopics: ["Lithium-ion battery: construction and working", "Hydrogen–oxygen fuel cell with acid electrolyte: construction and working"] },
+        { title: "Corrosion and protection", subtopics: ["Electrochemical corrosion in acidic and alkaline media", "Galvanic series and corrosion control", "Cathodic protection: sacrificial-anode and impressed-current methods", "Electroplating and electroless plating of copper"] },
+      ] },
+      { title: "Instrumental methods of analysis", hours: 9, topics: [
+        { title: "Molecular spectroscopy", subtopics: ["Types of spectra and molecular energy levels", "Beer–Lambert law and numerical problems", "Electronic spectroscopy: transitions, role of conjugation, instrumentation and applications", "Vibrational spectroscopy: number of modes, modes of CO₂ and H₂O, and applications"] },
+        { title: "Thermal analysis and chromatography", subtopics: ["TGA: principle, instrumentation and applications", "DTA: principle, instrumentation and applications", "Gas chromatography: principle, instrumentation and analysis of exhaust gases"] },
+        { title: "Electron microscopy", subtopics: ["Scanning electron microscopy: principle, instrumentation and applications"] },
+      ] },
+      { title: "Environmental chemistry and waste management", hours: 9, topics: [
+        { title: "Water quality and treatment", subtopics: ["Hardness: types, disadvantages and degree of hardness (numericals)", "Water softening: ion exchange and reverse osmosis", "Water disinfection: chlorination, breakpoint chlorination, ozone and UV", "Dissolved oxygen, BOD and COD: definition and significance"] },
+        { title: "Air pollution and climate", subtopics: ["Air pollution: sources, effects and control methods", "Greenhouse gases and ozone depletion"] },
+        { title: "Waste management", subtopics: ["Sewage treatment: primary, secondary (trickling filter and UASB) and tertiary, with flow diagram", "Solid waste disposal: composting, landfill and incineration"] },
+      ] },
+    ],
+    outcomes: ["Describe the use of engineering materials in different industries.", "Explain the basic concepts of electrochemistry and corrosion and their applications.", "Use appropriate analytical techniques for engineering materials.", "Outline water treatment and waste management methods."],
+    cie: ["Attendance — 5 marks", "Continuous assessment — 10 marks", "Two written internal examinations — 10 marks each", "Internal laboratory examination — 5 marks"],
+  },
   GXCYT122: {
     objectives: ["Understand chemistry concepts used in engineering.", "Learn applied topics in spectroscopy, electrochemistry and analytical methods.", "Understand environmental issues, pollution and waste management."],
     modules: [
