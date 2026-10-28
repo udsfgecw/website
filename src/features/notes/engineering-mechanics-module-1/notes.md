@@ -130,7 +130,7 @@ $$\tan \theta = \frac{CD}{OD} = \frac{Q \sin \alpha}{P + Q \cos \alpha}$$
 
 <!-- page 7 | Page 7 -->
 
-$$\tan	heta = rac{Q 	ext{ sin } 	heta}{P + Q 	ext{ cos } 	heta} \implies \text{Direction of resultant w.r.t } P \text{ force}$$
+$$\tan\theta = \frac{Q \text{ sin } \theta}{P + Q \text{ cos } \theta} \implies \text{Direction of resultant w.r.t } P \text{ force}$$
 
 Let $\phi$ be the inclination of the resultant with respect to $Q$
 
@@ -286,7 +286,7 @@ $$R = 381.58\text{ N}$$
 
 <!-- page 12 | Page 12 -->
 
-Let $	heta$ be the direction of $240\text{ N}$ making with resultant;
+Let $\theta$ be the direction of $240\text{ N}$ making with resultant;
 $$\tan \theta = \frac{200 \times \sin 60}{240 + 200 \cos 60} = 0.5094$$
 $$\theta = 27^\circ$$
 
@@ -308,7 +308,7 @@ $$\cos \alpha = 0.65, \quad \alpha = 49.45^\circ$$
 
 <!-- page 13 | Page 13 -->
 
-Let $	heta$ be the angle b/w $R$ and $240\text{ N}$,
+Let $\theta$ be the angle b/w $R$ and $240\text{ N}$,
 
 $$\tan\theta = \frac{200 \sin(49.46)}{240 + 200 \cos(49.46)} = 0.4107$$
 
@@ -725,13 +725,13 @@ Sign convention of moments
 
 ![Diagram illustrating sign convention of moments with a horizontal beam AD, points A, B, O, C, D and forces F1, F2, F3, F4 acting at various points.](/assets/notes/me/s1/engineering-mechanics/module-1/moment-sign-convention.svg)
 
-Moment of force $F_1$ about $O$ is given by $= F_1 	imes AO$ (Clockwise, $+ve$)
+Moment of force $F_1$ about $O$ is given by $= F_1 \times AO$ (Clockwise, $+ve$)
 
-Moment of force $F_2$ about $O$ is given by: $F_2 	imes BO$ (anticlockwise, $-ve$)
+Moment of force $F_2$ about $O$ is given by: $F_2 \times BO$ (anticlockwise, $-ve$)
 
-Moment of force $F_3$ about $O$ is given by: $F_3 	imes OC$ (clockwise, $+ve$)
+Moment of force $F_3$ about $O$ is given by: $F_3 \times OC$ (clockwise, $+ve$)
 
-Moment of force $F_4$ about $O$ is given by: $F_4 	imes OD$ (anticlockwise, $-ve$)
+Moment of force $F_4$ about $O$ is given by: $F_4 \times OD$ (anticlockwise, $-ve$)
 
 Q. Four forces of magnitude $10\text{ N}$, $20\text{ N}$, $30\text{ N}$ and $40\text{ N}$ are acting respectively along four sides of a square $ABCD$ as in figure.
 

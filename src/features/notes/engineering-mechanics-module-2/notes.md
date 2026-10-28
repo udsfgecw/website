@@ -18,9 +18,9 @@ Limiting Frictional force, $Fr_{\text{max}} = \mu R_N$.
 
 Q. A body of weight $1000\text{ N}$ is kept on a horizontal rough surface. coefficient of static friction is $0.2$ and coefficient of dynamic friction is $0.18$. calculate the frictional force when the applied force $P$ is:
 
-i) $P = 0$ 	 iii) $P = 200\text{ N}$
+i) $P = 0$ \t iii) $P = 200\text{ N}$
 
-ii) $P = 100\text{ N}$ 	 (iv) $P = 300\text{ N}$
+ii) $P = 100\text{ N}$ \t (iv) $P = 300\text{ N}$
 
 Ans: Limiting friction, $Fr_{\text{max}} = \mu R_N$
 
@@ -329,7 +329,7 @@ $$-\mu_F R_F \times 4 \sin 45 + R_F \times 4 \cos 45 - \left(\frac{W}{2} \times 
 
 <!-- page 12 | Page 12 -->
 
-$$-0.5 	imes 1.25_{\wedge}^W \times \frac{4 \times 1}{\sqrt{2}} + 1.25 W \times \frac{4}{\sqrt{2}} - \frac{W}{2} \frac{(4-x)}{\sqrt{2}} - \frac{2W}{\sqrt{2}} = 0$$
+$$-0.5 \times 1.25_{\wedge}^W \times \frac{4 \times 1}{\sqrt{2}} + 1.25 W \times \frac{4}{\sqrt{2}} - \frac{W}{2} \frac{(4-x)}{\sqrt{2}} - \frac{2W}{\sqrt{2}} = 0$$
 
 $$-1.767 W + 3.535 W - \sqrt{2} W + \frac{x W}{2\sqrt{2}} - \sqrt{2}W = 0$$
 

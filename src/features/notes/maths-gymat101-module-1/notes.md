@@ -388,13 +388,13 @@ Here $r \le m$ & $r_{11} \neq 0$
 - Method for determining where $Ax = b$ has solutions:
 
 (a). No solution.
-If $r < m$ and atleast one of the no's $f_{r+1}, 	ext{... } f_m$ is not zero, then the system is inconsistent. No solution is possible.
+If $r < m$ and atleast one of the no's $f_{r+1}, \text{... } f_m$ is not zero, then the system is inconsistent. No solution is possible.
 
 (b). Unique solution.
 If $r = m$, then the system is consistent & there is exactly one solution.
 
 (c). Infinitely many solutions.
-If $r < m$ & all the numbers $f_{r+1}, f_{r+2}, 	ext{... } f_m$ are zero, then the system is consistent & there is infinitely many solutions. To obtain any of these solutions, choose values of $x_{r+1}, 	ext{... } x_n$ arbitrarily. Then solve the $r^{\text{th}}$ $\text{eq}^\text{n}$ for $x_r$, then $(r-1)^{\text{st}}$ $\text{eq}^\text{n}$ for $x_{r-1}$ and so on.
+If $r < m$ & all the numbers $f_{r+1}, f_{r+2}, \text{... } f_m$ are zero, then the system is consistent & there is infinitely many solutions. To obtain any of these solutions, choose values of $x_{r+1}, \text{... } x_n$ arbitrarily. Then solve the $r^{\text{th}}$ $\text{eq}^\text{n}$ for $x_r$, then $(r-1)^{\text{st}}$ $\text{eq}^\text{n}$ for $x_{r-1}$ and so on.
 
 <!-- page 16 | Linear Independence, Rank of a Matrix. -->
 
@@ -463,7 +463,7 @@ $$\begin{aligned}
 <!-- page 18 | Page 18 -->
 
 Row $3 
-ightarrow rac{1}{2}	ext{Row } 2 + 	ext{Row } 3 egin{bmatrix} 3 & 0 & 2 & 2 \ 0 & 42 & 28 & 28 \ 0 & 0 & 0 & 0 egin{bmatrix}
+ightarrow \frac{1}{2}\text{Row } 2 + \text{Row } 3 \begin{bmatrix} 3 & 0 & 2 & 2 \ 0 & 42 & 28 & 28 \ 0 & 0 & 0 & 0 \begin{bmatrix}
 
 $\Rightarrow \text{Rank } A = 2$
 
@@ -616,7 +616,7 @@ where $x_0$ is any (fixed) solution of $(1)$ and $x_h$ runs through all the solu
 
 ## The Matrix Eigenvalue Problem - Determining Eigenvalues and Eigenvectors.
 
-Let $A = [a_{jk}]$ be a given nonzero square matrix of dimension $n 	imes n$. Consider the vector equation:
+Let $A = [a_{jk}]$ be a given nonzero square matrix of dimension $n \times n$. Consider the vector equation:
 
 $$Ax = \lambda x. \qquad \text{--- } (1)$$
 
@@ -1357,7 +1357,7 @@ When $\lambda = 1, \Rightarrow$ $\begin{bmatrix} 0 & 1 & 1 \\ 0 & 1 & 1 \\ -4 & 
 
 $$\Rightarrow -4x_1 + 4x_2 + 2x_3 = 0$$
 
-$$x_2 + x_3 = 0 	o x_2 = -x_3$$
+$$x_2 + x_3 = 0 \to x_2 = -x_3$$
 
 $$\therefore 4x_1 = +4x_2 + 2x_3 = -4x_3 + 2x_3 = -2x_3.$$
 

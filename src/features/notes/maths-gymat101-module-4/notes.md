@@ -8,7 +8,7 @@
 
 If a function $f(x)$ has derivatives of all orders at the point $x=x_0$, then the Taylor series for $f$ at $x_0$ is given by
 
-$$f(x_0) + f'(x_0)(x-x_0) + rac{f''(x_0)}{2!}(x-x_0)^2 + \dots = \sum_{K=0}^{\infty} \frac{f^K(x)}{K!} (x-x_0)^K$$
+$$f(x_0) + f'(x_0)(x-x_0) + \frac{f''(x_0)}{2!}(x-x_0)^2 + \dots = \sum_{K=0}^{\infty} \frac{f^K(x)}{K!} (x-x_0)^K$$
 
 The case when $x_0 = 0$, then the series become
 
@@ -181,7 +181,7 @@ If $f(x)$ is a periodic function with period $2L$, satisfying the Dirichlet cond
 
 then the Fourier series of $f(x)$ in the interval $[c, c+2L]$ is
 
-$$S(x) = a_0 + rac{n=1}{\sum}^{\infty} \left[a_n \cos\left(\frac{n\pi x}{L}\right) + b_n \sin\left(\frac{n\pi x}{L}\right)\right]$$
+$$S(x) = a_0 + \frac{n=1}{\sum}^{\infty} \left[a_n \cos\left(\frac{n\pi x}{L}\right) + b_n \sin\left(\frac{n\pi x}{L}\right)\right]$$
 
 where 
 
@@ -289,7 +289,7 @@ $$\begin{aligned}
 
 <!-- page 12 | Page 12 -->
 
-Q. Find the Fourier series of $x - x^2$ in the interval $(-rac{\pi}{1}, \pi)$ [uncertain: $(-\pi, \pi)$]. Hence evaluate $\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \dots$
+Q. Find the Fourier series of $x - x^2$ in the interval $(-\frac{\pi}{1}, \pi)$ [uncertain: $(-\pi, \pi)$]. Hence evaluate $\frac{1}{1^2} - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \dots$
 
 Ans:
 $$S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos(nx) + b_n \sin(nx).$$
@@ -361,7 +361,7 @@ Hence evaluate
 
 <!-- page 15 | Page 15 -->
 
-Case-2: $2L = 2rac{1}{2}$? no, $2L = 2\pi$ and $c=0$.
+Case-2: $2L = 2\frac{1}{2}$? no, $2L = 2\pi$ and $c=0$.
 
 Fourier series of $f(x)$ in the interval $[0, 2\pi]$ is
 
@@ -712,7 +712,7 @@ $$
 
 Fourier series is,
 
-$$S(x) = a_0 + rac{9}{n^2\pi^2} \dots$$
+$$S(x) = a_0 + \frac{9}{n^2\pi^2} \dots$$
 
 $$S(x) = a_0 + \sum_{n=1}^{\infty} \left[a_n \cos \frac{2n\pi x}{3} + b_n \sin \frac{2n\pi x}{3}\right]$$
 
@@ -966,7 +966,7 @@ $$
 
 When $n = 1$,
 
-$$a_1 = rac{2}{rac{\pi}} \int_0^{\pi} x \sin x \cos x \, dx = \frac{1}{\pi} \int_0^{\pi} x \sin 2x \, dx$$
+$$a_1 = \frac{2}{\frac{\pi}} \int_0^{\pi} x \sin x \cos x \, dx = \frac{1}{\pi} \int_0^{\pi} x \sin 2x \, dx$$
 $$\phantom{a_1} = \frac{1}{\pi} \left[ x \left( \frac{-\cos 2x}{2} \right) - 1 \left( \frac{-\sin 2x}{4} \right) \right]_0^{\pi}$$
 $$\phantom{a_1} = \frac{1}{\pi} \left( -\frac{\pi \cos 2\pi}{2} + 0 - (0 + 0) \right) = -\frac{1}{2}$$
 

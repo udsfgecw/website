@@ -264,7 +264,7 @@ $$\omega = \frac{1.2}{\sqrt{0.253^2 - 0.1^2}} = 5.16\text{ rad/s}$$
 
 <!-- page 10 | Page 10 -->
 
-Time period, $T = rac{2\pi}{\omega} = rac{2\pi}{5.16}$
+Time period, $T = \frac{2\pi}{\omega} = \frac{2\pi}{5.16}$
 
 $T = 1.21\text{ s}$
 
@@ -324,7 +324,7 @@ From extreme position, $x = a\cos\omega t$
 
 <!-- page 12 | Page 12 -->
 
-$$x = a rac{}{} \cos \left(\frac{2\pi}{T} \times t \times \frac{180}{\pi}\right) = 1 \times \cos(1 \times 0.4 \times 180) = \cos(72)$$ 
+$$x = a \frac{}{} \cos \left(\frac{2\pi}{T} \times t \times \frac{180}{\pi}\right) = 1 \times \cos(1 \times 0.4 \times 180) = \cos(72)$$ 
 
 $$= 0.309\text{ m}$$
 
@@ -389,10 +389,10 @@ Note:-
 
 centre of motion / Mean position
 
-Velocity, $V_{	ext{max}} = a
+Velocity, $V_{\text{max}} = a
 u$
 
-$$\frac{1}{2} V_{	ext{max}} = \frac{a\omega}{2}$$
+$$\frac{1}{2} V_{\text{max}} = \frac{a\omega}{2}$$
 
 We know, $V = \omega\sqrt{a^2 - x^2}$
 
@@ -485,9 +485,9 @@ $$\text{Frequency expressed in Hertz } / \underset{(\text{cps})}{\text{cycles pe
 
 $$f_n = 1$$
 
-$$f_n = rac{1}{2\pi} \sqrt{\frac{K}{m}}$$
+$$f_n = \frac{1}{2\pi} \sqrt{\frac{K}{m}}$$
 
-$$1 = rac{1}{2\pi} \sqrt{\frac{K}{5.096}} \quad k \rightarrow \text{stiffness}$$
+$$1 = \frac{1}{2\pi} \sqrt{\frac{K}{5.096}} \quad k \rightarrow \text{stiffness}$$
 
 $$1^2 = \frac{1}{4\pi^2} \frac{K}{5.096}$$
 

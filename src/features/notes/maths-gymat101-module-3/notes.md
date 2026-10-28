@@ -44,7 +44,7 @@ $L[e^{at} t^n] = \frac{n!}{(s-a)^{n+1}}$
 
 <!-- page 4 | Page 4 -->
 
-2. $L(e^{at} 	ext{sin } bt) = \frac{b}{(s-a)^2 + b^2}$
+2. $L(e^{at} \text{sin } bt) = \frac{b}{(s-a)^2 + b^2}$
 
 3. $L(e^{at} \sinh bt) = \frac{b}{(s-a)^2 - b^2}$
 
@@ -149,7 +149,7 @@ $$2 \sin A \cos B = \sin(A+B) + \sin(A-B)$$
 
 <!-- page 9 | Page 9 -->
 
-11) $e^{-4t} - 6t^2 + 4	ext{ sin } 2t$
+11) $e^{-4t} - 6t^2 + 4\text{ sin } 2t$
 
 $$\frac{1}{s+4} - 6 \times \frac{2!}{s^3} + 4 \times \frac{2}{s^2+4}$$
 
@@ -213,7 +213,7 @@ $$= 2\pi e^{-\pi t} t/1! = 2\pi t e^{-\pi t}$$
 
 <!-- page 13 | Page 13 -->
 
-$$\frac{2}{s^4} - rac{48}{s^6}$$
+$$\frac{2}{s^4} - \frac{48}{s^6}$$
 
 $$L^{-1}\left(\frac{2}{s^4} - \frac{48}{s^6}\right)$$
 
@@ -508,7 +508,7 @@ $$B = \underline{\underline{-4}}$$
 
 <!-- page 29 | Page 29 -->
 
-$$\frac{9s+18}{(s-2)(s+1)^2} = rac{4}{s+2} + \frac{-4}{s+1} + \frac{-3}{(s+1)^2}$$
+$$\frac{9s+18}{(s-2)(s+1)^2} = \frac{4}{s+2} + \frac{-4}{s+1} + \frac{-3}{(s+1)^2}$$
 
 $$\mathcal{L}^{-1}\left[\frac{9s+18}{(s-2)(s+1)^2}\right] = 4 \mathcal{L}^{-1}\left[\frac{1}{s+2}\right] - 4 \left[\frac{1}{s+1}\right] - 3 \left[ \dots \right]$$
 
@@ -726,15 +726,15 @@ $$y'' + 2y' + y = e^{-t}$$
 
 $$L[y'' + 2y' + y] = e^{-t}$$
 
-$$s^2 ar{y} - sy(0) - y'(0) + 2[sar{y} - y(0)] + ar{y} = L[e^{-t}]$$
+$$s^2 \bar{y} - sy(0) - y'(0) + 2[s\bar{y} - y(0)] + \bar{y} = L[e^{-t}]$$
 
-$$s^2 ar{y} - s 	imes 0 - 1 + 2sar{y} - 2 	imes 0 + ar{y} = rac{1}{s+1}$$
+$$s^2 \bar{y} - s \times 0 - 1 + 2s\bar{y} - 2 \times 0 + \bar{y} = \frac{1}{s+1}$$
 
-$$(s^2 + 2s + 1)ar{y} = rac{1}{s+1} + 1$$
+$$(s^2 + 2s + 1)\bar{y} = \frac{1}{s+1} + 1$$
 
-$$rac{1+s+1}{s+1} = rac{s+2}{s+1}$$
+$$\frac{1+s+1}{s+1} = \frac{s+2}{s+1}$$
 
-$$ar{y} = rac{s+2}{(s+1)(s^2 + 2s + 1)}$$
+$$\bar{y} = \frac{s+2}{(s+1)(s^2 + 2s + 1)}$$
 
 <!-- page 39 | Page 39 -->
 

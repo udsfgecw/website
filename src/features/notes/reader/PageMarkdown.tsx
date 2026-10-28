@@ -14,6 +14,7 @@ import python from "highlight.js/lib/languages/python";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import remarkProblemCards from "./remarkProblemCards";
+import remarkUnderline from "./remarkUnderline";
 import CodeBlock from "./CodeBlock";
 import IdentityGraph from "./IdentityGraph";
 import PlotFigure, { type PlotSpec } from "./PlotFigure";
@@ -23,13 +24,13 @@ import LineProjectionFigure from "./graphics/LineProjectionFigure";
 import { module3DiagramDimensions } from "../python-module-3/diagramDimensions";
 import { module4DiagramDimensions } from "../python-module-4/diagramDimensions";
 
-const plainRemarkPlugins = [remarkGfm];
-const mathRemarkPlugins = [remarkGfm, remarkMath];
-const plainProblemPlugins = [remarkGfm, remarkProblemCards];
-const mathProblemPlugins = [remarkGfm, remarkMath, remarkProblemCards];
+const plainRemarkPlugins = [remarkGfm, remarkUnderline];
+const mathRemarkPlugins = [remarkGfm, remarkMath, remarkUnderline];
+const plainProblemPlugins = [remarkGfm, remarkUnderline, remarkProblemCards];
+const mathProblemPlugins = [remarkGfm, remarkMath, remarkUnderline, remarkProblemCards];
 const numberedProblemCards: [typeof remarkProblemCards, { numberedProblems: boolean }] = [remarkProblemCards, { numberedProblems: true }];
-const plainNumberedProblemPlugins = [remarkGfm, numberedProblemCards];
-const mathNumberedProblemPlugins = [remarkGfm, remarkMath, numberedProblemCards];
+const plainNumberedProblemPlugins = [remarkGfm, remarkUnderline, numberedProblemCards];
+const mathNumberedProblemPlugins = [remarkGfm, remarkMath, remarkUnderline, numberedProblemCards];
 const mathPlugins: NonNullable<Parameters<typeof ReactMarkdown>[0]["rehypePlugins"]> = [
   [rehypeKatex, { strict: false }],
 ];

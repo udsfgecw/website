@@ -289,7 +289,7 @@ $$\frac{4 \times 3^3}{3} - \frac{3 \times 3^2}{2} + 6 + C_1 = 10$$
 
 <!-- page 11 | Page 11 -->
 
-Now the expression for velocity becomes. $V = rac{4t^3}{3} - rac{3t^2}{2} + 2t - 18.5$
+Now the expression for velocity becomes. $V = \frac{4t^3}{3} - \frac{3t^2}{2} + 2t - 18.5$
 
 Velocity at $t = 10\text{ s}$:
 $$V = \frac{4 \times 10^3}{3} - \frac{3}{2} \times 10^2 + 20 - 18.5 = 1184.83\text{ m/s}$$

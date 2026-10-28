@@ -214,7 +214,7 @@ _**De- chlorination**_
 
 The amount of free chlorine required for continuing further disinfection is 0.1-0.2 ppm. If over chlorination occurs, excess chlorine can be removed by passing the water through molecular sieve or by stirring it with activated carbon followed by filtration. Excess chlorine can be removed by adding dechlorinating agents like $\text{SO}_2$, $\text{Na}_2\text{SO}_3$, sodium thiosulphate, etc.
 
-**2 ) _Addition of chlroamine ($	ext{ClNH}_2$)_**
+**2 ) _Addition of chlroamine ($\text{ClNH}_2$)_**
 
 Chlorine on reaction with ammonia produces $\text{ClNH}_2$.
 

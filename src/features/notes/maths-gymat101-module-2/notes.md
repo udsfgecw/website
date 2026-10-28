@@ -137,7 +137,7 @@ $$y'' - y = 0,
 oy(0) = 6, 
 oy'(0) = -2.$$
 
-Solution.	~~$y_1 = e^x$~~
+Solution.\t~~$y_1 = e^x$~~
 $$y'' - y = 0 \quad \text{---} \quad (1).$$
 
 Consider $y_1 = e^x$.
@@ -470,9 +470,9 @@ $$\therefore y = \cancel{3+} (3 - 2x)e^{-0.5x}$$
 ## Nonhomogeneous ODE
 
 Consider,
-$$y'' + p(x)y' + q(x)y = r(x) 	ag{1}$$
+$$y'' + p(x)y' + q(x)y = r(x) \tag{1}$$
 is a nonhomogeneous linear ODE, whose corresponding homogeneous ODE is
-$$y'' + p(x)y' + q(x)y = 0 	ag{2}$$
+$$y'' + p(x)y' + q(x)y = 0 \tag{2}$$
 
 ### Definition: General solution, Particular solution.
 
@@ -485,7 +485,7 @@ A particular solution of (1) on $I$ is a solution obtained from (3) by assigning
 ### Method of undetermined coefficients.
 
 Consider a nonhomogeneous linear ODE with constant coefficients $a$ & $b$,
-$$y'' + ay' + by = r(x) 	ag{3}$$
+$$y'' + ay' + by = r(x) \tag{3}$$
 where $r(x)$ is an exponential function, a power of $x$, a cosine, or sine, or sums or products of such functions.
 
 <!-- page 17 | Page 17 -->
@@ -854,7 +854,7 @@ $$\therefore \text{Solution is, } y = y_h + y_p = (c_1 + c_2 x) e^{-2x} + \frac{
 
 <!-- page 28 | Page 28 -->
 
-6). $y'' + 4y = 	ext{cos } 2x$.
+6). $y'' + 4y = \text{cos } 2x$.
 
 ans: $y'' + 4y = 0$
 
@@ -1204,7 +1204,7 @@ $$ y = e^x (c_1 \cos 2x + c_2 \sin 2x) - \frac{1}{4} e^x \cos 2x \ln|\sec 2x + \
 
 <!-- page 35 | Page 35 -->
 
-4). Solve $y'' + 2y' + y = 4e^{-x} \	imes \log x$.
+4). Solve $y'' + 2y' + y = 4e^{-x} \\times \log x$.
 
 Ans:
 $$y'' + 2y' + y = 0$$

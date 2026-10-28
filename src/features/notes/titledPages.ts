@@ -14,6 +14,7 @@ export function titledPages(source: string): { pages: NotesPage[]; chapters: Cha
   const chapters = sections.flatMap(({ number, content }) => {
     const headings = [...content.matchAll(/^(#{1,4})\s+(.+)$/gm)].map((match) => {
       let title = match[2]
+        .replace(/<\/?u>/gi, "")
         .replace(/\*\*/g, "")
         .replace(/\*/g, "")
         .replace(/`/g, "")
