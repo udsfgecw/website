@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Syllabus – Module4 -->
 
 # Syllabus – Module4
@@ -18,11 +16,7 @@ Soil-Origin of soil-weathering of rocks, types of weathering
 
 <!-- page 3 | Page 3 -->
 
-[Non-content page]
-
 <!-- page 4 | Page 4 -->
-
-[Non-content page]
 
 <!-- page 5 | Bricks -->
 
@@ -97,20 +91,9 @@ v. Magnesia <2%
 
 * Unburnt bricks are dried under sunlight & used for temporary and cheap constructions
 
+![Unburnt bricks laid in rows to dry in sunlight](/assets/notes/me/s1/ime-ice/module-4/unburnt-bricks-drying.webp)
 
-
-> **Figure: Photo showing unburnt bricks laid out in rows for drying under sunlight.**
->
-> A photograph showing long rows of unburnt rectangular bricks laid out on the ground in an open field to dry under the sunlight, with stacks in the background.
-
-
-
-
-> **Figure: Photo of an industrial machine and conveyor belt for brick manufacturing.**
->
-> A photograph of an industrial setup featuring a blue metal machine frame, a conveyor system, and rows of molded bricks on wooden pallets.
-
-
+![Machine and conveyor belt for brick manufacturing](/assets/notes/me/s1/ime-ice/module-4/brick-manufacturing-machine.webp)
 
 * First class bricks
   * Machine moulded or table moulded & well burnt in kilns
@@ -125,11 +108,7 @@ v. Magnesia <2%
   * Water absorption not greater than 22%
   * Used for internal walls & should be plastered
 
-
-
-> **Figure: Photo of a person hand-moulding bricks on a table.**
->
-> A photograph showing a worker manually pressing clay into a wooden mould on a work table.
+![A person hand-moulding bricks on a table](/assets/notes/me/s1/ime-ice/module-4/hand-moulding-bricks.webp)
 
 <!-- page 10 | Bricks contd -->
 
@@ -177,31 +156,13 @@ xi. Bull nose bricks – used where sharp corners of the wall are not required
 xii. Hollow block bricks – made with 6mm coarse aggregates, cement and sand – hollow spaces inside – compound wall construction
 xiii. Solid block bricks– made with 6mm coarse aggregates, cement & sand – construction of multi storied structures
 
-
-
-> **Figure: Photograph of a coping brick**
->
-> A photograph of a coping brick against a black background showing its extruded profile with hollow internal chambers.
-
-
+![Coping brick](/assets/notes/me/s1/ime-ice/module-4/coping-brick.webp)
 
 Coping brick
 
+![Hollow, perforated, bull nose, cow nose, chequered and coping bricks](/assets/notes/me/s1/ime-ice/module-4/special-bricks.webp)
 
-
-> **Figure: Line drawings of various special bricks labeled a to e**
->
-> Line illustrations of special bricks arranged in a grid: a) Hollow brick, b) Perforated brick, c) Bull nose brick, d) Cow nose brick, e) Chequered brick, and another e) Coping bricks.
-
-
-
-
-
-> **Figure: Photograph of a channel brick**
->
-> A photograph of a channel brick against a black background showing its distinctive cross-section profile with a central channel and vertical fins.
-
-
+![Channel brick](/assets/notes/me/s1/ime-ice/module-4/channel-brick.webp)
 
 Channel brick
 
@@ -545,13 +506,7 @@ v. Strength – a thick paste of cement with water is made on a piece of thick g
 
 Tests contd
 
-
-
-> **Figure: Diagram of a Vicat apparatus showing parts such as movable rod, cap, indicator, frame, plunger, needles, cylindrical mould, and non-porous plate with detailed dimensions.**
->
-> Technical diagram of the Vicat apparatus. At the top is a 'Cap' attached to a 'Movable Rod'. Below it is a vertical frame labelled 'Frame'. On the side is an 'Indicator' pointing to a scale. A 'Plunger' for consistency is shown separately on the left with dimensions 10 mm Dia. and 50 mm height. On the right, a 'Needle for Final Setting' is shown with detailed dimensions including 3.30 mm, 1 mm Square, Air Vent, 0.50 mm, 6.40 mm, and 5 mm. At the bottom, a 'Cylindrical' specimen inside a 'Mould' of height 40 mm and width 80 mm rests on a 'Seat' and a 'Non-porous Plate'.
-
-
+![Vicat apparatus with cap, movable rod, indicator, frame, plunger, needle and mould](/assets/notes/me/s1/ime-ice/module-4/vicat-apparatus.webp)
 
 Vicat apparatus
 
@@ -576,13 +531,7 @@ iv. **Setting time test - initial and final setting times**
 
 v. Tensile strength test
 
-
-
-> **Figure: Diagram of a standard briquette showing Elevation, Plan, and dimensions in millimeters.**
->
-> Engineering drawing of a standard briquette with an Elevation view on top and a Plan view below. The top view (Elevation) is a rectangle with height dimension 25.4 mm on the right. The Plan view shows a dog-bone shaped briquette with multiple dimension labels: width 38.10 mm on the left and right ends, 25.4 mm vertical dimension at the center neck, 50.80 mm middle section width, 12.70 mm end projection, 76.20 mm overall length, and 44.50 mm total height.
-
-
+![Diagram of a standard briquette showing Elevation, Plan, and dimensions in millimeters.](/assets/notes/me/s1/ime-ice/module-4/standard-briquette.svg)
 
 * Cement mortar in the ratio 1:3 is prepared and filled in 12 briquette moulds
 * Briquettes are removed from moulds after 24 hours and submerged in water for curing
@@ -608,18 +557,9 @@ v. Tensile strength test
 - Classified into two: fine aggregates & coarse aggregates
 - As per IS 383:1963, **fine aggregates** are aggregates which passes through 4.75mm IS sieve, ie, size less than 4.75mm & **coarse aggregates** are aggregates which retained on 4.75mm IS sieve, ie, size greater than 4.75mm
 
+![Heap of fine sand aggregate](/assets/notes/me/s1/ime-ice/module-4/fine-sand-heap.webp)
 
-
-> **Figure: Heap of fine sand aggregate**
->
-> A conical pile of fine brownish-tan sand serving as an example of fine aggregates.
-
-
-
-
-> **Figure: Pile of coarse crushed stone aggregates**
->
-> A collection of angular grey crushed stones serving as an example of coarse aggregates.
+![Pile of coarse crushed stone aggregate](/assets/notes/me/s1/ime-ice/module-4/crushed-stone-pile.webp)
 
 <!-- page 37 | Aggregates -->
 
@@ -628,11 +568,7 @@ v. Tensile strength test
 - **Fineness modulus** of an aggregate is an index number which is roughly proportional to the average size of the particles in the aggregate
 - Fineness modulus is determined by **sieve analysis**
 
-
-
-> **Figure: Sieve analysis stack showing multiple sieves of decreasing mesh size and a collection pan at the bottom**
->
-> A vertical stack of cylindrical sieves arranged in decreasing order of mesh size from top to bottom. A blue vertical arrow on the left points downwards, labeled 'Larger Mesh' near the top and 'Fine Mesh' near the bottom. To the right of the stack, groups of particles of decreasing sizes are shown corresponding to each sieve level, ending with a collection 'Pan' at the bottom.
+![Stack of sieves of decreasing mesh size with a pan at the bottom](/assets/notes/me/s1/ime-ice/module-4/sieve-analysis-stack.webp)
 
 <!-- page 38 | Aggregates contd -->
 
@@ -647,11 +583,7 @@ v. Tensile strength test
   * from 2.00 to 4.00 for fine aggregates
   * from 6.50 to 8.00 for coarse aggregates
 
-
-
-> **Figure: Comparison between Well Graded and Poorly Graded aggregate particle packing**
->
-> Two circular diagrams illustrating particle packing. The left diagram is labeled 'Well Graded' showing a dense packing of mixed large and small circles. The right diagram is labeled 'Poorly Graded' showing a loose packing of similarly-sized circles with large voids between them.
+![Comparison between Well Graded and Poorly Graded aggregate particle packing](/assets/notes/me/s1/ime-ice/module-4/well-vs-poorly-graded-packing.svg)
 
 <!-- page 39 | Sand -->
 
@@ -682,18 +614,9 @@ v. Tensile strength test
 - It should be chemically inert
 - It should be strong and durable
 
+![Sand dunes in a desert](/assets/notes/me/s1/ime-ice/module-4/sand-dunes.webp)
 
-
-> **Figure: Sand dunes in a desert landscape**
->
-> A photograph showing a vast desert landscape with rolling sand dunes under a clear sky.
-
-
-
-
-> **Figure: A conical pile of construction sand**
->
-> A photograph of a small heap of brown construction sand piled on a white background.
+![Conical pile of construction sand](/assets/notes/me/s1/ime-ice/module-4/conical-sand-pile.webp)
 
 <!-- page 41 | Sand contd -->
 
@@ -723,8 +646,6 @@ v. Tensile strength test
 
 <!-- page 43 | Page 43 -->
 
-[Non-content page]
-
 <!-- page 44 | Timber contd -->
 
 # Timber contd
@@ -749,11 +670,7 @@ v. Tensile strength test
 * **Log** – trunk of tree obtained after removing branches
 * **Plank** – thickness less than 50mm & width exceeds 50mm with parallel sides
 
-
-> **Figure: Photographs showing sawn timber logs and stacked squared timber beams.**
->
-> Two photographic insets placed side-by-side at the bottom right. The left photo shows several long, roughly squared timber logs resting on a concrete or dirt ground. The right photo shows a large stack of round tree logs piled up in an outdoor environment with trees in the background.
-
+![Sawn timber logs and stacked squared timber](/assets/notes/me/s1/ime-ice/module-4/sawn-timber.webp)
 
 * **Pole** – long log of wood
 * **Quartering** – square piece of timber
@@ -770,32 +687,13 @@ v. Tensile strength test
   - **Impreg timbers** – timbers fully or partly covered with resin; not affected by moisture; used for furniture, decorative articles
   - **Compreg timbers** - same as impreg timbers, but strong & durable
 
+![Roll of wood veneer](/assets/notes/me/s1/ime-ice/module-4/wood-veneer-roll.webp)
 
+![Stack of plywood sheets](/assets/notes/me/s1/ime-ice/module-4/plywood-sheets.webp)
 
-> **Figure: Roll of wood veneer**
->
-> A close-up photograph of a thin, curved sheet of wood veneer showing wood grain pattern.
+![Stack of fibreboard panels](/assets/notes/me/s1/ime-ice/module-4/fibreboard-panels.webp)
 
-
-
-
-> **Figure: Stack of plywood sheets**
->
-> A photograph showing a stack of multiple layered plywood boards tilted to display their laminated edges.
-
-
-
-
-> **Figure: Stack of fibreboard panels**
->
-> A photograph showing a neatly stacked pile of rigid fibreboard panels.
-
-
-
-
-> **Figure: Flat panel of manufactured wood**
->
-> A photograph of a single flat rectangular panel of manufactured wood viewed from an angle.
+![Flat panel of manufactured wood](/assets/notes/me/s1/ime-ice/module-4/manufactured-wood-panel.webp)
 
 <!-- page 47 | Timber contd -->
 
@@ -840,11 +738,7 @@ v. Tensile strength test
 - Should be **hard**
 - Should not deteriorate easily due to **mechanical wear**
 
-
-
-> **Figure: Cross sections of timber showing different types of shakes: Star Shake, Ring Shake, and Heart Shake**
->
-> Three circular cross-sections of tree trunks illustrating wood defects. The first trunk on the left is labeled 'Star Shake' and shows radial cracks widening towards the center. The middle trunk is labeled 'Ring Shake' and shows circular cracks along the growth rings. The right trunk is labeled 'Heart Shake' and shows large radial cracks originating from the center (heart) of the log.
+![Cross sections of timber showing different types of shakes: Star Shake, Ring Shake, and Heart Shake](/assets/notes/me/s1/ime-ice/module-4/timber-shakes.svg)
 
 <!-- page 50 | Timber contd -->
 
@@ -871,11 +765,7 @@ v. Tensile strength test
 - Used for door and window frames, shutters of doors and windows, roofing materials, etc
 - Used for framework of cement concrete, centering, shuttering, scaffolding, etc
 
-
-> **Figure: Stacked timber logs**
->
-> A photograph showing a neatly stacked stack of dark-colored timber logs outdoors. The text 'Used Dutch Oak Tunnel Top grade' appears at the bottom right of the image.
-
+![Stacked timber logs](/assets/notes/me/s1/ime-ice/module-4/stacked-timber-logs.webp)
 
 - Used for making furniture, agricultural instruments, sport goods, musical instruments, etc
 - Used for making railway coach wagons
@@ -919,11 +809,7 @@ ii. Compressive strength test
 * Finally, calculate the tensile strength
 * Tensile strength = Maximum load applied / Cross sectional area
 
-
-
-> **Figure: Diagram of tension test of timber showing testing apparatus and specimen**
->
-> Black and white diagram titled 'TENSION TEST OF TIMBER'. It shows a timber specimen held in a testing machine between upper and lower grips. Labels point to 'Timber' at the specimen in the middle, and 'Apparatus for tension test parallel to surface' at the bottom right base.
+![Tension test of timber showing the testing apparatus and specimen](/assets/notes/me/s1/ime-ice/module-4/timber-tension-test.webp)
 
 <!-- page 54 | Cement concrete(CC) -->
 
@@ -973,11 +859,7 @@ ii. Compressive strength test
 
 <!-- page 57 | Page 57 -->
 
-[Non-content page]
-
 <!-- page 58 | Page 58 -->
-
-[Non-content page]
 
 <!-- page 59 | Cement concrete contd -->
 
@@ -1018,21 +900,9 @@ Cement concrete contd
 
 # Slump test
 
+![Person measuring the slump of a concrete cone](/assets/notes/me/s1/ime-ice/module-4/slump-test-measuring.webp)
 
-
-> **Figure: Measuring slump test illustration showing a person measuring the height of a slumped concrete cone next to the slump cone mold.**
->
-> An illustration showing a person measuring the slump of a concrete sample. A tapered metal mold with handles is shown on the right (labeled 20 cm dia at the bottom), and next to it on the left is the slumped concrete cone. A measuring rod is placed horizontally across the top of the mold to measure the slump against a vertical scale. Dimensions indicated include 30 cm height and 20 cm dia at the base.
-
-
-
-
-
-> **Figure: Slump test for workability of concrete diagram with dimensions.**
->
-> A technical diagram of the slump test showing a frustum cone lifted above the concrete mass. Dimensions labeled are 30 cm height, 20 cm top diameter (or bottom diameter as per standard), and 30 cm bottom diameter. The text at the bottom reads 'Slump test for workability of concrete'.
-
-
+![Slump test for workability of concrete with dimensions](/assets/notes/me/s1/ime-ice/module-4/slump-test-dimensions.webp)
 
 ## Limitations of slump test
 
@@ -1075,13 +945,7 @@ Cement concrete contd
 
 ## Compressive strength test
 
-
-
-> **Figure: Equipment and samples for compressive strength test of concrete**
->
-> Four items are shown from left to right: 1. Compression Testing Machine (a tall green frame with hydraulic loading setup). 2. Control unit console for the testing machine. 3. 15 cm Cube Mould (a blue metallic split mould for casting concrete cubes). 4. Concrete Cube (a cured solid grey concrete cube sample).
-
-
+![Compression testing machine, control unit, 15 cm cube mould and concrete cube](/assets/notes/me/s1/ime-ice/module-4/compressive-strength-equipment.webp)
 
 Compression Testing Machine 15 cm Cube Mould Concrete Cube
 
@@ -1101,13 +965,13 @@ Compressive strength of different concrete grades is given below
 
 The strength of concrete increases with age. The strength of concrete at different ages in comparison with the strength at 28 days is shown below
 
-
-
-> **Figure: Table showing age vs strength percent of concrete**
->
-> A table with two columns: Age and Strength percent. The rows list 1 day (16%), 3 days (40%), 7 days (65%), 14 days (90%), and 28 days (99%).
-
-
+| Age | Strength (% of 28-day strength) |
+| --- | --- |
+| 1 day | 16% |
+| 3 days | 40% |
+| 7 days | 65% |
+| 14 days | 90% |
+| 28 days | 99% |
 
 | Age | Strength percent |
 | --- | --- |
@@ -1162,13 +1026,7 @@ x. **Pre-cast concrete** : Factory made products like pipes, posts
 - The steel wires are stretched initially to produce the desired strength
 - After the tendons are cut off from the anchor posts, the tensioned tendons try to shorten, thus induce the stresses to the concrete & it is prestressed
 
-
-
-> **Figure: Diagram showing three stages of pre-stressing concrete: (a) tendons stressed between abutments, (b) concrete cast and cured, and (c) tendons released and prestress transferred.**
->
-> Three sequential schematic diagrams labeled (a), (b), and (c) showing the pre-stressing process. Diagram (a) shows 'Tendons stressed between abutments' with horizontal lines representing tendons between anchor posts. Diagram (b) shows 'Concrete cast and cured' with a concrete block enclosing the tendons. Diagram (c) shows 'Tendons released and prestress transferred' where the concrete member undergoes upward camber (bending upwards) as the stress is transferred from the tendons.
-
-
+![Pre-stressing: tendons stressed between abutments, concrete cast and cured, tendons released](/assets/notes/me/s1/ime-ice/module-4/prestressing-stages.webp)
 
 - **Less steel is used**
 - **Self weight or dead load is less**
@@ -1259,15 +1117,9 @@ x. **Pre-cast concrete** : Factory made products like pipes, posts
 * Round bars
 * Square bars
 
-
-
-> **Figure: Table of steel sections available in market showing various profiles**
->
-> An image showing various steel sections available in the market arranged in a grid with 5 columns and 3 rows, accompanied by the title 'Steel sections available in market.'. Row 1 shows: Flat bar, Angle, Round, Hexagon, Sheet/Plate. Row 2 shows: Channel, Wide flange beam, Standard/I beam, Square/rect. tubing, Pipe/round tubing. Row 3 shows: Tee bar, Half round, Half oval, Champfer bar, Rebar.
+![Steel sections available in the market: flat bar, angle, round, hexagon, sheet, channel, beams, tubing, tee bar, half round, rebar](/assets/notes/me/s1/ime-ice/module-4/steel-sections-market.webp)
 
 <!-- page 75 | Page 75 -->
-
-[Non-content page]
 
 <!-- page 76 | Steel contd -->
 
@@ -1281,11 +1133,7 @@ x. **Pre-cast concrete** : Factory made products like pipes, posts
 - **Plain bars** are round sections used in RCC – Grade Fe 250
 - **Tor steel** is having small projections or ribs due to which interlocking between concrete & steel is possible or better bonding is possible
 
-
-> **Figure: Photograph of Tor steel bars showing ribs and projections**
->
-> A close-up photograph of several ribbed steel reinforcing bars (Tor steel) bundled together diagonally on a dark surface.
-
+![Tor steel bars showing ribs and projections](/assets/notes/me/s1/ime-ice/module-4/tor-steel-bars.webp)
 
 - Available in 2 forms: Fe 415 & Fe 500 ([illegible]
   **Tensile or Yield strength in N/mm2**
@@ -1328,13 +1176,7 @@ Describe the various forms of structural steel available in the market with neat
 - Soil may be considered as an incidental material obtained from the geologic cycle which goes on continuously in nature
 - The geologic cycle consists of erosion, transportation, deposition and upheaval of soil
 
-
-
-> **Figure: Diagram of the Geologic Cycle showing erosion, transportation, deposition, and upheaval phases along a terrain profile.**
->
-> A line diagram representing the geologic cycle. A solid curved line shows the terrain profile, starting with a mountain peak labelled with a downward arrow and 'Erosion', followed by a downward sloping path labelled 'Transportation' with directional arrows. This leads to a valley section labelled 'Deposition' with horizontal arrows, followed by a rising slope labelled 'Upheaval' with an upward curved arrow. A dashed arc line connects the peak and the upheaval section. The figure is labelled 'Fig. 1.8. Geologic Cycle.' at the bottom.
-
-
+![Diagram of the Geologic Cycle showing erosion, transportation, deposition, and upheaval phases along a terrain profile.](/assets/notes/me/s1/ime-ice/module-4/geologic-cycle.svg)
 
 Fig. 1.8. Geologic Cycle.
 
@@ -1460,4 +1302,3 @@ III. Classification based on grain size
 
 <!-- page 89 | Page 89 -->
 
-[Non-content page]

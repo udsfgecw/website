@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | INTRODUCTION TO CIVIL ENGINEERING -->
 
 # INTRODUCTION TO CIVIL ENGINEERING
@@ -289,22 +287,13 @@ Typically a building consists of three important components:
 2. Plinth
 3. Super structure
 
-
-
-> **Figure: Cross section diagram of a building showing its various components from foundation to parapet.**
->
-> Cross-sectional engineering drawing of a building showing structural and non-structural components. Labels pointing to various parts include: Weathering Course, Parapet, Roof Slab, Wall, Lintel, Sunshade, Door, Sand Filling, Floor Finish, Floor Concrete, Plinth (Basement), Step, Ground Level, Foundation Footing, and Foundation Concrete.
-
+![Cross section diagram of a building showing its various components from foundation to parapet.](/assets/notes/me/s1/ime-ice/module-3/building-cross-section.svg)
 
 *Fig. 9.1 Components of a building*
 
 <!-- page 12 | Page 12 -->
 
-> **Figure: Components of a building cross-section diagram**
->
-> A cross-section diagram of a building showing various components labeled with arrows. On the left side from top to bottom: Weathering course, Coping, Parapet wall, R.C.C. roof slab, Ceiling, Lintel, Watershed or chhajja, Window, Window sill level, Brick wall, Damp proof course, Flooring, G.L., Footing. In the center: Window, Door, Sand filling, Base concrete (P.C.C.). On the right side: Superstructure, Plinth level, G.L., Foundation or substructure, Foundation bed level. At the bottom center, the title reads 'Components of a building'.
-
-
+![Components of a building cross-section diagram](/assets/notes/me/s1/ime-ice/module-3/building-section-labelled.svg)
 
 **1. Sub-structure or Foundation**
 
@@ -550,13 +539,7 @@ Building regulations are framed based on NBC guidelines to suit the town and cou
 * Building rules ensures quality and safety in construction
 * It provide a legal base to authorized constructions and also for tax collecting authorities like local body institutions and revenue authorities
 
-
-
-> **Figure: Timeline showing the evolution of Kerala Building Rules from 1964 to 2019**
->
-> A horizontal sequence of five chevron-shaped arrows pointing right, each preceded by a circular badge representing a year and containing text. From left to right: 1. Circle with '1964' pointing to an arrow labeled 'KBR'. 2. Circle with '1984' pointing to an arrow labeled 'KBR (Revised)'. 3. Circle with '1999' pointing to an arrow labeled 'KMBR'. 4. Circle with '2011' pointing to an arrow labeled 'KMBR KPBR'. 5. Circle with '2019' pointing to an arrow labeled 'KMBR DMEN TS'.
-
-
+![Timeline showing the evolution of Kerala Building Rules from 1964 to 2019](/assets/notes/me/s1/ime-ice/module-3/kerala-building-rules-timeline.svg)
 
 ### BUILDING AREA TERMS
 
@@ -567,4 +550,3 @@ Building regulations are framed based on NBC guidelines to suit the town and cou
 
 <!-- page 19 | Page 19 -->
 
-[Non-content page]

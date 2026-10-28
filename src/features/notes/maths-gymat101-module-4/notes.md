@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Module-4: -->
 
 # Module-4:
@@ -457,13 +455,7 @@ $$S(x) = a_{0} + \sum_{n=1}^{\infty} [a_{n} \cos nx + b_{n} \sin nx]$$
 
 $$= \frac{\pi^2}{12} + \sum_{n=1}^{\infty} \frac{1}{n^2} \cos nx$$
 
-
-
-> **Figure: Graph of the periodic function (pi-x)^2 / 4**
->
-> A plot showing a periodic waveform with cusps pointing upwards. The horizontal axis has labels -2pi, -pi, 0, pi, 2pi, 3pi, 4pi. The vertical axis has labels 1 and 3 near the origin, with arrows at the ends of both axes.
-
-
+![Graph of the periodic function (pi-x)^2 / 4](/assets/notes/me/s1/maths/module-4/fn-pi-minus-x-squared.svg)
 
 Figure 4.7 : Graph of the periodic function $\frac{(\pi - x)^2}{4}$
 
@@ -589,13 +581,7 @@ $$= \frac{3}{2} + \sum_{n=1}^{\infty} \frac{2}{n^2\pi^2} [(-1)^n - 1] \cos \left
 $$= \frac{3}{2} - \frac{4}{\pi^2} \left[ \cos \left(\frac{\pi x}{2}\right) + \frac{1}{3^2} \cos \left(\frac{3\pi x}{2}\right) + \frac{1}{5^2} \cos \left(\frac{5\pi x}{2}\right) + \dots \right]$$
 $$- \frac{2}{\pi} \left[ \sin \left(\frac{\pi x}{2}\right) + \frac{1}{2} \sin \left(\frac{2\pi x}{2}\right) + \frac{1}{3} \sin \left(\frac{3\pi x}{2}\right) + \dots \right]$$
 
-
-
-> **Figure: Graph of periodic function f(x)**
->
-> A line plot of a periodic function f(x) against x, showing alternating ramps and flat segments. The horizontal axis x has tick marks at -4, -2, 0, 2, 4, 6. The vertical axis has a tick mark at 2. From x = -4 to -2, the line rises from 0 to 2. From x = -2 to 0, the line is flat at y = 2. From x = 0 to 2, the line rises from 0 to 2. From x = 2 to 4, the line is flat at y = 2. From x = 4 to 6, the line rises from 0 to 2.
-
-
+![Graph of periodic function f(x)](/assets/notes/me/s1/maths/module-4/fn-ramp-flat.svg)
 
 **Figure 4.9** : Graph of periodic function $f(x)$
 
@@ -732,13 +718,7 @@ $$S(x) = a_0 + \sum_{n=1}^{\infty} \left[a_n \cos \frac{2n\pi x}{3} + b_n \sin \
 
 $$= \sum_{n=1}^{\infty} \left[-\frac{9}{n^2\pi^2} \cos \frac{2n\pi x}{3} + \frac{3}{n\pi} \sin \frac{2n\pi x}{3}\right]$$
 
-
-
-> **Figure: Graph of the periodic function 2x - x^2 showing parabolas repeating with period 3**
->
-> A Cartesian coordinate system with x-axis and y-axis. The x-axis shows integer values -3, -2, -1, 0, 1, 2, 3, 4, 5, 6. The y-axis shows -3, -2, -1, 1. Parabolic arches open downwards. Between x = 0 and x = 3, the parabola has a maximum at x = 1 with y = 1, passes through (0,0) and (3,-3), with a dashed vertical line at x = 3 dropping to -3. Similar parabolic segments repeat periodically for other intervals.
-
-
+![Graph of the periodic function 2x - x^2 showing parabolas repeating with period 3](/assets/notes/me/s1/maths/module-4/fn-parabola-period3.svg)
 
 Figure 4.12 : Graph of periodic function $2x - x^2$
 
@@ -774,13 +754,7 @@ $$\frac{1}{1^2} + \frac{1}{3^2} + \frac{1}{5^2} + \frac{1}{7^2} \cdots = \frac{\
 
 **Solution.** Here $C = 0$ and $2L = 2 \implies L = 1$.
 
-
-
-> **Figure: Graph of periodic function e^-x showing a repeating decaying exponential curve over intervals of length 2**
->
-> A graph showing the periodic extension of e^-x. The vertical axis is labeled with 1 at the positive y-intercept, and the horizontal axis has ticks at -2, -1, 0, 1, and 2. The function is represented by decreasing exponential curve segments repeating every 2 units from x = 0 to 2, -2 to 0, etc.
-
-
+![Graph of periodic function e^-x showing a repeating decaying exponential curve over intervals of length 2](/assets/notes/me/s1/maths/module-4/fn-exp-neg-period2.svg)
 
 **Figure 4.13** : Graph of periodic function $e^{-x}$
 
@@ -837,33 +811,15 @@ Let $f(x)$ be a function defined in the interval $[0, L]$. Then we can extend $f
 
 $$F(x) = \begin{cases} f(-x) & \text{if } -L < x \le 0 \\ f(x) & \text{if } 0 \le x < L \end{cases}$$
 
-
-
-> **Figure: Graph of f(x) on interval [0, L]**
->
-> A 2D coordinate system showing a curve labeled f(x) starting at the vertical axis (0) and extending to a point L on the positive x-axis.
-
-
+![Graph of f(x) on interval [0, L]](/assets/notes/me/s1/maths/module-4/fn-general-on-interval.svg)
 
 Figure 4.15 : Graph of $f(x)$
 
-
-
-> **Figure: Graph of even extension F(x) on interval [-L, L]**
->
-> A symmetric 2D coordinate system showing a curve f(x) mirrored across the vertical axis, spanning from -L to L.
-
-
+![Graph of even extension F(x) on interval [-L, L]](/assets/notes/me/s1/maths/module-4/fn-general-even-full.svg)
 
 Figure 4.16 : $F(x)$ : Graph of even extension of $f(x)$
 
-
-
-> **Figure: Graph of even periodic extension of f(x) spanning from -2L to 2L**
->
-> A repeating symmetric wave pattern on a 2D coordinate system with markings at -2L, -L, 0, L, and 2L on the x-axis and the curve labeled f(x).
-
-
+![Graph of even periodic extension of f(x) spanning from -2L to 2L](/assets/notes/me/s1/maths/module-4/fn-general-even-periodic.svg)
 
 Figure 4.17 : Graph of even periodic extension of $f(x)$
 
@@ -910,13 +866,7 @@ $$= \frac{2}{1 + n^2 \pi^2} [e(-1)^n - 1]$$
 $$S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos n\pi x$$
 $$= e - 1 + \sum_{n=1}^{\infty} \frac{2}{1 + n^2 \pi^2} [e(-1)^n - 1] \cos n\pi x$$
 
-
-
-> **Figure: Graph of even periodic extension of e^x showing a periodic V-shaped waveform centered at the y-axis.**
->
-> A line graph showing a periodic function along a horizontal x-axis from -3 to 3 and vertical y-axis showing values 1 and 2. The curve is symmetric about the y-axis (even extension), forming V-like shapes repeating periodically.
-
-
+![Graph of even periodic extension of e^x showing a periodic V-shaped waveform centered at the y-axis.](/assets/notes/me/s1/maths/module-4/fn-even-exp.svg)
 
 **Figure 4.18** : Graph of even periodic extension of $e^x$
 
@@ -969,13 +919,7 @@ $$S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos 2nx$$
 $$= \frac{2}{\pi} + \sum_{n=1}^{\infty} \frac{-4}{\pi(4n^2 - 1)} \cos 2nx$$
 $$= \frac{2}{\pi} - \frac{4}{\pi} \sum_{n=1}^{\infty} \frac{1}{4n^2 - 1} \cos 2nx$$
 
-
-
-> **Figure: Graph of even periodic extension of sin(x)**
->
-> A graph showing an even periodic extension of sin(x) on a horizontal axis marked with $-\pi$, $-\pi/2$, $0$, $\pi/2$, $\pi$, and $2\pi$. The vertical axis has a label $1$ at the corresponding mark. The waveform consists of symmetric sinusoidal arches above the horizontal axis.
-
-
+![Graph of even periodic extension of sin(x)](/assets/notes/me/s1/maths/module-4/fn-even-sin.svg)
 
 **Figure 4.19** : Graph of even periodic extension of $\sin(x)$
 
@@ -1031,13 +975,7 @@ Half range cosine series is,
 $$S(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos nx = 1 - \frac{1}{2} \cos x + \sum_{n=2}^{\infty} \left( \frac{(-1)^{(n-1)} 2}{(n-1)(n+1)} \right) \cos nx$$
 $$= 1 - \frac{1}{2} \cos x + 2 \left[ \frac{-\cos 2x}{1.3} + \frac{\cos 3x}{2.4} - \frac{\cos 4x}{3.5} + \dots \right]$$
 
-
-
-> **Figure: Graph of even periodic extension of x sin(x)**
->
-> A periodic wave plotted on an x-y axis system. The horizontal axis has labels -2pi, -pi, 0, pi, 2pi. The vertical axis has labels 1 and 2. The curve is symmetric about the y-axis, forming repeating crests representing an even function.
-
-
+![Graph of even periodic extension of x sin(x)](/assets/notes/me/s1/maths/module-4/fn-even-x-sin.svg)
 
 Figure 4.20 : Graph of even periodic extension of $x\sin(x)$
 
@@ -1081,11 +1019,7 @@ $$0 = \frac{25}{3} + \sum_{n=1}^{\infty} \frac{100(-1)^n}{n^2\pi^2} \cos 0$$
 
 <!-- page 42 | Page 42 -->
 
-> **Figure: Graph of even periodic extension of x^2**
->
-> A plot of a periodic parabolic curve symmetric about the y-axis, with peaks at y=25 and troughs at y=0. The horizontal axis ranges from -10 to 10 with tick marks at -10, -5, 0, 5, 10. The vertical axis has a tick mark at 25.
-
-
+![Graph of even periodic extension of x^2](/assets/notes/me/s1/maths/module-4/fn-even-x-squared.svg)
 
 **Figure 4.21** : Graph of even periodic extension of $x^2$
 
@@ -1141,33 +1075,15 @@ $$= \frac{5l}{4} + \sum_{n=1}^{\infty} \frac{10l}{n^2\pi^2} \left[ 2 \cos\left(\
 Let $f(x)$ be a function defined in the interval $[0, L]$. Then we can extend $f(x)$ as an odd function in $[-L, L]$. The odd extension $F(x)$ is defined by,
 $$F(x) = \begin{cases} -f(-x) & \text{if } -L < x \le 0 \\ f(x) & \text{if } 0 \le x < L \end{cases}$$
 
-
-
-> **Figure: Graph of f(x) from 0 to L**
->
-> A 2D Cartesian coordinate system with axes labeled x and f(x). The origin is labeled 0. A curve starts near the horizontal axis at x=0, rises smoothly to the right, and reaches a point at x=L labeled L. The function f(x) is shown above the curve in the first quadrant.
-
-
+![Graph of f(x) from 0 to L](/assets/notes/me/s1/maths/module-4/graph-f-from-0-to-L.svg)
 
 **Figure 4.22** : Graph of $f(x)$
 
-
-
-> **Figure: Graph of odd extension F(x) from -L to L**
->
-> A 2D Cartesian coordinate system with axes labeled x and f(x). The origin is 0. The curve from 0 to L is as before, labeled f(x) at x=L. In the third quadrant, from -L to 0, there is an antisymmetric (odd) reflection of the curve across the origin, passing through -L on the x-axis, with the corresponding point labeled -L.
-
-
+![Graph of odd extension F(x) from -L to L](/assets/notes/me/s1/maths/module-4/fn-general-odd-extension.svg)
 
 **Figure 4.23** : $F(x)$ : Graph of odd extension of $f(x)$
 
-
-
-> **Figure: Graph of odd periodic extension of f(x)**
->
-> A 2D Cartesian coordinate system showing an odd periodic function with period 2L. The basic pattern from -L to L is repeated periodically. Vertical dashed lines mark the boundaries at -2L, -L, L, and 2L on the horizontal axis. The function exhibits odd symmetry about the origin.
-
-
+![Graph of odd periodic extension of f(x)](/assets/notes/me/s1/maths/module-4/fn-general-odd-periodic.svg)
 
 **Figure 4.24** : Graph of odd periodic extension of $f(x)$
 
@@ -1207,10 +1123,7 @@ b_n &= \frac{2}{L} \int_{0}^{L} f(x) \sin\left(\frac{n\pi x}{L}\right) \, dx = \
 
 <!-- page 46 | Page 46 -->
 
-> **Figure: Graph of odd periodic extension of x^2 showing periodic curves with vertical asymptotes or steep segments**
->
-> A Cartesian coordinate system showing the graph of an odd periodic extension. The horizontal axis is labeled with points -10, -5, 0, 5, 10, and vertical dashed lines pass through -5 and 5. The vertical axis shows values up to 25 and down to -25. The curve consists of periodic segments resembling cubic-like or tangent-like branches passing through the origin.
-
+![Graph of odd periodic extension of x^2 showing periodic curves with vertical asymptotes or steep segments](/assets/notes/me/s1/maths/module-4/fn-odd-x-squared.svg)
 
 **Figure 4.25 : Graph of odd periodic extension of $x^2$**
 
@@ -1260,10 +1173,7 @@ $$f(\pi/2) = S(\pi/2)$$
 
 <!-- page 48 | Page 48 -->
 
-> **Figure: Graph of Odd periodic extension of f(x)**
->
-> A line graph plotted on Cartesian axes with x and y axes intersecting at the origin 0. The y-axis has labels at pi/2 and -pi/2. The x-axis has labels at -pi, -pi/2, pi/2, and pi. The function consists of connected line segments showing an odd periodic triangular wave pattern.
-
+![Graph of Odd periodic extension of f(x)](/assets/notes/me/s1/maths/module-4/fn-odd-triangular.svg)
 
 **Figure 4.26 :** Graph of Odd periodic extension of $f(x)$
 
@@ -1288,11 +1198,7 @@ $$S(x) = \sum_{n=1}^{\infty} b_n \sin(n\pi x) = \sum_{n=1}^{\infty} \frac{2n\pi}
 
 <!-- page 49 | Page 49 -->
 
-> **Figure: Graph of odd periodic extension of e^x**
->
-> A line graph showing a periodic function on a Cartesian coordinate system with x-axis from -3 to 3 and y-axis from -2 to 2. Dashed vertical lines are placed at x = -2, -1, 1, 2. The curve shows periodic segments resembling exponential curves with discontinuities.
-
-
+![Graph of odd periodic extension of e^x](/assets/notes/me/s1/maths/module-4/fn-odd-exp.svg)
 
 **Figure 4.27 : Graph of odd periodic extension of $e^x$**
 
@@ -1333,4 +1239,3 @@ S(x) &= \sum_{n=1}^{\infty} b_n \sin nx \\
 
 <!-- page 51 | Page 51 -->
 
-[Non-content page]

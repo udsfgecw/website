@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | PUMPS -->
 
 ## PUMPS
@@ -17,13 +15,7 @@
 - Reciprocating Pump is hydraulic machine which converts the mechanical energy into pressure energy by means of movement of reciprocating piston.
 - The schematic diagram of the reciprocating pump is given below:
 
-
-
-> **Figure: Schematic diagram of a reciprocating pump showing cylinder, piston, piston rod, connecting rod, crank, suction pipe, delivery pipe, and valves.**
->
-> Schematic diagram of a reciprocating pump. The main components labeled from top to bottom and left to right include: DELIVERY PIPE, DELIVERY VALVE, CYLINDER, PISTON, CONNECTING ROD, CRANK (r), PISTON ROD, SUCTION VALVE, SUCTION PIPE, SUMP LEVEL, and WATER RESERVOIR at the bottom with water surface lines. Arrows point from labels to their respective parts in the pump assembly.
-
-
+![Schematic diagram of a reciprocating pump showing cylinder, piston, piston rod, connecting rod, crank, suction pipe, delivery pipe, and valves.](/assets/notes/me/s1/ime-ice/module-2/reciprocating-pump.svg)
 
 ### Components
 
@@ -69,13 +61,7 @@ The pump cylinder is connected to a suction pipe and a delivery pipe with a suct
 - It is one of the most common types of pumps used today's world.
 - The schematic diagram of the centrifugal pump is given below:
 
-
-
-> **Figure: Schematic diagram of a centrifugal pump showing its main components**
->
-> Schematic diagram of a centrifugal pump showing a reservoir at the bottom with a strainer and foot valve, a vertical suction pipe connected to a vacuum gauge and leading to the impeller inside a casing. An arrow from the impeller points to the casing. A delivery pipe extends upward with a delivery valve and a pressure gauge attached, ending with arrows indicating flow direction.
-
-
+![Schematic diagram of a centrifugal pump showing its main components](/assets/notes/me/s1/ime-ice/module-2/centrifugal-pump.svg)
 
 ### Components
 
@@ -151,24 +137,14 @@ Keeping the delivery valve is closed the impeller is rotated by motor, strong su
   - _**Helical gears**_: Teeth make certain angle with the axis of the shaft.
     - Double helical gears with teeth meeting at the mid of the width id called _**herring bone gears**_.
 
-
-
-> **Figure: Diagram showing a helical gear and a spur gear mounted on shafts**
->
-> Two diagrams side by side on shafts with red-lined tooth profiles. Left diagram labeled 'Helical gear' shows angled teeth on a cylindrical gear. Right diagram labeled 'Spur gear' shows straight parallel teeth on a cylindrical gear.
-
-
+![Diagram showing a helical gear and a spur gear mounted on shafts](/assets/notes/me/s1/ime-ice/module-2/helical-and-spur-gears.svg)
 
 - According to the type of gearing:
   - _**External gears**_: Gears of the two shafts mesh externally with each other.
   - _**Internal gears**_: Gears of the two shafts mesh internally with each other.
   - _**Rack and pinion**_: Gear of a shaft meshes with the gears in a straight line.
 
-
-
-> **Figure: Diagrams of external gearing, internal gearing, and rack and pinion**
->
-> Three diagrams showing different types of gear meshes. Left: 'External gearing' showing a larger gear meshing externally with a smaller pinion, with rotational arrows. Center: 'Internal gearing' showing a pinion inside an 'Annular wheel'. Right: 'Rack and pinion' showing a pinion meshing with a flat rack.
+![Diagrams of external gearing, internal gearing, and rack and pinion](/assets/notes/me/s1/ime-ice/module-2/gear-meshes-external-internal-rack.svg)
 
 <!-- page 8 | Gear ratio (GR) -->
 
@@ -181,13 +157,7 @@ Keeping the delivery valve is closed the impeller is rotated by motor, strong su
 * ***Skew shaft gears:*** Used to connect skew shafts (Non-intersecting and non-parallel shafts at right angle to each other).
     * e.g. worm gears (worm gears are used for higher velocity ratio)
 
-
-
-> **Figure: Bevel gear and Worm gear diagrams**
->
-> Two technical drawings showing a Bevel gear and a Worm gear. The left diagram is labeled 'Bevel gear' showing two intersecting conical gears with dashed lines indicating pitch cones. The right diagram is labeled 'Worm gear' showing a threaded worm shaft meshing with a circular worm wheel.
-
-
+![Bevel gear and Worm gear diagrams](/assets/notes/me/s1/ime-ice/module-2/bevel-and-worm-gears.svg)
 
 ### **Gear ratio (GR)**
 
@@ -255,37 +225,19 @@ $\text{t}$ = Number of teeth on pinion
 
 1. **Full Journal Bearing:** In this type, the bearing makes a full 360-degree circle of contact with the journal.
 
-
-
-> **Figure: Full Journal Bearing diagram**
->
-> A cross-sectional diagram showing a full journal bearing surrounding a journal. The inner circle is labeled 'Journal' with a crosshair, and the outer hatched circle with a vertical dashed centerline is labeled 'Bearing'.
-
-
+![Full Journal Bearing diagram](/assets/notes/me/s1/ime-ice/module-2/full-journal-bearing.svg)
 
 2. **Partial Journal Bearing:** When the angle of contact between the bearing and the journal is $120^\circ$.
 
-
-
-> **Figure: Partial Journal Bearing diagram**
->
-> A cross-sectional diagram of a partial journal bearing. A circular journal with a crosshair is placed above a curved, hatched bearing pad with an arc spanning 120 degrees, indicated by an angle arc labeled '120°'.
-
-
+![Partial Journal Bearing diagram](/assets/notes/me/s1/ime-ice/module-2/partial-journal-bearing.svg)
 
 ### BALL BEARING
 
 - It consists of an outer race, an inner race, and balls.
 
-
-
-> **Figure: Ball bearing cross-section diagram**
->
-> A cross-sectional diagram of a ball bearing labeled 'Ball bearing'. Key components are indicated by pointer lines: 'Ball' pointing to the central sphere with a crosshair, 'Outer race' pointing to the upper outer ring, 'Retainer' pointing to the cage holding the ball, and 'Inner race' pointing to the inner ring.
+![Ball bearing cross-section diagram](/assets/notes/me/s1/ime-ice/module-2/ball-bearing-section.svg)
 
 <!-- page 12 | Page 12 -->
-
-[Non-content page]
 
 <!-- page 13 | FORGING -->
 
@@ -303,21 +255,14 @@ $\text{t}$ = Number of teeth on pinion
   
   
 
-> **Figure: Open die forging diagram showing movable die, fixed die, and work piece**
->
-> A diagram illustrating open die forging. A rectangular work piece is placed between a 'Movable die' on top and a 'Fixed die' on the bottom. Arrows point to the work piece indicating 'Without friction between die and work' (straight sides) and 'With friction between die and work (barreling)' (curved sides). Below the diagram is the label 'Open die forging'.
-
+![Open die forging diagram showing movable die, fixed die, and work piece](/assets/notes/me/s1/ime-ice/module-2/open-die-forging.svg)
 
   
   - $\Rightarrow$ ***Closed die forging:*** Work is compressed into cavity of the die by means of punch and lateral material flow is fully constrained.
   
   
 
-> **Figure: Closed die forging diagram showing punch, work, and fixed die**
->
-> A diagram illustrating closed die forging. A punch presses down on a shaped work piece contained within a cavity in a fixed die. Labels point to 'Punch', 'Work', and 'Fixed die'.
-
-
+![Closed die forging diagram showing punch, work, and fixed die](/assets/notes/me/s1/ime-ice/module-2/closed-die-forging.svg)
 
 ### Analysis of extrusion process
 
@@ -329,11 +274,7 @@ For circular billet
 
 $$\frac{\pi}{4} \cdot D_1^2 \cdot H_1 = \frac{\pi}{4} \cdot D_2^2 \cdot H_2$$
 
-
-
-> **Figure: Extrusion and forging analysis diagram showing two states with forces F1 and F2, diameters D1 and D2, and heights H1 and H2**
->
-> Two stacked diagrams illustrating forging stages. The top diagram shows a force F1 pressing down a die with diameter D1 and height H1. The bottom diagram shows a force F2 pressing down a die with diameter D2 and height H2.
+![Extrusion and forging analysis diagram showing two states with forces F1 and F2, diameters D1 and D2, and heights H1 and H2](/assets/notes/me/s1/ime-ice/module-2/forging-stages-f1-f2.svg)
 
 <!-- page 14 | <u>ROLLING</u> -->
 
@@ -345,23 +286,13 @@ $$\frac{\pi}{4} \cdot D_1^2 \cdot H_1 = \frac{\pi}{4} \cdot D_2^2 \cdot H_2$$
 * For more reduction in thickness, rolling can be performed in more than one pass.
 * The coarse structure of material is changes into a fine grained structure while undergoing rolling process and it results significant improvement in various mechanical properties such as toughness, ductility, strength, shock resistance etc.
 
-
-
-> **Figure: Crystal orientation during hot working showing old grain structure, new crystals, and elongated grains.**
->
-> A diagram illustrating crystal orientation during hot working. Two rollers are shown with a metal sheet passing horizontally from left to right. The left side is labelled 'Direction of feed' and 'Old grain structure'. The right side shows 'New crystals' and 'Elongated grains'.
-
-
+![Crystal orientation during hot working showing old grain structure, new crystals, and elongated grains.](/assets/notes/me/s1/ime-ice/module-2/hot-working-grain-orientation.svg)
 
 Crystal orientation during hot working
 
 * The reduction of thickness of the plate takes place in the ***deformation zone*** (shaded region between the rollers).
 
-
-
-> **Figure: Roll rolling process zones with top and bottom rolls, neutral point, neutral plane, entry plane, and exit plane.**
->
-> A diagram showing the metal rolling process details. It includes 'Roll (top)' and 'Roll (bottom)' with peripheral velocity $V_r$, 'Metal strip' entering with velocity $V_1$ and exiting with velocity $V_2$, 'Neutral point', 'Neutral plane', 'Entry plane', and 'Exit plane'. A shaded region represents the deformation zone with length $L$.
+![Roll rolling process zones with top and bottom rolls, neutral point, neutral plane, entry plane, and exit plane.](/assets/notes/me/s1/ime-ice/module-2/roll-rolling-zones.svg)
 
 <!-- page 15 | EXTRUSION -->
 
@@ -391,13 +322,7 @@ Crystal orientation during hot working
 - Since, there is no friction force between the billet and the container wall, therefore, less force is required by this method (20 to 30% less than direct extrusion)
 - However, this process is not widely used because of the difficulty occurred in providing support for the extruded part.
 
-
-
-> **Figure: Diagram comparing Direct extrusion and Indirect extrusion processes**
->
-> A line diagram showing two extrusion setups side by side. The left setup is labeled 'Direct extrusion' and shows a container holding a hatched 'Billet', a ram applying force $F_{direct}$ from the left, and material extruding to the right through a die. The right setup is labeled 'Indirect extrusion' showing a container with a hatched 'Billet', a hollow ram applying forces $F_{indirect}$, and extrusion occurring in the opposite direction.
-
-
+![Diagram comparing Direct extrusion and Indirect extrusion processes](/assets/notes/me/s1/ime-ice/module-2/direct-vs-indirect-extrusion.svg)
 
 Extrusion process
 
@@ -452,23 +377,11 @@ Extrusion process
 
 ⇨ Anode (positive electrode): 70 % of the total heat generated by the arc.
 
-
-
-> **Figure: Diagram of an arc welding electrical circuit setup**
->
-> A circuit diagram showing a power supply box on the left containing D C Generator or D C Rectifier or A C Transformer. An ammeter (A) is connected in series on the top line leading to an electrode holder and electrode. A voltmeter (V) is connected across the circuit. The electrode creates an arc above a work piece.
-
-
+![Diagram of an arc welding electrical circuit setup](/assets/notes/me/s1/ime-ice/module-2/arc-welding-circuit.svg)
 
 ## Shielded Metal Arc Welding (SMAW)
 
-
-
-> **Figure: Schematic diagram of Shielded Metal Arc Welding (SMAW)**
->
-> An illustration showing Shielded Metal Arc Welding. A consumable electrode is held by an electrode holder, connected via an electrode cable to an AC or DC power source. A work cable connects the power source to a clamp on the work piece. An arc is shown between the electrode and the work piece, creating a molten weld metal pool and solidified weld metal, with a direction of travel arrow pointing left.
-
-
+![Schematic diagram of Shielded Metal Arc Welding (SMAW)](/assets/notes/me/s1/ime-ice/module-2/smaw-schematic.svg)
 
 ☑ Here heat for welding is produced through an electric arc set up between the flux coated electrode and the work piece.
 
@@ -539,13 +452,7 @@ Some of the applications of Brazing processes are listed below.
 - A lathe machine is a machine tool that is used to remove unwanted material from a rotating work piece in the form of chips.
 - The lathe is a machine tool which holds the work piece between two rigid and strong supports called centers or in a chuck or face plate which revolves.
 
-
-
-> **Figure: Diagram of a lathe machine with labeled parts**
->
-> Line diagram of a standard engine lathe showing major components: Headstock on the left, Tailstock on the right, Bed at the bottom, Leg, Carriage in the middle, Cross slide, Tool post, Compound rest, Lead screw, and Feed rod, with pointer lines indicating each part.
-
-
+![Diagram of a lathe machine with labeled parts](/assets/notes/me/s1/ime-ice/module-2/engine-lathe-parts.svg)
 
 ### Lathe Machine Parts
 
@@ -562,37 +469,19 @@ Operations which can be carried out on a lathe machine are given as follows:
 
 1. **Facing:** In facing operation the work piece is held in the chuck and the facing tool is fed from the centre of the work piece towards the outer surface or from the outer surface to the centre, with the help of a cross-slide.
 
-
-
-> **Figure: Facing Operation diagram showing chuck, revolving workpiece, and tool**
->
-> A diagram illustrating a facing operation on a lathe. On the left is a Chuck holding a Revolving Workpiece horizontally. A dashed centerline runs horizontally through the center of the workpiece. A Tool is positioned at the right end face of the workpiece, ready to feed towards or away from the center.
-
-
+![Facing Operation diagram showing chuck, revolving workpiece, and tool](/assets/notes/me/s1/ime-ice/module-2/facing-operation.svg)
 
 **Facing Operation**
 
 2. **Plain Turning** - In plain turning, the work is held either in the chuck or between centers and the longitudinal feed is given to the tool either by hand or power. It is an operation of removing excess amount of material from the surface of the cylindrical work piece.
 
-
-
-> **Figure: Plain Turning diagram showing chuck holding a work piece being machined by a tool**
->
-> A diagram showing plain turning on a lathe. A Chuck on the left holds a cylindrical Work piece. A Tool below the workpiece removes material along its longitudinal length.
-
-
+![Plain Turning diagram showing chuck holding a work piece being machined by a tool](/assets/notes/me/s1/ime-ice/module-2/plain-turning.svg)
 
 **Plain turning**
 
 3. **Step Turning** - It is an operation of producing various steps of different diameters in the work piece.
 
-
-
-> **Figure: Step Turning diagram showing stepped workpiece being machined by a tool**
->
-> A diagram showing step turning on a lathe. A Chuck holds a stepped cylindrical Work piece. A Tool is shown cutting a smaller diameter step.
-
-
+![Step Turning diagram showing stepped workpiece being machined by a tool](/assets/notes/me/s1/ime-ice/module-2/step-turning.svg)
 
 **Step turning**
 
@@ -600,25 +489,13 @@ Operations which can be carried out on a lathe machine are given as follows:
 
 4. **Drilling** - Drilling is the operation of producing a cylindrical hole in a work piece by the rotating cutting edge of a cutter known as drill. In this, the work piece is held in a chuck and the drill is held in the tailstock.
 
-
-
-> **Figure: Diagram showing the drilling operation on a lathe**
->
-> A schematic diagram showing a drilling operation. A chuck holds a hatched cylindrical workpiece on the left. A centre line runs horizontally through the middle. A twist drill is shown entering the right end of the workpiece. Labels point to 'Chuck', 'Workpiece', and 'Drill'.
-
-
+![Diagram showing the drilling operation on a lathe](/assets/notes/me/s1/ime-ice/module-2/drilling-on-lathe.svg)
 
 **Drilling**
 
 5. **Undercutting or Grooving** - It is the process of reducing the diameter of a work piece over a very narrow surface. In this, a tool of appropriate shape is fed into the revolving work up to the desired depth at right angles to the centre line of the work piece.
 
-
-
-> **Figure: Diagram showing the grooving or undercutting operation on a lathe**
->
-> A schematic diagram showing a grooving operation. A chuck on the left holds a revolving workpiece that has a narrow groove cut into its cylindrical surface. A tool is shown moving vertically upwards into the groove from below, perpendicular to the horizontal centre line. Labels point to 'Chuck', 'Revolving Workpiece', and 'Tool'.
-
-
+![Diagram showing the grooving or undercutting operation on a lathe](/assets/notes/me/s1/ime-ice/module-2/grooving-on-lathe.svg)
 
 **Grooving**
 
@@ -628,13 +505,7 @@ Operations which can be carried out on a lathe machine are given as follows:
 
 - Drilling is an operation of making a circular hole by removing a volume of metal from the job by cutting tool called drill.
 
-
-
-> **Figure: Diagram of a drilling machine showing its components such as pulley, guard, belt, motor, hand feed, depth adjustment, spindle clamp, spindle, drill chuck, regular work table, table clamp, column, and base table.**
->
-> A line drawing of a vertical pillar drilling machine. Major components are labelled with leader lines: at the top enclosed by a guard are Pulley and Belt; on the right is the Motor; extending vertically down is the Column; attached to the column are the Table clamp and Regular work table, as well as the Base table at the bottom. On the left head section are the Hand feed, Depth adjustment, Spindle clamp, Spindle, and Drill chuck.
-
-
+![Diagram of a drilling machine showing its components such as pulley, guard, belt, motor, hand feed, depth adjustment, spindle clamp, spindle, drill chuck, regular work table, table clamp, column, and base table.](/assets/notes/me/s1/ime-ice/module-2/pillar-drilling-machine.svg)
 
 - In drilling machine the drill is rotated and fed along its axis of rotation in the stationary work piece.
 - Different parts of a drilling machine are:
@@ -657,13 +528,7 @@ Operations which can be carried out on a lathe machine are given as follows:
   * Countersinking
   * Tapping
 
-
-
-> **Figure: Diagrams of operations performed on a drilling machine: Drilling, Reaming, Boring, Counterboring, Countersinking, and Tapping**
->
-> Six schematic line drawings arranged in two rows of three, illustrating different machining operations on a workpiece. Top row (left to right): DRILLING showing a twisted drill bit entering a workpiece, REAMING showing a straight-fluted reamer in a hole, BORING showing a single-point boring tool. Bottom row (left to right): COUNTERBORING showing a stepped tool creating a wider recess, COUNTERSINKING showing a conical chamfering tool, TAPPING showing a threaded tap creating internal threads. Each diagram includes labels underneath corresponding to the operation name.
-
-
+![Diagrams of operations performed on a drilling machine: Drilling, Reaming, Boring, Counterboring, Countersinking, and Tapping](/assets/notes/me/s1/ime-ice/module-2/drilling-operations-six.svg)
 
 1. **Drilling:** It is an operation by which holes are produced in solid metal by means of revolving tool called 'Drill'.
 2. **Reaming:** Reaming is accurate way of sizing and finishing the pre-existing hole.
@@ -682,13 +547,7 @@ Operations which can be carried out on a lathe machine are given as follows:
 
 ### Horizontal milling machine
 
-
-
-> **Figure: Diagram of a horizontal milling machine showing its various parts.**
->
-> Line diagram of a horizontal milling machine. Labelled components include Overhanging arm, Spindle, Arbor, Arbor support, Column, Table, Saddle, Knee, Base, and Elevating screw.
-
-
+![Diagram of a horizontal milling machine showing its various parts.](/assets/notes/me/s1/ime-ice/module-2/horizontal-milling-machine.svg)
 
 Different parts of a milling machine are:
 
@@ -707,13 +566,7 @@ Different parts of a milling machine are:
     - Peripheral milling (Slab milling)
     - End milling (Face milling)
 
-
-
-> **Figure: Diagram showing peripheral milling and end milling setups**
->
-> Two machining setups side by side. On the left, 'Peripheral milling' shows a cylindrical milling cutter with a horizontal axis machining a flat workpiece. On the right, 'End milling' shows a cylindrical cutter with a vertical axis machining a workpiece. Leader lines point to 'Milling cutter' and 'Work piece' for both diagrams.
-
-
+![Diagram showing peripheral milling and end milling setups](/assets/notes/me/s1/ime-ice/module-2/peripheral-and-end-milling.svg)
 
 ## Peripheral milling (Slab milling)
 
@@ -725,13 +578,7 @@ Different parts of a milling machine are:
     - Up milling (Conventional milling)
     - Down milling (Climb milling)
 
-
-
-> **Figure: Diagrams comparing the process of up milling and down milling**
->
-> Two diagrams showing cutting processes. Left: 'Process of up milling' shows a circular milling cutter rotating counter-clockwise while the workpiece feeds to the right; a double-headed arrow indicates 'Depth of cut' and 'Work piece', with a 'Feed' arrow pointing right. Right: 'Process of down milling' shows a circular milling cutter rotating clockwise while the workpiece feeds to the left; 'Depth of cut', 'Feed' pointing left, and 'Work piece' are labeled.
-
-
+![Diagrams comparing the process of up milling and down milling](/assets/notes/me/s1/ime-ice/module-2/up-and-down-milling.svg)
 
 ## End milling (Face milling)
 
@@ -749,13 +596,7 @@ Different parts of a milling machine are:
 
 ### Working Principle of CNC Machine
 
-
-
-> **Figure: Block diagram of working principle of CNC Machine**
->
-> Block diagram showing the architecture of a CNC machine working principle. At the top, 'Input Devices' connects via an arrow to 'Part Programs', which points to 'MCU' (Machine Control Unit). Inside MCU, 'Data Processing Unit' and 'Control Loop Unit' are shown. MCU connects to 'Display Unit' on the right, and outputs 'Motion Data' and 'Miscellaneous Function' downwards to 'Driving System' and 'Machine Tools'. A 'Feedback System' receives position feedback and velocity feedback from the machine tools and loop unit.
-
-
+![Block diagram of working principle of CNC Machine](/assets/notes/me/s1/ime-ice/module-2/cnc-block-diagram.svg)
 
 * Initially, the part program is input into the MCU (Machine Control Unit) of the CNC system. All data processing occurs within the MCU, and based on the prepared program, it formulates precise motion commands, subsequently transmitting them to the drive system.
 * The drive system acts upon these motion commands from the MCU, taking charge of controlling the movement and velocity of the machine tool.
@@ -776,4 +617,3 @@ The main parts of the CNC machine are:
 
 <!-- page 28 | Page 28 -->
 
-[Non-content page]

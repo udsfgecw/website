@@ -1,10 +1,6 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Page 2 -->
-
-[Non-content page]
 
 <!-- page 3 | Page 3 -->
 
@@ -43,13 +39,7 @@ To maintains electrical neutrality in two compartments by allowing movement of a
 * A salt bridge helps in maintaining the charge balance in the two half cells.
 * A salt bridge minimizes or eliminates the liquid junction potential.
 
-
-
-> **Figure: Galvanic cell diagram showing a zinc anode and copper cathode connected by a salt bridge and voltmeter.**
->
-> A diagram of a Galvanic cell featuring two beakers. The left beaker contains a ZnSO4 solution with a Zn rod labelled Anode (Oxidation) and a negative sign. The right beaker contains a CuSO4 solution with a Cu rod labelled Cathode (Reduction) and a positive sign. A U-shaped salt bridge containing KCL connects the two solutions. A voltmeter is connected across the two electrodes with arrows showing electron flow from anode to cathode.
-
-
+![Galvanic cell diagram showing a zinc anode and copper cathode connected by a salt bridge and voltmeter.](/assets/notes/me/s1/chemistry/module-2/galvanic-cell.svg)
 
 ### Types of electrodes
 
@@ -125,13 +115,7 @@ $\text{H}^+ + 1\text{e}^- \rightarrow$ ½ $\text{H}_2$
 
 4. Difficult to maintain pressure of hydrogen gas at 1 atm and difficult to maintian concentration of 1M HCl.
 
-
-
-> **Figure: Diagram of the Standard Hydrogen Electrode (SHE)**
->
-> A labeled diagram of a Standard Hydrogen Electrode (SHE). It shows a glass vessel containing 1M Hydrochloric acid solution, with a glass tube inlet for Hydrogen gas ($H_2(g)$) at 1 atm, a platinum wire connecting to the high resistance voltmeter, and a platinised platinum electrode covered in platinum black at the bottom inside an outer glass jacket.
-
-
+![Diagram of the Standard Hydrogen Electrode (SHE)](/assets/notes/me/s1/chemistry/module-2/standard-hydrogen-electrode.svg)
 
 ❖ **<u>Electrochemical series</u>**
 
@@ -139,11 +123,7 @@ $\text{H}^+ + 1\text{e}^- \rightarrow$ ½ $\text{H}_2$
 
 <!-- page 7 | 1. To know the relative ease of oxidation and reduction: -->
 
-> **Figure: Electrochemical series showing half reactions and standard reduction potentials**
->
-> A table-like diagram with two main columns titled 'Half Reaction' and 'Standard Potential (V)'. The left side shows half-reactions with an upward red arrow labeled 'stronger oxidizing agent' pointing from Li+ to F2, with reactions such as F2 + 4e- ... and potentials on the right ranging from +2.87 to -3.05 V. The right side has a downward blue arrow labeled 'stronger reducing agent' pointing from 2F- to Li.
-
-
+![Electrochemical series showing half reactions and standard reduction potentials](/assets/notes/me/s1/chemistry/module-2/electrochemical-series.svg)
 
 ➤ **<u>Applications of electrochemical series</u>**
 
@@ -207,25 +187,13 @@ Calomel electrode can be represented as, $\text{Pt, Hg}(l) \mid \text{Hg}_2\text
 
 Electrode Reaction : $\text{Hg}_2\text{Cl}_2 + 2\text{e}^- \rightarrow 2\text{Hg } (l) + 2\text{Cl}^-$
 
-
-
-> **Figure: Diagram of a Calomel electrode**
->
-> A cross-sectional diagram of a calomel electrode. It consists of an inner glass tube containing mercury at the bottom, a paste of Hg + Hg2Cl2 above it, and a platinum wire dipping into the mercury. A side tube provides a connection with saturated KCl solution. Labels point to 'Saturated KCl', 'Hg + Hg2Cl2', 'Hg', and 'Pt wire'.
-
-
+![Diagram of a Calomel electrode](/assets/notes/me/s1/chemistry/module-2/calomel-electrode.svg)
 
 ➤ **Working of Calomel electrode (Determination of electrode potential using calomel electrode)**
 
 In order to measure the electrode potential of an electrode, (Zn electrode) it is coupled with SCE using a digital volt meter. The volt meter reading will give the cell emf. The reduction potential of SCE is $0.2422\text{V}$ is higher than the reduction potential of $\text{Zn}^{2+}/\text{Zn}$ ($-0.76\text{V}$). Therefore reduction reaction takes place at SCE.
 
-
-
-> **Figure: Experimental setup for determination of electrode potential using a calomel electrode**
->
-> An experimental setup showing a zinc electrode in ZnSO4(aq) connected via a digital voltmeter to a saturated calomel electrode (SCE). The zinc container is labeled 'Zn', 'ZnSO4 (aq)'. The calomel electrode section has labels 'Pt foil', 'Hg', 'Paste of Hg + Hg2Cl2', and 'Saturated KCl solution'. A salt bridge connects the two half-cells.
-
-
+![Experimental setup for determination of electrode potential using a calomel electrode](/assets/notes/me/s1/chemistry/module-2/sce-setup.svg)
 
 Cathode:
 
@@ -268,11 +236,7 @@ Calomel at enode cell reaction : $2\text{Hg} + 2\text{Cl} \rightarrow \text{Hg}_
 
 $\text{Ag/AgCl}/0.1\text{M } \text{H}^{+}$.
 
-
-
-> **Figure: Diagram of a glass electrode**
->
-> A labeled diagram of a glass electrode showing an Ag wire at the top connected to a silver wire going down into 0.1N HCl solution inside a thin glass bulb, with an AgCl coating indicated on the wire.
+![Diagram of a glass electrode](/assets/notes/me/s1/chemistry/module-2/glass-electrode.svg)
 
 <!-- page 11 | Determination of PH using glass electrode -->
 
@@ -309,8 +273,6 @@ Slope : $0.0591$, $X = \text{pH}$
 
 <!-- page 12 | Page 12 -->
 
-[Non-content page]
-
 <!-- page 13 | Conductivity cell -->
 
 Cell constant: In a conductivity cell, the distance between the two electrodes (l) and the area of electrodes are fixed. This constant is called cell constant . unit of cell constant is cm -1 or m-1
@@ -343,13 +305,7 @@ $$\text{Cell constant} = \frac{\textit{Conductivity }(k)}{\textit{conductance}(C
 
 ## <u>Types of Electrochemical cells</u>
 
-
-
-> **Figure: Comparison between Primary Cell and Secondary Cell definitions**
->
-> Two rectangular blocks side by side. The left block has an orange header 'PRIMARY CELL' and text stating: 'A PRIMARY CELL IS A BATTERY THAT IS DESIGNED TO BE USED ONCE AND DISCARDED, AND NOT RECHARGED WITH ELECTRICITY AND REUSED LIKE A SECONDARY CELL IN GENERAL, THE ELECTROCHEMICAL REACTION OCCURRING IN THE CELL IS NOT REVERSIBLE, RENDERING THE CELL UNRECHARGEABLE.' The right block has a pink header 'SECONDARY CELL' and text stating: 'A SECONDARY CELL IS A TYPE OF ELECTRICAL BATTERY WHICH CAN BE CHARGED, DISCHARGED INTO A LOAD, AND RECHARGED MANY TIMES, AS OPPOSED TO A DISPOSABLE OR PRIMARY BATTERY, WHICH IS SUPPLIED FULLY CHARGED AND DISCARDED AFTER USE.'
-
-
+![Comparison between Primary Cell and Secondary Cell definitions](/assets/notes/me/s1/chemistry/module-2/primary-secondary-cell.svg)
 
 ### $\blacktriangleright$ <u>*Lithium Ion Cell*</u>
 
@@ -357,11 +313,7 @@ Lithium ion cell is a rechargeable battery in which lithium ions moves between a
 
 <!-- page 15 | <u>Case 1</u> -->
 
-> **Figure: Diagram of a Lithium Ion Cell showing charge and discharge states with anode, cathode, separator, and electrolyte.**
->
-> A schematic diagram of a lithium-ion cell inside a container filled with Electrolyte. On the left is a red rounded rectangle labelled 'Anode', on the right is a green rounded rectangle labelled 'Cathode', and in the middle is a yellow vertically striped rectangle labelled 'Separator'. Arrows at the top indicate 'Discharge' pointing to the left and 'Charge' pointing to the right through an ammeter 'A'. Between the anode, separator, and cathode, dotted arrows show the movement of lithium ions marked as 'x'.
-
-
+![Diagram of a Lithium Ion Cell showing charge and discharge states with anode, cathode, separator, and electrolyte.](/assets/notes/me/s1/chemistry/module-2/lithium-ion-cell.svg)
 
 ### <u>Case 1</u>
 
@@ -416,13 +368,7 @@ Net reaction is
 
 $2\text{H}_{2(g)} + \text{O}_{2(g)} \rightarrow 2\text{H}_2\text{O}; \text{E}^0 = 1.23\text{V}$
 
-
-
-> **Figure: Diagram of a Hydrogen-Oxygen Acid Fuel Cell**
->
-> Schematic diagram of a hydrogen-oxygen fuel cell. It shows an external circuit at the top with electron flow (e-) from left to right. On the left, hydrogen (H2) enters, unused H2 exits at the bottom left. The anode is marked with a minus sign (-) and 'anode' label. The central compartment contains H3PO4(aq) electrolyte. The right side shows the cathode marked with a plus sign (+) and 'cathode' label, where oxygen (O2) enters, and water (H2O) exits at the bottom right. Inside the cell, H+ ions move from anode to cathode, and arrows indicate the flow of H2, H+, O2, and H2O.
-
-
+![Diagram of a Hydrogen-Oxygen Acid Fuel Cell](/assets/notes/me/s1/chemistry/module-2/hydrogen-oxygen-fuel-cell.svg)
 
 These types of fuel cell are mainly used in stationer power generators, military application due to their stable operation and long lifetime.
 
@@ -542,13 +488,7 @@ The position of a metal in the form of an alloy is different from that of the pu
 | - Position of the metals is fixed. | - Position of the metal and alloys may change. |
 | - It predicts the relative displacement tendencies. | - It predicts the corrosion tendencies |
 
-
-
-> **Figure: Galvanic series listing 27 metals and alloys from active/anodic to noble/cathodic**
->
-> A vertical list representing the Galvanic Series, running from 'Active or Anodic' at the top to 'Noble or Cathodic' at the bottom with an upward-pointing arrow on the left side. The entries are numbered 1 through 27: 1. Mg, 2. Mg Alloy, 3. Zn, 4. Al, 5. Cd, 6. Al Alloy, 7. Mild Steel, 8. Cast Iron, 9. High Ni Cast Iron, 10. Pb-Sn Solder, 11. Pb, 12. Sn, 13. Iconel, 14. Ni-Mo-Fe Alloys, 15. Brass, 16. Monel (30% Cu, 7% Ni and rest Fe), 17. Ag Solder, 18. Cu, 19. Ni, 20. Cr Stainless steel, 21. 18-8 Stainless Steel, 22. 18-8 Mo Stainless Steel, 23. Ag, 24. Ti, 25. Graphite, 26. Au, 27. Pt.
-
-
+![Galvanic series listing 27 metals and alloys from active/anodic to noble/cathodic](/assets/notes/me/s1/chemistry/module-2/galvanic-series.svg)
 
 Active or Anodic
 1. Mg
@@ -592,24 +532,14 @@ The following methods are employed for cathodic protection.
 #### *a) Sacrificial anodic protection:*
 In this method, the metal to be protected is connected by a wire to a more anodic or active metal. Then the more active metal will undergo corrosion and the cathode remains protected. Here the more active anodic metal sacrifices for the protection of cathodic metal and is called sacrificial anode. Metals commonly used for this purpose re Mg, Zn, Al and their alloy
 
-
-
-> **Figure: Diagram illustrating sacrificial anodic protection with a magnesium anode connected to a metal pipe**
->
-> A schematic diagram showing sacrificial anodic protection. On the left, a vertical bar labeled 'Mg' represents a magnesium block, showing arrows pointing outwards labeled 'Mg²⁺'. A wire connects the Mg block to a large horizontal cylindrical structure representing a protected pipe. Electrons (e⁻) flow along the wire from the anode to the pipe. The text below the diagram reads 'Sacrificial anodic protection'.
-
-
+![Diagram illustrating sacrificial anodic protection with a magnesium anode connected to a metal pipe](/assets/notes/me/s1/chemistry/module-2/sacrificial-anodic-protection.svg)
 
 #### *b) Impressed current cathode protection:*
 In this method an impressed current is applied in opposite direction to nullify the corrosion current. As a result corroding metal is converted from anode to cathode. The impressed current required can be obtained from a battery with an insoluble anode made of graphite or high silica iron. This method is used for the protection of open water box coolers, water tanks etc.
 
 <!-- page 23 | ❖ Electroless plating (Autocatalytic plating) -->
 
-> **Figure: Diagram showing impressed current cathodic protection**
->
-> A diagram illustrating impressed current cathodic protection with a source of impressed current connected to a graphite anode on the left and a buried pipe made as cathode (Protected) horizontally below. An arrow points to the earth surface representing ground level.
-
-
+![Diagram showing impressed current cathodic protection](/assets/notes/me/s1/chemistry/module-2/impressed-current-protection.svg)
 
 ### ❖ Electroless plating (Autocatalytic plating)
 
@@ -696,4 +626,3 @@ $$\text{H}_2\text{O} \rightarrow 2\text{H}^+ + 1/2\text{O}_2 + 2\text{e}^-$$
 
 <!-- page 27 | Page 27 -->
 
-[Non-content page]

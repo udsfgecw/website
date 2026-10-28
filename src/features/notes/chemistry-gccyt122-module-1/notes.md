@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | MODULE 1 -->
 
 # MODULE 1
@@ -54,11 +52,7 @@ The calorific value of solids and non-volatile liquids is determined by Bomb cal
 * The bomb is placed in a copper calorimeter containing a known amount of water and the calorimeter is provided with an electrical stirrer and a Beckmann thermometer (which can read accurately temperature difference up to 1/100th of a degree).
 * The copper calorimeter is surrounded by an air jacket and water jacket to prevent loss of heat due to radiation.
 
-
-
-> **Figure: Diagram of a Bomb Calorimeter**
->
-> A cross-sectional schematic diagram of a Bomb Calorimeter showing its internal components. Labels from left to right point to: Beckmann's thermometer, Fuse wire, Stainless steel crucible, Oxygen valve, 6 V Battery connected to an Electrically operated stirrer, Electrodes, Copper calorimeter, Stainless steel bomb, and Solid fuel inside the bomb. The bomb is placed inside a copper calorimeter, surrounded by an air jacket and a water jacket at the bottom and sides.
+![Diagram of a Bomb Calorimeter](/assets/notes/me/s1/chemistry/module-1/bomb-calorimeter.svg)
 
 <!-- page 4 | Page 4 -->
 
@@ -124,13 +118,11 @@ $$\text{SO}_2 + \text{O}_2 + 2\text{H}_2\text{O} \rightarrow 2\text{H}_2\text{SO
 **1.1.1.4 Theoretical calculation of calorific value**
 According to Dulong, the calorific value of a fuel is the sum of the calorific value of its constituents. Therefore, the calorific value of a fuel can be calculated if the percentages of the constituent elements are known. The calorific value of the fuel constituent is given in table 1.2.
 
-
-
-> **Figure: Table 1.2: Calorific value of the fuel showing constituents C, H, S and their HCV values**
->
-> A table titled 'Table 1.2: Calorific value of the fuel' with three columns for constituents C, H, and S, having corresponding HCV (kcal/kg) values of 8080, 34500, and 2240 respectively.
-
-
+| Constituent | HCV (kcal/kg) |
+| --- | --- |
+| C | 8080 |
+| H | 34500 |
+| S | 2240 |
 
 If oxygen is present, it is assumed to be present in combined form with hydrogen, i.e. in the form of fixed hydrogen ($H_2O$) which is not available for combustion.
 
@@ -155,8 +147,6 @@ $$HCV = \frac{1}{100} \left[8080C + 34500\left(H - \frac{O}{8}\right) + 2240S\ri
 - Fossil fuel is mainly composed of C, H and O. Apart from these elements, it also contains minor amount of N, S and moisture.
 
 <!-- page 6 | Page 6 -->
-
-[Non-content page]
 
 <!-- page 7 | Analysis of coal -->
 
@@ -230,13 +220,7 @@ This is the solid part of coal that actually burns and produces heat. More fixed
 
 The hydrocarbon cetane (n-hexadecane) has a very short ignition delay and an arbitrary cetane value of 100 has been assigned to it. On the other hand 1-methyl naphthalene has very long ignition delay and hence, O value has been assigned to it.
 
-
-
-> **Figure: Chemical structures of n-hexadecane or cetane and 1-methylnaphthalene**
->
-> Two chemical structures side by side. On the left, the linear formula CH3-(CH2)14-CH3 with the label 'n-hexadecane or cetane' underneath. On the right, the ring structure of naphthalene with a CH3 group attached at the 1-position, with the label '1-methylnaphthalene' underneath.
-
-
+![Chemical structures of n-hexadecane or cetane and 1-methylnaphthalene](/assets/notes/me/s1/chemistry/module-1/cetane-1-methylnaphthalene.svg)
 
 Cetane number of a diesel fuel can be defined as the percentage of cetane in a mixture of cetane and 1-methyl naphthalene which will have same ignition characteristics as the fuel under examination and under the same set of conditions.
 
@@ -682,13 +666,7 @@ $\text{Cement} + \text{Water} \rightarrow \text{Hydration Reaction.}$
 - These fill gaps between cement particles.
 - As they grow, the cement becomes harder and stronger.
 
-
-
-> **Figure: Diagram of a rotary kiln used in cement manufacturing**
->
-> A line drawing of a rotary kiln showing a slanted rotating cylinder on roller bearings and concrete supports. Labels include Chimney, Flue gases, Dry mix or slurry feed tank, Drying zone, Revolving kiln, Calcination zone, Refractory bricks lining, Clinkining zone, Hot flame, Fuel oil or powdered coal, Air inlet, Clinker, Hot air, Air blower, Dust catcher, and Trolley.
-
-
+![Diagram of a rotary kiln used in cement manufacturing](/assets/notes/me/s1/chemistry/module-1/rotary-kiln.svg)
 
 ### POLYMERS
 
@@ -700,11 +678,7 @@ Polymers are molecules with large molecular masses obtained by the covalent link
 
 It is obtained by dissolving poly butadiene in liquid acrylonitrile and styrene in presence of free radical initiator.
 
-
-
-> **Figure: Chemical reaction for the preparation of ABS**
->
-> Chemical equation showing the reaction of x molecules of Acrylonitrile, y molecules of Butadiene, and z molecules of Styrene reacting to form the ABS polymer structure.
+![Chemical reaction for the preparation of ABS](/assets/notes/me/s1/chemistry/module-1/abs-polymer.svg)
 
 <!-- page 21 | KEVLAR -->
 
@@ -727,13 +701,7 @@ It is obtained by dissolving poly butadiene in liquid acrylonitrile and styrene 
 
 KEVLAR is poly para-phenylene terephthalamide. It is obtained by the condensation polymerization of para phenylene diamine and terephthaloyl chloride, elimintaing Hydrogen Chloride gas.
 
-
-
-> **Figure: Condensation polymerization reaction of Kevlar from para-phenylene diamine and terephthaloyl chloride**
->
-> Chemical reaction showing the synthesis of Kevlar. On the left inside square brackets with subscript n, a molecule of p-phenylenediamine (H2N-C6H4-NH2) plus a molecule of terephthaloyl chloride (Cl-CO-C6H4-CO-Cl). An arrow pointing right with '- 2n HCl' above it points to the product structure on the right inside square brackets with subscript n, showing the repeating unit of poly-p-phenylene terephthalamide.
-
-
+![Condensation polymerization reaction of Kevlar from para-phenylene diamine and terephthaloyl chloride](/assets/notes/me/s1/chemistry/module-1/kevlar-synthesis.svg)
 
 Three types of bonding are possible in Kevlar.
 
@@ -775,13 +743,7 @@ Eg.Polyacetylene, polyaniline, polypyrrole etc.
 
 **Classification of Conducting Polymers:**
 
-
-
-> **Figure: Flowchart showing classification of conducting polymers**
->
-> A hierarchical flowchart showing the classification of conducting polymers. At the top, the box reads 'Conducting polymers'. It splits into two main branches: 'Intrinsically Conducting' on the left and 'Extrinsically Conducting' on the right. 'Intrinsically Conducting' further splits into two boxes: 'Conducting polymers having conjugated pi electrons' and 'Doped conducting polymers'. 'Extrinsically Conducting' splits into 'Conductive element filled polymers' and 'Blended conducting polymers'.
-
-
+![Flowchart showing classification of conducting polymers](/assets/notes/me/s1/chemistry/module-1/conducting-polymers.svg)
 
 Conducting polymers are classified into
 
@@ -794,13 +756,7 @@ a) $\underline{\text{Conducting polymers containing conjugated electrons:}}$
 
 These conducting polymers contain conjugated electrons along the polymeric chain. The orbitals of conjugated electrons overlap over the entire polymeric back-bone, resulting in the formation of valence band and conduction band, which extends over the entire polymeric backbone. These bands are separated by a very small band gap. Thus electrical conduction would occur when electrons from valence band are excited to conduction band either thermally or photolytically. Eg. Poly acetylene
 
-
-
-> **Figure: Reaction scheme showing addition polymerisation of acetylene to polyacetylene**
->
-> A chemical reaction equation showing $n$ molecules of acetylene, represented by $n \text{ HC}\equiv\text{CH}$, with the label 'acetylene' below, undergoing 'Addition polymerisation' indicated by an arrow pointing right. The product is a polymer chain with alternating double and single bonds, labeled 'polyacetylene' below.
-
-
+![Reaction scheme showing addition polymerisation of acetylene to polyacetylene](/assets/notes/me/s1/chemistry/module-1/acetylene-polyacetylene.svg)
 
 b) $\underline{\text{Doped conducting polymers:}}$
 
@@ -810,11 +766,7 @@ $\underline{\text{Mechanism of conduction by p – Doping:}}$
 
 p – Doping is done by oxidation process. In this process some electrons of the $\pi$-bonds of the conjugated double bonds are removed and holes are created which can move along the polymer and the polymer becomes electrically conductive. The radical cation produced is called poloron. The polorons are mobile and can move along the polymer chain by the rearrangement of double and single bonds. Oxidation process is brought about by Lewis acid like $\text{FeCl}_3$
 
-
-
-> **Figure: Reaction mechanism of poloron propagation through a conjugated polymer chain**
->
-> Chemical reaction scheme showing a polyacetylene chain losing an electron ($-1\text{e}^-$) to form a radical cation (poloron) with a positive charge. A second step shows the propagation of the poloron through the conjugated polymer chain by shifting of double bonds, with a label underneath reading 'Propagation of poloron through the conjugated polymer chain by shifting of double bonds'.
+![Reaction mechanism of poloron propagation through a conjugated polymer chain](/assets/notes/me/s1/chemistry/module-1/polaron-propagation.svg)
 
 <!-- page 24 | Mechanism of conduction by n – Doping: -->
 
@@ -822,13 +774,7 @@ p – Doping is done by oxidation process. In this process some electrons of the
 
 n – Doping is done by reduction process. In this process some electrons are introduced into the polymer having conjugated double bonds. Reduction can be done by using Lewis base like sodium naphthalide. This will lead to the formation of poloron and bipoloron in two steps.
 
-
-
-> **Figure: Chemical reaction steps for n-doping and propagation of bipolaron in polyacetylene**
->
-> Two chemical reaction schemes showing polyacetylene structures. The first scheme shows addition of +1e- to polyacetylene forming a radical ion/polaron. The second scheme shows propagation of bipolaron through the conjugated polymer chain by shifting of double bonds, labeled 'Propagation of bipolaron through the conjugated polymer chain by shifting of double bonds' below.
-
-
+![Chemical reaction steps for n-doping and propagation of bipolaron in polyacetylene](/assets/notes/me/s1/chemistry/module-1/bipolaron.svg)
 
 ### 2) Extrinsically conducting polymers:
 
@@ -916,13 +862,7 @@ A Super capacitor is an electrochemical energy storage device ,generally consist
 
 ## GRAPHENE
 
-
-
-> **Figure: Graphene hexagonal lattice structure**
->
-> A 2D honeycomb lattice structure representing graphene, consisting of connected carbon atoms forming multiple hexagonal rings. Two arrows labelled U and V are shown at the bottom-left corner with U pointing horizontally right and V pointing vertically up.
-
-
+![Graphene hexagonal lattice: carbon atoms in a honeycomb of hexagonal rings, with arrows U (horizontal) and V (vertical) at the bottom-left](/assets/notes/me/s1/chemistry/module-1/graphene-lattice.svg)
 
 ### Structure
 
@@ -1023,13 +963,7 @@ _3. Biomedical:_
 
 ## FULLERENES
 
-
-
-> **Figure: Structure of a fullerene molecule (buckyball)**
->
-> A spherical fullerene (buckyball) molecular structure showing a cage-like network of interconnected pentagonal and hexagonal carbon rings represented by black vertices and bonds.
-
-
+![Structure of a fullerene molecule (buckyball)](/assets/notes/me/s1/chemistry/module-1/fullerene.svg)
 
 - Fullerenes are zero-dimensional, hollow, closed cage nanoparticles made of carbon atoms
 
@@ -1075,4 +1009,3 @@ _3. Biomedical:_
 
 <!-- page 33 | Page 33 -->
 
-[Non-content page]

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+<title id="title">Graphene hexagonal lattice</title>
+<desc id="desc">Honeycomb lattice of carbon atoms with arrows U (horizontal) and V (vertical) at the bottom-left corner.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<polygon points="300.0,110.0 300.0,170.0 248.0,200.0 196.1,170.0 196.1,110.0 248.0,80.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="403.9,110.0 403.9,170.0 352.0,200.0 300.0,170.0 300.0,110.0 352.0,80.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="507.8,110.0 507.8,170.0 455.9,200.0 403.9,170.0 403.9,110.0 455.9,80.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="248.0,200.0 248.0,260.0 196.1,290.0 144.1,260.0 144.1,200.0 196.1,170.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="352.0,200.0 352.0,260.0 300.0,290.0 248.0,260.0 248.0,200.0 300.0,170.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="455.9,200.0 455.9,260.0 403.9,290.0 352.0,260.0 352.0,200.0 403.9,170.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="300.0,290.0 300.0,350.0 248.0,380.0 196.1,350.0 196.1,290.0 248.0,260.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="403.9,290.0 403.9,350.0 352.0,380.0 300.0,350.0 300.0,290.0 352.0,260.0" fill="none" stroke="#1f4e79" stroke-width="3"/><polygon points="507.8,290.0 507.8,350.0 455.9,380.0 403.9,350.0 403.9,290.0 455.9,260.0" fill="none" stroke="#1f4e79" stroke-width="3"/>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#b03a2e"/></marker></defs>
+<line x1="60" y1="380" x2="150" y2="380" stroke="#b03a2e" stroke-width="3" marker-end="url(#arr)"/>
+<text x="162" y="386" font-family="Arial" font-size="20" fill="#b03a2e">U</text>
+<line x1="60" y1="380" x2="60" y2="290" stroke="#b03a2e" stroke-width="3" marker-end="url(#arr)"/>
+<text x="46" y="276" font-family="Arial" font-size="20" fill="#b03a2e">V</text>
+</svg>

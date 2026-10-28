@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | MODULE 3 -->
 
 # MODULE 3
@@ -61,11 +59,7 @@ When a molecule absorbs energy in UV-Visible region, its electrons are promoted 
 
 <!-- page 4 | Page 4 -->
 
-> **Figure: Electronic energy levels and transitions diagram showing sigma, pi, n, pi*, and sigma* orbitals.**
->
-> A vertical energy level diagram with an 'Energy' arrow on the left pointing upwards. Horizontal lines represent molecular orbitals from bottom to top: sigma, pi, n, pi*, and sigma*. Vertical arrows indicate electronic transitions: sigma to sigma* (leftmost, spanning from sigma to sigma*), pi to pi* (middle, from pi to pi*), n to pi* (from n to pi*), and n to sigma* (right, from n to sigma*).
-
-
+![Electronic energy levels and transitions diagram showing sigma, pi, n, pi*, and sigma* orbitals.](/assets/notes/me/s1/chemistry/module-3/electronic-transitions.svg)
 
 1 : <u>$\sigma$ to $\sigma^*$ transition</u> : the saturated hydrocarbons are transparent to UV - visible light. Therefore they are colourless. The saturated hydrocarbons can give only $\sigma$ to $\sigma^*$ transitions of C-C $\sigma$ bond and C-H $\sigma$ bond . This type of transition occurs below 150 nm . The ordinary UV machines take spectra only from 200 -700 nm and saturated hydrocarbons cannot be detected .
 
@@ -75,33 +69,19 @@ In the case of <u>1,3-butadiene</u> these transitions are observed at 217nm. 1,3
 
 <!-- page 5 | TRANSITION FOR 1,3,5 HEXATRIENE -->
 
-> **Figure: Electronic energy levels and transitions diagram showing ground state and excited state electron configurations.**
->
-> An energy level diagram with two columns of horizontal lines representing molecular orbitals. The left column is labeled 'Most stable electron configuration' at the bottom, showing pairs of electrons (arrows pointing up and down) in levels psi 1, psi 2, and psi 3, while psi 4, psi 5, and psi 6 are empty. An arrow points upward from HOMO to LUMO with 'Delta E = hv'. The right column is labeled 'Electron configuration of excited state', showing one electron promoted from HOMO to the LUMO level.
-
-
+![Electronic energy levels and transitions diagram showing ground state and excited state electron configurations.](/assets/notes/me/s1/chemistry/module-3/ground-excited-states.svg)
 
 ## TRANSITION FOR 1,3,5 HEXATRIENE
 
 In the case of 1,3,5 hexatriene transitions are observed at 258 nm . It has six $\pi$ molecular orbitals $\psi_1$, $\psi_2$, $\psi_3$, $\psi_4^*$, $\psi_5^*$, $\psi_6^*$ here $\psi_1, \psi_2, \psi_3$ are bonding molecular orbitals and $\psi_4^*, \psi_5^*, \psi_6^*$ are antibonding MO's. In the ground state six $\pi$ electrons occupy bonding MO's and transition occurs from HOMO ($\psi_3$) to LUMO($\psi_4^*$). As conjugation increases $\lambda$ max increases.
 
-
-
-> **Figure: Molecular orbital energy level diagram for 1,3,5-hexatriene showing the HOMO to LUMO transition at 258 nm and 111 kcal/mol.**
->
-> A molecular orbital diagram with two sets of horizontal energy levels for 1,3,5-hexatriene. Levels psi 1 to psi 6 are shown with psi 1, psi 2, psi 3 containing paired electrons in the ground state. A vertical double-headed arrow on the left indicates Delta E = 111 kcal/mol between psi 3 and psi 4 star. An arrow points horizontally to the right labeled '258 nm' to an excited state where one electron is promoted from psi 3 to psi 4 star.
-
-
+![Molecular orbital energy level diagram for 1,3,5-hexatriene showing the HOMO to LUMO transition at 258 nm and 111 kcal/mol.](/assets/notes/me/s1/chemistry/module-3/hexatriene-mo.svg)
 
 ## TRANSITION FOR BENZENE
 
 <!-- page 6 | Page 6 -->
 
-> **Figure: Molecular orbital energy level diagram for benzene and structure of benzene**
->
-> An energy level diagram showing molecular orbitals $\psi_1$ to $\psi_6$ for benzene, with $\psi_2$ and $\psi_3$ acting as HOMO containing paired electrons, and $\psi_5$ acting as LUMO. An arrow indicates an electronic transition between HOMO and LUMO labeled with $\lambda = 255\text{ nm}$. To the right is a hexagon representing the benzene ring labeled (b).
-
-
+![Molecular orbital energy level diagram for benzene and structure of benzene](/assets/notes/me/s1/chemistry/module-3/benzene-mo.svg)
 
 Benzene has 3 double bonds forming and $6\;\pi$ MO's. $\psi_1$, $\psi_2$, $\psi_3$ are bonding molecular orbitals, $\psi_4$, $\psi_5$, $\psi_6$ are antibonding molecular orbitals. In the ground state the $6\;\pi$ electrons occupy bonding molecular orbitals. , here $\psi_2 \& \psi_3$ and $\psi_4 \& \psi_5$ are orbitals having same energy. Here the HOMO to LUMO transition occurs at $255\text{ nm}$.
 
@@ -117,13 +97,7 @@ The UV spectrometer consists of a light source, monochromator (prism or grating)
 
 solvent is taken as reference in another similar cuvette. The most commonly used solvents are water, ethanol, hexane and cyclohexane. The intensities of these light beams are then measured by electronic detectors and compared. If the sample does not absorb light of a given wavelength then, I = $I_0$. However, if the sample absorbs light then I is less than $I_0$, and this difference is detected and recorded. The graph obtained is a plot of absorbance Vs wavelength.
 
-
-
-> **Figure: Schematic diagram of a UV-Visible spectrophotometer**
->
-> A schematic diagram showing the components of a UV-Visible spectrophotometer: UV-VIS sources, a monochromator, beam splitter optics splitting light into a sample beam ($I_0$) passing through a sample cuvette and a reference beam ($I_0$) passing through a reference cuvette, a detector, and a computer displaying a plot of $\log(I_0/I) = A$ versus wavelength $\lambda \text{ in nm}$.
-
-
+![Schematic diagram of a UV-Visible spectrophotometer](/assets/notes/me/s1/chemistry/module-3/uv-vis-spectrophotometer.svg)
 
 ### APPLICATIONS OF UV - VISIBLE SPECTROSCOPY
 
@@ -148,59 +122,25 @@ Vibrational or IR spectroscopy involves the transitions between vibrational ener
 
 Linear triatomic molecule like $\text{CO}_2$ has four $(3 \times 3 - 5 = 4)$ vibrational modes. symmetric stretching, asymmetric stretching and two bending vibrations in two mutually perpendicular planes. Out of the four vibrational modes, only three are IR active. The symmetric stretching does not involve the change of dipole moment and is not IR active. The two bending modes are equivalent (degenerate). Therefore only two absorption frequencies are observed in the case of $\text{CO}_2$, at $2349\text{ cm}^{-1}$ for asymmetric stretching and $667\text{ cm}^{-1}$ for bending vibration. For linear molecules like $\text{HCN}$, all the four modes are IR active.
 
+![Symmetric Stretching of CO2](/assets/notes/me/s1/chemistry/module-3/co2-symmetric-stretch.svg)
 
+![Asymmetric Stretching of CO2](/assets/notes/me/s1/chemistry/module-3/co2-asymmetric-stretch.svg)
 
-> **Figure: Symmetric Stretching of CO2**
->
-> Symmetric stretching vibration of CO2 showing two arrows pointing outwards from the oxygen atoms away from the central carbon atom. Below is the label O=C=O, Symmetric Stretching, No Change in dipole moment, IR inactive.
+![Bending inplane of CO2](/assets/notes/me/s1/chemistry/module-3/co2-bending-inplane.svg)
 
-
-
-
-
-> **Figure: Asymmetric Stretching of CO2**
->
-> Asymmetric stretching vibration of CO2 showing two parallel arrows pointing to the right. Below is the label O=C=O, Asymetric Stretching, Change in dipole moment, IR active.
-
-
-
-
-
-> **Figure: Bending inplane of CO2**
->
-> Bending inplane vibration of CO2 showing a vertical arrow pointing upwards above a bent O=C=O structure. Below is the label Bending inplane, Change in dipole moment, IR active.
-
-
-
-
-
-> **Figure: Bending out plane of CO2**
->
-> Bending out plane vibration of CO2 showing two diagonal arrows pointing outwards and downwards. Below is the label Bending out plane, Change in dipole moment, IR active.
+![Bending out plane of CO2](/assets/notes/me/s1/chemistry/module-3/co2-bending-out-of-plane.svg)
 
 <!-- page 9 | Page 9 -->
 
 **Non linear molecule** : For a non linear molecule there arr 3n-6 vibrational degrees of freedom for eg water molecule has (3*3-6=3) vibrational freedoms. They are, symmetric stretching , asymmetric stretching and a bending mode. Unlike $\text{CO}_2$, here two bending nodes are not possible for $\text{H}_2\text{O}$. According to classical mechanics during vibration, the centre of mass should not change its position . It is to be noted that bond length changes during a stretching vibration and a bond angle remains constant . But in bending vibrations bond angle changes and bond length remains constant.
 
-
-
-> **Figure: Vibrational modes of water molecule: symmetric stretching, asymmetric stretching, and bending in plane**
->
-> Three diagrams showing vibrational modes of H2O. First diagram: 'Symmetric stretching' showing O atom with arrows pointing outward along both O-H bonds. Second diagram: 'Asymmetric stretching' showing O atom with arrows pointing in the same general direction along the O-H bonds. Third diagram: 'Bending in plane' showing O atom with arrows pointing inward toward the H-O-H angle vertex.
-
-
+![Vibrational modes of water molecule: symmetric stretching, asymmetric stretching, and bending in plane](/assets/notes/me/s1/chemistry/module-3/water-vibrational-modes.svg)
 
 **APPLICATIONS OF IR SPECTROSCOPY**
 
 1. **Determination of force constant of a diatomic molecule:** Fundamental frequency of vibration or wavenumber is directly proportional to square root of force constant 'k' (bond strength) and inversely proportional to square root of reduces mass '$\mu$' of the vibrating atoms.
 
-
-
-> **Figure: Formulas for frequency, wave number, and force constant in diatomic molecules**
->
-> Boxed formulas showing Frequency: $\nu_0 = \frac{1}{2\pi}\sqrt{\frac{k}{\mu}}$, Wave number: $\bar{\nu} = \frac{1}{2\pi c}\sqrt{\frac{k}{\mu}}$, and Force constant: $k = 4\pi^2 \nu_0^2 \mu = 4\pi^2 c^2 \bar{\nu}^2 \mu$.
-
-
+![Formulas for frequency, wave number, and force constant in diatomic molecules](/assets/notes/me/s1/chemistry/module-3/diatomic-vibration-formulas.svg)
 
 $$\text{Frequency, } \nu_0 = \frac{1}{2\pi} \sqrt{\frac{k}{\mu}}$$
 
@@ -220,13 +160,7 @@ Where $c$ is the velocity of light in vacuum ($3 \times 10^8 \text{ m/s}$) and $
 
 5. **To distinguish between intra molecular and intermolecular hydrogen bonding:** The -OH stretching frequency ( 3300 - 3500cm$^{-1}$ )does not change on dilution in the case of intramolecular H-bonding. Eg; ortho-hydroxy phenol, and para-hydroxy phenol. In p-hydroxy phenol there exists inter molecular hydrogen bonding. The molecules get separated on dilution and intermolecular hydrogen bonding weakens and there is shift of absorption frequency with dilution. In o-hydroxy phenol the hydrogen bonding type is intramolecular which is not affected by dilution.
 
-
-
-> **Figure: Chemical structures showing Intermolecular H-bonding in p-hydroxy phenol and intramolecular H-bonding in o-hydroxy phenol**
->
-> Chemical structures of two phenol derivatives. The left structure shows intermolecular hydrogen bonding between two p-hydroxy phenol molecules connected via dashed lines between H and O atoms, labelled 'Intermolecular H-bonding in p-hydroxy phenol'. The right structure shows intramolecular hydrogen bonding within a single o-hydroxy phenol molecule, labelled 'intramolecular H-bonding in o-hydroxy phenol'.
-
-
+![Chemical structures showing Intermolecular H-bonding in p-hydroxy phenol and intramolecular H-bonding in o-hydroxy phenol](/assets/notes/me/s1/chemistry/module-3/phenol-hydrogen-bonding.svg)
 
 Figure 3.17: Intermolecular and intramolecular H-bonding
 
@@ -264,13 +198,7 @@ Thermogravimetric analysis can be used for the identification of inorganic compo
 
 **Explain the nature of thermogram of $\text{CaC}_2\text{O}_4\cdot\text{H}_2\text{O}$.**
 
-
-
-> **Figure: Block diagram of TGA apparatus and thermogram of calcium oxalate**
->
-> Two diagrams are presented. The top figure, labeled 'Figure 3.2: Block diagram of TGA apparatus', shows a schematic with a temperature sensor, amplifier, computer, thermo balance, thermal insulation, sample holder with inert atmosphere facility, and a temp. programmable furnace. The bottom figure shows the thermogram (Weight (mg) vs Temperature (°C)) for calcium oxalate, indicating weight loss steps corresponding to $\text{CaC}_2\text{O}_4\cdot\text{H}_2\text{O}$ at $100^\circ\text{C}$, $\text{CaC}_2\text{O}_4$ at $226^\circ\text{C}$ and $346^\circ\text{C}$, $\text{CaCO}_3$ at $420^\circ\text{C}$ and $660^\circ\text{C}$, and $\text{CaO}$ at $840^\circ\text{C}$ and $980^\circ\text{C}$.
-
-
+![Block diagram of TGA apparatus and thermogram of calcium oxalate](/assets/notes/me/s1/chemistry/module-3/tga-apparatus-thermogram.svg)
 
 **TGA OF POLYMERS**
 
@@ -278,11 +206,7 @@ TGA of few polymers as shown in the graph. It is seen that PVC (poly vinyl chlor
 
 <!-- page 13 | Page 13 -->
 
-> **Figure: TGA curves for different polymers showing mass versus temperature**
->
-> A graph titled 'Temperature, °C' on the x-axis (ranging from 0 to 800) and 'Mass, mg' on the y-axis (ranging from 0 to 10). It shows thermal decomposition curves for several polymers: PVC, PMMA, LDPE, PTFE, and PI. The conditions noted are 10 mg, 5 °C/min in N2.
-
-
+![TGA curves for different polymers showing mass versus temperature](/assets/notes/me/s1/chemistry/module-3/tga-polymers.svg)
 
 **_Applications of TGA_**
 
@@ -292,13 +216,7 @@ TGA of few polymers as shown in the graph. It is seen that PVC (poly vinyl chlor
 
 **Derivative thermo gravimetry (DTG):** The derivative TG is rate of change of slope of the TG obtained by taking change in mass($\Delta$m) divided by change in temperature ($\Delta$T) in small intervals. The plot of ($\frac{\Delta m}{\Delta T}$) verses temperature (T) is called derivative TG (shown in fig. 3.22). The graph gives downward peaks. Each peak signifies temperature at which maximum rate of decomposition takes place.
 
-
-
-> **Figure: Derivative thermogram of calcium oxalate monohydrate showing sample weight and weight change against temperature**
->
-> A graph with sample temperature (°C) on the x-axis (0 to 1100), sample weight (wt.%) on the left y-axis (30 to 110), and weight change (Δm/ΔT) on the right y-axis (-5 to 1). It displays curves for Ca(COO)2.H2O, Ca(COO)2, CaCO3, and CaO with multiple downward peaks.
-
-
+![Derivative thermogram of calcium oxalate monohydrate showing sample weight and weight change against temperature](/assets/notes/me/s1/chemistry/module-3/derivative-thermogram.svg)
 
 Figure 3.22: Derivative thermogram of clacium oxalate monohydrate
 
@@ -314,23 +232,13 @@ Figure 3.22: Derivative thermogram of clacium oxalate monohydrate
 - Exothermic peak changes are represented by the upward peak and endothermic peak represented by a downward peak
 - DTA curve provides data about physical changes such as transition ,fusion sublimation etc, are endothermic and , the chemical changes such as dehydration , decomposition etc are exothermic.
 
-
-
-> **Figure: DTA of calcium oxalate monohydrate curve**
->
-> A DTA curve graph plotting Differential temperature (Exothermal vs Endothermal) on the y-axis against Sample temperature in degrees Celsius (0 to 900) on the x-axis. It shows various peaks corresponding to reactions: CaC2O4.H2O -> CaC2O4 + H2O at lower temperatures, 2CaC2O4 + O2 -> 2CaCO3 + 2CO2 around 500 C, and CaCO3 -> CaO + CO2 at higher temperatures.
-
-
+![DTA of calcium oxalate monohydrate curve](/assets/notes/me/s1/chemistry/module-3/dta-curve.svg)
 
 Figure 3.23: DTA of calcium oxalate monohydrate ($\text{CaC}_2\text{O}_4 \cdot \text{H}_2\text{O}$) in a current of air
 
 ### INSTRUMENTATION & WORKING
 
-
-
-> **Figure: Block diagram of DTA instrumentation and working**
->
-> Block diagram showing the instrumentation of DTA containing components: Thermocouple 1 and Thermocouple 2 connected to Amplifiers and a Computer. A Furnace contains Reference and Sample, powered by a Source of power, and connected to Environment control equipment.
+![Block diagram of DTA instrumentation and working](/assets/notes/me/s1/chemistry/module-3/dta-instrumentation.svg)
 
 <!-- page 15 | CHROMATOGRAPHIC METHODS -->
 
@@ -391,13 +299,7 @@ Gas chromatography is a term used to describe the group of analytical separation
 
 _Procedure_ : The sample mixture is injected into injection port where it gets vapourised and carried by the carrier gas into the heated chromatographic column . During this process the components of the mixture get distributed between two phases depending on the extention of partition or adsorption, the different components are carried at different at different rates and hence they emerge from columns at different time. The time taken by each component to pass through the column is characteristic property which helps for identification.
 
-
-
-> **Figure: Gas Chromatography schematic diagram**
->
-> A schematic block diagram of a Gas Chromatography system. A gas cylinder labeled 'Carrier gas' connects through a 'Gas flow regulator' to a system entering an 'Injector port' with a 'Sample' syringe. The stream passes into a coiled 'Column' housed inside an 'Oven'. The column output goes to a 'Detector', then to 'Waste', and electrically to a computer/data analysis unit showing a chromatogram with peaks. All enclosed inside a main box labeled Gas Chromatography.
-
-
+![Gas Chromatography schematic diagram](/assets/notes/me/s1/chemistry/module-3/gas-chromatography.svg)
 
 **Retention time($t_R$)**
 
@@ -430,11 +332,7 @@ SEM is an important surface characterisation technique used in nanotechnology. I
 
 <!-- page 19 | Applications -->
 
-> **Figure: Schematic diagram of a Scanning Electron Microscope (SEM)**
->
-> A vertical schematic of a scanning electron microscope showing components from top to bottom: an Electron source, Anode with two rectangular boxes on either side, Condenser lens with two lens-like oval curves, Scan coils with two rectangular boxes on either side, Objective lens, and a flat Sample at the bottom. A Secondary electron detector is positioned to the left, pointing towards the sample with dashed lines representing electron paths.
-
-
+![Schematic diagram of a Scanning Electron Microscope (SEM)](/assets/notes/me/s1/chemistry/module-3/scanning-electron-microscope.svg)
 
 ### Applications
 
@@ -450,4 +348,3 @@ SEM is an important surface characterisation technique used in nanotechnology. I
 
 <!-- page 20 | Page 20 -->
 
-[Non-content page]

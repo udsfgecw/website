@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Module-4 -->
 
 # Module-4
@@ -58,13 +56,7 @@ The acceleration of the body is always directed towards the
 
 Example of SHM: Simple pendulum motion
 
-
-
-> **Figure: Simple pendulum motion showing extreme left (L), mean (M), and extreme right (R) positions.**
->
-> A pendulum suspended from a fixed point with three positions indicated: L (Extreme left, with a dashed line), M (Mean, hanging vertically), and R (Extreme right).
-
-
+![Simple pendulum motion showing extreme left (L), mean (M), and extreme right (R) positions.](/assets/notes/me/s1/engineering-mechanics/module-4/pendulum-left-mean-right.svg)
 
 Extreme left Mean Extreme right
 
@@ -74,32 +66,15 @@ The important terms used in SHM :-
 
 The maximum displacement of the particle from its mean position is called amplitude.
 
-
-
-> **Figure: Pendulum diagram illustrating amplitude 'a'.**
->
-> A simple pendulum showing bob at position m and extreme position R, with horizontal distance labelled 'a' representing amplitude.
-
-
+![Pendulum diagram illustrating amplitude 'a'.](/assets/notes/me/s1/engineering-mechanics/module-4/pendulum-amplitude-a.svg)
 
 The amplitude always equal to the radius of the circular orbit.
 
-
-
-> **Figure: Circular orbit relation with radius a.**
->
-> A conical pendulum or circular motion representation showing a horizontal radius labelled 'a = radius of circle'.
-
+![Circular orbit relation with radius a.](/assets/notes/me/s1/engineering-mechanics/module-4/circular-orbit-radius-a.svg)
 
 $a$ - radius of circle
 
-
-
-> **Figure: Displacement x and amplitude a in pendulum motion.**
->
-> A pendulum diagram showing extreme positions L and R, mean position, and displacement x between the mean position and an intermediate position.
-
-
+![Displacement x and amplitude a in pendulum motion.](/assets/notes/me/s1/engineering-mechanics/module-4/pendulum-displacement-x.svg)
 
 $a$ is the amplitude, $x$ is the displacement
 (max displacement)
@@ -208,13 +183,7 @@ A) $x = 2, \quad v = 10\text{ m/s} \quad - \text{(1)}$
 
 $x = 4, \quad v = 4\text{ m/s} \quad - \text{(2)}$
 
-
-
-> **Figure: Diagram showing a simple pendulum undergoing SHM with two different positions corresponding to velocities and displacements.**
->
-> A schematic diagram showing a pendulum suspended from a fixed horizontal bar. Two positions of the bob are indicated by dashed lines and circles: one at distance $x = 2$ with velocity $v = 10\text{ m/s}$, and another further out at distance $x = 4$ with velocity $v = 4\text{ m/s}$.
-
-
+![Diagram showing a simple pendulum undergoing SHM with two different positions corresponding to velocities and displacements.](/assets/notes/me/s1/engineering-mechanics/module-4/shm-two-velocities.svg)
 
 We know, $v = \omega \sqrt{a^2 - x^2}$
 
@@ -268,13 +237,7 @@ Q. A particle performing SHM when it is at a distance of $10\text{ cm}$ and $20\
 
 A - $10\text{ cm} = 0.1\text{ m}$, $20\text{ cm} = 0.1\text{ m}$
 
-
-
-> **Figure: Pendulum diagram showing oscillation positions x = 0.1m with v = 1.2 m/s and x = 0.2m with v = 0.8 m/s**
->
-> A simple pendulum hanging from a support. A dashed line shows the pendulum bob at two different displaced positions from the center. Double-headed arrows indicate displacements x = 0.1 m with velocity v = 1.2 m/s, and x = 0.2 m with velocity v = 0.8 m/s.
-
-
+![Pendulum diagram showing oscillation positions x = 0.1m with v = 1.2 m/s and x = 0.2m with v = 0.8 m/s](/assets/notes/me/s1/engineering-mechanics/module-4/pendulum-x-v-two-positions.svg)
 
 $a$ is the amplitude,  
 $\omega$ is the angular velocity
@@ -473,31 +436,14 @@ A simple spring mass system like a simple pendulum oscillating in single plane i
 
 A two mass two spring system is an example of two degree of freedom system.
 
-
-
-> **Figure: Single degree freedom system diagram showing a mass suspended from a fixed support by a single spring**
->
-> A single degree of freedom system diagram showing a mass box labelled 'm' hanging from a fixed hatched ceiling by a spring labelled 'K'.
-
+![Single degree freedom system diagram showing a mass suspended from a fixed support by a single spring](/assets/notes/me/s1/engineering-mechanics/module-4/sdof-mass-spring.svg)
 
 Single degree
 freedom system
 
+![Two degree of freedom system diagram with a single mass between two springs](/assets/notes/me/s1/engineering-mechanics/module-4/two-dof-one-mass.svg)
 
-
-> **Figure: Two degree of freedom system diagram with a single mass between two springs**
->
-> A spring-mass system diagram showing a fixed ceiling at the top and bottom with a mass box labelled 'm' in the middle, connected to the top ceiling by spring 'K1' and to the bottom ceiling by spring 'K2'.
-
-
-
-
-
-> **Figure: Two degree of freedom system with two masses and three springs**
->
-> A spring-mass system diagram showing two masses labelled 'm1' and 'm2' connected in series between fixed ceilings by three springs 'K1', 'K2', and a third spring at the bottom.
-
-
+![Two degree of freedom system with two masses and three springs](/assets/notes/me/s1/engineering-mechanics/module-4/two-dof-two-masses.svg)
 
 ( Two degree of freedom system )
 
@@ -519,13 +465,7 @@ $\text{Max} \cdot \text{tension} = K \times a$
 ($k \to \text{stiffness}$
 $a \to \text{amplitude}$)
 
-
-
-> **Figure: Diagram of a spring-mass system hanging from a fixed support**
->
-> A vertical spring-mass model showing a fixed support at the top with hatched lines, a spring labelled 'k', a suspended mass labelled 'M', and a displacement indicator 'x' below the mass.
-
-
+![Diagram of a spring-mass system hanging from a fixed support](/assets/notes/me/s1/engineering-mechanics/module-4/spring-mass-hanging.svg)
 
 Q) A weight of $50\text{ N}$ is suspended from a spring which vibrate vertically with an amplitude of $8\text{ cm}$ and a frequency of $1\text{ oscillation per second}$.
 
@@ -619,13 +559,7 @@ Q) If a helical spring is having a stiffness of $90 \text{ N/cm}$, what weight s
 
 A)
 
-
-
-> **Figure: Diagram of a helical spring suspended from a rigid support with a mass m attached at the bottom.**
->
-> A sketch showing a fixed support at the top, a hanging helical spring labeled K = 90 N/cm, and a mass block at the bottom labeled m = ?
-
-
+![Diagram of a helical spring suspended from a rigid support with a mass m attached at the bottom.](/assets/notes/me/s1/engineering-mechanics/module-4/helical-spring-mass.svg)
 
 Natural frequency of the system, $f_n = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
 
@@ -723,13 +657,7 @@ $$W = 45.45 \text{ N}$$
 
 $$m = \frac{45.45}{9.81} = 4.63 \text{ kg}$$
 
-
-
-> **Figure: Diagrams for springs in series and parallel connections**
->
-> Two sections showing equivalent stiffness. On the left, springs in series: a vertical spring with stiffness K1 connected in series to another spring K2, suspended from a fixed support and attached to a mass m at the bottom, with a boxed formula 1/Ke = 1/K1 + 1/K2. On the right, parallel connections: two variations showing springs in parallel supporting a mass m, with a boxed formula Ke = K1 + K2.
-
-
+![Diagrams for springs in series and parallel connections](/assets/notes/me/s1/engineering-mechanics/module-4/springs-series-parallel.svg)
 
 Equivalent stiffness ($K_e$)
 
@@ -759,13 +687,7 @@ Q) A body of mass $50\text{ kg}$ is suspended by two springs of stiffness $4\tex
 
 Sol: (a)
 
-
-
-> **Figure: Diagrams (a), (b), and (c) showing different spring-mass arrangements**
->
-> Three diagrams labeled (a), (b), and (c). Diagram (a) shows two springs in series connected to a ceiling and a mass of $50\text{ kg}$, with the top spring labeled $6\text{ kN/m}$ and the bottom spring labeled $4\text{ kN/m}$. Diagram (b) shows a mass of $50\text{ kg}$ suspended between a top spring ($6\text{ kN/m}$) attached to the ceiling and a bottom spring ($4\text{ kN/m}$) attached to the floor. Diagram (c) shows two parallel springs labeled $6\text{ kN/m}$ and $4\text{ kN/m}$ connected between the ceiling and a single $50\text{ kg}$ mass.
-
-
+![Diagrams (a), (b), and (c) showing different spring-mass arrangements](/assets/notes/me/s1/engineering-mechanics/module-4/spring-arrangements-abc.svg)
 
 (a) Series
 
@@ -849,4 +771,3 @@ with respect to spring, the stiffness or spring constant is obtained
 
 <!-- page 26 | Page 26 -->
 
-[Non-content page]

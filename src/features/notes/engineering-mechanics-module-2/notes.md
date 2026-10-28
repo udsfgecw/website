@@ -1,20 +1,12 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Module-2 -->
 
 # Module-2
 
 ## Friction
 
-
-
-> **Figure: Free body diagram of a block on a surface with applied force P, weight W, normal reaction R_N, and frictional force F_r**
->
-> A box labelled with weight W pointing downwards, normal reaction R_N pointing upwards from the bottom, applied horizontal force P pointing to the right (labelled 'applied force'), and frictional force pointing to the left at the bottom interface (labelled 'frictional force' and '(induced force)').
-
-
+![Free body diagram of a block on a surface with applied force P, weight W, normal reaction R_N, and frictional force F_r](/assets/notes/me/s1/engineering-mechanics/module-2/block-surface-p-w-rn-f.svg)
 
 i) $P = 0,\ f_r = 0$
 
@@ -50,13 +42,7 @@ when $P = 0$, body has no tendency to move and hence, $F_r = 0$
 
 ii) when $P = 100\text{ N}$, $F_{r \max} = 200\text{ N}$
 
-
-
-> **Figure: Free body diagram showing force P and F_r max**
->
-> A horizontal arrow labelled P pointing right with value 100 N, and an opposite arrow labelled F_r max pointing left with value 200 N, along with the text P < F_r max.
-
-
+![Free body diagram showing force P and F_r max](/assets/notes/me/s1/engineering-mechanics/module-2/block-p-fr-max.svg)
 
 Since the force tending the motion is less than the limiting friction,
 body does not move.
@@ -79,23 +65,13 @@ Q. A body of weight $90\text{ N}$ is placed on a rough horizontal plane.
 Determine the coefficient of friction if a horizontal force of $63\text{ N}$
 just causes the body to slide over the horizontal plane.
 
-
-
-> **Figure: Diagram of a block on a rough surface with forces**
->
-> A rectangular block resting on a horizontal hatched surface. A downward arrow from the top of the block is labelled 90 N. A horizontal arrow pointing right on the left side is labelled P = 63 N. A left-pointing arrow below the surface is labelled Friction force.
+![Diagram of a block on a rough surface with forces](/assets/notes/me/s1/engineering-mechanics/module-2/block-rough-surface.svg)
 
 <!-- page 4 | Page 4 -->
 
 A)
 
-
-
-> **Figure: Free body diagram of a block on a surface with weight, normal reaction, applied force, and friction.**
->
-> A rectangular block with a downward arrow W = 90 N, an upward arrow R_N, a leftward arrow P = 63 N, and a rightward arrow Friction (mu R_N).
-
-
+![Free body diagram of a block on a surface with weight, normal reaction, applied force, and friction.](/assets/notes/me/s1/engineering-mechanics/module-2/block-weight-normal-applied-friction.svg)
 
 $R_N = W = 90\text{ N}$ (Applying eqns of equilibrium, $\Sigma F_v = 0$)
 
@@ -109,23 +85,11 @@ $$\mu = \frac{63}{90} = 0.7$$
 
 Q. Block A weighs $200\text{ N}$ and block B weighs $300\text{ N}$. Find the tension required to move block A and the lateral force required to move ~~to~~ rightwards for block B. Assume coefficient of friction as $0.3$.
 
-
-
-> **Figure: Two stacked blocks A and B against a vertical wall on the left.**
->
-> Block A is stacked on top of block B. Both rest against a vertical wall on the left. A horizontal force T is applied to block A against the wall, and block B rests on a horizontal surface.
-
-
+![Two stacked blocks A and B against a vertical wall on the left.](/assets/notes/me/s1/engineering-mechanics/module-2/stacked-blocks-a-b-wall.svg)
 
 A) Drawing the FBD of block A;
 
-
-
-> **Figure: Free body diagram of block A showing applied tension, normal reaction, weight, and friction.**
->
-> Block A with downward arrow 200 N, upward arrow R_{N_1}, leftward arrow T, and rightward arrow friction = \mu R_{N_1}.
-
-
+![Free body diagram of block A showing applied tension, normal reaction, weight, and friction.](/assets/notes/me/s1/engineering-mechanics/module-2/fbd-block-a-tension.svg)
 
 $$\Sigma F_v = 0 \implies R_{N_1} = 200\text{ N}$$
 
@@ -137,13 +101,7 @@ $$T = 60\text{ N}$$
 
 FBD of block B;
 
-
-
-> **Figure: Free body diagram of block B showing downward load, upward normal reaction, leftward force P, and rightward friction forces.**
->
-> Block B with downward arrow 200+300 = 500 N, upward arrow R_{N_2}, leftward arrow P, and two rightward arrows labeled \mu R_{N_1} and \mu R_{N_2}.
-
-
+![Free body diagram of block B showing downward load, upward normal reaction, leftward force P, and rightward friction forces.](/assets/notes/me/s1/engineering-mechanics/module-2/fbd-block-b.svg)
 
 $$R_{N_2} = 500\text{ N}$$
 
@@ -159,23 +117,11 @@ $$= 210\text{ N}$$
 
 Ladder friction
 
-
-
-> **Figure: Ladder leaned against a wall**
->
-> A sketch showing a ladder AB leaned against a vertical wall at angle theta with the floor, with weight W acting downwards at the middle C.
-
-
+![Ladder leaned against a wall](/assets/notes/me/s1/engineering-mechanics/module-2/ladder-against-wall.svg)
 
 c/s of a ladder leaned against wall kept at floor
 
-
-
-> **Figure: Free body diagram of ladder**
->
-> FBD of ladder showing normal reactions R_F at floor and R_W at wall, friction forces, and weight W.
-
-
+![Free body diagram of ladder](/assets/notes/me/s1/engineering-mechanics/module-2/fbd-ladder.svg)
 
 For the ladder to be in equilibrium, Sum of the forces in the vertical direction, $\sum F_V = 0$, sum of the forces in horizontal direction, $\sum F_H = 0$
 
@@ -185,23 +131,13 @@ Particularly for the ladder to be in equilibrium (rest), the sliding force shoul
 
 5. A uniform ladder $5\text{ m}$ long, weighing $250\text{ N}$ is placed against a smooth vertical wall with its lower end $2\text{ m}$ from the wall. The coefficient of friction between the ladder and the floor is $0.25$. show that the ladder will remain in equilibrium position.
 
-
-
-> **Figure: Diagram for problem 5 showing 5m ladder and 2m distance from wall**
->
-> A right-angled triangle representing a ladder of length 5m leaning against a wall, with distance from the wall given as 2m at the bottom.
+![Diagram for problem 5 showing 5m ladder and 2m distance from wall](/assets/notes/me/s1/engineering-mechanics/module-2/ladder-5m-2m-from-wall.svg)
 
 <!-- page 6 | Page 6 -->
 
 A) FBD
 
-
-
-> **Figure: Free body diagram of a ladder leaning against a wall**
->
-> A free body diagram showing a ladder AB leaning against a vertical wall on the right and a horizontal floor at the bottom. Point A is at the bottom left, point B is at the top, and point O is the base of the wall directly below B. A vertical downward force of 250 N acts at point C along the ladder. At point A, a normal reaction $R_f$ acts vertically upwards, and a friction force $f$ acts horizontally to the right. Dimensions between A and O are marked as 1 m and 1 m.
-
-
+![Free body diagram of a ladder leaning against a wall](/assets/notes/me/s1/engineering-mechanics/module-2/fbd-ladder-2.svg)
 
 Since wall is smooth,
 
@@ -249,26 +185,13 @@ Q. A uniform ladder $6\text{ m}$ long weighing $300\text{ N}$ is resting against
 
 A. Since slipping (movement) happen to the ladder we have to consider the limiting friction at the two contact points. Mark this limiting friction in FBD as well as applying equilibrium condition.
 
+![Geometric diagram of a ladder resting against a wall](/assets/notes/me/s1/engineering-mechanics/module-2/ladder-geometry.svg)
 
-
-> **Figure: Geometric diagram of a ladder resting against a wall**
->
-> A sketch showing a ladder of length 6 m leaning against a vertical wall. The ladder makes an angle of 30 degrees with the wall and an angle of 60 degrees with the horizontal ground.
-
-
-
-
-
-> **Figure: Free body diagrams of the ladder**
->
-> Two free body diagrams showing the forces acting on the ladder: weights 750 N and 300 N acting downwards, normal reactions and limiting friction forces at the contact points A and B.
+![Free body diagrams of the ladder](/assets/notes/me/s1/engineering-mechanics/module-2/fbd-ladder-3.svg)
 
 <!-- page 8 | Page 8 -->
 
-> **Figure: Right-angled triangle ABC with hypotenuse 6m, angle 60 degrees, base 3m, and height 5.196m**
->
-> A right-angled triangle labeled A at bottom-left, B at top, and O at bottom-right. The hypotenuse AB is 6m. The bottom side AO is 3m. The vertical side BO is 5.196m. The angle at A is 60 degrees.
-
+![Right-angled triangle ABC with hypotenuse 6m, angle 60 degrees, base 3m, and height 5.196m](/assets/notes/me/s1/engineering-mechanics/module-2/triangle-abc-6-60.svg)
 
 $$\cos 60 = \frac{AO}{6} \qquad \sin 60 = \frac{BO}{6}$$
 $$\Rightarrow AO = 6 \cos 60 = 3\text{ m} \qquad BO = 6 \sin 60 = 3\sqrt{3}$$
@@ -327,23 +250,11 @@ A) 1) Dry friction - Sliding friction, Rolling friction
 
 Q. A block of weight $200\text{ N}$ is placed on a rough horizontal floor. If $\mu = 0.25$, find the pull required to move the block if $P$ is inclined upwards at $30^{\circ}$ to the horizontal ?
 
-
-
-> **Figure: Block on a horizontal floor pulled by an inclined force P**
->
-> A block resting on a horizontal floor. A downward arrow indicates weight $200\text{ N}$ acting from the center of the block. An arrow labeled $P$ points upwards and to the right at an angle of $30^{\circ}$ from the horizontal.
-
-
+![Block on a horizontal floor pulled by an inclined force P](/assets/notes/me/s1/engineering-mechanics/module-2/block-inclined-p-30.svg)
 
 A) <u>FBD</u>
 
-
-
-> **Figure: Free body diagram of the block with forces**
->
-> Free body diagram showing the block with forces: downward $200\text{ N}$ weight, upward normal reaction $R_N$, frictional force $\mu R_N$ to the left, pulling force $P$ at $30^{\circ}$, its vertical component $P \sin 30^{\circ}$ upwards, and horizontal component $P \cos 30^{\circ}$ to the right.
-
-
+![Free body diagram of the block with forces](/assets/notes/me/s1/engineering-mechanics/module-2/fbd-block-p-30.svg)
 
 Now, block fri-
 
@@ -367,37 +278,18 @@ A uniform ladder $4\text{ m}$ length rest against a vertical wall with which it 
 
 If a man whose weight is one half the weight of the ladder ascends, how heigh he will be when the ladder slips?
 
+![Ladder resting against a vertical wall](/assets/notes/me/s1/engineering-mechanics/module-2/ladder-4m-45.svg)
 
+| Coefficient | Value |
+| --- | --- |
+| $\mu_f$ (floor) | 0.5 |
+| $\mu_w$ (wall) | 0.4 |
 
-> **Figure: Ladder resting against a vertical wall**
->
-> A sketch showing a ladder of length 4m leaning against a vertical wall OB at an angle of 45 degrees with the vertical wall (or floor). Point A is on the floor, B is on the wall, and O is the corner. Length marked as 4m, angle at A and top marked as 45 degrees.
-
-
-
-
-
-> **Figure: Coefficient of friction values**
->
-> Friction coefficients listed as mu_f = 0.5 and mu_w = 0.4.
-
-
-
-
-
-> **Figure: Geometry of the ladder with dimensions**
->
-> Geometric diagram showing ladder AB of length 4, making 45 degrees with wall. Vertical height is 4 sin 45, horizontal base is 4 cos 45. A distance x cos 45 and x sin 45 is marked from A along the ladder.
-
-
+![Geometry of the ladder with dimensions](/assets/notes/me/s1/engineering-mechanics/module-2/ladder-geometry-4m.svg)
 
 Now, FBD
 
-
-
-> **Figure: Free Body Diagram of the ladder**
->
-> Free body diagram of ladder AB showing downward weight forces W and W/2 (or W), normal reactions and frictional forces at wall (R_W, mu_w R_W) and floor.
+![Free Body Diagram of the ladder](/assets/notes/me/s1/engineering-mechanics/module-2/fbd-ladder-4m.svg)
 
 <!-- page 11 | Page 11 -->
 
@@ -455,13 +347,7 @@ Centroid of Area
 
 Centroid of an area is the geometric centre of the area where the entire area can be assumed to be concentrated.
 
-
-
-> **Figure: Coordinate axes with an irregular area showing centroid G and its coordinates**
->
-> An irregular shaped area on a 2D Cartesian coordinate system with x and y axes. Inside the area, point G is marked as G(x̄, ȳ). Dimension lines indicate the horizontal distance x̄ from the y-axis and the vertical distance ȳ from the x-axis.
-
-
+![Coordinate axes with an irregular area showing centroid G and its coordinates](/assets/notes/me/s1/engineering-mechanics/module-2/irregular-area-centroid.svg)
 
 $$G(\bar{x}, \bar{y})$$
 
@@ -473,13 +359,7 @@ Centre of gravity of a body is the geometric centre of the body where the entire
 
 Expression for $\bar{x}$ and $\bar{y}$
 
-
-
-> **Figure: Irregular area divided into sub-areas a1, a2, a3 with corresponding coordinates**
->
-> An irregular area divided into smaller areas a1, a2, a3 with their respective centroids marked, showing horizontal distances x1, x2, x3 and vertical distances y1, y2, y3 from the reference y and x axes.
-
-
+![Irregular area divided into sub-areas a1, a2, a3 with corresponding coordinates](/assets/notes/me/s1/engineering-mechanics/module-2/irregular-area-divided.svg)
 
 $$\bar{x} = \frac{a_1 x_1 + a_2 x_2 + a_3 x_3 + \dots}{a_1 + a_2 + a_3 + \dots}$$
 
@@ -489,11 +369,7 @@ $$\bar{y} = \frac{a_1 y_1 + a_2 y_2 + a_3 y_3 + \dots}{a_2} = \frac{\int ay}{\in
 
 <!-- page 14 | Page 14 -->
 
-> **Figure: Rectangle of width b and height d with centroid G**
->
-> A rectangle of width b and height d, showing centroid G with horizontal and vertical dimensions b/2 and d/2.
-
-
+![Rectangle of width b and height d with centroid G](/assets/notes/me/s1/engineering-mechanics/module-2/rectangle-centroid.svg)
 
 $G(b/2, d/2)$
 
@@ -501,47 +377,23 @@ $\text{Area} = b \times d$
 
 Semicircle
 
-
-
-> **Figure: Circle of diameter d with centroid G**
->
-> A circle with diameter d, showing axes and centroid G at distance d/2 from the axes.
-
-
+![Circle of diameter d with centroid G](/assets/notes/me/s1/engineering-mechanics/module-2/circle-centroid.svg)
 
 $G(d/2, d/2)$
 
 $\text{Area} = \frac{\pi d^2}{4}$
 
-
-
-> **Figure: Semicircle of diameter d with centroid G**
->
-> A semicircle of diameter d = 2R, with centroid G at distance 4R/(3pi) from the base.
-
-
+![Semicircle of diameter d with centroid G](/assets/notes/me/s1/engineering-mechanics/module-2/semicircle-centroid.svg)
 
 $\text{Area} = \frac{\pi}{8} d^2$
 
-
-
-> **Figure: Right-angled triangle of base b and height h with centroid G**
->
-> A right-angled triangle with base b and height h, showing centroid G at distances b/3 and h/3.
-
-
+![Right-angled triangle of base b and height h with centroid G](/assets/notes/me/s1/engineering-mechanics/module-2/right-triangle-centroid.svg)
 
 $G(b/3, h/3)$
 
 $\text{Area} = \frac{1}{2} bh$
 
-
-
-> **Figure: Triangle of base b and height h with centroid G**
->
-> A general triangle with base b and height h, showing centroid G at distances b/2 and h/3.
-
-
+![Triangle of base b and height h with centroid G](/assets/notes/me/s1/engineering-mechanics/module-2/triangle-centroid.svg)
 
 $G(b/2, h/3)$
 
@@ -551,11 +403,7 @@ Q. Determine the centroid of the L section shown in figure .
 
 <!-- page 15 | Page 15 -->
 
-> **Figure: L-shaped cross section diagram with dimensions 120 mm total height, 20 mm thickness, and 100 mm total width, divided into two rectangular parts numbered 1 and 2, with centroid G marked at (30 mm, 40 mm).**
->
-> An L-shaped section with vertical part (1) and horizontal part (2). Total height along the left is 120 mm, thickness of the vertical part is 20 mm. Total length of the horizontal part is 100 mm, thickness is 20 mm. Centroid G is indicated inside pointing to coordinates (30 mm, 40 mm).
-
-
+![L-shaped cross section diagram with dimensions 120 mm total height, 20 mm thickness, and 100 mm total width, divided into two rectangular parts numbered 1 and 2, with centroid G marked at (30 mm, 40 mm).](/assets/notes/me/s1/engineering-mechanics/module-2/l-section.svg)
 
 $$\bar{x} = \frac{a_1 \bar{x}_1 + a_2 \bar{x}_2}{a_1 + a_2} = \frac{\left[100 \times 20 \times \frac{20}{2}\right] + \left(100 \times 20 \times \frac{100}{2}\right)}{(100 \times 20) + (100 \times 20)}$$
 
@@ -571,13 +419,7 @@ $$\text{centroid of L Section} = G(30 \text{ mm}, 40 \text{ mm})$$
 
 3) Find the centroid of the composite section
 
-
-
-> **Figure: C-shaped composite section diagram with dimensions: top flange width 40 mm and thickness 10 mm, total height 120 mm, bottom flange width [illegible] and thickness 10 mm, divided into three parts 1, 2, and 3.**
->
-> A C-channel or I-like asymmetric profile consisting of three rectangular parts: top part (1) of width 40 mm and thickness 10 mm; middle vertical web (2) of height 120 mm with dashed center line showing dimensions; bottom part (3) with thickness 10 mm and total width [illegible] mm. Area values are given to the right as a1 = 400 mm^2, a2 = 1000 mm^2, a3 = 700 mm^2.
-
-
+![C-shaped composite section diagram with dimensions: top flange width 40 mm and thickness 10 mm, total height 120 mm, bottom flange width [illegible] and thickness 10 mm, divided into three parts 1, 2, and 3.](/assets/notes/me/s1/engineering-mechanics/module-2/c-section.svg)
 
 $$\begin{aligned}
 a_1 &= 400 \text{ mm}^2 \\
@@ -601,13 +443,7 @@ $$G(17.86, 52.14)$$
 
 Q. Locate the centroid of the given 'Z' section ?
 
-
-
-> **Figure: Z-section diagram with dimensions and centroid labels**
->
-> A Z-section composed of three rectangular parts with horizontal and vertical dimensions: top flange length 200, thickness 40; central vertical web height 400 (with inner height 360), thickness 40; bottom flange length 400, thickness 40. Centroids G1, G2, and G3 are marked on the respective parts. An x-axis is indicated at the bottom right.
-
-
+![Z-section diagram with dimensions and centroid labels](/assets/notes/me/s1/engineering-mechanics/module-2/z-section.svg)
 
 $$x_1 = 100\text{ , } y_1 = 420$$
 $$x_2 = 180\text{ , } y_2 = 220$$
@@ -629,13 +465,7 @@ $G(\bar{x}, \bar{y}) : G(238.33, 178.83)$
 
 Determine the centroid or centre of gravity of the composite section as in figure.
 
-
-
-> **Figure: Composite section with a triangular portion on the left, a rectangular portion in the middle, and a semi-circular cutout at the bottom.**
->
-> A composite cross-section diagram showing a left triangular region of width 100 mm, a middle rectangular region of width 200 mm and height 150 mm, with a bottom semi-circular cutout of diameter 100 mm (radius 50 mm). Dimensions indicated are 100 mm, 200 mm, 150 mm height, and 50 mm, 100 mm, 50 mm horizontal spacings at the bottom.
-
-
+![Composite section with a triangular portion on the left, a rectangular portion in the middle, and a semi-circular cutout at the bottom.](/assets/notes/me/s1/engineering-mechanics/module-2/composite-triangle-rect-semicircle.svg)
 
 $a_1 \rightarrow \Delta \text{ area}$
 
@@ -677,25 +507,13 @@ Moment of inertia of a body about a particular axis depends upon both the mass o
 
 MI of rectangular surface
 
-
-
-> **Figure: MI of rectangular surface**
->
-> A rectangle with width b and height d, centered at G with orthogonal axes IGxx and IGyy.
-
-
+![MI of rectangular surface](/assets/notes/me/s1/engineering-mechanics/module-2/mi-rectangle.svg)
 
 $I_{Gxx} = \frac{bd^3}{12}$
 
 $I_{Gyy} = \frac{db^3}{12}$
 
-
-
-> **Figure: MI of triangular surface**
->
-> A triangle with base b and height h, showing centroid G and moment of inertia formulas.
-
-
+![MI of triangular surface](/assets/notes/me/s1/engineering-mechanics/module-2/mi-triangle.svg)
 
 $I_{Gxx} = \frac{bh^3}{36}$
 
@@ -725,13 +543,7 @@ $$I_{zz} = \frac{bd^3}{12} + \frac{db^3}{12}$$
 
 In a rectangular lamina;
 
-
-
-> **Figure: Diagram showing a rectangular lamina with dimensions b and d, centroid G, and a parallel axis AB at a distance h.**
->
-> A line drawing showing a rectangle representing a lamina with width b and height d. A horizontal centroidal axis passes through the center G. A parallel axis AB is drawn above the centroidal axis at a perpendicular distance labeled h. The height d is shown on the right side, and width b is shown at the bottom.
-
-
+![Diagram showing a rectangular lamina with dimensions b and d, centroid G, and a parallel axis AB at a distance h.](/assets/notes/me/s1/engineering-mechanics/module-2/lamina-parallel-axis-ab.svg)
 
 $$I_{AB} = I_{G_{xx}} + Ah^2$$
 
@@ -751,13 +563,7 @@ The mass moment of inertia of a body is defined as the product of the mass and t
 
 $dI = r^2 dm$
 
-
-
-> **Figure: Diagram showing a body of mass m with an elementary mass dm at distance r from axis AA**
->
-> An irregular shape representing a body with total mass m, crossed by a vertical axis labeled A at both ends. An elementary mass point labeled dm is located inside the body, at a distance r from the axis AA, indicated by a line with radius label r.
-
-
+![Diagram showing a body of mass m with an elementary mass dm at distance r from axis AA](/assets/notes/me/s1/engineering-mechanics/module-2/body-mass-dm-axis.svg)
 
 then Moment of inertia of the whole body about AA is given by
 
@@ -787,4 +593,3 @@ Unit of $K$ is $m$
 
 <!-- page 22 | Page 22 -->
 
-[Non-content page]

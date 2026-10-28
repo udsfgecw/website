@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Module - 2. -->
 
 # Module - 2.
@@ -135,7 +133,9 @@ $$y = 3 \cos x - 0.5 \sin x.$$
 - A basis of solutions of (2) on an open interval $I$ is a pair of linearly independent solutions of (2) on $I$.
 
 Q). Verify by substitution that $y_1 = e^x$ & $y_2 = e^{-x}$ are solutions of the ODE $y'' - y = 0$. Then solve the IVP
-$$y'' - y = 0, oy(0) = 6, oy'(0) = -2.$$
+$$y'' - y = 0, 
+oy(0) = 6, 
+oy'(0) = -2.$$
 
 Solution.	~~$y_1 = e^x$~~
 $$y'' - y = 0 \quad \text{---} \quad (1).$$
@@ -498,11 +498,12 @@ Choice rules for the method of ~~variation of parameter~~ undetermined coefficie
 
 (c) Sum Rule: If $r(x)$ is a sum of functions in the first column of table given below, choose $y_p$ the ~~same~~ sum of the functions in the corresponding lines of the second column.
 
-
-
-> **Figure: Table of undetermined coefficients choices for different terms in r(x)**
->
-> A table with two columns titled 'Term in $r(x)$' and 'Choice for $y_p(x)$'. Row 1: Term $ke^{\alpha x}$, Choice $Ce^{\alpha x}$. Row 2: Term $kx^n \;(n=0, 1, 2, \dots)$, Choice $K_n x^n + K_{n-1} x^{n-1} + \dots + K_1 x + K_0$. Row 3: Terms $k \cos \omega x$ and $k \sin \omega x$ bracketed together, Choice $K \cos \omega x + M \sin \omega x$. Row 4: Terms $ke^{\alpha x} \cos \omega x$ and $ke^{\alpha x} \sin \omega x$ bracketed together, Choice $e^{\alpha x}(K \cos \omega x + M \sin \omega x)$.
+| Term in $r(x)$ | Choice for $y_p(x)$ |
+| --- | --- |
+| $ke^{\alpha x}$ | $Ce^{\alpha x}$ |
+| $kx^n \;(n=0, 1, 2, \dots)$ | $K_n x^n + K_{n-1} x^{n-1} + \dots + K_1 x + K_0$ |
+| $k \cos \omega x$ and $k \sin \omega x$ | $K \cos \omega x + M \sin \omega x$ |
+| $ke^{\alpha x} \cos \omega x$ and $ke^{\alpha x} \sin \omega x$ | $e^{\alpha x}(K \cos \omega x + M \sin \omega x)$ |
 
 <!-- page 18 | Page 18 -->
 
@@ -1265,4 +1266,3 @@ $$y = c_1 \cos x + c_2 \sin x - \cos x \left[\frac{x^2}{4} - \frac{x \sin 2x}{4}
 
 <!-- page 37 | Page 37 -->
 
-[Non-content page]

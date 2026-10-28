@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | THERMODYNAMICS -->
 
 ## THERMODYNAMICS
@@ -18,13 +16,7 @@
   - The boundary may be real or imaginary in nature.
 - **Universe:** Systems and surrounding together is known as universe.
 
-
-
-> **Figure: Diagram illustrating System, Surroundings, Boundary, and Universe**
->
-> A rectangular box enclosing a region labeled Universe, which contains multiple shaded circular and oval regions labeled as System, separated from the rest of the space inside the box by a line labeled Boundary.
-
-
+![Diagram illustrating System, Surroundings, Boundary, and Universe](/assets/notes/me/s1/ime-ice/module-1/system-surroundings-boundary.svg)
 
 ### Types of Systems
 
@@ -50,13 +42,7 @@
 - **Reversible Process:** A process is said to be reversible if it should trace the same path in the reverse direction when the process is reversed.
 - **Irreversible Process:** A process is said to be irreversible if it should not trace the same path in the reverse direction when the process is reversed.
 
-
-
-> **Figure: Diagram showing 1-2: Reversible process and 3-4: Irreversible process on property coordinates.**
->
-> Two graphs with axes representing thermodynamic coordinates. The left graph shows a curve labeled '1-2: Reversible process' going from point 1 to point 2. The right graph shows a closed loop labeled '3-4: Irreversible process' going from point 3 to point 4 and back.
-
-
+![Diagram showing 1-2: Reversible process and 3-4: Irreversible process on property coordinates.](/assets/notes/me/s1/ime-ice/module-1/reversible-irreversible-process.svg)
 
 ### Thermodynamic Cycle
 
@@ -64,13 +50,7 @@
 - Any process or series of processes whose end states are identical is known as cycle.
 - The cycle may be of imaginary engine or actual engine. The former is called ideal cycle and the latter actual cycle.
 
-
-
-> **Figure: Thermodynamic cycle diagram labeled 1-2-3-4-1: Cycle.**
->
-> A graph with axes labeled 'Thermodynamic coordinate' showing a closed cyclic path passing through states 1, 2, 3, and 4, labeled '1-2-3-4-1: Cycle'.
-
-
+![Thermodynamic cycle diagram labeled 1-2-3-4-1: Cycle.](/assets/notes/me/s1/ime-ice/module-1/cycle-1-2-3-4.svg)
 
 - Thermodynamic cycles- some examples:
   - Carnot Cycle
@@ -92,19 +72,9 @@
   - 4-1: Adiabatic compression
 - The Pressure -Volume (P-V) and Temperature -Entropy (T-s) diagram of Carnot cycle is given below:
 
+![P-V and T-s diagrams of the Carnot cycle](/assets/notes/me/s1/ime-ice/module-1/carnot-pv-ts.svg)
 
-
-> **Figure: P-V and T-s diagrams of the Carnot cycle**
->
-> Two graphs side by side. On the left, a Pressure-Volume (P-V) diagram shows a cyclical curve with four points: 1 (top left), 2 (middle right), 3 (bottom right), and 4 (bottom left). The curve from 1 to 2 is labeled Isothermal expansion, 2 to 3 is Adiabatic expansion, 3 to 4 is Isothermal compression, and 4 to 1 is Adiabatic compression. Volume values V1, V4, V2, V3 are marked on the horizontal axis. On the right, a Temperature-Entropy (T-s) diagram shows a rectangle with vertices 1, 2, 3, 4, with horizontal top (T1, T2) and bottom (T3, T4) lines representing isothermal processes and vertical lines representing isentropic/adiabatic processes.
-
-
-
-
-
-> **Figure: Cylinder and Piston diagram corresponding to Carnot cycle states**
->
-> A horizontal diagram of a cylinder enclosing a movable piston. Dashed vertical lines indicate positions corresponding to volumes V1, V4, V2, V3. Labels point to 'Cylinder' and 'Piston'.
+![Cylinder and Piston diagram corresponding to Carnot cycle states](/assets/notes/me/s1/ime-ice/module-1/cylinder-carnot-states.svg)
 
 <!-- page 5 | Page 5 -->
 
@@ -203,13 +173,7 @@ $$\begin{aligned}
   - 4-1: Constant Volume Heat Rejection
 - The Pressure -Volume (P-V) and Temperature -Entropy (T-s) diagram of Otto cycle is given below:
 
-
-
-> **Figure: P-V and T-S diagrams of the Otto cycle along with a cylinder-piston diagram**
->
-> The figure contains three parts: on the left, a P-V diagram with axes 'Pressure' and 'Volume', showing states 1, 2, 3, 4 with adiabatic compression (1-2), constant volume heat addition (2-3), adiabatic expansion (3-4), and constant volume heat rejection (4-1). On the right, a T-S diagram with axes 'Temperature' and 'Entropy', showing the corresponding states with lines for V = C. At the bottom, a simple schematic of a cylinder and a piston is shown.
-
-
+![P-V and T-S diagrams of the Otto cycle along with a cylinder-piston diagram](/assets/notes/me/s1/ime-ice/module-1/otto-pv-ts-cylinder.svg)
 
 Consider a cylinder containing ‘m’ kg of air. Let $p_1$, $V_1$ and $T_1$ be the pressure, volume and temperature of air inside the cylinder, at state 1. This air is compressed adiabatically to state 2, doing work on the air. Curve 1-2 in the p-V diagram and the line 1-2 in the T-S diagram represents this process. Now heat is supplied to this compressed air at constant volume from an external hot body till state 3 is reached.
 
@@ -228,21 +192,9 @@ This process is represented by a vertical line 2-3 in the p-V diagram and curve 
   - 4-1: Constant Volume Heat Rejection
 - The Pressure -Volume (P-V) and Temperature -Entropy (T-s) diagram of Diesel cycle is given below:
 
+![P-V and T-S diagrams of Diesel cycle](/assets/notes/me/s1/ime-ice/module-1/diesel-pv-ts.svg)
 
-
-> **Figure: P-V and T-S diagrams of Diesel cycle**
->
-> Two thermodynamic diagrams side by side. On the left, a Pressure-Volume (P-V) diagram with an enclosed cycle 1-2-3-4; curve 1-2 is adiabatic compression, horizontal line 2-3 is constant pressure heat addition labeled with pointers, curve 3-4 is adiabatic expansion, and vertical line 4-1 is constant volume heat rejection. On the right, a Temperature-Entropy (T-s) diagram with cycle 1-2-3-4 where line 1-2 is adiabatic compression, curve 2-3 is marked p=C, curve 3-4 is marked V=C, and vertical line 4-1 represents constant volume heat rejection.
-
-
-
-
-
-> **Figure: Diagram of a cylinder and piston**
->
-> A schematic diagram showing a horizontal cylinder labeled Cylinder enclosing a movable Piston, with arrows indicating reciprocating motion.
-
-
+![Diagram of a cylinder and piston](/assets/notes/me/s1/ime-ice/module-1/cylinder-piston-horizontal.svg)
 
 Consider a cylinder containing ‘m’ kg of air. Let $p_1$, $V_1$ and $T_1$ be the pressure, volume and temperature of air inside the cylinder at state 1. This air is compressed adiabatically to state 2, doing work on the air. Curve 1-2 in the p-V diagram and line 1-2 in the T-S diagram represents this process. Now heat is supplied to the air at constant pressure from an external hot body till state 3 is reached. This process is represented by a horizontal line 2-3 in the p-V diagram and a curve 2-3 in the T-S diagram . At state 3, the hot body is removed and the air is allowed to expand adiabatically to state 4, doing external work. This process is represented by curve 3-4 in the p-V diagram and a vertical line 3-4 in the T-S diagram. Heat is rejected at constant volume to an external cold body till state 1 is reached. This process is represented by a vertical line 4-1 in the p-V diagram and curve 4-1 in the T-S diagram. Thus the air finally returns to its original state after completing a cycle.
 
@@ -309,11 +261,7 @@ The principal parts of an internal combustion engine are:
 8. Crankcase
 9. Spark plug or Fuel Injector
 
-
-
-> **Figure: Diagram of principal parts of an internal combustion engine**
->
-> Schematic diagram of an internal combustion engine cylinder cross-section. Labels pointing to components from top to bottom include: Spark Plug or Fuel Injector, Inlet Valve, Exhaust Valve, Cylinder Head, Cylinder, Piston Ring, Piston, Connecting Rod, Crank Case, Crank, B.D.C., T.D.C., Stroke, and Bore.
+![Diagram of principal parts of an internal combustion engine](/assets/notes/me/s1/ime-ice/module-1/ic-engine-principal-parts.svg)
 
 <!-- page 12 | Page 12 -->
 
@@ -371,13 +319,7 @@ The principal parts of an internal combustion engine are:
 
 ## Basic Terminologies of Internal Combustion Engine
 
-
-
-> **Figure: Diagram of an internal combustion engine cylinder showing terminology such as bore, stroke, T.D.C., B.D.C., swept volume, clearance volume, connecting rod, and crank.**
->
-> A two-part diagram illustrating IC engine terminologies. The left part shows a cutaway of a cylinder labeled Cylinder head, Clearance volume, Inlet, Exhaust, T.D.C., Piston, Cylinder, B.D.C., Swept volume, Stroke, and Bore, with corresponding dimension lines. The right part shows a simplified piston, connecting rod, and crank mechanism, with dimensions D, L=2r, and circular path of radius r for the crank.
-
-
+![Diagram of an internal combustion engine cylinder showing terminology such as bore, stroke, T.D.C., B.D.C., swept volume, clearance volume, connecting rod, and crank.](/assets/notes/me/s1/ime-ice/module-1/ic-engine-terminology.svg)
 
 - **Cylinder bore (D):** It is the nominal inner diameter of the engine cylinder.
 
@@ -428,19 +370,11 @@ The principal parts of an internal combustion engine are:
 
 The P-V diagram and the working diagram are shown in Figures below:
 
-
-
-> **Figure: P-V diagram for an Otto cycle showing processes 1-2, 2-3, 3-4, and 4-1 with isentropic processes indicated.**
->
-> A pressure-volume (P-V) diagram with vertical axis labeled P and horizontal axis labeled V. The origin is marked as 0. The cycle consists of points 0, 1, 2, 3, and 4. Process lines with arrows indicate the path: from 0 to 1, 1 to 2 (compression), 2 to 3 (heat addition), 3 to 4 (expansion), and 4 to 1. Two curved lines from the top are pointed to by arrows with the label 'Isentropic process'.
+![P-V diagram for an Otto cycle showing processes 1-2, 2-3, 3-4, and 4-1 with isentropic processes indicated.](/assets/notes/me/s1/ime-ice/module-1/otto-pv-processes.svg)
 
 <!-- page 15 | Sequence of operations four stroke petrol engine -->
 
-> **Figure: Sequence of operations in a four-stroke petrol engine showing Suction, Compression, Power, and Exhaust strokes.**
->
-> Four vertical cylinder diagrams placed side-by-side representing the four strokes of a four-stroke petrol engine. From left to right: Suction (inlet valve open, piston moving down, air-fuel mixture entering), Compression (both valves closed, piston moving up), Power (both valves closed, piston moving down due to combustion), and Exhaust (exhaust valve open, piston moving up, exhaust gas escaping). Each cylinder shows a piston, connecting rod, and a crank rotating in a circular path at the bottom. TDC (Top Dead Centre) and BDC (Bottom Dead Centre) reference lines are shown on the left.
-
-
+![Sequence of operations in a four-stroke petrol engine showing Suction, Compression, Power, and Exhaust strokes.](/assets/notes/me/s1/ime-ice/module-1/four-stroke-petrol-sequence.svg)
 
 TDC = Top Dead Centre  
 BDC = Bottom Dead Centre
@@ -469,21 +403,9 @@ The sequence of operations of the S.I. Engine can be explained as:
 
 The P-V diagram and the working diagram are shown in Figures below:
 
+![P-V diagram of the Diesel cycle](/assets/notes/me/s1/ime-ice/module-1/diesel-pv-processes.svg)
 
-
-> **Figure: P-V diagram of the Diesel cycle**
->
-> A P-V diagram with pressure P on the vertical axis and volume V on the horizontal axis. The cycle points are labeled 0, 1, 2, 3, 4 with arrows indicating the thermodynamic path.
-
-
-
-
-
-> **Figure: Working diagram of four-stroke engine showing Suction, Compression, Power, and Exhaust strokes**
->
-> Four vertical cylinder schematics representing the four strokes: Suction, Compression, Power, and Exhaust. Each cylinder shows a piston, connecting rod, crank mechanism, valves (Inlet valve, Fuel Injector, Exhaust valve), TDC, and BDC labels.
-
-
+![Working diagram of four-stroke engine showing Suction, Compression, Power, and Exhaust strokes](/assets/notes/me/s1/ime-ice/module-1/four-stroke-working-diagram.svg)
 
 **TDC = Top Dead Centre**  
 **BDC = Bottom Dead Centre**
@@ -518,13 +440,7 @@ The sequence of operations of the C.I. Engine can be explained as:
 
 The working diagram are shown in Figures below:
 
-
-
-> **Figure: Working diagram of two stroke petrol engine showing two states**
->
-> Diagram of a two-stroke petrol engine showing two states side by side. The left diagram shows the cylinder, piston with deflector, spark plug at the top, exhaust port, inlet port, transfer port, connecting rod, crank shaft, and crankcase with arrows indicating gas flow and rotation. Labels point to Spark plug, Piston, Exhaust port, Inlet port, Transfer port, Crank shaft, and Crank case. The right diagram shows the piston in a different position.
-
-
+![Working diagram of two stroke petrol engine showing two states](/assets/notes/me/s1/ime-ice/module-1/two-stroke-petrol-states.svg)
 
 Working of two stroke petrol engine
 
@@ -544,13 +460,7 @@ Working of two stroke petrol engine
 
 The working diagram are shown in Figures below:
 
-
-
-> **Figure: Working of two stroke diesel engine diagrams showing two different piston and port configurations**
->
-> Two schematic diagrams side by side showing a two-stroke diesel engine. The left diagram shows the cylinder with a Fuel injector at the top, Exhaust port on the left, Piston with a deflector, Inlet port, Transfer port, connecting rod, Crank shaft, and Crank case. Arrows indicate gas flow and rotation. The right diagram shows another phase with the piston at a different position and arrows indicating different flow paths.
-
-
+![Working of two stroke diesel engine diagrams showing two different piston and port configurations](/assets/notes/me/s1/ime-ice/module-1/two-stroke-diesel-configs.svg)
 
 Working of two stroke diesel engine
 
@@ -606,13 +516,7 @@ Working of two stroke diesel engine
 
 Multi Point Fuel Injection [MPFI] system has one injector for each engine cylinder. Fuel is injected in more than one location. This system injects fuel into individual cylinders based on commands from the on board engine management system computer popularly known as Engine Control Unit. [ECU]. The ECU primarily controls the ignition timing and quantity of fuel to be injected.
 
-
-
-> **Figure: Block diagram of an MPFI system showing engine, injector, ECU, speed sensor, and intake manifold connections.**
->
-> A block diagram titled MPFI System with boxes for Engine, Injector, ECU, Speed sensor, and Intake manifold. Arrows indicate the flow of air and gasoline. Air enters through the intake manifold into the Engine. Gasoline flows into the Injector. An ECU controls the Injector based on inputs, and a speed sensor connects to the Engine and ECU.
-
-
+![Block diagram of an MPFI system showing engine, injector, ECU, speed sensor, and intake manifold connections.](/assets/notes/me/s1/ime-ice/module-1/mpfi-block-diagram.svg)
 
 The ECU is controlled by the data input from a set of sensors located all over the engine and its auxillaries. These sensors detect the various operating conditions of the engine and the performance required out of it. Such sensors constantly monitor, ambient temprature, engine coolant temperature, exhaust gas temperature, oxygen content of exhaust, engine speed, vehicle road speed etc. Based on a programme interpretation of all these input data the ECU gives the various commands to the engines fuel and a spark ignition timing system.
 
@@ -642,13 +546,7 @@ Fig shows the block diagram of an MPFI system. air enters into the intake manifo
 3. Injectors
 4. Engine Control Unit (ECU)
 
-
-
-> **Figure: Schematic diagram of a Common Rail Direct Injection (CRDI) System**
->
-> A schematic block diagram showing the layout of a CRDI system. At the bottom is a Tank connected to a Fuel Filter, which leads to a Fuel Pump, then to a High Pressure Piston Pump. The High Pressure Piston Pump connects to a central Common Rail (Fuel Distribution Pipe) equipped with a Sensor and a Pressure Limiter. Four Injectors branch downwards from the Common Rail into the cylinders. An ECU (Engine Control Unit) is connected to the injectors and the pump system. Return lines and control wiring route back to the fuel system.
-
-
+![Schematic diagram of a Common Rail Direct Injection (CRDI) System](/assets/notes/me/s1/ime-ice/module-1/crdi-block-diagram.svg)
 
 ### Working of CRDI
 
@@ -719,13 +617,7 @@ By using a common rail direct injection system, the required pressure can be obt
 - A heat engine working on Carnot cycle has the highest efficiency. Similarly, a refrigerator working on the reversed Carnot cycle has the maximum coefficient of performance.
 - The p-v diagram and T-s diagram of reversed Carnot cycle is given below.
 
-
-
-> **Figure: p-v and T-s diagrams for a Reversed Carnot Cycle**
->
-> Two plots side by side showing a reversed Carnot cycle. The left plot is a Pressure (p) versus Volume (V) graph with a cycle numbered 1, 2, 3, 4 counter-clockwise where 1-2 is s = const, 2-3 is T = const, 3-4 is s = const, and 4-1 is T = const. The right plot is a Temperature (T) versus Entropy (s) graph showing a rectangular cycle numbered 1, 2, 3, 4 counter-clockwise.
-
-
+![p-v and T-s diagrams for a Reversed Carnot Cycle](/assets/notes/me/s1/ime-ice/module-1/reversed-carnot-pv-ts.svg)
 
 - The four processes in the Reversed Carnot cycle (Carnot refrigeration cycle) are:
   - 1-2: Isentropic Compression
@@ -750,11 +642,7 @@ $$\begin{aligned}
 &= \left( \frac{Q_A}{Q_R - Q_A} \right) = \left( \frac{T_{\text{max}}}{T_{\text{max}} - T_{\text{min}}} \right)
 \end{aligned}$$
 
-
-
-> **Figure: Block diagram of a Refrigerator**
->
-> A schematic block diagram labelled Refrigerator showing a cycle between a Source at temperature T_H and a Sink at temperature Q_L. A central circle R represents the refrigerator. An arrow points up from R to Source with label Q_R, an arrow points from Sink to R with label Q_A, and an arrow points horizontally to R with label W = Q_R - Q_A.
+![Block diagram of a Refrigerator](/assets/notes/me/s1/ime-ice/module-1/refrigerator-block-diagram.svg)
 
 <!-- page 27 | VAPOUR COMPRESSION REFRIGERATION SYSTEM -->
 
@@ -769,13 +657,7 @@ $$\begin{aligned}
 
 - The schematic diagram of vapour compression refrigeration system is shown in figure.
 
-
-
-> **Figure: Schematic diagram of Vapour Compression Refrigeration System**
->
-> A schematic block diagram of a vapour compression refrigeration system showing four main components: Compressor, Condenser, Expansion Device, and Evaporator connected in a loop. The condenser at the top rejects heat and is labeled 'High pressure side'. The evaporator at the bottom absorbs heat and is labeled 'Low pressure side'. State points 1, 2, 3, and 4 are marked along the refrigerant circuit. Compressor work input is indicated at the compressor.
-
-
+![Schematic diagram of Vapour Compression Refrigeration System](/assets/notes/me/s1/ime-ice/module-1/vapour-compression-schematic.svg)
 
 - It consists of following four essential units.
   - Compressor
@@ -797,13 +679,7 @@ $$\begin{aligned}
 
 The pressure -enthalpy (p-h) and temperature -entropy (T-s) diagrams of the vapour compression cycle is given below.
 
-
-
-> **Figure: T-s diagram and p-h diagram of vapour compression cycle**
->
-> Two diagrams side by side enclosed in a box. The left diagram is a Temperature (T) versus Entropy (s) plot showing a bell-shaped vapour dome with a cyclic process numbered 1-2-3-4. The right diagram is a Pressure (p) versus Enthalpy (h) plot also showing a bell-shaped vapour dome and the same cyclic process 1-2-3-4.
-
-
+![T-s diagram and p-h diagram of vapour compression cycle](/assets/notes/me/s1/ime-ice/module-1/vapour-compression-ts-ph.svg)
 
 <u>This cycle consists of four processes</u>
 
@@ -859,13 +735,7 @@ The pressure -enthalpy (p-h) and temperature -entropy (T-s) diagrams of the vapo
 
 Various psychrometric or air-conditioning processes are shown in psychrometric chart are shown below.
 
-
-
-> **Figure: Psychrometric processes chart**
->
-> A psychrometric chart with various processes indicated by arrows: Sensible heating, Sensible cooling, Heating + Humidity, Cooling + Dehumidification, Evaporating cooling, Humidify, Dehumidify. Axes are labeled with t (dry bulb temperature) on the x-axis and omega on the y-axis.
-
-
+![Psychrometric processes chart](/assets/notes/me/s1/ime-ice/module-1/psychrometric-processes.svg)
 
 ### Psychrometric Processes
 
@@ -887,19 +757,9 @@ Various psychrometric or air-conditioning processes are shown in psychrometric c
 - Cooling and dehumidification process is used in summer A/C system.
 - The cooling and dehumidification set-up is shown below:
 
+![Cooling and dehumidification set-up diagram](/assets/notes/me/s1/ime-ice/module-1/cooling-dehumidification-setup.svg)
 
-
-> **Figure: Cooling and dehumidification set-up diagram**
->
-> A schematic diagram of a cooling and dehumidification duct containing cooling coils inside. Air flows from left to right at 1 atm. Droplets labeled Condensate fall from the coils to a drain at the bottom labeled Condensate removal.
-
-
-
-
-
-> **Figure: Psychrometric representation of cooling and dehumidification**
->
-> A psychrometric chart showing state points 1 and 2 with an arrow pointing down and left from t1, w1 to t2, w2, representing cooling and dehumidification. X-axis is Dry bulb temperature, y-axis is Humidity.
+![Psychrometric representation of cooling and dehumidification](/assets/notes/me/s1/ime-ice/module-1/psychrometric-cooling-dehumidification.svg)
 
 <!-- page 31 | LAYOUT OF UNIT AND CENTRAL AIR CONDITIONERS -->
 
@@ -911,13 +771,7 @@ Two common types of air conditioners are unit air conditioner and the central ai
 
 The layout of a unit air conditioner is given below.
 
-
-
-> **Figure: Layout diagram of a unit air conditioner showing compressor, evaporator, condenser, and expansion valve**
->
-> A schematic block diagram of a unit air conditioner showing a closed loop with a Compressor at the top, a Condenser on the right with cooling water inlet and outlet, an Expansion Valve at the bottom, and an Evaporator on the left with chilled water inlet and outlet. Arrows indicate the direction of flow. Numbers 1, 2, 3, 4 mark junctions in the cycle.
-
-
+![Layout diagram of a unit air conditioner showing compressor, evaporator, condenser, and expansion valve](/assets/notes/me/s1/ime-ice/module-1/unit-air-conditioner-layout.svg)
 
 - A window air conditioner which is a unit air conditioner consists of four main parts namely, compressor, condenser, expansion valve and evaporator.
 - The unit is divided into two parts;
@@ -930,4 +784,3 @@ The layout of a unit air conditioner is given below.
 
 <!-- page 32 | Page 32 -->
 
-[Non-content page]

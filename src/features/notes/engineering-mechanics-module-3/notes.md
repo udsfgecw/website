@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Module-3 -->
 
 # Module-3
@@ -160,11 +158,7 @@ Find the depth of the well if the velocity of sound is $340 \text{ m/s}$.
 
 <!-- page 7 | Page 7 -->
 
-> **Figure: Diagram of a well showing depth h, time t1 for stone to fall, and time t2 for sound to travel up.**
->
-> A sketch of a well with vertical walls and a flat bottom containing a small stone at the bottom. An arrow labeled h indicates the total depth from top to bottom on the right side. On the left inside, a downward arrow labeled t1 shows the fall of the stone, and an upward arrow labeled t2 shows the travel of sound. At the top right, a boxed equation states t1 + t2 = 2.
-
-
+![Diagram of a well showing depth h, time t1 for stone to fall, and time t2 for sound to travel up.](/assets/notes/me/s1/engineering-mechanics/module-3/well-stone-fall-sound.svg)
 
 $$\boxed{t_1 + t_2 = 2}$$
 
@@ -206,13 +200,7 @@ $$= \underline{\underline{17\text{ m}}} \Rightarrow \text{Height of well. on the
 
 A stone is dropped from the top of a tower $60\text{ m}$ high. At the same time, another stone is thrown upwards from the foot of the tower with a velocity of $30\text{ m/s}$. When and where the two stones cross each other?
 
-
-
-> **Figure: Diagram showing a tower of height 60m with a stone dropped from the top travelling a distance x downwards and another stone thrown upwards with velocity 30 m/s from the bottom.**
->
-> A vertical line representing a tower of height 60 m. At the top, a stone is dropped downwards with distance marked as x. A meeting point is indicated, and the remaining distance to the ground is 60-x. At the bottom, another stone is thrown upwards with an initial velocity of 30 m/s.
-
-
+![Diagram showing a tower of height 60m with a stone dropped from the top travelling a distance x downwards and another stone thrown upwards with velocity 30 m/s from the bottom.](/assets/notes/me/s1/engineering-mechanics/module-3/tower-stone-meeting-60m.svg)
 
 Height of the tower: $60\text{ m}$
 
@@ -250,12 +238,7 @@ Q. A stone is dropped from top of a tower $100\text{ m}$ high. Another stone is 
 
 A.
 
-
-> **Figure: Diagram showing a vertical tower of height 100 m, with a stone dropped from the top and meeting another stone at a height of 30 m from the bottom.**
->
-> A vertical line representing a tower of total height 100 m. At the top, a label u1 = 0, t = t1. At a height of 30 m from the bottom, a horizontal bracket indicates 30 m. At the bottom, a label t = t2 and u2 = ?
-
-
+![Diagram showing a vertical tower of height 100 m, with a stone dropped from the top and meeting another stone at a height of 30 m from the bottom.](/assets/notes/me/s1/engineering-mechanics/module-3/tower-100m-two-stones.svg)
 
 Case-1
 
@@ -336,13 +319,7 @@ b) Velocity of the ball during the downward travel at a point in the same level 
 
 c) Time required for the ball to reach the ground.
 
-
-
-> **Figure: Diagram showing the trajectory of a ball thrown upwards from a tower to the ground**
->
-> A vertical line representing a tower of height 25m, with point A at the ground and point B at the top. Point B has an upward velocity u_B = 20 m/s. Point C is the maximum height where u = 0 m/s and a = -9 m/s^2. Point D is at the same level as B with v_D = ? and a = 9 m/s^2. Arrows indicate time taken from B to C as t, and from C to D as t.
-
-
+![Diagram showing the trajectory of a ball thrown upwards from a tower to the ground](/assets/notes/me/s1/engineering-mechanics/module-3/ball-thrown-tower-trajectory.svg)
 
 consider the travel from $B$ to $C$. we know $V = u + at$
 
@@ -518,23 +495,11 @@ D Alembert's principle is the application of Newton's second law of motion. This
 
 Kinetics problems in dynamics is converted to equivalent problem in statics using D'Alembert's principle. ie, mathematically, D'Alembert's principle is :-
 
-
-
-> **Figure: An irregular body acted upon by force F and inertia force ma, with equation F - ma = 0**
->
-> An irregular shaped body showing a force F pointing to the right on the left side, and an inertia force ma pointing to the left on the right side. Beside it, a box contains the equation F - ma = 0.
-
-
+![An irregular body acted upon by force F and inertia force ma, with equation F - ma = 0](/assets/notes/me/s1/engineering-mechanics/module-3/irregular-body-f-ma.svg)
 
 In a kinetic problem
 
-
-
-> **Figure: A rectangular block on a surface subjected to weight W, normal reaction R_N, force F, inertia force ma, and frictional force mu R_N**
->
-> A rectangular block with weight W pointing downwards, normal reaction R_N pointing upwards, applied force F pointing rightwards on the left face, inertia force ma pointing leftwards on the right face, and frictional force mu R_N pointing leftwards near the bottom. To the right, a box contains the equation F - ma - mu R_N = 0.
-
-
+![A rectangular block on a surface subjected to weight W, normal reaction R_N, force F, inertia force ma, and frictional force mu R_N](/assets/notes/me/s1/engineering-mechanics/module-3/block-inertia-weight-f.svg)
 
 Q. A force of $300\text{ N}$ act on a body of mass $150\text{ kg}$. Calculate acceleration of the body using D' Alembert's principle.
 
@@ -584,11 +549,7 @@ Q. A block weighing $1000\text{ N}$ rest on a horizontal plane. Find the magnitu
 
 A.
 
-
-> **Figure: Free body diagram of a block on a horizontal plane showing applied force, weight, normal reaction, inertia force, and friction**
->
-> A rectangular block resting on a horizontal surface. An arrow labeled W = 1000 N points vertically downwards from the center. An arrow labeled R_N points vertically upwards from the bottom. An arrow labeled F points horizontally to the right from the left side. An arrow labeled ma points horizontally to the left from the right side. An arrow labeled \mu R_N points horizontally to the left along the bottom surface.
-
+![Free body diagram of a block on a horizontal plane showing applied force, weight, normal reaction, inertia force, and friction](/assets/notes/me/s1/engineering-mechanics/module-3/block-w-1000n.svg)
 
 By D'Alembert's principle, for the block to be in dynamic equilibrium,
 $$F - ma - \mu R_N = 0$$
@@ -597,13 +558,7 @@ $$F = 504.84\text{ N}$$
 
 Q. A body of mass $15\text{ kg}$ falls on ground from a height of $19.6\text{ m}$. The body penetrates into the ground. Find the distance through which the body penetrates into the ground if the resistance by the ground for the penetration is constant and is equal to $4900\text{ N}$.
 
-
-
-> **Figure: Diagram showing a body falling from point B to A and penetrating into the ground to point C**
->
-> A vertical line on the left shows a height of 19.6 m between points B and A. A dashed vertical line shows a falling body of mass 15 kg starting at B with velocity u_B, passing point A, and reaching point C at the bottom of the penetration where u_C = 0.
-
-
+![Diagram showing a body falling from point B to A and penetrating into the ground to point C](/assets/notes/me/s1/engineering-mechanics/module-3/body-falling-into-ground.svg)
 
 $$\begin{array}{l l}
 \underline{\text{B to A}} & \text{At B} \\[4pt]
@@ -633,13 +588,7 @@ Case-2 (A to C)
 
 Since ground resistance is mentioned, it is understood that it is a kinetics problem. Now applying D'Alembert's principle,
 
-
-
-> **Figure: Free body diagram for motion from A to C showing forces on a curved surface**
->
-> A sketch showing a curved bowl-like trajectory with points A at the top and C at the bottom. Forces acting on the body at point A include downward weight $15\text{ kg} \times 9.81$, upward normal force $4900\text{ N}$, and inertia force $ma = 15a$ pointing downwards.
-
-
+![Free body diagram for motion from A to C showing forces on a curved surface](/assets/notes/me/s1/engineering-mechanics/module-3/curved-surface-a-to-c.svg)
 
 the direction in which movement happens, take it as positive.
 
@@ -649,13 +598,7 @@ $$a = -316.87 \text{ m/s}^2$$
 
 $\Rightarrow$ The body is decelerating.
 
-
-
-> **Figure: Diagram showing displacement S from A to C**
->
-> A sketch showing the curved path from A ($u_A = 19.6\text{ m/s}$) to C ($u_C = 0$), with an arrow indicating displacement $S$ vertically between the levels.
-
-
+![Diagram showing displacement S from A to C](/assets/notes/me/s1/engineering-mechanics/module-3/displacement-s-a-to-c.svg)
 
 $$u_C^2 - u_A^2 = 2aS$$
 
@@ -675,13 +618,7 @@ Note:-
 
 Here, the force of resistance means inertial force.
 
-
-
-> **Figure: Diagram showing a bullet of mass m and a block of wood of thickness s**
->
-> A sketch showing a bullet pointing right with mass m = 81g, initial velocity u = 300 m/s, penetrating a rectangular block of wood of thickness s with final velocity v = 0.
-
-
+![Diagram showing a bullet of mass m and a block of wood of thickness s](/assets/notes/me/s1/engineering-mechanics/module-3/bullet-block-thickness-s.svg)
 
 case-1
 
@@ -751,23 +688,11 @@ $$\Rightarrow 245\text{ m/s}$$
 
 Q) A block weighing $1\text{ kN}$ rests on a horizontal plane as shown in figure. Find the force required to give the block an acceleration of $3\text{ m/s}^2$ to the right. Given coefficient of dynamic friction, $\mu = 0.25$
 
-
-
-> **Figure: Diagram of a block on a horizontal plane with an external force F applied downwards at 30 degrees to the horizontal.**
->
-> A rectangular block resting on a hatched horizontal surface. A force F is applied at the top-left corner directed downwards and to the right at an angle of 30 degrees below the horizontal.
-
-
+![Diagram of a block on a horizontal plane with an external force F applied downwards at 30 degrees to the horizontal.](/assets/notes/me/s1/engineering-mechanics/module-3/block-f-downward-30.svg)
 
 Ans)
 
-
-
-> **Figure: Free body diagram of the block showing all forces acting on it.**
->
-> A free body diagram of a rectangular block. Forces acting are: downward gravitational force of 1 kN, downward vertical component F sin 30 at the top left, rightward horizontal component F cos 30 at the top left, upward normal reaction R_N at the bottom, leftward friction force \mu R_N at the bottom, and leftward inertial force ma.
-
-
+![Free body diagram of the block showing all forces acting on it.](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-block-1kn-f-sin30.svg)
 
 $$\begin{aligned}
 1\text{ kN} &= \frac{1000\text{ N}}{9.81} \text{ kg} \\
@@ -802,13 +727,7 @@ Lift moving downwards and to find out the force exerted by the man on the floor 
 
 <u>Lift moving downwards</u>
 
-
-
-> **Figure: Free body diagram of a man in a lift moving downwards**
->
-> A box representing the lift containing a circle with label W pointing downwards. Outside the box, an upward arrow labeled R_N and another upward arrow labeled ma are shown.
-
-
+![Free body diagram of a man in a lift moving downwards](/assets/notes/me/s1/engineering-mechanics/module-3/man-in-lift-downward.svg)
 
 $$(R_N + ma) - W = 0$$
 
@@ -817,13 +736,7 @@ $W \rightarrow$ weight of man)
 
 <u>Lift moving upwards</u>
 
-
-
-> **Figure: Free body diagram of a man in a lift moving upwards**
->
-> A box representing the lift containing a circle with label W pointing downwards. Outside the box, a downward arrow labeled ma and an upward arrow labeled R_N are shown.
-
-
+![Free body diagram of a man in a lift moving upwards](/assets/notes/me/s1/engineering-mechanics/module-3/man-in-lift-upward.svg)
 
 $$R_N - W - ma = 0$$
 
@@ -837,13 +750,7 @@ ii) Lift is moving upwards.
 
 Ans) i)
 
-
-
-> **Figure: Free body diagram for case (i) showing a box with downward force 100 N, upward normal reaction R_N, and upward inertia force ma**
->
-> A square box representing the body. A downward arrow inside/at the top with label '100 N'. An upward arrow at the bottom with label 'R_N'. To the right, an upward arrow with label 'ma = (100 / 9.81) * 2'.
-
-
+![Free body diagram for case (i) showing a box with downward force 100 N, upward normal reaction R_N, and upward inertia force ma](/assets/notes/me/s1/engineering-mechanics/module-3/box-case-i-100n.svg)
 
 $$-100 + R_N + ma = 0$$
 
@@ -853,13 +760,7 @@ $$R_N = 79.61\text{ N}$$
 
 ii)
 
-
-
-> **Figure: Free body diagram for case (ii) showing a box with downward forces and upward reaction**
->
-> A square box with a downward arrow labeled '100 N' inside at the top, an upward arrow at the bottom labeled 'R_N', and a downward arrow to the right of the box labeled 'ma'.
-
-
+![Free body diagram for case (ii) showing a box with downward forces and upward reaction](/assets/notes/me/s1/engineering-mechanics/module-3/box-case-ii-100n.svg)
 
 $$-100 - ma + R_N = 0$$
 
@@ -871,13 +772,7 @@ Q. A lift has an acceleration of $1.5\text{ m/s}^2$ downwards. what force will a
 
 A)
 
-
-
-> **Figure: Free body diagram for the lift problem with a man weighing 1050 N**
->
-> A square box representing the man/system. A downward arrow at the top labeled '1050 N'. An upward arrow at the bottom labeled 'R_N'. An upward arrow to the right labeled 'ma = (1050 / 9.81) * 1.5'.
-
-
+![Free body diagram for the lift problem with a man weighing 1050 N](/assets/notes/me/s1/engineering-mechanics/module-3/lift-man-1050n.svg)
 
 Lift is accelerating downwards means lift is moving downwards.
 
@@ -894,13 +789,7 @@ Q. An elevator descends with an acceleration of $2\text{ m/s}^2$, what will be t
 
 A.
 
-
-
-> **Figure: Free body diagram of a woman in an elevator**
->
-> A square representing the woman of mass 80 kg, with a downward gravitational force of 80 x 9.81 = 784.8 N, an upward normal reaction force R_N, and an upward acceleration force ma = 80 x 2 = 160 N.
-
-
+![Free body diagram of a woman in an elevator](/assets/notes/me/s1/engineering-mechanics/module-3/woman-elevator-80kg.svg)
 
 $$-784.8 + 160 + R_N = 0$$
 
@@ -914,13 +803,7 @@ $$v^2 - u^2 = 2as$$
 
 $$a = \frac{v^2 - u^2}{2S} = \frac{12^2 - 0}{2 \times 20} = 3.6\text{ m/s}^2$$
 
-
-
-> **Figure: Free body diagram of the cage with 10 men**
->
-> A square representing the cage containing 10 men with total weight 5000 N acting downwards, an upward normal reaction force R_N, and an upward inertia force ma = (5000 / 9.81) x 3.6.
-
-
+![Free body diagram of the cage with 10 men](/assets/notes/me/s1/engineering-mechanics/module-3/cage-10-men.svg)
 
 $$-5000 + R_N + \left(\frac{5000}{9.81} \times 3.6\right) = 0$$
 
@@ -934,13 +817,7 @@ $\therefore$ Pressure exerted by each man $= \frac{3165}{10} = \underline{\under
 
 computation of tension in the cables supporting lift
 
-
-
-> **Figure: Diagram of an elevator lift showing forces acting on it: upward tension T, downward combined weight (W1 + W2), and downward inertia force Ma.**
->
-> A free-body diagram of an elevator box. A rectangle represents the elevator with an upward arrow labeled T at the top, a downward arrow labeled (W1 + W2) inside the box, and another downward arrow labeled Ma to the right of the box.
-
-
+![Diagram of an elevator lift showing forces acting on it: upward tension T, downward combined weight (W1 + W2), and downward inertia force Ma.](/assets/notes/me/s1/engineering-mechanics/module-3/elevator-tension-weights.svg)
 
 elevator weight = $W_1$
 
@@ -970,13 +847,7 @@ Let 'T' be the tension in the cables.
 
 Ans) 1)
 
-
-
-> **Figure: Free body diagram showing tension, weight, and inertia force for the first case.**
->
-> A free body diagram showing a rectangular box with forces acting on it: an upward arrow labelled T, a downward arrow inside the box labelled 700 N + 5000 N, and a downward arrow to the right of the box labelled ma = (5700 / 9.81) * 3.
-
-
+![Free body diagram showing tension, weight, and inertia force for the first case.](/assets/notes/me/s1/engineering-mechanics/module-3/elevator-case-1-tension.svg)
 
 $$T - 5700 - \left(\frac{5700}{9.81} \times 3\right) = 0$$
 
@@ -984,13 +855,7 @@ $$T = 7443.12\text{ N} \quad (\text{Direction upwards})$$
 
 2) scale reading / Pressure
 
-
-
-> **Figure: Free body diagram showing weight, normal reaction, and inertia force for the second case.**
->
-> A free body diagram showing a rectangular box with forces: a downward arrow inside labelled 700 N, an upward arrow at the bottom labelled R_N, and a downward arrow to the right labelled ma = (700 / 9.81) * 3.
-
-
+![Free body diagram showing weight, normal reaction, and inertia force for the second case.](/assets/notes/me/s1/engineering-mechanics/module-3/elevator-case-2-normal.svg)
 
 Let $R_N$ be the pressure exerted by operator.
 
@@ -1006,13 +871,7 @@ Starting from rest, it travels a distance of $35\text{ m}$ during an interval of
 
 Let $T$ be the tension and $a$ be the acceleration
 
-
-
-> **Figure: Free body diagram of an elevator box showing tension, weight, and inertial force**
->
-> A rectangular box representing the elevator with a weight of $2500\text{ N}$ pointing downwards, an upward arrow for tension $T$, and a separate upward arrow for inertial force $ma = \frac{2500}{9.81} \times a$.
-
-
+![Free body diagram of an elevator box showing tension, weight, and inertial force](/assets/notes/me/s1/engineering-mechanics/module-3/elevator-box-2500n.svg)
 
 $$T + ma - 2500 = 0$$
 
@@ -1048,13 +907,7 @@ Determine:-
 
 2) Tension in the string.
 
-
-
-> **Figure: Pulley system with two weights hanging from a string**
->
-> A smooth pulley mounted on a support, with a string passing over it. The left end of the string has a block labelled '50 N' and the right end has a block labelled '30 N'.
-
-
+![Pulley system with two weights hanging from a string](/assets/notes/me/s1/engineering-mechanics/module-3/pulley-50n-200n-hanging.svg)
 
 Ans Let $T$ be the tension in the strings and $a$ be the acceleration of the system.
 
@@ -1062,13 +915,7 @@ Since $50\text{ N}$ is greater than $30\text{ N}$, $50\text{ N}$ weight will mov
 
 Now analysing free body diagram of two blocks,
 
-
-
-> **Figure: Free body diagram of the 50 N block**
->
-> A square box representing the 50 N block with downward force vector labelled 50 N, upward force vector labelled T, an upward-pointing inertia force vector labelled ma = (50 / 9.81) * a.
-
-
+![Free body diagram of the 50 N block](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-50n-block.svg)
 
 Applying dynamic equilibrium, $\Sigma F_y = 0$
 
@@ -1082,13 +929,7 @@ $$\Rightarrow \boxed{T = 50 - \frac{50 a}{9.81}} \quad - \text{①}$$
 
 Now analysing second body,
 
-
-
-> **Figure: Free body diagram of the second body of mass corresponding to 30 N with tension T acting upwards, weight 30 N downwards, and inertia force downwards.**
->
-> A free body diagram showing a rectangular box representing a body. An upward arrow labeled T, a downward arrow labeled 30 N, and another downward arrow labeled Jma = 30a / 9.81 are shown.
-
-
+![Free body diagram of the second body of mass corresponding to 30 N with tension T acting upwards, weight 30 N downwards, and inertia force downwards.](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-30n-body.svg)
 
 $$T - 30 - \frac{30a}{9.81} = 0$$
 
@@ -1108,34 +949,18 @@ Substituting acceleration in (1)
 
 Q) Find the acceleration and tension of the system
 
-
-
-> **Figure: Pulley system diagram with two masses hanging over a pulley.**
->
-> A pulley diagram showing a fixed circular pulley at the top with a string going over it. A mass box of 30 kg is suspended on the left side, and a mass box of 80 kg is suspended on the right side.
+![Pulley system diagram with two masses hanging over a pulley.](/assets/notes/me/s1/engineering-mechanics/module-3/pulley-30kg-80kg.svg)
 
 <!-- page 32 | Page 32 -->
 
 A)
 
-
-
-> **Figure: Free body diagram of a mass of 30 kg**
->
-> A rectangle representing a mass with a downward arrow labeled $30 \times 9.81 \text{ N}$, an upward arrow labeled $T$, and a downward arrow to the right labeled $ma = 30a$.
-
-
+![Free body diagram of a mass of 30 kg](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-30kg.svg)
 
 $$- 30 \times 9.81 - 30 \times a + T = 0$$
 $$T = 294.3 + 30 \ a \quad -(1)$$
 
-
-
-> **Figure: Free body diagram of a mass of 80 kg**
->
-> A rectangle representing a mass with a downward arrow labeled $80 \times 9.81 \text{ N}$, an upward arrow labeled $T$, and an upward arrow to the right labeled $ma = 80a$.
-
-
+![Free body diagram of a mass of 80 kg](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-80kg.svg)
 
 $$T + 80 \ a - 80 \times 9.81 = 0$$
 $$T = 784.8 - 80 \ a \quad -(2)$$
@@ -1152,23 +977,13 @@ $$T = 428.07 \text{ N}$$
 
 Q. Two blocks are joined by an inextensible string as shown in figure. If the system is released from rest, determine the velocity of the block it has moved $2\text{ m}$. Coefficient of friction between the block and the plane is $0.25$. The pulley is weightless and frictionless. Also find the tension in the cable.
 
-
-
-> **Figure: Diagram of two blocks connected by a string over a pulley**
->
-> A 200 kg block on a horizontal rough surface connected by a string over a pulley to a vertically hanging 300 kg block. A dimension of 2m is marked above the horizontal block.
+![Diagram of two blocks connected by a string over a pulley](/assets/notes/me/s1/engineering-mechanics/module-3/block-table-300kg-pulley.svg)
 
 <!-- page 33 | Page 33 -->
 
 The body $200\text{ kg}$ is moving rightwards and body $300\text{ kg}$ is moving downwards. Let $T$ be the tension in the strings and $a$ be the acceleration. Now considering free body diagram of $300\text{ kg}$,
 
-
-
-> **Figure: Free body diagram of 300 kg body**
->
-> A square box representing the 300 kg mass with an upward arrow labeled T, a downward arrow labeled 300 x 9.81, and an arrow to the right labeled ma = 300 a.
-
-
+![Free body diagram of 300 kg body](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-300kg.svg)
 
 $$
 T + 300\,a - 300 \times 9.81 = 0
@@ -1178,13 +993,7 @@ $$\boxed{T = 2943 - 300\,a} \quad \text{--- ①}$$
 
 Now free body diagram of $200\text{ kg}$:
 
-
-
-> **Figure: Free body diagram of 200 kg body**
->
-> A rectangle box containing '200 kg' with a downward arrow labeled 200 x 9.81, an upward arrow labeled R_N, a rightward arrow labeled T, and leftward arrows labeled ma = 200 a and \mu R_N = 0.25 R_N.
-
-
+![Free body diagram of 200 kg body](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-200kg-table.svg)
 
 $$\Sigma F_y = 0 \Rightarrow R_N - (200 \times 9.81) = 0$$
 $$R_N = \underline{1962\text{ N}}$$
@@ -1213,23 +1022,11 @@ $$\therefore v = \sqrt{2 \times 4.905 \times 2} = 4.429\text{ m/s}$$
 
 Q. Two blocks are joined by an inextensible string. The block resting on horizontal surface is placed $10\text{ m}$ away from the edge. If the system is released from rest, determine the velocity of block after it has moved $4\text{ m}$. Also find the time at which the horizontal block reaches the edge of the surface. Assume the coefficient of friction between the block and the plane is $0.2$. The pulley is weightless and frictionless.
 
-
-
-> **Figure: Two blocks connected by a string over a pulley**
->
-> A mechanical system diagram showing a block of mass $2000\text{ kg}$ on a horizontal surface, connected by a string passing over a pulley to a hanging block of mass $3000\text{ kg}$. The horizontal block is at a distance of $10\text{ m}$ from the edge of the surface.
-
-
+![Two blocks connected by a string over a pulley](/assets/notes/me/s1/engineering-mechanics/module-3/blocks-2000kg-3000kg.svg)
 
 Free body diagram of $3000\text{ kg}$; (Let $T$ be the tension in the string and $a$ be the acceleration of system);
 
-
-
-> **Figure: Free body diagram of the 3000 kg block**
->
-> Free body diagram of the $3000\text{ kg}$ hanging block. A rectangle labeled $3000\text{ kg}$ has a downward arrow for weight $3000 \times 9.81$, an upward arrow for tension $T$, and an upward acceleration arrow labeled $ma = 3000\,a$.
-
-
+![Free body diagram of the 3000 kg block](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-3000kg.svg)
 
 $$\begin{aligned}
 T + 3000 a &= 3000 \times 9.81 \\[6pt]
@@ -1243,13 +1040,7 @@ $$\boxed{T = 29430 - 3000 a} \qquad \text{--- (1)}$$
 
 Free body diagram of $2000\text{ kg}$:
 
-
-
-> **Figure: Free body diagram of 2000 kg mass showing forces T, normal reaction RN, weight 2000x9.81, frictional force mu_R N = 0.2 RN, and inertia force ma = 2000 a**
->
-> A rectangular block representing a 2000 kg mass. A horizontal force T acts to the right. A downward vertical force of 2000 x 9.81 acts from the center. An upward normal reaction R_N acts from the bottom. A leftward frictional force mu_R_N = 0.2 R_N acts at the bottom surface. An inertial force ma = 2000 a acts to the left at the top.
-
-
+![Free body diagram of 2000 kg mass showing forces T, normal reaction RN, weight 2000x9.81, frictional force mu_R N = 0.2 RN, and inertia force ma = 2000 a](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-2000kg-rn.svg)
 
 $$\Sigma F_y = 0 \Rightarrow R_N - 2000 \times 9.81 = 0$$
 
@@ -1287,13 +1078,7 @@ $$t = [illegible] \quad 1.98 \text{ s}$$
 
 Q. A mass of $60 \text{ kg}$ lies on a smooth horizontal table. It is connected to a fine string passing over a smooth guide pulley on the edge of the table to a mass $50 \text{ kg}$ hanging freely. Find $T$ and $a$.
 
-
-
-> **Figure: Diagram showing a 60 kg mass on a horizontal table connected by a string over a pulley to a 50 kg hanging mass**
->
-> A schematic diagram showing a horizontal table surface supporting a block labeled '60 kg'. A string attached to the block goes to the right over a pulley at the edge of the table and hangs down vertically, connected to a block labeled '50 kg'.
-
-
+![Diagram showing a 60 kg mass on a horizontal table connected by a string over a pulley to a 50 kg hanging mass](/assets/notes/me/s1/engineering-mechanics/module-3/block-60kg-table-50kg.svg)
 
 Here, it is a smooth table, $\therefore \mu = 0$
 
@@ -1302,13 +1087,7 @@ T + 50\text{ }a &= 50 \times 9.81 \\
 T - 490.5 - 50\text{ }a & \quad — ①
 \end{aligned}$$
 
-
-
-> **Figure: Free body diagrams for the 50 kg and 60 kg masses**
->
-> Two free body diagrams. Top: A box representing the 50 kg mass with upward tension T, downward weight $50 \times 9.81$, and upward acceleration $ma: 50a$. Bottom: A box representing the 60 kg mass with downward weight $60 \times 9.81$, upward normal reaction $R_N$, rightward tension T, and leftward acceleration $ma: 60a$.
-
-
+![Free body diagrams for the 50 kg and 60 kg masses](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-50kg-60kg.svg)
 
 $$\begin{aligned}
 R_N - 60 \times 9.81 &= 0 \\
@@ -1331,13 +1110,7 @@ $$\Rightarrow T = 267.54 \text{ N}, \quad a = 4.459 \text{ m/s}^2$$
 
 8) Find the acceleration and tension of the system.
 
-
-
-> **Figure: Pulley system diagram with masses A and B**
->
-> A pulley system hanging from a ceiling. A string supports a pulley carrying mass B (300 kg), and another string goes over a fixed pulley to mass A (100 kg).
-
-
+![Pulley system diagram with masses A and B](/assets/notes/me/s1/engineering-mechanics/module-3/pulley-masses-a-b.svg)
 
 Here, for the body B, tension will be equal to $2T$. Also, the downward displacement of $300\text{ kg}$ mass will only be half of the upward displacement of $100\text{ kg}$ mass. Or else, the same will be followed in acceleration also.
 
@@ -1346,26 +1119,14 @@ $$\boxed{a_B = \frac{1}{2} a_A}$$
 
 consider the free body diagram of $300\text{ kg}$,
 
-
-
-> **Figure: Free body diagram of the 300 kg mass**
->
-> A box labelled with downward weight 300 x 9.81, two upward tension arrows T at the top, and an upward acceleration arrow 300 a_B.
-
-
+![Free body diagram of the 300 kg mass](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-300kg-b.svg)
 
 $$2T + 300\,a_B = 300 \times 9.8$$
 $$2T = 2943 - 300\,a_B$$
 $$\boxed{T = 1471.5 - 150\,a_B}$$
 $$\boxed{T = 1471.5 - 75\,a_A} \quad \text{--- ①}$$
 
-
-
-> **Figure: Free body diagram of the 100 kg mass**
->
-> A box labelled with downward weight 100 x 9.81, one upward tension arrow T at the top, and a downward acceleration arrow m_A a_A = 100 x a_A.
-
-
+![Free body diagram of the 100 kg mass](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-100kg-a.svg)
 
 $$T = 100\,a_A + 100 \times 9.81$$
 $$\boxed{T = 981 + 100\,a_A} \quad \text{--- ②}$$
@@ -1376,13 +1137,7 @@ $$T = 1261.28\text{ N} \qquad a_A = 2.8\text{ m/s}^2 \implies \underline{a_B = 1
 
 Q.
 
-
-
-> **Figure: Pulley system with masses 50 N and 200 N**
->
-> A pulley system hanging from a ceiling. Pulley A is fixed to the ceiling with a 200 N weight hanging from one side. A string goes over pulley A to a movable pulley B. A 50 N weight hangs from pulley B, and another string goes from pulley B up to the ceiling.
-
-
+![Pulley system with masses 50 N and 200 N](/assets/notes/me/s1/engineering-mechanics/module-3/pulley-50n-200n-ceiling.svg)
 
 $$\left[a_B = \frac{1}{2} a_A\right]$$
 
@@ -1391,13 +1146,7 @@ $50\text{ N}$ will go upwards, $200\text{ N}$ downwards.
 
 F.B.D of $50\text{ N}$,
 
-
-
-> **Figure: Free body diagram of 50 N block**
->
-> Free body diagram of the 50 N block showing upward tension forces T, downward weight 50 N, and downward inertia force m*a_B equal to (50 / 9.81) * a_B.
-
-
+![Free body diagram of 50 N block](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-50n-block-b.svg)
 
 $$\begin{aligned}
 2T &= 50 + \frac{50}{9.81} a_B \\[6pt]
@@ -1407,13 +1156,7 @@ T &= 25 + \frac{25}{9.81} \times \frac{1}{2} a_A \\[6pt]
 
 FBD of $200\text{ N}$
 
-
-
-> **Figure: Free body diagram of 200 N block**
->
-> Free body diagram of the 200 N block showing upward tension T, upward inertia force m*a_A equal to (200 / 9.81) * a_A, and downward weight 200 N.
-
-
+![Free body diagram of 200 N block](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-200n-block-a.svg)
 
 $$\begin{aligned}
 T + 200 \, a_A &= 200 \\[6pt]
@@ -1430,19 +1173,9 @@ If the free end of the string is pulled vertically downward with an acceleration
 
 <!-- page 39 | Combined motion of translation and rotation -->
 
-> **Figure: Pulley system diagram showing a weight of 4500 N connected to pulleys and cords**
->
-> A pulley system diagram with a ceiling support, two pulleys, a suspended block labeled '4500 N', acceleration labels 'a = 1.8 m/s²' and 'a = 0.9 m/s²', and tension 'T = 1.8 m/s²'.
+![Pulley system diagram showing a weight of 4500 N connected to pulleys and cords](/assets/notes/me/s1/engineering-mechanics/module-3/pulley-4500n-block.svg)
 
-
-
-
-
-> **Figure: Free body diagram of the 4500 N block**
->
-> F.B.P of 4500 N block showing upward tension forces T, upward inertial force component, and downward weight 4500 N.
-
-
+![Free body diagram of the 4500 N block](/assets/notes/me/s1/engineering-mechanics/module-3/fbd-4500n-block.svg)
 
 $$\text{F.B.D of } 4500\text{ N}$$
 
@@ -1467,15 +1200,9 @@ If the path traced by the particles during motion is a straight line, then the t
 
 If the particles traces a curved path, then the motion is called curvilinear motion / curvilinear translation.
 
-
-
-> **Figure: Diagram illustrating translation showing an object moving from position 1 to position 2**
->
-> Two vertical capsule-shaped bodies labeled position 1 and position 2. Body 1 has points A1 and B1. Body 2 has points A2 and B2. Dashed horizontal lines connect A1 to A2 and B1 to B2.
+![Diagram illustrating translation showing an object moving from position 1 to position 2](/assets/notes/me/s1/engineering-mechanics/module-3/translation-position-1-2.svg)
 
 <!-- page 40 | Page 40 -->
-
-[Non-content page]
 
 <!-- page 41 | Page 41 -->
 
@@ -1485,21 +1212,9 @@ Consider a body initially at position $A_1 B_1$ and assume it moved to new posit
 
 In the another method, first the body can rotate to $B_1 A'$ keeping $B_1$ as the centre of rotation and then translate to the final position $A_2, B_2$. This motion is known as combined motion of translation and rotation.
 
+![First method of general plane motion decomposition showing a body moving from initial position A1B1 to final position A2B2 via intermediate translation to A'B2](/assets/notes/me/s1/engineering-mechanics/module-3/plane-motion-method-1.svg)
 
-
-> **Figure: First method of general plane motion decomposition showing a body moving from initial position A1B1 to final position A2B2 via intermediate translation to A'B2**
->
-> A diagram showing body positions as elongated ovals. From left to right: an initial vertical oval labelled A1 at top and B1 at bottom, an inclined oval labelled A2 at top and B2 at bottom, an equals sign, a vertical oval A1 B1, and an inclined oval overlapping where an intermediate translated shape is shown. The labels are A1, B1, A2, B2.
-
-
-
-
-
-> **Figure: Second method of general plane motion decomposition showing rotation followed by translation**
->
-> A diagram showing body positions as elongated ovals. From left to right: initial oval A1 B1, inclined oval A2 B2, equals sign, inclined oval with A prime B1, and a final inclined oval A2 B2.
-
-
+![Second method of general plane motion decomposition showing rotation followed by translation](/assets/notes/me/s1/engineering-mechanics/module-3/plane-motion-method-2.svg)
 
 Examples of general plane motion are $^{(1)}$ motion of ~~the~~ wheels of truck, car, etc.
 
@@ -1509,23 +1224,11 @@ Examples of general plane motion are $^{(1)}$ motion of ~~the~~ wheels of truck,
 
 (1) Motion of a roller without slipping motion, the wheel of truck, car etc.
 
-
-
-> **Figure: Diagram showing roller rolling without slipping as a combination of translation and rotation**
->
-> A diagram with three parts separated by equal and plus signs. Left: two overlapping circles representing a roller moving from position 1 to 2, with centers labeled $A_1$ and $A_2$, and top points $B_1$ and $B_2$. Middle: 'Translation' shown as two overlapping circles at positions 1 and 2 with centers $A_1, A_2$ and top points $B_1, B'$. Right: 'Rotation' shown as a single circle with center $A_2$ and top point $B'$ rotating with a curved arrow.
-
-
+![Diagram showing roller rolling without slipping as a combination of translation and rotation](/assets/notes/me/s1/engineering-mechanics/module-3/rolling-roller.svg)
 
 (2) A rod sliding against a wall at one end and floor at the other end.
 
-
-
-> **Figure: Diagram showing a rod sliding against a wall and floor as a combination of translation and rotation**
->
-> A diagram showing a rod sliding against a vertical wall and horizontal floor. Left: a rod from $B_1$ to $B_2$ on the wall and $A_1$ to $A_2$ on the floor, shown in two positions. Middle: 'Translation' component showing a rod moving parallel. Right: 'Rotation' component showing a rod rotating about point $A_2$.
-
-
+![Diagram showing a rod sliding against a wall and floor as a combination of translation and rotation](/assets/notes/me/s1/engineering-mechanics/module-3/rod-sliding-wall-floor.svg)
 
 ## Instantaneous centre
 
@@ -1545,4 +1248,3 @@ Examples for projectiles:-
 
 <!-- page 44 | Page 44 -->
 
-[Non-content page]

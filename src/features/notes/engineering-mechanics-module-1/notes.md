@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Mechanics -->
 
 Engineering Mechanics is the physical science which describes and predicts the conditions of rest or motion of bodies under the action of forces.
@@ -14,13 +12,7 @@ Statics deals with the action of forces on bodies which are at rest and remain a
 
 Dynamics deals with the motion of bodies under the action of forces.
 
-
-
-> **Figure: Subdivision of Mechanics into Statics and Dynamics**
->
-> A flowchart showing the subdivision of Mechanics. Mechanics branches into (1) Statics, which deals with the action of forces on bodies at rest, and (2) Dynamics, which deals with forces on bodies at motion. Dynamics further branches into (1) Kinematics and (2) Kinetics.
-
-
+![Subdivision of Mechanics into Statics and Dynamics](/assets/notes/me/s1/engineering-mechanics/module-1/subdivision-of-mechanics.svg)
 
 ### Mechanics
 
@@ -98,23 +90,11 @@ weight of the particle, $W = F = \left(\frac{GMm}{R^2}\right) = gm = mg$
 
 The condition of equilibrium or of motion of a rigid body will remain unchanged if the point of application of a force acting on the rigid body is transmitted to any other point on the line of action of the force.
 
-
-
-> **Figure: Diagram showing the principle of transmissibility for a rigid block not fixed at base**
->
-> Two diagrams side-by-side of a rectangular rigid block with points A and B on its line of action. In the first diagram, force P pushes rightwards on point A. In the second diagram, force P pushes rightwards from point B. Below the diagrams is the label 'Rigid block (Not fixed at base)'.
-
-
+![Diagram showing the principle of transmissibility for a rigid block not fixed at base](/assets/notes/me/s1/engineering-mechanics/module-1/transmissibility-not-fixed.svg)
 
 Rigid block (Not fixed at base)
 
-
-
-> **Figure: Diagram showing the principle of transmissibility for a rigid block at rest**
->
-> Two diagrams side-by-side of a rectangular rigid block fixed at the base with hatching. In the first diagram, force P pushes rightwards from point A. In the second diagram, force P pushes rightwards from point B. Below the diagrams is the label 'Rigid block (at rest)'.
-
-
+![Diagram showing the principle of transmissibility for a rigid block at rest](/assets/notes/me/s1/engineering-mechanics/module-1/transmissibility-at-rest.svg)
 
 Rigid block (at rest)
 
@@ -124,13 +104,7 @@ Rigid block (at rest)
 
 If two forces acting simultaneously at a point are represented in magnitude and direction by the adjacent sides of a parallelogram, then the diagonal of the parallelogram passing through their point of intersection represents the resultant of the two forces in both magnitude and direction.
 
-
-
-> **Figure: Geometric derivation of the resultant of two forces using the parallelogram law**
->
-> A parallelogram OABC with origin O at the bottom left. Side OA has length P along the horizontal, side OB has length Q inclined at angle alpha to OA, with an arrow pointing from O to B labeled Q and an arrow from O to A labeled P. The diagonal OC represents the resultant R, with an arrow from O to C labeled R. The angle between the resultant R and force P is labeled theta. A perpendicular line drops from C down to the extension of OA meeting at point D, forming a right-angled triangle OCD, with angle alpha also shown between OB and OC (or similar vector components).
-
-
+![Geometric derivation of the resultant of two forces using the parallelogram law](/assets/notes/me/s1/engineering-mechanics/module-1/parallelogram-law-derivation.svg)
 
 $$\cos \alpha = \frac{AD}{Q} \Rightarrow AD = Q \cos \alpha$$
 
@@ -234,13 +208,7 @@ $F_1 - F_2 = 3\text{ N}$ —— ②
 
 Let $\alpha$ be the angle between $F_1$ and $F_2$.
 
-
-
-> **Figure: Vector addition diagram showing forces F1, F2 and resultant R with angle alpha**
->
-> A small sketch showing force vectors F1 pointing up-right and F2 pointing right, with resultant R spanning between them. The angle between F1 and F2 is labeled as alpha.
-
-
+![Vector addition diagram showing forces F1, F2 and resultant R with angle alpha](/assets/notes/me/s1/engineering-mechanics/module-1/vector-addition-f1-f2-r.svg)
 
 $R = \sqrt{F_1^2 + F_2^2 + 2F_1F_2 \cos\alpha}$
 
@@ -274,13 +242,7 @@ ii) Direction of resultant with $25\text{ N}$
 
 iii) Direction of resultant with $10\text{ N}$
 
-
-
-> **Figure: Parallelogram law of forces diagram showing forces P and Q, resultant R, and angle alpha = 30 degrees**
->
-> A vector diagram showing two forces P = 25 N and Q = 10 N acting from a common point O. A horizontal dashed line serves as the reference. Force P makes an angle of 15 degrees with the horizontal, and force Q makes an angle of 45 degrees. The angle between P and Q is alpha = 45 - 15 = 30 degrees. A parallelogram is completed with resultant R passing diagonally through it.
-
-
+![Parallelogram law of forces diagram showing forces P and Q, resultant R, and angle alpha = 30 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/parallelogram-p-q-alpha-30.svg)
 
 i) $R = \sqrt{25^2 + 10^2 + 2 \times 25 \times 10 \times \cos 30^{\circ}} = 34.03\text{ N}$
 
@@ -314,13 +276,7 @@ $$= 45^{\circ}$$
 
 Q. A boat is moved uniformly by pulling with forces $240\text{ N}$ and $200\text{ N}$ acting at an angle $60^{\circ}$ as shown in figure. Determine the magnitude of the resultant pull on the boat and the angle made by the resultant with forces $240\text{ N}$ and $200\text{ N}$.
 
-
-
-> **Figure: Parallelogram law of forces for a boat pulled by 200 N and 240 N forces at 60 degree angle**
->
-> A vector diagram showing the resultant of two forces pulling a boat. A boat is at the left vertex with two force vectors emerging from it: one upwards-right labeled 200 N (Q) and one downwards-right labeled 240 N (P), with an angle of 60 degrees between them. A parallelogram is completed with dashed lines, and a diagonal vector labeled R extends from the boat to the opposite corner.
-
-
+![Parallelogram law of forces for a boat pulled by 200 N and 240 N forces at 60 degree angle](/assets/notes/me/s1/engineering-mechanics/module-1/boat-200n-240n-60.svg)
 
 Resultant force,
 
@@ -340,13 +296,7 @@ $$\phi = 33^\circ$$
 
 2) A boat is moved uniformly by pulling with forces $P = 240\text{ N}$ and $Q = 200\text{ N}$. what must be the inclination of the resultant force with $P$ and $Q$ to have the resultant $R = 400\text{ N}$?
 
-
-
-> **Figure: Diagram showing a boat pulled by two forces P (240 N) and Q (200 N) with their resultant R (400 N)**
->
-> A force diagram showing a boat on the left being pulled by two forces: $200\text{ N } (Q)$ pointing upwards and rightwards, and $240\text{ N } (P)$ pointing downwards and rightwards. Dashed lines complete a parallelogram with the resultant $R = 400\text{ N}$ passing through the middle.
-
-
+![Diagram showing a boat pulled by two forces P (240 N) and Q (200 N) with their resultant R (400 N)](/assets/notes/me/s1/engineering-mechanics/module-1/boat-p-q-r.svg)
 
 A) $R = \sqrt{P^2 + Q^2 + 2PQ \cos \alpha}$
 
@@ -438,13 +388,7 @@ vector quantities are added according to triangle law of vector addition.
 
 A vector such as force can be represented by a line AB as shown in figure.
 
-
-
-> **Figure: Vector representation as a line AB with angle theta**
->
-> A line segment from point A to point B inclined at an angle theta to a horizontal reference line. An arrow labeled F points from A towards B along the line segment.
-
-
+![Vector representation as a line AB with angle theta](/assets/notes/me/s1/engineering-mechanics/module-1/vector-ab-angle-theta.svg)
 
 The length of the line AB denotes the magnitude of the force to some scale.
 
@@ -470,13 +414,7 @@ coplanar forces are subdivided into:
 
 1) coplanar colinear force
 
-
-
-> **Figure: Coplanar collinear forces diagram showing forces F1, F2, F3, F4 inside a rectangle**
->
-> A rectangular box containing four horizontal force vectors. Forces F1 and F2 point to the right at the top, and forces F3 and F4 point to the left and right respectively at the bottom.
-
-
+![Coplanar collinear forces diagram showing forces F1, F2, F3, F4 inside a rectangle](/assets/notes/me/s1/engineering-mechanics/module-1/collinear-forces-rectangle.svg)
 
 Forces acting on a single plane and acting along the same line of action.
 
@@ -490,23 +428,13 @@ Forces lying on a single plane with their line of action intersecting at a commo
 
 <!-- page 17 | Page 17 -->
 
-> **Figure: Diagram showing coplanar concurrent forces**
->
-> A square box representing a plane, with three force vectors F1, F2, and F3 meeting at a common point O inside the box.
-
-
+![Diagram showing coplanar concurrent forces](/assets/notes/me/s1/engineering-mechanics/module-1/concurrent-forces.svg)
 
 coplanar concurrent
 
 3) coplanar Non concurrent forces
 
-
-
-> **Figure: Diagram showing coplanar non-concurrent forces**
->
-> A square box representing a plane, containing three force vectors F1, F2, and F3 pointing in different directions whose lines of action do not intersect at a common point.
-
-
+![Diagram showing coplanar non-concurrent forces](/assets/notes/me/s1/engineering-mechanics/module-1/non-concurrent-forces.svg)
 
 coplanar non concurrent
 
@@ -514,13 +442,7 @@ Forces lying on a single plane with their line of action not passing through a c
 
 4) coplanar parallel forces
 
-
-
-> **Figure: Diagram showing coplanar parallel forces**
->
-> A rectangular box representing a plane, containing three parallel vertical force vectors labeled F1 (pointing up), F2 (pointing up), and F3 (pointing down).
-
-
+![Diagram showing coplanar parallel forces](/assets/notes/me/s1/engineering-mechanics/module-1/parallel-forces.svg)
 
 Forces lying on a single plane and parallel to each other.
 
@@ -538,25 +460,13 @@ Forces do not lie in a single plane but they meet at a point.
 
 2) Non coplanar non concurrent forces
 
-
-
-> **Figure: Diagram showing non-coplanar non-concurrent forces in 3D coordinate planes**
->
-> A 3D coordinate system showing two planes, with axes labelled (yz) and (xz). Two force vectors F1 and F2 are shown, where F1 lies vertically on the (yz) plane and F2 lies horizontally on the (xz) plane, representing non-coplanar non-concurrent forces.
-
-
+![Diagram showing non-coplanar non-concurrent forces in 3D coordinate planes](/assets/notes/me/s1/engineering-mechanics/module-1/non-coplanar-non-concurrent-3d.svg)
 
 Forces do not lie in a single plane and do not meet at a common point.
 
 3) Non coplanar parallel forces
 
-
-
-> **Figure: Diagram showing non-coplanar parallel forces in 3D coordinate planes**
->
-> A 3D coordinate system showing planes with labels (yz) and (xz). Four parallel force vectors F1, F2, F3, and F4 are shown acting in different directions and planes, representing non-coplanar parallel forces.
-
-
+![Diagram showing non-coplanar parallel forces in 3D coordinate planes](/assets/notes/me/s1/engineering-mechanics/module-1/non-coplanar-parallel-3d.svg)
 
 ~~Non~~ Forces do not lie in a single plane but are parallel to each other which could be like parallel or unlike parallel.
 
@@ -572,13 +482,7 @@ The replacement of a single force by two or more forces is called resolution.
 
 Two forces by which a single force can be replaced are called components
 
-
-
-> **Figure: Force F along vertical y-axis showing Fx=0, Fy=F at theta = 90 degrees**
->
-> A coordinate system with horizontal x-axis (H) and vertical y-axis (V). A force vector F points vertically upwards along the y-axis. Equations to the right: Fx = H = 0, Fy = V = F, theta = 90 degrees (angle with x-axis).
-
-
+![Force F along vertical y-axis showing Fx=0, Fy=F at theta = 90 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/force-along-y-axis.svg)
 
 $F_x = H = 0$
 
@@ -586,13 +490,7 @@ $F_y = V = F$
 
 $\theta = 90^\circ$ (angle with x-axis)
 
-
-
-> **Figure: Force F along horizontal x-axis showing Fx=F, Fy=0 at theta = 0 degrees**
->
-> A coordinate system with horizontal x-axis (H) and vertical y-axis (V). A force vector F points horizontally along the x-axis. Equations to the right: Fy = V = 0, Fx = H = F, theta = 0 degrees.
-
-
+![Force F along horizontal x-axis showing Fx=F, Fy=0 at theta = 0 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/force-along-x-axis.svg)
 
 $F_y = V = 0$
 
@@ -600,13 +498,7 @@ $F_x = H = F$
 
 $\theta = 0^\circ$
 
-
-
-> **Figure: Force F inclined at angle theta showing rectangular components Fx = F cos theta and Fy = F sin theta**
->
-> A coordinate system with y-axis (V) and x-axis (H). A force vector F is inclined at an angle theta to the horizontal. A boxed set of equations on the right shows Fx = F cos theta and Fy = F sin theta.
-
-
+![Force F inclined at angle theta showing rectangular components Fx = F cos theta and Fy = F sin theta](/assets/notes/me/s1/engineering-mechanics/module-1/force-inclined-components.svg)
 
 $$\begin{aligned}
 F_x &= F \cos \theta \\
@@ -643,11 +535,7 @@ $$F_y = - 50 \sin 45 = - 35.35$$
 
 <!-- page 21 | Page 21 -->
 
-> **Figure: Force vector of 70 N at 50 degrees**
->
-> A force vector of 70 N acting in the fourth quadrant at an angle of 50 degrees to the horizontal axis, with coordinate axes showing.
-
-
+![Force vector of 70 N at 50 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/force-70n-at-50.svg)
 
 $F_x = 70 \cos 50^{\circ} = 44.99\text{ N}$
 
@@ -655,43 +543,23 @@ $F_y = -70 \sin 50^{\circ} = -53.62\text{ N}$
 
 Q.
 
-
-
-> **Figure: Concurrent force system with four forces**
->
-> A system of four concurrent forces acting through the origin: 200 N in the second quadrant, 150 N in the first quadrant at 30 degrees to the x-axis, 180 N in the fourth quadrant at 45 degrees to the x-axis, and 80 N in the third quadrant at 60 degrees to the negative x-axis (with a 30 degree angle marked to the negative y-axis).
-
-
+![Concurrent force system with four forces](/assets/notes/me/s1/engineering-mechanics/module-1/concurrent-four-forces.svg)
 
 Find the component of each force and also find the resultant of the forces in the force system. Draw the resultant with magnitude and direction.
 
-
-
-> **Figure: Component resolution for 150 N force**
->
-> A force of 150 N in the first quadrant making an angle of 30 degrees with the horizontal axis.
-
-
+![Component resolution for 150 N force](/assets/notes/me/s1/engineering-mechanics/module-1/resolve-150n.svg)
 
 $F_x = 150 \cos 30^{\circ}$
 
 $F_y = 150 \sin 30^{\circ}$
 
-
-
-> **Figure: Component resolution for 200 N force**
->
-> A force of 200 N in the second quadrant making an angle of 30 degrees with the horizontal axis.
-
-
+![Component resolution for 200 N force](/assets/notes/me/s1/engineering-mechanics/module-1/resolve-200n.svg)
 
 $F_x = -200 \cos 30^{\circ}$
 
 $F_y = +200 \sin 30^{\circ}$
 
 <!-- page 22 | Page 22 -->
-
-[Non-content page]
 
 <!-- page 23 | Page 23 -->
 
@@ -702,43 +570,19 @@ Q. Find the component of each force shown in figure also find the resultant of t
 $$R: 69.24\text{ N}$$
 $$\theta = 0.32^{\circ} = 0^{\circ}\text{ } 19^{\prime}\text{ } 19.2^{\prime\prime}$$
 
+![Free body diagram of forces acting at a point](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-forces-at-point.svg)
 
-
-> **Figure: Free body diagram of forces acting at a point**
->
-> A coordinate system showing four forces: 100 N directed at 35 degrees above the positive x-axis, 50 N directed at 55 degrees below the negative x-axis (or equivalent angle), 40 N directed at 45 degrees below the positive x-axis, and a horizontal tie/rod connected to a vertical wall on the left.
-
-
-
-
-
-> **Figure: Resolution of 100 N force**
->
-> Vector diagram showing a 100 N force inclined at 35 degrees to the horizontal, with equations for its x and y components.
-
-
+![Resolution of 100 N force](/assets/notes/me/s1/engineering-mechanics/module-1/resolve-100n.svg)
 
 $$F_x = 100\text{ } \cos 35$$
 $$F_y = 100\text{ } \sin 35$$
 
-
-
-> **Figure: Resolution of 50 N force**
->
-> Vector diagram showing a 50 N force in the third/second quadrant with a 35 degree angle, and equations for its negative x and y components.
-
-
+![Resolution of 50 N force](/assets/notes/me/s1/engineering-mechanics/module-1/resolve-50n.svg)
 
 $$F_x = -50\text{ } \cos 35$$
 $$F_y = -50\text{ } \sin 35$$
 
-
-
-> **Figure: Resolution of 40 N force**
->
-> Vector diagram showing a 40 N force in the fourth quadrant with a 45 degree angle, and equations for its positive x and negative y components.
-
-
+![Resolution of 40 N force](/assets/notes/me/s1/engineering-mechanics/module-1/resolve-40n.svg)
 
 $$F_x = 40\text{ } \cos 45$$
 $$F_y = -40\text{ } \sin 45$$
@@ -770,33 +614,17 @@ $$\tan \theta = \frac{\sum F_y}{\sum F_x} = \frac{0.394}{69.24} = 5.69 \times 10
 
 $$\theta = 0.32^\circ = 0^\circ 19'$$
 
-
-
-> **Figure: Resultant force vector diagram showing components 69.241 and 0.394 with angle theta and resultant R**
->
-> A 2D vector diagram with horizontal and vertical axes. The horizontal axis is labelled 69.241 and points right. The vertical axis is labelled 0.394 and points up. A resultant vector R extends from the origin into the first quadrant, making an angle theta with the horizontal axis.
+![Resultant force vector diagram showing components 69.241 and 0.394 with angle theta and resultant R](/assets/notes/me/s1/engineering-mechanics/module-1/resultant-components-69-0-39.svg)
 
 <!-- page 25 | Page 25 -->
 
 Q. Find the resultant of the system.
 
-
-
-> **Figure: Force system diagram with three forces: 300 N at 30 degrees to the positive y-axis, 300 N at 30 degrees below the positive x-axis, and 200 N at 45 degrees below the negative x-axis.**
->
-> A Cartesian coordinate system with x and y axes. Three force vectors are shown: a 300 N force in the first quadrant making a 30 degree angle with the positive y-axis, a 300 N force in the fourth quadrant making a 30 degree angle with the positive x-axis, and a 200 N force in the third quadrant making a 45 degree angle with the negative x-axis.
-
-
+![Force system diagram with three forces: 300 N at 30 degrees to the positive y-axis, 300 N at 30 degrees below the positive x-axis, and 200 N at 45 degrees below the negative x-axis.](/assets/notes/me/s1/engineering-mechanics/module-1/three-forces-300n.svg)
 
 Ans)
 
-
-
-> **Figure: Redrawn force system diagram showing angles with respect to the x-axis.**
->
-> A Cartesian coordinate system with x and y axes. Three force vectors: 300 N in the second quadrant at 30 degrees to the negative x-axis (or rather, positive y-axis area), 300 N in the first quadrant at 60 degrees to the positive x-axis, and 200 N in the third quadrant at 45 degrees to the negative x-axis.
-
-
+![Redrawn force system diagram showing angles with respect to the x-axis.](/assets/notes/me/s1/engineering-mechanics/module-1/redrawn-force-system.svg)
 
 $\sum F_x = 300 \cos 60 - 300 \cos 30 - 200 \cos 45$
 
@@ -806,13 +634,7 @@ $\sum F_y = 300 \sin 60 + 300 \sin 30 - 200 \sin 45$
 
 $= 268.386\text{ N}$
 
-
-
-> **Figure: Component force diagram showing summation of forces along x and y axes leading to resultant R.**
->
-> A vector diagram showing $\sum F_y = 268.386$ pointing vertically upwards, and $\sum F_x = -251.228$ pointing horizontally leftwards, with an angle $\theta$ at the origin.
-
-
+![Component force diagram showing summation of forces along x and y axes leading to resultant R.](/assets/notes/me/s1/engineering-mechanics/module-1/summation-x-y-resultant.svg)
 
 $R = \sqrt{\sum F_x^2 + \sum F_y^2}$
 
@@ -829,13 +651,7 @@ $$\theta = 46.88^{\circ} = 46^{\circ} 53'$$
 
 2. Forces of $15\text{ N}$, $20\text{ N}$, $25\text{ N}$, $35\text{ N}$ and $45\text{ N}$ act at an angular point of a regular hexagon towards the other angular point as shown in figure calculate the \underline{magnitude and direction} of the resultant force
 
-
-
-> **Figure: Diagram showing forces acting from an angular point of a regular hexagon towards other angular points**
->
-> A vector diagram showing forces of 15 N, 20 N, 25 N, 35 N, and 45 N radiating from a common vertex. The 35 N force points vertically upwards along the y-axis, 20 N points at 30 degrees, 25 N points at 60 degrees, 15 N points along the horizontal x-axis (0 degrees), and 45 N points at 120 degrees (or 60 degrees to the negative x-axis).
-
-
+![Diagram showing forces acting from an angular point of a regular hexagon towards other angular points](/assets/notes/me/s1/engineering-mechanics/module-1/hexagon-forces-to-vertices.svg)
 
 Magnitude of resultant is given by:
 
@@ -847,13 +663,7 @@ $$= 22.32\text{ N}$$
 $$\sum F_y = 15 \sin 0 + 20 \sin 30 + 25 \sin 60 + 35 \sin 90 + 45 \sin 60$$
 $$= 105.62\text{ N}$$
 
-
-
-> **Figure: Resultant force triangle showing summation of forces along x and y axes**
->
-> A right-angled triangle with horizontal base labeled EFx = 22.32 N, vertical side labeled EFy = 105.62 N, hypotenuse labeled R = 107.95 N, and angle theta = 78.06 degrees between the base and hypotenuse.
-
-
+![Resultant force triangle showing summation of forces along x and y axes](/assets/notes/me/s1/engineering-mechanics/module-1/resultant-force-triangle.svg)
 
 $$R = \sqrt{(22.32)^2 + (105.62)^2}$$
 $$= 107.95\text{ N}$$
@@ -865,13 +675,7 @@ $$= 78^{\circ} 4'$$
 
 Q. Concurrent forces $1, 3, 5, 7, 9,$ and $11\text{ N}$ are applied at the centre regular hexagon acting towards its vertices as in figure. Determine the magnitude and direction of the resultant.
 
-
-
-> **Figure: A regular hexagon with concurrent forces acting towards its centre from each vertex: 1 N at top, 3 N at top-right, 5 N at right, 7 N at bottom-right, 9 N at bottom, 11 N at left, with internal diagonal lines meeting at the centre.**
->
-> A regular hexagon oriented such that two vertices are at the top and bottom. Arrows representing forces of magnitudes 1 N, 3 N, 5 N, 7 N, 9 N, and 11 N point from the vertices towards the centre. The 11 N force points horizontally left, 5 N points horizontally right, 1 N points vertically up, 9 N points vertically down, 3 N points down-left towards centre from top-right vertex, and 7 N points up-left towards centre from bottom-right vertex (wait, looking closely at the diagram: 1 N is at top, 3 N is at top-right, 5 N is at middle-right, 7 N is at bottom-right, 9 N is at bottom, 11 N is at middle-left). Diagonal lines connect opposite vertices passing through the centre.
-
-
+![A regular hexagon with concurrent forces acting towards its centre from each vertex: 1 N at top, 3 N at top-right, 5 N at right, 7 N at bottom-right, 9 N at bottom, 11 N at left, with internal diagonal lines meeting at the centre.](/assets/notes/me/s1/engineering-mechanics/module-1/hexagon-1n-3n-5n.svg)
 
 $$\Sigma F_x = 5 + 3 \cos 60 - 1 \cos 60 - 11 - 9 \cos 60 + 7 \cos 60$$
 
@@ -881,13 +685,7 @@ $$\Sigma F_y = \underset{(5 \sin 0)}{0} + 3 \sin 60 + 1 \sin 60 + (11 \sin 0) - 
 
 $$= -10.39\text{ N}$$
 
-
-
-> **Figure: Resultant force vector diagram showing Fx = -6 pointing left and Fy = -10.39 pointing down, with resultant R in the third quadrant and angle theta.**
->
-> A vector diagram showing orthogonal axes. A horizontal component Fx = -6 points to the left, a vertical component Fy = -10.39 points downwards. The resultant vector R originates from the origin and points into the third quadrant. The angle theta is marked between the horizontal axis and the resultant vector R.
-
-
+![Resultant force vector diagram showing Fx = -6 pointing left and Fy = -10.39 pointing down, with resultant R in the third quadrant and angle theta.](/assets/notes/me/s1/engineering-mechanics/module-1/resultant-fx-minus6-fy-minus10.svg)
 
 $$R = \sqrt{F_x^2 + F_y^2}$$
 
@@ -909,33 +707,15 @@ It is also called moment arm which is the perpendicular distance of line of the 
 
 Moment of the force will be zero if the force acts at the moment centre itself. Also, it will be zero when the line of action of the forces pass through the moment centre.
 
-
-
-> **Figure: Diagram showing force F acting at point B at a distance AB from moment centre A, with moment equation MA = F x AB**
->
-> A horizontal line segment with a point A near the right end and point B at the left end. A vertical downward arrow labelled F originates from B. The moment equation below is M_A = F x AB.
-
-
+![Diagram showing force F acting at point B at a distance AB from moment centre A, with moment equation MA = F x AB](/assets/notes/me/s1/engineering-mechanics/module-1/moment-force-at-b.svg)
 
 $M_A = F \times AB$
 
-
-
-> **Figure: Diagram showing force F acting directly at moment centre A, with moment equation MA = F x 0**
->
-> A horizontal line segment with point B at the left and point A at the right. A vertical downward arrow labelled F acts directly on point A. The moment equation below is M_A = F x 0.
-
-
+![Diagram showing force F acting directly at moment centre A, with moment equation MA = F x 0](/assets/notes/me/s1/engineering-mechanics/module-1/moment-force-through-a.svg)
 
 $M_A = F \times 0$
 
-
-
-> **Figure: Diagram showing line of action of force F passing through moment centre A, with moment equation MA = F x 0**
->
-> A horizontal line segment with point B on the left and point A in the middle. A horizontal force arrow labelled F points to the left, passing through point A. The moment equation below is M_A = F x 0.
-
-
+![Diagram showing line of action of force F passing through moment centre A, with moment equation MA = F x 0](/assets/notes/me/s1/engineering-mechanics/module-1/moment-line-through-a.svg)
 
 $M_A = F \times 0$
 
@@ -943,13 +723,7 @@ $M_A = F \times 0$
 
 Sign convention of moments
 
-
-
-> **Figure: Diagram illustrating sign convention of moments with a horizontal beam AD, points A, B, O, C, D and forces F1, F2, F3, F4 acting at various points.**
->
-> A horizontal line segment representing a beam with labeled points from left to right: A, B, O, C, D. Point O is the reference center. Vertical downward force F1 acts at A, vertical downward force F2 acts at B, vertical downward force F3 acts at C, and vertical downward force F4 acts at D. Curved arrows indicate rotational directions for moments about point O.
-
-
+![Diagram illustrating sign convention of moments with a horizontal beam AD, points A, B, O, C, D and forces F1, F2, F3, F4 acting at various points.](/assets/notes/me/s1/engineering-mechanics/module-1/moment-sign-convention.svg)
 
 Moment of force $F_1$ about $O$ is given by $= F_1 	imes AO$ (Clockwise, $+ve$)
 
@@ -963,11 +737,7 @@ Q. Four forces of magnitude $10\text{ N}$, $20\text{ N}$, $30\text{ N}$ and $40\
 
 Determine the resultant moment at $A, B, C, D$ given that each side of square is $2\text{ m}$.
 
-
-
-> **Figure: Diagram of square ABCD with forces acting along its sides: 30 N along CD (or DC), 20 N along BC, 10 N along AB, and an arrow at A.**
->
-> A square layout with vertices A, B, C, D. Side lengths are 2m. A force of 30 N acts along side CD with length 2m. A force of 20 N acts vertically upward along side BC of length 2m. A force of 10 N acts horizontally to the right along side AB of length 2m. Point A has a downward arrow.
+![Diagram of square ABCD with forces acting along its sides: 30 N along CD (or DC), 20 N along BC, 10 N along AB, and an arrow at A.](/assets/notes/me/s1/engineering-mechanics/module-1/square-abcd-forces.svg)
 
 <!-- page 30 | Principle of moments -->
 
@@ -981,13 +751,7 @@ $$= -60 + -80 = -140\text{ Nm}$$
 
 Moment about C, $M_C = (20 \times 0) + (-30 \times 0) + (-40 \times 3) + (-10 \times 4)$
 
-
-
-> **Figure: Rectangular frame ABCD with forces applied at corners**
->
-> A rectangle ABCD with side lengths 3m horizontally and 4m vertically. Force 30 N acts to the left at point D, 20 N acts upwards at C, 10 N acts to the right at B, and 40 N acts downwards at A.
-
-
+![Rectangular frame ABCD with forces applied at corners](/assets/notes/me/s1/engineering-mechanics/module-1/rectangular-frame-forces.svg)
 
 $$= -120 + -40 = -160\text{ Nm}$$
 
@@ -999,33 +763,17 @@ $$= -40 - 60 = -100\text{ Nm}$$
 
 It states that moment of the resultant of a number of forces about any point is equal to the algebraic sum of the moment of ~~sythem~~ the system about the same point.
 
-
-
-> **Figure: Diagram illustrating the principle of moments with forces F1, F2, F3 and moment arms r1, r2, r3 from point O**
->
-> A diagram showing point O with position vectors or moment arms r1, r2, r3 pointing towards lines of action of forces F1, F2, and F3. A boxed equation is shown on the right: F1 r1 = F2 r2 + F3 r3.
+![Diagram illustrating the principle of moments with forces F1, F2, F3 and moment arms r1, r2, r3 from point O](/assets/notes/me/s1/engineering-mechanics/module-1/principle-of-moments.svg)
 
 <!-- page 31 | Page 31 -->
 
 Q) A force of 100 N is acting at a point A as in figure. Determine moment of this force about the point O.
 
-
-
-> **Figure: Diagram showing a force of 100 N acting at point A at an angle of 60 degrees, with a distance of 3m from origin O to point A.**
->
-> A coordinate system with origin O, point A on the horizontal axis at a distance of 3m from O. A force vector of magnitude 100 N acts upward and to the right from point A at an angle of 60 degrees to the horizontal.
-
-
+![Diagram showing a force of 100 N acting at point A at an angle of 60 degrees, with a distance of 3m from origin O to point A.](/assets/notes/me/s1/engineering-mechanics/module-1/force-100n-at-60.svg)
 
 Ans)
 
-
-
-> **Figure: Resolved components of the 100 N force into horizontal and vertical components at point A.**
->
-> The force of 100 N at point A resolved into components: 100 cos 60 along the horizontal and 100 sin 60 along the vertical, with distance 3m from O to A.
-
-
+![Resolved components of the 100 N force into horizontal and vertical components at point A.](/assets/notes/me/s1/engineering-mechanics/module-1/resolved-100n-components.svg)
 
 $$\begin{aligned}
 M_O &= (100\cos 60 \times 0) + (100\sin 60 \times 3) \\
@@ -1035,21 +783,11 @@ M_O &= (100\cos 60 \times 0) + (100\sin 60 \times 3) \\
 
 Q. what will be the y-intercept of 5000 N force as shown in figure if its moment about point A is 8000 Nm ?
 
-
-
-> **Figure: Line representing a 5000 N force with a slope triangle of 3 vertical and 4 horizontal, intersecting the y-axis at point B and point A below it.**
->
-> A Cartesian coordinate system with axes x and y. Point A is on the y-axis near the origin. Point B is higher up on the y-axis where a line representing a 5000 N force intersects. A slope triangle with vertical side 3 and horizontal side 4 is shown under the force line.
-
-
+![Line representing a 5000 N force with a slope triangle of 3 vertical and 4 horizontal, intersecting the y-axis at point B and point A below it.](/assets/notes/me/s1/engineering-mechanics/module-1/line-5000n-slope-3-4.svg)
 
 $$\tan \theta = \frac{3}{4} \Rightarrow \theta = 36.869^\circ$$
 
-
-
-> **Figure: Resolved components of 5000 N force with angle theta.**
->
-> Resolution of 5000 N force into horizontal component 5000 cos(36.87) and vertical component 5000 sin(36.87) originating from points B and A.
+![Resolved components of 5000 N force with angle theta.](/assets/notes/me/s1/engineering-mechanics/module-1/resolved-5000n-theta.svg)
 
 <!-- page 32 | Varignon's theorem -->
 
@@ -1069,23 +807,13 @@ or
 
 The moment of the resultant of a number of forces about any point is equal to the algebraic sum of the moments of all the forces of the system about the same point.
 
-
-
-> **Figure: Diagram illustrating Varignon's theorem with a force F resolved into horizontal and vertical components F cos theta and F sin theta relative to point A and origin O.**
->
-> A 2D vector diagram showing a force F acting at an angle theta to the horizontal, originating from point O. The point A is shown on a horizontal dashed line to the left of O. Force F is resolved into a vertical component F sin theta pointing upwards along the y-axis, and a horizontal component F cos theta pointing rightwards along the x-axis. Labels include A, O, F, theta, F sin theta, and F cos theta.
-
-
+![Diagram illustrating Varignon's theorem with a force F resolved into horizontal and vertical components F cos theta and F sin theta relative to point A and origin O.](/assets/notes/me/s1/engineering-mechanics/module-1/varignon-theorem.svg)
 
 $$\Sigma M_{\text{force}} = M_{\text{resultant}}$$
 
 <!-- page 33 | Page 33 -->
 
-> **Figure: Forces in a Cartesian coordinate system**
->
-> A 2D Cartesian coordinate system with x and y axes. Three vectors are shown originating from the origin: F1 at an angle theta1, F2 at an angle theta2, and a resultant force FR between them at an angle theta.
-
-
+![Forces in a Cartesian coordinate system](/assets/notes/me/s1/engineering-mechanics/module-1/forces-cartesian.svg)
 
 $$\sum M_{\text{forces}} = M_{\text{resultant}}$$
 
@@ -1099,13 +827,7 @@ Reduce this system to a :-
 
 3) A single force and couple at $B$.
 
-
-
-> **Figure: System of parallel forces acting on a beam with points A, C, D, B**
->
-> A horizontal line representing a beam with marked points A, C, D, B and spacing of 2m, 2m, 3m. Upward vertical forces of 50N at A, 130N at C. Downward vertical forces of 250N at D, 25N at B.
-
-
+![System of parallel forces acting on a beam with points A, C, D, B](/assets/notes/me/s1/engineering-mechanics/module-1/parallel-forces-beam.svg)
 
 $$\begin{aligned}
 \sum F_x &= 0 \\
@@ -1123,11 +845,7 @@ $$R = \sqrt{0 + (-95)^2} = 95\text{ N}$$
 
 2) 
 
-> **Figure: Free body diagram for moment calculation about point A**
->
-> A horizontal beam of length divided into segments: A to the resultant is x, segment of 2m, another segment, and a total length with point B at the end. Upward forces of 50 N at A, 130 N, and downward forces of 250 N, 95 N (resultant, dashed), and 25 N at B.
-
-
+![Free body diagram for moment calculation about point A](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-moment-about-a.svg)
 
 $$\Sigma M_A = (50 \times 0) + (250 \times 2) + (-130 \times 4) + (25 \times 7) = 95 \times x$$
 
@@ -1141,11 +859,7 @@ $$\begin{aligned}
 
 3) 
 
-> **Figure: Beam showing distances for moment about point B**
->
-> Horizontal beam from left to right with forces: 50 N (up), 95 N (down), 250 N (down), 130 N (up), 25 N (down) at point B. Distance from start to 95 N is 1.63, remaining distance to B is (7 - 1.63) = 5.37.
-
-
+![Beam showing distances for moment about point B](/assets/notes/me/s1/engineering-mechanics/module-1/beam-distances-about-b.svg)
 
 $$\begin{aligned}
 M_B &= 95 \times 5.37 \\
@@ -1158,13 +872,7 @@ Q. Find the <u>unit vector</u> of the force vector, $\vec{F} = 2\hat{i} + 4\hat{
 
 $$|\vec{F}| = \sqrt{2^2 + 4^2 + (-5)^2} = 6.71\text{ N}$$
 
-
-
-> **Figure: 3D Cartesian coordinate axes with unit vectors i, j, k**
->
-> Cartesian coordinate system showing x-axis with unit vector i, y-axis with unit vector j, and z-axis with unit vector k.
-
-
+![3D Cartesian coordinate axes with unit vectors i, j, k](/assets/notes/me/s1/engineering-mechanics/module-1/3d-axes-unit-vectors.svg)
 
 $$F_x = 2,\quad F_y = 4,\quad F_z = -5$$
 
@@ -1192,13 +900,7 @@ Unit vector of $\vec{F} = \frac{4\hat{i} - 3\hat{k}}{5} =$
 
 Position vector of a point $A$ in space with respect to the origin of coordinate axis $ox$, $oy$ and $oz$ is $OA$. It is denoted by $\vec{r}$.
 
-
-
-> **Figure: Position vector of a point A in a 3D coordinate system**
->
-> A 3D coordinate system with axes X, Y, and Z. Point A with coordinates (x,y,z) is shown in space, connected to the origin by a position vector. Dashed lines drop from point A to the axes.
-
-
+![Position vector of a point A in a 3D coordinate system](/assets/notes/me/s1/engineering-mechanics/module-1/position-vector-a.svg)
 
 $$\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$$
 
@@ -1208,11 +910,7 @@ Magnitude of $\vec{r} = \sqrt{x^2 + y^2 + z^2}$.
 
 <!-- page 36 | Vector Addition -->
 
-> **Figure: 3D Cartesian coordinate system with points A and B and position vector r_AB**
->
-> A 3D coordinate system with axes x, y, and z. Two points A(x_A, y_A, z_A) and B(x_B, y_B, z_B) are plotted in the first octant, and a vector r_AB connects point A to point B.
-
-
+![3D Cartesian coordinate system with points A and B and position vector r_AB](/assets/notes/me/s1/engineering-mechanics/module-1/position-vector-ab.svg)
 
 $$r_{AB} = (x_B - x_A)\,\hat{i} + (y_B - y_A)\,\hat{j} + (z_B - z_A)\,\hat{k}$$
 
@@ -1235,13 +933,7 @@ $$\vec{R} = \vec{F}_1 + \vec{F}_2 + \vec{F}_3 = 2\hat{i} + 4\hat{j} + 2\hat{k}$$
 
 $$|\vec{R}| = \sqrt{2^2 + 4^2 + 2^2} = 4.898\text{ N}$$
 
-
-
-> **Figure: 3D coordinate system showing a resultant vector R and angles theta_x, theta_y, theta_z**
->
-> A 3D coordinate system with axes x, y, z showing a resultant vector R = (2i + 4j + 2k) starting from the origin and angled with respect to the coordinate axes, with angles theta_x, theta_y, and theta_z marked.
-
-
+![3D coordinate system showing a resultant vector R and angles theta_x, theta_y, theta_z](/assets/notes/me/s1/engineering-mechanics/module-1/resultant-3d-angles.svg)
 
 $$\cos \theta_x = \frac{F_x}{R} = \frac{2}{4.9} = 0.40816$$
 
@@ -1261,13 +953,7 @@ Q. Find the position vector whose ~~positions~~ coordinates of initial and termi
 
 A.
 
-
-
-> **Figure: Geometric sketch of position vector AB between points A(3,1,-2) and B(4,-7,10)**
->
-> A hand-drawn sketch showing a line segment AB starting from point A with coordinates (3, 1, -2) and ending at point B with coordinates (4, -7, 10) in a coordinate system.
-
-
+![Geometric sketch of position vector AB between points A(3,1,-2) and B(4,-7,10)](/assets/notes/me/s1/engineering-mechanics/module-1/position-vector-a3-b-4.svg)
 
 Position vector, $\vec{r}_{AB} = (4-3)\hat{i} + (-7-1)\hat{j} + (10 - -2)\hat{k}$
 
@@ -1366,13 +1052,7 @@ $$\Sigma F_v = 0$$
 
 Q) Two forces $\vec{F}_1 = 50\hat{i} + 80\hat{j} + 100\hat{k}$ and $\vec{F}_2 = -50\hat{i} - 80\hat{j} - 100\hat{k}$ act at two points $A (0.7, 1.5, 1)$ and $B (1, 0.9, -1)$ respectively. Calculate moment of the forces and distance between the forces. also express the magnitude of moment.
 
-
-
-> **Figure: Diagram showing points A and B with forces F1 and F2**
->
-> A schematic diagram showing a horizontal line segment with point A on the left and point B on the right. Point A has coordinates (0.7, 1.5, 1) and an upward force F1 equal to 50i + 80j + 100k. Point B has coordinates (1, 0.9, -1) and a downward force F2 equal to -50i - 80j - 100k.
-
-
+![Diagram showing points A and B with forces F1 and F2](/assets/notes/me/s1/engineering-mechanics/module-1/points-a-b-forces-f1-f2.svg)
 
 $$M = \vec{r} \times \vec{F}$$
 
@@ -1423,13 +1103,7 @@ a. 3 Forces $500\text{ N}$, $700\text{ N}$ and $600\text{ N}$ are acting along 3
 
 Determine the resultant of the forces.
 
-
-
-> **Figure: Cube with forces acting along face diagonals**
->
-> A 3D isometric view of a cube with side length 2m. Axes Y (vertical pointing up), X (pointing right-down), and Z (pointing left-down) meet at origin (0,0,0). Marked vertices include C(0,2,2) at the top-left-back, B(2,2,0) at the top-right-back, and A(2,0,2) at the bottom-right-front. Three forces are shown along face diagonals: 600 N from origin to C, 700 N from origin to B, and 500 N from origin to A.
-
-
+![Cube with forces acting along face diagonals](/assets/notes/me/s1/engineering-mechanics/module-1/cube-face-diagonal-forces.svg)
 
 Position vector of $\text{OA} = (2-0)\hat{i} + (0-0)\hat{j} + (2-0)\hat{k}$
 
@@ -1486,59 +1160,27 @@ The sketch in which the body is completely isolated from its supports and in whi
 
 Q: Draw the free body diagram of two spheres kept inside a cylindrical vessel. Draw the FBD of these two spheres.
 
-
-
-> **Figure: Two spheres inside a cylindrical vessel**
->
-> Two spheres labeled 2 (top right) and 3 (bottom left) resting inside a cylindrical vessel with vertical walls on the left and right (labeled 1 on the right, 3 on the left) and a horizontal bottom (labeled 4).
-
-
+![Two spheres inside a cylindrical vessel](/assets/notes/me/s1/engineering-mechanics/module-1/two-spheres-in-cylinder.svg)
 
 A)
 
-
-
-> **Figure: Free body diagram of the two spheres**
->
-> FBD showing the two spheres isolated with forces acting on them. The top-right sphere has weight $W_1$ acting downwards, normal reaction $R_1$ from the right wall, and contact force $R_2$ from the other sphere. The bottom-left sphere has weight $W_2$ acting downwards, normal reaction $R_3$ from the left wall, normal reaction $R_4$ from the bottom, and contact force $R_2$ from the first sphere.
+![Free body diagram of the two spheres](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-two-spheres.svg)
 
 <!-- page 45 | Page 45 -->
 
 Q. Draw the free body diagram
 
+![Three cylinders A, B, and C in a rectangular container with numbered contact points 1 to 6](/assets/notes/me/s1/engineering-mechanics/module-1/three-cylinders-container.svg)
 
-
-> **Figure: Three cylinders A, B, and C in a rectangular container with numbered contact points 1 to 6**
->
-> Three circular cylinders labeled A (top), B (bottom left), and C (bottom right) placed inside a vertical rectangular container. Contact points or reactions are labeled with numbers 1, 2, 3, 4, 5, 6.
-
-
-
-
-
-> **Figure: Free body diagrams for cylinders A, B, and C showing weights W_A, W_B, W_C and reactions R_1 through R_6**
->
-> Separated free body diagrams of the three cylinders. Top circle A has downward weight W_A and contact forces R_6, R_5 pointing towards its center. Bottom-left circle B has weight W_B, horizontal reaction R_1, vertical reaction R_2, and inclined reaction R_6. Bottom-right circle C has weight W_C, horizontal reaction R_4, vertical reaction R_3, and inclined reaction R_5.
-
-
+![Free body diagrams for cylinders A, B, and C showing weights W_A, W_B, W_C and reactions R_1 through R_6](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-three-cylinders.svg)
 
 Q. A solid cylinder $30\text{ mm}$ diameter and weighing $30\text{ N}$ is placed in a triangular channel as shown in figure. Neglecting the friction between the contact surfaces, calculate the normal reaction on the sides of the channel.
 
-
-
-> **Figure: A cylinder in a triangular channel with inclined walls at angles 45 degrees and 60 degrees**
->
-> A cross-section showing a circle resting inside a V-shaped channel. The left contact point is labeled A with an angle of 45 degrees, and the right contact point is labeled B with an angle of 60 degrees.
-
-
+![A cylinder in a triangular channel with inclined walls at angles 45 degrees and 60 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/cylinder-triangular-channel.svg)
 
 A)
 
-
-
-> **Figure: Free body diagram of the cylinder in the triangular channel**
->
-> Free body diagram showing a circle with a downward vertical force of 30 N acting at its center, reaction R_A pointing up and to the right from the bottom-left, reaction R_B pointing up and to the left from the bottom-right, and angle indicators showing 45 degrees and 60 degrees.
+![Free body diagram of the cylinder in the triangular channel](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-channel-cylinder.svg)
 
 <!-- page 46 | Lami's theorem -->
 
@@ -1556,13 +1198,7 @@ $$R_B = \frac{30 \times \sin(135)}{\sin(105)} = 21.96\text{ N}$$
 
 If a body is in equilibrium, under the action of three concurrent forces, say $P, Q, R$ and angles b/w them as in figure, then Lami's theorem states that
 
-
-
-> **Figure: Diagram showing three concurrent forces P, Q, and R meeting at a central point, with angles alpha, beta, and gamma between them.**
->
-> A vector diagram illustrating Lami's theorem. Three forces labeled P, Q, and R radiate outwards from a central circular node. Force P points left, force Q points downwards, and force R points up-right. Angles between the forces are labeled as beta (between P and R), alpha (between R and Q), and gamma (between Q and P). Next to the diagram, the equation P/sin(alpha) = Q/sin(beta) = R/sin(gamma) is written.
-
-
+![Diagram showing three concurrent forces P, Q, and R meeting at a central point, with angles alpha, beta, and gamma between them.](/assets/notes/me/s1/engineering-mechanics/module-1/three-concurrent-forces-pqr.svg)
 
 $$\frac{P}{\sin \alpha} = \frac{Q}{\sin \beta} = \frac{R}{\sin \gamma}$$
 
@@ -1570,13 +1206,7 @@ $$\frac{P}{\sin \alpha} = \frac{Q}{\sin \beta} = \frac{R}{\sin \gamma}$$
 
 Q. A steel ball rest in a groove, the sides of which are smooth. One side of the groove is vertical while other side is at $40^{\circ}$ to the horizontal. If the ball has a weight of $10\text{ N}$, find the reaction on each side of the groove.
 
-
-
-> **Figure: Diagram showing the steel ball in the groove and the free body diagram with forces for Lami's theorem**
->
-> Two diagrams. The top diagram shows a circle (steel ball) resting in a V-shaped groove with a vertical left side labelled B and a right side inclined at 40 degrees to the horizontal, labelled A. The bottom diagram shows the free body diagram of the ball with downward weight 10 N, horizontal reaction R_B to the right, and inclined normal reaction R_A pointing up and left at 40 degrees.
-
-
+![Diagram showing the steel ball in the groove and the free body diagram with forces for Lami's theorem](/assets/notes/me/s1/engineering-mechanics/module-1/steel-ball-groove-lami.svg)
 
 Lami's theorem;
 
@@ -1590,33 +1220,17 @@ A smooth sphere of weight $w$ is supported in contact with a smooth vertical wal
 
 <!-- page 48 | Page 48 -->
 
-> **Figure: Diagram of a sphere hanging against a vertical wall by a string**
->
-> A sphere resting against a vertical wall, suspended by a string attached to a point on the wall at an angle theta with the wall.
-
-
+![Diagram of a sphere hanging against a vertical wall by a string](/assets/notes/me/s1/engineering-mechanics/module-1/sphere-hanging-wall.svg)
 
 Assuming weight as $W$, tension imparted to string $T$, normal reaction $R$.
 
-
-
-> **Figure: Free body diagram of the sphere**
->
-> A circle representing the sphere with three forces acting on it: weight W pointing downwards/left, tension T pointing along the string, and normal reaction R pointing horizontally to the left from the contact point.
-
-
+![Free body diagram of the sphere](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-sphere-wall.svg)
 
 Applying Lami's theorem,
 
 $$\frac{T}{\sin 90} = \frac{R}{\sin \theta} = \frac{W}{\sin (90-\theta)}$$
 
-
-
-> **Figure: Geometric diagram showing angles for the sphere and wall**
->
-> Geometric diagram showing the center C of the circle, contact point D on the vertical wall, and suspension point A, forming triangle ADC with angle values marked as 30 degrees and 60 degrees.
-
-
+![Geometric diagram showing angles for the sphere and wall](/assets/notes/me/s1/engineering-mechanics/module-1/sphere-wall-angles.svg)
 
 $$\cos \angle DCA = \frac{DC}{AC} = \frac{R}{2R} = \frac{1}{2}$$
 
@@ -1638,23 +1252,11 @@ $$R = 0.577 \ W$$
 
 Q. A wooden decorative ball of $10\text{ N}$ weight hangs on Smooth wall by a String which is making $20^{\circ}$ with the vertical. Find the tension in the String and reaction by the wall.
 
-
-
-> **Figure: Diagram showing a wooden ball hanging from a vertical wall by a string at 20 degrees**
->
-> A circle representing a ball touching a vertical line on the left. A string goes upwards from the top right of the circle at an angle of 20 degrees with the vertical, labeled T.
-
-
+![Diagram showing a wooden ball hanging from a vertical wall by a string at 20 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/ball-20-degrees.svg)
 
 A)
 
-
-
-> **Figure: Free body diagram of the ball with forces T, R, and W**
->
-> A circle with a vertical line representing weight W = 10 N downwards, horizontal line representing reaction R to the left, and string tension T directed upwards at 20 degrees to the vertical.
-
-
+![Free body diagram of the ball with forces T, R, and W](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-ball-t-r-w.svg)
 
 By Lami's theorem,
 $$\frac{T}{\sin 90} = \frac{R}{\sin 20} = \frac{10}{\sin 70}$$
@@ -1663,13 +1265,7 @@ $$T = \frac{10}{\sin 70} = 10.64\text{ N}$$
 
 $$R = \frac{\sin 20}{\sin 70} \times 10 = 3.639\text{ N}$$
 
-
-
-> **Figure: Free body diagram showing angles between forces**
->
-> A circle showing downward weight W = 10 N, horizontal reaction R to the left, and tension T at an angle with a right angle indicator inside the coordinate axes.
-
-
+![Free body diagram showing angles between forces](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-angles-between-forces.svg)
 
 $$\frac{T}{\sin 90} = \frac{R}{\sin(90+70)} = \frac{W}{\sin 70}$$
 
@@ -1677,21 +1273,11 @@ Q) Electric light of weight $5\text{ N}$ hangs by two strings which makes angles
 
 <!-- page 50 | Equilibrium conditions -->
 
-> **Figure: Diagram showing an electric light suspended by two strings attached to a ceiling with angles 45 degrees and 60 degrees**
->
-> A sketch showing a light fixture hanging from two strings attached to a horizontal ceiling. The left string makes an angle of 45 degrees and the right string makes an angle of 60 degrees with the horizontal.
-
-
+![Diagram showing an electric light suspended by two strings attached to a ceiling with angles 45 degrees and 60 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/light-two-strings.svg)
 
 In this, tension in the strings are making the electric light in equilibrium.
 
-
-
-> **Figure: Free body diagram of the electric light showing tensions T1, T2 and weight 5N with angle 75 degrees**
->
-> A free body diagram showing an electric light with a downward gravitational force of 5N, and two tension forces T1 and T2 pointing upwards at an angle with a 75 degree angle indicated between them.
-
-
+![Free body diagram of the electric light showing tensions T1, T2 and weight 5N with angle 75 degrees](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-electric-light.svg)
 
 Lami's theorem,
 
@@ -1709,13 +1295,7 @@ $$= 3.66 \text{ N}$$
 
 A body is said to be in equilibrium when all the forces exerted on the body are in balance.
 
-
-
-> **Figure: Diagram of a body in equilibrium showing horizontal and vertical forces acting on it**
->
-> A rectangular box labeled 'Body' with arrows pointing horizontally from the left labeled 'Horizontal forces' and arrows pointing vertically up and down labeled 'Vertical forces'.
-
-
+![Diagram of a body in equilibrium showing horizontal and vertical forces acting on it](/assets/notes/me/s1/engineering-mechanics/module-1/body-equilibrium-forces.svg)
 
 Here, sum of forces acting in the vertical direction
 
@@ -1735,25 +1315,13 @@ Q. Two identical balls of $500\text{ N}$ are placed in a channel as in figure.
 
 Determine normal reaction. Also establish the relation between the normal reactions.
 
-
-
-> **Figure: Two identical balls in a channel touching a vertical wall and each other**
->
-> A diagram showing two identical circular balls labeled (1) and (2) resting in a channel. Ball (1) touches a vertical wall on the left labeled D and rests on the bottom surface labeled B. Ball (2) rests on the bottom surface labeled A. The two balls touch each other at a contact point labeled C. Both balls have a center marked with a cross and labeled CG.
-
-
+![Two identical balls in a channel touching a vertical wall and each other](/assets/notes/me/s1/engineering-mechanics/module-1/balls-in-channel-wall.svg)
 
 Step-I
 
 FBD:
 
-
-
-> **Figure: Free body diagrams of Ball (1) and Ball (2)**
->
-> Free body diagrams for Ball (1) and Ball (2). Ball (1) has downward force of 500 N, upward normal reaction $R_B$, leftward normal reaction $R_D$ from the wall, and rightward normal reaction $R_C$ from ball (2). Ball (2) has downward force of 500 N, upward normal reaction $R_A$, and leftward normal reaction $R_C$ from ball (1).
-
-
+![Free body diagrams of Ball (1) and Ball (2)](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-balls-1-2.svg)
 
 Analysing ball (2), By Lami's theorem,
 
@@ -1788,23 +1356,11 @@ $$\underline{\underline{R_B = 500\text{ N}}}$$
 
 5. Two identical balls each of weight $Q = 500\text{ N}$, are supported by an inclined plane and a vertical wall as shown in figure. Assuming smooth surfaces, find the reactions induced at the point of contact of supports A, B and C.
 
-
-
-> **Figure: Diagram showing two identical balls resting on an inclined plane and against a vertical wall**
->
-> A mechanical diagram showing two identical balls labeled 1 and 2. Ball 1 is at the bottom left, resting against a vertical wall on the left labeled D, and the floor/inclined plane at the bottom labeled B. Ball 2 rests on top of ball 1 and against an inclined plane on the right labeled A. Contact point C is between the two balls. The inclined plane makes an angle of $30^{\circ}$ with the horizontal.
-
-
+![Diagram showing two identical balls resting on an inclined plane and against a vertical wall](/assets/notes/me/s1/engineering-mechanics/module-1/two-balls-incline-wall.svg)
 
 A) FBD:
 
-
-
-> **Figure: Free body diagrams for Sphere 1 and Sphere 2**
->
-> Two free body diagrams representing Sphere 1 and Sphere 2. Sphere 2 (top) has a downward weight force of $500\text{ N}$, reaction force $R_A$ perpendicular to the inclined plane, and reaction force $R_C$ from the contact with sphere 1, with angle indicators $30^{\circ}$, $60^{\circ}$, $30^{\circ}$. Sphere 1 (bottom) has forces $R_B$ upwards, $R_D$ horizontally from the wall, $R_C$ from sphere 2, and reaction force $R_A$ or similar from the surface.
-
-
+![Free body diagrams for Sphere 1 and Sphere 2](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-spheres-1-2.svg)
 
 Sphere (1) Lami's theorom cannot be applied [4 forces]
 
@@ -1818,13 +1374,7 @@ $$R_A = \frac{500 \times \sin(120)}{1} = 433.01\text{ N}$$
 
 $$R_C = 500 \times \sin 150 = 250\text{ N}$$
 
-
-
-> **Figure: Free body diagram of sphere (1) showing forces $500\text{ N}$, $R_C$, $R_B$, and $R_D$.**
->
-> A free body diagram of a circle representing sphere (1) with a downward force of 500 N, a rightward force $R_D$, a force $R_C$ acting upwards-right at an angle, and force $R_B$ acting downwards-right. Component angles and projections are marked around the circle.
-
-
+![Free body diagram of sphere (1) showing forces $500\text{ N}$, $R_C$, $R_B$, and $R_D$.](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-sphere-500n.svg)
 
 Sphere (1)
 
@@ -1856,13 +1406,7 @@ Q. A rope $9\text{ m}$ long is connected at $A$ and $B$, two points on the same 
 
 the rope, $3\text{ m}$ from $A$. What load connected to $D$ on the rope $2\text{ m}$ from $B$ is necessary to keep portion $CD$ parallel to $AB$ ?
 
-
-
-> **Figure: Rope system with loads and tensions**
->
-> A diagram of a horizontal rope segment AB with a hanging rope system. Points A and B are fixed. Point C is 3m from A, point D is 2m from B. A load of 300 N hangs from C. Tension T1 acts along AC and DB, and T2 acts along CD. Load W hangs from D.
-
-
+![Rope system with loads and tensions](/assets/notes/me/s1/engineering-mechanics/module-1/rope-system-loads.svg)
 
 Tension induced in $AC \rightarrow T_1$
 
@@ -1870,12 +1414,7 @@ $$\text{"}\qquad\text{"} \qquad CD \rightarrow T_2$$
 
 Analysing joint $C$,
 
-
-> **Figure: Free body diagram of joint C**
->
-> FBD of joint C showing tension T1 directed upwards and to the right at angle alpha, tension T2 horizontally to the right, and a downward force of 300 N.
-
-
+![Free body diagram of joint C](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-joint-c.svg)
 
 Lami's theorom, $\frac{300}{\sin\alpha} = \frac{T_1}{\sin 90} = \frac{T_2}{\sin\beta}$
 
@@ -1885,12 +1424,7 @@ $$\Rightarrow \boxed{T_1 \sin\alpha = 300}$$
 
 Analysing joint $D$,
 
-
-> **Figure: Free body diagram of joint D**
->
-> FBD of joint D showing tension T1 directed upwards and to the right at angle alpha, tension T2 horizontally to the left, and downward force W.
-
-
+![Free body diagram of joint D](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-joint-d.svg)
 
 $$\frac{W}{\sin\alpha} = \frac{T_1}{\sin 90} = \frac{T_2}{\sin\beta}$$
 
@@ -1904,13 +1438,7 @@ Q. Two smooth cylinders $A$ and $B$ each of diameter $400\text{ mm}$ and weight 
 
 A)
 
-
-
-> **Figure: Two smooth cylinders A and B resting in a horizontal channel**
->
-> A diagram showing two smooth cylinders A and B inside a rectangular channel with vertical walls and a base width of 720 mm. Cylinder B rests at the bottom left touching wall P and base Q. Cylinder A rests on top of B, touching the right wall R.
-
-
+![Two smooth cylinders A and B resting in a horizontal channel](/assets/notes/me/s1/engineering-mechanics/module-1/two-smooth-cylinders-channel.svg)
 
 consider $\Delta ABC$; and compute
 
@@ -1925,13 +1453,7 @@ $$\theta = 36.87^\circ$$
 
 Analysing ball (2) where only three forces exist;
 
-
-
-> **Figure: Free body diagram of cylinder B with forces**
->
-> A free body diagram of cylinder B showing weight 200 N acting downwards, reaction force R_R from cylinder A acting upwards-right at angle 36.87 degrees, and reaction force R_S from the surface acting downwards-left at angle 53.13 degrees.
-
-
+![Free body diagram of cylinder B with forces](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-cylinder-b.svg)
 
 Lami's theorem,
 
@@ -1955,23 +1477,11 @@ Beam - Is a structural member having two ends supported.
 
 1. Simply supported beams
 
-
-
-> **Figure: Simply supported beam diagrams**
->
-> Two alternative representations of a simply supported beam. The left diagram shows a horizontal line resting on a pin support on the left and a roller support on the right. The right diagram shows a horizontal line supported by two upward vertical arrows at its ends, with the word 'or' between the two diagrams.
-
-
+![Simply supported beam diagrams](/assets/notes/me/s1/engineering-mechanics/module-1/simply-supported-beam.svg)
 
 2. Cantilever beam
 
-
-
-> **Figure: Cantilever beam diagram**
->
-> A horizontal line representing a beam fixed at its left vertical end to a hatched wall representing a built-in support.
-
-
+![Cantilever beam diagram](/assets/notes/me/s1/engineering-mechanics/module-1/cantilever-beam.svg)
 
 eg:- Sunshade of a house
 
@@ -1979,50 +1489,26 @@ eg:- Sunshade of a house
 
 3) overhanging beam
 
-
-
-> **Figure: Overhanging beam diagram**
->
-> An overhanging beam supported by a hinged support at A and a roller support at B, with an extension to C.
-
-
+![Overhanging beam diagram](/assets/notes/me/s1/engineering-mechanics/module-1/overhanging-beam.svg)
 
 Types of supports
 
 1) Fixed support
 
-
-
-> **Figure: Fixed support diagram**
->
-> A cantilever beam fixed at support A with horizontal reaction $H_A$, vertical reaction $V_A$, and bending moment $M_A$.
-
-
+![Fixed support diagram](/assets/notes/me/s1/engineering-mechanics/module-1/fixed-support.svg)
 
 Three movements are restricted.
 (3 reaction forces present).
 
 2) Hinged support
 
-
-
-> **Figure: Hinged support diagram**
->
-> A beam supported by a hinged support at A with horizontal reaction $H_A$ and vertical reaction $V_A$.
-
-
+![Hinged support diagram](/assets/notes/me/s1/engineering-mechanics/module-1/hinged-support.svg)
 
 No. of reactions = 2
 
 3) Roller support
 
-
-
-> **Figure: Roller support diagram**
->
-> A beam supported by a roller support at A with a single vertical reaction.
-
-
+![Roller support diagram](/assets/notes/me/s1/engineering-mechanics/module-1/roller-support.svg)
 
 No. of reaction = 1
 
@@ -2037,33 +1523,15 @@ There are two types of loading:
 
 1) concentrated load
 
-
-
-> **Figure: Diagram showing beams with concentrated loads**
->
-> Two beam diagrams. The left beam is supported by supports at both ends and has two downward vertical load arrows labeled W_1(N) and W_2(N), with a span labeled 5 m. The right beam has supports labeled A and B with a downward vertical load arrow labeled W in the middle.
-
-
+![Diagram showing beams with concentrated loads](/assets/notes/me/s1/engineering-mechanics/module-1/beam-concentrated-loads.svg)
 
 2) Uniformly distributed load (udl)
 
-
-
-> **Figure: Diagram showing beams with uniformly distributed loads**
->
-> Two beam diagrams representing uniformly distributed loads (udl). The left beam shows supports and a set of downward arrows representing the load with a label W/l (N/m) and 'Unit ->' above. The right beam shows supports at both ends and a curved coil symbol representing the udl with a label W/m above it.
-
-
+![Diagram showing beams with uniformly distributed loads](/assets/notes/me/s1/engineering-mechanics/module-1/beam-udl.svg)
 
 Beam analysis
 
-
-
-> **Figure: Beam analysis diagram showing a simply supported beam with a point load and reactions**
->
-> A horizontal beam with support A on the left and support B on the right. A downward vertical load of 10 kN is applied between A and B. The span between A and B is 5 m. Vertical upward reaction forces V_A and V_B are shown at the supports, and a horizontal reaction H_B is shown at support B pointing to the left.
-
-
+![Beam analysis diagram showing a simply supported beam with a point load and reactions](/assets/notes/me/s1/engineering-mechanics/module-1/beam-point-load-reactions.svg)
 
 Applying equations of equilibrium, $\Sigma F_v = 0$
 
@@ -2085,23 +1553,11 @@ Substituting $V_B$ in ①; $\quad V_A = 5\text{ kN}$
 
 Q. Find the reactions at $A$ and $B$.
 
-
-
-> **Figure: Beam with point load and udl**
->
-> A simply supported beam AB with a point load of 3 kN at a distance of 3m from A, and a uniformly distributed load of 5 kN/m over a length of 5m up to B.
-
-
+![Beam with point load and udl](/assets/notes/me/s1/engineering-mechanics/module-1/beam-point-load-and-udl.svg)
 
 Ans)
 
-
-
-> **Figure: Free body diagrams showing conversion of UDL to equivalent point load**
->
-> Two free body diagrams of the beam. The first shows reactions HA, VA at hinge A, vertical reaction VB at roller B, a 3 kN load, and a 5x5 kN UDL representation. The second shows equivalent point loads: 3 kN and 25 kN, with spacing 3m, 2.5m, and 2.5m.
-
-
+![Free body diagrams showing conversion of UDL to equivalent point load](/assets/notes/me/s1/engineering-mechanics/module-1/udl-to-equivalent-point.svg)
 
 Applying equations of equilibrium,
 
@@ -2127,23 +1583,11 @@ $$V_B = 18.31\text{ kN}$$
 
 5) Analyse the beam and find support reactions.
 
-
-
-> **Figure: Beam diagram with loads and supports**
->
-> A beam AB of length 6 meters with support A as a hinged support and support B as a roller support. A vertical downward load of 10 kN acts at point D, 2 m from A. An inclined load of 20 kN acts at point C, 4 m from A, making an angle of 60 degrees with the beam. The distances are 2 m between A and D, 2 m between D and C, and 2 m between C and B.
-
-
+![Beam diagram with loads and supports](/assets/notes/me/s1/engineering-mechanics/module-1/beam-loads-and-supports.svg)
 
 Sol
 
-
-
-> **Figure: Free body diagram of the beam with reaction forces and resolved components**
->
-> Free body diagram showing horizontal reaction H_A and vertical reaction V_A at support A, vertical reaction V_B at support B, a 10 kN vertical downward load at distance 2m, and the 20 kN inclined load resolved into 20 sin(60 deg) downward and 20 cos(60 deg) to the right at a distance of 4m from A.
-
-
+![Free body diagram of the beam with reaction forces and resolved components](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-beam-reactions-components.svg)
 
 $$\Sigma F_V = 0$$
 $$V_A + V_B - 10 - 20 \sin 60 = 0$$
@@ -2171,21 +1615,9 @@ $$\theta = 51.20^{\circ}$$
 
 3.
 
+![Beam structure diagram with a 25 kN inclined load](/assets/notes/me/s1/engineering-mechanics/module-1/beam-25kn-inclined.svg)
 
-
-> **Figure: Beam structure diagram with a 25 kN inclined load**
->
-> A beam AB resting on a hinged support at A and a roller support at B on an inclined plane. A load of 25 kN acts downwards at an angle of 55 degrees, 2m from A and 1m from B. The roller surface is inclined at 30 degrees.
-
-
-
-
-
-> **Figure: Free body diagram of the beam with resolved force components**
->
-> Free body diagram showing reactions HA and VA at support A, vertical load component 25 sin 55 and horizontal component 25 cos 55, and reaction VB resolved into VB sin 60 and VB cos 60 components.
-
-
+![Free body diagram of the beam with resolved force components](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-beam-components-25kn.svg)
 
 $$V_A + V_B \sin 60 - 25 \sin 55 = 0$$
 
@@ -2209,21 +1641,9 @@ $$V_B = 15.76\text{ kN} \qquad V_B \sin 60 = 13.65\text{ kN}$$
 
 Cantilever problems
 
+![Cantilever beam loaded with a point load and uniformly distributed load](/assets/notes/me/s1/engineering-mechanics/module-1/cantilever-point-and-udl.svg)
 
-
-> **Figure: Cantilever beam loaded with a point load and uniformly distributed load**
->
-> A cantilever beam fixed at support A on the left, with length segments 1 m to B, 1 m to C, and a UDL of 3 N/m over a length of 2 m to D. A point load of 5 N acts downwards at B.
-
-
-
-
-
-> **Figure: Free body diagram of cantilever beam with reactions and equivalent loads**
->
-> FBD of the cantilever beam with horizontal reaction H_A, vertical reaction V_A, and moment M_A at support A. A point load of 5 N acts downwards at B, and a concentrated load of 6 N acts downwards at point D.
-
-
+![Free body diagram of cantilever beam with reactions and equivalent loads](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-cantilever-reactions.svg)
 
 $\Sigma F_V = 0 \Rightarrow$
 
@@ -2238,19 +1658,11 @@ $$M_A = -23 \text{ Nm}$$
 
 Q) Determine the reactions at the supports A and B of the beam loaded as shown in figure.
 
-
-
-> **Figure: Beam supported at A and B with combined point loads and UDLs**
->
-> A beam simply supported at A and B. From A, there is a 1 m span, followed by two point loads of 120 N with a 60 N/m UDL over 1 m between them, then a 1 m span to D, followed by a 60 N/m UDL over a 3 m span to B.
+![Beam supported at A and B with combined point loads and UDLs](/assets/notes/me/s1/engineering-mechanics/module-1/beam-combined-point-udl.svg)
 
 <!-- page 63 | Page 63 -->
 
-> **Figure: Beam with point loads and reactions**
->
-> A beam AB supported at ends A and B with upward reaction forces V_A at A and V_B at B. Downward point loads of 120 N, 60 N, 120 N, and 180 N are applied along the beam at various distances: 1 m from A to E (120 N load), 0.5 m from E to a point with 60 N load, 0.5 m to point D with 120 N load, 1 m to a central point, 1.5 m to 180 N load, and 1.5 m to B.
-
-
+![Beam with point loads and reactions](/assets/notes/me/s1/engineering-mechanics/module-1/beam-point-loads-reactions.svg)
 
 $\sum F_V = 0 \Rightarrow V_A - 120 - 60 - 120 - 180 + V_B = 0$
 
@@ -2268,23 +1680,11 @@ $(1) \Rightarrow V_A = 270 \text{ N}$
 
 <u>Beams</u>
 
-
-
-> **Figure: Beam with a point load of 60 N**
->
-> A simply supported beam with support A on the left (hinged) and support B on the right (roller). A downward point load of 60 N acts at a distance of 3m from A and 2m from B.
-
-
+![Beam with a point load of 60 N](/assets/notes/me/s1/engineering-mechanics/module-1/beam-60n-point.svg)
 
 Find reactions at A and B.
 
-
-
-> **Figure: Free body diagram of the beam with reactions**
->
-> Free body diagram showing horizontal reaction $H_A$ and vertical reaction $V_A$ at A, vertical reaction $V_B$ at B, and a downward load of 60 N between them.
-
-
+![Free body diagram of the beam with reactions](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-beam-reactions.svg)
 
 $$\boxed{\Sigma F_V = 0}$$
 
@@ -2306,19 +1706,11 @@ Reactions, $V_A = 24\text{ N}$, $V_B = 36\text{ N}$, $H_A = 0$
 
 Q)
 
-
-
-> **Figure: Beam loaded with inclined forces of 20 kN and 30 kN**
->
-> A simply supported beam with support A on the left and support B on the right. An inclined force of 20 kN acts downwards at $45^\circ$ at distance 3m from A, and another inclined force of 30 kN acts downwards at $30^\circ$ at distance 3m from the first load and 4m from B.
+![Beam loaded with inclined forces of 20 kN and 30 kN](/assets/notes/me/s1/engineering-mechanics/module-1/beam-inclined-20-30kn.svg)
 
 <!-- page 65 | Page 65 -->
 
-> **Figure: Free body diagram of a beam subjected to angled loads**
->
-> A horizontal beam AB of total length 10m (3m + 3m + 4m) with supports at A and B. At support A, there is a vertical reaction $V_A$ and a horizontal reaction $H_A$ pointing right. At B, there is a vertical reaction $V_B$. Two forces act downwards: a force of 20 at 45 degrees ($20\cos 45^{\circ}$ horizontal, $20\sin 45^{\circ}$ vertical) at 3m from A, and a force of 30 at 30 degrees ($30\cos 30^{\circ}$ horizontal, $30\sin 30^{\circ}$ vertical) at 6m from A (3m further).
-
-
+![Free body diagram of a beam subjected to angled loads](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-beam-angled-loads.svg)
 
 $$\sum F_V = 0 \Rightarrow V_A + V_B = 20 \sin 45^{\circ} + 30 \sin 30^{\circ}$$
 
@@ -2342,22 +1734,13 @@ $$= 15.9\text{ N}$$
 
 2)
 
-
-> **Figure: Diagram showing a beam with roller support at an angle and its free body diagram**
->
-> Left: A beam resting on a hinged support at A and an inclined roller support at B at an angle of 30 degrees to the horizontal. Load of 10 kN at 1m from A, and 5 kN at 3m further. Distance from 5 kN to B is 1m. Right: Free body diagram showing horizontal reaction $H_A$ and vertical reaction $V_A$ at A, vertical loads 10 kN and 5 kN, and inclined reaction $V_B$ resolved into $V_B \cos 60^{\circ}$ and $V_B \sin 60^{\circ}$ at support B.
+![Diagram showing a beam with roller support at an angle and its free body diagram](/assets/notes/me/s1/engineering-mechanics/module-1/beam-roller-angle.svg)
 
 <!-- page 66 | Page 66 -->
 
 Find the Support reactions
 
-
-
-> **Figure: Beam with point load and uniformly distributed load converted to equivalent point load**
->
-> Two beam diagrams. The left diagram shows a beam AB of length 5m with a point load of 10 N at 1m from A, a couple of 5 Nm, and a UDL of 5 N/m over a length of 3m. The right diagram shows the equivalent system with the UDL replaced by a concentrated load of (5 N/m x 3m) = 15 N at the center of the UDL span.
-
-
+![Beam with point load and uniformly distributed load converted to equivalent point load](/assets/notes/me/s1/engineering-mechanics/module-1/beam-equivalent-point-load.svg)
 
 $\sum F_V = 0 \Rightarrow V_A + V_B = 10 + 15 = 25\text{ N} \quad -(1)$
 
@@ -2373,13 +1756,7 @@ $$V_B = 13.5\text{ N}$$
 
 Q)
 
-
-
-> **Figure: Beam with point load, couple, and point load at the end, and its free body diagram**
->
-> Top diagram shows a beam AB of total length 1m + 2m + 3m = 6m, with a hinged support at A, a roller support at B, a 10 kN load at 1m from A, a 10 kNm couple, and a 20 kN load at 3m further. Below it shows the free body diagram with reactions $H_A$ and $V_A$ at A, and $V_B$ at B.
-
-
+![Beam with point load, couple, and point load at the end, and its free body diagram](/assets/notes/me/s1/engineering-mechanics/module-1/beam-couple-and-point.svg)
 
 1) $V_A + V_B = 30\text{ kN}$
 
@@ -2395,21 +1772,9 @@ $$V_B = 20\text{ kN} \Rightarrow V_A = 10\text{ kN}$$
 
 Q)
 
+![Beam diagram with a 5 kN force at 30 degrees and an 8 kNm moment](/assets/notes/me/s1/engineering-mechanics/module-1/beam-5kn-30-and-8knm.svg)
 
-
-> **Figure: Beam diagram with a 5 kN force at 30 degrees and an 8 kNm moment**
->
-> A horizontal beam AB of length 5m (divided into 1m, 2m, 2m segments). A 5 kN force acts downwards at 30 degrees at 1m from A. An 8 kNm moment acts clockwise at 3m from A.
-
-
-
-
-
-> **Figure: Free body diagram of the beam with reaction forces**
->
-> Horizontal beam with horizontal reaction $H_A$ and vertical reaction $V_A$ at A, vertical reaction $V_B$ at B. Components of the 5 kN force are shown as $5 \sin 30^\circ$ vertically downwards and $5 \cos 30^\circ$ horizontally to the right. A concentrated horizontal force of 8 kN acts to the left, and a moment of 16 kNm is present.
-
-
+![Free body diagram of the beam with reaction forces](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-beam-reactions-5kn.svg)
 
 $$V_A + V_B = 5 \sin 30^\circ = 2.5$$
 
@@ -2425,31 +1790,13 @@ $$V_B = -2.7\text{ KN} \quad V_A = 5.2\text{ KN}$$
 
 Q)
 
+![Beam diagram with 10 kN force, 4 kN horizontal force, and 4 kN vertical reaction](/assets/notes/me/s1/engineering-mechanics/module-1/beam-10kn-4kn-4kn.svg)
 
-
-> **Figure: Beam diagram with 10 kN force, 4 kN horizontal force, and 4 kN vertical reaction**
->
-> Beam AB supported on a pin at A and roller at B, with dimensions 1m, 1m, 2m. A 10 kN downward force acts at 1m from A. A 4 kN force acts to the right at the top, and a 4 kN force acts to the left at the bottom.
-
-
-
-
-
-> **Figure: Free body diagram of beam with reactions**
->
-> Beam AB with $H_A$ and $V_A$ at A, $V_B$ at B, a 10 kN downward force at 1m, and a moment of 8 kNm.
-
-
+![Free body diagram of beam with reactions](/assets/notes/me/s1/engineering-mechanics/module-1/fbd-beam-reactions-10kn.svg)
 
 5) Find the reaction as per figure.
 
-
-
-> **Figure: Beam on inclined plane with 5 N vertical load**
->
-> A horizontal beam A resting on an inclined plane at B with a slope triangle 3-4. A vertical downward load of 5 N acts on the beam.
-
-
+![Beam on inclined plane with 5 N vertical load](/assets/notes/me/s1/engineering-mechanics/module-1/beam-inclined-plane-5n.svg)
 
 $$\tan \theta = \frac{3}{4} \Rightarrow \theta = 36.86^\circ$$
 
@@ -2461,8 +1808,5 @@ $$\theta_1 = 53.14^\circ$$
 
 <!-- page 68 | Page 68 -->
 
-[Non-content page]
-
 <!-- page 69 | Page 69 -->
 
-[Non-content page]

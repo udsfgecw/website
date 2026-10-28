@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | MODULE 4 -->
 
 # MODULE 4
@@ -89,20 +87,9 @@ The process by which hard water can be converted as soft water is called water s
 
 *Anion exchange resins* -are basically styrene-divinyl benzene or amine formaldehyde Co polymers containing quartarnary ammonium group, which on treatment with NaOH attain the capability to exchange its OH ions with cations of water.
 
+![Chemical structure of Cation exchange resin](/assets/notes/me/s1/chemistry/module-4/cation-exchange-resin.svg)
 
-
-> **Figure: Chemical structure of Cation exchange resin**
->
-> Chemical structure of a cation exchange resin showing a polymer backbone with a benzene ring attached to an SO3H group, enclosed in brackets with subscript n, labeled 'Cation exchange resin' below.
-
-
-
-
-> **Figure: Chemical structure of Anion exchange resin**
->
-> Chemical structure of an anion exchange resin showing a polymer backbone with a benzene ring attached to a CH2N(Me)3OH group, enclosed in brackets with subscript n, labeled 'anion exchange resin' below.
-
-
+![Chemical structure of Anion exchange resin](/assets/notes/me/s1/chemistry/module-4/anion-exchange-resin.svg)
 
 ### Procedure:
 
@@ -157,11 +144,7 @@ Water containing high concentration of dissolved salt with a brackish taste is c
 
 <!-- page 6 | Page 6 -->
 
-> **Figure: Diagram of reverse osmosis process for water purification showing sea water, piston, pressure, semi-permeable membrane, and pure water.**
->
-> A schematic diagram showing a container divided horizontally by a semi-permeable membrane. The upper compartment contains 'Sea water' with a piston on top labelled 'Pressure'. The lower compartment contains 'Pure water'. An arrow from the right side of the lower compartment points to 'Pure water' output. Labels point to Pressure, Piston, Sea water, Semi-permeable membrane, Pure water, and Pure water output.
-
-
+![Diagram of reverse osmosis process for water purification showing sea water, piston, pressure, semi-permeable membrane, and pure water.](/assets/notes/me/s1/chemistry/module-4/reverse-osmosis.svg)
 
 *Advantages*
 
@@ -217,13 +200,7 @@ It is not an effective disinfectant above 6.5 PH
 
 * At the break point all the colour, odour, taste disappears and all the disease causing microorganisms get killed. After the break point, any further addition of chlorine appears to be present as free residual chlorine which will continue the further disinfection.
 
-
-
-> **Figure: Break point chlorination curve showing residual chlorine versus applied chlorine.**
->
-> A line graph titled Break point chlorination with 'Chlorine residuals (mg/L)' on the y-axis ranging from 0 to 5, and applied chlorine on the x-axis ranging from 0 to 11. The curve shows an initial rise, a dip marked 'Breakpoint C', and a subsequent rise representing free and combined residuals. Various sections are labeled: 'Destruction of chlorine residual by reducing compounds', 'Formation of chloro-organic and chloramine compounds', 'Destruction of chloramines and chloro-organic compounds', and 'Formation of free chlorine and presence of chloro-organic compounds not destroyed'.
-
-
+![Break point chlorination curve showing residual chlorine versus applied chlorine.](/assets/notes/me/s1/chemistry/module-4/breakpoint-chlorination.svg)
 
 *Advantages*
 
@@ -251,13 +228,7 @@ $$\text{ClNH}_2 + \text{H}_2\text{O} \rightarrow \text{HOCl} + \text{NH}_3$$
 
 Ozone is an excellent disinfectant and it is used in the gaseous form. Ozone is produced by passing silent electric discharge through cold and dry oxygen. Ozone thus produced is unstable and breaks down liberating nascent oxygen, which is a powerful oxidizing agent. It destroys all the bacteria and oxidises organic matter present in water.
 
-
-
-> **Figure: Chemical equations for the production and breakdown of ozone**
->
-> Two chemical reaction equations. The first equation shows 3O2 reacting via 'silent electric discharge' to form 2O3 (ozone). The second equation shows O3 breaking down into O2 and [O] (nascent oxygen).
-
-
+![Chemical equations for the production and breakdown of ozone](/assets/notes/me/s1/chemistry/module-4/ozone-equations.svg)
 
 _Advantages_
 
@@ -295,11 +266,15 @@ Disinfection can be brought about by exposing water to UV light. A quartz tube c
 
 Sewage is the liquid waste which includes human waste, house hold waste, industrial waste, etc. It contains 99.99% of water and 0.01% of organic matter, inorganic matter, suspended impurity, colloidal impurity, etc. Sewage contains both aerobic and anaerobic bacteria that bring out the oxidation of organic compounds in it. Aerobic oxidation is the oxidation of organic matter in the sewage by aerobic bacteria in the presence of excess oxygen. Anaerobic oxidation is the oxidation of organic matter in the sewage by anaerobic bacteria in the presence of limited quantity oxygen
 
-
-
-> **Figure: Table distinguishing between aerobic and anaerobic oxidation**
->
-> A comparison table with two columns titled Aerobic oxidation and Anaerobic oxidation. Aerobic oxidation lists: It occurs in presence of excess oxygen, Oxidation by aerobic bacteria, The products of oxidation are CO2, nitrates, phosphates, sulphates, The products are non-offensive smelling, During decomposition, carbohydrates are converted as CO2 and water, Energy released is more and rate of decomposition is slow, No bio-gas fuel is produced. Anaerobic oxidation lists: It occurs in presence of limited quantity oxygen, Oxidation by anaerobic bacteria, The products of oxidation are acetic acid, methane, H2S, NH3, phosphine, The products are offensive smelling, During decomposition, carbohydrates are converted as CO2 and methane, Energy released is less and rate of decomposition is fast, Bio-gas fuel like methane is produced.
+| | Aerobic oxidation | Anaerobic oxidation |
+| --- | --- | --- |
+| Oxygen | Excess oxygen | Limited oxygen |
+| Bacteria | Aerobic bacteria | Anaerobic bacteria |
+| Products | CO₂, nitrates, phosphates, sulphates | Acetic acid, methane, H₂S, NH₃, phosphine |
+| Smell | Non-offensive | Offensive |
+| Decomposition of carbohydrates | CO₂ and water | CO₂ and methane |
+| Energy and rate | More energy, slow decomposition | Less energy, fast decomposition |
+| Biogas | None produced | Methane-rich biogas produced |
 
 <!-- page 10 | DISSOLVED OXYGEN -->
 
@@ -375,13 +350,7 @@ Sewage treatment is carried out using an artificial process called sewerage. It 
 
 ### Flow diagram of sewage(Wastewater) treatment
 
-
-
-> **Figure: Flow diagram of sewage wastewater treatment**
->
-> A block flow diagram showing three stages of wastewater treatment. Raw sewage goes to screening (with residue extracted), and filtrate goes to sedimentation (with coagulants added above), forming primary treatment. The output then splits into three parallel secondary treatment processes: trickling filter process, activated sludge process, and UASB process. Finally, the output goes to tertiary treatment containing precipitation, N2 stripping, and chlorination.
-
-
+![Flow diagram of sewage wastewater treatment](/assets/notes/me/s1/chemistry/module-4/sewage-treatment-flow.svg)
 
 ### *1. Primary treatment*
 
@@ -425,13 +394,7 @@ $$\text{HNO}_2 + \text{HNO}_3 \xrightarrow{\text{Bases present in soil}} \text{N
 * The treated (clearer) water is collected at the bottom through the drainage system.
 * This process reduces organic impurities and improves water quality.
 
-
-
-> **Figure: Diagram of a Trickling Filter process**
->
-> Schematic cross-section diagram of a trickling filter. At the top center, a sewage distributor rotates above a rectangular tank. The tank contains filtering media (crushed stones) represented by dots. A sewage inlet enters from the right side near the top. An under drainage system is located at the bottom, leading to an effluent outlet on the right. Labels include: 'Sewage distributor', 'Ground level', 'Filtering media', 'Sewage inlet', 'Under drainage System', 'Effluent outlet', and 'Trickling Filter' at the bottom.
-
-
+![Diagram of a Trickling Filter process](/assets/notes/me/s1/chemistry/module-4/trickling-filter.svg)
 
 **b. Activated sludge process**
 
@@ -453,13 +416,7 @@ Module 4 : Environmental Chemistry
 - The gases are collected in a gas collector dome at the top.
 - This method reduces organic waste and produces biogas which can be used as fuel
 
-
-
-> **Figure: Diagram of USAB reactor showing Feed in, USAB reactor, Sludge, Treated effluent, and Biogas**
->
-> A schematic diagram of a USAB reactor. A rectangular tank shows 'Feed in' at the bottom left leading into the reactor. Inside the reactor is a layer labeled 'Sludge'. Above the sludge are three funnel-like gas collector domes collecting gas that goes out through a pipe labeled 'Bio gas' at the top right. 'Treated effluent' is discharged from a pipe near the top right of the tank. The label 'USAB reactor' is at the bottom center.
-
-
+![Diagram of USAB reactor showing Feed in, USAB reactor, Sludge, Treated effluent, and Biogas](/assets/notes/me/s1/chemistry/module-4/usab-reactor.svg)
 
 ### 3. Tertiary treatment
 
@@ -753,4 +710,3 @@ Points:
 
 <!-- page 23 | Page 23 -->
 
-[Non-content page]

@@ -1,7 +1,5 @@
 <!-- page 1 | Page 1 -->
 
-[Non-content page]
-
 <!-- page 2 | Module 1 -->
 
 # Module 1
@@ -69,37 +67,19 @@ Case (i)
 $$x_1 + x_2 = 1$$
 $$2x_1 - x_2 = 0$$
 
-
-
-> **Figure: Graph showing two intersecting lines for Case (i)**
->
-> A coordinate system with intersecting lines labeled x1 + x2 = 1 and 2x1 - x2 = 0, meeting at a point.
-
-
+![Graph showing two intersecting lines for Case (i)](/assets/notes/me/s1/maths/module-1/case-i-intersecting.svg)
 
 Case (ii)
 $$x_1 + x_2 = 1$$
 $$2x_1 + 2x_2 = 2$$
 
-
-
-> **Figure: Graph showing two coinciding lines for Case (ii)**
->
-> A coordinate system with two overlapping lines representing x1 + x2 = 1 and 2x1 + 2x2 = 2.
-
-
+![Graph showing two coinciding lines for Case (ii)](/assets/notes/me/s1/maths/module-1/case-ii-coinciding.svg)
 
 Case (iii)
 $$x_1 + x_2 = 1$$
 $$x_1 + x_2 = 0$$
 
-
-
-> **Figure: Graph showing two parallel lines for Case (iii)**
->
-> A coordinate system with two parallel lines representing x1 + x2 = 1 and x1 + x2 = 0.
-
-
+![Graph showing two parallel lines for Case (iii)](/assets/notes/me/s1/maths/module-1/case-iii-parallel.svg)
 
 * If the system is homogenous, case (iii) can't happen.
 
@@ -148,13 +128,7 @@ $$\begin{aligned}
 
 Q. Find the unknown currents $i_1, i_2, i_3$ in the given circuit.
 
-
-
-> **Figure: Circuit diagram with resistors, voltage sources, and nodes P and Q**
->
-> An electrical circuit diagram showing a left branch with an 80V voltage source and a 20 ohm resistor carrying current i1 downwards. A middle vertical branch has a 10 ohm resistor between nodes Q and P, carrying current i2 downwards. A top branch has a 10 ohm resistor between node Q and the right branch. The right branch contains a 90V voltage source and carries current i3 downwards. A bottom branch has a 15 ohm resistor connected between node P and the bottom-right corner.
-
-
+![Circuit diagram with resistors, voltage sources, and nodes P and Q](/assets/notes/me/s1/maths/module-1/circuit-p-q.svg)
 
 By Kirchoff's laws,
 
@@ -188,9 +162,12 @@ $$\tilde{A} = \begin{bmatrix}
 
 <!-- page 7 | Page 7 -->
 
-$$\begin{matrix} R_2 ightarrow R_1 + R_2 \\ R_3 ightarrow -20R_1 + R_3 \end{matrix} \sim \begin{bmatrix} 1 & -1 & 1 & : & 0 \\ 0 & 0 & 0 & : & 0 \\ 0 & 10 & 25 & : & 90 \\ 0 & 30 & -20 & : & 80 \end{bmatrix} \sim \begin{bmatrix} 1 & -1 & 1 & : & 0 \\ 0 & 10 & 25 & : & 90 \\ 0 & 30 & -20 & : & 80 \\ 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+$$\begin{matrix} R_2 
+ightarrow R_1 + R_2 \\ R_3 
+ightarrow -20R_1 + R_3 \end{matrix} \sim \begin{bmatrix} 1 & -1 & 1 & : & 0 \\ 0 & 0 & 0 & : & 0 \\ 0 & 10 & 25 & : & 90 \\ 0 & 30 & -20 & : & 80 \end{bmatrix} \sim \begin{bmatrix} 1 & -1 & 1 & : & 0 \\ 0 & 10 & 25 & : & 90 \\ 0 & 30 & -20 & : & 80 \\ 0 & 0 & 0 & : & 0 \end{bmatrix}$$
 
-$$R_3 ightarrow -3R_2 + R_3 \quad \begin{bmatrix} 1 & -1 & 1 & : & 0 \\ 0 & 10 & 25 & : & 90 \\ 0 & 0 & -95 & : & -190 \\ 0 & 0 & 0 & : & 0 \end{bmatrix}$$
+$$R_3 
+ightarrow -3R_2 + R_3 \quad \begin{bmatrix} 1 & -1 & 1 & : & 0 \\ 0 & 10 & 25 & : & 90 \\ 0 & 0 & -95 & : & -190 \\ 0 & 0 & 0 & : & 0 \end{bmatrix}$$
 
 $$\begin{aligned}
 \Rightarrow \quad x_1 - x_2 + x_3 &= 0 \\
@@ -485,7 +462,8 @@ $$\begin{aligned}
 
 <!-- page 18 | Page 18 -->
 
-Row $3 ightarrow rac{1}{2}	ext{Row } 2 + 	ext{Row } 3 egin{bmatrix} 3 & 0 & 2 & 2 \ 0 & 42 & 28 & 28 \ 0 & 0 & 0 & 0 egin{bmatrix}
+Row $3 
+ightarrow rac{1}{2}	ext{Row } 2 + 	ext{Row } 3 egin{bmatrix} 3 & 0 & 2 & 2 \ 0 & 42 & 28 & 28 \ 0 & 0 & 0 & 0 egin{bmatrix}
 
 $\Rightarrow \text{Rank } A = 2$
 
@@ -785,7 +763,6 @@ $$\Rightarrow (\lambda - 6)(\lambda - 4) = 0$$
 $$\Rightarrow \lambda = 6, 4$$
 
 $$\therefore \text{The eigenvalues of } A \text{ are } \lambda = 6, 4.$$
-
 
 * Find the spectrum of $A = \begin{bmatrix} 1 & 2 \\ 2 & -2 \end{bmatrix}$
 
@@ -1448,13 +1425,6 @@ $$X_3 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$$
 $$\therefore X = \begin{bmatrix} -1 & 1 & 1 \\ -2 & 1 & 1 \\ 2 & 0 & 1 \end{bmatrix}$$
 
 
-
-> **Figure: Matrix calculation of adj X**
->
-> A small grid of numbers representing cofactor expansion or adjugate matrix calculation, positioned at the top right.
-
-
-
 $$\begin{aligned} X^{-1} &= \frac{\text{adj } X}{|X|} \\ |X| &= -1(1 - 0) - 1(-2 - 2) + 1(0 - 2) \\ &= -1 + 4 - 2 = \underline{1} \end{aligned}$$
 
 $$\therefore X^{-1} = \begin{bmatrix} 1 & -1 & 0 \\ 4 & -3 & -1 \\ -2 & 2 & 1 \end{bmatrix}$$
@@ -1483,4 +1453,3 @@ $$\begin{aligned}
 
 <!-- page 51 | Page 51 -->
 
-[Non-content page]
